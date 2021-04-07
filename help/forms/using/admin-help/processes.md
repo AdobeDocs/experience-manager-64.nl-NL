@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
+exl-id: 322cc7c2-0f24-4ed9-9af2-61b036324f46
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1656'
 ht-degree: 0%
 
 ---
-
 
 # Processen {#managing-processes} beheren
 
@@ -200,4 +200,3 @@ De pagina van de Details van de Verrichting toont een overzicht van één verric
    **Status:** Actief betekent dat het proces wordt geactiveerd voor de procesversie. Inactief betekent dat het proces een oude versie is die nog procesinstanties heeft.
 
    **Aanmaakdatum:** de datum en tijd waarop het proces is geïmplementeerd.
-
