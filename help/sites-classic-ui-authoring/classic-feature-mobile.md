@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
+exl-id: 26324f89-f5e2-40bc-96b4-0f3faa08bdd1
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
 
 ---
-
 
 # Een pagina ontwerpen voor mobiele apparaten{#authoring-a-page-for-mobile-devices}
 
@@ -50,4 +50,3 @@ De pagina ziet er hetzelfde uit als:
 >[!NOTE]
 >
 >De emulators worden uitgeschakeld wanneer een pagina op de auteurinstantie wordt opgevraagd bij een mobiel apparaat. U kunt ontwerpen met behulp van de interface met aanraakbediening.
-
