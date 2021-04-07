@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
+exl-id: 9a6cc25e-e54e-4b8a-8fdd-bcd65d8fe601
 translation-type: tm+mt
-source-git-commit: 26b7692b839e8395d090137e4f85b008171bbfc0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
 
 ---
-
 
 # Een nieuwe graniet-UI-veldcomponent maken{#creating-a-new-granite-ui-field-component}
 
@@ -108,4 +108,3 @@ Specifiek gedrag aan de clientzijde toevoegen aan de component:
    >[!NOTE]
    >
    >Op dit moment biedt de graniet-interface geen out-of-the-box listeners of haken die u rechtstreeks kunt gebruiken om JS-gedrag toe te voegen. Zo, om extra gedrag JS aan uw component toe te voegen, moet u een haak JS aan een douaneklasse uitvoeren die u dan aan uw component tijdens de prijsverhogingsgeneratie toewijst.
-
