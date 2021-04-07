@@ -3,15 +3,15 @@ title: Mappen publiceren naar Brand Portal
 description: Leer hoe u mappen naar Brand Portal publiceert en de publicatie ervan ongedaan maakt.
 contentOwner: VG
 feature: Brand Portal
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: f41ab750-5780-42ae-a131-5bc748280215
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '496'
 ht-degree: 31%
 
 ---
-
 
 # Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
