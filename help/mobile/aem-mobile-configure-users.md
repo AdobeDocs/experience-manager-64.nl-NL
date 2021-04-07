@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
+exl-id: 690ae90f-ecd9-4115-9882-ce88ae38df5b
 translation-type: tm+mt
-source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
 
 ---
-
 
 # Uw gebruikers en gebruikersgroepen {#configure-your-users-and-user-groups} configureren
 
