@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
+exl-id: 65346618-e5a6-43d0-a2b3-698268d3cf64
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 0%
 
 ---
-
 
 # Installeren van toepassingsserver{#application-server-install}
 
@@ -256,4 +256,3 @@ Lees voor een implementatie de bovenstaande [Algemene beschrijving](#general-des
 Voor informatie over het behandelen van kwesties die tijdens installatie kunnen verschijnen, zie:
 
 * [Problemen oplossen](/help/sites-deploying/troubleshooting.md)
-
