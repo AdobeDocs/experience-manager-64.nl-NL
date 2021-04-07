@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
+exl-id: 07ca7715-f7b3-40e0-95bc-e05f0662ed08
 translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
 
 ---
-
 
 # Bestaande domeinen bewerken en converteren{#editing-and-converting-existing-domains}
 
@@ -50,4 +50,3 @@ U kunt de montages voor bestaande domeinen van de pagina van het Beheer van het 
 1. Klik op Omzetten in Enterprise-domein.
 1. Controleer de informatie die wordt weergegeven met betrekking tot gebruikers- en groepsgegevens en verificatie van gebruikers en klik op OK.
 1. Klik toevoegen Folder en vormen de vereiste folderinformatie. (Zie [Mappen of aangepaste SPI&#39;s toevoegen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
-
