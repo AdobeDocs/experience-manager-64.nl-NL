@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
+exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
 
 ---
-
 
 # Bijwerken naar AEM 6.4-gemeenschappen {#upgrading-to-aem-communities}
 
