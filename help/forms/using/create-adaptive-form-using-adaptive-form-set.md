@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 feature: Adaptieve Forms
+exl-id: 969b0c11-adc7-476e-8c82-d444fccba984
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulier maken met behulp van een set adaptieve formulieren {#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
@@ -145,4 +145,3 @@ Voer de volgende stappen uit om een adaptief formulier toe te voegen als een ond
 
 1. Sleep het adaptieve formulier dat u wilt toevoegen als een onderliggend formulier.
    [ ![Sleep het adaptieve formulier naar uw ](assets/drag-drop.png)](assets/drag-drop-1.png)site en zet het neer. Het adaptieve formulier dat u neerzet, wordt toegevoegd als een onderliggend formulier.
-
