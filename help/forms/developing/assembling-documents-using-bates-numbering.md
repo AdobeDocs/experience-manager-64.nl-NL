@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
+exl-id: 902fc62b-262e-4eb4-b580-dbfbf4344fa6
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1927'
 ht-degree: 0%
 
 ---
-
 
 # Documenten samenstellen met gebruik van Bates-nummering {#assembling-documents-using-bates-numbering}
 
