@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
+exl-id: 2efc0a84-4808-47dd-a859-76caf98b1872
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
-
 
 # Java API QuickStart (SOAP) {#assembler-service-java-api-quickstart-soap} voor Assembler Service
 
@@ -1780,4 +1780,3 @@ public class RedactPDF
     } 
 }
 ```
-
