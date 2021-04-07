@@ -7,15 +7,15 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Beheerder
+role: Administrator
+exl-id: eeffd886-8955-46eb-aa6d-dd4da5e8570c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-
 
 # Documentbeveiliging | Gebruikersgegevens {#document-security-handling-user-data} verwerken
 
@@ -214,4 +214,3 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
 
 1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Zie [Forms-gebruikersbeheer voor gedetailleerde stappen | Gebruikersgegevens verwerken](/help/forms/using/user-management-handling-user-data.md).
 1. Start de AEM Forms-server.
-
