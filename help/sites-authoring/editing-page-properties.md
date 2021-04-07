@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
+exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
 translation-type: tm+mt
-source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 3%
 
 ---
-
 
 # Pagina-eigenschappen bewerken{#editing-page-properties}
 
@@ -347,4 +347,3 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
 >[!NOTE]
 >
 >De paginacomponent kan worden gevormd om de gebieden te specificeren beschikbaar voor bulkbewerking. Zie [Uw pagina configureren voor bulkbewerking van pagina-eigenschappen](/help/sites-developing/bulk-editing.md).
-
