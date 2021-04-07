@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3157bb92-4b07-40f2-be4c-8f5807f9a380
+exl-id: ecedde63-abbb-4e69-901e-1e4b7a59f539
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
 
 ---
-
 
 # Procesgegevens {#purging-process-data} wissen
 
@@ -25,4 +25,3 @@ Procesgegevens die worden gegenereerd wanneer een langdurig proces wordt aangero
 * U kunt beheerconsole gebruiken om een eenmalige verwijdering uit te voeren van verouderde records die verwant zijn aan langlevende processen, of om regelmatige automatische purges te plannen. (Zie [Records verwijderen uit de database van Taakbeheer](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
 * Met de Java API voor AEM formulieren en de API voor webservices kunt u procesgegevens met betrekking tot langlevende processen programmatisch wissen. (Zie &quot;Gegevens van het Verwerkingsproces&quot;in [Programmering met AEM vormen](https://www.adobe.com/go/learn_aemforms_programming_63).)
 * Gebruik het gereedschap voor het verwijderen van processen om processen op basis van de procesnaam en andere parameters te wissen. Zie voor meer informatie het Lees mij-bestand over het gereedschap Repareren in *[aem_forms root]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt.
-
