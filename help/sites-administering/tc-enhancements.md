@@ -9,14 +9,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Taalkopie
+exl-id: 57a77cec-e228-4ec7-8502-e6e23baddd92
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
 
 ---
-
 
 # Verbeterde vertalingen{#translation-enhancements}
 
@@ -118,4 +118,3 @@ Een eigenschap kan nu worden geselecteerd in de lijstweergave Sites, die aangeef
 U kunt nu een **Vertaalde** kolom zien die de vertaalstatus van de pagina&#39;s toont.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
-
