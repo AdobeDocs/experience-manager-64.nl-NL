@@ -10,14 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 feature: Bijwerken
+exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 1%
 
 ---
-
 
 # De complexiteit van upgrades beoordelen met de patroondetector{#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
@@ -222,4 +222,3 @@ Met de huidige patroondetector kunt u controleren:
 * definities van eiken-indexen (compatibiliteit)
 * VLT-pakketten (overmatig gebruik)
 * rep:Compatibiliteit van gebruikersknooppunten (in de context van OAuth-configuratie)
-
