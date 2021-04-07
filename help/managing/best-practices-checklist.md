@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
+exl-id: d85fa478-8192-42b9-a5fc-a38a87cfc7dd
 translation-type: tm+mt
-source-git-commit: a1709aa10d480e7509665f3f7a791348d8323076
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
 
 ---
-
 
 # The Checklist{#the-checklist}
 
