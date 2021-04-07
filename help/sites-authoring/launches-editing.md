@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
+exl-id: 9f208b13-08eb-4305-b712-379e9b9b041e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 19%
 
 ---
-
 
 # Lanceringen bewerken{#editing-launches}
 
@@ -28,7 +28,7 @@ Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud b
 1. Open [Starten vanuit Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare handelingen weer te geven.
 1. Selecteer **Ga naar de pagina** om de pagina te openen voor bewerking.
 
-### Starten van pagina&#39;s bewerken die zijn onderworpen aan een actieve kopie {#editing-launch-pages-subject-to-a-live-copy}
+### Starten van pagina&#39;s bewerken waarop een actieve kopie {#editing-launch-pages-subject-to-a-live-copy} van toepassing is
 
 Als uw lancering op een [levende exemplaar](/help/sites-administering/msm.md) gebaseerd is, dan zult u:
 
@@ -103,4 +103,3 @@ U kunt op elk gewenst moment de eigenschappen voor een opstart bewerken:
 De status wordt weergegeven wanneer u een specifieke start selecteert op het tabblad Referenties (zie [Starten in Referenties (Sites Console)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
-
