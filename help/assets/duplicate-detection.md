@@ -3,15 +3,15 @@ title: Dubbele detectie inschakelen
 description: Leer hoe u dubbele elementen in AEM kunt detecteren.
 contentOwner: AG
 feature: Middelenbeheer, Asset Reports
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: 138cf649-9e21-415e-9861-b07caacc85db
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
-
 
 # Dubbele detectie {#enabling-duplicate-detection} inschakelen
 
