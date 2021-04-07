@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
+exl-id: 21f5cca3-46e2-4aa2-9703-ac51e8eecd40
 translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 0%
 
 ---
-
 
 # Groepen maken en configureren{#creating-and-configuring-groups}
 
@@ -76,7 +76,7 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
 1. Geef op wanneer Gebruikersbeheer controleert op nieuwe e-maildomeinen. Deze tijd zou na de tijd van de domeinsynchronisatie moeten zijn omdat de verwezenlijking van dynamische groepen logisch slechts is als de domeinsynchronisatie wordt voltooid.
 
    * Om automatische synchronisatie op een dagelijkse basis toe te laten, typ de tijd in het formaat van 24 uur in Occurs Daily bij doos. Wanneer u uw instellingen opslaat, wordt deze waarde omgezet in een uitsnijdexpressie, die in het onderstaande vak wordt weergegeven.
-   * Als u synchronisatie wilt plannen op een bepaalde dag van de week of maand, of in een bepaalde maand, selecteert u de gewenste uitsnijdexpressie in het vak. De standaardwaarde is `0 00 4 ? * *` (wat controle bij 4 A.M. betekent) elke dag).
+   * Als u synchronisatie wilt plannen op een bepaalde dag van de week of de maand, of in een bepaalde maand, selecteert u de gewenste uitsnijdexpressie in het vak. De standaardwaarde is `0 00 4 ? * *` (wat controle bij 4 A.M. betekent) elke dag).
 
       Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 
@@ -155,4 +155,3 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Gebruikers en groepen.
 1. Selecteer Groepen in de lijst Zoeken en klik op Zoeken.
 1. Schakel het selectievakje voor de groep die u wilt verwijderen in, klik op Verwijderen en klik op OK.
-
