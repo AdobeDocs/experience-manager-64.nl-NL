@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171
+exl-id: 20f3c5d6-0f70-4b66-9e43-be1709dc8eb6
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
 
 ---
-
 
 # Codevoorbeelden{#code-samples}
 
@@ -42,4 +42,3 @@ Er zijn extra codevoorbeelden beschikbaar:
 >[!NOTE]
 >
 >Deze codevoorbeelden zijn uitsluitend voor educatieve doeleinden en mogen niet worden gebruikt op een productie-instantie van AEM.
-
