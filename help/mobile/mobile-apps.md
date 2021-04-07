@@ -8,14 +8,14 @@ contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: eda55579-4140-477b-b4d0-a87d14ec3237
+exl-id: 51b062f3-6308-4389-8c5f-3a855fa66626
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
-
 
 # Mobiele toepassingen{#mobile-apps}
 
