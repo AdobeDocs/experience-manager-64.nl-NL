@@ -3,14 +3,14 @@ title: Adobe Experience Manager 6.4 Forms Guide
 seo-title: AEM 6.4 Forms-gids
 description: Deze handleiding behandelt alle AEM Forms-taken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
 seo-description: Omvat alle AEM Forms-taken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
+exl-id: e25a3b24-c460-49a9-a62c-c9ed1f1128e3
 translation-type: tm+mt
-source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 18%
 
 ---
-
 
 # Adobe Experience Manager 6.4 Forms Guide
 
