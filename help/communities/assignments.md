@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: aeacddc5-a128-40cd-a4c3-07fa173f90c4
+exl-id: 6b8b19ae-eb3b-46d5-ab44-18c43d11aa61
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
 
 ---
-
 
 # Toewijzingsfunctie {#assignments-feature}
 
