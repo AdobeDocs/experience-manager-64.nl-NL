@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
-role: Beheerder
+role: Administrator
+exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2723'
 ht-degree: 2%
 
 ---
-
 
 # Analytische configuratie voor functies {#analytics-configuration-for-communities-features}
 
@@ -555,4 +555,3 @@ Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, export
 * Adobe Marketing Cloud: [Analytische Help en referentie](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integratie met Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analyse met externe providers](../../help/sites-administering/external-providers.md)
-
