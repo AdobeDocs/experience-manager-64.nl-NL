@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/programmatically_disassembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 role: Developer
+exl-id: ea6a05ff-d8d8-4a4f-b1aa-e09670e40ba7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
-
 
 # Een PDF-document ontkoppelen met de webservice-API {#disassemble-a-pdf-document-usingthe-web-service-api}
 
