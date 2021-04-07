@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
+exl-id: fdf1aba8-17fa-473a-9c32-7189d0628927
 translation-type: tm+mt
-source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 4%
 
 ---
-
 
 # Sjablonen voor inhoudsfragmenten{#content-fragment-templates}
 
@@ -254,4 +254,3 @@ Meer details over de knopen en hun eigenschappen zijn:
   </tr> 
  </tbody> 
 </table>
-
