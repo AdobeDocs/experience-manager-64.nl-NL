@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
+exl-id: adb20c7e-626e-4a66-84e6-c9c25a67a9c3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2698'
 ht-degree: 0%
 
 ---
-
 
 # Paginasjablonen voor mobiele apps {#page-templates-for-mobile-apps}
 
@@ -58,11 +58,11 @@ De app bevat het css-gedeelte van de clientbibliotheken in de kop, terwijl de JS
 
 ### body.jsp {#body-jsp}
 
-De hoofdtekst van een hoekpagina wordt anders weergegeven, afhankelijk van het feit of wcmMode wordt gedetecteerd (!= WCMMode.DISABLED) om te bepalen of de pagina voor creatie of als gepubliceerde pagina wordt geopend.
+De hoofdtekst van een pagina van de Angular wordt anders weergegeven afhankelijk van het feit of wcmMode wordt gedetecteerd (!= WCMMode.DISABLED) om te bepalen of de pagina voor creatie of als gepubliceerde pagina wordt geopend.
 
 **Auteursmodus**
 
-In de auteurmodus wordt elke afzonderlijke pagina afzonderlijk weergegeven. Hoekig handelt het verpletteren tussen pagina&#39;s niet, noch een ng-mening die wordt gebruikt om een gedeeltelijk malplaatje te laden dat de componenten van de pagina bevat. In plaats daarvan wordt de inhoud van de paginasjabloon (template.jsp) aan de serverzijde opgenomen via de tag `cq:include`.
+In de auteurmodus wordt elke afzonderlijke pagina afzonderlijk weergegeven. De angular behandelt het verpletteren tussen pagina&#39;s niet, noch is een ng-mening die wordt gebruikt om een gedeeltelijk malplaatje te laden dat de componenten van de pagina bevat. In plaats daarvan wordt de inhoud van de paginasjabloon (template.jsp) aan de serverzijde opgenomen via de tag `cq:include`.
 
 Deze strategie maakt de auteur-functies mogelijk (zoals het toevoegen en bewerken van componenten in het alineasysteem, Sidetrap, ontwerpmodus, enz.) om zonder wijzigingen te werken. Pagina&#39;s die afhankelijk zijn van renderen op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in AEM auteursmodus.
 
@@ -76,9 +76,9 @@ Merk op dat template.jsp omvat in een `div` element verpakt is dat `ng-controlle
 
 **Publicatiemodus**
 
-In de publicatiemodus (bijvoorbeeld wanneer de app wordt geëxporteerd met Content Sync) worden alle pagina&#39;s een app van één pagina (SPA). (Voor meer informatie over SPA gebruikt u de zelfstudie Hoeken, met name [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
+In de publicatiemodus (bijvoorbeeld wanneer de app wordt geëxporteerd met Content Sync) worden alle pagina&#39;s een app van één pagina (SPA). (Voor meer informatie over SPA gebruikt u de zelfstudie Angular, met name [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
 
-Een SPA bevat slechts één HTML-pagina (een pagina die het element `<html>` bevat). Deze pagina wordt de &#39;lay-outsjabloon&#39; genoemd. In hoekige termen is het &quot;...een sjabloon die veel wordt gebruikt voor alle weergaven in onze toepassing.&quot; Beschouw deze pagina als de &#39;toepassingspagina op het hoogste niveau&#39;. Volgens conventie is de toepassingspagina op het hoogste niveau het `cq:Page`-knooppunt van uw toepassing dat zich het dichtst bij de hoofdmap bevindt (en geen omleiding is).
+Een SPA bevat slechts één HTML-pagina (een pagina die het element `<html>` bevat). Deze pagina wordt de &#39;lay-outsjabloon&#39; genoemd. In de terminologie van de Angular is het &quot;...een sjabloon die veel wordt gebruikt voor alle weergaven in onze toepassing.&quot; Beschouw deze pagina als de &#39;toepassingspagina op het hoogste niveau&#39;. Volgens conventie is de toepassingspagina op het hoogste niveau het `cq:Page`-knooppunt van uw toepassing dat zich het dichtst bij de hoofdmap bevindt (en geen omleiding is).
 
 Aangezien de werkelijke URI van uw app niet verandert in de publicatiemodus, moeten verwijzingen naar externe elementen van deze pagina gebruikmaken van relatieve paden. Daarom is er een speciale afbeeldingscomponent die rekening houdt met deze pagina op het hoogste niveau wanneer u afbeeldingen rendert voor exporteren.
 
@@ -88,7 +88,7 @@ Als SPA, produceert deze pagina van het lay-outmalplaatje eenvoudig een div elem
  <div ng-view ng-class="transition"></div>
 ```
 
-De Hoekroutedienst gebruikt dit element om de inhoud van elke pagina in app, met inbegrip van de authorable inhoud van de huidige pagina (in template.jsp) te tonen.
+De routedienst van de Angular gebruikt dit element om de inhoud van elke pagina in app, met inbegrip van de authorable inhoud van de huidige pagina (in template.jsp) te tonen.
 
 Het bestand body.jsp bevat header.jsp en footer.jsp, die leeg zijn. Als u statische inhoud op elke pagina wilt verstrekken, kunt u deze manuscripten in uw app met voeten treden.
 
@@ -96,17 +96,17 @@ Tot slot worden javascript-clientlibs onder aan het element &lt;body> opgenomen,
 
 ### angular-app-module.js.jsp {#angular-app-module-js-jsp}
 
-Met dit script wordt de hoekmodule van de toepassing gedefinieerd. De uitvoer van dit script is gekoppeld aan de opmaak die de rest van de component van de sjabloon genereert via het element `html` in ng-page.jsp, dat het volgende kenmerk bevat:
+Dit script definieert de module Angular van de toepassing. De uitvoer van dit script is gekoppeld aan de opmaak die de rest van de component van de sjabloon genereert via het element `html` in ng-page.jsp, dat het volgende kenmerk bevat:
 
 ```xml
 ng-app="<c:out value='${applicationName}'/>"
 ```
 
-Dit kenmerk geeft aan hoekig te zijn dat de inhoud van dit DOM-element moet worden gekoppeld aan de volgende module. Deze module koppelt de meningen (in AEM dit cq:de middelen van de Pagina) met overeenkomstige controlemechanismen.
+Dit attribuut wijst aan Angular erop dat de inhoud van dit element DOM met de volgende module zou moeten worden verbonden. Deze module koppelt de meningen (in AEM dit cq:de middelen van de Pagina) met overeenkomstige controlemechanismen.
 
 Deze module bepaalt ook een top-level controlemechanisme genoemd `AppController` die `wcmMode` variabele aan het werkingsgebied blootstelt, en vormt URI waarvan om de updatelading van de Synchronisatie van de Inhoud te halen.
 
-Ten slotte, herhaalt deze module door elke afstammende pagina (met inbegrip van zelf) en geeft de inhoud van het routefragment van elke pagina (via de hoek-route-fragment.js selecteur &amp; uitbreiding) terug, met inbegrip van het als config ingang aan Angular \$routeProvider. Met andere woorden, de \$routeProvider vertelt de toepassing welke inhoud moet worden teruggegeven wanneer een bepaald pad wordt gevraagd.
+Ten slotte, herhaalt deze module door elke afstammende pagina (met inbegrip van zelf) en geeft de inhoud van het routefragment van elke pagina (via de angular-route-fragment.js selecteur &amp; uitbreiding) terug, met inbegrip van het als config ingang aan Angular \$routeProvider. Met andere woorden, de \$routeProvider vertelt de toepassing welke inhoud moet worden teruggegeven wanneer een bepaald pad wordt gevraagd.
 
 ### angular-route-fragment.js.jsp {#angular-route-fragment-js-jsp}
 
@@ -133,7 +133,7 @@ Indien nodig, kunt u dit manuscript met voeten treden om complexere wegen, met i
 
 ### angular-app-controllers.js.jsp {#angular-app-controllers-js-jsp}
 
-In Hoekig, telegraferen de Controllers variabelen in \$scope, die hen aan de mening blootstellen. Het angular-app-controllers.js.jsp-script volgt het patroon dat wordt geïllustreerd door angular-app-module.js.jsp in die zin dat het elke afstammende pagina (inclusief zichzelf) doorloopt en het controllerfragment uitvoert dat elke pagina definieert (via controller.js.jsp). De module die hierin wordt gedefinieerd, wordt `cqAppControllers` genoemd en moet als gebiedsdeel van de toepassingsmodule van het hoogste niveau worden vermeld zodat de paginacontroles ter beschikking worden gesteld.
+In Angular, telegraferen de Controllers omhoog variabelen in \$scope, die hen aan de mening blootstellen. Het angular-app-controllers.js.jsp-script volgt het patroon dat wordt geïllustreerd door angular-app-module.js.jsp in die zin dat het elke afstammende pagina (inclusief zichzelf) doorloopt en het controllerfragment uitvoert dat elke pagina definieert (via controller.js.jsp). De module die wordt gedefinieerd, wordt `cqAppControllers` genoemd en moet worden vermeld als afhankelijkheid van de app-module op het hoogste niveau, zodat de paginacontrollers beschikbaar worden gemaakt.
 
 ### controller.js.jsp {#controller-js-jsp}
 
@@ -149,7 +149,7 @@ Met het controller.js.jsp-script wordt het controllerfragment voor elke pagina g
 ])
 ```
 
-Merk op dat `data` variabele wordt toegewezen de belofte die door de Hoekmethode `$http.get` is teruggekeerd. Elke component die in deze pagina is opgenomen, kan desgewenst .json-inhoud (via het script angular.json.jsp) beschikbaar maken en op de inhoud van dit verzoek reageren wanneer dit wordt opgelost. Het verzoek is zeer snel op mobiele apparaten omdat het eenvoudig tot het dossiersysteem toegang heeft.
+Merk op dat `data` variabele wordt toegewezen de belofte die door de Angular `$http.get` methode is teruggekeerd. Elke component die in deze pagina is opgenomen, kan desgewenst .json-inhoud (via het script angular.json.jsp) beschikbaar maken en op de inhoud van dit verzoek reageren wanneer dit wordt opgelost. Het verzoek is zeer snel op mobiele apparaten omdat het eenvoudig tot het dossiersysteem toegang heeft.
 
 Als een component op deze manier deel moet uitmaken van de controller, moet deze de component /libs/mobileapps/components/angular/ng-component uitbreiden en de eigenschap `frameworkType: angular` bevatten.
 
@@ -161,7 +161,7 @@ Parsys in dit manuscript kan worden gevormd om het even welk type van component 
 
 ### angular-module-list.js.jsp {#angular-module-list-js-jsp}
 
-Met dit script worden gewoon de hoekafhankelijkheden van de app-module op het hoogste niveau uitgevoerd. Er wordt naar verwezen door angular-app-module.js.jsp.
+Dit manuscript output eenvoudig de Angular gebiedsdelen van de top-level Angular app module. Er wordt naar verwezen door angular-app-module.js.jsp.
 
 ### header.jsp {#header-jsp}
 
@@ -196,7 +196,7 @@ Noteer GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; in het pad.
 
 Als ontwikkelaar van PhoneGap, wordt de inhoud die u betrokken bent gevestigd onder de folder www. Gebruik relatieve paden om toegang te krijgen tot de elementen van de app.
 
-Uw PhoneGap-toepassing gebruikt het toepassingspatroon (SPA) van één pagina om het probleem te verhelpen, zodat de basis-URI (exclusief de hash) nooit wordt gewijzigd. Daarom moet elk middel, malplaatje, of manuscript dat u **van verwijzingen voorziet met betrekking tot uw top-level pagina zijn.** De pagina op het hoogste niveau initialiseert de Hoekroutering en de controlemechanismen door middel van  `*<name>*.angular-app-module.js` en  `*<name>*.angular-app-controllers.js`. Deze pagina zou de dichtstbijzijnde pagina moeten zijn van de basis van de repository die *geen *extend een sling:redirect.
+Uw PhoneGap-toepassing gebruikt het toepassingspatroon (SPA) van één pagina om het probleem te verhelpen, zodat de basis-URI (exclusief de hash) nooit wordt gewijzigd. Daarom moet elk middel, malplaatje, of manuscript dat u **van verwijzingen voorziet met betrekking tot uw top-level pagina zijn.** De pagina op het hoogste niveau initialiseert de Angular die en controlemechanismen door middel van  `*<name>*.angular-app-module.js` en  `*<name>*.angular-app-controllers.js`. Deze pagina zou de dichtstbijzijnde pagina moeten zijn van de basis van de repository die *geen *extend een sling:redirect.
 
 Er zijn verschillende helpermethoden beschikbaar voor het omgaan met relatieve paden:
 
@@ -222,7 +222,7 @@ Koppelingen moeten de functie `ng-click="go('/path')"` gebruiken om alle WCM-mod
 
 Als `$scope.wcmMode == true` elke navigatie-gebeurtenis op de gebruikelijke manier afhandelt, zodat het resultaat een wijziging is in het pad en/of het paginagedeelte van de URL.
 
-Alternatief, als `$scope.wcmMode == false`, elke navigatiegebeurtenis in een verandering in het knoeiboelgedeelte van URL resulteert die intern door de module ngRoute van Angular wordt opgelost.
+Alternatief, als `$scope.wcmMode == false`, elke navigatiegebeurtenis in een verandering in het knoeiboelgedeelte van URL resulteert die intern door de module ngRoute van de Angular wordt opgelost.
 
 ### Details van componentscript {#component-script-details}
 
@@ -244,7 +244,7 @@ In componenten die door JSON-gegevens worden aangedreven (zoals &#39;ng-text&#39
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
-Zoals beschreven in AEM paginasjablonen, kan elke component een JavaScript-fragment uitvoeren om de JSON-inhoud te gebruiken die wordt vrijgegeven door de belofte `data`. Volgens de Hoekconventies mag een controller alleen worden gebruikt voor het toewijzen van variabelen aan het bereik.
+Zoals beschreven in AEM paginasjablonen, kan elke component een JavaScript-fragment uitvoeren om de JSON-inhoud te gebruiken die wordt vrijgegeven door de belofte `data`. Volgens de conventies van de Angular moet een controller alleen worden gebruikt voor het toewijzen van variabelen aan het bereik.
 
 #### angular.json.jsp {#angular-json-jsp}
 
@@ -311,7 +311,7 @@ Dit is een verborgen map die u mogelijk niet ziet, afhankelijk van de huidige be
 
 #### .cordova/haken/ {#cordova-hooks}
 
-Deze folder bevat [CLI haks](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). De mappen in de map hooks bevatten de scripts van node.js die op exacte punten worden uitgevoerd tijdens de build.
+Deze folder bevat [CLI haks](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). De omslagen in de hooks folder bevatten knoop.js manuscripten die op nauwkeurige punten tijdens de bouwstijl worden uitgevoerd.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
@@ -323,7 +323,7 @@ De map after-prepare bevat het bestand `copy_resource_files.js`. Met dit script 
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 
-De map before_platform_add bevat het bestand `install_plugins.js`. Dit script doorloopt een lijst met Cordova-insteekmodules voor insteekmodules, waarbij de id-id&#39;s installeert die nog niet beschikbaar zijn.
+De map before_platform_add bevat het bestand `install_plugins.js`. Dit script doorloopt een lijst met Cordova-insteekmodules voor insteekmodules, waarbij de id-id&#39;s die het detecteert, worden geïnstalleerd, is nog niet beschikbaar.
 
 Deze strategie vereist niet dat u de stop-ins bundelt en installeert om te AEM telkens als het Maven `content-package:install` bevel wordt uitgevoerd. De alternatieve strategie om de bestanden in uw SCM-systeem te controleren, vereist herhaalde bundeling en installatie-activiteiten.
 
