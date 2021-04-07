@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
+exl-id: 5bb5f984-f741-4185-acb0-ffcf7e116875
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 8%
 
 ---
-
 
 # Ontwerpomgeving en gereedschappen{#authoring-the-environment-and-tools}
 
