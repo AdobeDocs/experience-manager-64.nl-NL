@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
+exl-id: d6e8412d-09d4-4cac-a691-71703ebaa374
 translation-type: tm+mt
-source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
 
 ---
-
 
 # Artikel exportconfiguratie maken{#creating-article-export-configuration}
 
@@ -66,4 +66,3 @@ Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 >[!NOTE]
 >
 >Artikelen moeten worden geüpload of geëxporteerd naar AEM Mobile On-demand Services wanneer de inhoud van een artikel verandert.
-
