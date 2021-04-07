@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1fd28077-37a4-4cba-bbce-6d5b353f1e7d
+exl-id: 67537323-e9c8-4eec-bcec-dc5bac4b623c
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersnaam- en wachtwoordgegevens {#adding-and-removing-user-name-and-password-credentials} toevoegen en verwijderen
 
@@ -33,4 +33,3 @@ Op de pagina Betrouwbaar opslagbeheer kunt u gebruikersnaam en wachtwoord toevoe
 
 1. Klik in de beheerconsole op **[!UICONTROL Settings > Trust Store Management > User and Password Credentials]**.
 1. Schakel de selectievakjes in voor de referenties die u wilt verwijderen, klik op **[!UICONTROL Delete]** en klik vervolgens op **[!UICONTROL OK]**.
-
