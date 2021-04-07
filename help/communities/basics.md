@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
+exl-id: 17fbee1c-5657-442a-8c9d-1456b853f666
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
 
 ---
-
 
 # Grondbeginselen van Community-componenten {#communities-components-basics}
 
@@ -91,4 +91,3 @@ Voor informatie over ontwikkelaars:
 
 * [Kader voor tags AEM](../../help/sites-developing/framework.md)
 * [Grondbeginselen van tags](tag.md)
-
