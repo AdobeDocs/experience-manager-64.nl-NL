@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
+exl-id: 192ba4c4-a133-4e16-9882-98005f25ba7f
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
 
 ---
-
 
 # Documentdetails voor renderer {#document-details-for-renderer}
 
@@ -97,4 +97,3 @@ Als de directe actieknoppen van de werkruimte van AEM Forms zichtbaar zijn, word
 Een Flex-toepassing kan bijvoorbeeld `ExternalInterface.addCallback('getMessage', listener)` definiëren om deze communicatie te ondersteunen. Als de toepassing van derden het verzenden van formulieren via eigen knoppen wil verwerken, moet u `hideDirectActions = true() in the runtimeMap` opgeven en kunt u deze listener overslaan. Deze constructie is dus optioneel.
 
 U kunt meer lezen over de integratie van toepassingen van derden met betrekking tot Correspondence Management op [Correspondentiebeheer integreren in de AEM Forms-werkruimte](/help/forms/using/integrating-correspondence-management-html-workspace.md).
-
