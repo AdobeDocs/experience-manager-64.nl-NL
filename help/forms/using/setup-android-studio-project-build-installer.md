@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
+exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # Stel het Android-studioproject in en maak de Android-app {#set-up-the-android-studio-project-and-build-the-android-app}
 
@@ -108,4 +108,3 @@ U kunt de toepassing op een Android™-apparaat installeren via [Android™ Debu
 **Voor MAC-gebruikers**:  `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Voor Windows®-gebruikers**:  `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
-
