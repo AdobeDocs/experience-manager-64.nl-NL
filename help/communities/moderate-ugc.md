@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
-role: Beheerder
+role: Administrator
+exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1510'
 ht-degree: 1%
 
 ---
-
 
 # Modernisering van communautaire inhoud {#moderating-community-content}
 
@@ -286,4 +286,3 @@ Wanneer de volgende machtigingen aan dezelfde bron worden toegewezen, worden dez
 * `Create`
 * `Delete`
 * `Replicate`
-
