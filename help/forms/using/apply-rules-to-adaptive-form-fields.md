@@ -8,14 +8,14 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 feature: Adaptieve Forms
+exl-id: bb65b6d7-5bbf-4cc5-a468-9ea8465f7a07
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
 
 ---
-
 
 # Zelfstudie: Regels toepassen op aangepaste formuliervelden {#tutorial-apply-rules-to-adaptive-form-fields}
 
@@ -153,4 +153,3 @@ De volgende procedure laat zien hoe u een regel maakt om een foutbericht weer te
 1. Geef een voorvertoning weer van het adaptieve formulier. Voer een onjuiste klant-id in. Er verschijnt een foutbericht.
 
    ![display-validation-error](assets/display-validation-error.gif)
-
