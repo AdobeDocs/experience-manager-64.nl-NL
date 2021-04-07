@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
+exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
 translation-type: tm+mt
-source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 13%
 
 ---
-
 
 # Activiteiten beheren{#managing-activities}
 
@@ -234,4 +234,3 @@ Gebruik altijd unieke namen voor activiteiten om synchronisatieproblemen te voor
 >Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
 >
 >Als tijdens het synchroniseren de fout &quot;Verzoek is mislukt. `thirdPartyId` bestaat al.&quot; Wijzig de naam van de campagne en synchroniseer opnieuw.
-
