@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
+exl-id: 66045e67-4d33-4c0c-81d7-d4287ed68ccc
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 2%
 
 ---
-
 
 # SCF Handlebars Helpers {#scf-handlebars-helpers}
 
@@ -607,4 +607,3 @@ Opmerking: de SCF-helpers worden gedefinieerd in `/etc/clientlibs/social/commons
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
 |  | **[Aanpassing aan clientzijde☐](client-customize.md)** |
-
