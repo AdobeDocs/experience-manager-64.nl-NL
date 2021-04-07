@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
+exl-id: fa5b9b61-7dba-42e0-8fbd-4a96617569d8
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelen met SAP Commerce Cloud{#developing-with-sap-commerce-cloud}
 
