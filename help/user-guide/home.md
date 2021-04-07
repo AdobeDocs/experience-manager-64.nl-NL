@@ -5,14 +5,14 @@ description: Een overzicht van alle essentiële bronnen voor het begrijpen, inst
 seo-description: Een overzicht van alle essentiële bronnen voor het begrijpen, installeren, beheren en gebruiken van AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+exl-id: dbeb093b-489b-46c3-b136-e33a430793e0
 translation-type: tm+mt
-source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 1%
 
 ---
-
 
 # AEM 6.4 Hub van de Gids van de Gebruiker {#aem-64-user-guide}
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | [Eerste stappen](https://helpx.adobe.com/experience-manager/get-started.html) | [Functievideo&#39;s](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html) | [Releaseopmerkingen](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) |
 |:-:|:-:|:-:|
-| Zelfstudies en artikelen voor AEM | Een selectie video&#39;s waarin de nieuwe functies van 6.4 worden benadrukt | Ontdek nieuwe functies in AEM 6.4 |
+| Zelfstudies en artikelen om aan de slag te gaan met AEM | Een selectie video&#39;s waarin de nieuwe functies van 6.4 worden benadrukt | Ontdek nieuwe functies in AEM 6.4 |
 
 ## Gebruikershandleidingen en -bronnen {#user-guides-and-resources}
 
