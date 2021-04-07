@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
+exl-id: 37d6187f-4f91-4ad4-b0d6-eaae165abe64
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 1%
 
 ---
-
 
 # Algemene map voor documentopslag{#global-document-storage-directory}
 
@@ -106,4 +106,3 @@ Modules en AEM formulierarchiefbestanden worden verpakt in JAR-bestanden. Omdat 
 >[!NOTE]
 >
 >Alvorens u de de dienstcontainers opstelt, zorg ervoor dat u creeerde en de folder GDS vormde. (Zie [De GDS-map configureren](global-document-storage-directory.md#configuring-the-gds-directory))
-
