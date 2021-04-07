@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
+exl-id: 1ec3096c-e63c-4384-b152-957ff0eef4b2
 translation-type: tm+mt
-source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
 
 ---
-
 
 # Mobiele toepassingen ontwikkelen in AEM {#developing-mobile-applications-in-aem}
 
