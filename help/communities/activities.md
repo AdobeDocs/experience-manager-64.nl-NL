@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
+exl-id: e62b7c0d-5004-4672-9fdc-566ece2785c9
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
-
 
 # Functie voor activiteitsstromen {#activity-streams-feature}
 
