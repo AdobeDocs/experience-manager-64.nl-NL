@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
+exl-id: 0bfb05b8-7d10-4984-9e89-f1af88938c03
 translation-type: tm+mt
-source-git-commit: 4027bf6905d2e1d07c7f6adb70cbd249f8ee06a4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5311'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
@@ -623,4 +623,3 @@ Als u problemen hebt met het integreren van Experience Manager met Dynamic Media
 >Het importeren van activa van een bestaande Dynamic Media Classic-bedrijfsaccount kan lang duren voordat deze in Experience Manager worden weergegeven. Zorg ervoor dat u een map in Dynamic Media Classic aanwijst die niet te veel elementen bevat (de hoofdmap bevat bijvoorbeeld vaak te veel elementen).
 >
 >Als u de integratie wilt testen, moet u het hoofdmappunt alleen naar een submap laten verwijzen in plaats van naar het hele bedrijf.
-
