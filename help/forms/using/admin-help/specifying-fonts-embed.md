@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 4c83694c-b00f-40be-9ac4-f5785cd60741
+exl-id: 0bde7192-9d21-40b4-9164-314c9a30153b
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
 
 ---
-
 
 # Te insluiten lettertypen opgeven {#specifying-fonts-to-embed}
 
@@ -30,4 +30,3 @@ U kunt opgeven welke lettertypen altijd worden ingesloten of nooit worden ingesl
 1. Typ onder **[!UICONTROL Font Embedding Settings]** in het vak **[!UICONTROL Always Embed Fonts]** de namen van de fonts die u wilt insluiten met de formulieren, gescheiden door komma&#39;s. De fonts die u opgeeft, worden alleen ingesloten in het gegenereerde formulier als ze in het formulier worden gebruikt. Deze instelling wordt genegeerd als de optie Lettertype insluiten is ingeschakeld in het XCI-bestand dat aan de service is doorgegeven, omdat in dat geval alle lettertypen die in de PDF worden gebruikt, altijd worden ingesloten.
 1. Typ in het tekstvak **[!UICONTROL Never Embed Fonts]** de namen van de fonts die u niet wilt insluiten met de formulieren, gescheiden door komma&#39;s. De fonts die u opgeeft, worden niet ingesloten in de PDF, zelfs niet als ze worden gebruikt in de gegenereerde PDF. Deze instelling wordt genegeerd als de optie voor het insluiten van lettertypen is uitgeschakeld in het XCI-bestand dat aan de service is doorgegeven, omdat in dat geval geen van de in de PDF gebruikte lettertypen is ingesloten.
 1. Klik op **[!UICONTROL Save]**.
-
