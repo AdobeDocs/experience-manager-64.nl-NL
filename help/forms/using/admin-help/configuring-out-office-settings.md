@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
+exl-id: 8787ffa9-9ddc-439d-9934-8913d1ed459e
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen uit de Montages van het Bureau {#configuring-out-of-office-settings}
 
@@ -71,4 +71,3 @@ Wanneer een gebruiker buiten het kantoor is, kunt u een of meer gebruikers toewi
 
    1. Als er processen zijn die niet naar de standaardgebruiker zouden moeten worden verzonden, voegt de klik een Uitzondering toe, dan selecteert het proces en selecteert een andere gebruiker van de lijst. U kunt ook selecteren niet toewijst om de taak te hebben toegewezen aan de gebruiker die uit het bureau is.
    1. Klik op Opslaan.
-
