@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
+exl-id: a874b1da-26ec-4e33-97bd-f474edc6f4e9
 translation-type: tm+mt
-source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
 
 ---
-
 
 # Artikelen beheren{#managing-articles}
 
@@ -82,7 +82,7 @@ Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen o
 
 >[!CAUTION]
 >
->Alleen artikelen die in AEM zijn gemaakt, kunnen worden geopend in de editor.
+>Alleen artikelen die zijn gemaakt in AEM kunnen worden geopend in de editor.
 
 De workflow voor het bewerken van een artikel:
 
