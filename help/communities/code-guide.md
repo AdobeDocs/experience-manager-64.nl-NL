@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
+exl-id: 022043cd-35ed-49b1-b5b4-5cc92d29cef4
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 1%
 
 ---
-
 
 # Codeerrichtlijnen {#coding-guidelines}
 
@@ -43,4 +43,3 @@ Hieronder vindt u verschillende codeerrichtlijnen en aanbevolen procedures voor 
 
 * [Maven for Communities](maven.md)  gebruiken - hoe u de Community API-jar moet opnemen.
 * [SocialUtils Refactoring](socialutils.md)  - nutsmethodes voor SRP die SocialUtils vervangen.
-
