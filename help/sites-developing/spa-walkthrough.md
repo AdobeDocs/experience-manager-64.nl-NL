@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
+exl-id: 85179139-a841-42b0-8590-d1fb88c1ebbf
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%
 
 ---
-
 
 # SPA Inleiding en Analyse{#spa-introduction-and-walkthrough}
 
@@ -28,7 +28,7 @@ De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binn
 >
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Inleiding {#introduction}
 
@@ -47,7 +47,7 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWij.Ret
 >
 >Dit document gebruikt [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.
+>Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -76,7 +76,7 @@ Door sneller, vloeiend en meer als een native toepassing te zijn, wordt een SPA 
 **Ontwikkelaars**
 
 * Ontwikkelaars willen een duidelijke scheiding tussen inhoud en presentatie.
-* Schone scheiding maakt het systeem uitbreidbaarder en maakt het mogelijk om onafhankelijk front-end te ontwikkelen.
+* Schone scheiding maakt het systeem uitbreidbaarder en maakt een onafhankelijke ontwikkeling aan de voorzijde mogelijk.
 
 ### Hoe werkt een SPA? {#how-does-a-spa-work}
 
