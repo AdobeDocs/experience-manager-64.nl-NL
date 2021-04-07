@@ -7,14 +7,14 @@ uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
+exl-id: db416cbc-27a7-4a2c-b4b3-43e8963faf22
 translation-type: tm+mt
-source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # We.Financiële automatische verzekering Verlenging referentiesite doorlopen {#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
@@ -41,7 +41,7 @@ Het Auto-Verzekeringstoepassingsscenario van Web.Finance is een visuele gesproke
 
 ### Gloria stuurt een mededeling over de verlenging van het verzekeringsbeleid van We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria logt in AEM instantie, klikt **Auto Verzekering Verlengt,** en klikt dan **Open Agent UI.** Klik vooraf vult het verzekeringsdocument met beleidsdetails van Sarah Rose. Gloria klikt **dient** in en een bericht wordt weergegeven op het scherm &quot;Verzending geïnitieerd&quot; en vervolgens in enkele seconden &quot;Verzenden met succes&quot;.
+Gloria logt in AEM instantie, klikt **Auto Verzekering Verlengt,** en klikt dan **Open Agent UI.** Klik vooraf vult het verzekeringsdocument met beleidsdetails van Sarah Rose. Gloria klikt **dient** in en een bericht wordt weergegeven op het scherm &quot;Verzending geïnitieerd&quot; en vervolgens in een paar seconden &quot;Met succes verzonden&quot;.
 
 Sarah ontvangt een e-mail met het onderwerp &quot;Uw automatische Verzekering Verlenging&quot;.
 
