@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 feature: Bijwerken
+exl-id: df03f65b-9951-4fd4-abf7-1672618fc1df
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2719'
 ht-degree: 1%
 
 ---
-
 
 # Gemeenschappelijke herstructurering van de opslagplaats in AEM 6.4{#common-repository-restructuring-in-aem}
 
@@ -856,4 +856,3 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
   </tr>
  </tbody>
 </table>
-
