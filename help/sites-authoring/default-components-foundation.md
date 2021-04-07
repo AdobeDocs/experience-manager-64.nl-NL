@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
+exl-id: c85e442a-eb24-4eda-a49b-089e5988150d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6671'
 ht-degree: 1%
 
 ---
-
 
 # Elementaire componenten{#foundation-components}
 
@@ -1481,4 +1481,3 @@ Het standaardtekstveld kan worden geconfigureerd op de gewenste grootte en met u
 Zo kunt u een knop Verzenden maken voor gebruik in een workflow.
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
-
