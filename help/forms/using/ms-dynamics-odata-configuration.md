@@ -8,14 +8,14 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
 feature: Formuliergegevensmodel
+exl-id: 18df57b6-789a-4b61-9418-fa12294b226f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
 
 ---
-
 
 # Microsoft Dynamics OData-configuratie {#microsoft-dynamics-odata-configuration}
 
