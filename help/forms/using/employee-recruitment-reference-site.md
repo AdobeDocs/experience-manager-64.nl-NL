@@ -7,14 +7,14 @@ uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
+exl-id: f07e3786-d396-47de-83cb-fc7afc423d09
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1449'
 ht-degree: 0%
 
 ---
-
 
 # Werknemersverwijzingssite doorloopt {#employee-recruitment-reference-site-walkthrough}
 
@@ -248,4 +248,3 @@ Sarah typt in haar naam de aansluitende brief te ondertekenen
 ![sarahrosejoininglettersign2](assets/sarahrosejoininglettersign2.png)
 
 Sarah klikt op Ondertekenen om de ondertekening van de aansluitende brief te voltooien
-
