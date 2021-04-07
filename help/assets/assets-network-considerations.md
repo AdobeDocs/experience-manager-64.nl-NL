@@ -3,15 +3,15 @@ title: Overwegingen voor middelennetwerken
 description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van AEM Assets.
 contentOwner: AG
 feature: Gereedschappen voor ontwikkelaars
-role: Architect,beheerder
+role: Architect,Administrator
+exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
-
 
 # Elementnetwerkoverwegingen {#assets-network-considerations}
 
@@ -101,4 +101,3 @@ Hier volgen enkele punten die u in overweging wilt nemen:
 Hier volgt een voorbeeld van de klant voor het definiëren van een workflow met middelen.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
