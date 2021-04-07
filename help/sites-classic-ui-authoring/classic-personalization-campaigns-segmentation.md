@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
+exl-id: 441cf983-e1dc-4343-9c2c-e5ed5891e84b
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 1%
 
 ---
-
 
 # Inzicht in segmentering{#understanding-segmentation}
 
@@ -83,4 +83,3 @@ Als bijvoorbeeld de verwijzende URL (als gedragslijn) wordt gecombineerd met dem
 >[!NOTE]
 >
 >Zie [Segmentatie](/help/sites-administering/campaign-segmentation.md) voor meer informatie over segmenten in AEM.
-
