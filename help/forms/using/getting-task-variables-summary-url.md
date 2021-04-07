@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
+exl-id: f80d006b-6970-4448-aa38-3ffec8b08c18
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
 
 ---
-
 
 # Taakvariabelen ophalen in overzicht-URL {#getting-task-variables-in-summary-url}
 
@@ -89,4 +89,3 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
 Wanneer u een taak opent in de AEM Forms-werkruimte, krijgt de summiere URL toegang tot het CRX-knooppunt en geeft de HTML-renderer het overzicht weer.
 
 De overzichtslay-out kan worden gewijzigd zonder het proces te wijzigen. De HTML-renderer geeft het overzicht op de juiste wijze weer.
-
