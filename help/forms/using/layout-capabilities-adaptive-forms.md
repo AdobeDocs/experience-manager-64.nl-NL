@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 feature: Adaptieve Forms
+exl-id: 887e88c6-4c2b-4ef3-b268-8956fdb4535f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 0%
 
 ---
-
 
 # Indelingsmogelijkheden van adaptieve formulieren {#layout-capabilities-of-adaptive-forms}
 
@@ -177,4 +177,3 @@ Voor de mobiele lay-out kunt u actieknoppen toevoegen met behulp van pictogramme
 ![Vaste mobiele lay-out voor werkbalk](assets/toolbar_layout_mobile_fixed.png)
 
 **Afbeelding:vaste** *indeling voor mobiele apparaten op de werkbalk*
-
