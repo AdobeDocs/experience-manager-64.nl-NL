@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 feature: Bijwerken
+exl-id: a2d6524e-3f5b-4d1e-af64-61ff95889657
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 2%
 
 ---
-
 
 # Forms Repository Herstructurering in AEM 6.4{#forms-repository-restructuring-in-aem}
 
@@ -130,4 +130,3 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
 | **Nieuwe locatie(s)** | `/libs/fd/fp` |
 | **Herstructureringsrichtsnoeren** | Om het even welke verwijzingen naar de /etc malplaatjes zouden uiteindelijk moeten worden bijgewerkt om aan hun `/libs` tegenhangers te richten. |
 | **Opmerkingen** | N.v.t. |
-
