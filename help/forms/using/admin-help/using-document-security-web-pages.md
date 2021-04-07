@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Documentbeveiliging
+exl-id: f93d496e-6bd3-462a-b57a-80085647a636
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
 
 ---
-
 
 # Webpagina&#39;s voor documentbeveiliging gebruiken {#using-the-document-security-webpages}
 
@@ -107,4 +107,3 @@ Meld u af wanneer u klaar bent met het gebruik van de webpagina&#39;s, zodat u u
 
 1. Klik in de rechterbovenhoek van de pagina op Afmelden.
 1. Als er een bericht verschijnt op de aanmeldingspagina, sluit u het browservenster om u volledig af te melden. Anders kunt u de browser voor andere doeleinden gebruiken.
-
