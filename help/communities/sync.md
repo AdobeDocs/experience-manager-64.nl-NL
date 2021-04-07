@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
-role: Beheerder
+role: Administrator
+exl-id: 3a8e8fef-9aef-4b9d-8b0b-e76aa2962b61
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: '2410'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikerssynchronisatie {#communities-user-synchronization} van gemeenschappen
 
@@ -403,5 +403,3 @@ Als de distributie van het Verdelen ontbreekt, probeer de volgende het zuiveren 
    1. Wijzig bij de uitgever de eindpunten voor de exportfunctie of de importer in **[!UICONTROL Apache Sling Distribution Agent - Sync Agents Factory]**.
 
       We kunnen pakketgegevens downloaden en uitpakken om te controleren welke eigenschappen aan andere uitgevers worden doorgegeven en welke gegevens verloren gaan.
-
-
