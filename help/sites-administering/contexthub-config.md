@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 780d1a2d-38f1-4115-a9bd-f466aa3774dd
+exl-id: 6ba1e011-e18d-4e2a-a47c-85a4962cc83c
 translation-type: tm+mt
-source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%
 
 ---
-
 
 # ContextHub configureren {#configuring-contexthub}
 
