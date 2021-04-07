@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
+exl-id: f726cb73-732c-4893-bdb5-10ddcf4a340a
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
-
 
 # Backbone-interactie {#backbone-interaction}
 
@@ -59,4 +59,3 @@ Een voorbeeld:
 1. Het model van de taak heft een backbonegebeurtenis als bericht op dat vraag teruggeeft volledig is.
 1. In een andere weergave luistert de weergave met taakdetails naar deze gebeurtenis vanuit het taakmodel.
 1. De mening van de details van de taak verandert dan het malplaatje van taakdetails om de teruggegeven taak (vorm, details, gehechtheid, nota&#39;s, etc.) aan de gebruiker te tonen.
-
