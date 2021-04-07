@@ -10,14 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configureren
+exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3806'
 ht-degree: 0%
 
 ---
-
 
 # OSGi-configuratie-instellingen{#osgi-configuration-settings}
 
@@ -354,7 +354,7 @@ Er zijn verschillende configuratie-eigenschappen beschikbaar:
 PathPath waarvoor deze authentificatiemanager actief is. Als deze parameter leeg wordt gelaten, is de authentificatiemanager gehandicapt. Het pad/zorgt er bijvoorbeeld voor dat de verificatiehandler wordt gebruikt voor de gehele gegevensopslagruimte.
 
 * **Service**
-RankingOSGi Framework Service Ranking value wordt gebruikt om de volgorde aan te geven die wordt gebruikt om deze service aan te roepen. Dit is een 
+RankingOSGi Framework Service Ranking value wordt gebruikt om de volgorde aan te geven die wordt gebruikt voor het aanroepen van deze service. Dit is een 
 `int` waarde waarbij hogere waarden een hogere prioriteit aangeven.
 
    De standaardwaarde is `0`.
