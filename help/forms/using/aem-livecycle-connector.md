@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Beheerder
+role: Administrator
+exl-id: f40674c1-a1dd-41ef-8a19-82ece3103bcc
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms verbinden met Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
