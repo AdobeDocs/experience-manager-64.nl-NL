@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 1f920892-c52e-42ca-900c-2c7ab3c503b3
+exl-id: d9730cb5-e969-4b18-bf1f-6a0ef13f6fac
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 1%
 
 ---
-
 
 # Productfeed{#product-feed}
 
