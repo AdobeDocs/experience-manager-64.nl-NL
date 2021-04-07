@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
+exl-id: 8369beeb-4628-40ea-9167-717f112768da
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
-
 
 # Application Manager Client JavaAPI Quick Start (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
@@ -819,4 +819,3 @@ public class DeleteApplication_SOAP {
     } 
 }
 ```
-
