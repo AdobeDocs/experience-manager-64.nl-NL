@@ -5,14 +5,14 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
+exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 1%
 
 ---
-
 
 # Configuraties van Cloud Servicen{#cloud-service-configurations}
 
@@ -223,4 +223,3 @@ Deze services worden standaard geleverd:
 >[!NOTE]
 >
 >Zie ook [Een aangepaste Cloud Service maken](/help/sites-developing/extending-cloud-config-custom-cloud.md).
-
