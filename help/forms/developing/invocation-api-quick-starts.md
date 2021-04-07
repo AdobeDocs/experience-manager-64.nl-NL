@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 role: Developer
+exl-id: dcfc1c9f-fedd-4e00-9b09-19268620fc6d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
-
 
 # Snelle start voor oproepAPI {#invocation-api-quick-starts}
 
@@ -1115,4 +1115,3 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
 >[!NOTE]
 >
 >Vele snelle begin die tonen hoe te om de dienstverrichtingen uit te voeren omvatten een codevoorbeeld SwaRef.
-
