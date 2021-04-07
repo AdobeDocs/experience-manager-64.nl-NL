@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
+exl-id: ad529be3-9d31-492f-943f-ef3e99e13586
 translation-type: tm+mt
-source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
 
 ---
-
 
 # Het bepalen van uw Gevallen van de Test{#defining-your-test-cases}
 
@@ -84,7 +84,7 @@ Het cachegeheugen moet ook op correct gedrag worden gecontroleerd.
 
 **De verzender**
 
-De meeste projecten installeren de Dispatcher voor caching en lading het in evenwicht brengen.
+De meeste projecten zullen Dispatcher voor caching en lading het in evenwicht brengen installeren.
 
 Testen is moeilijk (caching vindt plaats op verschillende niveaus en op verschillende locaties) en moet gebeuren op basis van een zwarte doos. De belangrijkste aspecten waarop u wilt testen zijn:
 
