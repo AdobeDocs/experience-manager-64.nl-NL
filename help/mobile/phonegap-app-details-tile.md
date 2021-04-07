@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
+exl-id: 732ef9c7-b556-497d-a157-c1b2945eb4e1
 translation-type: tm+mt
-source-git-commit: c58437f791daa11669198d916f0756ff4830677c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
 
 ---
-
 
 # App-tegel beheren{#manage-app-tile}
 
@@ -171,4 +171,3 @@ Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ont
 
 * [Ontwikkelen voor Adobe PhoneGap Enterprise met AEM](/help/mobile/developing-in-phonegap.md)
 * [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](/help/mobile/administer-phonegap.md)
-
