@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
+exl-id: 7f604d89-c6ad-405d-98cd-80f057466e61
 translation-type: tm+mt
-source-git-commit: 5b9a966480d98403311cdddcbffa267bde68dd1b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 2%
 
 ---
-
 
 # Cookie-gebruik configureren{#configuring-cookie-usage}
 
