@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
+exl-id: 12183806-5e00-46e8-bf25-5379a07a56a4
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 0%
 
 ---
-
 
 # Archiefbestanden {#import-and-manage-archives} importeren en beheren
 
@@ -167,4 +167,3 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Archiefbeheer.
 1. Schakel op de pagina Archiefbeheer het selectievakje in van het archief dat u wilt verwijderen en klik op Verwijderen.
-
