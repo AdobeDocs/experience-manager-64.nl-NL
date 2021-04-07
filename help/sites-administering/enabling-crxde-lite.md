@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
+exl-id: 3d8dc987-2ff9-4f71-bc07-48018caa3af4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 0%
 
 ---
-
 
 # CRXDE Lite inschakelen in AEM{#enabling-crxde-lite-in-aem}
 
@@ -62,4 +62,3 @@ Raadpleeg de volgende pagina&#39;s voor meer informatie over AEM 6 beveiligingsf
 
 * [De lijst AEM beveiligingscontrole](/help/sites-administering/security-checklist.md)
 * [AEM uitvoeren in productielocatie](/help/sites-administering/production-ready.md)
-
