@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
+exl-id: 5057b3d6-bf0c-4bb2-9085-f9add3f1c716
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%
 
 ---
-
 
 # Pagina-informatie ophalen in JSON-indeling{#obtaining-page-information-in-json-format}
 
@@ -616,4 +616,3 @@ De service PageUrlInfoProvider retourneert de volgende gegevens voor het knooppu
     "publishURL": "http://localhost:4503/content/we-retail/us/en"
 }
 ```
-
