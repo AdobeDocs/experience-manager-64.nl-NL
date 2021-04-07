@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7dff7ef2-80d1-434a-b9b0-ac6654736602
 feature: Adaptieve Forms
+exl-id: e4680ede-6a02-4b8b-8a6f-9599a05da8e7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
 
 ---
-
 
 # SOM-expressies gebruiken in aangepaste vormen {#using-som-expressions-in-adaptive-forms}
 
@@ -40,4 +40,3 @@ In deelvensters hebt u toegang tot de functie via de werkbalk van het deelvenste
 ![SOM-expressies extraheren met de werkbalk van het deelvenster](assets/som-expression.png)
 
 Sommige APIs die in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.md) worden vermeld gebruiken de uitdrukking SOM van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de corresponderende SOM-expressie door aan de `getFocus`API in `guideBridge`.
-
