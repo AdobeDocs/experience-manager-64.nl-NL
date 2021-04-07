@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 5ee9d11a-85c2-440d-b487-a38d04dc040b
+exl-id: 83b9a9cb-3f86-472b-b9dc-6ec633003481
 translation-type: tm+mt
-source-git-commit: 3c4b8bf3fd912406657c4cecb75eb2b77dd41bc7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
 
 ---
-
 
 # Afvalverzameling gegevensopslag {#data-store-garbage-collection}
 
@@ -200,4 +200,3 @@ Hieronder ziet u een voorbeeld van de manier waarop de ontbrekende binaire besta
 ```xml
 11:32:39.673 WARN [main] MarkSweepGarbageCollector.java:602 Consistency check failure in the blob store : DataStore backed BlobStore [org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore], check missing candidates in file /tmp/gcworkdir-1467352959243/gccand-1467352959243
 ```
-
