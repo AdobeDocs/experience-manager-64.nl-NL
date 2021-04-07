@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
+exl-id: 6d2226da-f691-4e8b-9494-a25e1c3d4b85
 translation-type: tm+mt
-source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
 
 ---
-
 
 # Websitestructuur {#setup-website-structure} instellen
 
