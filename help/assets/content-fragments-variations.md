@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
+exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
+feature: Contentfragmenten
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1732'
-ht-degree: 10%
+source-wordcount: '1734'
+ht-degree: 11%
 
 ---
-
 
 # Variaties - Authoring van content voor fragmenten {#variations-authoring-fragment-content}
 
@@ -379,4 +381,3 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. Selecteer **[!UICONTROL Synchronize]**, de variatie zal worden bijgewerkt en getoond.
-
