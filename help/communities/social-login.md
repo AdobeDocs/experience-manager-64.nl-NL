@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
-role: Beheerder
+role: Administrator
+exl-id: 85dcae2f-0773-4867-a24c-056bd2f5585e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2689'
+source-wordcount: '2688'
 ht-degree: 0%
 
 ---
-
 
 # Sociale aanmelding bij Facebook en Twitter {#social-login-with-facebook-and-twitter}
 
