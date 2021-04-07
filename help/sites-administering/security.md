@@ -2,6 +2,7 @@
 title: Gebruikersbeheer en beveiliging
 seo-title: Gebruikersbeheer en beveiliging
 description: Meer informatie over gebruikersbeheer en beveiliging in AEM.
+feature: Beveiliging
 seo-description: Meer informatie over gebruikersbeheer en beveiliging in AEM.
 uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
 contentOwner: msm-service
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a67b9e56-944d-424d-a64a-025f369faa5b
+exl-id: 1dd54d3f-419c-4c83-8cd8-4ae0e7feead2
 translation-type: tm+mt
-source-git-commit: ae4942dce6536f670b0f3013a489671a42225bd6
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '5434'
+source-wordcount: '5435'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersbeheer en beveiliging{#user-administration-and-security}
 
