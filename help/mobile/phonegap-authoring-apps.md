@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
+exl-id: dbaa5221-4011-49cf-8123-5f8daa7fae76
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
 
 ---
-
 
 # Mobiele toepassingen ontwerpen{#authoring-mobile-applications}
 
@@ -62,7 +62,7 @@ Klik [hier](/help/mobile/phonegap-app-details-tile.md) voor meer informatie.
 
 ### De pagina-inhoudtegel beheren {#the-manage-page-content-tile}
 
-Inhoud kan in AEM Mobile op dezelfde manier worden gemaakt, bijgewerkt en verwijderd als in AEM Sites. In **De pagina-inhoudtegel beheren** wordt het aantal pagina&#39;s met beheerde inhoud en de laatst gewijzigde inhoud weergegeven. U kunt inhoud inchecken om pagina&#39;s te maken, kopiëren, verplaatsen, verwijderen en bijwerken door op elke record in de tegel te klikken. Als de inhoud eenmaal is bijgewerkt, kunt u een update van de inhoud naar uw klanten uitvoeren via de **Content Packages Tile beheren.**
+Inhoud kan in AEM Mobile op dezelfde manier worden gemaakt, bijgewerkt en verwijderd als in AEM Sites. In **De pagina-inhoudtegel beheren** wordt het aantal pagina&#39;s met beheerde inhoud en de laatste wijziging weergegeven. U kunt inhoud inchecken om pagina&#39;s te maken, kopiëren, verplaatsen, verwijderen en bijwerken door op elke record in de tegel te klikken. Als de inhoud eenmaal is bijgewerkt, kunt u een update van de inhoud naar uw klanten uitvoeren via de **Content Packages Tile beheren.**
 
 ![Content Tile](assets/chlimage_1-138.png)
 
@@ -130,4 +130,3 @@ Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ont
 
 * [Ontwikkelen voor Adobe PhoneGap Enterprise met AEM](/help/mobile/developing-in-phonegap.md)
 * [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](/help/mobile/administer-phonegap.md)
-
