@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7bdf1f06-c298-4695-bad1-e402cf472086
 feature: Correspondentenbeheer
+exl-id: 3bc32053-d35d-4c19-a311-48b0b99eefb8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6807'
 ht-degree: 0%
 
 ---
-
 
 # Documentfragmenten {#document-fragments}
 
@@ -547,4 +547,3 @@ Als u snel een documentfragment wilt maken met eigenschappen en inhoud die verge
 1. Tik op Plakken. Het dialoogvenster Plakken wordt geopend. Als u de documentfragmenten op dezelfde plaats kopieert en plakt, wijst het systeem automatisch namen en titels toe aan de nieuwe exemplaren van letters, maar u kunt de titels en namen van de letters bewerken.
 1. Bewerk indien nodig de titel en de naam waarmee u de kopie van het documentfragment wilt opslaan.
 1. Tik op Plakken. De kopie van het documentfragment wordt gemaakt.
-
