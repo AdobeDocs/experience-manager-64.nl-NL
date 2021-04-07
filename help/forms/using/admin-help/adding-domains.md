@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
+exl-id: f2bafa0c-072c-4599-92bc-4eaafece5b4f
 translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 0%
 
 ---
-
 
 # Domeinen {#adding-domains} toevoegen
 
@@ -87,4 +87,3 @@ Wanneer u MySQL gebruikt als AEM formulierdatabase, gelden de volgende beperking
    * Zoek de domeinnaam die uitgebreide of multi-byte karakters bevat en plaats zijn status aan OBSOLETE.
 
 1. Importeer het bijgewerkte configuratiebestand, zoals beschreven in [Het configuratiebestand importeren en exporteren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).
-
