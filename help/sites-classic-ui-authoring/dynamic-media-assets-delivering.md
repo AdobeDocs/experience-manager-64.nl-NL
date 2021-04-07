@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 79d426a6-bad5-4f6d-a027-ca935576bcb9
+exl-id: 07f143cc-4ba4-4b34-bb6d-641691a1afa7
 translation-type: tm+mt
-source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 13%
 
 ---
-
 
 # Dynamic Media-assets leveren{#delivering-dynamic-media-assets}
 
@@ -30,4 +30,3 @@ Met Dynamic Media hebt u verschillende opties:
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
 * [Dynamic Media-assets aan pagina&#39;s toevoegen](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
-
