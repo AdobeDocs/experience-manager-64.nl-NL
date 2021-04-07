@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
+exl-id: 9f57087f-895d-43b9-9b6a-9cfb4c794c7b
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 0%
 
 ---
-
 
 # Basisstructuur{#scaffolding}
 
@@ -39,7 +39,7 @@ Schaalwaarden worden opgeslagen in de **Tools**-console van de sitebeheerder.
 
 ![howscaffiles_work](assets/howscaffolds_work.png)
 
-Het subformulier bestaat uit een formulier met een veld voor elk stuk inhoud dat de pagina vormt die moet worden gemaakt en vier belangrijke parameters die worden geopend via de pagina **Pagina-eigenschappen** van de basispagina.
+Het substraat bestaat uit een formulier met een veld voor elk stuk inhoud dat de pagina zal vormen die moet worden gemaakt en vier belangrijke parameters die worden geopend via de **Pagina-eigenschappen** van de basispagina.
 
 ![pageprops](assets/pageprops.png)
 
@@ -174,4 +174,3 @@ Na ontgrendelen kunt u de overerving herstellen door op het ontgrendelde hangslo
 >[!NOTE]
 >
 >Als de overerving wordt geannuleerd op paginaniveau (op het tabblad Bibliotheek van Pagina-eigenschappen), kunnen alle componenten worden bewerkt in de modus **Basisstructuur** (ze worden weergegeven in ontgrendelde toestand).
-
