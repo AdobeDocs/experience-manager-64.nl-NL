@@ -5,14 +5,14 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
+exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 7%
 
 ---
-
 
 # Gereedschapsconsoles{#tools-consoles}
 
@@ -343,4 +343,3 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
 >[!NOTE]
 >
 >Sommige van de bovenstaande opties zijn eigenlijk gekoppeld aan de klassieke interface.
-
