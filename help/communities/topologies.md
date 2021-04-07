@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
+exl-id: 0bdb3063-7333-487b-947f-3fe29c6a6eef
 translation-type: tm+mt
-source-git-commit: 3db2abacf2161f8de715a2972bafacdad43563ef
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen topologieën voor gemeenschappen {#recommended-topologies-for-communities}
 
