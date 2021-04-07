@@ -8,14 +8,14 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
 feature: Interactieve communicatie
+exl-id: a65b775d-040c-4069-b43a-6815be959b31
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 0%
 
 ---
-
 
 # Een interactieve communicatie maken {#create-an-interactive-communication}
 
@@ -64,7 +64,6 @@ Het volgende is de eerste vereisten voor het creëren van een Interactieve Meded
    * **[!UICONTROL Web:]** Selecteer deze optie om het webkanaal of de responsieve uitvoer van Interactieve communicatie te genereren.
    * **[!UICONTROL Interactive Communication Web Template*:]** Blader naar de websjabloon en selecteer deze.
    * **[!UICONTROL Theme]** en  **[!UICONTROL Select Theme*]**: Blader en selecteer het thema om het webkanaal van de interactieve communicatie op te maken. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md) voor meer informatie.
-
    Zie [Kanaal en webkanaal afdrukken](/help/forms/using/web-channel-print-channel.md) voor meer informatie over het afdrukkanaal en het webkanaal.
 
 1. Tik op **[!UICONTROL Create]**. De interactieve communicatie wordt gemaakt en er verschijnt een waarschuwingsvenster. Tik **[!UICONTROL Edit]** om de inhoud van de interactieve communicatie op te bouwen, zoals wordt uitgelegd in [Inhoud toevoegen met de interactieve gebruikersinterface voor communicatie ontwerpen](#step2). U kunt ook **[!UICONTROL Done]** tikken en ervoor kiezen om de interactieve communicatie later te bewerken.
@@ -125,7 +124,6 @@ Zie [Documentfragmenten](/help/forms/using/document-fragments.md) voor meer info
    * **[!UICONTROL None]**: De agent zal de waarde voor de variabele invullen.
    * **[!UICONTROL Text Fragment]**: Als deze optie is geselecteerd, kunt u door een tekstdocumentfragment bladeren en dit selecteren waarvan de inhoud in het veld wordt weergegeven. Alleen tekstdocumentfragmenten kunnen worden gebonden aan variabelen die geen variabelen bevatten.
    * **[!UICONTROL Data Model Object]**: Selecteer een eigenschap van het formuliergegevensmodel waarvan de waarde in het veld is ingevuld.
-
    U kunt ook het desbetreffende tekstdocumentfragment configureren. In het deelvenster Eigenschappen wordt de lijst met variabelen in het tekstdocumentfragment weergegeven. U kunt ![edit](assets/edit.png) (uitgeven) naast een veranderlijke naam tikken om de montages van die variabele voor het uitgeven te tonen.
 
 1. Als u een tabel wilt toevoegen terwijl het afdrukkanaal is geselecteerd, past u op het tabblad **[!UICONTROL Assets]** het filter toe om alleen de layoutfragmenten weer te geven. Sleep het vereiste lay-outfragment naar de interactieve communicatie en zet het neer. Een lay-outfragment is gebaseerd op een XDP en kan worden gebruikt om grafische lay-outs of statische en dynamische lijsten in Interactieve Communicatie tot stand te brengen die met dynamische gegevens worden bevolkt.
@@ -211,7 +209,6 @@ In het kanaal van de Druk, kunt u de gehechtheid en bibliotheektoegang vormen om
 
       * **[!UICONTROL Attach This File To Document By Default]**: U kunt deze optie wijzigen als alleen de bijlage niet verplicht is.
       * **[!UICONTROL Mandatory:]** De agent zal niet de gehechtheid in de Agent UI kunnen verwijderen.
-
    ![bijlagen](assets/attachfiles.png)
 
 1. Tik op **[!UICONTROL Done]**.
@@ -357,4 +354,3 @@ Als u Afdrukken gebruikt als Master voor webkanaal en wijzigingen aanbrengt in h
 
    * **[!UICONTROL Discard Changes]**: Hiermee worden alle wijzigingen in het webkanaal genegeerd, ongeacht de wijzigingen die in het webkanaal zijn aangebracht.
    * **[!UICONTROL Keep Changes]**: Hiermee wordt de inhoud alleen gesynchroniseerd voor de doelgebieden waarin overerving niet is geannuleerd.
-
