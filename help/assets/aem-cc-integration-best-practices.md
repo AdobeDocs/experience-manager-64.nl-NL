@@ -3,15 +3,15 @@ title: Aanbevolen werkwijzen voor integratie met AEM en Creative Cloud
 description: Aanbevolen procedures om een AEM implementatie met Adobe Creative Cloud te integreren om workflows voor de overdracht van bedrijfsmiddelen te stroomlijnen en maximale efficiëntie te bereiken
 contentOwner: AG
 feature: Samenwerking,Adobe Asset Link,Experience Manager-bureaubladtoepassing
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3580'
 ht-degree: 15%
 
 ---
-
 
 # Aanbevolen werkwijzen voor AEM- en Creative Cloud-integratie {#aem-and-creative-cloud-integration-best-practices}
 
