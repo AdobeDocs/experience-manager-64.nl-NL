@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
+exl-id: 7317fd2f-9756-4231-b343-ea808ea159ec
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2640'
 ht-degree: 0%
 
 ---
-
 
 # Apps maken en bewerken met de toepassingsconsole{#creating-and-editing-apps-using-the-apps-console}
 
