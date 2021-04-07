@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
+exl-id: cd4b5e40-afd5-422d-ae2e-cfde0f4d6b1a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '10009'
+source-wordcount: '10008'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms aanroepen met webservices {#invoking-aem-forms-using-web-services}
 
@@ -1752,4 +1752,3 @@ Het volgende C# codevoorbeeld ondertekent een interactief formulier dat door de 
 ### Services die beginnen met de letter I produceren ongeldige proxybestanden {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
 De naam van sommige door AEM Forms gegenereerde proxyklassen is onjuist wanneer u Microsoft .Net 3.5 en WCF gebruikt. Dit probleem doet zich voor wanneer proxyklassen worden gemaakt voor de IBMFilenetContentRepositoryConnector, IDPSchedulerService of een andere service waarvan de naam begint met de letter I. De naam van de gegenereerde client in het geval van IBMFileNetContentRepositoryConnector is bijvoorbeeld `BMFileNetContentRepositoryConnectorClient`. De letter I ontbreekt in de gegenereerde proxyklasse.
-
