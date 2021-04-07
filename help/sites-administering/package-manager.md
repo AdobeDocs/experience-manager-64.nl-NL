@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
+exl-id: eebc10fa-1d49-4797-a9e6-b6615bfe0173
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5365'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te met Pakketten te werken{#how-to-work-with-packages}
 
@@ -588,7 +588,7 @@ Nadat u een pakket hebt geüpload, moet u de inhoud installeren. Om de pakketinh
 
 >[!CAUTION]
 >
->Wanneer u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
+>Als u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
 >
 >Als u de inhoud of de invloed van een pakket wilt zien, kunt u:
 >
@@ -896,4 +896,3 @@ U kunt alleen pakketten verwijderen die u hebt geüpload door als volgt te werk 
 ### Pakketten semiprivé maken {#making-packages-semi-private}
 
 U kunt pakketten delen buiten uw organisatie, maar niet openbaar. Deze pakketten worden als semi-particulier beschouwd. Als u deze semi-private pakketten wilt delen, hebt u hulp nodig van Adobe Support. Om dit te doen, open een kaartje met de Steun van Adobe die om een pakket verzoekt wordt ter beschikking gesteld buiten uw organisatie. Ze vragen je om een lijst met Adobe ID die je toegang wilt geven tot je pakketten.
-
