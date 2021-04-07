@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 feature: Adaptieve Forms
+exl-id: 8bb350f2-a160-4943-bd6a-00f87f4e6cbc
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1940'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste formuliersjablonen {#adaptive-form-templates}
 
@@ -199,4 +199,3 @@ Voer de volgende stappen uit om sjablonen weer te geven en te verbergen:
 * Als u een onderbrekingspunt wilt toevoegen, creeer het wanneer u een adaptieve vormmalplaatje ontwerpt.
 
    Voor meer informatie over breekpunten, zie [Responsieve Lay-out](/help/sites-authoring/responsive-layout.md).
-
