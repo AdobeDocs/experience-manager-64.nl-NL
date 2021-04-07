@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
+exl-id: 837c79af-a50f-40bb-b60d-205e1cac3f39
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 0%
 
 ---
-
 
 # Rapporten ontwikkelen{#developing-reports}
 
@@ -99,7 +99,7 @@ Het rapportagekader werkt aan de volgende beginselen:
 
 Het rapportagekader (geïllustreerd door de structuur van een standaardrapport) gebruikt de volgende bouwstenen, die door de verwerkingswachtrij worden gevoed:
 
-![chlimage_1-247](assets/chlimage_1-248.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 ### Pagina {#report-page} rapporteren
 
@@ -445,7 +445,7 @@ Een voorbeelddialoogvenster kan er als volgt uitzien:
 </jcr:root>
 ```
 
-Verschillende vooraf geconfigureerde componenten worden geleverd; naar deze eigenschappen kan worden verwezen in het dialoogvenster, waarbij de eigenschap `xtype` de waarde `cqinclude` heeft:
+Verschillende vooraf geconfigureerde componenten worden geleverd; U kunt hier in het dialoogvenster naar verwijzen met de eigenschap `xtype` met de waarde `cqinclude`:
 
 * **`title`**
 
@@ -639,7 +639,7 @@ N:definitions
 
    * `pathextension`
 
-      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde van een eigenschap van het knooppunt op het opgeloste pad te nemen. Een waarde `de` kan bijvoorbeeld worden voorafgegaan door een pad zoals `/libs/wcm/core/resources/languages`, waarbij de waarde wordt overgenomen van de eigenschap `language`, om de landcode `de` om te zetten in de taalbeschrijving `German`.
+      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde te nemen vanuit een eigenschap van het knooppunt op het opgeloste pad. Een waarde `de` kan bijvoorbeeld worden voorafgegaan door een pad zoals `/libs/wcm/core/resources/languages`, waarbij de waarde wordt overgenomen van de eigenschap `language`, om de landcode `de` om te zetten in de taalbeschrijving `German`.
 
 * `resolverConfig`
 
@@ -1051,7 +1051,7 @@ Een kolom algemeen maken:
 
    Zie `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de overeenkomende componenteigenschap (inclusief het pad).
+   * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de bijbehorende componenteigenschap (inclusief het pad).
 
       Als u bijvoorbeeld het type algemene kolom configureerbaar wilt maken via het dialoogvenster, gebruikt u een veld met de naam `./definitions/type`.
 
@@ -1448,6 +1448,5 @@ Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webcon
 >* één gebruiker en twee rapporten
 
 >
-
 
 
