@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
+exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release van AEM Assets {#aem-assets-release-notes}
 
@@ -128,7 +128,7 @@ AEM 6.4 bevat een reeks functies die verschillende gelaagde opslagvoorkeuren ond
 * De mogelijkheid voor gebruikers om opslagklasse te selecteren en later naar eigen inzicht te wijzigen en regels te definiëren voor de opslag van elementen van de ene klasse naar de andere of de levenscyclus van hun elementen te beheren.
 * De mogelijkheid voor gebruikers om hun opslagkosten te verlagen door een ander AWS of Azure te selecteren.
 
-Raadpleeg de documentatie [Technische vereisten](../sites-deploying/technical-requirements.md) voor een overzicht van ondersteunde platforms.
+Voor een overzicht van ondersteunde platforms raadpleegt u de [documentatie over technische vereisten](../sites-deploying/technical-requirements.md).
 
 ## Gesloten gebruikersgroep {#closed-user-group}
 
