@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
+exl-id: 9fff10fb-4b65-459a-a7a7-6ee9c0c26bf5
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
-
 
 # Inhoudsarchitectuur{#content-architecture}
 
@@ -67,4 +67,3 @@ Het naleven van noemende overeenkomsten zal consistentie aan uw codebasis toevoe
 
    * Alles kleine letters
    * Woordscheiding met afbreekstreepjes
-
