@@ -8,14 +8,14 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
+exl-id: e97ecb77-96a0-44cf-8da9-1e85cc122011
 translation-type: tm+mt
-source-git-commit: 0fb4d181b700e223becfee8e3e68a84d6f964c1d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
-
 
 # Een transactie opnemen voor aangepaste implementaties {#record-a-transaction-for-custom-implementations}
 
@@ -96,4 +96,3 @@ $.ajax({
 * [Overzicht van transactierapporten](/help/forms/using/transaction-reports-overview.md)
 * [Transactierapporten weergeven en begrijpen](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [Transactierapporten Billable API&#39;s](/help/forms/using/transaction-reports-billable-apis.md)
-
