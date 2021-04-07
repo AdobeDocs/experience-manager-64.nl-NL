@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
+exl-id: 735e5880-3226-4b2a-81f7-b8b4baa0d1ec
 translation-type: tm+mt
-source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 0%
 
 ---
-
 
 # Search&amp;Promote toevoegen aan uw pagina{#adding-search-promote-features-to-your-page}
 
@@ -31,5 +31,4 @@ Merk op dat u de mogelijkheden van de Search&amp;Promote slechts kunt gebruiken 
 
 >[!NOTE]
 >
->Details over het toevoegen van Search&amp;Promote aan uw pagina zijn beschikbaar in de klassieke UI-ontwerpdocumentatie. Zie [Zoekfuncties toevoegen aan uw pagina](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) voor meer informatie.
-
+>Details over het toevoegen van Search&amp;Promote-functies aan uw pagina zijn beschikbaar in de klassieke documentatie voor het maken van gebruikersinterface. Zie [Zoekfuncties toevoegen aan uw pagina](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) voor meer informatie.
