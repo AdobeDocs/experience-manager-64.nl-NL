@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: spa
 discoiquuid: a458cc95-cd94-4f3f-9e7b-d6a5780ec4d5
+exl-id: 1af29921-7c24-49b5-9f4c-60671641d4e4
 translation-type: tm+mt
-source-git-commit: a427f9e9020fba4d68f18d16e7373471429d894f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
-
 
 # Integratie SPA en starten{#spa-and-launch-integration}
 
@@ -26,11 +26,11 @@ Adobe Experience Platform Launch is de aanbevolen manier om Analytics, Target en
 >
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Zelfstudie {#tutorial}
 
-Om te begrijpen hoe te om uw SPA met Adobe Experience Platform Launch te integreren, te zien [dit kennisbasisartikel en leerprogramma](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html), die u door de opstelling van de Lancering zullen begeleiden evenals de Experience Cloud die met Hoekig of Reageren wordt gebouwd uitvoeren.
+Om te begrijpen hoe te om uw SPA met Adobe Experience Platform Launch te integreren, te zien [dit kennisbasisartikel en leerprogramma](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html), die u door de opstelling van de Lancering zullen begeleiden evenals Experience Cloud die met Angular of React wordt gebouwd uitvoeren.
 
 >[!NOTE]
 >
