@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
+exl-id: c7a74e20-4cfb-4674-af41-f3333c9b5397
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
 
 ---
-
 
 # WebLogic Server starten en stoppen {#starting-and-stopping-weblogic-server}
 
@@ -119,4 +119,3 @@ Nadat u WebLogic Server sluit, kunt u de bevelherinnering sluiten waarvan u de M
 1. Klik op de knop Uitschakelen onder de beheerde server die u wilt stoppen.
 1. Selecteer Wanneer het Werk voltooit om de server zachtjes te sluiten of de uitgezochte Sluiting van de Kracht nu om de server onmiddellijk tegen te houden zonder aan de gang zijnde taken te voltooien.
 1. Klik in het venster Server Life Cycle Assistant op Ja om het afsluiten te voltooien.
-
