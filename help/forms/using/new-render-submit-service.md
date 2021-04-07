@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
+exl-id: 24ece56a-fc59-410f-b38a-46637c4dc45e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
 
 ---
-
 
 # Nieuwe render- en verzendservice {#new-render-and-submit-service}
 
@@ -149,7 +149,7 @@ Voor XDP Forms:
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **Wat moet de procesontwerper doen om ervoor te zorgen dat het formulier in HTML op een apparaat en in PDF op een bureaublad kan worden weergegeven?**
 
-Niets. Het standaardactieprofiel wordt automatisch gekozen en de renderingmodus wordt automatisch ook geactiveerd.
+Niets. Het standaardprofiel van de Actie wordt automatisch gekozen, en de wijze van het teruggeven wordt ook behandeld, automatisch.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **Wat moet er gebeuren om ervoor te zorgen dat het formulier in HTML op een bureaublad wordt weergegeven?**
 
