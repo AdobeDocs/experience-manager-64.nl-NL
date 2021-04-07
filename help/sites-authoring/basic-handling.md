@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
+exl-id: 9abef452-b435-4419-895c-083cae6cd7d2
 translation-type: tm+mt
-source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2764'
 ht-degree: 4%
 
 ---
-
 
 # Basisbewerkingen {#basic-handling}
 
@@ -469,7 +469,7 @@ Klik of tik op de verticale selectiebalk en sleep het item naar een nieuwe posit
 
 * U kunt analysegegevens tonen door de aangewezen kolommen te tonen gebruikend de dialoog van de Montages van de Mening.
 
-   Met de filteropties aan de rechterkant van de koptekst kunt u de afgelopen 30, 90 of 365 dagen de Anyltische gegevens filteren.
+   Met de filteropties aan de rechterkant van de koptekst kunt u de afgelopen 30, 90 of 365 dagen Anyltische gegevens filteren.
 
    ![screen_shot_2018-03-23at110230](assets/screen_shot_2018-03-23at110230.png)
 
@@ -549,4 +549,3 @@ Deze opties zijn toegankelijk via het chevron naast het veld **Opmerking**.
 Hiermee wordt een deelvenster geopend dat lijkt op [search](/help/sites-authoring/search.md), waarbij de juiste locatiefilters al zijn ingesteld, zodat u de inhoud die u wilt weergeven verder kunt filteren.
 
 ![screen_shot_2018-03-23at111509](assets/screen_shot_2018-03-23at111509.png)
-
