@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
+exl-id: fa2bff05-a3b8-4230-95d6-1fbdc96bac3b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2540'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms for Backup {#preparing-aem-forms-for-backup} voorbereiden
 
@@ -267,4 +267,3 @@ Maak een back-upmodus met de API voor back-up en herstel (webservice):
 1. Informatie ophalen over de back-upmodussessie op de server
 
    Haal de id van de back-upmodus na de bewerking op om te controleren of deze is gelukt. De informatie die u kunt terugwinnen nadat u reservewijze verlaat kan nuttig zijn om met uw reserveprocedures te integreren.
-
