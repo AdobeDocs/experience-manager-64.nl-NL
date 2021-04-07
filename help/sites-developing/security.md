@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
+exl-id: 22c48f8c-38df-4c9b-88cf-67f6ae46e7e1
 translation-type: tm+mt
-source-git-commit: 0fb4d181b700e223becfee8e3e68a84d6f964c1d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
 
 ---
-
 
 # Beveiliging{#security}
 
