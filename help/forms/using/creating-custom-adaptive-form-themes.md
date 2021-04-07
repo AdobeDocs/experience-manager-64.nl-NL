@@ -8,14 +8,14 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
+exl-id: e6aa866f-3483-4db1-abaa-01ee585928dc
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste aangepaste formulierthema&#39;s maken {#creating-custom-adaptive-form-themes}
 
@@ -79,7 +79,7 @@ U maakt een **adaptieve sjabloon** en past het thema toe op de sjabloon. Vervolg
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   U kunt de variabelen gebruiken waarvoor minder nodig is, maar u kunt deze variabelen ook overschrijven of nieuwe, minder variabelen maken.
+   U kunt de variabelen gebruiken waarvoor minder nodig is, maar u kunt ook deze variabelen overschrijven of nieuwe, minder variabelen maken.
 
    >[!NOTE]
    >
@@ -235,4 +235,3 @@ Nadat u een adaptief formulierthema hebt gemaakt, voert u de volgende stappen ui
    ![Opname van CRX-opslagplaats](assets/2-1.png)
 
 1. Maak een adaptief formulier met de sjabloon die u in de vorige stap hebt gemaakt. De vormgeving van het adaptieve formulier wordt bepaald door het thema dat is gemaakt in Een adaptieve sectie voor formulierthema maken van dit artikel.
-
