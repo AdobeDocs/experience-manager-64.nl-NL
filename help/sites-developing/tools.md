@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
+exl-id: 9387cdb4-f8de-4229-90d1-59218ac17561
 translation-type: tm+mt
-source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
 
 ---
-
 
 # Gereedschappen voor testen en bijhouden{#testing-and-tracking-tools}
 
