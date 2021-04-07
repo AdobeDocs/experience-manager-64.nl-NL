@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
+exl-id: 283ef073-b71d-4b48-882f-15f05581c1de
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
 
 ---
-
 
 # Locaties configureren voor Forms {#configuring-locations-for-forms}
 
@@ -93,4 +93,3 @@ De standaardwaarde is een lege tekenreeks.
 >[!NOTE]
 >
 >Als u een hulpprogramma voor tijdelijke reiniging gebruikt, moet u er rekening mee houden dat het verwijderen van deze mappen geen invloed heeft op de functionaliteit, maar dat dit de prestaties gedurende korte tijd aanzienlijk kan beïnvloeden totdat de nieuwe cache wordt gemaakt. U voorkomt dit door deze mappen niet te verwijderen terwijl u de tijdelijke map voor AEM formulieren wist.
-
