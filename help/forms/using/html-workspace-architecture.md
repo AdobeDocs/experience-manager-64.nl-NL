@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
+exl-id: 30bde8d6-7959-4e4b-a6f4-faf52444e67a
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms Workspace Architecture {#aem-forms-workspace-architecture}
 
