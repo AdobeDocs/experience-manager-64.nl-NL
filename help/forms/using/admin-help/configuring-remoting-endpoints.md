@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: aab9d622-d76b-4100-9ca6-e5b86f543381
+exl-id: d8e31f99-0558-4634-ae35-f4a09f34ad6d
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen het Verwijderen eindpunten {#configuring-remoting-endpoints}
 
