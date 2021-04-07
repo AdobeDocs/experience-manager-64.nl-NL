@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 feature: Mobile Forms
+exl-id: f855d3f9-cf3c-4883-b82b-d607250c3dae
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 15%
 
 ---
-
 
 # HTML5-voorbeeld van een XDP-formulier genereren {#generate-html-preview-of-an-xdp-form}
 
