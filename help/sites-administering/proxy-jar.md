@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
+exl-id: fb96ed26-b5b6-4afc-a820-3ef45a9f3abd
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 0%
 
 ---
-
 
 # Proxyserver (proxy.jar){#proxy-server-tool-proxy-jar}
 
