@@ -10,14 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 feature: Bijwerken
+exl-id: 0f075a01-f286-4e16-9061-4e902c553eb9
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # Lijst met verouderde bundels die na de upgrade zijn verwijderd{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
@@ -68,4 +68,3 @@ Bij de upgrade naar AEM 6.3 worden de volgende bundels automatisch verwijderd, a
 * com.day.cq.cq-pinauthhandler, versie 1.0.0, Actief
 * com.day.cq.dam.commons.nekohtml, versie 0.9.5, Actief
 * com.day.crx.crxde-support, versie 2.3.14, geïnstalleerd
-
