@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
 feature: Adaptieve Forms
+exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 1%
 
 ---
-
 
 # Toegankelijke aangepaste formulieren {#creating-accessible-adaptive-forms} maken
 
