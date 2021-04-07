@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Bijwerken
+exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
 
 ---
-
 
 # Herstructurering van de opslagplaats voor elektronische handel in AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
@@ -58,4 +58,3 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
   </tr>
  </tbody>
 </table>
-
