@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
+exl-id: b2814b0d-e843-4aba-8c74-a3be0a96f726
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
 
 ---
-
 
 # Prestaties van de Health Monitor afstemmen{#fine-tuning-health-monitor-performance}
 
@@ -93,4 +93,3 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft e
 1. Klik onder Extra eigenschappen op Java Virtual Machine.
 1. Typ in het vak Algemene JVM-argumenten de argumenten die u nodig hebt.
 1. Klik op OK of Toepassen en klik vervolgens rechtstreeks op Opslaan in de master configuratie.
-
