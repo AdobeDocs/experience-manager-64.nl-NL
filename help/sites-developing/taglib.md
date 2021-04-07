@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
+exl-id: 24d53784-5915-4638-ab2b-26f897cca13b
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2487'
 ht-degree: 1%
 
 ---
-
 
 # Tagbibliotheken{#tag-libraries}
 
