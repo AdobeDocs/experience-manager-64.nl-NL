@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
+exl-id: 268edb9b-0f52-44c4-a75c-d9dfe39e7d17
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 10%
 
 ---
-
 
 # Bewerkbare sjablonen uitproberen in We.Retail{#trying-out-editable-templates-in-we-retail}
 
@@ -77,4 +77,3 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 Raadpleeg voor meer informatie het ontwerpdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of het document voor ontwikkelaars Pagina [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige technische details over bewerkbare sjablonen.
 
 U kunt ook [kerncomponenten](/help/sites-developing/we-retail-core-components.md) willen onderzoeken. Zie het ontwerpdocument [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het document [Developer Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
-
