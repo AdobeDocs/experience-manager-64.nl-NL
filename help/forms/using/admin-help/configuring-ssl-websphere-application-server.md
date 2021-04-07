@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
+exl-id: 653daaa4-9e35-40eb-a61e-274109f5f0d2
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 0%
 
 ---
-
 
 # SSL configureren voor WebSphere-toepassingsserver {#configuring-ssl-for-websphere-application-server}
 
@@ -175,7 +175,7 @@ Voer de volgende stappen uit om de poort dynamisch te maken en het probleem op t
 
 ## Het bestand sling.properties {#configure-the-sling-properties-file} configureren
 
-1. Open [aem-forms_root]\crx-repository\launchpad\sling.properties bestand voor bewerking.
+1. Open [aem-forms_root]\crx-repository\launchpad\sling.properties bestand voor bewerken.
 1. Zoek de eigenschap `sling.bootdelegation.ibm` en voeg `com.ibm.websphere.ssl.*`toe aan het waardeveld. Het bijgewerkte veld ziet er als volgt uit:
 
    ```as3
@@ -183,4 +183,3 @@ Voer de volgende stappen uit om de poort dynamisch te maken en het probleem op t
    ```
 
 1. Sla het bestand op en start de server opnieuw.
-
