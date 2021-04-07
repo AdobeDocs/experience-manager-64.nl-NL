@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 feature: Designer
+exl-id: 8b6b151d-2422-4261-9edb-66efe3d33f8b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
 
 ---
-
 
 # Scripthandtekening gebruiken in HTML5-formulieren {#using-scribble-signature-in-html-forms}
 
