@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 feature: Documentbeveiliging
+exl-id: dbf97dc1-cf05-4d45-859e-60ff01186e51
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
 
 ---
-
 
 # AEM inschakelen om te zoeken naar met documentbeveiliging beveiligde PDF- en Microsoft Office-documenten{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
@@ -70,4 +70,3 @@ Een veilige verbinding laat naadloze stroom van informatie tussen AEM Forms op J
 
 1. Meld u als beheerder aan bij AEM Assets.
 1. Maak een map in AEM Digital Asset Manager en upload een met een beleid beveiligd PDF- of Microsoft Office-document naar de nieuwe map. Zoek nu de inhoud van documenten die met een beleid zijn beveiligd met AEM zoekopdracht. Het moet het document met gezochte tekst terugkeren.
-
