@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
+exl-id: a2a299b5-a15a-47d9-a9d8-83f45917d080
 translation-type: tm+mt
-source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 1%
 
 ---
-
 
 # Best practices voor{#best-practices}
 
@@ -104,4 +104,3 @@ HTML Template Language (HTL) is een nieuw HTML-sjabloonsysteem dat is geïntrodu
 >
 >De volgende meerdelige zelfstudie kan van belang zijn voor de beste praktijken om een nieuw AEM project op te zetten, die de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt en de componentenontwikkeling detailleert:\
 >[Aan de slag met AEM Sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
-
