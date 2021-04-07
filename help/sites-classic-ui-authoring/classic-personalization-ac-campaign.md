@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
+exl-id: 8e5b68b0-357d-4b9e-bb52-6879d29ce0d8
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
 
 ---
-
 
 # Werken met Adobe Campaign 6.1 en Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
@@ -191,4 +191,3 @@ In Adobe Campaign 6.1:
 >[!NOTE]
 >
 >Zie [AEM koppelen met Adobe Campaign Standard en Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) onder [Werken met Adobe Campaign 6.1 en Adobe Campaign Standard](/help/sites-authoring/campaign.md) in de standaard ontwerpdocumentatie voor meer informatie.
-
