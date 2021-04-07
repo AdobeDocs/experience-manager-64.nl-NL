@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: fbe70162-ced6-4989-9322-e12772edbcbc
 feature: Mobile Forms
+exl-id: b7f0b209-3970-49ad-a1d8-5a053be0d2bc
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1897'
 ht-degree: 0%
 
 ---
-
 
 # Veelgestelde vragen (FAQ) voor HTML5-formulieren {#frequently-asked-questions-faq-for-html-forms}
 
@@ -207,4 +207,3 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 1. Zijn er gereserveerde trefwoorden in HTML5-formulieren?
 
    Antwoord: Alle API&#39;s voor HTML5-formulieren zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan [HTML5-formulieren-API&#39;s](/help/forms/using/scripting-support.md). Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld, `_fpField1`
-
