@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
+exl-id: 2d0f11ac-f24b-431e-9076-3e6099eab4ac
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 1%
 
 ---
-
 
 # Paginacontent bewerken{#editing-page-content}
 
@@ -307,4 +307,3 @@ Formuliervelden die door formuliercomponenten worden gerenderd, mogen geen waard
 >[!NOTE]
 >
 >Er zijn speciale machtigingen vereist voor het ongedaan maken en opnieuw uitvoeren van wijzigingen in bestanden en afbeeldingen. De historie voor het ongedaan maken van wijzigingen in bestanden en afbeeldingen duurt bovendien minimaal uren. Na deze tijd is het ongedaan maken van de wijzigingen echter niet gegarandeerd. Uw beheerder kan toestemmingen verstrekken en de standaardtijd van tien uren veranderen.
-
