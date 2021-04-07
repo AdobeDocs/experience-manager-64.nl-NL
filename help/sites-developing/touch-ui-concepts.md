@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
+exl-id: a89cf964-cc9f-46d7-afd8-150d48948513
 translation-type: tm+mt
-source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 0%
 
 ---
-
 
 # Concepten van AEM Touch-Enabled UI{#concepts-of-the-aem-touch-enabled-ui}
 
@@ -276,7 +276,7 @@ De [granite UI-beheercomponenten](https://helpx.adobe.com/experience-manager/6-4
 Doel:
 
 * Unified look-and-feel voor beheertoepassingen
-* RAD voor beheertoepassingen
+* Rad voor beheertoepassingen
 
 Implementatie:
 
@@ -512,4 +512,3 @@ Doel:
 Implementatie:
 
 * jQuery-plug-ins of JavaScript-modules die voldoen aan AMD
-
