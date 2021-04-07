@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 19cb3946-32ba-4f0b-89f0-f9272f2373d2
+exl-id: 40e24cc6-95a9-4efd-b812-4144ba44b071
 translation-type: tm+mt
-source-git-commit: f98eccdb0251ff0262017fa42529576ba5feac97
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelen met CRXDE Lite {#developing-with-crxde-lite}
 
@@ -306,4 +306,3 @@ U kunt:
 >[!NOTE]
 >
 >Zie [Gebruikers, Groepen en het Beleid van de Rechten van de Toegang](/help/sites-administering/user-group-ac-admin.md) voor meer informatie.
-
