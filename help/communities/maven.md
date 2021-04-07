@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
+exl-id: d86411b9-6ed1-4091-bf5c-d46b4e518da4
 translation-type: tm+mt
-source-git-commit: 5affffac6f953bcf1d436d8492ad6dd2a041b3b4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
 
 ---
-
 
 # Maven gebruiken voor Gemeenschappen {#using-maven-for-communities}
 
