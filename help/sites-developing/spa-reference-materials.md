@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: c3a81baa-98b0-40b4-bd34-f39e8491acca
+exl-id: d4f7f94c-11f2-47c7-84ad-115aa5f2a06e
 translation-type: tm+mt
-source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
-
 
 # Referentiematerialen {#spa-reference-materials} SPA
 
@@ -27,12 +27,12 @@ Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules v
 >[!NOTE]
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist [AEM 6.4 de dienstpak 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 * [Componenttoewijzing](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Paginamodellenbeheer](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [Bewerkbare componenten Reageren](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Hoekbewerkbare componenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Bewerkbare angulars](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Open Source GitHub Repositories {#github-repositories}
 
@@ -41,5 +41,5 @@ Het volgende is de open bronbewaarplaatsen op GitHub voor de SPA bibliotheken.
 * [Componenttoewijzing](https://github.com/adobe/aem-spa-component-mapping)
 * [Paginamodellenbeheer](https://github.com/adobe/aem-spa-page-model-manager)
 * [Bewerkbare componenten Reageren](https://github.com/adobe/aem-react-editable-components)
-* [Hoekbewerkbare componenten](https://github.com/adobe/aem-angular-editable-components)
+* [Bewerkbare angulars](https://github.com/adobe/aem-angular-editable-components)
 * [SPA Project Core](https://github.com/adobe/aem-spa-project-core)
