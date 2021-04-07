@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
+exl-id: 84aa46d5-4ca4-4f6e-b0b9-fc9907be00a5
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
 
 ---
-
 
 # Scores en Badges Essentials {#scoring-and-badges-essentials}
 
@@ -100,7 +100,7 @@ U kunt als volgt snel een logbestand instellen:
 
 
 
-![chlimage_1-247](assets/chlimage_1-248.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 Logboekvermeldingen weergeven:
 
@@ -277,4 +277,3 @@ Een gesorteerde lijst met leden weergeven op basis van punten:
 
 * [Leaderboard-](functions.md#leaderboard-function) functionaliteit voor opname in een community-site of groepssjabloon.
 * [Leaderboard-component](enabling-leaderboard.md), de aanbevolen component van de Leaderboard-functie, voor het ontwerpen van pagina&#39;s.
-
