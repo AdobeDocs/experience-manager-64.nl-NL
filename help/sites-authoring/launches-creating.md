@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
+exl-id: 4b9d2f5f-aae7-4366-b6a6-a8277155cee9
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 14%
 
 ---
-
 
 # Lanceringen maken{#creating-launches}
 
@@ -93,7 +93,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
-1. Gebruik **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
+1. Gebruik **Maken** om het proces te voltooien en een nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
    Als u de console terugkeert (met **Done**) kunt u uw lancering zien (en toegang hebben) van of:
 
@@ -155,7 +155,7 @@ Om een geneste lancering van **Sites** te creëren console - die op een bestaand
 
 1. Voer de **Titel starten** en alle andere vereiste gegevens in (zoals bij een normale start).
 
-1. Gebruik **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
+1. Gebruik **Maken** om het proces te voltooien en een nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
    Als u **Gereed** selecteert, keert u terug naar het spoor met **Referenties** van de **Sites**-console. Als u de juiste pagina selecteert, wordt de nieuwe startpagina weergegeven.
 
@@ -170,4 +170,3 @@ U kunt een lancering van [lanceert console](/help/sites-authoring/launches.md#th
 >[!CAUTION]
 >
 >Als u een opstart verwijdert, wordt de opstart zelf en alle afstammende geneste opstarties verwijderd.
-
