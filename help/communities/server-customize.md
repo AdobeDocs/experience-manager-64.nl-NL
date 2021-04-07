@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
+exl-id: fbe2a617-e926-4842-a3bc-8d193bd367dc
 translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
 
 ---
-
 
 # Aanpassing aan serverzijde {#server-side-customization}
 
@@ -128,4 +128,3 @@ Zie ook [Storage Resource Provider (SRP) voor UGC](srp.md) voor meer informatie 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan clientzijde☐](client-customize.md)** |
 |---|---|
 |  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
-
