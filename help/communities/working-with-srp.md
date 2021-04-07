@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
-role: Beheerder
+role: Administrator
+exl-id: 4ff530ae-c676-4259-86f2-a3881843b642
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
-
 
 # SRP - Community Content Storage {#srp-community-content-storage}
 
