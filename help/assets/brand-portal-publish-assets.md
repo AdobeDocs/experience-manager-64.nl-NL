@@ -3,15 +3,15 @@ title: Mappen publiceren naar Brand Portal
 description: Leer hoe u middelen publiceert en publiceert naar Brand Portal.
 contentOwner: VG
 feature: Brand Portal
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 39%
 
 ---
-
 
 # Assets publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
