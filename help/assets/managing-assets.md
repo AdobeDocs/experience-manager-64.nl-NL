@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: a87c7562-0d61-403e-9e8e-e706cac9b7c5
+feature: Beheer van bedrijfsmiddelen
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '120'
 ht-degree: 13%
 
 ---
-
 
 # Informatie over het beheren van Dynamic Media-elementen {#managing-assets}
 
@@ -28,4 +30,3 @@ In de volgende onderwerpen wordt beschreven wat u moet doen om Dynamic Media-mid
 * [Dynamic Media-assets vooraf bekijken](previewing-assets.md)
 * [Dynamic Media-middelen publiceren](publishing-dynamicmedia-assets.md)
 * [Werken met kiezers](working-with-selectors.md)
-
