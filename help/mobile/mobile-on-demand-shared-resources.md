@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
+exl-id: 94ac30a5-6ac8-4bbf-8ea6-e10bc7db4f31
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
-
 
 # Gedeelde bronnen uploaden {#uploading-shared-resources}
 
@@ -49,7 +49,7 @@ Voer de volgende stappen uit om uw gedeelde bronnen voor een artikel te uploaden
 1. Selecteer het artikel uit **Artikelen beheren** tegel.
 1. Klik **Gedeelde Middelen** uploaden om uw gedeelde Middelen van HTML te uploaden.
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-135](assets/chlimage_1-133.png)
 
 ### De volgende stap {#the-next-step}
 
