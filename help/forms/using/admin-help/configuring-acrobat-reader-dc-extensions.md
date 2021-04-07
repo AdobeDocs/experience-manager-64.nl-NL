@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
+exl-id: 3609ad29-f5b4-4426-8bbc-7c2e38f9b140
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
 
 ---
-
 
 # Acrobat Reader DC-extensies configureren voor het vastleggen van gegevens {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
@@ -40,4 +40,3 @@ Voor het vastleggen van gegevens moet u een gebruikersrol toewijzen om toegang t
 1. Klik op Gebruikers/groepen zoeken op het tabblad Rolgebruikers/groepen.
 1. Klik in het scherm Gebruikers en groepen zoeken op Zoeken, selecteer de gebruikers die de gebruikersrol voor het vastleggen van gegevens nodig hebben en klik op OK.
 1. Klik in het scherm Rol bewerken op Opslaan.
-
