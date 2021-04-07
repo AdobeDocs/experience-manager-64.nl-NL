@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
+exl-id: 9b973d03-fd0a-4c22-8045-7dddc024e553
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 5%
 
 ---
-
 
 # Authoring van getargete content met targetingmodus{#authoring-targeted-content-using-targeting-mode}
 
@@ -175,7 +175,7 @@ U kunt aangepaste voorstellen opslaan in een aanbiedingsbibliotheek als u beslui
 
 ### Ervaringen toevoegen en verwijderen met de doelmodus {#adding-and-removing-experiences-using-targeting-mode}
 
-Met de stap Maken van [het het richten proces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), kunt u ervaringen toevoegen en verwijderen. Bovendien kunt u een ervaring dupliceren en ook de naam ervan wijzigen.
+Met de stap Maken van [het het richten proces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), kunt u ervaringen toevoegen en verwijderen. Bovendien kunt u een ervaring dupliceren en deze ook een andere naam geven.
 
 #### Ervaringen toevoegen met de doelmodus {#adding-experiences-using-targeting-mode}
 
@@ -727,4 +727,3 @@ Als u Client Context (clientzijde) selecteert als de engine:
 U selecteert **Adobe Campaign** als motor als u AEM met Adobe Campaign integreert. Zie [AEM integreren met Adobe Campaign](/help/sites-administering/campaign.md) voor meer informatie.
 
 Selecteer **ContextHub** als motor als u ContextHub voor het richten gebruikt. Zie [Contexthub configureren.](/help/sites-administering/contexthub-config.md)
-
