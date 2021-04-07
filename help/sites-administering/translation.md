@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 67faa2ee-cb12-44b0-8bfb-534d1d6c360a
 legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
 feature: Taalkopie
+exl-id: 3a3f5c4d-6c3f-4201-acc8-dbd138bb59ba
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud vertalen voor meertalige sites{#translating-content-for-multilingual-sites}
 
