@@ -5,14 +5,14 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
+exl-id: a72c0f77-458f-4ea0-b8ca-59e71fef2c5d
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor e-mailsjablonen{#best-practices-for-email-templates}
 
