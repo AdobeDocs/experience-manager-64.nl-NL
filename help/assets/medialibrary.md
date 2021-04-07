@@ -4,14 +4,14 @@ description: '[!DNL Experience Manager Assets] en Mediabibliotheek voor middelen
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Architect,Leader
+exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
 translation-type: tm+mt
-source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 <!--
 
