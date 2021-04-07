@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
+exl-id: 39ecacda-2941-4b57-a001-e7ad1349723c
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1668'
 ht-degree: 3%
 
 ---
-
 
 # Integreren met Livefyre{#integrating-with-livefyre}
 
@@ -149,7 +149,7 @@ Met de UGC-importmodule kunt u Twitter- en Instagram door gebruikers gegenereerd
 UGC importeren in AEM Assets:
 
 1. Navigeer vanaf de AEM homepage naar **Middelen > Bestanden**.
-1. Klik **Maken**, dan klik **Invoer UGC.**
+1. Klik **Create**, dan klik **Importeer UGC.**
 
    ![livefyre-aem-import-ugc](assets/livefyre-aem-import-ugc.png)
 
@@ -234,4 +234,3 @@ Nadat u de productcatalogus hebt geïmporteerd, worden de producten in real-time
 | Storiseren 2 |  | X | X | X |
 | Trend |  | X | X | X |
 | Knop Uploaden |  | X | X | X |
-
