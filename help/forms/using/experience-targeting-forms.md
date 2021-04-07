@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
+exl-id: 5a10ffea-2c69-4902-9754-399bd2e125f1
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
 
 ---
-
 
 # Gerichte ervaringen maken in AEM Forms {#create-targeted-experiences-in-aem-forms}
 
