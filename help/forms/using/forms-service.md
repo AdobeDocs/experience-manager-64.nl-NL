@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
+exl-id: a1c7c90f-6b50-4bc1-9972-1d3bdf8887ce
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 5%
 
 ---
-
 
 # Forms-service {#forms-service}
 
@@ -58,4 +58,3 @@ Hieronder ziet u de voordelen van het gebruik van fragmenten:
 * **Inhoud opnieuw gebruiken**: U kunt inhoud opnieuw gebruiken in meerdere formulierontwerpen. Maak een fragment als u delen van dezelfde inhoud snel opnieuw wilt gebruiken in meerdere formulieren. Het kopiëren of opnieuw maken van de inhoud duurt langer. Fragmenten voor onderdelen die vaak voorkomen in een formulierontwerp, zorgen ook voor een consistente inhoud en weergave in alle formulieren die ernaar verwijzen.
 * **Algemene updates**: U kunt globale wijzigingen in meerdere formulieren slechts eenmaal aanbrengen in een bestand. U kunt de inhoud, scriptobjecten, gegevensbindingen, lay-out of stijlen in een fragment wijzigen. Alle XDP-formulieren die naar het fragment verwijzen, weerspiegelen de wijzigingen.
 * **Gedeeld formulier maken**: U kunt het maken van formulieren delen met verschillende bronnen. Formulierontwikkelaars met ervaring in het schrijven van scripts of andere geavanceerde functies van AEM Forms Designer kunnen fragmenten ontwikkelen en delen die gebruikmaken van scripts en dynamische eigenschappen. Formulierontwerpers kunnen de fragmenten gebruiken om formulieren te ontwerpen. Bovendien kunnen ze de fragmenten gebruiken om ervoor te zorgen dat alle onderdelen van een formulier een consistente weergave en functionaliteit hebben in meerdere formulieren.
-
