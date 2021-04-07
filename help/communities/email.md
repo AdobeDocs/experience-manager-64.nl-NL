@@ -10,15 +10,15 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Beheerder
+role: Administrator
+exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
-
 
 # E-mail {#configuring-email} configureren
 
@@ -184,4 +184,3 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 De rode driehoeken geven de gewijzigde eigenschappen aan. Sla de wijzigingen op:
 
 * Selecteer **[!UICONTROL Save All]**
-
