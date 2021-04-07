@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
+exl-id: 27aa405d-2388-4f91-85d0-1a8709e0d5d0
 translation-type: tm+mt
-source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 1%
 
 ---
-
 
 # Inhoud-eigenschappen gebruiken om inhoud te exporteren{#using-content-properties-to-export-content}
 
