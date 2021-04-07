@@ -8,14 +8,14 @@ topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 feature: Adaptieve Forms
+exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 1%
 
 ---
-
 
 # Aangepaste formulieren maken met JSON-schema {#creating-adaptive-forms-using-json-schema}
 
@@ -459,4 +459,3 @@ U hebt twee opties:
 
 * Door de boomstructuur schuiven
 * Gebruik het vak Zoeken om een element te zoeken
-
