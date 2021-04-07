@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
+exl-id: 93cdc2db-e8a6-478b-a511-53e0688ebc4d
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
 
 ---
-
 
 # Een domein {#delete-a-domain} verwijderen
 
@@ -26,4 +26,3 @@ Als u een domein met de zelfde naam zoals een geschrapt domein creeert, wordt he
 
 1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Domain Management]**.
 1. Selecteer het selectievakje voor het domein dat u wilt verwijderen, klik op **[!UICONTROL Delete]** en klik vervolgens op **[!UICONTROL OK]**.
-
