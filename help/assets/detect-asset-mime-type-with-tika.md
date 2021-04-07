@@ -3,15 +3,15 @@ title: Apache Tika gebruiken om MIME-type van digitale elementen te detecteren
 description: Schakel Apache Tika in om AEM Assets te helpen bij het detecteren van het MIME-type van elementen uit de inhoudsstroom tijdens het uploaden in plaats van de bestandsextensie.
 contentOwner: AG
 feature: Metagegevens,Gereedschappen voor ontwikkelaars,Middelenbeheer
-role: Beheerder, architect
+role: Administrator,Architect
+exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '190'
 ht-degree: 3%
 
 ---
-
 
 # Apache Tika gebruiken om MIME-type van digitale elementen {#detecting-mime-type-of-assets-using-apache-tika} te detecteren
 
