@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 87e62346-98d5-40ec-a3ef-904adf667425
+exl-id: 2bbcc8d0-c1c7-4901-836f-44b8a2153a46
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met Adobe Search&amp;Promote{#integrating-with-adobe-search-promote}
 
@@ -90,7 +90,7 @@ Vorm één of meerdere verbindingen aan Search&amp;Promote zodat uw Web-pagina&#
    >
    >met uw geldige e-mail&amp;Promote referenties (e-mail/wachtwoord).
    >
-   >Let op de URL in de adresbalk van de browser. Het moet er ongeveer als volgt uitzien:
+   >Let op de URL in de adresbalk van de browser. Het zou iets gelijkaardig aan het volgende moeten kijken:
    >
    >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
@@ -126,7 +126,7 @@ Als uw Search&amp;Promote-account zich in Azië of Europa bevindt, moet u het st
 
 ## Search&amp;Promote toevoegen aan Sidetrap {#adding-search-promote-components-to-sidekick}
 
-Bewerk in de modus [!UICONTROL Design] een component **[!UICONTROL par]** om de Search&amp;Promote-componenten toe te staan in [!UICONTROL Sidekick]. (Zie de documentatie [Components](/help/sites-developing/components.md) voor meer informatie.)
+Bewerk in de modus [!UICONTROL Design] een **[!UICONTROL par]**-component om de Search&amp;Promote-componenten toe te staan in [!UICONTROL Sidekick]. (Zie de documentatie [Components](/help/sites-developing/components.md) voor meer informatie.)
 
 Voor informatie over het gebruiken van de componenten, zie [Search&amp;Promote eigenschappen toevoegen aan een Web-pagina](/help/sites-authoring/search-and-promote.md).
 
