@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
+exl-id: 537b86f5-ad38-4419-8dde-40ec08091b7e
 translation-type: tm+mt
-source-git-commit: 770e435f41102b2d795c88cbb361de510564d319
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikerssynchronisatie{#user-synchronization}
 
@@ -601,5 +601,3 @@ Als u een uitgever wilt verwijderen uit [Apache Sling Distribution Agent - Sync 
    * gebruikerssynchronisatie opnieuw inschakelen
 
       * Schakel het selectievakje `Enabled` in voor [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)
-
-
