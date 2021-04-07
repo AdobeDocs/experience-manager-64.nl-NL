@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
+exl-id: 311ffab4-8bc9-486b-9ca5-a958f13f16f8
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 4%
 
 ---
-
 
 # Teasers en strategieën{#teasers-and-strategies}
 
@@ -122,7 +122,7 @@ Als we dit vervolgens toepassen op een bezoeker waar:
 
 We zien het resultaat:
 
-* succes van overeenkomst - los om het even welke segmenten die aan het meetapparaat worden toegewezen met succes voor de huidige bezoeker op?
+* succes van overeenkomst - los om het even welke segmenten die aan het meetapparaat worden toegewezen succesvol voor de huidige bezoeker op?
 * versterkingsfactor - de hoogste versterkingsfactor van alle toepasselijke segmenten
 * clickstream-score - het cumulatieve totaal voor alle toepasselijke tagtreffers
 
@@ -273,4 +273,3 @@ Naast de campagneweergave in de MCM bevat de campagnepagina ook informatie over 
    Hier ziet u een overzicht van de definities van de teaser en de weergavestatistieken:
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
-
