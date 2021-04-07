@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
+exl-id: 5fae4a4c-c97a-4541-bdc5-63ef4ca0172c
 translation-type: tm+mt
-source-git-commit: 7cced63c97b36ec3ab69e2fdcd347fffc3edf947
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om AEM Projecten te ontwikkelen gebruikend Eclipse{#how-to-develop-aem-projects-using-eclipse}
 
@@ -135,4 +135,3 @@ Om dat te doen:
    >[!NOTE]
    >
    >Als u `/libs/foundation/global.jsp` of andere JSPs in `/libs` omvat, zult u dat aan uw project moeten kopiëren zodat kan de Verduistering de opneming oplossen. Tegelijkertijd moet u ervoor zorgen dat het pakket niet door Maven in het inhoudspakket wordt opgenomen. Hoe dit te bereiken wordt beschreven in [Hoe te om AEM Projecten te bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
-
