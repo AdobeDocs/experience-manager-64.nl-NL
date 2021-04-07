@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
 feature: Bijwerken
+exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 0%
 
 ---
-
 
 # Bijwerken naar AEM 6.4{#upgrading-to-aem}
 
@@ -90,4 +90,3 @@ In 6.4 was er veel nadruk op het behoud van alle nieuwe functies achterwaarts co
 Tot slot, in uw 6.4 ontwikkelingscyclus, helpen de eigenschappen die onder Duurzame Verbeteringen worden geïntroduceerd (zie [Duurzame Verbeteringen](/help/sites-deploying/sustainable-upgrades.md)) u beste praktijken volgen om toekomstige verbeteringen nog efficiënter en naadloos te maken.
 
 ![6_4_upgrade_overviewflow-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-
