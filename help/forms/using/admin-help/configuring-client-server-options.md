@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Documentbeveiliging
+exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 0%
 
 ---
-
 
 # De documentbeveiligingsserver {#configure-the-document-security-server} configureren
 
@@ -1052,4 +1052,3 @@ U kunt de scalability van de server van de documentveiligheid verhogen door de i
    >Standaard wordt de waarde van de `DisableGlobalOfflineSynchronizationData`toets ingesteld op `false`.
 
 1. Sla het configuratiebestand op en importeer het. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-
