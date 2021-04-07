@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
-role: Beheerder
+role: Administrator
+exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
-
 
 # Zoeken naar formulieren en elementen {#searching-for-forms-and-assets}
 
