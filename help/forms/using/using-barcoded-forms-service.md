@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: dcf60604-c401-4c74-95c7-e7d4457fdfe5
+exl-id: 47d16792-c418-45fe-aa79-e66876d6d352
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 1%
 
 ---
-
 
 # Barcoded Forms Service {#barcoded-forms-service}
 
@@ -304,4 +304,3 @@ function saveW3CDocument(inputDoc, filePath) {
    os.close();
 }
 ```
-
