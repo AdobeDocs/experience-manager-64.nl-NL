@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
+exl-id: 042974ee-2c0a-411d-accf-6a17b8e95f90
 translation-type: tm+mt
-source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 1%
 
 ---
-
 
 # Best practices voor {#best-practices}
 
@@ -80,7 +80,7 @@ De volgende richtlijnen helpen ervaren AEM ontwikkelaars voor sites die sjablone
 **De voorkeur geven aan microbibliotheken via volledige stapel**
 
 * De tijd die nodig is om de inhoud op het glas van het apparaat te krijgen, wordt vertraagd door elke bibliotheek waarvan uw artikelen afhankelijk zijn. Deze vertraging wordt vergroot wanneer een nieuwe webweergave wordt gebruikt om elk artikel te renderen. Elke bibliotheek moet dus opnieuw volledig worden geïnitialiseerd
-* Als uw artikelen niet als SPA zijn samengesteld (apps met één pagina), hoeft u waarschijnlijk geen volledige stapelbibliotheek zoals Hoek op te nemen
+* Als uw artikelen niet als SPA zijn samengesteld (apps met één pagina), hoeft u waarschijnlijk geen volledige stapelbibliotheek zoals Angular op te nemen
 * Voorkeur voor kleinere bibliotheken voor één doel om de interactiviteit toe te voegen die uw pagina vereist, zoals [Fastclick](https://github.com/ftlabs/fastclick) of [Velocity.js](https://velocityjs.org)
 
 **Grootte van artikellading minimaliseren**
