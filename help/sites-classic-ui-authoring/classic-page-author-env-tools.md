@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
+exl-id: f073c876-94cd-405d-885f-bfe433817ff4
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
 
 ---
-
 
 # Ontwerpen - het Milieu en Hulpmiddelen{#authoring-the-environment-and-tools}
 
