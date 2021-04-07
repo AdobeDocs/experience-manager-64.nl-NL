@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
+exl-id: 38da6522-46ef-4304-a089-209db11ff32a
 translation-type: tm+mt
-source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3298'
 ht-degree: 0%
 
 ---
-
 
 # Paginasjablonen - Bewerkbaar {#page-templates-editable}
 
@@ -81,7 +81,6 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
       * Als u een malplaatje in een douanemap buiten de wij.Retail steekproefinhoud creeert, kunt u de Componenten van de Stichting kiezen of [de Componenten van de Kern](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) gebruiken.
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.
-
    Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) voor meer informatie over de manier waarop een sjabloonauteur de structuur definieert.
 
    Zie [Structuur](/help/sites-developing/page-templates-editable.md#structure) in dit document voor technische details over de structuur.
@@ -92,7 +91,6 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
       * Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen.
    * Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
-
    Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) voor meer informatie over hoe een sjabloonauteur beleid definieert.
 
    Voor technische details van beleid, zie [Inhoudsbeleid](/help/sites-developing/page-templates-editable.md#content-policies) in dit document.
@@ -101,7 +99,6 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    * Met Eerste inhoud wordt inhoud gedefinieerd die wordt weergegeven wanneer een pagina voor het eerst wordt gemaakt op basis van de sjabloon.
    * De initiële inhoud kan vervolgens worden bewerkt door auteurs van pagina&#39;s.
-
    Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-initial-content-author) voor meer informatie over de manier waarop een sjabloonauteur de structuur definieert.
 
    Zie [Initiële inhoud](/help/sites-developing/page-templates-editable.md#initial-content) in dit document voor technische details over de initiële inhoud.
@@ -110,7 +107,6 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    * U kunt de sjabloonlay-out voor een reeks apparaten definiëren.
    * De responsieve indeling voor sjablonen werkt op dezelfde manier als voor het ontwerpen van pagina&#39;s.
-
    Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-layout-template-author) voor meer informatie over hoe de sjabloonauteur de sjabloonlay-out definieert.
 
    Zie [Layout](/help/sites-developing/page-templates-editable.md#layout) in dit document voor technische details over sjabloonlay-out.
@@ -118,8 +114,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 1. Schakel de sjabloon in en sta deze vervolgens toe voor specifieke inhoudstructuren.
 
    * U kunt een sjabloon in- of uitschakelen om de sjabloon beschikbaar of niet beschikbaar te maken voor auteurs van pagina&#39;s.
-   * Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
-
+   * Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasecties.
    Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author) voor meer informatie over hoe een sjabloonauteur een sjabloon inschakelt.
 
    Voor technische details bij het toelaten van een malplaatje, zie [Het toelaten van en het Toestaan van een Malplaatje voor Gebruik](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in dit document
@@ -128,7 +123,6 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    * Wanneer u een sjabloon gebruikt om een nieuwe pagina te maken, is er geen zichtbaar verschil en is er geen indicatie tussen statische en bewerkbare sjablonen.
    * Voor de auteur van de pagina is het proces transparant.
-
    Zie [Pagina&#39;s maken en ordenen](/help/sites-authoring/managing-pages.md#templates) voor meer informatie over hoe een auteur van een pagina sjablonen gebruikt om een pagina te maken.
 
    Zie [Resulterende inhoudspagina&#39;s](/help/sites-developing/page-templates-editable.md#resultant-content-pages) in dit document voor technische details over het maken van pagina&#39;s met bewerkbare sjablonen.
@@ -388,7 +382,7 @@ Wanneer u een nieuwe sjabloon maakt, moet u een sjabloontype opgeven:
 
 * AEM biedt een kleine selectie van out-of-box sjabloontypen, zoals HTML5 Page en Adaptive Form Page.
 
-   * Aanvullende voorbeelden worden gegeven als onderdeel van de voorbeeldinhoud [We.Retail](/help/sites-developing/we-retail.md).
+   * Extra voorbeelden worden verstrekt als deel van [Wij.Retail](/help/sites-developing/we-retail.md) steekproefinhoud.
 
 * Sjabloontypen worden meestal gedefinieerd door ontwikkelaars.
 
@@ -653,4 +647,3 @@ Bij het weergeven van een pagina:
 
       * De eigenschap `cq:policy` van dit knooppunt verwijst naar het daadwerkelijke inhoudsbeleid (de ontwerpconfiguratie voor die component is dus beschikbaar).
       * Dit staat u toe om veelvoudige malplaatjes te hebben die de zelfde configuraties van het inhoudsbeleid opnieuw gebruiken.
-
