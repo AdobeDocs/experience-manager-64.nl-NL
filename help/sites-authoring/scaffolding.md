@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
+exl-id: 20197226-09d5-4ac6-b4cb-0793576a56cf
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
 
 ---
-
 
 # Basisstructuur{#scaffolding}
 
@@ -27,4 +27,3 @@ Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die
 >[!NOTE]
 >
 >Hoewel er een scalaire [modus](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar is, worden het onderhoud en de creatie van subformulieren en het maken van nieuwe pagina&#39;s van subformulieren uitgevoerd in de klassieke UI. Zie [Basisstructuur](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in de klassieke UI-ontwerpdocumentatie voor meer informatie.
-
