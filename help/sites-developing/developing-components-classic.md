@@ -10,14 +10,14 @@ topic-tags: components
 content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
+exl-id: 725e4f82-7019-4365-9c01-b5d95ea2a8fa
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2420'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelen van AEM componenten (Klassieke UI){#developing-aem-components-classic-ui}
 
@@ -401,4 +401,3 @@ Om deze mogelijkheid uit te schakelen, gebruiken wij de standaardbeeldcomponent 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
 1. De component is nu gebruiksklaar.
-
