@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
+exl-id: dbeed62e-eff1-47bc-b6da-cad543295170
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
 
 ---
-
 
 # De AEM Forms Android-app {#build-the-aem-forms-android-app} samenstellen
 
