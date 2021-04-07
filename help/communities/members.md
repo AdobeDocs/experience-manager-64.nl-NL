@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
-role: Beheerder
+role: Administrator
+exl-id: 2d0154b3-4cd7-439a-869d-cb116f60b69d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
-
 
 # Leden en groepen beheerconsoles {#members-groups-management-consoles}
 
