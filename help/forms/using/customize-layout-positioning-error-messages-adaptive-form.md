@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
+exl-id: a57bd3c4-2d50-4089-8279-1e403e9469bf
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
 
 ---
-
 
 # De indeling en positie van foutberichten in een adaptief formulier aanpassen {#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
