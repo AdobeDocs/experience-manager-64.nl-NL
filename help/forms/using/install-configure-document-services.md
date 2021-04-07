@@ -6,15 +6,15 @@ seo-description: Installeer AEM Forms-documentservices om PDF-documenten te make
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
-role: Beheerder
+role: Administrator
+exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '4123'
+source-wordcount: '4122'
 ht-degree: 0%
 
 ---
-
 
 # Documentservices installeren en configureren {#installing-and-configuring-document-services}
 
