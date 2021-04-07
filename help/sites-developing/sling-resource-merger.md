@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
+exl-id: 4ddbdba8-073b-42ed-b4c9-d97d20b4739b
 translation-type: tm+mt
-source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
 
 ---
-
 
 # Het gebruiken van de Verschuivende Fusie van het Middel in AEM{#using-the-sling-resource-merger-in-aem}
 
@@ -53,7 +53,7 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >
 >Overschrijvingen zijn niet afhankelijk van de zoekpaden, maar maken de verbinding met de eigenschap `sling:resourceSuperType`.
 >
->Overschrijvingen worden echter vaak gedefinieerd onder `/apps`, aangezien de beste praktijken in AEM aanpassingen onder `/apps` moeten bepalen; Dit komt omdat u niets onder `/libs` moet veranderen.
+>Overschrijvingen worden echter vaak gedefinieerd onder `/apps`, aangezien de beste praktijk in AEM is aanpassingen te definiëren onder `/apps`; Dit komt omdat u niets onder `/libs` moet veranderen.
 
 >[!CAUTION]
 >
@@ -274,4 +274,3 @@ Enkele voorbeelden worden behandeld:
 * Overschrijven:
 
    * [De pagina-eigenschappen configureren](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
-
