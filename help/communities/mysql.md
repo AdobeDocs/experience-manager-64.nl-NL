@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
-role: Beheerder
+role: Administrator
+exl-id: 1dfb55c2-41cb-445f-9bf8-f12ab6b8e9d8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
-
 
 # MySQL Configuration for Enablement Features {#mysql-configuration-for-enablement-features}
 
@@ -249,4 +249,3 @@ Om ervoor te zorgen dat de cursussen in- en uitgeschakeld werken in alle browser
 * Selecteer het pictogram `[+]` om een veilige gebruikersagent toe te voegen
 * `Mozilla/*` invoeren
 * Selecteer **[!UICONTROL Save]**
-
