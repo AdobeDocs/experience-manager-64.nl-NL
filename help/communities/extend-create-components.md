@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
+exl-id: 48809969-5d14-41bb-bc6d-5857e679ceba
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 4%
 
 ---
-
 
 # De componenten {#create-the-components} maken
 
@@ -207,4 +207,3 @@ Een manier om dit te doen is
    * `Start Path` instellen: tot `/apps/custom`
    * `Only Modified` uitschakelen
    * Selecteer `Activate`knop
-
