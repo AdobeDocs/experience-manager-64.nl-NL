@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
+exl-id: cba4a814-052b-4b9f-96f2-8c80b2766ecc
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
 
 ---
-
 
 # Testen - wanneer en met wie?{#testing-when-and-with-whom}
 
@@ -51,4 +51,3 @@ Verschillende rollen kunnen bij het testen en in diverse stadia van de projecton
   </tr> 
  </tbody> 
 </table>
-
