@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
+exl-id: 50c2479b-72b6-42fa-8e48-45c8e9596161
 translation-type: tm+mt
-source-git-commit: a39d0c895a9e3c8ef418100a153d29b79dda6e6a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
-
 
 # Tekenreeksen extraheren voor vertaling{#extracting-strings-for-translating}
 
@@ -143,4 +143,3 @@ mvn xgettext:extract
 * `potentials.xliff`: &quot;potentiële&quot; kandidaten die niet worden geëxtraheerd, maar leesbare tekenreeksen kunnen zijn die vertaald moeten worden (kan worden genegeerd, levert nog steeds een enorme hoeveelheid valse positieven op)
 * `strings.xliff`: afgevlakt xliff-bestand, te importeren in ALF
 * `backrefs.txt`: staat voor snelle raadpleging van broncodeplaatsen voor een bepaalde koord toe
-
