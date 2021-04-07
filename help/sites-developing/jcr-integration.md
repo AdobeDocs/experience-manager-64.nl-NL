@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
+exl-id: 3e9727a5-32f8-40ad-aa06-619f50d109b2
 translation-type: tm+mt
-source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # JCR-integratie{#jcr-integration}
 
