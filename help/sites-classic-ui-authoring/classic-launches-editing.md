@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
+exl-id: 98bccd13-431a-4cba-bb93-75cdcc98830a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 2%
 
 ---
-
 
 # Lanceringen bewerken{#editing-launches}
 
@@ -68,4 +68,3 @@ Wanneer u een lancering van een pagina uitgeeft, verschijnt de informatie over d
 * De status van de markering **Production Ready** (orange=niet ingesteld; green=set).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
-
