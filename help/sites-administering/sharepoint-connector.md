@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e3f2dc5a-ef5e-432c-be07-b3dedbd6549b
+exl-id: cdb45bec-81d7-4356-ac55-5b6a40b35433
 translation-type: tm+mt
-source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1610'
 ht-degree: 0%
 
 ---
-
 
 # SharePoint-connector{#sharepoint-connector}
 
@@ -266,7 +266,7 @@ De gebruiker toevoegen in de beheergroep:
 
 In zijn standaardversie, steunt de schakelaar de standaardIIS **Windows** authentificatie (Basis) en op Forms-Gebaseerde authentificatie (op teken gebaseerd). De [andere verificatiemethoden](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) kunnen worden ondersteund via het mechanisme voor uitbreidbaarheid.
 
-De volgende stappen bevatten richtlijnen voor het uitbreiden van de standaardverificatie ter ondersteuning van verschillende verificatiemethoden van de SharePoint-server:
+De volgende stappen bevatten richtlijnen voor het uitbreiden van de standaardverificatie ter ondersteuning van diverse verificatiemethoden van de SharePoint-server:
 
 1. Implementeer `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` om de clientzijde van uw specifieke verificatieproces af te handelen.
 1. Installeer de `SharepointConnectionFactory`-implementatie als een fragmentbundel met fragmenthost `com.day.crx.spi.crx2sharepoint-bundle`.
@@ -295,4 +295,3 @@ De volgende stappen bevatten richtlijnen voor het uitbreiden van de standaardver
 1. Registreer de `SharepointConnectionFactory` implementatie in de schakelaarconfiguratie. Klik in het configuratievenster van de connector op **Geavanceerde opties**. Geef in het veld for **Sharepoint Connection Factory** de naam van de implementatie `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory` op.
 
 1. Start de connector opnieuw.
-
