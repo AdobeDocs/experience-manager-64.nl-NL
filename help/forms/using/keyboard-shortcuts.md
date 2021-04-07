@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptieve Forms
+exl-id: 08cf95bc-3417-48d4-9df2-5bd56797bc5d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 10%
 
 ---
-
 
 # AEM Forms-sneltoetsen {#aem-forms-keyboard-shortcuts}
 
@@ -362,4 +362,3 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   </tr>
  </tbody>
 </table>
-
