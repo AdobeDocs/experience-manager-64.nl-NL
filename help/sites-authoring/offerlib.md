@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
+exl-id: 5c7c1cda-0e9c-454f-91c4-8e1f37a155c3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 2%
 
 ---
-
 
 # Aanbiedingen maken en beheren{#creating-and-managing-offers}
 
@@ -102,7 +102,7 @@ U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibli
 
 Zoek naar voorstellen van om het even welk merk gebruikend sleutelwoorden om de titel te passen.
 
-![chlimage_1-311](assets/chlimage_1-310.png)
+![chlimage_1-310](assets/chlimage_1-310.png)
 
 De huidige zoekcriteria worden naast de zoekresultaten weergegeven. U kunt de resultaten ook in oplopende of aflopende volgorde op kolom sorteren. U kunt een onderzoek van om het even welke omslag van om het even welke aanbiedingsbibliotheek uitvoeren. De zoekresultaten zijn hetzelfde, ongeacht de huidige map.
 
@@ -110,4 +110,3 @@ Zoekvoorstellen:
 
 1. Klik of tik op het vergrootglaspictogram boven aan de console Aanbiedingen. Standaard is de zoekopdracht beperkt tot voorstellen.
 1. Voer uw trefwoord in om naar voorstellen te zoeken. Maak een keuze uit de resultaten.
-
