@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 feature: Correspondentenbeheer
+exl-id: 8aeabd95-948d-4a54-b593-1eda8ddd731b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # Aangepast watermerk in PDF-voorbeeld met letter {#custom-watermark-in-letter-pdf-preview}
 
@@ -85,4 +85,3 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
    >In het ddx-bestand moeten de verwijzingen naar het resultaat en de bron ongewijzigd blijven ten opzichte van output.pdf en input.pdf. De naam van de bestands-ddx mag ook niet worden gewijzigd.
 
 1. Klik **Alles opslaan**.
-
