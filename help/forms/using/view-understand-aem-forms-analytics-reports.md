@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
+exl-id: 0483b6ed-676a-4272-a00e-23d53a979b07
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms-analyserapporten {#view-and-understand-aem-forms-analytics-reports} weergeven en begrijpen
 
