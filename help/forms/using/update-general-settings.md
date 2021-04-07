@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
+exl-id: 5ca6212f-d3c7-4239-beba-9a0bdac4b1ec
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
-
 
 # Algemene instellingen {#updating-general-settings} bijwerken
 
