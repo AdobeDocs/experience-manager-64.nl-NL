@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
+exl-id: 2923ae94-375a-4c44-a08f-f992eb08000a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
 
 ---
-
 
 # Openingspagina&#39;s integreren met Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
@@ -35,7 +35,7 @@ Adobe raadt u aan de [bestaande integratie AEM-Adobe Analytics](/help/sites-admi
 
 In AEM, kunnen **Vraag aan Action** componenten - **ClickThroughLink** en **GraphicalLink** - hier in sidekick worden getoond, aan de variabelen van Adobe Analytics worden in kaart gebracht.
 
-![chlimage_1-21](assets/chlimage_1-21.jpeg)
+![chlimage_1-29](assets/chlimage_1-21.jpeg)
 
 ### Onderdelen van landingspagina&#39;s toewijzen aan Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
@@ -95,4 +95,3 @@ U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
 1. Nadat u het framework hebt geconfigureerd met de bestemmingspagina, kunt u nu de van instrumenten voorziene componenten gebruiken en worden eventuele klikken op CTA opgenomen in Adobe Analytics.
-
