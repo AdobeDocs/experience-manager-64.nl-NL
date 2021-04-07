@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
+exl-id: 5a2bd0ea-2c5e-4e0c-aff1-dba06be6a5b7
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
 
 ---
-
 
 # De categorieën beheren die worden weergegeven in Workspace {#managing-the-categories-displayed-in-workspace}
 
@@ -53,4 +53,3 @@ U kunt alleen de categorieën verwijderen die niet in gebruik zijn.
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Categoriebeheer.
 1. Selecteer op de pagina Categoriebeheer het selectievakje voor de categorie die u wilt verwijderen en klik op Verwijderen. De categorie wordt niet meer weergegeven.
-
