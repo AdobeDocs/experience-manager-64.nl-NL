@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
+exl-id: 89d7b2e1-1d88-4392-89d3-484a98f07121
 translation-type: tm+mt
-source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 0%
 
 ---
-
 
 # Back-ups maken van de EMC Documentum repository {#backing-up-and-recovering-the-emc-documentum-repository} en deze herstellen
 
@@ -269,4 +269,3 @@ Voer de volgende taken uit voordat u de AEM formuliergegevens herstelt. (Zie [De
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
-
