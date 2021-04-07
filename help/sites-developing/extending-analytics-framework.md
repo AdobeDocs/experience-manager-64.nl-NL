@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
+exl-id: 7e465a56-ca26-481e-9b3e-b438ef7fbff0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 0%
 
 ---
-
 
 # Het Adobe Analytics-framework aanpassen{#customizing-the-adobe-analytics-framework}
 
