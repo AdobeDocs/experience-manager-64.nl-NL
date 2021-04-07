@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
+exl-id: 44a54278-f4b0-487f-95d5-d222778dffe9
 translation-type: tm+mt
-source-git-commit: 80d451aa6a325d1b668d7d0ddae95a1a14ee877a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 0%
 
 ---
-
 
 # Gegevensmodellering - David Nuescheler&#39;s Model{#data-modeling-david-nuescheler-s-model}
 
@@ -54,7 +54,7 @@ Ik denk dat Stefano dit ongeveer samenvat.
 
 Mijn onderste regel: Structuur is duur en in veel gevallen is het volstrekt overbodig om de structuur expliciet aan de onderliggende opslag te declareren.
 
-Er is een impliciet contract met betrekking tot de structuur die uw toepassing inherent gebruikt. Stel dat ik de wijzigingsdatum van een blogbericht opsla in een lastModified-eigenschap. Mijn App zal automatisch weten om de wijzigingsdatum van dat zelfde bezit opnieuw te lezen, is er echt geen behoefte om dat uitdrukkelijk te verklaren.
+Er is een impliciet contract voor de structuur die uw toepassing inherent gebruikt. Stel dat ik de wijzigingsdatum van een blogbericht opsla in een lastModified-eigenschap. Mijn App zal automatisch weten om de wijzigingsdatum van dat zelfde bezit opnieuw te lezen, is er echt geen behoefte om dat uitdrukkelijk te verklaren.
 
 Verdere gegevensbeperkingen zoals verplichte beperkingen of type- en waardebeperkingen mogen alleen worden toegepast wanneer dit om redenen van gegevensintegriteit vereist is.
 
@@ -94,7 +94,7 @@ Ik zou een eenvoudig blogsysteem als volgt modelleren. Let op: in eerste instant
 /content/myblog/comments/iphone_shipping/i_like_it_too/i_hate_it
 ```
 
-Ik denk dat een van de dingen die duidelijk worden, is dat we allemaal de structuur van de inhoud begrijpen, gebaseerd op het voorbeeld zonder verdere uitleg.
+Ik denk dat een van de dingen die duidelijk worden, is dat we allemaal de structuur van de inhoud begrijpen die op het voorbeeld is gebaseerd, zonder verdere uitleg.
 
 Wat in eerste instantie onverwacht kan zijn, is waarom ik de &quot;commentaren&quot; niet zou opslaan met de &quot;post&quot;, die te wijten is aan toegangscontrole die ik op een redelijk hiërarchische manier zou willen toepassen.
 
@@ -245,4 +245,3 @@ in plaats van:
 -- filename
 + resource (nt:resource)
 ```
-
