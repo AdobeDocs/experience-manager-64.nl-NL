@@ -7,14 +7,14 @@ uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
+exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
 
 ---
-
 
 # Een gebruiker of groep dynamisch selecteren voor een AEM Forms-centric workflowstap {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
@@ -350,4 +350,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-
