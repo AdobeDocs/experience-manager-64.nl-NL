@@ -3,15 +3,15 @@ title: Tips en trucs voor een efficiënte vertaling van middelen
 description: Aanbevolen procedures voor efficiënt beheer van middelen om verschillende vertaalde versies te synchroniseren en vertaalworkflows te stroomlijnen.
 contentOwner: AG
 feature: Vertaling
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures om elementen efficiënt te vertalen {#best-practices-for-translating-assets-efficiently}
 
@@ -48,4 +48,3 @@ U kunt ook enkele configuratiewijzigingen aanbrengen in een aantal workflows en 
 
 1. [Configureer het ](/help/sites-administering/tc-tic.md) framework voor vertaalintegratie om het vertalen van binaire bestanden met middelen te stoppen. Schakel de optie Vertaalactiva uit onder het tabblad Elementen om de vertaling van binaire middelen te stoppen.
 1. Metagegevens/tags van elementen vertalen met [Workflows van meerdere bedrijfsmiddelen](multilingual-assets.md).
-
