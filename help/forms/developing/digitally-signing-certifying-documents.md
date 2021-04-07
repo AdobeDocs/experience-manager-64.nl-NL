@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
+exl-id: b8488a39-44dd-4e6c-b3f0-857d67c79385
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '17099'
 ht-degree: 0%
 
 ---
-
 
 # Documenten digitaal ondertekenen en certificeren {#digitally-signing-and-certifying-documents}
 
