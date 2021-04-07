@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
+exl-id: 1afef311-c1e6-48ec-ae23-dbd553a99ac6
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 0%
 
 ---
-
 
 # Formulieren en documenten {#publishing-and-unpublishing-forms-and-documents} publiceren en de publicatie ervan ongedaan maken
 
@@ -42,7 +42,7 @@ In eerste instantie zijn alle elementen alleen beschikbaar in de instantie Auteu
 
 Wanneer u een formulier selecteert en publiceert, worden de gerelateerde elementen en bronnen ook gepubliceerd. Afhankelijke activa worden echter niet gepubliceerd. In dit verband zijn gerelateerde activa en middelen activa die een gepubliceerd actief gebruikt of waarnaar wordt verwezen. Afhankelijke elementen zijn elementen die verwijzen naar een gepubliceerd element.
 
-Het is mogelijk dat uw Adaptieve Forms bepaalde configuraties, instellingen en aanpassingen gebruikt die niet automatisch worden gepubliceerd. U wordt aangeraden deze bronnen te publiceren of te activeren voordat u een adaptief formulier publiceert.
+Het is mogelijk dat uw Adaptieve Forms gebruik maakt van bepaalde configuraties, instellingen en aanpassingen die niet automatisch worden gepubliceerd. U wordt aangeraden deze bronnen te publiceren of te activeren voordat u een adaptief formulier publiceert.
 
 * Bewerkbare adaptieve formuliersjablonen
 * Cloud Servicen configureren voor Adobe Sign, Typekit, reCAPTCHA en Form Data Models
@@ -203,4 +203,3 @@ Om verificatie voor uw formulieren in te schakelen:
 1. In het dialoogvenster Apache Sling Authentication Service dat wordt weergegeven, gebruikt u de knop **+** om paden toe te voegen.
 
    Wanneer u een pad toevoegt, wordt de verificatieservice ingeschakeld voor formulieren in dat pad.
-
