@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
+exl-id: bb022f6b-938b-4421-8860-4c22aecf5b85
 translation-type: tm+mt
-source-git-commit: 07c0280cf0761a28eaf2d8e03a37667aba2a699c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
 
 ---
-
 
 # Filter voor inhoudsafzetting{#content-disposition-filter}
 
@@ -35,4 +35,3 @@ De opties voor het filter voor het verplaatsen van inhoud bieden de volgende fun
 * Uitgesloten bronpaden: een lijst van uitgesloten middelen, moet elk middelweg als absolute en volledig gekwalificeerde weg worden gegeven. Overeenkomende voorvoegsels/jokertekens worden niet ondersteund.
 
 * Inschakelen voor alle bronnenpaden: Met deze markering wordt bepaald of dit filter moet worden ingeschakeld voor alle paden, behalve voor de uitgesloten paden die worden gedefinieerd door Uitgesloten bronpaden. Als u deze waarde instelt op &#39;true&#39;, worden paden voor het verwijderen van inhoud genegeerd. Onafhankelijk van de configuratie worden alleen bronpaden behandeld die een eigenschap met de naam &#39;jcr:data&#39; of &#39;jcr:content jcr:data&#39; bevatten.
-
