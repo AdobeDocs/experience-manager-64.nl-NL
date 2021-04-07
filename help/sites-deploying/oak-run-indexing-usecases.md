@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 084075b8-826d-4f27-9342-35f33368f24f
 noindex: true
+exl-id: 62f1d3e6-b0d2-4d64-b62e-91836b573e8c
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 0%
 
 ---
-
 
 # Gebruiksscenario&#39;s voor eik-run.jar Indexing{#oak-run-jar-indexing-use-cases}
 
@@ -212,4 +212,3 @@ Het proces dat u voor dit gebruiksgeval moet overwegen is:
 1. De bijgewerkte JSON wordt vervolgens aan de systeembeheerder gegeven
 1. De Beheerder van het systeem volgt de out-of-band benadering en bereidt de index op een verschillende installatie voor
 1. Zodra dit wordt voltooid, zullen de geproduceerde indexdossiers op een lopende AEM installatie worden ingevoerd.
-
