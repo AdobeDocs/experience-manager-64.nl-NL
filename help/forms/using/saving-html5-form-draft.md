@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
+exl-id: 8e4ffda9-ea92-4abc-8746-5d1852e4599b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 2%
 
 ---
-
 
 # Een HTML5-formulier opslaan als concept {#saving-an-html-form-as-a-draft}
 
