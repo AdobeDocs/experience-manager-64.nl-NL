@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
+exl-id: af980042-2c54-4015-b35e-cc9d417e6e82
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met Adobe Campaign Classic{#integrating-with-adobe-campaign-classic}
 
@@ -132,7 +132,7 @@ U moet **AEM Integratie** pakket in Adobe Campaign installeren. Dit doet u als v
 
 1. Klik **Installeer een standaardpakket**, dan selecteer **AEM Integratie** pakket.
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-135](assets/chlimage_1-133.png)
 
 1. Klik **Volgende**, en dan **Begin**.
 
@@ -378,4 +378,3 @@ U kunt de gegevens van de doeluitbreiding voor verpersoonlijking ook opnemen. De
 De gegevens in het doel zijn alleen beschikbaar als de AEM inhoud is gesynchroniseerd met een Adobe Campaign-levering. Zie [In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign](/help/sites-authoring/campaign.md#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
-
