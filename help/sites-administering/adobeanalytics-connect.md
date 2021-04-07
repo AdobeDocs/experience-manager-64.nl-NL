@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
+exl-id: 654387e3-d837-4bde-a9e4-962862ad69e9
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 0%
 
 ---
-
 
 # Verbinding maken met Adobe Analytics en frameworks maken{#connecting-to-adobe-analytics-and-creating-frameworks}
 
@@ -169,7 +169,7 @@ Begin door het paneel te openen. Druk op de pijl-omlaag naast **Servers**:
 
 ## Een pagina koppelen aan een Adobe Analytics-framework {#associating-a-page-with-a-adobe-analytics-framework}
 
-Wanneer een pagina is gekoppeld aan een Adobe Analytics-framework, verzendt de pagina gegevens naar Adobe Analytics wanneer de pagina wordt geladen. Variabelen die op de pagina worden ingevuld, worden toegewezen aan en opgehaald uit Adobe Analytics-variabelen in het framework. Paginaweergaven worden bijvoorbeeld opgehaald uit Adobe Analytics.
+Wanneer een pagina is gekoppeld aan een Adobe Analytics-framework, verzendt de pagina gegevens naar Adobe Analytics wanneer de pagina wordt geladen. Variabelen die door de pagina worden gevuld, worden toegewezen aan en opgehaald uit Adobe Analytics-variabelen in het framework. Paginaweergaven worden bijvoorbeeld opgehaald uit Adobe Analytics.
 
 Afstammingen van de pagina nemen de koppeling met het framework over. Wanneer u bijvoorbeeld de hoofdpagina van uw site aan een framework koppelt, worden alle pagina&#39;s van de site aan het framework gekoppeld.
 
@@ -207,7 +207,7 @@ Vorm de aangewezen instantie van de **Adobe AEM Beheerde Opiniepeiling Configura
 
    Schakel de service in of uit. Standaard is de service ingeschakeld.
 
-Voor het configureren van deze OSGi-service kunt u de [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of een [osgiConfig-knooppunt in de opslagruimte](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) gebruiken (de service-PID is `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
+Om deze OSGi-service te configureren, kunt u de [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of een [osgiConfig-knooppunt in de gegevensopslagruimte](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) gebruiken (de service-PID is `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
 
 ## Adobe Analytics-configuraties en/of frameworks {#editing-adobe-analytics-configurations-and-or-frameworks} bewerken
 
@@ -220,4 +220,3 @@ Wanneer u een Adobe Analytics-configuratie bewerkt, moet u ook op de knop **Bewe
 Als u een Adobe Analytics-framework wilt verwijderen, moet u het eerst [openen voor bewerken](#editing-adobe-analytics-configurations-and-or-frameworks).
 
 Selecteer vervolgens **Framework** verwijderen op het tabblad **Pagina** van de assistent.
-
