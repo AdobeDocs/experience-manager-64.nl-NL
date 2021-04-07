@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
+exl-id: 1888b8c7-d077-4e54-b442-5df0ba557513
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
 
 ---
-
 
 # SSL configureren voor JBoss-toepassingsserver {#configuring-ssl-for-jboss-application-server}
 
@@ -177,7 +177,7 @@ In deze procedure:
 
 1. Typ de volgende opdracht om een certificaataanvraag te genereren voor verzending naar de certificeringsinstantie:
 
-   `keytool -certreq -alias` &quot;AEMForms Cert&quot;- `-keystore`** `.keystore -file`*sleutelbestandsnaamAEMFormscertRequest.csr*
+   `keytool -certreq -alias` &quot;AEMForms Cert&quot;  `-keystore`** `.keystore -file`*sleutelstorenameAEMFormscertRequest.csr*
 
 1. Wanneer uw verzoek om een certificaatdossier wordt voldaan, voltooi de volgende procedure.
 
