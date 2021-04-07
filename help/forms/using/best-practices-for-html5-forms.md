@@ -10,14 +10,14 @@ topic-tags: hTML5_forms
 content-type: reference
 discoiquuid: a5eba237-3aad-497a-8f77-061d5d3df371
 feature: Mobile Forms
+exl-id: 5f85882c-f7a7-448e-9946-e04a0d74dee1
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor HTML5-formulieren {#best-practices-for-html-forms}
 
