@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
+exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
 translation-type: tm+mt
-source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 1%
 
 ---
-
 
 # Page Diff-optie{#page-diff}
 
@@ -111,4 +111,3 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 >[!NOTE]
 >
 >Raadpleeg de [documentatie voor ontwikkelaars](/help/sites-developing/pagediff.md) van deze functie voor meer informatie over de werking van het mechanisme voor paginagecheiding en de beperkingen die paginaafbreking kunnen beïnvloeden.
-
