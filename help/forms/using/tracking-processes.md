@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
+exl-id: e7eae36b-39e0-4550-b18b-a1ac1a5c3015
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
 
 ---
-
 
 # Traceringsprocessen {#tracking-processes}
 
@@ -54,4 +54,3 @@ Op de pagina Volgen kunt u een proces selecteren en de details ervan bekijken. U
    * Klik op het tabblad Bijlagen om notities en bijlagen voor een taak weer te geven.
    * Klik op het tabblad Toewijzing om de taaktoewijzingsdetails weer te geven.
    * Klik op de knop Formulier om het bijbehorende formulier weer te geven.
-
