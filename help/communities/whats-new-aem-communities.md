@@ -6,14 +6,14 @@ seo-description: 'null'
 uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
+exl-id: fcdc65c9-929d-4a87-8ff7-5e3cf5711fd9
 translation-type: tm+mt
-source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 0%
 
 ---
-
 
 # Nieuwe functies in AEM 6.4-gemeenschappen {#what-s-new-in-aem-communities}
 
@@ -25,7 +25,7 @@ Lees verder voor een snelle inleiding tot nieuwe functies en verbeteringen. Zie 
 
 ## Subgemeenschappen of communautaire groepen beheren {#managing-sub-communities-or-community-groups}
 
-Met AEM Communities kunnen gemeenschapsbeheerders groepen en subgroepen maken binnen de communitysite met behulp van vooraf gedefinieerde sjablonen in de auteuromgeving. Deze groepen dienen als subgemeenschappen, die vele configuraties, zoals thema&#39;s en het stileren van de ouderplaats kunnen erven. Nochtans, kunnen deze groepen van de ouderplaats verschillen, bijvoorbeeld hebbend een verschillende reeks groepsmoderators of kan in het veiligheidsniveau variëren. Deze groepen fungeren als onafhankelijke, volwaardige mini-gemeenschappen, die verder worden versterkt door de volgende verbeteringen.
+Met AEM Communities kunnen gemeenschapsbeheerders groepen en subgroepen maken binnen de communitysite met behulp van vooraf gedefinieerde sjablonen in de auteuromgeving. Deze groepen dienen als subgemeenschappen, die vele configuraties, zoals thema&#39;s en het stileren van de ouderplaats kunnen erven. Nochtans, kunnen deze groepen van de ouderplaats verschillen, bijvoorbeeld hebbend een verschillende reeks groepsmoderators of kan in het veiligheidsniveau variëren. Deze groepen fungeren als onafhankelijke, volwaardige minicategorieën die verder worden versterkt door de volgende verbeteringen.
 
 ### Groepen met meerdere landinstellingen maken in één stap {#create-multi-locale-groups-in-single-step}
 
