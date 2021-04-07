@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
+exl-id: d29e1b1e-62df-4b0d-aa64-ad98568cf4a6
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 0%
 
 ---
-
 
 # Bedrijfskalenders configureren {#configuring-business-calendars}
 
@@ -149,4 +149,3 @@ U kunt bedrijfsplannen verwijderen die uw organisatie niet meer nodig heeft. Als
 1. Klik in de beheerconsole op Services > Forms-workflow > Business Calendars.
 1. Selecteer de kalender.
 1. Klik op Verwijderen.
-
