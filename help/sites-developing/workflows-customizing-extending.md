@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
+exl-id: e7b368b4-2fcd-43bc-b59f-ab4ba6b61f0d
 translation-type: tm+mt
-source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3586'
 ht-degree: 1%
 
 ---
-
 
 # Uitbreiding van workflowfunctionaliteit{#extending-workflow-functionality}
 
@@ -817,7 +817,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
    Hier is het resultaat van onze voorbeeld aangepaste stap:
 
-   ![wf-34](assets/wf-34.png)
+   ![wf-36](assets/wf-34.png)
 
    >[!CAUTION]
    >
@@ -858,7 +858,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
 1. U kunt nu een workflowmodel openen voor bewerking. In stappen kunt u browser filtreren om **Mijn Stap van de Douane** te zien:
 
-   ![wf-34](assets/wf-36.png)
+   ![wf-36](assets/wf-36.png)
 
    Als u **Mijn aangepaste stap** op het model sleept, wordt de kaart weergegeven:
 
