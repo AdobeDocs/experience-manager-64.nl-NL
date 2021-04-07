@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f458054e-885c-4c7a-afcd-ad1e4465e0c1
 feature: Adaptieve Forms
+exl-id: 0ae34ddd-9a8d-48df-af2d-80c3fe6abd62
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 1%
 
 ---
-
 
 # Pagina-nulinhoud wijzigen in Designer {#changing-page-zero-content-in-designer}
 
@@ -47,4 +47,3 @@ Met de AEM Forms Feature Pack 1-versie van Designer kunt u het bericht wijzigen 
 >[!NOTE]
 >
 >De aangepaste eigenschap die u zojuist hebt gemaakt, wordt mogelijk niet correct weergegeven in het dialoogvenster Formuliereigenschappen wanneer u het formulier opnieuw opent. Het werkt echter prima en in het formulier wordt het bijgewerkte bericht Pagina nul weergegeven.
-
