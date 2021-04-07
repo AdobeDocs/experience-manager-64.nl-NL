@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 7941987a-2f4c-4c62-8ab2-0f6f30ceb064
+exl-id: 7b43a76c-2625-4dcc-8593-f587071084e1
 translation-type: tm+mt
-source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2909'
 ht-degree: 0%
 
 ---
-
 
 # Mobiel met contentsynchronisatie{#mobile-with-content-sync}
 
@@ -76,7 +76,7 @@ Wanneer AEM is geïnstalleerd, kunnen leden van de beheerdersgroep standaard dow
 
 ### Standaardtoegang voor downloaden van inhoudssynchronisatie instellen {#setting-the-default-access-for-content-sync-downloads}
 
-Met de Day CQ Content Sync Manager-service hebt u toegang tot Content Sync. Configureer deze service om de gebruiker of groep op te geven die standaard kan downloaden van Content Sync.
+De dienst van de Manager van de Synchronisatie van de Inhoud van de Dag CQ bepaalt toegang tot de Synchronisatie van de Inhoud. Configureer deze service om de gebruiker of groep op te geven die standaard kan downloaden van Content Sync.
 
 Als u [de dienst gebruikend de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) vormt, typ de naam van de gebruiker of de groep als waarde van het Toegelaten bezit van het Geheime voorgeheugen van de Terugval.
 
