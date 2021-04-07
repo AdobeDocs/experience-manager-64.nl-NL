@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
+exl-id: 92bc6878-6963-442a-8441-fba42e89c859
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3534'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
-
 
 # Forms vooraf vullen met stroombare indelingen {#prepopulating-forms-with-flowable-layouts1}
 
@@ -397,4 +397,3 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
 **Zie ook**
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-
