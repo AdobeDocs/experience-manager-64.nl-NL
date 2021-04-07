@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
+exl-id: 3cc39a24-dbdf-4a4c-9c96-4d39d8cff20d
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 2%
 
 ---
-
 
 # Beveiligingsinstellingen opgeven {#specify-security-settings}
 
@@ -27,4 +27,3 @@ Met Uitvoer kunt u bepalen of externe entiteiten in XML-invoer worden omgezet. D
 1. Klik in de beheerconsole op Services > Uitvoer.
 1. Schakel het selectievakje Externe entiteiten oplossen uit.
 1. Klik op Opslaan.
-
