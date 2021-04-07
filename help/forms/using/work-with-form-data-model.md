@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 feature: Formuliergegevensmodel
+exl-id: 2dcbc459-5fa3-4712-a72e-159bdbad0a61
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3054'
 ht-degree: 0%
 
 ---
-
 
 # Werken met formuliergegevensmodel {#work-with-form-data-model}
 
