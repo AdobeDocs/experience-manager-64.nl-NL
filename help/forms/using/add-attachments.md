@@ -8,20 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
+exl-id: ad1cc63a-cf99-456b-8b83-0605fb3ac6ec
 translation-type: tm+mt
-source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
-
 # Bijlagen {#adding-attachments} toevoegen
 
 ## Bijlagen toevoegen in formulieren die zijn gesynchroniseerd met AEM Forms Workflow Server (AEM Forms op JEE) {#adding-annotations}
 
-Met de AEM Forms-app kunt u afbeeldingen, gescripte notities en tekstnotities toevoegen aan uw formulier dat is gesynchroniseerd met de AEM Forms JEE-server. Als uw formulier wordt geladen vanaf een AEM Forms Workflow-server, worden uw bijlagen toegevoegd aan het formulier. Als u alle bijlagen in een formulier tegelijk wilt zien, tikt u op de knop ![bijlagen-app](assets/attachments-app.png). In het rode bericht wordt het aantal bijlagen in het formulier aangegeven. Als het formulier geen bijlagen bevat, ziet u de knop Rode meldingen niet. Als het formulier geen bijlagen bevat en u op de knop ![bijvoegen](assets/attch.png) tikt, kunt u opties voor het bijvoegen van foto&#39;s of scripts instellen.
+Met de AEM Forms-app kunt u afbeeldingen, gekrabde notities en tekstnotities toevoegen aan uw formulier dat is gesynchroniseerd met de AEM Forms JEE-server. Als uw formulier wordt geladen vanaf een AEM Forms Workflow-server, worden uw bijlagen toegevoegd aan het formulier. Als u alle bijlagen in een formulier tegelijk wilt zien, tikt u op de knop ![bijlagen-app](assets/attachments-app.png). In het rode bericht wordt het aantal bijlagen in het formulier aangegeven. Als het formulier geen bijlagen bevat, ziet u de knop Rode meldingen niet. Als het formulier geen bijlagen bevat en u op de knop ![bijvoegen](assets/attch.png) tikt, kunt u opties voor het bijvoegen van foto&#39;s of scripts instellen.
 
 U kunt kiezen uit de volgende opties:
 
