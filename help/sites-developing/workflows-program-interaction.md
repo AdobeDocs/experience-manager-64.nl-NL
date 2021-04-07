@@ -5,14 +5,14 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
+exl-id: da06850a-c4d5-44dd-b572-771e3b2a66c5
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2015'
 ht-degree: 0%
 
 ---
-
 
 # Programmatische interactie met Workflows{#interacting-with-workflows-programmatically}
 
@@ -401,7 +401,7 @@ De `uri` die in de resultaten wordt getoond kan als instantie `id` in andere bev
 
 ### Hoe te om de Titel van het Werkschema {#how-to-change-the-workflow-title} te veranderen
 
-Als u de **Werkstroomtitel** op het tabblad **Instanties** van de werkstroomconsole wilt wijzigen, verzendt u een `POST`-opdracht:
+Als u de **Werkstroomtitel** op het tabblad **Instanties** van de workflowconsole wilt wijzigen, verzendt u een `POST`-opdracht:
 
 * tot: `http://localhost:4502/etc/workflow/instances/{id}`
 
@@ -881,4 +881,3 @@ public class WorkflowEventCatcher implements EventHandler, JobProcessor {
  }
 }
 ```
-
