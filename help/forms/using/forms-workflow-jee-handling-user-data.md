@@ -7,15 +7,15 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
-role: Beheerder
+role: Administrator
+exl-id: 8cbace00-c354-4f37-a781-04cadd441419
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
-
 
 # Forms JEE-workflows | Gebruikersgegevens {#forms-jee-workflows-handling-user-data} verwerken
 
@@ -197,4 +197,3 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
    delete from tb_assignment where task_id=<task_id>
    delete from tb_task where id=<task_id>
    ```
-
