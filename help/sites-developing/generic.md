@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
+exl-id: 3faf9d09-8899-4916-b768-8ff39900b959
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelen (algemeen){#developing-generic}
 
@@ -581,4 +581,3 @@ Er zijn drie afhandelingen voor speciale acties beschikbaar:
 * `DiscountPromotionHandler` past een absolute of percentagekorting voor het hele winkelwagentje toe
 * `PerfectPartnerPromotionHandler` past een absolute of percentagekorting van het product toe als de productpartner ook in de kar is
 * `FreeShippingPromotionHandler` past gratis verzending toe
-
