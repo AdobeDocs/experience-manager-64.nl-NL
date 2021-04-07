@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
+exl-id: 49bf3e19-d299-4c99-896c-b12135f33fb7
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 2%
 
 ---
-
 
 # Basisbewerkingen{#basic-handling}
 
@@ -234,4 +234,3 @@ De kleuren naast pagina&#39;s in **Gepubliceerd** en **Gewijzigd** kolommen wijz
 In de klassieke gebruikersinterface worden bekende mechanismen gebruikt voor het navigeren en starten van handelingen, waaronder klikken en dubbelklikken. Afhankelijk van de huidige situatie, zijn een waaier van contextmenu&#39;s (gewoonlijk geopend met de juiste-muis-knoop) ook beschikbaar:
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
-
