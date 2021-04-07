@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
+exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
 translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
 
 ---
-
 
 # AEM Foundation &amp; Repository {#aem-foundation-repository}
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 * Achterwaartse compatibiliteit: De achterwaartse compatibele eigenschappen in 6.4, helpen uw douanecode in de meeste gevallen compatibel blijven en verminderen verbeteringsinspanning.
 * Complexiteit-evaluatie van upgrade: Het nieuwe gereedschap Patroondetector om de complexiteit van upgrades te beoordelen.
 * Duurzame verbeteringen: De classificatie van het oppervlak en van de Inhoud van API wordt geïntroduceerd om u te helpen beste praktijken voor een efficiënte en naadloze verbetering aan de volgende versie door uw ontwikkelingscyclus gemakkelijk volgen.
-* Herstructurering opslagplaats: Aanzienlijke herstructurering (vooral /e.d.) om upgrades te vergemakkelijken en de beste praktijken bij de implementatie te bevorderen. [Lees meer.](/help/sites-deploying/repository-restructuring.md)
+* Herstructurering opslagplaats: Aanzienlijke herstructurering (vooral /e.d.) om upgrades te vergemakkelijken en optimale werkwijzen voor implementatie te bevorderen. [Lees meer.](/help/sites-deploying/repository-restructuring.md)
 * Raadpleeg de [Upgradedocumentatie](/help/sites-deploying/upgrade.md) voor meer informatie over deze functies.
 
 ### Cloud Services {#cloud-services}
@@ -130,4 +130,3 @@ ht-degree: 0%
 
 * Druk op de op gebruikersinterface gebaseerde Workfloweditor om workflowmodellen op een meer gestroomlijnde manier te beheren.
 * Ondersteuning voor het opschonen van projecttaken bij onderhoudstaken.
-
