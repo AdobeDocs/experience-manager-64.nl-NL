@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
+exl-id: 0ae0ddbf-ded6-4494-bf94-bf6cf7f1fd46
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms-processen {#understanding-aem-forms-processes}
 
@@ -81,4 +81,3 @@ Dit proces wordt aangehaald wanneer een aanvrager een leningformulier indient. H
 >[!NOTE]
 >
 >Dit proces kan worden tot stand gebracht door het leerprogramma te volgen dat in [Uw Eerste Toepassing van AEM Forms wordt gespecificeerd te creëren](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
-
