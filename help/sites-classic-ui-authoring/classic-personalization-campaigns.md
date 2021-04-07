@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
+exl-id: 2980ec6d-cdd4-4fbd-b4a4-5e45e4508903
 translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
 
 ---
-
 
 # Campagnebeheer{#campaign-management}
 
@@ -36,7 +36,7 @@ In dit document worden de verschillende elementen beschreven waaruit campagnes b
 
 Het beheer van campagnes bestaat uit verschillende elementen:
 
-* **aem**
+* **AEM**
 merken zijn de eenheid op hoofdniveau en vormen een verzameling 
 **Campagnes**.
 
@@ -60,7 +60,7 @@ ErvaringenDe gerichte inhoud vormt de verschillende ervaringen die aan de bezoek
 
    * **Nieuwsbrieven**
 
-      [E-](#emailmarketing) mailcommunicatie wordt gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze hebben gewoonlijk de vorm van een nieuwsbrief, die naar uw **Leads** wordt verzonden (die gewoonlijk in **Lijsten** worden gegroepeerd). **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren. De aanbeveling is om Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md) te benutten.[
+      [E-](#emailmarketing) mailcommunicatie wordt gebruikt om gebruikers te betrekken en hen aan te moedigen om uw website te bezoeken. Deze hebben gewoonlijk de vorm van een nieuwsbrief, die naar uw **Leads** wordt verzonden (die gewoonlijk in **Lijsten** worden gegroepeerd). **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren. De aanbeveling is om Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md) te benutten.[
 
    * **Adobe Target**
 
@@ -96,4 +96,3 @@ ErvaringenDe gerichte inhoud vormt de verschillende ervaringen die aan de bezoek
    Het kan van diverse plaatsen (geëtiketteerd als **Campagnes**), of met, bijvoorbeeld URL worden betreden:
 
    `http://localhost:4502/libs/mcm/content/admin.html`
-
