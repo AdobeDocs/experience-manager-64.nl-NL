@@ -1,14 +1,14 @@
 ---
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
+exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
 translation-type: tm+mt
-source-git-commit: 5bc6f63922f7f63d60f0048b167a08e4190a8f92
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 5%
 
 ---
-
 
 # Insteekmodule voor Adobe-inhoudspakket {#adobe-content-package-maven-plugin}
 
