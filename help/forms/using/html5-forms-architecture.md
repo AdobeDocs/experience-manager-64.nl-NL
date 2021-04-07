@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 feature: Mobile Forms
+exl-id: 5bb8b307-93f0-4ccd-89ac-de82d65021e6
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2040'
 ht-degree: 0%
 
 ---
-
 
 # Architectuur van HTML5-formulieren {#architecture-of-html-forms}
 
@@ -185,4 +185,3 @@ Zoals hierboven beschreven, roept de profielrenderer JSP de Dienst van Forms via
 
 Met HTML5-formulieren kunnen ontwikkelaars Profiel en Profielrenderer maken om de weergave van de formulieren aan te passen. Met HTML-formulieren kunnen ontwikkelaars bijvoorbeeld formulieren integreren in een deelvenster of sectie &lt;div> van een bestaande HTML-portal.\
 Zie [Een aangepast profiel maken](/help/forms/using/custom-profile.md) voor meer informatie over het maken van aangepaste profielen.
-
