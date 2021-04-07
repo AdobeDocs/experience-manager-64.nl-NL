@@ -9,14 +9,14 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 feature: Adaptieve Forms
+exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1083'
+ht-degree: 1%
 
 ---
-
 
 # Aangepaste formulieren maken met XML-schema {#creating-adaptive-forms-using-xml-schema}
 
