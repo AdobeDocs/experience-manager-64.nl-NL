@@ -8,14 +8,14 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
+exl-id: 84eb552c-ba47-46e1-86e3-9460bd77dfbe
 translation-type: tm+mt
-source-git-commit: e9a322b73631e6cc48446ef44cda824dfbe4ea63
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 0%
 
 ---
-
 
 # Sjablonen en componenten maken en toevoegen {#creating-and-adding-templates-and-components}
 
