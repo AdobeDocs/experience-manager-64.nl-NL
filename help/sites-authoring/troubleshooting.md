@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
+exl-id: b0890070-c9e8-4ce4-9149-00c8c38298ce
 translation-type: tm+mt
-source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 10%
 
 ---
-
 
 # AEM oplossen bij ontwerpen{#troubleshooting-aem-when-authoring}
 
@@ -65,4 +65,3 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 * **Oplossing**:
 
    * Vernieuw de pagina.
-
