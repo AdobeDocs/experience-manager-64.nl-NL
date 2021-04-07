@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
+exl-id: e45b56e9-2fd1-4c29-9384-350e1376c193
 translation-type: tm+mt
-source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%
 
 ---
-
 
 # Serverpaginanaam implementeren voor Analytics{#implementing-server-side-page-naming-for-analytics}
 
@@ -251,4 +251,3 @@ public class ExamplePageNameProvider implements AnalyticsPageNameProvider {
     }
 }
 ```
-
