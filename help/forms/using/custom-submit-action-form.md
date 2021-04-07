@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 607b2242-d81c-4e7a-9e56-e6dabffccbb6
+exl-id: 199ebb63-8fbc-43c4-8c4d-421bf02454ed
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1658'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste verzendhandeling schrijven voor aangepaste formulieren {#writing-custom-submit-action-for-adaptive-forms}
 
@@ -190,4 +190,3 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
    ```
 
    Selecteer de handeling in het adaptieve formulier. De actie verzendt een e-mail en slaat de gegevens op.
-
