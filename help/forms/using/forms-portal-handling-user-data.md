@@ -8,15 +8,15 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
-role: Beheerder
+role: Administrator
+exl-id: 05dbb6ee-09fd-44ee-bb8b-a3f3ebb32f5a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
-
 
 # Forms Portal | Gebruikersgegevens {#forms-portal-handling-user-data} verwerken
 
@@ -123,4 +123,3 @@ Als u concepten en verzendingsgegevens voor een aangemelde gebruiker wilt verwij
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'
 ```
-
