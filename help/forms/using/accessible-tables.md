@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: Mobile Forms
+exl-id: a3337bb1-635c-4dc9-b438-3a829d4a9e03
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
 
 ---
-
 
 # Toegankelijke complexe tabellen maken in HTML5-formulieren {#create-accessible-complex-tables-in-html-forms}
 
@@ -50,4 +50,3 @@ Beperkingen in nieuwe *AccessibleTable*-indeling:
 * Ondersteuning voor rowspan is beperkt tot de koptekstrijen en kopcellen
 * De ondersteuning is beperkt tot reguliere tabellen
 * Geen ondersteuning voor gegevensvooraf ingevulde tabellen met rowspan > 1
-
