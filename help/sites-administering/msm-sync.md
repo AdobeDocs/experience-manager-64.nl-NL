@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 feature: Beheer van meerdere sites
+exl-id: 42b92993-abde-4ae4-8f0d-44166a3ea22e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2708'
 ht-degree: 0%
 
 ---
-
 
 # Synchronisatie van actieve kopie configureren{#configuring-live-copy-synchronization}
 
