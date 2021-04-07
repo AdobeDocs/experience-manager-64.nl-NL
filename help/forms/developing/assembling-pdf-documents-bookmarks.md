@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
+exl-id: 2506835b-a75b-4d15-8fd4-1292d40a2132
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2575'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
-
 
 # PDF-documenten samenstellen met bladwijzers {#assembling-pdf-documents-with-bookmarks}
 
