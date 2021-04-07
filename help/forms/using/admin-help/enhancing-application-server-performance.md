@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
+exl-id: 88f692de-f88b-4459-97e9-73506bf87525
 translation-type: tm+mt
-source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 0%
 
 ---
-
 
 # Prestaties van toepassingsservers verbeteren{#enhancing-application-server-performance}
 
@@ -70,9 +70,9 @@ Wanneer de beheerder van de toepassingsserver de correcte montages van de verbin
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van Verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in.
 1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
 
-### Verbindingspoolinstellingen configureren voor WebSphere voor Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
+### Verbindingspoolinstellingen voor WebSphere voor Oracle {#configure-connection-pool-settings-for-websphere-for-oracle} configureren
 
-1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers. Klik in het rechterdeelvenster op de gegevensbron voor het Oracle JDBC-stuurprogramma die u hebt gemaakt.
+1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers. Klik in het rechterdeelvenster op de JDBC-gegevensbron voor het Oracle-stuurprogramma die u hebt gemaakt.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van Verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in.
 1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
@@ -193,4 +193,3 @@ Het gebruiken van verbinding het groeperen op de onderzoeksverbinding kan het aa
 >[!NOTE]
 >
 >De ernstige problemen kunnen voorkomen als u het register verkeerd wijzigt door de Redacteur van de Registratie te gebruiken of door een andere methode te gebruiken. Voor deze problemen kan het nodig zijn het besturingssysteem opnieuw te installeren. Wijzig het register op eigen risico.
-
