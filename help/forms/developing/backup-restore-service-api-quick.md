@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
+exl-id: b4fa018f-48a6-4991-9f80-d2d6e0b30555
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
-
 
 # Snel starten met service-API voor back-up en herstel{#backup-and-restore-service-apiquick-starts}
 
@@ -253,4 +253,3 @@ In het volgende Java-codevoorbeeld wordt expliciet aangegeven dat een Forms-serv
  } 
  
 ```
-
