@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 feature: Configureren
+exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2726'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om AEM met TarMK Koude Reserve{#how-to-run-aem-with-tarmk-cold-standby} in werking te stellen
 
@@ -400,4 +400,3 @@ Het is belangrijk om afvalophaling op de instanties van de dossierdatastore van 
    >[!NOTE]
    >
    >Als u geen gedeelde gegevensopslag gebruikt, zal de huisvuilinzameling eerst op primair en dan op reserve moeten in werking worden gesteld.
-
