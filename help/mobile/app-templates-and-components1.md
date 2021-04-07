@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
+exl-id: 5480ac38-f651-4211-94f6-c588fb44ad55
 translation-type: tm+mt
-source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
 
 ---
-
 
 # Toepassingssjablonen en -componenten{#app-templates-and-components}
 
@@ -81,4 +81,3 @@ Raadpleeg de volgende koppelingen voor meer informatie over aanvullende onderwer
 
 * [Mobiel met inhoudssynchronisatie](/help/mobile/mobile-ondemand-contentsync.md)
 * [Mobiele apps testen](/help/mobile/develop-mobile-apps-testing.md)
-
