@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
+exl-id: 074ab20f-02df-4f9e-9512-93a76f5d234f
+feature: 3D-middelen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
-
 
 # Informatie over het werken met IBL-fasen {#about-working-with-ibl-stages}
 
@@ -24,7 +26,7 @@ AEM 3D ondersteunt op afbeeldingen gebaseerde belichting (IBL) voor zowel intera
 
 ## Afbeeldingen voor IBL {#images-for-ibl}
 
-Voor de beste resultaten moeten afbeeldingen die worden gebruikt voor op afbeeldingen gebaseerde belichting HDR (High Dynamic Range) hebben. Zij moeten in lange of lange vorm zijn, met een bolvormige kaart die het milieu volledig bestrijkt.
+Voor het beste resultaat moeten afbeeldingen die worden gebruikt voor op afbeeldingen gebaseerde belichting HDR (High Dynamic Range) hebben. Zij moeten in lange of lange vorm worden opgesteld met een bolvormige toewijzing die het milieu volledig bestrijkt.
 
 AEM 3D biedt momenteel alleen ondersteuning voor 32-bits TIFF-bestanden. Gebruik indien nodig Adobe Photoshop of een vergelijkbaar gereedschap om de HDR-afbeelding om te zetten in een TIFF met behulp van de volgende instellingen in het dialoogvenster Adobe Photoshop TIFF-export:
 
@@ -95,4 +97,3 @@ De stadia van IBL gebruiken sferische achtergrondbeelden die door gebrek 20 mete
    Een straalvliegtuigmodel dat 20 meter lang is, wordt bijvoorbeeld goed weergegeven als `dam:gPlaneRadius=20000`.
 
 1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All]**.
-
