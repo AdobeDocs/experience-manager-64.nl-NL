@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
+exl-id: 8b83e8d2-09ad-4010-a69a-2af1907a1ca6
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
 
 ---
-
 
 # Onderdelen{#components}
 
@@ -70,4 +70,3 @@ Naast de componenten waartoe auteurs in een standaardinstallatie toegang hebben,
 
 * Als uw pagina op het geadviseerde, moderne, editable malplaatje gebaseerd is, kunt u [het malplaatje ](/help/sites-authoring/templates.md) toelaten/onbruikbaar maken en parameters voor specifieke componenten uitgeven.
 * Als uw pagina op een statisch malplaatje gebaseerd is, kunt u [ontwerpwijze ](/help/sites-authoring/default-components-designmode.md#enable-disable-components) gebruiken om deze toe te laten/onbruikbaar te maken en parameters voor specifieke componenten uit te geven.
-
