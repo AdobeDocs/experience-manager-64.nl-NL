@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
+exl-id: edffa86c-a157-45bc-a565-a57200debb37
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2269'
 ht-degree: 0%
 
 ---
-
 
 # Problemen met trage query&#39;s oplossen{#troubleshooting-slow-queries}
 
@@ -224,7 +224,6 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * Andere knoop erft van `nt:hierarchyNode` (b.v. `dam:Asset`) onnodig toevoegen aan de reeks potentiële resultaten.
    * Er bestaat geen AEM-geleverde index voor `nt:hierarchyNode`, maar zoals er een opgegeven index voor `cq:Page` is.
-
    Het plaatsen `type=cq:Page` beperkt deze vraag tot slechts `cq:Page` knopen, en lost de vraag aan AEM cqPageLucene op, die de resultaten tot een ondergroep van knopen (slechts cq:de knopen van de Pagina) in AEM beperkt.
 
 1. U kunt ook de eigenschapbeperking(en) aanpassen zodat de query wordt omgezet in een bestaande eigenschappenindex.
@@ -469,4 +468,3 @@ Zorg er daarom voor dat indexen voldoen aan query&#39;s, behalve als de combinat
 
    * De Webbrowser van Google Chrome uitbreiding die per-verzoeklogboekgegevens, met inbegrip van uitgevoerde vragen en hun vraagplannen, in de browser ontwikkelt hulpmiddelenconsole beschikbaar stelt.
    * [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) moet worden geïnstalleerd en ingeschakeld op AEM.
-
