@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
+exl-id: c8ebd18b-fa24-4264-bd17-f553a2a784d9
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2654'
 ht-degree: 0%
 
 ---
-
 
 # We.Gov-referentiesite doorloopt {#we-gov-reference-site-walkthrough}
 
@@ -362,4 +362,3 @@ Analytische rapporten genereren met zaadgegevens:
 1. Navigeer in CRXDE naar: **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
 1. Plak in het veld Analytics Data onder Properties de gekopieerde inhoud van het bestand met testgegevens.
 1. Genereer nu nogmaals het analyserapport voor **[!UICONTROL Application for Child Support Services]**. U kunt de zaadgegevens in het geproduceerde rapport zien.
-
