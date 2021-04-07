@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
+exl-id: 846a925a-673e-4051-a673-1a9236701f0a
 translation-type: tm+mt
-source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 3%
 
 ---
-
 
 # Tags gebruiken {#using-tags}
 
@@ -90,4 +90,3 @@ U kunt tags zoeken in zowel de auteur- als de publicatieomgeving.
 Als u een [zoekcomponent](/help/sites-authoring/default-components-foundation.md#search) aan een pagina toevoegt, beschikt u over een zoekfunctie die tags bevat en kan worden gebruikt in zowel de auteur- als de publicatieomgeving.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
-
