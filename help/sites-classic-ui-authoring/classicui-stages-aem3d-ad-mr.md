@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
+exl-id: ee23d973-a7e3-4e24-a804-2be5f809df1e
 translation-type: tm+mt
-source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # Een standaardpodium instellen met Autodesk Maya en Mental Ray{#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
@@ -67,4 +67,3 @@ ht-degree: 0%
 
 1. Elementeigenschappen openen in AEM. Stel Titel in op een geschikte tekenreeks die wordt weergegeven in de vervolgkeuzelijst Werkgebiedkiezer. Controleer of **[!UICONTROL Class]** is ingesteld op **[!UICONTROL 3D Stage]**. Opslaan en afsluiten.
 1. Open een 3D-element, selecteer het nieuwe werkgebied en controleer of het naar behoren wordt weergegeven en weergegeven.
-
