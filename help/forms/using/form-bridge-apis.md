@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
+exl-id: ad669f3b-2bda-4c41-8032-cf25a192ce12
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
 
 ---
-
 
 # Form Bridge-API&#39;s voor HTML5-formulieren {#form-bridge-apis-for-html-forms}
 
@@ -264,5 +264,3 @@ if(a.errors) {
     formBridge.submitForm({success:suc,error:err}); // not passing a context means that this will be formBridge itself. Validation errors will be checked.
   }
 ```
-
-
