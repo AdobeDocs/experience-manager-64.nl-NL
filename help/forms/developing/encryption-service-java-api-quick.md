@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
+exl-id: 3f287fb1-b1bb-4494-ad66-5addcc6ef2a8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
-
 
 # Coderingsservice Java API Quick Start (SOAP) {#encryption-service-java-api-quickstart-soap}
 
@@ -682,4 +682,3 @@ In het volgende Java-codevoorbeeld wordt het type codering bepaald waarmee een P
   
  
 ```
-
