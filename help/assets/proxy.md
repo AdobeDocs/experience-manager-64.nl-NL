@@ -3,15 +3,15 @@ title: Ontwikkeling van proxy's
 description: 'Een proxy is een AEM instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een AEM proxy, ondersteunde bewerkingen, proxycomponenten en een aangepaste proxyworker kunt configureren. '
 contentOwner: AG
 feature: Middelverwerking
-role: Beheerder, architect
+role: Administrator, Architect
+exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkeling van middelenproxy {#assets-proxy-development}
 
