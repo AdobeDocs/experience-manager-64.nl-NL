@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4409c6b-f4ef-499c-8daa-e93a163ff8ab
+exl-id: e407c643-5753-447e-ad4e-deb7b9eb2b55
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 4%
 
 ---
-
 
 # Configureer de instellingen voor accountvergrendeling {#configure-account-locking-settings}
 
@@ -28,4 +28,3 @@ De montages van het gebruik op de pagina van het Beheer van het Domein om het ma
 1. Voer in het vak Maximum aantal opeenvolgende verificatiefouten het aantal opeenvolgende keren in dat een gebruiker zich zonder succes kan aanmelden voordat zijn account is vergrendeld. De standaardwaarde is 20.
 1. Voer in het vak Account ontgrendelen na (minuten) het aantal minuten in dat de gebruikersaccount is vergrendeld. Na het opgegeven aantal minuten kan de gebruiker opnieuw proberen zich aan te melden. De standaardwaarde is 30.
 1. Klik op **[!UICONTROL Save]**.
-
