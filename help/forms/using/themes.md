@@ -9,14 +9,14 @@ topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
 feature: Adaptieve Forms
+exl-id: a5a1c824-e53a-4ae7-b0aa-6abbedf28a86
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5899'
 ht-degree: 0%
 
 ---
-
 
 # Thema&#39;s {#creating-and-using-themes} maken en gebruiken
 
@@ -687,4 +687,3 @@ De gegenereerde CSS kunt u met de volgende opties zien:
    Gebruik de themaeditor als u koptekst en voettekst wilt opmaken met opmaakopties zoals letterstijl, achtergrond en transparantie.
 
    Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals een logoafbeelding, een bedrijfsnaam in de koptekst en copyrightinformatie in de voettekst.
-
