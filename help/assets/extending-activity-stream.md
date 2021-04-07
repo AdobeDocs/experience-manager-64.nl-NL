@@ -4,14 +4,14 @@ description: Beschrijft de opnamemogelijkheden van AEM en hoe te om AEM te vorme
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Developer
+exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
 translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 1%
 
 ---
-
 
 # Elementen integreren met activiteitsstroom {#integrating-assets-with-activity-stream}
 
