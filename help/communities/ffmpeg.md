@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
-role: Beheerder
+role: Administrator
+exl-id: 9ed54ee3-3509-4a43-a710-90f4543ccaf3
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
-
 
 # mpeg voor Gemeenschappen {#ffmpeg-for-communities}
 
@@ -71,4 +71,3 @@ U kunt als volgt de DAM Update Asset-workflow wijzigen en in dit voorbeeld de tr
 * Selecteer **[!UICONTROL Save]** om de `DAM Update Asset`-workflow op te slaan
 
    (linkerbovenhoek)
-
