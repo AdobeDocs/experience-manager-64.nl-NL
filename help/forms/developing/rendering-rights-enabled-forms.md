@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
+exl-id: 0cee94ba-1a72-4021-b606-8fa945312483
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
-
 
 # Forms {#rendering-rights-enabled-forms} met rechten voor renderen
 
