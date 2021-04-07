@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
+exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2843'
 ht-degree: 0%
 
 ---
-
 
 # Richtlijnen {#hardware-sizing-guidelines} voor hardwaregrootte
 
