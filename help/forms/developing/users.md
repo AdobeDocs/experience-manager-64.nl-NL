@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
+exl-id: b03acdb5-e951-49d6-b63f-2df273fcb4c7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '6244'
+source-wordcount: '6243'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikers {#managing-users} beheren
 
@@ -753,7 +753,7 @@ De volgende lijst beschrijft de stappen in dit diagram
    <td><p>De gebruikersgegevens worden geverifieerd met de service Verificatiebeheer. Als de gebruikersgegevens geldig zijn, gaat de workflow naar stap 3. Anders wordt een bericht naar de gebruiker verzonden waarin wordt aangegeven dat de gebruiker geen geautoriseerde gebruiker is.</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>Gebruikersgegevens en een formulierontwerp worden opgehaald uit een beveiligde ondernemingsdatabase. </p></td> 
   </tr> 
   <tr> 
@@ -879,7 +879,7 @@ De volgende lijst beschrijft de stappen in dit diagram
    <td><p>AEM Forms voert een synchronisatiebewerking uit.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Gebruikersgegevens worden bijgewerkt.</p></td> 
   </tr> 
   <tr> 
