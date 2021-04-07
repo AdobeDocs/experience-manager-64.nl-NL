@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 2a9be3b7-b325-4d74-a5bc-8d24db491920
+exl-id: 04adbbc9-9e4c-4c64-aab1-20b17bd75bb5
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 0%
 
 ---
-
 
 # Componentgegevens toewijzen aan Adobe Analytics-eigenschappen{#mapping-component-data-with-adobe-analytics-properties}
 
@@ -212,4 +212,3 @@ Als u de bovenstaande afbeelding als voorbeeld neemt, heeft de **AEM weergave** 
 >[!CAUTION]
 >
 >Er kan slechts één CQ-variabele op elk moment aan een Adobe Analytics-variabele worden toegewezen.
-
