@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
+exl-id: 1e0a7cab-39b9-4c90-810c-c93fb76c3869
 translation-type: tm+mt
-source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 3%
 
 ---
-
 
 # Essentiële elementen van catalogus {#catalog-essentials}
 
@@ -120,4 +120,3 @@ Het voorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) moet exa
 * [API voor rapportage](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
 * [API voor analyse van rapporten](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
-
