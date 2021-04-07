@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
 feature: Kader voor integratie in de handel
+exl-id: 27537d62-f032-4fb5-b2cf-003579b61ea8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 1%
 
 ---
-
 
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
