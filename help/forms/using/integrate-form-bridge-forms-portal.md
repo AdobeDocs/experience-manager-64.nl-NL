@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 feature: Mobile Forms
+exl-id: bf4ae163-5d89-48fb-9bc4-182281b28f35
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # FormulierBridge integreren met aangepaste portal voor HTML5-formulieren {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
@@ -104,4 +104,3 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
                    });
            });
    ```
-
