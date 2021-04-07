@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
+exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
 translation-type: tm+mt
-source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # Gegevens voor paginanalyse bekijken{#seeing-page-analytics-data}
 
