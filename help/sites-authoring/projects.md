@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
+exl-id: 70a70f56-1d33-4d8a-984a-a3e6f8deedeb
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 9%
 
 ---
-
 
 # Projecten{#projects}
 
@@ -167,7 +167,7 @@ Deze worden beschreven in [Werken met projectworkflows.](/help/sites-authoring/p
 
 ### Lanceringen {#launches}
 
-In de tegel Startpagina worden alle opstarten weergegeven die zijn aangevraagd met een [Workflow voor het starten van aanvragen.](/help/sites-authoring/projects-with-workflows.md)
+De tegel van Lanceringen toont om het even welke lanceringen die met een [werkschema van de Lancering van het Verzoek zijn gevraagd.](/help/sites-authoring/projects-with-workflows.md)
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
@@ -244,4 +244,3 @@ Voor creatieve projecten worden ook extra rollen - bijvoorbeeld fotografen - geg
 >[!NOTE]
 >
 >Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
-
