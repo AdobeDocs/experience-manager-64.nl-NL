@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
+exl-id: 5b16c775-3bd0-4a55-ba9e-f326224e8bae
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 1%
 
 ---
-
 
 # Auteur een Nieuwe Communautaire Plaats voor Enablement {#author-a-new-community-site-for-enablement}
 
