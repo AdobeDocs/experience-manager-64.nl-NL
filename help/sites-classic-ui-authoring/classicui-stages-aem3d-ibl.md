@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: f9291151-851a-4aff-a50e-a24330ee0c13
+exl-id: 57d037e6-d107-4aab-a9b3-96eb8cbf2857
 translation-type: tm+mt
-source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 0%
 
 ---
-
 
 # Informatie over het werken met IBL-fasen{#about-working-with-ibl-stages}
 
@@ -24,7 +24,7 @@ AEM 3D ondersteunt op afbeeldingen gebaseerde belichting (IBL) voor zowel intera
 
 ## Afbeeldingen voor IBL {#images-for-ibl}
 
-Voor de beste resultaten moeten afbeeldingen die worden gebruikt voor op afbeeldingen gebaseerde belichting HDR (High Dynamic Range) hebben. Zij moeten in lange of lange vorm zijn, met een bolvormige kaart die het milieu volledig bestrijkt.
+Voor het beste resultaat moeten afbeeldingen die worden gebruikt voor op afbeeldingen gebaseerde belichting HDR (High Dynamic Range) hebben. Zij moeten in lange of lange vorm worden opgesteld met een bolvormige toewijzing die het milieu volledig bestrijkt.
 
 AEM 3D biedt momenteel alleen ondersteuning voor 32-bits TIFF-bestanden. Gebruik indien nodig Adobe Photoshop of een vergelijkbaar gereedschap om de HDR-afbeelding om te zetten in een TIFF met behulp van de volgende instellingen in het dialoogvenster Adobe Photoshop TIFF-export:
 
@@ -76,4 +76,3 @@ U kunt de weergave van het IBL-werkgebied verfijnen met de volgende eigenschappe
   </tr> 
  </tbody> 
 </table>
-
