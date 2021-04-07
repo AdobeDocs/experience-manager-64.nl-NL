@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
+exl-id: b85fc608-9653-4491-8557-f66a0a7da5ea
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
 
 ---
-
 
 # Indexeren via de eiken-run Jar{#indexing-via-the-oak-run-jar}
 
@@ -182,4 +182,3 @@ Als het tijd- of prestatieeffect van het opnieuw indexeren met niet `oak-run.jar
 Als het tijd- of prestatieeffect van het opnieuw indexeren met niet `oak-run.jar` methodes te hoog is, kan de volgende `oak-run.jar` gebaseerde benadering worden gebruikt om de definities van de Index van Lucene in MongoMK gebaseerde AEM installaties in te voeren en opnieuw te indexeren.
 
 ![11](assets/11.png)
-
