@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
+exl-id: f47c543d-6136-482b-915f-b4e13f83fa69
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 1%
 
 ---
-
 
 # Geavanceerde systeemkenmerken configureren {#configure-advanced-system-attributes}
 
@@ -29,7 +29,7 @@ Gebruik de Configure Geavanceerde pagina van de Attributen van het Systeem om be
 
    >[!NOTE]
    >
-   >U moet de time-outlimiet voor sessies niet instellen op minder dan 10 minuten omdat het systeem zich mogelijk niet correct gedraagt. De aanbevolen waarde is 10-120 (minuten).
+   >U moet de time-outlimiet voor sessies niet instellen op minder dan 10 minuten, omdat het systeem zich mogelijk niet correct gedraagt. De aanbevolen waarde is 10-120 (minuten).
 
    **Assertion Threshold (Seconden):** Een buffertijd om vertragingen als gevolg van systeemtijdverschillen tussen AEM formuliertoepassingsserver in een cluster te compenseren. AEM formulieren werken terug op de aanmeldtijd van een gebruiker met de hoeveelheid tijd (in seconden) die in deze eigenschap is opgegeven. Geldige waarden zijn `0` tot `3600`. De standaardwaarde is `60`. Met deze instelling wordt de `SAML/Producer/assertionThresholdInSeconds`-invoersleutel in het configuratiebestand bijgewerkt.
 
