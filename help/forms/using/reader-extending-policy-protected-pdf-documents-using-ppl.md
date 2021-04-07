@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Documentbeveiliging
+exl-id: aa32050e-fe52-4823-b826-66ea06e1a6bf
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 0%
 
 ---
-
 
 # Reader PDF-documenten die met een beleid zijn beveiligd, uitbreiden met de Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
@@ -189,4 +189,3 @@ System.out.println("RE rights removed successfully from the document.”);
 outputStream.close();
 inputFileStream.close();
 ```
-
