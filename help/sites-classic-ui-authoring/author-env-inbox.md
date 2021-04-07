@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
+exl-id: e7111c21-1f38-4d0d-ac4b-c83133c0d8d6
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
 
 ---
-
 
 # Uw inbox{#your-inbox}
 
@@ -111,4 +111,3 @@ Als u ervoor hebt gekozen om meldingen in uw AEM-postvak te ontvangen, vult uw p
 * Verwijder het door **Delete** te klikken.
 
 ![chlimage_1-9](assets/chlimage_1-9.jpeg)
-
