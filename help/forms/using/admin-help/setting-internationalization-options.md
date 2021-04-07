@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
+exl-id: 1fb51e4a-e0e8-4a58-8877-98337fe29fac
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 1%
 
 ---
-
 
 # Internationalisatieopties instellen{#setting-internationalization-options}
 
@@ -35,4 +35,3 @@ U kunt de landinstelling opgeven die wordt gebruikt bij het weergeven van een PD
    Voor HTML-transformaties ondersteunen AEM formulieren tekencoderingswaarden die zijn gedefinieerd in het `java.nio.charset`-pakket. Als sFormPreference PDFForm is, worden alleen specifieke tekensets ondersteund. De tekenset moet een geldige canonieke naam zijn. De standaardwaarde is ISO-8859-1.
 
 1. Klik op Opslaan.
-
