@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: 54e48abc-be75-4477-83fa-bd74d5b995af
+exl-id: 82554eb8-34a0-4877-b92c-56ee662dda97
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 10%
 
 ---
-
 
 # Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial{#getting-started-developing-aem-sites-wknd-tutorial}
 
