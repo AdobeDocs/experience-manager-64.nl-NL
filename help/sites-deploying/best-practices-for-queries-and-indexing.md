@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
+exl-id: 5be5e2ff-2b46-4b9f-a58e-ecb16c77d603
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 0%
 
 ---
-
 
 # Beste praktijken voor Vragen en het Indexeren{#best-practices-for-queries-and-indexing}
 
@@ -343,7 +343,7 @@ De volgende details en resoluties zijn mogelijk:
 
       Deze voorwaarde is indicatief van een misconfigured datastore die in OM HET EVEN WELK binair getal (bijvoorbeeld kan resulteren. binaire elementen) om te ontbreken.
 
-      In dit geval herstelt u de laatst bekende goede versie van de opslagplaats om alle ontbrekende binaire bestanden te herstellen.
+      Herstel in dit geval de laatst bekende goede versie van de opslagplaats om alle ontbrekende binaire bestanden te herstellen.
 
 #### Binair Lucene-indexbestand is beschadigd {#lucene-index-binary-is-corrupt}
 
@@ -467,7 +467,7 @@ Merk op dat de volledige opslag van de Knoop (zoals die door de wegen in het eik
 
 *Stap 2 (a-c) kan tijdens normale verrichting van AEM worden uitgevoerd is het slechts met de Opslag van Gegevens in wisselwerking staat.*
 
-2 bis. `oak-run.jar --tika` uitvoeren om tekst voor de binaire knopen vooraf te halen die in het CSV- dossier worden opgesomd in (1b) wordt geproduceerd
+2 bis. `oak-run.jar --tika` uitvoeren om tekst voor de binaire knopen vooraf te halen die in het Csv- dossier worden opgesomd in (1b) wordt geproduceerd
 
 2 ter. Het proces dat in (2a) wordt in werking gesteld heeft toegang tot binaire knopen die in CSV in de Opslag van Gegevens worden bepaald direct, en haalt tekst uit.
 
@@ -484,4 +484,3 @@ Aan vooraf geëxtraheerde tekst kan stapsgewijs worden toegevoegd. De voorextrac
 3 bis. [Opnieuw ](#how-to-re-index) indexeren van Lucene-indexen wordt aangeroepen in AEM
 
 3 ter. De Apache Jackrabbit Oak DataStore PreExtractedTextProvider OSGi config (geconfigureerd om te wijzen naar de uitgenomen tekst via een bestandssysteempad) geeft Oak de opdracht om volledige tekst uit de geëxtraheerde bestanden te betrekken en vermijdt rechtstreeks het bewerken en bewerken van de gegevens die in de opslagplaats zijn opgeslagen.
-
