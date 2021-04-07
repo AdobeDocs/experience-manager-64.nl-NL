@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
+exl-id: 4e39f6dd-b7a3-4c6c-be1f-66b9a5743352
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
 
 ---
-
 
 # Werken met formsets in de AEM Forms-werkruimte {#working-with-formsets-in-aem-forms-workspace}
 
@@ -29,7 +29,7 @@ De AEM Forms-werkruimte ondersteunt formsets. Met formsets kunnen meerdere formu
 1. Maak de workflow voor het bedrijfsproces in Workbench. Zie [Workbench help](https://www.adobe.com/go/learn_aemforms_workbench_63) voor meer informatie.
 1. Selecteer **Een CRX-element** gebruiken in presentatie en gegevens in de proceseigenschappen van het startpunt.
 
-   ![1-1](assets/1-1.png)
+   ![3-1](assets/1-1.png)
 
 1. Klik ![doorblader](assets/browse.png) (doorbladeren) naast de CRX activaweg. Het dialoogvenster Formulierelement selecteren wordt geopend.
 
@@ -58,4 +58,3 @@ De volgende bewerkingen worden ondersteund in de indeling in de AEM Forms-werkru
 >[!NOTE]
 >
 >Voor prestatieverbetering tijdens het verplaatsen van vorige en volgende formulieren in een indeling, worden alle werkruimteknoppen (Vorige, Volgende, Opslaan, Verzenden en ... (Meer)) worden uitgeschakeld totdat het desbetreffende formulier volledig wordt weergegeven.
-
