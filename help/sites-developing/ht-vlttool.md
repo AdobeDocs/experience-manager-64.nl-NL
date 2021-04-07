@@ -9,18 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
+exl-id: 26eecb01-492a-4f86-805f-da90e3dec657
 translation-type: tm+mt
-source-git-commit: f0e4d958cad182c7218314ba7b117c2347f947ca
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2748'
 ht-degree: 2%
 
 ---
 
-
 # Hoe te om het Hulpmiddel te gebruiken VLT {#how-to-use-the-vlt-tool}
 
-Het hulpprogramma Jackrabbit FileVault (VLT) is een hulpprogramma dat is ontwikkeld door de Apache Foundation](https://www.apache.org/) en waarmee de inhoud van een Jackrabbit/AEM-instantie wordt toegewezen aan uw bestandssysteem. [ Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, evenals configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
+Het hulpprogramma Jackrabbit FileVault (VLT) is een hulpprogramma dat is ontwikkeld door de Apache Foundation](https://www.apache.org/) en waarmee de inhoud van een Jackrabbit/AEM-instantie wordt toegewezen aan uw bestandssysteem. [ Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, evenals configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekken.
 
 U voert het gereedschap VLT uit vanaf de opdrachtregel. In dit document wordt beschreven hoe u het gereedschap kunt gebruiken, inclusief hoe u aan de slag kunt en hoe u hulp kunt krijgen, en een lijst met alle [opdrachten](#vlt-commands) en beschikbare [opties](#vlt-global-options).
 
