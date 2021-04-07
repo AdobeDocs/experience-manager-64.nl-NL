@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
+exl-id: 55aa015e-e0e4-411e-8e28-75006ae3090b
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 2%
 
 ---
-
 
 # Essentiële elementen sociale grafiek {#social-graph-essentials}
 
@@ -89,4 +89,3 @@ De `following`component maakt een lijst van de leden die of het huidige lid volg
 * [Eindpunten sociale grafiek](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Aanpassingen op de server](server-customize.md)
-
