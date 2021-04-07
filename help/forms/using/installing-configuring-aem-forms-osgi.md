@@ -7,15 +7,15 @@ uuid: ce253b5a-eeb2-47d2-a6c9-e6f59384159a
 contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
-role: Beheerder
+role: Administrator
+exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
-
 
 # Mogelijkheden voor gegevensvastlegging installeren en configureren {#install-and-configure-data-capture-capabilities}
 
@@ -213,4 +213,3 @@ U hebt een omgeving geconfigureerd voor het gebruik van AEM Forms-mogelijkheden 
 * [Uw eerste adaptieve formulier maken](/help/forms/using/create-your-first-adaptive-form.md)
 * [Uw eerste PDF-formulier maken](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/designer-quickstart.pdf)
 * [Inleiding tot HTML5 Forms](/help/forms/using/introduction.md)
-
