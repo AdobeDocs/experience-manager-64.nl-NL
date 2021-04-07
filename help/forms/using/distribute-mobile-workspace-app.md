@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
+exl-id: c1bf0a0e-70f7-41dd-8b1a-c114d89a265b
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms-app {#distribute-aem-forms-app} distribueren
 
