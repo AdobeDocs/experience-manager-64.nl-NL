@@ -9,14 +9,14 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 feature: Adaptieve Forms
+exl-id: 2f83e853-2468-4ea2-85f6-8cf7fe9de6a8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1546'
 ht-degree: 0%
 
 ---
-
 
 # Zelfstudie: Formuliergegevensmodel {#tutorial-create-form-data-model} maken
 
@@ -26,7 +26,7 @@ Deze zelfstudie is een stap in de serie [Uw eerste adaptieve vorm maken](/help/f
 
 ## Informatie over de zelfstudie {#about-the-tutorial}
 
-Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het aangepaste formulier vooraf invullen en ingediende formuliergegevens terugschrijven naar het gegevensmodelobject.
+Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
 Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel.
 
@@ -230,4 +230,3 @@ Voer de volgende handelingen uit om de test uit te voeren:
    Nu, als u de gelezen modeldienst opnieuw voor identiteitskaart 7107215 test, zal het de bijgewerkte klantendetails terugwinnen en tonen zoals hieronder getoond.
 
    ![lezen-bijgewerkt](assets/read-updated.png)
-
