@@ -10,14 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 feature: Bijwerken
+exl-id: edd6e933-59ed-4d7e-8934-7e2ec485cfb9
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1888'
 ht-degree: 0%
 
 ---
-
 
 # Controles en probleemoplossing na upgrade{#post-upgrade-checks-and-troubleshooting}
 
