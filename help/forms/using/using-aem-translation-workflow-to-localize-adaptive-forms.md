@@ -9,14 +9,14 @@ topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
 feature: Adaptieve Forms
+exl-id: 5d0dcf4d-8995-4547-acb1-4917696af95e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
-
 
 # De AEM vertaalworkflow gebruiken om aangepaste formulieren en recorddocumenten te lokaliseren {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
@@ -80,6 +80,5 @@ Voer de volgende stappen uit om een formulier en het bijbehorende document te lo
 >* Adaptieve formuliercomponenten bieden geen ondersteuning voor RTL-talen (van rechts naar links). Bijvoorbeeld Hebreeuws.
 
 >
-
 
 
