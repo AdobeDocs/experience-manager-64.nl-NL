@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
+exl-id: 969dc933-6a23-4213-81f5-cd7e7dae0f64
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 0%
 
 ---
-
 
 # WebDAV Access{#webdav-access}
 
@@ -26,13 +26,13 @@ AEM biedt WebDAV-ondersteuning waarmee u inhoud in opslagruimten kunt weergeven 
 
 ## Algemeen {#general}
 
-[Gedetailleerde instructies per ](/help/sites-administering/webdav-access.md#connecting-via-webdav) besturingssysteem worden in dit document opgenomen, maar de inhoud van de instructies om via het WebDAV-protocol verbinding te maken met de opslagplaats, verwijst u naar de volgende locatie op de WebDAV-client:
+[Gedetailleerde instructies per besturingssysteem worden in dit document opgenomen, maar de inhoud van de instructies om via het WebDAV-protocol verbinding te maken met de opslagplaats, verwijst u naar de volgende locatie op de WebDAV-client: ](/help/sites-administering/webdav-access.md#connecting-via-webdav) 
 
 ```xml
 http://localhost:4502
 ```
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 Deze URL biedt WebDAV-toegang tot de standaardwerkruimte ( `crx.default`) wanneer deze wordt verbonden vanaf het niveau van het besturingssysteem. Hoewel het eenvoudiger is voor de gebruiker, biedt het hen niet de extra flexibiliteit om werkruimtenamen te specificeren, die kunnen worden verwezenlijkt gebruikend extra [WebDAV URLs](/help/sites-administering/webdav-access.md#webdav-urls).
 
