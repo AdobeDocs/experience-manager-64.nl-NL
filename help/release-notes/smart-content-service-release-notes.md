@@ -7,14 +7,14 @@ uuid: 5f474b36-3451-48ea-8669-b2d793638b06
 content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
+exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 1%
 
 ---
-
 
 # Opmerkingen bij de release Smart Content Service {#smart-content-service-release-notes}
 
