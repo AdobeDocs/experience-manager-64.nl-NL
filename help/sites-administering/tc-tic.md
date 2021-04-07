@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Taalkopie
+exl-id: e68b5a5c-e12a-4b7b-b607-451ef8fdeff0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen van het Kader van de Integratie van de Vertaling{#configuring-the-translation-integration-framework}
 
@@ -228,4 +228,3 @@ Koppel een pagina aan het vertaalintegratieframework dat definieert hoe u de ver
 1. Klik op Bewerken of tik op Bewerken en klik op het tabblad Cloud Services.
 1. Klik of tik Add Configuratie > Vertaalintegratie.
 1. Selecteer het vertaalintegratieframework dat u wilt gebruiken en klik op Gereed of tik op Gereed.
-
