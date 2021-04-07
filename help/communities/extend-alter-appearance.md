@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
+exl-id: 358b70b8-8122-4eda-baa7-d9a58d6901f9
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
 
 ---
-
 
 # De vormgeving wijzigen (HBS) {#alter-the-appearance-hbs}
 
