@@ -10,14 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configureren
+exl-id: d94b776d-db06-4f46-ac7f-c3b8e4160b69
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
 
 ---
-
 
 # Logboekregistratie{#logging}
 
@@ -151,4 +151,3 @@ U kunt uw eigen registreerapparaat/schrijfpaar definiëren:
 >[!NOTE]
 >
 >In bepaalde omstandigheden wilt u wellicht een [aangepast logbestand](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file) maken.
-
