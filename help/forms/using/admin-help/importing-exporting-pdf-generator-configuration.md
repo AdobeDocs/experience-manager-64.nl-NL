@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 feature: PDF Generator
+exl-id: 57673410-b8f1-494e-b4a0-c6724bab643c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
 
 ---
-
 
 # Configuratiebestanden van de PDF Generator importeren en exporteren {#importing-and-exporting-pdf-generator-configuration-files}
 
@@ -65,4 +65,3 @@ Standaard converteert PDF Generator alleen de standaardlaag AutoCAD-bestanden na
 
 1. Klik in de beheerconsole op Services > PDF Generator > Configuration Files > Import Configuration.
 1. Selecteer Standaardinstellingen configuratie herstellen en klik op Importeren.
-
