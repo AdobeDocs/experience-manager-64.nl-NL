@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
 feature: Adaptieve Forms
+exl-id: eec8bcbe-e2ba-42f1-98ea-08a4ca723e48
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot formulierreeks met meerdere stappen {#introduction-to-multi-step-form-sequence}
 
@@ -45,4 +45,3 @@ We gebruiken een voorbeeld waarbij u een reeks moet maken voor het invullen, ver
 1. Voer de overige stappen uit om de formuliersjabloon te maken. Zie [Een aangepaste formuliersjabloon maken](/help/forms/using/custom-adaptive-forms-templates.md) voor meer informatie.
 
 Nadat u de formuliervolgorde in de formuliersjabloon hebt gedefinieerd, kunt u er formulieren mee maken die de basisstructuur hebben gedefinieerd als de ingestelde reeks. U kunt het formulier echter altijd aan uw wensen aanpassen.
-
