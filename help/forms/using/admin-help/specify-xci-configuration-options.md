@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f38ebd69-8d1c-49b6-824f-4bf0ec8a8953
+exl-id: 5156bb1c-8ad6-498c-aaf7-6474ffa8c83c
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 1%
 
 ---
-
 
 # XCI-configuratieopties opgeven {#specify-xci-configuration-options}
 
@@ -32,4 +32,3 @@ U kunt opties selecteren waarmee de overschrijving voor de bovenstaande opties w
 1. Klik in de beheerconsole op Services > Uitvoer.
 1. Schakel het selectievakje Systeemstandaard XCI-opties gebruiken in of uit. Wanneer deze optie is geselecteerd, gebruikt Output de standaardwaarden voor de pakketten, de maker, de producent en de compressObjectStream-instellingen. Als deze optie is uitgeschakeld, gebruikt Output de waarden die zijn opgegeven in het aangepaste XCI-bestand.
 1. Klik op Opslaan.
-
