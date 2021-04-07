@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
+exl-id: 357a130a-af60-4e86-9161-5dc7056aa052
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # Essentiële elementen van communautaire groepen {#community-group-essentials}
 
@@ -111,4 +111,3 @@ Wanneer u een groep maakt in de ontwerpomgeving, moet u eerst de communitysite p
 * [Console van groepen Gemeenschappen](groups.md)
 * [Functie Groepen](functions.md#groups-function)
 * [Groepssjablonen](tools-groups.md)
-
