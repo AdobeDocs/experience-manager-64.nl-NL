@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
 feature: Bijwerken
+exl-id: e6092e80-3a39-4fde-8a94-084eee5fa8a9
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
 
 ---
-
 
 # Upgradeprocedure{#upgrade-procedure}
 
