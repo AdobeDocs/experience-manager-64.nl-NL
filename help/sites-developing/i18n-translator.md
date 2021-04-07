@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
+exl-id: cc30c3bd-8e4b-4884-ad28-df723880f8f5
 translation-type: tm+mt
-source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2345'
 ht-degree: 0%
 
 ---
-
 
 # Vertaler gebruiken om woordenboeken te beheren{#using-translator-to-manage-dictionaries}
 
@@ -387,4 +387,3 @@ Ook het testen van woordenboektekenreeksen moet worden uitgevoerd als onderdeel 
 >[!NOTE]
 >
 >Wanneer u Dispatcher gebruikt, moet u in het cachegeheugen opgeslagen pagina&#39;s ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) [invalideren om nieuwe dicationaire tekenreeksen in gerenderde componenttekenreeksen op te nemen.
-
