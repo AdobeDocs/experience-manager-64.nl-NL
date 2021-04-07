@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
-role: Beheerder
+role: Administrator
+exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1980'
 ht-degree: 0%
 
 ---
-
 
 # Metagegevens van formulieren beheren {#manage-form-metadata}
 
