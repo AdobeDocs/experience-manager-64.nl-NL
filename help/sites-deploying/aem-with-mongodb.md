@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 3c59ec8f-b72f-48dd-bac8-9817005ae210
+exl-id: 8397352a-51b0-4d03-a72d-19f7da58c07e
 translation-type: tm+mt
-source-git-commit: 77997d6d8744cf1498add91a0aa2dab4e29f8e3d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6512'
 ht-degree: 0%
 
 ---
-
 
 # AEM met MongoDB{#aem-with-mongodb}
 
@@ -247,7 +247,7 @@ Het wordt aanbevolen een permanente cacheconfiguratie in te schakelen voor Mongo
 
 ### Ondersteuning voor besturingssystemen {#operating-system-support}
 
-MongoDB 2.6 gebruikt een in geheugen toegewezen opslagengine die gevoelig is voor bepaalde aspecten van het systeembeheer tussen RAM en schijf. De vraag en gelezen Prestaties van de instantie MongoDB baseert zich op het vermijden of het elimineren van langzame I/O verrichtingen die vaak als paginafouten worden bedoeld. Dit zijn paginafouten die op het `mongod` proces in het bijzonder van toepassing zijn. Ze mogen niet worden verward met paginafouten op besturingssysteemniveau.
+MongoDB 2.6 gebruikt een in geheugen toegewezen opslagengine die gevoelig is voor bepaalde aspecten van het systeembeheer tussen RAM en schijf. De vraag- en leesprestaties van de instantie MongoDB zijn afhankelijk van het voorkomen of verwijderen van trage I/O-bewerkingen die vaak als paginafouten worden aangeduid. Dit zijn paginafouten die op het `mongod` proces in het bijzonder van toepassing zijn. Ze mogen niet worden verward met paginafouten op besturingssysteemniveau.
 
 Voor snelle verrichting zou het gegevensbestand MongoDB slechts tot gegevens moeten toegang hebben die reeds in RAM zijn. De gegevens waartoe het toegang moet krijgen, bestaan uit indexen en gegevens. Deze verzameling indexen en gegevens wordt de werkset genoemd. Als de werkset groter is dan de beschikbare RAM-geheugen, moet MongoDB die gegevens vanaf een schijf met I/O-kosten inpakken, zodat andere gegevens die al in het geheugen staan, worden verwijderd. Als de verwijdering ertoe leidt dat gegevens opnieuw worden geladen van schijfpaginafouten zullen de fouten domineren en de prestaties zullen verminderen. Als de werkset dynamisch en variabel is, worden er meer paginafouten gegenereerd om bewerkingen te ondersteunen.
 
@@ -600,7 +600,7 @@ Zie deze post op [veilig het opstellen van MongoDB](https://blogs.adobe.com/secu
 
 ### Het besturingssysteem kiezen voor de Dispatcher {#choosing-the-operating-system-for-the-dispatcher}
 
-Voor een correcte implementatie van MongoDB moet het besturingssysteem dat de dispatcher host, **Apache httpd versie 2.4 of hoger uitvoeren.**
+Voor een correcte implementatie van MongoDB moet het besturingssysteem dat de dispatcher host, **Apache httpd versie 2.4 of hoger worden uitgevoerd.**
 
 Ook, zorg ervoor dat alle bibliotheken die in uw bouwstijl worden gebruikt bijgewerkt zijn om veiligheidsimplicaties te minimaliseren.
 
