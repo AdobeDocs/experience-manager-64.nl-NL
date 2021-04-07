@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
+exl-id: 759cff3e-960a-4c38-a731-9fff21e739cf
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 0%
 
 ---
-
 
 # Tijdelijk beheer en vertraging{#work-manager-and-throttling}
 
@@ -106,4 +106,3 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
 1. Klik onder Extra eigenschappen op Java Virtual Machine.
 1. Typ in het vak Algemene JVM-argumenten de argumenten die u nodig hebt.
 1. Klik op OK of Toepassen en klik vervolgens rechtstreeks op Opslaan in de master configuratie.
-
