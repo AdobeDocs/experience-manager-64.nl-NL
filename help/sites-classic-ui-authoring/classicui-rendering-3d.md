@@ -1,22 +1,22 @@
 ---
 title: 3D-elementen renderen
 seo-title: 3D-elementen renderen
-description: U kunt 3D-elementen renderen die u hebt gemanipuleerd en opgeslagen in AEM om 2D-afbeeldingen te maken voor gebruik op webinhoudpagina's.
-seo-description: U kunt 3D-elementen renderen die u hebt gemanipuleerd en opgeslagen in AEM om 2D-afbeeldingen te maken voor gebruik op webinhoudpagina's.
+description: U kunt 3D-elementen renderen die u hebt gemanipuleerd en in AEM hebt opgeslagen om 2D-afbeeldingen te maken die u kunt gebruiken op webinhoudpagina's.
+seo-description: U kunt 3D-elementen renderen die u hebt gemanipuleerd en in AEM hebt opgeslagen om 2D-afbeeldingen te maken die u kunt gebruiken op webinhoudpagina's.
 uuid: fbbe4fb4-cf21-4752-a2b8-bec2d40e8362
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
+exl-id: 3c0c59cb-90a9-43f8-8cd2-ebeac6e1818a
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
 
 ---
-
 
 # 3D-elementen renderen{#rendering-d-assets}
 
@@ -26,7 +26,7 @@ Zie [De pagina-inhoud bewerken](/help/sites-authoring/qg-page-authoring.md#editi
 
 ## Prestatieaspecten bij het renderen van 3D-elementen {#performance-considerations-when-rendering-d-assets}
 
-Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en het geheugen. Als zodanig kan rendering vaak veel tijd in beslag nemen. Rendertijden variëren aanzienlijk afhankelijk van verschillende factoren, naast de duidelijke modelgrootte en serverhardware:
+Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en het geheugen. Als zodanig kan rendering vaak veel tijd in beslag nemen. Rendertijden variëren aanzienlijk, afhankelijk van verschillende factoren, naast de duidelijke modelgrootte en serverhardware:
 
 * **Rendererselectie**.
 
@@ -38,7 +38,7 @@ Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en
 
 De rendermodule Snel verfijnen neemt meestal enkele minuten in beslag om grotere afbeeldingen te renderen. Nochtans, nemen de derderenderers vaak vele notulen, zelfs uren wanneer gevormd voor maximumkwaliteit.
 
-Conversie-, verwerkings- en rendertaken worden zo nodig op de server in de wachtrij geplaatst om overbelasting van de server te voorkomen. Het bericht &quot;Wachten op renderen...&quot; wordt weergegeven bij recent geüploade elementen in [!UICONTROL Card View]. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat de huidige rendertaak kan worden gestart.
+Conversie-, verwerkings- en rendertaken worden op de server in de wachtrij geplaatst om overbelasting van de server te voorkomen. Het bericht &quot;Wachten op renderen...&quot; wordt weergegeven bij recent geüploade elementen in [!UICONTROL Card View]. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat de huidige rendertaak kan worden gestart.
 
 >[!NOTE]
 >
@@ -91,4 +91,3 @@ Conversie-, verwerkings- en rendertaken worden zo nodig op de server in de wacht
 1. Tik op **[!UICONTROL Start Render]** om het renderingsproces te starten.
 
    Er wordt tijdelijk een bericht weergegeven om aan te geven dat de rendering is gestart. Voor het gemak, omvat dit bericht ook een verbinding aan geselecteerde [!UICONTROL Output Folder] zodat kunt u aan het direct navigeren.
-
