@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
+exl-id: 123f9c68-2b94-4f24-a7fe-3ede36e0b80f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3293'
 ht-degree: 0%
 
 ---
-
 
 # Push Notifications{#push-notifications}
 
@@ -39,7 +39,7 @@ Na installatie en configuratie (zoals hieronder uitgelegd) werkt het als volgt:
 1. De kernleverancier duwt het bericht aan alle apparaten die voor die duw worden geregistreerd. Voor elk apparaat gebruikt het het cellulaire gegevensnetwerk of WiFi, welke momenteel beschikbaar op het apparaat is.
 1. De melding wordt weergegeven op het apparaat als de app waarvoor deze is geregistreerd, niet wordt uitgevoerd. Een gebruiker die op de melding tikt, start de app en geeft de melding weer in de app. Als de toepassing al wordt uitgevoerd, wordt alleen de melding in de app weergegeven.
 
-Deze versie van AEM biedt ondersteuning voor mobiele apparaten met iOS en Android.
+Deze release van AEM biedt ondersteuning voor mobiele apparaten met iOS en Android.
 
 ## Overzicht en procedure {#overview-and-procedure}
 
@@ -106,7 +106,7 @@ AEM is geconfigureerd om een van de drie services te gebruiken voor pushberichte
 
 >[!NOTE]
 >
->*Hier vindt u informatie over Amazon SNS en een koppeling om een nieuwe AWS-account te maken. U vindt deze koppeling  [hier](https://aws.amazon.com/sns/). U kunt een jaar lang een gratis account opvragen.*
+>*Hier vindt u informatie over Amazon SNS en een koppeling om een nieuwe AWS-account te maken. U vindt deze  [koppeling](https://aws.amazon.com/sns/). U kunt een jaar lang een gratis account opvragen.*
 
 Als u geen SNS van Amazon wilt gebruiken kunt u deze stappen overslaan.
 
@@ -375,7 +375,7 @@ Als de tegel **Push Notifications** in het dashboard wordt weergegeven, gebruikt
 
    U kunt eigenschappen bewerken, meldingen verzenden of de melding verwijderen.
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 >[!NOTE]
 >
@@ -386,4 +386,3 @@ Als de tegel **Push Notifications** in het dashboard wordt weergegeven, gebruikt
 ### De volgende stappen {#the-next-steps}
 
 Zie [AEM Mobile Content Personalization](/help/mobile/phonegap-aem-mobile-content-personalization.md) als u de details over pushmeldingen voor uw app begrijpt.
-
