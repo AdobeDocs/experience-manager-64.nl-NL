@@ -7,14 +7,14 @@ uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
+exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
 translation-type: tm+mt
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 16%
 
 ---
-
 
 # Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
@@ -390,4 +390,3 @@ In de volgende tabel worden de mogelijkheden van de toepassingen AEM Inbox en AE
   </tr>
  </tbody>
 </table>
-
