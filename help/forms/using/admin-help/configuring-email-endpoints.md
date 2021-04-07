@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
+exl-id: f24d9260-31e8-4bdf-8b80-c17cdd2d0747
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3766'
 ht-degree: 0%
 
 ---
-
 
 # E-maileindpunten {#configuring-email-endpoints} configureren
 
@@ -47,7 +47,7 @@ U kunt POP3, IMAP, of SMTP vormen om de Veilige Laag van Contactdozen (SSL) voor
 1. Een clientcertificaat exporteren van de e-mailserver.
 1. Gebruik het hulpprogramma Keytool om het clientcertificaatbestand te importeren naar het JVM-certificaatarchief (Java Virtual Machine) van de toepassingsserver. De procedure voor deze stap is afhankelijk van de installatiepaden van JVM en client.
 
-   Als u bijvoorbeeld een standaard Oracle WebLogic Server-installatie gebruikt met JDK 1.5.0 op Microsoft Windows Server® 2003, typt u de volgende tekst in een opdrachtprompt:
+   Als u bijvoorbeeld een standaard WebLogic Server-installatie van het Oracle gebruikt met JDK 1.5.0 op Microsoft Windows Server® 2003, typt u de volgende tekst in een opdrachtprompt:
 
    `keytool -import -file client_certificate -alias myalias -keystore BEA_HOME\jdk150_04\jre\security\cacerts`
 
@@ -272,4 +272,3 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 1. Selecteer in de lijst MailFrom de optie Variabele en typ `%SENDER%` in het aangrenzende vak. Dit brengt het afzenderadres aan de Volledige het procesgegevens van de Taak in kaart.
 1. Typ `results` in het vak Resultaten. Dit veroorzaakt de Volledige Taak of Proces van het Begin om een resultaatkoord terug te keren.
 1. Klik op Toevoegen.
-
