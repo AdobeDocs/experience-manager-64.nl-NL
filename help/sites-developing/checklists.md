@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
+exl-id: addb71f8-d042-4b14-8775-f15ab9fa5b6b
 translation-type: tm+mt
-source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 1%
 
 ---
-
 
 # Controlklists{#checklists}
 
@@ -38,4 +38,3 @@ In de volgende checklist worden enkele van de belangrijkste problemen beschreven
 >[!NOTE]
 >
 >U kunt [Beheerde Projecten - Checklist van Beste praktijken ](/help/managing/best-practices.md) voor verdere controlelijsten met betrekking tot het volledige project ook zien.
-
