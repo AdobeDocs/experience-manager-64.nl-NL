@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
+exl-id: 194c0835-e9b5-4968-a5f0-2ed3bf6793fd
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 0%
 
 ---
-
 
 # Probleemoplossing voor oak-indexen{#troubleshooting-oak-indexes}
 
