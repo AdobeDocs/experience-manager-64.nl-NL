@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
+exl-id: 3eecec53-0b39-4783-8730-f08705183941
+feature: 3D-middelen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
-
 
 # 3D-elementen renderen {#rendering-d-assets}
 
@@ -38,7 +40,7 @@ Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en
 
 De rendermodule Snel verfijnen neemt meestal enkele minuten in beslag om grotere afbeeldingen te renderen. Nochtans, nemen de derderenderers vaak vele notulen, zelfs uren wanneer gevormd voor maximumkwaliteit.
 
-Conversie-, verwerkings- en rendertaken worden zo nodig op de server in de wachtrij geplaatst om overbelasting van de server te voorkomen. Het bericht &quot;Wachten op renderen...&quot; wordt weergegeven op onlangs geüploade middelen in de Kaartweergave. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat de huidige rendertaak kan worden gestart.
+Conversie-, verwerkings- en rendertaken worden op de server in de wachtrij geplaatst om overbelasting van de server te voorkomen. Het bericht &quot;Wachten op renderen...&quot; wordt weergegeven op onlangs geüploade middelen in de Kaartweergave. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat de huidige rendertaak kan worden gestart.
 
 >[!NOTE]
 >
@@ -90,4 +92,3 @@ Conversie-, verwerkings- en rendertaken worden zo nodig op de server in de wacht
 1. Tik op **[!UICONTROL Start Render]** om het renderingsproces te starten.
 
    Er wordt tijdelijk een bericht weergegeven om aan te geven dat de rendering is gestart. Voor het gemak bevat dit bericht ook een koppeling naar de geselecteerde uitvoermap, zodat u er direct naar kunt navigeren.
-
