@@ -9,24 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
+exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
 
 ---
 
-
 # Problemen oplossen {#troubleshooting}
 
-Deze paragraaf bevat gemeenschappelijke zorgen en bekende problemen.
+Deze paragraaf bevat gemeenschappelijke punten van zorg en bekende punten.
 
 ## Bekende problemen {#known-issues}
 
 ### Terugzetfout verzending {#dispatcher-refetch-fails}
 
-Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen reactie van de externe server ontvangen&#39; nadat wordt gewacht tot de aanvraag is verzonden.
+Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan reactie van de externe server niet ontvangen&#39; nadat wordt gewacht tot de aanvraag is verzonden.
 
 Dit probleem wordt opgelost door Dispatcher 4.1.6 of hoger te gebruiken.
 
