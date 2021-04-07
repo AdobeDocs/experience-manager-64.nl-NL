@@ -9,14 +9,14 @@ topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 601108d8-f432-4a6b-9ec9-831cf054e52f
 feature: Correspondentenbeheer
+exl-id: d58c2468-3e77-41a0-a2ba-c19912c77f73
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4462'
 ht-degree: 2%
 
 ---
-
 
 # Aangepaste eigenschappen toevoegen aan Correspondentenbeheerelementen {#add-custom-properties-to-correspondence-management-assets}
 
