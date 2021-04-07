@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
+exl-id: eaa2c889-d116-4209-9063-0c0b32dd8849
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 3%
 
 ---
-
 
 # Vorm LDAP bindt wachtwoord{#configure-the-ldap-bind-password}
 
@@ -56,4 +56,3 @@ Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het 
 
 1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Bladeren om het bestand te zoeken, klik op Importeren en klik vervolgens op OK.
-
