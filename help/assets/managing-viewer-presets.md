@@ -10,14 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
+exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
+feature: Voorinstellingen viewer
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '4092'
+source-wordcount: '4094'
 ht-degree: 9%
 
 ---
-
 
 # Voorinstellingen voor Dynamic Media-viewers beheren {#managing-viewer-presets}
 
@@ -110,7 +112,7 @@ Zie *Opmerkingen bij de release van viewers* in de inhoudsopgave van de [Referen
 
 >[!NOTE]
 >
->Alle voorinstellingen voor viewers die buiten de box vallen, zijn al geactiveerd (ingeschakeld), maar u moet ze wel publiceren.\
+>Alle voorinstellingen voor viewers die niet in de box staan, zijn al geactiveerd (ingeschakeld), maar u moet ze wel publiceren.\
 >Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
 >
 >Nieuwe voorinstellingen voor viewers die u maakt en toevoegt, moeten worden geactiveerd *en* worden gepubliceerd.\
