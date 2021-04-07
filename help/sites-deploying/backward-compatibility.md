@@ -10,14 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
 feature: Bijwerken
+exl-id: 5798100a-e03a-43f8-9189-ae51c06e192b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%
 
 ---
-
 
 # Achterwaartse Verenigbaarheid in AEM 6.4{#backward-compatibility-in-aem}
 
