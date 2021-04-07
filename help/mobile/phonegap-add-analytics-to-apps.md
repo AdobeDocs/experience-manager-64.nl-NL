@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
+exl-id: 814285ca-5584-49fc-a190-eff431790d59
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Analytics toevoegen aan uw mobiele toepassing{#add-adobe-analytics-to-your-mobile-application}
 
@@ -50,7 +50,7 @@ AEM Mobile heeft een Adobe Analytics-account nodig om trackinggegevens in uw app
 
 Nadat het account Analytics is ingesteld, moet u een configuratie voor Content Sync maken om de inhoud in uw mobiele toepassing te plaatsen.
 
-Zie Inhoud synchroniseren configureren voor meer informatie. De configuratie zal de Synchronisatie van de Inhoud moeten instrueren om ADBMobileConfig in de /www folder te zetten. In de Geometrixx Outdoors App vindt u bijvoorbeeld de configuratie van Content Sync: */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Er is ook een configuratie voor ontwikkeling. het is echter identiek aan de niet-ontwikkelingsconfiguratie in het geval van Geometrixx Outdoors.
+Zie Inhoud synchroniseren configureren voor meer informatie. De configuratie zal de Synchronisatie van de Inhoud moeten instrueren om ADBMobileConfig in de /www folder te zetten. In de Geometrixx Outdoors App vindt u bijvoorbeeld de configuratie van Content Sync: */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Er is ook een configuratie voor ontwikkeling. in het geval van Geometrixx Outdoors is het echter identiek aan de niet-ontwikkelingsconfiguratie.
 
 Raadpleeg Analytics - Mobile Services - Adobe Mobile Services SDK Config File voor meer informatie over het downloaden van ADBMobileConfig vanuit het dashboard voor AEM toepassingen voor mobiele.
 
@@ -153,4 +153,3 @@ Hiermee worden alle gegevens die door de AMS-plug-in zijn verzameld, omgeleid na
 | API-eindpunt | De basis-URL van de HTTP-API&#39;s van Adobe Mobile Services | https://api.omniture.com |
 | Config-eindpunt | De URL die wordt gebruikt om ADB Mobile Config voor bepaalde rapportsuite-id op te halen | /ams/1.0/app/config/ |
 | Mobiele service-apps | Een lijst met apps ophalen in het gebruikersbedrijf | /ams/1.0/apps |
-
