@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
+exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
+feature: Kiezers
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '702'
 ht-degree: 17%
 
 ---
-
 
 # Werken met kiezers {#working-with-selectors}
 
@@ -118,4 +120,3 @@ Zie ook [Asset Picker](asset-selector.md) voor meer informatie.
 1. Tik op het vinkje om het element te selecteren. Het element wordt weergegeven.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-
