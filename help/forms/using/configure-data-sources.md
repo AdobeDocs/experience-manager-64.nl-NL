@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 feature: Formuliergegevensmodel
+exl-id: a8f200ac-cf9f-47b7-9856-e62aa8b229eb
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 0%
 
 ---
-
 
 # Gegevensbronnen {#configure-data-sources} configureren
 
