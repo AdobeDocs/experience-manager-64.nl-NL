@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
+exl-id: 87be7ffe-d937-4e85-8d90-5b7c356f0876
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 3%
 
 ---
-
 
 # Geneste groepen {#authoring-nested-groups} ontwerpen
 
@@ -30,7 +30,7 @@ Op auteur, van globale navigatie
    * De kaartafbeelding selecteren
    * *niet* selecteert een pictogram
 
-Het resultaat is om [Groepenconsole](groups.md) te bereiken:
+Het resultaat moet [Groepenconsole](groups.md) bereiken:
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -73,7 +73,7 @@ Doorloop de andere deelvensters met deze instellingen:
 
 ### Groepen nesten in artgroep {#nesting-groups-within-arts-group}
 
-De map `groups` moet nu twee groepen bevatten (mogelijk moet u de pagina vernieuwen).
+De map `groups` moet nu twee groepen bevatten (het kan nodig zijn de pagina te vernieuwen).
 
 ![createcommunitygroup](assets/createcommunitygroup.png)
 
