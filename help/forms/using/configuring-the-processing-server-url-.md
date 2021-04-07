@@ -8,15 +8,15 @@ contentOwner: amgoyal
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
-role: Beheerder
+role: Administrator
+exl-id: f60beaae-4082-4165-8a37-9d9c94e360b2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
-
 
 # AEM DS-instellingen configureren {#configuring-aem-ds-settings}
 
