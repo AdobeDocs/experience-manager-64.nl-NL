@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
+exl-id: f77796ff-f5c9-455f-8616-fa590db7fdbe
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1912'
 ht-degree: 0%
 
 ---
-
 
 # Webtoepassingen maken die Forms {#creating-web-applications-thatrenders-forms} renderen
 
@@ -397,4 +397,3 @@ Nadat u de webtoepassing hebt geïmplementeerd, kunt u deze testen met een webbr
 * http://localhost:8080/FragmentsWebApplication/index.html
 
    Selecteer een keuzerondje en klik op Verzenden. Een formulier dat is gebaseerd op fragmenten, wordt weergegeven in de webbrowser. Als er problemen optreden, raadpleegt u het logbestand van de J2EE-toepassingsserver.
-
