@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
-role: Beheerder
+role: Administrator
+exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '7350'
+source-wordcount: '7349'
 ht-degree: 0%
 
 ---
-
 
 # Uw AEM Forms versterken op JEE-omgeving {#hardening-your-aem-forms-on-jee-environment}
 
@@ -324,7 +324,7 @@ In de volgende tabel worden enkele technieken beschreven waarmee u uw toepassing
   </tr> 
   <tr> 
    <td><p>Bladeren door mappen</p> </td> 
-   <td><p>Wanneer iemand om een pagina verzoekt die niet bestaat of om de naam van een directeur verzoekt (het verzoekkoord beëindigt met een voorwaartse schuine streep (/)), zou de toepassingsserver niet de inhoud van die folder moeten terugkeren. Om dit te voorkomen, kunt u bladeren door mappen op uw toepassingsserver uitschakelen. U zou dit voor de toepassing van de beleidsconsole en voor andere toepassingen moeten doen die op uw server lopen.</p> <p>Stel voor JBoss de waarde van de initialisatieparameter voor lijsten van de eigenschap <code>DefaultServlet</code> in op <code>false</code> in het bestand web.xml, zoals in dit voorbeeld:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;aanbiedingen&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;3&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Stel voor WebSphere de eigenschap <code>directoryBrowsingEnabled</code> in het bestand ibm-web-ext.xmi in op <code>false</code>.</p> <p>Voor WebLogic, plaats de index-folders eigenschappen in het weblogic.xml- dossier aan <code>false</code>, zoals aangetoond in dit voorbeeld:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>Wanneer iemand om een pagina verzoekt die niet bestaat of om de naam van een directeur verzoekt (het verzoekkoord beëindigt met een voorwaartse schuine streep (/)), zou de toepassingsserver niet de inhoud van die folder moeten terugkeren. Om dit te voorkomen, kunt u bladeren door mappen op uw toepassingsserver uitschakelen. U zou dit voor de toepassing van de beleidsconsole en voor andere toepassingen moeten doen die op uw server lopen.</p> <p>Stel voor JBoss de waarde van de initialisatieparameter voor lijsten van de eigenschap <code>DefaultServlet</code> in op <code>false</code> in het bestand web.xml, zoals in dit voorbeeld:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;aanbiedingen&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Stel voor WebSphere de eigenschap <code>directoryBrowsingEnabled</code> in het bestand ibm-web-ext.xmi in op <code>false</code>.</p> <p>Voor WebLogic, plaats de index-folders eigenschappen in het weblogic.xml- dossier aan <code>false</code>, zoals aangetoond in dit voorbeeld:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1043,4 +1043,3 @@ Stel de eigenschap `directoryBrowsingEnabled` in het bestand ibm-web-ext.xml in 
 1. Schakel zowel **Toepassingsbeveiliging inschakelen** als **Java 2-beveiliging gebruiken** uit.
 1. Klik **OK** of **Toepassen**.
 1. In **Berichten** doos, klik **sparen direct aan de master configuratie**.
-
