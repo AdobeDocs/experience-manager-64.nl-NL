@@ -3,15 +3,15 @@ title: Elementen delen via een koppeling
 description: Elementen, mappen en verzamelingen delen als een URL.
 contentOwner: AG
 feature: Delen van koppelingen, beheer van bedrijfsmiddelen
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '968'
 ht-degree: 3%
 
 ---
-
 
 # Middelen delen via een koppeling {#asset-link-sharing}
 
