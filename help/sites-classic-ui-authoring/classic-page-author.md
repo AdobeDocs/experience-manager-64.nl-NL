@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
+exl-id: be2465a5-8875-4c9c-bd0d-32631b0fe294
 translation-type: tm+mt
-source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
 
 ---
-
 
 # Pagina&#39;s ontwerpen{#authoring-pages}
 
@@ -52,4 +52,3 @@ met de rechtermuisknop op de meeste elementen op het scherm klikt (bijvoorbeeld 
 
 * **Zoeken zoals u**
 typtIn bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die naar inhoud zoeken via de AEM interface, worden dynamische overeenkomsten getoond terwijl u de query typt.
-
