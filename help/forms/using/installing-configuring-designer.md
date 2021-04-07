@@ -10,15 +10,15 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
-role: Beheerder
+role: Administrator
+exl-id: 9791ffd5-04c4-4eed-8e99-b390e539197d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '165'
 ht-degree: 47%
 
 ---
-
 
 # Designer installeren en configureren {#installing-and-configuring-designer}
 
@@ -36,4 +36,3 @@ Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld
 1. (Optioneel) Wijzig het standaardinstallatiepad als u Designer op een andere locatie wilt installeren. Klik op Next.
 1. Klik op Vorige als u voorkeuren wilt wijzigen. Klik op Installeren om Designer te installeren.
 1. Klik na de installatie op Voltooien.
-
