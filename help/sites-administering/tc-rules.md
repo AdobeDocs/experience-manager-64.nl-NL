@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 feature: Taalkopie
+exl-id: 3e8ee0cc-b950-4823-9efa-65f12a4e6e6b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 0%
 
 ---
-
 
 # Te vertalen inhoud identificeren{#identifying-content-to-translate}
 
@@ -269,4 +269,3 @@ Als u het bestand translatie_rules.xml bewerkt, moet u een reservekopie bewaren 
     <assetNode resourceType="wcm/foundation/components/image" assetReferenceAttribute="fileReference"/>
 </nodelist>
 ```
-
