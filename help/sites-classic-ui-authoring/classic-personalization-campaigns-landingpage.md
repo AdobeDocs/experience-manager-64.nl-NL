@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 8be3adcf-5b3a-40e9-8f87-1a6f39aab554
+exl-id: c8712b93-34b1-421c-8a39-ab9465b05efe
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3193'
 ht-degree: 0%
 
 ---
-
 
 # Openingspagina&#39;s{#landing-pages}
 
@@ -444,4 +444,3 @@ U kunt de openingspagina en alle bijbehorende afhankelijkheden publiceren op dez
 >[!NOTE]
 >
 >Wanneer u de bestemmingspagina publiceert, wordt ook de bijbehorende mobiele versie (indien van toepassing) gepubliceerd. Bij het publiceren van een bestemmingspagina voor mobiele apparaten wordt de bureaubladversie echter niet gepubliceerd.
-
