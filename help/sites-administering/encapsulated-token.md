@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
+exl-id: 2339657a-20ac-42af-96fb-aebafd5044c7
 translation-type: tm+mt
-source-git-commit: 770cf9a616b44312e80ee9fbe3cb8924aa5297de
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
 
 ---
-
 
 # Encapsulated Token Support{#encapsulated-token-support}
 
@@ -105,4 +105,3 @@ Zodra de sleutel HMAC is herhaald, kunt u Encapsulated Token via de Console van 
 1. Wijs uw browser aan `https://serveraddress:port/system/console/configMgr`
 1. Zoek een ingang genoemd **Dag CRX Symbolische de Handler van de Authentificatie** en klik het.
 1. Schakel in het volgende venster het vakje **Ingekapselde tokenondersteuning inschakelen** in en druk op **Save**.
-
