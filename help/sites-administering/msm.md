@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
+exl-id: 96e75d9c-f091-4ca1-afd3-6309a08de525
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2684'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
