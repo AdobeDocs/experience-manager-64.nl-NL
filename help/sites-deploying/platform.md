@@ -10,14 +10,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
+exl-id: afd8f9ab-ae44-4845-9cb4-f6e28a35ad27
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot het AEM Platform{#introduction-to-the-aem-platform}
 
@@ -137,4 +137,3 @@ Raadpleeg ook de volgende artikelen voor meer informatie over het AEM platform:
 * [Oak-query&#39;s en indexering](/help/sites-deploying/queries-and-indexing.md)
 * [Opslagelementen in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM met MongoDB](/help/sites-deploying/aem-with-mongodb.md)
-
