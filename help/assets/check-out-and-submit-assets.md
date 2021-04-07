@@ -3,15 +3,15 @@ title: Uw digitale middelen inchecken en uitchecken voor bewerking
 description: Leer hoe u middelen kunt uitchecken om deze te bewerken en weer in te checken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
 translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '393'
 ht-degree: 4%
 
 ---
-
 
 # Bestanden in Elementen inchecken en uitchecken {#check-in-and-check-out-files-in-assets}
 
