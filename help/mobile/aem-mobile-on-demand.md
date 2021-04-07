@@ -8,14 +8,14 @@ contentOwner: JYOTIKA SYAL
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
+exl-id: 42b4d42e-2818-4d04-9ba8-dd4622fdf4d5
 translation-type: tm+mt
-source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # AEM Mobile On-Demand {#aem-mobile-on-demand}
 
@@ -45,7 +45,7 @@ Zie [AEM Mobile Content Services ontwikkelen](/help/mobile/developing-content-se
 
 >[!NOTE]
 >
->De rol *AEM ontwikkelaar* begint en eindigt niet met de ontwikkeling van sjablonen en componenten. Een *AEM ontwikkelaar* kan een volledig nieuwe app creëren eerder dan eenvoudig het uit-van-de-doos steekproef van de verwijzingsimplementatie uit te breiden.
+>De rol *AEM ontwikkelaar* begint en eindigt niet met de ontwikkeling van sjablonen en componenten. Met een *AEM ontwikkelaar* kunt u een geheel nieuwe app maken in plaats van alleen maar de voorbeeldcode van de kant-en-klare referentie-implementatie uit te breiden.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -53,4 +53,3 @@ Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkh
 
 * [Authoring AEM inhoud voor AEM Mobile On-demand Services App](/help/mobile/mobile-apps-ondemand.md)
 * [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
-
