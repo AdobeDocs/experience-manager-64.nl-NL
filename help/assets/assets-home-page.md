@@ -3,15 +3,15 @@ title: Ervaring met homepage in AEM Assets
 description: Pas de AEM Assets Home-pagina aan voor een uitgebreide ervaring met welkomstschermen, inclusief een momentopname van recente activiteiten rond middelen.
 contentOwner: AG
 feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
-role: Beheerder, Business Practiter
+role: Administrator,Business Practitioner
+exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '551'
 ht-degree: 1%
 
 ---
-
 
 # AEM Assets Home Page Experience {#aem-assets-home-page-experience}
 
