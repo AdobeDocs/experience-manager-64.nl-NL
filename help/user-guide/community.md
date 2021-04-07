@@ -5,14 +5,14 @@ description: De AEM Gemeenschap
 seo-description: De AEM Gemeenschap
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+exl-id: 537f6fe5-011b-4d4a-ac71-71708fd72b85
 translation-type: tm+mt
-source-git-commit: 4c1b1210503dc535585ae8912a7b94b88d1604cf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
 
 ---
-
 
 # De AEM Gemeenschap {#the-aem-community}
 
