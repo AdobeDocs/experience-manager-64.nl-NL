@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
+exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
+feature: Videoprofielen, video
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '2849'
+source-wordcount: '2852'
 ht-degree: 16%
 
 ---
-
 
 # Dynamic Media-videoprofielen {#video-profiles}
 
@@ -356,7 +358,7 @@ Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepas
 
 ## Dynamic Media-videoprofiel verwijderen uit mappen {#removing-a-video-profile-from-folders}
 
-Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een videoprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Folder Settings]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u videoprofielen op beide manieren uit mappen kunt verwijderen.
 
@@ -373,4 +375,3 @@ U kunt een videoprofiel uit een map verwijderen vanuit het menu **[!UICONTROL To
 1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waaruit u een videoprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
 1. Selecteer de tab **[!UICONTROL Video Profiles]** en selecteer **[!UICONTROL None]** in de vervolgkeuzelijst en tik **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
-
