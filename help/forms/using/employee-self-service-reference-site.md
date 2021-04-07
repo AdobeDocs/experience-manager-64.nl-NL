@@ -1,20 +1,20 @@
 ---
 title: Werknemerslijst voor zelfbedieningsverwijzingssite
 seo-title: Zelfbediening door werknemer
-description: Op de AEM Forms-referentiesite wordt uitgelegd hoe organisaties AEM Forms-functies kunnen gebruiken om wervingsprocessen voor werknemers en zelfbedieningsworkflows te implementeren.
-seo-description: Op de AEM Forms-referentiesite wordt uitgelegd hoe organisaties AEM Forms-functies kunnen gebruiken om wervingsprocessen voor werknemers en zelfbedieningsworkflows te implementeren.
+description: In de AEM Forms-referentiesite wordt uitgelegd hoe organisaties AEM Forms-functies kunnen gebruiken om wervingsprocessen voor werknemers en zelfbedieningsworkflows te implementeren.
+seo-description: In de AEM Forms-referentiesite wordt uitgelegd hoe organisaties AEM Forms-functies kunnen gebruiken om wervingsprocessen voor werknemers en zelfbedieningsworkflows te implementeren.
 uuid: ecc98e0d-c964-44dc-b219-9ebe92632d22
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d2695f71-5126-477c-ae6b-a964fb55728b
+exl-id: 7fbdd976-5a70-4af4-b449-7c2d6bcfd915
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 0%
 
 ---
-
 
 # Zelfbedieningsverwijzingssite voor werknemers doorloopt {#employee-self-service-reference-site-walkthrough}
 
