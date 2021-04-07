@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
+exl-id: 8937c928-1dde-4282-b93d-30752a33ce72
 translation-type: tm+mt
-source-git-commit: 39dc4bc0b52cf34519f0375acdf4c0b34510dbbf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3057'
 ht-degree: 0%
 
 ---
-
 
 # Mobiel met contentsynchronisatie{#mobile-with-content-sync}
 
@@ -77,7 +77,7 @@ Wanneer AEM is geïnstalleerd, kunnen leden van de beheerdersgroep standaard dow
 
 #### Standaardtoegang voor downloaden van inhoudssynchronisatie instellen {#setting-the-default-access-for-content-sync-downloads}
 
-Met de Day CQ Content Sync Manager-service hebt u toegang tot Content Sync. Configureer deze service om de gebruiker of groep op te geven die standaard kan downloaden van Content Sync.
+De dienst van de Manager van de Synchronisatie van de Inhoud van de Dag CQ bepaalt toegang tot de Synchronisatie van de Inhoud. Configureer deze service om de gebruiker of groep op te geven die standaard kan downloaden van Content Sync.
 
 Als u [de dienst gebruikend de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) vormt, typ de naam van de gebruiker of de groep als waarde van het Toegelaten bezit van het Geheime voorgeheugen van de Terugval.
 
@@ -388,4 +388,3 @@ Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkh
 
 * [Authoring AEM inhoud voor AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
 * [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
-
