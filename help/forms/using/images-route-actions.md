@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
+exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
 
 ---
-
 
 # Afbeeldingen aanpassen die worden gebruikt in routehandelingen {#customize-images-used-in-route-actions}
 
@@ -174,4 +174,3 @@ To
 
 1. Vervang de tekst door:\
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
-
