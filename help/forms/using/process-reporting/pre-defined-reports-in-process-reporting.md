@@ -8,14 +8,14 @@ content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
+exl-id: 21f5fb7e-53b3-485d-9b6a-813182f14781
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
 
 ---
-
 
 # Vooraf gedefinieerde rapporten in Process Reporting {#pre-defined-reports-in-process-reporting}
 
@@ -123,4 +123,3 @@ Het workflowvolutrapport geeft het aantal exemplaren van een AEM Forms-proces da
    * **Vernieuwen**: Verfrist het rapport met de recentste gegevens die in de opslag liggen
    * **De legendarische kleur** wijzigen: De kleur van de legenda van het rapport selecteren en wijzigen
    * **Exporteren naar CSV**: De gegevens van het rapport exporteren en downloaden naar een bestand met komma&#39;s als scheidingsteken
-
