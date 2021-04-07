@@ -3,15 +3,15 @@ title: AEM Assets configureren met Brand Portal
 description: 'Leer hoe u AEM Assets met Brand Portal configureert voor het publiceren van middelen en verzamelingen naar Brand Portal. '
 contentOwner: VG
 feature: Brand Portal
-role: Beheerder
+role: Administrator
+exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1557'
 ht-degree: 36%
 
 ---
-
 
 # AEM Assets configureren met Brand Portal {#configure-integration-64}
 
