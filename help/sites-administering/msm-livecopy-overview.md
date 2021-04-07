@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Beheer van meerdere sites
+exl-id: 96238d40-c19a-4c1f-9400-c7bb8636b448
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
 
 ---
-
 
 # Live Copy-overzichtsconsole{#live-copy-overview-console}
 
@@ -144,4 +144,3 @@ Dit tabblad bevat gedetailleerde informatie over de status van de relatie tussen
 Op dit tabblad kunt u de configuratie van de live kopie weergeven en bewerken:
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
-
