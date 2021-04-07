@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: a5b5e40e-2457-45fe-9632-baf5008fe8bf
+exl-id: a0847b2b-d508-474d-a155-8ee891c566fa
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 0%
 
 ---
-
 
 # Toepassingen voor één pagina{#single-page-applications}
 
@@ -40,7 +40,7 @@ AEM Apps behandelt veel van de configuratie AngularJS voor u, met inbegrip van h
 
 Een deel van de initialisatie van uw app bestaat uit het opgeven van welke AngularJS-modules de toepassing afhankelijk is. De lijst met modules die door uw app worden gebruikt, is opgegeven door een script op /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp en kan worden bedekt door de paginacomponent van uw eigen apps om extra AngularJS-modules in te schakelen die uw app nodig heeft. Als voorbeeld, vergelijk het bovengenoemde manuscript met de implementatie van de Geometrixx (die in /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp wordt gevestigd).
 
-Om navigatie tussen de verschillende staten in uw app te steunen, herhaalt het hoekige-app-module manuscript door alle dalende pagina&#39;s van uw hoogste niveau app pagina om een reeks &quot;routes&quot;te produceren en elk weg op de dienst te vormen $routeProvider van Angular. Bekijk voor een voorbeeld van hoe dit er in de praktijk uitziet, het hoekige-app-module-script dat is gegenereerd door het voorbeeld van de Geometrixx Outdoors-app: (koppeling vereist een lokale instantie) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+Om navigatie tussen de verschillende staten in uw app te steunen, herhaalt het angular-app-module manuscript door alle afstammende pagina&#39;s van uw hoogste niveau app pagina om een reeks &quot;routes&quot;te produceren en elke weg op de dienst te vormen $routeProvider van de Angular. Neem voor een voorbeeld van hoe dit er in de praktijk uitziet, een blik op het angular-app-module script dat is gegenereerd door het voorbeeld van de Geometrixx Outdoors-app: (koppeling vereist een lokale instantie) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
 Door in te schrijven naar de gegenereerde AEMAngularApp, ziet u een reeks routes die als volgt worden opgegeven:
 
@@ -58,7 +58,7 @@ Het malplaatje te laden wanneer deze route wordt gevraagd wordt gespecificeerd d
 
 ## Paginacontrollers {#page-controllers}
 
-In de eigen woorden van Angular is &quot;een controller een JavaScript-constructorfunctie die wordt gebruikt om het hoekbereik te vergroten.&quot; ([source](https://docs.angularjs.org/guide/controller)) Elke pagina in een AEM App wordt automatisch getelegrafeerd tot een controlemechanisme dat door om het even welke controlemechanisme kan worden uitgebreid die `frameworkType` van `angular` specificeert. Bekijk de ng-text component als voorbeeld (/libs/mobileapps/components/angular/ng-text), met inbegrip van de cq:template knoop die ervoor zorgt telkens als deze component aan een pagina wordt toegevoegd het dit belangrijke bezit omvat.
+In de eigen woorden van Angular, &quot;is een Controlemechanisme een JavaScript aannemersfunctie die wordt gebruikt om het Toepassingsgebied van de Angular te verhogen.&quot; ([source](https://docs.angularjs.org/guide/controller)) Elke pagina in een AEM App wordt automatisch getelegrafeerd tot een controlemechanisme dat door om het even welke controlemechanisme kan worden uitgebreid die `frameworkType` van `angular` specificeert. Bekijk de ng-text component als voorbeeld (/libs/mobileapps/components/angular/ng-text), met inbegrip van de cq:template knoop die ervoor zorgt telkens als deze component aan een pagina wordt toegevoegd het dit belangrijke bezit omvat.
 
 Voor een complexer controllervoorbeeld opent u het script ng-template-page controller.jsp (dat zich bevindt op /apps/geometrixx-outdoor-app/components/angular/ng-template-page). Van bijzonder belang is de javascript-code die wordt gegenereerd wanneer deze wordt uitgevoerd, die als volgt wordt weergegeven:
 
@@ -85,7 +85,7 @@ Voor een complexer controllervoorbeeld opent u het script ng-template-page contr
 
 In het bovenstaande voorbeeld, zult u merken dat wij een parameter van de `$routeParams` dienst nemen en dan het massaging in de folderstructuur dat onze gegevens JSON in wordt opgeslagen. Door op deze manier de sku `id` te behandelen, kunnen wij één enkel malplaatje van het Product leveren dat de productgegevens voor potentieel duizenden verschillende producten kan teruggeven. Dit is een veel scalable model dat een individuele route voor elk punt in (potentieel) massaal productgegevensbestand vereist.
 
-Er zijn ook twee onderdelen aan het werk: ng-product vergroot het werkingsgebied met de gegevens het uit bovengenoemde `$http` vraag haalt. Deze pagina bevat ook een ng-afbeelding die het bereik vergroot met de waarde die het ophaalt uit het antwoord. Door de `$http` service van Angular wacht elke component geduldig tot het verzoek is voltooid en de belofte die het heeft gemaakt, is vervuld.
+Er zijn ook twee onderdelen aan het werk: ng-product vergroot het werkingsgebied met de gegevens het uit bovengenoemde `$http` vraag haalt. Deze pagina bevat ook een ng-afbeelding die het bereik vergroot met de waarde die het ophaalt uit het antwoord. Op grond van de `$http` dienst van de Angular, zal elke component geduldig wachten tot het verzoek wordt gebeëindigd en de belofte het werd gecreeerd wordt vervuld.
 
 ## De volgende stappen {#the-next-steps}
 
