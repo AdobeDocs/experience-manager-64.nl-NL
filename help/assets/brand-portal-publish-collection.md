@@ -3,15 +3,15 @@ title: Verzamelingen publiceren naar Brand Portal
 description: Leer hoe u verzamelingen publiceert en publiceert naar Brand Portal.
 contentOwner: VG
 feature: Brand Portal
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: c2c6759e-f763-405e-9e45-5a90b9d32df2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '327'
 ht-degree: 22%
 
 ---
-
 
 # Verzamelingen publiceren naar Brand Portal {#publish-collections-to-brand-portal}
 
