@@ -9,14 +9,16 @@ topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 9017ab55-6d4a-4306-922f-223ab1b2504b
+exl-id: bf87b470-08c8-44b4-95d9-1251586b0610
+feature: 3D-middelen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
-
 
 # Werken met de component 3D-sites {#working-with-the-d-sites-component}
 
@@ -172,4 +174,3 @@ Zie [Elementen publiceren](managing-assets-touch-ui.md) voor informatie over het
 >Als u het menu-item **[!UICONTROL Publish Page]** in het menu **[!UICONTROL Page Information]** gebruikt, worden de pagina en alle afhankelijkheden van de primaire pagina gepubliceerd. Secundaire afhankelijkheden waarnaar mogelijk wordt verwezen door het 3D-model en/of het 3D-werkgebied, zoals structuurafbeeldingen en IBL-afbeeldingen, worden niet gepubliceerd wanneer u de pagina op deze manier publiceert.
 >
 >Adobe raadt u aan alle 3D-elementen en hun afhankelijkheden rechtstreeks vanuit AEM Assets te publiceren voordat u de webpagina publiceert die naar deze elementen verwijst.
-
