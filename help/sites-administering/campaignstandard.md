@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
+exl-id: d8d62c2f-3aa5-4fc9-8f42-86d75b6558ce
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met Adobe Campaign Standard{#integrating-with-adobe-campaign-standard}
 
@@ -142,7 +142,7 @@ Inhoud die is gemaakt van de AEM authoring instantie wordt eerst naar de publish
 
 >[!NOTE]
 >
->Als u de replicatie-URL niet wilt gebruiken maar in plaats daarvan publiek-onder ogen ziet URL gebruiken, kunt u **Openbare URL** in de volgende configuratieplaatsen in OSGi (**Tools** > **Webconsole** > **OSGi Configuratie > AEM de Integratie van de Campagne - Configuratie**) plaatsen:
+>Als u de replicatie-URL niet wilt gebruiken maar in plaats daarvan publiek-onder ogen ziet URL gebruiken, kunt u **Openbare URL** in de volgende configuratie plaatsen die in OSGi (**Tools** > **Webconsole** > **OSGi Configuratie > AEM de Integratie van de Campagne - Configuratie**):
 **Openbare URL:** com.day.cq.mcm.campagne.impl.IntegrationConfigImpl#aem.mcm.campagne.publicUrl
 
 Deze stap is ook nodig om bepaalde configuraties van ontwerpinstanties te repliceren in de publicatieinstantie.
@@ -202,4 +202,3 @@ Zie [De externalizer](/help/sites-developing/externalizer.md) voor algemene inst
 Als het verwijst naar `localhost:4503` of een andere server die Adobe Campaign niet kan bereiken, worden uw afbeeldingen niet weergegeven op de Adobe Campaign-console.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
-
