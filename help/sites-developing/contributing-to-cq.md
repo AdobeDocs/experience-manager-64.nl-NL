@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
+exl-id: e07a42e2-c659-4991-b59a-d48bfb7d2972
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2726'
 ht-degree: 0%
 
 ---
-
 
 # Bijdragen aan AEM{#contributing-to-aem}
 
@@ -154,7 +154,7 @@ Voordat u probeert de JavaDoc- of JCR-specificatie zelf te lezen, kunt u [deze u
 
 **Parsys, het Systeem**  van de Paragraaf - het paragraafsysteem (parsys) is een samengestelde component die auteurs toestaat om componenten van verschillende types aan een pagina toe te voegen en andere paragraafcomponenten bevat. Elk alineatype wordt vertegenwoordigd als een component. Het alineasysteem zelf is ook een onderdeel dat de andere alineacomponenten bevat.
 
-**Microkernel**  - Elke werkruimte in de opslagplaats kan afzonderlijk worden geconfigureerd om de gegevens op te slaan via een specifieke microkernel (een klasse die het lezen en schrijven van de gegevens beheert). Op dezelfde manier kan de gegevensopslagruimte-brede versieopslag ook onafhankelijk worden gevormd om een bepaalde microkernel te gebruiken. Er is een aantal verschillende microkorrels beschikbaar waarmee gegevens in verschillende bestandsindelingen of relationele databases kunnen worden opgeslagen. (Er zijn bijvoorbeeld persistentiemanagers voor MongoDB, DB2 of Oracle) De standaard microkernel voor AEM is TarMK (zie verder hieronder).
+**Microkernel**  - Elke werkruimte in de opslagplaats kan afzonderlijk worden geconfigureerd om de gegevens op te slaan via een specifieke microkernel (een klasse die het lezen en schrijven van de gegevens beheert). Op dezelfde manier kan de gegevensopslagruimte-brede versieopslag ook onafhankelijk worden gevormd om een bepaalde microkernel te gebruiken. Er is een aantal verschillende microkorrels beschikbaar waarmee gegevens in verschillende bestandsindelingen of relationele databases kunnen worden opgeslagen. (Er zijn bijvoorbeeld persistentiemanagers voor MongoDB, DB2 of Oracle) De standaardmicrokernel voor AEM is TarMK (zie verder hieronder).
 
 **Publiceer instantie**  - Voor veiligheid, bestuur, en andere redenen, zal een productiesite instanties van AEM in auteur en Publish instanties typisch verdelen. Voor meer informatie over plaatsingsarchitectuur (met inbegrip van auteur/publiceer instanties), zie documentatie over AEM Instanties.
 
