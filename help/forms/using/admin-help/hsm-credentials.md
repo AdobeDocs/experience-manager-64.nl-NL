@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
+exl-id: f38057d7-b500-448a-8664-a45374d4cfea
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 0%
 
 ---
-
 
 # HSM-referenties beheren {#managing-hsm-credentials}
 
@@ -34,7 +34,7 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias aan te duiden. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van uw HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
 1. Klik op HSM-connectiviteit testen. Als AEM formulieren verbinding kunnen maken met het HSM-apparaat, wordt een bericht weergegeven met de mededeling dat de HSM beschikbaar is. Klik op Next.
 1. Gebruik of de Symbolische Naam, identiteitskaart van de Slot, of Index van de Lijst van de Slot om te identificeren waar de geloofsbrieven op HSM worden opgeslagen.
 
@@ -49,7 +49,7 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias aan te duiden. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van uw HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
 1. Schakel het selectievakje Offline profiel maken in. Klik op Next.
 1. Selecteer in de lijst HSM-apparaat de fabrikant van het HSM-apparaat waar de referentie is opgeslagen.
 1. Selecteer in de lijst Slot-type de optie Groef-id, Slot-index of Token-naam en geef een waarde op in het vak Slot-info. AEM formulieren gebruiken deze instellingen om te bepalen waar de referenties op de HSM worden opgeslagen.
@@ -106,4 +106,3 @@ Dit mechanisme ondersteunt het online maken van HSM-profielen of statuscontroles
 
 * Maak een clientreferentie voor AEM formulieren door deze door te geven in het certificaat van de ondertekenaar. Voer de stappen in [Het vormen van steun HSM voor AEM vormen ES gebruikend Zon JDK op Vensters met 64 bits platform](https://kb2.adobe.com/cps/808/cpsid_80835.html). De locatie van de webservice wordt doorgegeven als een referentie-eigenschap. Offline HSM-profielen die zijn gemaakt met behulp van certificaatmodule of SHA-1-hexadecimale certificaat worden ook ondersteund. Als u echter een upgrade hebt uitgevoerd naar AEM formulieren uit een eerdere versie van AEM formulieren, brengt u wijzigingen aan op de client omdat de referentie gegevens van het certificaat en de webservice heeft meegevoerd.
 * De plaats van de Dienst van het Web wordt gespecificeerd in de beleidsconsole voor de dienst van de Handtekening. (Zie [Instellingen voor handtekeningenservice](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Hier droeg de client alleen de alias van het HSM-profiel in de vertrouwde opslag. U kunt deze optie naadloos gebruiken zonder wijzigingen op de client, zelfs als u een upgrade hebt uitgevoerd naar AEM formulieren van een eerdere versie van AEM formulieren. Deze optie ondersteunt geen HSM-profielen die gebruikmaken van certificaat SHA-1.
-
