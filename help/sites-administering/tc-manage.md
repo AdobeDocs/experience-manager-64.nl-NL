@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 feature: Taalkopie
+exl-id: 191b9aff-3acd-4272-8683-d3e6899fe78c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3431'
 ht-degree: 0%
 
 ---
-
 
 # Vertaalprojecten beheren{#managing-translation-projects}
 
@@ -171,7 +171,7 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
 1. Selecteer het bovenste item van de vertakking die u wilt toevoegen en klik of tik op het pictogram van het vinkje. U kunt meerdere selecties maken.
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
 1. U kunt ook het zoekpictogram selecteren om gemakkelijk te zoeken naar pagina&#39;s of elementen die u aan uw vertaaltaak wilt toevoegen.
 
@@ -448,4 +448,3 @@ U kunt vertaalde inhoud in AEM importeren, bijvoorbeeld wanneer uw vertaalbureau
 1. Klik of tik op Importeren in het vervolgkeuzemenu van het onderdeel Vertaal taak.
 1. Selecteer in het dialoogvenster van de webbrowser het bestand dat u wilt importeren.
 1. Klik of tik op Sluiten in het dialoogvenster Importeren.
-
