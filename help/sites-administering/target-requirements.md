@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
+exl-id: f47e5c6a-ed52-4493-83bd-73e5e693d117
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
 
 ---
-
 
 # Vereisten voor integratie met Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
@@ -74,4 +74,3 @@ De AEM-externalizer configureren:
 1. Zoek **Day CQ Link Externalzer** en voer het domein voor het auteurknooppunt in.
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
-
