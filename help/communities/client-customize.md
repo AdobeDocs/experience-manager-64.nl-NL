@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
+exl-id: 3e005993-d96b-4c7c-83b3-37f733218c3d
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 0%
 
 ---
-
 
 # Aanpassing aan clientzijde {#client-side-customization}
 
@@ -154,7 +154,7 @@ Scripttags in SCF-scripts mogen niet worden verwijderd wanneer componenten worde
 
 Het gebruik van [client-side bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) biedt een manier om de JavaScript en CSS die worden gebruikt om inhoud op de client te renderen, te organiseren en te optimaliseren.
 
-De clientlibs voor SCF volgen een zeer specifiek noemingspatroon voor twee varianten, die slechts door de aanwezigheid van &quot;auteur&quot;in de categorienaam variëren:
+De clientlibs voor SCF volgen een zeer specifiek naamgevingspatroon voor twee varianten, die slechts door de aanwezigheid van &#39;auteur&#39; in de categorienaam variëren:
 
 | Clientlib-variabele | Patroon voor eigenschap Categorieën |
 |--- |--- |
@@ -208,4 +208,3 @@ Elke site is anders in de manier waarop ze clientbibliotheken beheren. Enkele fa
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
 |  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
-
