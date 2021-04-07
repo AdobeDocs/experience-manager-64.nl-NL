@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 feature: Adaptieve Forms
+exl-id: 2e7944e5-976e-49d2-a8d2-76c5868a92a2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2725'
 ht-degree: 1%
 
 ---
-
 
 # Document met record genereren voor adaptieve formulieren {#generate-document-of-record-for-adaptive-forms}
 
@@ -390,4 +390,3 @@ Houd rekening met de volgende overwegingen en beperkingen wanneer u werkt aan ee
 * Inhoudbinding in document van record die is gegenereerd voor een adaptief formulier op basis van een XML-schema, wordt niet ondersteund.
 * Inhoudbinding in document van record die is gegenereerd voor een adaptief formulier op basis van een XML-schema, wordt niet ondersteund.
 * De gelokaliseerde versie van document van verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het document van verslag verzoekt. De lokalisatie van een recorddocument vindt plaats in combinatie met de lokalisatie van het adaptieve formulier. Zie [AEM vertaalworkflow gebruiken voor het lokaliseren van adaptieve formulieren en recorddocumenten](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md) voor meer informatie over de lokalisatie van documenten en adaptieve formulieren.
-
