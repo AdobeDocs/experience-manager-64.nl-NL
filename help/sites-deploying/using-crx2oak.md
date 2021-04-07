@@ -10,14 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Bijwerken
+exl-id: 85dbc81a-a9a1-4472-ada7-ff03e2af1074
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
 
 ---
-
 
 # Het CRX2Oak-migratiehulpmiddel{#using-the-crx-oak-migration-tool} gebruiken
 
@@ -221,4 +221,3 @@ java -Xmx4092m -XX:MaxPermSize=1024m -jar crx2oak.jar crx-quickstart/repository/
 >[!NOTE]
 >
 >Voor meer informatie, zie de documentatie van het Koord van de Verbinding MongoDB op [Schrijf Concerns](https://docs.mongodb.org/manual/reference/connection-string/#write-concern-options).
-
