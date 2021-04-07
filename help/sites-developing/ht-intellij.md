@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
+exl-id: 274b3a33-3267-41ee-bdcd-351787152570
 translation-type: tm+mt
-source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
