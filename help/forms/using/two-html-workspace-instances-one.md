@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
+exl-id: ef2ad8e1-5007-4587-97ca-cf21070be9a6
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
 
 ---
-
 
 # Twee AEM Forms-werkruimteinstanties hosten op één server {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
