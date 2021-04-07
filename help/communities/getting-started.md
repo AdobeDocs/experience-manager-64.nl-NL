@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 4f4c73eb-281e-4dfb-9cb0-2341d5ee94ae
+exl-id: d065e737-dbda-4c78-a987-b1891c6c4ec6
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met AEM Communities {#getting-started-with-aem-communities}
 
@@ -33,4 +33,3 @@ Voor een zelfstudie over het snel instellen van een [enablement community](overv
 * [Ervaar de gepubliceerde site](published-site.md)
 
 * [Geneste groepen ontwerpen](nested-groups.md)
-
