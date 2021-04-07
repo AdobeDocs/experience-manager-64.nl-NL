@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 feature: Correspondentenbeheer
+exl-id: 6b53f47c-9333-43a3-8db9-8737d9610110
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3868'
 ht-degree: 0%
 
 ---
-
 
 # Gegevenswoordenboek {#data-dictionary}
 
@@ -657,4 +657,3 @@ De Token.xsd verbonden aan deze steekproef zou zijn:
 | TokenText | empty(null) |
 | TokenHeading | TokenText/TextHeading |
 | TokenBody | TokenText/TextBody |
-
