@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
+exl-id: 2da4c0b3-119e-436e-9f03-f794283e9a37
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 1%
 
 ---
-
 
 # Veelgestelde vragen over HTTP2-levering van content{#http-delivery-of-content-faq}
 
