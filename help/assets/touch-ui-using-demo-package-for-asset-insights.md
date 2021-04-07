@@ -3,15 +3,15 @@ title: Demo-pakket gebruiken voor Asset Insights
 description: Gebruik het demopakket om Adobe Asset Insights in staat te stellen gegevens vast te leggen van en inzichten te genereren voor een webpagina.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: c6d321f5-4c48-47f2-bff1-c4da988c0e84
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
-
 
 # Demopakket gebruiken voor Asset Insights {#using-demo-package-for-asset-insights}
 
