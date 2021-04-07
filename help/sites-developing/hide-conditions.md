@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
+exl-id: 646146b1-55bf-4d13-ba3d-2e9bdfd8d8af
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
 
 ---
-
 
 # Voorwaarden verbergen gebruiken{#using-hide-conditions}
 
@@ -84,4 +84,3 @@ Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit
 1. De optie **Onderliggende pagina&#39;s** wordt niet meer weergegeven voor de auteur van de pagina wanneer de component List wordt gebruikt.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
-
