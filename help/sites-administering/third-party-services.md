@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
+exl-id: 9a3857fd-4f62-4293-950b-75626e4dcf50
 translation-type: tm+mt
-source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met services van derden{#integrating-with-third-party-services}
 
@@ -54,7 +54,7 @@ Zie [Integreren met Silverpop Engage](/help/sites-administering/silverpop.md) vo
 
 ## Integreren met ExactTarget {#integrating-with-exacttarget}
 
-De e-mailmarketingoplossingen van ExactTarget stellen organisaties van elke omvang in staat om gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes te ontwerpen en te leveren.
+Met de e-mailmarketingoplossingen van ExactTarget kunnen organisaties van elke omvang zeer gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes ontwerpen en leveren.
 
 Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie [het Vormen ExactTarget](/help/sites-administering/exacttarget.md).
 
