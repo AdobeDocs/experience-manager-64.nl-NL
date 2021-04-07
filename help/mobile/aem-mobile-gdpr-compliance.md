@@ -6,14 +6,14 @@ seo-description: 'null'
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
+exl-id: 2b73e843-690b-4cf3-9b8f-936b70c84406
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
 
 ---
-
 
 # AEM Mobile - GDPR-gereedheid {#aem-mobile-gdpr-readiness}
 
@@ -303,4 +303,3 @@ email = “test@what.com”
 
 }
 ```
-
