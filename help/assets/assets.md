@@ -3,15 +3,15 @@ title: Inleiding tot [!DNL Adobe Experience Manager Assets]
 description: Leer wat het beheer van digitale middelen, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
-role: Leader,Architect,Business Practiter
+role: Leader,Architect,Business Practitioner
+exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
-
 
 # Informatie over [!DNL Adobe Experience Manager Assets] als DAM-oplossing {#about-assets}
 
@@ -47,7 +47,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 Houd rekening met de levenscyclus van de afbeelding wanneer u bepaalt of een afbeelding in de DAM-opslagplaats moet worden geplaatst of een afbeeldingscomponent moet worden gebruikt:
 
 * Als de afbeelding dezelfde levenscyclus heeft als de pagina, gebruikt u de component Image.
-* Als de afbeelding een aparte levenscyclus heeft, bijvoorbeeld als u de afbeelding tweemaal of buiten WCM gebruikt, gebruikt u [!DNL Assets].
+* Als de afbeelding een aparte levenscyclus heeft, bijvoorbeeld als u de afbeelding twee keer of buiten WCM gebruikt, gebruikt u [!DNL Assets].
 
 ## Wat zijn digitale middelen? {#what-are-digital-assets}
 
