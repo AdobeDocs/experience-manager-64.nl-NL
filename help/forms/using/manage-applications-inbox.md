@@ -8,14 +8,14 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
+exl-id: 7076807a-40ad-4f3b-beb0-70c1577a8ee7
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
 
 ---
-
 
 # Forms-toepassingen en -taken beheren in AEM Postvak IN {#manage-forms-applications-and-tasks-in-aem-inbox}
 
@@ -81,7 +81,7 @@ De gedetailleerde taakmening omvat de volgende secties:
 
 #### Taakdetails {#task-details}
 
-In de sectie Taakdetails wordt informatie over de taak weergegeven. De weergegeven informatie is afhankelijk van de configuratie-instellingen van de [Taakstap toewijzen](/help/sites-developing/workflows-step-ref.md) in de workflow. In het bovenstaande voorbeeld worden de beschrijving, de status, de begindatum en de workflow weergegeven die voor de taak worden gebruikt. U kunt ook een bestand aan de taak koppelen.
+In de sectie Taakdetails wordt informatie over de taak weergegeven. De weergegeven informatie is afhankelijk van de configuratie-instellingen van de [Taakstap toewijzen](/help/sites-developing/workflows-step-ref.md) in de workflow. In het bovenstaande voorbeeld worden de beschrijving, de status, de begindatum en de workflow weergegeven die voor de taak worden gebruikt. U kunt hiermee ook een bestand aan de taak koppelen.
 
 #### formulier {#form}
 
@@ -121,4 +121,3 @@ In de sectie met taakdetails wordt informatie weergegeven zoals de ondernomen ac
 Op het tabblad **[!UICONTROL Workflow Details]** wordt elke stap van de workflow weergegeven. Tik **[!UICONTROL View details]** voor een stap voor gedetailleerde informatie.
 
 ![voltooid-taak-werkschema](assets/completed-task-workflow.png)
-
