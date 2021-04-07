@@ -3,15 +3,15 @@ title: Met de functie Asset Insights kunt u het gebruik van uw afbeeldingen bijh
 description: Met de functie Asset Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '735'
 ht-degree: 2%
 
 ---
-
 
 # Asset Insights {#asset-insights}
 
