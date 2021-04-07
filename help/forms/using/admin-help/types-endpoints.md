@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8fe572e0-8a53-4129-940f-3fdb990073fe
+exl-id: 7c6b9b6c-d4b5-46a8-8a6a-3b8802ac392d
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
-
 
 # Typen eindpunten {#types-of-endpoints}
 
