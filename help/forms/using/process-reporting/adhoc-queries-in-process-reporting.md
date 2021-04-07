@@ -8,14 +8,14 @@ content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
+exl-id: a5ac05b2-076a-4d3d-8325-32813657a7b3
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1686'
 ht-degree: 0%
 
 ---
-
 
 # Ad hoc Vragen in Proces het Melden {#ad-hoc-queries-in-process-reporting}
 
@@ -185,7 +185,7 @@ U kunt de details van een specifiek AEM Forms-proces/een specifieke-taak bekijke
 
    Het **Proces/Taakdetails** vraagresultaat toont details van de taken/vormen in het proces/de taak.
 
-   Standaard wordt het resultaat gesorteerd op Taak-/Formulier-id. Als u het resultaat echter op een van de velden wilt sorteren, klikt u op de veldtitel. De kolom waarmee het resultaat wordt gesorteerd, wordt aangegeven met een donkere pijl naast de kolomkop.
+   Standaard wordt het resultaat gesorteerd op Taak-/Formulier-id. Als u het resultaat echter op een van de velden wilt sorteren, klikt u op de veldtitel. De kolom waarmee het resultaat wordt gesorteerd, wordt aangegeven met een donkerdere pijl naast de kolomkop.
 
    Aangezien het sorteren een knevelverrichting is, klik een gebiedsheader om het resultaat oplopend te sorteren en het opnieuw te klikken om aflopend te sorteren. De huidige sorteervolgorde (oplopend/aflopend) wordt aangegeven door de richting van de donkere pijl naast de kolomkop.
 
@@ -276,5 +276,3 @@ U kunt de details van een specifiek AEM Forms-proces/een specifieke-taak bekijke
    Voor een proces, toont het vraagresultaat de details van de taken in het proces.
 
    Voor een taak, toont het vraagresultaat de details de vormen in de taak.
-
-
