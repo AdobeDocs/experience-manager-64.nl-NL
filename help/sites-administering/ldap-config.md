@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
+exl-id: 1e329725-538a-4058-8832-4eba036f7972
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 0%
 
 ---
-
 
 # LDAP configureren met AEM 6 {#configuring-ldap-with-aem}
 
@@ -28,7 +28,7 @@ De gegevensopslagruimte gebruikt LDAP-verificatie om dergelijke gebruikers te ve
 
 Wanneer een account wordt verwijderd uit de LDAP-servervalidatie, wordt geen toegang meer verleend tot de gegevensopslagruimte. Details van LDAP-accounts die in de opslagplaats zijn opgeslagen, kunnen ook worden gewist.
 
-Het gebruik van dergelijke accounts is transparant voor uw gebruikers, ze zien geen verschil tussen gebruikers- en groepsaccounts die met LDAP zijn gemaakt en accounts die alleen in de opslagplaats zijn gemaakt.
+Het gebruik van dergelijke accounts is transparant voor uw gebruikers, ze zien geen verschil tussen gebruikers- en groepsaccounts die met LDAP zijn gemaakt en accounts die alleen in de repository zijn gemaakt.
 
 In AEM 6 wordt bij LDAP-ondersteuning een nieuwe implementatie geleverd waarvoor een ander type configuratie is vereist dan bij eerdere versies.
 
@@ -211,7 +211,7 @@ De externe aanmeldingsmodule bevindt zich onder **Apache Jackrabbit Oak External
 
 >[!NOTE]
 >
->De Apache Jackrabbit Oak External Login Module implementeert de Java Authentication and Authorization Service (JAAS)-specificaties. Zie de [officiële Oracle Java Security Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie.
+>De Apache Jackrabbit Oak External Login Module implementeert de Java Authentication and Authorization Service (JAAS)-specificaties. Zie [Officiële Gids van de Verwijzing van de Veiligheid van Java van het Oracle Java](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie.
 
 Zijn baan moet bepalen welke Leverancier van de Identiteit en de Handler van de Synchronisatie aan gebruik, effectief binden de twee modules.
 
@@ -305,4 +305,3 @@ Raadpleeg de documentatie bij Apache Oak over [Synchronisatie van gebruikers en 
 ## Bekende problemen {#known-issues}
 
 Als u LDAP wilt gebruiken via SSL, moet u ervoor zorgen dat de certificaten die u gebruikt, worden gemaakt zonder de Netscape-opmerkingsoptie. Als deze optie is ingeschakeld, mislukt de verificatie met een SSL Handshake-fout.
-
