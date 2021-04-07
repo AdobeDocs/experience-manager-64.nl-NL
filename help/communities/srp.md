@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
+exl-id: 17105abe-177b-4e73-bb4f-22b208c436ef
 translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van opslagbronprovider {#storage-resource-provider-overview}
 
@@ -50,7 +50,7 @@ Deze standaard definieert een gegevensmodel en een programmeerinterface voor toe
 Eén implementatie van JCR is de AEM opslagplaats, OAK.
 
 **Apache Jackrabbit Oak (OAK)**
-[](../../help/sites-deploying/platform.md) OAK is een implementatie van JCR 2.0. Dit is een gegevensopslagsysteem dat speciaal is ontworpen voor inhoudsgerichte toepassingen. Dit is een soort hiërarchische database die is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De dataopslag slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt. De UI voor de toegang tot van inhoud is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+[](../../help/sites-deploying/platform.md) OAK is een implementatie van JCR 2.0. Dit is een gegevensopslagsysteem dat speciaal is ontworpen voor inhoudgerichte toepassingen. Dit is een soort hiërarchische database die is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De dataopslag slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt. De UI voor de toegang tot van inhoud is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 Zowel JCR als OAK worden typisch gebruikt om naar de AEM bewaarplaats te verwijzen.
 
@@ -153,4 +153,4 @@ Wanneer een [lid](users.md) UGC op pub1 (opgeslagen in MongoDB) plaatst, worden 
 
 De eerste keer dat de UGC op pub2 wordt gelezen, als er niets is ingesteld, is het standaardgedrag dat de schaduwknooppunten worden gemaakt.
 
-Als u een ander gedrag wilt gebruiken dan het standaardgedrag, moet u dit instellen voor de instantie van de auteur en doorsturen naar alle publicatieinstanties. Dit is doorgaans een handmatig proces.
+Als u een ander gedrag wilt gebruiken dan het standaardgedrag, moet u dit instellen voor de instantie van de auteur en doorsturen naar alle publicatie-instanties. Dit is doorgaans een handmatig proces.
