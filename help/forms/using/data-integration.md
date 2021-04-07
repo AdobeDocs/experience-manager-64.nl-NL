@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
 feature: Formuliergegevensmodel
+exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot AEM Forms Data Integration {#aem-forms-data-integration}
 
@@ -60,4 +60,3 @@ Herzie het volgende om, gegevensintegratie te beginnen te begrijpen en uit te vo
 * [Formuliergegevensmodel maken](/help/forms/using/create-form-data-models.md)
 * [Werken met formuliergegevensmodel](/help/forms/using/work-with-form-data-model.md)
 * [Formuliergegevensmodel gebruiken](/help/forms/using/using-form-data-model.md)
-
