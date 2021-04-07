@@ -8,14 +8,14 @@ contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
+exl-id: 33eeb203-1e4b-4112-ab08-f13b9e0b82bb
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 1%
 
 ---
-
 
 # PhoneGap{#phonegap}
 
@@ -53,4 +53,3 @@ Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkh
 
 * [Ontwikkelen voor Adobe PhoneGap Enterprise met AEM](/help/mobile/developing-in-phonegap.md)
 * [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](/help/mobile/administer-phonegap.md)
-
