@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
+exl-id: 2b26d937-4ebf-4a67-9715-a21c8fc45e1e
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 0%
 
 ---
-
 
 # Essentiële elementen voor communautaire sites {#community-site-essentials}
 
@@ -78,7 +78,7 @@ De geadviseerde praktijk voor het herhalen van douanecode is [een pakket ](../..
 
 ## Een communautaire site exporteren {#exporting-a-community-site}
 
-Wanneer een gemeenschapssite is gemaakt, kan de site worden geëxporteerd als een AEM pakket dat is opgeslagen in pakketbeheer en dat kan worden gedownload en geüpload.
+Wanneer een communitysite is gemaakt, kan de site worden geëxporteerd als een AEM pakket dat is opgeslagen in pakketbeheer en dat kan worden gedownload en geüpload.
 
 Dit is beschikbaar bij [Community Sites console](sites-console.md#exporting-the-site).
 
