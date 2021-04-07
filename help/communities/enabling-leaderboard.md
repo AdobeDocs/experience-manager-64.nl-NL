@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
+exl-id: 1ebe0cbb-33be-4101-92e3-64253a7f7f31
 translation-type: tm+mt
-source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
 
 # Leaderboard-functie {#leaderboard-feature}
 
