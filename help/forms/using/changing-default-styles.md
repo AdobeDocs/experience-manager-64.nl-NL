@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
 feature: Mobile Forms
+exl-id: 74e54d96-e418-40aa-9b93-561fbdd6312d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # Standaardstijlen van HTML5-formulieren wijzigen {#changing-default-styles-of-html-forms}
 
@@ -54,4 +54,3 @@ De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aan
       &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; />
 
    1. Sla het bestand op.
-
