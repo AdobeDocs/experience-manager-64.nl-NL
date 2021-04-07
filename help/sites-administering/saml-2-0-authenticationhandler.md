@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
+exl-id: 4868daad-0f3e-48cb-9b20-08dee270e74e
 translation-type: tm+mt
-source-git-commit: 9f8ee3448abeb9a2f4de09b6ccc2f29b00b44fe5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
 
 ---
-
 
 # SAML 2.0-verificatiehandler{#saml-authentication-handler}
 
@@ -139,4 +139,3 @@ U kunt opstelling een Logger om het even welke kwesties zuiveren die uit het mis
    * **Logniveau:** Foutopsporing
    * **logbestand:** logs/saml.log
    * **Logger:** com.adobe.granite.auth.saml
-
