@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
+exl-id: 309a8cef-e84d-485b-9a7c-786a93e83c85
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
 
 ---
-
 
 # Beveiligde back-upmodus {#enabling-and-disabling-safe-backup-mode} in- en uitschakelen
 
@@ -41,4 +41,3 @@ AEM formulieren in de veilige back-upmodus werken normaal, maar er worden geen b
 
 1. Klik in de beheerconsole op Instellingen > Core Systems Settings > Backup Settings.
 1. Schakel op de pagina Back-upinstellingen de optie Bewerken in veilige back-upmodus uit en klik op OK.
-
