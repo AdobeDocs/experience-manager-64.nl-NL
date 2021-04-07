@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
+exl-id: 347ce0a6-6d39-4342-8d0d-4ec76633146d
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Campaign Forms maken in AEM {#creating-adobe-campaign-forms-in-aem}
 
