@@ -10,14 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configureren
+exl-id: b10bf1b6-0360-45ca-b1aa-f4184cbfb5c0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2804'
 ht-degree: 0%
 
 ---
-
 
 # Taken verschuiven{#offloading-jobs}
 
@@ -194,7 +194,7 @@ Taken zijn verspreide hoeveelheden die het bijbehorende onderwerp hebben dat is 
 1. Als u het gebruik van een onderwerp voor een instantie wilt uitschakelen, klikt u onder de bovenste naam op Uitschakelen naast de instantie.
 1. Om al onderwerpconsumptie voor een instantie te vormen, klik het instantieherkenningsteken onder om het even welk onderwerp.
 
-   ![chlimage_1-115](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-114.png)
 
 1. Klik één van de volgende knopen naast een onderwerp om het verbruiksgedrag voor de instantie te vormen, en dan sparen te klikken:
 
@@ -355,4 +355,3 @@ Naast de details op deze pagina kunt u ook het volgende lezen:
 * Voor informatie over het gebruiken van Java APIs om banen en baanconsumenten tot stand te brengen, zie [het Creëren van en het Verbruiken van Banen voor het Offloaden](/help/sites-developing/dev-offloading.md).
 * Zie [Algemene richtlijnen en aanbevolen procedures voor het offloaden van bedrijfsmiddelen](/help/assets/assets-offloading-best-practices.md#general-guidance-and-best-practices-for-asset-offloading) voor algemene richtlijnen en aanbevolen procedures voor het offloaden van bedrijfsmiddelen.
 * Zie [Automatisch agentbeheer uitschakelen](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management) om te weten hoe u het automatisch maken van offloading-agents kunt uitschakelen.
-
