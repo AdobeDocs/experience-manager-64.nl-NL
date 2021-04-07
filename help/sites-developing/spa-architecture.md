@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
+exl-id: 7b9f21eb-22f6-42f7-8dc7-770601ef51fc
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2199'
 ht-degree: 0%
 
 ---
-
 
 # SPA ontwikkelen voor AEM{#developing-spas-for-aem}
 
@@ -28,11 +28,11 @@ Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen
 >
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Projectarchetype {#aem-project-archetype} AEM
 
-Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.
+Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ## Ontwikkelingsprincipes SPA voor AEM {#spa-development-principles-for-aem}
 
@@ -172,7 +172,7 @@ Hieronder volgt een overzicht van de stappen die een front-end ontwikkelaar moet
 
 ## AEM-agnost {#aem-agnostic}
 
-Deze codeblokken illustreren hoe uw React- en Hoekcomponenten niets nodig hebben dat specifiek is voor Adobe of AEM.
+Deze codeblokken illustreren hoe uw React en Angular componenten niets nodig hebben dat Adobe of AEM specifiek is.
 
 * Alles wat zich in de JavaScript-component bevindt, is AEM-agnostisch.
 * Nochtans specifiek voor AEM is dat de component JS aan een AEM component met de hulp moet worden in kaart gebracht MapTo.
@@ -187,7 +187,7 @@ De `MapTo` helper is de &quot;lijm&quot;die de achterkant en de front-end compon
 Voor meer informatie over het gebruiken van `MapTo` en het bouwen van SPA voor AEM in het algemeen, zie de Aan de slag gids voor uw gekozen kader.
 
 * [Aan de slag met SPA in AEM - Reageren](/help/sites-developing/spa-getting-started-react.md)
-* [Aan de slag met SPA in AEM - hoekig](/help/sites-developing/spa-getting-started-angular.md)
+* [Aan de slag met SPA in AEM - Angular](/help/sites-developing/spa-getting-started-angular.md)
 
 ## AEM Architectuur en SPA {#aem-architecture-and-spas}
 
@@ -231,10 +231,10 @@ De algemene architectuur van AEM, inclusief ontwikkelings-, auteurs- en publicat
 
 ## Volgende stappen {#next-steps}
 
-Voor een overzicht van hoe een eenvoudige SPA in AEM gestructureerd is en hoe het werkt, zie de gids Aan de slag voor zowel [Reageren](/help/sites-developing/spa-getting-started-react.md) als [Hoekig](/help/sites-developing/spa-getting-started-angular.md).
+Voor een overzicht van hoe een eenvoudige SPA in AEM gestructureerd is en hoe het werkt, zie de begonnen gids voor zowel [Reageren](/help/sites-developing/spa-getting-started-react.md) als [Angular](/help/sites-developing/spa-getting-started-angular.md).
 
 Voor een geleidelijke gids voor het creëren van uw eigen SPA, zie [Begonnen het worden met de AEM SPA Redacteur - WKND de Zelfstudie van Gebeurtenissen](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 
 Zie het artikel [Dynamisch model aan componenttoewijzing voor SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md) voor meer informatie over het dynamische model aan componenttoewijzing en hoe het werkt binnen SPA in AEM.
 
-Als u SPA in AEM voor een ander kader dan React of Hoekig wilt uitvoeren of eenvoudig een diepe duik in willen nemen hoe de SPA SDK voor AEM werkt, verwijs naar [SPA Blauwdruk](/help/sites-developing/spa-blueprint.md) artikel.
+Als u SPA in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een diepe duik in willen nemen hoe de SPA SDK voor AEM werkt, verwijs naar [SPA Blauwdruk](/help/sites-developing/spa-blueprint.md) artikel.
