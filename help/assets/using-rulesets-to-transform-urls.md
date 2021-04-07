@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: f0cd3a75-03ed-40a9-b336-8a782f3cfe69
+feature: Regels
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '723'
 ht-degree: 3%
 
 ---
-
 
 # Regelsets gebruiken om URL&#39;s {#using-rulesets-to-transform-urls} om te zetten
 
@@ -83,4 +85,3 @@ Zie ook [Afbeelding &#39;element&#39; gebruiken in plaats van &#39;is&#39; in ee
    De regelingestelde voorwaarden worden toegepast op de aanvragen voor live Dynamic Media Image Servers.
 
    Als u wijzigingen aanbrengt in het bestand met de regelset, worden de wijzigingen direct toegepast wanneer u het bijgewerkte bestand met de regelset opnieuw uploadt en publiceert.
-
