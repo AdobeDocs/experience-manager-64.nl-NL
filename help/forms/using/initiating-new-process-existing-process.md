@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4d55a100-1876-41f0-a06f-7a009c934f3d
+exl-id: d7bdbd22-97b0-45cd-8e72-43ca3d0d1215
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
 
 ---
-
 
 # Een nieuw proces starten met bestaande procesgegevens in de AEM Forms-werkruimte {#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
@@ -34,4 +34,3 @@ De volgende stappen zijn nodig om een nieuw proces te starten op basis van besta
 1. Klik op **[!UICONTROL Start]** op de werkbalk Taakactie. Er wordt een adaptief formulier voor de nieuwe procesinstantie weergegeven met voorgevulde gegevens.
 
 1. Werk de gegevens naar wens bij en klik op **[!UICONTROL Complete]** of een geschikte knop op het formulier.
-
