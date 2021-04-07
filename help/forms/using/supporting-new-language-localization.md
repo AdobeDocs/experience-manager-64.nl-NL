@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 feature: Adaptieve Forms
-role: Beheerder
+role: Administrator
+exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
-
 
 # Ondersteuning voor nieuwe landinstellingen voor lokalisatie van adaptieve formulieren {#supporting-new-locales-for-adaptive-forms-localization}
 
