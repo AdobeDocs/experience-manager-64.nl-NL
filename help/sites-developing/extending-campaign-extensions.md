@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
+exl-id: 8a56b5a0-90da-4fd4-ba26-74bbc7b6b445
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste extensies maken{#creating-custom-extensions}
 
@@ -205,4 +205,3 @@ request.header["Content-Type"] = "application/json; charset=UTF-8";
 request.execute();
 var response = request.response;
 ```
-
