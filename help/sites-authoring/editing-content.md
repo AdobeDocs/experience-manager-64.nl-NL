@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 07da66ab-dd5e-4ca8-ac6d-76fc81875fd9
+exl-id: 26d1dea8-c225-4ef3-8429-bab585341c70
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 5%
 
 ---
-
 
 # Paginacontent bewerken{#editing-page-content}
 
@@ -96,7 +96,7 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 ### Statuskennisgeving {#status-notification}
 
-Als een pagina deel van [werkschema](/help/sites-authoring/workflows.md) of veelvoudige werkschema&#39;s uitmaakt, wordt deze informatie getoond in een berichtbar bij de bovenkant van het scherm wanneer het uitgeven van de pagina.
+Als een pagina deel van een [werkschema](/help/sites-authoring/workflows.md) of veelvoudige werkschema&#39;s uitmaakt, wordt deze informatie getoond in een berichtbar bij de bovenkant van het scherm wanneer het uitgeven van de pagina.
 
 ![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
 
@@ -504,7 +504,7 @@ Wanneer u inhoud bewerkt, kunt u een voorvertoning van de pagina weergeven met d
 
 Tijdens het ontwerpen is de voorvertoningsmodus beschikbaar met het pictogram rechtsboven in de paginaeditor:
 
-![chlimage_1-247](assets/chlimage_1-248.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 ### Weergeven als gepubliceerd {#view-as-published}
 
@@ -584,7 +584,7 @@ Het gedrag van de opdrachten Ongedaan maken en Opnieuw is vergelijkbaar met dat 
 >
 >U kunt:
 >
->* Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u de bewerking ongedaan hebt gemaakt.
+>* Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u Ongedaan maken hebt gebruikt.
 >* U kunt maximaal 20 bewerkingen ongedaan maken (standaardinstelling).
 >* Gebruik ook [Sneltoetsen](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
 
@@ -607,4 +607,3 @@ Formuliervelden die door formuliercomponenten worden gerenderd, mogen geen waard
 >[!NOTE]
 >
 >De geschiedenis van wijzigingen in bestanden en afbeeldingen duurt minimaal tien uur. Na deze tijd is het ongedaan maken van de wijzigingen echter niet gegarandeerd. De beheerder kan de standaardtijd van tien uur wijzigen.
-
