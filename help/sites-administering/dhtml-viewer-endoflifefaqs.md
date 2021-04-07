@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
+exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 9%
 
 ---
-
 
 # DHTML Viewer End-of-Life {#dhtml-viewer-end-of-life-}
 
