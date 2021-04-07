@@ -6,15 +6,15 @@ seo-description: 'Installeer en configureer AEM Forms Interactive Communications
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
-role: Beheerder
+role: Administrator
+exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
-
 
 # Interactieve communicatie installeren en configureren {#install-and-configure-interactive-communications}
 
@@ -193,4 +193,3 @@ U hebt een omgeving geconfigureerd voor het gebruik van de mogelijkheden voor in
 * [Een interactieve communicatie maken](/help/forms/using/create-interactive-communication.md)
 
 * [Een brief voor correspondentiebeheer maken](/help/forms/using/create-letter.md)
-
