@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 14754023-e7c4-4dc5-a9d8-408b81861d95
+exl-id: ce616911-74fa-490d-98d2-cffea91c72a1
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
 
 ---
-
 
 # Bestandsafhankelijkheden oplossen{#resolving-file-dependencies}
 
@@ -58,4 +58,3 @@ Bestandsafhankelijkheden van primaire 3D-modellen, zoals bestanden met structuur
 1. Tik **[!UICONTROL Close]** om terug te keren naar **[!UICONTROL Card View]**.
 
    Het middel wordt automatisch opnieuw verwerkt met de onlangs opgeloste gebiedsdelen.
-
