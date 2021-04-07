@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 feature: PDF Generator
+exl-id: f0441588-7c16-40ab-841f-e89576a0d292
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 0%
 
 ---
-
 
 # Multithread-bestandsconversies inschakelen {#enabling-multi-threaded-file-conversions}
 
@@ -117,4 +117,3 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
 1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig het. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.
-
