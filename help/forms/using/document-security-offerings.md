@@ -10,14 +10,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e7a8481-b8cd-4f2b-b9d2-7a8132f1d3f6
 feature: Documentbeveiliging
+exl-id: 18ebc041-0660-4595-bc96-2039474f91fb
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 0%
 
 ---
-
 
 # Beveiligingsaanbod van document {#document-security-offerings}
 
@@ -80,4 +80,3 @@ Microsoft Windows-zoekprogramma&#39;s voor volledige tekst (SharePoint Index-ser
 * **iFilter-indexeerprogramma:** u kunt de iFilter-index gebruiken om beveiligde PDF-documenten te indexeren en Microsoft Windows-zoekprogramma&#39;s met volledige tekst (Desktop Indexing Service en SharePoint Indexserver) inschakelen om beveiligde PDF-documenten te doorzoeken. Zie [AEM SharePoint IFilter voor beveiligde documenten](assets/sharepoint-ifilter-doc-security.pdf) voor meer informatie.
 
 * **AEM Forms Document Security Index:** u kunt de AEM Forms Document Security-index gebruiken om beveiligde PDF-documenten te indexeren en Adobe Experience Manager in staat te stellen beveiligde PDF-documenten te doorzoeken. De indexeerders maken deel uit van de AEM Forms Document Security-service. Deze zijn opgenomen in AEM Forms op JEE-installatieprogramma&#39;s.
-
