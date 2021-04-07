@@ -5,14 +5,14 @@ description: AEM-moderniseringstools help u bij het omzetten van uw oude AEM naa
 seo-description: AEM Moderniseringsgereedschappen helpen u uw oudere AEM eenvoudig om te zetten in de nieuwste technologie
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+exl-id: cfa9fcd0-8d57-4352-9646-12a4fcf5f695
 translation-type: tm+mt
-source-git-commit: 55bd3036bd793a5e3b468b8b6ad595a857311865
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 58%
 
 ---
-
 
 # AEM-moderniseringstools {#modernization-tools}
 
