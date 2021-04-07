@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 0452062d-cf85-4009-a0a5-a1e891192ea8
+exl-id: d68806f8-8ed8-4aff-9724-bafbe2b1f18e
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '966'
 ht-degree: 0%
 
 ---
-
 
 # Gepubliceerde formulieren {#accessing-and-filling-published-forms} openen en invullen
 
@@ -90,7 +90,7 @@ Nadat het invullen van het formulier is voltooid, verzendt de gebruiker de formu
 
 Er zijn bepaalde formulieren die u vaak moet invullen en verzenden. Het formulier voor het indienen van een individuele belastingaangifte wordt bijvoorbeeld elk jaar ingediend. In dergelijke gevallen verandert een deel van de informatie telkens wanneer u het formulier invult, maar het grootste deel ervan, zoals de persoonlijke gegevens en de familiedetails, verandert niet. U moet echter nog steeds het volledige formulier helemaal opnieuw invullen.
 
-AEM Forms kan u helpen het invullen van formulieren te optimaliseren en de tijd die nodig is om een formulier in te vullen en opnieuw te verzenden, aanzienlijk te verkorten. Eindgebruikers kunnen een nieuw formulier starten met gegevens uit een verzonden formulier. Deze functionaliteit is ingebouwd in [Concepten en Submissies component](/help/forms/using/draft-submission-component.md). Wanneer u concepten en verzendingscomponenten toevoegt aan de pagina van uw portal Formulieren en deze publiceert, vinden eindgebruikers een optie op de tabbladen Verzonden Forms en Concept Forms om een nieuw formulier te starten met gegevens uit een verzonden formulier. Deze optie wordt in de volgende afbeelding gemarkeerd.
+AEM Forms kan u helpen het invullen van formulieren te optimaliseren en de tijd die nodig is om een formulier in te vullen en opnieuw te verzenden, aanzienlijk te verkorten. Eindgebruikers kunnen een nieuw formulier starten met gegevens uit een verzonden formulier. Deze functionaliteit is ingebouwd in [de component Concepten en Verzending](/help/forms/using/draft-submission-component.md). Wanneer u concepten en verzendingscomponenten toevoegt aan de pagina van uw portal Formulieren en deze publiceert, vinden eindgebruikers een optie op de tabbladen Verzonden Forms en Concept Forms om een nieuw formulier te starten met gegevens uit een verzonden formulier. Deze optie wordt in de volgende afbeelding gemarkeerd.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 
