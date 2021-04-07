@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
+exl-id: 26c9098b-f810-4c3d-a6c8-9a5fbcd307dd
 translation-type: tm+mt
-source-git-commit: 8b7373b116a93322ae32bb9afa7028e831ca09f6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
 
 ---
-
 
 # AEM ontwikkeling - Richtlijnen en beste praktijken{#aem-development-guidelines-and-best-practices}
 
