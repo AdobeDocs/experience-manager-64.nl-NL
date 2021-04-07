@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: de8d0e6d-827b-45fe-a538-d3fe1dec8427
+exl-id: 8cff0b7b-c120-462f-8fce-13822073eabb
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
 
 ---
-
 
 # Grondbeginselen van blog {#blog-essentials}
 
@@ -120,4 +120,3 @@ Het AEM platform blokkeert koppelingen van andere websites om XSS-aanvallen te v
 Vanaf AEM 6.2 worden de eerder vereiste wijzigingen die handmatig moeten worden aangebracht, opgenomen in het standaard AntiSamy-configuratiebestand.
 
 Rijke media wordt ingesloten in een blogartikel door het pictogram `Embed Media from External Sites` te selecteren:  ![chlimage_1-471](assets/chlimage_1-471.png)
-
