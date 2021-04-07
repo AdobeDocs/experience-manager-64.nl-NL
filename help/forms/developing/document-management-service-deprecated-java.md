@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
+exl-id: 5ffd9600-03ec-4fd5-abb1-a8d9adefe6f3
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
-
 
 # Documentbeheerservice (verouderd) Java API Quick Start (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
 
@@ -1024,4 +1024,3 @@ Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en 
      } 
  
 ```
-
