@@ -10,14 +10,14 @@ topic-tags: components
 content-type: reference
 discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
+exl-id: 516c1561-5c13-4301-8009-9b021087cec7
 translation-type: tm+mt
-source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 1%
 
 ---
-
 
 # Componenten voor inhoudsfragmenten{#components-for-content-fragments}
 
