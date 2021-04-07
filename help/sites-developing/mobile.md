@@ -10,14 +10,14 @@ topic-tags: mobile-web
 content-type: reference
 discoiquuid: e6b2de9e-dddc-4987-af2f-cf3477634ea9
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
+exl-id: 02fbe809-ba02-49f1-82b8-953c0906f9c9
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3875'
 ht-degree: 0%
 
 ---
-
 
 # Sites maken voor mobiele apparaten{#creating-sites-for-mobile-devices}
 
@@ -198,7 +198,7 @@ Als u een emulator wilt maken, raadpleegt u de sectie [Een aangepaste mobiele em
 
 ### Apparaatgroepen {#device-groups}
 
-Mobiele apparaatgroepen bieden segmentatie van mobiele apparaten op basis van de mogelijkheden van het apparaat. Een apparatengroep verstrekt de informatie die voor op emulator-gebaseerde creatie op de auteursinstantie en voor correcte inhoudstrendering op het publicatiegeval wordt vereist: zodra auteurs inhoud hebben toegevoegd aan de mobiele pagina en deze hebben gepubliceerd , kan de pagina worden opgevraagd in het publicatieexemplaar . In plaats van de emulator-bewerkingsweergave wordt de inhoudspagina weergegeven met een van de geconfigureerde apparaatgroepen. De selectie van de apparaatgroep vindt plaats op basis van [detectie van mobiel apparaat](#client-side-device-detection). De passende apparatengroep verstrekt dan de noodzakelijke het stileren informatie.
+Mobiele apparaatgroepen bieden segmentatie van mobiele apparaten op basis van de mogelijkheden van het apparaat. Een apparatengroep verstrekt de informatie die voor op emulator-gebaseerde creatie op de auteursinstantie en voor correcte inhouderenteruggave op het publish geval wordt vereist: zodra auteurs inhoud hebben toegevoegd aan de mobiele pagina en deze hebben gepubliceerd , kan de pagina worden opgevraagd in het publicatieexemplaar . In plaats van de emulator-bewerkingsweergave wordt de inhoudspagina weergegeven met een van de geconfigureerde apparaatgroepen. De selectie van de apparaatgroep vindt plaats op basis van [detectie van mobiel apparaat](#client-side-device-detection). De passende apparatengroep verstrekt dan de noodzakelijke het stileren informatie.
 
 Apparaatgroepen worden gedefinieerd als inhoudspagina&#39;s onder `/etc/mobile/devices` en gebruiken de sjabloon **Mobiele apparaatgroep**. Het malplaatje van de apparatengroep dient als configuratiemalplaatje voor de definities van de apparatengroep in de vorm van inhoudspagina&#39;s. De belangrijkste kenmerken zijn:
 
@@ -610,4 +610,3 @@ Alice van de gebruiker wordt opnieuw gericht aan `coolpage.feature.html`, en ver
 Als `coolpage.feature.html` van een front-end geheime voorgeheugen wordt gediend, krijgt AEM geen kans om het verzoek te analyseren om te weten te komen dat de mobiele selecteur niet de nieuwe gebruiker-Agent aanpast, en het Loodje krijgt de verkeerde vertegenwoordiging.
 
 Als u dit wilt oplossen, kunt u een eenvoudige selectie-UI op de pagina&#39;s opnemen, waar eindgebruikers de apparaatgroep die is geselecteerd door AEM kunnen overschrijven. In het bovenstaande voorbeeld kan de eindgebruiker met een koppeling (of een pictogram) op de pagina naar `coolpage.touch.html` schakelen als hij vindt dat zijn apparaat hiervoor geschikt is.
-
