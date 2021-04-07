@@ -3,15 +3,15 @@ title: Aanbevolen werkwijzen voor het verschuiven van elementen
 description: Aanbevolen gebruiksgevallen en aanbevolen procedures voor het offloaden van workflows voor het opnemen en repliceren van bedrijfsmiddelen in AEM Assets.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1820'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen {#assets-offloading-best-practices} voor het verschuiven van elementen
 
@@ -161,4 +161,3 @@ Dit document richt zich op het offloaden van bedrijfsmiddelen. Hier volgt een aa
 
 * [Taken verschuiven](/help/sites-deploying/offloading.md)
 * [Offloader middelenwerkstroom](/help/sites-administering/workflow-offloader.md)
-
