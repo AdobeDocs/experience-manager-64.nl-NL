@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
+exl-id: ae0463de-271f-47c0-b947-f6d149ded8ab
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 0%
 
 ---
-
 
 # Opstelling het project van Visual Studio en bouwt Windows app {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
@@ -168,4 +168,3 @@ Om app op Vensters te installeren gebruikend Visual Studio:
 
 1. Met uw open app in Visual Studio, kies Vensters-x64, Vensters-x86, of Vensters-AnyCPU van de lijst van de Platforms van de Oplossing, en selecteer **Verre Machine**.
 1. Uw app wordt geïmplementeerd op de externe computer.
-
