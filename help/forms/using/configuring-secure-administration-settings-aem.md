@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Beheerder
+role: Administrator
+exl-id: 980d420c-a768-4634-9b8c-3f1d7327285d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
-
 
 # Beveiligde beheerinstellingen voor AEM Forms configureren op JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
@@ -130,4 +130,3 @@ Eindgebruikers kunnen zich bij AEM Forms verifiëren via Workbench, AEM Forms-we
 1. Navigeer in de beheerconsole naar de pagina Configuration Files importeren en exporteren.
 1. Ga de weg aan het gewijzigde config.xml- dossier in of de klik doorbladert om aan het te navigeren.
 1. Klik **Importeren** om het gewijzigde bestand config.xml te uploaden en klik vervolgens op **OK**.
-
