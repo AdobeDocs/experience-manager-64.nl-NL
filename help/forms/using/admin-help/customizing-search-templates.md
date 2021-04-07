@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
+exl-id: 5230222b-53f8-414c-aaa1-848d6e9369e8
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
 
 ---
-
 
 # Zoeksjablonen aanpassen {#customizing-search-templates}
 
@@ -88,4 +88,3 @@ U kunt zo veel zoeksjablonen maken als u wilt.
 
 1. Selecteer op het tabblad Identificatie een naam in de lijst Naam zoeksjabloon.
 1. Klik op Deze sjabloon verwijderen en klik op OK.
-
