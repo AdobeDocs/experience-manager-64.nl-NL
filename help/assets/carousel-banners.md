@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
+exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
+feature: Carousel-banners
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '4680'
+source-wordcount: '4682'
 ht-degree: 4%
 
 ---
-
 
 # Carousel-banners {#carousel-banners}
 
@@ -102,7 +104,7 @@ Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeeld
 
 >[!NOTE]
 >
->Als u een AEM Sites en/of AEM ecommerce klant bent, sla deze stap over. U hoeft de hotspot- of afbeeldingskaartvariabelen niet handmatig te identificeren; u kunt de integratie met Ecommerce voor productintegratie gebruiken. Zie informatie over [eCommerce instellen](/help/sites-administering/generic.md). Daarnaast kunt u de component Interactive gebruiken en toevoegen aan uw webpagina.
+>Als u een AEM Sites en/of AEM ecommerce klant bent, sla deze stap over. U hoeft de variabelen van hotspot of afbeeldingen met hyperlinks niet handmatig te identificeren; u kunt de integratie met Ecommerce voor productintegratie gebruiken. Zie informatie over [eCommerce instellen](/help/sites-administering/generic.md). Daarnaast kunt u de component Interactive gebruiken en toevoegen aan uw webpagina.
 >
 >Als u een AEM Assets- of Media-klant bent, publiceert u de URL- of insluitcode en integreert u deze vervolgens met het contentbeheersysteem van derden en identificeert u handmatig hotspots en afbeeldingen met hyperlinks.
 
@@ -134,7 +136,7 @@ Tijdens dit proces is het belangrijk om verschillende delen van uw website te be
 
 In het eenvoudigste geval, is het enige veranderlijke deel in Snelle mening URL productSKU. In dit geval is de SKU-waarde het enige gegevensstuk dat u nodig hebt om hotspots of afbeeldingen met hyperlinks toe te voegen aan de bannerafbeelding.
 
-In complexe gevallen heeft de URL van de Snelle weergave echter naast de SKU ook verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
+In complexe gevallen heeft de URL van de snelle weergave echter naast de SKU ook verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
 
 Bekijk de volgende voorbeelden van snelle weergave-URL&#39;s en de resulterende hotspot- of afbeeldingskaartvariabelen:
 
