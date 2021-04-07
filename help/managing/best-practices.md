@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-checklist, introduction
 content-type: reference
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
+exl-id: 1699b24f-cf2a-419b-a2f9-be294fa3591f
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3313'
 ht-degree: 0%
 
 ---
-
 
 # Projecten beheren - Controlelijst met best practices{#managing-projects-best-practices-checklist}
 
@@ -151,7 +151,7 @@ De planning van uw project consolideert de voorbereiding. Hier moet u beginnen d
    * Belangrijke feiten over het project presenteren.
    * Beantwoord vragen.
    * Ervoor zorgen dat iedereen dezelfde kennisbasis heeft.
-   * Neem de betrokkenheid van iedereen die erbij betrokken zal zijn. Dat zal verdiend moeten worden.
+   * Neem de betrokkenheid van iedereen die erbij betrokken zal zijn - dat moet verdiend worden.
       * Door de hoofdrolspelers (inclusief potentiële auteurs) bij het begin van het project te betrekken, verhoogt u de kans dat ze zich voor het project engageren.
 
 ### Voorbereiding van ontwikkeling {#development-preparation}
@@ -197,7 +197,6 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
    * Hoe zij met elkaar en met gebruikers zullen in wisselwerking staan.
    * De gegevens die door toepassingen moeten worden verbruikt en geproduceerd, in plaats van hun interne structuur.
-
    De definities moeten betrekking hebben op:
 
    * Basiscodestructuur voor het project
@@ -255,7 +254,6 @@ Op een vergelijkbare basis moeten de bewerkingen correct worden gepland om ervoo
    * Definitie van het gebruik van bevoegdheden die van invloed zijn op de publicatieomgeving; bijvoorbeeld `replicate`
    * Voor gebruikers met minimale bevoegdheden moeten workflows worden gedefinieerd
    * Gebruikers in de groep `editor` mogen geen `admin` rechten hebben en mogen geen deel uitmaken van de groep `administrators`
-
    Voor meer informatie, zie [Gebruikersbeheer en Veiligheid](/help/sites-administering/security.md).
 
 * **Toezicht en onderhoud**
@@ -264,7 +262,6 @@ Op een vergelijkbare basis moeten de bewerkingen correct worden gepland om ervoo
 
    * Wat moet er worden gecontroleerd?
    * onderhoudstaken; zowel regelmatig als in bijzondere gevallen
-
    Zie ook [Bewaking en onderhoud](/help/sites-deploying/monitoring-and-maintaining.md) voor meer informatie.
 
 * **Migratie**
@@ -364,7 +361,6 @@ Zodra de nieuwe toepassing beschikbaar is, moet deze streng worden getest, zowel
 
    * De oplossing voldoet aan de vereisten van de gebruiker/klant
    * De klant/gebruikers accepteren de oplossing (functie, ontwerp en prestaties)
-
    Er zou een geformaliseerde controlelijst voor klantenoverdracht moeten zijn; ideaal geautomatiseerd en elke avond tegen een momentopname. De resultaten moeten naar de projectmanager en het ontwikkelingsteam worden verzonden
 
 * **Prestatietests en belastingtests**
@@ -376,7 +372,6 @@ Zodra de nieuwe toepassing beschikbaar is, moet deze streng worden getest, zowel
    * [Prestatietesten](/help/sites-deploying/configuring-performance.md)
    * [Hoe te plannen en het testen in werking te stellen](/help/sites-developing/planning.md)
    * [Basisrichtsnoeren voor prestaties](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
-
    >[!NOTE]
    >
    >Dit proces moet worden voortgezet bij normaal gebruik van AEM, maar deze eerste fasen zijn het meest cruciaal.
