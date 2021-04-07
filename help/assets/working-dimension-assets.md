@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
+exl-id: be8f6361-607d-4529-aef0-e8978dfd04b4
+feature: 3D-middelen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Werken met Adobe Dimension-elementen {#working-with-adobe-dimension-assets}
 
@@ -52,4 +54,3 @@ De gebruikersinterface van de glTF-viewer wijkt enigszins af van de standaard 3D
 * [AEM 3D-releaseopmerkingen ](/help/release-notes/aem3d-release-notes.md) voor beperkingen en beperkingen die van toepassing zijn op Dn-elementen en de glTF-viewer.
 * [Werken met de component 3D-sites ](using-the-3d-sites-component.md) voor componenteigenschappen die specifiek zijn voor Adobe Dimension-elementen.
 * [Installeren en configureren AEM 3](install-config-3d.md) DH om de op cloud gebaseerde conversieservice te configureren.
-
