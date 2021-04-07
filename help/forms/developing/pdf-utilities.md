@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 role: Developer
+exl-id: 1fdabd73-ee74-426b-b815-68022ea27c4e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2593'
+source-wordcount: '2592'
 ht-degree: 0%
 
 ---
-
 
 # Werken met PDF-hulpprogramma&#39;s {#working-with-pdf-utilities}
 
