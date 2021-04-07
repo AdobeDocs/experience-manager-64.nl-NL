@@ -8,24 +8,24 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
+exl-id: b9d2c63c-1777-4c13-a39f-6891f0ff52b2
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 0%
 
 ---
 
-
 # Gecontroleerde map in AEM Forms {#watched-folder-in-aem-forms}
 
-Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resultaatbestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](#variousmethodsforprocessingfiles) voor meer informatie over workflow, service en script.
+Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resulterende bestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](#variousmethodsforprocessingfiles) voor meer informatie over workflow, service en script.
 
 ## Een gecontroleerde map maken {#create-a-watched-folder}
 
 U kunt een van de volgende methoden gebruiken om een gecontroleerde map te maken op het bestandssysteem:
 
-* Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Configuratie van de Omslag, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`
+* Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`
 
    De map `MyWatchedFolder`bestaat niet. AEM Forms probeert de map op het opgegeven pad te maken.
 
