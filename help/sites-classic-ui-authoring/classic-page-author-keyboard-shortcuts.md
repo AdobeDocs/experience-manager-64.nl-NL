@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
+exl-id: 04075ed1-3a52-4371-aa4e-0c3d61c878ef
 translation-type: tm+mt
-source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 2%
 
 ---
-
 
 # Sneltoetsen bij het bewerken van pagina&#39;s{#keyboard-shortcuts-when-editing-pages}
 
@@ -174,4 +174,3 @@ Voor bureaubladontwikkelaars zijn aanvullende sneltoetsen beschikbaar wanneer u 
   </tr> 
  </tbody> 
 </table>
-
