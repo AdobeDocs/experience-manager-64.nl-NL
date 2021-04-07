@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
+exl-id: 8d0863be-108d-49d8-8243-ea5e404ed64c
 translation-type: tm+mt
-source-git-commit: 1a87e927ada393524962f0ad7db93097a3cfab5b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
 
 ---
-
 
 # Beste praktijken voor het Testen van Prestaties{#best-practices-for-performance-testing}
 
