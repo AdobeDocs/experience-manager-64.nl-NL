@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
+exl-id: 6d52babc-9477-4528-9c25-35cb729f5d78
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
 
 ---
-
 
 # Forms ontwikkelen (klassieke gebruikersinterface){#developing-forms-classic-ui}
 
@@ -84,7 +84,7 @@ Als de waarden in de `String[]` als volgt zijn opgemaakt:
 * `AK=Alaska`
 * *enz.*
 
-aem genereert de lijst vervolgens als:
+AEM genereert de lijst vervolgens als:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
