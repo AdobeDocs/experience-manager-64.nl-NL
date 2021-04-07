@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
 feature: Configureren
+exl-id: e83317bb-e69c-4e2c-92f8-4f613786e7ae
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 0%
 
 ---
-
 
 # Problemen oplossen met replicatie{#troubleshooting-replication}
 
@@ -113,4 +113,3 @@ In sommige gevallen wordt de replicatiewachtrij geblokkeerd wanneer wordt geprob
 1. Voer de naam van de gebruiker in.
 1. Selecteer `jcr:namespaceManagement` in de lijst met bevoegdheden.
 1. Klik op OK.
-
