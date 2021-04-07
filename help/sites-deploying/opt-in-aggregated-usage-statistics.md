@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 0c2b1c67-2fa4-4b2e-8512-0973177656e2
+exl-id: f3cfa30a-ca15-48db-bacf-1aebbd0ad458
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # Het kiezen in de samengevoegde Verzameling van de Statistieken van het Gebruik{#opting-into-aggregated-usage-statistics-collection}
 
@@ -76,4 +76,3 @@ U kunt als volgt de optie Aanmelden (of Weigeren) gebruiken met de webconsole:
    ![usage_statisticalSelect](assets/usage_statisticsselect.png)
 
 1. Klik **Opslaan**.
-
