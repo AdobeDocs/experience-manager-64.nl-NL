@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
+exl-id: a0d6e4a6-751f-4cab-842b-08719b899060
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
-
 
 # PDF-documenten maken met verzonden XML-gegevens {#creating-pdf-documents-with-submittedxml-data}
 
