@@ -6,14 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
+exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
+feature: Voorinstellingen afbeelding
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '3634'
+source-wordcount: '3636'
 ht-degree: 7%
 
 ---
-
 
 # Dynamic Media-voorinstellingen voor afbeeldingen beheren {#managing-image-presets}
 
@@ -475,7 +477,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
    opac=50
    ```
 
-   ![chlimage_1-505](assets/chlimage_1-503.png)
+   ![chlimage_1-503](assets/chlimage_1-503.png)
 
 ## Voorinstellingen {#modifying-image-presets} voor afbeeldingen bewerken
 
@@ -493,7 +495,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
 Als u de modus Dynamic Media - Hybride gebruikt, moet u de voorinstellingen voor afbeeldingen handmatig publiceren.
 
-Als u de Dynamic Media - Scene7-modus uitvoert, worden voorinstellingen voor afbeeldingen automatisch voor u gepubliceerd. U hoeft deze stappen niet uit te voeren.
+Als u de Dynamic Media - Scene7-modus uitvoert, worden afbeeldingsvoorinstellingen automatisch voor u gepubliceerd. U hoeft deze stappen niet uit te voeren.
 
 **Voorinstellingen voor afbeeldingen publiceren in Dynamic Media - hybride modus**:
 
@@ -502,7 +504,7 @@ Als u de Dynamic Media - Scene7-modus uitvoert, worden voorinstellingen voor afb
 1. Selecteer de voorinstelling voor de afbeelding of meerdere voorinstellingen voor de afbeelding in de lijst met voorinstellingen voor de afbeelding en tik op **[!UICONTROL Publish]**.
 1. Nadat de voorinstelling voor de afbeelding is gepubliceerd, verandert de status van niet-gepubliceerd in gepubliceerd.
 
-   ![chlimage_1-503](assets/chlimage_1-505.png)
+   ![chlimage_1-505](assets/chlimage_1-505.png)
 
 ## Voorinstellingen voor Dynamic Media-afbeeldingen verwijderen {#deleting-image-presets}
 
