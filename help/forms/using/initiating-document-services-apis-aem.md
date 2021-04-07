@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
+exl-id: a2821338-f31d-4b08-91e6-7f934dc01384
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
 
 ---
-
 
 # Documentservices-API&#39;s starten vanuit AEM workflow {#initiate-document-services-apis-from-aem-workflow}
 
@@ -160,4 +160,3 @@ De Generate Niet Interactive PDF Workflow is een omslag rond `generatePDFOutput`
 * Gelijktijdige PDF: Hiermee geeft u aan of u de gegenereerde PDF wilt optimaliseren voor webweergave.
 * *Gelabelde PDF*: Hiermee geeft u aan of de gegenereerde PDF toegankelijk moet zijn.
 * *XCI-document*: Hiermee geeft u het pad naar het XCI-bestand op.
-
