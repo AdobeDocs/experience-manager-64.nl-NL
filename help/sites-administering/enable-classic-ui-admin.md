@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
+exl-id: f3c03562-aaeb-4d43-aee1-d92d661ee329
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
 
 ---
-
 
 # Admin Consoles{#admin-consoles}
 
