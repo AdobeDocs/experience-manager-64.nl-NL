@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
+exl-id: 4b8b0247-0978-40b5-92e2-319cfa44b34e
+feature: 3D-middelen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '862'
 ht-degree: 1%
 
 ---
-
 
 # Informatie over het uploaden en verwerken van 3D-elementen in AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}
 
@@ -113,4 +115,3 @@ Alleen in **[!UICONTROL Card View]** worden de verwerkingsstatus en progressie a
 >[!NOTE]
 >
 >U kunt een 3D-element weergeven in **[!UICONTROL Detail View]** of renderen nadat het voorvertoningswerkgebied maken is voltooid. U hoeft niet te wachten tot alle verwerkingsfasen zijn voltooid.
-
