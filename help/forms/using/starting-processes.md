@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
+exl-id: bd5a247f-cd4b-41c8-b5f6-8def4f5c93ef
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 0%
 
 ---
-
 
 # Beginprocessen {#starting-processes}
 
@@ -131,4 +131,3 @@ U kunt elk proces toevoegen aan de categorie Favorieten. Door favorieten in te s
 >Als u gewoonlijk processen start wanneer u de AEM Forms-werkruimte gebruikt, kunt u bij Locatie starten de categorie Favorieten automatisch weergeven wanneer u de AEM Forms-werkruimte start. Zie Voorkeuren beheren in [Aan de slag met de AEM Forms-werkruimte](/help/forms/using/getting-started-livecycle-html-workspace.md) voor meer informatie.
 
 Als u een proces als favoriet wilt markeren, selecteert u de taak in de desbetreffende categorie en klikt u op de holle ster. De ster wordt gouden. Als u de markering van een proces als favoriet wilt opheffen, klikt u nogmaals op de gouden ster.
-
