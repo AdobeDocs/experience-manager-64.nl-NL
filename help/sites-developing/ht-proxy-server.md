@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
+exl-id: 63f3a172-b551-433a-aad5-58c6bfda82bb
 translation-type: tm+mt
-source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
 
 ---
-
 
 # Het gereedschap Proxyserver gebruiken{#how-to-use-the-proxy-server-tool}
 
@@ -233,4 +233,3 @@ Als u van tijd tot tijd hangende verzoeken ervaart:
 * Start de proxy.
 * Wacht of schrijf het toegangslogboek in een dossier met elke ingang die een timestamp heeft.
 * Wanneer het verzoek begint hangend kunt u zien hoeveel verbindingen open waren en welk verzoek problemen veroorzaakt.
-
