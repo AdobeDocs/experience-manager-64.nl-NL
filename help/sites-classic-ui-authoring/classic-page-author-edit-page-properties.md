@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
+exl-id: 6969dc5e-f7fa-495e-8ddf-8123ca2bc9a6
 translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 1%
 
 ---
-
 
 # Pagina-eigenschappen bewerken{#editing-page-properties}
 
@@ -68,7 +68,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Op tijd**
 
-   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
+   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
 
    Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
@@ -195,4 +195,3 @@ Pagina-eigenschappen definiëren de verschillende eigenschappen van de pagina, z
    Hiermee wordt een dialoogvenster met meerdere tabbladen geopend.
 
 1. Breng de gewenste wijzigingen aan en klik op **OK** om op te slaan.
-
