@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Documentbeveiliging
+exl-id: 64431958-c802-42d1-a2e3-5e85e15bfad6
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2190'
 ht-degree: 0%
 
 ---
-
 
 # Toegang tot documenten die met een beleid zijn beveiligd {#controlling-access-to-policy-protected-documents} beheren
 
