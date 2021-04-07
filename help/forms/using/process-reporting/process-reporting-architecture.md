@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: 4afc68fc-6b39-4c31-95fa-2ef3111c57da
+exl-id: 05ef8b08-bb1d-441d-8b02-5f047efbabcb
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
 
 ---
-
 
 # Hoe de Rapportering van het Proces {#how-process-reporting-works} werkt
 
@@ -76,4 +76,3 @@ De dienst gebruikt dan diensten OSGi om de relevante het melden gegevens te verk
 U kunt uw eigen douanerapporten tot stand brengen en deze rapporten tonen in het lusje van de Rapporten van de Douane van het Proces Meldend gebruikersinterface.
 
 Voor de stappen om een douanerapport tot stand te brengen, zie een douanerapport in het artikel [De Rapporten van de Douane in Proces Meldend](/help/forms/using/process-reporting/process-reporting-custom-reports.md) tot stand brengen.
-
