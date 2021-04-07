@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
+exl-id: 1e772376-d25a-4471-bf7c-5a8a8cdeb543
 translation-type: tm+mt
-source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 0%
 
 ---
-
 
 # Problemen met AEM Forms-app {#troubleshoot-aem-forms-app} oplossen
 
@@ -106,4 +106,3 @@ De Android Studio-console raadt u bijvoorbeeld aan de verloopversie te verlagen 
 Selecteer **Build** > **Build APK** opnieuw om de fout op te lossen en het .apk-bestand te genereren.
 
 ![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)
-
