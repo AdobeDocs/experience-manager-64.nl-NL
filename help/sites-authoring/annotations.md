@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
+exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
 translation-type: tm+mt
-source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
 
 ---
-
 
 # Annotaties bij het bewerken van een pagina{#annotations-when-editing-a-page}
 
@@ -125,4 +125,3 @@ In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 Annotaties worden niet weergegeven in de modus Bewerken, maar het symbool rechtsboven op de werkbalk geeft aan hoeveel annotaties er bestaan voor de huidige pagina. Het pictogram vervangt het standaardpictogram Annotaties, maar werkt nog steeds als een snelle koppeling die van/naar de modus Annotatie schakelt:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-
