@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7185fb13-46a2-4fa3-aa21-a51e63cdb9be
+exl-id: 96ef7e58-66c9-4985-973b-0c6fc7c39fd5
 translation-type: tm+mt
-source-git-commit: 44c56ec5de6e9a832aaa52ab4a6c4978af7a9865
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
 
 ---
-
 
 # Opmerking toevoegen aan voorbeeldpagina {#add-comment-to-sample-page}
 
@@ -69,4 +69,3 @@ Hier aaron.mcdonald@mailinator.com vindt u een opmerking:
 ![chlimage_1-51](assets/chlimage_1-51.png) ![chlimage_1-52](assets/chlimage_1-52.png)
 
 Nu het lijkt of de uitgebreide component correct werkt met de standaardweergave, is het tijd om de weergave te wijzigen.
-
