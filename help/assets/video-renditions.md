@@ -3,15 +3,15 @@ title: Video-uitvoeringen
 description: Video-uitvoeringen
 contentOwner: AG
 feature: Video, uitvoeringen
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
-
 
 # Video-uitvoeringen {#video-renditions}
 
