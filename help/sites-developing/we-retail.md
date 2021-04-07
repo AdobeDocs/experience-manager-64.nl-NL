@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
+exl-id: 66c19394-9d2f-4bdd-9c17-f0ec8090f0b4
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 2%
 
 ---
-
 
 # We.Retail Reference Implementation{#we-retail-reference-implementation}
 
@@ -123,4 +123,3 @@ Voel vrij om met [trekverzoeken](https://github.com/Adobe-Marketing-Cloud/aem-sa
 Voorbeeld van de welkomstpagina Web.Retail:
 
 ![screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32](assets/screencapture-localhost-4502-editor-html-content-we-retail-us-en-html-2018-08-17-14_33_32.png)
-
