@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
+exl-id: ab5233dd-182e-4871-997f-b2142901bce7
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 0%
 
 ---
-
 
 # HSM gebruiken om documenten {#use-hsm-to-digitally-sign-or-certify-documents} digitaal te ondertekenen of te certificeren
 
@@ -117,7 +117,7 @@ De alias bevat alle parameters die een HSM of token vereist. Voer de onderstaand
 
 ## Gebruik de DocAssurance Service-API&#39;s om een document te ondertekenen of certificeren met digitale sleutels die op het apparaat zijn opgeslagen  {#programatically}
 
-In de volgende voorbeeldcode wordt een HSM-document gebruikt of geactiveerd om een document te ondertekenen of certificeren.
+In de volgende voorbeeldcode wordt een HSM-document of een token gebruikt om een document te ondertekenen of te certificeren.
 
 ```java
 /*************************************************************************
