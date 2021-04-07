@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
+exl-id: 8a4fc7c7-03bc-44db-93f1-dbd76fc9dbd7
 translation-type: tm+mt
-source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
 
 # Ontwerpen en de Designer{#designs-and-the-designer}
 
@@ -68,4 +68,3 @@ Het voorgaande voorbeeld biedt verschillende voordelen:
 * U kunt de website opnieuw ontwerpen door het ontwerppad naar een ander knooppunt in de hoofdmap van de site te verplaatsen van `design/v1` naar `design/v2.`
 
 * `/etc/designs` en  `/content` zijn de enige externe URL&#39;s die de browser ziet als bescherming van een externe gebruiker die nieuwsgierig wordt naar wat zich onder uw  `/apps` structuur bevindt. De bovenstaande URL-voordelen helpen uw systeembeheerder ook om een betere beveiliging in te stellen, omdat u de blootstelling van de elementen aan een aantal verschillende locaties beperkt.
-
