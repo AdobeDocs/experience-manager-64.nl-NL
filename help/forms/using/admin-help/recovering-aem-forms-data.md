@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
+exl-id: 8469b063-ea22-4706-ad02-1477d5f9d6c5
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 0%
 
 ---
-
 
 # De AEM formuliergegevens herstellen {#recovering-the-aem-forms-data}
 
@@ -58,7 +58,7 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
 1. (WebSphere Application Server) Als u terugkeert naar een nieuwe instantie van WebSphere Application Server, voert u de opdracht restoreConfig.bat/sh uit.
 1. Herstel de AEM-formulierdatabase door eerst een terugzetbewerking uit te voeren met behulp van de back-upbestanden van de database en vervolgens de transactierlogboeken opnieuw toe te passen op de herstelde database. (Zie [AEM formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Zie een van de volgende artikelen in de kennisbasis voor meer informatie:
 
-   * [Oracle Backup and Recovery voor AEM formulieren](https://www.adobe.com/go/kb403624)
+   * [Back-up en herstel van oracle voor AEM formulieren](https://www.adobe.com/go/kb403624)
    * [MySQL Backup and Recovery voor AEM formulieren](https://www.adobe.com/go/kb403625)
    * [Microsoft SQL Server Backup and Recovery voor AEM formulieren](https://www.adobe.com/go/kb403623)
    * [DB2 Back-up en herstel voor AEM formulieren](https://www.adobe.com/go/kb403626)
@@ -134,4 +134,3 @@ Om de plaats GDS in een gegroepeerde milieu te veranderen, sluit de volledige cl
 >[!NOTE]
 >
 >Als u niet kunt verzekeren begin één knoop volledig alvorens andere knopen te beginnen, moet u het manuscript LCSetGDS op elke knoop in de cluster in werking stellen alvorens u de cluster begint.
-
