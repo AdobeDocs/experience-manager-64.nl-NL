@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 feature: Correspondentenbeheer
+exl-id: 64ca6baa-5534-4227-a969-fb67cc6eb207
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
-
 
 # API&#39;s voor toegang tot letterinstanties {#apis-to-access-letter-instances}
 
