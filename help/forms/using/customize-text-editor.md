@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 feature: Correspondentenbeheer
+exl-id: 5e9f8e0f-209e-4613-b230-2b826b46ba6b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
 
 ---
-
 
 # Teksteditor {#customize-text-editor} aanpassen
 
@@ -195,4 +195,3 @@ Het lettertype Sazanami Mincho Medium dat bijvoorbeeld is toegevoegd in het best
 >[!NOTE]
 >
 >Als u tekst in het Japans wilt zien, moet u eerst de tekst met Japanse tekens invoeren. De toepassing van een aangepast Japans lettertype maakt de tekst alleen op een bepaalde manier op. De toepassing van een aangepast Japans lettertype wijzigt geen Engelse of andere tekens in Japanse tekens.
-
