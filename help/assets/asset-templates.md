@@ -6,15 +6,15 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
 feature: Asset Management, ontwikkelprogramma's
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1575'
 ht-degree: 0%
 
 ---
-
 
 # Asset Templates {#asset-templates}
 
@@ -71,11 +71,11 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
 1. (Optioneel) Klik/tik op het pictogram **[!UICONTROL Tags]** naast het veld **[!UICONTROL Tags]** en selecteer een of meer tags voor de brochure. Klik/tik **[!UICONTROL Confirm]** om uw selectie te bevestigen.
 
-   ![chlimage_1-310](assets/chlimage_1-310.png)
+   ![chlimage_1-311](assets/chlimage_1-310.png)
 
 1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik/tik **[!UICONTROL Open]** om de brochure in Edit wijze te openen.
 
-   ![chlimage_1-310](assets/chlimage_1-311.png)
+   ![chlimage_1-311](assets/chlimage_1-311.png)
 
    U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt de brochure bijvoorbeeld weergegeven op de miniatuur.
 
@@ -210,4 +210,3 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
    >[!NOTE]
    >
    >U kunt een samengevoegd onderpand later niet bewerken of gebruiken om ander onderpand te maken.
-
