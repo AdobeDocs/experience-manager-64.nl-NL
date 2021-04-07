@@ -3,14 +3,14 @@ title: AEM 6.4 Handleiding voor mobiele gebruikers
 seo-title: AEM 6.4 Handleiding voor mobiele gebruikers
 description: In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren.
 seo-description: Beschrijft om inhoud voor mobiele toepassingen tot stand te brengen en te beheren.
+exl-id: 89af57da-8bd6-46b7-9462-fcf51687004e
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 18%
 
 ---
-
 
 # AEM 6.4 Handleiding voor mobiele gebruikers
 
