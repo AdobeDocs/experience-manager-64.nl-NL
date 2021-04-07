@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 feature: Forms Portal
+exl-id: 4d66ab64-a132-4f2a-89ca-3fbd8dc56ce2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 1%
 
 ---
-
 
 # Een pagina {#creating-a-forms-portal-page} voor een formulierportal maken
 
