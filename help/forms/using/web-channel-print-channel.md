@@ -8,14 +8,14 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 feature: Interactieve communicatie
+exl-id: cb7a8e96-4440-47ec-b506-275d5acc774e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
 
 ---
-
 
 # Kanaal en webkanaal afdrukken {#print-channel-and-web-channel}
 
@@ -89,4 +89,3 @@ Voer de volgende stappen uit om een webkanaalsjabloon te maken:
 Tijdens het ontwerpen van een interactieve communicatie kunnen auteurs deze optie selecteren om het webkanaal synchroon met het afdrukkanaal te maken. Als u het afdrukkanaal gebruikt als master voor het webkanaal, weet u zeker dat de inhoud, overerving en gegevensbinding van het webkanaal worden afgeleid van het afdrukkanaal en dat de wijzigingen die in het afdrukkanaal zijn aangebracht, worden weerspiegeld in het webkanaal. De interactieve auteurs van communicatie mogen echter de overerving voor specifieke componenten in het webkanaal onderbreken, indien nodig.
 
 ![printweb_2-2](assets/printweb_2-2.png)
-
