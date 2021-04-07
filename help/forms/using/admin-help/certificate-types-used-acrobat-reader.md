@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
+exl-id: 8a65d9cc-33d0-4176-97e1-70ad67cbb982
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 3%
 
 ---
-
 
 # Certificaattypen die worden gebruikt door Acrobat Reader DC-extensies {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
@@ -226,4 +226,3 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
 >[!NOTE]
 >
 >Gebruiksrechten voor Acrobat Reader DC-extensies kunnen alleen in licentie worden gegeven door Adobe in bepaalde combinaties die samenwerken. Het is niet mogelijk om deze mogelijkheden onafhankelijk te verlenen. Neem voor informatie over de beschikbare combinaties van gebruiksrechten contact op met een accountvertegenwoordiger voor AEM formulieren.
-
