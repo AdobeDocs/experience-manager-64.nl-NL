@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
+exl-id: c5fa7561-0e21-4e29-be8e-4a6d3b61092d
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 2%
 
 ---
-
 
 # Pagina&#39;s maken en indelen{#creating-and-organizing-pages}
 
@@ -338,4 +338,3 @@ U kunt een pagina [vergrendelen/ontgrendelen](/help/sites-classic-ui-authoring/c
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
 1. Selecteer **Maken** om de map te maken.
-
