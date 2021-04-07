@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
+exl-id: ee57a0c5-261e-4ffd-92ca-4804a9e1d132
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 0%
 
 ---
-
 
 # Dialoogvenster-editor{#dialog-editor}
 
@@ -24,7 +24,7 @@ De dialoogeditor biedt een grafische interface voor het eenvoudig maken en bewer
 
 Als u wilt zien hoe het werkt, gaat u naar CRXDE Lite, opent u de verkenner-boomstructuur naar `/libs/foundation/components/chart` en dubbelklikt u op het knooppunt `dialog`:
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![chlimage_1-248](assets/chlimage_1-247.png)
 
 Het dialoogknooppunt wordt geopend in de **dialoogeditor**:
 
