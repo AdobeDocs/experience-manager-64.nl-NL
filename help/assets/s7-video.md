@@ -5,20 +5,22 @@ contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
+exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
+feature: Video
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 53fab119fc178e5ac88257cab1e930d4472eaa14
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1552'
 ht-degree: 0%
 
 ---
-
 
 # Video {#video}
 
 Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic. U kunt Dynamic Media Classic-video&#39;s ook rechtstreeks openen vanuit Middelen voor het ontwerpen van pagina&#39;s.
 
-Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische apparaat- en bandbreedtedetectie).
+Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit tot alle schermen (automatische apparaat- en bandbreedtedetectie).
 
 De component **[!UICONTROL Scene7 Video]** voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
 
@@ -189,4 +191,3 @@ De component **[!UICONTROL Foundation Video]** moet weten welke videoprofielen m
 1. De videoprofielen moeten worden geactiveerd.
 1. Configureer het ontwerp van de component **[!UICONTROL Foundation Video]** op de pagina.
 1. Activeer het ontwerp nadat u klaar bent met uw ontwerpwijzigingen.
-
