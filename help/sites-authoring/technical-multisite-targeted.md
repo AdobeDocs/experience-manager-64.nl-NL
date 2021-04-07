@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
+exl-id: 28c45577-e5cd-4706-b5b2-227279126ad9
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 12%
 
 ---
-
 
 # Structurering van beheer voor meerdere sites voor getargete content{#how-multisite-management-for-targeted-content-is-structured}
 
@@ -35,4 +35,3 @@ Het volgende diagram is een voorbeeld van hoe de logica voor drie plaatsen, geno
 * site1 zoekt myarea1 op merk1 en other area2 op merk2 op basis van gebiedstoewijzing.
 * site2 zoekt myarea1 op voor merk1 en master gebied voor merk2 omdat alleen de gebiedstoewijzing voor merk1 is gedefinieerd.
 * site3 zoekt het master gebied voor merk1 en merk2 op omdat er helemaal geen andere gebiedstoewijzing voor deze site is gedefinieerd.
-
