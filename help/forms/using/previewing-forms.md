@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 feature: Adaptieve Forms
+exl-id: 130bdc9f-b19e-4b7d-a6ad-ef5097c9cf41
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
 
 ---
-
 
 # Een voorbeeld van een formulier bekijken {#previewing-a-form}
 
@@ -74,4 +74,3 @@ Wanneer u **Voorvertoning met gegevens** selecteert, kunt u zien hoe het formuli
 
 1. Selecteer een element, klik op Voorvertoning ![aem6forms_preview](assets/aem6forms_preview.png) en selecteer **Voorvertonen met gegevens**.
 1. Geef in het dialoogvenster Formulier voorvertonen de formuliergegevens op als een XML-bestand. Klik op Voorbeeld om het formulier te genereren met de samengevoegde gegevens van XML.
-
