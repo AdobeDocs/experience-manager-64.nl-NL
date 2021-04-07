@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
+exl-id: 31f60907-0b9c-43ac-bb9f-74eacf6976d7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '19031'
+source-wordcount: '19030'
 ht-degree: 0%
 
 ---
-
 
 # Uitvoerstromen van document maken {#creating-document-output-streams}
 
