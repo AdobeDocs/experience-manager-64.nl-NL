@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
+exl-id: 1353b302-7b8e-4c74-b3d2-8b0a3d4a0612
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 0%
 
 ---
-
 
 # Een e-mail naar e-mailserviceproviders publiceren{#publishing-an-email-to-email-service-providers}
 
@@ -178,4 +178,3 @@ Een gepubliceerde e-mail bijwerken:
    Als u wilt controleren of de e-mail/nieuwsbrief is bijgewerkt op ExactTarget, klikt u op **Gepubliceerde e-mail weergeven**. Hiermee gaat u naar de gepubliceerde e-mail in ExactTarget.
 
    Ga naar de Silverpop Engage-site om te controleren of de e-mail/nieuwsbrief is bijgewerkt via de Silverpop-e-mailservice.
-
