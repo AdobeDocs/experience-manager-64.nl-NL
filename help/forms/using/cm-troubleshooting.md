@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondentenbeheer
+exl-id: 82a35d81-13d0-435f-875e-6fd0a6d574d5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
 
 ---
-
 
 # Correspondentenbeheer: Problemen oplossen {#correspondence-management-troubleshooting}
 
@@ -55,4 +55,3 @@ Stel de lettercache op de publicatieinstantie opnieuw in door de volgende stappe
 1. Schakel **Lettercache inschakelen** in **Correspondentiebeheerconfiguraties** uit en klik op **Opslaan.**
 1. Schakel **Lettercache inschakelen** in en klik op **Opslaan**.
 1. Bekijk de brief opnieuw.
-
