@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
+exl-id: f3f931db-7085-4fb1-8723-db3f18febaaf
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 0%
 
 ---
-
 
 # Internationalisatie UI-tekenreeksen {#internationalizing-ui-strings}
 
@@ -190,4 +190,3 @@ Het voorkeurenknooppunt van een gebruiker heeft een pad als volgt:
 `/home/users/<letter>/<hash>/preferences`
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
-
