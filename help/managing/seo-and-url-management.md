@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
+exl-id: d45fe856-4709-437b-b193-e8243a695d2c
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3115'
 ht-degree: 97%
 
 ---
-
 
 # Aanbevolen werkwijzen voor SEO- en URL-beheer{#seo-and-url-management-best-practices}
 
