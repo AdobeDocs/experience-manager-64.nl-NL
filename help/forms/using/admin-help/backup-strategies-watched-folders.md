@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
+exl-id: ae6b4caa-5bd0-4a09-9ccf-077405ea3868
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
 
 ---
-
 
 # Back-upstrategieën voor gecontroleerde mappen {#backup-strategies-for-watched-folders}
 
@@ -159,7 +159,7 @@ Met de volgende strategieën kunt u het gegevensverlies van de uitvoer- en invoe
    Als u bijvoorbeeld de uitvoer opslaat met `%F.`*extensie*, heeft het uitvoerbestand dezelfde naam als het invoerbestand. Hierdoor kunt u bepalen welke invoerbestanden worden gemanipuleerd en welke opnieuw moeten worden verzonden. Als u alleen file1_out in de resultaatmap ziet en niet file2_out, file3_out en file4_out, moet u file2, file3 en file4 opnieuw verzenden.
 
 * Als de beschikbare controlemap ouder is dan de tijd die nodig is om de taak te verwerken, moet u het systeem toestaan een nieuwe controlemap te maken en de bestanden automatisch in de invoermap te plaatsen.
-* Als de meest recente beschikbare back-up niet recent genoeg is, de back-uptijd korter is dan de tijd die nodig is om de bestanden te verwerken en de gecontroleerde map wordt hersteld, is het bestand in een van de volgende verschillende stadia gemanipuleerd:
+* Als de meest recente beschikbare back-up niet recent genoeg is, is de back-uptijd korter dan de tijd die nodig is om de bestanden te verwerken en de gecontroleerde map wordt hersteld, is het bestand in een van de volgende verschillende stadia gemanipuleerd:
 
    * **Werkgebied 1:** In de invoermap
    * **Stage 2:** gekopieerd naar de werkgebiedmap, maar het proces nog niet geactiveerd
