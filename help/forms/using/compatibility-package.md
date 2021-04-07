@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Beheerder
+role: Administrator
+exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
-
 
 # Compatibiliteitspakket {#compatibility-package} installeren
 
@@ -78,4 +78,3 @@ Door het compatibiliteitspakket te installeren, kunt u de volgende elementen en 
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment
    * /libs/fd/afaddon/components/page/advancedRolment
-
