@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
+exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
 
 ---
-
 
 # E-mailmelding configureren{#configuring-email-notification}
 
@@ -311,4 +311,3 @@ Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebru
 1. Configuring the email service, as described above in [Configuring the Mail Service](/help/sites-administering/notification.md#configuring-the-mail-service).
 1. Meld u aan bij AEM als beheerder. Klik **Gereedschappen** > **Bewerkingen** > **Webconsole** om de Configuratie van de Console van het Web te openen.
 1. Bewerk **Day CQ DAM Resource Collection Servlet**. Selecteer **E-mail verzenden**. Klik **Opslaan**.
-
