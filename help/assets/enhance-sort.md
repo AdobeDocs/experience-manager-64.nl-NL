@@ -3,15 +3,15 @@ title: Verbeterde sortering van elementen in AEM
 description: Leer hoe AEM Assets sortering aan de serverzijde implementeert om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches op de client te sorteren.
 contentOwner: AG
 feature: Zoeken
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
 translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '438'
 ht-degree: 1%
 
 ---
-
 
 # Verbeterde sortering van elementen in AEM {#enhanced-sorting-of-assets-in-aem}
 
@@ -89,5 +89,4 @@ Met AEM Assets kunt u tijdlijnvermeldingen chronologisch sorteren, zoals annotat
 
 1. Klik/tik het **[!UICONTROL Sort]** pictogram naast het **[!UICONTROL Date]** etiket. Op basis van uw selectie worden de annotaties weergegeven in de chronologische volgorde/omgekeerde chronologische volgorde waarin ze aan het element zijn toegevoegd.
 
-   ![chlimage_1-481](assets/chlimage_1-401.png)
-
+   ![chlimage_1-401](assets/chlimage_1-401.png)
