@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
+exl-id: 8bfbeef8-d211-4e87-8cd5-adccb21a6e05
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
-
 
 # Postscript converteren naar PDF-documenten {#converting-postscript-to-pdf-documents}
 
