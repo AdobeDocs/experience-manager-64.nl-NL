@@ -5,14 +5,14 @@ description: Een overzicht van de wijze waarop AEM 6.4 moet worden geïmplemente
 seo-description: Een overzicht van de wijze waarop AEM 6.4 moet worden geïmplementeerd
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
 translation-type: tm+mt
-source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 26%
 
 ---
-
 
 # AEM 6.4 Gebruikershandleidingen voor implementatie {#aem-64-implementation-user-guides}
 
