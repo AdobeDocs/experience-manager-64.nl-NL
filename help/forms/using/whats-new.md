@@ -8,14 +8,14 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
+exl-id: 21b8ed83-9c0c-41ee-9fbb-56ccebaee132
 translation-type: tm+mt
-source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2011'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van nieuwe functies | AEM 6.4 Forms {#new-features-summary-aem-forms}
 
@@ -242,7 +242,7 @@ AEM Forms kan worden ingesteld met elke combinatie van ondersteunde besturingssy
      <li>Microsoft SQL Server 2016</li> 
      <li>MySQL 5.7.19 en hoger</li> 
      <li>IBM DB2 11.1</li> 
-     <li>Oracle Multihuurarchitectuur</li> 
+     <li>Oracle Multihuurdersarchitectuur</li> 
     </ul> </td> 
    <td> 
     <ul> 
