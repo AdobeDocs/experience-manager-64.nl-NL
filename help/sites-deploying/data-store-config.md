@@ -11,14 +11,14 @@ topic-tags: deploying
 discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
 feature: Configureren
+exl-id: 89b8e8a7-103b-472e-8c29-3b6e5b7273b1
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen knoopopslag en gegevensopslag in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
@@ -474,6 +474,4 @@ Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopsl
    1. Ga naar de JMX-console en selecteer de Repository Manager Mbean.
    1. Klik op de **Click startDataStoreGC(booleaanse markOnly)** verbinding.
    1. In het volgende dialoogvenster voert u `false` nogmaals in voor de parameter `markOnly`.
-
    Hiermee worden alle gevonden bestanden gesorteerd met behulp van de markeringsfase die voor is gebruikt en worden de overige bestanden die niet in de gegevensopslag worden gebruikt, verwijderd.
-
