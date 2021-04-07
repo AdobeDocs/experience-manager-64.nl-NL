@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
+exl-id: 70816a79-a200-4afa-8602-bf3c414665ea
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
-
 
 # Java API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap} voor eindpuntregistratie
 
@@ -1117,4 +1117,3 @@ De volgende code van Java wint informatie over een Gecontroleerd eindpunt van de
  } 
  
 ```
-
