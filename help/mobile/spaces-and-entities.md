@@ -8,14 +8,14 @@ contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
+exl-id: d4f29e1a-4d5c-4bdf-b530-7cd51bf709e7
 translation-type: tm+mt
-source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
 
 ---
-
 
 # Spaties en entiteiten{#spaces-and-entities}
 
