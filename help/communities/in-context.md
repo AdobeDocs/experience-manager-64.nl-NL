@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Beheerder
+role: Administrator
+exl-id: a7678273-81f6-4089-ac73-2458d940e374
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
-
 
 # In context Moderatie {#in-context-moderation}
 
@@ -168,4 +168,3 @@ Kennisgeving
 * Rebekah heeft geen toegang tot de moderatieconsole
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
-
