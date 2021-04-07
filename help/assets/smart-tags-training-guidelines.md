@@ -6,15 +6,15 @@ uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 feature: Tags,Metagegevens,Slimme tags
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 12%
 
 ---
-
 
 # Richtlijnen voor training voor Smart Content Service {#smart-content-service-training-guidelines}
 
@@ -63,4 +63,3 @@ Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebrui
 >Of de Smart Content Service uw tags kan trainen en deze op andere afbeeldingen kan toepassen, hangt af van de kwaliteit van de afbeeldingen die u voor de training gebruikt.
 >
 >Voor de beste resultaten raadt Adobe u aan visueel vergelijkbare afbeeldingen te gebruiken om de service voor elke tag op te leiden.
-
