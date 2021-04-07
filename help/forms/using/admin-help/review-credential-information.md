@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
+exl-id: abd62cca-edf0-4b44-94c3-7af3116b0c54
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
 
 ---
-
 
 # Referentie-gebruiksinformatie {#review-credential-use-information} controleren
 
@@ -41,4 +41,3 @@ De referentie bevat informatie over het bedoelde gebruik dat toegankelijk is via
 >[!NOTE]
 >
 >De vervaldatum van de referentie is ook beschikbaar op de pagina Settings > Trust Store Management > Local Credentials van de beheerconsole, onder Expiration Date.
-
