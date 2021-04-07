@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
+exl-id: ee5b0a82-5dd8-4ea6-885c-6154fd41ef4c
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
 
 ---
-
 
 # Back-up- en herstelstrategie voor AEM formulieren{#backup-and-recovery-strategy-for-aem-forms}
 
@@ -28,7 +28,7 @@ Nadat u hebt vastgesteld hoe AEM formulieren worden gebruikt, bepaalt u welke be
 >
 >Net als bij elk ander aspect van de implementatie van uw AEM formulieren, moet uw back-up- en herstelstrategie worden ontwikkeld en getest in een ontwikkelings- of testomgeving voordat deze in de productie wordt gebruikt, om ervoor te zorgen dat de volledige oplossing werkt zoals u had verwacht zonder gegevensverlies.
 
-Adobe Experience Manager (AEM) maakt integrerend deel uit van AEM formulieren. Daarom moet u AEM ook synchroniseren met AEM formulieren voor back-ups, zoals Correspondence Management Solution en -services, zoals formulierbeheer, zijn gebaseerd op gegevens die zijn opgeslagen in AEM deel van AEM formulieren.Om gegevensverlies te voorkomen, moeten de AEM specifieke gegevens worden opgeslagen op een manier die ervoor zorgt dat GDS en AEM (opslagplaats) correleren met databasereferenties.De directory&#39;s database, GDS, AEM en Content Storage Root moeten worden hersteld naar een DNS op dezelfde computer Geef het origineel een naam.
+Adobe Experience Manager (AEM) maakt integrerend deel uit van AEM formulieren. Daarom moet u AEM ook synchroniseren met AEM formulieren voor back-ups, zoals Correspondence Management Solution en -services, zoals formulierbeheer, zijn gebaseerd op gegevens die zijn opgeslagen in AEM deel van AEM formulieren.Om gegevensverlies te voorkomen, moeten de AEM specifieke gegevens op een zodanige manier worden opgeslagen dat GDS en AEM (gegevensopslagruimte) correleren met databaseverwijzingen.De directory&#39;s database, GDS, AEM en Content Storage Root moeten worden hersteld naar een DNS op dezelfde manier Geef het origineel een naam.
 
 ## Typen back-ups {#types-of-backups}
 
@@ -47,7 +47,7 @@ De database wordt gebruikt om formulierartefacten, serviceconfiguraties, process
 * **De** backupmodus voor momentopnamen geeft aan dat de back-upmodus van het AEM oneindig of gedurende een bepaald aantal minuten is geactiveerd, waarna de back-upmodus niet meer is ingeschakeld. U kunt een van de volgende opties gebruiken om de back-upmodus voor momentopnamen in of uit te schakelen. Na een terugwinningsscenario, zou de wijze van de momentopname steun niet moeten worden toegelaten.
 
    * Gebruik de pagina Back-upinstellingen in de beheerconsole. Schakel het selectievakje Bewerken in veilige back-upmodus in om de modus voor momentopnamen in te schakelen. Schakel het selectievakje uit om de modus voor momentopnamen af te sluiten.
-   * Gebruik het script LCBackupMode (zie [Een back-up maken van de database, GDS en de mappen Root voor inhoudsopslag](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Als u de back-upmodus voor momentopnamen wilt afsluiten, stelt u in het scriptargument de parameter `continuousCoverage` in op `false` of gebruikt u de optie `leaveContinuousCoverage`.
+   * Gebruik het script LCBackupMode (zie [Een back-up maken van de database, GDS en mappen met opslagruimte voor inhoud](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Als u de back-upmodus voor momentopnamen wilt afsluiten, stelt u in het scriptargument de parameter `continuousCoverage` in op `false` of gebruikt u de optie `leaveContinuousCoverage`.
    * Gebruik de meegeleverde API voor back-up/herstel. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * **Rolling** backupmode wijst erop dat het systeem altijd in reservewijze is, met een nieuwe reservewijzesessie die wordt in werking gesteld zodra de vorige zitting wordt vrijgegeven. Er is geen time-out gekoppeld aan de schuifmodus. Wanneer het manuscript LCBackupMode of APIs worden geroepen om het rollen reservewijze te verlaten, begint een nieuwe het rollen reservewijze zitting. Deze modus is handig voor het ondersteunen van continue back-ups, maar nog steeds voor het verwijderen van oude en overbodige documenten uit de GDS-directory. De modus Rolling Backup wordt niet ondersteund via de pagina Backup and Recovery. Na een terugwinningsscenario, wordt het rollen reservewijze nog toegelaten. U kunt de modus voor continue back-up (schuivende back-upmodus) verlaten door het LCBackupMode-script te gebruiken met de optie `leaveContinuousCoverage`.
