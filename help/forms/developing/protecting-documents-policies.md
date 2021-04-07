@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
+exl-id: 88065c4d-8ca9-4dfb-8663-ac8772e5e556
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '15545'
+source-wordcount: '15544'
 ht-degree: 0%
 
 ---
-
 
 # Documenten beveiligen met beleid {#protecting-documents-with-policies}
 
@@ -2169,7 +2169,7 @@ Verwijder een beleid uit een beleid-beschermd document van Word door de Veilighe
 
 1. Een met beleid beveiligd Word-document ophalen
 
-   * Maak een `java.io.FileInputStream`-object dat het door een beleid beveiligde Word-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het Word-document aangeeft.
+   * Maak een `java.io.FileInputStream`-object dat het beleidsbeveiligde Word-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het Word-document aangeeft.
    * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Het beleid verwijderen uit het Word-document
