@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
+exl-id: 010d019b-a6ec-4a69-96c1-41b82a2a1839
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste rapporten in procesrapportage {#custom-reports-in-process-reporting}
 
@@ -663,4 +663,3 @@ De eerste vereisten voor het maken van een aparte UI voor het weergeven van resu
 Importeer het `sample-report-pkg-1.zip`-pakket om aangepaste rapporten en UI die in het artikel worden besproken, te integreren in de interface voor procesbeheer.
 
 [Bestand ophalen](assets/sample-report-pkg-1.zip)
-
