@@ -8,14 +8,14 @@ contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
+exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
 translation-type: tm+mt
-source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '21578'
 ht-degree: 0%
 
 ---
-
 
 # AEM 6.4 Opmerkingen bij de release Service Pack {#aem-service-pack-release-notes}
 
@@ -1377,7 +1377,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 
 **Platform**
 
-* Lus opnieuw indexeren | NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
+* Lus opnieuw indexeren | NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op zijn plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
 * Grensoverschrijdende overschrijving van intern gemarkeerd pad /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Probleem tijdens het uitvoeren van patroondetector. NPR-25036: Hotfix voor CQ-4248597
 * Logboekvermeldingen die niet zijn geschreven vanwege NPE in LogEntryImpl. NPR-25627: Hotfix voor graniet-22383
 * Replicatie van gebeurtenis delete controleert niet op rechten. NPR-25679: Hotfix voor CQ-4241234
@@ -1473,7 +1473,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 **UI - Foundation**
 
 * De pro-actieve Steun UI van de Stichting steunt. NPR-24344, NPR-24345, NPR-25176, NPR-25095, NPR-24332, NPR-25653, NPR-25932, NPR-259 35, 25976
-* (Design Importer) Als u een pagina importeert, worden de JS,css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
+* (Design Importer) Als u een pagina importeert, worden de JS,css niet geïmporteerd. NPR-25205: Hotfix voor graniet-22236
 * De pro-actieve Steun UI van de Stichting steunt om de stabiliteit van het product te verbeteren. NPR-24334
 
 **MAC- Test &amp; Target-integratie**
@@ -2126,7 +2126,7 @@ Voer de volgende stappen uit om het Service Pack op een bestaande AEM 6.4 instan
 
 >[!NOTE]
 >
->**Dialoogvenster over de interface van Package Manager wordt soms onbedoeld afgesloten tijdens de installatie van 6.4.8.4**
+>**Dialoogvenster over de UI van de Manager van het Pakket sluit soms ongeschikt tijdens installatie van 6.4.8.0**
 >
 >Daarom wordt aangeraden te wachten totdat de foutenlogboeken zich stabiliseren voordat u de instantie opent. De gebruiker moet op specifieke logboeken met betrekking tot het verwijderen van updaterbundel wachten alvorens wordt gewaarborgd dat de installaties succesvol zijn. Het gebeurt meestal in Safari, maar kan af en toe in elke browser gebeuren.
 
