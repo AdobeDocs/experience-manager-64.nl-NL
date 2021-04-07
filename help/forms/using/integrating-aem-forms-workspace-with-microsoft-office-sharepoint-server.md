@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 1bada670-3e0e-40f4-b9be-8b090df910be
+exl-id: 43149456-8ff8-4ce1-9c51-1d950f60ff5d
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
 
 ---
-
 
 # De werkruimte van AEM formulieren integreren met Microsoft Office SharePoint Server {#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
@@ -73,4 +73,3 @@ Nadat u de bovenstaande stappen hebt uitgevoerd, ziet uw SharePoint-site eruit z
 ![AEM Forms Workspace geïntegreerd met Microsoft Office SharePoint Server](assets/aem-forms-workspace.jpg)
 
 **Afbeelding:** *AEM Forms-werkruimte geïntegreerd met Microsoft Office SharePoint-server*
-
