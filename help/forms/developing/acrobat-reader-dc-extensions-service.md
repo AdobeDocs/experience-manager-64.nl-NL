@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 role: Developer
+exl-id: e95d8be5-04a3-4158-be5a-de1af08ab640
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
-
 
 # Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
@@ -356,4 +356,3 @@ In het volgende Java-codevoorbeeld wordt informatie opgehaald over de referentie
  } 
  
 ```
-
