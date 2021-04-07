@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
+exl-id: c828302c-54ad-4171-89d1-f77f4d836277
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
-
 
 # Referentie workflowproces{#workflow-process-reference}
 
@@ -262,4 +262,3 @@ Hiermee maakt u een nieuwe versie van de taakbelasting van de werkstroom (AEM pa
 * **Payload**: Een JCR-pad of UUID die verwijst naar een pagina of DAM-element
 * **Argumenten**: Geen
 * **Time-out**: Eerbiedigd
-
