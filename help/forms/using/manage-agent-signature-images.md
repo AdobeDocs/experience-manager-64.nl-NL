@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
 feature: Correspondentenbeheer
+exl-id: 4e261228-14a4-4983-97ac-6ca476bee126
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
 
 ---
-
 
 # Afbeeldingen van handtekeningen van agent beheren {#manage-agent-signature-images}
 
@@ -89,4 +89,3 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 1. Wanneer de letter wordt gerenderd, ziet u uw handtekening in de lettervoorvertoning in het afbeeldingsveld, afhankelijk van de layout.
 
    ![Handtekeningafbeelding van agent in de brief](assets/letterwithsignature.png)
-
