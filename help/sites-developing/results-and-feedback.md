@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
+exl-id: 976f00d0-0b7a-4d5e-bfbc-44c2504ca2f6
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
 
 ---
-
 
 # Resultaten bijhouden en feedback geven{#tracking-results-and-providing-feedback}
 
@@ -33,4 +33,3 @@ Ongeacht de methode of het gereedschap dat u kiest, worden de opgeslagen gegeven
 * Moet niet:
 
    * Uitgebreid tot traceringsinformatie - geen bugs, nieuwe functies of vervolghandelingen. Deze informatie moet elders worden bewaard, ook hier zijn er veel instrumenten beschikbaar.
-
