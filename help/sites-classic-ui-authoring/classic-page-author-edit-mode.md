@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
+exl-id: b6c8c2b8-78d1-43a3-80b5-3535183ebf20
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6177'
 ht-degree: 1%
 
 ---
-
 
 # Componenten voor paginaontwerp{#components-for-page-authoring}
 
@@ -485,7 +485,7 @@ In het volgende voorbeeld wordt een component **List** getoond op de manier waar
 
 Hier vindt u de velden Gebruikersnaam en Wachtwoord.
 
-![chlimage_1-21](assets/chlimage_1-29.png)
+![chlimage_1-29](assets/chlimage_1-29.png)
 
 U kunt configureren:
 
@@ -1360,4 +1360,3 @@ Het standaardtekstveld kan worden geconfigureerd op de gewenste grootte en met u
 Zo kunt u een knop Verzenden maken voor gebruik in een workflow.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
-
