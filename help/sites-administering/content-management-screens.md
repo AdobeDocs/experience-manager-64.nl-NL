@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 014b5fdd-6522-4394-87bb-fe264492ba34
+exl-id: d48f9f7e-bbb8-43d4-9796-029e3fca88ce
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 1%
 
 ---
-
 
 # Inhoudsbeheer voor schermen{#content-management-for-screens}
 
@@ -30,4 +30,3 @@ Een AEM Screens-inhoudsbeheerder is verantwoordelijk voor de volgende taken:
 * Ontwerpplanningen
 * Kanaalintegriteit behouden
 * Videoprofielen
-
