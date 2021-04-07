@@ -3,15 +3,15 @@ title: Gebruik metagegevensprofielen om standaardmetagegevens toe te passen op a
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
 feature: Metagegevens
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1130'
 ht-degree: 18%
 
 ---
-
 
 # Metadataprofielen {#metadata-profiles}
 
@@ -26,7 +26,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
 1. Klik op een component en configureer de eigenschappen ervan op het tabblad **[!UICONTROL Settings]**. Klik bijvoorbeeld op de component **[!UICONTROL Description]** en bewerk de eigenschappen ervan.
 
-   ![chlimage_1-481](assets/chlimage_1-481.png)
+   ![chlimage_1-401](assets/chlimage_1-481.png)
 
    Bewerk de volgende eigenschappen voor de component **[!UICONTROL Description]**:
 
