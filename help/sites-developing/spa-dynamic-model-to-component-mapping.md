@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
+exl-id: 2bbbfbaa-b0a1-4f8a-9445-51325d80e368
 translation-type: tm+mt
-source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
-
 
 # Dynamisch model naar componenttoewijzing voor SPA{#dynamic-model-to-component-mapping-for-spas}
 
@@ -25,7 +25,7 @@ In dit document wordt beschreven hoe het dynamische model naar componenttoewijzi
 >[!NOTE]
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## ComponentMapping Module {#componentmapping-module}
 
@@ -58,4 +58,3 @@ Elke component wordt uitgebreid met de mogelijkheden van [ `ModelProvider`](/hel
 1. Stukken van het model worden uiteindelijk doorgegeven aan elke afzonderlijke onderliggende component.
 
 ![app_model_initialisatie](assets/app_model_initialization.png)
-
