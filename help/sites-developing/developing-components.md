@@ -10,14 +10,14 @@ topic-tags: components
 content-type: reference
 discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
+exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3525'
 ht-degree: 0%
 
 ---
-
 
 # AEM componenten ontwikkelen{#developing-aem-components}
 
