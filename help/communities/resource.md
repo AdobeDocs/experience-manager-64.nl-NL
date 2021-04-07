@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
+exl-id: 9f447a54-4512-41ab-b8d3-327e751eda58
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 1%
 
 ---
-
 
 # Creeer en wijs Middelen {#create-and-assign-enablement-resources} toe
 
@@ -181,4 +181,3 @@ Gebruik het keuzemenu om het
 De succesvolle verwezenlijking van de het leren weg keert aan de console van Middelen met de pas gecreëerde het leren weg geselecteerd terug. Vanuit deze console is het mogelijk studenten te publiceren, toe te voegen en andere instellingen te wijzigen.
 
 **Het leerpad** publiceren.
-
