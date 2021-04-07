@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2f514072-81d9-48de-8369-cca94a330f1d
+exl-id: 88fa9c80-4eae-4663-a6c8-abbf1921444e
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulier gebruiken in HTML Workspace {#using-an-adaptive-form-in-html-workspace}
 
@@ -79,4 +79,3 @@ De HTML-werkruimte bevat enkele adaptieve formulierspecifieke besturingselemente
    >Zie [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md) voor meer informatie over het maken van een adaptief formulier.
    >
    >Zie [Processen maken en beheren](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html) voor meer informatie over het maken van een proces.
-
