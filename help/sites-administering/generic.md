@@ -10,14 +10,14 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 feature: Kader voor integratie in de handel
+exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3007'
 ht-degree: 0%
 
 ---
-
 
 # Algemene e-handel beheren{#administering-generic-ecommerce}
 
@@ -687,4 +687,3 @@ Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de car
    ![](do-not-localize/chlimage_1-27.png)
 
 1. De [orderinformatie](/help/sites-administering/concepts.md#order-information) wordt weergegeven. Gebruik **Bewerken** en **Gereed** om wijzigingen aan te brengen.
-
