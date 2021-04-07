@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
+exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
 
 ---
-
 
 # Developing and Page Diff{#developing-and-page-diff}
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheidingsteken kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Paginadiff](/help/sites-authoring/page-diff.md) voor meer informatie over deze gebruikersfunctie.
+Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Paginadiff](/help/sites-authoring/page-diff.md) voor meer informatie over deze gebruikersfunctie.
 
 ## Bewerkingsdetails {#operation-details}
 
@@ -76,4 +76,3 @@ Er zijn echter een aantal beperkingen die door de ontwikkelaar in overweging moe
    * Componenten die AJAX gebruiken om inhoud op te nemen
    * Toepassingen voor één pagina
    * Op JavaScript gebaseerde componenten die het DOM op gebruikersinteractie manipuleren.
-
