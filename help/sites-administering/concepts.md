@@ -10,14 +10,14 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
 feature: Kader voor integratie in de handel
+exl-id: 8140db99-fec6-4efd-87d9-62efd157d54a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4535'
 ht-degree: 0%
 
 ---
-
 
 # Concepten{#concepts}
 
@@ -887,4 +887,3 @@ Als u een grondiger implementatie nodig hebt, kunt u:
 * Voer de onderzoeksmethode in uw `CommerceService` uit en gebruik dan de eCommerce onderzoekscomponent op uw onderzoekspagina.
 
 Wanneer u een eCommerce-engine gebruikt, kan de zoekfunctie-API voor eCommerce volledig worden geïmplementeerd in de eCommerce-oplossing, zodat u de zoekcomponent voor eCommerce kunt gebruiken die buiten het vak is opgegeven. Met de beperkte zoekopdracht kunt u zoeken in JCR en/of de engine:
-
