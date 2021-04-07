@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
+exl-id: 3444d7df-fc43-4383-87b0-0f00fef116bc
 translation-type: tm+mt
-source-git-commit: b6a5b222bf6629dc14a16531972a2a50e2b5ed37
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 4%
 
 ---
-
 
 # Overzicht van componenten{#components-overview}
 
@@ -115,4 +115,3 @@ De volgende pagina&#39;s verstrekken meer gedetailleerde informatie over het ont
    * [Widgets gebruiken en uitbreiden (klassieke UI)](/help/sites-developing/widgets.md)
    * [xtypes gebruiken (klassieke UI)](/help/sites-developing/xtypes.md)
    * [Forms ontwikkelen (klassieke gebruikersinterface)](/help/sites-developing/developing-forms.md)
-
