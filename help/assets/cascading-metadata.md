@@ -3,15 +3,15 @@ title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 feature: Metagegevens
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '934'
 ht-degree: 11%
 
 ---
-
 
 # Cascading Metadata {#cascading-metadata}
 
