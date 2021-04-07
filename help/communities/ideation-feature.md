@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 7c0a9120-2edb-431b-b460-68398832d5ec
+exl-id: 391885f2-e46d-4eb4-9c88-509233505df8
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 0%
 
 ---
-
 
 # Ideeigenschap {#ideation-feature}
 
@@ -42,7 +42,7 @@ Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Ge
 
 Wanneer de [vereiste client-side bibliotheken](ideation.md#essentials-for-client-side) worden opgenomen, wordt de `Ideation`component als volgt weergegeven:
 
-![chlimage_1-21](assets/chlimage_1-29.png)
+![chlimage_1-29](assets/chlimage_1-29.png)
 
 ## Een idee {#configuring-an-ideation} configureren
 
