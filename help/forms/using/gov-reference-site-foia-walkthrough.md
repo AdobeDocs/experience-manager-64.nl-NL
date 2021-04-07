@@ -7,14 +7,14 @@ uuid: 65d4233c-8dad-4e5e-8e39-22eb4f145adc
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
+exl-id: 92ad5d8b-fc8c-4502-ab62-d27eb9784b65
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 0%
 
 ---
-
 
 # We.Gov-referentiesite FOIA doorloopt {#we-gov-reference-site-foia-walkthrough}
 
@@ -116,4 +116,3 @@ Gloria opent het verzoek en onderzoekt de bijzonderheden van het FOIA-verzoek. N
 Nadat Gloria het FOIA-verzoek heeft goedgekeurd, ontvangt Sarah een e-mail met de kennisgeving dat haar verzoek is goedgekeurd. De e-mail bevat ook de informatie over de voorlopige tijdlijn voor het verzenden van het document en contactgegevens voor de follow-up van het verzoek.
 
 ![sarahroseemaily](assets/sarahroseemailapproval.png)
-
