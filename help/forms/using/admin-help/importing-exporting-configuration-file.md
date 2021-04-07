@@ -9,16 +9,16 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
+exl-id: dbad776a-60fd-4fcc-ba2a-a2f379f5462c
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
-
-# Het configuratiedossier {#importing-and-exporting-the-configuration-file} invoeren en uitvoeren
+# Het configuratiebestand {#importing-and-exporting-the-configuration-file} importeren en exporteren
 
 Gebruik de pagina Handmatige configuratie om een kopie van de configuratie-instellingen in XML-indeling te downloaden. De instellingen in dit bestand bepalen alle servervoorkeuren. U kunt het bestand vervolgens bewerken en opnieuw naar de server uploaden. U kunt het bestand ook gebruiken om een ander exemplaar van een AEM formulierproduct te configureren.
 
@@ -37,4 +37,3 @@ Om veiligheidsrisico&#39;s te vermijden, bindt wachtwoordwaarde voor de folderse
 
 1. Klik in Beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik doorbladeren om het configuratiedossier te vinden, de Invoer te klikken, en dan O.K. te klikken.
-
