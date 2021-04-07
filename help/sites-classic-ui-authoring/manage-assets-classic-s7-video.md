@@ -5,20 +5,20 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
+exl-id: 7cb3d58c-0d78-4414-9b66-0a10e52d0906
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1643'
 ht-degree: 0%
 
 ---
 
-
 # Video{#video}
 
 Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en rechtstreeks vanuit Middelen toegang kunt krijgen tot Classic Dynamic Media-video&#39;s voor het ontwerpen van pagina&#39;s.
 
-Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische apparaat- en bandbreedtedetectie).
+Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit tot alle schermen (automatische apparaat- en bandbreedtedetectie).
 
 * De Dynamic Media Classic (Scene7)-videocomponent voert automatisch apparaat- en bandbreedtedetectie uit voor het afspelen van de juiste indeling en videokwaliteit op desktopcomputers, tablets en mobiele apparaten.
 * Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten. Zie [Scene7 documentatie over adaptieve videoreeksen voor meer informatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
@@ -110,7 +110,7 @@ U kunt als volgt uw master video vanaf Adobe DAM uploaden naar Dynamic Media Cla
 
 Wanneer u AEM gebruikt, hebt u toegang tot zowel de videocomponent beschikbaar in Sites als de Dynamic Media (Scene7) videocomponent van. Deze componenten zijn niet onderling verwisselbaar.
 
-De Dynamic Media Classic-videocomponent werkt alleen voor Dynamic Media Classic-video&#39;s. De stivingscomponent werkt met video&#39;s die zijn opgeslagen vanuit AEM (met behulp van mpeg) en Dynamic Media Classic video&#39;s.
+De Dynamic Media Classic-videocomponent werkt alleen voor Dynamic Media Classic-video&#39;s. De stichtingscomponent werkt met video&#39;s die zijn opgeslagen vanuit AEM (met behulp van mpeg) en Dynamic Media Classic video&#39;s.
 
 De volgende matrix legt uit wanneer u welke component moet gebruiken:
 
@@ -186,4 +186,3 @@ De basis videocomponent moet weten welke videoprofielen moeten worden gebruikt o
 1. De videoprofielen moeten worden geactiveerd.
 1. Configureer het ontwerp van de basis-videocomponent op de pagina.
 1. Activeer het ontwerp nadat u klaar bent met uw ontwerpwijzigingen.
-
