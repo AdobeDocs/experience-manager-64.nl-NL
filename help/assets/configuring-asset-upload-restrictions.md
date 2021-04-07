@@ -3,15 +3,15 @@ title: Beperkingen voor het uploaden van middelen configureren
 description: Leer hoe u Adobe Experience Manager-middelen (AEM) configureert om het type elementen (bestanden) te beperken dat gebruikers kunnen uploaden.
 contentOwner: AG
 feature: Developer
-role: Beheerder, architect
+role: Administrator,Architect
+exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 28%
+source-wordcount: '206'
+ht-degree: 29%
 
 ---
-
 
 # Beperkingen voor het uploaden van elementen {#configuring-asset-upload-restrictions} configureren
 
