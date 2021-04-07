@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
+exl-id: a6d468cd-2b70-4332-8277-15f8b9fc1329
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
-
 
 # De prestaties van de Forms-service optimaliseren {#optimizing-the-performance-of-theforms-service}
 
