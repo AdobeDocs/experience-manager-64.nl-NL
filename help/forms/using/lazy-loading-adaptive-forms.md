@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d570ead9-8f9c-4668-8b23-e8984d9b25e9
 feature: Adaptieve Forms
+exl-id: 92d88888-343c-4edb-9b11-8e876539573a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
 
 ---
-
 
 # Verbeter de prestaties van grote formulieren met lui laden {#improve-performance-of-large-forms-with-lazy-loading}
 
@@ -87,4 +87,3 @@ Belangrijke aandachtspunten bij het ontwikkelen van scripts voor luie laadvenste
 * Met de functie voor het opnieuw instellen van deelvensters kunt u alle zichtbare elementen in het deelvenster opnieuw instellen met de volgende klikexpressie.
 
    guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()
-
