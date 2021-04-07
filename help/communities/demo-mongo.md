@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Beheerder
+role: Administrator
+exl-id: e32fc619-6226-48c6-bbd7-1910963d1036
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
-
 
 # MongoDB instellen voor demo {#how-to-setup-mongodb-for-demo}
 
@@ -156,11 +156,11 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 1. Meld u aan om een opmerking te plaatsen:
 1. Typ tekst in het tekstinvoervak voor opmerkingen en klik op **[!UICONTROL Post]**
 
-   ![chlimage_1-111](assets/chlimage_1-191.png)
+   ![chlimage_1-191](assets/chlimage_1-191.png)
 
 1. U kunt de opmerking gewoon weergeven op de [auteurinstantie](http://localhost:4502/content/community-components/en/comments.html) (waarschijnlijk nog steeds aangemeld als admin/admin).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
    Opmerking: terwijl er knopen JCR onder *asipath* op auteur zijn, zijn deze voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
 
