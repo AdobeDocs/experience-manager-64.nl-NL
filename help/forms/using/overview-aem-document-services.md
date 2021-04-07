@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 0685478b-d08e-4d69-8dd3-f75270772167
+exl-id: aabfd05d-581b-4205-8e61-5667d5713cb1
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van AEM Document Services {#overview-of-aem-document-services}
 
