@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
+exl-id: bde29d3a-8bc8-4c30-b764-a2fa1ac34069
 translation-type: tm+mt
-source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 2%
 
 ---
-
 
 # Elementen van componenten, functies en functies {#component-function-and-feature-essentials}
 
@@ -86,4 +86,3 @@ Voor elk [functiepak](deploy-communities.md#latestfeaturepack), wordt een javado
 * [Codeerrichtlijnen](code-guide.md)
 * [Tutorials](tutorials.md)
 * [Problemen oplossen](troubleshooting.md)
-
