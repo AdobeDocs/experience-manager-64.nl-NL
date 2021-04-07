@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
+exl-id: 5bbb51d8-db91-458a-bfdd-e3f874ef1723
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
 
 ---
-
 
 # SSL configureren voor WebLogic-server {#configuring-ssl-for-weblogic-server}
 
@@ -213,4 +213,3 @@ Configureer WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief Aangep
 
 1. Klik onder Midden wijzigen op Vergrendelen en bewerken om selecties en waarden te wijzigen.
 1. Start de toepassingsserver opnieuw.
-
