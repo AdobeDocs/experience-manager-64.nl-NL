@@ -8,14 +8,14 @@ contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
+exl-id: 03f06c10-9fe1-497e-89b0-70acb7ca7800
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
 
 ---
-
 
 # Modellen - overzicht{#models-overview}
 
