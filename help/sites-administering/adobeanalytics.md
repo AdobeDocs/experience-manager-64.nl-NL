@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
+exl-id: ca11bfcd-06d1-4ca9-9069-afa91d8a6610
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 21%
 
 ---
-
 
 # Integreren met Adobe Analytics{#integrating-with-adobe-analytics}
 
@@ -64,4 +64,3 @@ Zie:
 >
 >  
 bijvoorbeeld [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
