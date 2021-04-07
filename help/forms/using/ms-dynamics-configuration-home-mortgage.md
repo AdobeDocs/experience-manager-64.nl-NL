@@ -7,14 +7,14 @@ uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
+exl-id: 7e1f417e-6a6b-4ef2-a453-866331fe3e96
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
 
 ---
-
 
 # Vorm de Dynamiek 365 van Microsoft voor de huishypotheekwerkschema van de Web.Finance verwijzingsplaats {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
@@ -76,4 +76,3 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
       `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
    1. Importeer het pakket naar de instantie Microsoft® Dynamics. Ga in uw Microsoft® Dynamics-instantie naar **Sales** > **Contacten** en tik vervolgens op **Gegevens importeren**.
-
