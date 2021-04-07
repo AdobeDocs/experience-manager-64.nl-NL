@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 feature: Adaptieve Forms
+exl-id: 9393fe94-002a-497b-9579-d6ad3bb3973e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste formulieren {#reusing-adaptive-forms} opnieuw gebruiken
 
@@ -72,4 +72,3 @@ De inhoud van een geplakte adaptieve formulieren kan op de volgende manieren wor
 1. **Opnieuw publiceren:**
 
    Het geplakte element verschilt van het gekopieerde element. U kunt de presentatie publiceren als een nieuw element, zodat deze beschikbaar is voor eindgebruikers. Zie [Formulieren publiceren en verwijderen](/help/forms/using/publishing-unpublishing-forms.md) voor informatie over het publiceren van elementen
-
