@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
+exl-id: eff852b0-99cd-4242-bac8-992ee10401e2
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
 
 ---
-
 
 # Cloudconfiguratie{#cloud-configuration}
 
