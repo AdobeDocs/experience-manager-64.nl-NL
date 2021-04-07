@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
+exl-id: b19cae88-a549-41ba-b4a6-4b065a995296
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
 
 ---
-
 
 # Formulieruitvoer configureren{#configuring-form-output}
 
@@ -56,4 +56,3 @@ Voer de volgende stappen uit om de functie in te schakelen:
    >[!NOTE]
    >
    >*Als u de functie wilt uitschakelen, kunt u de JavaScript-variabele verwijderen of de waarde ervan instellen op 0.*
-
