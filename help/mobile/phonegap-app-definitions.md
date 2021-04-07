@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 860dde0b-7cb4-4668-9fac-6f954f1ec0a7
+exl-id: c1103f7b-19fe-43b2-95e8-523efdc11950
 translation-type: tm+mt
-source-git-commit: c58437f791daa11669198d916f0756ff4830677c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
 
 ---
-
 
 # Toepassingsdefinities{#app-definitions}
 
@@ -56,4 +56,3 @@ Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkh
 
 * [Ontwikkelen voor Adobe PhoneGap Enterprise met AEM](/help/mobile/developing-in-phonegap.md)
 * [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](/help/mobile/administer-phonegap.md)
-
