@@ -7,14 +7,14 @@ uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
+exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
 
 ---
-
 
 # Referentie adaptieve formulierfragmenten {#reference-adaptive-form-fragments}
 
