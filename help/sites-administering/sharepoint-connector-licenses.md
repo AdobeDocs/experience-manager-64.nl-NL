@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
+exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
 translation-type: tm+mt
-source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 4%
 
 ---
-
 
 # SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
@@ -1290,4 +1290,3 @@ database. Title to copyright in this software, database and any associated
 documentation shall at all times remain with Princeton University and 
 LICENSEE agrees to preserve same.
 ```
-
