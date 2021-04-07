@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
+exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2203'
 ht-degree: 0%
 
 ---
-
 
 # Bestanden waarvan een back-up moet worden gemaakt en die {#files-to-back-up-and-recover} moeten worden hersteld
 
@@ -114,13 +114,13 @@ Voor meer informatie over DB2 gegevensbestandsteun en terugwinning, zie [het Ont
 
 ### Oracle {#oracle}
 
-Gebruik back-ups van momentopnamen of configureer de Oracle-database in de archieflogmodus. (Zie [Oracle Backup: Een inleiding](https://www.databasedesign-resource.com/oracle-backup.md).) Ga voor meer informatie over het maken van back-ups en het herstellen van uw Oracle-database naar de volgende sites:
+Maak back-ups van momentopnamen of configureer de database van het Oracle voor uitvoering in de archieflogmodus. (Zie [Back-up van Oracle: Een inleiding](https://www.databasedesign-resource.com/oracle-backup.md).) Voor meer informatie over het steunen van en het terugkrijgen van uw gegevensbestand van het Oracle, ga naar deze plaatsen:
 
-[Oracle Backup and Recovery: ](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) geeft een toelichting op de concepten back-up en herstel en de meest gebruikte technieken voor het gebruik van Recovery Manager (RMAN) voor back-up, herstel en rapportage, en geeft meer informatie over het plannen van een back-up- en herstelstrategie.
+[Back-up en herstel van oracles:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten back-up en herstel en de meest gangbare technieken voor het gebruik van Recovery Manager (RMAN) voor back-up, herstel en rapportage in meer detail, en biedt meer informatie over het plannen van een back-up- en herstelstrategie.
 
-[Oracle Database Backup and Recovery User&#39;s Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) biedt uitgebreide informatie over RMAN-architectuur, concepten en mechanismen voor back-up en herstel, geavanceerde hersteltechnieken zoals &#39;point-in-time&#39; herstelmogelijkheden en flashback-functies van databases, en afstemming van back-up- en herstelprestaties. Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
+[Gebruikershandleiding voor back-up en herstel van databases van oracles:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) biedt uitgebreide informatie over RMAN-architectuur, concepten en mechanismen voor back-up en herstel, geavanceerde hersteltechnieken zoals &#39;point-in-time&#39; herstel en flashback-functies van databases, en afstemming van back-up- en herstelprestaties. Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
 
-[Referentie voor back-up en herstel van oracle-database:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) biedt volledige informatie over syntaxis en semantiek voor alle RMAN-opdrachten en beschrijft de databaseweergaven die beschikbaar zijn voor rapportage over back-up- en herstelactiviteiten.
+[Referentie voor back-up en herstel van database van oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) biedt volledige informatie over syntaxis en semantiek voor alle RMAN-opdrachten en beschrijft de databaseweergaven die beschikbaar zijn voor rapportage over back-up- en herstelactiviteiten.
 
 ### SQL Server {#sql-server}
 
