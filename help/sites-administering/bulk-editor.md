@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
+exl-id: 61d85393-2764-447d-afcc-3af1d99e8dbb
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # De Bulkeditor{#the-bulk-editor}
 
@@ -162,4 +162,3 @@ Inhoud importeren:
 
 1. Klik **Importeren**.
 1. Selecteer het `.tsv` dossier. De gegevens worden geïmporteerd in de opslagplaats.
-
