@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
+exl-id: a6fe7794-3c31-4706-9e23-fe63a506b0bc
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
 
 ---
-
 
 # ConvertPDF-service {#convertpdf-service}
 
@@ -193,4 +193,3 @@ var convertedPS = cpdfService.toPS(inputDocument, toPSOptions);
 // save converted PostScript file to disk
 convertedPS.copyToFile(new File("C:/temp/out.ps"));
 ```
-
