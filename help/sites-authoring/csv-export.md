@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
+exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 15%
 
 ---
-
 
 # Exporteren naar CSV{#export-to-csv}
 
@@ -69,4 +69,3 @@ Een CSV-export maken:
 
 1. Selecteer de eigenschappen die u wilt exporteren.
 1. Selecteer **Maken**.
-
