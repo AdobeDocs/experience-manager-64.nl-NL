@@ -3,15 +3,15 @@ title: Download digitale middelen van [!DNL Adobe Experience Manager].
 description: Leer hoe u elementen downloadt van [!DNL Adobe Experience Manager] en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 feature: Middelenbeheer, middelenverdeling
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
-
 
 # Elementen downloaden van [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
