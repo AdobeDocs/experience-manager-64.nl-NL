@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 feature: Configureren
+exl-id: 67dfa0f7-24ac-41ae-83c9-3bb1a8656502
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
 
 ---
-
 
 # Consistentie en Traversal Checks{#consistency-and-traversal-checks}
 
@@ -43,4 +43,3 @@ Op een standaardinstallatie vindt u deze hier:  **[|Weergeven|](http://localhost
 In **Verrichtingen** sectie van de pagina zult u twee methodes vinden: **`traversalCheck`** en **`consistencyCheck`**. Als u een controle wilt uitvoeren, klikt u op de bewerking en voert u de gewenste parameters in.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
-
