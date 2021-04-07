@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
-role: Beheerder
+role: Administrator
+exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '311'
 ht-degree: 1%
 
 ---
-
 
 # Cache voor adaptieve formulieren {#configure-adaptive-forms-cache} configureren
 
@@ -45,4 +45,3 @@ Voer de volgende stappen uit om de cache voor adaptieve formulieren te configure
    ![Configuratiedialoogvenster voor HTML-cache voor adaptieve formulieren](assets/cache-configuration-edit.png)
 
 1. Klik **sparen** om de configuratie te bewaren.
-
