@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
+exl-id: e57b7a69-6e25-4066-ad7a-917969cebbe8
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 0%
 
 ---
-
 
 # Workflows beheren{#administering-workflows}
 
@@ -110,4 +110,3 @@ Afhankelijk van de huidige status kunt u acties uitvoeren op het uitvoeren van w
 * **Onderbreken**: Hiermee wordt de uitvoering van de workflow tijdelijk gestopt. Opschorsen is handig in uitzonderlijke gevallen waarin u niet wilt dat de workflow wordt voortgezet, bijvoorbeeld voor onderhoud. Met Opschorting wijzigt u de status van de workflow in Opgeschort.
 * **Hervatten**: Hiermee herstart u een stilgezette workflow op hetzelfde uitvoerpunt waar deze werd onderbroken, met dezelfde configuratie.
 * **Beëindigen**: Beëindigt de workflowuitvoering en wijzigt de status in  **ABORTED**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.
-
