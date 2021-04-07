@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
+exl-id: fdc82bca-e676-4052-b3e9-a198c685df96
+feature: 3D-middelen
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1336'
 ht-degree: 0%
 
 ---
-
 
 # Geavanceerde configuratie-instellingen {#advanced-configuration-settings}
 
@@ -149,4 +151,3 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb to
 | `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Wanneer ingesteld op **[!UICONTROL true]**, zal het ladingsgordijn geleidelijk verdwijnen tijdens de laatste delen van lading en initialisering. Wanneer ingesteld op **[!UICONTROL false]**, blijft het gordijn dekkend totdat het laden en initialiseren is voltooid. |
 | `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Stel in op **[!UICONTROL true]** of **[!UICONTROL false]** om het laadgordijn voor de component 3D-sites in of uit te schakelen. |
 | `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Wanneer automatisch draaien is ingeschakeld en actief, wordt de verticale positie van de camera automatisch aangepast ten opzichte van de hoogte van het 3D-object. Wanneer deze is ingesteld op 0,5, wordt de camera verticaal op een hoogte van 1/2 van het object geplaatst. Dit betekent dat de horizon verticaal in de viewport moet worden gecentreerd. Bij hogere waarden kijkt de camera omlaag naar het object en wordt de hoogte van de gerenderde horizon verhoogd. Bij lagere waarden kijkt de camera omhoog naar het object en verlaagt de horizon. |
-
