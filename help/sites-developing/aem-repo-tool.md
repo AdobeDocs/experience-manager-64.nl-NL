@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
+exl-id: 8da27ef5-bb61-4246-8a13-96a60188ebbb
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
 
 ---
-
 
 # AEM gereedschap Repo{#aem-repo-tool}
 
@@ -46,4 +46,3 @@ U kunt de code van deze pagina op GitHub vinden
 
 * [Open hulpmiddelenproject op GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
 * Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)
-
