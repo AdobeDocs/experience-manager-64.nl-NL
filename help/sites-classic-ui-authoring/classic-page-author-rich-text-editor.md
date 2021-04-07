@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
+exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 0%
 
 ---
-
 
 # Rich Text Editor{#rich-text-editor}
 
@@ -449,4 +449,3 @@ In de bronmodus ziet het er als volgt uit (vaak is de bron veel langer, dus moet
 >[!CAUTION]
 >
 >Wanneer AEM de bronmodus verlaat, worden bepaalde validatiecontroles uitgevoerd (bijvoorbeeld om te controleren of de tekst op de juiste wijze in blokken is opgeslagen of genest). Dit kan leiden tot wijzigingen in uw bewerkingen.
-
