@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
+exl-id: fbeefa4e-966d-43b5-ae59-9548fe520cc2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Barcoded Forms Service Java API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
@@ -223,4 +223,3 @@ De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-f
 >[!NOTE]
 >
 >Wanneer u zowel een `org.w3c.dom.Document`-object als een `com.adobe.idp.Document`-object in dezelfde toepassingslogica gebruikt, is het aan te raden beide objecten volledig te kwalificeren.
-
