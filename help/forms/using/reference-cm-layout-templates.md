@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
+exl-id: 319db420-3318-4ef7-be2b-1ff2b1c08563
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
 
 ---
-
 
 # Referentielettersjablonen {#reference-letter-templates}
 
@@ -101,4 +101,3 @@ De visuele Top - de Klassieke malplaatje heeft een kopbal bovenop de pagina met 
 ![visualtopclassic](assets/visualtopclassic.png)
 
 PDF-voorbeeld van een letter die is gemaakt met de klassieke sjabloon Visual Top
-
