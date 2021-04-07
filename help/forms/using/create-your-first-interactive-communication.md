@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactieve communicatie
+exl-id: 4b2754dc-4b41-4d0d-a22c-d45595b36f84
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 0%
 
 ---
-
 
 # Zelfstudie: Maak uw eerste interactieve communicatie {#tutorial-create-your-first-interactive-communication}
 
@@ -128,7 +128,7 @@ De malplaatjes voor het kanaal van het Web worden gecreeerd in AEM. Sjabloonaute
 
 ![09-stijl-uw-adaptief-vorm-klein](assets/09-style-your-adaptive-form-small.png)
 
-Zodra u alle bouwstenen zoals het model van vormgegevens, documentfragmenten, en malplaatjes voor de Webversie creeert, kunt u beginnen tot een Interactieve Mededeling te leiden.
+Wanneer u alle bouwstenen hebt gemaakt, zoals het formuliergegevensmodel, documentfragmenten en sjablonen voor de webversie, kunt u een interactieve communicatie gaan maken.
 
 De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Afdrukken en web. U kunt ook een interactieve communicatie maken met Afdrukkanaal als master kanaal. De optie Afdrukken als master optie voor het webkanaal zorgt ervoor dat de inhoud, overerving en gegevensbinding van het webkanaal worden afgeleid van het kanaal Afdrukken.
 
@@ -166,4 +166,3 @@ Nadat u interactieve communicatie hebt gemaakt en getest met de kanalen Afdrukke
 * Integreer Interactieve Mededelingen met een e-mailcliënt om een mededeling naar de klanten te kunnen verzenden
 * Een PDF-document opnemen als een bijlage (interactieve communicatie gemaakt in het afdrukkanaal)
 * Neem een koppeling op naar de webversie van de interactieve communicatie
-
