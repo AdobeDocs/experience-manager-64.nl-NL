@@ -9,14 +9,14 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 feature: Adaptieve Forms
+exl-id: 7cd73bdf-6717-4923-91ca-e8b6d44429ca
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6302'
 ht-degree: 0%
 
 ---
-
 
 # Redacteur {#adaptive-forms-rule-editor} van de adaptieve vormenregel
 
@@ -791,4 +791,3 @@ In het inkooporderformulier dat in het vorige voorbeeld wordt beschreven, wilt u
 ![example-validate](assets/example-validate.png)
 
 ![example-validate-code](assets/example-validate-code.png)
-
