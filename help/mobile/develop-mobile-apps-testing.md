@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
+exl-id: 2a70f322-2540-471e-8a8e-6d48889cf94a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
 
 ---
-
 
 # Mobiele toepassingen testen{#testing-mobile-apps}
 
