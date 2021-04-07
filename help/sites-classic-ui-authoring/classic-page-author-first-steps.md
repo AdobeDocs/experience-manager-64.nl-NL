@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction, page-authoring
 content-type: reference
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
+exl-id: 88976f08-c003-4b8f-87c5-38b592fc9921
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
-
 
 # Eerste stappen voor auteurs{#first-steps-for-authors}
 
