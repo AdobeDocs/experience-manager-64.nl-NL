@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
+exl-id: 9ed22c75-bce7-4d26-a4cd-a58e41e5068e
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersbeheer configureren voor een LDAP-server met SSL-functionaliteit {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
@@ -35,4 +35,3 @@ Synchronisatie werkt alleen correct via LDAPS als de LDAP-certificaten die de ce
 >[!NOTE]
 >
 >Als u problemen ondervindt met SSL, gebruikt u een LDAP-browser om te controleren of deze toegang heeft tot het LDAP-systeem wanneer SSL wordt gebruikt. Als de LDAP-browser geen toegang kan krijgen, is uw certificaat- of toepassingsserver niet correct geconfigureerd. Als de LDAP-browser correct werkt en u nog steeds problemen ondervindt, wordt Gebruikersbeheer niet correct geconfigureerd.
-
