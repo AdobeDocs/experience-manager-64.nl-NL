@@ -1,18 +1,18 @@
 ---
 title: Best practices voor
-description: Leer over de beste praktijken van Adobe Experience Manager zoals gecompileerd door de ingenieur van Adobe en raadplegende teams om beheerders te helpen op de been worden gebracht en lopen.
+description: Leer over de beste praktijken van Adobe Experience Manager zoals gecompileerd door de ingenieur van Adobe en raadplegende teams om beheerders te helpen op en te lopen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
+exl-id: 8c41dba4-bedc-4747-b67d-fd89d71c8b2c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 2%
 
 ---
-
 
 # Best practices voor{#best-practices}
 
@@ -103,4 +103,3 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
   </tr>
  </tbody>
 </table>
-
