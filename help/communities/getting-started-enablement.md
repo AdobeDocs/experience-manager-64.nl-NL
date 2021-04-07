@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
+exl-id: 4d968f7e-bb6f-4c7a-b266-02f53797908c
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met AEM Communities for Enablement {#getting-started-with-aem-communities-for-enablement}
 
@@ -37,4 +37,3 @@ Voor een zelfstudie over het snel instellen van een [betrokkenheidscommunity](ov
 * [Een bron maken en toewijzen](resource.md)
 
 * [Ervaar de gepubliceerde site](enablement-published-site.md)
-
