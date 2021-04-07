@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 37c8b1bd-0e60-42d2-80ed-dece3f5c2342
+exl-id: 7b645497-ddbf-403c-9e78-5e845f6bda50
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 1%
 
 ---
-
 
 # Deelnemen aan workflows{#participating-in-workflows}
 
@@ -286,4 +286,3 @@ Om de lading, en middelen, van de werkschemainstantie te bekijken:
    ![wf-78](assets/wf-78.png)
 
 1. U kunt de koppelingen gebruiken om de afzonderlijke pagina&#39;s te openen.
-
