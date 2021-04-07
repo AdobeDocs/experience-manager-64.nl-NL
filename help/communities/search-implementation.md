@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
+exl-id: 9092df98-f600-4ed8-93d8-f2e83cd8bb6a
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 3%
 
 ---
-
 
 # Essentiële elementen zoeken {#search-essentials}
 
@@ -236,4 +236,3 @@ De waarde van de parameter `q` is de vraag. Zodra het coderen URL wordt gedecode
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen
 * [SocialUtils Refactoring](socialutils.md)  - de methodes van het Nut voor SRP die SocialUtils vervangen
 * [Componenten](search.md)  met zoekresultaten - UGC-zoekfunctie toevoegen aan een sjabloon
-
