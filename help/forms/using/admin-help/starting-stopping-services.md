@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
+exl-id: 6e0607d6-171c-4119-95a1-373b30fb63c1
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
 
 ---
-
 
 # Services {#starting-and-stopping-services} starten en stoppen
 
@@ -51,4 +51,3 @@ Voer in UNIX® of Linux de volgende tekst in vanaf een opdrachtregel, waarbij *`
 ```as3
      ps -A | grep [service name]
 ```
-
