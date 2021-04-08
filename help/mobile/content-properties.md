@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
+exl-id: 85a367fe-a124-42af-ae3e-fe4d10425ea1
 translation-type: tm+mt
-source-git-commit: 3b26eacff87d3ce84cf5db6133b44c955055c737
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 11%
 
 ---
-
 
 # Eigenschappen en knooppunten voor inhoud {#content-properties-and-nodes}
 
@@ -26,7 +26,7 @@ ht-degree: 11%
 
 Artikelen, banners en verzamelingen worden weergegeven als cq:Pagina&#39;s in AEM.
 
-Ze delen dezelfde gemeenschappelijke eigenschappen die in elke cq:Page worden gevonden, naast diverse hieronder getoonde eigenschappen die de metagegevens van de mobiele on-demand services van Adobe Experience Manager (AEM) vertegenwoordigen en ondersteunende eigenschappen voor integratie.
+Ze delen dezelfde gemeenschappelijke eigenschappen die in elke cq:pagina worden gevonden, naast diverse hieronder getoonde eigenschappen die de metagegevens van de mobiele on-demand services van Adobe Experience Manager (AEM) vertegenwoordigen en ondersteunende eigenschappen voor integratie.
 
 In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud beschreven.
 
@@ -83,7 +83,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 | dps-readingPosition | Tekenreeks | from {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Boolean |  |
 | dps-allowDownload | Boolean |  |
-| dps-openDefault | Tekenreeks | van  &quot;&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-openDefault | Tekenreeks | from {&quot;browsePage&quot;,&quot;contentView&quot;} |
 | dps-lay-out | Tekenreeks |  |
 
 ## Inhoudsknooppunten {#content-nodes}
