@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 133d93b0-512c-46db-b5f9-f981d77b565f
+exl-id: 6eb00c31-6806-478a-99d1-55912798ea69
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
 
 ---
-
 
 # Automatisch opslaan gebruiken in AEM Forms-app {#using-autosave-in-aem-forms-app}
 
@@ -44,4 +44,3 @@ Voer de volgende stappen uit om de functie voor automatisch opslaan te gebruiken
 
    Wanneer u op **[!UICONTROL OK]** klikt, wordt de taak hersteld met de gegevens die overeenkomen met de laatste automatische opslag die is geactiveerd voordat de app is vastgelopen. Het bevat de formuliergegevens en alle bijlagen die bij de taak horen.
    [ ![Een taak ophalen ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**teruggekregenA.** A werk-in-uitvoering formulier  **B.** App forcent gesloten  **C.** App opnieuw begonnen met het dialoogvenster Niet-opgeslagen taak herstellen  **D.** Formulier teruggezet met oorspronkelijke gegevens
-
