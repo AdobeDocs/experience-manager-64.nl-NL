@@ -7,9 +7,9 @@ feature: Middelenbeheer, Zoeken, Uitvoeringen, Samenwerking
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
 workflow-type: tm+mt
-source-wordcount: '9726'
+source-wordcount: '9762'
 ht-degree: 1%
 
 ---
@@ -571,48 +571,33 @@ U hebt verwijdermachtigingen voor dam/asset nodig om een element te kunnen verwi
 
 Zie [Elementen downloaden van AEM](download-assets-from-aem.md)
 
-## Elementen {#publishing-assets} publiceren
+## Elementen publiceren en publiceren {#publish-assets} ongedaan maken
 
-Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
+Nadat u uw elementen hebt geüpload, verwerkt of bewerkt op de auteur [!DNL Experience Manager], publiceert u het element naar de publicatieserver. Door middel van publicatie wordt het middel openbaar gemaakt. Met de actie Unpublishing is het element van de publicatieserver verwijderd, maar niet van de publicatieserver.
 
-Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
+Zie [publishing [!DNL Dynamic Media] assets](publishing-dynamicmedia-assets.md) voor specifieke informatie over [!DNL Dynamic Media].
 
-Zie [Dynamic Media Assets publiceren](publishing-dynamicmedia-assets.md) voor meer informatie over Dynamic Media.
+1. Navigeer naar de locatie van het element of de map met middelen die u wilt publiceren of die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-**Elementen** publiceren:
+1. Selecteer het element of de map waarvan u de publicatie ongedaan wilt maken en klik op **[!UICONTROL Manage Publication]** ![Publicatieoptie beheren](assets/do-not-localize/globe-publication.png) op de werkbalk. Als u snel wilt publiceren, selecteert u de optie **[!UICONTROL Quick Publish]** in de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
 
-1. Navigeer naar de locatie van de elementen/map die u wilt publiceren
+1. Selecteer de optie **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** naar wens.
 
-1. Selecteer de handeling **[!UICONTROL Publish]** in de elementenkaart of selecteer het element en tik op het pictogram **[!UICONTROL Quick Publish]** op de werkbalk.
-1. Als het element verwijst naar andere elementen, worden de verwijzingen ervan weergegeven in de wizard. Alleen verwijzingen die niet zijn gepubliceerd of gewijzigd sinds ze voor het laatst zijn gepubliceerd of niet zijn gepubliceerd, worden weergegeven. Kies de referenties die u wilt publiceren.
+   ![Handeling Unpublish](assets/unpublish_action.png)
+   *Afbeelding: Publiceer- en publicatieopties en de planningsoptie.*
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+1. Selecteer **[!UICONTROL Now]** om direct op het element te handelen of **[!UICONTROL Later]** te selecteren om de actie te plannen. Selecteer een datum en tijd als u de optie **[!UICONTROL Later]** kiest. Klik op **[!UICONTROL Next]**.
 
-1. Tik op **[!UICONTROL Publish]** om de activering voor de elementen te bevestigen.
+1. Als een element bij het publiceren naar andere elementen verwijst, worden de bijbehorende verwijzingen in de wizard weergegeven. Alleen die verwijzingen worden weergegeven die niet zijn gepubliceerd of zijn gewijzigd sinds de laatste publicatie. Kies de referenties die u wilt publiceren.
 
-## Elementen {#unpublishing-assets} verwijderen
+1. Wanneer u de publicatie ongedaan maakt, kiest u de referenties die u ongedaan wilt maken wanneer een element naar andere elementen verwijst. Klik op **[!UICONTROL Unpublish]**. Klik in het bevestigingsdialoogvenster op **[!UICONTROL Cancel]** om de handeling te stoppen of klik op **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd moeten worden.
 
-Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Verwijder de publicatie van de verwijzingen niet omdat mogelijk naar deze verwijzingen wordt verwezen door andere gepubliceerde elementen.
+De volgende beperkingen en tips voor het publiceren of verwijderen van middelen of mappen zijn beschikbaar:
 
-**De publicatie van elementen** ongedaan maken:
-
-1. Navigeer naar de locatie van het element dat of de elementenmap die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
-
-1. Selecteer het middel of de omslag om unpublish, en tik **[!UICONTROL Manage Publication]** pictogram van de toolbar te schrappen.
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. Selecteer de handeling **[!UICONTROL Unpublish]** in de lijst.
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. Als u de publicatie van het element later ongedaan wilt maken, selecteert u **[!UICONTROL Unpublish Later]** en selecteert u vervolgens een datum voor het ongedaan maken van de publicatie van het element.
-1. Plan een datum waarop het element niet beschikbaar is in de publicatieomgeving.
-1. Als het element verwijst naar andere elementen, kiest u de verwijzingen die u ongedaan wilt maken. Tik op **[!UICONTROL Unpublish]**.
-1. Voer een van de volgende handelingen uit in het bevestigingsvenster:
-
-   * Tik **[!UICONTROL Cancel]** om de handeling te stoppen
-   * Tik op **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd zijn (niet meer beschikbaar in de publicatieomgeving).
+* De optie voor [!UICONTROL Manage Publication] is alleen beschikbaar voor gebruikersaccounts die replicatiemachtigingen hebben.
+* Als u de publicatie van een complex element ongedaan maakt, maakt u alleen het element openbaar. Verwijder de publicatie van de verwijzingen niet omdat er mogelijk naar wordt verwezen door andere gepubliceerde elementen.
+* Lege mappen worden niet gepubliceerd.
+* Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
 
 ## Een gesloten gebruikersgroep maken {#closed-user-group}
 
@@ -902,7 +887,7 @@ Hieronder vindt u scenario&#39;s waarin u versies maakt:
 * U bewerkt de metagegevens van een element.
 * U gebruikt AEM bureaubladtoepassing om een bestaand middel uit te checken en uw wijzigingen op te slaan. Telkens wanneer het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 Met de versiefunctionaliteit kunt u het volgende doen:
 
