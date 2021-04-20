@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
-feature: Kader voor integratie in de handel
+feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

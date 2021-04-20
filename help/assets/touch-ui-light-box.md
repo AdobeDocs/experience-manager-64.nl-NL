@@ -2,7 +2,7 @@
 title: Lichtbak
 description: Meer informatie over Lichtbak in AEM Assets.
 contentOwner: AG
-feature: Gereedschappen voor ontwikkelaars, uitvoeringen
+feature: Developer Tools,Renditions
 role: Business Practitioner,Administrator
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
 translation-type: tm+mt

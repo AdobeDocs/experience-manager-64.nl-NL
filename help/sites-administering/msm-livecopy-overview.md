@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
-feature: Beheer van meerdere sites
+feature: Multi Site Manager
 exl-id: 96238d40-c19a-4c1f-9400-c7bb8636b448
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

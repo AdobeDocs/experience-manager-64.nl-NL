@@ -2,7 +2,7 @@
 title: Richtlijnen voor afstelling van middelenprestaties
 description: De belangrijkste aandachtsgebieden rond AEM configuratie, veranderingen in hardware, software, en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Architect,Administrator
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
 translation-type: tm+mt

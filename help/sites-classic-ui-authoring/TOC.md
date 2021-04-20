@@ -8,7 +8,7 @@ breadcrumb-title: Klassieke UI Authoring Guide
 user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
 feature-set: Experience Manager Sites
 feature: Authoring
-role: Zakelijke praktiserer
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

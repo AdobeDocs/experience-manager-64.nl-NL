@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Tags,Metagegevens,Slimme tags
+feature: Tagging,Metadata,Smart Tags
 role: Business Practitioner
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
 translation-type: tm+mt

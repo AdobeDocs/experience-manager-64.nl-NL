@@ -2,7 +2,7 @@
 title: Download digitale middelen van [!DNL Adobe Experience Manager].
 description: Leer hoe u elementen downloadt van [!DNL Adobe Experience Manager] en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
-feature: Middelenbeheer, middelenverdeling
+feature: Asset Management,Asset Distribution
 role: Business Practitioner
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
 translation-type: tm+mt

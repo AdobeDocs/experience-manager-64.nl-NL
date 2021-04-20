@@ -7,7 +7,7 @@ uuid: e807d0de-6d5f-458e-be3e-273ed7a521c0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: a870c4b7-4040-4bd8-b477-286ebe6a4b01
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

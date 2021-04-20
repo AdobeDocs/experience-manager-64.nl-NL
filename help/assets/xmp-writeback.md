@@ -2,7 +2,7 @@
 title: Terugverwijzing naar vertoningen XMP
 description: Leer hoe de functie XMP terugschrijven de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: Business Practitioner,Administrator
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
 translation-type: tm+mt

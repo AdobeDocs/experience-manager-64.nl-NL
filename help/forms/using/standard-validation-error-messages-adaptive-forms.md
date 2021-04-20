@@ -8,7 +8,7 @@ contentOwner: anujkapo
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: 864e6b0d-178b-4b91-85d3-34b90e999ee3
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

@@ -6,7 +6,7 @@ seo-description: Leer hoe u de API's gebruikt om een document te beveiligen name
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
-feature: Documentbeveiliging
+feature: Document Security
 exl-id: 76f25e65-1bc3-4801-998c-40ff533393e2
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

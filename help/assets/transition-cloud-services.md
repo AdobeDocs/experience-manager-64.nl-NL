@@ -2,7 +2,7 @@
 title: Vertaalwolkenservices toepassen op mappen
 description: Vertaalwolkenservices toepassen op mappen
 contentOwner: AG
-feature: Vertaling
+feature: Translation
 role: Administrator
 exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
 translation-type: tm+mt

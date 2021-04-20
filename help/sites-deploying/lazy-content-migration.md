@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
-feature: Bijwerken
+feature: Upgrading
 exl-id: 8dc2dfb8-037f-40ae-a962-ced89dd3fdd0
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

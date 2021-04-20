@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 Gebruikershandleiding beheren
 breadcrumb-title: Handleiding
 user-guide-description: Leer hoe u een AEM project beheert.
 feature-set: Experience Manager Sites
-feature: Implementeren
-role: Zakelijke praktiserer
+feature: Deploying
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

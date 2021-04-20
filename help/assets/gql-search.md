@@ -2,7 +2,7 @@
 title: GQL Full-text zoeken
 description: Ontdek de GQL-functie voor full-text zoeken in AEM Assets. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
 contentOwner: AG
-feature: Zoeken,metagegevens
+feature: Search,Metadata
 role: Business Practitioner
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
 translation-type: tm+mt

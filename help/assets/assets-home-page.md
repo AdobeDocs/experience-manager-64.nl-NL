@@ -2,7 +2,7 @@
 title: Ervaring met homepage in AEM Assets
 description: Pas de AEM Assets Home-pagina aan voor een uitgebreide ervaring met welkomstschermen, inclusief een momentopname van recente activiteiten rond middelen.
 contentOwner: AG
-feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
+feature: Developer Tools,Asset Management
 role: Administrator,Business Practitioner
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Ondersteunde bestandsindelingen in AEM Assets
 description: Lijst met bestandsindelingen en MIME-typen die door AEM Assets worden ondersteund en de functies die voor elke indeling worden ondersteund.
 contentOwner: AG
-feature: Middelenbeheer, uitvoeringen
+feature: Asset Management,Renditions
 role: Business Practitioner,Administrator
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
 translation-type: tm+mt

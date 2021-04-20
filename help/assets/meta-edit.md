@@ -2,7 +2,7 @@
 title: Metagegevens bewerken of toevoegen
 description: Meer informatie over metagegevens van elementen in AEM Assets en verschillende manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: Business Practitioner,Administrator
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
 translation-type: tm+mt

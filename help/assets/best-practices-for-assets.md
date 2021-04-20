@@ -2,7 +2,7 @@
 title: Aanbevolen procedures voor het beheer van AEM
 description: Identificeer en onderschrijf de beste praktijken die systeemstabiliteit en prestaties onder lading verbeteren, afhankelijk van de plaatsing van AEM Assets en eigenschappen die worden gebruikt om activa op te nemen en te verwerken.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Architect,Administrator
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
 translation-type: tm+mt

@@ -3,7 +3,7 @@ title: Uw digitale middelen beheren met AEM Assets
 description: Meer informatie over de verschillende functies voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Middelenbeheer, Zoeken, Uitvoeringen, Samenwerking
+feature: Asset Management,Search,Renditions,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Meertalige activa
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Administrator
 exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
 translation-type: tm+mt

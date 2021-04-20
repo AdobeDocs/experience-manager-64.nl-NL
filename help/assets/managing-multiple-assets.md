@@ -2,7 +2,7 @@
 title: Metagegevens van meerdere elementen en verzamelingen bulksgewijs bewerken
 description: Leer hoe u de metagegevens van veel elementen en verzamelingen tegelijk kunt bewerken om snel algemene wijzigingen in metagegevens door te geven.
 contentOwner: AG
-feature: Middelenbeheer, metagegevens, verzamelingen
+feature: Asset Management,Metadata,Collections
 role: Business Practitioner
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
 translation-type: tm+mt

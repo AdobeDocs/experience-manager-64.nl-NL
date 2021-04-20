@@ -5,7 +5,7 @@ contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-feature: Bijwerken
+feature: Upgrading
 exl-id: 7d2cf3d6-0dd3-4ce2-be9e-5d8b65a9edab
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

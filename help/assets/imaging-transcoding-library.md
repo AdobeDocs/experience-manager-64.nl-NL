@@ -2,7 +2,7 @@
 title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de bibliotheek Imaging Transcoding Adobe kunt configureren en gebruiken, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals coderen, transcoderen, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
-feature: uitvoeringen, ontwikkelaarsgereedschappen, middelenverwerking
+feature: Renditions,Developer Tools,Asset Processing
 role: Administrator
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
 translation-type: tm+mt

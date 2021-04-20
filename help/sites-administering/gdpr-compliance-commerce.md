@@ -6,7 +6,7 @@ seo-description: 'null'
 uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
-feature: Kader voor integratie in de handel
+feature: Commerce Integration Framework
 exl-id: c5002812-cbc6-4b3e-85be-3446630b4e8a
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

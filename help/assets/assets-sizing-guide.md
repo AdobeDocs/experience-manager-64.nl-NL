@@ -5,7 +5,7 @@ uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Architect,Administrator
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
 translation-type: tm+mt

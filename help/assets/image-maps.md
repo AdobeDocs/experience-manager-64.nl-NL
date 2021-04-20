@@ -2,7 +2,7 @@
 title: Afbeeldingen met hyperlinks toevoegen
 description: Leer hoe u hypergekoppelde afbeeldingen met hyperlinks toevoegt aan afbeeldingselementen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Business Practitioner, Administrator
 exl-id: d6b04891-12d3-4255-a156-2e9000474fd1
 translation-type: tm+mt

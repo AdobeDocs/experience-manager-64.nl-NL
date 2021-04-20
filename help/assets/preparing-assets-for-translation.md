@@ -2,7 +2,7 @@
 title: Middelen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om het vertalen van meertalige middelen voor te bereiden.
 contentOwner: AG
-feature: Projecten,vertalen
+feature: Projects,Translation
 role: Business Practitioner,Administrator
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
 translation-type: tm+mt

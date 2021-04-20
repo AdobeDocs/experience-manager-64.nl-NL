@@ -2,7 +2,7 @@
 title: Video-uitvoeringen
 description: Video-uitvoeringen
 contentOwner: AG
-feature: Video, uitvoeringen
+feature: Video,Renditions
 role: Business Practitioner
 exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Middelen zoeken in AEM
 description: Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
-feature: Zoeken,metagegevens
+feature: Search,Metadata
 role: Business Practitioner
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
 translation-type: tm+mt

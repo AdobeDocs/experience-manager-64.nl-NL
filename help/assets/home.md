@@ -2,7 +2,7 @@
 title: Hulplijn voor middelen
 description: Deze handleiding behandelt alle AEM Assets-taken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 user-guide-title: Hulplijn voor middelen
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Business Practitioner,Architect,Administrator
 exl-id: 72b5e053-9307-4333-84e5-d4cc2b6bdecc
 translation-type: tm+mt

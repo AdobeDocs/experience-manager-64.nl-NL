@@ -8,7 +8,7 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: 1129004b-5e8b-42fd-98ed-f203edde93b9
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

@@ -2,7 +2,7 @@
 title: Beheer van gebruikers-, groep- en toegangsrechten
 seo-title: Beheer van gebruikers-, groep- en toegangsrechten
 description: Meer informatie over gebruikers-, groep- en toegangsrechtenbeheer in AEM.
-feature: Beveiliging
+feature: Security
 seo-description: Meer informatie over gebruikers-, groep- en toegangsrechtenbeheer in AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES

@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 Handleiding voor mobiele gebruikers
 breadcrumb-title: Gids voor mobiele apparaten
 user-guide-description: Inhoud maken en beheren voor mobiele apps.
 feature-set: Experience Manager Sites
-feature: Mobiel
-role: Zakelijke praktiserer
+feature: Mobile
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
-feature: Adaptieve Forms
+feature: Adaptive Forms
 role: Administrator
 exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
 translation-type: tm+mt

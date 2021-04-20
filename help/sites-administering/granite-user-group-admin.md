@@ -2,7 +2,7 @@
 title: granietbewerkingen - gebruikers- en groepsbeheer
 seo-title: granietbewerkingen - gebruikers- en groepsbeheer
 description: Meer informatie over gebruikers- en groepsbeheer in Granite.
-feature: Beveiliging
+feature: Security
 seo-description: Meer informatie over gebruikers- en groepsbeheer in Granite.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino

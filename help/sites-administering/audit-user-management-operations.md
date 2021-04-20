@@ -2,7 +2,7 @@
 title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
 seo-title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
 description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
-feature: Bewerkingen
+feature: Operations
 seo-description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User

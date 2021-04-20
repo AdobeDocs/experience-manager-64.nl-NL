@@ -2,7 +2,7 @@
 title: Activa in bulk migreren naar Adobe Experience Manager Assets
 description: Hoe te om activa in AEM te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
-feature: migratie,uitvoeringen,beheer van bedrijfsmiddelen
+feature: Migration,Renditions,Asset Management
 role: Architect,Administrator
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
 translation-type: tm+mt

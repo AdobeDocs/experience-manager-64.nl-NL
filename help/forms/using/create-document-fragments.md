@@ -7,7 +7,7 @@ uuid: 215d09a6-949c-45ef-b2b0-88cd0cb4b99c
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
-feature: Interactieve communicatie
+feature: Interactive Communication
 exl-id: 50d93998-6393-4607-b89b-5b97aad530a3
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

@@ -2,7 +2,7 @@
 title: Verbeterde sortering van elementen in AEM
 description: Leer hoe AEM Assets sortering aan de serverzijde implementeert om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches op de client te sorteren.
 contentOwner: AG
-feature: Zoeken
+feature: Search
 role: Business Practitioner
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
 translation-type: tm+mt

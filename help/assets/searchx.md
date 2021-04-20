@@ -2,7 +2,7 @@
 title: Zoeken naar elementen uitbreiden
 description: Breid de zoekmogelijkheden van AEM Assets verder uit dan zoeken naar elementen op tekenreeksen.
 contentOwner: AG
-feature: Zoeken
+feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
 translation-type: tm+mt

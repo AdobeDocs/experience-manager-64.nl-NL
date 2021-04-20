@@ -2,7 +2,7 @@
 title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
-feature: Asset Insights, Asset Reports
+feature: Asset Insights,Asset Reports
 role: Business Practitioner,Administrator
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
 translation-type: tm+mt

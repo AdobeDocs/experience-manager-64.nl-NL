@@ -2,7 +2,7 @@
 title: Uw digitale middelen organiseren
 description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend Experience Manager.
 contentOwner: AG
-feature: Middelenbeheer, zoeken
+feature: Asset Management,Search
 role: Business Practitioner
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
 translation-type: tm+mt

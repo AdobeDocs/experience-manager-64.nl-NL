@@ -7,7 +7,7 @@ uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

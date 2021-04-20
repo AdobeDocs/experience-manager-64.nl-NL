@@ -2,7 +2,7 @@
 title: Meerdere paden voor verzamelingen, fragmenten en fragmentsjablonen
 description: Segregeer inhoud in de CRX-opslagplaats op basis van de organisatie van de klant om onbevoegde toegang te voorkomen.
 contentOwner: AG
-feature: Verzamelingen
+feature: Collections
 role: Architect,Administrator,Leader
 exl-id: d00a671a-6707-4941-868d-fa13510b7b60
 translation-type: tm+mt

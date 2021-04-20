@@ -7,7 +7,7 @@ uuid: 19e6ffab-00d2-4084-9ee7-9643b11eb6c6
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
-feature: Interactieve communicatie
+feature: Interactive Communication
 exl-id: cb7a8e96-4440-47ec-b506-275d5acc774e
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

@@ -2,7 +2,7 @@
 title: Aanbevolen werkwijzen voor middelenbewaking
 description: Beste werkwijzen voor het controleren van de omgeving en de prestaties van uw AEM instantie nadat deze is geïmplementeerd.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Administrator,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
 translation-type: tm+mt

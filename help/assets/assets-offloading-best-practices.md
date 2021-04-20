@@ -2,7 +2,7 @@
 title: Aanbevolen werkwijzen voor het verschuiven van elementen
 description: Aanbevolen gebruiksgevallen en aanbevolen procedures voor het offloaden van workflows voor het opnemen en repliceren van bedrijfsmiddelen in AEM Assets.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Business Practitioner,Administrator
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
 translation-type: tm+mt

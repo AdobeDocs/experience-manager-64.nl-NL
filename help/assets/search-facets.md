@@ -2,7 +2,7 @@
 title: Facetten doorzoeken
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
 contentOwner: AG
-feature: Zoeken
+feature: Search
 role: Administrator,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
 translation-type: tm+mt

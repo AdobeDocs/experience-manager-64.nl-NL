@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: 08cf95bc-3417-48d4-9df2-5bd56797bc5d
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

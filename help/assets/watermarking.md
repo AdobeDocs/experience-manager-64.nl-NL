@@ -2,7 +2,7 @@
 title: Watermerk toevoegen aan uw digitale elementen
 description: Leer hoe u met de functie Watermerken een digitaal watermerk aan elementen kunt toevoegen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Business Practitioner,Administrator
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
 translation-type: tm+mt

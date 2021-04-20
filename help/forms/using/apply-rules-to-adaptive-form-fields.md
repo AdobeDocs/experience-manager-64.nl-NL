@@ -7,7 +7,7 @@ page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: bb65b6d7-5bbf-4cc5-a468-9ea8465f7a07
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

@@ -2,7 +2,7 @@
 title: Rapporten over het gebruik en het delen van uw digitale middelen.
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
-feature: Elementenrapporten,beheer van bedrijfsmiddelen
+feature: Asset Reports,Asset Management
 role: Business Practitioner,Administrator
 exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
 translation-type: tm+mt

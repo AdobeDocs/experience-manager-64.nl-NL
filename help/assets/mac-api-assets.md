@@ -2,7 +2,7 @@
 title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-feature: API's,middelen HTTP API,ontwikkelaarsgereedschappen
+feature: APIs,Assets HTTP API,Developer Tools
 role: Developer
 exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
 translation-type: tm+mt

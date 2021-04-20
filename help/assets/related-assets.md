@@ -2,7 +2,7 @@
 title: Verwante activa
 description: Leer hoe u elementen koppelt die bepaalde algemene kenmerken delen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen.
 contentOwner: AG
-feature: Middelenbeheer, Samenwerking
+feature: Asset Management,Collaboration
 role: Business Practitioner
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
 translation-type: tm+mt

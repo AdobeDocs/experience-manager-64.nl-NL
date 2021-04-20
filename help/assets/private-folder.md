@@ -2,7 +2,7 @@
 title: Persoonlijke map delen
 description: Leer hoe u een persoonlijke map maakt in de middelen van de Adobe Experience Manager (AEM) en deze deelt met andere gebruikers en hoe u hun verschillende rechten toekent.
 contentOwner: AG
-feature: Samenwerking
+feature: Collaboration
 role: Business Practitioner
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
 translation-type: tm+mt

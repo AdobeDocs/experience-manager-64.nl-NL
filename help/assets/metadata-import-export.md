@@ -2,7 +2,7 @@
 title: Bulkmetagegevens importeren en exporteren
 description: In dit artikel wordt beschreven hoe u metagegevens bulksgewijs kunt importeren en exporteren.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: Business Practitioner,Administrator
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Map-assets en verzamelingen reviewen
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
-feature: Samenwerking, verzamelingen
+feature: Collaboration, Collections
 role: Business Practitioner
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Middelen verwerken met behulp van media-handlers en workflows
 description: Meer informatie over verschillende mediafuncties en hoe u deze kunt gebruiken in workflows om taken uit te voeren op elementen.
 contentOwner: AG
-feature: Workflow,uitvoeringen
+feature: Workflow,Renditions
 role: Business Practitioner
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
 translation-type: tm+mt

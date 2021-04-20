@@ -1,7 +1,7 @@
 ---
 title: AEM Assets-integratie configureren met Experience Cloud
 description: Leer hoe u AEM Assets-integratie met Experience Cloud configureert.
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Business Practitioner, Architect, Administrator
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
 translation-type: tm+mt

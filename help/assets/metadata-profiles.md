@@ -2,7 +2,7 @@
 title: Gebruik metagegevensprofielen om standaardmetagegevens toe te passen op alle elementen in een map
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: Business Practitioner,Administrator
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
 translation-type: tm+mt

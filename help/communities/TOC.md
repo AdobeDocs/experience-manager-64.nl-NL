@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 Gebruikersgids voor gemeenschappen
 breadcrumb-title: Community Guide
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 feature-set: Experience Manager
-feature: Gemeenschappen
-role: Zakelijke praktiserer
+feature: Communities
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

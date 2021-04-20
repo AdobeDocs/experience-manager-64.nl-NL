@@ -2,7 +2,7 @@
 title: Dubbele detectie inschakelen
 description: Leer hoe u dubbele elementen in AEM kunt detecteren.
 contentOwner: AG
-feature: Middelenbeheer, Asset Reports
+feature: Asset Management,Asset Reports
 role: Business Practitioner,Administrator
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
 translation-type: tm+mt

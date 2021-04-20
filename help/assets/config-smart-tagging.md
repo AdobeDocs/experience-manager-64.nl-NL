@@ -2,7 +2,7 @@
 title: Vorm activa het etiketteren gebruikend de Slimme Dienst van de Inhoud.
 description: Leer hoe u slimme tags en verbeterde slimme tags configureert in [!DNL Adobe Experience Manager] met de Smart Content Service.
 contentOwner: AG
-feature: Slimme tags,tags toepassen
+feature: Smart Tags,Tagging
 role: Administrator
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
 translation-type: tm+mt

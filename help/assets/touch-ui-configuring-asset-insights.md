@@ -2,7 +2,7 @@
 title: Elementinzichten configureren
 description: Leer hoe u Asset Insights configureert in AEM Assets.
 contentOwner: AG
-feature: Asset Insights, Asset Reports
+feature: Asset Insights,Asset Reports
 role: Business Practitioner,Administrator
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
 translation-type: tm+mt

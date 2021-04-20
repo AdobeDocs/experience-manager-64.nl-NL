@@ -2,7 +2,7 @@
 title: Elementen delen via een koppeling
 description: Elementen, mappen en verzamelingen delen als een URL.
 contentOwner: AG
-feature: Delen van koppelingen, beheer van bedrijfsmiddelen
+feature: Link Sharing,Asset Management
 role: Business Practitioner
 exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: Business Practitioner,Administrator
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
 translation-type: tm+mt

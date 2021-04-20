@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
-feature: Taalkopie
+feature: Language Copy
 exl-id: f8f99ad9-2592-45b0-a16c-33b191722e75
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

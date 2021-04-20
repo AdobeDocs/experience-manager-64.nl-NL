@@ -2,7 +2,7 @@
 title: Verbeterde gebruikerservaring in middelen
 description: In dit artikel worden de verbeteringen in AEM 6.4 Assets beschreven.
 contentOwner: AG
-feature: Geen informatie
+feature: Release Information
 role: Leader,Business Practitioner
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Gebruikers van de service in AEM
 seo-title: Gebruikers van de service in AEM
 description: Meer informatie over servicegebruikers in AEM.
-feature: Beveiliging
+feature: Security
 seo-description: Meer informatie over servicegebruikers in AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User

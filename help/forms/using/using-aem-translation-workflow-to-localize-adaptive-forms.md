@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: 5d0dcf4d-8995-4547-acb1-4917696af95e
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

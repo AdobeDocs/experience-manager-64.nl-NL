@@ -10,7 +10,7 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
-feature: Kader voor integratie in de handel
+feature: Commerce Integration Framework
 exl-id: 27537d62-f032-4fb5-b2cf-003579b61ea8
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

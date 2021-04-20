@@ -8,7 +8,7 @@ breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
 feature-set: Experience Manager Sites
 feature: Authoring
-role: Zakelijke praktiserer
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

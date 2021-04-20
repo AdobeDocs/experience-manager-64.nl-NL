@@ -7,7 +7,7 @@ user-guide-title: AEM 6.4 Gebruikershandleiding ontwikkelen
 breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 feature-set: Experience Manager Sites
-feature: Ontwikkeling
+feature: Developing
 role: Developer
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7

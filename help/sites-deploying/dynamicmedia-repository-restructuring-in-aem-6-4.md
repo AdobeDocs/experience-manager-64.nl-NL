@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Bijwerken
+feature: Upgrading
 exl-id: 1323ee60-c80c-4eed-b3e5-aa0f0c07e6ee
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

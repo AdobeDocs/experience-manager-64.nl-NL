@@ -2,7 +2,7 @@
 title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controles te doen, naleving te bereiken, en basishygiëne te handhaven
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
-feature: Workflow,uitvoeringen
+feature: Workflow,Renditions
 role: Business Practitioner,Administrator
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
 translation-type: tm+mt

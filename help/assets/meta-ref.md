@@ -2,7 +2,7 @@
 title: Referentie metagegevensschema
 description: 'Leer meer over standaardconventies voor het beschrijven van metagegevens van elementen, zoals Dublin Core, IPTC en ander metagegevensschema. '
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: Business Practitioner,Administrator
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
 translation-type: tm+mt

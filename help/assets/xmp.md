@@ -2,7 +2,7 @@
 title: Metagegevens XMP
 description: Meer informatie over de metagegevensstandaard (Extensible Metadata Platform) van de XMP die AEM Assets gebruikt voor het beheer van metagegevens. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: Business Practitioner,Administrator
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
 translation-type: tm+mt

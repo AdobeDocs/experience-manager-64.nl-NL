@@ -2,7 +2,7 @@
 title: Onderhoud controlelogbestand in AEM 6
 seo-title: Onderhoud controlelogbestand in AEM 6
 description: Meer informatie over onderhoud van controlelogbestanden in AEM.
-feature: Bewerkingen
+feature: Operations
 seo-description: Meer informatie over onderhoud van controlelogbestanden in AEM.
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

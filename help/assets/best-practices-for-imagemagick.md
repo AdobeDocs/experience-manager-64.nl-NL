@@ -2,7 +2,7 @@
 title: ImageMagick installeren en configureren om met AEM Assets te werken
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
-feature: Uitvoeringen,Gereedschappen voor ontwikkelaars
+feature: Renditions,Developer Tools
 role: Administrator
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
 translation-type: tm+mt

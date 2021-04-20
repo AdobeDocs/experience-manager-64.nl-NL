@@ -2,7 +2,7 @@
 title: Elementen integreren met activiteitsstroom
 description: Beschrijft de opnamemogelijkheden van AEM en hoe te om AEM te vormen om specifieke gebeurtenissen te registreren.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Developer
 exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
 translation-type: tm+mt

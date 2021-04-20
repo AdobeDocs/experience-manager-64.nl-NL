@@ -2,7 +2,7 @@
 title: Uw digitale middelen inchecken en uitchecken voor bewerking
 description: Leer hoe u middelen kunt uitchecken om deze te bewerken en weer in te checken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Business Practitioner
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
 translation-type: tm+mt

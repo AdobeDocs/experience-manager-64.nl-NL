@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature-set: Experience Manager Sites
-feature: Beheer
-role: Beheerder
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

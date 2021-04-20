@@ -2,7 +2,7 @@
 title: Samengestelde elementen beheren en subelementen genereren.
 description: Leer hoe u verwijzingen naar AEM middelen maakt vanuit InDesign-, Adobe Illustrator- en Photoshop-bestanden. Leer ook hoe u de functie Paginaviewer gebruikt om afzonderlijke pagina's van bestanden met meerdere pagina's weer te geven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Business Practitioner,Administrator
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
 translation-type: tm+mt

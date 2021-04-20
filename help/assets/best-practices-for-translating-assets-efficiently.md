@@ -2,7 +2,7 @@
 title: Tips en trucs voor een efficiënte vertaling van middelen
 description: Aanbevolen procedures voor efficiënt beheer van middelen om verschillende vertaalde versies te synchroniseren en vertaalworkflows te stroomlijnen.
 contentOwner: AG
-feature: Vertaling
+feature: Translation
 role: Business Practitioner,Administrator
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Mediabibliotheek gebruiken voor elementair beheer van digitale elementen
 description: '[!DNL Experience Manager Assets] en Mediabibliotheek voor middelenbeheer.'
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
 translation-type: tm+mt

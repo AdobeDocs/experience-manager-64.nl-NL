@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
-feature: Configureren
+feature: Configuring
 exl-id: 89b8e8a7-103b-472e-8c29-3b6e5b7273b1
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

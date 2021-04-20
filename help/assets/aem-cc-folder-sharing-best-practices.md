@@ -2,7 +2,7 @@
 title: AEM Assets-mappen delen met Creative Cloud
 description: Configuratie en aanbevolen procedures om gebruikers van Adobe Experience Manager Assets in staat te stellen mappen met middelen uit te wisselen met gebruikers van Adobe Creative Cloud.
 contentOwner: AG
-feature: Samenwerking
+feature: Collaboration
 role: Business Practitioner,Administrator
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
 translation-type: tm+mt

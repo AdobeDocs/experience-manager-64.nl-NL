@@ -2,7 +2,7 @@
 title: Ondersteuning voor IPTC-metagegevens
 description: Leer hoe Adobe Experience Manager (AEM) Assets de IPTC-metagegevens, Creative Classificaties en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: Business Practitioner,Administrator,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
 translation-type: tm+mt

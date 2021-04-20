@@ -8,7 +8,7 @@ topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
-feature: Correspondentenbeheer
+feature: Correspondence Management
 exl-id: a062957d-a526-4c4b-bbc5-0cda8ab007a3
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

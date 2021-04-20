@@ -7,7 +7,7 @@ uuid: 9a8bd44a-34a1-41ef-a57b-d5e3dd0a77ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 7a1bfd43-39b1-478b-a294-92c78eaebbf2
-feature: Formuliergegevensmodel
+feature: Form Data Model
 exl-id: 39408af6-439c-4ade-8062-155be9141dfa
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

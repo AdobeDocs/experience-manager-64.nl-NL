@@ -7,7 +7,7 @@ page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: f634a73a-e720-4a38-a459-6ddbe4fdc565
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

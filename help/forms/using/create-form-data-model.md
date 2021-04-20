@@ -8,7 +8,7 @@ uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: 2f83e853-2468-4ea2-85f6-8cf7fe9de6a8
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

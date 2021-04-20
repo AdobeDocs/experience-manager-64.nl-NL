@@ -2,7 +2,7 @@
 title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
 description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
-feature: Tags, metagegevens
+feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
 translation-type: tm+mt

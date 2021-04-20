@@ -2,7 +2,7 @@
 title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten kunt maken in AEM.
 contentOwner: AG
-feature: Vertaling
+feature: Translation
 role: Architect,Administrator
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
 translation-type: tm+mt

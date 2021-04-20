@@ -3,7 +3,7 @@ title: Elementverzamelingen beheren
 description: Leer taken om verzamelingen met middelen te beheren, zoals verzamelingen maken, weergeven, verwijderen, bewerken en downloaden.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Verzamelingen
+feature: Collections
 role: Business Practitioner
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
 translation-type: tm+mt

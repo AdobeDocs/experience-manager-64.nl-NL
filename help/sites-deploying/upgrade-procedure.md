@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
-feature: Bijwerken
+feature: Upgrading
 exl-id: e6092e80-3a39-4fde-8a94-084eee5fa8a9
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

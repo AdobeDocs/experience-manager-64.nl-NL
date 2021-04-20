@@ -2,7 +2,7 @@
 title: Aanbevolen werkwijzen voor bestandsindelingen voor elementen
 description: Aanbevolen procedures voor bestandsondersteuning in AEM Assets.
 contentOwner: AG
-feature: Asset Management, ontwikkelprogramma's
+feature: Asset Management,Developer Tools
 role: Administrator
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
 translation-type: tm+mt

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-feature: Workflow,middelenbeheer,uitvoeringen
+feature: Workflow,Asset Management,Renditions
 role: Business Practitioner,Administrator
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
 translation-type: tm+mt

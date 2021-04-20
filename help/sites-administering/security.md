@@ -2,7 +2,7 @@
 title: Gebruikersbeheer en beveiliging
 seo-title: Gebruikersbeheer en beveiliging
 description: Meer informatie over gebruikersbeheer en beveiliging in AEM.
-feature: Beveiliging
+feature: Security
 seo-description: Meer informatie over gebruikersbeheer en beveiliging in AEM.
 uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
 contentOwner: msm-service

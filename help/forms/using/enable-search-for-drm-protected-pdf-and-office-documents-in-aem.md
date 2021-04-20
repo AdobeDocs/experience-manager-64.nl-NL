@@ -9,7 +9,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
-feature: Documentbeveiliging
+feature: Document Security
 exl-id: dbf97dc1-cf05-4d45-859e-60ff01186e51
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

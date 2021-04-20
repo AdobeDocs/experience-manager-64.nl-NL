@@ -2,7 +2,7 @@
 title: Elementen aanpassen en uitbreiden
 description: Leer manieren waarop u Asset Share en Asset Editor kunt aanpassen en uitbreiden, waarmee gebruikers een specifiek op maat gemaakte interface en een set functies krijgen.
 contentOwner: AG
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 role: Developer
 exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
 translation-type: tm+mt

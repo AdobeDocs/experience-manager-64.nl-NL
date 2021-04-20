@@ -8,7 +8,7 @@ contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
-feature: Formuliergegevensmodel
+feature: Form Data Model
 exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

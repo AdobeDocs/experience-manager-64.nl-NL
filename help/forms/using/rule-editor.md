@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: 7cd73bdf-6717-4923-91ca-e8b6d44429ca
 translation-type: tm+mt
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4

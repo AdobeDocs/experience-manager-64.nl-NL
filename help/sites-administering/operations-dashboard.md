@@ -2,7 +2,7 @@
 title: Operations-dashboard
 seo-title: Operations-dashboard
 description: Leer hoe u het bewerkingsdashboard kunt gebruiken.
-feature: Bewerkingen
+feature: Operations
 seo-description: Leer hoe u het bewerkingsdashboard kunt gebruiken.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

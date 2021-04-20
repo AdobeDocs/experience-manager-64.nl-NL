@@ -2,7 +2,7 @@
 title: Camera Raw ondersteuning
 description: Leer hoe u Camera Raw ondersteuning inschakelt in Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 role: Administrator
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
 translation-type: tm+mt
