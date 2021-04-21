@@ -7,12 +7,11 @@ audience: end-user
 user-guide-title: Adobe Experience Manager 6.4 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
-feature-set: Experience Manager Forms
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '3732'
+source-wordcount: '3730'
 ht-degree: 0%
 
 ---
