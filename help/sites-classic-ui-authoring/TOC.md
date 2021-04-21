@@ -9,10 +9,10 @@ user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in
 feature: Authoring
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 17%
+source-wordcount: '273'
+ht-degree: 20%
 
 ---
 
@@ -82,17 +82,9 @@ ht-degree: 17%
    + [Je Adobe Campaign als doelgroep instellen](classic-personalization-ac-target.md)
 + Elementen ontwerpen in klassieke gebruikersinterface {#assets}
    + [Werken met elementen](classicui-assets.md)
-   + [Werken met IBL-fasen](classicui-stages-aem3d-ibl.md)
-   + [3D-elementen renderen](classicui-rendering-3d.md)
-   + [3D-elementen weergeven](classicui-view-3d-assets.md)
    + [Dynamic Media-middelen leveren](dynamic-media-assets-delivering.md)
-   + [Een standaardpodium instellen met Autodesk Maya en Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
    + [Dynamic Media Classic (Scene7)-functies toevoegen aan uw pagina](manage-assets-classic-s7.md)
    + [Werken met Dynamic Media](dynamic-media-assets.md)
-   + [Werken met 3D-elementen](classicui-3dassets.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Naamconventies voor het testen van elementen](asset-naming-conventions.md)
-   + [Informatie over het uploaden en verwerken van 3D-elementen in AEM](classicui-upload-proc-3d.md)
-   + [Informatie over het gebruik van fasen in AEM 3D](classicui-stages-aem3d.md)
-   + [Bestandsafhankelijkheden oplossen](classicui-upload-proc-3d-resolve-dependencies.md)
