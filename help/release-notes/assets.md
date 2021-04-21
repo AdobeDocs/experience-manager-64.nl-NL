@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
@@ -168,7 +168,3 @@ Zie [Smart Imaging](../assets/imaging-faq.md) documentatie voor meer informatie.
 * VR Viewer biedt een indrukwekkende ervaring voor eigenschappen, locaties en landschappen.
 * Vertical Image Viewer geoptimaliseerd voor productafbeeldingen.
 * Verbeterde toegankelijkheid van toetsenborden.
-
-### 3D en integratie met Dimension CC {#d-and-integration-with-dimension-cc}
-
-Integratie met [Adobe Dimension CC](https://www.adobe.com/products/dimension.html) voor een naadloze 3D-workflow is geïntroduceerd. Zie [Werken met 3D-elementen](../assets/assets-3d.md) documentatie voor meer informatie.
