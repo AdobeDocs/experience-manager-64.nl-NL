@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2813'
 ht-degree: 2%
 
 ---
@@ -122,7 +122,7 @@ Nieuw in 6.4 zijn een visuele [inhoudsmodel](/help/assets/content-fragments-mode
 
 **Ervaringsfragmenten**
 
-Het maken van variaties in een fragment met dezelfde inhoud maar verschillende lay-outs is nu efficiënter dankzij de mogelijkheid Bouwstenen te maken. Naast het verzenden van Experience Fragments naar Facebook en Pinterest, is het nu mogelijk om ze als aanbieding naar Adobe Target te sturen.
+Het maken van variaties in een fragment met dezelfde inhoud maar verschillende lay-outs is nu efficiënter dankzij de mogelijkheid Bouwstenen te maken. Naast het verzenden van Experience Fragments naar Facebook en Pinterest, is het nu mogelijk om ze naar Adobe Target te verzenden als aanbod.
 
 **Inhoudsservices**
 
@@ -247,14 +247,6 @@ Zie [Smart Imaging](/help/assets/imaging-faq.md) documentatie voor meer informat
 Met nieuwe viewers, zoals Panorama&#39;s en VR, kunt u een indrukwekkende ervaring bieden.
 
 Zie [Panoramische afbeeldingen](/help/assets/panoramic-images.md) documentatie voor meer informatie.
-
-**3D-middelen**
-
-Nieuwe integratie met [Adobe Dimension CC](https://www.adobe.com/products/dimension.html), een Creative Cloud-toepassing voor het ontwerpen van 3D-ervaringen.
-
-Zie [Werken met 3D-elementen](/help/assets/assets-3d.md) documentatie voor meer informatie.
-
-![do-not-localize/3d](assets/do-not-localize/3d.png)
 
 ### Experience Manager Forms {#experience-manager-forms}
 
