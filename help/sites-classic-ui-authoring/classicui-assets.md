@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f3b4d49b-5873-4825-91b9-71a3204516b1
 exl-id: 535d2a9f-852c-48ea-89ec-31de3a891666
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 82f31577e41e1cd484ee3a8d22bbc11756ff23a2
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '110'
 ht-degree: 3%
 
 ---
@@ -25,4 +25,3 @@ De sectie [Auteursomgeving en Gereedschappen](/help/sites-authoring/author-envir
 * [Dynamic Media Classic-functies aan uw pagina toevoegen](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Werken met Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [Naamgevingsconventies voor elementen](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
-* [Werken met 3D-elementen](/help/sites-classic-ui-authoring/classicui-3dassets.md)
