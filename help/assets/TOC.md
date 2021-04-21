@@ -7,10 +7,10 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 30%
+source-wordcount: '627'
+ht-degree: 36%
 
 ---
 
@@ -166,20 +166,3 @@ ht-degree: 30%
    + [Persoonlijke map delen](private-folder.md)
    + [Richtlijnen voor training voor Smart Content Service](smart-tags-training-guidelines.md)
    + [Video-uitvoeringen](video-renditions.md)
-+ 3D-elementen {#three-d}
-   + [Opmerkingen bij de 3D-release AEM](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [Werken met 3D-elementen](assets-3d.md)
-   + [AEM 3D installeren en configureren](install-config-3d.md)
-   + [Geavanceerde configuratie-instellingen](advanced-config-3d.md)
-   + [Werken met Adobe Dimension-middelen](working-dimension-assets.md)
-   + [Informatie over het uploaden en verwerken van 3D-elementen in AEM](upload-processing-3d-assets.md)
-   + [Bestandsafhankelijkheden oplossen](resolve-file-dependencies.md)
-   + [3D-elementen weergeven](viewing-3d-assets.md)
-   + [3D-elementen renderen](rendering-3d-assets.md)
-   + [Informatie over het gebruik van fasen in AEM 3D](about-the-use-of-stages-in-aem-3d.md)
-   + [Een standaardpodium instellen met Autodesk Maya en Mental Ray](setting-up-stage-with-ad-mr.md)
-   + [Werken met de component 3D-sites](using-the-3d-sites-component.md)
-   + [AEM 3D integreren met Autodesk Maya](integrate-maya-with-3d.md)
-   + [Werken met IBL-fasen](working-with-ibl-stages.md)
-   + [AEM 3D integreren met Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
-   + [Een IBL-podium instellen met Autodesk Maya en Mental Ray](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
