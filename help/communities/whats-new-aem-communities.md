@@ -1,16 +1,14 @@
 ---
 title: Nieuwe functies in AEM 6.4-gemeenschappen
-seo-title: Nieuwe functies in AEM 6.4-gemeenschappen
-description: 'null'
-seo-description: 'null'
+description: AEM Communities biedt bedrijven een kader aan om onder hun partners, klanten en werknemers samen te werken.
 uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 exl-id: fcdc65c9-929d-4a87-8ff7-5e3cf5711fd9
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
