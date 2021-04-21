@@ -8,9 +8,9 @@ user-guide-description: Meer informatie over de nieuwste functies in AEM 6.4 in 
 feature: Geen informatie
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 29fe63a731d33afa0d6492e0e4ef94064097ae1a
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '89'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 4%
 + [Opmerkingen bij de release van AEM Forms](forms.md)
 + [AEM Forms JEE Patch Installer](jee-patch-installer-64.md)
 + [Opmerkingen bij de release van AEM Communities](communities-release-notes.md)
-+ [Opmerkingen bij de 3D-release AEM](aem3d-release-notes.md)
 + [Verouderde en verwijderde functies](deprecated-removed-features.md)
 + [Bekende problemen](known-issues.md)
 + [AEM stichting en bewaarplaats](wcm-platform.md)
