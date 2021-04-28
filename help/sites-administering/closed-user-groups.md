@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 exl-id: 71dfaea7-2fae-4feb-bb1d-ad0da573f910
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
-source-wordcount: '6889'
+source-wordcount: '6884'
 ht-degree: 0%
 
 ---
@@ -764,14 +764,14 @@ Dit is aangepast om de verwijzing naar `CugSupport` facultatief te maken om maxi
 
 ### AEM LiveCopy {#aem-livecopy}
 
-Het configureren van CUG&#39;s in combinatie met LiveCopy wordt in de opslagplaats vertegenwoordigd door toevoeging van één extra knooppunt en één extra eigenschap, als volgt:
+Het configureren van CUG&#39;s in combinatie met LiveCopy wordt in de opslagplaats vertegenwoordigd door toevoeging van één extra knooppunt en één extra eigenschap, en wel als volgt:
 
 * `/content/we-retail/us/en/blueprint/rep:cugPolicy`
 * `/content/we-retail/us/en/LiveCopy@granite:loginPath`
 
 Beide elementen worden gemaakt onder `cq:Page`. Met het huidige ontwerp, behandelt MSM slechts knopen en eigenschappen die onder `cq:PageContent` (`jcr:content`) knoop zijn.
 
-Daarom kunnen CUG-groepen niet worden teruggedraaid van een blauwdruk naar een Live Copy. Houd hier rekening mee wanneer u een Live kopie instelt.
+CUG-groepen kunnen daarom niet worden geïmplementeerd in Actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
 
 ## Veranderingen met de Nieuwe Implementatie van de GUG {#changes-with-the-new-cug-implementation}
 
