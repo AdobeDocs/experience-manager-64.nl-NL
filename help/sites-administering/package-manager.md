@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
 exl-id: eebc10fa-1d49-4797-a9e6-b6615bfe0173
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9b2cf8887f799aff316f720ab173087e14692120
 workflow-type: tm+mt
-source-wordcount: '5365'
+source-wordcount: '4037'
 ht-degree: 0%
 
 ---
@@ -694,205 +694,16 @@ Kopieer de inhoud van een pakket en installeer het naar de publicatie-instantie:
 
 ## Package Share {#package-share}
 
-Het Aandeel van het Pakket is een gecentraliseerde server die openbaar wordt gemaakt om inhoud-Pakketten te delen.
+Het aandeel van het Pakket was een gecentraliseerde server die openbaar ter beschikking werd gesteld om inhoud-Pakketten te delen.
 
-Met Pakket delen kunt u deze pakketten downloaden, waaronder officiële hotfixes, functiesets, updates of voorbeeldinhoud die door andere gebruikers is gegenereerd.
+Het is vervangen door [Softwaredistributie.](#software-distribution)
 
-U kunt pakketten ook uploaden en delen binnen uw bedrijf.
+## Softwaredistributie {#software-distribution}
 
-### Toegang tot pakket delen {#access-to-package-share}
+[Software ](https://downloads.experiencecloud.adobe.com) Distributionis de nieuwe gebruikersinterface die is ontworpen om het zoeken en downloaden van AEM pakketten te vereenvoudigen.
 
-Er is geen anonieme toegang tot het Aandeel van het Pakket; dat wil zeggen dat alleen geregistreerde gebruikers pakketten mogen weergeven, downloaden en uploaden.
-
-De toegang tot het Aandeel van het Pakket is beschikbaar voor onze partners en klanten. Er moeten registratiegegevens worden ingediend om toegangsrechten te kunnen toewijzen.
-
-Toegang krijgen tot delen pakket:
-
-* [Aanmelden gebruiken op pagina](#signing-in-to-package-share)
-* De eerste keer dat u de aanmeldpagina gebruikt, moet u:
-
-   * [Registreren voor een Adobe-](#registering-for-package-share) id en/of uw bestaande Adobe ID  [valideren](#validating-your-adobe-id)
-   * zodat uw [Pakket delen-account](#package-share-account) kan worden gemaakt
-
->[!NOTE]
->
->Om het even welke gebruiker van het Aandeel van het Pakket die niet aan een klant is toegewezen, moet zich bij een gemeenschap aansluiten om die middelen te zien door **toetreden** naast het pakket te klikken deelt login.
-
-#### Aanmelden bij Delen van pakket {#signing-in-to-package-share}
-
-1. Klik in het AEM welkomstscherm op **Tools** -> **Implementatie**
-1. Selecteer vervolgens **Delen van pakket**. U moet:
-
-   * aanmelden bij uw Adobe ID
-   * [Een Adobe ID maken](#registering-for-package-share)
-
-   >[!NOTE]
-   >
-   >De eerste keer dat u zich aanmeldt bij uw Adobe ID, moet u de [validatie van uw e-mailadres](#validating-your-adobe-id) voltooien.
-
-   >[!NOTE]
-   >
-   >Als u uw wachtwoord bent vergeten, gebruikt u **Problemen met aanmelden?** in het dialoogvenster Aanmelden.
-
-#### Uw Adobe ID {#validating-your-adobe-id} valideren
-
-De eerste keer dat u zich aanmeldt bij Delen via pakket met uw Adobe ID, wordt uw e-mailadres gevalideerd.
-
-1. U ontvangt een e-mail met een koppeling.
-1. Klik op deze koppeling.
-1. Er wordt een webpagina geopend.
-
-   De handeling waarbij deze webpagina wordt geopend, wordt uitgevoerd als validatie.
-
-1. Aanmelden gaat door.
-
-1. U ontvangt een e-mail met een koppeling.
-1. Klik op deze koppeling.
-1. Er wordt een webpagina geopend. De handeling waarbij deze webpagina wordt geopend, wordt uitgevoerd als validatie.
-1. Aanmelden gaat door.
-
-#### Registreren voor delen pakket {#registering-for-package-share}
-
-Als u toegang tot het Delen van pakketten nodig hebt, moet u zich registreren voor een Adobe ID:
-
-* De [Inlogpagina voor delen van pakketten](#signing-in-to-package-share) biedt een koppeling voor het registreren van een Adobe ID.
-* U kunt zich vanuit bepaalde Adobe-desktopsoftware registreren voor een Adobe ID.
-* U kunt zich ook online registreren op [Adobe Sign op pagina](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1).
-
-Een Adobe ID kan worden gemaakt door het volgende op te geven:
-
-* uw e-mailadres
-* een wachtwoord naar keuze
-* aanvullende informatie zoals uw naam en land van verblijf
-
-#### Account voor delen pakket {#package-share-account}
-
-De geldigheid van de toepassing wordt gecontroleerd voordat:
-
-* Uw gebruikersaccount is gemaakt met de vereiste/toegestane machtigingen.
-* Je account wordt toegevoegd aan de groep van je bedrijf.
-
->[!NOTE]
->
->Een gebruiker van één van onze partnerbedrijven kan ook een lid van zijn/haar klantengroepen zijn.
-
-#### Netwerkoverwegingen {#network-considerations}
-
-**IPv6**
-
-U kunt problemen ervaren wanneer het proberen om tot het Aandeel van het Pakket van een zuivere milieu toegang te hebben IPv6.
-
-Dit komt doordat pakketshare service is die wordt gehost op een server, wat betekent dat uw verbinding tot stand wordt gebracht via verschillende netwerken op internet. Er kan niet worden gegarandeerd dat alle aangesloten netwerken IPv6 ondersteunen; als niet de verbinding zou kunnen ontbreken.
-
-Om deze kwestie te vermijden, kunt u tot het Aandeel van het Pakket van een IPv4 netwerk toegang hebben, het pakket downloaden en dan het uploaden aan het milieu IPv6.
-
-**HTTP-proxy**
-
-Delen van pakket is momenteel niet beschikbaar als uw bedrijf een http-proxy uitvoert waarvoor verificatie is vereist.
-
-Delen van pakketten is alleen beschikbaar als uw AEM server toegang heeft tot internet zonder dat verificatie is vereist. Om de volmacht voor alle diensten te vormen die de HTTP- cliënt (met inbegrip van pakketaandeel) gebruiken de [OSGi configuratie van de Client 3.1 van de Commons van de Dag Cliënt van HTTP 3.1 bundel](/help/sites-deploying/osgi-configuration-settings.md).
-
-### Binnen pakket delen {#inside-package-share}
-
-In de pakketten van het Aandeel van het Pakket worden geschikt in boomsubstructuren:
-
-* Adobe pakketten verstrekt door Adobe.
-* Gedeelde pakketten die door andere bedrijven zijn geleverd en door Adobe zijn gepubliceerd.
-* Uw bedrijfspakketten die privé zijn.
-
-![chlimage_1-346](assets/chlimage_1-346.png)
-
-### Pakketten zoeken en filteren {#searching-and-filtering-packages}
-
-Delen via pakket biedt een zoekbalk die u kunt gebruiken voor het zoeken naar specifieke trefwoorden of tags. Trefwoorden en tags ondersteunen meerdere waarden.
-
-* Als u naar meerdere trefwoorden wilt zoeken, moet u elk trefwoord door een spatie scheiden.
-* Als u naar meerdere tags wilt zoeken, moet u elk label in de pakketstructuur selecteren.
-
-U kunt de voorwaardelijke operator ook wijzigen van OR in AND aan de rechterkant van de filteroverzichtbalk.
-
-### Pakketten downloaden en installeren vanuit pakketdeling {#downloading-and-installing-packages-from-package-share}
-
-Om pakketten van het Aandeel van het Pakket te downloaden en hen op uw lokale instantie te installeren, is het gemakkelijker om tot het Aandeel van het Pakket van uw AEM instantie toegang te hebben. Hiermee wordt het pakket gedownload en onmiddellijk geregistreerd in uw Package Manager, vanwaar het kan worden geïnstalleerd.
-
-1. Van het AEM Welkome scherm, klik **Hulpmiddelen**, dan uitgezocht **Deel van het Pakket** om de pagina van het Aandeel van het Pakket te openen.
-1. Meld u aan bij Pakket delen met uw accountgegevens. De landingspagina wordt weergegeven met een lijst met de map Adobe, de map Gedeeld en een specifieke pagina voor uw bedrijf.
-
-   >[!NOTE]
-   >
-   >Voordat u pakketten begint te downloaden van Package Share, moet u ervoor zorgen dat u de [vereiste toegang hebt](#access-to-package-share).
-
-1. Navigeer naar het pakket dat u wilt downloaden en klik op **Downloaden**.
-
-1. Ga terug of navigeer aan **de Manager van het Pakket** op uw AEM instantie. Navigeer vervolgens naar het pakket dat u net hebt gedownload.
-
-   >[!NOTE]
-   >
-   >Als u het pakket wilt zoeken dat u hebt gedownload, volgt u hetzelfde pad als in Pakket delen. Bijvoorbeeld, als u een pakket van de volgende weg in het Aandeel van het Pakket downloadt:
-   >
-   >**Pakketten**  >  **Openbaar**  >  **Hotfixes**
-   Vervolgens wordt het pakket in Package Manager op uw lokale instantie ook weergegeven onder:
-   **Pakketten**  >  **Openbaar**  >  **Hotfixes**
-
-1. Klik **Installeren** om het pakket te installeren op uw lokale AEM.
-
-   >[!NOTE]
-   Als het pakket al op uw instantie is geïnstalleerd, wordt de **Installed**-indicator naast het pakket weergegeven in plaats van de **Install**-knop.
-
-   >[!CAUTION]
-   Door een pakket te installeren, kan bestaande inhoud in de opslagplaats worden overschreven. Daarom adviseren wij dat u **Test eerst installeert** uitvoert. Op deze manier kunt u controleren of de inhoud van het pakket conflicten oplevert met uw bestaande inhoud.
-
-### Pakketten downloaden naar uw bestandssysteem vanuit pakketdeling {#downloading-packages-to-your-file-system-from-package-share}
-
-[Het downloaden en ](#downloading-and-installing-packages-from-package-share) installeren is heel handig, maar u kunt het pakket desgewenst ook downloaden en opslaan in uw lokale bestandssysteem:
-
-1. Klik in Pakket delen op het pictogram of de naam van het pakket.
-1. Klik op het tabblad **Middelen**.
-1. Klik **Downloaden naar schijf**.
-
-### Een pakket {#uploading-a-package} uploaden
-
-Met het Aandeel van het Pakket, kunt u pakketten uploaden aan uw bedrijf-intern gebied van pakketaandeel. Hierdoor kunnen ze worden gedeeld binnen uw bedrijf.
-
-Deze pakketten zijn *niet* beschikbaar aan de algemene AEM gemeenschap, maar zijn beschikbaar aan alle gebruikers die bij uw bedrijf worden geregistreerd.
-
-Om pakketten te uploaden uw bedrijf-interne Delen van het Pakket:
+Voor meer informatie, heb een blik bij de [documentatie van de Distributie van de Software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!CAUTION]
-Als u een pakket wilt uploaden naar Package Share, moet u eerst een groepsmap maken die naar uw bedrijf in uw lokale pakketbeheer wordt genoemd. Bijvoorbeeld geometrixx. Alle pakketten die voor delen moeten worden geüpload, moeten in deze groepsmap worden geplaatst.
-Pakketten in de thuislijst van Package Manager of in andere mappen kunnen niet worden gedeeld.
-
-1. Open **Pakketbeheer** en navigeer naar het pakket dat u wilt uploaden.
-
-1. Klik op het pakketpictogram om het te openen.
-1. Klik **Delen** om het dialoogvenster voor het uploaden van het pakket naar Delen in pakket te openen.
-1. Als u nog niet bent aangemeld bij Delen van pakket, moet u uw aanmeldingsgegevens invoeren.
-
-   Wanneer u bent aangemeld, geeft AEM details weer over het te uploaden pakket:
-
-   ![chlimage_1-347](assets/chlimage_1-347.png)
-
-1. Klik **Delen** om het pakket te uploaden naar het interne Delen van het pakket van uw bedrijf.
-
-   AEM geeft de status weer en geeft aan wanneer het pakket klaar is met uploaden, waarna u op **x** (rechterbovenhoek) kunt klikken om het venster **Pakket delen** te sluiten.
-
-1. Nadat het uploaden is voltooid, kunt u naar de interne map van uw bedrijf navigeren om het pakket te zien dat u net hebt gedeeld.
-
->[!NOTE]
-Als u een pakket wilt wijzigen dat beschikbaar is in Package Share, moet u het downloaden, opnieuw samenstellen en vervolgens opnieuw uploaden naar Package Share.
-
-### Een pakket {#deleting-a-package} verwijderen
-
-U kunt alleen pakketten verwijderen die u hebt geüpload door als volgt te werk te gaan:
-
-1. Controleer in uw bedrijfsstructuur de pakketgroep die het pakket bevat.
-1. Klik op het pakket.
-1. Klik op de knop Verwijderen.
-
-   ![](do-not-localize/chlimage_1-30.png)
-
-1. Klik **Verwijderen** om te bevestigen dat u het pakket wilt verwijderen.
-
-### Pakketten semiprivé maken {#making-packages-semi-private}
-
-U kunt pakketten delen buiten uw organisatie, maar niet openbaar. Deze pakketten worden als semi-particulier beschouwd. Als u deze semi-private pakketten wilt delen, hebt u hulp nodig van Adobe Support. Om dit te doen, open een kaartje met de Steun van Adobe die om een pakket verzoekt wordt ter beschikking gesteld buiten uw organisatie. Ze vragen je om een lijst met Adobe ID die je toegang wilt geven tot je pakketten.
+>
+>AEM pakketbeheer is momenteel niet bruikbaar voor softwaredistributie. U downloadt uw pakketten naar uw lokale schijf.
