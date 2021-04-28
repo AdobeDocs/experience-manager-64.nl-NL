@@ -3,7 +3,7 @@ title: Hoe te om AEM Projecten te bouwen gebruikend Apache Maven
 description: In dit document wordt beschreven hoe u een AEM project instelt op basis van Apache Maven
 exl-id: 6ae0e387-468b-4cea-9e3f-0816d67b7621
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 88cef11d2407d2f05027b38b4eb9fef6493ec055
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 5%
@@ -12,7 +12,7 @@ ht-degree: 5%
 
 # Hoe te om AEM Projecten te bouwen gebruikend Apache Maven {#how-to-build-aem-projects-using-apache-maven}
 
-AEM 6.5 houdt zich aan de meest recente beste praktijken voor pakketbeheer en projectstructuur, zoals geïmplementeerd door het meest recente AEM Project Archetype voor zowel de implementaties op locatie als in AMS.
+AEM 6.4 houdt zich aan de meest recente beste praktijken voor pakketbeheer en projectstructuur, zoals geïmplementeerd door het meest recente AEM Project Archetype voor zowel de implementaties ter plaatse als de AMS.
 
 >[!TIP]
 >
