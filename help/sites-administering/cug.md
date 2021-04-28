@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
 exl-id: 3a052270-b3ea-4d17-915c-be2b51cdc482
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
@@ -84,7 +84,7 @@ De CUG toepassen op een pagina:
 
    >[OPMERKING!]
    >
-   > CUG&#39;s op het tabblad Machtigingen kunnen niet worden teruggedraaid van Blauwdrukken naar Actieve kopieën. Plan dit probleem bij het configureren van Live Copy.
+   > CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
    >
    > Zie [deze pagina](closed-user-groups.md#aem-livecopy) voor meer informatie.
 
