@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
-feature: Multi Site Manager
+feature: Beheer van meerdere sites
 exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1552'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,10 @@ De extra voordelen van het gebruiken van een blauwdrukconfiguratie zijn dat zij:
 Als er niet naar een blauwdrukconfiguratie wordt verwezen, kunnen rollouts alleen worden geïnitieerd vanuit de live kopieën zelf, waarbij inhoud van de bron wordt opgehaald.
 
 Wanneer het creëren van een nieuwe plaats met levende kopie, is het voordelig om blauwdrukconfiguraties tot stand te brengen om de beschikbaarheid van de volledige MSM eigenschapreeks te verzekeren.
+
+>[!NOTE]
+>
+>U kunt CUG-groepen niet uitrollen naar Actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
 
 ## Componenten en containersynchronisatie {#components-and-container-synchronization}
 
