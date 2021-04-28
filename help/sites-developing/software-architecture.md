@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: 4c5896a4-d3f4-4278-9af3-538ab10cd210
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: b7d1a2435e33d4fdd1d030d81ff1ca1b65700fa6
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,19 @@ Door te bepalen welke componenten in elk parsys op de pagina kunnen worden omvat
 
 SOLID is een acroniem dat vijf architecturale principes beschrijft die zouden moeten worden nageleefd:
 
-* **Het beginsel van**&#x200B;één enkele verantwoordelijkheid - elke module, klasse, methode, enz. zou maar één ding moeten doen.
+* **** Eén verantwoordelijkheidsbeginsel - elke module, klasse, methode, enz. moet maar één verantwoordelijkheid hebben.
 * **** Open/Gesloten Beginsel - modules moeten voor verlenging openstaan en voor wijziging worden gesloten.
 * **Beginsel van** vervanging door Liskov - soorten moeten door hun subtypes kunnen worden vervangen.
 * **Beginsel van** interfacesegregatie - geen enkele cliënt mag worden gedwongen af te hangen van methoden die hij niet gebruikt.
 * **Beginsel van** inversie van afhankelijkheid - Modules op hoog niveau mogen niet afhangen van modules op laag niveau. Beide moeten afhankelijk zijn van abstracties. Abstracties mogen niet afhankelijk zijn van details. Details moeten afhankelijk zijn van abstracties.
 
 Het streven naar naleving van deze vijf beginselen moet resulteren in een systeem dat een strikte scheiding van zorgen heeft.
+
+>[!TIP]
+>
+>SOLID is een algemeen gebruikt concept in object-oriented programmering en elk element wordt uitgebreid besproken in de industrie literatuur.
+>
+>Dit is slechts een korte samenvatting die wordt gepresenteerd voor bewustwording en u wordt aangespoord om meer vertrouwd te raken met deze concepten.
 
 ### Volg het Robustness-beginsel {#follow-the-robustness-principle}
 
