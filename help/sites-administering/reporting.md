@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2815'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Om u te helpen de staat van uw instantie controleren en analyseren, verstrekt AE
 * [Gebruikersrapport](#user-report)
 * [Rapport voor werkstroominstantie](#workflow-instance-report)
 * [Workflowrapport](#workflow-report)
+
+>[!NOTE]
+>
+>Deze rapporten zijn alleen beschikbaar in de klassieke gebruikersinterface. Voor systeemcontrole en rapportering in moderne UI, zie [Het Dashboard van Verrichtingen.](/help/sites-administering/operations-dashboard.md)
 
 Alle rapporten kunnen van **Tools** console worden betreden. Selecteer **Rapporten** in de linkerruit, dan klik het vereiste rapport in de juiste ruit tweemaal om het voor het bekijken en/of configuratie te openen.
 
