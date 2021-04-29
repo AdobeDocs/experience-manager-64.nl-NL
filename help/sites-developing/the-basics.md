@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: 0b263211-6cfd-4b4c-bfa5-e36f5e06c861
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5c78f7e5143982490739946d5d142e144fca9593
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3346'
 ht-degree: 0%
 
 ---
@@ -175,9 +175,9 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` `hr/jobs` da
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen op .html (standaardaanvraagtypen, standaardindeling)
 
-   Het script wordt /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
+   Het script zal /apps/hr/jobs/jobs.esp zijn; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
-* POST-aanvragen (alle aanvraagtypen behalve GET/HEAD, de methodenaam moet in hoofdletters staan)
+* Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
 
    POST wordt gebruikt in de scriptnaam.
 
@@ -440,7 +440,7 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zu
 
 * `/var`
 
-   bestanden die door het systeem worden gewijzigd en bijgewerkt; zoals auditlogboeken, statistieken, gebeurtenisafhandeling. De submap `/var/classes` bevat de Java-servlets in bron- en gecompileerde formulieren die zijn gegenereerd op basis van de componentscripts.
+   bestanden die door het systeem worden gewijzigd en bijgewerkt; zoals auditlogboeken, statistieken, gebeurtenisafhandeling.
 
 ## Omgevingen {#environments}
 
