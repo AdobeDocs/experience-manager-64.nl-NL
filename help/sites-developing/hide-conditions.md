@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 646146b1-55bf-4d13-ba3d-2e9bdfd8d8af
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c408d1072722fe4419e351b4f8bf257cf2e5a8a2
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
@@ -72,12 +72,12 @@ Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Een beleidsknooppunt wordt gemaakt onder `/conf/we-retail/settings/wcm/policies/weretail/components/content/lis`t met een eigenschap `disableChildren` ingesteld op `true`.
-1. De voorwaarde hide wordt gedefinieerd als de waarde van een `granite:hid`e-eigenschap op het dialoogeigenschapknooppunt `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
+1. Een beleidsknooppunt wordt gemaakt onder `/conf/we-retail/settings/wcm/policies/weretail/components/content/list` met een eigenschap `disableChildren` ingesteld op `true`.
+1. De voorwaarde hide wordt gedefinieerd als de waarde van een eigenschap `granite:hide` op het knooppunt van de dialoogeigenschap `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. De waarde van `disableChildren` wordt gehaald uit de ontwerpconfiguratie en de uitdrukking `${cdDesign.disableChildren}` evalueert aan `false`, betekenend zal de optie niet als deel van de component worden teruggegeven.
+1. De waarde van `disableChildren` wordt gehaald uit de ontwerpconfiguratie en de uitdrukking `${cqDesign.disableChildren}` evalueert aan `false`, betekenend zal de optie niet als deel van de component worden teruggegeven.
 
    U kunt de huidenuitdrukking als waarde van `granite:hide` bezit [in GitHub hier](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40) bekijken.
 
