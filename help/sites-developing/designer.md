@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: 8a4fc7c7-03bc-44db-93f1-dbd76fc9dbd7
 translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9ae048ca2811a56c5d6f0b2415fcfcccc4384dbf
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >In dit artikel wordt beschreven hoe u een website maakt op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals gedetailleerd wordt beschreven in het artikel [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
-U moet een ontwerp voor uw website maken en AEM dit doen met de Designer.
+Met de Designer wordt een ontwerp voor uw website gemaakt met de AEM [Klassieke UI](/help/release-notes/touch-ui-features-status.md).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Uw ontwerp kan worden gedefinieerd in de sectie **designs** van het tabblad **To
 
 Hier kunt u de structuur maken die nodig is om het ontwerp op te slaan en vervolgens de trapsgewijze stijlpagina&#39;s en de vereiste afbeeldingen uploaden.
 
-Ontwerpen worden opgeslagen onder `/etc/designs`. Het pad naar het ontwerp dat voor een website moet worden gebruikt, wordt opgegeven met de eigenschap `cq:designPath` van het knooppunt `jcr:content`.
+Ontwerpen worden opgeslagen onder `/apps/<your-project>`. Het pad naar het ontwerp dat voor een website moet worden gebruikt, wordt opgegeven met de eigenschap `cq:designPath` van het knooppunt `jcr:content`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -56,7 +56,7 @@ Om uw ontwerp te realiseren zult u nodig hebben:
 
 ### Overwegingen bij het ontwerpen van uw website {#considerations-when-designing-your-website}
 
-Wanneer u een website ontwikkelt, wordt het ten zeerste aanbevolen om afbeeldingen en CSS-bestanden op te slaan onder `/etc/design/<project>`, zodat u op basis van het huidige ontwerp kunt verwijzen naar uw bronnen, zoals in het volgende fragment wordt beschreven.
+Wanneer u een website ontwikkelt, wordt het ten zeerste aanbevolen om afbeeldingen en CSS-bestanden op te slaan onder `/apps/<your-project>`, zodat u op basis van het huidige ontwerp kunt verwijzen naar uw bronnen, zoals in het volgende fragment wordt beschreven.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
