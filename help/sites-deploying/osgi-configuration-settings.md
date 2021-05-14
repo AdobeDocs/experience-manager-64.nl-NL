@@ -9,12 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
-feature: Configuring
+feature: Configureren
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 1242b301d82402c28a9c070fad024b823f8cef45
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
@@ -354,7 +353,7 @@ Er zijn verschillende configuratie-eigenschappen beschikbaar:
 PathPath waarvoor deze authentificatiemanager actief is. Als deze parameter leeg wordt gelaten, is de authentificatiemanager gehandicapt. Het pad/zorgt er bijvoorbeeld voor dat de verificatiehandler wordt gebruikt voor de gehele gegevensopslagruimte.
 
 * **Service**
-RankingOSGi Framework Service Ranking value wordt gebruikt om de volgorde aan te geven die wordt gebruikt voor het aanroepen van deze service. Dit is een 
+RankingOSGi Framework Service Ranking value wordt gebruikt om de volgorde aan te geven die wordt gebruikt om deze service aan te roepen. Dit is een 
 `int` waarde waarbij hogere waarden een hogere prioriteit aangeven.
 
    De standaardwaarde is `0`.
@@ -440,29 +439,6 @@ FormatGeeft de indeling aan waarin de gebruikers-id wordt opgegeven. Gebruiken:
 Zie [Versieopruiming](/help/sites-deploying/version-purging.md) voor meer informatie.
 
 **Day CQ Workflow Email Notification** ServiceConfigureer de e-mailinstellingen voor meldingen die door een workflow worden verzonden.
-
-**Day CQSE HTTP** ServiceControl the CQ Servlet Engine:
-
-* **NIO for HTTP**, whether or not to use NIO for HTTP. Heeft als standaardwaarde true. Wordt alleen gebruikt als HTTP is ingeschakeld.
-* **Time-out** verbinding, time-out verbinding in milliseconden. Deze eigenschap is van toepassing op zowel HTTP- als HTTPS-verbindingen. Wordt standaard ingesteld op 60 seconden.
-
-* **HTTPS inschakelen,** ongeacht of HTTPS is ingeschakeld. De standaardwaarde is false.
-* **Time-out** sessie, standaardlevensduur van een HTTP-sessie opgegeven in minuten. Als de time-out 0 of minder is, wordt er nooit een time-out voor de sessies uitgevoerd. Wordt standaard ingesteld op 10 minuten.
-* **Debug Logging**, Of om DEBUG niveauberichten of niet te schrijven. De standaardwaarde is false.
-* **Buffergrootte** aanvragen, grootte van de buffer voor aanvragen in bytes. De standaardwaarde is 8 kB.
-* **Maximum aantal draden**, Maximum aantal draden om verzoeken te gebruiken te behandelen. De standaardwaarde is 200.
-
-De volgende eigenschappen zijn alleen van toepassing als HTTPS is ingeschakeld.
-
-* **HTTPS-poort**, poort om te luisteren naar HTTPS-aanvraag. De standaardwaarde is 433.
-* **NIO voor HTTPS**, Al dan niet om NIO voor HTTP te gebruiken. Wordt standaard ingesteld op de waarde van de eigenschap NIO for HTTP.
-* **Keystore**, absoluut pad naar het sleutelarchief voor gebruik bij HTTPS. Vereist als HTTPS is ingeschakeld.
-* **Wachtwoord** sleutelarchief, Wachtwoord voor toegang tot sleutelarchief.
-* **Sleutelalias**, alias van de geheime sleutel in het sleutelarchief.
-* **Sleutelwachtwoord**, Wachtwoord om de geheime sleutel in Keystore te ontgrendelen.
-* **Clientcertificaat**, vereist dat de client een geldig certificaat levert. Heeft als standaardwaarde geen.
-
-Zie ook [HTTP via SSL inschakelen](/help/sites-administering/ssl-by-default.md) voor meer informatie over de SSL-gerelateerde opties en een volledige beschrijving van hoe u HTTPS voor CQSE kunt inschakelen.
 
 **CQ Rewriter HTML Parser Factory**
 
