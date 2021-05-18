@@ -9,12 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configuring
+feature: Configureren
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2713'
 ht-degree: 0%
 
 ---
@@ -276,7 +275,7 @@ De volgende montages OSGi zijn beschikbaar voor de Koude Reserve dienst:
 
 * **Toegestane IP-Randen (`primary.allowed-client-ip-ranges`):** - de IP waaiers die primair verbindingen van zal toestaan.
 * **Secure (`secure`):SSL-codering** inschakelen. Als u deze instelling wilt gebruiken, moet deze in alle gevallen zijn ingeschakeld.
-* **Standby Read Timeout (`standby.readtimeout`):** Timeout voor verzoeken die van de reserve instantie in milliseconden worden uitgegeven. **De aanbevolen time-out is 43200000. U wordt doorgaans aangeraden de time-out in te stellen op een waarde van ten minste 12 uur.**
+* **Standby Read Timeout (`standby.readtimeout`):** Timeout voor verzoeken die van de reserve instantie in milliseconden worden uitgegeven. De standaardwaarde is 60000 (één minuut).
 * **Standby Automatische Overbodig Opschonen (`standby.autoclean`):** Roep de schoonmaakmethode als de grootte van de opslag op een synchronisatiecyclus stijgt.
 
 >[!NOTE]
