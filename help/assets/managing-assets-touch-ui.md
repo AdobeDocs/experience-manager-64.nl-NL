@@ -3,11 +3,10 @@ title: Uw digitale middelen beheren met AEM Assets
 description: Meer informatie over de verschillende functies voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: Middelenbeheer, Zoeken, Uitvoeringen, Samenwerking
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '9762'
 ht-degree: 1%
@@ -368,7 +367,7 @@ Enkele beperkingen van de functie zijn:
 
 1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]**. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op **[!UICONTROL Enter]**. De nieuwe tag wordt opgeslagen in AEM.
 
-   YouTube vereist dat er tags worden gepubliceerd en dat er een koppeling naar YouTube staat (als er een geschikte koppeling is gevonden).
+   YouTube vereist dat tags worden gepubliceerd en dat er een koppeling naar YouTube staat (als er een geschikte koppeling is gevonden).
 Als u tags wilt maken, hebt u schrijfmachtigingen nodig voor `/content/cq:tags/default` in de CRX-opslagruimte.
 
 1. Tik op het tabblad **[!UICONTROL Advanced]** en tik vervolgens op de juiste positie op de ster om de gewenste waardering toe te wijzen.
@@ -385,7 +384,7 @@ Als u tags wilt maken, hebt u schrijfmachtigingen nodig voor `/content/cq:tags/d
    * Kanalen/apparaten waardoor het middel werd gebruikt.
    * Creatieve oplossingen waarbij het middel onlangs is gebruikt.
 
-   Zie [Asset Insights](touch-ui-asset-insights.md) voor meer informatie.
+   Zie [Elementinzichten](touch-ui-asset-insights.md) voor meer informatie.
 
 1. Tik op **[!UICONTROL Save & Close]**.
 1. Navigeer naar de interface Elementen. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving, classificaties, enzovoort, worden weergegeven op de elementenkaart in de kaartweergave en onder de desbetreffende kolommen in de lijstweergave.
@@ -710,7 +709,7 @@ U kunt ook afbeeldingen met hyperlinks toevoegen met de afbeeldingseditor. Zie [
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## De tijdlijn {#timeline} gebruiken
+## De tijdlijn gebruiken {#timeline}
 
 Met **[!UICONTROL Timeline]** kunt u verschillende gebeurtenissen voor een geselecteerd item weergeven, zoals actieve workflows voor een element, opmerkingen, annotaties, activiteitenlogbestanden en versies.
 
@@ -729,7 +728,7 @@ In de [Collections console](managing-collections-touch-ui.md#navigating-the-coll
 
    ![timeline_options](assets/timeline_options.png)
 
-## Annotaties {#annotating} toevoegen
+## Annotaties toevoegen {#annotating}
 
 Annotaties zijn opmerkingen of toelichtingen die aan afbeeldingen of video&#39;s worden toegevoegd. Annotaties bieden marketers de mogelijkheid samen te werken en feedback over middelen te geven.
 
