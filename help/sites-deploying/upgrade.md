@@ -10,10 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
-feature: Upgrading
+feature: Bijwerken
 exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 0%
@@ -51,7 +50,7 @@ Hieronder vindt u een aantal belangrijke wijzigingen in de laatste paar versies 
 
 AEM 6.0 introduceerde de nieuwe opslagplaats voor jakobak. Persistentiemanagers zijn vervangen door [Micro Kernels](/help/sites-deploying/recommended-deploys.md). Vanaf versie 6.1 wordt CRX2 niet meer ondersteund. Een migratiehulpmiddel genoemd crx2oak moet worden in werking gesteld om CRX2 bewaarplaatsen van 5.6.1 instanties te migreren. Zie [Het CRX2OAK-migratiehulpmiddel gebruiken](/help/sites-deploying/using-crx2oak.md) voor meer informatie.
 
-Als Asset Insights moet worden gebruikt en u een upgrade uitvoert van een versie die ouder is dan AEM 6.2, moeten middelen worden gemigreerd en id&#39;s worden gegenereerd via een JMX-boon. In onze interne tests werden 125.000 bedrijfsmiddelen op een TarMK-omgeving over een uur gemigreerd, maar de resultaten kunnen afwijken.
+Als Assets Insights moet worden gebruikt en u een upgrade uitvoert vanaf een versie die ouder is dan AEM 6.2, moeten middelen worden gemigreerd en id&#39;s worden gegenereerd via een JMX-boon. In onze interne tests werden 125.000 bedrijfsmiddelen op een TarMK-omgeving over een uur gemigreerd, maar de resultaten kunnen afwijken.
 
 AEM 6.3 introduceerde een nieuw formaat voor `SegmentNodeStore`, dat de basis van de implementatie TarMK is. Als u een upgrade uitvoert van een versie die ouder is dan AEM 6.3, is hiervoor een migratie naar de opslagplaats vereist als onderdeel van de upgrade, waarbij systeemdowntime wordt gebruikt.
 
