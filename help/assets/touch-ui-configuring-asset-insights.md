@@ -1,12 +1,11 @@
 ---
 title: Elementinzichten configureren
-description: Leer hoe u Asset Insights configureert in AEM Assets.
+description: Leer hoe u Assets Insights configureert in AEM Assets.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Asset Insights, Asset Reports
 role: Business Practitioner,Administrator
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 1%
@@ -15,7 +14,7 @@ ht-degree: 1%
 
 # Elementinzichten configureren {#configuring-asset-insights}
 
-Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM middelen die door websites van derden van Adobe Analytics worden gebruikt. Om Asset Insights in in staat te stellen deze gegevens op te halen en inzichten te genereren, dient u eerst de functie te configureren voor integratie met Adobe Analytics.
+Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM middelen die door websites van derden van Adobe Analytics worden gebruikt. Om Assets Insights toe te laten om deze gegevens terug te winnen en inzichten te produceren, vorm eerst de eigenschap om met Adobe Analytics te integreren.
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM mid
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Klik of tik op **[!UICONTROL Authenticate]**.
-1. Nadat AEM uw geloofsbrieven voor authentiek verklaart, van de **[!UICONTROL Report Suite]** lijst, kies een het rapportsuite van Adobe Analytics van waar u de Inzichten van Activa wilt halen om gegevens te halen. Klik op **[!UICONTROL Add]**.
+1. Nadat AEM uw geloofsbrieven voor authentiek verklaart, van de **[!UICONTROL Report Suite]** lijst, kies een het rapportreeks van Adobe Analytics van waar u de Inzichten van Activa wilt om gegevens te halen. Klik op **[!UICONTROL Add]**.
 1. Nadat AEM de rapportsuite hebt ingesteld, klikt of tikt u op **[!UICONTROL Done]**.
 
 ## Paginanummering {#page-tracker}
