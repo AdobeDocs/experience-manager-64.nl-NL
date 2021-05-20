@@ -6,16 +6,15 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
-translation-type: tm+mt
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 36%
+source-wordcount: '625'
+ht-degree: 35%
 
 ---
 
 
-# Elementengids {#assets}
+# Hulplijn voor middelen {#assets}
 
 + [Gebruikershandleiding voor middelen](home.md)
 + [AEM 6.4 Opmerkingen bij de release van activa](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
@@ -108,7 +107,7 @@ ht-degree: 36%
    + [AEM Assets integreren met InDesign-server](indesign.md)
    + [Metadataprofielen](metadata-profiles.md)
    + [Digital Rights Management in activa](drm.md)
-   + [Demo-pakket gebruiken voor Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Demo-pakket gebruiken voor elementinzichten](touch-ui-using-demo-package-for-asset-insights.md)
    + [Aanbevolen werkwijzen voor het verschuiven van elementen](assets-offloading-best-practices.md)
    + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](assets-file-format-best-practices.md)
    + [Aanbevolen werkwijzen voor middelenbewaking](assets-monitoring-best-practices.md)
@@ -124,7 +123,7 @@ ht-degree: 36%
    + [Aanbevolen werkwijzen voor het delen van mappen AEM naar Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Metagegevensschema van map](folder-metadata-schema.md)
    + [Slimme tags beheren](managing-smart-tags.md)
-+ Merk-portal {#brandportal}
++ Brand Portal {#brandportal}
    + [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Assets publiceren naar Brand Portal](brand-portal-publish-assets.md)
    + [Verzamelingen publiceren naar Brand Portal](brand-portal-publish-collection.md)
@@ -155,13 +154,13 @@ ht-degree: 36%
    + [Assets van AEM downloaden](download-assets-from-aem.md)
    + [Asynchrone bewerkingen](asynchronous-jobs.md)
    + [Lichtbak](touch-ui-light-box.md)
-   + [Asset Insights inschakelen via DTM](touch-ui-using-dtm-for-asset-insights.md)
+   + [Elementeninzicht inschakelen via DTM](touch-ui-using-dtm-for-asset-insights.md)
    + [Elementinzichten configureren](touch-ui-configuring-asset-insights.md)
    + [Vertaalwolkenservices toepassen op mappen](transition-cloud-services.md)
    + [Paginanummering gebruiken en code insluiten in webpagina&#39;s](touch-ui-using-page-tracker.md)
    + [Samengestelde elementen beheren](managing-linked-subassets.md)
    + [Verwante activa](related-assets.md)
-   + [Asset Insights ](touch-ui-asset-insights.md)
+   + [Assets Insights](touch-ui-asset-insights.md)
    + [Video-elementen zoeken](search-video-assets.md)
    + [Persoonlijke map delen](private-folder.md)
    + [Richtlijnen voor training voor Smart Content Service](smart-tags-training-guidelines.md)
