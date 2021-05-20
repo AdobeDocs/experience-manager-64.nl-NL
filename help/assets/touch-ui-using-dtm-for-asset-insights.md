@@ -1,32 +1,31 @@
 ---
-title: Asset Insights inschakelen via DTM
-description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
+title: Elementeninzicht inschakelen via DTM
+description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Elementinzichten in te schakelen.
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: Asset Insights, Asset Reports
 role: Business Practitioner,Administrator
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
 
 ---
 
-# Asset Insights inschakelen via DTM {#enabling-asset-insights-through-dtm}
+# Elementeninzicht inschakelen via DTM {#enabling-asset-insights-through-dtm}
 
-Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt uw trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, of u kunt DTM gebruiken om labels voor Asset Insights in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
+Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt de trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen om Assets Insights te gebruiken, of u kunt DTM gebruiken om asset Insights-tags in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
 
 >[!CAUTION]
 >
 >Adobe DTM is vervangen door Adobe Experience Platform Launch en zal binnenkort [einde van leven](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. Adobe raadt u aan [Launch te gebruiken voor elementinzichten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
-Voer deze stappen uit om Asset Insights in te schakelen via DTM:
+Voer deze stappen uit om Elementeninzichten door DTM toe te laten:
 
 1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Insights Configuration]**.
 1. [AEM instantie configureren met DTM Cloud Service](../sites-administering/dtm.md)
 
-   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** bezoekt via het pictogram Profiel. Deze stap is niet vereist vanuit het standpunt van Asset Insights, omdat de integratie van AEM Sites met Asset Insights nog steeds in de werkzaamheden plaatsvindt.
+   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** bezoekt via het pictogram Profiel. Deze stap is niet vereist vanuit het oogpunt van Assets Insights, omdat de integratie van AEM Sites met Assets Insights nog steeds in de werkzaamheden plaatsvindt.
 
 1. Meld u aan bij [https://dtm.adobe.com](https://dtm.adobe.com/) en selecteer een bedrijf.
 1. Een bestaande webeigenschap maken/openen
@@ -51,7 +50,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM:
    >
    >* `AppMeasurement.js` is verwijderd. Naar verwachting is het beschikbaar via het Adobe Analytics-hulpprogramma van DTM.
    >* De vraag aan `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
-   >* Afhankelijk van de plaats waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld AEM, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
+   >* Afhankelijk van de locatie waar Assets Insights Page Tracker wordt gehost (bijvoorbeeld AEM, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
    >* Voor AEM paginanummering moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzendingsinstantie.
 
 
