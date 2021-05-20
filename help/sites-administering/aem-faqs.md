@@ -7,8 +7,7 @@ uuid: af197bcc-2c61-4c64-b781-f24d83c27c82
 contentOwner: jsyal
 discoiquuid: c66b65af-443f-4fc2-b775-9f4e3c60285a
 exl-id: 76110cf4-0fd8-4203-b256-c0818a1b64d2
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 0%
@@ -134,7 +133,7 @@ Als tussenoplossing kunt u de component ook handmatig uitschakelen via de gebrui
 
 ### Hoe te om de Inzichten van Activa met AEM 6.4 instantie te vormen? {#how-to-configure-asset-insights-with-aem-instance}
 
-Raadpleeg [Asset Insights instellen met AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html) voor informatie over het instellen en configureren van Asset Insights voor Experience Manager die wordt geïmplementeerd via Adobe Activation (DTM).
+Om de Inzichten van Activa voor Experience Manager op te zetten en te vormen die via Adobe activering (DTM) worden opgesteld, verwijs naar [Inzicht van Activa met AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
 
 ### Hoe te om admin consoles aan te passen? {#how-to-customize-admin-consoles}
 
