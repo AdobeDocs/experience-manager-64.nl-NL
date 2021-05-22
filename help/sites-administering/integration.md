@@ -10,10 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 exl-id: 1ee7ccbd-8654-4d03-8a67-2c41863ae951
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,6 @@ ht-degree: 0%
 * [Integreren met services van derden](/help/sites-administering/third-party-services.md)
 * [Analyse met externe providers](/help/sites-administering/external-providers.md)
 * [Catalogusproducent](/help/sites-administering/catalog-producer.md)
-* [AEM Assets-integratie configureren met Marketing Cloud en Creative Cloud](/help/sites-administering/configure-assets-cc-integration.md)
 * [SharePoint-connector](/help/sites-administering/sharepoint-connector.md)
 
 De volgende informatie is beschikbaar over het integreren AEM met andere Adobe of derdediensten:
