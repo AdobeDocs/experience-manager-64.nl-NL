@@ -8,16 +8,15 @@ breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature: Beheer
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 5%
+source-wordcount: '649'
+ht-degree: 6%
 
 ---
 
 
-# AEM 6.4 Gebruikershandleiding {#administering} beheren
+# AEM 6.4 Gebruikershandleiding voor het beheer {#administering}
 
 + [Overzicht van de gebruikershandleiding beheren](home.md)
 + Sitekenmerken {#introduction}
@@ -143,7 +142,6 @@ ht-degree: 5%
    + [Integreren met BrightStor Content Optimizer](brightedge.md)
    + [Aanbevolen procedures voor e-mailsjablonen](best-practices-for-email-templates.md)
    + [Catalogusproducent](catalog-producer.md)
-   + [AEM Assets-integratie configureren met Experience Cloud en Creative Cloud](configure-assets-cc-integration.md)
    + [Integreren met Silverpop Engage](silverpop.md)
    + [Integreren met Adobe Campaign](campaign.md)
    + [Integreren met ExactTarget](exacttarget.md)
