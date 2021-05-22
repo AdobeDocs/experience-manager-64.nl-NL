@@ -2,11 +2,10 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 3%
+source-wordcount: '1310'
+ht-degree: 2%
 
 ---
 
@@ -152,6 +151,7 @@ afgekeurd.
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
+| Integratie met [!DNL Experience Cloud] | U kunt uw elementen synchroniseren met [!DNL Experience Cloud] door middel van een configuratie via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] voorheen genoemd  [!DNL Adobe Marketing Cloud]. | Als u vragen hebt, neemt u contact op met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support). |
 | Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. De [ActivityMap-plug-in van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt. |
 | Components-Forms | Form Captcha (stichting/componenten/form/captcha) | Gebruik in plaats hiervan de component ReCaptcha door Google |
 | Onderdelen | Presentatie (basis/componenten/presentatie) | Geen vervanging |
