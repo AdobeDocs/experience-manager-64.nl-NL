@@ -1,21 +1,17 @@
 ---
 title: Smart Imaging
-seo-title: Slimme afbeeldingen
 description: Slimme beeldverwerking maakt gebruik van de unieke weergavekenmerken van elke gebruiker, zodat deze automatisch de juiste afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid.
-seo-description: Slimme beeldverwerking maakt gebruik van de unieke weergavekenmerken van elke gebruiker, zodat deze automatisch de juiste afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid.
-uuid: c11e52ba-8d64-4dc5-b30a-fc10c2b704e5
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
-feature: Smart Services
+feature: Slimme services
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 331aca21069a0325da499279de5480c3f8536335
+source-git-commit: 74d2613d9d0037ef13f05085d1ea44f0ea377f40
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
@@ -44,9 +40,54 @@ De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisa
 
 Net als hierboven heeft Adobe ook een test uitgevoerd met 7009 URL&#39;s van live klantsites. Ze konden gemiddeld 38% meer optimalisatie voor de bestandsgrootte voor JPEG bereiken. Voor PNG met WebP-indeling konden deze bestanden gemiddeld nog 31% optimaliseren. Dit soort optimalisatie is mogelijk vanwege de mogelijkheid van Smart Imaging.
 
+Op het mobiele web worden de uitdagingen nog verergerd door twee factoren:
+
+* Grote verscheidenheid aan apparaten met verschillende vormfactoren en high-resolution vertoningen.
+* Beperkte netwerkbandbreedte.
+
+Wat afbeeldingen betreft, is het de bedoeling om afbeeldingen van de beste kwaliteit zo efficiënt mogelijk te bedienen.
+
+### Optimalisatie van apparaatpixelverhoudingen {#dpr}
+
+De apparaatpixelverhouding (DPR) - ook wel CSS-pixelverhouding genoemd - is de relatie tussen de fysieke pixels van een apparaat en logische pixels. Vooral met de komst van Retina-schermen groeit de pixelresolutie van moderne mobiele apparaten snel.
+
+Als u de pixelverhouding van het apparaat inschakelt, wordt de afbeelding weergegeven met de native resolutie van het scherm, waardoor deze er scherp uitziet.
+
+Als u de DPR-configuratie voor Smart Imaging inschakelt, wordt de gevraagde afbeelding automatisch aangepast op basis van de pixeldichtheid van de weergave waarvan de aanvraag wordt verzonden. Momenteel is de pixeldichtheid van het beeldscherm afkomstig van Akamai CDN-headerwaarden.
+
+| Toegestane waarden in de URL van een afbeelding | Beschrijving |
+|---|---|
+| `dpr=off` | Schakel DPR-optimalisatie op individueel afbeeldings-URL-niveau uit. |
+| `dpr=on,dprValue` | Overschrijf de DPR-waarde die door Smart Imaging wordt gedetecteerd, met een aangepaste waarde (zoals wordt gedetecteerd door elke logica aan de clientzijde of andere methode). Toegestane waarde voor `dprValue` is een getal groter dan 0. Opgegeven waarden van 1,5, 2 of 3 zijn standaard. |
+
+>[!NOTE]
+>
+>* U kunt `dpr=on,dprValue` zelfs gebruiken als het bedrijfniveau DPR plaatsen als weg.
+>* Als de resulterende afbeelding door DPR-optimalisatie groter is dan de Dynamic Media-instelling MaxPix, wordt de breedte van MaxPix altijd herkend door de hoogte-breedteverhouding van de afbeelding te behouden.
+
+
+| Grootte aangevraagde afbeelding | DPR-waarde | Afgeleverde afbeeldingsgrootte |
+|---|---|---|
+| 816x500 | 1 | 816x500 |
+| 816x500 | 2 | 1632x1000 |
+
+### Informatie over netwerkbandbreedteoptimalisatie {#network-bandwidth-optimization}
+
+Als u Netwerkbandbreedte inschakelt, wordt automatisch de beeldkwaliteit aangepast die wordt aangeboden op basis van de werkelijke netwerkbandbreedte. Voor slechte netwerkbandbreedte, wordt de optimalisering DPR automatisch uitgezet, zelfs als het reeds aanstaat.
+
+Uw bedrijf kan desgewenst de optimalisatie van de netwerkbandbreedte op het niveau van de individuele afbeelding uitschakelen door `network=off` aan de URL van de afbeelding toe te voegen.
+
+| Toegestane waarde in de URL van een afbeelding | Beschrijving |
+|---|---|
+| `network=off` | Hiermee schakelt u netwerkoptimalisatie op individueel afbeeldings-URL-niveau uit. |
+
+>[!NOTE]
+>
+>DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. iPhone5 met DPR=2 en iPhone12 met DPR=3 tonen beide DPR=2. Voor apparaten met hoge resolutie is het beter DPR=2 te verzenden dan DPR=1 te verzenden. Binnenkort beschikbaar: Adobe werkt aan code aan de clientzijde om de DPR van een eindgebruiker nauwkeurig te bepalen.
+
 ## Wat zijn de belangrijkste voordelen van de nieuwste Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
-Omdat de beelden het grootste deel van de ladingstijd van een pagina vormen, kan de prestatiesverbetering een diepgaande invloed op een Zaken zoals hogere omzetting, tijd die aan plaats wordt doorgebracht, en lagere plaats het stuiteren tarief hebben.
+Afbeeldingen vormen het grootste deel van de laadtijd van een pagina. Daarom kan elke prestatieverbetering een grote invloed hebben op hogere conversietarieven, de tijd die aan een site wordt doorgebracht en lagere stuiteringspercentages voor de site.
 
 Verbeteringen in de nieuwste versie van Smart Imaging:
 
@@ -105,7 +146,6 @@ De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
 
 Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
-
 ## Hoe werkt Smart Imaging met bestaande voorinstellingen voor afbeeldingen die al in gebruik zijn? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
 Slimme afbeeldingen werken met uw bestaande voorinstellingen voor afbeeldingen en nemen alle afbeeldingsinstellingen in acht, behalve de kwaliteit (`qlt`) en de indeling (`fmt`) als de gewenste bestandsindeling JPEG of PNG is. Voor het omzetten van indelingen behoudt Adobe de volledige visuele getrouwheid die wordt gedefinieerd door de vooraf ingestelde instellingen van de afbeelding, maar bij een kleinere bestandsgrootte. Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
@@ -135,13 +175,23 @@ Als u Smart Imaging wilt gebruiken, moet de Dynamic Media Classic of Dynamic Med
 
 Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
 
-Tik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een generisch domein gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen wanneer u een technisch steunkaartje voorlegt.
+Tik op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een generisch domein gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen wanneer u een technisch steunkaartje voorlegt.
 
 Voor je eerste aangepaste domein zijn er geen extra kosten verbonden met een Dynamic Media-licentie.
 
 ## Wat is het proces voor het inschakelen van Smart Imaging voor mijn account? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
 U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt niet automatisch ingeschakeld.
+
+Smart Imaging DPR en netwerkoptimalisatie zijn standaard uitgeschakeld voor een Dynamic Media-bedrijfsaccount. Als u een of beide van deze verbeteringen wilt inschakelen (inschakelen), maakt u een ondersteuningscase zoals hieronder wordt beschreven.
+
+Het releaseschema voor Smart Imaging DPR en netwerkoptimalisatie is als volgt:
+
+| Regio | Doeldatum |
+|---|---|
+| Noord-Amerika | 24 mei 2021 |
+| Europa, Midden-Oosten, Afrika | 25 jun. 2021 |
+| Azië-Stille Oceaan | 19 jul. 2021 |
 
 1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
@@ -151,7 +201,7 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
 
       Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
-      Klik op **[!UICONTROL Setup > Application Setup > General Settings]**.
+      Klik op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 
       Zoek het veld met het label **[!UICONTROL Published Server Name]**.
    1. Verifieer dat u CDN door Adobe gebruikt en niet met een directe verhouding wordt beheerd.
@@ -159,7 +209,7 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
 
       Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
-      Klik op **[!UICONTROL Setup > Application Setup > General Settings]**.
+      Klik op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 
       Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media Classic domein gebruikt, kunt u vragen dat u in het kader van deze overgang naar uw eigen aangepaste domein overschakelt.
    1. Geef aan of u Smart Imaging ook nodig hebt om via HTTP/2 te werken.
@@ -170,7 +220,7 @@ U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt nie
 1. U wordt op de hoogte gesteld na voltooiing door ondersteuning.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
 
-   1. Als u Dynamic Media Classic gebruikt, klikt u op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**. Stel de waarde **[!UICONTROL Default Client Cache Time To Live]** in op 24 of langer.
+   1. Als u Dynamic Media Classic gebruikt, klikt u op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**. Stel de waarde **[!UICONTROL Default Client Cache Time To Live]** in op 24 of langer.
    1. Als u Dynamic Media gebruikt, volgt u [deze instructies](config-dynamic.md). Stel de waarde **[!UICONTROL Expiration]** 24 uur of langer in.
 
 ## Wanneer kan ik verwachten dat mijn account is ingeschakeld met Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -181,7 +231,7 @@ De verzoeken worden verwerkt in de orde waarin zij door Technische Steun, volgen
 >
 >Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
-## Wat zijn de risico&#39;s wanneer u overschakelt op het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de cache bij de CDN echter gewist, omdat er bij de Experience Manager naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media moet worden overgeschakeld.
 
@@ -190,7 +240,7 @@ Tijdens de eerste overgang raakten de afbeeldingen in de cache rechtstreeks op s
 ## Hoe kan ik controleren of slimme beeldverwerking werkt zoals verwacht?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Wanneer uw account is geconfigureerd met slimme beeldverwerking, laadt u een Dynamic Media Classic/Dynamic Media-afbeeldings-URL in de browser.
-1. Open het deelvenster Chrome-ontwikkelaar door in de browser op **[!UICONTROL View > Developer > Developer Tools]** te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
+1. Open het deelvenster Chrome-ontwikkelaar door in de browser op **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
 
 1. Zorg ervoor dat de cache is uitgeschakeld wanneer de ontwikkelprogramma&#39;s zijn geopend.
 
@@ -210,6 +260,10 @@ Tijdens de eerste overgang raakten de afbeeldingen in de cache rechtstreeks op s
 
 Ja. U kunt Smart Imaging uitschakelen door de optie `bfc=off` aan de URL toe te voegen.
 
+## Kan ik vragen dat DPR en netwerkoptimalisatie op bedrijfsniveau worden uitgeschakeld? {#dpr-companylevel-turnoff}
+
+Ja. Om DPR en netwerkoptimalisering bij uw bedrijf onbruikbaar te maken, creeer een steungeval zoals vroeger in dit onderwerp wordt beschreven.
+
 ## Wat is &quot;tuning&quot; beschikbaar? Zijn er instellingen of gedragingen die kunnen worden gedefinieerd? (#tuning-settings)
 
 Op dit moment kunt u Smart Imaging optioneel in- of uitschakelen. Er is geen andere tuning beschikbaar.
@@ -221,3 +275,9 @@ De huidige slimme beeldverwerking biedt geen dergelijke provisioningmogelijkhede
 ## Soms wordt een JPEG-afbeelding geretourneerd naar Chrome in plaats van een WebP-afbeelding. Waarom? (#jpeg-webp)
 
 Slimme afbeeldingen bepalen of de conversie nuttig is of niet. De nieuwe afbeelding wordt alleen geretourneerd als de conversie resulteert in een kleinere bestandsgrootte met vergelijkbare kwaliteit.
+
+## Hoe werkt Smart Imaging DPR-optimalisatie met Adobe Experience Manager Sites-componenten en Dynamic Media-viewers?
+
+* De Componenten van de Kern van de Plaatsen van de Experience Manager worden gevormd door gebrek voor optimalisering DPR. `dpr=off` wordt altijd toegevoegd aan Dynamic Media-afbeeldingen van Experience Manager Sites Core Components om te voorkomen dat afbeeldingen te groot worden als gevolg van DPR-optimalisatie voor Smart Imaging op de server.
+* Als Dynamic Media Foundation Component standaard is geconfigureerd voor DPR-optimalisatie, wordt `dpr=off` altijd toegevoegd aan Dynamic Media Foundation Component-afbeeldingen om te grote afbeeldingen te voorkomen door DPR-optimalisatie voor Smart Imaging op de server. Zelfs als de klant DPR-optimalisatie in de DM Foundation Component uitschakelt, wordt de functie Smart Imaging DPR aan de serverzijde niet ingeschakeld. Samengevat, in de Component van de Stichting DM, komt de optimalisering DPR van kracht die op het niveau van de Component van de Stichting wordt gebaseerd DM slechts het plaatsen.
+* Elke DPR-optimalisatie aan de viewerzijde werkt in combinatie met DPR-optimalisatie voor Smart Imaging op de server en resulteert niet in te grote afbeeldingen. Met andere woorden, wanneer DPR door de viewer wordt afgehandeld, zoals de hoofdweergave alleen in een viewer met zoomfunctie, worden de DPR-waarden voor Smart Imaging op de server niet geactiveerd. Op dezelfde manier wordt de DPR-waarde voor Smart Imaging op de server geactiveerd wanneer viewerelementen, zoals stalen en miniaturen, geen DPR-verwerking hebben.
