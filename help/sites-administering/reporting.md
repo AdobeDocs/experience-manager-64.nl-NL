@@ -10,15 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-translation-type: tm+mt
-source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
+source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2871'
 ht-degree: 0%
 
 ---
 
-# {#reporting} rapporteren
+# Rapportage {#reporting}
 
 Om u te helpen de staat van uw instantie controleren en analyseren, verstrekt AEM een selectie van standaardrapporten, die voor uw individuele vereisten kunnen worden gevormd:
 
@@ -133,7 +132,7 @@ Het filter deactiveren:
 1. Verwijder de filtertekst.
 1. Klik **Toepassen**.
 
-#### Samengevoegde {#aggregates}
+#### Aggregaten {#aggregates}
 
 U kunt ook een aggregatiemethode selecteren (deze kan afhankelijk van de geselecteerde kolom variëren):
 
@@ -328,6 +327,11 @@ Alle componenten zijn inbegrepen, product-norm en project-specifiek. Met het dia
 ![](assets/reportcomponent.png) ![reportComponentCompleteAll](assets/reportcompentall.png)
 
 ### Schijfgebruik {#disk-usage}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_diskusage"
+>title="Rapport voor schijfgebruik"
+>abstract="Als input aan CTT calculator, kunnen de Gebruikers de grootte van AEM Bewaarplaats schatten door het rapport van het Gebruik van de Schijf onder &quot;http://HOST:PORT/etc/reports/diskusage.html&#39; in werking te stellen. Gebruikers kunnen ook de grootte van specifieke opslagpaden schatten met behulp van de parameter &#39;path&#39;, zoals: &quot;http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam&#39;."
 
 Het rapport van het schijfgebruik bevat informatie over de gegevens die in uw opslagplaats zijn opgeslagen.
 
