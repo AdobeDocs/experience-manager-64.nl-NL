@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Insights, Asset Reports
 role: Business Practitioner,Administrator
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Met Elementinzichten worden details van gebruikersactiviteiten vastgelegd, zoals
 
 Als u met behulp van Assets gebruiksstatistieken wilt vastleggen voor elementen van een website, moet u de insluitcode voor het element opnemen in de websitecode.
 
-Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van [!DNL Adobe Analytics] te halen. Voor details, zie [Elementen inzichten](touch-ui-configuring-asset-insights.md) vormen. Koop [!DNL Adobe Analytics] licentie afzonderlijk om deze functie te gebruiken. Klanten op [!DNL Managed Services] ontvangen [!DNL Analytics] licentie gebundeld met [!DNL Experience Manager]. Zie [Managed Services productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van [!DNL Adobe Analytics] te halen. Voor details, zie [Elementen inzichten](touch-ui-configuring-asset-insights.md) vormen. Als u deze functie wilt gebruiken in een on-premise installatie, moet u [!DNL Adobe Analytics] licentie afzonderlijk aanschaffen. Klanten op [!DNL Managed Services] ontvangen [!DNL Analytics] licentie gebundeld met [!DNL Experience Manager]. Zie [Managed Services productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
