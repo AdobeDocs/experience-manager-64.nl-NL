@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuratie, Scene7-modus
 role: Administrator,Business Practitioner,Developer
-source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
+source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
 workflow-type: tm+mt
-source-wordcount: '5178'
+source-wordcount: '5176'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor master ac
 
 >[!WARNING]
 >
->Dynamic Media - de wijze van Scene7 is voor *de instantie van de Auteur van de Experience Manager slechts*. Als dusdanig, moet u `runmode=dynamicmedia_scene7`op de instantie van de Auteur van de Experience Manager vormen, *not* de instantie van de Publicatie van de Experience Manager.
+>Dynamic Media - de wijze van Scene7 is voor *de instantie van de Auteur van de Experience Manager slechts*. Als dusdanig, vorm `runmode=dynamicmedia_scene7`op de instantie van de Auteur van de Experience Manager, *not* de instantie van de Publicatie van de Experience Manager.
 
 Om Dynamic Media toe te laten, moet u Experience Manager opstarten gebruikend de `dynamicmedia_scene7` loopgebiedwijze van de bevellijn door het volgende in een eindvenster in te gaan (gebruikte voorbeeldhaven is 4502):
 
