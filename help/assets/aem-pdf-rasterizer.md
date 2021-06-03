@@ -2,13 +2,12 @@
 title: PDF-rasterfunctie gebruiken om uitvoeringen te genereren
 description: U kunt miniaturen en uitvoeringen van hoge kwaliteit genereren met de Adobe PDF Rasterizer-bibliotheek.
 contentOwner: AG
-feature: Developer Tools,Renditions
+feature: Gereedschappen voor ontwikkelaars, uitvoeringen
 role: Developer,Administrator
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -25,7 +24,7 @@ Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
 Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversie. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
 
-1. Installeer het PDF Rasterizer-pakket op de [!DNL Adobe Experience Manager]-implementatie van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installeer het PDF Rasterizer-pakket op de [!DNL Adobe Experience Manager]-implementatie van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
 
    >[!NOTE]
    >
