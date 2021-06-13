@@ -1,5 +1,5 @@
 ---
-title: Quickviews gebruiken om aangepaste pop-ups te maken
+title: Aangepaste pop-ups maken met Quickviews
 seo-title: Quickviews gebruiken om aangepaste pop-ups te maken
 description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
 seo-description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
@@ -10,17 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
-feature: Configuration
+feature: Configuratie
 role: Administrator,Business Practitioner,Developer
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 2%
+source-wordcount: '1047'
+ht-degree: 1%
 
 ---
 
-# Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
+# Aangepaste pop-ups maken met Snelle weergaven {#using-quickviews-to-create-custom-pop-ups}
 
 De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de kijker u gebruikt, laat deze functionaliteit gebruikers op hotspot, of een duimnagelbeeld, of op een beeldkaart klikken om informatie of verwante inhoud te zien.
 
@@ -32,7 +31,7 @@ Snelle weergaven worden ondersteund door de volgende viewers in Dynamic Media:
 
 Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het maken van een QuickView hetzelfde voor alle drie ondersteunde viewers.
 
-**U kunt als volgt Quickviews gebruiken om aangepaste pop-ups te maken:**
+**Aangepaste pop-ups maken met Snelle weergaven:**
 
 1. Maak een Snelle weergave voor een geüpload element.
 
