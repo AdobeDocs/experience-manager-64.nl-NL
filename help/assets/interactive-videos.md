@@ -8,12 +8,11 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
-feature: Interactive Videos,Video
+feature: Interactieve video's, video
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '5932'
+source-wordcount: '5896'
 ht-degree: 4%
 
 ---
@@ -34,7 +33,7 @@ Als u een interactieve, verschuivende video in actie wilt zien, klikt u op [Live
 
 * Klik op de miniatuur om de video te pauzeren en de snelweergave van het product te openen. Klik bijvoorbeeld op de miniatuurafbeelding van de KitchenAid in de video om een centrifugeweergave van 360 graden van de mixer te bekijken of zoom in om details van de mixer te zien.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader clicked the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Een frame van een interactieve, verschuifbare ](assets/chlimage_1-126.png) *videoA-videoframe legt vast van een interactieve, schokkende video.*
 
@@ -49,7 +48,7 @@ Bekijk een analyse van 7 minuten en 30 seconden over [hoe interactieve video&#39
 
 ## Adobe Klantsucces Webinar {#adobe-customer-success-webinar}
 
-De webinar &#39;Using Interactive Video, Link Sharing, and YouTube sharing in AEM Assets&#39; leert u hoe u interactieve video en andere functies kunt gebruiken om gebeurtenissen die tijdens de conversie worden aangestuurd, aan uw video marketinginhoud te koppelen.
+De webinar ‘Interactive Video, Link Sharing en YouTube sharing gebruiken in AEM Assets’ leert u hoe u interactieve video en andere functies kunt gebruiken om conversie-gebeurtenissen te koppelen aan uw video marketing inhoud.
 
 >[!NOTE]
 [Interactieve video gebruiken, koppelingen delen en YouTube delen in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
@@ -60,13 +59,13 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
 Zoek naar **Voorbeeld** rubriek binnen enkele taken van het Snelle Begin. Het bevat een korte zelfstudie die is gebaseerd op deze startdemo-webpagina die *nog niet* interactiviteit heeft toegevoegd:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Met behulp van de **voorbeelden** kunt u de stappen illustreren voor het integreren van interactieve video&#39;s op uw eigen website.
 
 Wanneer u de zelfstudie voltooit in de laatste voorbeeldsectie, ziet de laatste demo-webpagina met de volledig geïntegreerde interactieve video er als volgt uit:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 **Interactieve videoworkflow**:
 
@@ -193,7 +192,7 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de bijbehorende mi
 
 Wanneer de bovenstaande benadering wordt toegepast op onze website Example, hebben we een webpagina met een aantal productminiaturen, elk met een **[!UICONTROL SEE MORE]** knop:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Nadat u alle Quickviews van het product beschikbaar op de pagina activeert, krijgt u de volgende lijst van verzoeken die van de Snelle mening aan het achterste eind worden gemaakt:
 
@@ -537,7 +536,7 @@ Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren
 
 De demo-website als voorbeeld gebruiken:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 U ziet dat het standaardvideo-insluitcode is:
 
@@ -568,7 +567,7 @@ U ziet dat het standaardvideo-insluitcode is:
 
 Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het vervangen van deze code door de interactieve video-insluitcode uit AEM. U kunt het resultaat op de volgende URL zien. Hoewel er een interactieve video op de pagina wordt weergegeven, is deze nog niet geïntegreerd met de bestaande QuickView:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Een interactieve video integreren met een bestaande QuickView {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -771,7 +770,7 @@ De volledige broncode ziet er als volgt uit:
 
 De laatste demo-website met de volledig geïntegreerde interactieve video ziet er als volgt uit:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
 
