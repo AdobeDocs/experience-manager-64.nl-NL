@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2766'
 ht-degree: 0%
 
 ---
@@ -144,7 +143,7 @@ Installeer en implementeer AEM Forms zoals beschreven in [AEM Forms installeren 
 >
 >Vorm replicatie en omgekeerde replicatieagenten als er meer dan één publiceer instanties zijn of de auteur en publiceer instanties zijn op verschillende machines.
 
-## SSL {#ssl} configureren
+## SSL configureren {#ssl}
 
 SSL-configuratie is vereist voor communicatie met Adobe Sign-servers. Zie [HTTP inschakelen via SSL](/help/sites-administering/ssl-by-default.md) voor gedetailleerde stappen.
 
@@ -152,7 +151,7 @@ SSL-configuratie is vereist voor communicatie met Adobe Sign-servers. Zie [HTTP 
 >
 >Configureer geen geforceerde SSL in `/etc/map`-map.
 
-## Configuratie {#externalizer} van de Verbinding van de Dag CQ
+## Configuratie van externe-alizer van de koppeling voor dag-CQ configureren {#externalizer}
 
 In AEM, is **ExternalAlizer** de dienst OSGI die u toestaat om een middelweg programmatically om te zetten (b.v. /path/to/my/page) in een externe en absolute URL (bijvoorbeeld, https://www.mycompany.com/path/to/my/page) door het pad vooraf in te stellen met een vooraf geconfigureerde DNS. Zie [URL&#39;s extern maken](/help/sites-developing/externalizer.md).
 
@@ -192,7 +191,7 @@ Voer de volgende stappen uit om de postdienst op te vormen publiceer instantie:
 >
 >U kunt uw collectieve dienst SMTP of openbare diensten zoals Gmail gebruiken. Voor het vormen van de dienst SMTP, zie de de dienstdocumentatie SMTP.
 
-## Standaard XSS-configuratie {#xss} overschrijven
+## Standaard XSS-configuratie overschrijven {#xss}
 
 De e-mailsjablonen voor de website Web.Finance bevatten persoonlijke links in e-mails. Deze koppelingen hebben plaatsaanduiding als `${placeholder}`. Deze plaatsaanduidingen worden vervangen door werkelijke waarden voordat ze e-mails verzenden. De standaard XSS-beveiligingsconfiguratie voor AEM staat accolades (**{ }**) in de URL in HTML-inhoud niet toe. U kunt de standaardconfiguratie echter negeren door de volgende stappen uit te voeren bij een publicatie-instantie:
 
@@ -218,12 +217,12 @@ Voor AEM Forms-referentiesites geeft u in de AEM DS Settings Service de URL van 
 >
 >Plaats `/lc` niet in de URL van de verwerkingsserver als u deze voor AEM Forms OSGi configureert.
 
-## Verwijzingssitepakketten {#refsite} implementeren
+## Referentiesites implementeren {#refsite}
 
 Installeer de volgende referentiesites met gebruik van Software Distribution.
 
-* [AEM-FORMS-6.4-FSI-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
-* [AEM-FORMS-6.4-GOV-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
+* [AEM-FORMS-6.4-FSI-REF-SITE](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
+* [AEM-FORMS-6.4-GOV-REF-SITE](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
 
 Meer over hoe te om pakketten te gebruiken, zie [Met Pakketten werken](/help/sites-administering/package-manager.md).
 
@@ -276,7 +275,7 @@ Configureer de OAuth-cloudservice in AEM Forms om communicatie tussen AEM Forms 
 1. Geef in de sectie met invoerverzoeken de waarde voor de klant-id op als &quot;900001&quot; en klik op **[!UICONTROL Test]**. De sectie van de Output toont de verslagen die van de Dynamica van Microsoft voor klantenidentiteitskaart 900001 worden gehaald.
 1. Herhaal stap 1-6 op de publicatie-instantie.
 
-## Adobe Sign Scheduler {#scheduler} configureren
+## Adobe Sign Scheduler configureren {#scheduler}
 
 Doe het volgende op zowel auteur als publicatieinstanties:
 
@@ -304,7 +303,7 @@ Doe het volgende op zowel auteur als publicatieinstanties:
 1. (Optioneel) Selecteer de optie **[!UICONTROL Enable Adobe Sign for attachments also]** en tik **[!UICONTROL Connect to Adobe Sign]**. De bestanden die zijn gekoppeld aan een adaptief formulier, worden toegevoegd aan het corresponderende Adobe Sign-document dat ter ondertekening is verzonden.
 1. Tik op **[!UICONTROL Connect to Adobe Sign]** en meld u aan met uw Adobe Sign-referenties.
 
-## Forms Common Configuration Service {#anonymous} configureren
+## Forms Common Configuration Service configureren {#anonymous}
 
 Ga als volgt te werk op de publicatie-instantie om toegang tot anonieme gebruikers toe te staan:
 
