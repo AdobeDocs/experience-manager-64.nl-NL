@@ -10,8 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 exl-id: 7780d04d-418e-494c-85c3-76bef5f35690
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -57,7 +56,7 @@ Hiervoor zijn verschillende redenen, waaronder:
 
 Het is belangrijk dat u de null-case netjes afhandelt. Voor jsp-renderingen kan het acceptabel zijn dat de jsp mislukt als dat resulteert in een leeg stuk inhoud.
 
-### {#caching}
+### Caching {#caching}
 
 Om prestaties te verbeteren, zijn de implementaties vrij om het voorwerp in het voorgeheugen onder te brengen dat van een `obj.adaptTo()` vraag is teruggekeerd. Als `obj` het zelfde is, is het teruggekeerde voorwerp het zelfde.
 
@@ -70,7 +69,7 @@ Er is echter geen algemene regel: het object kan een nieuw of een bestaand objec
 Er zijn verschillende manieren waarop `Adaptable.adaptTo()` kan worden geïmplementeerd:
 
 * door het object zelf; het implementeren van de methode zelf en het toewijzen aan bepaalde objecten.
-* Met een [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)`, dat willekeurige voorwerpen in kaart kan brengen.
+* Door een [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), die willekeurige voorwerpen in kaart kan brengen.
 
    De objecten moeten nog steeds de `Adaptable`-interface implementeren en [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) uitbreiden (die de `adaptTo`-aanroep aan een centrale adapterbeheerder doorgeeft).
 
@@ -82,7 +81,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
 
 ## Referentie {#reference}
 
-### Verschuiven {#sling}
+### Sling {#sling}
 
 [**Bronnen worden**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) aangepast aan:
 
