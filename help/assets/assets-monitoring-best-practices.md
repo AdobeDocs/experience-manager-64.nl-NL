@@ -2,13 +2,12 @@
 title: Aanbevolen werkwijzen voor middelenbewaking
 description: Beste werkwijzen voor het controleren van de omgeving en de prestaties van uw AEM instantie nadat deze is geïmplementeerd.
 contentOwner: AG
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Administrator,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
@@ -140,7 +139,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 * Systeemcontroles
 
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name=systemchecks,type=HealthCheck*
    * Instanties: Eén auteur, alle publicatieservers
    * Alarmdrempel: Wanneer de status niet OK is
@@ -148,7 +147,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 * Replicatiereeks
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name=replicationQueue,type=HealthCheck*
    * Instanties: Eén auteur, alle publicatieservers
    * Alarmdrempel: Wanneer de status niet OK is
@@ -156,7 +155,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 * Responsprestaties
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name=requestStatus,type=HealthCheck*
    * Instanties: Alle servers
    * Duur van waarschuwing: Wanneer de status niet OK is
@@ -164,7 +163,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 * Query-prestaties
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name= queryStatus,type=HealthCheck*
    * Instanties: Eén auteur, alle publicatieservers
    * Alarmdrempel: Wanneer de status niet OK is
@@ -172,7 +171,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 * Actieve pakketten
 
-   * MBean: org.apache.sling.health check:name=inactiveBundles,type=HealthCheck 
+   * MBean: org.apache.sling.health check:name=inactiveBundles,type=HealthCheck
    * URL: */system/console/jmx/org.apache.sling.health check:name=inactiveBundles,type=HealthCheck*
    * Instanties: Alle servers
    * Alarmdrempel: Wanneer de status niet OK is
@@ -180,7 +179,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 * Logfouten
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL: */system/console/jmx/org.apache.sling.health check:name=logErrorHealthCheck,type=HealthCheck*
    * Instanties: Alle servers
    * Alarmdrempel: Wanneer de status niet OK is
