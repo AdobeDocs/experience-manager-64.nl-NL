@@ -9,10 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
@@ -104,7 +103,7 @@ Om de interoperabiliteit van de bibliotheken te bevorderen, adviseert Adobe de k
 
 #### Implementaties {#implementations}
 
-#### {#react} reageren
+#### Reageren {#react}
 
 npm-module: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
@@ -280,7 +279,7 @@ App bezit het verpletteren. De front-end ontwikkelaar moet eerst een component v
 
 De onderliggende [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) bibliotheek en zijn [`ModelRouter`](/help/sites-developing/spa-routing.md) module (die door gebrek wordt toegelaten) zijn verantwoordelijk voor het pre-halen en het verlenen van toegang tot het model verbonden aan een bepaald middelweg.
 
-De twee entiteiten hebben betrekking op de notie van het verpletteren maar [`ModelRouter`](/help/sites-developing/spa-routing.md) is slechts verantwoordelijk voor het hebben van [ &quot;PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) geladen met een gegevensmodel dat in synchronisatie met de huidige toepassingsstaat wordt gestructureerd.
+De twee entiteiten hebben betrekking op het begrip van het verpletteren maar [`ModelRouter`](/help/sites-developing/spa-routing.md) is slechts verantwoordelijk voor het hebben van [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) geladen met een gegevensmodel dat in synchronisatie met de huidige toepassingsstaat wordt gestructureerd.
 
 Zie het artikel [SPA Model dat ](/help/sites-developing/spa-routing.md) voor meer informatie verplettert.
 
