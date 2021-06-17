@@ -10,12 +10,11 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
-feature: Content Fragments
+feature: Contentfragmenten
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '556'
 ht-degree: 4%
 
 ---
@@ -178,7 +177,7 @@ U kunt tekst als volgt vet maken:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Als u een reeks codes wilt aangeven, plaatst u deze tussen aanhalingstekens (`). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
+Als u een bereik van code wilt aangeven, plaatst u de code tussen aanhalingstekens (&amp;grave;). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
 
 Bijvoorbeeld:
 
