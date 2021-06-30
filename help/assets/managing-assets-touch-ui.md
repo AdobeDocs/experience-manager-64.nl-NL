@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Middelenbeheer, Zoeken, Uitvoeringen, Samenwerking
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 04f14a57fcdc5890fe78118536cc52988a2124c3
 workflow-type: tm+mt
-source-wordcount: '9762'
+source-wordcount: '9810'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Leer meer over verschillende functies voor middelenbeheer en -bewerking die u ku
 
 In dit artikel wordt beschreven hoe u elementen beheert en bewerkt met de door Adobe Experience Manager (AEM) Assets Touch geoptimaliseerde gebruikersinterface. Voor elementaire kennis van de gebruikersinterface, zie [Basisbehandeling van Aanraakinterface](/help/sites-authoring/basic-handling.md). Zie [Inhoudsfragmenten beheren](content-fragments-managing.md) elementen voor het beheren van Inhoudsfragmenten.
 
-## Mappen {#create-folders} maken
+## Mappen maken {#create-folders}
 
 Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature`-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM Assets hoeft u elementen niet in mappen te ordenen om beter te werken.
 
@@ -231,7 +231,7 @@ Wanneer u PostScript- (EPS) of Illustrator-afbeeldingsbestanden (AI) uploadt, ku
 |  | Inschakelen als CMYK | Zet om in de CMYK-kleurruimte. |
 |  | Forceren als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
-#### Opties voor Photoshop-upload instellen {#setting-photoshop-upload-options}
+#### Photoshop-upopties instellen {#setting-photoshop-upload-options}
 
 PSD-bestanden (Photoshop Document) worden meestal gebruikt om afbeeldingssjablonen te maken. Wanneer u een PSD-bestand uploadt, kunt u automatisch een afbeeldingssjabloon maken vanuit het bestand (selecteer de optie Sjabloon maken in het scherm Uploaden).
 
@@ -278,7 +278,7 @@ Kies een van de volgende opties:
 |  | Krachten als CMYK | Zet om in de CMYK-kleurruimte. |
 |  | Krachtig maken als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
-#### Opties voor het uploaden van eVideo instellen {#setting-evideo-upload-options}
+#### Uploadopties voor eVideo instellen {#setting-evideo-upload-options}
 
 U kunt een videobestand transcoderen door een keuze te maken uit verschillende videovoorinstellingen.
 
@@ -302,7 +302,7 @@ Als u een groot aantal middelen uploadt, neemt de I/O-aanroepen naar de AEM serv
 
 Uploaden naar streaming is uitgeschakeld voor AEM die op de JEE-server wordt uitgevoerd met servlet-api versie lager dan 3.1.
 
-### ZIP-archief met elementen uitpakken {#extract-zip-archive-containing-assets}
+### ZIP-archief met elementen extraheren {#extract-zip-archive-containing-assets}
 
 U kunt ZIP-archieven net als alle andere ondersteunde elementen uploaden. Dezelfde regels voor bestandsnaam gelden voor ZIP-bestanden. AEM kunt u een ZIP-archief extraheren naar een DAM-locatie.
 
@@ -389,7 +389,7 @@ Als u tags wilt maken, hebt u schrijfmachtigingen nodig voor `/content/cq:tags/d
 1. Tik op **[!UICONTROL Save & Close]**.
 1. Navigeer naar de interface Elementen. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving, classificaties, enzovoort, worden weergegeven op de elementenkaart in de kaartweergave en onder de desbetreffende kolommen in de lijstweergave.
 
-## Elementen {#copying-assets} kopiëren
+## Elementen kopiëren {#copying-assets}
 
 Wanneer u een middel of een omslag kopieert, wordt het volledige middel of de omslag gekopieerd, samen met zijn inhoudsstructuur. Een gekopieerd middel of een omslag wordt gedupliceerd bij de doelplaats. Het element op de bronlocatie wordt niet gewijzigd.
 
@@ -536,7 +536,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
 
 Zie [Subassets beheren](managing-linked-subassets.md) voor informatie over subassets.
 
-## Elementen {#deleting-assets} verwijderen
+## Elementen verwijderen {#deleting-assets}
 
 Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert.
 
@@ -566,11 +566,11 @@ U hebt verwijdermachtigingen voor dam/asset nodig om een element te kunnen verwi
    >
    >Schakel ook de knop **[!UICONTROL Force Delete]** uit met behulp van een overlay, zodat gebruikers geen bestanden waarnaar wordt verwezen kunnen verwijderen en verbroken koppelingen behouden blijven.
 
-## Elementen {#downloading-assets} downloaden
+## Elementen downloaden {#downloading-assets}
 
 Zie [Elementen downloaden van AEM](download-assets-from-aem.md)
 
-## Elementen publiceren en publiceren {#publish-assets} ongedaan maken
+## Elementen publiceren en publiceren ongedaan maken {#publish-assets}
 
 Nadat u uw elementen hebt geüpload, verwerkt of bewerkt op de auteur [!DNL Experience Manager], publiceert u het element naar de publicatieserver. Door middel van publicatie wordt het middel openbaar gemaakt. Met de actie Unpublishing is het element van de publicatieserver verwijderd, maar niet van de publicatieserver.
 
@@ -637,7 +637,7 @@ De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. V
 * Aanraakapparaten: Raak aan en houd de muisknop ingedrukt. Op een iPad kunt u bijvoorbeeld tikken en een element ingedrukt houden, zodat de snelle acties worden weergegeven.
 * Niet-aanraakapparaten: Aanwijzer aanwijzen. Op een bureaubladapparaat wordt bijvoorbeeld de snelle actiebalk weergegeven als u de aanwijzer boven de elementminiatuur houdt.
 
-### {#navigating-and-selecting-assets} navigeren naar elementen en deze selecteren
+### Navigeren naar elementen en deze selecteren {#navigating-and-selecting-assets}
 
 U kunt elementen met een van de beschikbare weergaven (kaart, kolom, lijst) weergeven, doorbladeren en selecteren met het pictogram **[!UICONTROL Select]**. **[!UICONTROL Select]** verschijnt als een snelle actie in de kaartmening.
 
@@ -779,7 +779,15 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-### Opgeslagen annotaties weergeven {#viewing-saved-annotations}
+### Opgeslagen notities weergeven {#viewing-saved-annotations}
+
+U kunt slechts één annotatie tegelijk weergeven.
+
+>[!NOTE]
+>
+>Als u meerdere annotaties selecteert, wordt de laatste annotatie weergegeven in de gebruikersinterface.
+>
+>Multi-select wordt alleen ondersteund voor het afdrukken van het geannoteerde element als PDF.
 
 1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
@@ -797,11 +805,15 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
 
 1. Tik **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
 
-### Annotaties {#printing-annotations} afdrukken
+### Annotaties afdrukken {#printing-annotations}
 
 Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
+
+>[!NOTE]
+>
+>U kunt meerdere annotaties selecteren tijdens het afdrukken van het geannoteerde element als PDF.
 
 Lengte annotaties worden mogelijk niet correct weergegeven in het PDF-bestand. Voor een optimale rendering raadt Adobe aan om annotaties te beperken tot 50 woorden.
 
@@ -938,7 +950,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Een workflow starten op een element {#starting-a-workflow-on-an-asset}
+### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
 Zie [een workflow toepassen op een AEM element](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
 
