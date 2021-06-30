@@ -1,15 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
 audience: end-user
 user-guide-title: AEM 6.4 Implementatiegids
 breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.4, inclusief de cloudimplementatie van Adobe Managed Services.
 feature: Implementeren
 role: Architect
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 1%
@@ -17,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# AEM 6.4 Handboek {#deploying} implementeren
+# AEM 6.4 Gebruikershandleiding implementeren {#deploying}
 
 + [Gebruikershandleiding implementeren](home.md)
 + Inleiding tot het AEM Platform {#introduction}
