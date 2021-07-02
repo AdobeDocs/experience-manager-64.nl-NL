@@ -10,9 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Bijwerken
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: 98b6a34d678827b8ced0dfc3b153a92d63c1c0de
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -23,19 +23,19 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
 
 **Met 6.4-upgrade**
 
-* [Dic](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Dic](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#misc)
 
 **Vóór upgrade naar 6.5**
 
-* [E-mailmeldingssjabloon voor element-/verzamelingsgebeurtenis](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Klassieke elementen delen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [E-mailmeldingssjabloon voor middelen downloaden](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Voorbeeld-DRM-licenties](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [E-mailmeldingssjabloon voor element-/verzamelingsgebeurtenis](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#asset-collection-event-e-mail-notification-template)
+* [Klassieke elementen delen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#classic-asset-share-designs)
+* [E-mailmeldingssjabloon voor middelen downloaden](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#download-asset-e-mail-notification-template)
+* [Voorbeeld-DRM-licenties](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#example-drm-licenses)
 
-* [E-mailmeldingssjabloon voor delen van koppeling](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [InDesign Workflowscripts](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Configuraties voor videotransformatie](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
-* [Dic](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [E-mailmeldingssjabloon voor delen van koppeling](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#link-share-e-mail-notification-template)
+* [InDesign Workflowscripts](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#indesign-workflow-scripts)
+* [Configuraties voor videotransformatie](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#video-transcoding-configurations)
+* [Dic](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html?lang=en#misc2)
 
 ## Met 6.4-upgrade {#with-upgrade}
 
