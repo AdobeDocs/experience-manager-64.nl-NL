@@ -10,15 +10,14 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
 
-# Richtlijnen {#hardware-sizing-guidelines} voor hardwaregrootte
+# Richtlijnen voor hardwareaanpassing {#hardware-sizing-guidelines}
 
 Deze het rangschikken richtlijnen bieden een benadering van de hardwaremiddelen die worden vereist om een AEM project op te stellen. Het rangschikken van ramingen hangt van de architectuur van het project, de ingewikkeldheid van de oplossing, het verwachte verkeer en de projectvereisten af. Deze gids helpt u om de hardwarebehoeften voor een specifieke oplossing te bepalen, of een hogere en lagere schatting voor de hardwarevereisten te vinden.
 
@@ -85,7 +84,7 @@ De vereisten voor het aanpassen van de hardwaregrootte voor gevallen van geavanc
 * uitgebreid gebruik van aangepaste code, aangepaste workflows of softwarebibliotheken van derden
 * integratie met niet-ondersteunde externe systemen
 
-### Schijfruimte/ Vaste schijf {#disk-space-hard-drive}
+### Schijfruimte/vaste schijf {#disk-space-hard-drive}
 
 De vereiste schijfruimte hangt sterk af van zowel het volume als het type van uw webtoepassing. Bij de berekeningen moet rekening worden gehouden met:
 
@@ -108,7 +107,7 @@ AEM werkt goed in gevirtualiseerde omgevingen, maar er kunnen factoren zijn zoal
 
 ### Parallelisatie van AEM instanties {#parallelization-of-aem-instances}
 
-#### Misbruikbeveiliging {#fail-safeness}
+#### Misbruikszekerheid {#fail-safeness}
 
 Een faalveilige website wordt opgesteld op minstens twee afzonderlijke systemen. Als één systeem afbreekt, kan een ander systeem overnemen en zo de systeemmislukking compenseren.
 
@@ -145,13 +144,13 @@ Voor benchmarkingdoeleinden heeft Adobe enkele benchmarktests ontwikkeld voor op
 >
 >De productiesnelheid maakt geen onderscheid tussen transactietypen binnen een laadprofiel. De benadering die wordt gebruikt om productie te meten zorgt ervoor dat een vast aandeel van elk type van transactie in de werklast wordt opgenomen.
 
-Uit bovenstaande twee tests blijkt duidelijk dat de productie varieert naargelang het type activiteit. Gebruik de activiteiten in uw omgeving als basis voor het aanpassen van de grootte van uw systeem. U krijgt betere productie met minder intensieve acties zoals wijzigen (wat ook gemeenschappelijker is).
+Uit bovenstaande twee tests blijkt duidelijk dat de doorvoer varieert naargelang het type activiteit. Gebruik de activiteiten in uw omgeving als basis voor het aanpassen van de grootte van uw systeem. U krijgt betere productie met minder intensieve acties zoals wijzigen (wat ook gemeenschappelijker is).
 
-### {#caching}
+### Caching {#caching}
 
 In de auteursomgeving is de caching efficiency typisch veel lager, omdat de veranderingen in de website frequenter zijn en ook de inhoud hoogst interactief en gepersonaliseerd. Met behulp van de verzender kunt u AEM bibliotheken, JavaScripts, CSS-bestanden en lay-outafbeeldingen in cache plaatsen. Hierdoor worden sommige aspecten van het ontwerpproces versneld. Als u de webserver configureert om extra headers in te stellen voor het in cache plaatsen van de browser op deze bronnen, wordt het aantal HTTP-aanvragen verminderd en wordt de systeemresponsiviteit van de auteurs verbeterd.
 
-### Auteurs die parallel {#authors-working-in-parallel} werken
+### Auteurs die parallel werken {#authors-working-in-parallel}
 
 In de auteursomgeving zijn het aantal auteurs die parallel werken en de lading hun interactie aan het systeem toevoegen de belangrijkste beperkende factoren. Daarom adviseren wij dat u uw systeem schrapt dat op de gedeelde productie van gegevens wordt gebaseerd.
 
@@ -189,7 +188,7 @@ Deze formule kan als algemene richtlijn voor het schrapen van cpu&#39;s dienen w
 
 Zie ook de aanvullende opmerkingen over [Parallelization](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) en [Prestaties optimaliseren](/help/sites-deploying/configuring-performance.md).
 
-### Hardware-Recommendations {#hardware-recommendations}
+### Hardware Recommendations {#hardware-recommendations}
 
 Gewoonlijk kunt u voor uw auteursomgeving dezelfde hardware gebruiken als voor uw het publiceren milieu wordt geadviseerd. Websiteverkeer is doorgaans veel lager op ontwerpsystemen, maar de efficiëntie van de cache is ook lager. De fundamentele factor hierbij is echter het aantal auteurs dat parallel werkt, en het soort acties dat in het systeem wordt ondernomen. In het algemeen is AEM clustering (van de auteursomgeving) het meest effectief bij het schalen van leesbewerkingen; met andere woorden , een AEM cluster kan goed worden geschaald met auteurs die elementaire bewerkingen uitvoeren .
 
@@ -204,9 +203,9 @@ De benchmarktests bij Adobe zijn uitgevoerd met het RedHat 5.5-besturingssysteem
 
 AEM instanties werden uitgevoerd met een minimale heapgrootte van 256M, een maximale heapgrootte van 1024M.
 
-## Omgevingsspecifieke berekeningen {#publish-environment-specific-calculations} publiceren
+## Omgevingsspecifieke berekeningen publiceren {#publish-environment-specific-calculations}
 
-### Efficiëntie en verkeer {#caching-efficiency-and-traffic} in cache plaatsen
+### Efficiëntie en verkeer in cache {#caching-efficiency-and-traffic}
 
 Efficiëntie van de cache is van cruciaal belang voor de snelheid van de website. In de volgende tabel wordt aangegeven hoeveel pagina&#39;s per seconde een geoptimaliseerd AEM kan verwerken met een reverse-proxy, zoals de verzender:
 
@@ -295,7 +294,7 @@ Als u een complexere website hebt, hebt u ook krachtigere webservers nodig, zoda
 
 Naast de berekening voor een standaardwebtoepassing moet u wellicht rekening houden met specifieke factoren voor de volgende gebruiksgevallen. De berekende waarden worden toegevoegd aan de standaardberekening.
 
-### Elementspecifieke overwegingen {#assets-specific-considerations}
+### Specifieke overwegingen voor activa {#assets-specific-considerations}
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 
@@ -309,7 +308,7 @@ Wijs minstens 16 GB heap toe en vorm de DAM Update Asset workflow om het [Camera
 
 >[!NOTE]
 >
->Zie ook de [Prestatiehandleiding voor bedrijfsmiddelen](/help/sites-deploying/assets-performance-sizing.md).
+>Zie ook de [Prestatiehandleiding voor bedrijfsmiddelen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html).
 
 ### Beheer van meerdere sites {#multi-site-manager}
 
