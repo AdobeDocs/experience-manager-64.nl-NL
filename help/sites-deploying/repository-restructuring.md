@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: Upgrading
+feature: Bijwerken
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
-# Herstructurering van de opslagplaats in AEM 6.4{#repository-restructuring-in-aem}
+# Herstructurering van de depositaris in AEM 6.4{#repository-restructuring-in-aem}
 
 ## Inleiding {#introduction}
 
@@ -32,7 +31,7 @@ Te dien einde, vanaf AEM 6.4 en om in toekomstige versies te worden voortgezet, 
 * AEM productcode zal altijd in /libs worden geplaatst, die niet door douanecode moet worden beschreven
 * De aangepaste code moet worden geplaatst in /apps, /content en /conf
 
-## Effect op 6.4 Upgrades {#impact-on-upgrades}
+## Effect op 6,4 upgrades {#impact-on-upgrades}
 
 Wanneer u een upgrade uitvoert naar AEM 6.4, wordt een grote subset van de inhoud onder /etc. gedupliceerd in andere mappen in de opslagplaats. Deze nieuwe locaties zijn de voorkeurslocaties voor de inhoud. Nochtans, is elke poging gemaakt om AEM 6.4 verbetering achterwaarts compatibel met de vorige plaatsen in de /etc omslag te zijn en zo in de meeste gevallen zullen de oude plaatsen door AEM code blijven worden van verwijzingen voorzien tot de veranderingen actief — en in veel gevallen manueel — in de toepassing van een klant worden gemaakt. Vanuit een tijdlijnperspectief zijn er twee categorieën wijzigingen:
 
@@ -45,7 +44,7 @@ Bij het plannen van een upgrade naar AEM 6.4 moet naar de volgende pagina&#39;s 
 
 * [Herstructurering van de opslagplaats gemeenschappelijk voor alle AEM oplossingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [Herstructurering van AEM Sites-opslagplaats](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [Herstructurering van AEM Assets-opslagplaats](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [Herstructurering van AEM Assets-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 * [Herstructurering van de AEM Assets Dynamic Media-opslagplaats](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [Herstructurering van AEM Forms-opslagplaats](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [Herstructurering van AEM Communities-opslagplaats](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
