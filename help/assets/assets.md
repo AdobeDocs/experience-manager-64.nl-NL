@@ -2,13 +2,12 @@
 title: Inleiding tot [!DNL Adobe Experience Manager Assets]
 description: Leer wat het beheer van digitale middelen, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
 contentOwner: AG
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Leader,Architect,Business Practitioner
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -42,24 +41,24 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 ![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png) -->
 
-### Digital Asset Management versus Image Component {#digital-asset-management-versus-image-component}
+### Digital Asset Management versus Image-component {#digital-asset-management-versus-image-component}
 
 Houd rekening met de levenscyclus van de afbeelding wanneer u bepaalt of een afbeelding in de DAM-opslagplaats moet worden geplaatst of een afbeeldingscomponent moet worden gebruikt:
 
 * Als de afbeelding dezelfde levenscyclus heeft als de pagina, gebruikt u de component Image.
-* Als de afbeelding een aparte levenscyclus heeft, bijvoorbeeld als u de afbeelding twee keer of buiten WCM gebruikt, gebruikt u [!DNL Assets].
+* Als de afbeelding een aparte levenscyclus heeft, bijvoorbeeld als u de afbeelding tweemaal of buiten WCM gebruikt, gebruikt u [!DNL Assets].
 
 ## Wat zijn digitale middelen? {#what-are-digital-assets}
 
 Middelen zijn digitale documenten, afbeeldingen, video of audio (of een deel daarvan) die meerdere uitvoeringen kunnen hebben en subelementen kunnen bevatten (bijvoorbeeld lagen in een Photoshop-bestand, dia&#39;s in een PowerPoint-bestand, pagina&#39;s in een PDF, bestanden in een ZIP).
 
-Een element is in wezen een binair plus metagegevens plus uitvoeringen plus subelementen. Zie de [DAM Performance Guide](/help/sites-deploying/assets-performance-sizing.md) voor gedetailleerde informatie.
+Een element is in wezen een binair plus metagegevens plus uitvoeringen plus subelementen. Zie de [DAM Performance Guide](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html) voor gedetailleerde informatie.
 
 >[!CAUTION]
 >
 >Het uploaden en/of bewerken van een groot volume aan middelen (in het bijzonder afbeeldingen) kan de prestaties van uw [!DNL Experience Manager]-implementatie beïnvloeden.
 
-### [!DNL Experience Manager Assets] terminologie  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminologie {#aem-assets-terminology}
 
 Wanneer u werkt met digitale elementen in [!DNL Experience Manager], hebt u de volgende terminologie nodig:
 
@@ -79,7 +78,7 @@ Wanneer u werkt met digitale elementen in [!DNL Experience Manager], hebt u de v
 
 * **Subactiva**: Subelementen zijn elementen die een element vormen, bijvoorbeeld lagen in een  [!DNL Adobe Photoshop] bestand of pagina&#39;s in een PDF-bestand. In [!DNL Assets] kunt u subelementen op dezelfde manier beheren als elementen.
 
-### Werken met digitale elementen {#how-to-work-with-assets}
+### Werken met digitale middelen {#how-to-work-with-assets}
 
 U voert een actie op een middel of een inzameling uit. Met handelingen kunt u elementen, verzamelingen en uitvoeringen maken of wijzigen. Veel van de basishandelingen die u uitvoert op elementen - uploaden, verwijderen, bijwerken, opslaan van subelementen - activeren vooraf geconfigureerde workflows. Deze worden automatisch ingeschakeld in [!DNL Assets] en worden gedetailleerd beschreven in [!DNL Assets] media managers.
 
@@ -92,9 +91,9 @@ De taken u met deze vooraf gevormde werkschema&#39;s kunt uitvoeren:
 
 Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Elementen Media Handlers](media-handlers.md)voor een lijst met standaardworkflows.
 
-## [!DNL Experience Manager Assets] en  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] and [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Zie [Middelen en Mediabibliotheek](medialibrary.md) voor informatie over de verschillen.
+Zie [Middelen en Media Library](medialibrary.md) voor informatie over de verschillen.
 
 >[!MORELIKETHIS]
 >
