@@ -8,9 +8,9 @@ breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.4, inclusief de cloudimplementatie van Adobe Managed Services.
 feature: Implementeren
 role: Architect
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '373'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 1%
    + [Consistentie- en reiscontroles](consistency-check.md)
    + [Richtlijnen voor prestaties](performance-guidelines.md)
    + [Optimalisatie van prestaties](configuring-performance.md)
-   + [Prestatiehandleiding voor middelen](assets-performance-sizing.md)
+   + [Prestatiehandleiding voor middelen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
    + [Hoe kan ik-artikelen configureren](ht-deploy.md)
    + [De sites van de Geometrixx verwijderen](removing-the-geometrixx-sites.md)
    + [Webconsole configureren](configuring-web-console.md)
@@ -85,7 +85,7 @@ ht-degree: 1%
    + [Herstructurering van de depositaris in AEM 6.4](repository-restructuring.md)
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Sites Repositoregeling Herstructurering AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Herstructurering van activa Bewaarinstelling in AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
+   + [Herstructurering van activa Bewaarinstelling in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
    + [Dynamic Media Repositoregeling Herstructurering in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Forms Repositoregeling Herstructurering in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Herstructurering van de opslagplaats voor elektronische handel in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
