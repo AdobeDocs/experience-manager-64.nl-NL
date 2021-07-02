@@ -8,13 +8,12 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
-feature: Upgrading
+feature: Bijwerken
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 1%
+source-wordcount: '1139'
+ht-degree: 0%
 
 ---
 
@@ -24,23 +23,23 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
 
 **Met 6.4-upgrade**
 
-* [Dic](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [Dic](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **Vóór upgrade naar 6.5**
 
-* [E-mailmeldingssjabloon voor element-/verzamelingsgebeurtenis](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [Klassieke elementen delen](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [E-mailmeldingssjabloon voor middelen downloaden](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [Voorbeeld-DRM-licenties](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [E-mailmeldingssjabloon voor element-/verzamelingsgebeurtenis](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Klassieke elementen delen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [E-mailmeldingssjabloon voor middelen downloaden](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Voorbeeld-DRM-licenties](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [E-mailmeldingssjabloon voor delen van koppeling](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [InDesign Workflowscripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [Configuraties voor videotransformatie](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [Dic](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [E-mailmeldingssjabloon voor delen van koppeling](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [InDesign Workflowscripts](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Configuraties voor videotransformatie](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Dic](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 ## Met 6.4-upgrade {#with-upgrade}
 
-### Diverse {#misc}
+### Dic {#misc}
 
 <table> 
  <tbody> 
@@ -63,7 +62,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody> 
 </table>
 
-## Vóór upgrade {#prior-to-upgrade} 6.5
+## Vóór upgrade naar 6.5 {#prior-to-upgrade}
 
 ### E-mailmeldingssjabloon voor element-/verzamelingsgebeurtenis {#asset-collection-event-e-mail-notification-template}
 
@@ -98,7 +97,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody> 
 </table>
 
-### Klassieke ontwerpen voor het delen van bedrijfsmiddelen {#classic-asset-share-designs}
+### Klassieke elementen delen {#classic-asset-share-designs}
 
 <table> 
  <tbody> 
@@ -290,7 +289,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody> 
 </table>
 
-### Diverse {#misc2}
+### Dic {#misc2}
 
 <table> 
  <tbody> 
