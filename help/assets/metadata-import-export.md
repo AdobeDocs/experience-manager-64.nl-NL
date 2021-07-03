@@ -2,22 +2,21 @@
 title: Bulkmetagegevens importeren en exporteren
 description: In dit artikel wordt beschreven hoe u metagegevens bulksgewijs kunt importeren en exporteren.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
+feature: Metagegevens
+role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 8%
 
 ---
 
-# Onduidelijke metagegevens importeren en exporteren {#bulk-metadata-import-and-export}
+# Bulkmetagegevens importeren en exporteren {#bulk-metadata-import-and-export}
 
 Met AEM Assets kunt u metagegevens van elementen in bulk importeren met behulp van een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
 
-## Metagegevens {#import-metadata} importeren
+## Metagegevens importeren {#import-metadata}
 
 De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan bronintensief zijn vanwege XMP schrijfactiviteit als de werkstroommarkering wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server om te voorkomen dat de prestaties voor andere gebruikers worden beïnvloed.
 
@@ -42,7 +41,7 @@ Voer de volgende stappen uit om metagegevens in bulk te importeren:
 
 1. Tik/klik op **[!UICONTROL Import]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
 
-Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00`-indeling voor datum en tijd. Datum en tijd worden gescheiden door `T`, `hh` is uren in 24-uurformaat, `fff` is nanoseconden, en `-00:00` is timezone offset. `2020-03-26T11:26:00.000-07:00` is bijvoorbeeld 26 maart 2020 om 11:26:00.000 AM PST tijd.
+Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00`-indeling voor datum en tijd. Datum en tijd worden gescheiden door `T`, `hh` is uren in 24-uurformaat, `fff` is nanoseconden, en `-00:00` is timezone offset. `2020-03-26T11:26:00.000-07:00` is bijvoorbeeld 26 maart 2020 bij 11:26:00.000 AM PST tijd.
 
 >[!CAUTION]
 >
