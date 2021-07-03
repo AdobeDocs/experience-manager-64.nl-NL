@@ -5,18 +5,17 @@ uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Asset Management,Developer Tools
-role: Business Practitioner
+feature: Asset Management, ontwikkelprogramma's
+role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1575'
 ht-degree: 0%
 
 ---
 
-# Asset Templates {#asset-templates}
+# Elementsjablonen {#asset-templates}
 
 Elementsjablonen zijn een speciale klasse elementen die het snel opnieuw gebruiken van visueel rijke inhoud voor digitale media en gedrukte media mogelijk maken. Een activamalplaatje omvat twee delen, de vaste overseinensectie en de editable sectie.
 
@@ -71,7 +70,7 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
 1. (Optioneel) Klik/tik op het pictogram **[!UICONTROL Tags]** naast het veld **[!UICONTROL Tags]** en selecteer een of meer tags voor de brochure. Klik/tik **[!UICONTROL Confirm]** om uw selectie te bevestigen.
 
-   ![chlimage_1-311](assets/chlimage_1-310.png)
+   ![chlimage_1-310](assets/chlimage_1-310.png)
 
 1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik/tik **[!UICONTROL Open]** om de brochure in Edit wijze te openen.
 
@@ -81,7 +80,7 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## Een zekerheden bewerken {#editing-a-collateral}
+## Een zekerheid bewerken {#editing-a-collateral}
 
 U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjabloon ook openen vanaf de pagina Sjablonen of de elementpagina.
 
@@ -167,7 +166,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## Zekerheden samenvoegen {#merge-collateral}
+## Zekerheid samenvoegen {#merge-collateral}
 
 
 1. Klik of tik **[!UICONTROL Tools > Assets]**.
