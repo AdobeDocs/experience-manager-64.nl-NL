@@ -2,18 +2,17 @@
 title: GQL Full-text zoeken
 description: Ontdek de GQL-functie voor full-text zoeken in AEM Assets. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
 contentOwner: AG
-feature: Search,Metadata
-role: Business Practitioner
+feature: Zoeken,metagegevens
+role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
 
-# GQL full-text zoeken {#gql-full-text-search}
+# GQL Full-text zoeken {#gql-full-text-search}
 
 Ontdek de GQL-functie voor full-text zoeken in AEM Assets. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
 
@@ -23,7 +22,7 @@ Als u naar een element wilt zoeken op basis van de metagegevens, bijvoorbeeld de
 
 Als u bijvoorbeeld wilt zoeken naar elementen met de titel &quot;Doel&quot;, voert u de volgende stappen uit:
 
-## Elementen zoeken {#searching-assets}
+## Zoeken in middelen {#searching-assets}
 
 1. Klik of tik op het pictogram **[!UICONTROL Search]** op de werkbalk van de gebruikersinterface Elementen om het vak Onderzoek weer te geven.
 
@@ -65,7 +64,7 @@ Met de zoekfunctie voor volledige tekst van GQL kunt u zoeken naar elementen op 
 | [!UICONTROL Contributor] | contribuant:John |
 | [!UICONTROL Usage Terms] | usageterms:&quot;CopyRights Reserved&quot; |
 | [!UICONTROL Created] | gemaakt:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Expires Date] | verloopt:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Expires Date] | validate:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL On time] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Off time] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Range of time] (verloopt dateontime, offtime) | Veld facet: lager gebonden..bovenaan |
@@ -121,7 +120,7 @@ titel:&quot;Vergadering&quot;;
 
 Het zoeken naar volledige tekst ondersteunt ook operatoren zoals -, ^, enzovoort. Als u deze letters wilt doorzoeken als letterlijke tekenreeksen, plaatst u de zoekexpressie tussen dubbele aanhalingstekens. Gebruik bijvoorbeeld &quot;Notebook - Beauty&quot; in plaats van &quot;Notebook - Beauty&quot;.
 
-## Zoekopdracht opvoeren {#boosting-search}
+## Zoekopdracht verhogen {#boosting-search}
 
 U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoekopdrachten op basis van trefwoorden te stimuleren. Met andere woorden, de afbeeldingen waarvoor u specifieke trefwoorden promoot, worden boven aan de zoekresultaten weergegeven wanneer u op basis van deze trefwoorden zoekt.
 
