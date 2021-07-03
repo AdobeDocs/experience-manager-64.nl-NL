@@ -10,10 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
-feature: Components
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Onderdelen
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 4%
@@ -30,7 +29,7 @@ U voegt dynamische media-elementen rechtstreeks aan de pagina toe als u AEM gebr
 >
 >U moet elementen publiceren voordat u deze aan pagina&#39;s in AEM toevoegt. Zie [Dynamic Media-middelen publiceren](publishing-dynamicmedia-assets.md).
 
-## Een Dynamic Media-component toevoegen aan een pagina {#adding-a-dynamic-media-component-to-a-page}
+## Een Dynamic Media-component aan een pagina toevoegen {#adding-a-dynamic-media-component-to-a-page}
 
 Het toevoegen van een Dynamic Media-component aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. De Dynamic Media-componenten worden in de volgende secties uitgebreid beschreven.
 
@@ -50,7 +49,7 @@ Het toevoegen van een Dynamic Media-component aan een pagina is hetzelfde als he
 1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omringd door een blauw vak. Tik op het pictogram **[!UICONTROL Configuration]** (moersleutel).
 1. [Bewerk indien nodig de ](#dynamic-media-components) componenten en klik op het vinkje om de wijzigingen op te slaan.
 
-### Dynamic Media-componenten {#enabling-dynamic-media-components} inschakelen
+### Dynamic Media-componenten inschakelen {#enabling-dynamic-media-components}
 
 Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u eerst de componenten moet inschakelen die u wilt gebruiken.
 
@@ -122,7 +121,7 @@ De Dynamic Media-component is slim. Afhankelijk van het feit of u een afbeelding
 
 
 
-#### Wanneer u werkt met afbeeldingen {#when-working-with-images}
+#### Wanneer u met afbeeldingen werkt {#when-working-with-images}
 
 Met de Dynamic Media-component kunt u dynamische afbeeldingen toevoegen, zoals afbeeldingssets, centrifuges en gemengde mediasets. U kunt inzoomen, uitzoomen en, indien van toepassing, een afbeelding binnen een centrifugeset draaien of een afbeelding van een ander type set selecteren.
 
@@ -170,11 +169,11 @@ Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde me
 * **[!UICONTROL Width]** en  **[!UICONTROL Height]**
 Voer een waarde in pixels in als u wilt dat de afbeelding een vaste grootte heeft. Als u deze waarden niet invult, wordt het element adaptief.
 
-#### Bij het werken met video {#when-working-with-video}
+#### Wanneer u werkt met video {#when-working-with-video}
 
 Met de Dynamic Media-component kunt u dynamische video toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
-![chlimage_1-540](assets/chlimage_1-540.png)
+![chlimage_1-541](assets/chlimage_1-540.png)
 
 U moet de volgende Dynamic Media-instellingen bewerken door in de component op **[!UICONTROL Edit]** te klikken.
 
@@ -289,7 +288,7 @@ Selecteer een bestaande viewer in het vervolgkeuzemenu met voorinstellingen voor
 
 Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze is gepubliceerd. U moet viewervoorinstellingen publiceren voordat u deze kunt gebruiken. Zie [Viewer-voorinstellingen beheren](managing-viewer-presets.md).
 
-### HTTP/2 gebruiken om Dynamic Media-elementen {#using-http-to-delivery-dynamic-media-assets} te leveren
+### HTTP/2 gebruiken om Dynamic Media-elementen te leveren {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-middelen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
