@@ -2,11 +2,10 @@
 title: Verbeterde sortering van elementen in AEM
 description: Leer hoe AEM Assets sortering aan de serverzijde implementeert om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches op de client te sorteren.
 contentOwner: AG
-feature: Search
-role: Business Practitioner
+feature: Zoeken
+role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -21,7 +20,7 @@ De zoekfunctie van Adobe Experience Manager-middelen (AEM) is verbeterd en daarm
 
 AEM Assets sorteert via de server de gehele set elementen (hoe groot ook) binnen een map of zoekopdracht tegelijk in plaats van deze op de client te sorteren. Op deze manier kunnen vooraf ingestelde resultaten snel worden weergegeven in de gebruikersinterface, waardoor de sorteerbewerking responsiever en kwetsbaarder wordt.
 
-## Elementen sorteren in lijstweergave {#sorting-assets-in-list-view}
+## Elementen sorteren in de lijstweergave {#sorting-assets-in-list-view}
 
 Met AEM Assets kunt u mapelementen sorteren op basis van de volgende velden:
 
@@ -74,7 +73,7 @@ U kunt zoekresultaten sorteren op basis van de volgende velden:
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
-## Elementen sorteren in tijdlijn {#sorting-assets-in-timeline}
+## Elementen in tijdlijn sorteren {#sorting-assets-in-timeline}
 
 Met AEM Assets kunt u tijdlijnvermeldingen chronologisch sorteren, zoals annotaties, versies, workflows en activiteiten.
 
