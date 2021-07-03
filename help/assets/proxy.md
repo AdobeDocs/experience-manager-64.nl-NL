@@ -2,18 +2,17 @@
 title: Ontwikkeling van proxy's
 description: 'Een proxy is een AEM instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een AEM proxy, ondersteunde bewerkingen, proxycomponenten en een aangepaste proxyworker kunt configureren. '
 contentOwner: AG
-feature: Asset Processing
-role: Administrator, Architect
+feature: Middelverwerking
+role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
 
 ---
 
-# Ontwikkeling van middelenproxy {#assets-proxy-development}
+# Ontwikkeling van proxy&#39;s {#assets-proxy-development}
 
 Adobe Experience Manager (AEM) Assets gebruikt een proxy om verwerking voor bepaalde taken te distribueren.
 
@@ -71,7 +70,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
     http://localhost:4502/libs/dam/cloud/proxy
 ```
 
-### Proxyworker {#proxy-worker}
+### Proxy Worker {#proxy-worker}
 
 Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van een taak en het maken van een resultaat. Workers bevinden zich op de proxyinstantie en moeten [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) implementeren om te worden herkend als een proxyworker.
 
@@ -132,7 +131,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### Een aangepaste proxyworker {#developing-a-customized-proxy-worker} ontwikkelen
+### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
 
 De [IDS volmachtsarbeider](indesign.md) is een voorbeeld van een volmachtsarbeider van AEM Assets die reeds ver-van-de-doos wordt verstrekt om de verwerking van activa inDesign uit te besteden.
 
