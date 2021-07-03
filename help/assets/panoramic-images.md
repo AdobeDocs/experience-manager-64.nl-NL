@@ -7,9 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
 feature: Panoramische afbeeldingen
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 489a4b42bdd5895186ba885b9a1dc33b49427e8d
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 2%
@@ -40,7 +39,7 @@ Zowel zijn de aspectverhouding als de sleutelwoordcriteria op panoramische activ
 
 Zie [Elementen uploaden](managing-assets-touch-ui.md#uploading-assets) om elementen te uploaden voor gebruik met de Panoramische Image Viewer.
 
-## Dynamic Media Classic {#configuring-dynamic-media-classic-scene} configureren
+## Dynamic Media Classic configureren {#configuring-dynamic-media-classic-scene}
 
 De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voor de Panoramische afbeeldingsviewer synchroniseert met klassieke metagegevens van Dynamic Media Classic en Dynamic Media, zodat de voorinstellingen van de viewer worden bijgewerkt in de JCR. Hiertoe configureert u Dynamic Media Classic als volgt:
 
@@ -69,7 +68,7 @@ De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voo
 
 1. Tik in de rechterbenedenhoek op **[!UICONTROL Close]**.
 
-### Problemen met de component Panoramische media {#troubleshooting-the-panoramic-media-wcm-component} oplossen
+### Problemen met de component Panoramische media oplossen {#troubleshooting-the-panoramic-media-wcm-component}
 
 Als u een beeld in de **[!UICONTROL Panoramic Media]** component in uw WCM en componentenplaceholder samengevouwen hebt gelaten vallen, kunt u het volgende willen problemen oplossen:
 
@@ -79,10 +78,10 @@ Als u een beeld in de **[!UICONTROL Panoramic Media]** component in uw WCM en co
 * Voor een bekroonde canvasfout stelt u een **[!UICONTROL Rule Set Definition File Path and Invalidate CTN]** in voor de vorige aanvragen voor het afbeeldingselement.
 * Als de afbeeldingskwaliteit na een afbeeldingsaanvraag met een formaat groter dan de ondersteunde limiet erg laag wordt, controleert u of de instelling **[!UICONTROL JPEG Encoding Attributes > Quality]** niet leeg is. Een typische instelling voor het veld **[!UICONTROL Quality]** is `95`. U kunt de instelling vinden op de pagina **[!UICONTROL Image Server Publish]**. Zie [Dynamic Media Classic configureren](#configuring-dynamic-media-classic-scene) voor toegang tot de pagina.
 
-## Voorvertoning van panorama-afbeeldingen {#previewing-panoramic-images}
+## Voorvertoning panorama-afbeeldingen weergeven {#previewing-panoramic-images}
 
 Zie [Elementen voorvertonen](previewing-assets.md).
 
-## Panorama-afbeeldingen {#publishing-panoramic-images} publiceren
+## Panorama-afbeeldingen publiceren {#publishing-panoramic-images}
 
 Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
