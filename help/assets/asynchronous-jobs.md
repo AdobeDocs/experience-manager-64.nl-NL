@@ -2,11 +2,10 @@
 title: Vorm asynchrone verrichtingen in [!DNL Adobe Experience Manager].
 description: Asynchroon sommige resource-intensieve taken voltooien om prestaties in  [!DNL Experience Manager Assets] te optimaliseren.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner
+feature: Beheer van bedrijfsmiddelen
+role: User
 exl-id: 0abdfe87-d932-41dd-b1e6-9f5fa5b924fe
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 22%
@@ -27,7 +26,7 @@ U kunt de status van asynchrone taken weergeven op de pagina **[!UICONTROL Async
 >
 >Standaard worden de [!DNL Assets]-taken parallel uitgevoerd. Als `N` het aantal CPU-cores is, kunnen `N/2`-taken standaard parallel worden uitgevoerd. Om douanemontages voor de taakrij te gebruiken, wijzig de **[!UICONTROL Async Operation Default Queue]** configuratie van [!UICONTROL Web Console]. Voor meer informatie raadpleegt u [wachtrijconfiguraties](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## De status van asynchrone bewerkingen {#monitoring-the-status-of-asynchronous-operations} controleren
+## De status van asynchrone bewerkingen controleren {#monitoring-the-status-of-asynchronous-operations}
 
 Wanneer [!DNL Assets] een verrichting asynchroon verwerkt, ontvangt u een bericht in uw [!DNL Experience Manager] [Inbox](/help/sites-authoring/inbox.md) en via e-mail. Navigeer naar de pagina **[!UICONTROL Async Job Status]** om de status van de asynchrone bewerkingen in detail weer te geven.
 
@@ -56,7 +55,7 @@ Wanneer [!DNL Assets] een verrichting asynchroon verwerkt, ontvangt u een berich
    >
    >U kunt een taak niet verwijderen als de status actief is of in de wachtrij staat.
 
-## Voltooide taken {#purge-completed-tasks} wissen
+## Voltooide taken wissen {#purge-completed-tasks}
 
 [!DNL Experience Manager Assets] Voert een zuiveringstaak elke dag bij 100 uren uit om voltooide asynchrone taken te schrappen die meer dan een dag oud zijn.
 
@@ -81,7 +80,7 @@ Als het aantal elementen of mappen dat moet worden verwijderd, de ingestelde dre
 
    ![De drempellimiet instellen voor de taak om elementen te verwijderen](assets/delete_threshold.png)
 
-## Drempel configureren voor asynchrone verplaatsingsbewerkingen {#configure-thresholds-for-asynchronous-move-operations}
+## Drempel voor asynchrone verplaatsingsbewerkingen configureren {#configure-thresholds-for-asynchronous-move-operations}
 
 Als het aantal te verplaatsen elementen, mappen of verwijzingen het ingestelde drempelnummer overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
