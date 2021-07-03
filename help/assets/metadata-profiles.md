@@ -2,11 +2,10 @@
 title: Gebruik metagegevensprofielen om standaardmetagegevens toe te passen op alle elementen in een map
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
+feature: Metagegevens
+role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 18%
@@ -17,7 +16,7 @@ ht-degree: 18%
 
 Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen in een map. Maak een metagegevensprofiel en pas dit toe op een map. Elk element dat u vervolgens uploadt naar de map, neemt de standaardmetagegevens over die u hebt geconfigureerd in het metagegevensprofiel.
 
-## Een metagegevensprofiel {#adding-a-metadata-profile} toevoegen
+## Een metagegevensprofiel toevoegen {#adding-a-metadata-profile}
 
 1. Tik op het AEM of klik op het logo en navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]** en tik op **[!UICONTROL Create]**.
 1. Voer een titel in voor Metagegevensprofiel, bijvoorbeeld Voorbeeldmetagegevens, en klik op **[!UICONTROL Submit]**. De **[!UICONTROL Edit Form]** voor het profiel van Meta-gegevens wordt getoond.
@@ -26,7 +25,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
 1. Klik op een component en configureer de eigenschappen ervan op het tabblad **[!UICONTROL Settings]**. Klik bijvoorbeeld op de component **[!UICONTROL Description]** en bewerk de eigenschappen ervan.
 
-   ![chlimage_1-401](assets/chlimage_1-481.png)
+   ![chlimage_1-481](assets/chlimage_1-481.png)
 
    Bewerk de volgende eigenschappen voor de component **[!UICONTROL Description]**:
 
@@ -62,7 +61,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
    ![chlimage_1-485](assets/chlimage_1-485.png)
 
-## Een metagegevensprofiel {#copying-a-metadata-profile} kopiëren
+## Een metagegevensprofiel kopiëren {#copying-a-metadata-profile}
 
 1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** een profiel om er een kopie van te maken.
 
@@ -74,7 +73,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
    ![chlimage_1-487](assets/chlimage_1-487.png)
 
-## Een metagegevensprofiel {#deleting-a-metadata-profile} verwijderen
+## Een metagegevensprofiel verwijderen {#deleting-a-metadata-profile}
 
 1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** een profiel dat u wilt verwijderen.
 
@@ -121,7 +120,7 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
    Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-### Een metagegevensprofiel globaal toepassen {#applying-a-metadata-profile-globally}
+### Een metagegevensprofiel algemeen toepassen {#applying-a-metadata-profile-globally}
 
 Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die is geüpload naar AEM elementen in een map. Ga als volgt te werk als u een metagegevensprofiel globaal wilt toepassen:
 
@@ -135,13 +134,13 @@ Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepas
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## Een metagegevensprofiel verwijderen uit mappen {#removing-a-metadata-profile-from-folders}
+## Een metagegevensprofiel uit mappen verwijderen {#removing-a-metadata-profile-from-folders}
 
 Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]** of **[!UICONTROL Properties]** als u in de map bent. In deze sectie wordt beschreven hoe u metadataprofielen op beide manieren uit mappen kunt verwijderen.
 
-### Metagegevensprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### Metaprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 Voer de volgende stappen uit om een metagegevensprofiel uit mappen te verwijderen via de gebruikersinterface van Profielen:
 
