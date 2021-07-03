@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: Interactieve afbeeldingen
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '4159'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Bekijk de volgende interactieve afbeeldingen in actie op de bovenstaande webpagi
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
-## Bekijk hoe u interactieve afbeeldingsbanners {#watch-how-interactive-image-banners-are-created} maakt
+## Controleren hoe interactieve afbeeldingsbanners worden gemaakt {#watch-how-interactive-image-banners-are-created}
 
 Bekijk een 10 minuten en 33 seconden analyse op [hoe de interactieve beeldbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). U leert ook hoe u interactieve afbeeldingsbanners kunt voorvertonen, bewerken en leveren.
 
@@ -73,7 +73,7 @@ De zelfstudie helpt u de stappen te illustreren voor het integreren van interact
    * Als u AEM Assets en Dynamic Media zelfstandig gebruikt, moet u de insluitcode naar uw website kopiëren en deze vervolgens integreren met uw bestaande Snelle weergave. Zie [Een interactieve afbeelding integreren met uw website](#integrating-an-interactive-image-with-your-website).
    * Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve afbeelding integreren met een bestaande QuickView](#integrating-an-interactive-image-with-an-existing-quickview).
 
-## (Optioneel) Hotspotvariabelen {#optional-identifying-hotspot-variables} identificeren
+## (Optioneel) Hotspotvariabelen identificeren {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
@@ -214,7 +214,7 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
 
    U kunt nu een afbeeldingsbanner uploaden.
 
-## Een afbeeldingsbanner {#uploading-an-image-banner} uploaden
+## Een afbeeldingsbanner uploaden {#uploading-an-image-banner}
 
 Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
 
@@ -337,7 +337,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](adding-dynamic-media-a
 
 Zie [Elementen publiceren](publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van interactieve afbeeldingselementen.
 
-## Een interactieve afbeelding integreren met uw website {#integrating-an-interactive-image-with-your-website}
+## Een interactieve afbeelding met uw website integreren {#integrating-an-interactive-image-with-your-website}
 
 Nadat u een bannerafbeelding hebt geüpload, hotspots hebt toegevoegd aan de afbeelding en de interactieve afbeelding hebt gepubliceerd, kunt u deze nu toevoegen aan uw websitepagina.
 
