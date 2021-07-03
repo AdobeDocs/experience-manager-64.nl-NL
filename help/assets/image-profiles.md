@@ -10,10 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
-feature: Image Profiles
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Afbeeldingsprofielen
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2635'
 ht-degree: 10%
@@ -32,7 +31,7 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 >
 >Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerde GIF- of INDD-bestanden (Adobe InDesign).
 
-## Uitsnijdopties {#crop-options}
+## Opties voor uitsnijden {#crop-options}
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
@@ -109,7 +108,7 @@ In **Onscherp masker**, hebt u de volgende het filtreren opties:
 
 Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/assets/sharpening_images.pdf).
 
-## Dynamic Media-afbeeldingsprofielen {#creating-image-profiles} maken
+## Dynamic Media-afbeeldingsprofielen maken {#creating-image-profiles}
 
 Zie [Elementverwerking configureren](config-dms7.md#configuring-asset-processing) om geavanceerde verwerkingsparameters voor andere elementtypen te definiëren.
 
@@ -136,7 +135,7 @@ Zie [Elementverwerking configureren](config-dms7.md#configuring-asset-processing
 
 1. Sla de wijzigingen op als u het bestand bewerkt. Bevestig bij verwijderen dat u het profiel wilt verwijderen.
 
-## Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
+## Een Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
 
 Wanneer u een afbeeldingsprofiel toewijst aan een map, nemen eventuele submappen het profiel automatisch over van de bovenliggende map. Dit betekent dat u slechts één afbeeldingsprofiel kunt toewijzen aan een map. Denk daarom zorgvuldig na over de mapstructuur van de locatie waar u middelen uploadt, opslaat, gebruikt en archiveert.
 
@@ -163,7 +162,7 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
 1. Tik op **[!UICONTROL Apply Processing Profile to Folder(s)]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en tik/klik op **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit Eigenschappen {#applying-image-profiles-to-folders-from-properties}
+#### Dynamic Media-afbeeldingsprofielen vanuit eigenschappen toepassen op mappen {#applying-image-profiles-to-folders-from-properties}
 
 1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
 1. Tik in de map op het vinkje om het te selecteren en tik op **[!UICONTROL Properties]**.
@@ -171,7 +170,7 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Een Dynamic Media-afbeeldingsprofiel globaal toepassen {#applying-an-image-profile-globally}
+### Een Dynamic Media-afbeeldingsprofiel wereldwijd toepassen {#applying-an-image-profile-globally}
 
 Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die is geüpload naar AEM elementen in een map.
 
@@ -220,7 +219,7 @@ Zie ook [Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen 
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]** om terug te keren naar de map met elementen.
 
-## Het slimme uitsnijd- of slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+## Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Desgewenst kunt u het venster voor slimme uitsnijden in meerdere afbeeldingen *handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.*
 
@@ -271,7 +270,7 @@ Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieu
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**. Tik vervolgens op **[!UICONTROL Close]** om terug te keren naar de map met middelen.
 
-## Een afbeeldingsprofiel verwijderen uit mappen {#removing-an-image-profile-from-folders}
+## Een afbeeldingsprofiel uit mappen verwijderen {#removing-an-image-profile-from-folders}
 
 Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
@@ -285,7 +284,7 @@ U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONT
 
    U kunt bevestigen dat het afbeeldingsprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
+### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen door eigenschappen {#removing-image-profiles-from-folders-via-properties}
 
 1. Tik op het AEM en navigeer **[!UICONTROL Assets]** naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
