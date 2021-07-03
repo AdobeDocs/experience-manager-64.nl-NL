@@ -3,9 +3,9 @@ title: Demo-pakket gebruiken voor elementinzichten
 description: Gebruik het demopakket om Adobe Assets Insights in staat te stellen gegevens vast te leggen van en inzichten te genereren voor een webpagina.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: c6d321f5-4c48-47f2-bff1-c4da988c0e84
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Met behulp van het demopakket kunt u Adobe Assets Insights inschakelen om gegevens vast te leggen van en inzichten te genereren voor een voorbeeldwebpagina.
 
-## AEM Assets Insights gebruiken met voorbeeldwebpagina {#using-aem-assets-insights-with-sample-web-page}
+## AEM Assets Insights gebruiken met voorbeeldwebpagina  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configureer Assets Insights met behulp van de instructies in [Assets Insights](touch-ui-configuring-asset-insights.md) configureren.
 1. Download het voorbeeld van het AEM Assets-pakket hieronder en installeer het pakket via CRXDE package manager.
