@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: Interactieve video's, video
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5896'
 ht-degree: 4%
@@ -41,7 +41,7 @@ Als u een interactieve, verschuivende video in actie wilt zien, klikt u op [Live
 >
 >Als u een interactieve video maakt om een webpagina te starten wanneer een gebruiker op een miniatuurafbeelding klikt, blokkeren sommige apparaten het openen van de pop-upwebpagina. In dergelijke gevallen moet u de instelling van de pop-upblokkering op het apparaat wijzigen. Tik bijvoorbeeld op een Apple iPhone 6 op **[!UICONTROL Settings]** > **Safari** > **Pop-ups blokkeren** en schuif het besturingselement vervolgens naar **[!UICONTROL Off]**. Wanneer u nu een interactieve video afspeelt en op een miniatuur klikt, wordt u gevraagd of u de pop-up wilt openen. Als u akkoord gaat, wordt de webpagina geopend.
 
-## Bekijk hoe interactieve video&#39;s worden gemaakt {#watch-how-interactive-videos-are-created}
+## Controleren hoe interactieve video&#39;s worden gemaakt {#watch-how-interactive-videos-are-created}
 
 Bekijk een analyse van 7 minuten en 30 seconden over [hoe interactieve video&#39;s worden gemaakt](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) [](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA).\
 (Hoewel de videoanalyse met Assets on Demand is gemaakt, zijn de principes en de stappen ook van toepassing op interactieve video in AEM Assets.)
@@ -477,7 +477,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
       Tik op de tijdlijn op een segment dat u in tweeën wilt delen en tik op **[!UICONTROL Split Segment]** op de werkbalk.
 
       Als u twee of meer segmenten selecteert, wordt de functie **[!UICONTROL Split Segment]** uitgeschakeld.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Een geselecteerd tien-secondensegment splitsen in twee segmenten van vijf seconden elk.
 
