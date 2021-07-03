@@ -2,11 +2,10 @@
 title: Middelen zoeken in AEM
 description: Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
-feature: Search,Metadata
-role: Business Practitioner
+feature: Zoeken,metagegevens
+role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 1%
@@ -93,7 +92,7 @@ Gebruik bij het controleren van de revisiestatus van de middelen de juiste optie
 
 ![goedkeuring](assets/approval.png)
 
-## Zoeken op basis van gegevens met inzichten {#search-based-on-insights-data}
+## Zoeken op basis van gegevens over inzichten {#search-based-on-insights-data}
 
 Met de voorspelling **Insights** kunt u zoeken naar elementen op basis van de gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd in de volgende categorieën:
 
