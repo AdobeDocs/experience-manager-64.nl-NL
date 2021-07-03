@@ -2,11 +2,10 @@
 title: Ondersteunde bestandsindelingen in AEM Assets
 description: Lijst met bestandsindelingen en MIME-typen die door AEM Assets worden ondersteund en de functies die voor elke indeling worden ondersteund.
 contentOwner: AG
-feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
+feature: Middelenbeheer, uitvoeringen
+role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 2%
@@ -92,7 +91,7 @@ Zie ook [Niet-ondersteunde bestandsindelingen detecteren voor Dynamic Media](htt
 * TIFF-bestanden met zwevende-kommagegevens.
 * TIFF-bestanden met LAB-kleurruimte.
 
-## Bibliotheek van PDF Rasterizer {#supported-pdf-rasterizer-library}
+## PDF Rasterizer-bibliotheek {#supported-pdf-rasterizer-library}
 
 De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van hoge kwaliteit voor grote en inhoudintensieve Adobe Illustrator- en PDF-bestanden. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
@@ -102,7 +101,7 @@ De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van 
 
 Zie [Werken met PDF Rasterizer](aem-pdf-rasterizer.md).
 
-## Bibliotheek {#supported-image-transcoding-library} voor transformatie van afbeeldingen
+## Bibliotheek voor transformatie van afbeeldingen {#supported-image-transcoding-library}
 
 De Adobe Imaging Transcoding Library is een oplossing voor beeldverwerking die kernfuncties voor beeldverwerking uitvoert, zoals coderen, transcoderen, resampling en vergroten/verkleinen.
 
@@ -149,7 +148,7 @@ Documentindelingen die worden ondersteund voor Dynamic Media-functies zijn:
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML |  |  |  |  |  |
-| TTF |  |  |  |  |  |
+| RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -297,7 +296,7 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| TTF | application/x-font-ttf |  |  |
+| RTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
