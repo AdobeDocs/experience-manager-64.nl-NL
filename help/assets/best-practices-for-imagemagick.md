@@ -2,18 +2,17 @@
 title: ImageMagick installeren en configureren om met AEM Assets te werken
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
-feature: Renditions,Developer Tools
-role: Administrator
+feature: Uitvoeringen,Gereedschappen voor ontwikkelaars
+role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 1%
 
 ---
 
-# ImageMagick installeren en configureren om te werken met AEM Assets {#install-and-configure-imagemagick-to-work-with-aem-assets}
+# ImageMagick installeren en configureren om met AEM Assets te werken {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick is een softwareplug-in voor het maken, bewerken, samenstellen of omzetten van bitmapafbeeldingen. Afbeeldingen kunnen in verschillende indelingen (meer dan 200) worden gelezen en geschreven, waaronder PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF en SVG. Met ImageMagick kunt u afbeeldingen vergroten, verkleinen, spiegelen, roteren, vervormen, schuintrekken en transformeren. U kunt ook afbeeldingskleuren aanpassen, verschillende speciale effecten toepassen of tekst, lijnen, veelhoeken, ellipsen en curven tekenen met ImageMagick.
 
@@ -25,7 +24,7 @@ Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met
 >
 >Als u AEM gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van de Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
 
-## ImageMagick {#installing-imagemagick} installeren
+## ImageMagick installeren {#installing-imagemagick}
 
 Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor verschillende besturingssystemen. Gebruik de juiste versie voor uw besturingssysteem.
 
@@ -35,7 +34,7 @@ Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor ve
 1. Plaats de variabele van het wegmilieu aan de installatiemap ImageMagic.
 1. Om te controleren of de installatie succesvol was, voer `identify -version` bevel uit.
 
-## De processtap {#set-up-the-command-line-process-step} van de opdrachtregel instellen
+## De processtap van de opdrachtregel instellen {#set-up-the-command-line-process-step}
 
 U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om elke keer dat u een JPEG-afbeeldingsbestand toevoegt aan `/content/dam` op de AEM een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren:
 
@@ -76,7 +75,7 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 1. Sla de workflow op.
 1. Als u wilt controleren of ImageMagic afbeeldingen correct kan verwerken, uploadt u een JPG-afbeelding naar AEM Assets. Controleer of er een gespiegelde afbeelding en de uitvoeringen voor zijn gegenereerd.
 
-## Beveiligingskwetsbaarheden beperken {#mitigating-security-vulnerabilities}
+## Beveiligingskwetsbaarheden verminderen {#mitigating-security-vulnerabilities}
 
 Er zijn meerdere beveiligingskwetsbaarheden verbonden aan het gebruik van ImageMagick voor het verwerken van afbeeldingen. Als u bijvoorbeeld door gebruikers verzonden afbeeldingen verwerkt, bestaat het risico dat de code op afstand wordt uitgevoerd (RCE).
 
@@ -90,9 +89,9 @@ Als u ImageMagick of een beïnvloede bibliotheek gebruikt, adviseert Adobe dat u
 >[!MORELIKETHIS]
 >
 >* [Aanbevolen procedures voor het verwerken van verschillende bestandsindelingen met AEM Assets](assets-file-format-best-practices.md)
->* [Opdrachtregelopties voor ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
->* [Eenvoudige en geavanceerde voorbeelden van het gebruik van ImageMagick](https://www.imagemagick.org/Usage/)
->* [Afstelling van prestaties van middelen voor ImageMagick](performance-tuning-guidelines.md)
->* [Volledige lijst met bestandsindelingen die door AEM Assets worden ondersteund](assets-formats.md)
->* [Begrijp bestandsindelingen en de geheugenkosten van afbeeldingen](https://www.scantips.com/basics1d.html)
+* [Opdrachtregelopties voor ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
+* [Eenvoudige en geavanceerde voorbeelden van het gebruik van ImageMagick](https://www.imagemagick.org/Usage/)
+* [Afstelling van prestaties van middelen voor ImageMagick](performance-tuning-guidelines.md)
+* [Volledige lijst met bestandsindelingen die door AEM Assets worden ondersteund](assets-formats.md)
+* [Begrijp bestandsindelingen en de geheugenkosten van afbeeldingen](https://www.scantips.com/basics1d.html)
 
