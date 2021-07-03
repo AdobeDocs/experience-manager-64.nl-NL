@@ -2,18 +2,17 @@
 title: Camera Raw ondersteuning
 description: Leer hoe u Camera Raw ondersteuning inschakelt in Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Developer Tools
-role: Administrator
+feature: Gereedschappen voor ontwikkelaars
+role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
 
 ---
 
-# Camera Raw gebruiken om afbeeldingen {#camera-raw-support} te verwerken
+# Camera Raw gebruiken om afbeeldingen te verwerken {#camera-raw-support}
 
 U kunt de Camera Raw ondersteuning inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en het renderen van afbeeldingen in JPEG-indeling. De functionaliteit wordt ondersteund in Adobe Experience Manager Assets met behulp van het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is bij Softwaredistributie.
 
