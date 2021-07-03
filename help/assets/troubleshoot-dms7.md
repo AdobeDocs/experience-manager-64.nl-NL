@@ -6,21 +6,20 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
-feature: Troubleshooting
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Problemen oplossen
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 0%
 
 ---
 
-# Problemen met Dynamic Media oplossen - Scene7-modus {#troubleshooting-dynamic-media-scene-mode}
+# Problemen oplossen in de modus Dynamic Media - Scene7 {#troubleshooting-dynamic-media-scene-mode}
 
 In het volgende document wordt beschreven hoe u problemen kunt oplossen bij het uitvoeren van **dynamicmedia_scene7**-uitvoeringsmodus in Dynamic Media.
 
-## {#setup-and-configuration} instellen en configureren
+## Instellen en configureren {#setup-and-configuration}
 
 Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende te doen:
 
@@ -39,7 +38,7 @@ Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende 
 
 Hier volgen enkele algemene tips en trucs voor alle elementen.
 
-### Eigenschappen van de statusstatus van de elementsynchronisatie {#asset-synchronization-status-properties}
+### Eigenschappen van de status van de activasynchronisatie {#asset-synchronization-status-properties}
 
 De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om te bevestigen dat het middel is gesynchroniseerd van AEM naar Dynamic Media:
 
@@ -54,7 +53,7 @@ De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleer
 
 Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG verhogen in het `com.adobe.cq.dam.ips`-pakket via de Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
 
-### {#move-copy-delete} verplaatsen, kopiëren of verwijderen
+### Verplaatsen, kopiëren of verwijderen {#move-copy-delete}
 
 Voer de volgende handelingen uit voordat u een bewerking Verplaatsen, Kopiëren of Verwijderen uitvoert:
 
