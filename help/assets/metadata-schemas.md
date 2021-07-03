@@ -2,11 +2,10 @@
 title: Metagegevensschema's
 description: 'Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.  '
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
+feature: Metagegevens
+role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 8%
@@ -67,7 +66,7 @@ Als u een lijst met formulieren/sjablonen wilt weergeven, navigeert u in de [!DN
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
-## Formulieren met metagegevensschema {#editing-metadata-schema-forms} bewerken
+## Formulieren met metagegevensschema bewerken {#editing-metadata-schema-forms}
 
 U kunt een nieuw of bestaand schema voor metagegevens bewerken. Het metagegevensschema bevat het volgende:
 
@@ -109,7 +108,7 @@ Het tabblad **[!UICONTROL Build Form]** bevat formulieritems die u in het schema
 | [!UICONTROL Asset Rating] | Toevoegen aan weergaveopties voor het beoordelen van het element. |
 | [!UICONTROL Contextual Metadata] | Toevoegen om de weergave van andere tabbladen met metagegevens in de eigenschappenpagina met elementen te besturen. |
 
-### De metagegevenscomponent {#editing-the-metadata-component} bewerken
+### De metagegevenscomponent bewerken {#editing-the-metadata-component}
 
 Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewerken, klikt u op de component en bewerkt u alle of een subset van de volgende eigenschappen op het tabblad **[!UICONTROL Settings]**.
 
@@ -159,7 +158,7 @@ Als u een tabblad in de eigenschappenpagina wilt opnemen, naast het tabblad waar
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### Eigenschappen opgeven in JSON-bestand {#specifying-properties-in-json-file}
+### Eigenschappen in JSON-bestand opgeven {#specifying-properties-in-json-file}
 
 In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings]** op te geven, kunt u de opties in een JSON-bestand definiëren door overeenkomstige sleutel-waardeparen op te geven. Geef het pad van het JSON-bestand op in het veld **[!UICONTROL JSON Path]**.
 
@@ -173,7 +172,7 @@ Klik `+` om een nieuw lusje op een schemavorm toe te voegen. Standaard heeft het
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-## Formulieren met metagegevensschema {#deleting-metadata-schema-forms} verwijderen
+## Formulieren met metagegevens verwijderen {#deleting-metadata-schema-forms}
 
 Met AEM kunt u alleen aangepaste schema-formulieren verwijderen. U kunt hiermee de standaardschema-formulieren/sjablonen niet verwijderen. U kunt echter alle aangepaste wijzigingen in deze formulieren verwijderen.
 
@@ -187,7 +186,7 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op h
 >
 >In AEM Assets kunt u het schema voor metagegevens in het vak niet verwijderen.
 
-## Schemaformulieren voor MIME-typen {#schema-forms-for-mime-types}
+## Schema-formulieren voor MIME-typen {#schema-forms-for-mime-types}
 
 AEM Assets bevat standaardformulieren voor verschillende MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
 
@@ -222,7 +221,7 @@ AEM Assets wijst de volgende MIME-typen en schema-formulieren toe:
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
-## Toegang verlenen tot metagegevensschema&#39;s {#granting-access-to-metadata-schemas}
+## Toegang tot metagegevensschema&#39;s verlenen {#granting-access-to-metadata-schemas}
 
 De functie voor het metagegevensschema is alleen beschikbaar voor beheerders. Beheerders kunnen echter toegang verlenen aan gebruikers zonder beheerdersrechten door **[!UICONTROL Create]**, **[!UICONTROL Modify]** en **[!UICONTROL Delete]** machtigingen voor de map `/conf` in te voeren.
 
@@ -275,7 +274,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
 1. Sla het standaardmetagegevensformulier op als een aangepast formulier. Sla het bestand bijvoorbeeld op als `my_default`.
 
-   ![chlimage_1-109](assets/chlimage_1-189.png)
+   ![chlimage_1-189](assets/chlimage_1-189.png)
 
 1. Bewerk het aangepaste formulier. Voeg een verplicht veld toe. Voeg bijvoorbeeld het veld **Categorie** toe en maak het veld verplicht.
 
@@ -285,7 +284,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
 1. Navigeer naar de map en upload elementen met ontbrekende metagegevens voor het verplichte veld dat u aan het aangepaste formulier hebt toegevoegd. In de weergave Kaart voor de elementen wordt een bericht weergegeven voor de ontbrekende metagegevens voor het verplichte veld.
 
-   ![chlimage_1-112](assets/chlimage_1-192.png)
+   ![chlimage_1-192](assets/chlimage_1-192.png)
 
 1. (Optioneel) Toegang `http://[server]:[port]/system/console/components/`. Configureer en schakel `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component in die standaard is uitgeschakeld. Stel een frequentie in waarmee AEM controleert of metagegevens over de elementen geldig zijn.
 Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan jcr:inhoud van elementen. Met deze eigenschap kunnen AEM resultaten in een zoekopdracht filteren.
