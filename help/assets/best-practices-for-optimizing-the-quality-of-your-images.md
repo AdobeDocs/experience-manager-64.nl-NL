@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
-feature: Asset Management,Renditions
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Middelenbeheer, uitvoeringen
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1452'
 ht-degree: 5%
@@ -42,7 +41,7 @@ Het dynamisch verkleinen van de afbeeldingsgrootte is een van de meest voorkomen
 
 Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp2`
 
-## Aanbevolen procedures voor het verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
+## Aanbevolen procedures voor verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer over te leren hoe het scherpen en het onscherpe maskeren in AEM door naar [de Klassieke Kwaliteit van het Beeld van Dynamic Media van de Adobe en het Verscherpen Beste praktijken ](/help/assets/assets/sharpening_images.pdf) te verwijzen die ook op AEM van toepassing zijn.
 
@@ -94,7 +93,7 @@ Laat de monochrome parameter-instelling op 0 staan.
 
 Gebruik `&qlt=85,0` als aanbevolen methode voor JPG-compressie.
 
-## Aanbevolen procedures voor JPEG-formaat (&amp;jpegSize=) {#best-practices-for-jpeg-sizing-jpegsize}
+## Aanbevolen werkwijzen voor JPEG-formaat (&amp;jpegSize=) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize is een nuttige parameter als u wilt waarborgen dat een beeld een bepaalde grootte voor levering aan apparaten niet overschrijdt die beperkte geheugen hebben.
 
