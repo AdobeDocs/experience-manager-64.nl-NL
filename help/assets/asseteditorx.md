@@ -2,18 +2,17 @@
 title: Editor van element uitbreiden
 description: Leer hoe u de mogelijkheden van de Asset Editor uitbreidt met behulp van aangepaste componenten.
 contentOwner: AG
-feature: Developer Tools
-role: Business Practitioner,Administrator
+feature: Gereedschappen voor ontwikkelaars
+role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 13%
 
 ---
 
-# Elementeditor uitbreiden {#extending-asset-editor}
+# Editor van element uitbreiden {#extending-asset-editor}
 
 De Asset Editor is de pagina die wordt geopend wanneer op een element wordt geklikt dat via Asset Share wordt gevonden, zodat de gebruiker deze aspecten van het element kan bewerken, zoals metagegevens, miniaturen, titels en tags.
 
@@ -21,7 +20,7 @@ De configuratie van de redacteur die de vooraf bepaalde het uitgeven componenten
 
 Naast het gebruik van reeds bestaande editorcomponenten, kunnen de ontwikkelaars van Adobe Experience Manager (AEM) ook hun eigen componenten tot stand brengen.
 
-## Een sjabloon voor de Asset Editor maken {#creating-an-asset-editor-template}
+## Een sjabloon voor de middeleneditor maken {#creating-an-asset-editor-template}
 
 De volgende voorbeeldpagina&#39;s worden opgenomen in geometrixx:
 
@@ -29,7 +28,7 @@ De volgende voorbeeldpagina&#39;s worden opgenomen in geometrixx:
 * Voorbeeldsjabloon: `/apps/geometrixx/templates/asseteditor`
 * Voorbeeld van paginacomponent: `/apps/geometrixx/components/asseteditor`
 
-### Clientlib {#configuring-clientlib} configureren
+### Clientlib configureren {#configuring-clientlib}
 
 AEM Assets-componenten gebruiken een extensie van de WCM-bewerkingsclient. De clientlibs worden gewoonlijk geladen in `init.jsp`.
 
@@ -59,7 +58,7 @@ Sommige AEM Assets-componenten gebruiken de AEM-widgetbibliotheek. Om correct in
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Stijlblad {#geometrixx-style-sheet}
+### Stijlblad Geometrixx {#geometrixx-style-sheet}
 
 De componenten van de steekproefpagina vereisen dat alle selecteurs met `.asseteditor` van `static.css` (`/etc/designs/geometrixx/static.css`) beginnen. Beste praktijken: Kopieer alle `.asseteditor` kiezers naar de stijlpagina en pas de regels naar wens aan.
 
@@ -122,7 +121,7 @@ Gebruik in het HTML-onderdeel de voorafgaande titelset (element- of paginatitel)
 <title><%= title %></title>
 ```
 
-## Eenvoudige formulierveldcomponenten maken {#creating-a-simple-form-field-component}
+## Een eenvoudige component voor een formulierveld maken {#creating-a-simple-form-field-component}
 
 In dit voorbeeld wordt beschreven hoe u een component kunt maken die de metagegevens van een geladen element weergeeft en weergeeft.
 
