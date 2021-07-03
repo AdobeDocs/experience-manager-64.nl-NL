@@ -2,18 +2,17 @@
 title: Dubbele detectie inschakelen
 description: Leer hoe u dubbele elementen in AEM kunt detecteren.
 contentOwner: AG
-feature: Asset Management,Asset Reports
-role: Business Practitioner,Administrator
+feature: Middelenbeheer, Asset Reports
+role: User,Admin
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
-# Dubbele detectie {#enabling-duplicate-detection} inschakelen
+# Dubbele detectie inschakelen {#enabling-duplicate-detection}
 
 Als u probeert een middel te uploaden dat in de Middelen van Adobe Experience Manager (AEM) bestaat, identificeert de dubbele opsporingseigenschap het als dubbel. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
