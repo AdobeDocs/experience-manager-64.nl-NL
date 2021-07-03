@@ -2,18 +2,17 @@
 title: AEM Assets-mappen delen met Creative Cloud
 description: Configuratie en aanbevolen procedures om gebruikers van Adobe Experience Manager Assets in staat te stellen mappen met middelen uit te wisselen met gebruikers van Adobe Creative Cloud.
 contentOwner: AG
-feature: Collaboration
-role: Business Practitioner,Administrator
+feature: Samenwerking
+role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 0%
 
 ---
 
-# AEM naar map Creative Cloud om beste werkwijzen te delen {#aem-to-creative-cloud-folder-sharing-best-practices}
+# AEM naar map Creative Cloud om aanbevolen werkwijzen te delen {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
@@ -60,7 +59,7 @@ De integratie omvat de volgende elementen:
 * **Netwerk en bandbreedte:** De bestanden in gedeelde mappen en alle updates moeten via het netwerk tussen de systemen worden getransporteerd. Zorg ervoor dat alleen relevante bestanden en updates worden gedeeld.
 * **Maptype**: Het delen van een map Middelen van het type  `sling:OrderedFolder`wordt niet ondersteund. Als u een map wilt delen, selecteert u bij het maken ervan in AEM Assets de optie Besteld niet.
 
-## Aanbevolen werkwijzen {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 De beste werkwijzen voor het doorvoeren van AEM naar het delen van mappen in Creative Cloud:
 
