@@ -2,18 +2,17 @@
 title: Middelen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om het vertalen van meertalige middelen voor te bereiden.
 contentOwner: AG
-feature: Projects,Translation
-role: Business Practitioner,Administrator
+feature: Projecten,vertalen
+role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
 
 ---
 
-# Elementen voorbereiden voor vertaling {#preparing-assets-for-translation}
+# Middelen voorbereiden voor vertaling {#preparing-assets-for-translation}
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten.
 
@@ -44,7 +43,7 @@ Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:
 1. Voeg middelen toe aan uw primaire taal.
 1. Creeer de taalwortel van elke doeltaal waarvoor u een taalexemplaar vereist.
 
-## Een taalbasis maken {#creating-a-language-root}
+## Een hoofdmap voor talen maken {#creating-a-language-root}
 
 Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-taalcode als waarde voor de eigenschap Naam. Nadat u de hoofdtaal hebt gemaakt, kunt u op elk niveau in de hoofdmap van de taal een kopie van de taal maken.
 
@@ -60,7 +59,7 @@ De basispagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 1. Klik of tik **[!UICONTROL Create]**. De taalwortel wordt gecreeerd in de console van Activa.
 
-## Taalwortels {#viewing-language-roots} weergeven
+## Taalwortels weergeven {#viewing-language-roots}
 
 De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met een lijst met taalwortels die in AEM Assets zijn gemaakt.
 
