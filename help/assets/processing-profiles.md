@@ -5,11 +5,10 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-feature: Workflow,Asset Management,Renditions
-role: Business Practitioner,Administrator
+feature: Workflow,middelenbeheer,uitvoeringen
+role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 2%
@@ -38,7 +37,7 @@ Een belangrijk concept voor het gebruik van profielen in AEM Assets is dat deze 
 >
 >Hetzelfde geldt ook wanneer u elementen verplaatst tussen twee mappen waaraan hetzelfde profiel is toegewezen.
 
-## Elementen in een map {#reprocessing-assets} opnieuw verwerken
+## Elementen in een map opnieuw verwerken {#reprocessing-assets}
 
 >[!NOTE]
 >
