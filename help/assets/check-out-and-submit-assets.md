@@ -2,18 +2,17 @@
 title: Uw digitale middelen inchecken en uitchecken voor bewerking
 description: Leer hoe u middelen kunt uitchecken om deze te bewerken en weer in te checken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner
+feature: Beheer van bedrijfsmiddelen
+role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 4%
 
 ---
 
-# Bestanden in Elementen inchecken en uitchecken {#check-in-and-check-out-files-in-assets}
+# Bestanden in elementen inchecken en uitchecken {#check-in-and-check-out-files-in-assets}
 
 Met Adobe Experience Manager (AEM) Assets kunt u elementen uitchecken om ze te bewerken en weer inchecken nadat u de wijzigingen hebt aangebracht. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Andere gebruikers kunnen geen van deze bewerkingen op het element uitvoeren totdat u het element weer incheckt bij AEM Assets. Ze kunnen echter wel de metagegevens van het vergrendelde element wijzigen.
 
@@ -21,7 +20,7 @@ Om activa te kunnen uitchecken of inchecken, hebt u schrijftoegang op hen nodig.
 
 Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven die door een auteur zijn aangebracht en waarbij meerdere gebruikers samenwerken aan het bewerken van workflows in verschillende teams.
 
-## Elementen {#checking-out-assets} uitchecken
+## Elementen uitchecken {#checking-out-assets}
 
 1. Selecteer in de interface Elementen het element dat u wilt uitchecken. U kunt ook meerdere elementen selecteren om uit te checken.
 
