@@ -2,11 +2,10 @@
 title: Map-assets en verzamelingen reviewen
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
-feature: Collaboration, Collections
-role: Business Practitioner
+feature: Samenwerking, verzamelingen
+role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 21%
@@ -25,7 +24,7 @@ Nadat u de middelen hebt gedeeld, kunnen revisoren deze goedkeuren of afwijzen. 
 
 Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), ontvangt u een bericht van de revisievoltooiing.
 
-## Een revisietaak maken voor mappen {#creating-a-review-task-for-folders}
+## Een revisietaak voor mappen maken {#creating-a-review-task-for-folders}
 
 1. Selecteer in de gebruikersinterface Middelen de map waarvoor u een revisietaak wilt maken.
 1. Tik of klik op het pictogram **[!UICONTROL Create Review Task]** op de werkbalk om de pagina **[!UICONTROL Review Task]** te openen. Als u het pictogram niet ziet op de werkbalk, tikt of klikt u op **[!UICONTROL More]** en vervolgens selecteert u het pictogram.
@@ -73,7 +72,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![review_status_listview](assets/review_status_listview.png)
 
-## Een overzichtstaak maken voor verzamelingen {#creating-a-review-task-for-collections}
+## Een revisietaak voor verzamelingen maken {#creating-a-review-task-for-collections}
 
 1. Selecteer op de pagina Verzamelingen de verzameling waarvoor u een revisietaak wilt maken.
 1. Tik of klik op het pictogram **[!UICONTROL Create Review Task]** op de werkbalk om de pagina **[!UICONTROL Review Task]** te openen. Als u het pictogram niet ziet op de werkbalk, tikt of klikt u op **[!UICONTROL More]** en vervolgens selecteert u het pictogram.
