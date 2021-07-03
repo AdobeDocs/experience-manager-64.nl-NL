@@ -5,18 +5,17 @@ uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
-feature: Asset Management
-role: Architect,Administrator
+feature: Beheer van bedrijfsmiddelen
+role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 0%
 
 ---
 
-# Handleiding {#assets-sizing-guide} voor grootte van elementen
+# Hulplijn voor middelengrootte {#assets-sizing-guide}
 
 Wanneer het rangschikken van het milieu voor een implementatie van de Middelen van Adobe Experience Manager (AEM), is het belangrijk om ervoor te zorgen dat er voldoende middelen in termen van schijf, cpu, geheugen, IO, en netwerkproductie beschikbaar zijn. Als u veel van deze bronnen wilt vergroten, moet u weten hoeveel elementen in het systeem worden geladen. Als er geen betere maateenheid beschikbaar is, kunt u de grootte van de bestaande bibliotheek delen door de leeftijd van de bibliotheek om de snelheid te vinden waarmee elementen worden gemaakt.
 
@@ -62,15 +61,15 @@ De voorbeeldgegevens die in het gereedschap zijn ingevuld, tonen aan hoe belangr
 
 Voor grote datastores, kunt u gedeelde datastore of door een gedeelde dossierdatastore op een netwerk in bijlage aandrijving of door een S3 datastore uitvoeren. In dit geval hoeft in afzonderlijke gevallen geen kopie van de binaire bestanden te worden bewaard. Bovendien vergemakkelijkt een gedeelde datastore binair-geen replicatie en helpt de bandbreedte verminderen die wordt gebruikt om activa te herhalen om milieu&#39;s of het ontladen instanties te publiceren.
 
-#### Gevallen {#use-cases} gebruiken
+#### Gevallen gebruiken {#use-cases}
 
 De datastore kan tussen een primaire en reserve auteursinstantie worden gedeeld om de hoeveelheid tijd te minimaliseren die het vergt om de reserve instantie met veranderingen bij te werken die in de primaire instantie worden aangebracht. Adobe raadt aan de datastore te delen tussen een instantie van de primaire auteur en instanties van de offload-auteur om de overhead bij het offloaden van de workflow te verminderen. U kunt datastore tussen de auteur ook delen en instanties publiceren om het verkeer tijdens replicatie te minimaliseren.
 
-#### Terugbetalingen {#drawbacks}
+#### Nadelen {#drawbacks}
 
 Door sommige valkuilen wordt het delen van een datastore niet in alle gevallen aanbevolen.
 
-#### Enkel punt van mislukking {#single-point-of-failure}
+#### Eén foutpunt {#single-point-of-failure}
 
 Met een gedeelde datastore introduceert u één foutpunt in een infrastructuur. Overweeg een scenario waarin uw systeem één auteur en twee publiceer instanties heeft, elk met hun eigen datastore. Als één van hen crasht, kunnen de andere twee nog lopen. Nochtans, als datastore wordt gedeeld, kan één enkele schijfmislukking de volledige infrastructuur onderdrukken. Zorg daarom dat u een back-up van de gedeelde datastore bijhoudt vanaf waar u de datastore snel kunt herstellen.
 
@@ -90,7 +89,7 @@ Een gedeelde datastore vereist dat de binaire getallen op een netwerk-opgezette 
 
 De latentie in S3 implementaties wordt geïntroduceerd door de achtergrond schrijvend draden. Bij de back-upprocedures moet rekening worden gehouden met deze latentie en eventuele ontlaadprocedures. Het S3-element mag niet aanwezig zijn in S3 wanneer een offloadtaak begint. Bovendien kunnen de indexen van Lucene onvolledig blijven wanneer het maken van een steun. Het is van toepassing op elk tijdgevoelig dossier dat aan S3 datastore wordt geschreven en van een andere instantie wordt betreden.
 
-### Knooppuntarchief/Document Store {#node-store-document-store}
+### Node Store/Document Store {#node-store-document-store}
 
 Het is moeilijk om exacte cijfers voor de grootte van een NodeStore of DocumentStore te bepalen vanwege de middelen die door het volgende worden verbruikt:
 
