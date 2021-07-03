@@ -6,17 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
-feature: Mix Media Sets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Mediasets mixen
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 17%
 
 ---
 
-# Mixed Media Sets {#mixed-media-sets}
+# Gemengde mediasets {#mixed-media-sets}
 
 Met gemengde mediasets kunt u in één presentatie een combinatie van afbeeldingen, afbeeldingssets, centrifuges en video&#39;s aanbieden.
 
@@ -72,7 +71,7 @@ Indien nodig kunt u [Gemengde Mediasets](#editing-mixed-media-sets) bewerken. Da
 >
 >Zie [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md) als u problemen ondervindt bij het maken van sets.
 
-## Elementen {#uploading-assets} uploaden
+## Elementen uploaden {#uploading-assets}
 
 Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, dient u rekening te houden met zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie.
 
@@ -163,7 +162,7 @@ U kunt een verscheidenheid van het uitgeven taken aan activa in Gemengde Reeksen
 
 Zie [Elementen voorvertonen](previewing-assets.md) voor meer informatie over het voorvertonen van gemengde mediasets.
 
-## Gemengde mediasets {#publishing-mixed-media-sets} publiceren
+## Gemengde mediasets publiceren {#publishing-mixed-media-sets}
 
 Zie [Elementen publiceren](publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van gemengde Mediasets.
 
