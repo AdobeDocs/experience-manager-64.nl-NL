@@ -2,18 +2,17 @@
 title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten kunt maken in AEM.
 contentOwner: AG
-feature: Translation
-role: Architect,Administrator
+feature: Vertaling
+role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 17%
 
 ---
 
-# Vertaalprojecten {#creating-translation-projects} maken
+# Vertaalprojecten maken {#creating-translation-projects}
 
 Als u een kopie van de taal wilt maken, activeert u een van de volgende workflows voor het kopiëren van de taal die beschikbaar zijn onder de References-rail in de interface Elementen:
 
@@ -33,7 +32,7 @@ U voert deze workflow uit om een extra groep elementen te vertalen en deze op te
 >
 >Als u een vertaalworkflow start voor complexe elementen, zoals PDF&#39;s en InDesign-bestanden, worden de subelementen of vertoningen (indien aanwezig) van die elementen niet verzonden voor vertaling.
 
-## Workflow {#create-and-translate-workflow} maken en vertalen
+## Workflow maken en vertalen {#create-and-translate-workflow}
 
 Met de workflow Maken en vertalen kunt u voor het eerst voor een bepaalde taal een kopie van de taal genereren. De workflow bevat de volgende opties:
 
@@ -70,7 +69,7 @@ Met de optie **Alleen structuur maken** kunt u een doelmaphiërarchie in de hoof
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
-### Nieuw vertaalproject maken {#create-a-new-translation-project}
+### Een nieuw vertaalproject maken {#create-a-new-translation-project}
 
 Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taalwortel van de taal waaraan u wilt vertalen. Afhankelijk van de opties u kiest, wordt een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
@@ -195,14 +194,14 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
 1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
-## Taalkopieën {#update-language-copies} bijwerken
+## Taalkopieën bijwerken {#update-language-copies}
 
 Voer deze workflow uit om extra elementen te vertalen en deze op te nemen in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde elementen toegevoegd aan de doelmap die al eerder vertaalde elementen bevat. Afhankelijk van de keuze van opties wordt een vertaalproject gemaakt of wordt een bestaand vertaalproject bijgewerkt voor de nieuwe elementen. De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties:
 
 * Een nieuw vertaalproject maken
 * Toevoegen aan bestaand vertaalproject
 
-### Nieuw vertaalproject maken {#create-a-new-translation-project-1}
+### Een nieuw vertaalproject maken {#create-a-new-translation-project-1}
 
 Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks activa waarvoor u een taalexemplaar wilt bijwerken.
 
@@ -281,7 +280,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 1. Klik of tik op **[!UICONTROL Start]**.
 1. Zie stappen 9-14 van [Toevoegen aan bestaand vertaalproject](translation-projects.md#add-to-existing-translation-project) om de rest van de procedure te voltooien.
 
-## Tijdelijke-taalkopieën maken {#creating-temporary-language-copies}
+## Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
 Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. AEM Assets slaat de nieuw vertaalde middelen op een tijdelijke locatie op en werkt de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
 
