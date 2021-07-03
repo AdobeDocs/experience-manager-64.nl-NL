@@ -2,18 +2,17 @@
 title: Overwegingen voor middelennetwerken
 description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van AEM Assets.
 contentOwner: AG
-feature: Developer Tools
-role: Architect,Administrator
+feature: Gereedschappen voor ontwikkelaars
+role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 0%
 
 ---
 
-# Elementnetwerkoverwegingen {#assets-network-considerations}
+# Elementennetwerkoverwegingen {#assets-network-considerations}
 
 Kennis van uw netwerk is net zo belangrijk als inzicht in Adobe Experience Manager (AEM) Assets. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
 
@@ -42,13 +41,13 @@ De bodem verlaten van het diagram toont twee apparaten die met het collectieve n
 
 De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan het collectieve netwerk over VPN met een snelheid van 1 Mbps. De gebruikerservaring voor de verbinding 1Mbps is zeer verschillend van de gebruikerservaring over de verbinding 1Gbps. Afhankelijk van de grootte van de activa interactie met gebruikers, kan hun opstraalverbinding van VPN voor de taak ontoereikend zijn.
 
-## Topologie van het bedrijfsnetwerk {#topology-of-the-corporate-network}
+## Topologie van het collectieve netwerk {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
 Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een chokepoint zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
 
-## Uplink naar internet vanuit het bedrijfsnetwerk en de AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Uploaden naar internet vanuit het bedrijfsnetwerk en de AEM omgeving {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
