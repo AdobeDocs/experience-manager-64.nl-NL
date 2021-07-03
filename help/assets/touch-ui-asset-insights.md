@@ -3,16 +3,16 @@ title: Met de functie Assets Insights kunt u het gebruik van uw afbeeldingen bij
 description: Met de functie Middelen-inzichten kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 2%
 
 ---
 
-# Elementen {#asset-insights}
+# Assets Insights {#asset-insights}
 
 Leer hoe u met behulp van Assets Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van middelen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 
@@ -28,7 +28,7 @@ Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor ac
 >
 >Inzichten worden ondersteund en alleen voor afbeeldingen verstrekt.
 
-## Statistieken weergeven voor een element {#viewing-statistics-for-an-asset}
+## Statistieken voor een element weergeven {#viewing-statistics-for-an-asset}
 
 U kunt de elementinzichten van de metagegevenspagina weergeven.
 
@@ -65,7 +65,7 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
-## Samengevoegde statistieken weergeven voor activa {#viewing-aggregate-statistics-for-assets}
+## Samengevoegde statistieken voor activa weergeven {#viewing-aggregate-statistics-for-assets}
 
 U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!UICONTROL Insights View]**.
 
@@ -73,7 +73,7 @@ U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!
 1. Tik/klik op het pictogram Lay-out op de werkbalk en kies **[!UICONTROL Insights View]**.
 1. Op de pagina worden gebruiksscores voor de elementen weergegeven. Vergelijk de ratings van de verschillende activa en teken inzichten.
 
-## De achtergrondtaak {#scheduling-background-job} plannen
+## Achtergrondtaak plannen {#scheduling-background-job}
 
 Assets Insights haalt gebruiksgegevens voor middelen van Adobe Analytics op periodieke wijze. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM in werking aan de ophaalgegevens. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
 
