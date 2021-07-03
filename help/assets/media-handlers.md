@@ -2,18 +2,17 @@
 title: Middelen verwerken met behulp van media-handlers en workflows
 description: Meer informatie over verschillende mediafuncties en hoe u deze kunt gebruiken in workflows om taken uit te voeren op elementen.
 contentOwner: AG
-feature: Workflow,Renditions
-role: Business Practitioner
+feature: Workflow,uitvoeringen
+role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2171'
 ht-degree: 2%
 
 ---
 
-# Elementen verwerken met behulp van media-handlers en workflows {#processing-assets-using-media-handlers-and-workflows}
+# Elementen verwerken met behulp van media-afhandelingen en workflows {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets biedt een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een workflow definieert een typische middelenbeheer- en verwerkingstaak en delegeert de specifieke taken aan de mediafunctionarissen, bijvoorbeeld het genereren van miniaturen of het uitnemen van metagegevens.
 
@@ -71,7 +70,7 @@ Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden g
 
 In het volgende voorbeeld wordt getoond hoe u de **[!UICONTROL AEM Assets Synchronization]**-workflow kunt verbeteren, zodat subelementen worden gegenereerd voor alle elementen behalve PDF-documenten.
 
-### Een mediafunctie uitschakelen/inschakelen {#disabling-enabling-a-media-handler}
+### Media Handler uitschakelen/inschakelen {#disabling-enabling-a-media-handler}
 
 De media-handlers kunnen worden uitgeschakeld of ingeschakeld via de Apache Felix Web Management Console. Wanneer de media-handler is uitgeschakeld, worden de taken niet uitgevoerd op de elementen.
 
@@ -82,7 +81,7 @@ Een media-handler in- en uitschakelen:
 1. De pagina vernieuwen: naast de mediafunctie wordt een pictogram weergegeven dat aangeeft dat het is uitgeschakeld.
 1. Als u de mediafunctie wilt inschakelen, klikt u op **[!UICONTROL Enable]** naast de naam van de mediafunctie.
 
-### Een mediafunctie {#creating-a-new-media-handler} maken
+### Een mediafunctie maken {#creating-a-new-media-handler}
 
 Voor ondersteuning van een nieuw mediatype of voor het uitvoeren van specifieke taken op een element, is het nodig een mediafunctie te maken. In dit gedeelte wordt beschreven hoe u verder kunt gaan.
 
@@ -439,7 +438,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in de Experien
 1. Kopieer de bundel `myBundle-0.0.1-SNAPSHOT.jar` en bewaar deze onder `/apps/myApp/install` (bijvoorbeeld met WebDAV). De nieuwe teksthandler is nu actief in Experience Manager.
 1. Open de Apache Felix Web Management Console in uw browser. Selecteer het tabblad Componenten en schakel de standaardteksthandler `com.day.cq.dam.core.impl.handler.TextHandler` uit.
 
-## Op opdrachtregel gebaseerde mediafunctie {#command-line-based-media-handler}
+## Media-handler op basis van opdrachtregel {#command-line-based-media-handler}
 
 Met Experience Manager kunt u elk opdrachtregelprogramma binnen een workflow uitvoeren om elementen (zoals ImageMagick) om te zetten en de nieuwe uitvoering aan het element toe te voegen. Installeer het opdrachtregelprogramma op de schijf die als host fungeert voor de Experience Manager-server en voeg een processtap toe aan de workflow en configureer deze. Het aangeroepen proces, met de naam `CommandLineProcess`, filtert volgens specifieke MIME-typen en maakt meerdere miniaturen op basis van de nieuwe uitvoering.
 
@@ -500,7 +499,7 @@ Voeg een element toe aan `/content/dam` om de gewijzigde workflow te testen.
 1. Ga naar de **[!UICONTROL CQ5 DAM]** console, bijvoorbeeld `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open het element `myImage.tiff` en controleer of de gespiegelde afbeelding en de drie miniaturen zijn gemaakt.
 
-#### Vorm de CommandLineProcess stap {#configuring-the-commandlineprocess-process-step}
+#### Vorm de het processtap van CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
 In deze sectie wordt beschreven hoe u **[!UICONTROL Process Arguments]** van `CommandLineProcess` instelt. Scheid de waarden van [!UICONTROL Process Arguments] met een komma en start geen waarde met een spatie.
 
