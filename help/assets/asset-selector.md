@@ -2,11 +2,10 @@
 title: Asset Selector
 description: Leer hoe u met de kiezer voor middelen metagegevens voor elementen in Adobe Experience Manager-middelen (AEM) kunt zoeken, filteren, doorbladeren en ophalen. Leer ook hoe u de interface van de elementenkiezer kunt aanpassen.
 contentOwner: AG
-feature: Asset Management,Metadata,Search
-role: Business Practitioner
+feature: Asset Management,metagegevens,zoeken
+role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -29,7 +28,7 @@ De assetkiezer is gebaseerd op de woordenlijst van de grondkiezer van Granite. D
 
 U kunt elke webpagina (ongeacht of deze deel uitmaakt van de CQ-container) integreren met de elementenkiezer (`https://[AEM_server]:[port]/aem/assetpicker.html`).
 
-## Contextuele parameters {#contextual-parameters}
+## Contextafhankelijke parameters {#contextual-parameters}
 
 U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer in een bepaalde context te starten:
 
@@ -43,7 +42,7 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 | assettype (S) | afbeeldingen, documenten, multimedia, archieven | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | Gebruik deze optie om elementtypen te filteren op basis van de doorgegeven waarde. |
 | mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund) | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | Hiermee kunt u elementen filteren op basis van MIME-typen |
 
-## Elementkiezer {#using-the-asset-selector} gebruiken
+## De elementkiezer gebruiken {#using-the-asset-selector}
 
 1. Ga naar `https://[AEM_server]:[port]/aem/assetpicker` om de interface van de elementenkiezer te openen.
 1. Navigeer naar de gewenste map en selecteer een of meer elementen.
