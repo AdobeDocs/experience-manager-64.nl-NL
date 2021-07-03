@@ -2,11 +2,10 @@
 title: Samengestelde elementen beheren en subelementen genereren.
 description: Leer hoe u verwijzingen naar AEM middelen maakt vanuit InDesign-, Adobe Illustrator- en Photoshop-bestanden. Leer ook hoe u de functie Paginaviewer gebruikt om afzonderlijke pagina's van bestanden met meerdere pagina's weer te geven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner,Administrator
+feature: Beheer van bedrijfsmiddelen
+role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 0%
@@ -54,11 +53,11 @@ De activa waarnaar wordt verwezen bestaan reeds in AEM Assets. U kunt subassets 
 
 Wanneer een INDD-bestand wordt geüpload, worden de verwijzingen opgehaald door te zoeken naar elementen met de eigenschappen `xmpMM:InstanceID` en `xmpMM:DocumentID` in de opslagplaats.
 
-### Verwijzingen maken door elementen {#create-references-by-dragging-aem-assets} te slepen
+### Verwijzingen maken door elementen te slepen {#create-references-by-dragging-aem-assets}
 
 Deze procedure is vergelijkbaar met [Elementen toevoegen als verwijzingen in Adobe Illustrator](#refai).
 
-### Verwijzingen naar elementen maken door een ZIP-bestand {#create-references-to-aem-assets-by-exporting-a-zip-file} te exporteren
+### Verwijzingen naar elementen maken door een ZIP-bestand te exporteren {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Voer de stappen in [Creating Workflow Models](/help/sites-developing/workflows-models.md) uit om een nieuwe werkstroom tot stand te brengen.
 1. Met de functie [Pakket maken van Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) kunt u het document exporteren. Adobe InDesign kan een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een map `Links` met subelementen in het InDesign-bestand. De map `Links` bevindt zich in dezelfde map als het INDD-bestand.
@@ -104,13 +103,13 @@ Voer een van de volgende handelingen uit om de subelementen te genereren:
 
 Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word Documents]**-workflow uit. Er wordt een `cq:Page`-component gegenereerd op basis van de inhoud van het Microsoft Word-document. Er wordt verwezen naar de afbeeldingen die uit het document zijn geëxtraheerd, uit de component `cq:Page`. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
 
-## Subelementen {#viewing-subassets} weergeven
+## Subelementen weergeven {#viewing-subassets}
 
 De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op ![Pictogram Linkerspoor](assets/do-not-localize/aem_leftrail_contentonly.png) en klik op **[!UICONTROL Subassets]** in de lijst. Wanneer u **[!UICONTROL Subassets]** van de lijst selecteert. U kunt ook de sneltoets `alt + 5` gebruiken.
 
 ![Subelementen weergeven voor elementen die uit meerdere pagina&#39;s bestaan](assets/view_subassets_simulation.gif)
 
-## Pagina&#39;s van een bestand met meerdere pagina&#39;s {#view-pages-of-a-multi-page-file} weergeven
+## Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven {#view-pages-of-a-multi-page-file}
 
 U kunt een bestand met meerdere pagina&#39;s, zoals PDF, INDD, PPT, PPTX en AI, weergeven met de functie Paginaviewer van AEM Assets. Open een element met meerdere pagina&#39;s en klik op **[!UICONTROL View Pages]** in de linkerbovenhoek van de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
 
