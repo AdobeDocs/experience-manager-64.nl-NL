@@ -2,11 +2,10 @@
 title: Vorm activa het etiketteren gebruikend de Slimme Dienst van de Inhoud.
 description: Leer hoe u slimme tags en verbeterde slimme tags configureert in [!DNL Adobe Experience Manager] met de Smart Content Service.
 contentOwner: AG
-feature: Smart Tags,Tagging
-role: Administrator
+feature: Slimme tags,tags toepassen
+role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 29%
@@ -39,7 +38,7 @@ Voordat u de service Slimme inhoud gebruikt, moet u het volgende doen om een int
 
 Om Verbeterde Slimme Markeringen toe te laten, naast het bovenstaande, installeer ook het recentste [de dienstpak van de Experience Manager](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
-## Configuratie van Smart Content Service maken om een openbaar certificaat op te vragen {#obtain-public-certificate}
+## Configuratie van Smart Content Service maken om een openbaar certificaat te verkrijgen {#obtain-public-certificate}
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op [!DNL Adobe Developer Console].
 
@@ -93,7 +92,7 @@ Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een ver
 
 1. Open [https://console.adobe.io](https://console.adobe.io) en navigeer naar de bestaande Smart Content Services op de pagina **[!UICONTROL Integrations]**. Upload het nieuwe certificaat. Zie de instructies in [Integratie van de Adobe Developer Console maken](#create-adobe-i-o-integration) voor meer informatie.
 
-## Integratie van Adobe-ontwikkelaarsconsole maken {#create-adobe-i-o-integration}
+## Integratie van Adobe Developer Console maken {#create-adobe-i-o-integration}
 
 Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integratie in de Adobe Developer Console voor [!UICONTROL API Key] (gegenereerd in [!UICONTROL CLIENT ID]-veld voor integratie van Adobe Developer Console), [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID] en [!UICONTROL CLIENT SECRET] voor [!UICONTROL Assets Smart Tagging Service Settings] van cloudconfiguratie in [!DNL Experience Manager].
 
@@ -117,7 +116,7 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
    *Afbeelding: Gegevens over de integratie in de Adobe Developer Console*
 
-## Smart Content Service {#configure-smart-content-service} configureren
+## Smart Content Service configureren {#configure-smart-content-service}
 
 Om de integratie te vormen, gebruik de waarden van [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET], en [!UICONTROL CLIENT ID] gebieden van de integratie van de Console van de Ontwikkelaar van Adobe. Het creëren van een Slimme wolkenconfiguratie van Markeringen staat authentificatie van API verzoeken van de [!DNL Experience Manager] plaatsing toe.
 
@@ -190,6 +189,6 @@ Nadat u de configuratie hebt voltooid, gebruik een JMX MBean om de configuratie 
 >[!MORELIKETHIS]
 >
 >* [Slimme tags beheren](managing-smart-tags.md)
->* [Overzicht van slimme tags en hoe deze kunnen worden getraind](enhanced-smart-tags.md)
->* [Richtlijnen en regels voor de opleiding van de Smart Content Service](smart-tags-training-guidelines.md)
+* [Overzicht van slimme tags en hoe deze kunnen worden getraind](enhanced-smart-tags.md)
+* [Richtlijnen en regels voor de opleiding van de Smart Content Service](smart-tags-training-guidelines.md)
 
