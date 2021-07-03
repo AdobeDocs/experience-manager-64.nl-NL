@@ -2,18 +2,17 @@
 title: Persoonlijke map delen
 description: Leer hoe u een persoonlijke map maakt in de middelen van de Adobe Experience Manager (AEM) en deze deelt met andere gebruikers en hoe u hun verschillende rechten toekent.
 contentOwner: AG
-feature: Collaboration
-role: Business Practitioner
+feature: Samenwerking
+role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 6%
 
 ---
 
-# Het delen van de privé omslag {#private-folder-sharing}
+# Persoonlijke map delen {#private-folder-sharing}
 
 In de gebruikersinterface van Adobe Experience Manager (AEM) Assets kunt u een persoonlijke map maken die uitsluitend voor u beschikbaar is. U kunt deze privémap delen met andere gebruikers en hun verschillende rechten toewijzen. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
 
