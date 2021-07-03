@@ -6,17 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 7cd62a2f-f7c9-40b1-bcd4-5853dadabf1b
-feature: Viewer Presets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Voorinstellingen viewer
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 22%
 
 ---
 
-# Voorinstellingen voor Dynamic Media-viewers {#applying-viewer-presets} toepassen
+# Voorinstellingen voor Dynamic Media-viewers toepassen {#applying-viewer-presets}
 
 Een voorinstelling voor de viewer is een verzameling instellingen die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven. U kunt alle viewervoorinstellingen die door de beheerder zijn gemaakt, toepassen op een element.
 
@@ -38,6 +37,6 @@ Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media
 
 1. Selecteer een viewer in het linkerdeelvenster om deze toe te passen op het element, zoals in het rechterdeelvenster wordt weergegeven. U kunt de URL ook [kopiëren om](linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 
-## URL&#39;s met voorinstellingen van viewer {#obtaining-viewer-preset-urls} ophalen
+## URL&#39;s met voorinstellingen van viewer ophalen {#obtaining-viewer-preset-urls}
 
 Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md) om de URL&#39;s voor voorinstellingen van de viewer op te halen.
