@@ -2,11 +2,10 @@
 title: Rapporten over het gebruik en het delen van uw digitale middelen.
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
-feature: Asset Reports,Asset Management
-role: Business Practitioner,Administrator
+feature: Elementenrapporten,beheer van bedrijfsmiddelen
+role: User,Admin
 exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 8%
@@ -150,7 +149,7 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 
-## Zuiveringsservice {#configure-purging-service} configureren
+## De zuiveringsservice configureren {#configure-purging-service}
 
 Om rapporten te verwijderen die u niet meer vereist, vorm de dienst van de Leegmaken van het Rapport DAM van de Webconsole om bestaande rapporten te zuiveren die op hun hoeveelheid en leeftijd worden gebaseerd.
 
