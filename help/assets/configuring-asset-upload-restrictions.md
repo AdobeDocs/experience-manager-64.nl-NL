@@ -2,18 +2,17 @@
 title: Beperkingen voor het uploaden van middelen configureren
 description: Leer hoe u Adobe Experience Manager-middelen (AEM) configureert om het type elementen (bestanden) te beperken dat gebruikers kunnen uploaden.
 contentOwner: AG
-feature: Upload,Asset Ingestion,Asset Management
-role: Administrator,Architect
+feature: Uploaden, opnemen van bedrijfsmiddelen, beheer van bedrijfsmiddelen
+role: Admin,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
-translation-type: tm+mt
-source-git-commit: 440194476a89092451f9fae80b5c63f055fca54e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 28%
 
 ---
 
-# Beperkingen voor het uploaden van elementen {#configuring-asset-upload-restrictions} configureren
+# Beperkingen voor het uploaden van middelen configureren {#configuring-asset-upload-restrictions}
 
 U kunt Adobe Experience Manager-middelen (AEM) configureren om het type elementen (bestanden) te beperken dat gebruikers kunnen uploaden. Met deze functie voorkomt u dat gebruikers elementen in een ongewenste indeling kunnen uploaden of schadelijke bestanden kunnen uploaden. Met de service `Day CQ DAM Asset Upload Restriction` kunt u bepalen welk type bestanden gebruikers kunnen uploaden. Standaard kunnen gebruikers met AEM Assets elementen van alle MIME-typen uploaden. U kunt de service echter zo configureren dat gebruikers alleen bestanden van bepaalde MIME-typen kunnen uploaden.
 
