@@ -2,11 +2,10 @@
 title: Terugverwijzing naar vertoningen XMP
 description: Leer hoe de functie XMP terugschrijven de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
+feature: Metagegevens
+role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 2%
@@ -29,7 +28,7 @@ In dit geval slaat de AEM Assets de wijzigingen in de eigenschap **[!UICONTROL T
 
 [!DNL Experience Manager Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Zie [hoe te om XMP terug ](#enabling-xmp-writeback) toe te laten.
 
-## Terugschrijven XMP {#enabling-xmp-writeback} inschakelen
+## Terugschrijven XMP inschakelen {#enabling-xmp-writeback}
 
 Om de meta-gegevensveranderingen toe te laten die aan de vertoningen van het element worden verspreid wanneer het uploaden van het, wijzig **Adobe CQ DAM de configuratie van de Vertoningsmaker** in de Manager van de Configuratie.
 
@@ -64,7 +63,7 @@ De meta-gegevensveranderingen worden verspreid aan de vertoningen `thumbnail.140
 >
 >Zie [XMP voorwaarden voor het terugschrijven van metagegevens](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back) voor meer informatie over ondersteunde platforms.
 
-## XMP metagegevens filteren {#filtering-xmp-metadata}
+## XMP {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden ingeslikt.
 
