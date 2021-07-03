@@ -10,10 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
-feature: Carousel Banners
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Carousel-banners
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4682'
 ht-degree: 4%
@@ -40,7 +39,7 @@ In dit voorbeeld heeft een gebruiker op een afbeelding met hyperlinks getikt of 
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## Kijk hoe carrouselbanners worden gemaakt {#watch-how-carousel-banners-are-created}
+## Kijk hoe carrouselbanners zijn gemaakt {#watch-how-carousel-banners-are-created}
 
 Bekijk een 10 minuten en 33 seconden analyse op [hoe de carrouselbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). U leert ook hoe u carrouselbanners kunt voorvertonen, bewerken en afleveren.
 
@@ -48,7 +47,7 @@ Bekijk een 10 minuten en 33 seconden analyse op [hoe de carrouselbanners worden 
 >
 >Niet-administratieve gebruikers moeten aan **dam-users** groep worden toegevoegd om carrouselbanners te kunnen tot stand brengen of uitgeven. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u uw systeembeheerder die u kan toevoegen aan de **dam-users**-groep.
 
-## Snel starten: Carrouselbanners {#quick-start-carousel-banners}
+## Snel starten: Carousel Banners {#quick-start-carousel-banners}
 
 Zo kunt u snel aan de slag:
 
@@ -96,7 +95,7 @@ Zo kunt u snel aan de slag:
 
 Zie [Carrouselsets bewerken](#editing-carousel-sets) als u carrouselsets moet bewerken. Daarnaast kunt u [Carousel-seteigenschappen](/help/assets/managing-assets-touch-ui.md#editing-properties) weergeven en bewerken.
 
-## Hotspot en de Variabelen van de Kaart van het Beeld {#identifying-hotspot-and-image-map-variables} identificeren
+## Variabelen hotspot en afbeelding met hyperlinks identificeren {#identifying-hotspot-and-image-map-variables}
 
 Begin door dynamische variabelen te identificeren die door de bestaande snelle meningsimplementatie worden gebruikt zodat u hotspots of beeldkaartgegevens behoorlijk tijdens het het vastgestelde proces van de carrouselverwezenlijking in AEM Assets kunt ingaan.
 
@@ -178,7 +177,7 @@ Bekijk de volgende voorbeelden van snelle weergave-URL&#39;s en de resulterende 
  </tbody> 
 </table>
 
-## Beeldbanners {#uploading-image-banners} uploaden
+## Beeldbanners uploaden {#uploading-image-banners}
 
 Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Carousel-sets maken](#creating-carousel-sets). Houd er rekening mee dat de afbeeldingen die in de carrousel worden gebruikt, moeten worden geüpload nadat Dynamic Media is ingeschakeld.
 
@@ -356,7 +355,7 @@ Houd er rekening mee dat als u interactieve afbeeldingen met hotspots bewerkt en
    * Tik op de vervolgkeuzelijst met voorinstellingen en selecteer een voorinstelling voor de viewer om een voorinstelling toe te passen in de rechterbovenhoek van de pagina.
    * Als u een volledige Carousel-set wilt verwijderen, navigeert u naar de Carousel-set, selecteert u deze en tikt u op **[!UICONTROL Delete]**.
 
-## (Optioneel) Voorvertoning van carrouselbanners {#optional-previewing-carousel-banners}
+## (Optioneel) Voorvertoning van carrouselbanners bekijken {#optional-previewing-carousel-banners}
 
 Met **[!UICONTROL Preview]** kunt u zien hoe uw carrouselbanner eruit ziet voor klanten en kunt u de hotspots voor carrouselbanners en afbeeldingen met hyperlinks testen om te controleren of deze zich gedragen zoals u had verwacht.
 
@@ -386,7 +385,7 @@ U kunt carrouselbanners voorvertonen vanuit de Carousel Editor (voorkeursmethode
 1. Tik in de lijst **[!UICONTROL Viewers]** in het deelvenster aan de linkerkant van de pagina op de naam van de voorinstelling voor de carrouselbannerviewer die u wilt gebruiken.
 1. Tik op de hotspots of afbeeldingen met hyperlinks op de afbeelding om de bijbehorende handelingen te testen.
 
-## Carrouselbanners {#publishing-carousel-banners} publiceren
+## Carrouselbanners publiceren {#publishing-carousel-banners}
 
 U moet de carrousel publiceren om deze te kunnen gebruiken. Als u een Carousel-set publiceert, worden de URL en de insluitcode geactiveerd. Het publiceert ook de carrousel naar de Dynamic Media-cloud, die is geïntegreerd met een CDN voor schaalbare en krachtige levering.
 
