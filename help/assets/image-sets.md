@@ -10,17 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
-feature: Image Sets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Afbeeldingssets
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 10%
 
 ---
 
-# Image Sets {#image-sets}
+# Afbeeldingssets {#image-sets}
 
 Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door op een miniatuurafbeelding te klikken. Met Afbeeldingssets kunt u alternatieve weergaven van een item presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken.
 
@@ -116,7 +115,7 @@ Omdat gebruikers kunnen inzoomen op afbeeldingen in Afbeeldingssets, moet u ervo
 
 
 
-## Afbeeldingssets {#creating-image-sets} maken
+## Afbeeldingssets maken {#creating-image-sets}
 
 U kunt Afbeeldingssets maken via de gebruikersinterface of via de API. In deze sectie wordt beschreven hoe u Afbeeldingssets maakt in de gebruikersinterface.
 
@@ -174,7 +173,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 1. Tik op **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
-## Afbeeldingssets {#viewing-image-sets} weergeven
+## Afbeeldingssets weergeven {#viewing-image-sets}
 
 U kunt afbeeldingssets maken in de gebruikersinterface of automatisch met [voorinstellingen voor batchsets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -200,7 +199,7 @@ Sets die zijn gemaakt met voorinstellingen voor batchsets, worden echter *niet* 
 >
 >U kunt sets weergeven in de gebruikersinterface zoals wordt beschreven in [Afbeeldingssets bewerken](#editing-image-sets).
 
-## Afbeeldingssets {#editing-image-sets} bewerken
+## Afbeeldingssets bewerken {#editing-image-sets}
 
 U kunt diverse bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
@@ -242,6 +241,6 @@ U kunt diverse bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
 Zie [Elementen voorvertonen](previewing-assets.md).
 
-## Afbeeldingssets {#publishing-image-sets} publiceren
+## Afbeeldingssets publiceren {#publishing-image-sets}
 
 Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
