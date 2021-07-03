@@ -2,11 +2,10 @@
 title: Verwante activa
 description: Leer hoe u elementen koppelt die bepaalde algemene kenmerken delen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen.
 contentOwner: AG
-feature: Asset Management,Collaboration
-role: Business Practitioner
+feature: Middelenbeheer, Samenwerking
+role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -64,7 +63,7 @@ Op deze manier hebt u de flexibiliteit om een bestand met een lage resolutie (bi
 
 1. Klik/Tik **[!UICONTROL OK]** om het dialoogvenster te sluiten. De elementen waarvoor u relaties hebt verwijderd, worden verwijderd uit de lijst met verwante elementen onder de sectie **[!UICONTROL Related]**.
 
-## Verwante activa {#translating-related-assets} vertalen
+## Verwante elementen vertalen {#translating-related-assets}
 
 Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, haalt AEM Assets automatisch alle elementen op waarnaar het bronbestand verwijst en die het bevat voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
 
