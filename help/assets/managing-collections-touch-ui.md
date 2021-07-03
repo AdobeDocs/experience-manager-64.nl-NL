@@ -3,11 +3,10 @@ title: Elementverzamelingen beheren
 description: Leer taken om verzamelingen met middelen te beheren, zoals verzamelingen maken, weergeven, verwijderen, bewerken en downloaden.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections
-role: Business Practitioner
+feature: Verzamelingen
+role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2178'
 ht-degree: 13%
@@ -35,7 +34,7 @@ Tik of klik op het logo van de Experience Manager om het **[!UICONTROL Collectio
 
 U kunt een inzameling of met [statische verwijzingen](#creating-a-collection-with-static-references) of gebaseerd op een [onderzoek op criteria-gebaseerde filter](#creating-a-smart-collection) tot stand brengen. U kunt ook een verzameling maken van een lichtbak.
 
-### Een verzameling maken met statische verwijzingen {#creating-a-collection-with-static-references}
+### Een verzameling met statische verwijzingen maken {#creating-a-collection-with-static-references}
 
 U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzameling met verwijzingen naar elementen, mappen, verzamelingen, centrifuges en afbeeldingssets.
 
@@ -112,7 +111,7 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
    Het label van de knop **[!UICONTROL Create Smart Selection]** verandert in **[!UICONTROL Edit Smart Selection]**. Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**. Tik of klik vervolgens op de knop **[!UICONTROL Edit Smart Selection]**.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 ## Elementen toevoegen aan een verzameling {#adding-assets-to-a-collection}
 
@@ -166,7 +165,7 @@ De meta-gegevens van de inzameling omvat gegevens over de inzameling, met inbegr
 1. Op de **[!UICONTROL Collection Metadata]** pagina, bekijk de inzamelingsmeta-gegevens van **[!UICONTROL Basic]** en **[!UICONTROL Advanced]** lusjes.
 1. Wijzig desgewenst de metagegevens en tik op **[!UICONTROL Save & Close]** op de werkbalk om de wijzigingen op te slaan.
 
-### Metagegevens van meerdere verzamelingen bulksgewijs {#editing-collection-metadata-in-bulk} bewerken
+### Metagegevens van meerdere verzamelingen bulksgewijs bewerken {#editing-collection-metadata-in-bulk}
 
 U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functionaliteit helpt u snel gemeenschappelijke meta-gegevens in veelvoudige inzamelingen te herhalen.
 
@@ -215,7 +214,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 
 1. Tik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
-## Een verzameling {#deleting-a-collection} verwijderen
+## Een verzameling verwijderen {#deleting-a-collection}
 
 1. Selecteer een of meer verzamelingen in de console Verzamelingen en tik op het pictogram Verwijderen op de werkbalk.
 
@@ -225,7 +224,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
    >
    >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten ](#deleting-saved-searches) te verwijderen.[
 
-## Een verzameling {#downloading-a-collection} downloaden
+## Een verzameling downloaden {#downloading-a-collection}
 
 Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elementen in de verzameling gedownload, inclusief mappen en onderliggende verzamelingen.
 
@@ -289,7 +288,7 @@ Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerke
 
 1. Tik/klik in het dialoogvenster op **[!UICONTROL Delete]** om de opgeslagen zoekopdracht te verwijderen.
 
-## Een workflow uitvoeren op een verzameling {#running-a-workflow-on-a-collection}
+## Een workflow op een verzameling uitvoeren {#running-a-workflow-on-a-collection}
 
 U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
 
@@ -306,5 +305,5 @@ U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verza
 >[!MORELIKETHIS]
 >
 >* [E-mailberichten voor Experience Manager Assets configureren](/help/sites-administering/notification.md#assetsconfig)
->* [Een revisietaak maken voor verzamelingen](bulk-approval.md)
+* [Een revisietaak maken voor verzamelingen](bulk-approval.md)
 
