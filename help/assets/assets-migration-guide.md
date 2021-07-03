@@ -2,18 +2,17 @@
 title: Activa in bulk migreren naar Adobe Experience Manager Assets
 description: Hoe te om activa in AEM te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
-feature: Migration,Renditions,Asset Management
-role: Architect,Administrator
+feature: migratie,uitvoeringen,beheer van bedrijfsmiddelen
+role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 11%
 
 ---
 
-# Hulplijn {#assets-migration-guide} voor middelenmigratie
+# Richtlijnen voor migratie van middelen {#assets-migration-guide}
 
 Bij het migreren van middelen naar AEM moeten er verschillende stappen in overweging worden genomen. Het uitpakken van elementen en metagegevens uit hun huidige huis valt buiten het bereik van dit document, omdat de implementaties sterk verschillen. In plaats daarvan wordt in dit document beschreven hoe u deze elementen in AEM brengt, de metagegevens ervan toepast, uitvoeringen genereert en de elementen activeert of publiceert.
 
@@ -52,17 +51,17 @@ Het migreren van activa aan AEM vereist verscheidene stappen en zou als gefaseer
 
 Voordat u een migratie start, schakelt u de draagraketten voor de `DAM Update Asset`-workflow uit. U kunt het beste alle elementen in het systeem opnemen en de workflows vervolgens in batches uitvoeren. Als u al live bent terwijl de migratie plaatsvindt, kunt u deze activiteiten plannen om buiten de kantooruren uit te voeren.
 
-### Labels {#load-tags} laden
+### Labels laden {#load-tags}
 
 Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Gereedschappen zoals de CSV Asset Importer en de functionaliteit voor metagegevensprofielen kunnen de toepassing van tags op elementen automatiseren. Voeg eerst de tags in Experience Manager toe. Met de functie [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) kunt u codes vullen met een Microsoft Excel-spreadsheet die in het systeem is geladen.
 
-### Bestandsinkomsten {#ingest-assets}
+### Middelen opnemen {#ingest-assets}
 
 Prestaties en stabiliteit zijn belangrijke zorgen wanneer activa in het systeem worden opgenomen. Zorg ervoor dat het systeem goed presteert wanneer u veel gegevens in de Experience Manager laadt. Hierdoor is de tijd die nodig is om de gegevens toe te voegen tot een minimum beperkt en kan overbelasting van het systeem worden voorkomen. Dit helpt systeemuitval te voorkomen, vooral in systemen die al in productie zijn.
 
 Er zijn twee manieren om de elementen in het systeem te laden: een op push-gebaseerde benadering waarbij gebruik wordt gemaakt van HTTP of een pull-gebaseerde benadering waarbij gebruik wordt gemaakt van de JCR API&#39;s.
 
-#### HTTP {#push-through-http} doorspoelen
+#### HTTP doorspoelen {#push-through-http}
 
 Het team van Managed Services van Adobe gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine Java-toepassing die alle elementen van de ene map in een andere map op een AEM-instantie laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
 
@@ -73,7 +72,7 @@ Er zijn twee grote nadelen aan het gebruiken van de benadering van het doorduwen
 
 De andere manier om elementen in te nemen is het ophalen van elementen van het lokale bestandssysteem. Als u echter geen externe schijf of netwerkshare aan de server kunt koppelen om een pull-based aanpak uit te voeren, is het posten van de elementen via HTTP de beste optie.
 
-#### Weghalen uit het lokale bestandssysteem {#pull-from-the-local-file-system}
+#### Trek van het lokale dossiersysteem {#pull-from-the-local-file-system}
 
 Met de [ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) worden elementen van het bestandssysteem en metagegevens van elementen opgehaald uit een CSV-bestand voor het importeren van elementen. De API van de Manager van AEM wordt gebruikt om de activa in het systeem in te voeren en de gevormde meta-gegevenseigenschappen toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
 
@@ -88,7 +87,7 @@ Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om h
 1. De eenvoudigste benadering is [ACS de Bulk Manager van het Werkschema van de Gemeenschap](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Met dit gereedschap kunt u een query uitvoeren en de resultaten van de query verwerken via een workflow. Er zijn ook opties voor het instellen van batchgrootten.
 1. U kunt [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) gebruiken in overleg met [Synthetische workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Hoewel deze benadering veel uitvoeriger is, kunt u de overhead van de AEM-workflowengine verwijderen en tegelijkertijd het gebruik van serverresources optimaliseren. Bovendien verhoogt de Fast Action Manager de prestaties nog meer door serverresources dynamisch te controleren en het plaatsen van de lading op het systeem te vertragen. U vindt voorbeeldscripts op de ACS Commons-functiepagina.
 
-### Elementen {#activate-assets} activeren
+### Elementen activeren {#activate-assets}
 
 Voor plaatsingen die een publicatielaag hebben, moet u de activa uit activeren aan publiceer landbouwbedrijf. Hoewel Adobe aanbeveelt meerdere publicatieinstanties uit te voeren, is het het meest efficiënt om alle elementen te repliceren naar één publicatieinstantie en die instantie vervolgens te klonen. Wanneer u grote aantallen elementen activeert en een boomstructuur activeert, moet u mogelijk ingrijpen. Dit is de reden waarom: Als u de activering uitschakelt, worden items toegevoegd aan de wachtrij Verschuivende taken/gebeurtenis. Nadat de grootte van deze rij ongeveer 40.000 punten begint te overschrijden, vertraagt de verwerking dramatisch. Als deze wachtrij groter is dan 100.000 items, heeft de systeemstabiliteit te lijden.
 
@@ -102,7 +101,7 @@ Voor elk van deze benaderingen is het voorbehoud dat de elementen op de auteurin
 >
 >Adobe biedt geen ondersteuning voor Grabbit.
 
-### Publiceren klonen {#clone-publish}
+### Kloonpublicatie {#clone-publish}
 
 Nadat de elementen zijn geactiveerd, kunt u de publicatieinstantie klonen om zoveel kopieën te maken als nodig zijn voor de implementatie. Het klonen van een server is vrij eenvoudig, maar er zijn enkele belangrijke stappen om te onthouden. Publicatie klonen:
 
