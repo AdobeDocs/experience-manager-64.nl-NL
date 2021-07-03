@@ -6,11 +6,10 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: Smart Tags,Search
-role: Business Practitioner
+feature: Slimme tags,zoeken
+role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 14%
@@ -63,7 +62,7 @@ Het instapproces is volledig wanneer de beheerder de dienst vormt en gebruikers 
 >
 >Zie [Slimme tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) als u AEM versie 6.3 of lager gebruikt en automatische labelservice voor uw elementen nodig hebt. Slimme tags maken geen gebruik van de AI-mogelijkheden en zijn minder nauwkeurig dan de verbeterde functie Slimme tags toepassen.
 
-## Elementen en labels {#reviewing-assets-and-tags} controleren
+## Elementen en tags controleren {#reviewing-assets-and-tags}
 
 Nadat u aan boord wordt genomen, is het eerste wat u wilt doen een reeks markeringen identificeren die deze beelden in de context van uw zaken het best beschrijven.
 
@@ -81,7 +80,7 @@ Voeg de elementen toe aan een map en pas de tags toe op elk element vanaf de eig
 
 
 
-## De Smart Content Service {#training-the-smart-content-service} trainen
+## De Smart Content Service trainen {#training-the-smart-content-service}
 
 Als u wilt dat de Smart Content Service uw bedrijfskrionomie herkent, voert u deze uit op een reeks elementen die al tags bevatten die relevant zijn voor uw bedrijf. Na de training kan de service dezelfde taxonomie toepassen op een vergelijkbare set activa.
 
@@ -101,7 +100,7 @@ U kunt de Slimme Dienst van de Inhoud toelaten om periodiek op de activa en bijb
 
 Als deze optie voor een map is geselecteerd, voert AEM automatisch een trainingsworkflow uit om de Smart Content Service op te leiden voor de map en de bijbehorende tags. Standaard wordt de trainingsworkflow wekelijks om 12:30 uur uitgevoerd op zaterdag.
 
-### On-demand training {#on-demand-training}
+### Opleiding op aanvraag {#on-demand-training}
 
 U kunt de Slimme Dienst van de Inhoud wanneer vereist van de console van het Werkschema trainen.
 
@@ -116,7 +115,7 @@ U kunt de Slimme Dienst van de Inhoud wanneer vereist van de console van het Wer
 >
 >Nadat de middelen in een map zijn verwerkt voor training, worden alleen de gewijzigde middelen verwerkt in volgende trainingscycli.
 
-### Trainingsrapporten {#viewing-training-reports} weergeven
+### Trainingsrapporten weergeven {#viewing-training-reports}
 
 Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trainingsreeks activa wordt getraind, herzie het rapport van de opleidingswerkstroom van de console van Rapporten.
 
@@ -133,7 +132,7 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 
 1. Als u het rapport wilt downloaden, selecteert u het in de lijst en tikt u op het pictogram **[!UICONTROL Download]** op de werkbalk. Het rapport wordt gedownload als Excel-bestand.
 
-## Elementen automatisch {#tagging-assets-automatically} labelen
+## Elementen automatisch labelen {#tagging-assets-automatically}
 
 Nadat u de Slimme Dienst van de Inhoud hebt opgeleid, kunt u het etiketteren werkschema teweegbrengen om aangewezen markeringen op een verschillende reeks gelijkaardige activa automatisch toe te passen.
 
@@ -143,7 +142,7 @@ U kunt de tagwerkstroom periodiek of telkens wanneer dat nodig is uitvoeren.
 >
 >De tagwerkstroom wordt zowel op elementen als op mappen uitgevoerd.
 
-### Periodieke labels {#periodic-tagging}
+### Periodieke tags {#periodic-tagging}
 
 U kunt de Slimme Dienst van de Inhoud toelaten om activa binnen een omslag periodiek te etiketteren. Open de eigenschappenpagina van de elementenmap, selecteer **[!UICONTROL Enable Smart Tags]** onder het tabblad **[!UICONTROL Details]** en sla de wijzigingen op.
 
