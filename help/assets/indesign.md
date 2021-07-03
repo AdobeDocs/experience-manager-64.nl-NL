@@ -2,11 +2,10 @@
 title: AEM Assets integreren met Adobe InDesign Server
 description: Leer hoe u AEM Assets kunt integreren met InDesign Server.
 contentOwner: AG
-feature: Publishing
-role: Administrator
+feature: Publiceren
+role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 1%
@@ -40,7 +39,7 @@ Voor het volledig uploaden van bestanden naar AEM Assets die u met Adobe InDesig
 
 
 
-## Hoe de extractie {#how-the-extraction-works} werkt
+## Hoe de extractie werkt {#how-the-extraction-works}
 
 De InDesign Server kan met AEM Assets worden geïntegreerd zodat bestanden die met InDesign ( `.indd`) zijn gemaakt, kunnen worden geüpload, vertoningen worden gegenereerd, *alle media* kunnen worden uitgepakt (bijvoorbeeld video) en als elementen kunnen worden opgeslagen:
 
@@ -112,7 +111,7 @@ U installeert en start de InDesign Server voor gebruik met AEM:
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### De AEM Assets-workflow {#configuring-the-aem-assets-workflow} configureren
+### De AEM Assets-workflow configureren {#configuring-the-aem-assets-workflow}
 
 AEM Assets heeft een vooraf geconfigureerde workflow **DAM Update Asset**, die verschillende processtappen bevat die specifiek voor InDesign zijn:
 
@@ -123,7 +122,7 @@ Dit werkschema is opstelling met standaardwaarden die voor uw opstelling op de d
 
 Na de installatie wordt door het uploaden van InDesign-bestanden naar AEM Assets (op een van de gebruikelijke manieren) de workflow geactiveerd die nodig is om het element te verwerken en de verschillende uitvoeringen voor te bereiden. Test uw configuratie door een `.indd`-bestand naar AEM Assets te uploaden om te bevestigen dat de verschillende uitvoeringen die door IDS onder `<*your_asset*>.indd/Renditions` zijn gemaakt, worden weergegeven
 
-#### Media-extractie {#media-extraction}
+#### Media extraheren {#media-extraction}
 
 Deze stap bepaalt de extractie van media uit het `.indd`-bestand.
 
@@ -147,7 +146,7 @@ Met het `ThumbnailExport.jsx`-script dat wordt uitgevoerd door de workflowstap M
 
 U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u de standaardinstellingen niet verwijdert, omdat deze vereist zijn door de gebruikersinterface van AEM Assets. Tot slot verwijdert de workflowstap Voorvertoning afbeelding verwijderen de miniatuuruitvoering .jpg, omdat deze niet langer nodig is.
 
-#### Pagina-uitname {#page-extraction}
+#### Pagina uitnemen {#page-extraction}
 
 Hierdoor wordt een AEM pagina gemaakt van de geëxtraheerde elementen. Een extractiemanager wordt gebruikt om gegevens uit een vertoning (momenteel HTML of IDML) te halen. Deze gegevens worden vervolgens gebruikt om een pagina te maken met de PageBuilder.
 
@@ -168,7 +167,7 @@ Standaard is de IDML-exporthandler beschikbaar. Het werkt op de `IDML` vertoning
 
 * **Paginaontwerp**: Het paginaontwerp dat moet worden gebruikt bij het genereren van de resulterende pagina.
 
-### De proxyworker configureren voor InDesign Server {#configuring-the-proxy-worker-for-indesign-server}
+### De proxyworker voor InDesign Server configureren {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -186,7 +185,7 @@ Standaard is de IDML-exporthandler beschikbaar. Het werkt op de `IDML` vertoning
 
 1. Klik **[!UICONTROL OK]** om op te slaan.
 
-### Het vormen de Verbinding van CQ van de Dag Externalzer {#configuring-day-cq-link-externalizer}
+### Het vormen van Dag CQ Verbinding Externalzer {#configuring-day-cq-link-externalizer}
 
 Als de InDesign Server en de AEM op verschillende gastheren of één of beide toepassingen niet op standaardhavens werken, vorm **Dag CQ Verbinding External** om de gastheernaam, de haven, en de inhoudspad voor de InDesign Server te plaatsen.
 
@@ -251,7 +250,7 @@ Voer voor InDesign-server 10.0 of hoger de volgende stappen uit om ondersteuning
 >
 >Voor [!DNL InDesign Server] integratie met [!DNL Assets], gebruik een multi-core bewerker omdat de zittingssteuneigenschap noodzakelijk voor de integratie niet op single core systemen wordt gesteund.
 
-## Referenties van Experience Manager {#configure-aem-credentials} configureren
+## Referenties van Experience Manager configureren {#configure-aem-credentials}
 
 U kunt de standaardbeheerdergeloofsbrieven (gebruikersnaam en wachtwoord) veranderen om tot de server van de InDesign van uw AEM instantie toegang te hebben zonder de integratie met de server van Adobe InDesign te breken.
 
