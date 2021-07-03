@@ -7,12 +7,11 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
-feature: Image Presets
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Voorinstellingen afbeelding
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3636'
+source-wordcount: '3635'
 ht-degree: 7%
 
 ---
@@ -86,7 +85,7 @@ Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of 
 >
 >In de **[!UICONTROL DAM Update Asset]**-workflow worden miniaturen voor EPS-bestanden gegenereerd met de stap **[!UICONTROL EPS thumbnails]**.
 
-### Eigenschappen van metagegevens van PDF/AI/EPS-element {#pdf-ai-eps-asset-metadata-properties}
+### Eigenschappen van PDF/AI/EPS-metagegevens {#pdf-ai-eps-asset-metadata-properties}
 
 | **Eigenschap Metadata** | **Beschrijving** |
 |---|---|
@@ -97,7 +96,7 @@ U hebt toegang tot **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** opt
 
 Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Tools > Workflow > Models]**. Selecteer **[!UICONTROL Workflow Models]** op de pagina **[!UICONTROL DAM Update Asset]** en tik **[!UICONTROL Edit]** op de werkbalk. Tik op de pagina **[!UICONTROL DAM Update Asset workflow]** op de procescomponent **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** om het dialoogvenster **[!UICONTROL Step Properties]** te openen.
 
-### Opties voor de vertoning van PDF/AI-afbeeldingen omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
+### Opties voor PDF/AI-afbeeldingsvoorvertoning omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumenten voor het rasteren van PDF- of AI-workflow](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -139,7 +138,7 @@ Met de standaardprocesargumenten wordt de eerste pagina van een PDF/AI-document 
 
 Voor de procescomponent **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** is een maximum gedefinieerd om te voorkomen dat er te grote afbeeldingen in het geheugen worden gemaakt. Dergelijke grote afbeeldingen kunnen het geheugen overlopen dat aan de JVM (Java Virtual Machine) wordt geleverd. Er moet op worden gelet dat de JVM over voldoende geheugen beschikt om het geconfigureerde aantal parallelle workflows te beheren, waarbij elk van beide de mogelijkheid heeft om een image op de maximaal geconfigureerde grootte te maken.
 
-### Bestandsindeling InDesign (INDD) {#indesign-indd-file-format}
+### InDesign-bestandsindeling (INDD) {#indesign-indd-file-format}
 
 Als u de opname van INDD-bestanden wilt ondersteunen, zodat u dynamische uitvoering van deze bestandsindeling kunt genereren, is het verstandig de volgende informatie te bekijken voordat u voorinstellingen voor afbeeldingen maakt.
 
@@ -180,7 +179,7 @@ De volgende scripts worden door Dynamic Media-integratie gebruikt:
  </tbody> 
 </table>
 
-## Miniatuurgrootte {#configuring-image-thumbnail-size} configureren
+## Miniatuurgrootte van afbeelding configureren {#configuring-image-thumbnail-size}
 
 U kunt de grootte van miniaturen configureren door deze instellingen te configureren in de **[!UICONTROL DAM Update Asset]**-workflow. De workflow bevat twee stappen waarmee u de miniatuurgrootte van afbeeldingselementen kunt configureren. Hoewel het ene (**[!UICONTROL Dynamic Media Process Image Assets]**) wordt gebruikt voor dynamische afbeeldingselementen en het andere (**[!UICONTROL Process Thumbnails]**) voor het genereren van statische miniaturen of wanneer alle andere processen geen miniaturen genereren, moeten *both* dezelfde instellingen hebben.
 
@@ -214,7 +213,7 @@ Miniatuurgrootte wordt gedefinieerd in de volgende indeling: **width:height:cent
 
 1. Tik **[!UICONTROL Save]** om de wijzigingen in de workflow op te slaan.
 
-### Het aantal Dynamic Media-voorinstellingen voor afbeeldingen dat {#increasing-or-decreasing-the-number-of-image-presets-that-display} wordt weergegeven verhogen of verlagen
+### Het aantal Dynamic Media-voorinstellingen voor afbeeldingen dat wordt weergegeven verhogen of verlagen {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoeringen wanneer u een voorvertoning van elementen weergeeft. AEM toont een verscheidenheid van dynamische vertoningen wanneer het bekijken van activa van **[!UICONTROL Detail View > Renditions]**. U kunt de limiet van weergegeven uitvoeringen verhogen of verlagen.
 
@@ -268,7 +267,7 @@ Als u de opname van INDD-bestanden wilt ondersteunen, zodat u dynamische uitvoer
 
 1. Klik op **[!UICONTROL Save]**.
 
-### Een responsieve voorinstelling voor een afbeelding maken {#creating-a-responsive-image-preset}
+### Een responsieve voorinstelling voor afbeeldingen maken {#creating-a-responsive-image-preset}
 
 Als u een responsieve voorinstelling voor afbeeldingen wilt maken, voert u de stappen uit in [Voorinstellingen voor afbeeldingen maken](#creating-image-presets). Wis de waarden bij het invoeren van de hoogte en breedte in het venster **[!UICONTROL Edit Image Preset]** en laat ze leeg.
 
@@ -284,7 +283,7 @@ Als u deze leeg laat, wordt AEM aangegeven dat op deze voorinstelling kan worden
 >
 >In Dynamic Media - hybride modus moet u handmatig voorinstellingen voor afbeeldingen en afbeeldingselementen publiceren.
 
-### Opties {#image-preset-options} voor voorinstellingen afbeelding
+### Voorinstellingsopties voor afbeelding {#image-preset-options}
 
 Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties in deze sectie beschreven. Daarnaast raadt Adobe de volgende drie *best practices* opties aan om te beginnen:
 
@@ -292,7 +291,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 * **[!UICONTROL Enable Simple Sharpening]** – Niet selecteren **[!UICONTROL Enable Simple Sharpening]** (dit verscherpingsfilter biedt minder controle dan de instellingen voor onscherpe maskering).
 * **[!UICONTROL Sharpening: Resampling Mode]** – Selecteer **[!UICONTROL Bi-Cubic]**.
 
-#### Standaardtabopties {#basic-tab-options}
+#### Opties op het tabblad Standaard {#basic-tab-options}
 
 <table> 
  <tbody> 
@@ -344,7 +343,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
  </tbody>
 </table>
 
-#### Geavanceerde tabopties {#advanced-tab-options}
+#### Opties op het tabblad Geavanceerd {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -479,7 +478,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
    ![chlimage_1-503](assets/chlimage_1-503.png)
 
-## Voorinstellingen {#modifying-image-presets} voor afbeeldingen bewerken
+## Voorinstellingen voor afbeeldingen bewerken {#modifying-image-presets}
 
 **Voorinstellingen** voor afbeeldingen bewerken:
 
@@ -506,7 +505,7 @@ Als u de Dynamic Media - Scene7-modus uitvoert, worden afbeeldingsvoorinstelling
 
    ![chlimage_1-505](assets/chlimage_1-505.png)
 
-## Voorinstellingen voor Dynamic Media-afbeeldingen verwijderen {#deleting-image-presets}
+## Dynamic Media-voorinstellingen voor afbeeldingen verwijderen {#deleting-image-presets}
 
 1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole.
 1. Tik op het pictogram **[!UICONTROL Tools]** en navigeer naar **[!UICONTROL Assets > Image Presets]**.
