@@ -3,16 +3,16 @@ title: PDF-rasterfunctie gebruiken om uitvoeringen te genereren
 description: U kunt miniaturen en uitvoeringen van hoge kwaliteit genereren met de Adobe PDF Rasterizer-bibliotheek.
 contentOwner: AG
 feature: Gereedschappen voor ontwikkelaars, uitvoeringen
-role: Developer,Administrator
+role: Developer,Admin
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
 
 ---
 
-# PDF-rasterfunctie gebruiken {#using-pdf-rasterizer}
+# PDF-raster gebruiken {#using-pdf-rasterizer}
 
 Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe Experience Manager Assets], genereert de standaardbibliotheek mogelijk geen nauwkeurige uitvoer. PDF Rasterizer-bibliotheek kan een betrouwbaardere en nauwkeurigere uitvoer genereren in vergelijking met de uitvoer uit een standaardbibliotheek. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor de volgende scenario&#39;s:
 
