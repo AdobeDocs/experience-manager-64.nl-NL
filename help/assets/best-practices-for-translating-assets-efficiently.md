@@ -2,18 +2,17 @@
 title: Tips en trucs voor een efficiënte vertaling van middelen
 description: Aanbevolen procedures voor efficiënt beheer van middelen om verschillende vertaalde versies te synchroniseren en vertaalworkflows te stroomlijnen.
 contentOwner: AG
-feature: Translation
-role: Business Practitioner,Administrator
+feature: Vertaling
+role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%
 
 ---
 
-# Aanbevolen procedures om elementen efficiënt te vertalen {#best-practices-for-translating-assets-efficiently}
+# Aanbevolen procedures om middelen efficiënt te vertalen {#best-practices-for-translating-assets-efficiently}
 
 Adobe Experience Manager (AEM)-middelen ondersteunen meertalige workflows om binaire gegevens, metagegevens en tags voor digitale middelen naar meerdere landinstellingen te vertalen en de vertaalde middelen te beheren. Zie [Meertalige elementen](multilingual-assets.md) voor meer informatie.
 
