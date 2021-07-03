@@ -2,11 +2,10 @@
 title: Download digitale middelen van [!DNL Adobe Experience Manager].
 description: Leer hoe u elementen downloadt van [!DNL Adobe Experience Manager] en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
-feature: Asset Management,Asset Distribution
-role: Business Practitioner
+feature: Middelenbeheer, middelenverdeling
+role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 0%
@@ -64,7 +63,7 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
-## Subserver {#disable-asset-download-servlet} uitschakelen
+## Asset Download-server uitschakelen {#disable-asset-download-servlet}
 
 De `Asset Download Servlet` kan op [!DNL Experience Manager] Publish instanties worden onbruikbaar gemaakt door de berichtcherconfiguratie bij te werken om het even welke verzoeken van de activadownload te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
