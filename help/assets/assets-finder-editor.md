@@ -2,11 +2,10 @@
 title: Elementeditorpagina's maken en configureren
 description: Leer hoe u aangepaste pagina's in de Asset Editor kunt maken en meerdere middelen tegelijk kunt bewerken.
 contentOwner: AG
-feature: Developer Tools,Asset Management
-role: Business Practitioner,Administrator
+feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
+role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3200'
 ht-degree: 0%
@@ -130,11 +129,11 @@ De volgende lenzen zijn beschikbaar:
 
 ![chlimage_1-388](assets/chlimage_1-388.png)
 
-#### Lens {#list-lens} weergeven
+#### Lijstlens {#list-lens}
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
-#### De Query Builder {#customizing-the-query-builder} aanpassen
+#### De Query Builder aanpassen {#customizing-the-query-builder}
 
 Met de querybuilder kunt u zoektermen invoeren en inhoud maken voor de pagina Asset Share. Wanneer u de vraagbouwer uitgeeft, moet u ook bepalen hoeveel onderzoeksresultaten per pagina worden getoond, welke activaredacteur opent wanneer u activa tweemaal klikt, de weg de vraagonderzoeken, en nodetypes aanpast.
 
@@ -160,7 +159,7 @@ U kunt als volgt de builder van query aanpassen:
 
    ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
-#### Voorspelden toevoegen {#adding-predicates}
+#### Voorspellen toevoegen {#adding-predicates}
 
 AEM Assets bevat een aantal voorspellingen die u kunt toevoegen aan de pagina Asset Share. Hierdoor kunnen uw gebruikers verder beperkte zoekopdrachten uitvoeren. In sommige gevallen, kunnen zij een parameter van de vraagbouwer met voeten treden (bijvoorbeeld, de parameter van de Weg).
 
@@ -189,7 +188,7 @@ Zie [javadocs voorspellen](https://helpx.adobe.com/experience-manager/6-4/sites/
 
    ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
 
-## Een pagina voor de Asset Editor maken en configureren {#creating-and-configuring-an-asset-editor-page}
+## Een pagina voor de Editor van middelen maken en configureren {#creating-and-configuring-an-asset-editor-page}
 
 U kunt de middeleneditor aanpassen om te bepalen hoe gebruikers de digitale elementen kunnen weergeven en bewerken. Hiertoe maakt u een nieuwe pagina in de Editor van middelen en past u de weergaven aan en de acties die gebruikers op die pagina kunnen uitvoeren.
 
@@ -217,7 +216,7 @@ Als u de pagina Asset Editor wilt aanpassen, gebruikt u elementen van de assiste
 
 ![assetshare6](assets/assetshare6.bmp)
 
-#### Stel in welke Asset Editor wordt geopend vanuit een pagina voor het delen van elementen {#setting-which-asset-editor-opens-from-an-asset-share-page}
+#### Instellen welke Asset Editor wordt geopend vanuit een pagina voor het delen van elementen {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Nadat u de aangepaste pagina Asset Editor hebt gemaakt, moet u ervoor zorgen dat de elementen op de aangepaste pagina Editor worden geopend wanneer u dubbelklikt op elementen die u hebt gemaakt met het aangepaste Delen van middelen.
 
@@ -233,7 +232,7 @@ De pagina Asset Editor instellen:
 
    ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Elementeditorcomponenten toevoegen {#adding-asset-editor-components}
+#### Elementbewerkingscomponenten toevoegen {#adding-asset-editor-components}
 
 U bepaalt welke functionaliteit een middeleneditor heeft door componenten aan de pagina toe te voegen.
 
@@ -261,7 +260,7 @@ Elementeditorcomponenten toevoegen:
 
    ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
-#### Metagegevensformulier en tekstveld - De component Metagegevens weergeven {#metadata-form-and-text-field-configuring-the-view-metadata-component} configureren
+#### Metagegevensformulier en tekstveld - De component Metagegevens weergeven configureren {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
 Het metagegevensformulier is een formulier met een begin- en eindactie. Tussendoor voert u **[!UICONTROL Text]** velden in. Zie [Forms](../sites-authoring/default-components.md) voor meer informatie over het werken met formulieren.
 
@@ -296,7 +295,7 @@ Het metagegevensformulier is een formulier met een begin- en eindactie. Tussendo
 
 Op de pagina Asset Editor kunnen gebruikers vervolgens waarden invoeren in de metagegevensvelden (als deze bewerkbaar zijn) en de eindactie uitvoeren (bijvoorbeeld door de wijzigingen te verzenden).
 
-#### Subelementen {#sub-assets}
+#### Subactiva {#sub-assets}
 
 In de component Subelementen kunt u subelementen weergeven en selecteren. U kunt bepalen welke namen onder [hoofdelement](assets.md#what-are-digital-assets) en subelementen worden weergegeven.
 
@@ -314,7 +313,7 @@ Als u bijvoorbeeld een subelement selecteert, ziet u hoe de component de juiste 
 
 ![screen_shot_2012-04-23at24552pm](assets/screen_shot_2012-04-23at24552pm.png)
 
-#### Labels {#tags}
+#### Tags {#tags}
 
 De component Tags is een component waarin gebruikers bestaande tags aan een element kunnen toewijzen. Hierdoor kunnen gebruikers de elementen later ordenen en ophalen. U kunt van deze component alleen-lezen maken, zodat gebruikers geen codes kunnen toevoegen, maar alleen deze weergeven.
 
