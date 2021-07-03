@@ -2,22 +2,21 @@
 title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controles te doen, naleving te bereiken, en basishygiëne te handhaven
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
-feature: Workflow,Renditions
-role: Business Practitioner,Administrator
+feature: Workflow,uitvoeringen
+role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 2%
 
 ---
 
-# Digitale elementen verwerken {#process-assets}
+# Digitale middelen verwerken {#process-assets}
 
 [!DNL Adobe Experience Manager Assets] kunt u op verschillende manieren werken aan uw digitale elementen, zodat u robuuste elementen kunt verwerken. U kunt de beschikbare verwerkingsmethodes gebruiken of de methodes uitbreiden om bedrijfsprocesvoltooiing van begin tot eind te verzekeren gebruikend, controles en naleving van, ontdekking en distributie van, en basishygiëne van uw digitale activa. U kunt dit alles doen terwijl u de vereiste schaal en aanpassing bereikt.
 
-## Werkstromen {#understand-workflows} begrijpen
+## Workflows begrijpen {#understand-workflows}
 
 Voor elementverwerking gebruikt [!DNL Experience Manager] workflows. Workflows helpen de bedrijfslogica of -activiteiten te automatiseren. De korrelige stappen om specifieke taken te verwezenlijken worden verstrekt door gebrek en de ontwikkelaars kunnen hun eigen douanestappen tot stand brengen. Deze stappen kunnen in een logische volgorde worden gecombineerd om workflows te maken. Een workflow kan bijvoorbeeld automatisch watermerken toepassen op geüploade afbeeldingen op basis van specifieke criteria, zoals metagegevens die zijn ingesloten in de afbeelding, de map waarnaar de afbeelding is geüpload, de resolutie van de afbeelding, enzovoort. Een ander voorbeeld is een workflow die op een dergelijke manier aan watermerkafbeeldingen wordt geconfigureerd en waarbij tegelijkertijd aan meerdere behoeften voor middelenbeheer wordt voldaan, zoals het toevoegen van metagegevens, het maken van uitvoeringen, het toevoegen van intelligente tags voor het detecteren van elementen, het publiceren naar een datastore, het instellen van machtigingen voor gebruikerstoegang, enzovoort.
 
@@ -104,7 +103,7 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 * Maak een kopie van de [!UICONTROL DAM Update Asset]-workflow en wijzig deze om uit te voeren in een specifieke maphiërarchie. Deze aanpak is handig voor een aantal mappen.
 * De extra verwerkingsstappen kunnen worden toegevoegd met een [OR split](/help/sites-developing/workflows-step-ref.md#or-split) als voorwaardelijk toepasselijk op zo veel omslagen zoals vereist.
 
-## Beste werkwijzen en beperkingen {#best-practices-limitations-tips}
+## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
 * Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u [!DNL Experience Manager] aanpassen om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
 * Standaard bevat de [!UICONTROL DAM Update Asset]-workflow enkele stappen om miniaturen en webrengingen te maken. Als standaarduitvoeringen uit de workflow worden verwijderd, wordt de gebruikersinterface van [!DNL Assets] niet correct weergegeven.
@@ -112,8 +111,8 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 >[!MORELIKETHIS]
 >
 >* [Toepassen en deelnemen aan workflows](/help/sites-authoring/workflows.md)
->* [Workflowmodellen maken en workflowfunctionaliteit uitbreiden](/help/sites-developing/workflows.md)
->* [Methoden voor het uitvoeren van workflows](/help/sites-administering/workflows-starting.md)
->* [Best practices voor workflows](/help/sites-developing/workflows-best-practices.md)
->* [Communautair artikel over het wijzigen van elementen met behulp van workflow](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+* [Workflowmodellen maken en workflowfunctionaliteit uitbreiden](/help/sites-developing/workflows.md)
+* [Methoden voor het uitvoeren van workflows](/help/sites-administering/workflows-starting.md)
+* [Best practices voor workflows](/help/sites-developing/workflows-best-practices.md)
+* [Communautair artikel over het wijzigen van elementen met behulp van workflow](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
