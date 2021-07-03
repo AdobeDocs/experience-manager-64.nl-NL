@@ -6,17 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
-feature: Spin Sets
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Sets draaien
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 6%
 
 ---
 
-# Spin Sets {#spin-sets}
+# Sets draaien {#spin-sets}
 
 Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek verkrijgen.
 
@@ -30,7 +29,7 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 >
 >Zie [Elementen beheren met de aanraakinterface](managing-assets-touch-ui.md) voor informatie over de gebruikersinterface van Elementen.
 
-## Snel starten: Draaisets {#quick-start-spin-sets}
+## Snel starten: Sets draaien {#quick-start-spin-sets}
 
 Volg deze workflow om snel weer aan de slag te gaan met centrifuges:
 
@@ -86,7 +85,7 @@ U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrif
 
 U kunt afbeeldingen voor de centrifuges uploaden zoals u [elk ander element in AEM Assets](managing-assets-touch-ui.md) uploadt.
 
-### Richtlijnen voor het maken van centrifuge-afbeeldingen {#guidelines-for-shooting-spin-set-images}
+### Richtlijnen voor het maken van centrifuges {#guidelines-for-shooting-spin-set-images}
 
 Hieronder vindt u een aantal aanbevolen procedures voor het uitvoeren van gecentreerde afbeeldingen. Over het algemeen geldt dat hoe meer afbeeldingen u in een centrifugeset hebt, hoe beter het effect van het draaien van de afbeelding is. Als u echter veel afbeeldingen in de set opneemt, neemt de laadtijd van de afbeeldingen toe. AEM raadt deze richtlijnen aan voor het maken van foto&#39;s voor gebruik in centrifuges:
 
@@ -144,7 +143,7 @@ De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor 
 
 1. Tik op **[!UICONTROL Save]**. De nieuwe centrifugeset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
-## Spin-sets {#viewing-spin-sets} weergeven
+## Spin-sets weergeven {#viewing-spin-sets}
 
 U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinstellingen voor batchsets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). Sets die zijn gemaakt met voorinstellingen voor batchsets, worden echter *niet* weergegeven in de gebruikersinterface. U hebt op drie verschillende manieren toegang tot sets die zijn gemaakt met voorinstellingen voor batchsets. (Deze methoden zijn ook beschikbaar als u de centrifuges in de gebruikersinterface hebt gemaakt.)
 
@@ -166,7 +165,7 @@ U kunt sets ook weergeven in de gebruikersinterface zoals wordt beschreven in [S
 
    ![chlimage_1-386](assets/chlimage_1-386.png)
 
-## Spinsets bewerken {#editing-spin-sets}
+## Bewerken van centrifuges {#editing-spin-sets}
 
 U kunt diverse bewerkingstaken uitvoeren op bijvoorbeeld de volgende centrifuges:
 
@@ -200,10 +199,10 @@ Als u de afbeelding verwijdert die AEM gebruikt voor de miniatuur door deze te v
 
 1. Klik **[!UICONTROL Save]** wanneer klaar het uitgeven.
 
-## Voorvertoning van centrifuges {#previewing-spin-sets}
+## Voorvertoning van centrifuges weergeven {#previewing-spin-sets}
 
 Zie [Elementen voorvertonen](previewing-assets.md).
 
-## Spin-sets {#publishing-spin-sets} publiceren
+## Spin-sets publiceren {#publishing-spin-sets}
 
 Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
