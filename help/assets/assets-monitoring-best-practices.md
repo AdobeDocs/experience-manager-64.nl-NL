@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor middelenbewaking
 description: Beste werkwijzen voor het controleren van de omgeving en de prestaties van uw AEM instantie nadat deze is geïmplementeerd.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 0%
@@ -57,11 +57,11 @@ Doorgaans gebruikt u deze gereedschappen samen om een uitgebreid idee te krijgen
 
 Bij langdurige bewaking van een AEM instantie moeten dezelfde delen die live worden bewaakt, langer worden bewaakt. Het omvat ook het definiëren van waarschuwingen die specifiek zijn voor uw omgeving.
 
-### Logaggregatie en rapportage {#log-aggregation-and-reporting}
+### Aggregatie en rapportage van stamhout {#log-aggregation-and-reporting}
 
 Er zijn verscheidene hulpmiddelen beschikbaar om logboeken samen te voegen, bijvoorbeeld Splunk(TM) en Elastic Search/Logstash/Kabana (ELK). Om de uptime van uw AEM instantie te evalueren, is het belangrijk voor u om logboekgebeurtenissen te begrijpen specifiek voor uw systeem en alarm tot stand te brengen die op hen wordt gebaseerd. Een goede kennis van uw ontwikkeling en verrichtingspraktijken kan u helpen beter begrijpen hoe te om uw proces van de logboeksamenvoeging te stemmen om kritieke alarm te produceren.
 
-### Omgevingsbewaking {#environment-monitoring}
+### Milieu-monitoring {#environment-monitoring}
 
 De bewaking van het milieu omvat de bewaking van het volgende:
 
@@ -74,7 +74,7 @@ De bewaking van het milieu omvat de bewaking van het volgende:
 
 U hebt externe hulpmiddelen nodig, zoals NewRelic(TM) en AppDynamics(TM) om elk item te controleren. Met deze gereedschappen kunt u waarschuwingen definiëren die specifiek zijn voor uw systeem, zoals een hoog systeemgebruik, een back-up van de workflow, storingen in de health check of niet-geverifieerde toegang tot uw website. Adobe adviseert geen bepaalde hulpmiddelen over anderen. Zoek het hulpmiddel dat voor u werkt, en hefboomwerking het om de besproken punten te controleren.
 
-#### Interne bewaking van toepassingen {#internal-application-monitoring}
+#### Interne toepassingsbewaking {#internal-application-monitoring}
 
 De interne toepassingscontrole omvat het controleren van de toepassingscomponenten die de AEM stapel, met inbegrip van JVM, de inhoudsbewaarplaats vormen, en controle door de code van de douanetoepassing die op het platform wordt gebouwd. In het algemeen wordt het uitgevoerd via JMX-boonen die rechtstreeks kunnen worden gecontroleerd door veel populaire monitoroplossingen, zoals SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) en andere. Voor systemen die geen directe verbinding met JMX ondersteunen, kunt u shellscripts schrijven om de JMX-gegevens te extraheren en aan deze systemen beschikbaar te maken in een indeling die ze zelf begrijpen.
 
@@ -185,7 +185,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
    * Alarmdrempel: Wanneer de status niet OK is
    * Alarmdefinitie: De logbestanden bevatten fouten. Controleer de logboekattributen voor meer informatie over de oorzaak van de kwestie.
 
-## Gemeenschappelijke kwesties en resoluties {#common-issues-and-resolutions}
+## Gemeenschappelijke kwesties en resoluties  {#common-issues-and-resolutions}
 
 Tijdens het proces van controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met AEM instanties op te lossen:
 
