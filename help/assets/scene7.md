@@ -7,9 +7,8 @@ content-type: reference
 topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2694'
 ht-degree: 0%
@@ -53,7 +52,7 @@ U kunt digitale elementen als volgt naar Dynamic Media Classic publiceren:
 >AEM publiceert asynchroon naar Dynamic Media Classic. Nadat u op **[!UICONTROL Publish]** hebt geklikt, kan het enkele seconden duren voordat uw element naar Dynamic Media Classic wordt gepubliceerd.
 
 
-## Dynamic Media Klassieke componenten {#scene-components}
+## Dynamic Media Classic-componenten {#scene-components}
 
 De volgende Klassieke Dynamic Media-componenten zijn beschikbaar in AEM:
 
@@ -102,7 +101,7 @@ Het toevoegen van een Dynamic Media Klassieke (Scene7) component aan een pagina 
    >
    >Alleen in de gebruikersinterface moet u de afbeelding of video slepen en neerzetten op het klassieke Dynamic Media-onderdeel dat u op de pagina hebt geplaatst. Het selecteren en bewerken van de Klassieke Dynamic Media-component en vervolgens het kiezen van het element wordt niet ondersteund.
 
-### Interactieve kijkervaringen toevoegen aan een responsieve site {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Interactieve weergaven toevoegen aan een responsieve site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 Het responsieve ontwerp voor uw middelen betekent dat uw middelen worden aangepast afhankelijk van waar ze worden weergegeven. Bij een responsief ontwerp kunnen dezelfde elementen effectief op meerdere apparaten worden weergegeven.
 
@@ -124,7 +123,7 @@ Zie ook [Responsief ontwerp voor webpagina&#39;s](/help/sites-developing/respons
 
 1. Controleer of de viewers het formaat responsief wijzigen en of alle interacties zijn geoptimaliseerd voor computers, tablets en mobiele apparaten.
 
-### Gemeenschappelijke instellingen voor alle Dynamic Media Classic-componenten {#settings-common-to-all-scene-components}
+### Algemene instellingen voor alle Dynamic Media Classic-componenten {#settings-common-to-all-scene-components}
 
 Hoewel de configuratieopties variëren, zijn het volgende gemeenschappelijk voor alle [!UICONTROL Dynamic Media Classic] componenten:
 
@@ -155,7 +154,7 @@ In de HTML5 **[!UICONTROL Flyout]**-component wordt het element weergegeven als 
 >
 >Als uw **[!UICONTROL Flyout]** component een douanegrootte gebruikt, dan wordt die douanegrootte gebruikt en ontvankelijke opstelling van de component wordt onbruikbaar gemaakt.
 >
->Als uw **[!UICONTROL Flyout]** component de standaardgrootte gebruikt, zoals die in **[!UICONTROL Design View]** wordt geplaatst, dan wordt de standaardgrootte gebruikt en de component rekt om de grootte van de paginalay-out met ontvankelijke opstelling van de toegelaten component aan te passen. Houd er echter rekening mee dat er een beperking geldt voor de responsieve instelling van de component. Wanneer u de **[!UICONTROL Flyout]** component met ontvankelijke opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders kan de **[!UICONTROL Flyout]** buiten de rechterrand van de pagina uitsteken.
+>Als uw **[!UICONTROL Flyout]** component de standaardgrootte gebruikt, zoals die in **[!UICONTROL Design View]** wordt geplaatst, dan wordt de standaardgrootte gebruikt en de component rekt om de grootte van de paginalay-out met ontvankelijke opstelling van de toegelaten component aan te passen. Houd er echter rekening mee dat er een beperking geldt voor de responsieve installatie van de component. Wanneer u de **[!UICONTROL Flyout]** component met ontvankelijke opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders kan de **[!UICONTROL Flyout]** buiten de rechterrand van de pagina uitsteken.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -242,7 +241,7 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Van de klassieke Dynamic Media-afbeeldingssjabloon een koppeling {#making-the-scene-image-template-a-link} maken
+#### Een koppeling maken van de klassieke Dynamic Media-afbeeldingssjabloon {#making-the-scene-image-template-a-link}
 
 1. Tik op **[!UICONTROL Edit]** op de pagina met de klassieke Dynamic Media-component **[!UICONTROL Image Template]**.
 1. Voer in het veld **[!UICONTROL URL]** de URL in waarnaar gebruikers gaan wanneer op de afbeelding wordt getikt. Selecteer in het veld **[!UICONTROL Open in]** of u het doel wilt openen (een nieuw venster of hetzelfde venster).
@@ -251,7 +250,7 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
 1. Tik op **[!UICONTROL OK]**.
 
-### Videocomponent {#video-component}
+### Video-component {#video-component}
 
 De Klassieke Dynamic Media **[!UICONTROL Video]**-component (beschikbaar in het Klassieke Dynamic Media-gedeelte van het hulpapparaat) gebruikt apparaat- en bandbreedtedetectie om de juiste video voor elk scherm te leveren. Deze component is een HTML5-videospeler; het is één viewer die via meerdere kanalen kan worden gebruikt.
 
@@ -261,7 +260,7 @@ Zie [Video](s7-video.md) voor meer informatie over hoe video&#39;s werken met de
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-### Bekende beperkingen voor de videocomponent {#known-limitations-for-the-video-component}
+### Bekende beperkingen voor de video-component {#known-limitations-for-the-video-component}
 
 Adobe DAM en WCM laten zien of een master video is geüpload. Deze proxy-elementen worden niet weergegeven:
 
@@ -287,7 +286,7 @@ Als u veelvoudige configuraties hebt, AEM door gebrek toont [standaardconfigurat
    >   * Single F4V-video
 
 
-### Door inhoud bladeren in de interface met geoptimaliseerde aanrakingen {#browsing-content-in-the-touch-optimized-ui}
+### Door inhoud bladeren in de gebruikersinterface die geoptimaliseerd is voor aanrakingen {#browsing-content-in-the-touch-optimized-ui}
 
 U kunt de inhoudbrowser openen via de geoptimaliseerde interface of via de klassieke gebruikersinterface. Op dit moment heeft het geoptimaliseerde aanraakgebied de volgende beperking:
 
@@ -313,7 +312,7 @@ Bovendien kunt u informatie over de resolutie, de grootte, de dagen sinds de wij
 * Voor adaptieve videosets en sjablonen wordt geen informatie over de grootte gegenereerd voor miniaturen.
 * Voor adaptieve videosets wordt geen resolutie gegenereerd voor miniaturen.
 
-### Dynamic Media Classic-elementen zoeken met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
+### Dynamic Media Classic-middelen zoeken met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
 
 Het zoeken naar Dynamic Media Classic-middelen lijkt op het zoeken naar AEM, maar wanneer u een zoekopdracht uitvoert, ziet u in feite een externe weergave van de elementen in het Klassieke Dynamic Media-systeem in plaats van deze rechtstreeks in AEM te importeren.
 
@@ -365,4 +364,4 @@ In de Klassieke browser van Dynamic Media kunt u resultaten filteren om het volg
 * **[!UICONTROL Publish Status]**
 U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus:  **[!UICONTROL Unpublished]** of  **[!UICONTROL Published]**. Als u geen **[!UICONTROL Publish Status]** selecteert, AEM standaard alle publicatiestatus doorzoekt.
 
-![chlimage_1-248](assets/chlimage_1-247.png)
+![chlimage_1-247](assets/chlimage_1-247.png)
