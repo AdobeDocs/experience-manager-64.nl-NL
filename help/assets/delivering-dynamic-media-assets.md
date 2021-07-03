@@ -10,17 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
-feature: Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Beheer van bedrijfsmiddelen
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 9%
+source-wordcount: '330'
+ht-degree: 10%
 
 ---
 
-# Dynamic Media-middelen {#delivering-dynamic-media-assets} leveren
+# Dynamic Media-middelen leveren {#delivering-dynamic-media-assets}
 
 Hoe u dynamische media-elementen kunt leveren (zowel video als afbeeldingen), hangt af van de manier waarop uw website is geïmplementeerd.
 
