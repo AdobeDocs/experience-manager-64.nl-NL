@@ -2,11 +2,10 @@
 title: Metagegevens XMP
 description: Meer informatie over de metagegevensstandaard (Extensible Metadata Platform) van de XMP die AEM Assets gebruikt voor het beheer van metagegevens. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
+feature: Metagegevens
+role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 18%
@@ -61,11 +60,11 @@ De XMP standaard is zo ontworpen dat deze uitbreidbaar is, zodat u aangepaste ty
 >
 >XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Om binaire gegevens in XMP te dragen, bijvoorbeeld, duimnagelbeelden, moeten zij in een XML-vriendschappelijke formaat zoals Base64 worden gecodeerd.
 
-## Core Concepten XMP {#xmp-core-concepts}
+## XMP kernconcepten {#xmp-core-concepts}
 
 De volgende secties beschrijven de kernconcepten van XMP, met inbegrip van namespaces en schema&#39;s, eigenschappen en waarden, en taalalternatieven.
 
-### Namespaces en Schemata {#namespaces-and-schemata}
+### Naamruimten en Schemata {#namespaces-and-schemata}
 
 Een XMP schema is een set eigenschapnamen in een algemene XML-naamruimte die\
 het gegevenstype en de beschrijvende informatie. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
