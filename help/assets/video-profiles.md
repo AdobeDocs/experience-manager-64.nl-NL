@@ -6,10 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
-feature: Video Profiles,Video
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Videoprofielen, video
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2852'
 ht-degree: 16%
@@ -93,7 +92,7 @@ In de volgende tabel vindt u de beste praktijken voor het coderen van profielen 
  </tbody> 
 </table>
 
-## Dynamic Media-videocoderingsprofiel maken voor adaptieve streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Een Dynamic Media-videocoderingsprofiel voor adaptieve streaming maken {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media wordt al geleverd met een vooraf gedefinieerd adaptief videocoderingsprofiel - een groep video-uploadinstellingen voor MP4 H.264-systeem dat is geoptimaliseerd voor de beste kijkervaring. U kunt dit profiel gebruiken wanneer u uw video&#39;s uploadt.
 
@@ -149,13 +148,13 @@ Wanneer u klaar bent met het maken van het videoprofiel, past u het toe op een o
    * Herhaal stap 5-10 om extra coderingsvoorinstellingen te maken. (Voor adaptieve videostreaming zijn meerdere videovoorinstellingen vereist.)
    * Tik in de rechterbovenhoek van de pagina nogmaals op **[!UICONTROL Save]** om het profiel op te slaan.
 
-## De voortgang van een coderingstaak {#monitoring-the-progress-of-an-encoding-job} controleren
+## De voortgang van een coderingstaak controleren {#monitoring-the-progress-of-an-encoding-job}
 
 Er wordt een verwerkingsindicator (of voortgangsbalk) weergegeven waarmee u de voortgang van een videocoderingstaak visueel kunt controleren.
 
 U kunt het `error.log` dossier ook bekijken om de vooruitgang van een het coderen baan te controleren, om te zien of wordt het coderen gebeëindigd, of om het even welke baanfouten te zien. De `error.log` wordt gevonden in `logs` omslag waar uw geval van AEM geïnstalleerd is.
 
-## Dynamic Media-videocoderingsprofielen maken voor progressief streamen {#creating-a-video-encoding-profile-for-progressive-streaming}
+## Dynamic Media-videocoderingsprofielen voor progressieve streaming maken {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 Als u de optie **[!UICONTROL Encode for adaptive streaming]** niet wilt gebruiken, moet u er rekening mee houden dat alle coderingsvoorinstellingen die u aan het profiel toevoegt, worden behandeld als afzonderlijke videoweergaven voor streaming met één bitsnelheid of progressieve videobezorging. Er is ook geen validatie om ervoor te zorgen dat alle video-uitvoeringen dezelfde hoogte-breedteverhouding hebben.
 
@@ -198,7 +197,7 @@ Wanneer u klaar bent met het maken van het videoprofiel, past u het toe op een o
    * Herhaal stap 5-10 om extra coderingsvoorinstellingen te maken.
    * Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** om het profiel op te slaan.
 
-## Parameters {#using-custom-added-video-encoding-parameters} voor videocodering met aangepaste toevoeging gebruiken
+## Parameters voor videocodering met aangepaste toevoeging gebruiken {#using-custom-added-video-encoding-parameters}
 
 U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van de geavanceerde parameters voor videocodering die niet in de gebruikersinterface worden gevonden wanneer u een videoprofiel maakt of bewerkt in AEM. U kunt een of meer geavanceerde parameters, zoals **[!UICONTROL minBitrate]** en **[!UICONTROL maxBitrate]**, aan uw bestaande profiel toevoegen.
 
@@ -264,7 +263,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van de geava
 
 1. Tik in de linkerbovenhoek van de pagina **[!UICONTROL CRXDE Lite]** op het pictogram **[!UICONTROL Back Home]** om terug te keren naar AEM.
 
-### Een Dynamic Media-videocoderingsprofiel {#editing-a-video-encoding-profile} bewerken
+### Een Dynamic Media-videocoderingsprofiel bewerken {#editing-a-video-encoding-profile}
 
 U kunt elk videocoderingsprofiel bewerken dat u hebt gemaakt om videovoorinstellingen in dat profiel toe te voegen, te bewerken of te verwijderen.
 
@@ -290,7 +289,7 @@ Zie [Elementverwerking configureren](config-dms7.md#configuring-asset-processing
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 
-### Een Dynamic Media-videocoderingsprofiel {#copying-a-video-encoding-profile} kopiëren
+### Een Dynamic Media-videocoderingsprofiel kopiëren {#copying-a-video-encoding-profile}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Video Profiles]**.
 1. Controleer op de pagina **[!UICONTROL Video Profiles]** één videoprofielnaam.
@@ -305,14 +304,14 @@ Zie [Elementverwerking configureren](config-dms7.md#configuring-asset-processing
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 
-### Een Dynamic Media-videocoderingsprofiel {#deleting-a-video-encoding-profile} verwijderen
+### Een Dynamic Media-videocoderingsprofiel verwijderen {#deleting-a-video-encoding-profile}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Video Profiles]**.
 1. Controleer een of meer namen van videoprofielen op de pagina **[!UICONTROL Video Profiles]**.
 1. Tik op **[!UICONTROL Delete]** op de werkbalk.
 1. Tik op **[!UICONTROL OK]**.
 
-## Dynamic Media-videoprofiel toepassen op mappen {#applying-a-video-profile-to-folders}
+## Een Dynamic Media-videoprofiel toepassen op mappen {#applying-a-video-profile-to-folders}
 
 Wanneer u een videoprofiel aan een omslag toewijst, erven om het even welke subfolders automatisch het profiel van zijn ouderomslag. Dit betekent dat u slechts één videoprofiel aan een map kunt toewijzen. Denk daarom zorgvuldig na over de mapstructuur van de locatie waar u middelen uploadt, opslaat, gebruikt en archiveert.
 
@@ -330,7 +329,7 @@ U kunt een videoprofiel toepassen op een map vanuit het menu **[!UICONTROL Tools
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-#### Dynamic Media-videoprofielen toepassen op mappen vanuit de gebruikersinterface Profielen {#applying-video-profiles-to-folders-from-profiles-user-interface}
+#### Dynamic Media-videoprofielen toepassen op mappen vanuit de gebruikersinterface van Profielen {#applying-video-profiles-to-folders-from-profiles-user-interface}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Video Profiles]**.
 1. Selecteer het videoprofiel dat u wilt toepassen op een of meerdere mappen.
@@ -344,7 +343,7 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 
-### Een Dynamic Media-videoprofiel globaal toepassen {#applying-a-video-profile-globally}
+### Een Dynamic Media-videoprofiel wereldwijd toepassen {#applying-a-video-profile-globally}
 
 Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die is geüpload naar AEM elementen in een map.
 
@@ -356,7 +355,7 @@ Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepas
 
 ![chlimage_1-519](assets/chlimage_1-519.png)
 
-## Dynamic Media-videoprofiel verwijderen uit mappen {#removing-a-video-profile-from-folders}
+## Dynamic Media-videoprofielen uit mappen verwijderen {#removing-a-video-profile-from-folders}
 
 Wanneer u een videoprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
@@ -370,7 +369,7 @@ U kunt een videoprofiel uit een map verwijderen vanuit het menu **[!UICONTROL To
 
    U kunt bevestigen dat het videoprofiel niet meer wordt toegepast op een map omdat de naam niet meer onder de mapnaam wordt weergegeven.
 
-### Dynamic Media-videoprofielen uit mappen verwijderen met eigenschappen {#removing-video-profiles-from-folders-via-properties}
+### Dynamic Media-videoprofielen uit mappen verwijderen door eigenschappen {#removing-video-profiles-from-folders-via-properties}
 
 1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waaruit u een videoprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
