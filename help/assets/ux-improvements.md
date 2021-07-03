@@ -2,18 +2,17 @@
 title: Verbeterde gebruikerservaring in middelen
 description: In dit artikel worden de verbeteringen in AEM 6.4 Assets beschreven.
 contentOwner: AG
-feature: Release Information
-role: Leader,Business Practitioner
+feature: Geen informatie
+role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
-# Verbeterde gebruikerservaring in elementen {#user-experience-enhancements-in-assets}
+# Verbeterde gebruikerservaring in middelen {#user-experience-enhancements-in-assets}
 
 AEM 6.4 De middelen omvatten verscheidene bruikbaarheidsverbeteringen die een naadloze gebruikerservaring verstrekken en productiviteit verbeteren. De toename in de snelheid waarmee u uw go-to-market inhoud kunt creëren/beheren verbetert de inhoudssnelheid van de zaken.
 
@@ -27,7 +26,7 @@ Wanneer u in AEM 6.4 Middelen naar elementen bladert of deze zoekt, worden maxim
 
 Als u op een element tikt of erop klikt om de detailpagina weer te geven, kunt u gewoon terugkeren naar de resultatenpagina door op de knop Terug op de werkbalk te tikken of erop te klikken.
 
-## Verbeteringen in de kaartweergave {#card-view-improvements}
+## Verbeteringen voor kaartweergave {#card-view-improvements}
 
 Afhankelijk van het apparaat dat u gebruikt en de hoeveelheid details die u nodig hebt, kunt u de grootte van de elementminiaturen in de kaartweergave wijzigen. Op deze manier kunt u de weergave aanpassen en het aantal weergegeven miniaturen bepalen.
 
@@ -49,7 +48,7 @@ In de tegel in de kaartweergave wordt nu aanvullende informatie weergegeven, zoa
 
 ![publish_status](assets/publish_status.png)
 
-## Verbeteringen voor lijstweergave {#list-view-improvements}
+## Verbeteringen in de lijstweergave {#list-view-improvements}
 
 In de lijstweergave worden in de eerste kolom nu standaard de bestandsnamen van elementen weergegeven. Er wordt ook aanvullende informatie weergegeven, zoals de publicatie- en verwerkingsstatus en de landinstelling.
 
@@ -65,7 +64,7 @@ Naast de Kaart- en lijstweergaven kunt u nu vanuit de kolomweergave naar de deta
 
 ![meer_details](assets/more_details.png)
 
-## Boomweergave {#tree-view}
+## Boomstructuurweergave {#tree-view}
 
 AEM 6.4 Elementen bevat een structuurweergave waarmee u gemakkelijk door de hiërarchie van elementen kunt bladeren en naar het gewenste middel of de gewenste map kunt navigeren.
 
