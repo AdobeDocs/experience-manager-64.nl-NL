@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: Viewer Presets
-role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+feature: Voorinstellingen viewer
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4094'
 ht-degree: 9%
@@ -65,7 +64,7 @@ Zie [Responsieve afbeeldingsbibliotheek](https://experienceleague.adobe.com/docs
 >Houd er rekening mee dat u alle viewers uit de verpakking moet publiceren voordat u ze voor het eerst gebruikt.\
 >Zie [Voorinstellingen van viewer publiceren.](#publishing-viewer-presets)
 
-## Systeemcompatibiliteit met voorinstellingen van viewer {#viewer-preset-system-compatibility}
+## Systeemcompatibiliteit met voorinstellingen van viewer  {#viewer-preset-system-compatibility}
 
 Alle voorinstellingen voor viewers buiten de box die bij Dynamic Media worden geleverd, zijn volledig compatibel met de volgende systemen:
 
@@ -100,7 +99,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
 | **Verticaal zoomen** | Met de verticale zoomviewer kunt u een productafbeeldingsweergave maximaliseren, zodat uw gebruikers de beste weergave van een product krijgen. De verticale locatie van stalen doet het volgende: <ul><li>Hiermee zorgt u dat de stalen zich boven de vouw bevinden. Bij horizontale stalen waren, afhankelijk van de grootte van het , stalen pas zichtbaar wanneer de gebruiker de pagina omlaag schuift. Door de stalen verticaal in de viewer te plaatsen, weet u zeker dat ze zichtbaar zijn, ongeacht de schermgrootte van de gebruiker.</li><li>Maximaliseert de hoofdafbeeldingsgrootte. Met horizontale stalen is het nodig ruimte op de pagina te reserveren om ervoor te zorgen dat deze zichtbaar zijn. Hierdoor nam de grootte van de hoofdafbeelding af. Met een verticale staallay-out hoeft u deze ruimte echter niet toe te wijzen. Op die manier kunt u de grootte van de hoofdafbeelding maximaliseren.</li></ul> |
 | **In-/uitzoomen** | Hiermee kunnen gebruikers inzoomen op het gebied door erop te klikken. Gebruikers kunnen op besturingselementen klikken om in te zoomen, uit te zoomen en de standaardgrootte van de afbeelding te herstellen. |
 
-## Lijst met voorinstellingen {#list-of-out-of-the-box-viewer-presets} voor viewers buiten de box
+## Lijst met voorinstellingen voor viewers die buiten de box vallen {#list-of-out-of-the-box-viewer-presets}
 
 In de volgende tabel worden alle vooraf gedefinieerde, offline viewervoorinstellingen weergegeven die bij Dynamic Media worden geleverd.
 
@@ -146,7 +145,7 @@ Zie *Opmerkingen bij de release van viewers* in de inhoudsopgave van de [Referen
 | ZoomenVerticaal_donker | Verticaal_Zoomen | html5_zoomverticalviewer_donker.css |
 | ZoomVertical_light | Verticaal_Zoomen | html5_zoomverticalviewer_light.css |
 
-### Ondersteunde matrix voor bewegingen voor mobiele viewers {#supported-mobile-viewers-gestures-matrix}
+### Matrix voor ondersteunde mobiele viewers {#supported-mobile-viewers-gestures-matrix}
 
 In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die worden ondersteund op iOS-, Android 2.x- en Android 3.x-apparaten.
 
@@ -160,7 +159,7 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
 | **Veeggebaar** | Schuift de staalbalk | Afbeeldingen schuiven | Spinnen |
 | **Vlikken** | Schuift de staalbalk | Afbeeldingen schuiven | Spinnen |
 
-## Het aantal voorinstellingen voor Dynamic Media-viewers dat {#increasing-the-number-of-viewer-presets-that-display} wordt weergegeven verhogen
+## Het aantal voorinstellingen voor Dynamic Media-viewers dat wordt weergegeven verhogen {#increasing-the-number-of-viewer-presets-that-display}
 
 AEM toont een groot aantal viewervoorinstellingen wanneer een element van **[!UICONTROL Detail View > Viewers]** wordt weergegeven. U kunt het aantal weergegeven viewers verhogen of verlagen.
 
@@ -297,7 +296,7 @@ De logica die de viewer gebruikt voor het aantal miniaturen dat in het deelvenst
 
    Met behulp van het voorbeeld in de bovenstaande tabel, 30 seconden/3 video-subsegmenten = 10 seconden weergave van elk videosubsegment.
 
-### Speciale overwegingen voor het maken van een voorinstelling voor een Carousel Banner-viewer {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+### Speciale overwegingen voor het maken van een voorinstelling voor de Carousel Banner-viewer {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 Als u voorinstellingen voor de Carousel Banner-viewer maakt, kunt u de stijl van hotspots als volgt wijzigen:
 
@@ -316,7 +315,7 @@ De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn 
 
    De viewervoorinstellingen die worden geactiveerd, worden aan de rechterkant weergegeven, in een blauw vak. bij gedeactiveerde viewervoorinstellingen wordt de schakeloptie links weergegeven, in een lichtgrijs vak.
 
-## Voorinstellingen voor Dynamic Media-viewers {#publishing-viewer-presets} publiceren
+## Voorinstellingen voor Dynamic Media-viewer publiceren {#publishing-viewer-presets}
 
 Als u *On* activeert (of draait), betekent dit dat de status van een viewer-voorinstelling zichtbaar is in de Dynamic Media-component, de Interactive Media-component en wanneer u een element weergeeft.
 
@@ -332,14 +331,14 @@ Zie ook [Elementen voorvertonen](previewing-assets.md).
 1. Selecteer een of meer voorinstellingen voor viewers die u wilt publiceren.
 1. Tik op het pictogram **[!UICONTROL Publish]** op de werkbalk.
 
-## Voorinstellingen {#sorting-viewer-presets} van Dynamic Media-viewer sorteren
+## Voorinstellingen voor Dynamic Media-viewer sorteren {#sorting-viewer-presets}
 
 **Voorinstellingen** voor Dynamic Media-viewer sorteren:
 
 1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in de linkerspoorstaaf op **Gereedschappen** (hamerpictogram) **[!UICONTROL > Assets > Viewer Presets]**.
 1. Klik op **[!UICONTROL Preset Title]**, **[!UICONTROL Type]**, **[!UICONTROL Published]** of **[!UICONTROL State]** om op die kolomkop te sorteren. Klik bijvoorbeeld op **[!UICONTROL Type]** om de typen viewervoorinstellingen in alfabetische of omgekeerd alfabetische volgorde te sorteren.
 
-## Voorinstellingen voor Dynamic Media-viewer bewerken {#editing-viewer-presets}
+## Voorinstellingen voor Dynamic Media-viewers bewerken {#editing-viewer-presets}
 
 Houd er rekening mee dat het bewerken van *vooraf gedefinieerde, voorinstellingen voor viewers uit de box* geen ondersteund scenario is. Als u een voorinstelling voor een viewer buiten de box bewerkt, wordt u gevraagd deze op te slaan onder een andere naam.
 
@@ -354,7 +353,7 @@ Houd er rekening mee dat het bewerken van *vooraf gedefinieerde, voorinstellinge
    * Tik **[!UICONTROL Save]** om uw wijzigingen op te slaan en terug te keren naar de pagina **[!UICONTROL Viewer Preset]**.
    * Tik **[!UICONTROL Cancel]** om aangebrachte wijzigingen te voorkomen en terug te keren naar de pagina **[!UICONTROL Viewer Preset]**.
 
-## Aangepaste voorinstellingen voor Dynamic Media-viewers verwijderen {#deleting-custom-viewer-presets}
+## Aangepaste Dynamic Media-viewervoorinstellingen verwijderen {#deleting-custom-viewer-presets}
 
 U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Media hebt toegevoegd.
 
@@ -380,7 +379,7 @@ Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de
 
    U kunt de URL [kopiëren om](linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 
-## Elementen leveren met voorinstellingen voor Dynamic Media-viewers {#delivering-assets-with-viewer-presets}
+## Middelen leveren met voorinstellingen voor Dynamic Media-viewers {#delivering-assets-with-viewer-presets}
 
 Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md) om de URL&#39;s voor voorinstellingen van de viewer op te halen. Zie ook [De video-viewer insluiten op een webpagina](embed-code.md).
 
