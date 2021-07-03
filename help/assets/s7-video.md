@@ -7,9 +7,8 @@ topic-tags: managing-assets
 content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
 feature: Video
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1552'
 ht-degree: 0%
@@ -71,7 +70,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, uploadt u uw middelen
 1. In Experience Manager, heb toegang tot videoactiva in WCM op **[!UICONTROL Scene7]** lusje van de Vinder van de Inhoud.
 1. Auteur met de **[!UICONTROL Scene7 Video]** component.
 
-## Integratie met Scene7 Video {#configuring-integration-with-scene-video} configureren
+## Integratie met Scene7 Video configureren {#configuring-integration-with-scene-video}
 
 Universele voorinstellingen configureren:
 
@@ -94,13 +93,13 @@ Universele voorinstellingen configureren:
 
 1. De geselecteerde coderingsprofielen worden automatisch toegepast op alle video&#39;s die zijn geüpload naar de CQ DAM-doelmap die u hebt ingesteld voor deze Scene7-cloudconfiguratie. U kunt meerdere Scene7-cloudconfiguraties met verschillende doelmappen instellen om zo nodig verschillende coderingsprofielen toe te passen.
 
-## Voorinstellingen {#updating-viewer-and-encoding-presets} voor viewer en codering bijwerken
+## Voorinstellingen voor viewers en codering bijwerken {#updating-viewer-and-encoding-presets}
 
 De voorinstellingen voor de viewer en codering van video in Experience Manager moeten worden bijgewerkt als de voorinstellingen in Scene7 zijn bijgewerkt. Navigeer in dergelijke gevallen naar de Scene7-configuratie in de cloudconfiguratie en klik op **[!UICONTROL Update the viewer and encoding presets]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Uw master video uploaden naar Scene7 vanaf Adobe DAM {#uploading-your-master-video}
+## Uw master video vanaf Adobe DAM uploaden naar Scene7 {#uploading-your-master-video}
 
 1. Navigeer naar de doelmap CQ DAM waar u de cloudconfiguratie hebt ingesteld met Scene7-coderingsprofielen.
 1. Klik **[!UICONTROL Upload]** om master video te uploaden. Het uploaden en coderen van video is voltooid nadat de DAM Update Asset-workflow is voltooid en **[!UICONTROL Publish to Scene7]** een vinkje heeft.
@@ -111,7 +110,7 @@ De voorinstellingen voor de viewer en codering van video in Experience Manager m
 
    Als u de DAM-master video naar het video-onderdeel sleept, krijgt u *all* toegang tot de door Scene7 gecodeerde proxy-uitvoeringen voor levering.
 
-## Elementaire videocomponent versus Scene7 Video Component {#foundation-video-component-versus-scene-video-component}
+## Foundation Video Component versus Scene7 Video Component {#foundation-video-component-versus-scene-video-component}
 
 Wanneer u Experience Manager gebruikt, hebt u toegang tot zowel de videocomponent Video beschikbaar in Sites als de videocomponent van Scene7. Deze componenten zijn niet onderling verwisselbaar.
 
@@ -125,7 +124,7 @@ De volgende matrix legt uit wanneer de component moet worden gebruikt:
 >
 >De videocomponent S7 gebruikt het universele videoprofiel. U kunt de op HTML5 gebaseerde videospeler echter in Experience Manager verkrijgen. Kopieer eenvoudig de insluitcode van de HTML5-videospeler uit de doos en plaats deze in de pagina Experience Manager.
 
-## Experience Manager Video Component {#aem-video-component}
+## Experience Manager Video-component {#aem-video-component}
 
 Zelfs als het gebruik van de Scene7-videocomponent wordt aanbevolen voor het weergeven van Scene7-video&#39;s, kunt u Scene7-video&#39;s gebruiken met de Foundation Video Component, omwille van de volledigheid.
 
@@ -141,9 +140,9 @@ De volgende lijst verstrekt een high-level vergelijking van gesteunde mogelijkhe
 | Uitbreidbaarheid | Ja | Ja (met [HTML5 Viewer SDK API-documentatie](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Mobiele video | Ja | Ja |
 
-### {#setting-up} instellen
+### Instellen {#setting-up}
 
-#### Videoprofielen {#creating-video-profiles} maken
+#### Videoprofielen maken {#creating-video-profiles}
 
 De verschillende videocoderingen worden gemaakt op basis van de Scene7-coderingsvoorinstellingen die in uw Scene7-cloudconfiguratie zijn geselecteerd. Voor de component van de Video van de Stichting om hen te gebruiken, moet een videoprofiel voor elke geselecteerde coderingsvoorinstelling van Scene7 worden gecreeerd. Met deze methode kan het videoonderdeel de DAM-uitvoeringen op basis hiervan selecteren.
 
@@ -169,7 +168,7 @@ De verschillende videocoderingen worden gemaakt op basis van de Scene7-coderings
 
    Herhaal deze stap voor alle coderingsvoorinstellingen die zijn geselecteerd in de cloudconfiguratie die u wilt gebruiken in de videocomponent.
 
-#### Ontwerp {#configuring-design} configureren
+#### Ontwerp configureren {#configuring-design}
 
 De component **[!UICONTROL Foundation Video]** moet weten welke videoprofielen moeten worden gebruikt om de lijst met videobronnen te maken. Open het dialoogvenster Ontwerp van videocomponenten en configureer het componentontwerp voor het gebruik van de nieuwe videoprofielen.
 
