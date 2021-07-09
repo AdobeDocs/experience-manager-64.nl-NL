@@ -8,9 +8,9 @@ breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.4, inclusief de cloudimplementatie van Adobe Managed Services.
 feature: Implementeren
 role: Architect
-source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
+source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 1%
    + [Consistentie- en reiscontroles](consistency-check.md)
    + [Richtlijnen voor prestaties](performance-guidelines.md)
    + [Optimalisatie van prestaties](configuring-performance.md)
-   + [Prestatiehandleiding voor middelen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
+   + [Prestatiehandleiding voor middelen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
    + [Hoe kan ik-artikelen configureren](ht-deploy.md)
    + [De sites van de Geometrixx verwijderen](removing-the-geometrixx-sites.md)
    + [Webconsole configureren](configuring-web-console.md)
