@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
+source-git-commit: cd9ffec186c5ab4c5f0e0996043724797e0516d1
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Houd rekening met de levenscyclus van de afbeelding wanneer u bepaalt of een afb
 
 Middelen zijn digitale documenten, afbeeldingen, video of audio (of een deel daarvan) die meerdere uitvoeringen kunnen hebben en subelementen kunnen bevatten (bijvoorbeeld lagen in een Photoshop-bestand, dia&#39;s in een PowerPoint-bestand, pagina&#39;s in een PDF, bestanden in een ZIP).
 
-Een element is in wezen een binair plus metagegevens plus uitvoeringen plus subelementen. Zie de [DAM Performance Guide](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html) voor gedetailleerde informatie.
+Een element is in wezen een binair plus metagegevens plus uitvoeringen plus subelementen. Zie de [DAM Performance Guide](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en) voor gedetailleerde informatie.
 
 >[!CAUTION]
 >
