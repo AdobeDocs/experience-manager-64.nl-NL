@@ -10,9 +10,9 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 exl-id: 34e4edd5-9e67-44ed-8c4c-bcdd3e161a35
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2852'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Voor benchmarkingdoeleinden heeft Adobe enkele benchmarktests ontwikkeld voor op
 >
 >De productiesnelheid maakt geen onderscheid tussen transactietypen binnen een laadprofiel. De benadering die wordt gebruikt om productie te meten zorgt ervoor dat een vast aandeel van elk type van transactie in de werklast wordt opgenomen.
 
-Uit bovenstaande twee tests blijkt duidelijk dat de doorvoer varieert naargelang het type activiteit. Gebruik de activiteiten in uw omgeving als basis voor het aanpassen van de grootte van uw systeem. U krijgt betere productie met minder intensieve acties zoals wijzigen (wat ook gemeenschappelijker is).
+Uit bovenstaande twee tests blijkt duidelijk dat de productie varieert naargelang het type activiteit. Gebruik de activiteiten in uw omgeving als basis voor het aanpassen van de grootte van uw systeem. U krijgt betere productie met minder intensieve acties zoals wijzigen (wat ook gemeenschappelijker is).
 
 ### Caching {#caching}
 
@@ -308,7 +308,7 @@ Wijs minstens 16 GB heap toe en vorm de DAM Update Asset workflow om het [Camera
 
 >[!NOTE]
 >
->Zie ook de [Prestatiehandleiding voor bedrijfsmiddelen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html).
+>Zie ook de [Prestatiehandleiding voor bedrijfsmiddelen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/assets-sizing-guide.html?lang=en).
 
 ### Beheer van meerdere sites {#multi-site-manager}
 
