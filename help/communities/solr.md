@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
-role: Administrator
+role: Admin
 exl-id: b506018d-67dc-4e47-a3d8-83ae288b5d7e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 1%
@@ -21,7 +20,7 @@ ht-degree: 1%
 
 # Solr Configuratie voor SRP {#solr-configuration-for-srp}
 
-## Solr voor AEM Platform {#solr-for-aem-platform}
+## Solr. voor AEM Platform {#solr-for-aem-platform}
 
 Een [Apache Solr](https://lucene.apache.org/solr/)-installatie kan worden gedeeld tussen de [knooppuntenopslag](../../help/sites-deploying/data-store-config.md) (eikel) en [gemeenschappelijke winkel](working-with-srp.md) (SRP) door verschillende verzamelingen te gebruiken.
 
@@ -149,7 +148,7 @@ In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 
 ![chlimage_1-283](assets/chlimage_1-283.png)
 
-### Standaard MLS {#installing-standard-mls} installeren
+### Standaard MLS installeren {#installing-standard-mls}
 
 Voor de inzameling SRP (of MSRP of DSRP), om Standaard Meertalig Onderzoek (MLS) te steunen is het noodzakelijk om twee configuratiedossiers van Solr te wijzigen:
 
@@ -217,7 +216,7 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 1. Solr opnieuw starten
 1. Voor MSRP, looppas [MSRP Reindex Tool](#msrpreindextool), tenzij dit een nieuwe installatie is
 
-### Geavanceerde MLS {#installing-advanced-mls} installeren
+### Geavanceerde MLS installeren {#installing-advanced-mls}
 
 Voor de inzameling SRP (MSRP of DSRP) om geavanceerde MLS te steunen, worden nieuwe stop-ins Solr vereist naast een douaneschema en de configuratie Solr. Alle vereiste items worden verpakt in een ZIP-bestand dat kan worden gedownload. Bovendien is een installatiescript inbegrepen voor gebruik wanneer Solr op standalone wijze wordt opgesteld.
 
