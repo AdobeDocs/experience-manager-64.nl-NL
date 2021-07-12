@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
-role: Administrator
+role: Admin
 exl-id: b6aa9d73-4e20-446a-a1fc-78f8968d6844
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 # Badges-console {#badges-console}
 
-## Informatie over Badges {#about-badges}
+## Info Badges {#about-badges}
 
 De console van de Badges van de Gemeenschappen verstrekt de capaciteit om douanebadges toe te voegen die voor een lid kunnen worden getoond wanneer verdiend (toegekend) of wanneer zij een specifieke rol in de gemeenschap (toegewezen) nemen.
 
@@ -43,7 +42,7 @@ Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en w
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
-## Badge {#create-badge} maken
+## Badge maken {#create-badge}
 
 Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de opslagplaats op `/etc/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
 
