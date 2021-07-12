@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Administrator
+role: Admin
 exl-id: 65d37adc-d5fa-4171-bb7f-05b631cad180
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1167'
 ht-degree: 0%
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 # MSRP - MongoDB Storage Resource Provider {#msrp-mongodb-storage-resource-provider}
 
-## Info over MSRP {#about-msrp}
+## Over MSRP {#about-msrp}
 
 Wanneer AEM Communities wordt gevormd om MSRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
@@ -110,7 +109,7 @@ Voor meer informatie over replicasets gaat u naar de [Replication](https://docs.
 
 Als u met replicasets wilt werken en wilt leren hoe u verbindingen tussen toepassingen en MongoDB-instanties kunt definiëren, raadpleegt u de documentatie van MongoDB [Verbindingsreeks URI Format](https://docs.mongodb.org/manual/reference/connection-string/).
 
-#### Voorbeeld-URL voor verbinding maken met een replicaset {#example-url-for-connecting-to-a-replica-set}
+#### Voorbeeld-URL voor verbinding maken met een replicaset  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -130,7 +129,7 @@ Voor productieomgevingen biedt de [SolrCloud-modus](solr.md#solrcloud-mode) bete
 
 Voor configuratiedetails, zie [Solr Configuratie voor SRP](solr.md).
 
-### {#upgrading} bijwerken
+### Bijwerken {#upgrading}
 
 Als bevordering van een vroegere die versie met MSRP wordt gevormd, zal het noodzakelijk zijn
 
@@ -141,7 +140,7 @@ Als bevordering van een vroegere die versie met MSRP wordt gevormd, zal het nood
 1. MSRP opnieuw indexeren
 Zie sectie [MSRP Reindex Tool](#msrp-reindex-tool)
 
-## De configuratie {#publishing-the-configuration} publiceren
+## De configuratie publiceren {#publishing-the-configuration}
 
 MSRP moet als gemeenschappelijke opslag op alle auteur worden geïdentificeerd en instanties publiceren.
 
@@ -154,14 +153,14 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
       * Bladeren naar `/etc/socialconfig/srpc/`
    * Selecteer **[!UICONTROL Activate]**
 
-## Gebruikersgegevens {#managing-user-data} beheren
+## Gebruikersgegevens beheren {#managing-user-data}
 
 Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, vaak ingevoerd in de publicatieomgeving, gaat u naar
 
 * [Gebruikerssynchronisatie](sync.md)
 * [Gebruikers en gebruikersgroepen beheren](users.md)
 
-## MSRP-herindex {#msrp-reindex-tool}
+## MSRP opnieuw indexeren {#msrp-reindex-tool}
 
 Er is een eindpunt van HTTP voor het opnieuw indexeren van Solr voor MSRP wanneer het installeren van nieuwe configuratiedossiers of het herstellen van een beschadigde index van Solr.
 
@@ -178,7 +177,7 @@ Een redelijke standaardwaarde is 5000:
 * Als het geheugen een probleem is, geeft u een kleiner getal op
 * Als snelheid een probleem is, geeft u een groter getal op om de snelheid te verhogen
 
-### Het Lopen Hulpmiddel van Herindex MSRP gebruikend bevel cURL {#running-msrp-reindex-tool-using-curl-command}
+### Gereedschap MSRP opnieuw indexeren uitvoeren met cURL-opdracht {#running-msrp-reindex-tool-using-curl-command}
 
 Het volgende cURL bevel toont wat noodzakelijk voor een HTTP- verzoek is om UGC te herindexeren die in MSRP wordt opgeslagen.
 
@@ -213,7 +212,7 @@ Bijvoorbeeld: admin:admin
 curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo/' http://localhost:4503/services/social/datastore/mongo/reindex
 ```
 
-## Hoe te om MSRP {#how-to-demo-msrp} te demo
+## Hoe te om MSRP te demo {#how-to-demo-msrp}
 
 Om MSRP voor een demonstratie of ontwikkelomgeving te plaatsen, zie [HowTo Opstelling MongoDB voor Demo](demo-mongo.md).
 
