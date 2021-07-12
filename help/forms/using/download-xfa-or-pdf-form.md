@@ -8,17 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
-role: Administrator
+role: Admin
 exl-id: 68d881c6-7507-4018-b40e-205604221d0c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
-# Een XFA of een PDF-formuliersjabloon {#download-an-xfa-or-a-pdf-form-template} downloaden
+# XFA of een PDF-formuliersjabloon downloaden {#download-an-xfa-or-a-pdf-form-template}
 
 Met de downloadbewerking kunt u, zoals de naam aangeeft, formulieren exporteren van de opslagplaats naar het lokale systeem. In combinatie met het uploaden kunt u met deze bewerking uw formulieren migreren van de ene opslagplaats naar de andere.
 
@@ -32,7 +31,7 @@ AEM Forms ondersteunt het downloaden van deze formuliertypen afzonderlijk of in 
 
 Naast deze elementen kunt u het type element `Resource` downloaden als dit in een map aanwezig is. Deze functie is beschikbaar zodat u de bron waarnaar wordt verwezen door een XFA-formulier, samen met het formulier kunt downloaden.
 
-## Een of meer formulieren {#download-one-or-more-forms} downloaden
+## Een of meer formulieren downloaden {#download-one-or-more-forms}
 
 1. Meld u aan bij de AEM Forms-gebruikersinterface op `https://<server>:<port>/aem/forms.html`.
 
@@ -52,7 +51,7 @@ Naast deze elementen kunt u het type element `Resource` downloaden als dit in ee
 
    Het ZIP-bestand wordt opgeslagen in de map `Downloads` op uw systeem.
 
-## Gerelateerde overwegingen voor uploadbewerking {#related-considerations-for-the-upload-operation}
+## Verwante overwegingen voor het uploaden {#related-considerations-for-the-upload-operation}
 
 * U kunt het ZIP-bestand uploaden naar een andere locatie in dezelfde opslagplaats of een andere opslagplaats
 * De hiërarchie van de elementen in een map blijft behouden tijdens het uploaden
