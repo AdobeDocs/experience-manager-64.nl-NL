@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
-role: Administrator
+role: Admin
 exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -33,7 +32,7 @@ Op het moment dat de actie wordt ondernomen om een nieuwe communautaire groep to
 >
 >De consoles voor het maken van [communitysites](sites-console.md), [communitysitesjablonen](sites.md), [communitygroepssjablonen](tools-groups.md) en [communityfuncties](functions.md) zijn alleen bedoeld voor gebruik in de auteursomgeving.
 
-## Console {#group-templates-console} voor groepssjablonen
+## Groep sjablonen {#group-templates-console}
 
 In het auteursmilieu, om de console van groepsmalplaatjes te bereiken
 
