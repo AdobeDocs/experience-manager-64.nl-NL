@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
+role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -29,7 +28,7 @@ Wanneer het gebruiken van een [moderatieconsole](moderation.md), omvat de inform
 
 Bezoek het moderatieoverzicht voor een beschrijving van [moderatieacties](moderate-ugc.md#moderation-actions).
 
-## Moderatieinterface {#moderation-ui}
+## Moderniseringsinterface {#moderation-ui}
 
 UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binnen de dialoog voor het posten van en het beheren van gebruiker geproduceerde inhoud (UGC). De elementen van de gebruikersinterface worden bepaald door de status van de bezoeker van de site - of ze nu ...
 
@@ -134,7 +133,7 @@ Afmelden.
 
 ![moderationconsole-publish](assets/moderationconsole-publish.png)
 
-### Community Moderator (#2) {#community-moderator}
+### Moderator van de Gemeenschap (#2) {#community-moderator}
 
 Log in als Aaron McDonald (aaron.mcdonal@mailinator.com), een moderator van de gemeenschap, en open de thread door Forum te selecteren, en lees dan meer voor de bulgvogelpost.
 
