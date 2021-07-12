@@ -6,9 +6,8 @@ user-guide-title: AEM 6.4 Gebruikersgids voor gemeenschappen
 breadcrumb-title: Community Guide
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 feature: Gemeenschappen
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -16,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# AEM 6.4 Community User Guide {#communities}
+# AEM 6.4 Gebruikersgids voor gemeenschappen {#communities}
 
 + [AEM Communities-overzicht](home.md)
 + Inleiding tot AEM Communities {#introduction}
