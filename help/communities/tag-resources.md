@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
-role: Administrator
+role: Admin
 exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
 
 ---
 
-# Tags toewijzen aan bronnen {#tagging-enablement-resources}
+# Tags toewijzen {#tagging-enablement-resources}
 
 ## Overzicht {#overview}
 
@@ -74,7 +73,7 @@ De functie Catalog bevat een taginstelling die de tags definieert die worden ver
 
 ![chlimage_1-421](assets/chlimage_1-421.png)
 
-## Tags toepassen op bronnen van Enablement {#applying-tags-to-enablement-resources}
+## Tags toepassen op Enablement Resources {#applying-tags-to-enablement-resources}
 
 Inschakelingsbronnen en leerpaden worden in alle catalogus weergegeven wanneer `Show in Catalog` wordt gecontroleerd. Als u tags toevoegt aan bronnen en leerpaden, kunt u vooraf filteren in specifieke catalogi en filteren in de interface van de catalogus.
 
