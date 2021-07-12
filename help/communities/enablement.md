@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
-role: Administrator
+role: Admin
 exl-id: 01cfc774-8ae1-48c0-a7e3-5836c4b39bff
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
-# Functies {#configuring-enablement-features} configureren
+# Functies van Enablement configureren {#configuring-enablement-features}
 
 ## Overzicht {#overview}
 
@@ -117,6 +116,6 @@ gebruiker(s) met pad = /home/users/community
       * Community Enablement Managers
       * Administrateurs van Gemeenschappen
 
-## Verzending {#dispatcher}
+## Dispatcher {#dispatcher}
 
 Wanneer de implementatie [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) bevat, moeten de `clientheader`en `filter`secties worden gewijzigd om de schakelingsfuncties naar behoren te laten werken. Zie [Dispatcher configureren voor Communities](dispatcher.md#enablement).
