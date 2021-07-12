@@ -7,17 +7,16 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
+role: Admin
 exl-id: eeffd886-8955-46eb-aa6d-dd4da5e8570c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
 
 ---
 
-# Documentbeveiliging | Gebruikersgegevens {#document-security-handling-user-data} verwerken
+# Documentbeveiliging | Gebruikersgegevens verwerken {#document-security-handling-user-data}
 
 Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. U kunt documenten beschermen door beleid te gebruiken. Een beleid is een inzameling van informatie die veiligheidsmontages en een lijst van erkende gebruikers omvat. U kunt een beleid op één of meerdere documenten toepassen en gebruikers machtigen die in het gebruikersbeheer van AEM Forms JEE worden toegevoegd.
 
@@ -132,7 +131,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 Om volledige gegevens over een gebruiker in het systeem te krijgen, moet u tot gegevens van het gebruikersbeheergegevensbestand toegang hebben en uitvoeren. Zie [Forms-gebruikersbeheer voor meer informatie: Gebruikergegevens verwerken](/help/forms/using/user-management-handling-user-data.md).
 
-### Gebruikersgegevens {#delete-user-data} verwijderen
+### Gebruikersgegevens verwijderen {#delete-user-data}
 
 Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit databasetabellen te verwijderen.
 
