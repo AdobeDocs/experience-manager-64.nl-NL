@@ -3,10 +3,9 @@ title: Mappen publiceren naar Brand Portal
 description: Leer hoe u middelen publiceert en publiceert naar Brand Portal.
 contentOwner: VG
 feature: Brand Portal
-role: Business Practitioner
+role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 39%
@@ -15,13 +14,13 @@ ht-degree: 39%
 
 # Assets publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
-Als beheerder van Adobe Experience Manager-middelen (AEM) kunt u elementen publiceren naar de AEM Assets Brand Portal-instantie (of de publicatieworkflow plannen op een latere datum of tijd) voor uw organisatie. U moet echter eerst AEM Assets configureren met Brand Portal. Zie [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md) voor meer informatie.
+Als beheerder van Adobe Experience Manager-middelen (AEM) kunt u elementen voor uw organisatie publiceren naar de AEM Assets Brand Portal-instantie (of de publicatieworkflow plannen op een latere datum of tijd). U moet echter eerst AEM Assets met Brand Portal configureren. Zie [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md) voor meer informatie.
 
-Nadat u een middel publiceert, is het beschikbaar aan gebruikers in het Portaal van het Merk.
+Nadat u een middel publiceert, is het beschikbaar aan gebruikers in Brand Portal.
 
-Als u de oorspronkelijke elementen in AEM Assets wijzigt, worden de wijzigingen pas doorgevoerd in Brand Portal als u de elementen opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
+Als u de oorspronkelijke elementen in AEM Assets daarna wijzigt, worden de wijzigingen pas in Brand Portal doorgevoerd als u het element opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
-Nadat de replicatie slaagt, kunt u activa, omslagen, en inzamelingen aan het Portaal van het Merk publiceren. Voer de volgende stappen uit om elementen te publiceren naar Brand Portal:
+Nadat de replicatie succesvol was, kunt u activa, omslagen, en inzamelingen aan Brand Portal publiceren. Voer de volgende stappen uit om elementen te publiceren naar Brand Portal:
 
 >[!NOTE]
 >
@@ -49,7 +48,7 @@ Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand P
 
    2. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik/klik **[!UICONTROL Publish to Brand Portal]**.
 
-Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij zijn geplaatst voor publicatie naar Brand Portal. Meld u aan bij de interface Brand Portal om de gepubliceerde elementen te bekijken.
+Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij zijn geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde middelen te bekijken.
 
 ## Assets later publiceren {#publish-later}
 
@@ -66,6 +65,6 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
    ![publishworkflow](assets/publishworkflow.png)
 
-Meld u nu aan bij Brand Portal om te zien of de gepubliceerde middelen beschikbaar zijn op de interface Brand Portal.
+Meld u nu aan bij Brand Portal om te zien of de gepubliceerde middelen beschikbaar zijn op de interface van Brand Portal.
 
 ![bp_631_landing_page](assets/bp_landing_page.png)
