@@ -7,17 +7,16 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
-role: Administrator
+role: Admin
 exl-id: 4a6b3403-2941-4098-bb30-769281adedc2
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
-# Correspondentenbeheer | Gebruikersgegevens {#correspondence-management-handling-user-data} verwerken
+# Correspondentenbeheer | Gebruikersgegevens verwerken {#correspondence-management-handling-user-data}
 
 Met AEM Forms Correspondence Management kunt u veilige en gepersonaliseerde klantcorrespondentie maken, beheren en stroomlijnen. Het verstrekt een intuïtieve gebruikersinterface voor bedrijfsgebruikers om correspondentie tot stand te brengen gebruikend vooraf goedgekeurde inhoudsblokken en media elementen. Zie [Correspondentie maken](/help/forms/using/create-correspondence.md) voor meer informatie over het maken van correspondentie.
 
@@ -78,7 +77,7 @@ Correspondentiebeheer biedt API&#39;s die u kunt gebruiken om concepten en verzo
 
 U kunt ook met behulp van CRX DELite naar de letter-instantie in AEM repository navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslaglocatie.
 
-### Gebruikersgegevens {#delete-user-data} verwijderen
+### Gebruikersgegevens verwijderen {#delete-user-data}
 
 Als u een letterinstantie wilt zoeken die de gegevens van een bepaalde gebruiker bevat, kunt u:
 
