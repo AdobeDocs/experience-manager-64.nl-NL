@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Administrator
+role: Admin
 exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-# Compatibiliteitspakket {#compatibility-package} installeren
+# Compatibiliteitspakket installeren {#compatibility-package}
 
 Als u het compatibiliteitspakket op AEM Forms 6.4 installeert, kunt u de Correspondence Management-middelen van AEM Forms 6.3 en afgekeurde aangepaste formuliersjablonen en pagina&#39;s gebruiken
 
@@ -36,7 +35,7 @@ Met het compatibiliteitspakket AEMFD kunt u de volgende middelen van AEM Forms 6
 
 Zie [Elementen die compatibel zijn gemaakt met AEM Forms 6.4 door het compatibiliteitspakket te installeren](/help/forms/using/compatibility-package.md#assetsmadecompatible) voor meer informatie.
 
-## Voeg ondersteuning toe voor AEM Forms 6.3- en 6.2-elementen in AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Voeg ondersteuning toe voor AEM Forms 6.3- en 6.2-middelen in AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Nadat u een upgrade hebt uitgevoerd, voert u de volgende handelingen uit om het compatibiliteitspakket voor AEMFD te installeren en uw elementen compatibel te maken met 6.4:
 
@@ -51,7 +50,7 @@ Zorg ervoor dat u [AEM compatibiliteitspakket](/help/sites-deploying/backward-co
 
    Zie [migratiehulpprogramma](/help/forms/using/migration-utility.md) voor meer informatie.
 
-## Elementen die compatibel zijn gemaakt met AEM Forms 6.4 door het compatibiliteitspakket {#assetsmadecompatible} te installeren
+## Activa die compatibel zijn gemaakt met AEM Forms 6.4 door het compatibiliteitspakket te installeren {#assetsmadecompatible}
 
 Door het compatibiliteitspakket te installeren, kunt u de volgende elementen en sjablonen compatibel maken met AEM Forms 6.4:
 
