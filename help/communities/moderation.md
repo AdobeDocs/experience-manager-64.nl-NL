@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Administrator
+role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1851'
 ht-degree: 0%
@@ -63,7 +62,7 @@ Alleen wanneer u bent aangemeld als beheerder of als lid met ` [moderator permis
 
 ![moderationconsoletoewijzing](assets/moderationconsoleauthor.png)
 
-## UI voor moderatieconsole {#moderation-console-ui}
+## Gebruikersinterface van aanpassingsconsole {#moderation-console-ui}
 
 Afgezien van de linkse navigatiespoor (die bij auteur, maar niet bij publicatie verschijnt), heeft de moderatie UI de volgende belangrijkste gebieden:
 
@@ -108,7 +107,7 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 >
 >Het inhoudsgebied heeft een *oneindige scroll*, zo betekent het dat u zal blijven scrollen tot u het eind van de inhoud hebt bereikt. De werkbalk blijft tijdens het schuiven op een vaste, zichtbare positie boven het inhoudsgebied staan.
 
-### Rail {#filter-rail} filteren
+### Rail filteren {#filter-rail}
 
 ![chlimage_1-472](assets/chlimage_1-472.png)
 
@@ -134,7 +133,7 @@ Met Inhoudspad wordt de referentie-UGC beperkt tot de posten die in de opgegeven
 
 ![inhoudspad](assets/content-path.png)
 
-#### Tekstzoekopdracht {#text-search}
+#### Tekst zoeken {#text-search}
 
 Bij zoeken naar tekst wordt de UGC waarnaar wordt verwezen, beperkt tot advertenties waarin de ingevoerde tekst voorkomt.
 
@@ -218,7 +217,7 @@ Leden beperken de UGC waarnaar wordt verwezen, die aan UGC wordt weergegeven en 
 
 ![chlimage_1-477](assets/chlimage_1-477.png)
 
-#### Gepost in laatste {#posted-in-the-last}
+#### Gepost in de laatste {#posted-in-the-last}
 
 Gepost in de Laatste grenzen UGC van verwijzingen aan posten die in het laatste uur, de dag, de week, de maand, of het jaar worden getoond.
 
@@ -256,7 +255,7 @@ De pictogrammen voor deze handelingen worden alleen op de werkbalk weergegeven a
 
 ![paars](assets/bulkmoderate.png)
 
-### Eén bericht {#moderating-a-single-post} moderniseren
+### Eén artikel moderniseren {#moderating-a-single-post}
 
 In de enkelvoudige selectiemodus is het mogelijk om
 
@@ -285,9 +284,9 @@ De tekst van de post op de kaartweergave boven de mageractiepictogrammen is de t
 
 Wanneer het werken met één enkele post, zal een pictogram van het Antwoord verschijnen als het type UGC antwoorden steunt en wordt gevormd om antwoorden toe te staan.
 
-#### {#allow} toestaan
+#### Toestaan {#allow}
 
-![chlimage_1-401](assets/chlimage_1-481.png)
+![chlimage_1-481](assets/chlimage_1-481.png)
 
 Wanneer u met één bericht werkt, wordt het pictogram Toestaan weergegeven wanneer de advertentie is gemarkeerd of geweigerd. Als deze optie is gemarkeerd, worden alle markeringen gewist als u Toestaan selecteert.
 
@@ -327,7 +326,7 @@ Bijvoorbeeld:
 
 ![chlimage_1-486](assets/chlimage_1-486.png)
 
-#### Detail {#view-detail} weergeven
+#### Details weergeven {#view-detail}
 
 ![chlimage_1-487](assets/chlimage_1-487.png)
 
