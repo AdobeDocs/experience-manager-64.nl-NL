@@ -7,17 +7,16 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-role: Administrator
+role: Admin
 exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 0%
 
 ---
 
-# Forms-gecentreerde workflows op OSGi | Gebruikersgegevens {#forms-centric-workflows-on-osgi-handling-user-data} verwerken
+# Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
 
@@ -126,7 +125,7 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 >
 >In de AEM Forms-app worden ook gegevens opgeslagen in de offlinemodus. Het is mogelijk dat gegevens voor een workflowinstantie lokaal op afzonderlijke apparaten worden opgeslagen en naar de Forms-server worden verzonden wanneer de app synchroniseert met de server.
 
-### Gebruikersgegevens {#delete-user-data} verwijderen
+### Gebruikersgegevens verwijderen {#delete-user-data}
 
 U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te verwijderen door de volgende stappen uit te voeren:
 
