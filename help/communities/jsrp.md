@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
+role: Admin
 exl-id: 73c59497-43fe-4e15-afda-e3cf5264696e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -31,7 +30,7 @@ Zie ook [Kenmerken van SRP Options](working-with-srp.md#characteristics-of-srp-o
 
 ## Configuratie {#configuration}
 
-### JSRP {#select-jsrp} selecteren
+### JSRP selecteren {#select-jsrp}
 
 Standaard is JSRP de opslagoptie voor UGC.
 
@@ -46,7 +45,7 @@ In de auteursomgeving, om de console van de Configuratie van de Opslag te bereik
 * Selecteer **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
 * Selecteer **[!UICONTROL Submit]**
 
-### De configuratie {#publishing-the-configuration} publiceren
+### De configuratie publiceren {#publishing-the-configuration}
 
 Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke configuratie in het publicatiemilieu wordt geplaatst:
 
@@ -60,7 +59,7 @@ Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke c
    * Selecteer **[!UICONTROL Activate]**
 
 
-## Gebruikersgegevens {#managing-user-data} beheren
+## Gebruikersgegevens beheren {#managing-user-data}
 
 Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, vaak ingevoerd in de publicatieomgeving, gaat u naar
 
@@ -80,11 +79,11 @@ Ga bij alle auteur- en publiceer AEM naar de opslagconfiguratieconsole of contro
    * Bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc)-knooppunt, het betekent dat de opslagprovider JSRP is
    * Als het srpc-knooppunt bestaat en knooppunt [default configuration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration) bevat, moeten de eigenschappen van de standaardconfiguratie JSRP definiëren als de standaardprovider
 
-### UGC niet zichtbaar op Auteursinstantie {#ugc-not-visible-on-author-instance}
+### UGC niet zichtbaar op instantie Auteur {#ugc-not-visible-on-author-instance}
 
 Dit is geen bug. Een kenmerk van JSRP is dat communautaire inhoud die in de publicatieomgeving wordt ingevoerd, alleen zichtbaar is in de publicatieomgeving.
 
-### UGC niet zichtbaar op instantie publiceren {#ugc-not-visible-on-publish-instance}
+### UGC niet zichtbaar bij publicatie-instantie {#ugc-not-visible-on-publish-instance}
 
 Als één enkele publiceer instantie of als een publicatiecluster wordt opgesteld, dan volg instructies voor [UGC niet Zichtbaar in JCR](#ugc-not-visible-in-jcr).
 
