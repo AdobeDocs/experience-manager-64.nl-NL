@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
-role: Administrator
+role: Admin
 exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
 
 ---
 
-# AEM Forms inzake OSGi-groepen en -voorrechten {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms over OSGi-groepen en -voorrechten {#aem-forms-on-osgi-groups-and-privileges}
 
 Wijs gebruikers aan de groepen toe om AEM Forms op OSGi te beheren
 
