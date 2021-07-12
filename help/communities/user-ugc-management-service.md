@@ -9,17 +9,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
-role: Administrator
+role: Admin
 exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
-# Gebruikers- en UGC-beheerservice in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
+# Gebruikersbeheer en UGC-beheerservice in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
 >
@@ -41,7 +40,7 @@ U kunt echter ook een gebruikersinterface (gebruikersinterface) maken voor het b
 
 Met deze API&#39;s kunnen de volgende functies worden uitgevoerd.
 
-## De UGC van een gebruiker {#retrieve-the-ugc-of-a-user} ophalen
+## De UGC van een gebruiker ophalen {#retrieve-the-ugc-of-a-user}
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` Hiermee kunt u alle UGC van een gebruiker uit het systeem exporteren.
 
@@ -52,7 +51,7 @@ Als u bijvoorbeeld de UGC wilt exporteren van een gebruiker met de naam Weston M
 
 `http://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
-## De UGC van een gebruiker {#delete-the-ugc-of-a-user} verwijderen
+## De UGC van een gebruiker verwijderen {#delete-the-ugc-of-a-user}
 
 **deleteUserUgc (ResourceResolver resourceResolver, de gebruiker van het Koord)** helpt schrapping al UGC voor een gebruiker van het systeem.
 
@@ -71,7 +70,7 @@ Raadpleeg de volgende afbeelding voor Adobe Analytics-variabeletoewijzingen die 
 
 ![AEM gemeenschappen variabele mapping voor Adobe Analytics](assets/Analytics-Communities-Mapping.png)
 
-## Gebruikersaccount {#disable-a-user-account} uitschakelen
+## Gebruikersaccount uitschakelen {#disable-a-user-account}
 
 **deleteUserAccount(ResourceResolver resourceResolver, String user)** helpt een gebruikersaccount onbruikbaar maken.
 
