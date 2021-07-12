@@ -10,10 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
-role: Administrator
+role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 0%
@@ -33,13 +32,13 @@ Het migratiehulpprogramma converteert de [Adaptieve Forms-elementen](/help/forms
 >
 >Als de upgrade op een verkeerde plaats is uitgevoerd, kunt u de migratie voor Correspondence Management-middelen altijd uitvoeren wanneer u de middelen importeert. Voor migratie naar Correspondence Management moet het Forms-compatibiliteitspakket zijn geïnstalleerd.
 
-## Migratiebenadering {#approach-to-migration}
+## Migratieaanpak {#approach-to-migration}
 
 U kunt [upgrade](/help/forms/using/upgrade.md) uitvoeren naar de nieuwste versie van AEM Forms 6.4 vanuit AEM Forms 6.3 of 6.2 of een nieuwe installatie uitvoeren. Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
 
 **In het geval van een upgrade ter plekke**
 
-Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (inclusief het pakket Compatibiliteit met Correspondentiebeheer) installeren.
+Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Maar voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (inclusief het compatibiliteitspakket Correspondence Management) installeren.
 
 Vervolgens moet u de elementen en documenten bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren.
 
@@ -49,7 +48,7 @@ Als de installatie op een verkeerde plaats staat (nieuw) voordat u de middelen e
 
 Vervolgens moet u uw elementenpakket (zip of cmp) importeren in de nieuwe installatie en de elementen en documenten vervolgens bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren. Als gevolg van wijzigingen in [achterwaartse compatibiliteit](/help/sites-deploying/backward-compatibility.md) worden de locaties van een paar mappen in crx-repository gewijzigd. Exporteer en importeer handmatig afhankelijkheden (aangepaste bibliotheken en elementen) van vorige installatie naar een nieuwe omgeving.
 
-## Lees deze voordat u doorgaat met de migratie {#prerequisites}
+## Lees deze voordat u verdergaat met de migratie {#prerequisites}
 
 Voor Correspondentenbeheermiddelen:
 
@@ -66,9 +65,9 @@ Voor Correspondentenbeheermiddelen:
 * Configuraties van de middelencomposer veranderen in Correspondence Management-configuraties.
 * Elementen worden onder mappen met namen als Bestaande tekst en Bestaande lijst geplaatst.
 
-## Het migratiehulpprogramma {#using-the-migration-utility} gebruiken
+## Het migratiehulpprogramma gebruiken {#using-the-migration-utility}
 
-### Het migratiehulpprogramma {#runningmigrationutility} uitvoeren
+### Het migratiehulpprogramma uitvoeren {#runningmigrationutility}
 
 Voer het migratiehulpprogramma uit voordat u wijzigingen aanbrengt in de elementen of elementen maakt. We raden u aan het hulpprogramma niet uit te voeren nadat u wijzigingen hebt aangebracht of elementen hebt gemaakt. Zorg ervoor dat de gebruikersinterface Correspondence Management of Adaptive Forms Assets niet is geopend tijdens het migratieproces.
 
