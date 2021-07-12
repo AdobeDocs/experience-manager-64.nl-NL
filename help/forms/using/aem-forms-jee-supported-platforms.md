@@ -8,10 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Administrator
+role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -412,7 +411,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
 * Microsoft Exchange 2013
 * Microsoft Office 365
 
-### Inhoudsbeheerders en bijbehorende aansluitingen {#content-managers-and-corresponding-connectors}
+### Inhoudsmanagers en bijbehorende connectors {#content-managers-and-corresponding-connectors}
 
 <table> 
  <tbody> 
@@ -443,7 +442,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
  </tbody> 
 </table>
 
-### Ondersteuning voor Cordova {#support-for-cordova}
+### Steun voor Cordova {#support-for-cordova}
 
 AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifieke versies van Cordova die worden ondersteund:
 
@@ -779,7 +778,7 @@ De AEM Forms-app is beschikbaar op de volgende platforms:
 >
 >Adobe zal [stoppen met het bijwerken en verspreiden van de Flash Player aan eind 2020](https://theblog.adobe.com/adobe-flash-update/).
 
-### Adobe Document Security Extension for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
+### Adobe Document Security Extension voor Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Klik [hier](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) om de systeemvereisten voor de Uitbreiding van de Veiligheid van het Document van de Adobe voor Microsoft® Office te zien.
 
@@ -789,7 +788,7 @@ Microsoft® Windows® 2012 wordt niet ondersteund voor alle opgegeven clientsoft
 
 AEM Forms on JEE ondersteunt ook updates, patches en repareert pakketten boven op de opgegeven primaire en secundaire versie van ondersteunde software. Bijwerken naar de volgende hoofd- of subversie wordt echter alleen ondersteund als dit is opgegeven.
 
-## Beleid {#third-party-patch-support-policy} voor patchondersteuning van derden
+## Flardondersteuningsbeleid van derden {#third-party-patch-support-policy}
 
 De softwarevereisten van derden voor AEM Forms op JEE worden beschreven in het gedeelte &quot;Systeemvereisten&quot; van hun respectieve productdocumenten. Alle documentatie is toegankelijk via [https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64).
 
