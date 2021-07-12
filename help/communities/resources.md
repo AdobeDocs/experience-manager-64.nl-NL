@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
+role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2861'
 ht-degree: 0%
 
 ---
 
-# Bronnenconsole {#enablement-resources-console} inschakelen
+# Bronnenconsole inschakelen {#enablement-resources-console}
 
 Voor AEM Communities, is de console van Middelen waar [Managers Enablement](users.md) creeer, beheer en wijs middelen aan leden van een enablement communautaire plaats toe.
 
@@ -42,9 +41,9 @@ Voor details, zie [Het vormen Enablement](enablement.md).
 
 ## Terminologie {#terminology}
 
-### Bron {#resource}
+### Resource {#resource}
 
-De middelen zijn essentieel aan een [enablement community](overview.md#enablement-community). Het zijn de materialen die aan leden worden toegewezen die hen toelaten om hun vaardigheden te verbeteren.
+Bronnen zijn essentieel voor een [enablement community](overview.md#enablement-community). Het zijn de materialen die aan leden worden toegewezen die hen toelaten om hun vaardigheden te verbeteren.
 
 Kenmerken van een bron:
 
@@ -70,9 +69,9 @@ Voor [betrokkenheidsgemeenschappen](overview.md#egagementcommunity) is het redel
 
 Voor [enablement gemeenschappen](overview.md#enablement-community), wordt het geadviseerd om de plaats privé te maken die dan een beheerder vereist om gebruikers aan de lidgroep toe te voegen.
 
-## Toegang tot de Middelen {#accessing-a-community-site-s-enablement-resources} van Enablement van een Plaats van de Gemeenschap
+## Toegang tot de Middelen van Enablement van een Plaats van de Gemeenschap {#accessing-a-community-site-s-enablement-resources}
 
-### Navigeer naar Community-bronnen {#navigate-to-communities-resources}
+### Navigeren naar bronnen van gemeenschappen {#navigate-to-communities-resources}
 
 In het auteursmilieu, om de console van Middelen te bereiken
 
@@ -80,7 +79,7 @@ In het auteursmilieu, om de console van Middelen te bereiken
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-### Een communautaire site selecteren {#select-a-community-site}
+### Een Community-site selecteren {#select-a-community-site}
 
 De console van de Middelen van Gemeenschappen zal alle communautaire plaatsen tonen.
 
@@ -237,7 +236,7 @@ Selecteer een optie in de middelenbibliotheek. De selectie is beperkt tot de sel
 
 * Selecteer **[!UICONTROL Next]**
 
-### 3 instellingen {#settings}
+### 3 Instellingen {#settings}
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
@@ -354,7 +353,7 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 
 * Selecteer **[!UICONTROL Next]**
 
-### Voorwaarden {#add-prerequisites} toevoegen
+### Voorwaarden toevoegen {#add-prerequisites}
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -420,7 +419,7 @@ Voor de geselecteerde enablement-bron is het mogelijk:
 
 Om een nieuwe versie van het enablement middel te uploaden, wordt het geadviseerd om een nieuwe middel tot stand te brengen, en dan leden van de oude versie uit te schrijven en hen in de nieuwe versie in te schrijven.
 
-### Bron {#edit-resource} bewerken
+### Bron bewerken {#edit-resource}
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
@@ -428,7 +427,7 @@ Door het potloodpictogram te selecteren, worden de stappen voor het creëren van
 
 Als de enige verandering taken op de stap van Montages moet wijzigen, dan leidt het opslaan van de veranderingen tot de wijzigingen die worden gepubliceerd. Als er andere wijzigingen worden aangebracht, moet de bron expliciet worden gepubliceerd na het opslaan.
 
-### Bron {#delete-resource} verwijderen
+### Bron verwijderen {#delete-resource}
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -446,7 +445,7 @@ Voordat studenten een toegewezen activeringscursus kunnen zien, moet deze worden
 
 Hoewel in het dialoogvenster staat dat de handeling in de wachtrij staat, wordt deze vaak onmiddellijk gepubliceerd.
 
-### Publiceren {#unpublish} ongedaan maken
+### Publiceren ongedaan maken {#unpublish}
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -494,7 +493,7 @@ De horizontale as is de kalendertijd.
 
 [Adobe Analytics vereist](sites-console.md#analytics).
 
-#### Betrokkenheid van de viewer {#viewer-engagement}
+#### Betrokkenheid van viewer {#viewer-engagement}
 
 Het rapport Betrokkenheid van de Analyse Viewer toont voor videobronnen het aantal studenten dat de bron heeft bekeken en, als het niet tot het einde is afgespeeld, op welk punt studenten het afspelen hebben gestopt.
 
@@ -504,13 +503,13 @@ De horizontale as is de duur van deze resource.
 
 [Marketing Cloud-Org-id vereist](sites-console.md#enablement).
 
-#### Betrokkenheid van apparaat {#engagement-by-device}
+#### Betrokkenheid per apparaat {#engagement-by-device}
 
 In het rapport Analytics Engagement by Device (Betrokkenheid bij analyse per apparaat) voor videobronnen wordt het percentage van weergaven beschreven dat vanaf desktop en mobiel is afgespeeld.
 
 [Marketing Cloud-Org-id vereist](sites-console.md#enablement).
 
-#### Status van toewijzing {#assignee-status}
+#### Status van ontvanger {#assignee-status}
 
 In het statusrapport van de ontvanger, dat is gebaseerd op het aantal studenten, wordt beschreven hoeveel leerlingen
 
@@ -522,7 +521,7 @@ In het statusrapport van de ontvanger, dat is gebaseerd op het aantal studenten,
 
 Het beoordelingsrapport is gebaseerd op het aantal leerlingen dat de activeringsbron heeft beoordeeld, waarbij het aantal sterrenwaarderingen wordt weergegeven, gevolgd door een overzicht van het totale aantal beoordelingen en de gemiddelde beoordeling.
 
-#### Rapportoverzicht {#report-summary}
+#### Samenvatting van rapport {#report-summary}
 
 Voor een enablement middel, is de Samenvatting van het Rapport een lijstlijst
 
