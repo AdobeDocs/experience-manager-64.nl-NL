@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
-role: Administrator
+role: Admin
 exl-id: 834df392-df38-498c-9e2a-489484e20e0a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
-# Door gebruiker gegenereerde inhoud {#tagging-user-generated-content} labelen
+# Door gebruiker gegenereerde inhoud labelen {#tagging-user-generated-content}
 
 ## Overzicht {#overview}
 
@@ -29,7 +28,7 @@ Codes worden doorgaans toegepast door auteurs en beheerders in de auteursomgevin
 
 De tagnaamruimten en taxonomieën zijn voor beide toepassingen hetzelfde.
 
-## Functies {#communities-features} van Gemeenschappen
+## Functies van Gemeenschappen {#communities-features}
 
 De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staan, zijn:
 
@@ -39,7 +38,7 @@ De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staa
 * [Forum](forum.md#configuretheaddedforum)
 * [Vragen en antwoorden](working-with-qna.md)
 
-## Labels {#administering-tags} beheren
+## Tags beheren {#administering-tags}
 
 Zie [Tags beheren](../../help/sites-administering/tags.md#tagging-console) voor het maken en beheren van tagnaamruimten en -taxonomieën.
 
