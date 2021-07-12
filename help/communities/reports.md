@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
-role: Administrator
+role: Admin
 exl-id: 766711ea-f3d3-49ab-8346-4e4477c261bd
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
-# Rapportconsole {#reports-console}
+# Rapportenconsole {#reports-console}
 
 ## Overzicht {#overview}
 
@@ -35,9 +34,9 @@ Wanneer [Adobe Analytics is ingeschakeld](sites-console.md#analytics), bevatten 
 
 Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verdere verwerking.
 
-## Consoles {#reporting-consoles} rapporteren
+## Consoles rapporteren {#reporting-consoles}
 
-### Rapporten voor communautaire sites {#reports-for-community-sites}
+### Verslagen voor communautaire sites {#reports-for-community-sites}
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation > Communities > Reports]**
 * Kiezen uit
@@ -49,7 +48,7 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
       * Genereer een rapport voor een geselecteerde Community Site, Type inhoud en Tijdsperiode
          ![chlimage_1-156](assets/chlimage_1-156.png)
 
-### Rapporten voor Middelen van Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
+### Rapporten voor Middelen Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation > Communities > Resources]**
 * Een bestaande community-site voor inschakelen selecteren
@@ -68,7 +67,7 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 Voor meer details, zie [de sectie van Rapporten](resources.md#report) van de console van Middelen.
 
-## Rapport Toewijzingen {#assignments-report}
+## Toewijzingsrapport {#assignments-report}
 
 Met de toewijzingsconsole kunnen rapporten worden gefilterd door de communitysite, gebruikers of groepen en toewijzing in te schakelen.
 
@@ -91,7 +90,7 @@ Selecteer **[!UICONTROL Generate]** om het rapport te maken:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-## Rapport {#views-report} weergaven
+## Rapport Weergaven {#views-report}
 
 Met de weergaveconsole kunnen rapporten gedurende een bepaalde periode worden gegenereerd op paginaweergaven door een of meer algemene functies.
 
@@ -139,6 +138,6 @@ Selecteer **[!UICONTROL Generate]** om het rapport te maken:
 
 ## Problemen oplossen {#troubleshooting}
 
-### Geen vermelde communitysites {#no-community-sites-listed}
+### Geen community-sites vermeld {#no-community-sites-listed}
 
 Als er geen community-sites worden vermeld, moet u ervoor zorgen dat Adobe Analytics is ingeschakeld voor een site. Als u rapporten over toewijzingen kiest, moet u ervoor zorgen dat de toewijzingsfunctie zich in de structuur van de gemeenschapssite bevindt.
