@@ -3,10 +3,9 @@ title: AEM Assets configureren met Brand Portal
 description: 'Leer hoe u AEM Assets met Brand Portal configureert voor het publiceren van middelen en verzamelingen naar Brand Portal. '
 contentOwner: VG
 feature: Brand Portal
-role: Administrator
+role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 36%
@@ -15,13 +14,13 @@ ht-degree: 36%
 
 # AEM Assets configureren met Brand Portal {#configure-integration-64}
 
-De activa van Adobe Experience Manager (AEM) worden gevormd met het Portaal van het Merk door [!DNL Adobe I/O], die een symbolisch IMS voor vergunning van uw huurder van het Merk Portaal koopt.
+Adobe Experience Manager (AEM) Assets is geconfigureerd met Brand Portal via [!DNL Adobe I/O], die een IMS token aanschaft voor toestemming van uw Brand Portal-huurder.
 
 >[!NOTE]
 >
 >Het configureren van AEM Assets met Brand Portal via [!DNL Adobe I/O] wordt ondersteund op AEM 6.4.8.0 en hoger.
 >
->Eerder, werd het Portaal van het Merk gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning.
+>Eerder, werd Brand Portal gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning.
 
 >[!TIP]
 >
@@ -31,8 +30,8 @@ De activa van Adobe Experience Manager (AEM) worden gevormd met het Portaal van 
 
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
 
-* [Nieuwe configuratie](#configure-new-integration-64): Als u een nieuwe gebruiker van het Portaal van het Merk bent en uw auteur van AEM Assets met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie tot stand brengen op  [!DNL Adobe I/O].
-* [Configuratie](#upgrade-integration-64) upgrade: Als u een bestaande gebruiker van het Portaal van het Merk met uw de auteursinstantie van AEM Assets bent die met het Portaal van het Merk op erfenisGateway wordt gevormd OAuth, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie te creëren op  [!DNL Adobe I/O].
+* [Nieuwe configuratie](#configure-new-integration-64): Als u een nieuwe Brand Portal-gebruiker bent en uw AEM Assets-auteurinstantie met Brand Portal wilt configureren, kunt u een nieuwe configuratie maken op  [!DNL Adobe I/O].
+* [Configuratie](#upgrade-integration-64) upgrade: Als u een bestaande Brand Portal-gebruiker bent met uw AEM Assets-auteurinstantie die met Brand Portal is geconfigureerd op een verouderde OAuth Gateway, wordt aanbevolen de bestaande configuraties te verwijderen en een nieuwe configuratie aan te maken  [!DNL Adobe I/O].
 
 De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die deze Hulp leest met de volgende technologieën vertrouwd is:
 
@@ -72,7 +71,7 @@ Zie voor gedetailleerde instructies
 
 ## Configuratie maken {#configure-new-integration-64}
 
-Voer de volgende stappen in de vermelde reeks uit als u AEM Assets met Brand Portal voor het eerst configureert:
+Voer de volgende stappen in de vermelde reeks uit als u AEM Assets voor het eerst met Brand Portal configureert:
 
 1. [Openbaar certificaat verkrijgen](#public-certificate)
 1. [ [!DNL Adobe I/O] Creatieve integratie](#createnewintegration)
@@ -133,7 +132,7 @@ Standaard-URL: http:// localhost:4502/aem/start.html
 
 [!DNL Adobe I/O] Dankzij integratie worden API-sleutel, clientgeheim en Payload (JWT) gegenereerd die vereist zijn voor het instellen van de IMS-accountconfiguraties.
 
-1. Meld u aan bij [!DNL Adobe I/O] Console met systeembeheerdersrechten voor de IMS-organisatie van de Poorthuurder van het Merk.
+1. Meld u aan bij [!DNL Adobe I/O] Console met systeembeheerdersrechten voor de IMS-organisatie van de Brand Portal-huurder.
 
    Standaard-URL: [https://console.adobe.io/](https://console.adobe.io/)
 
@@ -176,7 +175,7 @@ Standaard-URL: http:// localhost:4502/aem/start.html
 Controleer of u de volgende stappen hebt uitgevoerd:
 
 * [Openbaar certificaat verkrijgen](#public-certificate)
-* [ [!DNL Adobe I/O] Creatieve integratie](#createnewintegration)
+* [Maken [!DNL Adobe I/O] integratie](#createnewintegration)
 
 **Stappen om IMS-accountconfiguratie te maken:**
 
@@ -227,7 +226,7 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
 
    ![](assets/create-cloud-service.png)
 
-1. Klik op **[!UICONTROL Save and Close]**. De cloudconfiguratie wordt gemaakt. Uw AEM Assets-auteur-exemplaar is nu geïntegreerd met de Brand Portal-gebruiker.
+1. Klik op **[!UICONTROL Save and Close]**. De cloudconfiguratie wordt gemaakt. Uw AEM Assets auteur-exemplaar is nu geïntegreerd met de Brand Portal-huurder.
 
 ### Configuratie testen {#test-integration}
 
@@ -247,7 +246,7 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
 
 1. Vier replicatieagenten worden gecreeerd voor elke huurder.
 
-   Bepaal de plaats van de replicatieagenten van uw huurder van het Portaal van het Merk.
+   Bepaal de plaats van de replicatieagenten van uw huurder van Brand Portal.
 
    Klik op de URL van de replicatieagent.
 
@@ -275,21 +274,21 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
    >
    >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie [Problemen oplossen in parallelle publicatie naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
-Brand Portal is geconfigureerd met uw AEM Assets-auteur-exemplaar. U kunt nu het volgende doen:
+Brand Portal is geconfigureerd met uw AEM Assets-auteurinstantie. U kunt nu het volgende doen:
 
 * [Assets publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Mappen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Verzamelingen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Middelen configureren ](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) voor de gebruikers van het Brand Portal om middelen bij te dragen aan en te publiceren naar AEM Assets.
+* [Middelen ](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) zoeken die de Brand Portal-gebruikers in staat stellen middelen bij te dragen en te publiceren naar AEM Assets.
 
-## Upgrade van configuratie {#upgrade-integration-64}
+## Upgradeconfiguratie {#upgrade-integration-64}
 
 Voer de volgende stappen in de vermelde opeenvolging uit om bestaande configuraties te bevorderen:
 1. [Werken met taken controleren](#verify-jobs)
 1. [Bestaande configuraties verwijderen](#delete-existing-configuration)
 1. [Configuratie maken](#configure-new-integration-64)
 
-### Taak {#verify-jobs} controleren
+### Werken met taken controleren {#verify-jobs}
 
 Zorg ervoor dat er geen publicatietaak wordt uitgevoerd op de AEM Assets-ontwerpinstantie voordat u wijzigingen aanbrengt. Voor dat, kunt u alle vier replicatieagenten verifiëren en ervoor zorgen dat de rij ideaal/leeg is.
 
@@ -305,13 +304,13 @@ Zorg ervoor dat er geen publicatietaak wordt uitgevoerd op de AEM Assets-ontwerp
 
    ![](assets/test-integration2.png)
 
-1. Bepaal de plaats van de replicatieagenten van uw huurder van het Portaal van het Merk.
+1. Bepaal de plaats van de replicatieagenten van uw huurder van Brand Portal.
 
    Zorg ervoor dat **Wachtrij Idle** voor alle replicatieagenten is, is geen het publiceren baan actief.
 
    ![](assets/test-integration3.png)
 
-### Bestaande configuraties {#delete-existing-configuration} verwijderen
+### Bestaande configuraties verwijderen {#delete-existing-configuration}
 
 U moet de volgende controle-lijst in werking stellen terwijl het schrappen van de bestaande configuratie.
 * Alle vier replicatieagents verwijderen
@@ -324,7 +323,7 @@ Voer de volgende stappen uit om de bestaande configuratie te verwijderen:
 
    Standaard-URL: http:// localhost:4502/crx/de/index.jsp
 
-1. Navigeer aan `/etc/replications/agents.author` en schrap alle vier replicatieagenten van uw Poorthuurder van het Merk.
+1. Navigeer aan `/etc/replications/agents.author` en schrap alle vier replicatieagenten van uw huurder van Brand Portal.
 
    ![](assets/delete-replication-agent.png)
 
@@ -332,7 +331,7 @@ Voer de volgende stappen uit om de bestaande configuratie te verwijderen:
 
    ![](assets/delete-cloud-service.png)
 
-1. Navigeer aan `/home/users/mac` en schrap **de gebruiker van MAC** van uw Poorthuurder van het Merk.
+1. Navigeer naar `/home/users/mac` en verwijder **MAC user** van uw Brand Portal-huurder.
 
    ![](assets/delete-mac-user.png)
 
@@ -353,8 +352,8 @@ U kunt nu [configuratie](#configure-new-integration-64) op uw AEM 6.4 auteursins
    <li>Step text</li>
    -->
 
-Nadat de replicatie slaagt, kunt u activa, omslagen, en Inzamelingen aan het Portaal van het Merk publiceren. Zie voor meer informatie:
+Nadat de replicatie is gelukt, kunt u elementen, mappen en verzamelingen publiceren naar Brand Portal. Zie voor meer informatie:
 
 * [Assets publiceren naar Brand Portal](brand-portal-publish-assets.md)
-* [Middelen en mappen publiceren naar Brand Portal](brand-portal-publish-folder.md)
+* [Elementen en mappen publiceren naar Brand Portal](brand-portal-publish-folder.md)
 * [Verzamelingen publiceren naar Brand Portal](brand-portal-publish-collection.md)
