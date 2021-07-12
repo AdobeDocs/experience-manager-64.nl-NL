@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
+role: Admin
 exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 # DSRP - Relational Database Storage Resource Provider {#dsrp-relational-database-storage-resource-provider}
 
-## Informatie over DSRP {#about-dsrp}
+## Over DSRP {#about-dsrp}
 
 Wanneer AEM Communities wordt gevormd om een relationele gegevensbestand als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
@@ -55,7 +54,7 @@ Voor productieomgevingen biedt de SolrCloud-modus betere prestaties dan de zelfs
 
 Voor installatie en configuratiedetails, zie [Solr Configuratie voor SRP](solr.md).
 
-### Selecteer DSRP {#select-dsrp}
+### DSRP selecteren {#select-dsrp}
 
 Met de [Opslagconfiguratieconsole](srp-config.md) kunt u de standaardopslagconfiguratie selecteren, die aangeeft welke implementatie van SRP moet worden gebruikt.
 
@@ -108,7 +107,7 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
 * Selecteer **[!UICONTROL Submit]**
 
-### Nul stappen voor downtime migratie voor standaard {#migration-steps-0dt}
+### Nul stappen voor downtime migratie voor standaardconfiguratie {#migration-steps-0dt}
 
 Ga als volgt te werk om ervoor te zorgen dat de standaardpagina [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) naar behoren werkt:
 
@@ -118,7 +117,7 @@ Ga als volgt te werk om ervoor te zorgen dat de standaardpagina [http://localhos
 1. Kopieer de oude configuratie `/etc/socialconfig_old/srpc/defaultconfiguration` in plaats van het verwijderde knooppunt (`/conf/global/settings/community/srpc/defaultconfiguration`) in de vorige stap.
 1. Verwijder het oude knooppunt etc. `/etc/socialconfig_old`.
 
-## De configuratie {#publishing-the-configuration} publiceren
+## De configuratie publiceren {#publishing-the-configuration}
 
 DSRP moet als gemeenschappelijke opslag op alle auteur worden geïdentificeerd en instanties publiceren.
 
@@ -135,7 +134,7 @@ Op auteur:
 * Zorg ervoor dat `Only Modified` niet is geselecteerd.
 * Selecteer **[!UICONTROL Activate]**
 
-## Gebruikersgegevens {#managing-user-data} beheren
+## Gebruikersgegevens beheren {#managing-user-data}
 
 Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, vaak ingevoerd in de publicatieomgeving, gaat u naar
 
