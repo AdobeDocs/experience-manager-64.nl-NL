@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
+role: Admin
 exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -37,7 +36,7 @@ Deze console toont de malplaatjes waarvan een [communityplaats](sites-console.md
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
-## Sitjabloon maken {#create-site-template}
+## Sitesjabloon maken {#create-site-template}
 
 Selecteer `Create` om een nieuwe sitesjabloon te gaan maken.
 
@@ -66,7 +65,7 @@ Een schakeloptie die bepaalt of naar de sjabloon kan worden verwezen
 
 ### Structuur {#structure}
 
-![chlimage_1-29](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 
 Als u communityfuncties wilt toevoegen, sleept u van de rechterkant naar links in de volgorde waarin de koppelingen in het sitemenu moeten worden weergegeven. Stijlen worden toegepast op de sjabloon tijdens het maken van de site.
 
@@ -84,7 +83,7 @@ De paginafunctie biedt een lege pagina. De groepsfunctie biedt de mogelijkheid o
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-### Groepsjablonen voor groepsfuncties {#group-templates-for-groups-function}
+### Groepsjablonen voor groepfuncties {#group-templates-for-groups-function}
 
 Wanneer het omvatten van een groepsfunctie in het plaatssjabloon, vereist de configuratie de specificatie van de keuzen van het groepsmalplaatje toegestaan wanneer een nieuwe groep in het publicatiemilieu wordt gecreeerd.
 
