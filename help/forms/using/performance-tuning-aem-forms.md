@@ -8,10 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
-role: Administrator
+role: Admin
 exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 0%
@@ -62,7 +61,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 >
 >De geadviseerde montages zijn voor Vensters 2008 R2 8 Kern en Oracle HotSpot 1.7 (met 64 bits) JDK en zouden omhoog of neer volgens uw systeemconfiguratie moeten worden vergroot.
 
-## Een webserver {#using-a-web-server} gebruiken
+## Een webserver gebruiken {#using-a-web-server}
 
 Adaptieve formulieren en HTML5-formulieren worden weergegeven in HTML5-indeling. De resulterende uitvoer kan groot zijn, afhankelijk van factoren zoals de formuliergrootte en afbeeldingen in het formulier. Om de gegevensoverdracht te optimaliseren, is de geadviseerde benadering de reactie van HTML te comprimeren gebruikend de Webserver waarvan het verzoek wordt gediend. Deze benadering vermindert de reactiegrootte, het netwerkverkeer, en de tijd die wordt vereist om gegevens tussen server en cliëntmachines te stromen.
 
@@ -141,7 +140,7 @@ Apache kan met behulp van het HTTP-protocol communiceren met CRX. De configurati
 
    Als u toegang wilt krijgen tot de crx-server, gebruikt u `https://[server]:80`, waarbij `server` de naam is van de server waarop de Apache-server wordt uitgevoerd.
 
-## Een antivirus gebruiken op een server waarop AEM Forms {#using-an-antivirus-on-server-running-aem-forms} wordt uitgevoerd
+## Een antivirus gebruiken op een server waarop AEM Forms wordt uitgevoerd {#using-an-antivirus-on-server-running-aem-forms}
 
 U kunt trage prestaties ervaren op de servers die een antivirussoftware uitvoeren. Een programma dat altijd antivirussoftware gebruikt (voor scannen op toegang) scant alle bestanden van een systeem. Het kan de server vertragen en de prestaties van de AEM Forms worden beïnvloed.
 
