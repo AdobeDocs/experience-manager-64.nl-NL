@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
-role: Administrator
+role: Admin
 exl-id: 2007336d-d75c-4e01-af81-181751c04cfe
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2431'
 ht-degree: 0%
 
 ---
 
-# Community-functies {#community-functions}
+# Communautaire functies {#community-functions}
 
 Het type functies dat wordt verwacht van een community-ervaring is bekend. De communautaire eigenschappen zijn beschikbaar als communautaire functies. In wezen zijn ze een of meer pagina&#39;s die vooraf zijn bekabeld om een community-functie te implementeren. Hiervoor is meer nodig dan alleen het toevoegen van een component aan een pagina in de modus Schrijven. Zij zijn de bouwstenen die worden gebruikt om de structuur van een [communityplaatsjabloon](sites.md) te bepalen waarvan de communautaire plaatsen [gecreeerd](sites-console.md) zijn.
 
@@ -51,7 +50,7 @@ Een communitysitesjabloon biedt de structuur voor een communitysite, zoals aanme
 
 Wanneer een communautaire functie aan een malplaatje van de communautaire plaats wordt toegevoegd of wanneer [modifying](sites-console.md#modifying-site-properties) de structuur van een communautaire plaats wordt toegevoegd, opent de dialoog van de functie zodat de Titel en URL kunnen worden gevormd.
 
-#### Details configuratiefunctie {#configuration-function-details}
+#### Configuratiefunctie {#configuration-function-details}
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
@@ -77,7 +76,7 @@ De functie van de activiteitenstroom is een pagina met een [component van de Str
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-#### Details configuratiefunctie {#configuration-function-details-1}
+#### Configuratiefunctie {#configuration-function-details-1}
 
 ![chlimage_1-382](assets/chlimage_1-382.png)
 
@@ -162,7 +161,7 @@ Wanneer de configuratie aan een sjabloon is toegevoegd, kunt u met de configurat
    * Als deze optie uitgeschakeld is, is het mogelijk een of meer naamruimten te selecteren die zijn toegestaan voor de communitysite.
    * Standaard is ingeschakeld.
 
-### Functie {#featured-content-function} aanbevolen inhoud
+### Functie aanbevolen inhoud {#featured-content-function}
 
 De functie voor aanbevolen inhoud is een pagina met een [component Aanbevolen inhoud](featured.md) geconfigureerd om opmerkingen toe te voegen en te verwijderen.
 
@@ -170,7 +169,7 @@ De mogelijkheid om inhoud te voorzien kan per component worden toegestaan of nie
 
 Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor [Titel en Montages URL](#title-and-url-settings).
 
-### Bestandsbibliotheekfunctie {#file-library-function}
+### Functie bestandsbibliotheek {#file-library-function}
 
 De functie van de dossierbibliotheek is een pagina met een [component van de Bibliotheek van het Dossier ](file-library.md) wordt gevormd om commentaren toe te staan om worden toegevoegd en worden geschrapt.
 
@@ -182,7 +181,7 @@ De forumfunctie is een pagina met een [Forum-component](forum.md) die is geconfi
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-#### Details configuratiefunctie {#configuration-function-details-2}
+#### Configuratiefunctie {#configuration-function-details-2}
 
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
@@ -202,7 +201,7 @@ Als het forum niet wordt gecontroleerd, zal het commentaar op een onderwerp toes
 * **[!UICONTROL Allow Featured Content]**
 Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als  [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
 
-### Groepeert functie {#groups-function}
+### Functie Groepen {#groups-function}
 
 >[!CAUTION]
 >
@@ -317,7 +316,7 @@ De capaciteit om een communautaire functie tot stand te brengen wordt bereikt do
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
-### Naam communautaire functie {#community-function-name}
+### Community-functienaam {#community-function-name}
 
 ![chlimage_1-391](assets/chlimage_1-391.png)
 
@@ -332,7 +331,7 @@ De functiebeschrijving voor de weergave
 * **[!UICONTROL Disabled/Enabled]**
 Een schakeloptie die bepaalt of de functie waarnaar wordt verwezen
 
-### AEM blauwdruk {#aem-blueprint}
+### AEM {#aem-blueprint}
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
@@ -356,7 +355,7 @@ In het venster Miniatuur kan een afbeelding worden geüpload om te worden weerge
 
 Selecteer het pictogram `Open Community Function` om de bewerkingsmodus voor auteurs in te schakelen voor het ontwerpen van de pagina-inhoud en het wijzigen van de configuratie van de component(en) met functies.
 
-### Componenten {#configuring-components} configureren
+### Componenten configureren {#configuring-components}
 
 Een communautaire functie wordt uitgevoerd als Levende Kopie van een AEM Blauwdruk, details waarvan onder [Multisite Manager](../../help/sites-administering/msm.md) worden gedocumenteerd.
 
