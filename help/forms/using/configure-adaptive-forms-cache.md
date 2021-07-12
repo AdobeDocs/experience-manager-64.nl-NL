@@ -8,17 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
-role: Administrator
+role: Admin
 exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 1%
 
 ---
 
-# Cache voor adaptieve formulieren {#configure-adaptive-forms-cache} configureren
+# Cache voor aangepaste formulieren configureren {#configure-adaptive-forms-cache}
 
 Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de latentie te verminderen en de invoer-/uitvoersnelheid (I/O) te verbeteren. In de cache van adaptieve formulieren worden alleen HTML-inhoud en JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier of document op de client te genereren, verkort. Het is specifiek ontworpen voor adaptieve formulieren en ondersteunt ook adaptieve documenten.
 
@@ -30,7 +29,7 @@ Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de la
 >
 >Zorg tijdens het ontwikkelen van aangepaste componenten op de server die wordt gebruikt voor ontwikkeling dat de cache van adaptieve formulieren uitgeschakeld blijft.
 
-## De cache {#configure-the-cache} configureren
+## De cache configureren {#configure-the-cache}
 
 Voer de volgende stappen uit om de cache voor adaptieve formulieren te configureren:
 
