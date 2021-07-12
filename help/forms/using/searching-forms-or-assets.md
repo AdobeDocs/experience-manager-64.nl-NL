@@ -8,17 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
-role: Administrator
+role: Admin
 exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
 
 ---
 
-# Zoeken naar formulieren en elementen {#searching-for-forms-and-assets}
+# Zoeken naar formulieren en middelen {#searching-for-forms-and-assets}
 
 U kunt naar uw formulieren of formulierelementen zoeken met behulp van een tekenreeks of tekenreeks, samen met jokertekens. U kunt uw zoekopdracht ook beperken aan de hand van de criteria die beschikbaar zijn in verschillende categorieën in het deelvenster Zoeken.
 
@@ -26,7 +25,7 @@ Wanneer u een of meer criteria selecteert en ook een tekenreeks opgeeft, wordt h
 
 Klik ![aem6forms_search](assets/aem6forms_search.png), om het onderzoekspaneel te tonen of te verbergen.
 
-## Standaardzoekopdracht {#basic-search}
+## Basiszoekopdracht {#basic-search}
 
 Een basiszoekopdracht is de standaardzoekopdracht, uitgevoerd zonder filters op te geven. AEM Forms voert een volledige tekstzoekopdracht uit naar eigenschappen van metagegevens.
 
@@ -51,7 +50,7 @@ Naast de query kunt u in de zoekcriteria enkele zoekparameters opgeven om de sta
 
 ![Zoekveld en parameters of filters voor AEM zoeken in formulieren en middelen](assets/search_forms_assets.png)
 
-### Middelenpad {#asset-path}
+### Middelpad {#asset-path}
 
 Met het filter elementpad kunt u de zoekresultaten beperken tot de huidige map. Als de optie Zoeken in huidige map niet is geselecteerd, bevatten de zoekresultaten elementen uit de basismap. Als de huidige pagina geen map is en de optie &quot;Zoeken in huidige map&quot; is geselecteerd, retourneert de zoekopdracht de elementen in de bovenliggende map.
 
@@ -109,6 +108,6 @@ U kunt een willekeurig aantal elementtypen selecteren. De zoekopdracht retournee
  </tbody>
 </table>
 
-### Labels {#tags}
+### Tags {#tags}
 
 Tags zijn labels die zijn gekoppeld aan elementen ter identificatie. Selecteer tijdens het zoeken een willekeurig aantal tags in de vervolgkeuzelijst of voeg indien nodig aangepaste tags toe. Een zoekresultaat bevat de doorsnede van de geselecteerde tags.
