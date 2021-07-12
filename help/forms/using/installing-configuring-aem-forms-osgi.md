@@ -7,10 +7,9 @@ uuid: ce253b5a-eeb2-47d2-a6c9-e6f59384159a
 contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
-role: Administrator
+role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-translation-type: tm+mt
-source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 0%
@@ -106,13 +105,13 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer voorkomen in het bestand  [AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
 1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
-## Configuratie {#post-installation-configurations} na installatie
+## Configuratie na installatie {#post-installation-configurations}
 
 AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher, Forms Portal, Adobe Sign, Adobe Analytics en Adobe Target.
 
 ### Verplichte configuraties na installatie {#mandatory-post-installation-configurations}
 
-#### RSA- en BouncyCastle-bibliotheken configureren {#configure-rsa-and-bouncycastle-libraries}
+#### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
 Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
 
@@ -146,9 +145,9 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 1. Voeg het **[!UICONTROL sun.util.calendar]** pakket aan het **[!UICONTROL allowlist]** gebied toe. Klik op **[!UICONTROL Save]**.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
 
-### Optionele configuraties {#optional-post-installation-configurations} na installatie
+### Optionele configuraties na installatie {#optional-post-installation-configurations}
 
-#### Dispatcher {#configure-dispatcher} configureren
+#### Dispatcher configureren {#configure-dispatcher}
 
 Dispatcher is een programma voor het in cache plaatsen en taakverdeling voor AEM. AEM Dispatcher helpt ook AEM server tegen aanvallen te beschermen. U kunt de veiligheid van uw AEM instantie verhogen door Dispatcher samen met een onderneming-klasse Webserver te gebruiken. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
 
@@ -164,7 +163,7 @@ Dispatcher is een programma voor het in cache plaatsen en taakverdeling voor AEM
 
    Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van de configuratiemanager is `https://[server]:[port_number]/system/console/configMgr`. Selecteer in het menu **[!UICONTROL Configurations]** de optie **[!UICONTROL Apache Sling Referrer Filter]**. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **[!UICONTROL Save]**. De opmaak van de vermelding is `https://[server]:[port]`.
 
-#### Cache {#configure-cache} configureren
+#### Cache configureren {#configure-cache}
 
 Caching is een mechanisme om gegevenstoegang te verkorten, latentie te verminderen, en input/output (I/O) snelheden te verbeteren. In de cache van adaptieve formulieren worden alleen HTML-inhoud en JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier te genereren, verkort.
 
@@ -186,7 +185,7 @@ U kunt SSL-communicatie inschakelen voor het formuliergegevensmodel. Als u SSL-c
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
-#### Adobe Sign {#configure-adobe-sign} configureren
+#### Adobe Sign configureren {#configure-adobe-sign}
 
 Adobe Sign maakt workflows voor e-handtekeningen mogelijk voor adaptieve formulieren. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
 
@@ -194,13 +193,13 @@ In een standaard Adobe Sign- en adaptief formulierscenario vult een gebruiker ee
 
 Als u Adobe Sign wilt gebruiken met AEM Forms, [Integreer Adobe Sign met AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
-#### Adobe Analytics {#configure-adobe-analytics} configureren
+#### Adobe Analytics configureren {#configure-adobe-analytics}
 
 AEM Forms is geïntegreerd met Adobe Analytics waarmee u prestatiegegevens voor gepubliceerde formulieren en documenten kunt vastleggen en bijhouden. Het doel van de analyse van deze gegevens is om geïnformeerde beslissingen te nemen op basis van gegevens over de wijzigingen die nodig zijn om formulieren of documenten bruikbaarder te maken.
 
 Zie [Analyses en rapporten configureren](/help/forms/using/configure-analytics-forms-documents.md) om Adobe Analytics met AEM Forms te gebruiken.
 
-#### Adobe Target {#integrate-adobe-target} integreren
+#### Adobe Target integreren {#integrate-adobe-target}
 
 Uw klanten zullen waarschijnlijk een formulier verlaten als de ervaring die het biedt, niet aantrekkelijk is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek evenals uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omrekeningskoers verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
 
