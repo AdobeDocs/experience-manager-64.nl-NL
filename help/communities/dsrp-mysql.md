@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
-role: Administrator
+role: Admin
 exl-id: 1de1ffc6-63f8-4316-a2fa-5095d407c265
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,11 +36,11 @@ Deze instructies beschrijven hoe te met de server te verbinden MySQL en het gege
    * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 
-## MySQL {#installing-mysql} installeren
+## MySQL installeren {#installing-mysql}
 
 [](https://dev.mysql.com/downloads/mysql/) MySQL moet worden gedownload en geïnstalleerd volgens de instructies voor het doel-besturingssysteem.
 
-### Tabelnamen van kleine letters {#lower-case-table-names}
+### Tabelnamen met kleine letters {#lower-case-table-names}
 
 Aangezien SQL niet hoofdlettergevoelig is, is het voor hoofdlettergevoelige besturingssystemen nodig om de instelling voor kleine letters in te voeren voor alle tabelnamen.
 
@@ -71,7 +70,7 @@ Wijzig de MySQL-database in de standaardwaarde voor UTF8:
 
    `character-set-server=utf8`
 
-## MySQL Workbench {#installing-mysql-workbench} installeren
+## MySQL Workbench installeren {#installing-mysql-workbench}
 
 MySQL Workbench biedt een UI voor het uitvoeren van SQL-scripts die het schema en de initiële gegevens installeren.
 
@@ -104,17 +103,17 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 * De standaardpoort is `3306`
 * De gekozen Naam van de Verbinding is ingegaan als naam van de gegevensbron in [JDBC OSGi configuratie](#configurejdbcconnections)
 
-#### Nieuwe verbinding Gemeenschappen {#new-communities-connection}
+#### Nieuwe verbinding met Gemeenschappen {#new-communities-connection}
 
 ![chlimage_1-105](assets/chlimage_1-105.png)
 
-## Database-instelling {#database-setup}
+## Database instellen {#database-setup}
 
 Open de verbinding van de Gemeenschappen om het gegevensbestand te installeren.
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
-### SQL-script ophalen {#obtain-the-sql-script}
+### Het SQL-script ophalen {#obtain-the-sql-script}
 
 Het SQL-script is afkomstig uit de AEM opslagplaats:
 
@@ -134,13 +133,13 @@ Eén methode voor het downloaden van het schema is:
 
 * Selecteer de weergavekoppeling om de gegevens in een lokaal bestand op te slaan
 
-### De DSRP-database {#create-the-dsrp-database} maken
+### De DSRP-database maken {#create-the-dsrp-database}
 
 Voer de onderstaande stappen uit om de database te installeren. De standaardnaam van de database is `communities`.
 
 Als de gegevensbestandnaam in het manuscript wordt veranderd, ben zeker om het in [JDBC config](#configurejdbcconnections) ook te veranderen.
 
-#### Stap 1: SQL-bestand {#step-open-sql-file} openen
+#### Stap 1: SQL-bestand openen {#step-open-sql-file}
 
 In MySQL Workbench
 
@@ -163,7 +162,7 @@ Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om `SCHEMAS`sectie va
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
-## JDBC-verbinding {#configure-jdbc-connection} configureren
+## JDBC-verbinding configureren {#configure-jdbc-connection}
 
 De configuratie OSGi voor **de Pool van Verbindingen JDBC van de Bevelen van de Dag** vormt de Bestuurder MySQL JDBC.
 
@@ -180,7 +179,7 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 * `Day Commons JDBC Connections Pool` zoeken
 * Selecteer het pictogram `+` om een nieuwe verbindingsconfiguratie tot stand te brengen
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 * Voer de volgende waarden in:
 
