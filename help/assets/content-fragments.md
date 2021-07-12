@@ -10,10 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Contentfragmenten
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 3%
@@ -68,7 +67,7 @@ Met inhoudelementen kunt u:
 
 Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillende kanalen ervaringen op te doen.
 
-## Content Fragments and Content Services {#content-fragments-and-content-services}
+## Inhoudsfragmenten en inhoudsservices {#content-fragments-and-content-services}
 
 AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina&#39;s wordt gevestigd.
 
@@ -173,7 +172,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * Bevat niet het concept dat voor een specifiek fragment wordt goedgekeurd.
    * Zie [Assets Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) voor meer informatie.
 
-### Onderdelen van een inhoudsfragment {#constituent-parts-of-a-content-fragment}
+### Delen van een inhoudsfragment maken {#constituent-parts-of-a-content-fragment}
 
 De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct of indirect):
 
@@ -260,7 +259,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Kan [Samengevat](content-fragments-variations.md#summarizing-text) zijn om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
    * Beschikbaar op het tabblad [Variaties](content-fragments-variations.md) van de fragmenteditor.
 
-### Tussenliggende inhoud bij pagina&#39;s ontwerpen met inhoudsfragmenten {#in-between-content-when-page-authoring-with-content-fragments}
+### Tussen inhoud wanneer pagina&#39;s worden gemaakt met inhoudsfragmenten {#in-between-content-when-page-authoring-with-content-fragments}
 
 Tussen inhoud:
 
@@ -299,11 +298,11 @@ Voor het maken, bewerken en gebruiken van inhoudsfragmenten hebt u ook het volge
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Als u een fragment naar een pagina sleept tijdens het ontwerpen, wordt de vereiste component automatisch gekoppeld.
 
-## Voorbeeld van gebruik {#example-usage}
+## Voorbeeldgebruik {#example-usage}
 
 Een fragment met de elementen en variaties kan worden gebruikt om coherente inhoud voor meerdere kanalen te maken. Bij het ontwerpen van het fragment moet u rekening houden met de plaats waar het fragment wordt gebruikt.
 
-### We.Retail-voorbeeld {#we-retail-sample}
+### We.Handelsvoorbeeld {#we-retail-sample}
 
 Een voorbeeldfragment is zichtbaar bij:
 
