@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
+role: Admin
 exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 0%
 
 ---
 
-# E-mail {#configuring-email} configureren
+# E-mail configureren {#configuring-email}
 
 AEM Communities gebruikt e-mail voor
 
@@ -33,7 +32,7 @@ De e-mailfunctie werkt standaard niet omdat hiervoor een SMTP-server en een SMTP
 >
 >E-mail voor meldingen en abonnementen moet alleen worden geconfigureerd op de [primaire uitgever](deploy-communities.md#primary-publisher).
 
-## Configuratie van standaardmailservice {#default-mail-service-configuration}
+## Standaardconfiguratie e-mailservice {#default-mail-service-configuration}
 
 De standaardmailservice is vereist voor zowel meldingen als abonnementen.
 
@@ -64,7 +63,7 @@ Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
 * **[!UICONTROL SMTP use SSL]**: Als deze optie is ingeschakeld, wordt beveiligde e-mail verzonden. Zorg ervoor dat de poort is ingesteld op 465 of zoals is vereist voor de SMTP-server.
 * **[!UICONTROL Debug email]**: Indien gecontroleerd, laat registreren van SMTP serverinteractie toe.
 
-## AEM Communities-e-mailconfiguratie {#aem-communities-email-configuration}
+## AEM Communities E-mailconfiguratie {#aem-communities-email-configuration}
 
 Zodra [standaardpostdienst ](#default-mail-service-configuration) wordt gevormd, worden de twee bestaande instanties van `AEM Communities Email Reply Configuration` OSGi config, inbegrepen in de versie, functioneel.
 
@@ -134,11 +133,11 @@ Voor Gemeenschapsabonnementen is het mogelijk om de mogelijkheid voor een lid om
 
 * **[!UICONTROL Templates root path]**: De e-mail wordt samengesteld met een sjabloon die op dit hoofdpad is opgeslagen. De standaardwaarde is `/etc/community/templates/subscriptions-email`.
 
-## Opiniepeilingimportmodule {#configure-polling-importer} configureren
+## Opiniepeilingimportmodule configureren {#configure-polling-importer}
 
 Om de e-mail in de gegevensopslagplaats te brengen, is het noodzakelijk om een opiniepeilingimporteur te vormen en zijn eigenschappen in de bewaarplaats manueel te vormen.
 
-### Nieuwe opiniepeilingimportmodule {#add-new-polling-importer} toevoegen
+### Nieuwe importmodule voor opiniepeiling toevoegen {#add-new-polling-importer}
 
 * Op de primaire uitgever
 * Aangemeld met beheerdersrechten
