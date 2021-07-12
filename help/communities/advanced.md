@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
-role: Administrator
+role: Admin
 exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 1%
@@ -89,7 +88,7 @@ Voor een onderwerp, specificeer het werkwoord dat de hoogste prioriteit zou moet
 
    De standaardwaarde is 50.
 
-## Geavanceerde sorteerregels {#advanced-scoring-rules}
+## Geavanceerde scoreregels {#advanced-scoring-rules}
 
 In de basisscoring is bekend hoeveel er nodig is om een badge te verdienen.
 
@@ -119,7 +118,7 @@ Er wordt geen wijziging van dit bestand verwacht.
 
 Als het stopwoordenbestand ontbreekt, genereert het geavanceerde scoring-programma een fout.
 
-## Geavanceerde Badgingregels {#advanced-badging-rules}
+## Geavanceerde spelregels {#advanced-badging-rules}
 
 De geavanceerde eigenschappen van de merkingsregel verschillen van [basiseigenschappen van de merkingsregel](implementing-scoring.md#badging-rules).
 
@@ -188,7 +187,7 @@ In de bètaversie zijn twee geavanceerde scoreregels opgenomen voor de functie [
 * `rules` moet zich bevinden op een opslagplaats met leesmachtigingen voor iedereen
    * regelnamen moeten uniek zijn, ongeacht de locatie
 
-### Inclusief Badgingregels {#included-badging-rules}
+### Ingesloten Badgingregels {#included-badging-rules}
 
 In de release zijn twee geavanceerde regels voor badging opgenomen die overeenkomen met de [geavanceerde forums en regels voor scoring van opmerkingen](#included-scoring-rules-and-sub-rules).
 
