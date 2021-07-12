@@ -8,10 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
-role: Administrator
+role: Admin
 exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 0%
@@ -174,7 +173,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die in AEM F
  </tbody> 
 </table>
 
-## Metagegevens van formulieren {#view-form-metadata-nbsp} weergeven
+## Metagegevens van formulieren weergeven {#view-form-metadata-nbsp}
 
 Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in de alleen-lezen modus. Deze metagegevens zijn afkomstig bij het uploaden van het formulier of het maken van het formulier.
 
@@ -204,11 +203,11 @@ Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in 
    * Het rechterdeelvenster bevat eigenschappen van metagegevens in de alleen-lezen modus, verdeeld over verschillende tabbladen.
 
 
-## Waarden voor metagegevens van formulieren toevoegen/bijwerken {#add-update-form-metadata-values-nbsp}
+## Waarden van metagegevens van formulieren toevoegen/bijwerken {#add-update-form-metadata-values-nbsp}
 
 U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe waarden toevoegen aan een bestaand veld voor de eigenschap van metagegevens (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
-### Waarden van metagegevenseigenschappen {#update-metadata-property-values} bijwerken
+### Waarden voor metagegevenseigenschappen bijwerken {#update-metadata-property-values}
 
 1. Voer de stappen in de vorige sectie uit om de eigenschappenpagina te openen waarop bestaande metagegevens van het geselecteerde formulier kunnen worden weergegeven.
 
@@ -272,7 +271,7 @@ AEM Forms stelt de metagegevensschema&#39;s van de ondersteunde formuliertypen i
 
    ![Schema-editor voor metagegevens voor adaptief formuliertype](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
-   [Klik om te vergroten](assets/metadata-schema-editor-for-adaptive-form-type.png)
+[Klik om te vergroten](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
    1. Het linkerdeelvenster bevat secties met tabbladen waarin de velden zijn geplaatst en in het rechterdeelvenster worden alle beschikbare UI-componenten en de eigenschappen van het veld weergegeven die in het linkerdeelvenster zijn geselecteerd.
 
