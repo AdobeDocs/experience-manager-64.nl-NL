@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
-role: Administrator
+role: Admin
 exl-id: fc7ce4d0-2051-4a67-a0d6-baf615e09ca4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# Limieten voor bijdragen van leden {#member-contribution-limits}
+# Limieten voor bijdragen van de lidstaten {#member-contribution-limits}
 
 ## Overzicht {#overview}
 
@@ -31,7 +30,7 @@ Bijdragelimieten kunnen afzonderlijk worden ingeschakeld via de [Ledenconsole](m
 
 Gebruikend de console van Leden, kunnen de bijdragegrenzen proactief voor een lid door een communautaire manager op elk ogenblik worden verwijderd, of reactief worden verwijderd wanneer een lid een bericht naar een communautaire manager verzendt die zulk een verzoek doet.
 
-## Configuratie van door AEM Communities door gebruiker gegenereerde inhoudopdrachtlimiet {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuratie van door AEM Communities-gebruikers gegenereerde limiet voor bijdragen aan inhoud {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Deze OSGi-configuratie
 
@@ -74,7 +73,7 @@ Om deze configuratie te bereiken OSGi:
 
    Een lijst met lijsten van gewenste personen van een of meer e-maildomeinen. Selecteer + pictogram om extra ingangen te maken.
 
-   Gebruikers met e-mailadressen in de lijst van gewenste personen van domeinen worden niet beïnvloed wanneer de UGC-bijdragelimieten automatisch worden toegepast. Als domein `mycompany.com` bijvoorbeeld wordt toegevoegd aan de lijst met domeinen, is een lid met e-mailadres `me@mycompany.com` nooit beperkt tot het posten.
+   Gebruikers met e-mailadressen in de lijst van gewenste personen van domeinen worden niet beïnvloed wanneer de UGC-bijdragelimieten automatisch worden toegepast. Als bijvoorbeeld domein `mycompany.com` wordt toegevoegd aan de lijst met domeinen, is een lid met e-mailadres `me@mycompany.com` nooit beperkt tot het posten.
 
    Standaard is dit een lege lijst van gewenste personen.
 
