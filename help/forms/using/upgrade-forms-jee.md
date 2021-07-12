@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 0%
@@ -23,7 +22,7 @@ ht-degree: 0%
 
 Gebruik een van de volgende upgradepaden, al naar gelang uw omgeving.
 
-## AEM 6.2 Forms in JEE of AEM 6.3 Forms in JEE > AEM 6.4 Forms in JEE {#aem-forms-jee-62-63-to-64}
+## AEM 6.2 Forms in juni of AEM 6.3 Forms in juni > AEM 6.4 Forms in juni {#aem-forms-jee-62-63-to-64}
 
 Voer de volgende procedure uit om bestaande AEM 6.2 Forms op JEE of AEM 6.3 Forms op JEE aan AEM 6.4 Forms op JEE te bevorderen:
 
@@ -37,7 +36,7 @@ Voer de volgende procedure uit om bestaande AEM 6.2 Forms op JEE of AEM 6.3 Form
    * [Upgrade van AEM 6.2 of AEM 6.3 Forms naar AEM 6.4 Forms for WebSphere](assets/upgrade-websphere.pdf)
    * [Upgrade van AEM 6.2 of AEM 6.3 Forms naar AEM 6.4 Forms voor JBoss Turnkey](assets/upgrade-turnkey.pdf)
 
-## AEM 6.0 Forms op JEE > AEM 6.3 Forms op JEE {#aem-forms-jee-60-to-63}
+## AEM 6.0 Forms in juni > AEM 6.3 Forms in juni {#aem-forms-jee-60-to-63}
 
 Directe upgrade van LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms naar AEM 6.4 Forms is niet beschikbaar. U kunt een tussentijdse upgrade uitvoeren naar een of meer versies van LiveCycle of AEM Forms en vervolgens een upgrade uitvoeren vanaf AEM 6.4 Forms. Voor de lijst van tussenliggende versies en overeenkomstige verbeteringsinstructies, zie [Kies een verbeteringspad](upgrade.md).
 
