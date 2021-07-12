@@ -8,17 +8,16 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
-role: Administrator
+role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '7349'
+source-wordcount: '7347'
 ht-degree: 0%
 
 ---
 
-# Uw AEM Forms versterken op JEE-omgeving {#hardening-your-aem-forms-on-jee-environment}
+# AEM Forms versterken op JEE-omgeving {#hardening-your-aem-forms-on-jee-environment}
 
 Leer een verscheidenheid van veiligheid-verhardende montages om de veiligheid van AEM Forms op JEE te verbeteren die in een collectieve Intranet loopt.
 
@@ -44,7 +43,7 @@ U moet AEM Forms niet installeren of configureren op JEE met behulp van een hoof
 
 U moet de installatie in Windows als beheerder uitvoeren als u AEM Forms op JEE op JBoss installeert met de methode key turnkey of als u PDF Generator installeert. Wanneer u PDF Generator in Windows installeert met ondersteuning voor native toepassingen, moet u de installatie uitvoeren als dezelfde Windows-gebruiker die Microsoft Office heeft geïnstalleerd. Zie het document* AEM Forms installeren en implementeren op JEE* voor meer informatie over installatiemacht.
 
-### Beveiliging van netwerklagen {#network-layer-security}
+### Netwerklaagbeveiliging {#network-layer-security}
 
 De de veiligheidskwetsbaarheid van het netwerk is onder de eerste bedreigingen aan om het even welke Internet-Onder ogen ziet of intranet-Onder ogen ziet toepassingsserver. Deze sectie beschrijft het proces om gastheren op het netwerk tegen deze kwetsbaarheid te verharden. Het richt netwerksegmentatie, de stapelverharding van het Protocol van de Controle van de Transmissie/van Internet-protocol (TCP/IP), en het gebruik van firewalls voor gastheerbescherming.
 
@@ -82,7 +81,7 @@ De volgende lijst beschrijft gemeenschappelijke processen die de kwetsbaarheid v
  </tbody> 
 </table>
 
-### Beveiliging van besturingssysteem {#operating-system-security}
+### Beveiliging van besturingssystemen {#operating-system-security}
 
 In de volgende tabel worden enkele mogelijke benaderingen beschreven om beveiligingskwetsbaarheden die in het besturingssysteem zijn aangetroffen, tot een minimum te beperken.
 
@@ -150,7 +149,7 @@ In deze sectie worden technieken beschreven die u tijdens het AEM Forms-installa
  </tbody> 
 </table>
 
-## Stappen {#post-installation-steps} na de installatie
+## Stappen na de installatie {#post-installation-steps}
 
 Nadat u AEM Forms met succes op JEE installeert, is het belangrijk om het milieu uit veiligheidsperspectief periodiek te handhaven.
 
@@ -256,7 +255,7 @@ U kunt externe toegang tot alle services van de Trust Store uitschakelen door de
 
 Sommige diensten van de vormenserver hebben verrichtingen die door een anonieme bezoeker kunnen worden aangehaald. Als anonieme toegang tot deze diensten niet wordt vereist, maak het onbruikbaar door de stappen in [het onbruikbaar maken van niet-essentiële anonieme toegang tot de diensten](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services) te volgen.
 
-#### Wijzig het standaardbeheerderswachtwoord {#change-the-default-administrator-password}
+#### Het standaardbeheerderswachtwoord wijzigen {#change-the-default-administrator-password}
 
 Als AEM Forms op JEE is geïnstalleerd, wordt één standaardgebruikersaccount geconfigureerd voor de beheerder van de superbeheerder/aanmeldingsnaam van de gebruiker met een standaardwachtwoord van *password*. U zou dit wachtwoord onmiddellijk moeten veranderen gebruikend de Manager van de Configuratie.
 
@@ -289,7 +288,7 @@ Daarnaast wordt aangeraden het standaardwachtwoord voor CRX Administrator te wij
 1. Geef het nieuwe wachtwoord op in het veld **Nieuw wachtwoord** en het oude wachtwoord in het veld **Uw wachtwoord**.
 1. Klik op het pictogram Opslaan rechtsonder in de gebruikersinterface.
 
-#### WSDL-generatie {#disable-wsdl-generation} uitschakelen
+#### WSDL-generatie uitschakelen {#disable-wsdl-generation}
 
 De generatie van de Definitie van de Taal van de Dienst van het Web (WSDL) zou slechts voor ontwikkelomgevingen moeten worden toegelaten, waar de generatie WSDL door ontwikkelaars wordt gebruikt om hun cliënttoepassingen te bouwen. U kunt verkiezen om de generatie van WSDL in een productiemilieu onbruikbaar te maken vermijden blootstellend de interne details van de dienst.
 
@@ -335,7 +334,7 @@ Wanneer het beveiligen van uw gegevensbestand, zou u de maatregelen moeten uitvo
 
 Bij Oracle heeft de databaseaccount die u gebruikt alleen de bevoegdheden CONNECT, RESOURCE en CREATE VIEW nodig. Voor gelijkaardige vereisten op andere gegevensbestanden, zie [Voorbereidend om AEM Forms op (Enige Server) te installeren JEE](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
-#### Het vormen van geïntegreerde veiligheid voor SQL Server op Vensters voor JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
+#### Het vormen geïntegreerde veiligheid voor SQL Server op Vensters voor JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
 1. Wijzig [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} om `integratedSecurity=true` aan verbindingsURL, zoals aangetoond in dit voorbeeld toe te voegen:
 
@@ -380,7 +379,7 @@ Op WebSphere, kunt u geïntegreerde veiligheid vormen slechts wanneer u een exte
 1. Selecteer **Dit account** en geef de informatie op die nodig is om de aanmeldingsaccount in te stellen die u wilt gebruiken.
 1. Plaats Veiligheid op SQL Server van **Gemengd** wijze aan **de Authentificatie van Vensters slechts**.
 
-### Toegang tot gevoelige inhoud in de database {#protecting-access-to-sensitive-content-in-the-database} beveiligen
+### Toegang tot gevoelige inhoud in de database beveiligen {#protecting-access-to-sensitive-content-in-the-database}
 
 Het AEM Forms-databaseschema bevat gevoelige informatie over systeemconfiguratie en bedrijfsprocessen en moet achter de firewall worden verborgen. De database moet worden beschouwd binnen dezelfde vertrouwensgrens als de formulierserver. Om tegen informatieonthulling en diefstal van bedrijfsgegevens te beschermen, moet het gegevensbestand door de gegevensbestandbeheerder (DBA) worden gevormd om toegang slechts door erkende beheerders toe te staan.
 
@@ -629,11 +628,11 @@ Bepaalde URL&#39;s worden gemarkeerd als eindgebruikers gerichte webtoepassingen
  </tbody> 
 </table>
 
-## Beveiliging tegen aanvallen van smeedmachines voor meerdere sites {#protecting-from-cross-site-request-forgery-attacks}
+## Beveiligen tegen aanvallen met Smederij voor meerdere sites {#protecting-from-cross-site-request-forgery-attacks}
 
 Een CSRF-aanval (Cross-Site Request Svervalsing) misbruikt het vertrouwen dat een website heeft voor de gebruiker, om opdrachten door te geven die niet door de gebruiker zijn geautoriseerd en onbedoeld. De aanval wordt opstelling door een verbinding of een manuscript in een Web-pagina, of een URL in een e-mailbericht te omvatten, om tot een andere plaats toegang te hebben waaraan de gebruiker reeds voor authentiek is verklaard.
 
-U kunt bijvoorbeeld zijn aangemeld bij de beheerconsole terwijl u tegelijkertijd door een andere website bladert. Een van de webpagina&#39;s kan een HTML-afbeeldingstag met een `src`-kenmerk bevatten dat een serverscript aanwijst op de website van het slachtoffer. Door gebruik te maken van het op cookies gebaseerde mechanisme voor sessieverificatie dat door webbrowsers wordt geboden, kan de aanvallende website kwaadaardige verzoeken verzenden naar dit script op de server van het slachtoffer, waarbij de vraag als de legitieme gebruiker wordt gesteld. Zie [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples) voor meer voorbeelden.
+U kunt bijvoorbeeld zijn aangemeld bij de beheerconsole terwijl u tegelijkertijd door een andere website bladert. Een van de webpagina&#39;s kan een HTML-afbeeldingstag bevatten met een `src`-kenmerk dat een serverscript aanwijst op de website van het slachtoffer. Door gebruik te maken van het op cookies gebaseerde mechanisme voor sessieverificatie dat door webbrowsers wordt geboden, kan de aanvallende website kwaadaardige verzoeken verzenden naar dit script op de server van het slachtoffer, waarbij de vraag als de legitieme gebruiker wordt gesteld. Zie [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples) voor meer voorbeelden.
 
 De volgende kenmerken komen voor in KVP:
 
@@ -649,7 +648,7 @@ AEM Forms on JEE gebruikt de functie Filter referentie om CSRF-aanvallen te blok
 * **Toegestane URI&#39;s:** dit is een lijst met bronnen die moeten worden gebruikt zonder de koptekst van de verwijzer te controleren. De middelen, bijvoorbeeld, hulppagina&#39;s, die niet in staatsveranderingen op de server resulteren, kunnen aan deze lijst worden toegevoegd. De bronnen in de lijst Toegestane URI&#39;s worden nooit geblokkeerd door het filter Referrer, ongeacht wie de Referrer is.
 * **Null-verwijzing:** Een serveraanvraag die niet is gekoppeld aan of niet afkomstig is van een bovenliggende webpagina, wordt beschouwd als een aanvraag van een Null-referentie. Wanneer u bijvoorbeeld een nieuw browservenster opent, typt u een adres en drukt u op Enter, is de referentie die naar de server is verzonden null. Een Desktoptoepassing (.NET of SWING) die een HTTP- verzoek aan een Webserver indienen, verzendt ook een Null Referrer naar de server.
 
-### Refererfilter {#referer-filtering}
+### Filterverwijzing {#referer-filtering}
 
 Het filterproces Referrer kan als volgt worden beschreven:
 
@@ -780,7 +779,7 @@ Als de legitieme serververzoeken door het filter CSRF worden geblokkeerd, probee
 
 Deze sectie beschrijft de protocollen en de havens die door AEM Forms op JEE worden vereist en verstrekt aanbevelingen voor het opstellen van AEM Forms op JEE in een veilige netwerkconfiguratie.
 
-### Netwerkprotocollen gebruikt door AEM Forms op JEE {#network-protocols-used-by-aem-forms-on-jee}
+### De protocollen van het netwerk die door AEM Forms op JEE worden gebruikt {#network-protocols-used-by-aem-forms-on-jee}
 
 Wanneer u een veilige netwerkarchitectuur zoals die in de vorige sectie wordt beschreven vormt, worden de volgende netwerkprotocollen vereist voor interactie tussen AEM Forms op JEE en andere systemen in uw ondernemingsnetwerk.
 
@@ -922,13 +921,13 @@ Deze sectie beschrijft de standaardhavens (en afwisselende configuratiereiken) v
 
 Voor informatie over havens WebSphere die AEM Forms op JEE vereist, ga naar het aantal dat van de Haven in WebSphere de Server UI van de Toepassing plaatst.
 
-### SSL {#configuring-ssl} configureren
+### SSL configureren {#configuring-ssl}
 
 Verwijzend naar de fysieke architectuur die in de sectie [AEM Forms op fysieke architectuur JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture) wordt beschreven, zou u SSL voor alle verbindingen moeten vormen die u van plan bent te gebruiken. Specifiek, moeten alle verbindingen van de ZEEP over SSL worden geleid om blootstelling van gebruikersgeloofsbrieven op een netwerk te verhinderen.
 
 Voor instructies over hoe te om SSL op JBoss, WebLogic, en WebSphere te vormen, zie &quot;het Vormen SSL&quot;in [beleidshulp](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-### SSL omleiding configureren {#configuring-ssl-redirect}
+### SSL-omleiding configureren {#configuring-ssl-redirect}
 
 Nadat u uw toepassingsserver vormt om SSL te steunen, moet u ervoor zorgen dat al verkeer van HTTP aan toepassingen en de diensten wordt afgedwongen om de SSL haven te gebruiken.
 
@@ -940,7 +939,7 @@ Raadpleeg de documentatie bij de toepassingsserver voor informatie over SSL-omle
 
 1. Open het bestand JBOSS_HOME/standalone/configuration/standalone.xml voor bewerking.
 
-   Voeg de volgende details toe na het &lt;subsysteem xmlns=&quot;urn:jreliëf:domain:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;>-element:
+   Voeg de volgende details toe na het &lt;subsystem xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;>-element:
 
    &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot; />
 
@@ -958,11 +957,11 @@ Raadpleeg de documentatie bij de toepassingsserver voor informatie over SSL-omle
 
 Deze sectie bevat veiligheidsaanbevelingen die voor Vensters wanneer gebruikt specifiek zijn om AEM Forms op JEE in werking te stellen.
 
-### JBoss-servicerekeningen {#jboss-service-accounts}
+### JBoss-serviceaccounts {#jboss-service-accounts}
 
 Bij de turnkey-installatie van AEM Forms op JEE wordt standaard een serviceaccount ingesteld met behulp van de lokale systeemaccount. De ingebouwde gebruikersaccount voor het lokale systeem heeft een hoge mate van toegankelijkheid; het maakt deel uit van de groep Beheerders. Als de identiteit van een arbeidersproces als Lokale de gebruikersrekening van het Systeem loopt, heeft dat arbeidersproces volledige toegang tot het volledige systeem.
 
-#### De toepassingsserver uitvoeren met een niet-beheerdersaccount {#run-the-application-server-using-a-non-administrative-account}
+#### De toepassingsserver uitvoeren met een niet-beheeraccount {#run-the-application-server-using-a-non-administrative-account}
 
 1. In de Console van het Beheer van Microsoft (MMC), creeer een lokale gebruiker voor de dienst van de vormenserver om login als:
 
@@ -981,7 +980,7 @@ Bij de turnkey-installatie van AEM Forms op JEE wordt standaard een serviceaccou
 1. Geef de nieuwe gebruikersaccount lees- en uitvoermachtigingen, de inhoud van de map List en de machtiging Lezen aan AEM Forms op de JEE-directory&#39;s met webinhoud.
 1. Start de service van de toepassingsserver.
 
-### Beveiliging van bestandssysteem {#file-system-security}
+### Beveiliging bestandssysteem {#file-system-security}
 
 AEM Forms on JEE gebruikt het bestandssysteem op de volgende manieren:
 
@@ -995,11 +994,11 @@ Als u gecontroleerde mappen gebruikt als een manier om documenten met een servic
 
 Deze sectie bevat aanbevelingen voor de configuratie van toepassingsservers die specifiek zijn voor JBoss 7.0.6 wanneer deze wordt gebruikt om AEM Forms uit te voeren op JEE.
 
-### JBoss Management Console en JMX Console {#disable-jboss-management-console-and-jmx-console} uitschakelen
+### JBoss Management Console en JMX Console uitschakelen {#disable-jboss-management-console-and-jmx-console}
 
 De toegang tot de JBoss Management Console en de Console JMX is reeds gevormd (JMX controle wordt onbruikbaar gemaakt) wanneer u AEM Forms op JEE op JBoss door de kant-en-klare installatiemethode te gebruiken installeert. Als u uw eigen JBoss Server van de Toepassing gebruikt, zorg ervoor dat de toegang tot de Console van het Beheer JBoss en JMX controleconsole wordt beveiligd. De toegang tot de JMX controleconsole wordt geplaatst in het JBoss configuratiedossier genoemd jmx-invoker-service.xml.
 
-### Bladeren door directory&#39;s {#disable-directory-browsing} uitschakelen
+### Bladeren door directory&#39;s uitschakelen {#disable-directory-browsing}
 
 Na het registreren in de Console van het Beleid, is het mogelijk om de de folderlijst van de console te doorbladeren door URL te wijzigen. Als u bijvoorbeeld de URL wijzigt in een van de volgende URL&#39;s, wordt mogelijk een mappenlijst weergegeven:
 
@@ -1012,7 +1011,7 @@ https://<servername>:8080/um/
 
 Deze sectie bevat aanbevelingen voor de configuratie van toepassingsservers voor het beveiligen van WebLogic 9.1 wanneer AEM Forms wordt uitgevoerd op JEE.
 
-### Bladeren door directory&#39;s {#disable_directory_browsing-1} uitschakelen
+### Bladeren door directory&#39;s uitschakelen {#disable_directory_browsing-1}
 
 Stel de eigenschappen van de indexmappen in het bestand weblogic.xml in op `false`, zoals in dit voorbeeld:
 
@@ -1023,7 +1022,7 @@ Stel de eigenschappen van de indexmappen in het bestand weblogic.xml in op `fals
 </container-descriptor>
 ```
 
-### WebLogic SSL-poort {#enable-weblogic-ssl-port} inschakelen
+### WebLogic SSL-poort inschakelen {#enable-weblogic-ssl-port}
 
 Standaard schakelt WebLogic de standaard SSL-luisterpoort 7002 niet in. Schakel deze poort in de WebLogic Server Administration Console in voordat u SSL configureert.
 
@@ -1031,11 +1030,11 @@ Standaard schakelt WebLogic de standaard SSL-luisterpoort 7002 niet in. Schakel 
 
 Deze sectie bevat aanbevelingen voor de configuratie van de toepassingsserver om WebSphere te beveiligen die AEM Forms op JEE uitvoert.
 
-### Bladeren door directory&#39;s {#disable_directory_browsing-2} uitschakelen
+### Bladeren door directory&#39;s uitschakelen {#disable_directory_browsing-2}
 
 Stel de eigenschap `directoryBrowsingEnabled` in het bestand ibm-web-ext.xml in op `false`.
 
-### Beheersbeveiliging van WebSphere inschakelen {#enable-websphere-administrative-security}
+### Beveiliging van WebSphere-beheer inschakelen {#enable-websphere-administrative-security}
 
 1. Meld u aan bij de beheerconsole van WebSphere.
 1. Ga in de navigatiestructuur naar **Beveiliging** > **Algemene beveiliging**
