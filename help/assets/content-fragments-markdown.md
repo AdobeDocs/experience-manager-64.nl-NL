@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: Contentfragmenten
-role: Business Practitioner
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 4%
@@ -41,7 +41,7 @@ U kunt het volgende definiëren:
 * [Codeblokken](/help/assets/content-fragments-markdown.md#code-blocks)
 * [Backslash-escape](/help/assets/content-fragments-markdown.md#backslash-escapes)
 
-## Kopnotatie {#heading-notation}
+## Kop {#heading-notation}
 
 Een koptekst maken door een hashtag (#) vóór de kop te plaatsen. Eén hashtag (#) wordt gebruikt voor een H1-, twee hash-tags (##) voor een H2-tag, enzovoort. U kunt maximaal 6 hashtags gebruiken. Bijvoorbeeld:
 
@@ -115,7 +115,7 @@ Waarbij &quot;id&quot; de naam van een gedefinieerde afbeeldingsverwijzing is. V
 
     `[id]: url/to/image "Optional title attribute"`
 
-## Aanhalingstekens {#block-quotes} blokkeren
+## Aanhalingstekens blokkeren {#block-quotes}
 
 U kunt tekst aanhalen door het symbool > vóór de tekst toe te voegen. Bijvoorbeeld:
 
@@ -191,7 +191,7 @@ Codeblokken worden doorgaans gebruikt om broncode te illustreren. U kunt codeblo
 
         `This is a code block.`
 
-## Backslash {#backslash-escapes}
+## Backslash-escape {#backslash-escapes}
 
 Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
 
