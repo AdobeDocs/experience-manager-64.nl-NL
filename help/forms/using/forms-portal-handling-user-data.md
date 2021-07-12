@@ -8,17 +8,16 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
-role: Administrator
+role: Admin
 exl-id: 05dbb6ee-09fd-44ee-bb8b-a3f3ebb32f5a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
-# Forms Portal | Gebruikersgegevens {#forms-portal-handling-user-data} verwerken
+# Forms Portal | Gebruikersgegevens verwerken {#forms-portal-handling-user-data}
 
 Het AEM Forms-portaal biedt componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-elementen op de AEM Sites-pagina kunt weergeven. Daarnaast kunt u het configureren om concepten en verzonden adaptieve formulieren en HTML5-formulieren weer te geven voor een aangemelde gebruiker. Zie [Inleiding tot het publiceren van formulieren op een portal](/help/forms/using/introduction-publishing-forms.md) voor meer informatie over het portal Formulieren.
 
@@ -68,7 +67,7 @@ Afhankelijk van de geconfigureerde persistentie van de gegevensopslag worden con
 
 U kunt tot ontwerp en voorgelegde vormengegevens voor het programma geopende en anonieme gebruikers in de gevormde gegevensopslag toegang hebben, en indien nodig, het schrappen.
 
-### AEM instanties {#aem-instances}
+### AEM {#aem-instances}
 
 Alle concepten en verzonden formuliergegevens in AEM exemplaren (auteur, publicatie of extern) voor aangemelde en anonieme gebruikers worden opgeslagen in het knooppunt `/content/forms/fp/` van de toepasselijke AEM. Telkens wanneer een aangemelde of anonieme gebruiker een concept opslaat of een formulier verzendt, worden een `draft ID` of `submission ID`, een `user data ID` en een willekeurige `ID` voor elke bijlage (indien van toepassing) gegenereerd, die is gekoppeld aan het desbetreffende concept of de respectievelijke verzending.
 
@@ -94,7 +93,7 @@ In de volgende tabel wordt uitgelegd hoe de gegevens voor alle concepten van `sr
 | `/content/forms/fp/srose/drafts/data/` | Hiermee ordent u formuliergegevens voor de gebruiker op basis van de gebruikersnaam |
 | `/content/forms/fp/srose/drafts/data/<user data ID>` | Bevat formuliergegevens voor de geselecteerde gebruikersnaam in binaire indeling |
 
-#### Gebruikersgegevens {#delete-user-data} verwijderen
+#### Gebruikersgegevens verwijderen {#delete-user-data}
 
 Als u gebruikersgegevens uit concepten en verzendingen voor een aangemelde gebruiker wilt verwijderen uit AEM systemen, moet u het knooppunt `user ID` voor een specifieke gebruiker uit het auteurknooppunt verwijderen. U moet gegevens handmatig verwijderen uit alle toepasselijke AEM.
 
@@ -116,7 +115,7 @@ Om tot concepten en voorleggingsgegevens voor het programma geopende en anonieme
 select * from metadata, data, additionalmetadatatable where metadata.owner = 'logged-in user' and metadata.id = additionalmetadatatable.id and metadata.userdataID = data.id
 ```
 
-#### Gebruikersgegevens {#delete-user-data-1} verwijderen
+#### Gebruikersgegevens verwijderen {#delete-user-data-1}
 
 Als u concepten en verzendingsgegevens voor een aangemelde gebruiker wilt verwijderen uit de databasetabellen, voert u de volgende databaseopdracht uit. Vervang `logged-in user` in de query door de gebruikers-id waarvan u de gegevens wilt verwijderen of door `anonymous` voor anonieme gebruikers. Merk op dat om gegevens voor een bepaalde anonieme gebruiker van het gegevensbestand te schrappen, u het moet vinden gebruikend wat identificeerbare informatie en het schrappen van gegevensbestandlijsten die de informatie bevatten.
 
