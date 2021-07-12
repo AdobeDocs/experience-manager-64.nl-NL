@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
-role: Administrator
+role: Admin
 exl-id: 136c0913-c8b8-451d-bb28-3c3285c172a1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 0%
@@ -85,13 +84,13 @@ voor elke auteur en publiceer instantie, test de verbinding aan het gegevenscent
 
 * Ten slotte moet u ervoor zorgen dat de site-URL&#39;s voor profielgegevens vanuit het datacenter kunnen worden gerouteerd door koppelingen [extern te maken](#externalize-links).
 
-### Repliceer de Crypto Sleutel {#replicate-the-crypto-key}
+### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
 De Consumentensleutel en de Geheime Sleutel worden gecodeerd. De sleutels worden alleen correct gecodeerd/gedecodeerd als de primaire Crypto-sleutel van Granite op alle AEM gelijk is.
 
 Volg de instructies bij [Repliceer Crypto Key](deploy-communities.md#replicate-the-crypto-key).
 
-### Koppelingen {#externalize-links} extern maken
+### Koppelingen extern maken {#externalize-links}
 
 Voor correcte profiel en de verbindingen van het profielbeeld, ben zeker om [te vormen de Verbinding Externalzer](../../help/sites-developing/externalizer.md).
 
@@ -101,7 +100,7 @@ Ben zeker om de domeinen te plaatsen om URLs te zijn die van het Centrum URL van
 
 Opdat de authentificatie met het eindpunt van ASRP succesvol is, moeten de machines die uw ontvangen AEM Communities in werking stellen tijd gesynchroniseerd zijn, zoals met [het Protocol van de Tijd van het Netwerk (NTP)](https://www.ntp.org/).
 
-### De configuratie {#publishing-the-configuration} publiceren
+### De configuratie publiceren {#publishing-the-configuration}
 
 ASRP moet als gemeenschappelijke opslag op alle auteur en publiceer instanties worden geïdentificeerd.
 
@@ -118,7 +117,7 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
    * Selecteer **[!UICONTROL Activate]**
 
 
-## Bijwerken vanaf AEM 6.0 {#upgrading-from-aem}
+## Upgrade uitvoeren vanaf AEM 6.0 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
@@ -128,7 +127,7 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
 Vanwege de nieuwe opslagstructuur is het nodig om de [upgrade](upgrade.md#adobe-cloud-storage) instructies te volgen wanneer u een upgrade uitvoert van sociale gemeenschappen naar Gemeenschappen.
 
-## Gebruikersgegevens {#managing-user-data} beheren
+## Gebruikersgegevens beheren {#managing-user-data}
 
 Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, vaak ingevoerd in de publicatieomgeving, gaat u naar
 
