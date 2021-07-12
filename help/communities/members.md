@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
-role: Administrator
+role: Admin
 exl-id: 2d0154b3-4cd7-439a-869d-cb116f60b69d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 0%
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 Voor AEM Communities-functies moeten bezoekers van de site vaak worden geregistreerd en aangemeld voordat ze kunnen deelnemen aan een community in de publicatieomgeving. Hun gebruikersregistratie hoeft alleen te bestaan in de publicatieomgeving en wordt meestal *leden* genoemd om ze te onderscheiden van *gebruikers* die zijn geregistreerd in de auteursomgeving.
 
-### Leden (gebruikers) bij publicatie {#members-users-on-publish}
+### Leden (gebruikers) voor publicatie {#members-users-on-publish}
 
 Met behulp van de communityleden en -groepen kunnen leden en lidgroepen die zijn geregistreerd in de *publish*-omgeving worden gemaakt en beheerd vanuit de *auteur*-omgeving. Dit is alleen mogelijk wanneer de [tunnelservice](deploy-communities.md#tunnel-service-on-author) is ingeschakeld.
 
@@ -60,11 +59,11 @@ Selecteer het pictogram van het zijpaneel aan de linkerkant van de kopbal `Membe
 
 Selecteer het zoekpictogram aan de linkerkant van de koptekst `Members` om het venster met de zoekzijde gesloten te schakelen.
 
-### Lid-statistieken {#member-statistics}
+### Statistieken van de lidstaten {#member-statistics}
 
 De kolommen `Views`, `Posts`, `Follows`en `Likes` worden bijgewerkt wanneer de gebruiker lid is van een of meer communitysites met Adobe Analytics [enabled](sites-console.md#analytics).
 
-### CSV {#export-csv} exporteren
+### CSV exporteren {#export-csv}
 
 Als u de koppeling `Export CSV` selecteert, worden alle leden gedownload als een lijst met door komma&#39;s gescheiden waarden, die geschikt zijn voor importeren in een spreadsheet.
 
@@ -72,13 +71,13 @@ De kolomkoppen zijn
 
 `| Screen Name |Last Name |First Name |Status |Views |Posts |Follows |Likes |`
 
-## Nieuw lid {#create-new-member} maken
+## Nieuw lid maken {#create-new-member}
 
 Selecteer `Create Member` om een gebruiker in het publicatiemilieu tot stand te brengen.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### ALGEMEEN - Details lid {#general-member-details}
+### ALGEMEEN - Gegevens van de leden {#general-member-details}
 
 De meeste velden zijn optionele velden die leden later kunnen invullen in hun profiel.
 
@@ -159,7 +158,7 @@ Zie ook [Scores en Badges](implementing-scoring.md).
 * **[!UICONTROL Remove badges]**
    * Selecteer het prullenbakpictogram naast een badje om het te verwijderen
 
-## Groepenconsole {#groups-console}
+## Groepsconsole {#groups-console}
 
 De console van Groepen, beschikbaar bij het auteursmilieu, staat voor de verwezenlijking en het beheer van lidgroepen toe die in het publicatiemilieu worden geregistreerd. Het is met name nuttig voor:
 * [Geprivilegieerde ledengroepen](users.md#privilegedmembersgroups)
