@@ -7,9 +7,8 @@ user-guide-title: AEM 6.4 Handboek voor ontwerpen
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
 feature: Authoring
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 38%
@@ -17,7 +16,7 @@ ht-degree: 38%
 ---
 
 
-# AEM 6.4 Handboek ontwerpgebruiker {#authoring}
+# AEM 6.4 Handboek voor ontwerpen {#authoring}
 
 + [Overzicht van gebruikershandleiding voor ontwerpen](home.md)
 + Essentiële taken, gereedschappen en concepten voor AEM ontwerpen {#essentials}
