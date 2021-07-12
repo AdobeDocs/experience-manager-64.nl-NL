@@ -8,10 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
-role: Administrator
+role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -34,7 +33,7 @@ U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U 
 >
 >Zorg ervoor dat u lid bent van de groep `form-power-users` om XDP-bestanden te kunnen uploaden. Neem contact op met de beheerder om lid te worden van de groep.
 
-## Formulieren {#uploading-forms} uploaden
+## Formulieren uploaden {#uploading-forms}
 
 1. Meld u aan bij de AEM Forms-gebruikersinterface door `https://[server]:[port]/aem/forms.html` te openen.
 1. Navigeer naar de map waarin u het formulier of de map met formulieren wilt uploaden.
@@ -72,7 +71,7 @@ De beveiligde modus is standaard ingeschakeld. Indien nodig kunt u de beveiligde
 1. Open Mobile Forms Configurations voor bewerking.
 1. Schakel de optie Beveiligde modus uit en klik op **Opslaan**. De beveiligde modus is uitgeschakeld.
 
-## XFA-formulieren waarnaar wordt verwezen {#updating-referenced-xfa-forms} bijwerken
+## XFA-formulieren waarnaar wordt verwezen bijwerken {#updating-referenced-xfa-forms}
 
 In AEM Forms kan naar een XFA-formuliersjabloon worden verwezen door een adaptief formulier of een andere XFA-formuliersjabloon. Ook, kan een malplaatje naar een middel of een ander malplaatje verwijzen XFA.
 
