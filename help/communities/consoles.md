@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
-role: Administrator
+role: Admin
 exl-id: f31072dc-ad2d-4f2d-b222-05d7fb19e471
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -74,6 +73,6 @@ Als u toegang wilt krijgen tot de verschillende communautaire consoles, selectee
 
    De console van Middelen is waar [enablement managers](enablement.md#communitymanagers) creeer, beheer en wijs middelen aan leden van een [enablement communautaire plaats](overview.md#enablement-community) toe. De console is alleen beschikbaar in de auteursomgeving.
 
-## Gereedschapsconsole {#tools-console}
+## Tools Console {#tools-console}
 
 Om tot [Communities Tools](tools.md) (vroeger de beheersconsole), van globale navigatie toegang te hebben: **[!UICONTROL Tools > Communities]**
