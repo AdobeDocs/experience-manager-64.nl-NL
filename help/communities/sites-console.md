@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Administrator
+role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3127'
 ht-degree: 0%
 
 ---
 
-# Console {#communities-sites-console} voor sites van gemeenschappen
+# Sites-console van gemeenschappen {#communities-sites-console}
 
 De console van de Plaatsen van Gemeenschappen verleent toegang tot:
 
@@ -51,7 +50,7 @@ De beste praktijken, om ervoor te zorgen de plaats bereid is om vele eigenschapp
 * [Communautaire beheerders](users.md#creating-community-members) identificeren
 * [OAuth-](social-login.md#adobe-granite-oauth-authentication-handler) handler inschakelen voor aanmelden bij sociale media
 
-## Toegang tot console {#accessing-communities-sites-console} van Communitysites
+## Toegang tot de console met sites van Gemeenschappen {#accessing-communities-sites-console}
 
 In het auteursmilieu, om de console van de Plaatsen van Gemeenschappen te bereiken:
 
@@ -113,17 +112,17 @@ Selecteer **[!UICONTROL Next]**
 
 Het deelvenster Ontwerp bevat twee subdeelvensters voor het selecteren van het thema en de brandingbanner:
 
-#### THEMA VAN COMMUNAUTAIRE SITE {#community-site-theme}
+#### COMMUNAUTAIR SITE-THEMA {#community-site-theme}
 
 ![site-theme-1](assets/sitetheme-1.png)
 
-Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site een responsief, flexibel ontwerp te geven. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
+Het framework gebruikt [Twitter Bootstrap {a1/> om een responsief, flexibel ontwerp op de site te brengen. ](https://twitterbootstrap.org/) U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
 Nadat de communitysite is gepubliceerd, is het mogelijk om de eigenschappen [te bewerken en een ander thema te selecteren.](#modifying-site-properties)
 
-#### COMMUNAUTAIRE SITEBRANDING {#community-site-branding}
+#### COMMUNAUTAIRE SITOBRANDING {#community-site-branding}
 
 ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -202,7 +201,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
 * **[!UICONTROL Allow Social Logins: Facebook]**
 
-   Als deze optie is ingeschakeld, kunnen bezoekers van de site zich aanmelden met hun Facebook-accountgegevens. De geselecteerde [Facebook-cloudconfiguratie](social-login.md#create-a-facebook-connect-cloud-service) moet zo worden geconfigureerd dat gebruikers worden toegevoegd aan de ledengroep van de site van de community nadat de communitysite is gemaakt.
+   Als deze optie is ingeschakeld, kunnen sitebezoekers zich aanmelden met hun Facebook-accountgegevens. De geselecteerde [Facebook wolkenconfiguratie](social-login.md#create-a-facebook-connect-cloud-service) zou moeten worden gevormd om gebruikers aan de de ledengroep van de communautaire plaats toe te voegen zodra de communautaire plaats wordt gecreeerd.
 
    Als deze optie uitgeschakeld is, wordt geen Facebook-aanmelding weergegeven.
 
@@ -210,9 +209,9 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
 * **[!UICONTROL Allow Social Logins: Twitter]**
 
-   Als deze optie is ingeschakeld, kunnen bezoekers van de site zich aanmelden met hun Twitter-accountgegevens. De geselecteerde [Twitter wolkenconfiguratie](social-login.md#create-a-twitter-connect-cloud-service) zou moeten worden gevormd om gebruikers aan de de ledengroep van de communautaire plaats toe te voegen zodra de communautaire plaats wordt gecreeerd.
+   Als deze optie is ingeschakeld, kunnen sitebezoekers zich aanmelden met hun Twitter-accountgegevens. De geselecteerde [Twitter wolkenconfiguratie](social-login.md#create-a-twitter-connect-cloud-service) zou moeten worden gevormd om gebruikers aan de de ledengroep van de communautaire plaats toe te voegen zodra de communautaire plaats wordt gecreeerd.
 
-   Als deze optie uitgeschakeld is, wordt er geen Twitter-aanmelding weergegeven.
+   Als deze optie uitgeschakeld is, wordt geen Twitter-aanmelding weergegeven.
 
    Laat de *private*-communitysite uitgeschakeld. De optie Standaard is uitgeschakeld.
 
@@ -220,7 +219,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 >
 >**[!UICONTROL Allowing Social Logins]**
 >
->Hoewel er voorbeelden van Facebook- en Twitter-configuraties kunnen bestaan en kunnen worden geselecteerd, is het voor een [productieomgeving](../../help/sites-administering/production-ready.md) noodzakelijk om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [Sociale aanmelding bij Facebook en Twitter](social-login.md).
+>Hoewel voorbeelden van Facebook- en Twitter-configuraties kunnen bestaan en kunnen worden geselecteerd, is het voor een [productieomgeving](../../help/sites-administering/production-ready.md) noodzakelijk om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [Sociale aanmelding met Facebook en Twitter](social-login.md).
 
 #### TAGS {#tagging}
 
@@ -232,7 +231,7 @@ Bovendien beperkt het selecteren van tagnaamruimten voor de site van de communit
 
 * Zoekvak voor tekst: beginnen met typen om tags te identificeren die op de site mogen worden gebruikt
 
-#### ROLLEN {#roles}
+#### ROLES {#roles}
 
 ![chlimage_1-451](assets/chlimage_1-451.png)
 
@@ -284,7 +283,7 @@ De globale instelling voor het modereren van door gebruikers gegenereerde inhoud
 
    `Communities`Dit is het kadervoorbeeld van  [Analytics Configuration for Communities ](analytics.md#aem-analytics-framework-configuration) Featuresdocumentation.
 
-#### TRANSLATION {#translation}
+#### VERTALING {#translation}
 
 ![chlimage_1-455](assets/chlimage_1-455.png)
 
@@ -346,7 +345,7 @@ Selecteer een van de volgende opties
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
 
-#### INSCHAKELEN {#enablement}
+#### UITSCHAKELING {#enablement}
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -362,7 +361,7 @@ De `ENABLEMENT`montages zijn van toepassing wanneer het gekozen malplaatje van d
 
 Selecteer **[!UICONTROL Next]**.
 
-### Stap 4: Communitysite {#step-create-communities-site} maken
+### Stap 4: Communitysite maken {#step-create-communities-site}
 
 Als er aanpassingen nodig zijn, gebruikt u de knop **Terug** om deze aan te brengen.
 
@@ -409,7 +408,7 @@ De eigenschappen van een bestaande site die tijdens het maken van de site zijn o
 
 ![chlimage_1-463](assets/chlimage_1-463.png)
 
-### Basis {#modify-basic} wijzigen
+### Basis wijzigen {#modify-basic}
 
 Met het BASIC-deelvenster kunt u
 
@@ -422,7 +421,7 @@ Het kiezen van een verschillend malplaatje van de communautaire plaats zou geen 
 
 In plaats daarvan kan de [STRUCTUUR](#modify-structure) van de communitysite worden gewijzigd.
 
-### Structuur {#modify-structure} wijzigen
+### Structuur wijzigen {#modify-structure}
 
 In het deelvenster STRUCTUUR kunt u de structuur wijzigen die oorspronkelijk is gemaakt op basis van de geselecteerde communitysitesjabloon. Vanuit het deelvenster kunt u
 
@@ -459,11 +458,11 @@ In het deelvenster STRUCTUUR kunt u de structuur wijzigen die oorspronkelijk is 
 >
 >Elke andere functie, zoals de [paginafunctie](functions.md#page-function), moet worden opgenomen en als eerste worden vermeld.
 
-#### Voorbeeld: Een catalogusfunctie toevoegen aan een locatiestructuur {#example-adding-a-catalog-function-to-a-community-site-structure}
+#### Voorbeeld: Een catalogusfunctie toevoegen aan een community-sitestructuur {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![chlimage_1-464](assets/chlimage_1-464.png)
 
-### Ontwerp {#modify-design} wijzigen
+### Ontwerp wijzigen {#modify-design}
 
 In het deelvenster ONTWERP kunt u een nieuw thema toepassen:
 
@@ -471,7 +470,7 @@ In het deelvenster ONTWERP kunt u een nieuw thema toepassen:
 * [Gemeenschapsmerk](#community-site-branding)
    * Schuif naar de onderkant van het deelvenster om de afbeelding van het merk te wijzigen
 
-### Instellingen {#modify-settings} wijzigen
+### Instellingen wijzigen {#modify-settings}
 
 In het deelvenster INSTELLINGEN hebt u toegang tot de meeste instellingen onder de subdeelvensters van Stap 3 van het maken van de communitysite:
 
@@ -482,17 +481,17 @@ In het deelvenster INSTELLINGEN hebt u toegang tot de meeste instellingen onder 
 * [Analyse](#analytics)
 * [Vertaling](#translation)
 
-### Miniatuur {#modify-thumbnail} wijzigen
+### Miniatuur wijzigen {#modify-thumbnail}
 
 In het deelvenster MINIATUUR kunt u een afbeelding uploaden om de site in de console Sites van Gemeenschappen weer te geven.
 
-### Inschakelen {#modify-enablement} wijzigen
+### Inschakelen wijzigen {#modify-enablement}
 
 Met het deelvenster ENABLEMENT hebt u toegang tot de instellingen die zijn opgegeven tijdens het maken van de site van de community.
 
 Zie de beschrijving [ENABLEMENT](#enablement).
 
-## De site {#publishing-the-site} publiceren
+## De site publiceren {#publishing-the-site}
 
 Nadat een communitysite net is gemaakt of gewijzigd, is het mogelijk om de site te publiceren (activeren) door het pictogram `Publish Site` te selecteren, dat verschijnt als u de muisaanwijzer op de site plaatst.
 
@@ -506,14 +505,14 @@ Er verschijnt een indicatie nadat de site is gepubliceerd.
 
 Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subgemeenschap (genestelde groep) individueel te publiceren die gebruikend [de console van Groepen](groups.md) wordt gecreeerd.
 
-## De site {#exporting-the-site} exporteren
+## De site exporteren {#exporting-the-site}
 
 ![chlimage_1-467](assets/chlimage_1-467.png)
 
 Selecteer het exportpictogram als u de muisaanwijzer op de site plaatst om een pakket van de communitysite te maken dat zowel in [pakketbeheer](../../help/sites-administering/package-manager.md) wordt opgeslagen als wordt gedownload.\
 UGC is niet opgenomen in het sitepakket.
 
-## De site {#deleting-the-site} verwijderen
+## De site verwijderen {#deleting-the-site}
 
 ![deleteicon-1](assets/deleteicon-1.png)
 
@@ -540,7 +539,7 @@ Zie [Gebruikers en gebruikersgroepen beheren](users.md) voor meer informatie.
 >
 >* community-*&lt;site-name>*-*&lt;uid>*-members
 
-is gemaakt, moet de toegepaste [Facebook-cloudservice](social-login.md#createafacebookcloudservice) zo worden geconfigureerd dat gebruikers aan deze groep worden toegevoegd.
+wordt gecreeerd, zou de toegepaste [Facebook wolkendienst](social-login.md#createafacebookcloudservice) moeten worden gevormd om gebruikers aan deze groep toe te voegen.
 
 ## Configureren voor verificatiefout {#configure-for-authentication-error}
 
@@ -567,7 +566,7 @@ Om correct om te leiden, zodra een plaats is gevormd en ertoe aangezet om te pub
 
 ![chlimage_1-468](assets/chlimage_1-468.png)
 
-### Omleiding van testverificatie {#test-authentication-redirection}
+### Omleiding van verificatie testen {#test-authentication-redirection}
 
 Op zelfde AEM publiceer instantie die met een login paginaplaat voor de communautaire plaats wordt gevormd:
 
@@ -581,7 +580,7 @@ Op zelfde AEM publiceer instantie die met een login paginaplaat voor de communau
 
 ![chlimage_1-469](assets/chlimage_1-469.png)
 
-## Toegang tot communautaire sites vanuit de hoofdsiteconsole {#accessing-community-sites-from-main-sites-console}
+## Toegang tot communitysites vanuit de hoofdsiteconsole {#accessing-community-sites-from-main-sites-console}
 
 Vanuit de globale console van navigatiesites bevinden communitysites zich in de map `Community Sites`.
 
