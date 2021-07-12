@@ -10,10 +10,9 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+feature: Contentfragmenten
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 4%
@@ -32,7 +31,7 @@ Inhoudsfragmenten worden opgeslagen als **[!UICONTROL Assets]**, zodat ze voorna
 >
 >Inhoudsfragmenten worden vervolgens gebruikt bij het ontwerpen van pagina&#39;s. zie [Pagina-authoring met inhoudfragmenten](/help/sites-authoring/content-fragments.md).
 
-## Inhoudsfragmenten {#creating-content-fragments} maken
+## Inhoudsfragmenten maken {#creating-content-fragments}
 
 ### Een inhoudsmodel maken {#creating-a-content-model}
 
@@ -42,7 +41,7 @@ Inhoudsfragmenten worden opgeslagen als **[!UICONTROL Assets]**, zodat ze voorna
 >
 >Zie [Inhoudsfragmenten ontwikkelen](/help/sites-developing/customizing-content-fragments.md) voor meer informatie over sjablonen. worden gebruikt voor eenvoudige inhoudsfragmenten.
 
-### Een inhoudsfragment {#creating-a-content-fragment} maken
+### Een inhoudsfragment maken {#creating-a-content-fragment}
 
 De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voor eenvoudige en gestructureerde fragmenten:
 
@@ -165,7 +164,7 @@ Uw fragment openen voor bewerken:
    >
    >Zowel **[!UICONTROL Save]** als **[!UICONTROL Cancel]** zullen de redacteur weggaan - zie [sparen, annuleert en Versies](#save-cancel-and-versions) voor volledige informatie over hoe beide opties voor inhoudfragmenten werken.
 
-## Opslaan, annuleren en versies {#save-cancel-and-versions}
+## Opslaan, Annuleren en versies {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -216,11 +215,11 @@ Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gema
 1. Als de gebruiker de bewerking **[!UICONTROL Cancel]** selecteert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt het token verwijderd om de bewerkingssessie te beëindigen.
 1. Als de gebruiker de bewerkingen op **[!UICONTROL Save]** selecteert, blijven de bijgewerkte elementen/variaties bestaan en wordt het token verwijderd om de bewerkingssessie te beëindigen.
 
-## De inhoud van het fragment {#editing-the-content-of-your-fragment} bewerken
+## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
 Nadat u het fragment hebt geopend, kunt u het tabblad [Variaties](content-fragments-variations.md) gebruiken om de inhoud te ontwerpen.
 
-## Variaties maken en beheren in het fragment {#creating-and-managing-variations-within-your-fragment}
+## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
 
 Als u de Master inhoud hebt gemaakt, kunt u [Variaties](content-fragments-variations.md) van die inhoud maken en beheren.
 
@@ -228,7 +227,7 @@ Als u de Master inhoud hebt gemaakt, kunt u [Variaties](content-fragments-variat
 
 U kunt ook [inhoud](content-fragments-assoc-content.md) aan een fragment koppelen. Dit biedt een verbinding zodat elementen (d.w.z. afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 
-## De metagegevens (eigenschappen) van het fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment} weergeven en bewerken
+## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 U kunt de eigenschappen van een fragment weergeven en bewerken met het tabblad [[!UICONTROL Metadata]](content-fragments-metadata.md).
 
@@ -296,7 +295,7 @@ Zij worden naast elkaar weergegeven, waarbij:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Terugkeren naar een versie {#reverting-to-a-version}
+## Een versie herstellen  {#reverting-to-a-version}
 
 U kunt terugkeren naar een specifieke versie van het fragment:
 
@@ -306,7 +305,7 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
 * Als [een versie wordt vergeleken met de huidige versie](content-fragments-managing.md#comparing-fragment-versions), kunt u **[!UICONTROL Revert]** vergelijken met de geselecteerde versie.
 
-## Een fragment {#publishing-and-referencing-a-fragment} publiceren en ernaar verwijzen
+## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 >
@@ -323,7 +322,7 @@ Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgevi
 >
 >Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
-## Een fragment {#deleting-a-fragment} verwijderen
+## Een fragment verwijderen {#deleting-a-fragment}
 
 Een fragment verwijderen:
 
