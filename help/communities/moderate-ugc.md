@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
-role: Administrator
+role: Admin
 exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 1%
 
 ---
 
-# Modernisering van communautaire inhoud {#moderating-community-content}
+# Communautaire inhoud moderniseren {#moderating-community-content}
 
 ## Overzicht {#overview}
 
@@ -133,7 +132,7 @@ Een anonieme gebruiker
  </tbody>
 </table>
 
-### {#edit-delete} bewerken/verwijderen
+### Bewerken/verwijderen {#edit-delete}
 
 Nadat een post is gemaakt, kan het door de schepper, een beheerder of een communautaire moderator worden uitgegeven of worden geschrapt.
 
@@ -155,7 +154,7 @@ Op de andere locatie, wanneer inhoud op het klembord aanwezig is, wordt naast Ni
 
 Een moderator kan toestaan UGC om zichtbaar op de gepubliceerde plaats te blijven. Voor beheerders en moderatoren van de gemeenschap, is de post nog beschikbaar en geannoteerd als spam.
 
-### {#close-reopen} sluiten/opnieuw openen
+### Sluiten/Opnieuw openen {#close-reopen}
 
 De dichte actie werkt op de volledige draad van gesprek (een forumonderwerp of de aanvankelijke commentaar) en het omvat alle verdere posten of antwoorden.
 
@@ -165,7 +164,7 @@ Om het even welke verrichtingen uit te voeren, moet het onderwerp of de commenta
 
 De close/Reopen actie kan door beheerders of communautaire moderatoren worden genomen.
 
-### Markering/markering {#flag-unflag}
+### Markering/markering ongedaan maken {#flag-unflag}
 
 Markering is een manier om aan te geven dat er een probleem is met de inhoud van een bericht, met uitzondering van de maker van de inhoud. Als de markering eenmaal is aangebracht, wordt een pictogram onder vlag weergegeven, zodat hetzelfde lid de markering van de inhoud kan opheffen.
 
@@ -173,11 +172,11 @@ In-context de matiging kan worden gevormd om leden toe te staan om een reden te 
 
 Het systeem houdt alle vlaggen bij, die zijn gemarkeerd en de reden van de vlag en verzendt een gebeurtenis wanneer de drempel is bereikt. Als UGC door een communautaire moderator wordt toegestaan, worden deze vlaggen gearchiveerd. Nadat het toestaan en het archiveren, als er verdere vlaggen zijn, zouden zij worden gearchiveerd alsof er geen vorige vlaggen waren geweest.
 
-### {#allow} toestaan
+### Toestaan {#allow}
 
 De actie Toestaan is een optie voor UGC die is gemarkeerd, geweigerd of niet is goedgekeurd in een vooraf gemoderniseerd systeem. Met de actie Toestaan worden alle gemarkeerde of ontkende/spamstatus gewist en worden alle gemarkeerde gegevens gearchiveerd.
 
-## Veelvoorkomende moderniseringsconcepten {#common-moderation-concepts}
+## Vaak Moderniseringsconcepten {#common-moderation-concepts}
 
 ### Premoderatie {#premoderation}
 
@@ -189,7 +188,7 @@ Wanneer de UGC wordt voorgezeten, zal de post niet op de gepubliceerde plaats ve
 
 * [Forum](forum.md),  [ideatie](ideation-feature.md),  [QnA](working-with-qna.md), en  [](calendar.md) kalendaron  **[!UICONTROL Settings]** tabel, controle  **[!UICONTROL Moderated]**
 
-### Spamdetectie {#spam-detection}
+### Spam-detectie {#spam-detection}
 
 Spam-detectie is een automatische moderatiefunctionaliteit die ongewenste stukken van door de gebruiker gegenereerde inhoud filtert door deze als spam te markeren. Zodra toegelaten, identificeert het of een gebruiker geproduceerde inhoud spam of niet gebaseerd op een pre-gevormde inzameling van spamwoorden is. De standaardspamwoorden worden verstrekt bij
 
@@ -237,7 +236,7 @@ Zodra geanalyseerd, wordt het sentiment bewaard met UGC.
 
 Vanuit de [bulkmoderatieconsole](moderation.md), is het mogelijk om UGC te filtreren en te bekijken gebaseerd op of het sentiment negatief, neutraal, of positief is.
 
-#### Watchwords {#watchwords}
+#### Wachtwoorden {#watchwords}
 
 AEM gemeenschappen verstrekken een *watchword analysator *als stap in het proces om [sentiment](#sentiment) te evalueren. De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
 
