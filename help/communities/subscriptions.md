@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
+role: Admin
 exl-id: 8a756328-0405-49b7-b94d-3dd5a87c782a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -63,7 +62,7 @@ De **Follow** knoop zal `Email Subscriptions` optie slechts omvatten wanneer een
 
    * Wordt een e-mail verzonden wanneer er activiteit is voor dat specifieke item
 
-## Reageren via e-mail {#reply-by-email}
+## Reageren per e-mail {#reply-by-email}
 
 Als e-mail [geconfigureerd is voor het beantwoorden via e-mail](email.md#configure-polling-importer), ontvangt het lid dat zich heeft geabonneerd een e-mail met de geposte inhoud en een koppeling naar de online-inhoud.
 
