@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
-role: Administrator
+role: Admin
 exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
 
 ---
 
-# Communitymeldingen {#communities-notifications}
+# Publikaties {#communities-notifications}
 
 ## Overzicht {#overview}
 
@@ -65,7 +64,7 @@ Let op:
 
 * De profielen van lidstaten worden reeds gevormd om andere leden toe te staan om te volgen
 
-## Meldingen van volgende {#notifications-from-following}
+## Meldingen van: {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -81,7 +80,7 @@ De knop **Volg** verschijnt
 * Voor een specifiek bericht, zoals een forumonderwerp, een QnA-vraag of een blogartikel
    * Hiermee wordt alle activiteit voor die specifieke vermelding gevolgd
 
-## Meldingsinstellingen {#managing-notification-settings} beheren
+## Meldingsinstellingen beheren {#managing-notification-settings}
 
 Als u de koppeling Instellingen kennisgeving op de pagina Meldingen selecteert, kan elk lid bepalen hoe meldingen worden ontvangen.
 
@@ -99,7 +98,7 @@ Het kan door een lid worden aangezet, maar nog hangt van e-mail af die wordt gev
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
-## Meldingen {#viewing-notifications} weergeven
+## Meldingen weergeven {#viewing-notifications}
 
 ### Webmeldingen {#web-notifications}
 
