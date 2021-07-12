@@ -7,17 +7,16 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
-role: Administrator
+role: Admin
 exl-id: 8cbace00-c354-4f37-a781-04cadd441419
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 0%
 
 ---
 
-# Forms JEE-workflows | Gebruikersgegevens {#forms-jee-workflows-handling-user-data} verwerken
+# Forms JEE-workflows | Gebruikersgegevens verwerken {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE-workflows bieden tools voor het ontwerpen, maken en beheren van bedrijfsprocessen. Een workflowproces bestaat uit een reeks stappen die in een opgegeven volgorde worden uitgevoerd. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Een proces kan met activa, gebruikersrekeningen, en de diensten in wisselwerking staan, en kan worden teweeggebracht gebruikend om het even welke volgende methodes:
 
@@ -43,7 +42,7 @@ U kunt de procesinstantie-id voor een initiator echter niet identificeren in de 
 * **Proces dat is gestart vanaf AEM publicatie-instantie**: Alle procesinstanties die worden geactiveerd via AEM publicatieinstantie, leggen geen informatie over de initiator vast. Gebruikersgegevens kunnen echter worden vastgelegd in het formulier dat is gekoppeld aan het proces, dat is opgeslagen in workflowvariabelen.
 * **Verwerking gestart via e-mail**: De e-mailid van de afzender wordt vastgelegd als een eigenschap in een ondoorzichtige blob-kolom van de  `tb_job_instance` databasetabel, die niet rechtstreeks kan worden gecontroleerd.
 
-### Id&#39;s van procesinstanties identificeren wanneer de initiator of deelnemer van de workflow bekend is {#initiator-participant}
+### Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is {#initiator-participant}
 
 Voer de volgende stappen uit om procesinstantie-id&#39;s voor een workflowaanvrager of een deelnemer te identificeren:
 
@@ -142,7 +141,7 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
    Met de methode `purgeProcessInstance` worden alle gegevens voor de opgegeven oproepings-id volledig verwijderd uit de AEM Forms-serverdatabase en GDS, indien geconfigureerd.
 
-### Werken met weestaken {#orphan}
+### Werken met wezen {#orphan}
 
 Orphan-taken zijn de taken waarvan het omvattende proces is gestart maar nog niet is ingediend. in dit geval is `process_instance_id` **0** (nul). Daarom kunt u gebruikersgegevens die voor wezen taken worden opgeslagen niet volgen gebruikend procesinstantie IDs. Nochtans, kunt u het vinden gebruikend taakidentiteitskaart voor een wezen taak. U kunt de taken-id&#39;s van de tabel `tb_task` voor een gebruiker identificeren zoals wordt beschreven in [Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
