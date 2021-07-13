@@ -1,17 +1,17 @@
 ---
 title: De invoegtoepassingen van de Rich Text Editor configureren
-description: Leer om de AEM Rich Text Editor stop-ins te vormen om individuele functionaliteit toe te laten.
+description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
 workflow-type: tm+mt
-source-wordcount: '4191'
+source-wordcount: '4201'
 ht-degree: 0%
 
 ---
 
-# Plug-ins {#configure-the-rich-text-editor-plug-ins} van de Rich Text Editor configureren
+
+# De invoegtoepassingen van de Rich Text Editor configureren {#configure-the-rich-text-editor-plug-ins}
 
 De functionaliteit van RTE wordt beschikbaar gemaakt via een reeks stop-ins, elk met eigenschappen bezit. U kunt het eigenschapbezit vormen om, één of meerdere eigenschappen van RTE toe te laten of onbruikbaar te maken. Dit artikel beschrijft hoe te om de stop-ins specifiek te vormen RTE.
 
@@ -19,9 +19,9 @@ Voor details over de andere configuraties RTE, zie [Rich Text Editor](/help/site
 
 >[!NOTE]
 >
->Als u met CRXDE Lite werkt, is het raadzaam de wijzigingen regelmatig op te slaan met Alles opslaan.
+>Als u met CRXDE Lite werkt, wordt aangeraden de wijzigingen regelmatig op te slaan met de optie [!UICONTROL Save All].
 
-## Een insteekmodule activeren en de eigenschap features {#activateplugin} configureren
+## Een insteekmodule activeren en de eigenschap features configureren {#activateplugin}
 
 Voer de volgende stappen uit om een plug-in te activeren. Sommige stappen zijn alleen nodig wanneer u een insteekmodule voor het eerst configureert, omdat de bijbehorende knooppunten niet bestaan.
 
@@ -29,7 +29,7 @@ Standaard zijn `format`, `link`, `list`, `justify` en `control` plug-ins en alle
 
 >[!NOTE]
 >
->Het respectievelijke knooppunt rtePlugins wordt &lt;*rtePlugins-node*>> genoemd om duplicatie in dit artikel te voorkomen.
+>Het respectieve `rtePlugins` knooppunt wordt bedoeld als `<rtePlugins-node>` om dubbel werk in dit artikel te vermijden.
 
 1. Zoek met CRXDE Lite de tekstcomponent voor uw project.
 1. Creeer de ouderknoop van `<rtePlugins-node>` als het niet bestaat, alvorens om het even welke stop-ins te vormen RTE:
@@ -52,7 +52,7 @@ Standaard zijn `format`, `link`, `list`, `justify` en `control` plug-ins en alle
    * **Naam** `rtePlugins`
    * **Type** `nt:unstructured`
 
-1. Maak een knooppunt voor elke plug-in die u wilt activeren:
+1. Maak hieronder een knooppunt voor elke plug-in die u wilt activeren:
 
    * **Type** `nt:unstructured`
    * **Geef** de plug-in-id van de vereiste plug-in op.
@@ -96,36 +96,33 @@ Wanneer u de vervangingsfunctie gebruikt, moet de te vervangen tekenreeks op het
 
 Het dialoogvenster Zoeken en vervangen wordt transparant wanneer op Zoeken wordt geklikt en wordt dekkend wanneer op Vervangen wordt geklikt. Hierdoor kan de auteur de tekst controleren die de auteur vervangt. Als gebruikers op Alles vervangen klikken, wordt het dialoogvenster gesloten en wordt het aantal aangebrachte vervangingen weergegeven.
 
-## De plakmodi {#pastemodes} configureren
+## De plakmodi configureren {#pastemodes}
 
 Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende drie wijzen kleven:
 
 * **Browsermodus**: Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan.
 
-* **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in AEM component worden ingevoegd.
+* **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de component [!DNL Experience Manager] worden ingevoegd.
 
 * **MS Word-modus**: Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak.
 
-### De beschikbare plakopties op de RTE-werkbalk configureren {#configure-paste-options-available-on-the-rte-toolbar}
+### De beschikbare plakopties op de werkbalk RTE configureren  {#configure-paste-options-available-on-the-rte-toolbar}
 
 U kunt sommige, alle, of geen van deze drie pictogrammen aan uw auteurs in de toolbar van RTE verstrekken:
 
 * **[!UICONTROL Paste (Ctrl+V)]**: Kan vooraf worden geconfigureerd voor een van de drie bovenstaande plakmodi.
 
-* **[!UICONTROL Paste as Text]**: Biedt functionaliteit voor de normale tekstmodus.
+* **[!UICONTROL Paste as Text]**: Geeft functionaliteit voor de modus Onbewerkte tekst.
 
 * **[!UICONTROL Paste from Word]**: Biedt functionaliteit in de modus MS Word.
 
 Om RTE te vormen om de vereiste pictogrammen te tonen, volg deze stappen.
 
-1. Navigeer naar de component; bijvoorbeeld:
-
-   `/apps/<myProject>/components/text`
-
+1. Navigeer naar de component, bijvoorbeeld `/apps/<myProject>/components/text`.
 1. Navigeer naar het knooppunt `rtePlugins/edit`. Zie [Een insteekmodule activeren](#activateplugin) als het knooppunt niet bestaat.
 1. Maak de eigenschap `features` op het knooppunt `edit` en voeg een of meer functies toe. Sla alle wijzigingen op.
 
-### Het gedrag van het pictogram Plakken (Ctrl+V) en de sneltoets {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut} configureren
+### Het gedrag van het pictogram en de sneltoets Plakken (Ctrl+V) configureren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
 U kunt het gedrag van het pictogram **[!UICONTROL Paste (Ctrl+V)]** vooraf configureren door de volgende stappen uit te voeren. Deze configuratie definieert ook het gedrag van sneltoetsen Ctrl+V die auteurs gebruiken om inhoud te plakken.
 
@@ -144,7 +141,7 @@ De configuratie staat voor de volgende drie soorten gebruiksgevallen toe:
    * **Type** `String`
    * **** ValueOne van de vereiste plakwijze  `browser`,  `plaintext`of  `wordhtml`.
 
-### Configureer de toegestane indelingen bij het plakken van inhoud {#pasteformats}
+### Indelingen configureren die zijn toegestaan bij het plakken van inhoud {#pasteformats}
 
 De plakken-als-Microsoft-Word (`paste-wordhtml`) wijze kan verder worden gevormd zodat u kunt uitdrukkelijk bepalen welke stijlen worden toegestaan wanneer het kleven in AEM van een ander programma, zoals Microsoft Word.
 
@@ -179,55 +176,21 @@ Om te vormen welke formaten worden toegestaan wanneer het kleven van tekst in AE
    Alle eigenschappen zijn van **Type** `Boolean`, zodat kunt u in de juiste **Waarde** het vinkje selecteren of verwijderen om de functionaliteit in of uit te schakelen.
 
    >[!NOTE]
-   Indien niet expliciet gedefinieerd, wordt de standaardwaarde true gebruikt en wordt de opmaak geaccepteerd.
+   >
+   >Indien niet expliciet gedefinieerd, wordt de standaardwaarde true gebruikt en wordt de opmaak geaccepteerd.
 
-1. Andere indelingen kunnen ook worden gedefinieerd met behulp van een reeks andere eigenschappen of knooppunten, die ook worden toegepast op het knooppunt `htmlPasteRules`:
+1. Andere indelingen kunnen ook worden gedefinieerd met behulp van een reeks andere eigenschappen of knooppunten, die ook worden toegepast op het knooppunt `htmlPasteRules`. Sla alle wijzigingen op.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Eigenschap</strong></td> 
-   <td><strong>Type</strong></td> 
-   <td><strong>Beschrijving</strong></td> 
-  </tr> 
-  <tr> 
-   <td>allowBlockTags</td> 
-   <td>Tekenreeks[]</td> 
-   <td><p>Hiermee definieert u de lijst met blokcodes die zijn toegestaan.</p> <p>Mogelijke blokcodes zijn onder andere:</p> 
-    <ul> 
-     <li>koppen (h1, h2, h3)</li> 
-     <li>lid p)</li> 
-     <li>lijsten (ol, ul)</li> 
-     <li>tabellen (tabel)</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>fallbackBlockTag</td> 
-   <td>Tekenreeks</td> 
-   <td><p>Definieert de bloktag die wordt gebruikt voor blokken met een bloktag die niet in allowBlockTags zijn opgenomen.</p> <p> p is in de meeste gevallen voldoende.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>table</td> 
-   <td>nt:ongestructureerd</td> 
-   <td><p>Bepaalt het gedrag wanneer het kleven van lijsten.<br /> </p> <p>Dit knooppunt moet de eigenschap <code>allow</code> (type <code>Boolean</code>) hebben om te bepalen of het plakken van tabellen is toegestaan.</p> <p>Als <code>allow</code> aan <code>false</code> wordt geplaatst, moet u het bezit <code>ignoreMode</code> (type<code> String</code>) specificeren om te bepalen hoe de gekleefde lijstinhoud wordt behandeld. Geldige waarden voor <code>ignoreMode</code> zijn:</p> 
-    <ul> 
-     <li><code>remove</code>: Hiermee verwijdert u tabelinhoud.</li> 
-     <li><code>paragraph</code>: Hiermee zet u tabelcellen om in alinea's.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>list</td> 
-   <td>nt:ongestructureerd</td> 
-   <td><p>Hiermee definieert u het gedrag bij het plakken van lijsten.<br /> </p> <p>U moet de eigenschap <code>allow</code> (type <code>Boolean</code>) hebben om te definiëren of het plakken van lijsten is toegestaan.</p> <p>Als <code>allow</code> aan <code>false</code> wordt geplaatst, moet u het bezit <code>ignoreMode</code> (type <code>String</code>) specificeren om te bepalen hoe te om het even welke gekleefde lijstinhoud te behandelen. Geldige waarden voor <code>ignoreMode</code> zijn:</p> 
-    <ul> 
-     <li><code>remove</code>: Hiermee verwijdert u de inhoud van de lijst.</li> 
-     <li><code>paragraph</code>: Hiermee zet u lijstitems om in alinea's.</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+U kunt de volgende eigenschappen gebruiken voor `htmlPasteRules`.
 
-Voorbeeld van een geldige `htmlPasteRules`-structuur:
+| Eigenschap | Type | Beschrijving |
+|---|---|---|
+| `allowBlockTags` | Tekenreeks | Hiermee definieert u de lijst met blokcodes die zijn toegestaan. Enkele mogelijke blokcodes zijn: <ul> <li>koppen (h1, h2, h3)</li> <li>lid p)</li> <li>lijsten (ol, ul)</li> <li>tabellen (tabel)</li> </ul> |
+| `fallbackBlockTag` | Tekenreeks | Definieert de bloktag die wordt gebruikt voor alle blokken met een bloktag die niet in `allowBlockTags` zijn opgenomen. `p` in de meeste gevallen voldoende. |
+| table | nt:ongestructureerd | Hiermee definieert u het gedrag bij het plakken van tabellen. Dit knooppunt moet de eigenschap `allow` (type Boolean) hebben om te bepalen of het plakken van tabellen is toegestaan. Als allow is ingesteld op `false`, moet u de eigenschap `ignoreMode` (type String) opgeven om te bepalen hoe geplakte tabelinhoud wordt afgehandeld. Geldige waarden voor `ignoreMode` zijn: <ul> <li>`remove`: Hiermee verwijdert u tabelinhoud.</li> <li>`paragraph`: Hiermee zet u tabelcellen om in alinea&#39;s.</li> </ul> |
+| list | nt:ongestructureerd | Hiermee definieert u het gedrag bij het plakken van lijsten. U moet de eigenschap `allow` (type Boolean) hebben om te definiëren of het plakken van lijsten is toegestaan. Wanneer `allow` is ingesteld op `false`, moet u de eigenschap `ignoreMode` (type String) opgeven om te definiëren hoe inhoud uit de lijst moet worden verwerkt. Geldige waarden voor `ignoreMode` zijn: <ul><li> `remove`: Hiermee verwijdert u de inhoud van de lijst.</li> <li>`paragraph`: Hiermee zet u lijstitems om in alinea&#39;s.</li> </ul> |
+
+Hieronder ziet u een voorbeeld van een geldige `htmlPasteRules`-structuur.
 
 ```xml
 "htmlPasteRules": {
@@ -249,13 +212,9 @@ Voorbeeld van een geldige `htmlPasteRules`-structuur:
 }
 ```
 
-1. Sla alle wijzigingen op.
-
 ## Tekststijlen configureren {#textstyles}
 
-Auteurs kunnen stijlen toepassen om de weergave van een deel van de tekst te wijzigen. De stijlen zijn gebaseerd op CSS-klassen die u vooraf definieert in uw CSS-stijlpagina. Stileerde inhoud wordt ingesloten in `span`-tags met behulp van het `class`-kenmerk om naar de CSS-klasse te verwijzen. Bijvoorbeeld:
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Auteurs kunnen stijlen toepassen om de weergave van een deel van de tekst te wijzigen. De stijlen zijn gebaseerd op CSS-klassen die u vooraf definieert in uw CSS-stijlpagina. Stileerde inhoud wordt ingesloten in `span`-tags met behulp van het `class`-kenmerk om naar de CSS-klasse te verwijzen. Bijvoorbeeld, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Wanneer de plug-in Stijlen voor de eerste keer is ingeschakeld, zijn er geen standaardstijlen beschikbaar. De pop-uplijst is leeg. Ga als volgt te werk om de auteurs stijlen te voorzien:
 
@@ -263,12 +222,13 @@ Wanneer de plug-in Stijlen voor de eerste keer is ingeschakeld, zijn er geen sta
 * Geef de locatie(s) van de stijlpagina(&#39;s) op.
 * Geef de afzonderlijke stijlen op die u kunt selecteren in de vervolgkeuzelijst Stijl.
 
-Voor latere (re-)configuraties, zeg om meer stijlen toe te voegen, volg slechts de instructies om naar een nieuw stijlblad te verwijzen en de extra stijlen te specificeren.
+Voor latere configuraties, bijvoorbeeld om meer stijlen toe te voegen, volg slechts de instructies om naar een nieuw stijlblad te verwijzen en de extra stijlen te specificeren.
 
 >[!NOTE]
-Stijlen kunnen ook worden gedefinieerd voor [tabellen of tabelcellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Deze configuraties vereisen afzonderlijke procedures.
+>
+>U kunt Stijlen voor [lijsten of lijstcellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles) bepalen. Deze configuraties vereisen afzonderlijke procedures.
 
-### De vervolgkeuzelijst Stijl {#styleselectorlist} inschakelen
+### De vervolgkeuzelijst Stijl inschakelen {#styleselectorlist}
 
 Hiervoor schakelt u de insteekmodule Stijlen in.
 
@@ -282,9 +242,10 @@ Hiervoor schakelt u de insteekmodule Stijlen in.
 1. Sla alle wijzigingen op.
 
 >[!NOTE]
-Zodra de plug-in Stijlen is ingeschakeld, wordt de vervolgkeuzelijst Stijl weergegeven in het dialoogvenster Bewerken. De lijst is echter leeg omdat er geen stijlen zijn geconfigureerd.
+>
+>Zodra de plug-in Stijlen is ingeschakeld, wordt de vervolgkeuzelijst Stijl weergegeven in het dialoogvenster Bewerken. De lijst is echter leeg omdat er geen stijlen zijn geconfigureerd.
 
-### De locatie van het stijlblad opgeven {#locationofstylesheet}
+### De locatie van de stijlpagina opgeven {#locationofstylesheet}
 
 Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verwijzen:
 
@@ -296,17 +257,22 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
 
    >[!NOTE]
-   U kunt op elk later moment verwijzingen naar extra stijlbladen toevoegen.
+   >
+   >U kunt op elk later moment verwijzingen naar extra stijlbladen toevoegen.
 
 1. Sla alle wijzigingen op.
 
 >[!NOTE]
-Wanneer u RTE gebruikt in een dialoogvenster (klassieke gebruikersinterface), kunt u stijlpagina&#39;s opgeven die zijn geoptimaliseerd voor RTF-bewerking. Vanwege technische beperkingen gaat de CSS-context verloren in de editor, dus u kunt deze context emuleren om de WYSIWYG-ervaring te verbeteren.
-De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identiteitskaart van `CQrte` die kan worden gebruikt om verschillende stijlen voor het bekijken en het uitgeven te verstrekken:
-`#CQ td {`
-` // defines the style for viewing }`
-`#CQrte td {`
-` // defines the style for editing }`
+>
+>Wanneer u RTE gebruikt in een dialoogvenster (klassieke gebruikersinterface), kunt u stijlpagina&#39;s opgeven die zijn geoptimaliseerd voor RTF-bewerking. Vanwege technische beperkingen gaat de CSS-context verloren in de editor, dus u kunt deze context emuleren om de WYSIWYG-ervaring te verbeteren.
+>
+>De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identiteitskaart van `CQrte` die kan worden gebruikt om verschillende stijlen voor het bekijken en het uitgeven te verstrekken:
+>
+>`#CQ td {`
+>` // defines the style for viewing }`
+>
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### Geef de beschikbare stijlen op in de pop-uplijst {#stylesindropdown}
 
@@ -337,15 +303,17 @@ De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identi
 
    Herhaal bovenstaande stappen voor elke vereiste stijl.
 
-## De alineaopmaak {#paraformats} configureren
+## Alinea-indelingen configureren {#paraformats}
 
 Om het even welke tekst authored in RTE wordt geplaatst binnen een blokmarkering, het gebrek is `<p>`. Als u de insteekmodule `paraformat` inschakelt, geeft u via een vervolgkeuzelijst aanvullende blokcodes op die aan alinea&#39;s kunnen worden toegewezen. Alineaopmaak bepaalt het alineatype door de juiste bloktag toe te wijzen. De auteur kan deze selecteren en toewijzen met de kiezer Indeling. De voorbeeldbloklabels omvatten onder andere de standaardalinea &lt;p> en koppen &lt;h1>, &lt;h2> enzovoort.
 
 >[!CAUTION]
-Deze plug-in is niet geschikt voor inhoud met een complexe structuur, zoals lijsten of tabellen.
+>
+>Deze plug-in is niet geschikt voor inhoud met een complexe structuur, zoals lijsten of tabellen.
 
 >[!NOTE]
-Als een bloktag, bijvoorbeeld een tag &lt;hr>, niet aan een alinea kan worden toegewezen, is dit geen geldig gebruiksgeval voor een insteekmodule voor paraformat.
+>
+>Als een bloktag, bijvoorbeeld een tag &lt;hr>, niet aan een alinea kan worden toegewezen, is dit geen geldig gebruiksgeval voor een insteekmodule voor paraformat.
 
 Wanneer de insteekmodule Alineopmaak voor het eerst is ingeschakeld, zijn er geen standaardalineaopmaak beschikbaar. De pop-uplijst is leeg. Ga als volgt te werk om de auteurs alineaopmaak te bieden:
 
@@ -354,7 +322,7 @@ Wanneer de insteekmodule Alineopmaak voor het eerst is ingeschakeld, zijn er gee
 
 Voor latere (re-)configuraties, zeg om meer formaten toe te voegen, volg slechts het relevante deel van de instructies.
 
-### De keuzelijst Indeling {#formatselectorlist} inschakelen
+### De keuzelijst Indeling inschakelen {#formatselectorlist}
 
 Schakel eerst de paraformat-plug-in in:
 
@@ -377,7 +345,7 @@ Als de plug-in niet verder is geconfigureerd, zijn de volgende standaardindeling
 >[!CAUTION]
 Wanneer het vormen van de paragraafformaten van RTE, verwijder niet de paragraafmarkering &lt;p> als het formatteren optie. Als de tag &lt;p> wordt verwijderd, kan de auteur van de inhoud de optie **Alinea-indelingen** niet selecteren, zelfs niet als er extra indelingen zijn geconfigureerd.
 
-### Geef de beschikbare alineaopmaak op {#paraformatsindropdown}
+### Beschikbare alineaopmaak opgeven {#paraformatsindropdown}
 
 Alinea-indelingen kunnen voor selectie beschikbaar worden gesteld door:
 
@@ -413,7 +381,7 @@ Alinea-indelingen kunnen voor selectie beschikbaar worden gesteld door:
 >[!CAUTION]
 Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<h1>`, `<h2>` en `<h3>`) verwijderd. Maak de `<p>`-indeling opnieuw omdat dit de standaardindeling is.
 
-## Speciale tekens {#spchar} configureren
+## Speciale tekens configureren {#spchar}
 
 Wanneer in een standaard AEM-installatie de `misctools`-plug-in is ingeschakeld voor speciale tekens (`specialchars`), is er direct een standaardselectie beschikbaar voor gebruik. bijvoorbeeld de symbolen copyright en trademark.
 
@@ -458,9 +426,9 @@ Als u uw eigen speciale tekens toevoegt, wordt de standaardselectie genegeerd. D
 
 Nadat het bezit wordt bewaard, wordt het vertegenwoordigde karakter getoond in CRXDE. Zie het voorbeeld van de helft hieronder. Herhaal bovenstaande stappen om meer speciale tekens beschikbaar te maken voor de auteurs.
 
-![In CRXDE, voeg één enkel karakter toe dat op de toolbar van RTE ter beschikking moet worden gesteld](assets/chlimage_1-412.png)
+![In CRXDE, voeg één enkel karakter toe dat op RTE ](assets/chlimage_1-412.png "toolbarIn CRXDE ter beschikking moet worden gesteld, voeg één enkel karakter toe dat op de toolbar van RTE ter beschikking moet worden gesteld")
 
-In CRXDE, voeg één enkel karakter toe dat op de toolbar van RTE ter beschikking moet worden gesteld
+
 
 ### Een tekenbereik definiëren {#definerangechar}
 
@@ -602,7 +570,7 @@ Een standaard AEM installatie omvat de woordenboeken voor Amerikaans Engels (`en
 De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Als u de spellingcontrole wilt uitvoeren, klikt u op [!UICONTROL Spellchecker] op de werkbalk. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
 Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
 
-## De historiegrootte configureren voor het ongedaan maken en opnieuw uitvoeren van handelingen {#undohistory}
+## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 
 Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitvoeren. Standaard worden 50 bewerkingen opgeslagen in de geschiedenis. U kunt deze waarde naar wens configureren.
 
@@ -618,7 +586,7 @@ Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitv
 
 1. Sla de wijzigingen op.
 
-## De tabgrootte {#tabsize} configureren
+## De tabgrootte configureren {#tabsize}
 
 Wanneer het tabteken wordt ingedrukt binnen tekst, wordt een vooraf gedefinieerd aantal spaties ingevoegd. Dit zijn standaard drie vaste spaties en één spatie. De tabgrootte definiëren:
 
@@ -631,7 +599,7 @@ Wanneer het tabteken wordt ingedrukt binnen tekst, wordt een vooraf gedefinieerd
 
 1. Sla de wijzigingen op.
 
-## Inspringingsmarge {#indentmargin} instellen
+## Inspringingsmarge instellen {#indentmargin}
 
 Wanneer inspringing is ingeschakeld (standaard), kunt u de grootte van de inspringing definiëren:
 
@@ -645,7 +613,7 @@ Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst).
    * **Type**:  `Long`
    * **Waarde**: aantal pixels vereist voor de inspringingsmarge
 
-## De hoogte van bewerkbare ruimte {#editablespace} configureren
+## De hoogte van bewerkbare ruimte configureren {#editablespace}
 
 U kunt de hoogte van de bewerkbare ruimte definiëren die in het dialoogvenster van de component wordt weergegeven:
 
@@ -739,7 +707,7 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
 
          * **Naam** `targetInternal`
          * **Type** `String`
-         * **Waarde** van het doel voor interne koppelingen (alleen gebruiken als de modus &quot;is  `auto`)
+         * **Waarde** van het doel voor interne koppelingen (alleen gebruiken als de modus is  `auto`)
       * Het doel voor externe koppelingen:
 
          * **Naam** `targetExternal`
