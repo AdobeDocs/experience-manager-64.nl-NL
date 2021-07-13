@@ -2,11 +2,10 @@
 title: Metagegevens bewerken of toevoegen
 description: Meer informatie over metagegevens van elementen in AEM Assets en verschillende manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
+feature: Metagegevens
+role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 7%
@@ -19,7 +18,7 @@ Metagegevens zijn aanvullende informatie over het element die kan worden doorzoc
 
 Omdat bedrijven gecontroleerde en betrouwbare taalwoordenboeken voor metagegevens nodig hebben, staat AEM Assets het niet toe om ad-hocnieuwe eigenschappen voor metagegevens toe te voegen. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [Nieuwe eigenschap metagegevens maken voor elementen](meta-edit.md#editing-metadata-schema).
 
-## Metagegevens voor een element {#editing-metadata-for-an-asset} bewerken
+## Metagegevens voor een element bewerken {#editing-metadata-for-an-asset}
 
 Metagegevens bewerken:
 
@@ -47,7 +46,7 @@ XMP terugschrijven wordt gesteund en toegelaten voor de platforms en dossierform
 
 Zie [Formulieren met metagegevens bewerken](metadata-schemas.md#editing-metadata-schema-forms) voor meer informatie over het bewerken van het schema voor metagegevens.
 
-## Een aangepaste naamruimte registreren in AEM {#registering-a-custom-namespace-within-aem}
+## Een aangepaste naamruimte registreren binnen AEM {#registering-a-custom-namespace-within-aem}
 
 U kunt uw eigen naamruimten toevoegen binnen AEM. Net zoals er vooraf gedefinieerde naamruimten zijn, zoals cq, jcr en sling, kunt u een naamruimte hebben voor de metagegevens van de gegevensopslagruimte en de verwerking van de xml.
 
