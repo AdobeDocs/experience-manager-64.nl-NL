@@ -3,9 +3,9 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
+source-git-commit: 9d1d6357c79e864e1fef89f713534dd074cf20ab
 workflow-type: tm+mt
-source-wordcount: '4201'
+source-wordcount: '4195'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Nadat u een insteekmodule hebt geactiveerd, volgt u deze richtlijnen om de eigen
   <tr> 
    <td><strong>Type</strong></td> 
    <td>Tekenreeks</td> 
-   <td>String[] (multi-string; Stel Type in op String en klik op Meerdere in CRXDE Lite)</td> 
+   <td>String (multi-string; Stel Type in op String en klik op Meerdere in CRXDE Lite)</td> 
    <td>Tekenreeks</td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ Nadat u een insteekmodule hebt geactiveerd, volgt u deze richtlijnen om de eigen
  </tbody> 
 </table>
 
-## Begrijp de findreplace plug-in {#understand--findreplace-plugin}
+## Begrijp de findreplace plug-in {#understand-findreplace-plugin}
 
 Voor de `findreplace` plug-in is geen configuratie nodig. Het werkt uit de doos.
 
@@ -96,7 +96,7 @@ Wanneer u de vervangingsfunctie gebruikt, moet de te vervangen tekenreeks op het
 
 Het dialoogvenster Zoeken en vervangen wordt transparant wanneer op Zoeken wordt geklikt en wordt dekkend wanneer op Vervangen wordt geklikt. Hierdoor kan de auteur de tekst controleren die de auteur vervangt. Als gebruikers op Alles vervangen klikken, wordt het dialoogvenster gesloten en wordt het aantal aangebrachte vervangingen weergegeven.
 
-## De plakmodi configureren {#pastemodes}
+## De plakmodi configureren {#paste-modes}
 
 Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende drie wijzen kleven:
 
@@ -106,7 +106,7 @@ Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende
 
 * **MS Word-modus**: Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak.
 
-### De beschikbare plakopties op de werkbalk RTE configureren  {#configure-paste-options-available-on-the-rte-toolbar}
+### De beschikbare plakopties op de werkbalk RTE configureren  {#configure-paste-options-toolbar}
 
 U kunt sommige, alle, of geen van deze drie pictogrammen aan uw auteurs in de toolbar van RTE verstrekken:
 
@@ -122,7 +122,7 @@ Om RTE te vormen om de vereiste pictogrammen te tonen, volg deze stappen.
 1. Navigeer naar het knooppunt `rtePlugins/edit`. Zie [Een insteekmodule activeren](#activateplugin) als het knooppunt niet bestaat.
 1. Maak de eigenschap `features` op het knooppunt `edit` en voeg een of meer functies toe. Sla alle wijzigingen op.
 
-### Het gedrag van het pictogram en de sneltoets Plakken (Ctrl+V) configureren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Het gedrag van het pictogram en de sneltoets Plakken (Ctrl+V) configureren {#configure-paste-icon-shortcut}
 
 U kunt het gedrag van het pictogram **[!UICONTROL Paste (Ctrl+V)]** vooraf configureren door de volgende stappen uit te voeren. Deze configuratie definieert ook het gedrag van sneltoetsen Ctrl+V die auteurs gebruiken om inhoud te plakken.
 
@@ -141,14 +141,14 @@ De configuratie staat voor de volgende drie soorten gebruiksgevallen toe:
    * **Type** `String`
    * **** ValueOne van de vereiste plakwijze  `browser`,  `plaintext`of  `wordhtml`.
 
-### Indelingen configureren die zijn toegestaan bij het plakken van inhoud {#pasteformats}
+### Indelingen configureren die zijn toegestaan bij het plakken van inhoud {#paste-formats}
 
 De plakken-als-Microsoft-Word (`paste-wordhtml`) wijze kan verder worden gevormd zodat u kunt uitdrukkelijk bepalen welke stijlen worden toegestaan wanneer het kleven in AEM van een ander programma, zoals Microsoft Word.
 
 Als u bijvoorbeeld alleen vette indelingen en lijsten wilt toestaan bij het plakken in AEM, kunt u de andere indelingen filteren. Dit wordt configureerbare het kleven het filtreren genoemd, die voor allebei kan worden gedaan:
 
-* [Tekst](#pastemodes)
-* [Koppelingen](#linkstyles)
+* [Tekst](#paste-modes)
+* [Koppelingen](#link-styles)
 
 Voor koppelingen kunt u ook de protocollen definiëren die automatisch worden geaccepteerd.
 
@@ -212,7 +212,7 @@ Hieronder ziet u een voorbeeld van een geldige `htmlPasteRules`-structuur.
 }
 ```
 
-## Tekststijlen configureren {#textstyles}
+## Tekststijlen configureren {#text-styles}
 
 Auteurs kunnen stijlen toepassen om de weergave van een deel van de tekst te wijzigen. De stijlen zijn gebaseerd op CSS-klassen die u vooraf definieert in uw CSS-stijlpagina. Stileerde inhoud wordt ingesloten in `span`-tags met behulp van het `class`-kenmerk om naar de CSS-klasse te verwijzen. Bijvoorbeeld, `<span class=monospaced>Monospaced Text Here</span>`.
 
@@ -226,9 +226,9 @@ Voor latere configuraties, bijvoorbeeld om meer stijlen toe te voegen, volg slec
 
 >[!NOTE]
 >
->U kunt Stijlen voor [lijsten of lijstcellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles) bepalen. Deze configuraties vereisen afzonderlijke procedures.
+>U kunt Stijlen voor [lijsten of lijstcellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles) bepalen. Deze configuraties vereisen afzonderlijke procedures.
 
-### De vervolgkeuzelijst Stijl inschakelen {#styleselectorlist}
+### De vervolgkeuzelijst Stijl inschakelen {#style-selector-list}
 
 Hiervoor schakelt u de insteekmodule Stijlen in.
 
@@ -245,7 +245,7 @@ Hiervoor schakelt u de insteekmodule Stijlen in.
 >
 >Zodra de plug-in Stijlen is ingeschakeld, wordt de vervolgkeuzelijst Stijl weergegeven in het dialoogvenster Bewerken. De lijst is echter leeg omdat er geen stijlen zijn geconfigureerd.
 
-### De locatie van de stijlpagina opgeven {#locationofstylesheet}
+### De locatie van de stijlpagina opgeven {#location-stylesheet}
 
 Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verwijzen:
 
@@ -262,21 +262,19 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 
 1. Sla alle wijzigingen op.
 
->[!NOTE]
->
->Wanneer u RTE gebruikt in een dialoogvenster (klassieke gebruikersinterface), kunt u stijlpagina&#39;s opgeven die zijn geoptimaliseerd voor RTF-bewerking. Vanwege technische beperkingen gaat de CSS-context verloren in de editor, dus u kunt deze context emuleren om de WYSIWYG-ervaring te verbeteren.
->
->De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identiteitskaart van `CQrte` die kan worden gebruikt om verschillende stijlen voor het bekijken en het uitgeven te verstrekken:
->
->`#CQ td {`
->` // defines the style for viewing }`
->
->`#CQrte td {`
->` // defines the style for editing }`
+Wanneer u RTE gebruikt in een dialoogvenster (Klassieke UI), kunt u opmaakmodellen opgeven die zijn geoptimaliseerd voor het bewerken van tekst met opmaak. Vanwege technische beperkingen gaat de CSS-context verloren in de editor, zodat u deze context kunt emuleren om de WYSIWYG-ervaring te verbeteren. De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identiteitskaart van `CQrte` die kan worden gebruikt om verschillende stijlen voor het bekijken en het uitgeven te verstrekken:
 
-### Geef de beschikbare stijlen op in de pop-uplijst {#stylesindropdown}
+```TXT
+#CQ td {
+// defines the style for viewing }
 
-1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/styles`, zoals gecreeerd in [Toelatend de stijldrop-down selecteur](#styleselectorlist).
+#CQrte td {
+// defines the style for editing }
+```
+
+### Geef de beschikbare stijlen op in de pop-uplijst {#styles-popup-list}
+
+1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/styles`, zoals gecreeerd in [Toelatend de stijldrop-down selecteur](#style-selector-list).
 1. Onder de knoop `styles`, creeer een nieuw knoop (ook genoemd `styles`) om de lijst te houden die beschikbaar wordt gemaakt:
 
    * **Naam** `styles`
@@ -303,7 +301,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 
    Herhaal bovenstaande stappen voor elke vereiste stijl.
 
-## Alinea-indelingen configureren {#paraformats}
+## Alinea-indelingen configureren {#para-formats}
 
 Om het even welke tekst authored in RTE wordt geplaatst binnen een blokmarkering, het gebrek is `<p>`. Als u de insteekmodule `paraformat` inschakelt, geeft u via een vervolgkeuzelijst aanvullende blokcodes op die aan alinea&#39;s kunnen worden toegewezen. Alineaopmaak bepaalt het alineatype door de juiste bloktag toe te wijzen. De auteur kan deze selecteren en toewijzen met de kiezer Indeling. De voorbeeldbloklabels omvatten onder andere de standaardalinea &lt;p> en koppen &lt;h1>, &lt;h2> enzovoort.
 
@@ -322,9 +320,9 @@ Wanneer de insteekmodule Alineopmaak voor het eerst is ingeschakeld, zijn er gee
 
 Voor latere (re-)configuraties, zeg om meer formaten toe te voegen, volg slechts het relevante deel van de instructies.
 
-### De keuzelijst Indeling inschakelen {#formatselectorlist}
+### De keuzelijst Indeling inschakelen {#format-selector-list}
 
-Schakel eerst de paraformat-plug-in in:
+Schakel eerst de `paraformat`-plug-in in:
 
 1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/paraformat`. Maak de knooppunten als deze niet bestaan. Zie [Een plug-in activeren](#activateplugin) voor meer informatie.
 1. Maak de eigenschap `features` op het knooppunt `paraformat`:
@@ -345,11 +343,11 @@ Als de plug-in niet verder is geconfigureerd, zijn de volgende standaardindeling
 >[!CAUTION]
 Wanneer het vormen van de paragraafformaten van RTE, verwijder niet de paragraafmarkering &lt;p> als het formatteren optie. Als de tag &lt;p> wordt verwijderd, kan de auteur van de inhoud de optie **Alinea-indelingen** niet selecteren, zelfs niet als er extra indelingen zijn geconfigureerd.
 
-### Beschikbare alineaopmaak opgeven {#paraformatsindropdown}
+### Beschikbare alineaopmaak opgeven {#para-formats-popup}
 
 Alinea-indelingen kunnen voor selectie beschikbaar worden gesteld door:
 
-1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/paraformat`, zoals gecreeerd in [Het toelaten van de formaatdrop-down selecteur](#styleselectorlist).
+1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/paraformat`, zoals gecreeerd in [Het toelaten van de formaatdrop-down selecteur](#style-selector-list).
 1. Onder de `paraformat` knoop creeer een nieuw knooppunt, om de lijst van formaten te houden:
 
    * **Naam** `formats`
@@ -381,7 +379,7 @@ Alinea-indelingen kunnen voor selectie beschikbaar worden gesteld door:
 >[!CAUTION]
 Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<h1>`, `<h2>` en `<h3>`) verwijderd. Maak de `<p>`-indeling opnieuw omdat dit de standaardindeling is.
 
-## Speciale tekens configureren {#spchar}
+## Speciale tekens configureren {#special-char}
 
 Wanneer in een standaard AEM-installatie de `misctools`-plug-in is ingeschakeld voor speciale tekens (`specialchars`), is er direct een standaardselectie beschikbaar voor gebruik. bijvoorbeeld de symbolen copyright en trademark.
 
@@ -390,7 +388,7 @@ U kunt RTE vormen om uw eigen selectie van karakters beschikbaar te maken; of do
 >[!CAUTION]
 Als u uw eigen speciale tekens toevoegt, wordt de standaardselectie genegeerd. Definieer deze tekens desgewenst (opnieuw) in uw eigen selectie.
 
-### Eén teken definiëren {#definesinglechar}
+### Eén teken definiëren {#define-single-char}
 
 1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/misctools`. Maak de knooppunten als deze niet bestaan. Zie [Een plug-in activeren](#activateplugin) voor meer informatie.
 1. Maak de eigenschap `features` op het knooppunt `misctools`:
@@ -430,9 +428,9 @@ Nadat het bezit wordt bewaard, wordt het vertegenwoordigde karakter getoond in C
 
 
 
-### Een tekenbereik definiëren {#definerangechar}
+### Een tekenbereik definiëren {#define-range-char}
 
-1. Gebruik stap 1 tot en met 3 van [Eén teken definiëren](#definesinglechar).
+1. Gebruik stap 1 tot en met 3 van [Eén teken definiëren](#define-single-char).
 1. Voeg onder `chars` een nieuw knooppunt toe voor de definitie van het tekenbereik:
 
    * **** U kunt de naam opgeven, maar deze moet wel het tekenbereik weerspiegelen. bijvoorbeeld potloden .
@@ -462,7 +460,7 @@ Nadat het bezit wordt bewaard, wordt het vertegenwoordigde karakter getoond in C
 
          *Speciale tekens die beschikbaar zijn in RTE worden weergegeven aan auteurs in een pop-upvenster*
 
-## Tabelstijlen configureren {#tablestyles}
+## Tabelstijlen configureren {#table-styles}
 
 Stijlen worden doorgaans toegepast op tekst, maar een aparte set stijlen kan ook worden toegepast op een tabel of op een paar tabelcellen. Dergelijke stijlen zijn beschikbaar voor auteurs in het selectievak Stijl in het dialoogvenster Eigenschappen van cel of Tabeleigenschappen. De stijlen zijn beschikbaar wanneer het uitgeven van een lijst binnen een component van de Tekst (of een derivaat) en niet in de standaardcomponent van de Lijst.
 
@@ -488,12 +486,12 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
       * `cellprops` om het bewerken van celeigenschappen mogelijk te maken, inclusief de stijlen.
 
 
-1. Definieer de locatie van CSS-stijlpagina&#39;s om deze te verwijzen. Zie [De locatie van het stijlblad opgeven](#locationofstylesheet) omdat dit hetzelfde is als wanneer [stijlen voor tekst worden gedefinieerd](#textstyles). De locatie kan worden gedefinieerd als u andere stijlen hebt gedefinieerd.
+1. Definieer de locatie van CSS-stijlpagina&#39;s om deze te verwijzen. Zie [De locatie van het stijlblad opgeven](#location-stylesheet) omdat dit hetzelfde is als wanneer [stijlen voor tekst worden gedefinieerd](#text-styles). De locatie kan worden gedefinieerd als u andere stijlen hebt gedefinieerd.
 1. Onder de `table` knoop creeer de volgende nieuwe knopen (zoals vereist):
 
    * Stijlen definiëren voor de gehele tabel (beschikbaar onder **Tabeleigenschappen**):
 
-      * **Naam** `tableStyles`
+      * **Naam** `table-styles`
       * **Type** `cq:WidgetCollection`
    * Stijlen definiëren voor de afzonderlijke cellen (beschikbaar onder **Celeigenschappen**):
 
@@ -501,7 +499,7 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
       * **Type** `cq:WidgetCollection`
 
 
-1. Maak een nieuw knooppunt (onder het knooppunt `tableStyles` of `cellStyles`, al naar gelang van toepassing) om een afzonderlijke stijl weer te geven:
+1. Maak een nieuw knooppunt (onder het knooppunt `table-styles` of `cellStyles`, al naar gelang van toepassing) om een afzonderlijke stijl weer te geven:
 
    * **U** kunt de naam opgeven, maar deze moet de stijl weerspiegelen.
    * **Type** `nt:unstructured`
@@ -524,25 +522,25 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
 
 Herhaal bovenstaande stappen voor elke vereiste stijl.
 
-### Verborgen koppen in tabellen configureren voor toegankelijkheid {#hiddenheader}
+### Verborgen koppen in tabellen configureren voor toegankelijkheid {#hidden-header}
 
 Soms kunt u gegevenslijsten zonder visuele tekst in een kolomkopbal tot stand brengen veronderstellend dat het doel van de kopbal door de visuele verhouding van de kolom met andere kolommen wordt geïmpliceerd. In dit geval moet verborgen binnentekst in de cel in de kopcel worden weergegeven, zodat schermlezers en andere ondersteunende hulpmiddelen het doel van de kolom kunnen begrijpen.
 
 Om toegankelijkheid in dergelijke scenario&#39;s te verbeteren, steunt RTE verborgen kopbalcellen. Bovendien worden er configuratie-instellingen gegeven voor verborgen koppen in tabellen. Met deze instellingen kunt u CSS-stijlen toepassen op verborgen koppen in de bewerkings- en voorvertoningsmodus. Om auteurs te helpen verborgen kopballen in Edit wijze identificeren, omvat de volgende parameters in uw code:
 
-* `hiddenHeaderEditingCSS`: Hiermee geeft u de naam op van de CSS-klasse die wordt toegepast op de cel met verborgen koptekst wanneer RTE wordt bewerkt.
-* `hiddenHeaderEditingStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met de verborgen koptekst wanneer RTE wordt bewerkt.
+* `hidden-headerEditingCSS`: Hiermee geeft u de naam op van de CSS-klasse die wordt toegepast op de cel met verborgen koptekst wanneer RTE wordt bewerkt.
+* `hidden-headerEditingStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met de verborgen koptekst wanneer RTE wordt bewerkt.
 
 Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de CSS-klasse voorrang op de stijltekenreeks en kan deze alle configuratiewijzigingen overschrijven die de stijltekenreeks aanbrengt.
 
 Om auteurs te helpen CSS op verborgen kopballen op de voorproefwijze toepassen, kunt u de volgende parameters in uw code omvatten:
 
-* `hiddenHeaderClassName`: Hiermee geeft u de naam op van de CSS-klasse die wordt toegepast op de verborgen kopcel in de voorvertoningsmodus.
-* `hiddenHeaderStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met de verborgen koptekst in de voorvertoningsmodus.
+* `hidden-headerClassName`: Hiermee geeft u de naam op van de CSS-klasse die wordt toegepast op de verborgen kopcel in de voorvertoningsmodus.
+* `hidden-headerStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met de verborgen koptekst in de voorvertoningsmodus.
 
 Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de CSS-klasse voorrang op de stijltekenreeks en kan deze alle configuratiewijzigingen overschrijven die de stijltekenreeks aanbrengt.
 
-## Woordenboeken toevoegen voor de spellingcontrole {#adddict}
+## Woordenboeken toevoegen voor de spellingcontrole {#add-dict}
 
 Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE woordenboeken voor elke geschikte taal. Deze worden vervolgens geselecteerd volgens de taal van de website door ofwel de taaleigenschap van de substructuur te nemen of de taal uit de URL te halen; bijvoorbeeld. de `/en/` tak wordt gecontroleerd als Engels, de `/de/` tak als Duits.
 
@@ -570,7 +568,7 @@ Een standaard AEM installatie omvat de woordenboeken voor Amerikaans Engels (`en
 De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Als u de spellingcontrole wilt uitvoeren, klikt u op [!UICONTROL Spellchecker] op de werkbalk. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
 Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
 
-## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
+## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undo-history}
 
 Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitvoeren. Standaard worden 50 bewerkingen opgeslagen in de geschiedenis. U kunt deze waarde naar wens configureren.
 
@@ -586,20 +584,20 @@ Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitv
 
 1. Sla de wijzigingen op.
 
-## De tabgrootte configureren {#tabsize}
+## De tabgrootte configureren {#tab-size}
 
 Wanneer het tabteken wordt ingedrukt binnen tekst, wordt een vooraf gedefinieerd aantal spaties ingevoegd. Dit zijn standaard drie vaste spaties en één spatie. De tabgrootte definiëren:
 
 1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/keys`. Maak de knooppunten als deze niet bestaan. Zie [Een plug-in activeren](#activateplugin) voor meer informatie.
 1. Maak de eigenschap op het knooppunt `keys`:
 
-   * **Naam** `tabSize`
+   * **Naam** `tab-size`
    * **Type** `String`
    * **De** waarde van het aantal spatietekens dat moet worden gebruikt voor de tabulator
 
 1. Sla de wijzigingen op.
 
-## Inspringingsmarge instellen {#indentmargin}
+## Inspringingsmarge instellen {#indent-margin}
 
 Wanneer inspringing is ingeschakeld (standaard), kunt u de grootte van de inspringing definiëren:
 
@@ -613,7 +611,7 @@ Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst).
    * **Type**:  `Long`
    * **Waarde**: aantal pixels vereist voor de inspringingsmarge
 
-## De hoogte van bewerkbare ruimte configureren {#editablespace}
+## De hoogte van bewerkbare ruimte configureren {#editable-space}
 
 U kunt de hoogte van de bewerkbare ruimte definiëren die in het dialoogvenster van de component wordt weergegeven:
 
@@ -631,7 +629,7 @@ U kunt de hoogte van de bewerkbare ruimte definiëren die in het dialoogvenster 
 >[!NOTE]
 Dit is alleen van toepassing wanneer u de RTE gebruikt in een dialoogvenster (niet tijdens het bewerken op locatie in een klassieke UI).
 
-## Stijlen en protocollen voor koppelingen configureren {#linkstyles}
+## Stijlen en protocollen voor koppelingen configureren {#link-styles}
 
 Bij het toevoegen van koppelingen in AEM kunt u het volgende definiëren:
 
