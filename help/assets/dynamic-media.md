@@ -12,9 +12,9 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
 feature: Middelenbeheer, uitvoeringen
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '439'
 ht-degree: 7%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 7%
 
 Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamische media verenigt op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
->[!NOTE]
+<!-- DEAD ARTICLE >[!NOTE]
 >
->Een communautair artikel is beschikbaar op [Werken met Adobe Experience Manager en Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
 
