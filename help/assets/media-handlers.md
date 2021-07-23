@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Workflow,uitvoeringen
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2168'
 ht-degree: 2%
 
 ---
@@ -442,7 +442,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in de Experien
 
 Met Experience Manager kunt u elk opdrachtregelprogramma binnen een workflow uitvoeren om elementen (zoals ImageMagick) om te zetten en de nieuwe uitvoering aan het element toe te voegen. Installeer het opdrachtregelprogramma op de schijf die als host fungeert voor de Experience Manager-server en voeg een processtap toe aan de workflow en configureer deze. Het aangeroepen proces, met de naam `CommandLineProcess`, filtert volgens specifieke MIME-typen en maakt meerdere miniaturen op basis van de nieuwe uitvoering.
 
-De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen in Experience Manager Assets:
+De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen [!DNL Experience Manager Assets]:
 
 * EPS- en AI-transformatie met [ImageMagick](https://www.imagemagick.org/script/index.php) en [Ghostscript](https://www.ghostscript.com/)
 * FLV-videotranscodering met [Mpeg](https://ffmpeg.org/)
