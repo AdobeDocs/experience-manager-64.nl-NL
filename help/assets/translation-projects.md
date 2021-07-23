@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Vertaling
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1810'
 ht-degree: 17%
 
 ---
@@ -313,4 +313,4 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
 
 1. Navigeer naar de middelenconsole en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
-Zie [5 Stappen voor het efficiënt vertalen van metagegevens](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/) voor tips over het efficiënt vertalen van metagegevens voor elementen.
+Voor tips over het efficiënt vertalen van metagegevens voor elementen raadpleegt u deze gearchiveerde pagina over [5 stappen om metagegevens efficiënt te vertalen](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
