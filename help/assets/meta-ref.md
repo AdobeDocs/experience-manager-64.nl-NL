@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metagegevens
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
@@ -22,7 +22,7 @@ De meta-gegevens van de Kern van Dublin verstrekt een gestandaardiseerde reeks o
 
 De eenvoudige Dublin Core Metadata Element Set (DCMES) bevat 15 metagegevenselementen die in de volgende tabel worden vermeld. Elk Dublin Core-element is optioneel en kan worden herhaald. U kunt Dublin Core-metagegevens toevoegen of verwijderen op dezelfde manier als voor mediatype-specifieke metagegevens.
 
-Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-initiatief zijn gecreëerd. Zie [Dublin Core Initiative](http://dublincore.org/) voor meer informatie.
+Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-initiatief zijn gecreëerd. Zie [Dublin Core Initiative](https://dublincore.org/) voor meer informatie.
 
 | Eigenschap | Beschrijving |
 |---|---|
