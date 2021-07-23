@@ -8,9 +8,9 @@ content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: Middelenbeheer, uitvoeringen
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1450'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer over te leren hoe het scherpen en het onscherpe maskeren in AEM door naar [de Klassieke Kwaliteit van het Beeld van Dynamic Media van de Adobe en het Verscherpen Beste praktijken ](/help/assets/assets/sharpening_images.pdf) te verwijzen die ook op AEM van toepassing zijn.
 
-Zie ook [Een afbeelding verscherpen met een onscherp masker](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+Zie ook [Een afbeelding verscherpen met een onscherp masker](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html).
 
 Met AEM kunt u afbeeldingen verscherpen bij inname, bij levering of beide. In de meeste gevallen moet u de afbeeldingen echter verscherpen met slechts één methode, maar niet met beide. Wanneer u afbeeldingen verscherpt bij levering, op een URL, krijgt u doorgaans de beste resultaten.
 
