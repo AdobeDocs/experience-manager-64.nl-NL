@@ -2,18 +2,17 @@
 title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
 description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
-feature: Tagging, Metadata
+feature: Tags, metagegevens
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
 
-# Metagegevens van uw digitale elementen beheren {#managing-metadata-for-digital-assets}
+# Metagegevens van uw digitale middelen beheren {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden die zijn geüpload naar [!DNL Experience Manager Assets], kan het beheer van metagegevens worden geïntegreerd met de creatieve workflow. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
 
@@ -68,7 +67,7 @@ De beschrijvende meta-gegevens zijn meta-gegevens betrokken bij het toepassingsd
 
 De kosten voor het handmatig maken van beschrijvende metagegevens zijn hoog. Er worden dus standaarden ingesteld om de uitwisseling van metagegevens tussen softwaresystemen en organisaties te vergemakkelijken. [!DNL Experience Manager Assets] ondersteunt alle relevante normen voor metagegevensbeheer.
 
-## Coderingsstandaarden {#encoding-standards}
+## Coderingsnormen {#encoding-standards}
 
 Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een selectie coderingsstandaarden wordt ondersteund:
 
@@ -93,7 +92,7 @@ ID3-tags zijn ontworpen voor de MP3-bestandsindeling. Aanvullende informatie ove
 * Ogg Vorbis gebruikt Xiph-opmerkingen die zijn ingesloten in de Ogg-container.
 * AAC gebruikt een merkgebonden etiketteringsformaat.
 
-### EXIF {#exif}
+### Exif {#exif}
 
 Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in vele bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze meta-gegevens naam-waarde-paren worden ook genoemd markeringen, niet om met het etiketteren in [!DNL Experience Manager] worden verward. Moderne digitale camera&#39;s maken Exif-metagegevens en de moderne grafische software ondersteunt deze. De EXIF-indeling is de kleinste gemene deler voor het beheer van metagegevens, met name voor afbeeldingen.
 
@@ -158,7 +157,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 ### Afdrukspecifieke metagegevens {#print-specific-metadata}
 
 * PDF en PDF/X - Adobe PDF en toepassingen van derden.
-* PRISM - [Publicatievereisten voor industriestandaard metagegevens](https://www.prismstandard.org).
+* PRISM - [Publicatievereisten voor industriestandaard metagegevens](http://www.prismstandard.org/specifications/).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metagegevens voor gepagineerde tekst.
 
