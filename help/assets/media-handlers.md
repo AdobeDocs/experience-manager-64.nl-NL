@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Workflow,uitvoeringen
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
 source-wordcount: '2171'
 ht-degree: 2%
@@ -37,7 +37,7 @@ De volgende media managers zijn beschikbaar binnen de Elementen van de Experienc
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>toepassing/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Belangrijk</b> - Wanneer u een MP3-bestand uploadt, wordt het [verwerkt met behulp van een externe bibliotheek](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Belangrijk</b> - Wanneer u een MP3-bestand uploadt, wordt het [verwerkt met behulp van een externe bibliotheek](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). De bibliotheek berekent een onnauwkeurige benaderende lengte als MP3 veranderlijke bitrate (VBR) heeft. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>toepassing/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -446,8 +446,8 @@ De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen in Exp
 
 * EPS- en AI-transformatie met [ImageMagick](https://www.imagemagick.org/script/index.php) en [Ghostscript](https://www.ghostscript.com/)
 * FLV-videotranscodering met [Mpeg](https://ffmpeg.org/)
-* MP3-codering met [LAME](http://lame.sourceforge.net/)
-* Audio-verwerking met behulp van [SOX](http://sox.sourceforge.net/)
+* MP3-codering met [LAME](https://lame.sourceforge.net/)
+* Audio-verwerking met behulp van [SOX](https://sox.sourceforge.net/)
 
 >[!NOTE]
 >
