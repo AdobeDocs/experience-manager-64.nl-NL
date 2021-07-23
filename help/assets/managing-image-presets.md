@@ -9,9 +9,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Voorinstellingen afbeelding
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '3635'
+source-wordcount: '3634'
 ht-degree: 7%
 
 ---
@@ -393,7 +393,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     </ul>
     <div>
       Verscherpen wordt beschreven in  
-     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">Adobe Dynamic Media Klassieke afbeeldingskwaliteit en aanbevolen werkwijzen voor verscherpen</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-64/assets/sharpening_images.pdf">Adobe Dynamic Media Klassieke afbeeldingskwaliteit en aanbevolen werkwijzen voor verscherpen</a>.
     </div> </td>
   </tr>
   <tr>
