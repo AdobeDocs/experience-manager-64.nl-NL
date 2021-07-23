@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Workflow,uitvoeringen
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '998'
 ht-degree: 2%
 
 ---
@@ -114,5 +114,4 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 * [Workflowmodellen maken en workflowfunctionaliteit uitbreiden](/help/sites-developing/workflows.md)
 * [Methoden voor het uitvoeren van workflows](/help/sites-administering/workflows-starting.md)
 * [Best practices voor workflows](/help/sites-developing/workflows-best-practices.md)
-* [Communautair artikel over het wijzigen van elementen met behulp van workflow](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
