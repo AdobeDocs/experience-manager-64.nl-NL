@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '9897'
+source-wordcount: '9839'
 ht-degree: 3%
 
 ---
@@ -71,7 +71,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
          [Video-uitvoeringen weergeven](video-renditions.md)
 
-         [Video-uitvoeringen beheren](managing-assets-touch-ui.md#managing-renditions)
+[Video-uitvoeringen beheren](managing-assets-touch-ui.md#managing-renditions)
 
       * [Viewervoorinstellingen beheren](managing-viewer-presets.md)
       * [Elementen publiceren](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
       * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
 
-         [Video-eigenschappen bewerken](managing-assets-touch-ui.md#editing-properties)
+[Video-eigenschappen bewerken](managing-assets-touch-ui.md#editing-properties)
 
       * [Metagegevens voor digitale elementen beheren](metadata.md)
       * [Metagegevensschema&#39;s](metadata-schemas.md)
@@ -276,12 +276,12 @@ De volgende afbeelding toont de algemene ontwerpworkflow voor video&#39;s die vi
 
 De **[!UICONTROL Dynamic Media Encode Video]**-workflow codeert video als u dynamische media hebt ingeschakeld en videocloudservices hebt ingesteld. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress). Als u Dynamic Media hebt ingeschakeld en Video Cloud-services hebt ingesteld, wordt de **[!UICONTROL Dynamic Media Encode Video]**-workflow automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt de **[!UICONTROL DAM Update Asset]**-workflow van kracht.)
 
-Hier volgt een overzicht van tips voor het coderen van bronvideobestanden.
+<!-- DEAD ARTICLE AND VIDEO LINK The following are best-practice tips for encoding source video files.
 
-Raadpleeg het volgende voor advies over videocodering:
+For advice about video encoding, see the following:
 
-* Artikel: *Streaming 101: De basisbeginselen — Codecs, bandbreedte, gegevenssnelheid en resolutie:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
-* Video: *Grondbeginselen van videocodering:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
+* Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* Video: *Video Encoding Basics:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### Bronvideobestanden {#source-video-files}
 
@@ -348,7 +348,7 @@ In deze tabel wordt de gegevenssnelheid beschreven van standaardverbindingssnelh
 | Snelheid (Kbps) | Verbindingstype |
 |--- |--- |
 | 256 | Inbelverbinding. |
-| 800 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
+| 600 | Normale mobiele verbinding. Kies hiervoor een gegevenssnelheid tussen 400 en maximaal 800 voor 3G-ervaringen. |
 | 2000 | Standaardbreedbandverbinding voor desktops. Voor deze verbinding, richt een gegevenstarief in de waaier 800-2000 Kbps, met de meeste doelstellingen gemiddeld 1200-1500 Kbps. |
 | 5000 | Typische breedbandverbinding. Codering in dit bovenste bereik wordt niet aanbevolen, omdat de video bij deze snelheid niet beschikbaar is voor de meeste consumenten. |
 
@@ -411,7 +411,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
    <td><p>Bron</p> </td> 
    <td><p>1920 x 1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Gecodeerd</p> </td> 
