@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Workflow,uitvoeringen
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
+source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 2%
@@ -446,8 +446,8 @@ De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen
 
 * EPS- en AI-transformatie met [ImageMagick](https://www.imagemagick.org/script/index.php) en [Ghostscript](https://www.ghostscript.com/)
 * FLV-videotranscodering met [Mpeg](https://ffmpeg.org/)
-* MP3-codering met [LAME](https://lame.sourceforge.net/)
-* Audio-verwerking met behulp van [SOX](https://sox.sourceforge.net/)
+* MP3-codering met [LAME](https://lame.sourceforge.io)
+* Audio-verwerking met behulp van [SOX](https://sox.sourceforge.io)
 
 >[!NOTE]
 >
