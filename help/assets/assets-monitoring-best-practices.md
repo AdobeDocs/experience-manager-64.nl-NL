@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 4048c4c76a892e3bb32dbbeef140b5dc9ebffad3
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 0%
@@ -37,7 +37,7 @@ U zou levende controle tijdens de prestaties testende fase van uw ontwikkeling o
 * [Boven](https://man7.org/linux/man-pages/man1/top.1.html): De bovenkant is een bevel van Linux dat omhoog een dashboard opent, dat gebruiksstatistieken, met inbegrip van cpu, geheugen, en gebruik IO toont. Het biedt een overzicht op hoog niveau van wat er op een instantie gebeurt.
 * [Bovenkant](https://hisham.hm/htop/): Htop is een interactieve procesviewer. Deze biedt naast wat Top kan bieden, een gedetailleerd CPU- en geheugengebruik. De bovenkant kan op de meeste systemen van Linux worden geïnstalleerd gebruikend `yum install htop` of `apt-get install htop`.
 
-* [Iotop](http://guichaz.free.fr/iotop/): Iotop is een gedetailleerd dashboard voor schijf-IO-gebruik. Het toont bars en meters die de processen beschrijven die schijf IO en de hoeveelheid gebruiken zij. Iotop kan op de meeste systemen van Linux worden geïnstalleerd gebruikend `yum install iotop` of `apt-get install iotop`.
+* [Iotop](https://guichaz.free.fr/iotop/): Iotop is een gedetailleerd dashboard voor schijf-IO-gebruik. Het toont bars en meters die de processen beschrijven die schijf IO en de hoeveelheid gebruiken zij. Iotop kan op de meeste systemen van Linux worden geïnstalleerd gebruikend `yum install iotop` of `apt-get install iotop`.
 
 * [IFP](https://www.ex-parrot.com/pdw/iftop/): Internet toont gedetailleerde informatie over Ethernet/netwerkgebruik. De vertoningen van IFP per communicatiekanaalstatistieken over de entiteiten die ethernet gebruiken en de hoeveelheid bandbreedte zij gebruiken. Als u op de meeste Linux-systemen `yum install iftop` of `apt-get install iftop` wilt installeren.
 
