@@ -10,7 +10,7 @@ discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: Configuratie, hybride modus
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
 workflow-type: tm+mt
 source-wordcount: '7421'
 ht-degree: 1%
@@ -169,7 +169,7 @@ Om dynamische media toe te laten, moet u de dynamische media runmode of van de b
    >
    >Raadpleeg de volgende logbestanden in de map **[!UICONTROL crx-quickstart/logs/]** voor informatie over het oplossen van problemen met Dynamic Media:
    >
-   >* ImageServer-&lt;PortId>-&lt;jjyy>&lt;dd>.log - Het ImageServer-logboek bevat statistieken en analytische gegevens die worden gebruikt voor het analyseren van het gedrag van het interne ImageServer-proces.
+   >* ImageServer-&lt;PortId>-&lt;jjyy>&lt;dd>.log - Het ImageServer-logboek bevat statistieken en analysegegevens die worden gebruikt voor het analyseren van het gedrag van het interne ImageServer-proces.
 
       Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2019-07-25.log`
    * s7access-&lt;yyyy>&lt;dd>.log - Het s7access-logboek registreert elke aanvraag die aan Dynamic Media is gedaan via `/is/image` en `/is/content`.
@@ -801,7 +801,7 @@ Als u de Dynamic Media Image Server configureert, moet u de Adobe CQ Scene7 Imag
 >[!NOTE]
 Dynamic Media werkt uit-van-de-doos [nadat het ](#enabling-dynamic-media) wordt toegelaten. U kunt echter desgewenst de installatie verfijnen door Dynamic Media Image Server te configureren om aan bepaalde specificaties of vereisten te voldoen.
 
-**Vereiste**:  _Voordat_ u Dynamic Media Image Server configureert, moet u ervoor zorgen dat uw VM van Windows een installatie van de Microsoft Visual C++-bibliotheken bevat. De bibliotheken zijn nodig om Dynamic Media Image Server uit te voeren. U kunt [het Visual C++ 2010 Redistributable Pakket van Microsoft (x64) hier ](https://www.microsoft.com/en-us/download/details.aspx?id=14632) downloaden.
+**Vereiste**:  _Voordat_ u Dynamic Media Image Server configureert, moet u ervoor zorgen dat uw VM van Windows een installatie van de Microsoft Visual C++-bibliotheken bevat. De bibliotheken zijn nodig om Dynamic Media Image Server uit te voeren. U kunt [het Visual C++ 2010 Redistributable Pakket van Microsoft (x64) hier ](https://www.microsoft.com/en-us/download/details.aspx?id=26999) downloaden.
 
 **Dynamic Media Image Server-instellingen** configureren:
 
