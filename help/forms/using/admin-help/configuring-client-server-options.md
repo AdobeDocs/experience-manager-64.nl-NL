@@ -9,17 +9,16 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: Document Security
+feature: Documentbeveiliging
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 0%
 
 ---
 
-# De documentbeveiligingsserver {#configure-the-document-security-server} configureren
+# De beveiligingsserver voor het document configureren {#configure-the-document-security-server}
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Serverconfiguratie.
 1. Configureer de instellingen en klik op OK.
@@ -73,13 +72,13 @@ Hoogte: minimum = 450; maximum = 800
 
 ## Gebruikers en beheerders voor documentbeveiliging configureren {#configuring-document-security-users-and-administrators}
 
-### Beveiliging van documenten toewijzen aan beheerders {#assigning-document-security-roles-to-administrators}
+### Documentbeveiligingsrollen toewijzen aan beheerders {#assigning-document-security-roles-to-administrators}
 
 Uw AEM formulieromgeving bevat een of meer beheerdergebruikers die de juiste rechten hebben voor het maken van gebruikers en groepen. Als uw organisatie documentbeveiliging gebruikt, moet ten minste één beheerder ook het recht krijgen om uitgenodigde en lokale gebruikers te beheren.
 
 De beheerders moeten de rol van de Gebruiker van de beleidsconsole ook hebben om tot beleidsconsole toegang te hebben. (Zie [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
-### Zichtbare gebruikers en groepen {#configuring-visible-users-and-groups} configureren
+### Zichtbare gebruikers en groepen configureren {#configuring-visible-users-and-groups}
 
 Om gebruikers en groepen in geselecteerde domeinen tijdens de onderzoeken van de beleidsgebruiker te bekijken, moet een superbeheerder of beheerder van de beleidsreeks domeinen (die in Beheer van de Gebruiker worden gecreeerd) aan de zichtbare gebruiker en de groepslijst voor elke beleidsreeks selecteren en toevoegen.
 
@@ -95,7 +94,7 @@ De zichtbare gebruiker en de groepslijst zijn zichtbaar aan de coördinator van 
 1. Navigeer naar Services > Documentbeveiliging > Configuratie > Mijn beleid en klik op het tabblad Zichtbare gebruikers en groepen.
 1. Klik op Domein(s) toevoegen en voeg desgewenst bestaande domeinen toe.
 
-## De uitgebreide verificatieprovider {#add-the-extended-authentication-provider} toevoegen
+## De uitgebreide verificatieprovider toevoegen {#add-the-extended-authentication-provider}
 
 AEM formulieren bieden een voorbeeldconfiguratie die u kunt aanpassen aan uw omgeving. Voer de volgende stappen uit:
 
@@ -108,7 +107,7 @@ AEM formulieren bieden een voorbeeldconfiguratie die u kunt aanpassen aan uw omg
 1. Schakel Uitgebreide verificatie in vanaf de pagina Serverconfiguratie. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
 1. Voeg de vereiste URL&#39;s voor omleiding naar SSO toe in het configuratiebestand voor gebruikersbeheer. Zie [URL&#39;s voor omleiding naar SSO toevoegen voor uitgebreide verificatie](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
-### URL&#39;s voor omleiding naar SSO toevoegen voor uitgebreide verificatie {#add-sso-redirect-urls-for-extended-authentication}
+### URL&#39;s voor doorsturen naar SSO toevoegen voor uitgebreide verificatie {#add-sso-redirect-urls-for-extended-authentication}
 
 Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met beleid beveiligd document openen in Acrobat XI of Reader XI een dialoogvenster voor verificatie. In dit dialoogvenster wordt de HTML-pagina geladen die u hebt opgegeven als de URL voor het uitvoeren van de verificatie op de instellingen van de documentbeveiligingsserver. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
 
@@ -129,7 +128,7 @@ Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met bele
 
 1. Sla het bestand op en importeer het bijgewerkte bestand vanaf de pagina Handmatige configuratie: Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 
-## Offlinebeveiliging {#configuring-offline-security} configureren
+## Offlinebeveiliging configureren {#configuring-offline-security}
 
 Met documentbeveiliging kunt u met beleid beveiligde documenten offline gebruiken zonder een internet- of netwerkverbinding. Deze mogelijkheid vereist dat het beleid offline toegang toestaat, zoals beschreven in [Documentmachtigingen opgeven voor gebruikers en groepen](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). Voordat een document met een dergelijk beleid offline kan worden gebruikt, moet de ontvanger het document openen terwijl het online is en offline toegang inschakelen door op Ja te klikken wanneer hierom wordt gevraagd. De ontvanger kan ook worden verzocht zijn identiteit te verifiëren. De ontvanger kan dan documenten offline gebruiken voor de duur van de offline huurperiode die in het beleid wordt gespecificeerd.
 
@@ -137,7 +136,7 @@ Wanneer de offline leaseperiode afloopt, moet de ontvanger opnieuw synchronisere
 
 Omdat documenten die offline toegang toestaan, sleutelmateriaal in cache moeten plaatsen op de computer waarop de bestanden offline zijn opgeslagen, kan het bestand mogelijk in gevaar worden gebracht als een onbevoegde gebruiker het sleutelmateriaal kan verkrijgen. Om deze mogelijkheid te compenseren, worden de geplande en handzeer belangrijke het omvergooienopties verstrekt die u kunt vormen om een onbevoegd persoon te verhinderen de sleutel te gebruiken om tot het document toegang te hebben.
 
-### Een standaardperiode voor offline leasen instellen {#set-a-default-offline-lease-period}
+### Een standaard offline leaseperiode instellen {#set-a-default-offline-lease-period}
 
 Ontvangers van documenten die met een beleid zijn beveiligd, kunnen de documenten offline nemen gedurende het aantal dagen dat in het beleid is opgegeven. Nadat het document eerst met documentbeveiliging is gesynchroniseerd, kan de ontvanger het offline gebruiken tot de offline leaseperiode verloopt. Wanneer de leaseperiode verloopt, moet de ontvanger het document online openen en zich aanmelden om het te synchroniseren met de documentbeveiliging om het document te kunnen blijven gebruiken.
 
@@ -147,7 +146,7 @@ U kunt een standaard offline huurperiode configureren. De leaseperiode kan worde
 1. Typ in het vak Offline standaardleaseperiode het aantal dagen voor de offline leaseperiode.
 1. Klik op OK.
 
-### Hoofdrollovers beheren {#manage-key-rollovers}
+### Toetsrollovers beheren {#manage-key-rollovers}
 
 Bij documentbeveiliging worden versleutelingsalgoritmen en -licenties gebruikt om documenten te beveiligen. Wanneer het een document codeert, produceert en beheert de documentveiligheid een decryptiesleutel genoemd een *DocKey* die het tot de cliënttoepassing overgaat. Als het beleid dat een document beschermt offline toegang toestaat, wordt een off-line sleutel genoemd een *belangrijkste sleutel* ook geproduceerd voor elke gebruiker die off-line toegang tot het document heeft.
 
@@ -187,7 +186,7 @@ De belangrijkste sleutels moeten tweemaal over worden gerold alvorens eerder bes
 1. Klik op Rollover-toetsen nu en klik op OK.
 1. Wacht ongeveer 10 minuten.
 
-## Gebeurteniscontrole- en privacy-instellingen configureren {#configuring-event-auditing-and-privacy-settings}
+## Gebeurteniscontrole en privacy-instellingen configureren {#configuring-event-auditing-and-privacy-settings}
 
 De veiligheid van het document kan informatie over gebeurtenissen controleren en registreren die met beleid-beschermde documenten, beleid, beheerders, en de server verwant zijn. U kunt gebeurtenis controleren vormen, en u kunt de types van gebeurtenissen specificeren om te controleren. Om gebeurtenissen voor een bepaald document te controleren, moet de controleoptie op het beleid ook worden toegelaten.
 
@@ -200,7 +199,7 @@ U kunt de volgende gebeurtenistypen selecteren voor controle:
 * Gebruikersgebeurtenissen, zoals externe gebruikersuitnodigingen en registraties, geactiveerde en gedeactiveerde gebruikersaccounts, wijzigingen in gebruikerswachtwoorden en profielupdates
 * AEM formuliergebeurtenissen, zoals niet-overeenkomende versies, niet-beschikbare directoryserver- en verificatieproviders en wijzigingen in de serverconfiguratie
 
-### Gebeurteniscontrole {#enable-or-disable-event-auditing} in- of uitschakelen
+### Gebeurteniscontrole in- of uitschakelen {#enable-or-disable-event-auditing}
 
 U kunt controle van gebeurtenissen met betrekking tot de server, beleid-beschermde documenten, beleid, beleidsreeksen, en gebruikers toelaten en onbruikbaar maken. Wanneer u gebeurteniscontrole inschakelt, kunt u alle mogelijke gebeurtenissen controleren of kunt u specifieke gebeurtenissen selecteren die u wilt controleren.
 
@@ -221,7 +220,7 @@ Wanneer u de servercontrole toelaat, kunt u de gecontroleerde gebeurtenissen op 
 >
 >Wanneer u met de webpagina&#39;s werkt, vermijd dan de browserknoppen, zoals de knop Vorige, de knop Vernieuwen en de pijl Vorige of Volgende, omdat deze actie ongewenste problemen bij het vastleggen van gegevens en het weergeven van gegevens kan veroorzaken.
 
-### Privacyberichten in- of uitschakelen {#enable-or-disable-privacy-notification}
+### Persoonlijke meldingen in- of uitschakelen {#enable-or-disable-privacy-notification}
 
 U kunt een privacymeldingsbericht in- en uitschakelen. Wanneer u privacymeldingen inschakelt, wordt een bericht weergegeven wanneer een ontvanger een document probeert te openen dat met een beleid is beveiligd. De kennisgeving informeert de gebruiker dat het documentgebruik wordt gecontroleerd. U kunt ook een URL opgeven die de gebruiker kan gebruiken om uw pagina met privacybeleid weer te geven als die beschikbaar is.
 
@@ -239,7 +238,7 @@ U kunt een privacymeldingsbericht in- en uitschakelen. Wanneer u privacymeldinge
 >
 >Als u de privacyverklaring uitschakelt, wordt het controleren van het documentgebruik niet uitgeschakeld. Uit de doos controleacties en douaneacties die via uitgebreide gebruik het volgen worden gesteund kunnen nog informatie van het gebruikersgedrag verzamelen.
 
-### Een aangepast type auditgebeurtenis {#import-a-custom-audit-event-type} importeren
+### Een aangepast type auditgebeurtenis importeren {#import-a-custom-audit-event-type}
 
 Als u een document veiligheid-toegelaten toepassing gebruikt die controle van extra gebeurtenissen, zoals gebeurtenissen steunt specifiek voor een bepaald dossiertype, kan een partner van Adobe u van de gebeurtenissen van de douanecontrole voorzien die u in documentveiligheid kunt invoeren. Gebruik deze functie alleen als u aangepaste gebeurtenistypen hebt ontvangen van een Adobe-partner.
 
@@ -248,13 +247,13 @@ Als u een document veiligheid-toegelaten toepassing gebruikt die controle van ex
 1. Bij het importeren worden bestaande aangepaste auditgebeurtenistypen op de server overschreven als identieke gebeurteniscode en naamruimtecombinaties worden gevonden.
 1. Klik op OK.
 
-### Een aangepast auditgebeurtenistype {#delete-a-custom-audit-event-type} verwijderen
+### Een aangepast type auditgebeurtenis verwijderen {#delete-a-custom-audit-event-type}
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Gebeurtenisbeheer.
 1. Schakel het selectievakje naast het type aangepaste auditgebeurtenis dat u wilt verwijderen in en klik op Verwijderen.
 1. Klik op OK.
 
-### Exportauditgebeurtenissen {#export-audit-events}
+### Controles exporteren {#export-audit-events}
 
 U kunt auditgebeurtenissen exporteren naar een bestand voor archiveringsdoeleinden.
 
@@ -269,7 +268,7 @@ U kunt auditgebeurtenissen exporteren naar een bestand voor archiveringsdoeleind
 
 1. Klik op Exporteren. Als u het exporteren wilt annuleren, klikt u op Exporteren annuleren. Als een andere gebruiker een exportbewerking heeft gepland, is de knop Exporteren annuleren niet beschikbaar totdat het exporteren is voltooid. De knop Exporteren annuleren is niet beschikbaar als een andere gebruiker een exportbewerking heeft gepland. Klik op Vernieuwen om te controleren of de geplande export of verwijdering is gestart of voltooid.
 
-### Auditgebeurtenissen {#delete-audit-events} verwijderen
+### Auditgebeurtenissen verwijderen {#delete-audit-events}
 
 U kunt controlegebeurtenissen verwijderen die ouder zijn dan een opgegeven aantal dagen.
 
@@ -373,7 +372,7 @@ U kunt gebeurteniscontrole in- en uitschakelen en de typen gebeurtenissen opgeve
 
 **Wijziging van de Configuratie van de server:** Veranderingen in de serverconfiguratie die of door de Web-pagina&#39;s of manueel door een config.xml- dossier in te voeren worden gedaan. Hieronder vallen wijzigingen in de basis-URL, sessietime-outs, inlogvergrendelingen, directory-instellingen, sleutelrollovers, SMTP-serverinstellingen voor externe registratie, watermerkconfiguratie, weergaveopties, enzovoort.
 
-## Het vormen uitgebreide gebruik het volgen {#configuring-extended-usage-tracking}
+## Uitgebreide gebruiksregistratie configureren {#configuring-extended-usage-tracking}
 
 Met documentbeveiliging kunt u verschillende aangepaste gebeurtenissen bijhouden die op een beveiligd document kunnen worden uitgevoerd. U kunt het volgen van gebeurtenissen van de server van de documentveiligheid op globaal niveau of op een beleidsniveau toelaten. Vervolgens kunt u een JavaScript instellen om specifieke handelingen vast te leggen die in het beveiligde PDF-document zijn uitgevoerd, zoals op een knop klikken of het document opslaan. Deze gebruiksgegevens worden verzonden als een XML-bestand in sleutelwaardeparen, dat u kunt gebruiken voor verdere analyse. Eindgebruikers die de beveiligde documenten openen, kunnen deze tracering toestaan of weigeren vanuit de clienttoepassing.
 
@@ -391,7 +390,7 @@ Voordat u begint, moet u ervoor zorgen dat Servercontrole is ingeschakeld. Zie [
 
 Als u de bijgehouden gebeurtenissen wilt weergeven, kunt u het filter Documentgebeurtenissen op de pagina Gebeurtenissen gebruiken. De gebeurtenissen die met JavaScript worden bijgehouden, worden aangeduid als Gedetailleerd gebruik bijhouden. Raadpleeg [Gebeurtenissen controleren](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) voor meer informatie over gebeurtenissen.
 
-## Weergave-instellingen voor documentbeveiliging configureren {#configure-document-security-display-settings}
+## Beveiligingsweergave-instellingen voor documenten configureren {#configure-document-security-display-settings}
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Weergaveopties.
 1. Configureer de instellingen en klik op OK.
@@ -424,7 +423,7 @@ Deze instellingen bepalen de tekst die wordt weergegeven in het dialoogvenster v
 
 **Alleen vertrouwde crediteuren weergeven:** als deze optie is geselecteerd, worden in de clienttoepassing alleen certificaten van referentie-uitgevers aan de gebruiker aangeboden die AEM formulieren zo moeten vertrouwen (zie Certificaten en referenties beheren). Als deze optie niet is geselecteerd, wordt de gebruiker een lijst met alle certificaten op het systeem van de gebruiker weergegeven.
 
-## Dynamische watermerken {#configure-dynamic-watermarks} configureren
+## Dynamische watermerken configureren {#configure-dynamic-watermarks}
 
 Met documentbeveiliging kunt u standaardinstellingen configureren voor de optie voor dynamisch watermerk die u kunt toepassen wanneer u beleid maakt. Een *watermerk* is een afbeelding die boven de tekst in het document wordt geplaatst. Dit is handig voor het bijhouden van de inhoud van een document en kan helpen bij het identificeren van illegaal gebruik van de inhoud.
 
@@ -473,7 +472,7 @@ Dynamische watermerken worden mogelijk niet door alle clienttoepassingen onderst
 
 * Acrobat 9.0 en eerdere versies: Acrobat 9.0 en eerder ondersteunen geen beleidsnamen in dynamische watermerken. Als in Acrobat 9.0 een document wordt geopend dat met een beleid is beveiligd en een dynamisch watermerk heeft dat een beleidsnaam en andere dynamische gegevens bevat, wordt het watermerk weergegeven zonder de naam van het beleid. Als het dynamische watermerk alleen de beleidsnaam bevat, geeft Acrobat een foutbericht weer
 
-### Een dynamisch watermerksjabloon toevoegen {#add-a-dynamic-watermark-template}
+### Een dynamische watermerksjabloon toevoegen {#add-a-dynamic-watermark-template}
 
 U kunt dynamische watermerksjablonen maken. Deze sjablonen blijven beschikbaar als configuratieoptie voor beleid dat beheerders of gebruikers maken.
 
@@ -521,14 +520,14 @@ U kunt dynamische watermerksjablonen maken. Deze sjablonen blijven beschikbaar a
 1. Klik **Nieuw** onder watermerkelementen om indien nodig meer watermerkelementen toe te voegen.
 1. Klik op OK.
 
-### Een dynamische watermerksjabloon bewerken {#edit-a-dynamic-watermark-template}
+### Een sjabloon voor een dynamisch watermerk bewerken {#edit-a-dynamic-watermark-template}
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Watermerken.
 1. Klik op het desbetreffende watermerk in de lijst.
 1. Wijzig desgewenst de instellingen op de pagina Watermerken bewerken.
 1. Klik op OK.
 
-### Een dynamisch watermerksjabloon verwijderen {#delete-a-dynamic-watermark-template}
+### Een sjabloon voor een dynamisch watermerk verwijderen {#delete-a-dynamic-watermark-template}
 
 Wanneer u een dynamisch watermerk verwijdert, kunt u dit niet meer toevoegen aan een nieuw beleid. Nochtans, blijft het watermerk op bestaand beleid dat momenteel het gebruikt, en de documenten die het beleid momenteel beschermt blijven het dynamische watermerk tonen tot u of een gebruiker het beleid uitgeeft dat het geschrapte watermerk bevat. Nadat het beleid is bewerkt, wordt het watermerk niet meer toegepast. Er wordt een bericht weergegeven waarin wordt aangegeven dat het bestaande watermerk in het beleid wordt verwijderd en dat de gebruiker een ander watermerk kan selecteren om het te vervangen.
 
@@ -536,7 +535,7 @@ Wanneer u een dynamisch watermerk verwijdert, kunt u dit niet meer toevoegen aan
 1. Schakel het selectievakje naast het desbetreffende watermerk in en klik op Verwijderen.
 1. Klik op OK.
 
-## Uitgenodigde gebruikersregistratie configureren {#configuring-invited-user-registration}
+## Opgeroepen gebruikersregistratie configureren {#configuring-invited-user-registration}
 
 Gebruikers die zich buiten uw organisatie bevinden, kunnen zich registreren met documentbeveiliging. Uitgenodigde gebruikers die hun accounts registreren en activeren, kunnen zich aanmelden bij de documentbeveiliging met hun e-mailadres en het wachtwoord dat ze hebben gemaakt tijdens de registratie. Geregistreerde uitgenodigde gebruikers kunnen met beleid beveiligde documenten gebruiken waarvoor zij machtigingen hebben.
 
@@ -574,7 +573,7 @@ Standaard is het registratieproces voor uitgenodigde gebruikers uitgeschakeld. U
 1. (Optioneel) Selecteer Ja onder Ingebouwde registratie om deze optie in te schakelen. Als u ingebouwde registratie niet inschakelt, moet u een eigen gebruikersregistratiesysteem instellen.
 1. Klik op OK.
 
-### Een externe gebruiker of groep {#exclude-or-include-an-external-user-or-group} uitsluiten of opnemen
+### Een externe gebruiker of groep uitsluiten of opnemen {#exclude-or-include-an-external-user-or-group}
 
 U kunt de registratie met documentbeveiliging voor bepaalde externe gebruikers of gebruikersgroepen beperken. Deze optie is bijvoorbeeld handig om toegang tot een bepaalde gebruikersgroep toe te staan, maar om specifieke personen uit te sluiten die deel uitmaken van de groep.
 
@@ -628,7 +627,7 @@ Indien door uw gastheer SMTP wordt vereist, typ de vereiste informatie in de doz
 >
 >Als u wijzigingen aanbrengt in de opties voor de uitgenodigde gebruikersregistratie, wordt het bestand config.xml overschreven en wordt TLS gedeactiveerd. Als u de wijzigingen overschrijft, moet u de bovenstaande stap uitvoeren om TLS-ondersteuning voor Uitgenodigde gebruikersregistratie opnieuw te activeren.
 
-### E-mailinstellingen voor uitnodiging voor registratie {#registration-invitation-email-settings}
+### E-mailinstellingen voor uitnodiging registreren {#registration-invitation-email-settings}
 
 Met documentbeveiliging wordt automatisch een e-mailuitnodiging tot inschrijving verzonden wanneer u een nieuwe uitgenodigde gebruikersaccount maakt of wanneer een bestaande gebruiker een externe ontvanger toevoegt die zich nog niet heeft geregistreerd of die is uitgenodigd om zich te registreren voor een beleid. Het e-mailbericht bevat een koppeling die de ontvanger kan gebruiken om toegang te krijgen tot de registratiepagina en persoonlijke accountgegevens in te voeren, zoals gebruikersnaam en wachtwoord. Het wachtwoord kan elke combinatie van acht tekens zijn.
 
@@ -644,7 +643,7 @@ De volgende instellingen bevinden zich in het gedeelte Invitation Email Configur
 
 **Bericht:** De tekst die in het lichaam van het bericht verschijnt uitnodigend de gebruiker om zich te registreren.
 
-### E-mailinstellingen voor activering {#activation-email-settings}
+### Instellingen voor e-mail activeren {#activation-email-settings}
 
 Nadat uitgenodigde gebruikers zich hebben geregistreerd, verzendt de documentbeveiliging een activeringse-mail. Het activeringsbericht bevat een koppeling naar de pagina voor accountactivering waar gebruikers hun account kunnen activeren. Wanneer de accounts zijn geactiveerd, kunnen gebruikers zich aanmelden bij de documentbeveiliging met hun e-mailadres en het wachtwoord dat ze hebben gemaakt bij de registratie.
 
@@ -664,7 +663,7 @@ De volgende instellingen bevinden zich in het gebied Configuratie via e-mail act
 
 **Bericht:** De tekst die in het lichaam van het bericht verschijnt een bericht erop wijzend dat de gebruikersrekening van de ontvanger moet worden geactiveerd. Mogelijk wilt u ook informatie opnemen, zoals hoe u contact opneemt met een beheerder om een nieuw wachtwoord te verkrijgen.
 
-### E-mail voor het opnieuw instellen van wachtwoorden configureren {#configure-a-password-reset-email}
+### E-mail voor opnieuw instellen van wachtwoord configureren {#configure-a-password-reset-email}
 
 Als u het wachtwoord van een uitgenodigde gebruiker opnieuw moet instellen, wordt een bevestigingsmail geproduceerd die de gebruiker uitnodigt om een nieuw wachtwoord te kiezen. Het wachtwoord van een gebruiker kan niet worden bepaald; als de gebruiker het vergeet, moet u het terugstellen.
 
@@ -702,14 +701,14 @@ Als beheerder, specificeer welke gebruikers en groepen douanebeleid kunnen tot s
 
 De geselecteerde gebruikers en groepen hebben nu toestemming om aangepast beleid te maken.
 
-### Verwijder de machtiging Aangepast beleid maken van een gebruiker of groep {#remove-the-create-custom-policies-permission-from-a-user-or-group}
+### De machtiging Aangepast beleid maken van een gebruiker of groep verwijderen {#remove-the-create-custom-policies-permission-from-a-user-or-group}
 
 1. Voor de pagina van de documentveiligheid, klik Configuratie > Mijn Beleid.
 1. Klik op het tabblad Beleid maken op de pagina Mijn beleid. Gebruikers en groepen met machtigingen om aangepaste beleidsregels te maken, worden weergegeven.
 1. Schakel het selectievakje in naast de gebruikers en groepen die u van deze machtiging wilt verwijderen.
 1. Klik op Verwijderen en vervolgens op OK.
 
-### Geef gebruikers en groepen op die zichtbaar zijn in zoekopdrachten {#specify-users-and-groups-that-are-visible-in-searches}
+### Gebruikers en groepen opgeven die zichtbaar zijn in zoekopdrachten {#specify-users-and-groups-that-are-visible-in-searches}
 
 Wanneer gebruikers hun douanebeleid beheren, kunnen zij naar gebruikers en groepen zoeken om aan hun beleid toe te voegen. U moet de domeinen specificeren waarvan de gebruikers en de groepen in deze onderzoeken zichtbaar zijn.
 
@@ -717,7 +716,7 @@ Wanneer gebruikers hun douanebeleid beheren, kunnen zij naar gebruikers en groep
 1. Voor de Mijn pagina van Beleid, klik de Zichtbare Gebruikers en de Groepen tabel.
 1. Als u de gebruikers en groepen in een domein zichtbaar wilt maken, klikt u op Domeinen toevoegen, selecteert u de domeinen en klikt u op Toevoegen. Als u een domein wilt verwijderen, schakelt u het selectievakje naast de domeinnaam in en klikt u op Verwijderen.
 
-## Het configuratiebestand voor documentbeveiliging {#manually-editing-the-document-security-configuration-file} handmatig bewerken
+## Het configuratiebestand voor documentbeveiliging handmatig bewerken {#manually-editing-the-document-security-configuration-file}
 
 U kunt de configuratiegegevens die in de documentbeveiligingsdatabase zijn opgeslagen, importeren en exporteren. U kunt bijvoorbeeld een reservekopie maken van de configuratiegegevens wanneer u overschakelt van een testomgeving naar een productieomgeving, of u kunt geavanceerde opties bewerken die alleen kunnen worden geconfigureerd om dit bestand te bewerken.
 
@@ -750,12 +749,7 @@ U kunt de volgende wijzigingen aanbrengen met behulp van het configuratiebestand
 1. Klik doorbladeren om naar het configuratiedossier te gaan en dan de Invoer te klikken. U kunt het pad niet rechtstreeks in het vak Bestandsnaam typen.
 1. Klik op OK.
 
-1. 
-1. 
-1. 
-1. 
-
-### Een time-outperiode voor offlinesynchronisatie opgeven {#specify-a-timeout-period-for-offline-synchronization}
+### Een time-outperiode voor offline synchronisatie opgeven {#specify-a-timeout-period-for-offline-synchronization}
 
 Met documentbeveiliging kunnen gebruikers beveiligde documenten openen en gebruiken als ze geen verbinding hebben met de documentbeveiligingsserver. De clienttoepassing van de gebruiker moet regelmatig synchroniseren met de server om documenten geldig te houden voor offline gebruik. De eerste keer dat gebruikers een beveiligd document openen, wordt hen gevraagd of hun computer geautoriseerd moet zijn om periodieke clientsynchronisatie uit te voeren.
 
@@ -948,7 +942,7 @@ In dit voorbeeld worden alle aanvragen van een Microsoft PowerPoint 2007- of Mic
  </node
 ```
 
-### De configuratieparameters voor watermerken wijzigen {#change-the-watermark-configuration-parameters}
+### De configuratieparameters van het watermerk wijzigen {#change-the-watermark-configuration-parameters}
 
 Standaard kunt u maximaal vijf elementen in een watermerk opgeven. De maximale bestandsgrootte van het PDF-document dat u als watermerk wilt gebruiken, is bovendien beperkt tot 100 kB. U kunt deze parameters in het config.xml- dossier veranderen.
 
@@ -969,7 +963,7 @@ Standaard kunt u maximaal vijf elementen in een watermerk opgeven. De maximale b
 
 1. Importeer het configuratiebestand. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Externe koppelingen {#disabling-external-links} uitschakelen
+### Externe koppelingen uitschakelen {#disabling-external-links}
 
 Veel gebruikers voor documentbeveiliging hebben geen toegang tot externe koppelingen, zoals **www.adobe.com**, terwijl ze de gebruikersinterfaces voor Rechterbeheer gebruiken:
 
@@ -988,7 +982,7 @@ De volgende veranderingen in config.xml schakelen alle externe verbindingen van 
 
 1. Importeer het configuratiebestand. (Zie [Het configuratiebestand voor documentbeveiliging handmatig bewerken](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Configuratie om SMTP voor de Veiligheid van de Laag van het Vervoer (TLS) {#configuration-to-enable-smtp-for-transport-layer-security-tls} toe te laten
+### Configuratie om SMTP voor de Veiligheid van de Laag van het Vervoer (TLS) toe te laten {#configuration-to-enable-smtp-for-transport-layer-security-tls}
 
 De volgende veranderingen in config.xml laten TLS steun voor de Uitgenodigde eigenschap van de Registratie van de Gebruiker toe.
 
