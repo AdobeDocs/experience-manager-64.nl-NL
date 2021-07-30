@@ -10,8 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 0%
@@ -34,7 +33,7 @@ Naast pagina&#39;s en elementen worden tags gebruikt voor AEM Communities-functi
 
 * Middelen van Enablement (zie [Tagging Enablement Resources](/help/communities/functions.md#catalog-function))
 
-## Tagkenmerken {#tag-features}
+## Functies voor tags {#tag-features}
 
 Enkele eigenschappen van markeringen binnen AEM omvatten:
 
@@ -126,15 +125,15 @@ Als u de tag voor bewerkingen wilt selecteren en meerdere selecties wilt maken, 
 
 ![chlimage_1-186](assets/chlimage_1-186.png) ![chlimage_1-187](assets/chlimage_1-187.png)
 
-### Tageigenschappen {#viewing-tag-properties} weergeven
+### Tageigenschappen weergeven {#viewing-tag-properties}
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
 Wanneer een naamruimte of andere tag wordt geselecteerd en u het pictogram **`View Properties`** selecteert, wordt informatie over `name`, het tijdstip van laatste bewerking en het aantal verwijzingen weergegeven. Indien gepubliceerd, de tijd het werd gepubliceerd en identiteitskaart van de uitgever wordt getoond. Deze informatie wordt in een kolom links van de tagkolommen weergegeven.
 
-![chlimage_1-109](assets/chlimage_1-189.png)
+![chlimage_1-189](assets/chlimage_1-189.png)
 
-### Tagverwijzingen tonen {#showing-tag-references}
+### Tagverwijzingen weergeven {#showing-tag-references}
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
@@ -148,9 +147,9 @@ Als u de pijl rechts van de telling selecteert, worden de referentienamen weerge
 
 Het pad naar de verwijzing wordt als knopinfo weergegeven wanneer u de muisaanwijzer op een verwijzing plaatst.
 
-![chlimage_1-112](assets/chlimage_1-192.png)
+![chlimage_1-192](assets/chlimage_1-192.png)
 
-### Codes {#creating-tags} maken
+### Tags maken {#creating-tags}
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -171,7 +170,7 @@ Zodra de vereiste informatie is ingevoerd
 
 * Selecteer **Maken**
 
-### Labels {#editing-tags} bewerken
+### Tags bewerken {#editing-tags}
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -183,7 +182,7 @@ Zie de sectie over [Tags beheren in verschillende talen](#managing-tags-in-diffe
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-### Labels {#moving-tags} verplaatsen
+### Labels verplaatsen {#moving-tags}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -206,10 +205,9 @@ naar Bladeren naar het nieuwe pad waaronder u de tag wilt verplaatsen.
 inAanvankelijk wordt de huidige 
 `name`van de tag. Er kan een nieuwe `name`worden ingevoerd.
 
-* 
 * selecteren **Opslaan**
 
-### Codes {#merging-tags} samenvoegen
+### Tags samenvoegen {#merging-tags}
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
@@ -232,7 +230,7 @@ inBladeren selecteert u het pad van de tag waarin u wilt samenvoegen.
 >
 >Wanneer een tag waarnaar wordt verwezen wordt verplaatst of samengevoegd, wordt de tag niet fysiek verwijderd, zodat verwijzingen behouden kunnen blijven.
 
-### Codes {#publishing-tags} publiceren
+### Codes publiceren {#publishing-tags}
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -240,13 +238,13 @@ Wanneer een naamruimte of andere tag is geselecteerd, selecteert u het pictogram
 
 Als u een taxonomie (een naamruimte en subtags) wilt publiceren, kunt u het beste een [pakket](/help/sites-administering/package-manager.md) van de naamruimte maken (zie [Taxonomy Root Node](/help/sites-developing/framework.md#taxonomy-root-node)). Zorg ervoor dat u [machtigingen ](#setting-tag-permissions) toepast op de naamruimte voordat u het pakket maakt.
 
-### Publicatie van labels {#unpublishing-tags} ongedaan maken
+### Publicatietags ongedaan maken {#unpublishing-tags}
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
 Wanneer een naamruimte of andere tag wordt geselecteerd en u het pictogram **`Unpublish`**selecteert, wordt de tag in de auteursomgeving gedeactiveerd en uit de publicatieomgeving verwijderd. Net als bij de bewerking `Delete`als de geselecteerde tag een containertag is, worden alle onderliggende tags gedeactiveerd in de auteursomgeving en verwijderd uit de publicatieomgeving.
 
-### Labels {#deleting-tags} verwijderen
+### Tags verwijderen {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
