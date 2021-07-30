@@ -10,8 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 0%
@@ -190,8 +189,6 @@ De nieuwsbrief-instellingen aanpassen:
 
    ![mcm_nieuwsbrief_settings](assets/mcm_newsletter_settings.png)
 
-1. 
-
    1. Typ het **Van** e-mailadres
    1. Wijzig, indien nodig, het **Onderwerp** van de e-mail.
    1. Selecteer een **Standaardlijst met ontvangers** in de vervolgkeuzelijst.
@@ -199,7 +196,7 @@ De nieuwsbrief-instellingen aanpassen:
 
    Wanneer u de nieuwsbrief test of verzendt, zullen de ontvangers e-mail met het gespecificeerde e-mailadres en onderwerp ontvangen.
 
-## Nieuwsbrieven voor het testen van vluchten {#flight-testing-newsletters}
+## Nieuwsbrieven voor vliegtests {#flight-testing-newsletters}
 
 Hoewel het testen van de vlucht niet verplicht is, kunt u het best testen voordat u een nieuwsbrief verstuurt om er zeker van te zijn dat het lijkt zoals u wilt.
 
