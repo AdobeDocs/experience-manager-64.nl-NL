@@ -7,10 +7,9 @@ uuid: b2188d34-14f9-4c4e-bbe0-a2e763ed2958
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
-feature: Interactive Communication
+feature: Interactieve communicatie
 exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 0%
@@ -32,7 +31,7 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
 * **Variabelen**: In tekstdocumentfragment zijn variabelen niet gebonden aan een achterwaartse gegevensbron. De agent vult in/selecteert waarden in variabelen of bindt de variabelen aan gegevensbronnen terwijl het voorbereiden van de Interactieve Mededeling voor het voorleggen van het aan een postproces.
 * **Herhalen**: U kunt dynamische informatie in uw Interactieve Communicatie, zoals transacties in een creditcardverklaring hebben, waarvan het aantal voorkomen met elke geproduceerde Interactieve Communicatie kan blijven veranderen. Met Herhaling kunt u dergelijke dynamische informatie opmaken en structureren. Zie [Inline voorwaarde en repeat](cm-inline-condition.md) voor meer informatie.
 
-## Tekst {#createtext} maken
+## Tekst maken {#createtext}
 
 1. Selecteer **`[!UICONTROL Forms]`** > **[!UICONTROL Document Fragments]**.
 1. Selecteer **`[!UICONTROL Create]`** > **[!UICONTROL Text]**.
@@ -67,7 +66,7 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
 
    De tekst wordt gemaakt. Nu kunt u doorgaan met het gebruik van de tekst als een bouwsteen tijdens het maken van een interactieve communicatie.
 
-## Tekst {#edittext} bewerken
+## Tekst bewerken {#edittext}
 
 U kunt een bestaand tekstdocumentfragment bewerken met de volgende stappen. U kunt ook een tekstdocumentfragment bewerken in een interactieve communicatie-editor.
 
@@ -77,7 +76,7 @@ U kunt een bestaand tekstdocumentfragment bewerken met de volgende stappen. U ku
 1. Breng de gewenste wijzigingen aan. Zie [Tekst maken](#createtext) voor meer informatie over opties in tekst.
 1. Tik **[!UICONTROL Save]** en tik **[!UICONTROL Close]**.
 
-## Een tekstdocumentfragment aanpassen met eigenschappen van formuliergegevensmodel {#formdatamodel}
+## Een tekstdocumentfragment aanpassen met eigenschappen van het formuliergegevensmodel {#formdatamodel}
 
 U kunt tekstdocumentfragmenten personaliseren door de eigenschappen van het formuliergegevensmodel in te voegen. Door eigenschappen van het formuliergegevensmodel in tekst in te voegen, kunt u specifieke gegevens voor ontvangers ophalen en vullen vanuit de bijbehorende gegevensbron terwijl u een voorbeeld van een interactieve communicatie bekijkt. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over het formuliergegevensmodel.
 
@@ -89,11 +88,9 @@ Als u een formuliergegevensmodel hebt opgegeven tijdens het maken van een tekst,
 
 * Om de agenten toe te staan om de waarde van een bezit FDM in de agent UI uit te geven terwijl [Interactieve Communicatie](/help/forms/using/prepare-send-interactive-communication.md) gebruikend de Agent UI voorbereidt en verzendt, het **`[D]`** slotpictogram voor dat bezit tikken en het in een ontgrendelde staat verzekeren. De standaardstaat van het bezit is gesloten en een agent kan niet het bezit in de Agent UI uitgeven.
 
-* 
-
 U kunt ook eigenschappen van het gegevensmodel van het formulier gebruiken om regels samen te stellen voor het weergeven of verbergen van delen van inhoud. Zie [Regels maken in tekst](#rules) voor meer informatie.
 
-## Variabelen maken en gebruiken in een tekstdocumentfragment {#variables}
+## Variabelen in een tekstdocumentfragment maken en gebruiken {#variables}
 
 Variabelen zijn plaatsaanduidingen die tijdens het maken van een interactieve communicatie kunnen worden gebonden. Variabelen kunnen worden gebonden aan een eigenschap van een formuliergegevensmodel of een tekstfragment. De variabelen kunnen ook voor de agent worden verlaten om te vullen.
 
@@ -105,7 +102,7 @@ U kunt variabelen gebruiken in plaats van eigenschappen van het formuliergegeven
 
 Tijdens het maken of bewerken van een tekstdocumentfragment kunt u variabelen maken en invoegen. De variabelen u creeert verschijnen in het lusje van Gegevens van de Agent UI. De agent specificeert de waarden voor de variabelen terwijl [Interactieve Communicatie gebruikend de Agent UI](/help/forms/using/prepare-send-interactive-communication.md) voorbereidt en verzendt.
 
-### Variabelen {#create-variables} maken
+### Variabelen maken {#create-variables}
 
 1. Tik in het linkervenster op **[!UICONTROL Variables]**.
 
@@ -210,7 +207,7 @@ Uitlijning, werkbalk
 
 Aanbiedingswerkbalk
 
-### Onderdelen van tekst markeren/benadrukken {#highlight}
+### Tekstgedeelten markeren/benadrukken {#highlight}
 
 Als u delen van tekst in een bewerkbaar documentfragment wilt markeren of benadrukken, selecteert u de tekst en tikt u op Markeerkleur.
 
@@ -222,7 +219,7 @@ Desgewenst kunt u ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, 
 
 ![textBackgroundColor-2](assets/textbackgroundcolor-2.png)
 
-### Opgemaakte tekst {#paste} plakken
+### Opgemaakte tekst plakken {#paste}
 
 Als u een of meer tekstalinea&#39;s wilt hergebruiken die in een andere toepassing voorkomen, zoals Microsoft® Word- of HTML-pagina&#39;s, kopieert en plakt u de tekst in de teksteditor. De opmaak van de gekopieerde tekst blijft behouden in de teksteditor.
 
@@ -238,7 +235,7 @@ U kunt de tekst rechtstreeks vanuit het Microsoft® Word-document naar een bewer
 >
 >De opmaak van geplakte tekst heeft echter enkele [beperkingen](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
-## Speciale tekens invoegen in tekst {#special}
+## Speciale tekens in tekst invoegen {#special}
 
 Voeg zo nodig speciale tekens in het documentfragment in. U kunt bijvoorbeeld het palet Speciale tekens gebruiken om het volgende in te voegen:
 
@@ -250,7 +247,7 @@ Voeg zo nodig speciale tekens in het documentfragment in. U kunt bijvoorbeeld he
 
 Teksteditor heeft ingebouwde ondersteuning voor 210 speciale tekens. De beheerder kan [ondersteuning toevoegen voor meer/aangepaste speciale tekens door aanpassing](/help/forms/using/custom-special-characters.md).
 
-## Tekst {#search-features} zoeken en vervangen
+## Tekst zoeken en vervangen {#search-features}
 
 Wanneer u werkt met tekstdocumentfragmenten die een grote hoeveelheid tekst bevatten, moet u zoeken naar een specifieke tekstreeks. U moet mogelijk ook een specifieke tekenreeks vervangen door een alternatieve tekenreeks.
 
