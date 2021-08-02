@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
-source-git-commit: 0d660388cd0fbbf98076610d18c19f480c75ef11
+source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 35%
+source-wordcount: '626'
+ht-degree: 34%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 35%
    + [Afbeeldingen met hyperlinks toevoegen](image-maps.md)
    + [Elementen hergebruiken met MSM](reuse-assets-using-msm.md)
 +  Dynamic Media {#dynamic}
-   + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media-newsletter.md)
+   + [Dynamic Media-nieuwsarchief per Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
    + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
