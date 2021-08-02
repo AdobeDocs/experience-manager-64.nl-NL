@@ -12,9 +12,9 @@ discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 exl-id: d2fdad3f-513b-4147-a7c6-a3c1b64dd6e3
 feature: Carousel-banners
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 76592d2714106f96184196b9e8db012801bf7c28
 workflow-type: tm+mt
-source-wordcount: '4682'
+source-wordcount: '4642'
 ht-degree: 4%
 
 ---
@@ -33,9 +33,9 @@ Op uw website kan een carrouselbanner er als volgt uitzien:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Hier kunt u door de afbeeldingen navigeren (door op de getallen te klikken). Bovendien worden de dia&#39;s automatisch geroteerd op basis van een tijdsinterval dat u kunt aanpassen. Afbeeldingen die u in de carrouselbanner toevoegt, ondersteunen zowel hotspots als afbeeldingen met hyperlinks, waar gebruikers op een hyperlink kunnen tikken of naar een hyperlink kunnen gaan of een venster kunnen openen met een snelle weergave.
+Hier kunt u door de afbeeldingen navigeren (door op de getallen te klikken). Bovendien worden de dia&#39;s automatisch geroteerd op basis van een tijdsinterval dat u kunt aanpassen. Afbeeldingen die u in de carrouselbanner toevoegt, ondersteunen zowel hotspots als afbeeldingen met hyperlinks, waar gebruikers op een hyperlink kunnen tikken of naar een hyperlink kunnen gaan of een Quickview-venster kunnen openen.
 
-In dit voorbeeld heeft een gebruiker op een afbeelding met hyperlinks getikt of geklikt en heeft hij het venster Snel weergeven voor handschoenen geopend:
+In dit voorbeeld heeft een gebruiker op een afbeelding met hyperlinks getikt of erop geklikt en heeft hij het venster QuickView voor handschoenen geopend:
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
@@ -53,7 +53,7 @@ Zo kunt u snel aan de slag:
 
 1. [Identificeer hotspot en beeldkaartvariabelen](#identifying-hotspot-and-image-map-variables)  (slechts voor klanten die AEM Assets + Dynamic Media gebruiken)
 
-   Begin door dynamische variabelen te identificeren die door de bestaande snelle meningsimplementatie worden gebruikt zodat u hotspots en beeldkaartgegevens behoorlijk tijdens het proces van de de bannerverwezenlijking van de carrousel in AEM Assets kunt ingaan.
+   Begin door dynamische variabelen te identificeren die door de bestaande implementatie van QuickView worden gebruikt zodat u hotspots en beeldkaartgegevens behoorlijk tijdens het proces van de de bannerverwezenlijking van de carrousel in AEM Assets kunt ingaan.
 
    >[!NOTE]
    >
@@ -97,9 +97,9 @@ Zie [Carrouselsets bewerken](#editing-carousel-sets) als u carrouselsets moet be
 
 ## Variabelen hotspot en afbeelding met hyperlinks identificeren {#identifying-hotspot-and-image-map-variables}
 
-Begin door dynamische variabelen te identificeren die door de bestaande snelle meningsimplementatie worden gebruikt zodat u hotspots of beeldkaartgegevens behoorlijk tijdens het het vastgestelde proces van de carrouselverwezenlijking in AEM Assets kunt ingaan.
+Begin door dynamische variabelen te identificeren die door de bestaande implementatie van QuickView worden gebruikt zodat u hotspots of beeldkaartgegevens behoorlijk tijdens het proces van de carrouselreeks creatie in AEM Assets kunt ingaan.
 
-Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeelding in AEM Assets, moet u een SKU en optionele aanvullende variabelen toewijzen aan elke hotspot of afbeelding met hyperlinks. Dergelijke variabelen worden later gebruikt om hotspots of afbeeldingen met hyperlinks te laten overeenkomen met inhoud voor snelle weergave.
+Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeelding in AEM Assets, moet u een SKU en optionele aanvullende variabelen toewijzen aan elke hotspot of afbeelding met hyperlinks. Dergelijke variabelen worden later gebruikt om hotspots of afbeeldingen met hyperlinks te laten overeenkomen met Quickview-inhoud.
 
 >[!NOTE]
 >
@@ -111,39 +111,39 @@ Het is belangrijk om het aantal en het type variabelen correct te identificeren 
 
 Er zijn verschillende manieren om een set variabelen te identificeren die moet worden gebruikt voor hotspot- of afbeeldingskaartgegevens.
 
-Soms is het voldoende om IT-specialisten te raadplegen die verantwoordelijk zijn voor de bestaande snelle weergave-implementatie, omdat zij waarschijnlijk weten wat de minimale gegevensset is die nodig is om snel zicht in het systeem te vinden. In de meeste gevallen is het echter ook mogelijk om eenvoudig het bestaande gedrag van de front-end code te analyseren.
+Soms is het voldoende om IT-specialisten te raadplegen die verantwoordelijk zijn voor de bestaande QuickView-implementatie, omdat ze waarschijnlijk zullen weten wat de minimale gegevensset is die nodig is om QuickView in het systeem te identificeren. In de meeste gevallen is het echter ook mogelijk om eenvoudig het bestaande gedrag van de front-end code te analyseren.
 
-De meeste snelle weergaveimplementaties gebruiken het volgende paradigma:
+De meeste implementaties van de Snelle mening gebruiken het volgende paradigma:
 
 * De gebruiker activeert een gebruikersinterface-element op de website. Als u bijvoorbeeld op een knop **[!UICONTROL Quick View]** klikt.
-* De website stuurt een Ajax-aanvraag naar de achterkant om de gegevens of inhoud van de snelle weergave te laden, indien nodig.
-* De gegevens van de Snelle weergave worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
+* De website verzendt een Ajax-aanvraag naar de achterkant om de Quickview-gegevens of -inhoud te laden, indien nodig.
+* De Quickview-gegevens worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
 * Tot slot geeft de front-end code dergelijke inhoud visueel op het scherm terug.
 
-Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de functie Snelle weergave is geïmplementeerd, de snelle weergave activeren en de URL van Ajax die via de webpagina is verzonden, vastleggen om de gegevens of inhoud van de Snelle weergave te laden.
+Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de functie QuickView is geïmplementeerd, de QuickView activeren en de Ajax-URL vastleggen die via een webpagina is verzonden om de gegevens of inhoud van de QuickView-weergave te laden.
 
 Normaal is er geen behoefte aan u om het even welke gespecialiseerde het zuiveren hulpmiddelen te gebruiken. Moderne webbrowsers beschikken over webinspecteurs die hun werk naar behoren doen. Hieronder volgen enkele voorbeelden van webbrowsers met webcontroles:
 
 * Om alle uitgaande HTTP- verzoeken in Google Chrome te zien, druk F12 (Vensters) of Command-Option-I (MAC) om het paneel van de Hulpmiddelen van de Ontwikkelaar te openen, en dan **[!UICONTROL Network]** tabel te tikken.
 * In Firefox kunt u de Firebug-plug-in activeren door op F12 (Windows) of Command-Option-I (Mac) te drukken en het tabblad Net te gebruiken. U kunt ook het ingebouwde paneel en het bijbehorende tabblad Netwerk gebruiken.
 
-Wanneer netwerkcontrole in browser wordt aangezet, teweeg de snelle mening op de pagina.
+Wanneer netwerkcontrole in browser wordt aangezet, teweeg de Snelle mening op de pagina.
 
-Zoek nu de snelle weergave van Ajax URL in het netwerklogboek en kopieer de opgenomen URL voor toekomstige analyse. In de meeste gevallen waarin u de snelle weergave activeert, zijn er veel verzoeken die naar de server worden verzonden. Doorgaans is de URL voor een snelle weergave van Ajax een van de eerste in de lijst. Het heeft of een complex gedeelte van het vraagkoord of weg, en zijn reactieMIME type of `text/html`, `text/xml`, of `text/javascript` is.
+Zoek nu de URL van Quickview Ajax in het netwerklogboek en kopieer de geregistreerde URL voor toekomstige analyse. In de meeste gevallen wanneer u de Quickview teweegbrengt zijn er talrijke verzoeken die naar de server worden verzonden. De URL van Quickview Ajax is doorgaans een van de eerste in de lijst. Het heeft of een complex gedeelte van het vraagkoord of weg, en zijn reactieMIME type of `text/html`, `text/xml`, of `text/javascript` is.
 
-Tijdens dit proces is het belangrijk om verschillende delen van uw website te bezoeken, met verschillende productcategorieën en typen. De reden hiervoor is dat snelle weergave-URL&#39;s onderdelen kunnen bevatten die algemeen gelden voor een bepaalde categorie websites, maar deze URL alleen wijzigen als u een ander gedeelte van de website bezoekt.
+Tijdens dit proces is het belangrijk om verschillende delen van uw website te bezoeken, met verschillende productcategorieën en typen. De reden hiervoor is dat URL&#39;s in de Snelle weergave onderdelen kunnen bevatten die algemeen gelden voor een bepaalde categorie websites, maar deze alleen wijzigen als u een ander gedeelte van de website bezoekt.
 
-In het eenvoudigste geval, is het enige veranderlijke deel in Snelle mening URL productSKU. In dit geval is de SKU-waarde het enige gegevensstuk dat u nodig hebt om hotspots of afbeeldingen met hyperlinks toe te voegen aan de bannerafbeelding.
+In het eenvoudigste geval, is het enige veranderlijke deel in Quickview URL productSKU. In dit geval is de SKU-waarde het enige gegevensstuk dat u nodig hebt om hotspots of afbeeldingen met hyperlinks toe te voegen aan de bannerafbeelding.
 
-In complexe gevallen heeft de URL van de snelle weergave echter naast de SKU ook verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
+In complexe gevallen heeft de URL van de Snelle weergave echter naast de SKU ook verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
 
-Bekijk de volgende voorbeelden van snelle weergave-URL&#39;s en de resulterende hotspot- of afbeeldingskaartvariabelen:
+Bekijk de volgende voorbeelden van URL&#39;s in QuickView en de resulterende hotspot- of afbeeldingskaartvariabelen:
 
 <table> 
  <tbody> 
   <tr> 
    <td>Enige SKU, die in het vraagkoord wordt gevonden.</td> 
-   <td><p>De opgenomen snelle weergave-URL's bevatten het volgende:</p> 
+   <td><p>De opgenomen URL's van de Snelle weergave bevatten het volgende:</p> 
     <ul> 
      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li> 
      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li> 
@@ -153,7 +153,7 @@ Bekijk de volgende voorbeelden van snelle weergave-URL&#39;s en de resulterende 
   </tr> 
   <tr> 
    <td>Eén SKU, gevonden in het URL-pad.</td> 
-   <td><p>De opgenomen snelle weergave-URL's bevatten het volgende:</p> 
+   <td><p>De opgenomen URL's van de Snelle weergave bevatten het volgende:</p> 
     <ul> 
      <li><p><code>https://server/product/6422350843</code></p> </li> 
      <li><p><code>https://server/product/1607745002</code></p> </li> 
@@ -162,7 +162,7 @@ Bekijk de volgende voorbeelden van snelle weergave-URL&#39;s en de resulterende 
   </tr> 
   <tr> 
    <td>SKU en categorie-id in de queryreeks.</td> 
-   <td><p>De opgenomen snelle weergave-URL's bevatten het volgende:</p> 
+   <td><p>De opgenomen URL's van de Snelle weergave bevatten het volgende:</p> 
     <ul> 
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li> 
@@ -283,8 +283,8 @@ Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-pre
       * Als u geen klant van AEM Sites of van de Handel bent
 
          * Zie [Hotspot-variabelen identificeren](#identifying-hotspot-and-image-map-variables) aangezien u deze variabelen wilt definiëren.
-         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld **[!UICONTROL SKU Value]** de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingevoerde waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het snelle meningsmalplaatje zodat het systeem weet om aangewezen hotspot met een bepaalde snelle mening van SKU te associëren.
-         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als er andere variabelen in de snelle weergave zijn die u nodig hebt om een product verder te identificeren. Geef in het tekstveld een extra variabele op. `category=Mens` is bijvoorbeeld een toegevoegde variabele.
+         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld **[!UICONTROL SKU Value]** de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geëtteerde hotspot met een bepaalde Snelle mening van SKU te associëren.
+         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als er andere variabelen in de Snelle weergave zijn die u nodig hebt om een product nader te identificeren. Geef in het tekstveld een extra variabele op. `category=Mens` is bijvoorbeeld een toegevoegde variabele.
          * Zie [Werken met kiezers](working-with-selectors.md) voor meer informatie.
    * Tik op **[!UICONTROL Hyperlink]**.
 
@@ -415,16 +415,16 @@ Als u echter een zelfstandige AEM bent, kunt u de carrouselbanner handmatig toev
 
 Deze taak is alleen van toepassing als u een zelfstandige AEM Assets-klant bent.
 
-De laatste stap in dit proces is het integreren van de carrouselbanner met een bestaande snelle weergave-implementatie op uw website. Elke implementatie van Quickview is uniek en een specifieke benadering is nodig die de hulp van een front-end IT persoon het meest waarschijnlijk impliceert.
+De laatste stap in dit proces is het integreren van de carrouselbanner met een bestaande implementatie van QuickView op uw website. Elke implementatie van Quickview is uniek en een specifieke benadering is nodig die de hulp van een front-end IT persoon het meest waarschijnlijk impliceert.
 
-De bestaande implementatie van Snelle weergave vertegenwoordigt doorgaans een reeks onderling samenhangende acties die op de webpagina in de volgende volgorde plaatsvinden:
+De bestaande implementatie van QuickView vertegenwoordigt normaal gesproken een reeks onderling samenhangende acties die op de webpagina in de volgende volgorde plaatsvinden:
 
 1. Een gebruiker activeert een element in de gebruikersinterface van uw website.
-1. De front-end code verkrijgt een snelle mening URL die op het gebruikersinterface element wordt gebaseerd dat in stap 1 werd teweeggebracht.
+1. De front-end code verkrijgt een Quickview URL die op het gebruikersinterface element wordt gebaseerd dat in stap 1 werd teweeggebracht.
 1. De front-end code verzendt een Ajax- verzoek gebruikend URL die in stap 2 wordt verkregen.
-1. De achtergrondlogica retourneert de corresponderende gegevens of inhoud van de Snelle weergave terug naar de front-end code.
-1. De front-end code laadt de snelle meningsgegevens of inhoud.
-1. Naar keuze, zet de voorste-eindcode de geladen snelle meningsgegevens in een vertegenwoordiging van HTML om.
+1. De achterste logica keert de overeenkomstige gegevens of inhoud van de Snelle mening terug naar de front-end code.
+1. De front-end code laadt de gegevens of de inhoud van de Snelle mening.
+1. Naar keuze, zet de front-end code de geladen gegevens van de Snelle mening in een vertegenwoordiging van HTML om.
 1. De front-end code geeft een modaal dialoogvenster of deelvenster weer en geeft de HTML-inhoud op het scherm weer voor de eindgebruiker.
 
 Deze vraag kan onafhankelijke openbare API vraag niet vertegenwoordigen die door de Webpaginalogica van een willekeurige stap kan worden geroepen. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
@@ -434,8 +434,8 @@ Wanneer een gebruiker op een hotspot of afbeelding met hyperlinks in de carrouse
 In een dergelijke gebeurtenishandler doet de front-end code het volgende:
 
 * Luistert naar een gebeurtenis die door de carrouselbanner wordt uitgegeven.
-* Hiermee maakt u een URL voor een snelle weergave op basis van de gegevens van de hotspot of afbeelding met hyperlinks.
-* Triggert het proces waarbij de snelle weergave vanaf de achtergrond wordt geladen en op het scherm wordt weergegeven voor weergave.
+* Hiermee maakt u een Quickview-URL op basis van de gegevens van de hotspot of afbeelding met hyperlinks.
+* Triggert het proces om de Snelle mening van het achtereind te laden en het terug te geven op het scherm voor vertoning.
 
 De insluitcode die door AEM Assets wordt geretourneerd, bevat al een gebruiksklare gebeurtenishandler die als commentaar wordt gemarkeerd.
 
@@ -445,7 +445,7 @@ Het proces voor het samenstellen van de URL van de Snelle weergave is in feite t
 
 Zie [Variabelen van hotspot en afbeeldingen met hyperlinks identificeren](#identifying-hotspot-and-image-map-variables).
 
-De laatste stap om de snelle mening URL teweeg te brengen en het snelle meningspaneel te activeren vereist hoogstwaarschijnlijk de hulp van een front-end IT persoon van uw afdeling van IT. Ze beschikken over de kennis om te weten hoe u de implementatie van de snelle weergave nauwkeurig kunt activeren vanuit de juiste stap en beschikken over een kant-en-klare URL voor snelle weergave.
+De laatste stap om de Quickview URL teweeg te brengen en het paneel van de Snelle mening te activeren vereist hoogstwaarschijnlijk de hulp van een front-end persoon van IT van uw afdeling van IT. Zij hebben de kennis om het best te weten hoe te om de implementatie van de Snelle mening van de juiste stap nauwkeurig teweeg te brengen, die een klaar-aan-gebruiksKickview URL hebben.
 
 ## Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
 
