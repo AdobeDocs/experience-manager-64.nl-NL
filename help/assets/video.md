@@ -73,7 +73,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
          [Video-uitvoeringen weergeven](video-renditions.md)
 
-[Video-uitvoeringen beheren](managing-assets-touch-ui.md#managing-renditions)
+         [Video-uitvoeringen beheren](managing-assets-touch-ui.md#managing-renditions)
 
       * [Viewervoorinstellingen beheren](managing-viewer-presets.md)
       * [Elementen publiceren](publishing-dynamicmedia-assets.md)
@@ -85,7 +85,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
       * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
 
-[Video-eigenschappen bewerken](managing-assets-touch-ui.md#editing-properties)
+         [Video-eigenschappen bewerken](managing-assets-touch-ui.md#editing-properties)
 
       * [Metagegevens voor digitale elementen beheren](metadata.md)
       * [Metagegevensschema&#39;s](metadata-schemas.md)
