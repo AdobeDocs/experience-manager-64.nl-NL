@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: d5b4f559b20c8671bd648d240b54cb65f73fd222
+source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
 workflow-type: tm+mt
-source-wordcount: '9881'
+source-wordcount: '9891'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
          [Video-uitvoeringen weergeven](video-renditions.md)
 
-         [Video-uitvoeringen beheren](managing-assets-touch-ui.md#managing-renditions)
+[Video-uitvoeringen beheren](managing-assets-touch-ui.md#managing-renditions)
 
       * [Viewervoorinstellingen beheren](managing-viewer-presets.md)
       * [Elementen publiceren](publishing-dynamicmedia-assets.md)
@@ -85,7 +85,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
       * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
 
-         [Video-eigenschappen bewerken](managing-assets-touch-ui.md#editing-properties)
+[Video-eigenschappen bewerken](managing-assets-touch-ui.md#editing-properties)
 
       * [Metagegevens voor digitale elementen beheren](metadata.md)
       * [Metagegevensschema&#39;s](metadata-schemas.md)
@@ -428,7 +428,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
    <td><p>Gecodeerd</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>Gecodeerd</p> </td> 
@@ -1033,7 +1033,7 @@ U kunt uw lange formuliervideo&#39;s beter weergeven en navigeren door hoofdstuk
 >
 >De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
 
-Desgewenst kunt u uw eigen aangepaste videoviewer maken en markeren met hoofdstukken in plaats van een voorinstelling voor de videoviewer te gebruiken. Raadpleeg voor instructies over het maken van uw eigen HTML5-viewer met hoofdstuknavigatie in de Adobe HTML5 Viewer SDK API de kop &quot;Gedrag aanpassen met wijzigingstoetsen&quot; onder de klassen `s7sdk.video.VideoPlayer` en `s7sdk.video.VideoScrubber`. Zie de [HTML5 Viewer SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) documentatie.
+Desgewenst kunt u uw eigen aangepaste videoviewer maken en markeren met hoofdstukken in plaats van een voorinstelling voor de videoviewer te gebruiken. Raadpleeg voor instructies over het maken van uw eigen HTML5-viewer met hoofdstuknavigatie in de Adobe HTML5 Viewer SDK API de kop &quot;Gedrag aanpassen met wijzigingstoetsen&quot; onder de klassen `s7sdk.video.VideoPlayer` en `s7sdk.video.VideoScrubber`. Zie de [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentatie.
 
 U maakt een hoofdstuklijst voor uw video op ongeveer dezelfde manier als u bijschriften maakt. U maakt dus een WebVTT-bestand. Merk op, echter, dat dit dossier van om het even welk WebVTT titeldossier moet gescheiden zijn dat u ook kunt gebruiken; u kunt geen titels en hoofdstukken in één dossier combineren WebVTT.
 
