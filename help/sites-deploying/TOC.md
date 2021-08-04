@@ -8,9 +8,9 @@ breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.4, inclusief de cloudimplementatie van Adobe Managed Services.
 feature: Implementeren
 role: Architect
-source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
+source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '373'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,11 @@ ht-degree: 1%
    + [Taken verschuiven](offloading.md)
    + [Single Sign On](single-sign-on.md)
    + [Brontoewijzing](resource-mapping.md)
-   + [HTTP via SSL inschakelen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
+   + [HTTP via SSL inschakelen](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html)
    + [Consistentie- en reiscontroles](consistency-check.md)
    + [Richtlijnen voor prestaties](performance-guidelines.md)
    + [Optimalisatie van prestaties](configuring-performance.md)
-   + [Prestatiehandleiding voor middelen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
+   + [Prestatiehandleiding voor middelen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html)
    + [Hoe kan ik-artikelen configureren](ht-deploy.md)
    + [De sites van de Geometrixx verwijderen](removing-the-geometrixx-sites.md)
    + [Webconsole configureren](configuring-web-console.md)
