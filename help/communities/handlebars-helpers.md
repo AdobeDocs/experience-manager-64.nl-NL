@@ -10,10 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: 66045e67-4d33-4c0c-81d7-d4287ed68ccc
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1527'
 ht-degree: 2%
 
 ---
@@ -142,7 +141,7 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 
 * **indeling**: String
 
-   (optioneel) De datumnotatie die moet worden toegepast. De standaardwaarde is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18:17:13-07:00&quot;
+   (optioneel) De datumnotatie die moet worden toegepast. Standaard is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Voorbeelden {#examples-1}
 
@@ -158,7 +157,7 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 // returns "03-18-2015"
 ```
 
-## Gelijk aan {#equals}
+## Gelijk {#equals}
 
 Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelijk aan.
 
@@ -341,7 +340,7 @@ Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionalitei
     <link href="/etc/clientlibs/social/hbs/comments.css" rel="stylesheet" type="text/css">
 ```
 
-## pretty-time {#pretty-time}
+## Nochtans {#pretty-time}
 
 Een hulpmiddel om te tonen hoeveel tijd tot een afbreekpunt is overgegaan, waarna een regelmatige datumformaat wordt getoond.
 
@@ -448,9 +447,7 @@ OPMERKING: dit kan een lege tekenreeks retourneren
 <a href="{{xss-validHref url}}">my link</a>
 ```
 
-## Handlebars.js BasisOverzicht {#handlebars-js-basic-overview}
-
-Een kort overzicht van hulpfuncties van [documentatie Handlebars.js](https://handlebarsjs.com/expressions.html):
+## Handlebars.js Basic - Overzicht {#handlebars-js-basic-overview}
 
 * Een hulpvraag van Handlebars is een eenvoudig herkenningsteken (*name *of helper), die door nul of meer ruimte-gescheiden parameters wordt gevolgd.
 * Parameters kunnen een eenvoudig String-, Number-, Boolean- of JSON-object zijn, plus een optionele reeks sleutelwaardeparen (hash-argumenten) als de laatste parameter(s).
@@ -527,7 +524,7 @@ Zou renderen:\
 
 Aangepaste helpers moeten zowel aan de serverzijde als aan de clientzijde worden geïmplementeerd, vooral wanneer gegevens worden doorgegeven. Voor SCF, worden de meeste malplaatjes gecompileerd en op server-kant teruggegeven aangezien de server HTML voor een bepaalde component produceert wanneer de pagina wordt gevraagd.
 
-### Aangepaste hulpprogramma&#39;s aan serverzijde {#server-side-custom-helpers}
+### Aangepaste hulp op de server {#server-side-custom-helpers}
 
 Om een douaneSCF helper op server-kant uit te voeren en te registreren, eenvoudig om de interface [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html) uit te voeren, maak het een [OSGi Service](../../help/sites-developing/the-basics.md#osgi) en installeer het als deel van een bundel OSGi.
 
