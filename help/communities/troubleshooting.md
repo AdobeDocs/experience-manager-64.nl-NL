@@ -10,8 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -24,13 +23,13 @@ Deze paragraaf bevat gemeenschappelijke punten van zorg en bekende punten.
 
 ## Bekende problemen {#known-issues}
 
-### Terugzetfout verzending {#dispatcher-refetch-fails}
+### Terugzetfout verzender mislukt {#dispatcher-refetch-fails}
 
-Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan reactie van de externe server niet ontvangen&#39; nadat wordt gewacht tot de aanvraag is verzonden.
+Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen reactie van de externe server ontvangen&#39; nadat wordt gewacht tot de aanvraag is verzonden.
 
 Dit probleem wordt opgelost door Dispatcher 4.1.6 of hoger te gebruiken.
 
-### Kan tot de Post van het Forum na Bevordering van CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq} toegang hebben
+### Kan de Post van het Forum na Bevordering van CQ 5.4 niet openen {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Als een forum op CQ 5.4 en geposte onderwerpen werd gecreeerd, en toen de plaats aan AEM 5.6.1 of later werd bevorderd, kan het proberen om de bestaande posten te bekijken in een fout op de pagina resulteren:
 
@@ -55,11 +54,11 @@ Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
 
 De fout is anders bij auteur en publiceren. Op auteur ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij publicatie wordt de fout op de pagina gegenereerd.
 
-Zie [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
+Zie [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
 
-## Algemene bezorgdheid {#common-concerns}
+## Algemene problemen {#common-concerns}
 
-### Waarschuwing bij logbestanden: Afgekeurde handgrepen {#warning-in-logs-handlebars-deprecated}
+### Waarschuwing bij logbestanden: Afgekeurde kleurenbalken {#warning-in-logs-handlebars-deprecated}
 
 Tijdens het opstarten (niet 1st - maar om het even welke daarna) kan de volgende waarschuwing in de logboeken worden gezien:
 
