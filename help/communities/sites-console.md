@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3123'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Het deelvenster Ontwerp bevat twee subdeelvensters voor het selecteren van het t
 
 ![site-theme-1](assets/sitetheme-1.png)
 
-Het framework gebruikt [Twitter Bootstrap {a1/> om een responsief, flexibel ontwerp op de site te brengen. ](https://twitterbootstrap.org/) U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
+Het framework gebruikt `Twitter Bootstrap` om de site een responsief, flexibel ontwerp te geven. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
