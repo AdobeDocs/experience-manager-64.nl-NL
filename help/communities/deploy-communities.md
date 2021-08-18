@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '2114'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
 
-# Gemeenschappen {#deploying-communities} implementeren
+# Gemeenschappen inzetten {#deploying-communities}
 
 ## Vereisten {#prerequisites}
 
@@ -138,7 +137,7 @@ De noodzakelijke stappen zijn:
 
 Meer informatie over het installeren van bundels vindt u op de pagina [Webconsole](/help/sites-deploying/web-console.md#bundles).
 
-#### Voorbeeld: Pakket MySQL-connector geïnstalleerd {#example-installed-mysql-connector-bundle}
+#### Voorbeeld: MySQL-connectorbundel is geïnstalleerd {#example-installed-mysql-connector-bundle}
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
@@ -197,7 +196,8 @@ Voor de inzameling SRP (MSRP of DSRP) om geavanceerde meertalige onderzoek (MLS)
 
 De geavanceerde MLS-download (ook wel &#39;phasetwo&#39; genoemd) is beschikbaar in de gegevensopslagruimte van de Adobe:
 
-* [AEM-SOLR-MLS-fasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* AEM-SOLR-MLS-fasetwo
+Voor het Geavanceerde pakket MLS, zie [AEM Geavanceerde MLS](deploy-communities.md#aem-advanced-mls) in de plaatsingssectie van de documentatie.
 
    * Versie 1.2.40, 6 april 2016
    * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip
@@ -235,7 +235,7 @@ De gemeenschappelijke opslag steunt moderatie van, en analytische op, UGC in het
 
 * [Aanbevolen technologieën](topologies.md): bespreekt de topologie om afhankelijk van gebruiksgeval en keus te gebruiken SRP
 
-## {#upgrading} bijwerken
+## Bijwerken {#upgrading}
 
 Wanneer u een upgrade uitvoert naar het AEM 6.4-platform van eerdere versies van AEM, is het belangrijk om Upgrade naar AEM 6.4 te lezen.
 
@@ -296,7 +296,7 @@ In de volgende afbeeldingen ziet u de resultaten van het wijzigen van de poort v
 
 ![chlimage_1-412](assets/chlimage_1-412.png)
 
-#### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
+#### Reverse Replication Agent (publiceren reverse) {#reverse-replication-agent-publish-reverse}
 
 ![chlimage_1-413](assets/chlimage_1-413.png)
 
@@ -325,7 +325,7 @@ Om de tunneldienst toe te laten:
 
 ![chlimage_1-414](assets/chlimage_1-414.png)
 
-### Repliceer de Crypto Sleutel {#replicate-the-crypto-key}
+### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
 Er zijn twee eigenschappen van AEM Communities die alle AEM serverinstanties vereisen om de zelfde encryptiesleutels te gebruiken. Dit zijn [Analytics](analytics.md) en [ASRP](asrp.md).
 
@@ -409,7 +409,7 @@ Als u de Apache HTTP-server gebruikt, moet u ervoor zorgen dat u de juiste serve
 
 Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhost`, in de `RedirectMatch`.
 
-#### httpd.conf sample {#httpd-conf-sample}
+#### httpd.conf, voorbeeld {#httpd-conf-sample}
 
 ```shell
 <IfModule alias_module>
@@ -426,7 +426,7 @@ Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhos
  </IfModule>
 ```
 
-### Verzending {#dispatcher}
+### Dispatcher {#dispatcher}
 
 Als u een Dispatcher gebruikt, raadpleegt u:
 
@@ -435,7 +435,7 @@ Als u een Dispatcher gebruikt, raadpleegt u:
 * [Dispatcher configureren voor Gemeenschappen](dispatcher.md)
 * [Bekende problemen](troubleshooting.md#dispatcher-refetch-fails)
 
-## Documentatie van verwante gemeenschappen {#related-communities-documentation}
+## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
 * Bezoek [Communitysites beheren](administer-landing.md) voor meer informatie over het maken van een communitysite, het configureren van sjablonen voor communitysites, het moderniseren van community-inhoud, het beheren van leden en het configureren van berichten.
 
