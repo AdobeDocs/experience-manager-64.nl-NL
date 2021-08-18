@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Zie ook [Maven gebruiken voor Communities](maven.md).
 
 ### Geen JSP-componentsjablonen {#no-jsp-component-templates}
 
-In het [social component framework](scf.md) (SCF) wordt de sjabloontaal `HandlebarsJS` (HBS) gebruikt in plaats van JSP (Java Server Pages) die vóór AEM 6.0 werd gebruikt.
+In het [social component framework](scf.md) (SCF) wordt de sjabloontaal [HandlebarsJS](https://handlebarsjs.com/) (HBS) gebruikt in plaats van Java Server Pages (JSP) die vóór AEM 6.0 werd gebruikt.
 
 In AEM 6.0 bleven de JSP componenten naast de nieuwe HBS kadercomponenten op dezelfde plaats, met de componenten HBS typisch gevestigd in subfolders genoemd &quot;hbs&quot;.
 
