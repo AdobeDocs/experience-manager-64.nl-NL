@@ -12,9 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ De console Groepen openen:
    * De structuur van de site van de community moet een groepfunctie bevatten
    * Deze schermafbeeldingen zijn afkomstig uit de zelfstudie Aan de slag nadat [groepen zijn gemaakt voor publicatie](published-site.md)
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-135](assets/chlimage_1-133.png)
 
 Selecteer **[!UICONTROL Groups folder]** om het te openen.
 
@@ -100,7 +100,7 @@ Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
 
 ![communitygroepthema](assets/communitygrouptheme.png)
 
-Het framework gebruikt [Twitter Bootstrap {a1/> om een responsief, flexibel ontwerp op de site te brengen. ](https://twitterbootstrap.org/) U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitygroepsjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
+Het framework gebruikt `Twitter Bootstrap` om de site een responsief, flexibel ontwerp te geven. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitygroepsjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
