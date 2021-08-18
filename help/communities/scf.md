@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ Bezoek [Aanpassingen aan de serverzijde](server-customize.md) voor informatie ov
 
 ## Handlebars JS Templating Language {#handlebars-js-templating-language}
 
-Een van de merkbaardere wijzigingen in het nieuwe framework is het gebruik van de `Handlebars JS`-sjabloontaal (HBS), een populaire open-source-technologie voor server-client rendering.
+Een van de merkbaardere wijzigingen in het nieuwe framework is het gebruik van de [Handlebars JS](https://handlebarsjs.com/)-sjabloontaal (HBS), een populaire open-source technologie voor server-client rendering.
 
 HBS-scripts zijn eenvoudig, zonder logica, kunnen op zowel de server als de client worden gecompileerd, zijn eenvoudig te bedekken en aan te passen en zijn op natuurlijke wijze gebonden aan de client-UX, omdat HBS renderen aan de clientzijde ondersteunt.
 
