@@ -10,10 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
 exl-id: 9b4ed16f-3c7c-478a-a897-9b4be086988b
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -28,9 +27,8 @@ Voor basisinformatie gaat u naar:
 
 * [Clientzijbibliotheken gebruiken die ](../../help/sites-developing/clientlibs.md) gebruiksdetails en foutopsporingsgereedschappen bieden
 * [Clientlibs voor ](client-customize.md#clientlibs) SCFwhich verstrekt nuttige informatie wanneer het aanpassen van componenten SCF
-* [Blog: AEM Clientbibliotheken, zoals wordt uitgelegd in het voorbeeld](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
-## Waarom Clientlibs vereist {#why-clientlibs-are-required}
+## Waarom Clientlibs vereist zijn {#why-clientlibs-are-required}
 
 Clientlibs zijn vereist voor het correct functioneren (JavaScript) en opmaken (CSS) van een component.
 
@@ -59,7 +57,7 @@ Bijvoorbeeld helemaal boven aan de pagina [Revisies](http://localhost:4502/conte
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 
-## Vereiste clips {#adding-required-clientlibs} toevoegen
+## Vereiste clips toevoegen {#adding-required-clientlibs}
 
 Wanneer u een Gemeenschapscomponent aan een pagina wilt toevoegen, moet u de vereiste clientlibs voor de component toevoegen als deze nog niet aanwezig is.
 
