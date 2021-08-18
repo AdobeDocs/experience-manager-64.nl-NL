@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2163'
 ht-degree: 0%
 
 ---
@@ -147,21 +147,21 @@ Shareable Content Object Reference Model (SCORM) is een verzameling standaarden 
 
 De AEM Communities SCORM-engine is vereist voor de functie [enablement](overview.md#enablement-community). Scorepakketten die worden ondersteund in AEM Communities 6.4-versie zijn:
 
-* **[cq -social- scorm -package, versie 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Dit SCORM-pakket wordt ondersteund door alle versies van AEM 6.4.
+* **[cq -social- scorm -package, versie 1.2.11](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-pkg)**. Dit SCORM-pakket wordt ondersteund door alle versies van AEM 6.4.
 
-* **[cq -social- scorm -package, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** bevat  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) -engine. Dit SCORM-pakket wordt ondersteund AEM 6.4.2.x-gemeenschappen.
+* **[cq -social- scorm -package, versie 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)** bevat  [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) -engine. Dit SCORM-pakket wordt ondersteund AEM 6.4.2.x-gemeenschappen.
 
-Voor een nieuwe installatie van de SCORM-engine moet het pakket [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (dat [ cq -social- scorm -package, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) is) worden gebruikt. zodat u de leermiddelen kunt spelen die door SCORM 2017 worden gesteund.
+Voor een nieuwe installatie van de SCORM-engine moet het pakket [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (dat [ cq -social- scorm -package, versie 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) is) worden gebruikt. zodat u de leermiddelen kunt spelen die door SCORM 2017 worden gesteund.
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
 ### Een SCORM-pakket voor de eerste keer installeren
 
-1. Installeer **[cq-social-scorm-package, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
+1. Installeer **[cq-social-scorm-package, versie 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg).**
 1. Download **`/libs/social/config/scorm/database_scormengine_data.sql`** van cq instantie en voer het in mysql server uit om een bevorderd schema te creëren scormEngineDB.
 1. Voeg `/content/communities/scorm/RecordResults` in Uitgesloten bezit van Wegen in filter CSRF van `https://<hostname>;:<port>/system/console/configMgr` op uitgevers toe.
 
-Bestaande SCORM-installaties kunnen worden geüpgraded naar [**cq-social-scorm-package, versie 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (gebruikt [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), als de geschreven cursusinhoud SCORM 2017.1 vereist.
+Bestaande SCORM-installaties kunnen worden geüpgraded naar [**cq-social-scorm-package, versie 2.2.2**](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) (gebruikt [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)), als de geschreven cursusinhoud SCORM 2017.1 vereist.
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ Bestaande SCORM-installaties kunnen worden geüpgraded naar [**cq-social-scorm-p
 ### Om versie van uw motor te bevorderen SCORM
 
 1. Maak een back-up van het schema ScormEngineDB.
-1. Installeer **[cq-social-scorm-package, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**
+1. Installeer **[cq-social-scorm-package, versie 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg).**
 1. Download het pakket van `/libs/social/config/scorm/ScormEngine.zip` en extraheer het zelfde.
 1. Ga naar **Installatieprogramma** map van de uitgepakte directory.
 1. `SystemDatabaseConnectionString` bijwerken met uw `scorm db connection url` in bestand **[!UICONTROL EngineInstall.xml]**.
@@ -197,7 +197,8 @@ Voor de inzameling SRP (MSRP of DSRP) om geavanceerde meertalige onderzoek (MLS)
 De geavanceerde MLS-download (ook wel &#39;phasetwo&#39; genoemd) is beschikbaar in de gegevensopslagruimte van de Adobe:
 
 * AEM-SOLR-MLS-fasetwo
-Voor het Geavanceerde pakket MLS, zie [AEM Geavanceerde MLS](deploy-communities.md#aem-advanced-mls) in de plaatsingssectie van de documentatie.
+
+   Voor het Geavanceerde pakket MLS, zie [AEM Geavanceerde MLS](deploy-communities.md#aem-advanced-mls) in de plaatsingssectie van de documentatie.
 
    * Versie 1.2.40, 6 april 2016
    * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip
