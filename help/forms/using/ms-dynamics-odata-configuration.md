@@ -1,23 +1,22 @@
 ---
 title: Configuratie Microsoft Dynamics OData
-seo-title: Configuratie van Microsoft Dynamics ODtata
+seo-title: Microsoft Dynamics ODtata configuration
 description: De diensten van de Dynamiek van Microsoft van de hefboomwerking, integreren, en werken met online en op-gebouw door het model van vormgegevens.
-seo-description: Leer hoe u met het model van formuliergegevens de services online en op locatie van Microsoft Dynamics kunt integreren en werken.
+seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
 uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
 feature: Form Data Model
 exl-id: 18df57b6-789a-4b61-9418-fa12294b226f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
-# Microsoft Dynamics OData-configuratie {#microsoft-dynamics-odata-configuration}
+# Configuratie Microsoft Dynamics OData {#microsoft-dynamics-odata-configuration}
 
 De diensten van de Dynamiek van Microsoft van de hefboomwerking, integreren, en werken met online en op-gebouw door het model van vormgegevens.
 
@@ -36,7 +35,7 @@ Wanneer het pakket is geïnstalleerd, zijn de volgende entiteiten en services be
 * MS Dynamics OData Cloud Service (OData Service)
 * Formuliergegevensmodel met vooraf geconfigureerde entiteiten en services voor dynamiek van Microsoft.
 
-De Cloud Service OData en het model van vormgegevens met vooraf gevormde entiteiten en de diensten van de Dynamiek van Microsoft zijn beschikbaar op uw instantie van AEM Forms slechts als de looppaswijze voor de AEM instantie zoals `samplecontent` (gebrek) wordt geplaatst. Voor meer informatie bij het vormen looppaswijzen voor een AEM instantie, zie [Wijzen van de Looppas](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html).
+De Cloud Service OData en het model van vormgegevens met vooraf gevormde entiteiten en de diensten van de Dynamiek van Microsoft zijn beschikbaar op uw instantie van AEM Forms slechts als de looppaswijze voor de AEM instantie zoals `samplecontent` (gebrek) wordt geplaatst. Voor meer informatie bij het vormen looppaswijzen voor een AEM instantie, zie [Wijzen van de Looppas](/help/sites-deploying/configure-runmodes.md).
 
 ## Vereisten {#prerequisites}
 
@@ -50,7 +49,7 @@ Alvorens u begint opstelling en vormt de Dynamica van Microsoft, zorg ervoor dat
 
 * [Registered the application for Microsoft Dynamics online service with Microsoft Azure Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Noteer de waarden voor de client-id (ook toepassings-id genoemd) en het clientgeheim voor de geregistreerde service. Deze waarden worden gebruikt terwijl [het vormen van de wolkendienst voor uw dienst van de Dynamiek van Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
-## Reactie-URL instellen voor geregistreerde Microsoft Dynamics-toepassing {#set-reply-url-for-registered-microsoft-dynamics-application}
+## Reactie-URL instellen voor geregistreerde toepassing Microsoft Dynamics {#set-reply-url-for-registered-microsoft-dynamics-application}
 
 Ga als volgt te werk om Reactie URL voor geregistreerde toepassing van de Dynamiek van Microsoft te plaatsen:
 
@@ -66,7 +65,7 @@ Ga als volgt te werk om Reactie URL voor geregistreerde toepassing van de Dynami
 
 1. Sla de configuratie op.
 
-## Microsoft Dynamics for IFD {#configure-microsoft-dynamics-for-ifd} configureren
+## Microsoft Dynamics voor IFD configureren {#configure-microsoft-dynamics-for-ifd}
 
 De Dynamiek van Microsoft gebruikt op beweringen-gebaseerde authentificatie om toegang tot gegevens op de server van CRM van de Dynamica van Microsoft aan externe gebruikers te verlenen. Om dit toe te laten, doe het volgende om de Dynamica van Microsoft voor Internet-Onder ogen ziet plaatsing (IFD) te vormen en claimmontages te vormen.
 
@@ -117,7 +116,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
 1. Microsoft Dynamics gebruikt HTTPS-protocol. Als u AD FS-eindpunten wilt aanroepen vanaf de Forms-server, installeert u het certificaat van de Microsoft Dynamics-site in de Java-certificaatopslag met de opdracht `keytool` op de computer waarop AEM Forms wordt uitgevoerd.
 
-## Cloudservice configureren voor uw Microsoft Dynamics-service {#configure-cloud-service-for-your-microsoft-dynamics-service}
+## De cloudservice voor uw Microsoft Dynamics configureren {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
 De **MS Dynamics OData Cloud Service (OData Service)** configuratie wordt geleverd met standaard OData configuratie. Om het te vormen om met uw dienst van de Dynamiek van Microsoft te verbinden, doe het volgende.
 
@@ -139,7 +138,7 @@ De **MS Dynamics OData Cloud Service (OData Service)** configuratie wordt geleve
 
 De de wolkendienst van de Cloud Service van de Dynamica van MS (OData Service) wordt gevormd en met uw dienst van de Dynamica verbonden.
 
-## Formuliergegevensmodel {#create-form-data-model} maken
+## Formuliergegevensmodel maken {#create-form-data-model}
 
 Wanneer u het pakket van AEM Forms installeert, wordt een model van vormgegevens, **de Dynamica FDM van Microsoft**, opgesteld op uw AEM instantie. Door gebrek, gebruikt het model van vormgegevens de dienst van de Dynamiek van Microsoft die in de Cloud Service van de Dynamiek van MS (OData Dienst) als zijn gegevensbron wordt gevormd.
 

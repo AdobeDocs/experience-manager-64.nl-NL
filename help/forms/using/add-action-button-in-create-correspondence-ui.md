@@ -1,8 +1,8 @@
 ---
 title: Aangepaste actie/knop toevoegen in interface voor correspondentie maken
-seo-title: Aangepaste actie/knop toevoegen in interface voor correspondentie maken
+seo-title: Add custom action/button in Create Correspondence UI
 description: Leer hoe u een aangepaste handeling/knop toevoegt in de gebruikersinterface voor correspondentie maken
-seo-description: Leer hoe u een aangepaste handeling/knop toevoegt in de gebruikersinterface voor correspondentie maken
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: e3609371-caaa-4efe-8f63-4d982cd456ab
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,15 +10,14 @@ topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 feature: Correspondence Management
 exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1741'
 ht-degree: 1%
 
 ---
 
-# Aangepaste handeling/knop toevoegen in interface voor correspondentie maken {#add-custom-action-button-in-create-correspondence-ui}
+# Aangepaste actie/knop toevoegen in interface voor correspondentie maken {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Overzicht {#overview}
 
@@ -41,7 +40,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 1. Handeling-afhandeling aan de knop toevoegen
 1. Het LiveCycle-proces toevoegen om bewerking &quot;afhandeling van handelingen&quot; in te schakelen
 
-### Voeg de knop toe aan de gebruikersinterface Correspondentie maken {#add-the-button-to-the-create-correspondence-user-interface}
+### De knop toevoegen aan de gebruikersinterface Correspondentie maken {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Ga naar `https://[server]:[port]/[ContextPath]/crx/de` en login als Beheerder.
 1. Maak in de map apps een map met de naam `defaultApp` met een pad/structuur die lijkt op de map defaultApp (in de map config). Gebruik de volgende stappen om de map te maken:
@@ -124,7 +123,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
 1. Klik op **[!UICONTROL Save All]**.
 
-#### Een landinstellingenmap maken met het eigenschappenbestand in de /apps-vertakking {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Een map met eigenschappen voor een landinstelling maken in de tak /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Het bestand ACMExtensionsMessages.properties bevat labels en knopinfo-berichten van verschillende velden in de gebruikersinterface Correspondentie maken. Maak een kopie van dit bestand in de tak /apps om de aangepaste handelingen/knoppen te laten werken.
 
@@ -162,7 +161,7 @@ Het bestand ACMExtensionsMessages.properties bevat labels en knopinfo-berichten 
 
 1. Klik op **[!UICONTROL Save All]**.
 
-#### Start de bundel Adobe Asset Composer Building Block {#restart-the-adobe-asset-composer-building-block-bundle} opnieuw
+#### De bundel Adobe Asset Composer Building Block opnieuw starten {#restart-the-adobe-asset-composer-building-block-bundle}
 
 Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de bundel Adobe Asset Composer Building Block opnieuw. In dit scenario worden de bestanden acmExtensionsConfig.xml en ACMExtensionsMessages.properties op de server bewerkt. Daarom moet de bundel Adobe Asset Composer Building Block opnieuw worden gestart.
 
@@ -178,7 +177,7 @@ Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de bundel Ad
 
 Nadat u de bundel Adobe Asset Composer Building Block opnieuw hebt gestart, verschijnt de aangepaste knop in de Create Correspondence User Interface. U kunt een letter openen in de gebruikersinterface Correspondentie maken om een voorvertoning van de aangepaste knop weer te geven.
 
-### Handelingenafhandeling aan de knop toevoegen {#add-action-handling-to-the-button}
+### Handeling toevoegen aan de knop {#add-action-handling-to-the-button}
 
 De gebruikersinterface Correspondentie maken is standaard geïmplementeerd door ActionHandler in het bestand cm.domain.js op de volgende locatie:
 
@@ -323,7 +322,7 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
       '</div>';
       ```
 
-### Voeg het proces van de LiveCycle toe om actie <span class="acrolinxCursorMarker"></span>behandeling {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling} toe te laten
+### Voeg het proces van de LiveCycle toe om actie <span class="acrolinxCursorMarker"></span>behandeling toe te laten {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 In dit scenario schakelt u de volgende componenten in, die deel uitmaken van het bestand components.zip in de bijlage:
 
@@ -334,7 +333,7 @@ Download en decomprimeer het `components.zip`-bestand om `DSCSample.jar`- en `Se
 
 [Bestand ophalen](assets/components.zip)
 
-#### De LiveCycle-server configureren om het LCA-proces {#configure-the-livecycle-server-to-run-the-lca-process} uit te voeren
+#### Vorm de Server van LiveCycle om het proces LCA in werking te stellen {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -353,7 +352,7 @@ Het LCA-proces wordt uitgevoerd op de LiveCycle-server en vereist het serveradre
 
    ![Adobe LiveCycle client SDK-configuratie](assets/3_clientsdkconfiguration.png)
 
-#### LiveCycle-archief (LCA) {#install-livecycle-archive-lca} installeren
+#### LiveCycle-archief (LCA) installeren {#install-livecycle-archive-lca}
 
 Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
@@ -381,7 +380,7 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 1. Klik op **[!UICONTROL Import]**.
 
-#### ServiceName toevoegen aan de Op de lijst met gewenste personen staan lijst met services {#adding-servicename-to-the-allowlisted-service-list}
+#### Het toevoegen van ServiceName aan de Gevoegde op lijst van gewenste personen lijst van de Dienst {#adding-servicename-to-the-allowlisted-service-list}
 
 Vermelding in de AEM server de diensten van de LiveCycle u tot de AEM server wilt toegang hebben.
 
@@ -392,7 +391,7 @@ Vermelding in de AEM server de diensten van de LiveCycle u tot de AEM server wil
 
 1. Klik op **[!UICONTROL Save]**.
 
-#### E-mailservice {#configure-the-email-service} configureren
+#### De e-mailservice configureren {#configure-the-email-service}
 
 In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen verzenden, vorm de e-maildienst in de server van de LiveCycle.
 
@@ -406,7 +405,7 @@ In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen 
 
 1. Klik op **[!UICONTROL Save]**.
 
-#### DSC-service {#configure-the-dsc-service} configureren
+#### De DSC-service configureren {#configure-the-dsc-service}
 
 Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u `DSCSample.jar` (in dit document bijgevoegd als onderdeel van `components.zip`) en uploadt u deze naar de LiveCycle-server. Nadat het `DSCSample.jar` dossier aan de server van de LiveCycle wordt geupload, gebruikt de AEM server `DSCSample.jar` dossier om tot renderLetter API toegang te hebben.
 
@@ -425,11 +424,11 @@ Zie [AEM Forms verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-co
 
    >[!NOTE]
    >
-   >Telkens als u om het even welke veranderingen bij de server aanbrengt, begin de Server van de LiveCycle opnieuw. Voor informatie bij het creëren van uw eigen LiveCycle component, zie [Uitbreidend de software van LiveCycle ES door de ontwikkeling van douaneDSC](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
+   >Telkens als u om het even welke veranderingen bij de serverzijde aanbrengt, begin de Server opnieuw.
 
    Het `DSCSample.jar` dossier gebruikt `renderLetter` API. Voor meer informatie over renderLetter API, zie [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
-#### DSC importeren in LiveCycle {#import-dsc-to-livecyle}
+#### DSC importeren naar AEM Forms op JEE {#import-dsc-to-livecyle}
 
 `DSCSample.jar` gebruikt de  `renderLetter` API om de letter te renderen als PDF-bytes van XML-gegevens die C als invoer geeft. Zie [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html) voor meer informatie over renderLetter en andere API&#39;s.
 
@@ -441,7 +440,7 @@ Zie [AEM Forms verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-co
 1. Selecteer het `DSCSample.jar` dossier door dossierbrowser en klik **[!UICONTROL Open]**.
 1. Klik met de rechtermuisknop **[!UICONTROL RenderWrapper]** en selecteer **[!UICONTROL Start Component]**. Als de component start, verschijnt er een groene pijl naast de naam van de component.
 
-## Letter verzenden voor revisie {#send-letter-for-review}
+## Ter controle verzenden {#send-letter-for-review}
 
 Nadat u de actie en de knoop voor het verzenden van de brief voor overzicht hebt gevormd:
 

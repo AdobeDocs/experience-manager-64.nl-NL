@@ -1,8 +1,8 @@
 ---
 title: Servicemontages configureren
-seo-title: Servicemontages configureren
+seo-title: Configure service settings
 description: Leer hoe te om de dienstmontages te vormen.
-seo-description: Leer hoe te om de dienstmontages te vormen.
+seo-description: Learn how to configure service settings.
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: be1f8c59-b5d8-4d87-af7b-1034d73e7e83
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10710'
+source-wordcount: '10683'
 ht-degree: 0%
 
 ---
 
-# Service-instellingen {#configure-service-settings} configureren
+# Servicemontages configureren {#configure-service-settings}
 
 U kunt de pagina van het Beheer van de Dienst gebruiken om montages voor elk van de diensten te vormen die deel van AEM vormen uitmaken. De beschikbare montages variëren afhankelijk van de dienst die wordt gevormd.
 
@@ -45,7 +44,7 @@ Workbench biedt de mogelijkheid om procesinstanties op te nemen terwijl ze bij u
 
 **MaxNumberOfRecordingEntry:** Het maximum aantal gegevensitems dat voor elke opname kan worden opgeslagen. Gegevensinvoer is informatie over bewerkingen in het proces. Verschillende ingangen worden opgeslagen voor elke uitvoering van een verrichting, zoals of de verrichting begon, of de verrichting voltooide, en of de route die tot de verrichting leidt volledig is. Deze eigenschap is nuttig wanneer processen veel bewerkingen kunnen bevatten, bijvoorbeeld wanneer een eindeloze lus wordt aangetroffen. De standaardwaarde is 50.
 
-## service-instellingen voor gestreepte formulieren {#barcoded-forms-service-settings}
+## service-instellingen voor streepjescodes {#barcoded-forms-service-settings}
 
 Met de service voor streepjescodes `(BarcodedFormsService)` worden streepjescodegegevens van gescande afbeeldingen geëxtraheerd. De service accepteert een formulier met streepjescodes (TIFF of PDF) als invoer en extraheert de machinerepresentatie van de gegevens die door de streepjescode zijn gecodeerd.
 
@@ -67,7 +66,7 @@ De volgende instellingen zijn beschikbaar voor de service voor formulieren met s
 
 **Naam gegevensbron:** de naam van gegevensbron wordt gebruikt om staat en geschiedenisinformatie over de banen van de partijverwerking te handhaven die. De opgegeven gegevensbron moet algemene (XA) transacties ondersteunen.
 
-## Instellingen {#central-migration-bridge-service-settings} voor Central Migration Bridge Service (Afgekeurd)
+## Instellingen voor Central Migration Bridge Service (Verouderd) {#central-migration-bridge-service-settings}
 
 De centrale dienst van de Brug van de Migratie ( `CentralMigrationBridge`) roept een ondergroep van de functionaliteit van Adobe Central Pro Output Server (Centraal) aan, die JFMERGE, JFTRANS, en XMLIMPORT bevelen omvat. Met de Central Migration Bridge-service kunt u de volgende Central-elementen opnieuw gebruiken in AEM formulieren:
 
@@ -159,7 +158,7 @@ U kunt nieuwe instellingen maken via de gebruikersinterface van de PDF Generator
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices beheren](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf) voor informatie over het configureren van Inhoudsservices (afgekeurd).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 Met de service Documentbeheer ( `DocumentManagementService`) kunnen processen de functionaliteit voor inhoudsbeheer gebruiken die wordt geboden door Content Services (Afgekeurd). De verrichtingen van het Beheer van het document verstrekken basistaken die worden vereist om ruimten en inhoud in het systeem van het inhoudsbeheer te handhaven. Voorbeelden van dergelijke taken zijn kopiëren, verwijderen, verplaatsen, ophalen en opslaan, spaties en koppelingen maken en inhoudskenmerken ophalen en instellen.
 
@@ -209,7 +208,7 @@ De volgende instellingen zijn beschikbaar voor de e-mailservice.
 * Selecteer SSL als het Secure Sockets Layer-protocol wordt gebruikt.
 * Selecteer TLS als de Veiligheid van de Laag van het Vervoer wordt gebruikt.
 
-## Instellingen van versleutelingsservice {#encryption-service-settings}
+## Instellingen voor versleutelingsservice {#encryption-service-settings}
 
 Met de coderingsservice ( `EncryptionService`) kunt u documenten versleutelen en decoderen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document is versleuteld met een wachtwoord, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Adobe Acrobat kan worden weergegeven. Als een PDF-document met een certificaat is versleuteld, moet de gebruiker het PDF-document decoderen met de openbare sleutel die overeenkomt met het certificaat (persoonlijke sleutel) dat is gebruikt om het PDF-document te versleutelen.
 
@@ -285,7 +284,7 @@ Voer de PDF-conversie opnieuw uit, ongeacht of de time-outdrempel is bereikt. De
 
 Voer de PDF-conversie opnieuw uit als de tijd die voor de eerste omzetpoging is verbruikt, korter is dan de opgegeven time-outduur. Als de time-outduur bijvoorbeeld 270 jaar is en de eerste poging 200 seconden heeft geduurd, wordt de conversie opnieuw uitgevoerd door PDF Generator. Als de eerste poging zelf 270 seconden verbruikte, zal de omzetting niet opnieuw worden geprobeerd.
 
-## Hulplijnen ES4 Instellingen voor hulpprogramma&#39;s {#guides-es4-utilities-service-settings}
+## Instellingen voor hulplijnen ES4-hulpprogramma&#39;s {#guides-es4-utilities-service-settings}
 
 Wanneer u een Guide maakt, worden sommige bronnen, zoals de definitie van de Guide, ingesloten in de Guide. Bronnen kunnen ook bestaan als verwijzingen naar toepassingselementen die lokaal of op de AEM formulierserver zijn opgeslagen. De Guide bevat geen gegevens en de waarden voor de verzendlocatie en -invoer zijn niet geschikt voor alle externe omgevingen.
 
@@ -451,7 +450,7 @@ De volgende montages zijn beschikbaar voor de de configuratieservice van Microso
 
 **Android-sluitereffect bij verwijderen:** Geeft aan wat er gebeurt wanneer een beleidsovertreding plaatsvindt op een Android-apparaat. Als u deze optie selecteert, wordt het account verwijderd. Als deze optie niet is geselecteerd, worden het wachtwoord voor de opgeslagen account en de gegevens in de cache verwijderd. Er worden geen synchronisatiepogingen meer uitgevoerd totdat de gebruiker de beleidsovertreding heeft opgelost.
 
-## Uitvoerservice-instellingen {#output-service-settings}
+## Instellingen voor uitvoerservice {#output-service-settings}
 
 Met de Output-service `(OutputService)`kunt u XML-formuliergegevens samenvoegen met een formulierontwerp dat is gemaakt in AEM Forms Designer, zodat een uitvoerstroom van het document wordt gemaakt in een van de volgende indelingen:
 
@@ -474,7 +473,7 @@ De volgende instellingen zijn beschikbaar voor de service Uitvoer.
 
 Wanneer het verwerken van grote gegevensdossiers of werkend op een bezige server, kan het noodzakelijk zijn om de de diensttijd van de Output uit te verhogen. Als u de time-outwaarde wilt wijzigen, moet u ervoor zorgen dat de hardwareservers over voldoende geheugen beschikken en dat het geheugen beschikbaar is voor de Java Application Server-heap. De standaardwaarde is `180`.
 
-## servicesinstellingen voor PDFG Config {#pdfg-config-service-settings}
+## Instellingen van PDFG Config-service {#pdfg-config-service-settings}
 
 De volgende instellingen zijn beschikbaar voor de PDFG Config-service ( `PDFGConfigService`).
 
@@ -506,7 +505,7 @@ De standaardwaarde van Seconden van PDFG Cleanup Scan is `43200` (12 uur). De st
 
 **Standaardlandinstelling:** wordt gebruikt om de standaardlandinstelling (land + taal) van de server waarop de service PDF genereren is geïmplementeerd, te overschrijven. Als deze parameter niet gespecificeerd is, dan wordt de standaardscène bepaald van het werkende systeem waarop de dienst wordt opgesteld. Deze parameter bestuurt de taal waarin de foutenmeldingen aan APIs zijn teruggekeerd.
 
-## formulierwerkstroom Gegevens Services-instellingen {#forms-workflow-data-services-service-settings}
+## formulierworkflows voor Data Services-services {#forms-workflow-data-services-service-settings}
 
 De volgende diensten breiden de Diensten van Gegevens uit en stellen assembleurs bloot die de Werkruimte gebruikt om met de server te spreken. Wijzig de configuratieopties voor deze services niet, tenzij u hiervoor de instructie krijgt van de Adobe Support. Deze diensten zijn niet bedoeld voor directe toegang:
 
@@ -514,7 +513,7 @@ De volgende diensten breiden de Diensten van Gegevens uit en stellen assembleurs
 * `ProcessManagementLcdsPropertyService`
 * `ProcessManagementLcdsTaskService`
 
-## Service-instellingen {#remoting-service-settings} verwijderen
+## Service-instellingen verwijderen {#remoting-service-settings}
 
 De meeste services zijn zo geconfigureerd dat u ze kunt openen via het verwijderen van formulieren (Verouderd voor AEM formulieren) AEM formulieren. Zie [Programmeren met AEM formulieren](https://adobe.com/go/learn_aemforms_programming_63) voor informatie over (Verouderd voor AEM formulieren) AEM formulieren Verwijderen.
 
@@ -536,7 +535,7 @@ De volgende instelling is beschikbaar voor de Repository-service.
 
 **Provider Service:** de naam van de service die als opslagprovider wordt gebruikt. De standaardwaarde is RepositoryProviderService.
 
-## Instellingen voor ondertekeningsservice {#signature-service-settings}
+## Instellingen voor handtekeningenservice {#signature-service-settings}
 
 Met de service Handtekening ( `SignatureService`) kan uw organisatie de beveiliging en privacy beschermen van Adobe PDF-documenten die worden gedistribueerd en ontvangen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat documenten niet worden gewijzigd. Als u een document wijzigt, wordt de handtekening verbroken. Aangezien beveiligingsfuncties op het document zelf worden toegepast, blijft het document gedurende de gehele levenscyclus beveiligd en beheerd. buiten de firewall, wanneer het offline wordt gedownload, en wanneer het terug naar uw organisatie wordt voorgelegd.
 
@@ -610,7 +609,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Vereisen Geldige Handtekening van het Certificaat tijdens het Bouwen van de Keten:** Specificeert of de ketenbouwer geldige handtekeningen op certificaten vereist die worden gebruikt om ketens te bouwen. Wanneer deze controledoos wordt geselecteerd, zal de ketenbouwer geen ketens met ongeldige RSA handtekeningen op certificaten bouwen. Overweeg keten CA > ICA > EE waar de handtekening van CA op een ICA niet geldig is. Als dit het plaatsen waar is, zal het ketengebouw bij ICA ophouden, en CA zal niet in de ketting worden omvat. Als deze instelling onwaar is, wordt de volledige certificaatketen van drie pixels geproduceerd. Deze instelling heeft geen invloed op DSA-handtekeningen. De standaardwaarde is false.
 
-### Opties voor tijdstempelprovider {#timestamp-provider-options}
+### Opties tijdstempelprovider {#timestamp-provider-options}
 
 **TSP Server-URL:** de URL van de standaardtijdstempelprovider. Wordt alleen gebruikt als er een geldige waarde is opgegeven. Geen standaardwaarde.
 
@@ -646,7 +645,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **AKI-extensie vereisen in CRL:** Geeft aan of de extensie Hoofd-id moet worden opgenomen in een CRL. De standaardwaarde is false.
 
-### Opties voor online certificaatstatusprotocol {#online-certificate-status-protocol-options}
+### Opties online certificaatstatusprotocol {#online-certificate-status-protocol-options}
 
 **URL OCSP-server:** URL voor de standaard OCSP-server. Of de OCSP-server die via deze URL is opgegeven, wordt gebruikt, is afhankelijk van de instelling van de optie URL naar advies. Geen standaardwaarde.
 
@@ -672,7 +671,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **OCSP ISIS-MTT CertHash-extensie vereisen:** Geeft aan of een publieke-sleutelhash-extensie van een certificaat moet worden opgenomen in OCSP-reacties. De standaardwaarde is false.
 
-### Opties voor foutafhandeling voor foutopsporing {#error-handling-options-for-debugging}
+### Opties voor foutafhandeling {#error-handling-options-for-debugging}
 
 **Leid het Geheime voorgeheugen van het Certificaat op volgende API vraag:** Specificeert of om het Geheime voorgeheugen van het Certificaat te zuiveren wanneer de volgende Verrichting van de Dienst van de Handtekening wordt geroepen. Nadat de bewerking is aangeroepen, wordt deze optie teruggezet op false. De standaardwaarde is false.
 
@@ -680,7 +679,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **OCSP-cache wissen bij volgende API-aanroep:** Geeft aan of de OCSP-cache moet worden gewist wanneer de volgende Handtekeningsservice-bewerking wordt aangeroepen. Nadat de bewerking is aangeroepen, wordt deze optie teruggezet op false. De standaardwaarde is false.
 
-## Service-instellingen {#watched-folder-service-settings} voor gecontroleerde mappen
+## Instellingen voor gecontroleerde mapservice {#watched-folder-service-settings}
 
 Met de service Gecontroleerde map ( `WatchedFolder`) configureert u kenmerken die gemeenschappelijk zijn voor alle gecontroleerde eindpunten van mappen. De klasse biedt ook standaardwaarden voor gecontroleerde eindpunten van mappen. (Zie [Gecontroleerde mapeindpunten configureren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Het wordt niet aangehaald door externe cliënttoepassingen of gebruikt in processen die in Workbench worden gecreeerd.
 
@@ -745,7 +744,7 @@ Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaa
 
 **Throttle:** Als deze optie is geselecteerd, beperkt deze het aantal controletaken dat op een bepaald moment AEM formulieren verwerken. De waarde voor Batchgrootte bepaalt het maximale aantal taken (zie Informatie over vertragen).
 
-## Web Service-instellingen {#web-service-service-settings}
+## Instellingen webservice {#web-service-service-settings}
 
 De dienst van de Dienst van het Web ( `WebService`) laat processen toe om de verrichtingen van de Webdienst aan te halen.
 
@@ -777,7 +776,7 @@ De volgende montages zijn beschikbaar voor de dienst van de Dienst van het Web.
 * cms
 * jceks
 
-## XSLT Transformation Service settings {#xslt-transformation-service-settings}
+## XSLT Transformation Service Settings {#xslt-transformation-service-settings}
 
 Met de service XSLT-transformatie ( `XSLTService`) kunnen processen Extensible Stylesheet Language Transformations (XSLT) toepassen op XML-documenten.
 
@@ -785,7 +784,7 @@ De volgende instelling is beschikbaar voor de service XSLT-transformatie.
 
 **Fabrieksnaam:** de volledig gekwalificeerde naam van de Java-klasse die moet worden gebruikt voor het uitvoeren van XSLT-transformaties. Als er geen waarde is opgegeven, wordt de standaardfabriek gebruikt die is geconfigureerd in de Java Virtual Machine die de formulierserver uitvoert.
 
-## Beveiligingsinstellingen wijzigen voor een service {#modifying-security-settings-for-a-service}
+## Beveiligingsinstellingen voor een service wijzigen {#modifying-security-settings-for-a-service}
 
 De server van vormen laat u toe om veiligheidsmontages voor elke dienst te vormen, die u toestaat om fijnkorrelig toegangsbeheer op een dienst-door-dienst niveau te vormen.
 
@@ -843,11 +842,11 @@ Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen wor
 1. Voor de pagina van het Beheer van de Dienst, selecteer de dienst om te vormen.
 1. Klik op het tabblad **Beveiliging**, selecteer het beveiligingsprofiel dat u wilt verwijderen en klik op **Verwijderen**.
 
-## Het vormen groepering voor de dienst {#configuring-pooling-for-a-service}
+## Het vormen het groeperen voor de dienst {#configuring-pooling-for-a-service}
 
 Elke dienst kan uit de het groeperen mogelijkheden voordeel halen om inkomende aanroepingsverzoeken te behandelen. Het gebruiken van een de dienstpool zorgt ervoor dat de de dienstinstanties door één enkele draad tegelijkertijd worden aangehaald en over aanroepingsverzoeken opnieuw gebruikt, die in betere prestaties kunnen resulteren. U kunt het groeperen ook gebruiken om de Maximum Asynchrone optie van de Instanties van de Dienst te specificeren, die de diensten toestaat om het aantal verzoeken te beperken die parallel worden behandeld.
 
-### pooling {#enable-pooling} inschakelen
+### pooling inschakelen {#enable-pooling}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Voor de pagina van het Beheer van de Dienst, klik de dienst om te vormen.
@@ -859,7 +858,7 @@ Elke dienst kan uit de het groeperen mogelijkheden voordeel halen om inkomende a
 1. In het vakje van de Onderbreking van de Wacht van de Inroeping, ga het aantal milliseconden in te wachten op de dienst om voor een aanroepingsverzoek beschikbaar te worden. Als u geen waarde voor deze instelling opgeeft, is de standaardwaarde 0, wat geen wachttijd tot gevolg heeft.
 1. Klik op Opslaan.
 
-### pooling {#remove-pooling} verwijderen
+### pooling verwijderen {#remove-pooling}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Voor de pagina van het Beheer van de Dienst, klik de dienst om te vormen.

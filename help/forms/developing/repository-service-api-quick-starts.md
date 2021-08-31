@@ -1,8 +1,8 @@
 ---
 title: Repository Service API
-seo-title: Repository Service API
+seo-title: Repository Service API Quick Starts
 description: Gebruik de dienst van de Bewaarplaats van AEM Forms om een omslag tot stand te brengen, een middel, lijstmiddelen te schrijven, een middel te lezen, een middel bij te werken, naar middelen te zoeken, verhoudingen tussen middelen tot stand te brengen, een middel te sluiten, toegangsbeheerlijsten te beheren, en een middel te schrappen.
-seo-description: Gebruik de dienst van de Bewaarplaats van AEM Forms om een omslag tot stand te brengen, een middel, lijstmiddelen te schrijven, een middel te lezen, een middel bij te werken, naar middelen te zoeken, verhoudingen tussen middelen tot stand te brengen, een middel te sluiten, toegangsbeheerlijsten te beheren, en een middel te schrappen.
+seo-description: Use the AEM Forms Repository service to create a folder, write  a resource, list resources, reading a resource, update a resource, search for resources, create relationships between resources, locking a resource, managing access control lists, and delete a resource.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,14 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 859a2b57-df90-4030-9061-c454d07cb753
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
-# Repository Service API - Snel starten {#repository-service-api-quick-starts}
+# Repository Service API {#repository-service-api-quick-starts}
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service AEM Forms Repository.
 
@@ -61,7 +60,7 @@ Het pad naar een bron in de AEM Forms-opslagplaats is:
 
 >[!NOTE]
 >
->Toepassingen/FormsApplication bestaat niet standaard. Als u deze toepassing wilt volgen bij het snel starten, maakt u deze met Workbench. Zie [Aan de slag met procesontwerp](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html) voor informatie over het maken van een toepassing met Workbench.
+>Toepassingen/FormsApplication bestaat niet standaard. Als u deze toepassing wilt volgen bij het snel starten, maakt u deze met Workbench. Zie [Aan de slag met procesontwerp](http://www.adobe.com/go/learn_aemforms_workbench_64) voor informatie over het maken van een toepassing met Workbench.
 
 ## Snel starten (SOAP-modus): Een map maken met de Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

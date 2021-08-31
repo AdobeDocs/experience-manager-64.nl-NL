@@ -1,17 +1,16 @@
 ---
 title: Referentie adaptieve formulierfragmenten
-seo-title: Referentie adaptieve formulierfragmenten
+seo-title: Reference adaptive form fragments
 description: 'AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel een formulier te maken. '
-seo-description: 'AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel een formulier te maken. '
+seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -20,7 +19,7 @@ ht-degree: 0%
 
 [Aangepast formulier ](/help/forms/using/adaptive-form-fragments.md) is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
 
-Voor auteurs van adaptieve formulieren worden referentiefragmenten geleverd in het AEM Forms-pakket [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Het bevat de volgende fragmenten:
+Voor auteurs van adaptieve formulieren staan referentiefragmenten in het [AEM Forms-invoegpakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Het bevat de volgende fragmenten:
 
 * Adres
 * Contactgegevens
@@ -63,7 +62,7 @@ Bevat velden waarin actuele werkgelegenheidsdetails worden opgenomen, zoals arbe
 
 [Klik om te vergroten](assets/current-emp-1.png)
 
-## Informatie over afhankelijke personen {#dependents-information}
+## Afhankelijke informatie {#dependents-information}
 
 Omvat gebieden om informatie over één of meerdere gebiedsdelen, zoals hun naam, verhouding, en leeftijd in een tabelvorm te specificeren.
 ![Informatiefragment Afhankelijke](assets/dependents-info.png)
@@ -91,7 +90,7 @@ Bevat velden voor het opgeven van de titel, voornaam, middelste naam en achterna
 
 [Klik om te vergroten](assets/name-1.png)
 
-## Voorwaarden {#terms-conditions}
+## Voorwaarden en bepalingen {#terms-conditions}
 
 Hiermee geeft u aan welke voorwaarden gebruikers moeten accepteren voordat ze een formulier verzenden.
 ![Fragment Voorwaarden en bepalingen](assets/tnc.png)

@@ -1,8 +1,8 @@
 ---
 title: Basisbeginselen van het beheer van certificaten en referenties
-seo-title: Basisbeginselen van het beheer van certificaten en referenties
+seo-title: Basics of managing certificates and credentials
 description: Leer over de grondbeginselen van het beheren van certificaten en geloofsbrieven.
-seo-description: Leer over de grondbeginselen van het beheren van certificaten en geloofsbrieven.
+seo-description: Learn about the basics of managing certificates and credentials.
 uuid: f421e206-e7b5-416c-b9fb-974094f10a66
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -36,7 +35,7 @@ AEM formulieren bieden geen enkele optie om een sleutelpaar te genereren. U kunt
 
 [https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
 
-[https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html](https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html)
+[https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
 De volgende handtekeningtypen worden ondersteund en kunnen in AEM formulieren worden geïmporteerd:
 

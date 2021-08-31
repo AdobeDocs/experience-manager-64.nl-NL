@@ -1,8 +1,8 @@
 ---
 title: Serverinstellingen configureren
-seo-title: Serverinstellingen configureren
+seo-title: Configuring Server Settings
 description: Op de pagina Serverinstellingen hebt u toegang tot de instellingen voor e-mail, taakmeldingen en beheerdersmeldingen.
-seo-description: Op de pagina Serverinstellingen hebt u toegang tot de instellingen voor e-mail, taakmeldingen en beheerdersmeldingen.
+seo-description: The Server Settings page provides access to email, task notification and administrator notification settings.
 uuid: 73b51ac0-56e5-4748-bb33-e3986c69eb2d
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
 
-# Serverinstellingen {#configuring-server-settings} configureren
+# Serverinstellingen configureren {#configuring-server-settings}
 
 De pagina Serverinstellingen biedt toegang tot verschillende instellingen voor de formulierworkflow:
 
@@ -26,7 +25,7 @@ De pagina Serverinstellingen biedt toegang tot verschillende instellingen voor d
 * **Instellingen voor taakmeldingen** waarmee de berichten die in e-mailberichten naar eindgebruikers en groepen worden verzonden met betrekking tot hun taken, kunnen worden ingeschakeld, uitgeschakeld of gewijzigd. (Zie [Meldingen voor gebruikers en groepen configureren](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
 * **Instellingen voor** beheerdersmeldingen waarmee berichten die in e-mailmeldingen worden verzonden voor beheertaken worden ingeschakeld, uitgeschakeld of gewijzigd. (Zie [Meldingen configureren voor beheerders](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
-## E-mailinstellingen {#configuring-email-settings} configureren
+## E-mailinstellingen configureren {#configuring-email-settings}
 
 U kunt een e-mailaccount opgeven voor de formulierserver, waarmee e-mailberichten worden verzonden naar AEM gebruikers en beheerders van formulieren. Deze e-mailberichten worden gebruikt om gebruikers op de hoogte te brengen van en te herinneren aan taken die zij moeten voltooien, de gebruiker op de hoogte te stellen van taken die een deadline hebben bereikt en de beheerder op de hoogte te stellen van eventuele procesfouten.
 
@@ -36,7 +35,7 @@ Als u wilt dat AEM formulieren binnenkomende e-mailberichten van gebruikers kunn
 
 Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is, hoeft u geen van de opties te configureren op de pagina E-mailinstellingen.
 
-### Uitgaande e-mailinstellingen {#configure-outgoing-email-settings} configureren
+### Instellingen voor uitgaande e-mail configureren {#configure-outgoing-email-settings}
 
 1. Klik in de beheerconsole op Services > Formulierwerkstroom > Serverinstellingen > E-mailinstellingen.
 1. Selecteer Uitgaande berichten inschakelen.
@@ -129,7 +128,7 @@ U kunt deadline-meldingen verzenden naar gebruikers en groepen wanneer de deadli
 
 ### De tag DO NOT DELETE verbergen voor alle e-mails {#hide-the-do-not-delete-tag-for-all-emails}
 
-U kunt e-mail zodanig configureren dat deze wordt verborgen in de tag DO NOT DELETE tracking in alle e-mails die in een humanitair proces worden verzonden. Zie [De tag &#39;DO-NOT-DELETE&#39; verbergen in CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html) voor meer informatie
+U kunt e-mail zodanig configureren dat deze wordt verborgen in de tag DO NOT DELETE tracking in alle e-mails die in een humanitair proces worden verzonden.
 
 ## Meldingen voor beheerders configureren {#configuring-notifications-for-administrators}
 
@@ -140,7 +139,7 @@ U configureert de volgende typen meldingen voor beheerders:
 * stilgezette vertakking
 * stilstaande bewerking
 
-### Vastgezette takmeldingen {#configure-stalled-branch-notifications} configureren
+### Gestapelde filiaalmeldingen configureren {#configure-stalled-branch-notifications}
 
 Als een vertakking (of opzettelijk of wegens een fout) ophoudt te werk te gaan, kunt u een e-mailbericht hebben dat wordt verzonden naar een beheerder of een andere gebruiker, die het probleem dan kan onderzoeken.
 
@@ -154,7 +153,7 @@ Als een vertakking (of opzettelijk of wegens een fout) ophoudt te werk te gaan, 
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
 
-### Configureer geinstalleerde bewerkingsmeldingen {#configure-stalled-operation-notifications}
+### Gestormde bewerkingsmeldingen configureren {#configure-stalled-operation-notifications}
 
 Als een bewerking niet meer actief of vanwege een fout kan worden uitgevoerd, kunt u een e-mailbericht laten verzenden naar een beheerder of een andere gebruiker, die het probleem kan onderzoeken.
 
@@ -210,7 +209,7 @@ Om deze URLs correct te maken, vervang `<`*PORT* `>` met het havenaantal dat voo
 >
 >Als u een andere aangepaste webtoepassing dan Forms gebruikt om gebruikers toegang tot de taken te bieden, moet u in plaats daarvan een URL-indeling gebruiken die geschikt is voor uw aangepaste toepassing.
 
-### Variabele kiezer {#variable-picker}
+### Variabelekiezer {#variable-picker}
 
 De lijst Variabele kiezer biedt nuttige variabelen die u kunt slepen en neerzetten in de vakken Onderwerp- of Meldingsjabloon. Wanneer u een variabele in de vakjes van het Malplaatje van het Onderwerp of van het Bericht laat vallen, verandert het in de daadwerkelijke veranderlijke naam van het vormwerkschema met twee @ symbolen op één van beide kant van het, bijvoorbeeld, `@@taskid@@`.
 
@@ -256,7 +255,7 @@ Voor gestalte verrichtingen, kunt u de volgende variabelen in de vakjes van het 
 
 **notification-** hostDe hostnaam van de AEM formuliertoepassingsserver.
 
-### Een variabele gebruiken in het onderwerpvak {#using-a-variable-in-the-subject-box}
+### Een variabele gebruiken in het vak Onderwerp {#using-a-variable-in-the-subject-box}
 
 Als u de volgende tekst in het onderwerpvakje voor de berichten van de Taak typt:
 
@@ -266,7 +265,7 @@ De gebruiker ontvangt een e-mailbericht met het volgende onderwerp als aan hem t
 
 `Please complete task 376`
 
-### Variabelen in het vak Meldingsjabloon {#using-variables-in-the-notification-template-box} gebruiken
+### Variabelen gebruiken in het vak Berichtgevingssjabloon {#using-variables-in-the-notification-template-box}
 
 Als u de volgende tekst in het vakje van het Malplaatje van het Bericht voor de Geleide berichten van de Tak typt:
 
@@ -276,7 +275,7 @@ De beheerder ontvangt een e-mailbericht met de volgende inhoud als het vertakkin
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 
-## Verbindingen voor Business Activity Monitoring {#configuring-business-activity-monitoring-connections} configureren
+## Verbindingen voor Business Activity Monitoring configureren {#configuring-business-activity-monitoring-connections}
 
 De Controle van de bedrijfsactiviteit, een facultatieve module, verstrekt een reeks operationele dashboards die in real time zicht in uw verrichtingen en zeer belangrijke prestatiesindicatoren verstrekken.
 

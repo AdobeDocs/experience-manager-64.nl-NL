@@ -1,8 +1,8 @@
 ---
 title: Componenten en services Java APIQuick Start (SOAP)
-seo-title: Componenten en services Java APIQuick Start (SOAP)
+seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Gebruik de Componenten en Diensten Java API Snelle Begin van het Begin om een component op te stellen, de uitvoeringscontext van de dienst te plaatsen, de dienstveiligheid onbruikbaar te maken, de dienst te beginnen, de waarden van de de dienstconfiguratie te wijzigen, en componenten te verwijderen.
-seo-description: Gebruik de Componenten en Diensten Java API Snelle Begin van het Begin om een component op te stellen, de uitvoeringscontext van de dienst te plaatsen, de dienstveiligheid onbruikbaar te maken, de dienst te beginnen, de waarden van de de dienstconfiguratie te wijzigen, en componenten te verwijderen.
+seo-description: Use the Components and Services Java API Quick Start to deploy a component, set the execution context of a service, disable service security, start a service, modify service configuration values, and remove components.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,9 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -47,7 +46,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->Als u een douanecomponent hebt en u protocollen gebruikt van de ZEEP of van EJB om DSCs op de zelfde lokale server aan te halen, en die aanroepen ophouden werkend na een verbetering, dan gebruik in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)) aanroepingsstrategie. Gebruik de aanroepingsmethode van DSC in-VM met standaardServiceClientFactory en construeer geen ServiceClientFactory gebruikend protocollen SOAP of EJB.
+>Als u een douanecomponent hebt en u protocollen gebruikt van de ZEEP of van EJB om DSCs op de zelfde lokale server aan te halen, en die aanroepen ophouden werkend na een verbetering, dan gebruik in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)) aanroepingsstrategie. Gebruik de aanroepingsmethode van DSC in-VM met standaardServiceClientFactory en construeer geen ServiceClientFactory gebruikend protocollen SOAP of EJB.
 
 ## Snel starten (SOAP-modus): Een component implementeren met de Java API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
@@ -243,7 +242,7 @@ In het volgende Java-codevoorbeeld wordt de uitvoeringscontext van Run-As Invoke
  
 ```
 
-## Snel starten (SOAP-modus): De dienstveiligheid onbruikbaar maken gebruikend Java API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Snel starten (SOAP-modus): Servicebeveiliging uitschakelen met de Java API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt de beveiliging uitgeschakeld van de voorbeeldservice EncryptDocument en de services die vanuit deze service worden aangeroepen (de services Waarde instellen en Versleuteling).
 

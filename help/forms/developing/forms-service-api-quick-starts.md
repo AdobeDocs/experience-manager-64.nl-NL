@@ -1,8 +1,8 @@
 ---
 title: Forms Service API Quick Start
-seo-title: Forms Service API Quick Start
+seo-title: Forms Service API Quick Starts
 description: Gebruik de snelstarthandleidingen voor de Forms Service API.
-seo-description: Gebruik de snelstarthandleidingen voor de Forms Service API.
+seo-description: Use the Quick Starts for the Forms Service API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,9 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: abc2af58-3bf7-493e-917d-081022afb9a3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -59,7 +58,6 @@ Toepassingslogica die gebruikmaakt van de Forms service-API wordt geïmplementee
 >
 >Quick start in Programming with v is gebaseerd op de formulierserver die u gebruikt in een ander besturingssysteem, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-**Tip**: De website van de Ontwikkelaar van Adobe bevat het volgende artikel dat bespreekt hoe te om een toepassing tot stand te brengen ASP.NET die de dienst van Forms aanhaalt en vormen teruggeeft. Zie [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
 ## Snel starten (SOAP-modus): Een interactief PDF-formulier weergeven met de Java API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
@@ -903,7 +901,7 @@ In het volgende codevoorbeeld wordt een HTML-formulier weergegeven met de Java A
  
 ```
 
-## Snel starten (SOAP-modus): HTML-formulieren weergeven die een CSS-bestand gebruiken met de Java API {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
+## Snel starten (SOAP-modus): HTML-formulieren renderen die een CSS-bestand gebruiken met de Java API {#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een HTML-formulier gerenderd met de Forms Service Client API. De naam van het aangepaste CSS-bestand waarnaar wordt verwezen, is *custom.css*. (Zie [HTML Forms renderen met aangepaste CSS-bestanden](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
 
@@ -1383,7 +1381,7 @@ In het volgende codevoorbeeld wordt een formulier afgehandeld dat als XML wordt 
 >
 >Wanneer u een `com.adobe.idp.Document`-object en een `org.w3c.dom.Document` in dezelfde toepassing gebruikt, moet u `org.w3c.dom.Document` volledig kwalificeren.
 
-## Snel starten (SOAP-modus): Als PDF verzonden PDF forms verwerken met de Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Snel starten (SOAP-modus): PDF forms die als PDF zijn verzonden, verwerken met de Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een formulier afgehandeld dat als PDF-gegevens wordt verzonden. De waarde van het inhoudstype die wordt doorgegeven aan de methode `processFormSubmission` is `CONTENT_TYPE=application/pdf`. Het verzonden formulier wordt opgeslagen als een PDF-bestand met de naam *tempPDF.pdf*. Omdat het formulier als PDF wordt verzonden, kunnen ook bestandsbijlagen worden opgehaald. Alle bestandsbijlagen worden opgeslagen als JPEG-bestanden. (Zie [Ingediende Forms verwerken](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -1533,7 +1531,7 @@ In het volgende codevoorbeeld wordt een formulier afgehandeld dat als PDF-gegeve
  
 ```
 
-## Snel starten (SOAP-modus): HTML-formulieren die zijn verzonden als XML, afhandelen met de Java API {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
+## Snel starten (SOAP-modus): HTML-formulieren verwerken die zijn verzonden als XML met de Java API {#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een HTML-formulier afgehandeld dat als XML-gegevens wordt verzonden. De waarde van het inhoudstype die wordt doorgegeven aan de methode `processFormSubmission` is `CONTENT_TYPE=application/x-www-form-urlencoded`. De waarden die overeenkomen met de velden `mortgageAmount`, `lastName` en `firstName` worden weergegeven. In deze snelle start wordt een door de gebruiker gedefinieerde methode met de naam `getNodeText` gebruikt. Het keurt een `org.w3c.dom.Document` instantie en een koordwaarde goed die de knoopnaam specificeert. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. (Zie [Ingediende Forms verwerken](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
@@ -1965,7 +1963,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens verwerkt die als XML
  }
 ```
 
-## Snel starten (SOAP-modus): Forms vooraf vullen met stroombare lay-outs met de Java API {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
+## Snel starten (SOAP-modus): Forms vooraf vullen met stroombare indelingen met de Java API {#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een formulier vooraf gevuld met een dynamische gegevensbron. De gegevensbron wordt dus tijdens runtime gemaakt en is niet opgenomen in een XML-bestand of gemaakt tijdens het ontwerpen. Dit codevoorbeeld bevat drie user-defined methodes:
 

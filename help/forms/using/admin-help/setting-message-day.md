@@ -1,8 +1,8 @@
 ---
 title: Het bericht van de dag instellen
-seo-title: Het bericht van de dag instellen
+seo-title: Setting the message of the day
 description: Met het dagbericht kunt u een bericht instellen dat op de welkomstpagina in de gebruikersinterface van Workspace moet worden weergegeven.
-seo-description: Met het dagbericht kunt u een bericht instellen dat op de welkomstpagina in de gebruikersinterface van Workspace moet worden weergegeven.
+seo-description: The message of the day let you set a message to be displayed on the Welcome page in the Workspace user interface.
 uuid: 9c664438-6fc0-498e-bb3f-4c6bcb9414a7
 contentOwner: admin
 content-type: reference
@@ -10,11 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 0%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
 
@@ -36,9 +35,9 @@ Indien nodig kunt u de HTML-tags gebruiken die worden ondersteund door Adobe Fla
 * &lt;textformat> Tag voor tekstopmaak
 * &lt;u> Tag Onderstrepen&lt;/u>
 
-Zie de definitie van de eigenschap `htmlText` voor de klasse TextField in de [Flex Language Reference](https://www.adobe.com/support/documentation/en/flex/) voor meer informatie over de ondersteunde labels.
+Zie de definitie van de eigenschap `htmlText` voor de klasse TextField in de [Flex Language Reference](https://flex.apache.org/) voor meer informatie over de ondersteunde labels.
 
-## Het bericht van de dag instellen {#set-the-message-of-the-day}
+## Bericht van de dag instellen {#set-the-message-of-the-day}
 
 1. Klik in de beheerconsole op Services > Werkruimte > Bericht van de dag.
 1. Geef in het vak Bericht van de dag de tekst op die in het welkomstscherm moet worden weergegeven.

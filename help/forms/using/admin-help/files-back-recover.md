@@ -1,8 +1,8 @@
 ---
 title: Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld
-seo-title: Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld
+seo-title: Files to back up and recover
 description: In dit document worden de toepassing en gegevensbestanden beschreven waarvan een back-up moet worden gemaakt.
-seo-description: In dit document worden de toepassing en gegevensbestanden beschreven waarvan een back-up moet worden gemaakt.
+seo-description: This document describes the application and data files that must be backed up.
 uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2142'
 ht-degree: 0%
 
 ---
 
-# Bestanden waarvan een back-up moet worden gemaakt en die {#files-to-back-up-and-recover} moeten worden hersteld
+# Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld {#files-to-back-up-and-recover}
 
 De toepassing en gegevensbestanden waarvan een back-up moet worden gemaakt, worden in de volgende secties nader beschreven.
 
@@ -59,7 +58,7 @@ U kunt AEM formulierdocumentopslag inschakelen in de AEM formulierdatabase met b
 
 Wanneer u de optie &quot;Documentopslag in de database inschakelen&quot; selecteert in de Core System Settings in de beheerconsole of door Configuration Manager te gebruiken, staan AEM formulieren de back-upmodus voor momentopnamen en de schuifmodus niet toe. Daarom hoeft u de back-upmodi niet te beheren met AEM formulieren. Als u deze optie gebruikt, dient u slechts eenmaal een back-up van de GDS te maken nadat u de optie hebt ingeschakeld. Wanneer u AEM formulieren herstelt van een back-up, hoeft u de naam van de back-upmap voor de GDS niet te wijzigen of GDS te herstellen.
 
-## AEM opslagplaats {#aem-repository}
+## AEM {#aem-repository}
 
 AEM opslagplaats (crx-gegevensopslagplaats) wordt gecreeerd als crx-bewaarplaats tijdens het installeren van AEM vormen wordt gevormd. De locatie van de crx-repository directory wordt bepaald tijdens het installatieproces van AEM formulieren. AEM back-up en herstel in de opslagplaats is vereist in combinatie met database en GDS voor consistente AEM formuliergegevens in AEM formulieren. AEM opslagplaats bevat gegevens voor Correspondence Management Solution, Forms Manager en AEM Forms Workspace.
 
@@ -93,7 +92,7 @@ Als u een back-up van de database in real-time wilt maken, moet u de modus Momen
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices beheren](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf) voor informatie over het configureren van Inhoudsservices (afgekeurd).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -105,7 +104,7 @@ Vorm uw DB2 gegevensbestand om op de wijze van het archieflogboek te lopen.
 
 IBM beschikt over een pakket hulpmiddelen en Help-systemen waarmee databasebeheerders hun back-up- en hersteltaken kunnen beheren:
 
-* IBM DB2 Archive Log Accelerator (zie [IBM DB2 Archive Log Accelerator for z/OS User&#39;s Guide](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true).)
+* IBM DB2 Archive Log Accelerator
 * IBM DB2 Data Archive Expert (Zie [IBM DB2 Data Archive Expert User&#39;s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
 
 DB2 heeft ingebouwde mogelijkheden aan file een gegevensbestand aan de Manager van de Opslag van Tivoli. Met Tivoli Storage Manager kunnen DB2-back-ups worden opgeslagen op andere media of op de lokale vaste schijf.
@@ -174,7 +173,7 @@ Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimt
 
 Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes folder, die ook in de folder van de Root van de Opslag van de Inhoud wordt gevestigd. Als de /backup-lucene-indexes folder aanwezig is, maak geen file de /lucene-indexes folder omdat het fouten kan veroorzaken.
 
-### Hoofdlocatie van opslagruimte voor inhoud (geclusterde omgeving) {#content-storage-root-location-clustered-environment}
+### Hoofdlocatie voor opslag van inhoud (geclusterde omgeving) {#content-storage-root-location-clustered-environment}
 
 Wanneer u Content Services (Afgekeurd) installeert in een geclusterde omgeving, wordt de hoofdmap van de inhoudsopslagruimte gesplitst in twee aparte mappen:
 

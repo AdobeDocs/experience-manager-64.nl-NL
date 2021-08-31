@@ -1,8 +1,8 @@
 ---
 title: Forms renderen op waarde
-seo-title: Forms renderen op waarde
+seo-title: Rendering Forms By Value
 description: Met de Forms API (Java) kunt u een formulier op waarde weergeven met de API voor Java API en Web Service.
-seo-description: Met de Forms API (Java) kunt u een formulier op waarde weergeven met de API voor Java API en Web Service.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -12,10 +12,9 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: 50c34781-45e3-4255-a997-44f694527c92
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -46,7 +45,7 @@ De volgende beperkingen zijn van toepassing wanneer een formulierontwerp wordt d
 >
 >Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de Forms-service.
 
-## Overzicht van stappen {#summary-of-steps}
+## Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om een formulier op waarde te genereren:
 
@@ -78,7 +77,7 @@ Als u een formulier op waarde wilt weergeven, geeft u een `com.adobe.idp.Documen
 
 >[!NOTE]
 >
->Als u gegevens in het formulier wilt weergeven, moeten de gegevens worden opgegeven in het element `xfa:datasets`. Ga voor informatie over XFA-architectuur naar [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Als u gegevens in het formulier wilt weergeven, moeten de gegevens worden opgegeven in het element `xfa:datasets`. Ga voor informatie over XFA-architectuur naar [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **De formuliergegevensstroom naar de webbrowser van de client schrijven**
 
@@ -100,7 +99,7 @@ Wanneer de Forms-service een formulier op waarde weergeeft, wordt een formulierg
 
 [Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## Een formulier op waarde weergeven met de Java-API {#render-a-form-by-value-using-the-java-api}
+## Een formulier op waarde weergeven met de Java API {#render-a-form-by-value-using-the-java-api}
 
 Een formulier op waarde weergeven met de Forms API (Java):
 
@@ -151,7 +150,7 @@ Een formulier op waarde weergeven met de Forms API (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Een formulier op waarde weergeven met de API {#render-a-form-by-value-using-the-web-service-api} voor webservices
+## Een formulier op waarde weergeven met de API voor webservices {#render-a-form-by-value-using-the-web-service-api}
 
 Een formulier op waarde weergeven met de Forms API (webservice):
 

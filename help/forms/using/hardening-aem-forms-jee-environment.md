@@ -1,8 +1,8 @@
 ---
 title: AEM Forms versterken op JEE-omgeving
-seo-title: AEM Forms versterken op JEE-omgeving
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: Leer een verscheidenheid van veiligheid-verhardende montages om de veiligheid van AEM Forms op JEE te verbeteren die in een collectieve Intranet loopt.
-seo-description: Leer een verscheidenheid van veiligheid-verhardende montages om de veiligheid van AEM Forms op JEE te verbeteren die in een collectieve Intranet loopt.
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7347'
+source-wordcount: '7304'
 ht-degree: 0%
 
 ---
@@ -632,7 +632,7 @@ Bepaalde URL&#39;s worden gemarkeerd als eindgebruikers gerichte webtoepassingen
 
 Een CSRF-aanval (Cross-Site Request Svervalsing) misbruikt het vertrouwen dat een website heeft voor de gebruiker, om opdrachten door te geven die niet door de gebruiker zijn geautoriseerd en onbedoeld. De aanval wordt opstelling door een verbinding of een manuscript in een Web-pagina, of een URL in een e-mailbericht te omvatten, om tot een andere plaats toegang te hebben waaraan de gebruiker reeds voor authentiek is verklaard.
 
-U kunt bijvoorbeeld zijn aangemeld bij de beheerconsole terwijl u tegelijkertijd door een andere website bladert. Een van de webpagina&#39;s kan een HTML-afbeeldingstag bevatten met een `src`-kenmerk dat een serverscript aanwijst op de website van het slachtoffer. Door gebruik te maken van het op cookies gebaseerde mechanisme voor sessieverificatie dat door webbrowsers wordt geboden, kan de aanvallende website kwaadaardige verzoeken verzenden naar dit script op de server van het slachtoffer, waarbij de vraag als de legitieme gebruiker wordt gesteld. Zie [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples) voor meer voorbeelden.
+U kunt bijvoorbeeld zijn aangemeld bij de beheerconsole terwijl u tegelijkertijd door een andere website bladert. Een van de webpagina&#39;s kan een HTML-afbeeldingstag bevatten met een `src`-kenmerk dat een serverscript aanwijst op de website van het slachtoffer. Door gebruik te maken van het op cookies gebaseerde mechanisme voor sessieverificatie dat door webbrowsers wordt geboden, kan de aanvallende website kwaadaardige verzoeken verzenden naar dit script op de server van het slachtoffer, waarbij de vraag als de legitieme gebruiker wordt gesteld.
 
 De volgende kenmerken komen voor in KVP:
 

@@ -1,8 +1,8 @@
 ---
 title: Algemene opmerkingen bij de release van Adobe Experience Manager 6.4
-seo-title: Release-opmerkingen
+seo-title: Release Notes
 description: 'In Adobe Experience Manager 6.4 worden de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen beschreven. '
-seo-description: 'In Adobe Experience Manager 6.4 worden de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen beschreven. '
+seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,17 +10,16 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-translation-type: tm+mt
-source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2813'
-ht-degree: 2%
+source-wordcount: '2754'
+ht-degree: 1%
 
 ---
 
-# Algemene opmerkingen bij de release voor Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
+# Algemene opmerkingen bij de release van Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
 
-## Informatie opheffen {#release-information}
+## Geen informatie {#release-information}
 
 | Product | Adobe Experience Manager |
 |---|---|
@@ -77,7 +76,7 @@ Raadpleeg de [Authoring documentation](/help/sites-authoring/home.md) voor meer 
 * Continuous Revision Cleanup for MongoMK vervangt gepland onderhoud voor opschonen
 * Verbeterde efficiëntie voor het opschonen van revisies in documentknooppunten
 
-#### {#search-indexing} zoeken en indexeren
+#### Zoeken en indexeren {#search-indexing}
 
 * Verbeterde ondersteuning voor indexeringsbewerkingen via &#39;ak-run&#39; (CLI):
 
@@ -108,11 +107,11 @@ Voor meer informatie, te bezoeken [deze documentatiepagina](/help/sites-deployin
 * [Herstructurering](/help/sites-deploying/repository-restructuring.md) van de opslagplaats: aanzienlijke herstructurering ( hoofdzakelijk / enz . ) om verbeteringen te vergemakkelijken en de toepassing van beste praktijken te bevorderen ;
 * Voor meer algemene informatie over Upgrades raadpleegt u [deze pagina](/help/sites-deploying/upgrade.md) voor meer informatie.
 
-### Sites {#experience-manager-sites} Experience Managers
+### Sites Experience Managers {#experience-manager-sites}
 
 Volledige lijst van veranderingen in [AEM Sites en toe:voegen-ons](sites.md).
 
-#### Vochtervaring {#fluid-experiences}
+#### Vloeiende ervaringen {#fluid-experiences}
 
 De introductie van Fluid Ervaring begin 2017, gesteund door de Fragments van de Inhoud, de Fragments van de Ervaring en de Diensten van de Inhoud waren het begin om aan een multi-kanaal-eerste inhoudsbeheer te evolueren. AEM 6.4 breidt elk van de gebieden aanzienlijk uit:
 
@@ -128,7 +127,7 @@ Het maken van variaties in een fragment met dezelfde inhoud maar verschillende l
 
 Er zijn verschillende verbeteringen aangebracht in Sling Model Exporter en de Core Components om een robuuste JSON-uitvoer te bieden voor het insluiten van inhoud in mobiele apps en ervaringen met apps van één pagina.
 
-#### Sites sneller ophalen {#gettings-sites-built-quicker}
+#### Sites sneller samenstellen {#gettings-sites-built-quicker}
 
 AEM 6.4 voltooit de transformatie naar het volgende generatie componentenmodel. Het concept van de Componenten van de Kern dat in AEM 6.3 wordt geïntroduceerd, en nu door het Systeem van de Stijl wordt aangesloten, verstrekt een efficiënte manier om nieuwe te bouwen en bestaande plaatsen uit te breiden.
 
@@ -140,7 +139,7 @@ AEM Screens staat voor een consistente boodschap via alle marketingkanalen, incl
 
 Zie [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) voor meer informatie over de schermupdates.
 
-### Gemeenschappen {#experience-manager-communities} Experience Managers
+### Experience Manager {#experience-manager-communities}
 
 AEM 6.4 voegt veel nieuwe functies en verbeteringen toe aan de Gemeenschappen. Volledige lijst met wijzigingen is beschikbaar in [AEM Communities](communities-release-notes.md). De belangrijkste kenmerken van deze release zijn:
 
@@ -176,13 +175,13 @@ Er is voorzien in de mogelijkheid om meertalige groepen te maken in één enkele
 
 Het pictogram Verwijderen is nu beschikbaar op de respectievelijke sites en groepen en navigeert bij globale navigatie. Met dit pictogram worden alle items en inhoud van de site of groep verwijderd en worden alle gebruikerskoppelingen verwijderd. Als u meer wilt weten over deze functionaliteit, raadpleegt u [communitysites beheren](/help/communities/create-site.md#main-pars-text-fe17) en [groepen van gemeenschappen beheren](/help/communities/groups.md#main-pars-text-5e8c).
 
-#### Verbeteringen voor activering {#enhancements-to-enablement}
+#### Verbeteringen in Enablement {#enhancements-to-enablement}
 
 De functies Toewijzing en Catalogus zijn nu beschikbaar in groepen. Op deze manier kunt u leerinhoud maken, beheren en publiceren voor een specifieke set doelgroepsleden. Meer over het toelaten van communautaire groepen, verwijs [het beheren van enablement middelen](/help/communities/resource.md).
 
 ![toewijzingscatalogus](assets/assignmentcatalog.png)
 
-### Elementen van Experience Manager {#experience-manager-assets}
+### Experience Manager-elementen {#experience-manager-assets}
 
 AEM 6.4 bevat verschillende nieuwe functies en verbeteringen voor Middelen, waaronder nieuwe, verbeterde CreativeCloud-integratie, belangrijke vernieuwingen op het gebied van kunstmatige intelligentie, verbeterd metagegevensbeheer, verbeterde rapportering en algemene verbeteringen voor de gebruikerservaring. De volledige lijst van veranderingen beschikbaar in [AEM Assets](assets.md). De belangrijkste punten van de release zijn:
 
@@ -313,11 +312,11 @@ Dit proces van prioritering heeft meer dan 500 klant gerichte veranderingen opge
 
 * Pakketten voor AEM Forms-mogelijkheden:
 
-   * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
-   * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
-   * [adobe-aemfd-solaris-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-SOL)
-   * [adobe-aemfd-win-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-WIN)
-   * [adobe-aemfd-osx-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-OSX)
+   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.htmlL)
+   * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-osx-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 
 ## Talen {#languages}
 
@@ -336,7 +335,7 @@ De gebruikersinterface is beschikbaar in de volgende talen:
 
 Experience Manager 6.4 is gecertificeerd voor GB18030-2005 CITS om de Chinese coderingsstandaard te gebruiken.
 
-## {#install-update} installeren en bijwerken
+## Installeren en bijwerken {#install-update}
 
 Zie [installatie-instructies](/help/sites-deploying/custom-standalone-install.md) voor installatievereisten.
 
@@ -350,13 +349,13 @@ Hier vindt u de volledige matrix met ondersteunde platforms, inclusief. Onderste
 >
 >Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS versies door Oracle (zie [Oracle de steun roadmap van Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe biedt alleen ondersteuning voor LTS-releases van Java om AEM in productie te houden. Daarom is Java 8 de aanbevolen versie voor gebruik met AEM 6.4.
 
-## Vervangen en verwijderde functies {#deprecated-and-removed-features}
+## Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
 Adobe evalueert constant mogelijkheden in het product en in tijd plannen om mogelijkheden met krachtigere versies te vervangen, of besluit om geselecteerde delen opnieuw uit te voeren om beter voor toekomstige verwachtingen of uitbreidingen worden voorbereid.
 
 Voor Adobe Experience Manager 6.4: [lees de lijst met afgekeurde en verwijderde mogelijkheden](deprecated-removed-features.md). De pagina bevat ook een vooraankondiging van wijzigingen in 2019 en een belangrijke kennisgeving voor klanten die een update uitvoeren van eerdere releases.
 
-## Lijst met gedetailleerde wijzigingen {#detailed-changes-lists}
+## Lijsten met gedetailleerde wijzigingen {#detailed-changes-lists}
 
 [AEM Sites](sites.md)
 
@@ -372,7 +371,7 @@ Voor Adobe Experience Manager 6.4: [lees de lijst met afgekeurde en verwijderde 
 
 [Lijst met bekende problemen](known-issues.md)
 
-### Productdownload en -ondersteuning (Beperkte sites) {#product-download-and-support-restricted-sites}
+### Productdownload en -ondersteuning (beperkt aantal sites) {#product-download-and-support-restricted-sites}
 
 Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 

@@ -1,8 +1,8 @@
 ---
 title: AEM Forms-elementen en -documenten migreren
-seo-title: AEM Forms-elementen en -documenten migreren
+seo-title: Migrate AEM Forms assets and documents
 description: Met het migratiehulpprogramma kunt u AEM Forms-middelen en -documenten migreren van AEM 6.3 Forms of eerdere versies naar AEM 6.4 Forms.
-seo-description: Met het migratiehulpprogramma kunt u AEM Forms-middelen en -documenten migreren van AEM 6.3 Forms of eerdere versies naar AEM 6.4 Forms.
+seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -12,9 +12,9 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,13 @@ U kunt [upgrade](/help/forms/using/upgrade.md) uitvoeren naar de nieuwste versie
 
 **In het geval van een upgrade ter plekke**
 
-Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Maar voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (inclusief het compatibiliteitspakket Correspondence Management) installeren.
+Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Maar voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclusief het compatibiliteitspakket Correspondence Management) installeren.
 
 Vervolgens moet u de elementen en documenten bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren.
 
 **In geval van installatie buiten de plaats**
 
-Als de installatie op een verkeerde plaats staat (nieuw) voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (inclusief het pakket Correspondence Management Compatibility) installeren.
+Als de installatie op een verkeerde plaats staat (nieuw) voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclusief het pakket Correspondence Management Compatibility) installeren.
 
 Vervolgens moet u uw elementenpakket (zip of cmp) importeren in de nieuwe installatie en de elementen en documenten vervolgens bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren. Als gevolg van wijzigingen in [achterwaartse compatibiliteit](/help/sites-deploying/backward-compatibility.md) worden de locaties van een paar mappen in crx-repository gewijzigd. Exporteer en importeer handmatig afhankelijkheden (aangepaste bibliotheken en elementen) van vorige installatie naar een nieuwe omgeving.
 
@@ -107,15 +107,12 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
    >Deze componenten kunnen worden gemigreerd door ze te openen in de Rule Editor in de Adaptive Forms Editor.
    >
    >* Tik op Adaptive Forms Custom Components Migration en tik in het volgende scherm op Start Migration om regels en scripts te migreren (niet vereist als u vanaf 6.3 een upgrade uitvoert) in aangepaste componenten. De volgende code wordt gemigreerd:
-      >
-      >  
-   * Regels en Scripts die zijn gemaakt met een regeleditor (6.1 FP1 en hoger)
+   >
+   >  * Regels en Scripts die zijn gemaakt met een regeleditor (6.1 FP1 en hoger)
    >  * Scripts die zijn gemaakt met het tabblad Script in de gebruikersinterface van 6.1 en eerder
    >* Tik op Adaptive Forms Template Migration en tik in het volgende scherm op Start Migration om sjablonen te migreren (niet vereist als u een upgrade uitvoert vanaf 6.3). De volgende code wordt gemigreerd:
-
-      >
-      >  
-   * Oude sjablonen - de aangepaste formuliersjablonen die zijn gemaakt onder /apps met AEM 6.1 Forms of eerder. Dit geldt ook voor de scripts die zijn gedefinieerd in de sjablooncomponenten.
+   >
+   >  * Oude sjablonen - de aangepaste formuliersjablonen die zijn gemaakt onder /apps met AEM 6.1 Forms of eerder. Dit geldt ook voor de scripts die zijn gedefinieerd in de sjablooncomponenten.
    >  * Nieuwe sjablonen - Aangepaste formuliersjablonen die zijn gemaakt met de sjablooneditor onder /conf. Dit omvat migratie van regels en manuscripten die gebruikend de regelredacteur worden gecreeerd.
 
 

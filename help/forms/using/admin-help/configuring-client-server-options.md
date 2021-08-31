@@ -1,19 +1,19 @@
 ---
 title: client- en serveropties configureren
-seo-title: Client- en serveropties configureren
+seo-title: Configuring client and server optionsn
 description: Leer hoe u de diverse cliënt en serveropties, zoals de montages van de serverconfiguratie, de rollen van de documentveiligheid, en gebeurtenis controle kunt vormen.
-seo-description: Leer hoe u de diverse cliënt en serveropties, zoals de montages van de serverconfiguratie, de rollen van de documentveiligheid, en gebeurtenis controle kunt vormen.
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: Documentbeveiliging
+feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ Met documentbeveiliging wordt automatisch een e-mailuitnodiging voor een registr
 
 Het registratiebericht bevat een koppeling naar een registratiepagina en informatie over de manier waarop u zich kunt registreren. Nadat de uitgenodigde gebruiker zich heeft geregistreerd, geeft de documentveiligheid een activeringse-mail met een verbinding aan een pagina van de Activering uit. Als de account is geactiveerd, blijft deze geldig totdat u de account deactiveert of verwijdert.
 
-Als u ingebouwde registratie toelaat, specificeert u uw server SMTP, registratie e-maildetails, toegangsmogelijkheden, en stelt wachtwoord-e-mailinformatie slechts eenmaal in. Voordat u ingebouwde registratie inschakelt, moet u ervoor zorgen dat u een lokaal domein in Gebruikersbeheer hebt gemaakt en de rol &quot;Gebruiker uitnodigen voor documentbeveiliging&quot; hebt toegewezen aan de juiste gebruikers en groepen in uw organisatie. (Zie [Een lokaal domein toevoegen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) en [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Als u geen ingebouwde registratie gebruikt, moet u uw eigen systeem van de gebruikersregistratie hebben die gebruikend de AEM vorm SDK wordt gecreeerd. Zie de Help bij &quot;Developing SPIs for AEM forms&quot; in [Programming with AEM forms](https://www.adobe.com/go/learn-aemforms-programming-63). Als u de optie Ingebouwde registratie niet gebruikt, wordt u aangeraden een bericht te configureren in de activerings-e-mail en in het aanmeldingsscherm van de client om gebruikers te laten weten hoe ze contact kunnen opnemen met de beheerder voor een nieuw wachtwoord of voor andere informatie.
+Als u ingebouwde registratie toelaat, specificeert u uw server SMTP, registratie e-maildetails, toegangsmogelijkheden, en stelt wachtwoord-e-mailinformatie slechts eenmaal in. Voordat u ingebouwde registratie inschakelt, moet u ervoor zorgen dat u een lokaal domein in Gebruikersbeheer hebt gemaakt en de rol &quot;Gebruiker uitnodigen voor documentbeveiliging&quot; hebt toegewezen aan de juiste gebruikers en groepen in uw organisatie. (Zie [Een lokaal domein toevoegen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) en [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Als u geen ingebouwde registratie gebruikt, moet u uw eigen systeem van de gebruikersregistratie hebben die gebruikend de AEM vorm SDK wordt gecreeerd. Zie de Help bij &quot;Developing SPIs for AEM forms&quot; in [Programming with AEM forms](/help/forms/developing/introducing-java-api-soap-quick.md). Als u de optie Ingebouwde registratie niet gebruikt, wordt u aangeraden een bericht te configureren in de activerings-e-mail en in het aanmeldingsscherm van de client om gebruikers te laten weten hoe ze contact kunnen opnemen met de beheerder voor een nieuw wachtwoord of voor andere informatie.
 
 **Ingeschakelde gebruikersregistratie inschakelen en configureren**
 

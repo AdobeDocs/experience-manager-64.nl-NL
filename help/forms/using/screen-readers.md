@@ -1,8 +1,8 @@
 ---
 title: Schermlezers voor HTML5-formulieren
-seo-title: Schermlezers voor HTML5-formulieren
+seo-title: Screen readers for HTML5 forms
 description: Hier worden de schermlezers weergegeven die met HTML5-formulieren worden ondersteund.
-seo-description: Hier worden de schermlezers weergegeven die met HTML5-formulieren worden ondersteund.
+seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,10 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -24,9 +23,9 @@ Met HTML5-formuliercomponenten wordt XFA-formuliersjablonen weergegeven in de HT
 
 HTML5-formulieren maken gebruik van standaard HTML-constructies die het gebruik van gewone toegankelijkheidsgereedschappen voor HTML in deze formulieren mogelijk maken. Als een formulier is ontworpen volgens de aanbevolen procedures voor toegankelijke formulieren, werkt het met alle ondersteunde schermlezers. Bovendien worden dergelijke formulieren ingeschakeld voor toetsenbordnavigatie.
 
-## Toegankelijkheidsstandaarden {#accessibility-standards}
+## Toegankelijkheidsnormen {#accessibility-standards}
 
-HTML5-formulieren voldoen aan sectie 508 voor toegankelijkheid, met bekende uitzonderingen. Zie [VPAT voor HTML5-formulieren](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) voor meer informatie.
+HTML5-formulieren voldoen aan sectie 508 voor toegankelijkheid, met bekende uitzonderingen. Zie [VPAT voor HTML5-formulieren](http://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf) voor meer informatie.
 
 ## Gecertificeerde schermlezers voor HTML5-formulieren {#certified-screen-readers-for-html-forms}
 

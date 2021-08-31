@@ -1,16 +1,16 @@
 ---
 title: Interactieve communicatie installeren en configureren
-seo-title: Interactieve communicatie installeren en configureren
+seo-title: Install and configure Interactive Communications
 description: 'Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken. '
-seo-description: 'Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken. '
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 
 #### Compatibiliteitspakket installeren {#install-compatibility-package}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM 6.4 Forms tot stand te brengen. Als u een upgrade hebt uitgevoerd of een migratie hebt uitgevoerd van een vorige versie en u wilt doorgaan met het gebruik van letters (Correspondentiebeheer), installeert u het [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM 6.4 Forms tot stand te brengen. Als u een upgrade hebt uitgevoerd of een migratie hebt uitgevoerd van een vorige versie en u wilt doorgaan met het gebruik van letters (Correspondentiebeheer), installeert u het [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 Met het compatibiliteitspakket AEMFD kunt u de volgende middelen van AEM 6.3 Forms en AEM 6.2 Forms op AEM 6.4 Forms gebruiken:
 

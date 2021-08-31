@@ -1,8 +1,8 @@
 ---
 title: Programmaticaal het leiden Eindpunten
-seo-title: Programmaticaal het leiden Eindpunten
+seo-title: Programmatically Managing Endpoints
 description: Gebruik de dienst van de Registratie van het Eindpunt om EJB eindpunten toe te voegen, het eindpunt van de ZEEP toe te voegen, Gecontroleerde eindpunten van de Omslag toe te voegen, E-maileindpunten toe te voegen, verwijderende eindpunten van de Manager van de Taak toe te voegen, eindpunten te wijzigen, eindpunten te verwijderen, en informatie van de eindpuntschakelaar terug te winnen.
-seo-description: Gebruik de dienst van de Registratie van het Eindpunt om EJB eindpunten toe te voegen, het eindpunt van de ZEEP toe te voegen, Gecontroleerde eindpunten van de Omslag toe te voegen, E-maileindpunten toe te voegen, verwijderende eindpunten van de Manager van de Taak toe te voegen, eindpunten te wijzigen, eindpunten te verwijderen, en informatie van de eindpuntschakelaar terug te winnen.
+seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,14 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10849'
+source-wordcount: '10791'
 ht-degree: 0%
 
 ---
 
-# Programmaticaal beheer van eindpunten {#programmatically-managing-endpoints}
+# Programmaticaal het leiden Eindpunten {#programmatically-managing-endpoints}
 
 **Info over Endpoint Registry Service**
 
@@ -66,7 +65,7 @@ U kunt programmatically een eindpunt EJB aan de dienst toevoegen door AEM Forms 
 >
 >Typisch, wordt een eindpunt EJB toegevoegd aan de dienst door gebrek, echter, kan een eindpunt EJB aan een proces worden toegevoegd dat programmatically wordt opgesteld of wanneer een eindpunt EJB werd verwijderd en opnieuw moet worden toegevoegd.
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Om een eindpunt EJB aan de dienst toe te voegen, voer de volgende taken uit:
 
@@ -95,7 +94,7 @@ Voordat u een EJB-eindpunt programmatisch kunt toevoegen, moet u een `EndpointRe
 
 Om een EJB eindpunt voor de dienst tot stand te brengen, specificeer de volgende waarden:
 
-* **Connector-id**: Geeft het type eindpunt op dat moet worden gemaakt. Om een EJB eindpunt tot stand te brengen, specificeer `EJB`.
+* **Connector-id**: Geeft het type eindpunt op dat moet worden gemaakt. Als u een EJB-eindpunt wilt maken, geeft u `EJB` op.
 * **Omschrijving**: Specificeert de eindpuntbeschrijving.
 * **Naam**: Specificeert de naam van het eindpunt.
 * **Service-id**: Specificeert de dienst waartot het eindpunt behoort.
@@ -157,7 +156,7 @@ Voeg een EJB eindpunt toe door Java API te gebruiken:
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## SOAP-eindpunten {#adding-soap-endpoints} toevoegen
+## SOAP-eindpunten toevoegen {#adding-soap-endpoints}
 
 U kunt programmatically een eindpunt van de ZEEP aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt van de ZEEP toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze van de ZEEP te gebruiken. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de SOAP-modus selecteren.
 
@@ -169,7 +168,7 @@ U kunt programmatically een eindpunt van de ZEEP aan de dienst toevoegen door AE
 >
 >Typisch, wordt een eindpunt van de ZEEP toegevoegd aan de dienst door gebrek, echter, kan een eindpunt van de ZEEP aan een proces worden toegevoegd dat programmatically wordt opgesteld of wanneer een eindpunt van de ZEEP werd verwijderd en opnieuw moet worden toegevoegd.
 
-### Overzicht van stappen {#summary_of_steps-1}
+### Overzicht van de stappen {#summary_of_steps-1}
 
 Om een eindpunt van de ZEEP aan de dienst toe te voegen, voer de volgende taken uit:
 
@@ -262,7 +261,7 @@ Voeg een eindpunt van de ZEEP aan de dienst toe door Java API te gebruiken:
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Eindpunten van gecontroleerde mappen {#adding-watched-folder-endpoints} toevoegen
+## Eindpunten van gecontroleerde mappen toevoegen {#adding-watched-folder-endpoints}
 
 U kunt programmatically een Gecontroleerd eindpunt van de Omslag aan de dienst toevoegen door AEM Forms Java API te gebruiken. Als u een eindpunt van een gecontroleerde map toevoegt, kunnen gebruikers een bestand (zoals een PDF-bestand) in een map plaatsen. Wanneer het dossier in de omslag wordt geplaatst, wordt de gevormde dienst dan aangehaald en manipuleert het dossier. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het gewijzigde bestand opgeslagen in een opgegeven uitvoermap. Een gecontroleerde map is geconfigureerd om te worden gescand met een vast interval of met een uitsnijdschema, zoals elke maandag, woensdag en vrijdag om 12.00 uur.
 
@@ -276,7 +275,7 @@ Dit proces accepteert een onbeveiligd PDF-document als een invoerwaarde en geeft
 >
 >U kunt geen Gecontroleerd eindpunt van de Omslag toevoegen door de Webdiensten te gebruiken.
 
-### Overzicht van stappen {#summary_of_steps-2}
+### Overzicht van de stappen {#summary_of_steps-2}
 
 Voer de volgende taken uit om een eindpunt van een gecontroleerde map aan de service toe te voegen:
 
@@ -324,7 +323,7 @@ De volgende lijst specificeert configuratiewaarden die wanneer programmatically 
 
 * **URL**: Hier geeft u de locatie van de gecontroleerde map op. In een gegroepeerd milieu, moet deze waarde aan een gedeelde netwerkomslag richten die van elke computer in de cluster toegankelijk is.
 * **asynchroon**: Identificeert het aanroepingstype als asynchroon of synchroon. De voorbijgaande en synchrone processen kunnen slechts synchroon worden aangehaald. De standaardwaarde is true. Asynchroon wordt aanbevolen.
-* **cronExpression**: Wordt gebruikt door kwarts om de opiniepeiling van de invoermap te plannen. Zie [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html) voor meer informatie over het configureren van de expressie voor uitsnijden.
+* **cronExpression**: Wordt gebruikt door kwarts om de opiniepeiling van de invoermap te plannen.
 * **purgeDuration**: Dit is een verplicht kenmerk. Bestanden en mappen in de resultaatmap worden gewist wanneer ze ouder zijn dan deze waarde. Deze waarde wordt gemeten in dagen. Dit kenmerk is handig om ervoor te zorgen dat de resultaatmap niet vol wordt. De waarde -1 dagen geeft aan dat u de resultatenmap nooit wilt verwijderen. De standaardwaarde is -1.
 * **repeatInterval**: Het interval, in seconden, voor het scannen van de gecontroleerde map op invoer. Als vertraging niet is ingeschakeld, moet deze waarde langer zijn dan de tijd die nodig is om een gemiddelde taak te verwerken. anders kan het systeem overbelast raken . De standaardwaarde is 5.
 * **repeatCount**: Het aantal keren dat een gecontroleerde map de map of map scant. De waarde -1 geeft aan dat een scanbewerking voor onbepaalde tijd wordt uitgevoerd. De standaardwaarde is -1.
@@ -390,7 +389,7 @@ Nadat u een Gecontroleerd eindpunt van de Omslag creeert, moet u het toelaten. W
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Een eindpunt van een gecontroleerde map toevoegen met de Java API {#add-a-watched-folder-endpoint-using-the-java-api}
+### Het eindpunt van een gecontroleerde map toevoegen met de Java API {#add-a-watched-folder-endpoint-using-the-java-api}
 
 Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te gebruiken:
 
@@ -462,7 +461,7 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Configuratiewaarden van gecontroleerde map constant bestand {#watched-folder-configuration-values-constant-file}
+### Configuratiewaarden van gecontroleerde map, constant bestand {#watched-folder-configuration-values-constant-file}
 
 De [QuickStart: Als u een eindpunt van een gecontroleerde map toevoegt met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api), wordt een constant bestand gebruikt dat deel moet uitmaken van uw Java-project om de snelle start te kunnen compileren. Dit constante dossier vertegenwoordigt configuratiewaarden die moeten worden geplaatst wanneer het toevoegen van een Gecontroleerd eindpunt van de Omslag. De volgende Java-code vertegenwoordigt het constante bestand.
 
@@ -495,7 +494,7 @@ De [QuickStart: Als u een eindpunt van een gecontroleerde map toevoegt met de Ja
         }
 ```
 
-## E-maileindpunten {#adding-email-endpoints} toevoegen
+## E-maileindpunten toevoegen {#adding-email-endpoints}
 
 U kunt programmatically een eindpunt E-mail aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een e-maileindpunt toe te voegen, laat u gebruikers toe om een e-mailbericht met één of meerdere dossiergehechtheid naar een gespecificeerde e-mailrekening te verzenden. Dan vormen de de dienstverrichting wordt aangehaald en manipuleert de dossiers. Nadat de service de opgegeven bewerking heeft uitgevoerd, stuurt het een e-mailbericht naar de afzender met de gewijzigde bestanden als bestandsbijlagen.
 
@@ -509,7 +508,7 @@ Dit proces accepteert een onbeveiligd PDF-document als een invoerwaarde en geeft
 >
 >U kunt geen eindpunt E-mail toevoegen door de Webdiensten te gebruiken.
 
-### Overzicht van stappen {#summary_of_steps-3}
+### Overzicht van de stappen {#summary_of_steps-3}
 
 Om een E-maileindpunt aan de dienst toe te voegen, voer de volgende taken uit:
 
@@ -747,7 +746,7 @@ De [QuickStart: Als u een e-maileindpunt toevoegt met de Java API](/help/forms/d
  }
 ```
 
-## Eindpunten {#adding-remoting-endpoints} verwijderen
+## Eindpunten verwijderen toevoegen {#adding-remoting-endpoints}
 
 >[!NOTE]
 >
@@ -767,7 +766,7 @@ Om aan te tonen hoe te om een Remoting eindpunt aan de dienst toe te voegen, voe
 >
 >U kunt geen eindpunt Remoting toevoegen door de Webdiensten te gebruiken.
 
-### Overzicht van stappen {#summary_of_steps-4}
+### Overzicht van de stappen {#summary_of_steps-4}
 
 Om een eindpunt uit de dienst te verwijderen, voer de volgende taken uit:
 
@@ -820,7 +819,7 @@ Nadat u een nieuw eindpunt creeert, moet u het toelaten. Wanneer een Remoting ei
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Een eindpunt voor verwijderen toevoegen met de Java API {#add-a-remoting-endpoint-using-the-java-api}
+### Een eindpunt voor Verwijderen toevoegen met de Java API {#add-a-remoting-endpoint-using-the-java-api}
 
 Voeg een Remoting eindpunt toe door Java API te gebruiken:
 
@@ -860,7 +859,7 @@ Voeg een Remoting eindpunt toe door Java API te gebruiken:
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## TaskManager-eindpunten {#adding-taskmanager-endpoints} toevoegen
+## TaskManager-eindpunten toevoegen {#adding-taskmanager-endpoints}
 
 U kunt programmatically een eindpunt TaskManager aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt TaskManager aan de dienst toe te voegen, laat u een gebruiker van de Werkruimte toe om de dienst aan te halen. Namelijk kan een gebruiker die in Werkruimte werkt een proces aanhalen dat een overeenkomstig eindpunt TaskManager heeft.
 
@@ -868,7 +867,7 @@ U kunt programmatically een eindpunt TaskManager aan de dienst toevoegen door AE
 >
 >U kunt geen eindpunt TaskManager toevoegen door de Webdiensten te gebruiken.
 
-### Overzicht van stappen {#summary_of_steps-5}
+### Overzicht van de stappen {#summary_of_steps-5}
 
 Om een eindpunt TaskManager aan de dienst toe te voegen, voer de volgende taken uit:
 
@@ -931,7 +930,7 @@ Nadat u een nieuw eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wo
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Voeg een eindpunt TaskManager toe gebruikend Java API {#add-a-taskmanager-endpoint-using-the-java-api}
+### Een TaskManager-eindpunt toevoegen met de Java API {#add-a-taskmanager-endpoint-using-the-java-api}
 
 Voeg een eindpunt TaskManager door Java API toe te gebruiken:
 
@@ -991,7 +990,7 @@ Om aan te tonen hoe te om een eindpunt te wijzigen, wijzigt deze sectie een Geco
 >
 >U kunt een eindpunt niet wijzigen door de Webdiensten te gebruiken.
 
-### Overzicht van stappen {#summary_of_steps-6}
+### Overzicht van de stappen {#summary_of_steps-6}
 
 Om een eindpunt te wijzigen, voer de volgende taken uit:
 
@@ -1083,7 +1082,7 @@ Wijzig een eindpunt door Java API te gebruiken:
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Eindpunten {#removing-endpoints} verwijderen
+## Eindpunten verwijderen {#removing-endpoints}
 
 U kunt een eindpunt uit de dienst programmatically verwijderen door AEM Forms Java API te gebruiken. Nadat u een eindpunt verwijdert, kan de dienst niet worden aangehaald door de aanroepingsmethode te gebruiken die het eindpunt toeliet. Bijvoorbeeld, als u een eindpunt van de ZEEP uit de dienst verwijdert, kunt u niet de dienst aanhalen door de wijze van de ZEEP te gebruiken.
 
@@ -1093,7 +1092,7 @@ Om aan te tonen hoe te om een eindpunt uit de dienst te verwijderen, verwijdert 
 >
 >U kunt geen eindpunt verwijderen door de Webdiensten te gebruiken.
 
-### Overzicht van stappen {#summary_of_steps-7}
+### Overzicht van de stappen {#summary_of_steps-7}
 
 Om een eindpunt uit de dienst te verwijderen, voer de volgende taken uit:
 
@@ -1171,7 +1170,7 @@ Een eindpunt verwijderen met de Java API:
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Gegevens eindpuntconnector {#retrieving-endpoint-connector-information} ophalen
+## Gegevens eindpuntconnector ophalen {#retrieving-endpoint-connector-information}
 
 U kunt informatie over eindpuntschakelaars programmatically terugwinnen gebruikend AEM Forms API. Een schakelaar laat een eindpunt toe om de dienst aan te halen gebruikend diverse aanroepingsmethodes. Bijvoorbeeld, laat een Gecontroleerde schakelaar van de Omslag een eindpunt toe om de dienst aan te halen gebruikend gecontroleerde omslagen. Door programmatically het terugwinnen van informatie over eindpuntschakelaars, kunt u configuratiewaarden terugwinnen verbonden aan een schakelaar zoals welke configuratiewaarden worden vereist en welke facultatieve zijn.
 
@@ -1185,7 +1184,7 @@ Om aan te tonen hoe te om informatie over eindpuntschakelaars terug te winnen, w
 >
 >Dit onderwerp gebruikt `ConnectorRegistryClient` API om informatie over eindpuntschakelaars terug te winnen. (Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
-### Overzicht van stappen {#summary_of_steps-8}
+### Overzicht van de stappen {#summary_of_steps-8}
 
 Om de informatie van de eindpuntschakelaar terug te winnen, voer de volgende taken uit:
 
@@ -1234,7 +1233,7 @@ Nadat u het schakelaartype specificeert, kunt u informatie over de schakelaar zo
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Gegevens over eindpuntaansluiting ophalen met de Java API {#retrieve-endpoint-connector-information-using-the-java-api}
+### Gegevens van eindpuntconnector ophalen met de Java API {#retrieve-endpoint-connector-information-using-the-java-api}
 
 Haal de informatie van de eindpuntschakelaar door Java API te gebruiken terug:
 

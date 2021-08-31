@@ -1,8 +1,8 @@
 ---
 title: Adobe Sign in een adaptieve vorm gebruiken
-seo-title: Adobe Sign in een adaptieve vorm gebruiken
+seo-title: Using Adobe Sign in an adaptive form
 description: 'Workflows voor e-handtekeningen (Adobe Sign) inschakelen voor een adaptief formulier om ondertekeningsworkflows te automatiseren, processen met één en meerdere handtekeningen te vereenvoudigen en formulieren van mobiele apparaten elektronisch te ondertekenen. '
-seo-description: Workflows voor e-handtekeningen (Adobe Sign) inschakelen voor een adaptief formulier om ondertekeningsworkflows te automatiseren, processen met één en meerdere handtekeningen te vereenvoudigen en formulieren van mobiele apparaten elektronisch te ondertekenen.
+seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: 9c65dc44-c1a5-44df-8659-6efbe347575b
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,15 +11,14 @@ discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 feature: Adaptive Forms, Adobe Sign
 exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '3513'
+source-wordcount: '3479'
 ht-degree: 0%
 
 ---
 
-# Adobe Sign gebruiken in een adaptieve vorm {#using-adobe-sign-in-an-adaptive-form}
+# Adobe Sign in een adaptieve vorm gebruiken {#using-adobe-sign-in-an-adaptive-form}
 
 Workflows voor e-handtekeningen (Adobe Sign) inschakelen voor een adaptief formulier om ondertekeningsworkflows te automatiseren, processen met één en meerdere handtekeningen te vereenvoudigen en formulieren van mobiele apparaten elektronisch te ondertekenen.
 
@@ -189,7 +188,7 @@ U kunt slechts één ondertekenaar of meerdere ondertekenaars hebben voor een ad
 
    >[!NOTE]
    >
-   >* Standaard biedt verificatie op basis van sociale identiteiten een optie voor verificatie via Facebook, Google en LinkedIn. U kunt contact opnemen met Adobe Sign-ondersteuning om andere providers van sociale verificatie in te schakelen.
+   >* Standaard biedt verificatie op basis van sociale identiteit een optie voor verificatie met Facebook, Google en LinkedIn. U kunt contact opnemen met Adobe Sign-ondersteuning om andere providers van sociale verificatie in te schakelen.
 
 
    * **Adobe Sign-velden die moeten worden ingevuld of ondertekend:Adobe Sign-velden** selecteren voor de ondertekenaar. Een adaptief formulier kan meerdere Adobe Sign-velden hebben. U kunt specifieke velden inschakelen voor een ondertekenaar. In het veld worden alle beschikbare Adobe Sign-blokken weergegeven. Wanneer u een blok selecteert, worden alle velden van het blok geselecteerd. U kunt het X-pictogram gebruiken om de selectie van een veld op te heffen.
@@ -249,7 +248,7 @@ Nadat [adaptieve formuliereigenschappen voor Adobe sign](#enableadobesign) is be
    * [Selecteer Handeling verzenden voor een adaptief formulier](#selectsubmitactionforanadaptiveform)
 
 
-## Ondertekeningservaring in formulieren maken {#create-in-form-signing-experience}
+## Ervaring voor ondertekenen in formulieren maken {#create-in-form-signing-experience}
 
 Een gebruiker kan ook een adaptief formulier ondertekenen terwijl het formulier wordt ingevuld. Deze ervaring wordt ook wel &#39;in-form signing experience&#39; genoemd. De ondertekeningservaring in formulieren is alleen beschikbaar voor de eerste ondertekenaar in een omgeving met meerdere ondertekenaars. Voer de volgende stappen uit om een ondertekeningservaring in formulieren te maken voor een adaptief formulier:
 
@@ -284,7 +283,7 @@ Voer de volgende stappen uit om de component van de Stap van de Handtekening te 
    >* Aangepaste formulieren die zijn ingeschakeld in Adobe Sign, ondersteunen niet het gebruik van de knop Verzenden in de sectie of het deelvenster met de component Stap handtekening. U kunt een summiere stap toevoegen nadat de stap van de Handtekening voor de handindiening of een automatische voorlegging wordt teweeggebracht na het interval dat wordt geplaatst gebruikend [de Dienst van de Configuratie van Adobe Sign](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
 
 
-### De component {#configure-the-thank-you-page-or-summary-step-component} voor de pagina Hartelijk dank of de overzichtsstap configureren
+### De component voor de prullenbak of overzichtsstap configureren {#configure-the-thank-you-page-or-summary-step-component}
 
 Met de component **Summiere stap** wordt het formulier automatisch verzonden, wordt de informatie binnen de aangepaste overzichtspagina gevuld en wordt de samenvatting van het verzonden formulier weergegeven. Het krijgt ook de vereiste informatie in de terugkeerkaart. De component SummaryStep gebruikt de volledige breedte die beschikbaar is voor het formulier. Men adviseert om geen andere component op de sectie te hebben die de Summiere component van de Stap bevat.
 
@@ -302,7 +301,7 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 
 **V: Kan ik Adobe Sign-tekstcodes gebruiken in een statisch tekstonderdeel van een adaptief formulier?**
 
-**Ans:** Ja, u kunt tekstmarkeringen in een tekstcomponent gebruiken om de gebieden van Adobe Sign aan een  [Document van het Verslag](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)  (Auto geproduceerde document van verslagoptie slechts) toe te voegen toegelaten adaptieve vorm. Zie [Adobe Sign Documentation](https://helpx.adobe.com/sign/help/text-tags.html) voor meer informatie over de procedure en regels voor het maken van een tekstcode. Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. Met de tekstcodes kunt u alleen die velden maken die door Adobe Sign Block worden ondersteund.
+**Ans:** Ja, u kunt tekstmarkeringen in een tekstcomponent gebruiken om de gebieden van Adobe Sign aan een  [Document van het Verslag](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)  (Auto geproduceerde document van verslagoptie slechts) toe te voegen toegelaten adaptieve vorm. Zie [Adobe Sign Documentation](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html) voor meer informatie over de procedure en regels voor het maken van een tekstcode. Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. Met de tekstcodes kunt u alleen die velden maken die door Adobe Sign Block worden ondersteund.
 
 **V: AEM Forms biedt zowel Adobe Sign-onderdelen voor blok- als handtekeningstappen. Kunnen deze gelijktijdig in een adaptieve vorm worden gebruikt?**
 

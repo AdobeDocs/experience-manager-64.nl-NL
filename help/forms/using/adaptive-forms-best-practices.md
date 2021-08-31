@@ -1,23 +1,22 @@
 ---
 title: Aanbevolen werkwijzen voor het werken met adaptieve formulieren
-seo-title: Aanbevolen werkwijzen voor het werken met adaptieve formulieren
+seo-title: Best practices for working with adaptive forms
 description: Hierin worden de beste praktijken beschreven voor het opzetten van een AEM Forms-project, het ontwikkelen van adaptieve formulieren en het optimaliseren van de prestaties voor het AEM Forms-systeem.
-seo-description: Hierin worden de beste praktijken beschreven voor het opzetten van een AEM Forms-project, het ontwikkelen van adaptieve formulieren en het optimaliseren van de prestaties voor het AEM Forms-systeem.
+seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
 uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4148'
+source-wordcount: '4108'
 ht-degree: 0%
 
 ---
 
-# Aanbevolen werkwijzen voor het werken met aangepaste formulieren {#best-practices-for-working-with-adaptive-forms}
+# Aanbevolen werkwijzen voor het werken met adaptieve formulieren {#best-practices-for-working-with-adaptive-forms}
 
 ## Overzicht {#overview}
 
@@ -32,9 +31,9 @@ Daarnaast zijn er enkele aanbevelingen voor algemene AEM aanbevolen procedures:
 * [Tips en trucs: AEM beheren](/help/sites-administering/administer-best-practices.md)
 * [Tips en trucs: Oplossingen ontwikkelen](/help/sites-developing/best-practices.md)
 
-## AEM Forms {#set-up-and-configure-aem-forms} instellen en configureren
+## AEM Forms instellen en configureren {#set-up-and-configure-aem-forms}
 
-### Formulierontwikkelingsproject {#setting-up-forms-development-project} instellen
+### Project voor de ontwikkeling van formulieren opzetten {#setting-up-forms-development-project}
 
 Een vereenvoudigde en gestandaardiseerde projectstructuur kan de ontwikkeling en het onderhoud aanzienlijk verminderen. Apache Maven is een opensource tool die wordt aanbevolen voor het bouwen van AEM projecten.
 
@@ -87,9 +86,9 @@ Zie [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md) 
 
 * Zie [Persoonlijke identificeerbare informatie verwerken](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) voor aanbevelingen voor de verwerking van PII-gegevens.
 
-## Aangepaste formulieren voor auteurs {#author-adaptive-forms}
+## Aangepaste formulieren van auteurs {#author-adaptive-forms}
 
-### Gebruikend touch-geoptimaliseerde UI voor het ontwerpen {#using-touch-optimized-ui-for-authoring}
+### Gebruikend touch-geoptimaliseerde UI voor creatie {#using-touch-optimized-ui-for-authoring}
 
 * Gebruik de browser Objecten in het zijpaneel om snel velden te openen die diep onder in de formulierhiërarchie liggen. Met het zoekvak kunt u zoeken naar objecten in het formulier of in de objectstructuur en van het ene object naar het andere navigeren.
 * Als u de eigenschappen van een component wilt weergeven en bewerken in de componentbrowser in de zijbalk, selecteert u de component en klikt u op ![cmp-1](assets/cmppr-1.png). U kunt ook dubbelklikken op een component om de eigenschappen ervan weer te geven in de eigenschappenbrowser.
@@ -99,7 +98,7 @@ Zie [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md) 
 
 Zie ook componentbeschrijvingen en aanbevolen procedures in [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md).
 
-### Regels in aangepaste vormen {#using-rules-in-adaptive-forms} gebruiken
+### Regels in adaptieve formulieren gebruiken {#using-rules-in-adaptive-forms}
 
 AEM Forms biedt een [regeleditor](/help/forms/using/rule-editor.md) waarmee u regels kunt maken om dynamisch gedrag toe te voegen aan adaptieve formuliercomponenten. Met deze regels kunt u voorwaarden evalueren en acties activeren op componenten, zoals velden weergeven of verbergen, waarden berekenen, vervolgkeuzelijst dynamisch wijzigen, enzovoort.
 
@@ -164,7 +163,7 @@ Overweeg de volgende aanbevolen procedures om prestatieproblemen met grote formu
    * Markeer een waarde in een lazy geladen paneel als Waarde globaal gebruiken als die waarde in een ander deel van het formulier wordt gebruikt zodat de waarde beschikbaar is voor gebruik wanneer het bevattende paneel wordt verwijderd.
    * U kunt zichtbaarheidsregels schrijven voor fragmenten die op basis van een voorwaarde moeten worden weergegeven of verborgen.
 
-### Aangepaste formulieren {#prefilling-adaptive-forms} vooraf invullen
+### Aangepaste formulieren vooraf invullen {#prefilling-adaptive-forms}
 
 U kunt adaptieve formuliervelden vooraf invullen met gegevens die vanaf de achtergrond zijn opgehaald, zodat gebruikers het formulier snel kunnen invullen en typfouten kunnen voorkomen.
 
@@ -178,7 +177,7 @@ U kunt adaptieve formuliervelden vooraf invullen met gegevens die vanaf de achte
 
 Zie [Aangepaste formuliervelden vooraf invullen](/help/forms/using/prepopulate-adaptive-form-fields.md) voor meer informatie.
 
-### Aangepaste formulieren ondertekenen en verzenden {#signing-and-submitting-adaptive-forms}
+### Aangepaste formulieren ondertekenen en indienen {#signing-and-submitting-adaptive-forms}
 
 Voor adaptieve formulieren zijn acties verzenden vereist om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier.
 
@@ -192,7 +191,7 @@ U kunt de multi-sign ervaring van Adobe Sign in adaptieve vormen gebruiken. Houd
 * U kunt ondertekeningservaring in formulieren configureren of ondertekenaars omleiden naar een ondertekeningspagina bij verzending.
 * Configureer sequentiële of parallelle ondertekeningservaring, indien van toepassing.
 
-### Document met record {#generating-document-of-record} genereren
+### Document met record genereren {#generating-document-of-record}
 
 Een recorddocument (DoR) is een afgevlakte PDF-versie van een adaptief formulier dat u kunt afdrukken, ondertekenen of archiveren.
 
@@ -207,7 +206,7 @@ Een recorddocument (DoR) is een afgevlakte PDF-versie van een adaptief formulier
 * Verborgen velden uitsluiten van de DoR.
 * Gebruik `afAcceptLang` verzoekparameter om DoR in een andere scène te bekijken.
 
-### Fouten opsporen en adaptieve formulieren testen {#debugging-and-testing-adaptive-forms}
+### Fouten opsporen en aangepaste formulieren testen {#debugging-and-testing-adaptive-forms}
 
 [AEM Chrome Plug-](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/) inis een browserextensie voor Google Chrome met hulpprogramma&#39;s voor foutopsporing in adaptieve formulieren. Auteurs en ontwikkelaars van formulieren kunnen deze gereedschappen gebruiken:
 
@@ -230,14 +229,14 @@ Calvin SDK is een hulpprogramma-API waarmee Adaptive Forms-ontwikkelaars Adaptiv
 
 Zie [Testen van adaptieve formulieren automatiseren](/help/forms/using/calvin.md) voor meer informatie.
 
-### Aangepaste formulieren op AEM server {#validating-adaptive-forms-on-aem-server} valideren
+### Aangepaste formulieren op AEM server valideren {#validating-adaptive-forms-on-aem-server}
 
 Validaties aan de serverzijde zijn vereist om te voorkomen dat er pogingen worden ondernomen om validaties op de client te omzeilen en dat er een mogelijk compromis ontstaat tussen gegevensverzending en overtredingen van de bedrijfsregels. Servervalidaties worden op de server uitgevoerd door de vereiste clientbibliotheek te laden.
 
 * Neem functies op in een clientbibliotheek voor het valideren van expressies in adaptieve formulieren en geef de clientbibliotheek op in het dialoogvenster Container voor adaptieve formulieren. Zie [Herhaling aan de serverzijde](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p) voor meer informatie.
 * Servervalidatie valideert het formuliermodel. Het wordt aanbevolen een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML-opmaak en DOM-manipulatie, in dezelfde clientbibliotheek.
 
-### Aangepaste formulieren {#localizing-adaptive-forms} lokaliseren
+### Aangepaste formulieren lokaliseren {#localizing-adaptive-forms}
 
 AEM biedt vertaalworkflows waarmee u adaptieve formulieren kunt lokaliseren. Zie [AEM vertaalworkflow gebruiken om adaptieve formulieren te lokaliseren](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md) voor meer informatie.
 
@@ -253,7 +252,7 @@ U kunt het beste adaptieve formulieren als volgt lokaliseren:
 
 ## Formulierproject voorbereiden voor productie {#prepare-forms-project-for-production}
 
-### Procesverwerkingsserver {#adding-forms-processing-server} toevoegen
+### Processorserver voor formulieren toevoegen {#adding-forms-processing-server}
 
 U kunt een extra instantie van de server van AEM Forms vormen die achter de firewall in een beveiligde streek verblijft. U kunt deze instantie gebruiken voor:
 
@@ -270,11 +269,11 @@ U moet vaak uw AEM projecten van één milieu naar een andere verplaatsen. Enkel
 * (*AEM Forms alleen op JEE*) Implementeer LCA&#39;s en DSC&#39;s handmatig op de server van de Forms Workflow.
 * Gebruik [Export-Import](/help/forms/using/import-export-forms-templates.md)-functionaliteit om elementen naar de nieuwe omgeving te verplaatsen. U kunt de replicatieagent ook vormen en de activa publiceren.
 
-### AEM {#configuring-aem} configureren
+### AEM configureren {#configuring-aem}
 
 Sommige beste praktijken om AEM te vormen om de algemene prestaties te verbeteren zijn als volgt:
 
-* Compressie van HTML-clientbibliotheek voor JavaScript en CSS vanuit Felix Console inschakelen. Zie [Clientlibs uitgelegd door voorbeeld](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
+* Compressie van HTML-clientbibliotheek voor JavaScript en CSS vanuit Felix Console inschakelen.
 * Plaats alle clientbibliotheken in `/etc.clientlibs/fd` en eventuele extra aangepaste clientbibliotheken in AEM dispatcher om de reactiesnelheid en beveiliging van uw gepubliceerde formulieren te verbeteren. Zie [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) voor meer informatie.
 
 * Plaats geen `/content/forms/af/`- en `/content/dam/formsanddocuments/*`-paden in de cache. Zie [Aangepaste formulieren in cache plaatsen](/help/forms/using/configure-adaptive-forms-cache.md) voor gedetailleerde informatie over het configureren van adaptieve formulieren in cache.
@@ -291,7 +290,7 @@ Sommige beste praktijken om AEM te vormen om de algemene prestaties te verbetere
 
 >[!VIDEO](https://vimeo.com/)
 
-### Externe opslag configureren voor concepten en verzonden formuliergegevens {#external-storage}
+### Externe opslag voor concepten en verzonden formuliergegevens configureren {#external-storage}
 
 In een productieomgeving wordt aanbevolen de ingediende formuliergegevens niet in AEM opslagplaats op te slaan. Bij de standaardimplementatie van de acties Forms Portal Store, Store Content en Store PDF verzenden worden formuliergegevens opgeslagen in AEM opslagplaats. Deze indieningsacties zijn alleen bedoeld voor demonstratiedoeleinden. Bovendien maken de functies Opslaan, Hervatten en Automatisch opslaan standaard gebruik van poortopslag. Overweeg daarom de volgende aanbevelingen:
 
@@ -301,7 +300,7 @@ In een productieomgeving wordt aanbevolen de ingediende formuliergegevens niet i
 
    U kunt ook een aangepaste verzendactie schrijven waarmee formuliergegevens en bijlagen worden opgeslagen in een beveiligde opslagruimte. Zie [Aangepaste handeling Verzenden schrijven voor adaptieve formulieren](/help/forms/using/custom-submit-action-form.md) voor meer informatie.
 
-### Persoonlijke identificeerbare informatie {#handling-personally-identifiable-information} verwerken
+### Persoonlijke identificeerbare gegevens verwerken {#handling-personally-identifiable-information}
 
 Een van de belangrijkste uitdagingen voor organisaties is hoe te om persoonlijk identificeerbare (PII) gegevens te behandelen. Hier volgt een aantal aanbevolen procedures voor het verwerken van dergelijke gegevens:
 

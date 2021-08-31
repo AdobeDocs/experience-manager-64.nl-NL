@@ -1,8 +1,8 @@
 ---
 title: AEM Forms aanroepen met de JavaAPI
-seo-title: AEM Forms aanroepen met de JavaAPI
+seo-title: Invoking AEM Forms using the JavaAPI
 description: Gebruik de AEM Forms Java API voor het vervoerprotocol van RMI voor verre aanroeping, vervoer van VM voor lokale aanroeping, ZEEP voor verre aanroeping, verschillende authentificatie, zoals gebruikersnaam en wachtwoord, en synchrone en asynchrone aanroepingsverzoeken.
-seo-description: Gebruik de AEM Forms Java API voor het vervoerprotocol van RMI voor verre aanroeping, vervoer van VM voor lokale aanroeping, ZEEP voor verre aanroeping, verschillende authentificatie, zoals gebruikersnaam en wachtwoord, en synchrone en asynchrone aanroepingsverzoeken.
+seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,9 @@ topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 1c239c05-e221-442a-a748-0c28704ee032
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '5479'
+source-wordcount: '5385'
 ht-degree: 0%
 
 ---
@@ -35,13 +34,6 @@ De Java API ondersteunt de volgende functies:
 * Verschillende verificatie, zoals gebruikersnaam en wachtwoord
 * Synchrone en asynchrone oproepverzoeken
 
-**Adobe Developer-website**
-
-De Adobe Developer-website bevat de volgende artikelen waarin het aanroepen van AEM Forms-services met de Java API wordt besproken:
-
-[Java-servlets gebruiken om AEM Forms-processen aan te roepen](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
-
-[AEM Forms Distiller API aanroepen vanuit Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
 
 **Zie ook**
 
@@ -290,7 +282,7 @@ In de volgende tabel worden de JAR-bestanden weergegeven die afhankelijk zijn va
  </tbody>
 </table>
 
-### Bezig met aanroepen van scenario&#39;s {#invoking-scenarios}
+### Oproepen van scenario&#39;s {#invoking-scenarios}
 
 In de volgende tabel worden de aanroepingsscenario&#39;s aangegeven en worden de JAR-bestanden weergegeven die AEM Forms moeten aanroepen.
 
@@ -403,7 +395,7 @@ In de volgende tabel worden de aanroepingsscenario&#39;s aangegeven en worden de
  </tbody>
 </table>
 
-### JAR-bestanden {#upgrading-jar-files} bijwerken
+### JAR-bestanden bijwerken {#upgrading-jar-files}
 
 Als u een upgrade uitvoert van LiveCycle naar AEM Forms, wordt u aangeraden de AEM Forms JAR-bestanden op te nemen in het klassenpad van uw Java-project. Als u bijvoorbeeld services zoals de service Rights Management gebruikt, treedt er een compatibiliteitsprobleem op als u geen AEM Forms JAR-bestanden opneemt in het klassenpad.
 
@@ -628,14 +620,14 @@ Het volgende codevoorbeeld toont hoe te om een `com.adobe.idp.Context` voorwerp 
 >
 >Zie [Gebruikers verifiëren](/help/forms/developing/users.md#authenticating-users) voor volledige informatie over het verifiëren van een gebruiker.
 
-### Bezig met aanroepen van scenario&#39;s {#invoking_scenarios-1}
+### Oproepen van scenario&#39;s {#invoking_scenarios-1}
 
 De volgende aanroepende scenario&#39;s worden besproken in deze sectie:
 
 * Een clienttoepassing die in een eigen Java Virtual Machine (JVM) wordt uitgevoerd, roept een zelfstandige AEM Forms-instantie aan.
 * Een clienttoepassing die in een eigen JVM wordt uitgevoerd, roept geclusterde AEM Forms-instanties aan.
 
-### Clienttoepassing die een zelfstandige AEM Forms-instantie {#client-application-invoking-a-stand-alone-aem-forms-instance} aanroept
+### Clienttoepassing die een zelfstandige AEM Forms-instantie aanroept {#client-application-invoking-a-stand-alone-aem-forms-instance}
 
 In het volgende diagram ziet u een clienttoepassing die in een eigen JVM wordt uitgevoerd en een zelfstandige AEM Forms-instantie aanroept.
 
@@ -761,7 +753,7 @@ Een toepassing kan zowel `com.adobe.idp.Document` als `org.w3c.dom.Document` geg
 
 [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Documenten {#creating-documents} maken
+### Documenten maken {#creating-documents}
 
 Maak een `com.adobe.idp.Document`-object voordat u een servicebewerking aanroept waarvoor een PDF-document (of andere documenttypen) als invoerwaarde is vereist. De klasse `com.adobe.idp.Document` biedt constructors waarmee u een document kunt maken van de volgende inhoudstypen:
 
@@ -858,7 +850,7 @@ Het bestand c:/temp/input.pdf moet zich op de clientcomputer bevinden (niet op d
 
 [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Teruggestuurde documenten {#handling-returned-documents} verwerken
+### Teruggestuurde documenten verwerken {#handling-returned-documents}
 
 Servicebewerkingen die een PDF-document (of andere gegevenstypen zoals XML-gegevens) als een uitvoerwaarde retourneren, retourneren een `com.adobe.idp.Document`-object. Nadat u een `com.adobe.idp.Document` voorwerp ontvangt, kunt u het in de volgende formaten omzetten:
 
@@ -892,7 +884,7 @@ In het volgende codevoorbeeld wordt de inhoud van een `com.adobe.idp.Document`-o
 
 [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Het inhoudstype bepalen van een document {#determining-the-content-type-of-a-document}
+### Het inhoudstype van een document bepalen {#determining-the-content-type-of-a-document}
 
 Bepaal het MIME-type van een `com.adobe.idp.Document`-object door de methode `getContentType` van het `com.adobe.idp.Document`-object aan te roepen. Deze methode retourneert een tekenreekswaarde die het inhoudstype van het object `com.adobe.idp.Document` opgeeft. In de volgende tabel worden de verschillende inhoudstypen beschreven die AEM Forms retourneert.
 
@@ -955,7 +947,7 @@ Het volgende codevoorbeeld bepaalt het inhoudstype van een `com.adobe.idp.Docume
 
 [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Documentobjecten {#disposing-document-objects} verwijderen
+### Documentobjecten verwijderen {#disposing-document-objects}
 
 Wanneer u een `Document` voorwerp niet meer vereist, adviseert men dat u van het verwijdert door zijn `dispose` methode aan te halen. Elk `Document`-object verbruikt een bestandsdescriptor en maar liefst 75 MB aan RAM-ruimte op het hostplatform van uw toepassing. Als een `Document`-object niet wordt verwijderd, verwijdert het Java Garage-verzamelingsproces het object. Als u dit echter eerder doet met de methode `dispose`, kunt u het geheugen dat door het object `Document` wordt bezet, vrijmaken.
 

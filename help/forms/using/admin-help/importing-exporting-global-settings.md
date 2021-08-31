@@ -1,8 +1,8 @@
 ---
 title: Algemene instellingen importeren en exporteren
-seo-title: Algemene instellingen importeren en exporteren
+seo-title: Importing and exporting global settings
 description: U kunt zoeksjabloondefinities en algemene instellingen voor Workspace importeren en exporteren.
-seo-description: U kunt zoeksjabloondefinities en algemene instellingen voor Workspace importeren en exporteren.
+seo-description: You can import and export search template definitions and global settings for Workspace.
 uuid: 8f1f210d-e850-4b2c-bb5a-942fa8299791
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: 9eabafbe-2193-4799-9bdd-c2be42ead0b9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
 
-# Globale instellingen importeren en exporteren {#importing-and-exporting-global-settings}
+# Algemene instellingen importeren en exporteren {#importing-and-exporting-global-settings}
 
 U kunt zoeksjabloondefinities en algemene instellingen voor Workspace importeren en exporteren.
 
@@ -34,7 +33,7 @@ Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellin
 >
 >Als u de gebeurteniseigenschappen wijzigt in het algemene instellingenbestand, moet u de server opnieuw starten.
 
-## Een zoeksjabloondefinitie {#import-a-search-template-definition} importeren
+## Een zoeksjabloondefinitie importeren {#import-a-search-template-definition}
 
 1. Klik in de beheerconsole op Services > Workspace > Global Administration.
 1. Klik onder Sjabloondefinitie importeren op Bestand kiezen en selecteer de zoeksjabloon. U kunt alleen zoeksjabloondefinities importeren die oorspronkelijk zijn geëxporteerd uit een exemplaar van Workspace.
@@ -51,12 +50,12 @@ Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellin
 
 1. Klik op Exporteren en sla het bestand op uw computer op.
 
-## Globale instellingen importeren {#import-global-settings}
+## Algemene instellingen importeren {#import-global-settings}
 
 1. Klik op de pagina Algemeen beheer onder Globale instellingen importeren op Bestand kiezen en selecteer het algemene instellingenbestand. Het algemene instellingenbestand moet de XML-indeling hebben.
 1. Klik op Importeren.
 
-## Globale instellingen exporteren {#export-global-settings}
+## Algemene instellingen exporteren {#export-global-settings}
 
 1. Voor de Globale pagina van het Beleid, onder de Globale Montages van de Uitvoer, klik de Uitvoer.
 1. Sla het bestand op uw computer op.
@@ -71,7 +70,7 @@ U kunt het algemene instellingenbestand wijzigen; de enige instellingen die u wi
 
 Het bestand met algemene instellingen voor Workspace bevat de volgende instellingen:
 
-### specialRoutes-instellingen {#specialroutes-settings}
+### specialRoutes, instellingen {#specialroutes-settings}
 
 De *specialRoutes* montages specificeren de eigenschappen van de speciale routes, goedkeuren en ontkennen, in Werkruimte. In bepaalde situaties worden de knoppen voor deze routes weergegeven op de taakkaarten in Workspace en kan de gebruiker deze selecteren zonder het formulier te openen. U kunt de specialRoutes montages in het globale montagedossier wijzigen om aangepaste namen toe te voegen voor goedkeuren en ontkennen of om extra routes tot stand te brengen.
 
@@ -105,8 +104,6 @@ De overige eigenschappen in deze instelling mogen niet worden gewijzigd.
 
 **server_remoteevents_JGroupName:** De naam van de JGroup die voor verre gebeurtenismededeling wordt gebruikt. Deze waarde wordt willekeurig gegenereerd om conflicten in clusters te voorkomen. Deze waarde moet niet worden gewijzigd.
 
-Voor extra informatie over JGroups en Werkruimte, zie [JGroups en AEM de Werkruimte van vormen - Verklaard](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
-
 ### formView-instellingen {#formview-settings}
 
 **client_formView_openFormInFullScreen:** Als u alle formulieren in Workspace wilt weergeven in de modus Volledig scherm, stelt u deze optie in op true. Deze optie is standaard ingesteld op false en formulieren worden niet in de modus Volledig scherm weergegeven. De service Gebruiker bevat een optie waarmee u het document dat aan een taak is gekoppeld, in de modus Volledig scherm kunt openen. Hierdoor kunt u de weergave per proces besturen.
@@ -127,7 +124,7 @@ Voor extra informatie over JGroups en Werkruimte, zie [JGroups en AEM de Werkrui
 
 **client_pollingInterval:** Stelt het opiniepeilingsinterval (in seconden) in dat wordt gebruikt op de (Vervangen voor AEM formulieren op JEE) Flex Workspace om nieuwe en gewijzigde taken te detecteren. De standaardwaarde is 3 seconden. Dit werkt niet voor AEM Forms Workspace.
 
-**client_systemContext_name:** Geef een aangepaste naam (bijvoorbeeld Burger) op die in het veld Toegevoegd op (op het tabblad Bijlagen) moet worden weergegeven voor de bijlagen van een taak in AEM Forms Workspace.
+**client_systemContext_name:** Geef een aangepaste naam op (bijvoorbeeld Burger) die in het veld Toegevoegd op (op het tabblad Bijlagen) moet worden weergegeven voor de bijlagen van een taak in AEM Forms Workspace.
 
 De aangepaste naam definiëren:
 

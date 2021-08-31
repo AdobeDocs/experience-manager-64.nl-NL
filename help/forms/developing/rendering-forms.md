@@ -1,8 +1,8 @@
 ---
 title: Forms renderen
-seo-title: Forms renderen
+seo-title: Rendering Forms
 description: Met de Forms-service kunt u interactieve toepassingen voor het vastleggen van gegevens maken die formulieren valideren, verwerken, transformeren en leveren die normaal gesproken in Designer zijn gemaakt. Formulierauteurs kunnen één formulierontwerp ontwikkelen dat de Forms-service in verschillende browseromgevingen weergeeft in PDF, SWF of HTML.
-seo-description: Met de Forms-service kunt u interactieve toepassingen voor het vastleggen van gegevens maken die formulieren valideren, verwerken, transformeren en leveren die normaal gesproken in Designer zijn gemaakt. Formulierauteurs kunnen één formulierontwerp ontwikkelen dat de Forms-service in verschillende browseromgevingen weergeeft in PDF, SWF of HTML.
+seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -12,15 +12,14 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# Forms {#rendering-forms} renderen
+# Forms renderen {#rendering-forms}
 
 **Informatie over de Forms-service**
 
@@ -58,4 +57,3 @@ U kunt deze taken uitvoeren met de Forms-service:
 * Formuliergegevens berekenen. (Zie [Formuliergegevens berekenen](/help/forms/developing/calculating-form-data.md).)
 * Optimaliseer een toepassing. (Zie [De prestaties van de Forms-service optimaliseren](/help/forms/developing/optimizing-performance-forms-service.md).)
 
-   ***Tip **: De website van de Ontwikkelaar van Adobe bevat het volgende artikel dat bespreekt hoe te om een toepassing tot stand te brengen ASP.NET die de dienst van Forms aanhaalt en vormen teruggeeft. Zie [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*

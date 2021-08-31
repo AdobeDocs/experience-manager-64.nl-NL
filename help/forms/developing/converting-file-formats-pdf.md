@@ -1,8 +1,8 @@
 ---
 title: Converteren tussen bestandsindelingen en PDF
-seo-title: Converteren tussen bestandsindelingen en PDF
+seo-title: Converting Between File Formatsand PDF
 description: Met de service PDF genereren kunt u eigen bestandsindelingen converteren naar PDF. Met de service PDF genereren converteert u ook PDF naar andere bestandsindelingen en optimaliseert u de grootte van PDF-documenten.
-seo-description: Met de service PDF genereren kunt u eigen bestandsindelingen converteren naar PDF. Met de service PDF genereren converteert u ook PDF naar andere bestandsindelingen en optimaliseert u de grootte van PDF-documenten.
+seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 79091a75-2669-453f-9560-e58bfffa3487
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7932'
+source-wordcount: '7872'
 ht-degree: 0%
 
 ---
@@ -99,7 +98,7 @@ In deze sectie wordt beschreven hoe u met de API voor genereren een Microsoft Wo
 >
 >Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service PDF genereren.
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Als u een Microsoft Word-document naar een PDF-document wilt converteren, voert u de volgende taken uit:
 
@@ -171,7 +170,7 @@ Converteer een Microsoft Word-document naar een PDF-document met de Generate PDF
    * Een optioneel `com.adobe.idp.Document`-object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
    * Een optioneel `com.adobe.idp.Document`-object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
 
-   De methode `createPDF2` retourneert een `CreatePDFResult`-object dat het nieuwe PDF-document en een logbestandinformatie bevat. Het logbestand bevat doorgaans fout- of waarschuwingsberichten die worden gegenereerd door de conversieaanvraag.
+   De methode `createPDF2` retourneert een `CreatePDFResult`-object dat het nieuwe PDF-document en een logbestand bevat. Het logbestand bevat doorgaans fout- of waarschuwingsberichten die worden gegenereerd door de conversieaanvraag.
 
 1. Haal de resultaten op.
 
@@ -266,7 +265,7 @@ In deze sectie wordt beschreven hoe u met de API voor genereren van PDF HTML-doc
 >
 >Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service PDF genereren.
 
-### Overzicht van stappen {#summary_of_steps-1}
+### Overzicht van de stappen {#summary_of_steps-1}
 
 Voer de volgende taken uit om een HTML-document te converteren naar een PDF-document:
 
@@ -416,7 +415,7 @@ In deze sectie wordt beschreven hoe u met de API voor het genereren van PDF Java
 >
 >Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service PDF genereren.
 
-### Overzicht van stappen {#summary_of_steps-2}
+### Overzicht van de stappen {#summary_of_steps-2}
 
 Voer de volgende stappen uit om een PDF-document te converteren naar een van de ondersteunde typen:
 
@@ -639,13 +638,13 @@ In deze tabel wordt het type informatie weergegeven dat wordt gebruikt bij het a
  </tbody> 
 </table>
 
-### Over het script en de dialoogvenster-XML-bestanden {#about-the-script-and-dialog-xml-files}
+### Over het script en het dialoogvenster in XML-bestanden {#about-the-script-and-dialog-xml-files}
 
 In XML-scriptbestanden wordt de service PDF genereren gebruikt om door de dialoogvensters van toepassingen te navigeren, net zoals een gebruiker door de dialoogvensters van de toepassing zou navigeren. ScriptXML-bestanden zorgen er ook voor dat de service PDF genereren reageert op dialoogvensters door handelingen uit te voeren zoals het indrukken van knoppen, het selecteren of deselecteren van selectievakjes of het selecteren van menu-items.
 
 Dialoogbestanden in XML-bestanden reageren daarentegen gewoon op dialoogvensters met dezelfde typen handelingen als in XML-scriptbestanden.
 
-#### Dialoogvenster en vensterelementterminologie {#dialog-box-and-window-element-terminology}
+#### Dialoogvenster en terminologie van vensterelementen {#dialog-box-and-window-element-terminology}
 
 Deze sectie en de volgende sectie gebruiken verschillende terminologie voor dialoogvakjes en de componenten die zij, afhankelijk van het perspectief bevatten dat wordt beschreven. De componenten van dialoogvensters zijn punten zoals knopen, gebieden, en combovakjes.
 
@@ -677,7 +676,7 @@ Naast stappen die opeenvolgend zijn, worden de instructies binnen een stap ook u
 
 Elke stap in een XML-scriptbestand identificeert het vensterelement dat wordt weergegeven als de instructies van de stap correct zijn uitgevoerd. Als tijdens het uitvoeren van een scriptstap een onverwacht dialoogvenster wordt weergegeven, zoekt de dienst PDF genereren de XML-bestanden van het dialoogvenster zoals beschreven in de volgende sectie.
 
-#### Dialoogvenster-XML-bestanden {#dialog-xml-files}
+#### Dialoogvenster XML-bestanden {#dialog-xml-files}
 
 Wanneer u native toepassingen uitvoert, worden verschillende dialoogvensters weergegeven, ongeacht of de native toepassingen zich in een zichtbare of onzichtbare modus bevinden. De dialoogvensters kunnen worden gegenereerd door het besturingssysteem of door de toepassing zelf. Wanneer native toepassingen worden uitgevoerd onder controle van de Generate PDF service, worden de dialoogvensters van het systeem en de native toepassing weergegeven in een onzichtbaar venster.
 
@@ -721,7 +720,7 @@ Wees op de hoogte van deze problemen:
 
 Als u aan dialoog of manuscriptdossiers van XML van plan bent te werken, zou u de toepassing Microsoft Spy++ moeten installeren.
 
-#### Het verpakken van dialoog en manuscriptdossiers {#unpackaging-the-dialog-and-script-files}
+#### Het verpakken van dialoogvenster- en scriptbestanden opheffen {#unpackaging-the-dialog-and-script-files}
 
 Het dialoogvenster- en scriptbestand bevinden zich in het bestand appmondata.jar. Voordat u een van deze bestanden kunt wijzigen of nieuwe script- of dialoogbestanden kunt toevoegen, moet u het pakket van dit JAR-bestand opheffen. Stel dat u ondersteuning wilt toevoegen voor de toepassing EditPlus. U maakt twee XML-bestanden met de namen appmon.editplus.script.en_US.xml en appmon.editplus.script.adding.nl_NL.xml. Deze XML-scripts moeten op twee locaties aan het bestand adobe-appmondata.jar worden toegevoegd, zoals hieronder wordt aangegeven:
 
@@ -750,7 +749,7 @@ Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd,
 1. Breid Actieve Diensten uit. Er verschijnt een groene pijl naast de servicenaam als deze wordt uitgevoerd. Anders, is de dienst in een tegengehouden staat.
 1. Als de dienst in een tegengehouden staat is, klik de de dienstnaam met de rechtermuisknop aan en selecteer de Dienst van het Begin.
 
-### Een XML-scriptbestand maken of wijzigen voor een native toepassing {#creating-or-modifying-a-script-xml-file-for-a-native-application}
+### Een XML-scriptbestand voor een native toepassing maken of wijzigen {#creating-or-modifying-a-script-xml-file-for-a-native-application}
 
 Als u bestanden wilt doorsturen naar een nieuwe oorspronkelijke toepassing, moet u een XML-scriptbestand voor die toepassing maken. Als u de manier wilt wijzigen waarop de service PDF genereren werkt met een native toepassing die al wordt ondersteund, moet u het script voor die toepassing wijzigen.
 
@@ -772,7 +771,7 @@ Gebruik Microsoft Spy++ om de identiteiten van de eigenschappen van het venstere
 
 #### Reguliere expressies gebruiken in bijschriftkenmerken {#using-regular-expressions-in-caption-attributes}
 
-U kunt reguliere expressies gebruiken in bijschriftspecificaties. De service PDF genereren gebruikt de klasse `java.util.regex.Matcher` om reguliere expressies te ondersteunen. Dat nut steunt de regelmatige uitdrukkingen die in `java.util.regex.Pattern` worden beschreven. (Ga naar de website van Java op [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
+U kunt reguliere expressies gebruiken in bijschriftspecificaties. De service PDF genereren gebruikt de klasse `java.util.regex.Matcher` om reguliere expressies te ondersteunen. Dat nut steunt de regelmatige uitdrukkingen die in `java.util.regex.Pattern` worden beschreven.
 
 **Reguliere expressie die de bestandsnaam bevat die aan Kladblok is toegevoegd in de banner Kladblok**
 
@@ -794,7 +793,7 @@ U kunt reguliere expressies gebruiken in bijschriftspecificaties. De service PDF
  </windowList>
 ```
 
-#### De window- en windowList-elementen {#ordering-the-window-and-windowlist-elements} ordenen
+#### De elementen window en windowList ordenen {#ordering-the-window-and-windowlist-elements}
 
 U moet de elementen `window` en `windowList` als volgt rangschikken:
 
@@ -843,7 +842,7 @@ U moet de elementen `window` en `windowList` als volgt rangschikken:
  </windowList>
 ```
 
-### Een XML-bestand met een extra dialoogvenster maken of wijzigen voor een native toepassing {#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application}
+### Een XML-bestand voor een extra dialoogvenster maken of wijzigen voor een native toepassing {#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application}
 
 Als u een script maakt voor een native toepassing die voorheen niet werd ondersteund, moet u ook een extra XML-bestand voor het dialoogvenster voor die toepassing maken. Elke native toepassing die door AppMon wordt gebruikt, mag slechts één extra XML-bestand voor het dialoogvenster hebben. Het XML-bestand van het extra dialoogvenster is vereist, zelfs als er geen ongewenste dialoogvensters worden verwacht. Het extra dialoogvenster moet minstens één `window`-element bevatten, zelfs als dat `window`-element slechts een tijdelijke aanduiding is.
 
@@ -866,7 +865,7 @@ Voor de naam van het XML-bestand van het extra dialoogvenster moet de juiste ind
 
 U moet tot `windowList` elementen opdracht geven die als kinderen in een `window` element verschijnen. (Zie [Bezig met ordenen van de elementen window en windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
-### Het algemene dialoogvenster-XML-bestand {#modifying-the-general-dialog-xml-file} wijzigen
+### Het algemene dialoogvenster-XML-bestand wijzigen {#modifying-the-general-dialog-xml-file}
 
 U kunt het algemene dialoogvenster-XML-bestand aanpassen om te reageren op dialoogvensters die door het systeem worden gegenereerd of om te reageren op dialoogvensters die door meerdere toepassingen worden gebruikt.
 
@@ -940,7 +939,7 @@ Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opst
 
 AEM Forms bevat voorbeeld-XML-bestanden die ervoor zorgen dat de service PDF genereren Kladblok gebruikt om bestanden met de bestandsnaamextensie .txt te verwerken. Deze code is opgenomen in deze sectie. Daarnaast moet u de andere wijzigingen aanbrengen die in deze sectie worden beschreven.
 
-#### Aanvullend XML-bestand dialoogvenster {#additional-dialog-xml-file}
+#### XML-bestand van extra dialoogvenster {#additional-dialog-xml-file}
 
 Dit voorbeeld bevat de extra dialoogdozen voor de toepassing van de Blocnote. Deze dialoogvensters kunnen een aanvulling zijn op de dialoogvensters die zijn opgegeven in de service PDF genereren.
 

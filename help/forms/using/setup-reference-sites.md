@@ -1,17 +1,17 @@
 ---
 title: AEM Forms-referentiesites instellen en configureren
-seo-title: AEM Forms-referentiesites instellen en configureren
+seo-title: Set up and configure AEM Forms reference sites
 description: AEM Forms-referentiesites laten zien hoe u AEM Forms kunt gebruiken om end-to-end workflow in een organisatie te implementeren.
-seo-description: AEM Forms-referentiesites laten zien hoe u AEM Forms kunt gebruiken om end-to-end workflow in een organisatie te implementeren.
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2766'
+source-wordcount: '2741'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
  </tbody> 
 </table>
 
-## AEM Forms {#install-and-configure-aem-forms} installeren en configureren
+## AEM Forms installeren en configureren {#install-and-configure-aem-forms}
 
 Installeer en implementeer AEM Forms zoals beschreven in [AEM Forms installeren en configureren op OSGi](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
@@ -153,7 +153,7 @@ SSL-configuratie is vereist voor communicatie met Adobe Sign-servers. Zie [HTTP 
 
 ## Configuratie van externe-alizer van de koppeling voor dag-CQ configureren {#externalizer}
 
-In AEM, is **ExternalAlizer** de dienst OSGI die u toestaat om een middelweg programmatically om te zetten (b.v. /path/to/my/page) in een externe en absolute URL (bijvoorbeeld, https://www.mycompany.com/path/to/my/page) door het pad vooraf in te stellen met een vooraf geconfigureerde DNS. Zie [URL&#39;s extern maken](/help/sites-developing/externalizer.md).
+In AEM, is **ExternalAlizer** de dienst OSGI die u toestaat om een middelweg (bijvoorbeeld, /path/to/my/page) in een externe en absolute URL (bijvoorbeeld, https://www.mycompany.com/path/to/my/page) programmatically om te zetten door de weg met pre-gevormde DNS. Zie [URL&#39;s extern maken](/help/sites-developing/externalizer.md).
 
 >[!CAUTION]
 >
@@ -262,7 +262,7 @@ De gegevens van de klant en het verzekeringspolis importeren:
    * Ga naar **[!UICONTROL Sales > We.Finance Auto Insurance]** en klik **[!UICONTROL Import]**.
    * Ga naar **[!UICONTROL Sales > We.Finance Home Mortgage]** en klik **[!UICONTROL Import]**.
 
-## OAuth-cloudservice configureren voor Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}
+## De OAuth-cloudservice voor Microsoft Dynamics configureren {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
 Configureer de OAuth-cloudservice in AEM Forms om communicatie tussen AEM Forms en Microsoft Dynamics mogelijk te maken. Voer de volgende stappen uit om de Cloud Service OAuth op AEM auteur te vormen en instanties te publiceren:
 
@@ -289,7 +289,7 @@ Doe het volgende op zowel auteur als publicatieinstanties:
 
 1. Tik op **[!UICONTROL Save]**.
 
-## Adobe Sign-cloudservice van de referentiesite configureren {#sign-service}
+## Referentiesite Adobe Sign Cloud Service configureren {#sign-service}
 
 Doe het volgende op zowel auteur als publicatieinstanties:
 
@@ -328,7 +328,7 @@ U kunt de AEM Forms integreren met Adobe Analytics en Adobe Target. Hoewel Adobe
 
 Ga als volgt te werk om Adobe Analytics en Adobe Target in AEM Forms te configureren.
 
-### Adobe Analytics {#configure-adobe-analytics} configureren
+### Adobe Analytics configureren {#configure-adobe-analytics}
 
 Dankzij de AEM Forms-integratie met Adobe Analytics kunt u controleren en analyseren hoe uw klanten omgaan met uw formulieren en documenten. Hiermee kunt u probleemgebieden herkennen en corrigeren en de conversiesnelheid verhogen.
 
@@ -354,7 +354,7 @@ Om een rapport te produceren, worden de zaadgegevens gebundeld met de verwijzing
 
    Referentiesites bieden analyses die gegevens bevatten over de aanvraag van een creditcard, de hypotheek op woningen en de gebruiksgevallen van kinderondersteuning. Voor configuratie van zaadgegevens, zie [Wij.Finance verwijzingsplaatwalkthrough](/help/forms/using/finance-reference-site-walkthrough.md) en [Wij.Gov verwijzingsplaatwalkthrough](/help/forms/using/gov-reference-site-walkthrough.md).
 
-### Doel {#configure-target} configureren
+### Doel configureren {#configure-target}
 
 De referentiesite laat de integratie zien van AEM Forms met Adobe Target, waarmee u gerichte en gepersonaliseerde inhoud kunt opnemen in adaptieve documenten. Ook kunnen er A/B-tests voor adaptieve formulieren worden gemaakt.
 
