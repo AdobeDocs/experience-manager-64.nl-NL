@@ -1,8 +1,8 @@
 ---
 title: Werken met contentfragmenten
-seo-title: Werken met contentfragmenten
+seo-title: Working with Content Fragments
 description: Leer hoe u met Inhoudsfragmenten pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
-seo-description: Leer hoe u met Inhoudsfragmenten pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken.
+seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: Contentfragmenten
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1984'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 >
 >Voor bepaalde functionaliteit voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md) vereist.
 
-Met Adobe Experience Manager (AEM) Content Fragments kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en [publiceren](/help/sites-authoring/content-fragments.md). Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
+Met Adobe Experience Manager (AEM) Content Fragments kunt u paginaonafhankelijke inhoud ontwerpen, maken, beheren en [publiceren. ](/help/sites-authoring/content-fragments.md) Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
 
 Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM kerncomponenten. Deze leveringsvorm:
 
@@ -91,8 +91,7 @@ Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructu
 >* **De inhoud van de** ervaringen met fragmentatie is volledig afgebakend. een fragment van een webpagina.
 
 >
->
-De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
+>De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
 >Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html) voor meer informatie.
 
