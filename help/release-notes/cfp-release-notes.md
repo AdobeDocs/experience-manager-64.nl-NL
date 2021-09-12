@@ -4,17 +4,16 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '4595'
+source-wordcount: '4591'
 ht-degree: 0%
 
 ---
 
 # AEM 6.4 Opmerkingen bij de release Cumulative Fix Pack {#aem-cumulative-fix-pack-release-notes}
 
-## Informatie opheffen {#release-information}
+## Geen informatie {#release-information}
 
 <!-- TBD: Update the SD URL. -->
 
@@ -40,7 +39,7 @@ De belangrijkste functies en verbeteringen in [!DNL Adobe Experience Manager] 6.
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.8.24.
 
-Zie [Definities van releasevoertuig bijwerken](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html?lang=en) voor informatie over gestreken fijn papier en andere typen releases
+Zie [Definities van releasevoertuig bijwerken](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html) voor informatie over gestreken fijn papier en andere typen releases
 
 Adobe Experience Manager 6.4.8.4 biedt oplossingen voor de volgende problemen.
 
@@ -92,7 +91,7 @@ Adobe Experience Manager 6.4.8.4 biedt oplossingen voor de volgende problemen.
 
 Voor informatie over veiligheidsupdates, zie [pagina van de veiligheidsbulletins van de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
-## Hotfixes en de Pakken van de Eigenschap inbegrepen in vorige Cumulatieve Packs van de Moeilijke situatie {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
+## Hotfixes en de Pakken van de Eigenschap inbegrepen in vorige Cumulatieve Pakken van de Moeilijke situatie {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
 ### Adobe Experience Manager 6.4.8.3 {#experience-manager-6483}
 
@@ -141,7 +140,7 @@ Adobe Experience Manager 6.4.8.3 biedt oplossingen voor de volgende problemen.
 * Een `NullPointerException` wordt geretourneerd bij het starten van dagelijkse of wekelijkse onderhoudstaken (NPR-34702).
 * Het gereedschap [!DNL Apache Sling Health Check] is vervangen. Gebruik in plaats daarvan [Patroondetector](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html) om schendingen van inhoud op te sporen (NPR-33929).
 
-#### Integratie {#integrations-6483}
+#### Integraties {#integrations-6483}
 
 * De knop [!UICONTROL Create] wordt op de pagina [!UICONTROL Audiences] weergegeven wanneer u van een map naar de pagina [!UICONTROL Audiences] (NPR-35152) navigeert.
 
@@ -261,7 +260,7 @@ Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 * De onderhoudstaakplanner begint en stopt te vaak onderhoudstaken dan gevormd (NPR-33520).
 * Kan logboeken niet downloaden met het gereedschap Diagnostiek op een geüpgrade Experience Manager-instantie (NPR-34419).
 
-#### Integratie {#integrations-6482}
+#### Integraties {#integrations-6482}
 
 * De waarde van `library_path` wordt niet in overweging genomen wanneer het produceren van [!DNL Adobe Launch] bibliotheek URL voor bibliotheken die van [!DNL Adobe Dynamic Tag Management] worden gemigreerd. Bovendien gebruiken de gemigreerde bibliotheken een ander voorvoegsel dan bibliotheken [!DNL Adobe Launch]. (NPR-34238).
 * De eigenschappen die van een cloudservice worden overgeërfd, blijven niet behouden bij het bijwerken van de pagina-eigenschappen (NPR-33865).
@@ -364,7 +363,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 * De integratie van Salesforce is kwetsbaar voor SSRF (NPR-32671).
 * Gereflecteerde XSS in PreferencesServlet (NPR-33439).
 
-#### Elementen {#assets-6481}
+#### Activa {#assets-6481}
 
 * Het aantal activa verandert niet zoals in de verandering in selectie in Lijstmening (NPR-33285).
 
@@ -399,7 +398,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 * Een `NullPointerException` fout wordt gezien in de logboeken op het runnen van een vertaalbaan (NPR-32220).
 
-#### Integratie {#integrations-6481}
+#### Integraties {#integrations-6481}
 
 * Xxx-site scripting voor JSON (NPR-32745).
 
@@ -434,7 +433,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 * Documentservices: Wanneer een gebruiker een tekstbestand naar een PDF converteert, worden Japanse tekens niet correct weergegeven (NPR-33239).
 * Opgeslagen XSS met GuideSOMProviderServlet (NPR-32701).
 
-## Installatie 6.4.8.4 {#install}
+## 6.4.8.4 installeren {#install}
 
 ### Installatievereisten {#setup-requirements}
 
@@ -461,7 +460,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 >
 >Adobe raadt u niet aan het pakket AEM 6.4.8.4 te verwijderen of te verwijderen.
 
-### Het Cumulative Fix Pack {#install-cumulative-fix-pack} installeren
+### Het Cumulative Fix Pack installeren {#install-cumulative-fix-pack}
 
 Voer de volgende stappen uit om het Cumulative Fix Pack op een bestaand AEM 6.4.8.0-exemplaar te installeren:
 
@@ -489,7 +488,7 @@ B. Gebruik [HTTP API van de Manager van het Pakket](https://docs.adobe.com/conte
 >
 >AEM 6.4.8.4 ondersteunt geen Bootstrap-installatie.
 
-### Installatie {#validate-install} valideren
+### Installatie valideren {#validate-install}
 
 1. Op de pagina Productinformatie (*/system/console/productinfo*) moet nu de bijgewerkte versie van de tekenreeks &quot;Adobe Experience Manager, versie 6.4.8.4&quot; onder Geïnstalleerde producten worden weergegeven.
 1. Alle OSGI-bundels zijn actief of FRAGMENT in de OSGI Console (Webconsole gebruiken: /systeem/console/bundels).
@@ -519,10 +518,10 @@ Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekop
 >Sla dit over als u AEM Forms niet gebruikt. Correcties in AEM Forms worden geleverd via een afzonderlijk invoegpakket.
 
 1. Controleer of u het AEM Cumulative Fix Pack hebt geïnstalleerd.
-1. Download het overeenkomstige formulierinvoegpakket dat u vindt op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) voor uw besturingssysteem.
+1. Download het overeenkomstige formulierinvoegpakket dat u vindt op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) voor uw besturingssysteem.
 1. Installeer het formulierinvoegpakket zoals beschreven in [AEM formulierinvoegpakketten installeren](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
-### AEM Forms JEE-installatieprogramma {#install-aem-forms-jee-installer} installeren
+### AEM Forms JEE-installatieprogramma installeren {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
@@ -559,7 +558,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 
 | Gebied | Functie | Vervanging | Versie |
 |---|---|---|---|
-| Assets | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
+| Activa | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
 | Integratie van middelen en Adobe Creative Cloud | [AEM naar het ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) delen van mappen in Creative Cloud is in AEM 6.2 geïntroduceerd als een manier om creatieve gebruikers toegang te geven tot middelen van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie [AEM Creative Cloud integratie](/help/assets/aem-cc-integration-best-practices.md) artikel voor meer informatie. | AEM 6.4.4.0 |
 
 ## Bekende problemen {#known-issues}

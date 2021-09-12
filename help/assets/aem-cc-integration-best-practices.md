@@ -2,12 +2,12 @@
 title: Aanbevolen werkwijzen voor integratie met AEM en Creative Cloud
 description: Aanbevolen procedures om een AEM implementatie met Adobe Creative Cloud te integreren om workflows voor de overdracht van bedrijfsmiddelen te stroomlijnen en maximale efficiëntie te bereiken
 contentOwner: AG
-feature: Samenwerking,Adobe Asset Link,Desktop App
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3566'
 ht-degree: 15%
 
 ---
@@ -112,7 +112,7 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 
 ### Overwegingen bij het gebruik van AEM- en Creative Cloud-integratie {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Zie [Aanbevolen werkwijzen voor bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Zie [Aanbevolen werkwijzen voor bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Zie [Adobe Stock-integratie](aem-assets-adobe-stock.md)
 * Zie [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -201,7 +201,7 @@ In dergelijke gevallen kunt u de AEM/Creative Cloud-integratie gebruiken om de w
 
 Gebruik de volgende strategieën om toegang te verlenen tot definitieve/goedgekeurde middelen:
 
-* U kunt als volgt toegang verlenen tot een groot aantal elementen: Gebruik [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en), of implementatie door de klant van [Asset Share](assets-finder-editor.md) op AEM publicatie-infrastructuur
+* U kunt als volgt toegang verlenen tot een groot aantal elementen: Gebruik [AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), of implementatie door de klant van [Asset Share](assets-finder-editor.md) op AEM publicatie-infrastructuur
 
 * U kunt als volgt toegang tot enkele elementen bieden: U kunt AEM delen van mappen met Adobe Creative Cloud gebruiken in aanvulling op AEM Assets Brand Portal of Asset Share. Er zijn bepaalde beperkingen met betrekking tot deze integratie, die in dit artikel nader worden beschreven.
 

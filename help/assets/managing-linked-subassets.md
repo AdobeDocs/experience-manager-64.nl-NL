@@ -2,12 +2,12 @@
 title: Samengestelde elementen beheren en subelementen genereren.
 description: Leer hoe u verwijzingen naar AEM middelen maakt vanuit InDesign-, Adobe Illustrator- en Photoshop-bestanden. Leer ook hoe u de functie Paginaviewer gebruikt om afzonderlijke pagina's van bestanden met meerdere pagina's weer te geven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Voor InDesign kunt u pagina&#39;s uitnemen met de InDesign-server. Als de voorve
 
 De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de besturingselementen voor de Paginaviewer:
 
-* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met AEM bureaubladtoepassing. Zie hoe u [Bureaubladhandelingen configureren](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) als u AEM bureaubladtoepassing gebruikt.
+* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met AEM bureaubladtoepassing. Zie hoe u [Bureaubladhandelingen configureren](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) als u AEM bureaubladtoepassing gebruikt.
 
 * **[!UICONTROL Properties]** Hiermee opent u de  [!UICONTROL Properties] pagina van het specifieke subelement.
 
