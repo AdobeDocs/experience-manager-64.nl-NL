@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Gebruikershandleiding ontwikkelen
 breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
-feature: Ontwikkeling
+feature: Developing
 role: Developer
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 5%
@@ -100,7 +100,7 @@ ht-degree: 5%
       + [xtypes gebruiken (klassieke UI)](xtypes.md)
       + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
 + Beleidsloos ervaringsbeheer{#headless}
-   + [Hoofdloos en hybride met AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Hoofdloos en hybride met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Toepassingen voor één pagina{#spas}
       + [SPA Inleiding en Analyse](spa-walkthrough.md)
