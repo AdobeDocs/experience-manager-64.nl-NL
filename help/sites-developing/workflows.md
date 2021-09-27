@@ -1,8 +1,8 @@
 ---
 title: Workflows ontwikkelen en uitbreiden
-seo-title: Workflows ontwikkelen en uitbreiden
+seo-title: Developing and Extending Workflows
 description: AEM biedt verschillende gereedschappen en bronnen voor het maken van workflowmodellen, het ontwikkelen van workflowstappen en voor programmatisch communiceren met workflows.
-seo-description: AEM biedt verschillende gereedschappen en bronnen voor het maken van workflowmodellen, het ontwikkelen van workflowstappen en voor programmatisch communiceren met workflows.
+seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 4f9bd75c-9d54-4cd6-9d73-5d580be5a9e8
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 608c0fbd7eb0fc06fccf8cbcaebf874bff36d5e0
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -47,7 +46,6 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 >* Wijzigingen in de locaties van informatie zie [Herstructurering van opslagplaatsen in AEM 6.4](/help/sites-deploying/repository-restructuring.md) en [Best practices voor workflows - Locaties](/help/sites-developing/workflows-best-practices.md#locations).
 
 >
-
 
 
 ## Model {#model}
@@ -115,7 +113,7 @@ De volgende acties zijn mogelijk op een werkstroominstantie:
 
 Voltooide en beëindigde exemplaren worden gearchiveerd.
 
-### Postvak IN {#inbox}
+### Inbox {#inbox}
 
 Elke gebruikersaccount heeft zijn eigen workflow-inbox waarin de toegewezen `WorkItems` toegankelijk zijn.
 
@@ -163,7 +161,6 @@ Er zijn tijdelijke workflows geïntroduceerd voor het laden van een groot aantal
 >* Wanneer de tijdelijke werkstroom een deelnemersstap ingaat, verandert deze modus (bij uitvoering) in een niet-overgangswerkstroom. aangezien de taak aan een persoon wordt doorgegeven , moet de geschiedenis worden voortgezet
 
 >
-
 
 
 >[!CAUTION]
@@ -218,6 +215,6 @@ Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken
 
 Bij het maken van een nieuw formulier kan het verzenden van het formulier eenvoudig worden gekoppeld aan een workflowmodel. bijvoorbeeld om de inhoud op een bepaalde locatie van de gegevensopslagruimte op te slaan of om een gebruiker op de hoogte te stellen van de verzending van het formulier en de inhoud ervan.
 
-### Werkstromen en vertaling {#workflows-and-translation}
+### Workflows en vertaling {#workflows-and-translation}
 
 Workflows zijn ook een integraal onderdeel van het proces [Vertaling](/help/sites-administering/translation.md).
