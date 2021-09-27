@@ -2,12 +2,12 @@
 title: Elementeninzicht inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Elementinzichten in te schakelen.
 contentOwner: AG
-feature: Asset Insights, Asset Reports
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '624'
 ht-degree: 3%
 
 ---
@@ -18,11 +18,11 @@ Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools 
 
 >[!CAUTION]
 >
->Adobe DTM is vervangen door Adobe Experience Platform Launch en zal binnenkort [einde van leven](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. Adobe raadt u aan [Launch te gebruiken voor elementinzichten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM is vervangen door [!DNL Adobe Experience Platform] en zal binnenkort [einde van levensduur](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. Adobe raadt u aan [gebruik [!DNL Adobe Experience Platform] voor elementinzichten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) te gebruiken.
 
 Voer deze stappen uit om Elementeninzichten door DTM toe te laten:
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Insights Configuration]**.
+1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [AEM instantie configureren met DTM Cloud Service](../sites-administering/dtm.md)
 
    De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** bezoekt via het pictogram Profiel. Deze stap is niet vereist vanuit het oogpunt van Assets Insights, omdat de integratie van AEM Sites met Assets Insights nog steeds in de werkzaamheden plaatsvindt.
