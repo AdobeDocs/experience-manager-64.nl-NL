@@ -1,20 +1,20 @@
 ---
 title: Middelen zoeken in AEM
-description: Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
+description: Leer hoe u de vereiste elementen vindt in [!DNL Experience Manager] met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
-feature: Zoeken,metagegevens
+feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
 
-# Middelen zoeken in AEM {#search-assets-in-aem}
+# Middelen zoeken in [!DNL Experience Manager] {#search-assets-in-aem}
 
-Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
+Leer hoe u de vereiste elementen vindt in [!DNL Experience Manager] met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 
 Gebruik het deelvenster Filters om te zoeken naar elementen, mappen, tags en metagegevens. U kunt delen van een tekenreeks zoeken met de jokertekenasterisk.
 

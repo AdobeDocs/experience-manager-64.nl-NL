@@ -2,12 +2,12 @@
 title: Met de functie Assets Insights kunt u het gebruik van uw afbeeldingen bijhouden
 description: Met de functie Middelen-inzichten kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 contentOwner: AG
-feature: Asset Insights, Asset Reports
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '751'
 ht-degree: 2%
 
 ---
@@ -77,7 +77,7 @@ U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!
 
 Assets Insights haalt gebruiksgegevens voor middelen van Adobe Analytics op periodieke wijze. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM in werking aan de ophaalgegevens. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
 
-1. Tik op het AEM en ga naar **[!UICONTROL Tools > Operations > Web Console]**.
+1. Tik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > Operations > Web Console]**.
 1. Open de serviceconfiguratie **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
 
    ![chlimage_1-304](assets/chlimage_1-304.png)

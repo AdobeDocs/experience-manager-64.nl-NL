@@ -1,13 +1,13 @@
 ---
 title: Aanbevolen werkwijzen voor het verschuiven van elementen
-description: Aanbevolen gebruiksgevallen en aanbevolen procedures voor het offloaden van workflows voor het opnemen en repliceren van bedrijfsmiddelen in AEM Assets.
+description: Aanbevolen gebruiksgevallen en aanbevolen procedures voor het offloaden van workflows voor het opnemen en repliceren van elementen in [!DNL Experience Manager] Elementen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Deze functie is vervangen AEM 6.4 en wordt verwijderd in AEM 6.5. Plan dienovereenkomstig.
+>Deze functie is afgekeurd [!DNL Experience Manager] 6.4 en wordt verwijderd in [!DNL Experience Manager] 6.5. Plan dienovereenkomstig.
 
-Het verwerken van grote bestanden en het uitvoeren van workflows in Adobe Experience Manager (AEM) Assets kan aanzienlijke CPU-, geheugen- en I/O-bronnen in beslag nemen. Met name de grootte van middelen, workflows, het aantal gebruikers en de frequentie waarmee activa worden ingevoerd, kunnen van invloed zijn op de algehele systeemprestaties. De meest hulpbron-intensieve verrichtingen omvatten AEM activa opnemen en replicatiewerkschema&#39;s. Een intensief gebruik van deze workflows op één AEM ontwerpinstantie kan een negatief effect hebben op de ontwerpefficiëntie.
+Het verwerken van grote bestanden en het uitvoeren van workflows in Adobe Experience Manager Assets kan aanzienlijke CPU-, geheugen- en I/O-bronnen in beslag nemen. Met name de grootte van middelen, workflows, het aantal gebruikers en de frequentie waarmee activa worden ingevoerd, kunnen van invloed zijn op de algehele systeemprestaties. Tot de meest hulpbronnenintensieve bewerkingen behoren het opnemen van bedrijfsmiddelen en replicatieworkflows. Een intensief gebruik van deze workflows op één ontwerpinstantie kan een negatief effect hebben op de efficiëntie van het ontwerpen.
 
 Als u deze taken verschuift naar speciale arbeidersinstanties, kunnen de CPU-, geheugen- en IO-overheadkosten worden verminderd. Over het algemeen is het de bedoeling om taken die intensieve CPU-/geheugen-/IO-bronnen verbruiken, over te brengen naar speciale arbeidersinstanties. In de volgende secties vindt u aanbevolen gevallen voor het offloaden van middelen.
 
-## AEM Assets-offloading {#aem-assets-offloading}
+## [!DNL Experience Manager Assets] Verschuiven {#aem-assets-offloading}
 
-AEM Assets implementeert een native asset-specific workflowextensie voor offloading. Het bouwt op de generische werkschemauitbreiding voort die het het ontladen kader verstrekt, maar omvat extra activa-specifieke eigenschappen in de implementatie. Het doel van het offloaden van middelen is om de workflow voor DAM Update Asset op efficiënte wijze uit te voeren op een geüpload element. Bij het offloaden van elementen kunt u de innameworkflows beter beheren.
+[!DNL Experience Manager] Elementen implementeren een native, asset-specifieke workflowextensie voor offloaden. Het bouwt op de generische werkschemauitbreiding voort die het het ontladen kader verstrekt, maar omvat extra activa-specifieke eigenschappen in de implementatie. Het doel van het offloaden van middelen is om de workflow voor DAM Update Asset op efficiënte wijze uit te voeren op een geüpload element. Bij het offloaden van elementen kunt u de innameworkflows beter beheren.
 
-## AEM Assets-offloadonderdelen {#aem-assets-offloading-components}
+## [!DNL Experience Manager] Elementen die componenten verschuiven {#aem-assets-offloading-components}
 
 In het volgende diagram worden de belangrijkste componenten in het offloadproces van bedrijfsmiddelen weergegeven:
 
@@ -40,7 +40,7 @@ De workflow voor het offloaden van middelen uit DAM-update wordt uitgevoerd op d
 
 De manager van de baan verdeelt nieuwe banen aan arbeidersinstanties. Wanneer het ontwerpen van het distributiemechanisme, is het belangrijk om onderwerpenablement in aanmerking te nemen. Taken kunnen alleen worden toegewezen aan gevallen waarin het taakonderwerp is ingeschakeld. Schakel het onderwerp `com/adobe/granite/workflow/offloading` in de primaire toepassing uit en schakel het onderwerp in de worker in om ervoor te zorgen dat de taak aan de worker wordt toegewezen.
 
-### AEM {#aem-offloading}
+### [!DNL Experience Manager] ontladen {#aem-offloading}
 
 Het offloading-framework identificeert de workflow voor het offloaden van taken die zijn toegewezen aan arbeidersinstanties en gebruikt replicatie om deze fysiek te vervoeren, inclusief hun nuttige last (bijvoorbeeld afbeeldingen die moeten worden ingeslikt) naar workers.
 
@@ -50,7 +50,7 @@ Zodra een baan op de arbeider wordt geschreven, roept de baanmanager de baancons
 
 ## Sling Topology {#sling-topology}
 
-De het Verdelen topologiegroepen AEM instanties en laten hen toe om zich van elkaar bewust te zijn, onafhankelijk van de onderliggende persistentie. Dit kenmerk van de het Verdelen topologie laat u topologieën voor niet-gegroepeerde, gegroepeerde, en gemengde scenario&#39;s tot stand brengen. Een instantie kan eigenschappen aan de volledige topologie blootstellen. Het kader verstrekt callbacks voor het luisteren aan veranderingen in de topologie (instanties en eigenschappen). De het verkopen topologie verstrekt de stichting voor het Verdelen van verdeelde banen.
+De het Verdelen topologiegroepen [!DNL Experience Manager] instanties en laat hen toe om zich van elkaar bewust te zijn, onafhankelijk van de onderliggende persistentie. Dit kenmerk van de het Verdelen topologie laat u topologieën voor niet-gegroepeerde, gegroepeerde, en gemengde scenario&#39;s tot stand brengen. Een instantie kan eigenschappen aan de volledige topologie blootstellen. Het kader verstrekt callbacks voor het luisteren aan veranderingen in de topologie (instanties en eigenschappen). De het verkopen topologie verstrekt de stichting voor het Verdelen van verdeelde banen.
 
 ### Verspreide banen verkopen {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Als u tot de conclusie komt dat het offloaden van middelen een geschikte aanpak 
 
 ### Aanbevolen middelen na implementatie {#recommended-assets-offloading-deployment}
 
-Met AEM en eikel, zijn er verscheidene plaatsingsscenario&#39;s mogelijk. Voor het offloaden van middelen, wordt een op TarMK gebaseerde plaatsing met gedeelde datastore geadviseerd. Het volgende diagram schetst de geadviseerde plaatsing:
+Met [!DNL Experience Manager] en Oak, zijn er verscheidene plaatsingsscenario&#39;s mogelijk. Voor het offloaden van middelen, wordt een op TarMK gebaseerde plaatsing met gedeelde datastore geadviseerd. Het volgende diagram schetst de geadviseerde plaatsing:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

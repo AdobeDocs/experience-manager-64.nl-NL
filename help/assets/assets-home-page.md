@@ -1,26 +1,26 @@
 ---
-title: Ervaring met homepage in AEM Assets
-description: Pas de AEM Assets Home-pagina aan voor een uitgebreide ervaring met welkomstschermen, inclusief een momentopname van recente activiteiten rond middelen.
+title: '[!DNL Experience Manager Assets] Introductiepagina'
+description: De pagina Middelen aanpassen voor een uitgebreide ervaring met welkomstschermen, waaronder een momentopname van recente activiteiten rond elementen.
 contentOwner: AG
-feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
+feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '530'
 ht-degree: 1%
 
 ---
 
-# Ervaring met homepage in AEM Assets {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Introductiepagina {#aem-assets-home-page-experience}
 
-Pas de AEM Assets Home-pagina aan voor een uitgebreide ervaring met welkomstschermen, inclusief een momentopname van recente activiteiten rond middelen.
+Pas de startpagina [!DNL Experience Manager Assets] aan voor een uitgebreide welkomstscherm, inclusief een momentopname van recente activiteiten rond elementen.
 
-De startpagina van Adobe Experience Manager (AEM) Assets biedt een uitgebreide en persoonlijke welkomstscherm met een momentopname van recente activiteiten, zoals elementen die onlangs zijn weergegeven of geüpload.
+De startpagina van [!DNL Adobe Experience Manager Assets] biedt een uitgebreide en persoonlijke welkomstscherm met een momentopname van recente activiteiten, zoals elementen die onlangs zijn weergegeven of geüpload.
 
 De elementenstartpagina is standaard uitgeschakeld. Voer de volgende stappen uit om het in te schakelen:
 
-1. Om tot AEM Manager van de Configuratie toegang te hebben, klik **[!UICONTROL Tools > Operation > Web Console]**.
+1. Om tot [!DNL Experience Manager] de Manager van de Configuratie toegang te hebben, klik **[!UICONTROL Tools > Operation > Web Console]**.
 1. Open de **Day CQ DAM-gebeurtenisrecorder**-service.
 1. Selecteer **[!UICONTROL Enable this service]** om activiteitenopname toe te laten.
 
@@ -70,7 +70,7 @@ Deze sectie verschijnt onder de welkomstsectie en toont buiten-de-dooswidgets on
 
 **Recent**: De  **onlangs** Viewwidget onder deze sectie toont onlangs betreden entiteiten door de het programma geopende gebruiker, met inbegrip van omslagen, inzamelingen, en projecten.
 
-**Detecteren**: In de  **** widget Newwidget onder deze sectie worden de elementen en vertoningen weergegeven die onlangs naar de instantie AEM Assets zijn geüpload.
+**Detecteren**: In de  **** widget Newwidget onder deze sectie worden de elementen en vertoningen weergegeven die onlangs naar de  [!DNL Assets] instantie zijn geüpload.
 
 Om het zuiveren van de gegevens van de gebruikersactiviteit toe te laten, laat **DAM de Dienst van de Woorden van de Gebeurtenis** van de Manager van de Configuratie toe. Nadat u deze dienst toelaat, worden de activiteiten van de het programma geopende gebruiker die een gespecificeerd aantal overschrijden geschrapt door het systeem.
 
@@ -78,7 +78,7 @@ Het welkomstscherm biedt eenvoudige navigatiehulpmiddelen, zoals pictogrammen op
 
 >[!NOTE]
 >
->Als u de services Day CQ DAM-gebeurtenisrecorder en DAM-gebeurtenis leegmaken inschakelt, worden schrijfbewerkingen naar JCR en zoekindexering verhoogd, waardoor de belasting op de AEM server aanzienlijk toeneemt. De extra belasting op de AEM kan van invloed zijn op de prestaties.
+>Als u de services Day CQ DAM-gebeurtenisrecorder en DAM-gebeurtenis leegmaken inschakelt, worden schrijfbewerkingen naar JCR en zoekindexering verhoogd, waardoor de belasting op de [!DNL Experience Manager]-server aanzienlijk toeneemt. De extra belasting op de [!DNL Experience Manager]-server kan van invloed zijn op de prestaties.
 
 >[!CAUTION]
 >

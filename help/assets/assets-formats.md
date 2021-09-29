@@ -1,22 +1,22 @@
 ---
-title: Ondersteunde bestandsindelingen in AEM Assets
-description: Lijst met bestandsindelingen en MIME-typen die door AEM Assets worden ondersteund en de functies die voor elke indeling worden ondersteund.
+title: Ondersteunde bestandsindelingen in [!DNL Experience Manager] Middelen
+description: Lijst met bestandsindelingen en MIME-typen die worden ondersteund door Middelen en de functies die worden ondersteund voor elke indeling.
 contentOwner: AG
-feature: Middelenbeheer, uitvoeringen
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1625'
 ht-degree: 2%
 
 ---
 
-# Ondersteunde bestandsindelingen in AEM Assets {#assets-supported-formats}
+# Bestandsindelingen ondersteund in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets ondersteunt een groot aantal bestandsindelingen en elke functie biedt verschillende ondersteuning voor verschillende MIME-typen.
+[!DNL Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke functie biedt verschillende ondersteuning voor verschillende MIME-typen.
 
-Om AEM Assets te integreren met andere standaarden compatibele oplossingen voor digitaal assetmanagement (DAM) en desktopsoftware, gebruikt u Extensible Metadata Platform (XMP).
+Als u [!DNL Assets] wilt integreren met andere DAM-oplossingen (Digital Asset Management) en desktopsoftware, gebruikt u Extensible Metadata Platform (XMP) voor Adobe.
 
 Gebruik de legenda om het steunniveau te begrijpen.
 
@@ -111,7 +111,7 @@ Zie [Bibliotheek voor beeldtransformatie](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-Met de Adobe Camera Raw-bibliotheek kan AEM Assets onbewerkte afbeeldingen opnemen. Zie [Camera Raw ondersteuning](camera-raw.md).
+Met de Adobe Camera Raw-bibliotheek kan [!DNL Assets] Raw-afbeeldingen innemen. Zie [Camera Raw ondersteuning](camera-raw.md).
 
 ## Documentindelingen {#supported-document-formats}
 
@@ -244,7 +244,7 @@ De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsinde
 
 ## Ondersteunde MIME-typen {#supported-mime-types}
 
-Standaard wordt het bestandstype AEM de bestandsextensie gebruikt. AEM kan het van de inhoud van de dossiers ontdekken. Voor laatstgenoemde, selecteer [!UICONTROL Detect MIME from content] optie in [!UICONTROL Day CQ DAM Mime Type Service] in de Console van het AEM Web.
+[!DNL Experience Manager] detecteert standaard het bestandstype met de bestandsextensie. [!DNL Experience Manager] kan het van de inhoud van de dossiers ontdekken. Voor laatstgenoemde, uitgezochte [!UICONTROL Detect MIME from content] optie in [!UICONTROL Day CQ DAM Mime Type Service] in [!DNL Experience Manager] de Console van het Web.
 
 Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 

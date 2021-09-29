@@ -1,27 +1,27 @@
 ---
-title: AEM Assets integreren met Adobe InDesign Server
-description: Leer hoe u AEM Assets kunt integreren met InDesign Server.
+title: Integreer [!DNL Experience Manager] Middelen met Adobe InDesign Server
+description: Leer hoe te om [!DNL Experience Manager] Middelen met InDesign Server te integreren.
 contentOwner: AG
-feature: Publiceren
+feature: Publishing
 role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
 
-# AEM Assets integreren met Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+# Middelen integreren met Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
-Adobe Experience Manager (AEM) Assets gebruikt:
+Adobe Experience Manager Assets gebruikt:
 
-* Een proxy om het laden van bepaalde verwerkingstaken te verdelen. Een volmacht is een AEM instantie die met een volmachtsarbeider communiceert om een specifieke taak, en andere AEM instanties te vervullen om de resultaten te leveren.
+* Een proxy om het laden van bepaalde verwerkingstaken te verdelen. Een volmacht is een [!DNL Experience Manager] instantie die met een volmachtsarbeider communiceert om een specifieke taak te vervullen, en andere [!DNL Experience Manager] instanties om de resultaten te leveren.
 * Een proxyworker om een specifieke taak te definiëren en te beheren.
 
 Deze kunnen betrekking hebben op een groot aantal verschillende taken; bijvoorbeeld met een Adobe InDesign Server bestanden verwerken.
 
-Voor het volledig uploaden van bestanden naar AEM Assets die u met Adobe InDesign hebt gemaakt, wordt een proxy gebruikt. Dit gebruikt een volmachtsarbeider om met Adobe InDesign Server te communiceren, waar [manuscripten](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) in werking worden gesteld om meta-gegevens te halen en diverse vertoningen voor AEM Assets te produceren. De volmachtsarbeider laat de bidirectionele communicatie tussen de InDesign Server en de AEM instantie(s) in een wolkenconfiguratie toe.
+Als u bestanden volledig wilt uploaden naar [!DNL Experience Manager] elementen die u met Adobe InDesign hebt gemaakt, wordt een proxy gebruikt. Dit gebruikt een volmachtsarbeider om met Adobe InDesign Server te communiceren, waar [manuscripten](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) worden in werking gesteld om meta-gegevens te halen en diverse vertoningen voor [!DNL Experience Manager] Activa te produceren. De volmachtsarbeider laat de bidirectionele communicatie tussen de InDesign Server en [!DNL Experience Manager] instantie(s) in een wolkenconfiguratie toe.
 
 >[!NOTE]
 >
@@ -29,25 +29,23 @@ Voor het volledig uploaden van bestanden naar AEM Assets die u met Adobe InDesig
 >
 >* [InDesign](https://www.adobe.com/products/indesign.html)\
    >  Zo kunt u paginalay-outs ontwerpen voor afdrukken en/of digitale distributie.
-   >
-   >
-* [InDesign Server](https://www.adobe.com/products/indesignserver.html)\
+>
+>* [InDesign Server](https://www.adobe.com/products/indesignserver.html)\
    >  Met deze engine kunt u programmatisch geautomatiseerde documenten maken op basis van wat u met InDesign hebt gemaakt. Het werkt als dienst die een interface aan zijn [ExtendScript](https://www.adobe.com/devnet/scripting.html) motor aanbiedt.\
-   >  De scripts worden geschreven in ExtendScript, wat vergelijkbaar is met javascript. Voor informatie over manuscripten InDesign zie [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+   >  De scripts zijn geschreven in ExtendScript en zijn vergelijkbaar met JavaScript. Zie [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) voor informatie over Adobe InDesign-scripts.
 
 >
-
 
 
 ## Hoe de extractie werkt {#how-the-extraction-works}
 
-De InDesign Server kan met AEM Assets worden geïntegreerd zodat bestanden die met InDesign ( `.indd`) zijn gemaakt, kunnen worden geüpload, vertoningen worden gegenereerd, *alle media* kunnen worden uitgepakt (bijvoorbeeld video) en als elementen kunnen worden opgeslagen:
+De InDesign Server kan met Elementen worden geïntegreerd [!DNL Experience Manager] zodat de dossiers met InDesign ( `.indd`) worden gecreeerd kunnen worden geupload, geproduceerde vertoningen, *allen* (bijvoorbeeld, video) worden gehaald en als activa worden opgeslagen:
 
 >[!NOTE]
 >
->In eerdere versies van AEM konden XMP en de miniatuur worden opgehaald. Alle media kunnen nu worden uitgepakt.
+>In eerdere versies van [!DNL Experience Manager] konden XMP en de miniatuur worden opgehaald. Alle media kunnen nu worden uitgepakt.
 
-1. Upload uw `.indd`-bestand naar AEM Assets.
+1. Upload uw `.indd`-bestand naar [!DNL Experience Manager]-elementen.
 1. Een framework verzendt opdrachtscripts naar de InDesign Server via SOAP (Simple Object Access Protocol).
 
    Dit opdrachtscript:
@@ -58,7 +56,7 @@ De InDesign Server kan met AEM Assets worden geïntegreerd zodat bestanden die m
       * De structuur, de tekst en alle mediabestanden worden geëxtraheerd.
       * Er worden PDF- en JPG-uitvoeringen gegenereerd.
       * HTML- en IDML-uitvoeringen worden gegenereerd.
-   * Plaats de resulterende bestanden terug naar AEM Assets.
+   * Plaats de resulterende bestanden weer op [!DNL Experience Manager] Elementen.
 
    >[!NOTE]
    >
@@ -68,20 +66,20 @@ De InDesign Server kan met AEM Assets worden geïntegreerd zodat bestanden die m
 
    >[!CAUTION]
    >
-   >Als de InDesign Server niet geïnstalleerd of niet gevormd is, dan kunt u nog een `.indd` dossier in AEM uploaden. De gegenereerde uitvoeringen zijn echter beperkt tot `png` en `jpeg`, u kunt `html`, `idml` of de pagina-uitvoeringen niet genereren.
+   >Als de InDesign Server niet geïnstalleerd of niet gevormd is, dan kunt u een `.indd` dossier in [!DNL Experience Manager] nog uploaden. De gegenereerde uitvoeringen zijn echter beperkt tot `png` en `jpeg`, u kunt `html`, `idml` of de pagina-uitvoeringen niet genereren.
 
 1. Na de extractie en uitvoering:
 
    * De structuur wordt gerepliceerd naar een `cq:Page` (type vertoning).
-   * De geëxtraheerde tekst en bestanden worden opgeslagen in AEM Assets.
-   * Alle uitvoeringen worden opgeslagen in AEM Assets, in het element zelf.
+   * De geëxtraheerde tekst en bestanden worden opgeslagen in Elementen [!DNL Experience Manager].
+   * Alle vertoningen worden opgeslagen in Elementen [!DNL Experience Manager], in het middel zelf.
 
-## De InDesign Server integreren met AEM {#integrating-the-indesign-server-with-aem}
+## De InDesign Server integreren met [!DNL Experience Manager] {#integrating-the-indesign-server-with-aem}
 
-Om de InDesign Server voor gebruik met AEM Assets en na het vormen van uw volmacht te integreren, moet u:
+Om de InDesign Server voor gebruik met [!DNL Experience Manager] Middelen te integreren en na het vormen van uw volmacht, moet u:
 
 1. [Installeer de InDesign Server](#installing-the-indesign-server).
-1. Indien nodig [configureer de AEM Assets Workflow](#configuring-the-aem-assets-workflow).
+1. Indien nodig [configureer de  [!DNL Experience Manager] Assets Workflow](#configuring-the-aem-assets-workflow).
 
    Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie.
 
@@ -89,7 +87,7 @@ Om de InDesign Server voor gebruik met AEM Assets en na het vormen van uw volmac
 
 ### De InDesign Server installeren {#installing-the-indesign-server}
 
-U installeert en start de InDesign Server voor gebruik met AEM:
+De InDesign Server installeren en starten voor gebruik met [!DNL Experience Manager]:
 
 1. Download en installeer de Adobe InDesign Server.
 
@@ -111,16 +109,16 @@ U installeert en start de InDesign Server voor gebruik met AEM:
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### De AEM Assets-workflow configureren {#configuring-the-aem-assets-workflow}
+### De [!DNL Experience Manager]-middelenworkflow configureren {#configuring-the-aem-assets-workflow}
 
-AEM Assets heeft een vooraf geconfigureerde workflow **DAM Update Asset**, die verschillende processtappen bevat die specifiek voor InDesign zijn:
+[!DNL Experience Manager] Elementen hebben een vooraf geconfigureerde workflow  **DAM Update Asset**, die verschillende processtappen bevat, met name voor InDesign:
 
 * [Media extraheren](#media-extraction)
 * [Pagina uitnemen](#page-extraction)
 
 Dit werkschema is opstelling met standaardwaarden die voor uw opstelling op de diverse auteursinstanties (dit is een standaardwerkschema, zodat is de verdere informatie beschikbaar onder [het Uitgeven van een Werkschema](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)) kunnen worden aangepast. Als u de standaardwaarden (met inbegrip van de haven van de ZEEP) gebruikt, dan is geen configuratie nodig.
 
-Na de installatie wordt door het uploaden van InDesign-bestanden naar AEM Assets (op een van de gebruikelijke manieren) de workflow geactiveerd die nodig is om het element te verwerken en de verschillende uitvoeringen voor te bereiden. Test uw configuratie door een `.indd`-bestand naar AEM Assets te uploaden om te bevestigen dat de verschillende uitvoeringen die door IDS onder `<*your_asset*>.indd/Renditions` zijn gemaakt, worden weergegeven
+Na de installatie, zal het uploaden van InDesign dossiers in [!DNL Experience Manager] Middelen (door om het even welke gebruikelijke methodes) de werkschema teweegbrengen die wordt vereist om de activa te verwerken en de diverse vertoningen voor te bereiden. Test uw configuratie door een `.indd` bestand te uploaden naar [!DNL Experience Manager] Middelen om te bevestigen dat de verschillende uitvoeringen die door IDS onder `<*your_asset*>.indd/Renditions` zijn gemaakt, worden weergegeven
 
 #### Media extraheren {#media-extraction}
 
@@ -142,13 +140,13 @@ Argumenten voor het uitnemen van media en scriptpaden
 >
 >Wijzig de ExtendScript-bibliotheek niet. De bibliotheek biedt de HTTP-functionaliteit die nodig is voor communicatie met Sling. Met deze instelling geeft u de bibliotheek op die naar de Adobe InDesign Server moet worden verzonden voor gebruik.
 
-Met het `ThumbnailExport.jsx`-script dat wordt uitgevoerd door de workflowstap Media Extraction, wordt een miniatuuruitvoering in JPG-indeling gegenereerd. Deze vertoning wordt gebruikt door de werkstroomstap Miniaturen verwerken om de statische uitvoeringen te genereren die AEM vereist.
+Met het `ThumbnailExport.jsx`-script dat wordt uitgevoerd door de workflowstap Media Extraction, wordt een miniatuuruitvoering in JPG-indeling gegenereerd. Deze vertoning wordt gebruikt door de werkstroomstap Miniaturen verwerken om de statische uitvoeringen te genereren die worden vereist door [!DNL Experience Manager].
 
-U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u de standaardinstellingen niet verwijdert, omdat deze vereist zijn door de gebruikersinterface van AEM Assets. Tot slot verwijdert de workflowstap Voorvertoning afbeelding verwijderen de miniatuuruitvoering .jpg, omdat deze niet langer nodig is.
+U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u de standaardinstellingen niet verwijdert, omdat deze vereist zijn door de interface [!DNL Experience Manager] Middelen. Tot slot verwijdert de workflowstap Voorvertoning afbeelding verwijderen de miniatuuruitvoering .jpg, omdat deze niet langer nodig is.
 
 #### Pagina uitnemen {#page-extraction}
 
-Hierdoor wordt een AEM pagina gemaakt van de geëxtraheerde elementen. Een extractiemanager wordt gebruikt om gegevens uit een vertoning (momenteel HTML of IDML) te halen. Deze gegevens worden vervolgens gebruikt om een pagina te maken met de PageBuilder.
+Hiermee maakt u een [!DNL Experience Manager]-pagina van de geëxtraheerde elementen. Een extractiemanager wordt gebruikt om gegevens uit een vertoning (momenteel HTML of IDML) te halen. Deze gegevens worden vervolgens gebruikt om een pagina te maken met de PageBuilder.
 
 Als u een pagina wilt aanpassen, kunt u het tabblad **[!UICONTROL Arguments]** van de stap **Pagina-uitname** bewerken.
 
@@ -187,7 +185,7 @@ Standaard is de IDML-exporthandler beschikbaar. Het werkt op de `IDML` vertoning
 
 ### Het vormen van Dag CQ Verbinding Externalzer {#configuring-day-cq-link-externalizer}
 
-Als de InDesign Server en de AEM op verschillende gastheren of één of beide toepassingen niet op standaardhavens werken, vorm **Dag CQ Verbinding External** om de gastheernaam, de haven, en de inhoudspad voor de InDesign Server te plaatsen.
+Als de InDesign Server en [!DNL Experience Manager] op verschillende gastheren zijn of één of beide toepassingen niet aan standaardhavens werken, vorm **De Verbinding Externalzer van CQ van de Dag** om de gastheernaam, de haven, en de inhoudspad voor de InDesign Server te plaatsen.
 
 1. Open Configuration Manager op de URL `https://[AEM_server]:[port]/system/console/configMgr`.
 1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]**. Klik **[!UICONTROL Edit]** om te openen.
@@ -252,7 +250,7 @@ Voer voor InDesign-server 10.0 of hoger de volgende stappen uit om ondersteuning
 
 ## Referenties van Experience Manager configureren {#configure-aem-credentials}
 
-U kunt de standaardbeheerdergeloofsbrieven (gebruikersnaam en wachtwoord) veranderen om tot de server van de InDesign van uw AEM instantie toegang te hebben zonder de integratie met de server van Adobe InDesign te breken.
+U kunt de standaardbeheerdersreferenties (gebruikersnaam en wachtwoord) wijzigen voor toegang tot de InDesign-server vanuit uw [!DNL Experience Manager]-exemplaar zonder de integratie met de Adobe InDesign-server te verbreken.
 
 1. Ga naar `/etc/cloudservices/proxy.html`.
 1. Geef in het dialoogvenster de nieuwe gebruikersnaam en het nieuwe wachtwoord op.

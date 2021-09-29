@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '600'
 ht-degree: 8%
 
 ---
 
 # Bulkmetagegevens importeren en exporteren {#bulk-metadata-import-and-export}
 
-Met AEM Assets kunt u metagegevens van elementen in bulk importeren met behulp van een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
+[!DNL Experience Manager] Met middelen kunt u metagegevens van elementen in bulk importeren met een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
 
 ## Metagegevens importeren {#import-metadata}
 
@@ -56,7 +56,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 * Test of controleer de metagegevens op conformiteit.
 * De metagegevens extern maken voor afzonderlijke lokalisatie.
 
-U kunt metagegevens voor meerdere elementen in CSV-indeling exporteren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. Als u metagegevens wilt exporteren, doorloopt AEM de eigenschappen van het elementknooppunt `jcr:content/metadata` en de onderliggende knooppunten en exporteert u de eigenschappen van de metagegevens in een CSV-bestand.
+U kunt metagegevens voor meerdere elementen in CSV-indeling exporteren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. [!DNL Experience Manager] doorloopt de eigenschappen van het elementknooppunt `jcr:content/metadata` en de onderliggende knooppunten en exporteert de metagegevenseigenschappen in een CSV-bestand om metagegevens te exporteren.
 
 Voer de volgende stappen uit als u metagegevens van meerdere elementen bulksgewijs wilt exporteren:
 

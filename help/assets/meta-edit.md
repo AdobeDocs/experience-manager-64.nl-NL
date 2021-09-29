@@ -1,13 +1,13 @@
 ---
 title: Metagegevens bewerken of toevoegen
-description: Meer informatie over metagegevens van elementen in AEM Assets en verschillende manieren waarop u metagegevens van elementen kunt bewerken.
+description: Meer informatie over metagegevens van elementen vindt u in [!DNL Experience Manager] Middelen en op verschillende manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '468'
 ht-degree: 7%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 Metagegevens zijn aanvullende informatie over het element die kan worden doorzocht. Deze wordt automatisch uitgepakt wanneer u een afbeelding uploadt. U kunt de bestaande metagegevens bewerken of nieuwe eigenschappen van metagegevens toevoegen aan bestaande velden (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
-Omdat bedrijven gecontroleerde en betrouwbare taalwoordenboeken voor metagegevens nodig hebben, staat AEM Assets het niet toe om ad-hocnieuwe eigenschappen voor metagegevens toe te voegen. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [Nieuwe eigenschap metagegevens maken voor elementen](meta-edit.md#editing-metadata-schema).
+Aangezien bedrijven gecontroleerde en betrouwbare metagegevenswoordenboeken nodig hebben, is het met [!DNL Experience Manager] Elementen niet mogelijk om ad-hocnieuwe metagegevenseigenschappen toe te voegen. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [Nieuwe eigenschap metagegevens maken voor elementen](meta-edit.md#editing-metadata-schema).
 
 ## Metagegevens voor een element bewerken {#editing-metadata-for-an-asset}
 
@@ -28,7 +28,7 @@ Metagegevens bewerken:
    * Selecteer in de elementminiatuur de snelle handeling **[!UICONTROL View Properties]**.
    * Klik/tik op het **[!UICONTROL View Properties]**-pictogram ![infopictogram](assets/do-not-localize/info_icon.png) op de werkbalk vanaf de elementpagina.
 
-   Op de elementpagina worden alle metagegevens van het element weergegeven. Deze metagegevens worden automatisch geëxtraheerd bij het uploaden (invoegen) naar AEM Assets.
+   Op de elementpagina worden alle metagegevens van het element weergegeven. Deze metagegevens zijn automatisch geëxtraheerd wanneer deze werden geüpload (opgenomen) naar [!DNL Experience Manager] Elementen.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -46,7 +46,7 @@ XMP terugschrijven wordt gesteund en toegelaten voor de platforms en dossierform
 
 Zie [Formulieren met metagegevens bewerken](metadata-schemas.md#editing-metadata-schema-forms) voor meer informatie over het bewerken van het schema voor metagegevens.
 
-## Een aangepaste naamruimte registreren binnen AEM {#registering-a-custom-namespace-within-aem}
+## Een aangepaste naamruimte registreren binnen [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
 U kunt uw eigen naamruimten toevoegen binnen AEM. Net zoals er vooraf gedefinieerde naamruimten zijn, zoals cq, jcr en sling, kunt u een naamruimte hebben voor de metagegevens van de gegevensopslagruimte en de verwerking van de xml.
 

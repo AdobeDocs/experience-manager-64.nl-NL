@@ -1,24 +1,24 @@
 ---
 title: Ontwikkeling van proxy's
-description: 'Een proxy is een AEM instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een AEM proxy, ondersteunde bewerkingen, proxycomponenten en een aangepaste proxyworker kunt configureren. '
+description: 'Een volmacht is een  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] volmacht, gesteunde verrichtingen, volmachtscomponenten, en hoe te om een worker van de douanevolmacht te ontwikkelen. '
 contentOwner: AG
-feature: Middelverwerking
+feature: Asset Processing
 role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # Ontwikkeling van proxy&#39;s {#assets-proxy-development}
 
-Adobe Experience Manager (AEM) Assets gebruikt een proxy om verwerking voor bepaalde taken te distribueren.
+Adobe Experience Manager Assets gebruikt een proxy om verwerking voor bepaalde taken te distribueren.
 
-Een proxy is een specifieke (en soms aparte) AEM instantie die proxyworkers gebruikt als processors die verantwoordelijk zijn voor het afhandelen van een taak en het maken van een resultaat. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een AEM Assets-proxy kan dit worden gebruikt voor het laden van elementen voor rendering binnen AEM Assets. De [IDS-proxyworker](indesign.md) gebruikt bijvoorbeeld een InDesign Server om bestanden te verwerken voor gebruik in AEM Assets.
+Een proxy is een specifieke (en soms aparte) [!DNL Experience Manager]-instantie die proxyworkers gebruikt als processors die verantwoordelijk zijn voor het afhandelen van een taak en het maken van een resultaat. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een [!DNL Experience Manager]-middelenproxy kan dit worden gebruikt voor het laden van elementen voor rendering binnen [!DNL Experience Manager]-elementen. De [IDS-proxyworker](indesign.md) gebruikt bijvoorbeeld een InDesign Server om bestanden te verwerken voor gebruik in [!DNL Experience Manager]-middelen.
 
-Wanneer de proxy een afzonderlijke AEM-instantie is, wordt de belasting van de AEM ontwerpinstantie(s) verminderd. Standaard voert AEM Assets de elementverwerkingstaken uit in dezelfde JVM (extern via Proxy) om de belasting van de AEM-ontwerpinstantie te verminderen.
+Wanneer de proxy een afzonderlijke [!DNL Experience Manager]-instantie is, wordt de belasting op de [!DNL Experience Manager]-ontwerpinstantie(s) hierdoor verminderd. Standaard worden in [!DNL Experience Manager] Elementen de elementverwerkingstaken in dezelfde JVM (extern via Proxy) uitgevoerd om de belasting op de [!DNL Experience Manager]-ontwerpinstantie te verminderen.
 
 ## Proxy (HTTP-toegang) {#proxy-http-access}
 
@@ -110,7 +110,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 >
 >Referentiedocumentatie voor de proxy-API is beschikbaar onder [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/commons/proxy/package-summary.html).
 
-Zowel proxyconfiguraties als proxyarbeidersconfiguraties zijn beschikbaar via cloudservices die toegankelijk zijn via de AEM Assets **Tools**-console of onder `/etc/cloudservices/proxy`. Van elke proxyworker wordt verwacht dat deze onder `/etc/cloudservices/proxy` een knooppunt toevoegt voor specifieke configuratiegegevens van de worker (bijvoorbeeld `/etc/cloudservices/proxy/workername`).
+Zowel proxyconfiguraties als proxyarbeidersconfiguraties zijn beschikbaar via configuraties van cloudservices die toegankelijk zijn via de [!DNL Experience Manager] Assets **Tools**-console of onder `/etc/cloudservices/proxy`. Van elke proxyworker wordt verwacht dat deze onder `/etc/cloudservices/proxy` een knooppunt toevoegt voor specifieke configuratiegegevens van de worker (bijvoorbeeld `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
@@ -133,9 +133,9 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 ### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
 
-De [IDS volmachtsarbeider](indesign.md) is een voorbeeld van een volmachtsarbeider van AEM Assets die reeds ver-van-de-doos wordt verstrekt om de verwerking van activa inDesign uit te besteden.
+De [IDS volmachtsarbeider](indesign.md) is een voorbeeld van een [!DNL Experience Manager] de volmachtsarbeider van Activa die reeds ver-van-de-doos wordt verstrekt om de verwerking van activa inDesign uit te besteden.
 
-U kunt ook uw eigen AEM Assets-proxyworker ontwikkelen en configureren om een gespecialiseerde worker te maken die uw AEM Assets-verwerkingstaken kan verzenden en uitbesteden.
+U kunt ook uw eigen [!DNL Experience Manager] de volmachtsarbeider van Activa ontwikkelen en vormen om een gespecialiseerde worker tot stand te brengen om uw [!DNL Experience Manager] de verwerkingstaken van Activa te verzenden en uit te besteden.
 
 Als u uw eigen aangepaste proxyworker wilt instellen, moet u:
 
@@ -177,12 +177,12 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 
 >[!NOTE]
 >
->Wat het AEM Assets-proxyframework niet buiten de box biedt, is het poolmechanisme.
+>Wat het [!DNL Experience Manager] de volmachtskader van Activa niet uit-van-de-doos verstrekt is het poolmechanisme.
 >
->De integratie van InDesign staat de toegang van een pool van indesign servers (IDSPool) toe. Deze pooling is specifiek voor InDesign-integratie en maakt geen deel uit van het AEM Assets-proxyframework.
+>De integratie van InDesign staat de toegang van een pool van indesign servers (IDSPool) toe. Deze pooling is specifiek voor de integratie van InDesign en maakt geen deel uit van het [!DNL Experience Manager] de volmachtskader van Activa.
 
 >[!NOTE]
 >
 >Synchronisatie van resultaten:
 >
->Bij n instanties die dezelfde proxy gebruiken, blijft het verwerkingsresultaat bij de proxy. Het is de taak van de client (AEM-auteur) om het resultaat aan te vragen met dezelfde unieke taak-id als die aan de client is gegeven bij het maken van een taak. De proxy haalt de taak gewoon uit en zorgt ervoor dat het resultaat klaar is om te worden aangevraagd.
+>Bij n instanties die dezelfde proxy gebruiken, blijft het verwerkingsresultaat bij de proxy. Het is de taak van de client ([!DNL Experience Manager] Auteur) om het resultaat aan te vragen met dezelfde unieke taak-id als die aan de client is gegeven bij het maken van een taak. De proxy haalt de taak gewoon uit en zorgt ervoor dat het resultaat klaar is om te worden aangevraagd.

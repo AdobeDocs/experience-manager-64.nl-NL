@@ -1,20 +1,20 @@
 ---
 title: Apache Tika gebruiken om MIME-type van digitale elementen te detecteren
-description: Schakel Apache Tika in om AEM Assets te helpen bij het detecteren van het MIME-type van elementen uit de inhoudsstroom tijdens het uploaden in plaats van de bestandsextensie.
+description: Schakel Apache Tika in om te helpen [!DNL Experience Manager] Elementen detecteren het MIME-type van elementen uit de inhoudsstroom tijdens het uploaden in plaats van de bestandsextensie.
 contentOwner: AG
-feature: Metagegevens,Gereedschappen voor ontwikkelaars,Middelenbeheer
+feature: Metadata,Developer Tools,Asset Management
 role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '182'
 ht-degree: 3%
 
 ---
 
 # Apache Tika gebruiken om MIME-type van digitale elementen te detecteren {#detecting-mime-type-of-assets-using-apache-tika}
 
-Adobe Experience Manager (AEM) Assets detecteert doorgaans het MIME-type van elementen die u uploadt vanuit de bestandsextensie. Als u Apache Tika gebruikt om activa te uploaden, ontdekt AEM Assets hun MIME type van de inhoudsstroom tijdens het uploaden verrichting in plaats van de dossieruitbreiding.
+Adobe Experience Manager Assets detecteert doorgaans het MIME-type van elementen die u uploadt vanuit de bestandsextensie. Als u Apache Tika gebruikt om activa te uploaden, [!DNL Experience Manager] Middelen ontdekt hun MIME type van de inhoudsstroom tijdens het uploaden verrichting in plaats van de dossieruitbreiding.
 
 Deze functie is standaard uitgeschakeld. Om de eigenschap toe te laten, vorm de **Dag CQ DAM Mime Type** dienst van de Manager van de Configuratie.
 

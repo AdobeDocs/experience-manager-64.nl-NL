@@ -1,20 +1,20 @@
 ---
 title: GQL Full-text zoeken
-description: Ontdek de GQL-functie voor full-text zoeken in AEM Assets. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
+description: Ontdek de GQL full-text zoekfunctie in [!DNL Experience Manager] Middelen. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
 contentOwner: AG
-feature: Zoeken,metagegevens
+feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
 
 # GQL Full-text zoeken {#gql-full-text-search}
 
-Ontdek de GQL-functie voor full-text zoeken in AEM Assets. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
+Ontdek de GQL full-text zoekfunctie in [!DNL Experience Manager] Middelen. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
 
 Met de zoekfunctie voor volledige tekst van GQL kunt u zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving, auteur, enzovoort.
 
@@ -38,7 +38,7 @@ Als u bijvoorbeeld wilt zoeken naar elementen met de titel &quot;Doel&quot;, voe
 
    ![gql_search](assets/gql_search.png)
 
-1. Druk op **[!UICONTROL Enter]**. In de AEM Assets-gebruikersinterface worden alleen die elementen weergegeven waarvan de titel precies overeenkomt met &quot;Doel&quot;.
+1. Druk op **[!UICONTROL Enter]**. In de gebruikersinterface [!DNL Assets] worden alleen die elementen weergegeven waarvan de titel precies overeenkomt met &quot;Doel&quot;.
 
 Met de zoekfunctie voor volledige tekst van GQL kunt u op het volgende gebaseerde elementen zoeken:
 
@@ -112,7 +112,6 @@ titel:&quot;Vergadering&quot;;
 >De eigenschappen weg, grens, grootte, en orde kunnen niet ORed met een ander bezit zijn.
 >
 >Het sleutelwoord voor een user-generated bezit is zijn gebiedsetiket in de bezitsredacteur in kleine letters, met verwijderde ruimten.
-
 
 >[!NOTE]
 >

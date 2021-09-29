@@ -3,12 +3,12 @@ title: Elementen hergebruiken met MSM
 description: Gebruik elementen op meerdere pagina's/mappen die zijn afgeleid van en gekoppeld aan bovenliggende elementen. De elementen blijven gesynchroniseerd met een primaire kopie en ontvangen met een paar klikken de updates van de bovenliggende elementen.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Beheer van bedrijfsmiddelen, beheer van meerdere sites
+feature: Asset Management,Multi Site Manager
 role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3074'
+source-wordcount: '3061'
 ht-degree: 9%
 
 ---
@@ -64,7 +64,7 @@ MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zo
 Voer een van de volgende twee handelingen uit om een live kopie van een of meer bronelementen of -mappen te maken:
 
 * **Methode 1**: Selecteer de bronelementen en klik op  **[!UICONTROL Create]** >  **[!UICONTROL Live Copy]** van de werkbalk boven in het scherm.
-* **Methode 2**: Klik in AEM gebruikersinterface  **[!UICONTROL Create > Live Copy]** in de rechterbovenhoek van de interface.
+* **Methode 2**: Klik in de  [!DNL Experience Manager] gebruikersinterface in de  **[!UICONTROL Create > Live Copy]** rechterbovenhoek van de interface.
 
 U kunt live kopieën van een middel of map één voor één maken. U kunt live kopieën maken die zijn afgeleid van een middel of een map die zelf een live kopie is.
 
@@ -73,15 +73,15 @@ Inhoudsfragmenten (CF&#39;s) worden niet ondersteund voor de gebruikszaak. Wanne
 Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
 1. Selecteer bronelementen of -mappen. Klik **[!UICONTROL Create > Live Copy]** op de werkbalk.
-   ![Actieve kopie maken van AEM interface](assets/lc_create1.png)
+   ![Actieve kopie maken van  [!DNL Experience Manager] interface](assets/lc_create1.png)
 1. Selecteer bronelement of -map. Klik op **[!UICONTROL Next]**.
 1. Geef een titel en naam op. Elementen hebben geen onderliggende elementen. Wanneer u een live kopie van mappen maakt, kunt u ervoor kiezen onderliggende items op te nemen of uit te sluiten.
 1. Selecteer een rollout-configuratie. Klik op **[!UICONTROL Create]**.
 
 Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
-1. Klik in AEM interface in de rechterbovenhoek op **[!UICONTROL Create > Live Copy]**.
-   ![Actieve kopie maken van AEM interface](assets/lc_create2.png)
+1. Klik in de interface [!DNL Experience Manager] in de rechterbovenhoek op **[!UICONTROL Create > Live Copy]**.
+   ![Actieve kopie maken van  [!DNL Experience Manager] interface](assets/lc_create2.png)
 1. Selecteer bronelement of -map. Klik op **[!UICONTROL Next]**.
 1. Doelmap selecteren. Klik op **[!UICONTROL Next]**.
 1. Geef een titel en naam op. Elementen hebben geen onderliggende elementen. Wanneer u een live kopie van mappen maakt, kunt u ervoor kiezen onderliggende items op te nemen of uit te sluiten.
@@ -93,7 +93,7 @@ Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
 ## Verschillende eigenschappen en statussen van bron- en actieve kopie weergeven {#view-properties-statuses-source-and-lc}
 
-U kunt de informatie en MSM-verwante status van levende exemplaar zoals verhouding, synchronisatie, rollouts, en meer van de diverse gebieden van het AEM gebruikersinterface bekijken. De volgende twee methoden werken voor elementen en mappen:
+U kunt de informatie en MSM-verwante status van levende exemplaar zoals verhouding, synchronisatie, rollouts, en meer van de diverse gebieden van het [!DNL Experience Manager] gebruikersinterface bekijken. De volgende twee methoden werken voor elementen en mappen:
 
 * Selecteer actief kopiëren en zoek de informatie op de **[!UICONTROL Properties]**-pagina.
 * Selecteer bronomslag en vind de gedetailleerde informatie van elke levende exemplaar van **[!UICONTROL Live Copy Console]**.
@@ -220,7 +220,7 @@ U kunt alle lokale wijzigingen ongedaan maken en de status van het element herst
 
 ## Live relatie verwijderen {#remove-live-relationship}
 
-U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in AEM interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
+U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in [!DNL Experience Manager] interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
 
 1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets `p` gebruiken.
 1. Klik op **[!UICONTROL Live Copy]**. Klik op **[!UICONTROL Detach]** op de werkbalk. Klik **[!UICONTROL Detach]** van de getoonde dialoog.
@@ -243,7 +243,7 @@ Als u meerdere elementen in een live-kopieermap hebt, kan het lastig zijn om act
 
 ## MSM voor elementen uitbreiden {#extend-msm-for-assets}
 
-AEM kunt u de functionaliteit uitbreiden met de API&#39;s van MSM Java. Voor Middelen, werkt het uitbreiden enkel het zelfde als het met MSM voor Plaats werkt. Voor details, zie [Uitbreiding van MSM](../sites-developing/extending-msm.md) en de volgende secties voor informatie over specifieke taken:
+[!DNL Experience Manager] Hiermee kunt u de functionaliteit uitbreiden met de API&#39;s van MSM Java. Voor Middelen, werkt het uitbreiden enkel het zelfde als het met MSM voor Plaats werkt. Voor details, zie [Uitbreiding van MSM](../sites-developing/extending-msm.md) en de volgende secties voor informatie over specifieke taken:
 
 * [Overzicht van API&#39;s](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Een nieuwe synchronisatiehandeling maken](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -259,7 +259,7 @@ AEM kunt u de functionaliteit uitbreiden met de API&#39;s van MSM Java. Voor Mid
 
 ## Effect van taken inzake middelenbeheer op levende kopieën {#impact-of-asset-management-tasks-on-live-copies}
 
-Live kopieën en bronnen zijn elementen of mappen die tot op zekere hoogte als digitale elementen kunnen worden beheerd. Sommige taken voor middelenbeheer in AEM hebben een specifieke invloed op de live kopieën.
+Live kopieën en bronnen zijn elementen of mappen die tot op zekere hoogte als digitale elementen kunnen worden beheerd. Sommige taken voor middelenbeheer in [!DNL Experience Manager] hebben een specifieke invloed op de live kopieën.
 
 * Wanneer u een live kopie kopieert, wordt een live kopie van het element gemaakt met dezelfde bron als de eerste live kopie.
 * Wanneer u een bron of de live kopie ervan verplaatst, blijft de live relatie behouden.

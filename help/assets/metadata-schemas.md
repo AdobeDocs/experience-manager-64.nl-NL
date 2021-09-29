@@ -2,12 +2,12 @@
 title: Metagegevensschema's
 description: 'Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.  '
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2386'
 ht-degree: 8%
 
 ---
@@ -174,7 +174,7 @@ Klik `+` om een nieuw lusje op een schemavorm toe te voegen. Standaard heeft het
 
 ## Formulieren met metagegevens verwijderen {#deleting-metadata-schema-forms}
 
-Met AEM kunt u alleen aangepaste schema-formulieren verwijderen. U kunt hiermee de standaardschema-formulieren/sjablonen niet verwijderen. U kunt echter alle aangepaste wijzigingen in deze formulieren verwijderen.
+[!DNL Experience Manager] Hiermee kunt u alleen aangepaste schema-formulieren verwijderen. U kunt hiermee de standaardschema-formulieren/sjablonen niet verwijderen. U kunt echter alle aangepaste wijzigingen in deze formulieren verwijderen.
 
 Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op het pictogram **[!UICONTROL Delete]**.
 
@@ -184,11 +184,11 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op h
 
 >[!NOTE]
 >
->In AEM Assets kunt u het schema voor metagegevens in het vak niet verwijderen.
+>U kunt het schema van metagegevens van het vak niet verwijderen in [!DNL Experience Manager] Middelen.
 
 ## Schema-formulieren voor MIME-typen {#schema-forms-for-mime-types}
 
-AEM Assets bevat standaardformulieren voor verschillende MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
+[!DNL Experience Manager] Elementen bieden standaardformulieren voor verschillende MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
 
 ### Nieuwe formulieren toevoegen voor MIME-typen {#adding-new-forms-for-mime-types}
 
@@ -205,7 +205,7 @@ In dit geval maakt u een nieuw knooppunt op `/etc/dam/metadataeditor/mimetypemap
 | `exposedmimetype` | Naam van het bestaande formulier dat moet worden toegewezen | `String` | `image/jpeg` |
 | `mimetypes` | Lijst met MIME-typen die het formulier gebruiken dat is gedefinieerd in het kenmerk `exposedmimetype` | `String` | `image/png` |
 
-AEM Assets wijst de volgende MIME-typen en schema-formulieren toe:
+[!DNL Experience Manager] Elementen wijzen de volgende MIME-typen en schema-formulieren toe:
 
 | Schema-formulier | MIME-typen |
 |---|---|
@@ -227,7 +227,7 @@ De functie voor het metagegevensschema is alleen beschikbaar voor beheerders. Be
 
 ## Mapspecifieke metagegevens toepassen {#applying-folder-specific-metadata}
 
-Met AEM Assets kunt u een variant van een metagegevensschema definiëren en dit toepassen op een specifieke map.
+[!DNL Experience Manager] Met elementen kunt u een variant van een metagegevensschema definiëren en dit toepassen op een specifieke map.
 
 U kunt bijvoorbeeld een variant van het standaardmetagegevensschema definiëren en deze toepassen op een map. Wanneer u het gewijzigde schema toepast, wordt het oorspronkelijke standaardmetagegevensschema genegeerd dat op elementen in de map is toegepast.
 
@@ -239,7 +239,7 @@ Metagegevensovererving door elementen is gebaseerd op het schema dat wordt toege
 
 Als de map een submap heeft, nemen de elementen in de submap de metagegevens over van het schema dat op submapniveau wordt toegepast als een ander schema op submapniveau wordt toegepast. Als echter geen schema of hetzelfde schema wordt toegepast op submapniveau, overerven de submapelementen de metagegevens van het schema dat is toegepast op het niveau van de bovenliggende map.
 
-1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
+1. Klik op het [!DNL Experience Manager]-logo en navigeer naar **[!UICONTROL Tools > Assets > Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
 1. Schakel het selectievakje in vóór een formulier, bijvoorbeeld het standaardmetagegevensformulier, en klik op het pictogram **[!UICONTROL Copy]** of tik op en sla het op als een aangepast formulier. Geef een aangepaste naam voor het formulier op, bijvoorbeeld `my_default`. U kunt ook een aangepast formulier maken.
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -269,9 +269,9 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
 >[!NOTE]
 >
->Een metagegevensveld kan op basis van de waarde van een ander veld als verplicht worden gedefinieerd. In de weergave Kaarten geeft AEM het waarschuwingsbericht over ontbrekende metagegevens voor dergelijke verplichte metagegevensvelden niet weer.
+>Een metagegevensveld kan op basis van de waarde van een ander veld als verplicht worden gedefinieerd. In de weergave Kaarten wordt het waarschuwingsbericht over ontbrekende metagegevens voor dergelijke verplichte metagegevensvelden niet weergegeven.[!DNL Experience Manager]
 
-1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
+1. Klik op het [!DNL Experience Manager]-logo en navigeer naar **[!UICONTROL Tools > Assets > Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
 1. Sla het standaardmetagegevensformulier op als een aangepast formulier. Sla het bestand bijvoorbeeld op als `my_default`.
 
    ![chlimage_1-189](assets/chlimage_1-189.png)
@@ -286,8 +286,8 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. (Optioneel) Toegang `http://[server]:[port]/system/console/components/`. Configureer en schakel `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component in die standaard is uitgeschakeld. Stel een frequentie in waarmee AEM controleert of metagegevens over de elementen geldig zijn.
-Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan jcr:inhoud van elementen. Met deze eigenschap kunnen AEM resultaten in een zoekopdracht filteren.
+1. (Optioneel) Toegang `http://[server]:[port]/system/console/components/`. Configureer en schakel `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component in die standaard is uitgeschakeld. Stel een frequentie in waarmee [!DNL Experience Manager] controleert of metagegevens op de elementen geldig zijn.
+Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan jcr:inhoud van elementen. Met deze eigenschap kan [!DNL Experience Manager] de resultaten in een zoekopdracht filteren.
 
 >[!NOTE]
 >
@@ -295,4 +295,4 @@ Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan jcr:inhoud van
 
 >[!CAUTION]
 >
->De controles van de meta-gegevensbevestiging zijn middelintensief en kunnen de prestaties van uw systeem beïnvloeden. Plan de controles dienovereenkomstig. Als de AEM implementatie prestatieproblemen heeft, kunt u deze taak uitschakelen.
+>De controles van de meta-gegevensbevestiging zijn middelintensief en kunnen de prestaties van uw systeem beïnvloeden. Plan de controles dienovereenkomstig. Als de [!DNL Experience Manager]-implementatie prestatieproblemen heeft, kunt u deze taak uitschakelen.

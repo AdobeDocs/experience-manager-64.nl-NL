@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
-feature: Slimme tags,Tags,Zoeken
+feature: Smart Tags,Tagging,Search
 role: User
 exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
@@ -31,9 +31,9 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan ten 
 1. Klik of tik op **[!UICONTROL Save]** en klik of tik vervolgens op **[!UICONTROL OK]** om het dialoogvenster Succes te sluiten.
 1. Navigeer naar de pagina met eigenschappen voor de afbeelding. Let erop dat de tag die u hebt bevorderd een grote relevantie krijgt en daarom hoger wordt weergegeven in de zoekresultaten.
 
-## AEM zoekresultaten begrijpen met slimme tags {#understand-search-results-with-smart-tags}
+## [!DNL Experience Manager] zoekresultaten begrijpen met slimme tags {#understand-search-results-with-smart-tags}
 
-Standaard combineert AEM zoekopdracht de zoektermen met een `AND`-component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, wordt een extra `OR`-component toegevoegd om een zoekterm in de lijst te zoeken, past u slimme tags toe. U kunt bijvoorbeeld zoeken naar `woman running`. Elementen met alleen het trefwoord `woman` of `running` in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gecodeerd met `woman` of `running` met slimme tags, wordt echter wel weergegeven in een dergelijke zoekquery. De zoekresultaten zijn dus een combinatie van:
+Standaard worden bij het zoeken met [!DNL Experience Manager] de zoektermen gecombineerd met een `AND`-component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR`-component toe om een zoekterm in de lijst te zoeken, past u slimme tags toe. U kunt bijvoorbeeld zoeken naar `woman running`. Elementen met alleen het trefwoord `woman` of `running` in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gecodeerd met `woman` of `running` met slimme tags, wordt echter wel weergegeven in een dergelijke zoekquery. De zoekresultaten zijn dus een combinatie van:
 
 * elementen met zowel trefwoorden als `woman` en `running` in de metagegevens.
 * elementen die zijn gelabeld met een van de trefwoorden.

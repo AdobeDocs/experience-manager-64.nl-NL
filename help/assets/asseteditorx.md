@@ -2,12 +2,12 @@
 title: Editor van element uitbreiden
 description: Leer hoe u de mogelijkheden van de Asset Editor uitbreidt met behulp van aangepaste componenten.
 contentOwner: AG
-feature: Gereedschappen voor ontwikkelaars
+feature: Developer Tools
 role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '691'
 ht-degree: 13%
 
 ---
@@ -18,7 +18,7 @@ De Asset Editor is de pagina die wordt geopend wanneer op een element wordt gekl
 
 De configuratie van de redacteur die de vooraf bepaalde het uitgeven componenten gebruikt wordt behandeld in [Het creëren van en het Vormen van een Pagina van de Redacteur van Activa](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-Naast het gebruik van reeds bestaande editorcomponenten, kunnen de ontwikkelaars van Adobe Experience Manager (AEM) ook hun eigen componenten tot stand brengen.
+Naast het gebruik van reeds bestaande editorcomponenten, kunnen de ontwikkelaars van Adobe Experience Manager ook hun eigen componenten tot stand brengen.
 
 ## Een sjabloon voor de middeleneditor maken {#creating-an-asset-editor-template}
 
@@ -30,9 +30,9 @@ De volgende voorbeeldpagina&#39;s worden opgenomen in geometrixx:
 
 ### Clientlib configureren {#configuring-clientlib}
 
-AEM Assets-componenten gebruiken een extensie van de WCM-bewerkingsclient. De clientlibs worden gewoonlijk geladen in `init.jsp`.
+[!DNL Experience Manager Assets] componenten gebruiken een uitbreiding van WCM uitgeeft clientlib. De clientlibs worden gewoonlijk geladen in `init.jsp`.
 
-Vergeleken met het standaard clientlib laden (in kern `init.jsp`), moet een malplaatje van AEM Assets het volgende hebben:
+Vergeleken met het standaard clientlib laden (in kern `init.jsp`), moet een [!DNL Assets] malplaatje het volgende hebben:
 
 * De sjabloon moet de client lib `cq.dam.edit` bevatten (in plaats van `cq.wcm.edit`).
 
@@ -42,7 +42,7 @@ In de meeste gevallen moet het kopiëren van het bestaande monster `init.jsp` (`
 
 ### JS-handelingen configureren {#configuring-js-actions}
 
-Sommige AEM Assets-componenten vereisen JS-functies die zijn gedefinieerd in `component.js`. Kopieer dit bestand naar de map met componenten en koppel deze.
+Voor sommige [!DNL Assets]-componenten zijn JS-functies vereist die zijn gedefinieerd in `component.js`. Kopieer dit bestand naar de map met componenten en koppel deze.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -52,7 +52,7 @@ Het voorbeeld laadt deze JavaScript-bron in `head.jsp`(`/apps/geometrixx/compone
 
 ### Aanvullende stijlbladen {#additional-style-sheets}
 
-Sommige AEM Assets-componenten gebruiken de AEM-widgetbibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
+Sommige [!DNL Assets] componenten gebruiken [!DNL Experience Manager] widget bibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">

@@ -8,20 +8,20 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 5%
 
 ---
 
 # Videoassets beheren {#managing-video-assets}
 
-Leer hoe u de video-elementen beheert en bewerkt in Adobe Experience Manager (AEM) Assets. Raadpleeg ook de [Dynamic Media Video documentation](video.md) als u een licentie hebt om Dynamic Media te gebruiken.
+Leer hoe u de video-elementen beheert en bewerkt in Adobe Experience Manager Assets. Raadpleeg ook de [Dynamic Media Video documentation](video.md) als u een licentie hebt om Dynamic Media te gebruiken.
 
 ## Video-elementen uploaden en voorvertonen {#uploading-and-previewing-video-assets}
 
-AEM Assets genereert voorvertoningen voor video-elementen met de extensie MP4. Als de indeling van het element niet MP4 is, installeert u het MPEG-pakket om een voorvertoning te genereren. MPEG maakt video-uitvoeringen van het type OGG en MP4. U kunt deze uitvoeringen voorvertonen in de gebruikersinterface van AEM Assets.
+[!DNL Experience Manager] Elementen genereren voorvertoningen voor video-elementen met de extensie MP4. Als de indeling van het element niet MP4 is, installeert u het MPEG-pakket om een voorvertoning te genereren. MPEG maakt video-uitvoeringen van het type OGG en MP4. U kunt deze vertoningen voorvertonen in de gebruikersinterface [!DNL Experience Manager] Middelen.
 
 1. Navigeer in de map Digital Assets of in de submappen naar de locatie waar u digitale elementen wilt toevoegen.
 1. Als u het element wilt uploaden, klikt of tikt u op **[!UICONTROL Create]** op de werkbalk en kiest u **[!UICONTROL Files]**. U kunt het ook rechtstreeks in het gebied met elementen neerzetten. Zie [Elementen uploaden](managing-assets-touch-ui.md#uploading-assets) voor meer informatie over het uploaden.
@@ -39,16 +39,16 @@ AEM Assets genereert voorvertoningen voor video-elementen met de extensie MP4. A
 
 ## Configuratie voor het uploaden van middelen die groter zijn dan 2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-Standaard kunt u met de AEM Assets geen elementen uploaden die groter zijn dan 2 GB vanwege een maximale bestandsgrootte. Nochtans, kunt u deze grens overschrijven door in CRXDE Lite te gaan en een knoop onder de `/apps` folder te creëren. Het knooppunt moet dezelfde knooppuntnaam, directorystructuur en vergelijkbare knooppunteigenschappen van volgorde hebben.
+Standaard kunt u met de [!DNL Experience Manager] Elementen geen elementen uploaden die groter zijn dan 2 GB vanwege een maximale bestandsgrootte. Nochtans, kunt u deze grens overschrijven door in CRXDE Lite te gaan en een knoop onder de `/apps` folder te creëren. Het knooppunt moet dezelfde knooppuntnaam, directorystructuur en vergelijkbare knooppunteigenschappen van volgorde hebben.
 
-Naast de AEM Assets-configuratie wijzigt u de volgende configuraties om grote elementen te uploaden:
+Wijzig naast de configuratie [!DNL Experience Manager] Elementen de volgende configuraties om grote elementen te uploaden:
 
 * Verhoog de vervaltijd van het token. Zie [!UICONTROL Adobe Granite CSRF Servlet] in Webconsole op `https://[aem_server]:[port]/system/console/configMgr`. Zie [CSRF-beveiliging](/help/sites-developing/csrf-protection.md) voor meer informatie.
 * Verhoog de `receiveTimeout` in de configuratie van de Verzender. Voor meer informatie, zie [de configuratie van de Verzender van de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
->De AEM Klassieke gebruikersinterface heeft geen beperking voor de bestandsgrootte van twee gigabyte. Bovendien wordt de end-to-end workflow voor grote video niet volledig ondersteund.
+>De klassieke gebruikersinterface [!DNL Experience Manager] heeft geen beperking voor de bestandsgrootte van twee gigabyte. Bovendien wordt de end-to-end workflow voor grote video niet volledig ondersteund.
 
 Als u een hogere maximale bestandsgrootte wilt configureren, voert u de volgende stappen uit in de map `/apps`.
 

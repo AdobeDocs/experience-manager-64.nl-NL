@@ -2,12 +2,12 @@
 title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controles te doen, naleving te bereiken, en basishygiëne te handhaven
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
-feature: Workflow,uitvoeringen
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ Gebruik workflows in digitale elementen om het element te activeren of watermerk
 >
 >Als een workflow die beschikbaar is in de klassieke gebruikersinterface niet beschikbaar is in de interface met aanraakbediening, zoals [!UICONTROL Request to Activate] en [!UICONTROL Request to Deactivate], raadpleegt u [workflowmodellen maken](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui).
 
-## Een workflow toepassen op een AEM {#apply-a-workflow-to-an-aem-asset}
+## Een workflow toepassen op een [!DNL Experience Manager]-element {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 >[!MORELIKETHIS]
 >
 >* [Toepassen en deelnemen aan workflows](/help/sites-authoring/workflows.md)
-* [Workflowmodellen maken en workflowfunctionaliteit uitbreiden](/help/sites-developing/workflows.md)
-* [Methoden voor het uitvoeren van workflows](/help/sites-administering/workflows-starting.md)
-* [Best practices voor workflows](/help/sites-developing/workflows-best-practices.md)
+>* [Workflowmodellen maken en workflowfunctionaliteit uitbreiden](/help/sites-developing/workflows.md)
+>* [Methoden voor het uitvoeren van workflows](/help/sites-administering/workflows-starting.md)
+>* [Best practices voor workflows](/help/sites-developing/workflows-best-practices.md)
 

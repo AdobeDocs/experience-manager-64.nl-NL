@@ -1,24 +1,24 @@
 ---
 title: Lichtbak
-description: Meer informatie over Lichtbak in AEM Assets.
+description: Leer over Lichtbak in [!DNL Experience Manager] Middelen.
 contentOwner: AG
-feature: Gereedschappen voor ontwikkelaars, uitvoeringen
+feature: Developer Tools,Renditions
 role: User,Admin
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # Lichtbak {#lightbox}
 
-Meer informatie over Lichtbak in AEM Assets.
+Meer informatie over Lichtbak in [!DNL Experience Manager] Middelen.
 
 Lichtbak is een speciaal type verzameling dat eenvoudig toegang biedt tot elementen. U kunt snel toegang krijgen tot Lichtbak om elementen toe te voegen of te verwijderen. Het fungeert als een persoonlijke galerie voor afbeeldingen.
 
-Als u Adobe Experience Manager (AEM) Assets-gebruiker bent, wordt er automatisch een lichtbak gemaakt wanneer u zich voor het eerst aanmeldt bij de toepassing. Dit is exclusief voor uw aanmelding. Andere gebruikers hebben geen toegang tot uw lichtbak.
+Als u Adobe Experience Manager Assets gebruikt, wordt Lichtbak automatisch gemaakt wanneer u zich voor het eerst aanmeldt bij de toepassing. Dit is exclusief voor uw aanmelding. Andere gebruikers hebben geen toegang tot uw lichtbak.
 
 ## Elementen toevoegen aan lichtbak {#adding-assets-to-lightbox}
 

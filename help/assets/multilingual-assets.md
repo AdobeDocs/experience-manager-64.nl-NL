@@ -2,12 +2,12 @@
 title: Meertalige activa
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Admin
 exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 Met Adobe Experience Manager (AEM) Assets kunt u vertaalworkflows automatiseren voor middelen (waaronder binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
-Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met AEM en creeert projecten voor het vertalen van activa in veelvoudige talen. AEM ondersteunt workflows voor het vertalen van mensen en machines.
+Als u vertaalworkflows wilt automatiseren, integreert u vertaalserviceproviders met [!DNL Experience Manager] en maakt u projecten voor het vertalen van middelen in meerdere talen. [!DNL Experience Manager] ondersteunt workflows voor het vertalen van mensen en machines.
 
-Menselijke vertaling: De vertaalde elementen worden geretourneerd en in AEM geïmporteerd. Wanneer uw vertaalbureau is geïntegreerd met AEM, worden middelen automatisch verzonden tussen AEM en de vertaalprovider.
+Menselijke vertaling: De vertaalde elementen worden geretourneerd en in AEM geïmporteerd. Wanneer uw vertaalprovider is geïntegreerd met AEM, worden middelen automatisch verzonden tussen [!DNL Experience Manager] en de vertaalprovider.
 
 Machinevertaling: De vertaalservice zet de metagegevens en tags voor elementen direct om.
 
 Omvat vertaalde activa het volgende:
 
-1. [Verbinding maken AEM met de vertaalserviceprovider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Verbinding maken [!DNL Experience Manager] met de vertaalserviceprovider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Configuraties van het framework voor vertaalintegratie maken](/help/sites-administering/tc-tic.md)
 1. [Elementen voorbereiden voor vertaling](preparing-assets-for-translation.md)
 1. [Vertaalwolkenservices toepassen op mappen](transition-cloud-services.md)

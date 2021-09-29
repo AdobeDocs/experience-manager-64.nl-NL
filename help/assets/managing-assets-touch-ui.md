@@ -1,27 +1,27 @@
 ---
-title: Uw digitale middelen beheren met AEM Assets
-description: Meer informatie over de verschillende functies voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets
+title: Uw digitale middelen beheren met behulp van [!DNL Experience Manager] Middelen
+description: Meer informatie over verschillende taken voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van  [!DNL Experience Manager] Middelen
 contentOwner: AG
 mini-toc-levels: 1
-feature: Middelenbeheer, Zoeken, Uitvoeringen, Samenwerking
+feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '9810'
+source-wordcount: '9757'
 ht-degree: 1%
 
 ---
 
 # Uw digitale middelen beheren {#managing-assets-with-the-touch-optimized-ui}
 
-Leer meer over verschillende functies voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets.
+Meer informatie over verschillende taken voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van [!DNL Experience Manager] Middelen.
 
-In dit artikel wordt beschreven hoe u elementen beheert en bewerkt met de door Adobe Experience Manager (AEM) Assets Touch geoptimaliseerde gebruikersinterface. Voor elementaire kennis van de gebruikersinterface, zie [Basisbehandeling van Aanraakinterface](/help/sites-authoring/basic-handling.md). Zie [Inhoudsfragmenten beheren](content-fragments-managing.md) elementen voor het beheren van Inhoudsfragmenten.
+In dit artikel wordt beschreven hoe u elementen beheert en bewerkt met de gebruikersinterface die is geoptimaliseerd voor Adobe Experience Manager Assets Touch. Voor elementaire kennis van de gebruikersinterface, zie [Basisbehandeling van Aanraakinterface](/help/sites-authoring/basic-handling.md). Zie [Inhoudsfragmenten beheren](content-fragments-managing.md) elementen voor het beheren van Inhoudsfragmenten.
 
 ## Mappen maken {#create-folders}
 
-Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature`-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM Assets hoeft u elementen niet in mappen te ordenen om beter te werken.
+Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature`-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. [!DNL Experience Manager] Voor elementen hoeft u elementen niet in mappen te ordenen om beter te werken.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ De volgende tekens (lijst met door spaties gescheiden tekens) worden niet onders
 
 ## Elementen uploaden {#uploading-assets}
 
-U kunt verschillende typen elementen (zoals afbeeldingen, PDF-bestanden, RAW-bestanden, enzovoort) uploaden van uw lokale map of een netwerkstation naar AEM Assets.
+U kunt verschillende typen elementen (zoals afbeeldingen, PDF-bestanden, RAW-bestanden, enzovoort) uploaden van uw lokale map of een netwerkstation naar [!DNL Experience Manager] Middelen.
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ Voordat u een element uploadt, moet u ervoor zorgen dat het een [ondersteunde in
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   Als u een actieve upload wilt annuleren, klikt u op de knop `X` naast de voortgangsbalk. Wanneer u het uploaden annuleert, verwijdert AEM Assets het gedeeltelijk geüploade gedeelte van het element.
+   Als u een actieve upload wilt annuleren, klikt u op de knop `X` naast de voortgangsbalk. Wanneer u de uploadbewerking annuleert, verwijdert [!DNL Experience Manager] Middelen het gedeeltelijk geüploade gedeelte van het element.
 
    De mogelijkheid om het uploaden te hervatten is vooral handig in scenario&#39;s met lage bandbreedte en netwerkstoringen, waarbij het uploaden van een groot element veel tijd in beslag neemt. U kunt het uploaden pauzeren en verdergaan wanneer de situatie verbetert. Wanneer u het document hervat, begint het uploaden vanaf het punt waarop u het hebt gepauzeerd.
 
-   Tijdens het uploaden slaat AEM de delen van het element dat wordt geüpload op als stukjes gegevens in de CRX-opslagplaats. Wanneer het uploaden is voltooid, consolideert AEM deze fragmenten in één gegevensblok in de gegevensopslagruimte.
+   Tijdens het uploaden slaat [!DNL Experience Manager] de delen van het element dat wordt geüpload op als stukjes gegevens in de CRX-opslagplaats. Wanneer het uploaden is voltooid, worden deze fragmenten door [!DNL Experience Manager] geconsolideerd in één gegevensblok in de gegevensopslagruimte.
 
    Ga naar `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask` om de opschoningstaak voor de onvoltooide taken voor het uploaden van taken te configureren.
 
@@ -99,7 +99,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat het een [ondersteunde in
    >
    >Als **[!UICONTROL Asset Insights]** is ingeschakeld om afbeeldingen bij te houden/op Adobe Analytics te klikken, maakt deze opnieuw gegenereerde element-id de gegevensopname voor het element op Adobe Analytics ongeldig.
 
-   Als het element dat u uploadt bestaat in AEM Assets, wordt in het dialoogvenster **[!UICONTROL Duplicates Detected]** gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de controlesom SHA 1 van de binaire waarde van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van activa niet van belang. Met andere woorden, het dialoogvenster kan zelfs worden weergegeven voor elementen met verschillende namen als de SHA 1-waarden voor hun binaire getallen gelijk zijn.
+   Als het element dat u uploadt aanwezig is in [!DNL Experience Manager] Middelen, wordt in het dialoogvenster **[!UICONTROL Duplicates Detected]** gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de controlesom SHA 1 van de binaire waarde van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van activa niet van belang. Met andere woorden, het dialoogvenster kan zelfs worden weergegeven voor elementen met verschillende namen als de SHA 1-waarden voor hun binaire getallen gelijk zijn.
 
    >[!NOTE]
    >
@@ -107,9 +107,9 @@ Voordat u een element uploadt, moet u ervoor zorgen dat het een [ondersteunde in
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   Tik **[!UICONTROL Keep]** om het gedupliceerde element in AEM Assets te behouden. Tik **[!UICONTROL Delete]** om het geüploade dubbele element te verwijderen.
+   Tik **[!UICONTROL Keep]** om het gedupliceerde element in [!DNL Experience Manager] Elementen te behouden. Tik **[!UICONTROL Delete]** om het geüploade dubbele element te verwijderen.
 
-   AEM Assets voorkomt dat u elementen uploadt met verboden tekens in de bestandsnaam. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, geeft AEM Assets een waarschuwingsbericht weer over de aanwezigheid van verboden tekens in de bestandsnaam en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
+   [!DNL Experience Manager] Met elementen wordt voorkomen dat elementen met verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, [!DNL Experience Manager] Hier wordt een waarschuwingsbericht weergegeven met betrekking tot de aanwezigheid van verboden tekens in de bestandsnaam en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
    Als u specifieke conventies voor het benoemen van bestanden voor uw organisatie wilt gebruiken, kunt u in het dialoogvenster **[!UICONTROL Upload Assets]** lange namen opgeven voor de bestanden die u uploadt.
 
@@ -125,13 +125,13 @@ Voordat u een element uploadt, moet u ervoor zorgen dat het een [ondersteunde in
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   Als u het uploaden annuleert voordat de bestanden zijn geüpload, stopt AEM Assets met het uploaden van het huidige bestand en wordt de inhoud vernieuwd. Bestanden die al zijn geüpload, worden echter niet verwijderd.
+   Als u het uploaden annuleert voordat de bestanden zijn geüpload, wordt het huidige bestand niet meer geüpload en wordt de inhoud vernieuwd. [!DNL Experience Manager] Bestanden die al zijn geüpload, worden echter niet verwijderd.
 
 ### Seriële uploads {#serial-uploads}
 
-Het uploaden van talrijke activa in bulk verbruikt significante systeemmiddelen, die de prestaties van uw AEM plaatsing kunnen negatief beïnvloeden. Potentiële knelpunten kunnen zijn: uw internetverbinding, lees-schrijfbewerkingen op schijf, beperkingen van de webbrowser voor het aantal aanvragen van POSTEN voor het uploaden van gelijktijdig geplaatste elementen. Het uploaden van een lamp kan mislukken of voortijdig beëindigen. Met andere woorden, AEM elementen kunnen bepaalde bestanden missen terwijl ze een aantal bestanden innemen of kunnen helemaal geen bestanden inslikken.
+Het uploaden van talloze assets in bulk verbruikt aanzienlijke systeembronnen, wat de prestaties van uw [!DNL Experience Manager]-implementatie negatief kan beïnvloeden. Potentiële knelpunten kunnen zijn: uw internetverbinding, lees-schrijfbewerkingen op schijf, beperkingen van de webbrowser voor het aantal aanvragen van POSTEN voor het uploaden van gelijktijdig geplaatste elementen. Het uploaden van een lamp kan mislukken of voortijdig beëindigen. Met andere woorden, [!DNL Experience Manager] elementen kunnen sommige bestanden missen terwijl ze een hoop bestanden inslikken of kunnen geen enkel bestand inslikken.
 
-Om deze situatie te verhelpen, neemt AEM Assets één middel tegelijkertijd (periodieke upload) tijdens een bulkupload verrichting op, in plaats van het tegelijkertijd opnemen van alle activa.
+Om deze situatie te verhelpen, [!DNL Experience Manager] neemt de activa één activa tegelijkertijd (periodieke upload) tijdens een bulkupload verrichting op, in plaats van het tegelijkertijd opnemen van alle activa.
 
 Seriële uploaden van elementen is standaard ingeschakeld. Als u de functie wilt uitschakelen en tegelijkertijd uploaden wilt toestaan, bedekt u de `fileupload`-node in CRXDe en stelt u de waarde van de eigenschap `parallelUploads` in op `true`.
 
@@ -145,9 +145,9 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 
 >[!NOTE]
 >
->Om elementen via FTP te uploaden in Dynamic Media - Scene7 mode installeert feature pack (FP) 18912 op AEM auteur. Neem contact op met de klantenservice van Adobe om toegang te krijgen tot FP-18912 en de installatie van uw FTP-account te voltooien. Zie [Actiepakket 18912 installeren voor de migratie van grote hoeveelheden elementen](/help/assets/bulk-ingest-migrate.md).
+>Om elementen via FTP te uploaden in Dynamic Media - Scene7 mode installeert feature pack (FP) 18912 op [!DNL Experience Manager] auteur. Neem contact op met de klantenservice van Adobe om toegang te krijgen tot FP-18912 en de installatie van uw FTP-account te voltooien. Zie [Actiepakket 18912 installeren voor de migratie van grote hoeveelheden elementen](/help/assets/bulk-ingest-migrate.md).
 >
->Als u FTP gebruikt om elementen te uploaden, worden de uploadinstellingen die in AEM zijn opgegeven genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
+>Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen die zijn opgegeven in [!DNL Experience Manager] genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
 **Elementen uploaden met FTP**
 
@@ -167,7 +167,7 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 1. Tik in de rechterbenedenhoek van het dialoogvenster **[!UICONTROL Upload Job Options]** op **[!UICONTROL Save]**.
 1. Tik in de rechterbenedenhoek van de pagina **[!UICONTROL Upload]** op **[!UICONTROL Submit Upload]**.
 
-   Tik op **[!UICONTROL Jobs]** om de voortgang van het uploaden te bekijken. Op de pagina **[!UICONTROL Jobs]** wordt de voortgang van het uploaden weergegeven. U kunt op elk gewenst moment blijven werken in AEM en terugkeren naar de pagina Taken in Dynamic Media Classic om een actieve taak te controleren.
+   Tik op **[!UICONTROL Jobs]** om de voortgang van het uploaden te bekijken. Op de pagina **[!UICONTROL Jobs]** wordt de voortgang van het uploaden weergegeven. U kunt in [!DNL Experience Manager] blijven werken en aan de pagina van Banen in de Klassiek van Dynamic Media op elk ogenblik terugkeren om een lopende baan te herzien.
 
    Als u een actieve uploadtaak wilt annuleren, tikt u op **[!UICONTROL Cancel]** naast de **[!UICONTROL Duration]**-tijd.
 
@@ -181,7 +181,7 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 | ZIP- of TAR-bestanden decomprimeren tijdens het uploaden |  |  |
 | Taakopties |  | Tik/ klik op **[!UICONTROL Job Options]** om het dialoogvenster [!UICONTROL Upload Job Options] te openen en opties te kiezen die van invloed zijn op de volledige uploadtaak. Deze opties zijn hetzelfde voor alle bestandstypen.<br>U kunt standaardopties kiezen voor het uploaden van bestanden die beginnen op de pagina Algemene instellingen van toepassing. Kies **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** om deze pagina te openen. Tik op de knop **[!UICONTROL Default Upload Options]** om het dialoogvenster [!UICONTROL Upload Job Options] te openen. |
 |  | Wanneer | Selecteer Eenmalig of Herhalend. Als u een terugkerende taak wilt instellen, kiest u de optie Herhalen (Dagelijks, Wekelijks, Maandelijks of Aangepast) om op te geven wanneer de FTP-uploadtaak moet worden herhaald. Geef vervolgens de gewenste planningsopties op. |
-|  | Inclusief submappen | Upload alle submappen in de map die u wilt uploaden. De namen van de map en de submappen die u uploadt, worden automatisch ingevoerd in AEM Assets. |
+|  | Inclusief submappen | Upload alle submappen in de map die u wilt uploaden. De namen van de map en de submappen die u uploadt, worden automatisch ingevoerd in Elementen [!DNL Experience Manager]. |
 |  | Opties voor uitsnijden | Als u handmatig wilt uitsnijden aan weerszijden van een afbeelding, selecteert u het menu Uitsnijden en kiest u Handmatig. Voer vervolgens het aantal pixels in dat u aan elke zijde van de afbeelding wilt uitsnijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand. Als de afbeelding bijvoorbeeld 150 ppi weergeeft en u 75 invoert in de tekstvakken Boven, Rechts, Onder en Links, wordt aan beide zijden een halve inch bijgesneden.<br> Als u pixels in witruimte automatisch wilt uitsnijden in een afbeelding, opent u het menu Uitsnijden, kiest u Handmatig en voert u pixelmetingen in in de velden Boven, Rechts, Onder en Links om van de zijkanten bij te snijden. U kunt ook Bijsnijden kiezen in het menu Uitsnijden en de volgende opties kiezen:<br> **Wegsnijden op basis van** <ul><li>**Kleur**  - Kies de optie Kleur. Selecteer vervolgens het menu Hoek en kies de hoek van de afbeelding met de kleur die het beste overeenkomt met de kleur voor de witruimte die u wilt uitsnijden.</li><li>**Transparantie**  - Kies de optie Transparantie.<br> **Tolerantie**  - Sleep de schuifregelaar om een tolerantie tussen 0 en 1 op te geven. Geef voor bijsnijden op basis van kleur 0 op om alleen pixels bij te snijden als deze exact overeenkomen met de kleur die u in de hoek van de afbeelding hebt geselecteerd. De aantallen dichter aan 1 staan voor meer kleurenverschil toe.<br>Voor het bijsnijden op basis van transparantie geeft u 0 op om alleen pixels bij te snijden als deze transparant zijn. De aantallen dichter aan 1 staan voor meer transparantie toe.</li></ul><br>Deze opties voor uitsnijden zijn niet-destructief. |
 |  | Opties voor kleurprofiel | Kies een kleurconversie wanneer u geoptimaliseerde bestanden maakt die worden gebruikt voor levering:<ul><li>Standaardkleurbehoud: De kleuren van de bronafbeelding blijven behouden wanneer de afbeeldingen kleurruimte-informatie bevatten. er is geen kleurconversie. In bijna alle afbeeldingen van vandaag is het juiste kleurprofiel al ingesloten. Als een CMYK-bronafbeelding echter geen ingesloten kleurprofiel bevat, worden de kleuren omgezet in de kleurruimte sRGB (standaard rood-groen-blauw). sRGB is de aanbevolen kleurruimte voor het weergeven van afbeeldingen op webpagina&#39;s.</li><li>Oorspronkelijke kleurruimte behouden: Behoudt de oorspronkelijke kleuren zonder kleurconversie op het punt. Voor afbeeldingen zonder ingesloten kleurprofiel wordt elke kleurconversie uitgevoerd met de standaardkleurprofielen die zijn geconfigureerd in de Publicatie-instellingen. De kleurprofielen worden mogelijk niet uitgelijnd met de kleur in de bestanden die met deze optie zijn gemaakt. Daarom wordt u aangeraden de optie Standaardkleurbehoud te gebruiken.</li><li>Met Aangepast van > Naar<br> opent u menu&#39;s, zodat u een optie kunt kiezen voor Omzetten van en Omzetten in kleurruimte. Deze geavanceerde optie negeert alle kleurinformatie die in het bronbestand is ingesloten. Selecteer deze optie als alle afbeeldingen die u verzendt, onjuiste of ontbrekende kleurprofielgegevens bevatten.</li></ul> |
 |  | Beeldbewerkingsopties | U kunt de knipmaskers in afbeeldingen behouden en een kleurprofiel kiezen.<br> Zie Opties voor  [het bewerken van afbeeldingen tijdens het uploaden](#setting-image-editing-options-at-upload) instellen. |
@@ -298,17 +298,17 @@ Zie [Voorinstellingen voor batchsets configureren voor het automatisch genereren
 
 ### Gestroomde uploads {#streamed-uploads}
 
-Als u een groot aantal middelen uploadt, neemt de I/O-aanroepen naar de AEM server drastisch toe, waardoor de uploadefficiëntie afneemt en zelfs de time-out kan toenemen. AEM Assets ondersteunt gestreamd uploaden van middelen. Gestroomd uploaden reduceert de schijf-I/O tijdens het uploaden door opslag van middelen in een tijdelijke map op de server te voorkomen voordat deze naar de opslagplaats wordt gekopieerd. In plaats daarvan worden de gegevens rechtstreeks naar de gegevensopslagruimte overgedragen. Op deze manier wordt de uploadtijd voor grote middelen en de mogelijkheid van time-outs verminderd. Uploaden via streaming is standaard ingeschakeld in AEM Assets.
+Als u een groot aantal middelen uploadt, neemt de I/O-aanroep naar de [!DNL Experience Manager]-server drastisch toe, waardoor de uploadefficiëntie afneemt en er zelfs een time-out kan optreden. [!DNL Experience Manager] Elementen ondersteunen gestreamd uploaden van elementen. Gestroomd uploaden reduceert de schijf-I/O tijdens het uploaden door opslag van middelen in een tijdelijke map op de server te voorkomen voordat deze naar de opslagplaats wordt gekopieerd. In plaats daarvan worden de gegevens rechtstreeks naar de gegevensopslagruimte overgedragen. Op deze manier wordt de uploadtijd voor grote middelen en de mogelijkheid van time-outs verminderd. Gestroomde upload wordt standaard ingeschakeld in [!DNL Experience Manager] Middelen.
 
-Uploaden naar streaming is uitgeschakeld voor AEM die op de JEE-server wordt uitgevoerd met servlet-api versie lager dan 3.1.
+Streaming uploaden is uitgeschakeld wanneer [!DNL Experience Manager] wordt uitgevoerd op JEE-server met servlet-api-versie lager dan 3.1.
 
 ### ZIP-archief met elementen extraheren {#extract-zip-archive-containing-assets}
 
-U kunt ZIP-archieven net als alle andere ondersteunde elementen uploaden. Dezelfde regels voor bestandsnaam gelden voor ZIP-bestanden. AEM kunt u een ZIP-archief extraheren naar een DAM-locatie.
+U kunt ZIP-archieven net als alle andere ondersteunde elementen uploaden. Dezelfde regels voor bestandsnaam gelden voor ZIP-bestanden. [!DNL Experience Manager] kunt u een ZIP-archief extraheren naar een DAM-locatie.
 
 Selecteer één archief van het PIT tegelijkertijd, klik **[!UICONTROL Extract Archive]**, en selecteer een bestemmingsomslag. Selecteer een optie om eventuele conflicten af te handelen. Als de elementen in het ZIP-bestand al in de doelmap staan, kunt u een van de volgende opties selecteren: extractie overslaan, bestaande bestanden vervangen, beide elementen behouden door een andere naam te geven of een nieuwe versie te maken.
 
-Nadat de extractie is voltooid, AEM u op de hoogte brengt in het systeemvak. Terwijl AEM het ZIP extraheert, kunt u teruggaan naar uw werk zonder de extractie te onderbreken.
+Nadat de extractie is voltooid, [!DNL Experience Manager] brengt u op de hoogte in het systeemvak. Hoewel [!DNL Experience Manager] de ZIP extraheert, kunt u teruggaan naar uw werk zonder de extractie te onderbreken.
 
 ![Kennisgeving van de ZIP-extractie](assets/zip_extract_notification.png)
 
@@ -413,7 +413,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >Als u een element op dezelfde locatie kopieert, AEM automatisch een variatie van de naam. Als u bijvoorbeeld een element met de naam Vierkant kopieert, genereert AEM automatisch de titel voor de kopie als Vierkant1.
+   >Als u een element op dezelfde locatie kopieert, wordt automatisch een variatie in de naam gegenereerd. [!DNL Experience Manager] Als u bijvoorbeeld een element met de naam Vierkant kopieert, genereert [!DNL Experience Manager] automatisch de titel voor de kopie als Vierkant1.
 
 1. Tik op het middelenpictogram **[!UICONTROL Paste]** van de werkbalk:
 
@@ -500,7 +500,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
 
    >[!NOTE]
    >
-   >Standaard geeft AEM Assets de oorspronkelijke uitvoering van het element niet weer in de voorvertoningsmodus. Beheerders kunnen met overlays AEM Assets configureren voor het weergeven van originele uitvoeringen in de voorvertoningsmodus.
+   >Standaard wordt in [!DNL Experience Manager] Elementen de oorspronkelijke uitvoering van het element niet weergegeven in de voorvertoningsmodus. Als beheerder kunt u overlays gebruiken om [!DNL Experience Manager] Middelen te configureren voor het weergeven van originele uitvoeringen in de voorvertoningsmodus.
 
 1. Selecteer een vertoning om de vertoning weer te geven of te verwijderen.
 
@@ -520,7 +520,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
    >
    >Als u een uitvoering selecteert in het deelvenster **[!UICONTROL Renditions]**, verandert de context van de werkbalk en worden alleen die acties weergegeven die relevant zijn voor de uitvoering. Opties, zoals het pictogram **[!UICONTROL Upload Rendition]**, worden niet weergegeven. Ga naar de pagina met details voor de asset om deze opties in de werkbalk weer te geven.
 
-   U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, geeft AEM Assets de vertoning weer met de exacte of dichtstbijzijnde afmetingen.
+   U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, wordt de vertoning met de exacte of dichtstbijzijnde afmetingen weergegeven.[!DNL Experience Manager]
 
    Als u de vertoningsafmetingen van een afbeelding op het detailniveau van de elementen wilt configureren, bedekt u de **[!UICONTROL renditionpicker]**-node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` en configureert u de waarde van de eigenschap width. Configureer de eigenschap **[!UICONTROL size (Long) in KB]** in plaats van de breedte om de weergave op de pagina met assetdetails aan te passen op basis van de afbeeldingsgrootte. Voor aanpassing op basis van grootte wijst de eigenschap **[!UICONTROL preferOriginal]** de voorkeur toe aan het origineel als de grootte van de overeenkomstige weergave groter is dan het origineel.
 
@@ -615,10 +615,10 @@ CUG is een extra manier om de toegang tot uw elementen te beperken. U kunt ook e
 
    ![login_page](assets/login_page.png)
 
-   Als u het pad naar een aanmeldingspagina niet opgeeft, wordt AEM de standaardaanmeldingspagina weergegeven in de publicatie-instantie.
+   Als u het pad naar een aanmeldingspagina niet opgeeft, wordt de standaardaanmeldingspagina weergegeven in de publicatie-instantie.[!DNL Experience Manager]
 
 1. Publiceer de map en probeer deze vervolgens te openen vanuit de publicatie-instantie. Er wordt een aanmeldingsscherm weergegeven.
-1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven nadat AEM u heeft geverifieerd.
+1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven nadat [!DNL Experience Manager] u heeft geverifieerd.
 
 ## Assets doorzoeken {#searching-assets}
 
@@ -628,7 +628,7 @@ Het basisonderzoek wordt gedetailleerd in [Onderzoek en filter](/help/sites-auth
 
 Voor recent geüploade elementen zijn de metagegevens (waaronder titels, tags, enzovoort) niet direct beschikbaar in de lijst met suggesties die worden weergegeven wanneer u in het vak Zoeken typt.
 
-AEM Assets wacht namelijk tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd. Deze taak is bedoeld om de metagegevens voor alle nieuw geüploade/bijgewerkte elementen te indexeren en deze aan de lijst met suggesties toe te voegen.
+Dit komt omdat [!DNL Experience Manager] Elementen wachten tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade/bijgewerkte elementen te indexeren en deze aan de lijst met suggesties toe te voegen.
 
 ## Snelle handelingen gebruiken {#quick-actions}
 
@@ -655,7 +655,7 @@ Voor meer informatie, zie [Het bekijken van en het Selecteren van uw Middelen](/
 
 ## Afbeeldingen bewerken {#editing-images}
 
-Met de bewerkingsgereedschappen in de AEM Assets-interface kunt u kleine bewerktaken uitvoeren op afbeeldingselementen. U kunt afbeeldingen uitsnijden, roteren, spiegelen en andere bewerkingstaken uitvoeren. U kunt ook afbeeldingen met hyperlinks toevoegen aan elementen.
+Met de bewerkingsgereedschappen in de interface [!DNL Experience Manager] Middelen kunt u kleine bewerkingstaken uitvoeren op afbeeldingselementen. U kunt afbeeldingen uitsnijden, roteren, spiegelen en andere bewerkingstaken uitvoeren. U kunt ook afbeeldingen met hyperlinks toevoegen aan elementen.
 
 Beeldbewerking wordt ondersteund voor bestanden met de volgende indelingen:
 
@@ -715,7 +715,7 @@ Met **[!UICONTROL Timeline]** kunt u verschillende gebeurtenissen voor een gesel
 
 In de [Collections console](managing-collections-touch-ui.md#navigating-the-collections-console) biedt de lijst **[!UICONTROL Show All]** opties om alleen opmerkingen en workflows weer te geven. Bovendien wordt de chronologie getoond slechts voor top-level inzamelingen die in de console vermeld zijn. Deze wordt niet weergegeven als u in een van de verzamelingen navigeert.
 
-**[!UICONTROL Timeline]** bevat diverse  [opties die specifiek zijn voor inhoudsfragmenten](content-fragments-managing.md#timeline-for-content-fragments); deze functionaliteit vereist  [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of later.
+**[!UICONTROL Timeline]** bevat diverse  [opties die specifiek zijn voor inhoudsfragmenten](content-fragments-managing.md#timeline-for-content-fragments); deze functionaliteit vereist  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of later.
 
 **Tijdlijn** gebruiken:
 
@@ -732,9 +732,9 @@ In de [Collections console](managing-collections-touch-ui.md#navigating-the-coll
 
 Annotaties zijn opmerkingen of toelichtingen die aan afbeeldingen of video&#39;s worden toegevoegd. Annotaties bieden marketers de mogelijkheid samen te werken en feedback over middelen te geven.
 
-Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. De video-indelingen die door AEM Assets worden ondersteund, zijn afhankelijk van de browser.
+Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. De video formaten die [!DNL Experience Manager] Activa steunen hangen van browser af.
 
-Voor Inhoudsfragmenten worden [annotaties gemaakt in de editor](content-fragments-variations.md#annotating-a-content-fragment); voor deze functionaliteit is [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of hoger vereist.
+Voor Inhoudsfragmenten worden [annotaties gemaakt in de editor](content-fragments-variations.md#annotating-a-content-fragment); voor deze functionaliteit is [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of hoger vereist.
 
 U kunt meerdere annotaties toevoegen voordat u ze opslaat.
 
@@ -750,7 +750,7 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
    * [Snelle acties](managing-assets-touch-ui.md#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. U kunt ook een gebied in de afbeelding markeren en een annotatie toevoegen in het dialoogvenster **[!UICONTROL Add Annotation]**.
 
@@ -769,7 +769,7 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. Tik **[!UICONTROL Close]** om de modus **[!UICONTROL Annotation]** af te sluiten.
-1. Als u de melding wilt weergeven, meldt u zich aan bij AEM Assets met de gegevens van Aaron MacDonald en tikt u op het pictogram **[!UICONTROL Notifications]** om de melding weer te geven.
+1. Als u de melding wilt weergeven, meldt u zich aan bij [!DNL Experience Manager] Middelen met de gegevens van Aaron MacDonald en tikt u op het pictogram **[!UICONTROL Notifications]** om de melding weer te geven.
 
 1. Tik op het pictogram **[!UICONTROL Profile]** en tik **[!UICONTROL My Preferences]** om een andere kleur te kiezen zodat u onderscheid kunt maken tussen gebruikers.
 
@@ -861,12 +861,12 @@ Als u de annotaties en de revisiestatus wilt afdrukken, tikt u op het pictogram 
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
-**Annotaties afdrukken in vreemde talen**: Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
+**Annotaties afdrukken in vreemde talen**: Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de  [!DNL Experience Manager] server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
 
 1. Open de **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** configuratiepagina via de URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Voer een van de volgende handelingen uit om **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** te configureren:
 
-   * Geef in de directory **[!UICONTROL System Fonts]** het volledige pad naar de map Fonts op uw systeem op. Bijvoorbeeld, als u een gebruiker van MAC bent, kunt u de weg als `/Library/Fonts` in de **[!UICONTROL System Fonts]** folderoptie specificeren. AEM haalt de lettertypen uit deze map op.
+   * Geef in de directory **[!UICONTROL System Fonts]** het volledige pad naar de map Fonts op uw systeem op. Bijvoorbeeld, als u een gebruiker van MAC bent, kunt u de weg als `/Library/Fonts` in de **[!UICONTROL System Fonts]** folderoptie specificeren. [!DNL Experience Manager] haalt de lettertypen op uit deze map.
    * Maak een map met de naam **fonts** in de map **[!UICONTROL crx-quickstart]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** haalt automatisch de lettertypen op de locatie op  `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de mapoptie **[!UICONTROL Adobe Server Fonts]**.
    * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de directory **[!UICONTROL Customer Fonts]**.
 
@@ -875,9 +875,9 @@ Als u de annotaties en de revisiestatus wilt afdrukken, tikt u op het pictogram 
 
    * Neem de tekenreeks `<font_family_name_of_custom_font, sans-serif>` op in de optie font-family. Als u bijvoorbeeld annotaties wilt afdrukken in CJK (Chinees, Japans en Koreaans), neemt u de tekenreeks `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` op in de optie font-family. Als u annotaties wilt afdrukken in het Hindi, downloadt u het juiste lettertype en configureert u de lettertypefamilie als Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Start de AEM opnieuw.
+1. Start de instantie [!DNL Experience Manager] opnieuw.
 
-Hieronder ziet u hoe u AEM configureert voor het afdrukken van annotaties in CJK (Chinees, Japans en Koreaans):
+Hieronder ziet u hoe u [!DNL Experience Manager] configureert voor het afdrukken van annotaties in CJK (Chinees, Japans en Koreaans):
 
 1. Download Google Noto CJK-lettertypen van de volgende koppelingen en sla deze op in de lettertypemap die is geconfigureerd in Font Manager Service.
 
@@ -894,9 +894,9 @@ Met Versioning maakt u een momentopname van digitale elementen op een bepaald ti
 
 Hieronder vindt u scenario&#39;s waarin u versies maakt:
 
-* U wijzigt een afbeelding in een andere toepassing en uploadt deze naar AEM Assets. Er wordt een versie van de afbeelding gemaakt, zodat de oorspronkelijke afbeelding niet wordt overschreven.
+* U wijzigt een afbeelding in een andere toepassing en uploadt deze naar [!DNL Experience Manager] Elementen. Er wordt een versie van de afbeelding gemaakt, zodat de oorspronkelijke afbeelding niet wordt overschreven.
 * U bewerkt de metagegevens van een element.
-* U gebruikt AEM bureaubladtoepassing om een bestaand middel uit te checken en uw wijzigingen op te slaan. Telkens wanneer het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
+* Met de [!DNL Experience Manager]-bureaubladtoepassing kunt u een bestaand middel uitchecken en uw wijzigingen opslaan. Telkens wanneer het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
 
 U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
@@ -952,7 +952,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 ### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
-Zie [een workflow toepassen op een AEM element](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
+Zie [een workflow toepassen op een  [!DNL Experience Manager] element](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
 
 ## Informatie over verzamelingen {#collections}
 

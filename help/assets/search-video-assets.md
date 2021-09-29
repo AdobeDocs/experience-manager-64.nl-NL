@@ -1,13 +1,13 @@
 ---
 title: Video-elementen zoeken
-description: Gebruik trefwoorden, bestandseigenschappen, zoals een MIME-type, grootte of onlangs gewijzigde tijdstempel om het bestand snel in AEM Assets te vinden.
+description: Gebruik trefwoorden, bestandseigenschappen zoals een Mime-type, grootte of onlangs gewijzigde tijdstempel om het bestand snel te vinden in [!DNL Experience Manager] Middelen.
 contentOwner: AG
-feature: Video,zoeken
+feature: Video,Search
 role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---

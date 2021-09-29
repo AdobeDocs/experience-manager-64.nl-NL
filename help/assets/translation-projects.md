@@ -2,12 +2,12 @@
 title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten kunt maken in AEM.
 contentOwner: AG
-feature: Vertaling
+feature: Translation
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1807'
 ht-degree: 17%
 
 ---
@@ -282,9 +282,9 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 ## Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
-Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. AEM Assets slaat de nieuw vertaalde middelen op een tijdelijke locatie op en werkt de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
+Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Experience Manager] Middelen slaan de nieuw vertaalde elementen op een tijdelijke locatie op en werken de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
 
-1. Klik of tik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt, en klik of tik vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in AEM Assets.
+1. Klik of tik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt, en klik of tik vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in Assets.[!DNL Experience Manager]
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 

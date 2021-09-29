@@ -2,12 +2,12 @@
 title: Middelen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om het vertalen van meertalige middelen voor te bereiden.
 contentOwner: AG
-feature: Projecten,vertalen
+feature: Projects,Translation
 role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '442'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten.
 
-In Adobe Experience Manager (AEM) Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
+In Adobe Experience Manager Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
 
 Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdmap van de taal genoemd, identificeert de taal van de inhoud in de taalkopie. */content/dam/it* is bijvoorbeeld de Italiaanse taalhoofdmap voor de Italiaanse taalkopie. De exemplaren van de taal moeten [correct-gevormde taalwortel](preparing-assets-for-translation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
@@ -61,7 +61,7 @@ De basispagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 ## Taalwortels weergeven {#viewing-language-roots}
 
-De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met een lijst met taalwortels die in AEM Assets zijn gemaakt.
+De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met een lijst van taalwortels die zijn gemaakt binnen Elementen [!DNL Experience Manager].
 
 1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
 1. Klik of tik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het paneel Referentie te openen.

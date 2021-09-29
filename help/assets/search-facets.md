@@ -2,13 +2,13 @@
 title: Facetten doorzoeken
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
 contentOwner: AG
-feature: Zoeken
+feature: Search
 role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '2399'
-ht-degree: 18%
+source-wordcount: '2391'
+ht-degree: 17%
 
 ---
 
@@ -30,7 +30,7 @@ De zoekfacetten die in het deelvenster Filters worden weergegeven, worden in het
 
 Voor zoekopdrachten in volledige tekst voegt u de voorspelling Fulltext toe aan het formulier. Gebruik de voorspelling van de eigenschap om te zoeken naar elementen die overeenkomen met één eigenschap die u opgeeft. Gebruik de voorspelling Opties om te zoeken in elementen die overeenkomen met een of meer waarden voor een bepaalde eigenschap. Voeg de Datumbereik-voorspelling toe aan zoekelementen die binnen een opgegeven datumbereik zijn gemaakt.
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga vervolgens naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer **[!UICONTROL Assets Admin Search Rail]** op de pagina Zoeken in Forms en tik vervolgens op **Bewerken** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Zoek en selecteer de middelen die Admin Search Rail](assets/assets_admin_searchrail.png)
@@ -39,7 +39,7 @@ Voor zoekopdrachten in volledige tekst voegt u de voorspelling Fulltext toe aan 
 
    >[!NOTE]
    >
-   >Voer de volgende stappen uit om de functionaliteit voor het zoeken naar mappen van de vooraf geconfigureerde **Assets Admin Search Rail** uit een eerdere AEM te gebruiken:
+   >Voer de volgende stappen uit om de functionaliteit voor het zoeken naar mappen van de vooraf geconfigureerde **Assets Admin Search Rail** uit een eerdere [!DNL Experience Manager]-versie te gebruiken:
    > 
    >1. Navigeer naar */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRX-DE.
    >1. Verwijder het knooppunt **type**.
@@ -117,7 +117,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 >
 >De voorspelling van Opties is een aangepaste omslag die bezitsvoorspelling omvat om het beschreven gedrag aan te tonen. Momenteel, is er geen REST eindpunt beschikbaar om de functionaliteit te steunen native.
 
-1. Tik op het AEM en ga naar **[!UICONTROL Tools > General > Search Forms]**.
+1. Tik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > General > Search Forms]**.
 1. Selecteer op de pagina **[!UICONTROL Search Forms]** de optie **[!UICONTROL Assets Admin Search Rail]** en tik vervolgens op het pictogram Bewerken.
 1. Sleep op de pagina **[!UICONTROL Edit Search Form]** **[!UICONTROL Options Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. Voer op het tabblad **[!UICONTROL Settings]** een label en een naam voor de eigenschap in. Als u bijvoorbeeld assets wilt zoeken op basis van hun indeling, geeft u een gebruikersvriendelijke naam voor het label op, bijvoorbeeld **[!UICONTROL File Type]**. Geef de eigenschap op op basis waarvan de zoekopdracht in het eigenschapsveld moet worden uitgevoerd, bijvoorbeeld `jcr:content/metadata/dc:format.`
@@ -137,9 +137,9 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 
 ## Een voorspelling van een eigenschap met meerdere waarden toevoegen {#adding-a-multi-value-property-predicate}
 
-Met de voorspelling Multi-Value-eigenschap kunt u elementen zoeken naar meerdere waarden. Neem bijvoorbeeld een scenario waarin u afbeeldingen van meerdere producten in AEM Assets hebt en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
+Met de voorspelling Multi-Value-eigenschap kunt u elementen zoeken naar meerdere waarden. Overweeg een scenario waarbij u afbeeldingen hebt van meerdere producten in [!DNL Experience Manager] Elementen en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
 
-1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer **[!UICONTROL Assets Admin Search Rail]** op de pagina Zoeken in Forms en tik **Edit** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sleep op de pagina Zoekformulier bewerken een **[!UICONTROL Multi Value Property Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. Voer op het tabblad **[!UICONTROL Settings]** een label en plaatsaanduidingstekst in voor de voorspelling. Geef de naam van de eigenschap op op basis waarvan de zoekopdracht moet worden uitgevoerd in het eigenschapveld, bijvoorbeeld `jcr:content/metadata/dc:value`. U kunt ook een knooppunt selecteren in het dialoogvenster Selecteren.
@@ -150,9 +150,9 @@ Met de voorspelling Multi-Value-eigenschap kunt u elementen zoeken naar meerdere
 
 ## Een voorspelling van tags toevoegen {#adding-a-tags-predicate}
 
-Met de tagvoorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt AEM Assets naar elementen op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
+Met de tagvoorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt [!DNL Experience Manager] elementen naar een of meer labels die overeenkomen op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
 
-1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer **[!UICONTROL Assets Admin Search Rail]** op de pagina Zoeken in Forms en tik op **Bewerken** ![aemassets_edit](assets/aemassets_edit.png).
 1. Op de pagina Zoekformulier bewerken sleept u **[!UICONTROL Tags Predicate]** van het tabblad Predicate selecteren naar het hoofdvenster.
 1. Voer op het tabblad Instellingen een plaatsaanduidingstekst in voor de voorspelling. Geef de eigenschapnaam op op basis waarvan de zoekopdracht moet worden uitgevoerd in het eigenschapveld, bijvoorbeeld *jcr:content/metadata/cq:tags*. U kunt ook een knooppunt in CRXDE selecteren in het dialoogvenster Selecteren.
@@ -223,6 +223,6 @@ Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigi
 >[!MORELIKETHIS]
 >
 >* [Zoekopdracht van elementen uitbreiden](searchx.md)
-* [Zoeken in middelen](search-assets.md)
-* [Video-elementen zoeken](search-video-assets.md)
+>* [Zoeken in middelen](search-assets.md)
+>* [Video-elementen zoeken](search-video-assets.md)
 

@@ -1,35 +1,35 @@
 ---
 title: Samengestelde elementen beheren en subelementen genereren.
-description: Leer hoe u verwijzingen naar AEM middelen maakt vanuit InDesign-, Adobe Illustrator- en Photoshop-bestanden. Leer ook hoe u de functie Paginaviewer gebruikt om afzonderlijke pagina's van bestanden met meerdere pagina's weer te geven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
+description: Leer hoe u verwijzingen naar  [!DNL Experience Manager] middelen maakt vanuit InDesign-, Adobe Illustrator- en Photoshop-bestanden. Leer ook hoe u de functie Paginaviewer kunt gebruiken om afzonderlijke pagina's met bestanden van meerdere pagina's weer te geven.
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1318'
 ht-degree: 0%
 
 ---
 
 # Samengestelde elementen beheren met subelementen {#managing-compound-assets}
 
-Adobe Experience Manager (AEM) Assets kunnen bepalen of een geüpload bestand verwijzingen bevat naar elementen die al in de repository bestaan. Deze functie is alleen beschikbaar voor ondersteunde bestandsindelingen. Als het geüploade element verwijzingen naar AEM elementen bevat, wordt een bidirectionele koppeling gemaakt tussen de geüploade en de gerefereerde elementen.
+Adobe Experience Manager Assets kan bepalen of een geüpload bestand verwijzingen bevat naar elementen die al in de repository bestaan. Deze functie is alleen beschikbaar voor ondersteunde bestandsindelingen. Als het geüploade element verwijzingen naar [!DNL Experience Manager] elementen bevat, wordt een bidirectionele koppeling gemaakt tussen de geüploade en de items waarnaar wordt verwezen.
 
-Naast het elimineren van overtolligheid, het van verwijzingen voorzien van AEM activa in de toepassingen van Adobe Creative Cloud verbetert samenwerking en verhoogt de efficiency en de productiviteit van gebruikers.
+Naast het elimineren van overtolligheid, die [!DNL Experience Manager] activa in de toepassingen van Adobe Creative Cloud van verwijzingen voorzien verbetert samenwerking en verhoogt de efficiency en de productiviteit van gebruikers.
 
-AEM Assets ondersteunt het **bidirectioneel verwijzen**. U vindt de middelen waarnaar wordt verwezen op de elementdetailpagina van het geüploade bestand. Daarnaast kunt u de bestanden waarnaar wordt verwezen voor AEM elementen bekijken op de pagina met elementdetails van het element waarnaar wordt verwezen.
+[!DNL Experience Manager] Elementen ondersteunen  **bidirectionele referentie**. U vindt de middelen waarnaar wordt verwezen op de elementdetailpagina van het geüploade bestand. Daarnaast kunt u de referentiebestanden voor [!DNL Experience Manager] elementen weergeven op de pagina met elementdetails van het element waarnaar wordt verwezen.
 
 Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van de middelen waarnaar wordt verwezen.
 
 ## Adobe Illustrator: Elementen toevoegen als verwijzingen {#refai}
 
-U kunt verwijzen naar bestaande AEM elementen vanuit een Adobe Illustrator-bestand.
+U kunt verwijzen naar bestaande [!DNL Experience Manager] elementen vanuit een Adobe Illustrator-bestand.
 
-1. Plaats met [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) de AEM Assets-opslagplaats als een station op uw lokale computer. Navigeer in het gekoppelde station naar de locatie van het element waarnaar u wilt verwijzen.
+1. Plaats met [[!DNL Experience Manager] desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) een opslagplaats voor [!DNL Experience Manager] middelen als een station op uw lokale computer. Navigeer in het gekoppelde station naar de locatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van het gekoppelde station naar het Illustrator-bestand.
-1. Sla het Illustrator-bestand op het gekoppelde station op of [upload](managing-assets-touch-ui.md#uploading-assets) naar de AEM opslagplaats.
-1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande AEM zijn vermeld onder **[!UICONTROL Dependencies]** in **[!UICONTROL References]** kolom.
+1. Sla het Illustrator-bestand op het gekoppelde station op of [upload](managing-assets-touch-ui.md#uploading-assets) naar de [!DNL Experience Manager]-opslagplaats.
+1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande [!DNL Experience Manager] activa zijn vermeld onder **[!UICONTROL Dependencies]** in **[!UICONTROL References]** kolom.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
@@ -43,9 +43,9 @@ U kunt verwijzen naar bestaande AEM elementen vanuit een Adobe Illustrator-besta
 
 ## Adobe InDesign: Elementen toevoegen als verwijzingen {#add-aem-assets-as-references-in-adobe-indesign}
 
-Als u vanuit een InDesign-bestand wilt verwijzen naar AEM elementen, sleept u AEM elementen naar het InDesign-bestand of exporteert u het InDesign-bestand als een ZIP-bestand.
+Als u vanuit een InDesign-bestand naar [!DNL Experience Manager]-elementen wilt verwijzen, sleept u [!DNL Experience Manager]-elementen naar het InDesign-bestand of exporteert u het InDesign-bestand als een ZIP-bestand.
 
-De activa waarnaar wordt verwezen bestaan reeds in AEM Assets. U kunt subassets extraheren door [InDesign server](indesign.md) te configureren. Ingesloten elementen in een InDesign-bestand worden geëxtraheerd als subelementen.
+Elementen waarnaar wordt verwezen, bestaan al in Elementen [!DNL Experience Manager]. U kunt subassets extraheren door [InDesign server](indesign.md) te configureren. Ingesloten elementen in een InDesign-bestand worden geëxtraheerd als subelementen.
 
 >[!NOTE]
 >
@@ -61,19 +61,19 @@ Deze procedure is vergelijkbaar met [Elementen toevoegen als verwijzingen in Ado
 
 1. Voer de stappen in [Creating Workflow Models](/help/sites-developing/workflows-models.md) uit om een nieuwe werkstroom tot stand te brengen.
 1. Met de functie [Pakket maken van Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) kunt u het document exporteren. Adobe InDesign kan een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een map `Links` met subelementen in het InDesign-bestand. De map `Links` bevindt zich in dezelfde map als het INDD-bestand.
-1. Maak een ZIP-bestand en upload het naar de AEM-opslagplaats.
+1. Maak een ZIP-bestand en upload het bestand naar de [!DNL Experience Manager]-opslagplaats.
 1. Start de Unarchiver-workflow.
 1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Als u een lijst met de desbetreffende elementen wilt weergeven, navigeert u naar de pagina met elementdetails van het InDesign-element en sluit u [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Adobe Photoshop: Elementen toevoegen als verwijzingen {#refps}
 
-1. Gebruik een WebDav-client om AEM Assets op te zetten als een station.
-1. Als u verwijzingen naar AEM elementen in een Photoshop-bestand wilt maken, navigeert u naar de corresponderende elementen in het gekoppelde station met de functie Gekoppelde plaatsen in Photoshop.
+1. Met behulp van een WebDav-client kunt u [!DNL Experience Manager]-middelen koppelen als een station.
+1. Als u verwijzingen naar [!DNL Experience Manager]-elementen in een Photoshop-bestand wilt maken, navigeert u naar de corresponderende elementen in het gekoppelde station met de functie Een koppeling plaatsen in Photoshop.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Opslaan in Photoshop-bestand op het gemonteerde station of [uploaden](managing-assets-touch-ui.md#uploading-assets) naar de AEM opslagplaats.
-1. Nadat de workflow is voltooid, worden de verwijzingen naar bestaande AEM weergegeven op de pagina met elementdetails.
+1. Opslaan in Photoshop-bestand op het gemonteerde station of [upload](managing-assets-touch-ui.md#uploading-assets) naar de [!DNL Experience Manager]-opslagplaats.
+1. Nadat de workflow is voltooid, worden de verwijzingen naar bestaande [!DNL Experience Manager] elementen weergegeven op de pagina met elementdetails.
 
    Sluit [Rail](/help/sites-authoring/basic-handling.md#rail-selector) op de pagina met elementdetails om de betreffende elementen weer te geven.
 
@@ -85,7 +85,7 @@ Deze procedure is vergelijkbaar met [Elementen toevoegen als verwijzingen in Ado
 
 ## Subelementen maken {#generate-subassets}
 
-Voor de ondersteunde elementen met indelingen die uit meerdere pagina&#39;s bestaan (PDF-bestanden, AI-bestanden, Microsoft PowerPoint- en Apple-toetsenbordbestanden en Adobe InDesign-bestanden), kunnen AEM subelementen genereren die overeenkomen met elke afzonderlijke pagina van het oorspronkelijke element. Deze subelementen zijn gekoppeld aan het *parent*-element en maken de weergave van meerdere pagina&#39;s eenvoudiger. Voor alle andere doeleinden worden de subactiva behandeld als normale activa in AEM.
+Voor de ondersteunde elementen met indelingen die uit meerdere pagina&#39;s bestaan — PDF-bestanden, AI-bestanden, Microsoft PowerPoint- en Apple Keynote-bestanden en Adobe InDesign-bestanden — [!DNL Experience Manager] kunnen subassets genereren die overeenkomen met elke afzonderlijke pagina van het oorspronkelijke element. Deze subelementen zijn gekoppeld aan het *parent*-element en maken de weergave van meerdere pagina&#39;s eenvoudiger. Voor alle andere doeleinden worden de subactiva behandeld als normale activa in AEM.
 
 Genereren van subelementen is standaard uitgeschakeld. Voer de volgende stappen uit om het genereren van subelementen in te schakelen:
 
@@ -111,7 +111,7 @@ De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd e
 
 ## Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven {#view-pages-of-a-multi-page-file}
 
-U kunt een bestand met meerdere pagina&#39;s, zoals PDF, INDD, PPT, PPTX en AI, weergeven met de functie Paginaviewer van AEM Assets. Open een element met meerdere pagina&#39;s en klik op **[!UICONTROL View Pages]** in de linkerbovenhoek van de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
+U kunt een bestand met meerdere pagina&#39;s, zoals een PDF-, INDD-, PPT-, PPTX- en AI-bestand, weergeven met de functie Paginaviewer van Elementen [!DNL Experience Manager]. Open een element met meerdere pagina&#39;s en klik op **[!UICONTROL View Pages]** in de linkerbovenhoek van de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
 
 ![Pagina&#39;s van elementen met meerdere pagina&#39;s weergeven en bekijken](assets/view_multipage_asset_fmr.gif)
 
@@ -119,7 +119,7 @@ Voor InDesign kunt u pagina&#39;s uitnemen met de InDesign-server. Als de voorve
 
 De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de besturingselementen voor de Paginaviewer:
 
-* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met AEM bureaubladtoepassing. Zie hoe u [Bureaubladhandelingen configureren](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) als u AEM bureaubladtoepassing gebruikt.
+* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met de  [!DNL Experience Manager] bureaubladtoepassing. Zie hoe u [Bureaubladhandelingen configureren](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) als u [!DNL Experience Manager]-bureaubladtoepassing gebruikt.
 
 * **[!UICONTROL Properties]** Hiermee opent u de  [!UICONTROL Properties] pagina van het specifieke subelement.
 

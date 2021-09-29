@@ -1,22 +1,22 @@
 ---
 title: Ondersteuning voor IPTC-metagegevens
-description: Leer hoe Adobe Experience Manager (AEM) Assets de IPTC-metagegevens, Creative Classificaties en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
+description: Leer hoe Adobe Experience Manager Assets de IPTC-metagegevens, creatieve beoordelingen en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '353'
 ht-degree: 7%
 
 ---
 
 # Ondersteuning voor IPTC-metagegevens {#support-for-iptc-metadata}
 
-Leer hoe Adobe Experience Manager (AEM) Assets de IPTC-metagegevens, Creative Classificaties en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
+Leer hoe Adobe Experience Manager Assets de IPTC-metagegevens, creatieve beoordelingen en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
 
-Adobe Experience Manager (AEM) Assets ondersteunt de IPTC-metagegevensstandaard die veel wordt gebruikt om elementen te beschrijven. Op deze manier verbetert AEM Assets de acceptatie van de afbeeldingen van de foto&#39;s door verschillende partijen, zoals fotografen, creatieve bureaus, bibliotheken, musea, enzovoort.
+Adobe Experience Manager Assets biedt ondersteuning voor de IPTC-metagegevensstandaard die veel wordt gebruikt om elementen te beschrijven. Op deze manier verbetert [!DNL Experience Manager Assets] de acceptatie van de afbeeldingen tussen verschillende partijen, zoals fotografen, creatieve bureaus, bibliotheken, musea, enzovoort.
 
 In het standaardmetagegevensschema voor elementen zijn nu de IPTC Core- en IPTC-metagegevensschema&#39;s voor extensies opgenomen om uitgebreide metagegevenseigenschappen te definiëren waarmee gebruikers nauwkeurige en betrouwbare gegevens kunnen toevoegen over personen, locaties en producten die in een afbeelding worden weergegeven. Het steunt ook data, namen, en herkenningstekens betreffende de verwezenlijking van het beeld, en een flexibele manier om rechteninformatie uit te drukken.
 

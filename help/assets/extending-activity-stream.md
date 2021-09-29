@@ -1,25 +1,24 @@
 ---
 title: Elementen integreren met activiteitsstroom
-description: Beschrijft de opnamemogelijkheden van AEM en hoe te om AEM te vormen om specifieke gebeurtenissen te registreren.
+description: Beschrijft de opnamemogelijkheden van [!DNL Experience Manager] and how to configure [!DNL Experience Manager] om specifieke gebeurtenissen te registreren.
 contentOwner: AG
 feature: Asset Management
 role: Developer
 exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '254'
 ht-degree: 1%
 
 ---
 
 # Elementen integreren met activiteitsstroom {#integrating-assets-with-activity-stream}
 
-Adobe Experience Manager (AEM)-middelengebruikers voeren veel handelingen uit, zoals het maken, uploaden en verwijderen van middelen. Deze acties kunnen worden opgenomen zodat u een geschiedenis kunt verstrekken van wat door een gebruiker is gedaan. In deze sectie worden de opnamemogelijkheden van AEM beschreven en wordt beschreven hoe u AEM kunt configureren om specifieke gebeurtenissen op te nemen.
+Gebruikers van Adobe Experience Manager Assets voeren veel handelingen uit, zoals het maken, uploaden en verwijderen van middelen. Deze acties kunnen worden opgenomen zodat u een geschiedenis kunt verstrekken van wat door een gebruiker is gedaan. In deze sectie worden de opnamemogelijkheden van [!DNL Experience Manager] beschreven en hoe u [!DNL Experience Manager] configureert om specifieke gebeurtenissen op te nemen.
 
 ## Prestatieoverwegingen en standaardgedrag {#performance-considerations-and-default-behavior}
 
-Deze integratie kan CPU- en schijfruimte in beslag nemen, bijvoorbeeld bij het importeren van grote hoeveelheden. Om deze redenen is de AEM Assets-integratie met de activiteitsstroom standaard uitgeschakeld.
+Deze integratie kan CPU- en schijfruimte in beslag nemen, bijvoorbeeld bij het importeren van grote hoeveelheden. Om deze redenen is de integratie van [!DNL Experience Manager] Middelen met de Activiteitenstroom standaard uitgeschakeld.
 
 ## Ondersteunde actiegebeurtenissen {#supported-action-events}
 
@@ -41,9 +40,9 @@ De volgende gebeurtenissen kunnen worden geconfigureerd om te worden opgenomen:
 * Submiddel bijgewerkt (SUBASSET_UPDATED)
 * Subelement verwijderd (SUBASSET_REMOVED)
 
-## AEM Assets Events-opname {#configuring-aem-assets-events-recording} configureren
+## Opname van gebeurtenissen [!DNL Assets] configureren {#configuring-aem-assets-events-recording}
 
-De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de afstemming van de AEM Assets-gebeurtenisrecorder. Ga als volgt te werk om de AEM Assets Event Recorder te configureren:
+De [Webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de afstemming van de [!DNL Assets]-gebeurtenisrecorder. Ga als volgt te werk om de [!DNL Assets]-gebeurtenisrecorder te configureren:
 
 1. Navigeer naar **[!UICONTROL Web console]**
 
@@ -57,6 +56,6 @@ De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 
 1. Klik op **[!UICONTROL Save]**.
 
-## Opgenomen gebeurtenissen {#reading-recorded-events} lezen
+## Opgenomen gebeurtenissen lezen {#reading-recorded-events}
 
 De opgenomen gebeurtenissen worden opgeslagen als activiteiten. U kunt hen programmatically lezen door [ActivityManager API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) te gebruiken.

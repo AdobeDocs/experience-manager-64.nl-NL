@@ -2,12 +2,12 @@
 title: Beheer [!DNL Adobe Stock] middelen in [!DNL Adobe Experience Manager Assets].
 description: Zoek, haal, vergunning, en beheer [!DNL Adobe Stock] activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
-feature: Zoeken,Adobe Stock
+feature: Search,Adobe Stock
 role: User,Admin
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1036'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,7 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 >[!MORELIKETHIS]
 >
->* [Videozelfstudie over het gebruik van Adobe Stock-elementen met Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Adobe Stock Enterprise Plan Help](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
->* [Veelgestelde vragen over Adobe Stock](https://helpx.adobe.com/stock/faq.html)
+>* [Videozelfstudie over het  [!DNL Adobe Stock] gebruik van middelen met [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] Help bij bedrijfsplan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
+>* [[!DNL Adobe Stock] Veelgestelde vragen](https://helpx.adobe.com/stock/faq.html)
 

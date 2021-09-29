@@ -1,34 +1,34 @@
 ---
 title: Metagegevensschema van map
-description: In dit artikel wordt beschreven hoe u een metagegevensschema voor mappen met elementen in AEM Assets kunt maken.
+description: In dit artikel wordt beschreven hoe u een metagegevensschema kunt maken voor elementmappen in [!DNL Experience Manager] Middelen
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: Metagegevens
+feature: Metadata
 role: User,Admin
 exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 6%
+source-wordcount: '1005'
+ht-degree: 5%
 
 ---
 
 # Metagegevensschema van map {#folder-metadata-schema}
 
-In dit artikel wordt beschreven hoe u een metagegevensschema voor mappen met elementen in AEM Assets kunt maken.
+In dit artikel wordt beschreven hoe u metagegevensschema voor elementmappen in Elementen [!DNL Experience Manager] kunt maken.
 
-Met Adobe Experience Manager (AEM) Assets kunt u metagegevensschema&#39;s maken voor middelenmappen, waarmee de lay-out en metagegevens worden gedefinieerd die op pagina&#39;s met mapeigenschappen worden weergegeven.
+Met Adobe Experience Manager Assets kunt u metagegevensschema&#39;s maken voor middelenmappen, waarmee de lay-out en metagegevens worden gedefinieerd die op pagina&#39;s met mapeigenschappen worden weergegeven.
 
 >[!NOTE]
 >
->Deze functionaliteit vereist AEM 6.4 met minstens opgesteld Service Pack 2. Voor AEM 6.4 de details van het de dienstpak, zie [versienota&#39;s](/help/release-notes/sp-release-notes.md).
+>Voor deze functionaliteit is [!DNL Experience Manager] 6.4 vereist, waarbij ten minste Service Pack 2 is geïmplementeerd. Voor [!DNL Experience Manager] 6.4 de details van het de dienstpak, zie [versienota&#39;s](/help/release-notes/sp-release-notes.md).
 
 ## Een schema voor metagegevens van een map toevoegen {#add-a-folder-metadata-schema-form}
 
 Met de Forms-editor voor het schema Metagegevens van map kunt u metagegevensschema&#39;s voor mappen maken en bewerken.
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** **[!UICONTROL Folder Metadata Schemas]**.
 1. Tik/klik op **[!UICONTROL Create]** in de pagina Forms van het schema Metagegevens map.
 1. Geef een naam voor het formulier op en tik/klik op **[!UICONTROL Create]**. Het nieuwe schema formulier wordt weergegeven op de pagina Schema Forms.
 
@@ -117,7 +117,7 @@ Als u een metagegevensschema voor een map configureert, wordt het pad naar het s
 
 ### Wijs aan een schema van de pagina van het Schema van Meta-gegevens van de Omslag toe {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Selecteer op de pagina Forms van het schema Metagegevens map het schema dat u op een map wilt toepassen.
 1. Tik/klik op **[!UICONTROL Apply to Folder(s)]** op de werkbalk.
 
@@ -134,7 +134,7 @@ Als u een metagegevensschema voor een map configureert, wordt het pad naar het s
 
 U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een omslag. Als het systeem minstens één schema van omslagmeta-gegevens bevat, wordt een extra lijst getoond in **[!UICONTROL Create Folder]** dialoog. U kunt het gewenste schema selecteren. Standaard is geen schema geselecteerd.
 
-1. Tik in de gebruikersinterface van AEM Assets op **[!UICONTROL Create]** op de werkbalk.
+1. Tik in de gebruikersinterface [!DNL Assets] op **[!UICONTROL Create]** op de werkbalk.
 1. Geef een titel en naam voor de map op.
 1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Tik vervolgens op **[!UICONTROL Create]** of klik op .
 

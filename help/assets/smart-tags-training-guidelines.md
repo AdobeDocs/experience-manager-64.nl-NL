@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: Tags,Metagegevens,Slimme tags
+feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '455'
 ht-degree: 12%
 
 ---
@@ -31,7 +31,7 @@ Het is bijvoorbeeld geen goed idee om al deze afbeeldingen te labelen als *my-pa
 
 ![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](assets/do-not-localize/coherence.png)
 
-**Dekking**: De beelden in de training moeten voldoende uiteenlopend zijn. Het is de bedoeling om een paar maar redelijk verschillende voorbeelden te geven, zodat AEM leert zich te richten op de juiste dingen. Als u dezelfde tag toepast op visueel verschillende afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen.
+**Dekking**: De beelden in de training moeten voldoende uiteenlopend zijn. Het idee is om een paar maar redelijk diverse voorbeelden te leveren zodat [!DNL Experience Manager] leert zich op de juiste dingen te concentreren. Als u dezelfde tag toepast op visueel verschillende afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen.
 
 Voor de tag *model-down-pose* neemt u bijvoorbeeld meer trainingsafbeeldingen op die lijken op de gemarkeerde afbeelding hieronder, zodat u vergelijkbare afbeeldingen tijdens het labelen nauwkeuriger kunt identificeren.
 
@@ -53,7 +53,7 @@ Verbeterde slimme tags zijn gebaseerd op leermodellen van merkafbeeldingen en hu
 
 * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne en standaard gemonteerde hemden.
 * Kan geen tags identificeren op basis van kleine patronen/delen van een afbeelding. Bijvoorbeeld logo&#39;s op T-shirts.
-* Tags worden ondersteund in de landinstellingen waarin AEM wordt ondersteund. Zie [Opmerkingen bij de release Smart Content Services](/help/release-notes/smart-content-service-release-notes.md) voor een lijst met talen.
+* Tags worden ondersteund in de landinstellingen waarin [!DNL Experience Manager] wordt ondersteund. Zie [Opmerkingen bij de release Smart Content Services](/help/release-notes/smart-content-service-release-notes.md) voor een lijst met talen.
 
 Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebruikt u de vanuit de gebruikersinterface uitgevoerde zoekopdracht (zoeken in volledige tekst). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
 

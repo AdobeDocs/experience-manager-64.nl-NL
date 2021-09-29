@@ -1,13 +1,13 @@
 ---
 title: Asset Selector
-description: Leer hoe u met de kiezer voor middelen metagegevens voor elementen in Adobe Experience Manager-middelen (AEM) kunt zoeken, filteren, doorbladeren en ophalen. Leer ook hoe u de interface van de elementenkiezer kunt aanpassen.
+description: Leer hoe u met de kiezer voor middelen metagegevens voor elementen in Adobe Experience Manager Assets kunt zoeken, filteren, doorbladeren en ophalen. Leer ook hoe u de interface van de elementenkiezer kunt aanpassen.
 contentOwner: AG
-feature: Asset Management,metagegevens,zoeken
+feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Asset Selector werd [Asset picker](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) genoemd in eerdere versies van AEM.
+>De Asset Selector werd [Asset picker](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) genoemd in eerdere versies van [!DNL Experience Manager].
 
 Met de elementkiezer kunt u elementen in [!DNL Adobe Experience Manager] Elementen zoeken en filteren. U kunt ook de metagegevens ophalen van elementen die u selecteert met de elementenkiezer. Als u de interface van de elementenkiezer wilt aanpassen, kunt u deze starten met ondersteunde aanvraagparameters. Met deze parameters wordt de context van de elementenkiezer voor een bepaald scenario ingesteld.
 

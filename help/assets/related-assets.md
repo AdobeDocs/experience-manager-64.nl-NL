@@ -2,19 +2,19 @@
 title: Verwante activa
 description: Leer hoe u elementen koppelt die bepaalde algemene kenmerken delen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen.
 contentOwner: AG
-feature: Middelenbeheer, Samenwerking
+feature: Asset Management,Collaboration
 role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
 
 # Verwante activa {#related-assets}
 
-Met de functie Verwante elementen kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie (AEM). U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
+Met de functie Verwante elementen kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie. U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
 
 Op deze manier hebt u de flexibiliteit om een bestand met een lage resolutie (bijvoorbeeld PDF/JPG) te delen aan leveranciers/agentschappen en het bestand met een hoge resolutie (bijvoorbeeld INDD) alleen op verzoek beschikbaar te maken.
 
@@ -65,11 +65,11 @@ Op deze manier hebt u de flexibiliteit om een bestand met een lage resolutie (bi
 
 ## Verwante elementen vertalen {#translating-related-assets}
 
-Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, haalt AEM Assets automatisch alle elementen op waarnaar het bronbestand verwijst en die het bevat voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
+Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, haalt [!DNL Experience Manager] Middelen automatisch elk element op waarnaar het bronbestand verwijst en dat het voor vertaling bevat. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Als het bronbestand is gerelateerd aan een ander element, haalt AEM Assets het element waarnaar wordt verwezen op en neemt het dit op voor vertaling.
+Als het bronbestand verwant is aan een ander element, haalt [!DNL Experience Manager] Middelen het element waarnaar wordt verwezen en neemt dit voor vertaling op.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 

@@ -2,12 +2,12 @@
 title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de bibliotheek Imaging Transcoding Adobe kunt configureren en gebruiken, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals coderen, transcoderen, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
-feature: uitvoeringen, ontwikkelaarsgereedschappen, middelenverwerking
+feature: Renditions,Developer Tools,Asset Processing
 role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Om ITL verwerking te vormen, creeer een configuratiedossier en werk het werksche
 
 Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de bibliotheken aan te geven met de volgende stappen. U hebt beheerder- of basismachtigingen nodig.
 
-1. Download het [pakket Imaging Transcoding Library van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het met de Package Manager. Het pakket is compatibel met AEM 6.5.
+1. Download het [pakket Imaging Transcoding Library van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het met de Package Manager. Het pakket is compatibel met [!DNL Experience Manager] 6.5.
 
 1. Als u een bundle-id voor `com.day.cq.dam.cq-dam-switchengine` wilt weten, meldt u zich aan bij de webconsole en tikt u op **[!UICONTROL OSGi > Bundles]**. U kunt ook de URL van `https://[aem_server:[port]/system/console/bundles/` openen om de bundelconsole te openen. Zoek `com.day.cq.dam.cq-dam-switchengine`-bundel en de bijbehorende id.
 
@@ -109,7 +109,7 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 Werk de [!UICONTROL DAM Update Asset]-workflow bij om de bibliotheek te gebruiken voor het verwerken van afbeeldingen.
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Workflow > Models]**.
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > Workflow > Models]**.
 
 1. Open op de pagina **[!UICONTROL Workflow Models]** het workflowmodel **[!UICONTROL DAM Update Asset]** in de bewerkingsmodus.
 

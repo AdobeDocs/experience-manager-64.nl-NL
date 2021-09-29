@@ -5,24 +5,24 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '475'
 ht-degree: 31%
 
 ---
 
 # Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
-Als beheerder van Adobe Experience Manager-middelen (AEM) kunt u elementen en mappen publiceren naar het AEM Assets Brand Portal-exemplaar (of de publicatieworkflow plannen op een latere datum/tijd) voor uw organisatie. U moet echter eerst AEM Assets integreren met Brand Portal. Zie [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md) voor meer informatie.
+Als beheerder van Adobe Experience Manager-middelen kunt u elementen en mappen publiceren naar het [!DNL Experience Manager Assets Brand Portal]-exemplaar (of de publicatieworkflow plannen op een latere datum/tijd) voor uw organisatie. U moet [!DNL Experience Manager Assets] echter eerst integreren met [!DNL Brand Portal]. Zie [Configureren [!DNL Experience Manager Assets] met Brand Portal](configure-aem-assets-with-brand-portal.md) voor meer informatie.
 
 Nadat u een middel of een omslag publiceert, is het beschikbaar aan gebruikers in Brand Portal.
 
-Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oorspronkelijke map in AEM Assets, worden de wijzigingen pas doorgevoerd in Brand Portal als u het element of de map opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
+Als u in [!DNL Assets] de oorspronkelijke bron- of mapwijzigingen doorvoert, worden de wijzigingen pas in Brand Portal doorgevoerd als u het element of de map opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
 ## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Houd de muisaanwijzer in de AEM Assets-interface boven de gewenste map en selecteer de optie **[!UICONTROL Publish]** in de snelhandelingen.
+1. Houd de muisaanwijzer boven de gewenste map in de interface [!DNL Assets] en selecteer de optie **[!UICONTROL Publish]** in de snelle handelingen.
 
    U kunt ook de gewenste map selecteren en de volgende stappen volgen.
 
@@ -57,11 +57,11 @@ Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oors
 
 ## De publicatie van mappen op Brand Portal ongedaan maken {#unpublish-folders-from-brand-portal}
 
-U kunt elke map met middelen die naar Brand Portal is gepubliceerd verwijderen door de publicatie ongedaan te maken van de instantie AEM Author. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
+U kunt elke elementmap die naar Brand Portal is gepubliceerd, verwijderen door de publicatie ongedaan te maken van de instantie [!DNL Experience Manager] Auteur. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
 
 U kunt de publicatie van mappen in Brand Portal snel ongedaan maken of deze later plannen. De publicatie van mappen met assets op Brand Portal ongedaan maken:
 
-1. Selecteer in de AEM Assets-interface van de AEM-auteur-instantie de map die u wilt verwijderen.
+1. Selecteer in de [!DNL Assets]-interface in [!DNL Experience Manager]-instantie Auteur de map die u wilt verwijderen.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 

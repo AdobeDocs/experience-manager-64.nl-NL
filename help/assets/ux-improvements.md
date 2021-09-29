@@ -1,28 +1,28 @@
 ---
 title: Verbeterde gebruikerservaring in middelen
-description: In dit artikel worden de verbeteringen in AEM 6.4 Assets beschreven.
+description: In dit artikel worden de verbeteringen beschreven die de gebruiker ondervindt in  [!DNL Experience Manager] 6.4 Assets.
 contentOwner: AG
-feature: Geen informatie
+feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
 
 # Verbeterde gebruikerservaring in middelen {#user-experience-enhancements-in-assets}
 
-AEM 6.4 De middelen omvatten verscheidene bruikbaarheidsverbeteringen die een naadloze gebruikerservaring verstrekken en productiviteit verbeteren. De toename in de snelheid waarmee u uw go-to-market inhoud kunt creëren/beheren verbetert de inhoudssnelheid van de zaken.
+[!DNL Experience Manager] 6.4 De middelen omvatten verscheidene gebruiksverbeteringen die een naadloze gebruikerservaring verstrekken en productiviteit verbeteren. De toename in de snelheid waarmee u uw go-to-market inhoud kunt creëren/beheren verbetert de inhoudssnelheid van de zaken.
 
 De interface is responsiever, waardoor u efficiënt een grote portfolio met elementen kunt beheren. U kunt snel een lange lijst met items doorzoeken, weergeven, sorteren en vloeiend schuiven.
 
-U kunt de verschillende weergaven aanpassen: Kaart-, Lijst- en Kolomweergaven. U kunt bijvoorbeeld de grootte configureren van miniaturen die u wilt weergeven in de kaartweergave. Voor de lijstweergave kunt u het detailniveau configureren dat u wilt weergeven voor elementen in de lijst. AEM 6.4 Elementen bevat een nieuwe structuurweergave waarmee u eenvoudig door de gegevensopslagruimte van middelen kunt navigeren en uw middelen kunt zoeken.
+U kunt de verschillende weergaven aanpassen: Kaart-, Lijst- en Kolomweergaven. U kunt bijvoorbeeld de grootte configureren van miniaturen die u wilt weergeven in de kaartweergave. Voor de lijstweergave kunt u het detailniveau configureren dat u wilt weergeven voor elementen in de lijst. [!DNL Experience Manager] 6.4 Middelen zijn voorzien van een nieuwe structuurweergave waarmee u eenvoudig door de gegevensopslagruimte van middelen kunt navigeren en uw middelen kunt zoeken.
 
 ## Lazy loading {#lazy-loading}
 
-Wanneer u in AEM 6.4 Middelen naar elementen bladert of deze zoekt, worden maximaal 200 elementen tegelijk weergegeven. U kunt sneller door de resultaten scrollen, die vooral wanneer het doorbladeren door een lange lijst van resultaten nuttig is. Omdat een aanzienlijk aantal elementen tegelijk wordt geladen, verloopt het bladeren soepel.
+Wanneer u in [!DNL Experience Manager] 6.4 Elementen bladert of naar activa zoekt, worden tot 200 activa tegelijkertijd getoond. U kunt sneller door de resultaten scrollen, die vooral wanneer het doorbladeren door een lange lijst van resultaten nuttig is. Omdat een aanzienlijk aantal elementen tegelijk wordt geladen, verloopt het bladeren soepel.
 
 Als u op een element tikt of erop klikt om de detailpagina weer te geven, kunt u gewoon terugkeren naar de resultatenpagina door op de knop Terug op de werkbalk te tikken of erop te klikken.
 
@@ -66,7 +66,7 @@ Naast de Kaart- en lijstweergaven kunt u nu vanuit de kolomweergave naar de deta
 
 ## Boomstructuurweergave {#tree-view}
 
-AEM 6.4 Elementen bevat een structuurweergave waarmee u gemakkelijk door de hiërarchie van elementen kunt bladeren en naar het gewenste middel of de gewenste map kunt navigeren.
+[!DNL Experience Manager] 6.4 Middelen zijn voorzien van een structuurweergave waarmee u gemakkelijk door de hiërarchie van elementen kunt bladeren en naar het gewenste middel of de gewenste map kunt navigeren.
 
 Tik op het GlobalNav-pictogram in het `Assets UI` en kies **[!UICONTROL Content tree]** in het menu om de structuurweergave te openen.
 

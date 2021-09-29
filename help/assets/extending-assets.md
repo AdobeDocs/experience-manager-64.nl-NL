@@ -5,19 +5,18 @@ contentOwner: AG
 feature: Developer Tools
 role: Developer
 exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
-# Elementen {#customizing-and-extending-assets} aanpassen en uitbreiden
+# Elementen aanpassen en uitbreiden {#customizing-and-extending-assets}
 
-De Asset Editor is het belangrijkste toegangspunt dat gebruikers van een Adobe Enterprise Manager-website (AEM) gebruiken om de digitale middelen in uw opslagplaats te zoeken, weer te geven en te manipuleren.
+De Asset Editor is het belangrijkste toegangspunt waarmee gebruikers van een Adobe Enterprise Manager-website de digitale middelen in uw opslagplaats kunnen zoeken, bekijken en bewerken.
 
-Als AEM ontwikkelaar kunt u de Editor van middelen op verschillende manieren aanpassen en uitbreiden, zodat gebruikers een specifiek op maat gemaakte interface en functieset krijgen.
+Als ontwikkelaar [!DNL Experience Manager], kunt u de Redacteur van Activa op een aantal manieren aanpassen en uitbreiden, presenterend gebruikers met een specifiek op maat gemaakte interface en een reeks functionaliteit.
 
 De volgende aspecten van de functionaliteit kunnen worden aangepast of verbeterd:
 
@@ -28,7 +27,7 @@ De volgende aspecten van de functionaliteit kunnen worden aangepast of verbeterd
 * [Ontwikkeling van proxy&#39;s](proxy.md)
 * [Beste praktijken voor het Vormen ImageMagick](best-practices-for-imagemagick.md)
 
-## De weergave en weergave aanpassen {#customizing-the-look-and-feel}
+## De vormgeving aanpassen {#customizing-the-look-and-feel}
 
 De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepast:
 
@@ -38,6 +37,6 @@ De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepa
 
 ## Uitvoeringen aanpassen {#customizing-renditions}
 
-In AEM Assets-terminologie is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
+In de terminologie [!DNL Experience Manager Assets] is een vertoning de vorm waarin een element wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
 
 De uitvoeringen waarin een bepaald element beschikbaar is, kunnen worden aangepast en nieuwe uitvoeringen worden gemaakt.

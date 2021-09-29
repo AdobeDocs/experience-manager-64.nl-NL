@@ -6,13 +6,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: Slimme tags,zoeken
+feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 14%
+source-wordcount: '1451'
+ht-degree: 13%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 14%
 
 ## Overzicht van verbeterde slimme tags {#overview-of-enhanced-smart-tags}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren van digitale activa die op bedrijfstaxonomie worden gebaseerd hen op de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen.
 
@@ -32,7 +32,7 @@ Nadat een tag is opgeleid en gereed, kan de service deze tags nu toepassen op el
 
 Op de achtergrond gebruikt de Smart Content Service het AI-framework van Adobe Sensei om het algoritme voor imageherkenning op te leiden voor uw tagstructuur en bedrijfskatonomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen.
 
-Smart Content Service is een cloudservice die wordt gehost op [!DNL Adobe I/O]. Om het in Adobe Experience Manager (AEM) te gebruiken, moet de systeembeheerder uw AEM instantie met [!DNL Adobe I/O] integreren.
+Smart Content Service is een cloudservice die wordt gehost op [!DNL Adobe I/O]. Om het in Adobe Experience Manager te gebruiken, moet de systeembeheerder uw [!DNL Experience Manager] instantie met [!DNL Adobe I/O] integreren.
 
 Samenvattend, zijn hier de belangrijkste stappen om de Slimme Dienst van de Inhoud te gebruiken:
 
@@ -52,15 +52,11 @@ Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om e
 
 ## Onboarding {#onboarding}
 
-De Smart Content Service kan worden aangeschaft als toevoeging aan AEM. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar [!DNL Adobe I/O].
+De service Slimme inhoud kan worden aangeschaft als invoegtoepassing voor [!DNL Experience Manager]. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar [!DNL Adobe I/O].
 
-De beheerder kan de verbinding volgen om de Slimme Dienst van de Inhoud met AEM te integreren. Zie [Slimme tags configureren](config-smart-tagging.md) om de service te integreren met AEM Assets.
+De beheerder kan de verbinding volgen om de Slimme Dienst van de Inhoud met [!DNL Experience Manager] te integreren. Zie [Slimme tags configureren](config-smart-tagging.md) om de service te integreren met [!DNL Experience Manager] Middelen.
 
-Het instapproces is volledig wanneer de beheerder de dienst vormt en gebruikers in AEM toevoegt.
-
->[!NOTE]
->
->Zie [Slimme tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) als u AEM versie 6.3 of lager gebruikt en automatische labelservice voor uw elementen nodig hebt. Slimme tags maken geen gebruik van de AI-mogelijkheden en zijn minder nauwkeurig dan de verbeterde functie Slimme tags toepassen.
+Het instapproces is voltooid wanneer de beheerder de service configureert en gebruikers toevoegt in [!DNL Experience Manager].
 
 ## Elementen en tags controleren {#reviewing-assets-and-tags}
 
@@ -77,7 +73,6 @@ Voeg de elementen toe aan een map en pas de tags toe op elk element vanaf de eig
 >1. Wanneer u de Slimme Dienst van de Inhoud voor het eerst opleidt, adviseert Adobe dat u het op minstens twee verschillende markeringen opleidt.
 
 >
-
 
 
 ## De Smart Content Service trainen {#training-the-smart-content-service}
@@ -98,13 +93,13 @@ U kunt de Slimme Dienst van de Inhoud toelaten om periodiek op de activa en bijb
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Als deze optie voor een map is geselecteerd, voert AEM automatisch een trainingsworkflow uit om de Smart Content Service op te leiden voor de map en de bijbehorende tags. Standaard wordt de trainingsworkflow wekelijks om 12:30 uur uitgevoerd op zaterdag.
+Als deze optie voor een map is geselecteerd, wordt automatisch een trainingsworkflow uitgevoerd om de Smart Content Service te trainen voor de mappenelementen en de bijbehorende tags. [!DNL Experience Manager] Standaard wordt de trainingsworkflow wekelijks om 12:30 uur uitgevoerd op zaterdag.
 
 ### Opleiding op aanvraag {#on-demand-training}
 
 U kunt de Slimme Dienst van de Inhoud wanneer vereist van de console van het Werkschema trainen.
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Workflow > Models]**.
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > Workflow > Models]**.
 1. Selecteer op de pagina **[!UICONTROL Workflow Models]** de workflow **[!UICONTROL Smart Tags Training]** en tik of klik vervolgens op **[!UICONTROL Start Workflow]** op de werkbalk.
 1. Blader in het dialoogvenster **[!UICONTROL Run Workflow]** naar de payload-map met de gecodeerde middelen voor het trainen van de service.
 1. Geef een titel op voor de workflow en voeg een opmerking toe. Tik vervolgens op **[!UICONTROL Run]** of klik op . De elementen en tags worden ter training aangeboden.
@@ -119,7 +114,7 @@ U kunt de Slimme Dienst van de Inhoud wanneer vereist van de console van het Wer
 
 Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trainingsreeks activa wordt getraind, herzie het rapport van de opleidingswerkstroom van de console van Rapporten.
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Reports]**.
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > Assets > Reports]**.
 1. Tik of klik op de pagina **[!UICONTROL Asset Reports]** op **[!UICONTROL Create]**.
 1. Selecteer het rapport **[!UICONTROL Smart Tags Training]** en tik of klik op de werkbalk op **[!UICONTROL Next]**.
 1. Geef een titel en beschrijving voor het rapport op. Laat onder **[!UICONTROL Schedule Report]** de optie **[!UICONTROL Now]** ingeschakeld. Als u het rapport voor later wilt plannen, selecteert u **[!UICONTROL Later]** en geeft u een datum en tijd op. Tik of klik vervolgens op **[!UICONTROL Create]** op de werkbalk.
@@ -161,7 +156,7 @@ U kunt de tagwerkstroom activeren door uw elementen direct te labelen:
 
 #### Elementen labelen vanaf de workflowconsole {#tagging-assets-from-the-workflow-console}
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Workflow > Models]**.
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > Workflow > Models]**.
 1. Selecteer op de pagina **[!UICONTROL Workflow Models]** de workflow **[!UICONTROL DAM Smart Tags Assets]** en tik of klik vervolgens op **[!UICONTROL Start Workflow]** op de werkbalk.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)

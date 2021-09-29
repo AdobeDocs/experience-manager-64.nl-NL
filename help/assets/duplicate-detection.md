@@ -2,19 +2,19 @@
 title: Dubbele detectie inschakelen
 description: Leer hoe u dubbele elementen in AEM kunt detecteren.
 contentOwner: AG
-feature: Middelenbeheer, Asset Reports
+feature: Asset Management,Asset Reports
 role: User,Admin
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
 
 # Dubbele detectie inschakelen {#enabling-duplicate-detection}
 
-Als u probeert een middel te uploaden dat in de Middelen van Adobe Experience Manager (AEM) bestaat, identificeert de dubbele opsporingseigenschap het als dubbel. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
+Als u probeert een middel te uploaden dat in de Middelen van Adobe Experience Manager bestaat, identificeert de dubbele opsporingseigenschap het als dubbel. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
 1. Open de pagina **[!UICONTROL Adobe Experience Manager Web Console Configuration]** op `https://[server]:[port]/system/console/configMgr`.
 1. Bewerk de configuratie voor de servlet **[!UICONTROL Day CQ DAM Create Asset]**.
@@ -22,7 +22,7 @@ Als u probeert een middel te uploaden dat in de Middelen van Adobe Experience Ma
 
    ![Selecteer de optie Duplicaat detecteren in de servlet](assets/chlimage_1-377.png)
 
-De functie Dupliceren detecteren is nu ingeschakeld in AEM Assets. Wanneer een gebruiker een middel probeert te uploaden dat in AEM bestaat, controleert het systeem op conflict en wijst op het. De elementen worden geïdentificeerd met behulp van SHA-1-hash die is opgeslagen op `jcr:content/metadata/dam:sha1`. Dit betekent dat dubbele elementen worden gedetecteerd, ongeacht de bestandsnamen.
+De functie voor het opsporen van dubbele gegevens is nu ingeschakeld in Elementen [!DNL Experience Manager]. Wanneer een gebruiker een middel probeert te uploaden dat in AEM bestaat, controleert het systeem op conflict en wijst op het. De elementen worden geïdentificeerd met behulp van SHA-1-hash die is opgeslagen op `jcr:content/metadata/dam:sha1`. Dit betekent dat dubbele elementen worden gedetecteerd, ongeacht de bestandsnamen.
 
 >[!MORELIKETHIS]
 >

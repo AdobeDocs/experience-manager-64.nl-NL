@@ -1,31 +1,30 @@
 ---
 title: Zoeken naar elementen uitbreiden
-description: Breid de zoekmogelijkheden van AEM Assets verder uit dan zoeken naar elementen op tekenreeksen.
+description: Breid de onderzoeksmogelijkheden van  [!DNL Experience Manager] Middelen voorbij uit-van-de-doos onderzoeken naar activa door koorden uit.
 contentOwner: AG
 feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '820'
 ht-degree: 11%
 
 ---
 
 # Zoeken naar elementen uitbreiden {#extending-assets-search}
 
-U kunt zoekmogelijkheden voor Adobe Experience Manager (AEM)-middelen uitbreiden. AEM Assets zoekt in het vak naar elementen op tekenreeksen.
+U kunt zoekmogelijkheden voor Adobe Experience Manager-middelen uitbreiden. [!DNL Experience Manager] Middelen zoeken op elementen op tekenreeksen.
 
 Het zoeken wordt gedaan via de interface QueryBuilder zodat kan het onderzoek met verscheidene predikaten worden aangepast. U kunt de standaardset voorspelden in de volgende map bedekken: `/apps/dam/content/search/searchpanel/facets`.
 
-U kunt ook extra tabbladen toevoegen aan het AEM Assets-beheerdeelvenster.
+U kunt ook extra tabbladen toevoegen aan het deelvenster Elementen van [!DNL Experience Manager].
 
 >[!CAUTION]
 >
->Vanaf AEM 6.4 is de klassieke gebruikersinterface afgekeurd. Voor aankondiging, zie [Vervangen en Verwijderde Eigenschappen](../release-notes/deprecated-removed-features.md). U wordt aangeraden de interface met aanraakbediening te gebruiken. Voor aanpassingen, zie [Facetten van het Onderzoek](search-facets.md).
+>Vanaf [!DNL Experience Manager] 6.4 is de klassieke gebruikersinterface afgekeurd. Voor aankondiging, zie [Vervangen en Verwijderde Eigenschappen](../release-notes/deprecated-removed-features.md). U wordt aangeraden de interface met aanraakbediening te gebruiken. Voor aanpassingen, zie [Facetten van het Onderzoek](search-facets.md).
 
-## {#overlaying} overschrijven
+## Bedekken {#overlaying}
 
 Als u de vooraf geconfigureerde voorspelling wilt bedekken, kopieert u de `facets`-node van `/libs/dam/content/search/searchpanel` naar `/apps/dam/content/search/searchpanel/` of geeft u een andere `facetURL`-eigenschap op in de configuratie van het deelvenster Zoeken (de standaardinstelling is `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
@@ -35,10 +34,9 @@ Als u de vooraf geconfigureerde voorspelling wilt bedekken, kopieert u de `facet
 >
 >Standaard bestaat de mappenstructuur onder / `apps` niet en moet deze worden gemaakt. Zorg ervoor dat de knooptypes die onder / `libs` aanpassen.
 
+## Tabs toevoegen {#adding-tabs}
 
-## Tabs {#adding-tabs} toevoegen
-
-U kunt extra tabbladen voor zoekopdrachten toevoegen door deze te configureren in AEM Assets Admin. Extra tabbladen maken:
+U kunt extra lusjes van het Onderzoek toevoegen door hen in [!DNL Experience Manager] Middelen Admin te vormen. Extra tabbladen maken:
 
 1. Maak de mapstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat, en kopieer het `tabs`-knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
 1. Maak en configureer het tweede tabblad naar wens.
@@ -49,9 +47,9 @@ U kunt extra tabbladen voor zoekopdrachten toevoegen door deze te configureren i
 
 ## Aangepaste voorvertoningen maken {#creating-custom-predicates}
 
-AEM Assets wordt geleverd met een set vooraf gedefinieerde basisbegrippen die kunnen worden gebruikt om een pagina voor het delen van bedrijfsmiddelen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier is behandeld in [Creërend en Vormend een Pagina van het Aandeel van Activa](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Experience Manager] De activa komen met een reeks vooraf bepaalde predikaten die kunnen worden gebruikt om een pagina van het Aandeel van Activa aan te passen. Het aanpassen van een Aandeel van Activa op deze manier is behandeld in [Creërend en Vormend een Pagina van het Aandeel van Activa](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Naast het gebruiken van reeds bestaande predikaten, kunnen AEM ontwikkelaars ook hun eigen predikaten tot stand brengen gebruikend [de Bouwer van de Vraag API](/help/sites-developing/querybuilder-api.md).
+Naast het gebruiken van reeds bestaande predikaten, [!DNL Experience Manager] kunnen de ontwikkelaars hun eigen predikaten ook creëren gebruikend [de Bouwer van de Vraag API](/help/sites-developing/querybuilder-api.md).
 
 Voor het maken van aangepaste predikaten is basiskennis over het [Widget-framework](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) vereist.
 
@@ -145,7 +143,7 @@ Een voorspelling van eigenschappen maken:
    ```
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt `cq:editConfig` van het primaire type `cq:EditConfig` toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` met één waarde van **DELETE** toe te voegen.
-1. Navigeer naar uw browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) naar de ontwerpmodus en schakel de nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
+1. Navigeer naar de browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) naar de ontwerpmodus en schakel de nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
 
 1. In de modus **Bewerken** is de nieuwe component nu beschikbaar in de hulpwerkschijf (in de groep **Zoeken**). Plaats de component in de kolom **Predicates** en typ een zoekwoord, bijvoorbeeld **Diamond**, en klik op het vergrootglas om de zoekopdracht te starten.
 
@@ -153,7 +151,7 @@ Een voorspelling van eigenschappen maken:
    >
    >Zorg er bij het zoeken voor dat u de term exact typt, inclusief het juiste hoofdlettergebruik.
 
-### Voorbeeld: Een eenvoudige groepspreiding {#example-build-a-simple-group-predicate} maken
+### Voorbeeld: Een eenvoudige groepspreiding maken {#example-build-a-simple-group-predicate}
 
 Om een groep te bouwen predikaat:
 
@@ -252,7 +250,7 @@ Om een groep te bouwen predikaat:
    ```
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt `cq:editConfig` van het primaire type `cq:EditConfig` toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` met één waarde van `DELETE` toe te voegen.
-1. Navigeer naar uw browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) naar de ontwerpmodus en schakel de nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
+1. Navigeer naar de browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) naar de ontwerpmodus en schakel de nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
 1. In de modus **Bewerken** is de nieuwe component nu beschikbaar in de hulpwerkschijf (in de groep **Zoeken**). Plaats de component in de kolom **Predicates**.
 
 ### Vooraf geïnstalleerde widgets {#installed-predicate-widgets}
@@ -305,6 +303,6 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 
 ## Zoekresultaten aanpassen {#customizing-search-results}
 
-De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. AEM Assets wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van bedrijfsmiddelen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier is behandeld in [Creërend en Vormend een Pagina van het Aandeel van Activa](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. [!DNL Experience Manager] Elementen worden geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier is behandeld in [Creërend en Vormend een Pagina van het Aandeel van Activa](assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Naast het gebruik van reeds bestaande lenzen kunnen AEM ontwikkelaars ook hun eigen lenzen maken.
+Naast het gebruik van reeds bestaande lenzen kunnen ontwikkelaars ook hun eigen lenzen maken.[!DNL Experience Manager]

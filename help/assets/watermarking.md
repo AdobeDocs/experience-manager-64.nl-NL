@@ -2,12 +2,12 @@
 title: Watermerk toevoegen aan uw digitale elementen
 description: Leer hoe u met de functie Watermerken een digitaal watermerk aan elementen kunt toevoegen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] Hiermee kunt u een digitaal watermerk toevoegen aan elementen waarmee gebruikers de authenticiteit en het auteursrecht van de elementen kunnen controleren. [!DNL Experience Manager Assets] ondersteunt tekst die als watermerk moet worden gebruikt in PNG- en JPEG-bestanden.
 
-Met Adobe Experience Manager (AEM) Assets kunt u een digitaal watermerk toevoegen aan afbeeldingen waarmee gebruikers de authenticiteit en het auteursrecht van de elementen kunnen controleren. AEM Assets ondersteunt tekst die als watermerk moet worden gebruikt in PNG- en JPEG-bestanden.
+Met Adobe Experience Manager Assets kunt u een digitaal watermerk toevoegen aan afbeeldingen waarmee gebruikers de authenticiteit en het auteursrecht van de elementen kunnen controleren. [!DNL Experience Manager] Elementen ondersteunen tekst die als watermerk moet worden gebruikt in PNG- en JPEG-bestanden.
 
 Als u een watermerk op elementen wilt toepassen, voegt u de stap Watermerken toe in de [!UICONTROL DAM Update Asset]-workflow.
 
@@ -37,9 +37,9 @@ Als u een watermerk op elementen wilt toepassen, voegt u de stap Watermerken toe
    ![Geef de argumenten op in de stap Watermerk toevoegen in Elementen](assets/arguments_add_watermark_aem_assets.png)
 
 1. Sla de **[!UICONTROL DAM Update Asset]**-workflow op met de stap [!UICONTROL Watermark].
-1. Upload een voorbeeldelement vanuit de AEM gebruikersinterface. Het watermerk wordt weergegeven met de tekengrootte, kleur, enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
+1. Upload een voorbeeldelement vanuit de gebruikersinterface [!DNL Experience Manager]. Het watermerk wordt weergegeven met de tekengrootte, kleur, enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
 
-Als u PDF-documenten programmatisch of met dynamische informatie wilt voorzien van een watermerk, kunt u [AEM Document Services](/help/forms/using/overview-aem-document-services.md) gebruiken.
+Als u PDF-documenten programmatisch of met dynamische informatie wilt voorzien van een watermerk, kunt u [[!DNL Experience Manager] Document Services](/help/forms/using/overview-aem-document-services.md) gebruiken.
 
 ## Tips en beperkingen {#tips-limitations}
 

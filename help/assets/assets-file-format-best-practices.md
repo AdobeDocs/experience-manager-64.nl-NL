@@ -1,20 +1,20 @@
 ---
 title: Aanbevolen werkwijzen voor bestandsindelingen voor elementen
-description: Aanbevolen procedures voor bestandsondersteuning in AEM Assets.
+description: Aanbevolen procedures voor bestandsondersteuning in  [!DNL Experience Manager] Middelen.
 contentOwner: AG
-feature: Asset Management, ontwikkelprogramma's
+feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen werkwijzen voor bestandsindelingen voor elementen {#assets-file-format-best-practices}
 
-AEM Assets biedt ondersteuning voor een groot aantal bibliotheken met bedrijfseigen bestandsindelingen en bestandsindelingen van derden, zodat gebruikers aan verschillende vereisten voor bestandsondersteuning kunnen voldoen. Tot de ondersteunde Adobe-bibliotheken behoren Adobe Camera Raw, Gibson, Adobe PDF Rasterizer en Adobe InDesign Server. Bovendien biedt AEM Assets ondersteuning voor bibliotheken van derden, zoals ImageMagick, TwelveMonkeys, enzovoort.
+[!DNL Experience Manager Assets] Biedt ondersteuning voor een groot aantal bibliotheken met bedrijfseigen bestandsindelingen en bestandsindelingen van derden, zodat gebruikers aan verschillende vereisten voor bestandsondersteuning kunnen voldoen. Tot de ondersteunde Adobe-bibliotheken behoren Adobe Camera Raw, Gibson, Adobe PDF Rasterizer en Adobe InDesign Server. Daarnaast biedt [!DNL Assets] ondersteuning voor bibliotheken van derden, zoals ImageMagick, TwelveMonkeys, enzovoort.
 
 Zie [Ondersteunde indelingen voor elementen](assets-formats.md) voor de ondersteunde bestandsindelingen.
 
@@ -27,7 +27,7 @@ Voor optimale prestaties raadt Adobe u aan een Adobe Camera Raw-bibliotheek te g
 
 De Adobe Camera Raw-bibliotheek ondersteunt CMYK-kleurprofiel als invoer. De uitvoer wordt echter gegenereerd in RGB-kleurruimte en alleen uitvoer in JPEG-indeling wordt ondersteund. De kleurruimte van het bronbestand (bijvoorbeeld CMYK) blijft niet behouden in de miniaturen.
 
-Zie [Camera Raw ondersteuning](camera-raw.md) in AEM Assets voor meer informatie.
+Zie [Camera Raw ondersteuning](camera-raw.md) in [!DNL Assets] voor meer informatie.
 
 ## Adobe PDF Rasterizer-bibliotheek {#adobe-pdf-rasterizer-library}
 
@@ -41,7 +41,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 ## Adobe InDesign-server {#adobe-indesign-cc-server}
 
-Adobe raadt u aan Adobe InDesign-server te gebruiken voor het extraheren van Adobe InDesign-specifieke uitvoeringen, zoals IDML en HTML. Zie [AEM elementen toevoegen als verwijzingen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign) voor meer informatie.
+Adobe raadt u aan Adobe InDesign-server te gebruiken voor het extraheren van Adobe InDesign-specifieke uitvoeringen, zoals IDML en HTML. Zie [Elementen toevoegen als verwijzingen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign) voor meer informatie. [!DNL Experience Manager] 
 
 ##  Dynamic Media   {#dynamic-media}
 
@@ -58,7 +58,7 @@ Adobe raadt u aan de ImageMagick-bibliotheek in de volgende scenario&#39;s te ge
 * Transparantie behouden
 * PSD- en PSB-bestanden verwerken
 
-Om te weten hoe te opstelling de bibliotheek ImageMagic in AEM, zie [Gebruikend ImageMagick](media-handlers.md#an-example-using-imagemagick). Voor optimaal gebruik, zie [Beste praktijken voor het Vormen ImageMagick](best-practices-for-imagemagick.md).
+Zie [ImageMagick](media-handlers.md#an-example-using-imagemagick) gebruiken om te weten hoe u de ImageMagic-bibliotheek instelt in [!DNL Experience Manager]. Voor optimaal gebruik, zie [Beste praktijken voor het Vormen ImageMagick](best-practices-for-imagemagick.md).
 
 ## Bibliotheek voor transformatie van afbeeldingen {#image-transcoding-library}
 

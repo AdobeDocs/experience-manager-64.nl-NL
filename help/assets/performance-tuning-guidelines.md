@@ -1,24 +1,24 @@
 ---
 title: Richtlijnen voor afstelling van middelenprestaties
-description: De belangrijkste aandachtsgebieden rond AEM configuratie, veranderingen in hardware, software, en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
+description: Belangrijke focusgebieden rond [!DNL Experience Manager] configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of [!DNL Experience Manager] Elementen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3168'
+source-wordcount: '3112'
 ht-degree: 0%
 
 ---
 
 # Richtlijnen voor afstelling van middelenprestaties {#assets-performance-tuning-guide}
 
-Een installatie van Adobe Experience Manager (AEM) Assets bevat een aantal hardware-, software- en netwerkcomponenten. Afhankelijk van uw plaatsingsscenario, kunt u specifieke configuratieveranderingen in hardware, software, en netwerkcomponenten vereisen om prestatiesknelpunten te verwijderen.
+Een installatie van Adobe Experience Manager Assets bevat een aantal hardware-, software- en netwerkcomponenten. Afhankelijk van uw plaatsingsscenario, kunt u specifieke configuratieveranderingen in hardware, software, en netwerkcomponenten vereisen om prestatiesknelpunten te verwijderen.
 
-Bovendien zorgt het identificeren en naleven van bepaalde richtlijnen voor de optimalisatie van hardware en software ervoor dat uw AEM Assets-implementatie voldoet aan de verwachtingen op het gebied van prestaties, schaalbaarheid en betrouwbaarheid.
+Daarnaast draagt het identificeren en naleven van bepaalde richtlijnen voor de optimalisatie van hardware en software bij aan het opbouwen van een solide basis waarmee uw [!DNL Experience Manager]-middelenimplementatie voldoet aan de verwachtingen op het gebied van prestaties, schaalbaarheid en betrouwbaarheid.
 
-Slechte prestaties in AEM Assets kunnen van invloed zijn op de interactieve prestaties, de verwerking van bedrijfsmiddelen, de downloadsnelheid en andere aspecten.
+Slechte prestaties in [!DNL Experience Manager] Elementen kunnen van invloed zijn op de gebruikerservaring op het gebied van interactieve prestaties, verwerking van bedrijfsmiddelen, downloadsnelheid en andere gebieden.
 
 In feite, is de prestatiesoptimalisering een fundamentele taak die u uitvoert alvorens u doelmetriek voor om het even welk project vestigt.
 
@@ -26,7 +26,7 @@ Hier zijn bepaalde belangrijke aandachtsgebieden waaromheen u prestatieproblemen
 
 ## Platform {#platform}
 
-Hoewel AEM op een aantal platforms wordt ondersteund, heeft Adobe de grootste ondersteuning voor native gereedschappen gevonden in Linux en Windows. Dit levert optimale prestaties en vereenvoudigt de implementatie. In het ideale geval moet u een 64-bits besturingssysteem implementeren om te voldoen aan de hoge geheugenvereisten van een AEM Assets-implementatie. Zoals bij om het even welke AEM plaatsing, zou u TarMK moeten uitvoeren waar mogelijk. Hoewel TarMK niet voorbij één enkele auteurinstantie kan schrapen, wordt het gevonden om beter te presteren dan MongoMK. U kunt TarMK-offloadinstanties toevoegen om de verwerkingskracht van uw AEM Assets-implementatie voor workflows te verhogen.
+Hoewel [!DNL Experience Manager] op een aantal platforms wordt ondersteund, heeft Adobe op Linux en Windows de grootste ondersteuning voor native gereedschappen gevonden. Dit levert optimale prestaties en vereenvoudigt de implementatie. In het ideale geval moet u een 64-bits besturingssysteem implementeren om te voldoen aan de hoge geheugenvereisten van een [!DNL Experience Manager]-middelenimplementatie. Net als bij elke [!DNL Experience Manager]-implementatie moet u TarMK waar mogelijk implementeren. Hoewel TarMK niet voorbij één enkele auteurinstantie kan schrapen, wordt het gevonden om beter te presteren dan MongoMK. U kunt TarMK-offloadinstanties toevoegen om de verwerkingskracht van de workflow voor de implementatie van [!DNL Experience Manager] Middelen te verhogen.
 
 ### Temp-map {#temp-folder}
 
@@ -51,7 +51,7 @@ Zodra het hoge prestaties tijdelijke volume klaar is, dan plaats de parameter JV
 
 ### Java-versie {#java-version}
 
-Omdat Oracle de release van updates voor Java 7 sinds april 2015 heeft stopgezet, raadt Adobe aan AEM Assets te implementeren op Java 8. In sommige gevallen heeft het een verbeterde prestatie aangetoond.
+Omdat Oracle de release van updates voor Java 7 sinds april 2015 heeft stopgezet, raadt Adobe aan [!DNL Experience Manager] Middelen in Java 8 te implementeren. In sommige gevallen heeft het een verbeterde prestatie aangetoond.
 
 ### JVM-parameters {#jvm-parameters}
 
@@ -67,7 +67,7 @@ U moet de volgende JVM-parameters instellen:
 
 ### Configuratie bestandsgegevensopslag {#file-data-store-configuration}
 
-Het wordt aanbevolen de gegevensopslag te scheiden van de segmentwinkel voor alle AEM Assets-gebruikers. Bovendien kunt u de prestaties maximaliseren door de parameters `maxCachedBinarySize` en `cacheSizeInMB` te configureren. Stel `maxCachedBinarySize` in op de kleinste bestandsgrootte die in de cache kan worden opgeslagen. Geef de grootte op van de cache in het geheugen die moet worden gebruikt voor de datastore in `cacheSizeInMB`. Adobe raadt u aan deze waarde in te stellen tussen 2 en 10 procent van de totale heapgrootte. Het testen van de belasting/prestaties kan echter helpen de ideale instelling te bepalen.
+Het wordt aanbevolen de gegevensopslag te scheiden van de segmentopslag voor alle gebruikers van [!DNL Experience Manager] Middelen. Bovendien kunt u de prestaties maximaliseren door de parameters `maxCachedBinarySize` en `cacheSizeInMB` te configureren. Stel `maxCachedBinarySize` in op de kleinste bestandsgrootte die in de cache kan worden opgeslagen. Geef de grootte op van de cache in het geheugen die moet worden gebruikt voor de datastore in `cacheSizeInMB`. Adobe raadt u aan deze waarde in te stellen tussen 2 en 10 procent van de totale heapgrootte. Het testen van de belasting/prestaties kan echter helpen de ideale instelling te bepalen.
 
 ### De maximale grootte van de cache voor gebufferde afbeeldingen configureren {#configure-the-maximum-size-of-the-buffered-image-cache}
 
@@ -75,7 +75,7 @@ Wanneer u grote hoeveelheden assets uploadt naar Adobe Experience Manager, om on
 
 Vorm de als buffer opgetreden voor geheim voorgeheugengrootte in de Console van het Web OSGi. Stel bij `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache` de eigenschap `cq.dam.image.cache.max.memory` in bytes in. 1073741824 is bijvoorbeeld 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Van AEM 6.1 SP1, als u een `sling:osgiConfig` knoop voor het vormen van dit bezit gebruikt, zorg ervoor om het gegevenstype aan Lang te plaatsen. Zie [CQBufferedImageCache verbruikt heap tijdens het uploaden van middelen](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html) voor meer informatie.
+Van [!DNL Experience Manager] 6.1 SP1, als u een `sling:osgiConfig` knoop voor het vormen van dit bezit gebruikt, zorg ervoor om het gegevenstype aan Lang te plaatsen. Zie [CQBufferedImageCache verbruikt heap tijdens het uploaden van middelen](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html) voor meer informatie.
 
 ### Gedeelde gegevensopslag {#shared-data-stores}
 
@@ -110,10 +110,10 @@ accessKey=<snip>
 
 Adobe raadt aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die HTTP-verkeer sluizen, wat het uploaden van bestanden negatief beïnvloedt en bestanden beschadigt. Bij grote bestanden uploaden dient u ervoor te zorgen dat gebruikers een bekabelde verbinding met het netwerk hebben omdat een WiFi-netwerk snel verzadigd raakt. Zie [Hulplijn voor grootte van elementen](assets-sizing-guide.md) voor richtlijnen voor het identificeren van netwerkknelpunten. Om netwerkprestaties te beoordelen door netwerktopologie te analyseren, zie [Overwegingen van het Netwerk van Activa](assets-network-considerations.md).
 
-Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid beschikbare bandbreedte en de lading op uw AEM instantie af. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
+In de eerste plaats is de optimalisatiestrategie van uw netwerk afhankelijk van de hoeveelheid beschikbare bandbreedte en de belasting van uw [!DNL Experience Manager]-instantie. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
 
-* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw AEM instantie hebt. De adequate bandbreedtetoewijzing is vooral belangrijk als AEM op AWS wordt ontvangen.
-* Als uw AEM op AWS wordt gehost, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
+* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw [!DNL Experience Manager] instantie hebt. De adequate bandbreedtetoewijzing is vooral belangrijk als [!DNL Experience Manager] op AWS wordt ontvangen.
+* Als uw [!DNL Experience Manager]-instantie wordt gehost op AWS, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
 * HTTPS: De meeste gebruikers hebben firewalls die het verkeer van HTTP snuffelen, wat het uploaden van dossiers of zelfs corrupte dossiers tijdens het uploaden negatief kan beïnvloeden.
 * Grote bestanden uploaden: Zorg ervoor dat gebruikers een bekabelde verbinding met het netwerk hebben (WiFi-verbindingen verzadigen snel).
 
@@ -125,9 +125,9 @@ Stel waar mogelijk de DAM Update Asset-workflow in op Transient. De instelling v
 
 >[!NOTE]
 >
->Standaard is de DAM Update Asset-workflow ingesteld op Transient in AEM 6.3. In dit geval kunt u de volgende procedure overslaan.
+>Standaard is de DAM Update Asset-workflow ingesteld op Transient in [!DNL Experience Manager] 6.3. In dit geval kunt u de volgende procedure overslaan.
 
-1. Open `http://localhost:4502/miscadmin` op de AEM instantie u wilt vormen.
+1. Open `http://localhost:4502/miscadmin` op de [!DNL Experience Manager] instantie u wilt vormen.
 
 1. Vouw in de navigatiestructuur **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]** uit.
 1. Dubbelklik op **[!UICONTROL DAM Update Asset]**.
@@ -136,7 +136,7 @@ Stel waar mogelijk de DAM Update Asset-workflow in op Transient. De instelling v
 
    >[!NOTE]
    >
-   >Bepaalde functies ondersteunen geen tijdelijke workflows. Configureer geen tijdelijke workflows als deze functies vereist zijn voor uw AEM Assets-implementatie.
+   >Bepaalde functies ondersteunen geen tijdelijke workflows. Als deze functies vereist zijn voor de implementatie van [!DNL Experience Manager] Middelen, configureert u geen tijdelijke workflows.
 
    Als er geen tijdelijke workflows kunnen worden gebruikt, voert u de workflow regelmatig uit om gearchiveerde DAM Update Asset-workflows te verwijderen om ervoor te zorgen dat de systeemprestaties niet afnemen.
 
@@ -150,9 +150,9 @@ Stel waar mogelijk de DAM Update Asset-workflow in op Transient. De instelling v
 
 ### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
-AEM voert standaard een maximumaantal parallelle taken uit dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door DAM Update Asset-workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat AEM andere processen uitvoeren die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
+[!DNL Experience Manager] voert standaard een maximumaantal parallelle taken uit dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door DAM Update Asset-workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat [!DNL Experience Manager] andere processen uitvoert die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
-1. Ga bij AEM-auteur naar [http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent).
+1. Ga op [!DNL Experience Manager] Auteur naar [http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent).
 1. Klik op Bewerken in elke werkstroomwachtrij die relevant is voor uw implementatie, bijvoorbeeld de Granite Transient Workflow Queue.
 1. Wijzig de waarde van Maximale parallelle taken en klik op Opslaan.
 
@@ -162,7 +162,7 @@ Het instellen van een wachtrij op de helft van de beschikbare processors is een 
 
 Voor grote workflows of workflows die veel resources vereisen, zoals videotranscodering, kunt u de DAM Update Asset-workflows verschuiven naar een tweede auteurinstantie. Vaak is het probleem met offloaden dat elke belasting die wordt bespaard door het offloaden van de workflowverwerking, wordt gecompenseerd door de kosten voor het heen en weer repliceren van de inhoud tussen instanties.
 
-Vanaf AEM 6.2 en met een eigenschappak voor AEM 6.1, kunt u het ontladen met binair-minder replicatie uitvoeren. In dit model, delen de auteursinstanties een gemeenschappelijke datastore en verzenden slechts de meta-gegevens heen en weer door voorwaartse replicatie. Hoewel deze aanpak goed werkt met een datastore voor gedeelde bestanden, kunnen er problemen zijn met een S3-datastore. Omdat achtergrondschrijfthreads latentie kunnen veroorzaken, is het mogelijk dat een element niet naar de datastore is geschreven voordat de offloadtaak wordt gestart.
+Vanaf [!DNL Experience Manager] 6.2 en met een eigenschapspak voor [!DNL Experience Manager] 6.1, kunt u het ontladen met binair-minder replicatie uitvoeren. In dit model, delen de auteursinstanties een gemeenschappelijke datastore en verzenden slechts de meta-gegevens heen en weer door voorwaartse replicatie. Hoewel deze aanpak goed werkt met een datastore voor gedeelde bestanden, kunnen er problemen zijn met een S3-datastore. Omdat achtergrondschrijfthreads latentie kunnen veroorzaken, is het mogelijk dat een element niet naar de datastore is geschreven voordat de offloadtaak wordt gestart.
 
 ### DAM Update Asset Configuration {#dam-update-asset-configuration}
 
@@ -184,7 +184,7 @@ Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun w
 
 Vele klanten van Plaatsen voeren een beeldservlet uit die resizes en teelten beelden op het ogenblik zij worden gevraagd, wat extra lading aan de publicatieinstantie oplegt. Maar zolang deze afbeeldingen in het cachegeheugen kunnen worden opgeslagen, kan de uitdaging worden beperkt.
 
-Een alternatieve aanpak is het gebruik van Dynamic Media Classic-technologie om beeldmanipulatie volledig uit te schakelen. Bovendien kunt u Brand Portal implementeren die niet alleen taken voor het genereren van vertoningen overneemt van de AEM-infrastructuur, maar ook de volledige publicatielaag.
+Een alternatieve aanpak is het gebruik van Dynamic Media Classic-technologie om beeldmanipulatie volledig uit te schakelen. Daarnaast kunt u Brand Portal implementeren die niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
 
 #### ImageMagick {#imagemagick}
 
@@ -209,13 +209,13 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het bestand *con
 
 >[!CAUTION]
 >
->Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de AEM. Zie [ImageMagick](best-practices-for-imagemagick.md) installeren en configureren voor meer informatie.
+>Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de prestaties van [!DNL Experience Manager]. Zie [ImageMagick](best-practices-for-imagemagick.md) installeren en configureren voor meer informatie.
 
 >[!NOTE]
 >
 >De ImageMagick `policy.xml` en `configure.xml` dossiers kunnen onder `/usr/lib64/ImageMagick-*/config/` in plaats van `/etc/ImageMagick/` worden gevonden. Zie [documentatie ImageMagick](https://www.imagemagick.org/script/resources.php) voor details op de plaatsen van het configuratiedossier.
 
-Als u AEM gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van de Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
+Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van Adobe als u van plan bent om veel grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
 
 <!-- 
 
@@ -307,12 +307,12 @@ Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Zie [methodologie 
 
 ### Lucene-indexconfiguraties {#lucene-index-configurations}
 
-Sommige optimalisaties kunnen worden uitgevoerd op de Oak-indexconfiguraties die de AEM Assets-prestaties kunnen helpen verbeteren:
+Sommige optimalisaties kunnen worden uitgevoerd op de indexconfiguraties van de eikel die de prestaties van de elementen kunnen helpen verbeteren [!DNL Experience Manager]:
 
 Werk de configuratie van LuceneIndexProvider bij:
 
 1. Ga naar /system/console/configMgrorg.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-1. Schakel **[!UICONTROL CopyOnRead , CopyOnWrite , and Prefetch Index Files]** in versies vóór AEM 6.2 in. Deze waarden zijn standaard ingeschakeld in AEM 6.2 en latere versies.
+1. Schakel **[!UICONTROL CopyOnRead , CopyOnWrite , and Prefetch Index Files]** in versies vóór [!DNL Experience Manager] 6.2 in. Deze waarden zijn standaard ingeschakeld in [!DNL Experience Manager] 6.2 en latere versies.
 
 Indexconfiguraties bijwerken om de herindexatietijd te verbeteren:
 
@@ -367,7 +367,7 @@ Lucene-tekstextractie uitschakelen:
 
 Als uw gebruikers niet de inhoud van activa hoeven te kunnen zoeken, bijvoorbeeld, die de tekst in Pdf- documenten doorzoeken, dan kunt u indexprestaties verbeteren door deze eigenschap onbruikbaar te maken.
 
-1. Ga naar AEM pakketbeheer /crx/packmgr/index.jsp
+1. Ga naar [!DNL Experience Manager] pakketbeheer /crx/packmgr/index.jsp
 1. Upload en installeer het onderstaande pakket
 
 [Bestand ophalen](assets/disable_indexingbinarytextextraction-10.zip)
@@ -380,13 +380,13 @@ Wanneer het creëren van vragen die grote resultaatreeksen produceren, gebruik d
 
 ### Grote bestanden {#large-files}
 
-Er zijn twee belangrijke bekende problemen met betrekking tot grote bestanden in AEM. Wanneer de dossiers grootten groter dan 2 GB bereiken, kan de koude reserve synchronisatie in een uit-van-geheugensituatie lopen. In sommige gevallen wordt de stand-bysynchronisatie niet uitgevoerd. In andere gevallen loopt de primaire instantie vast. Dit scenario is van toepassing op elk bestand in AEM dat groter is dan 2 GB, inclusief inhoudspakketten.
+Er zijn twee belangrijke bekende problemen met betrekking tot grote bestanden in AEM. Wanneer de dossiers grootten groter dan 2 GB bereiken, kan de koude reserve synchronisatie in een uit-van-geheugensituatie lopen. In sommige gevallen wordt de stand-bysynchronisatie niet uitgevoerd. In andere gevallen loopt de primaire instantie vast. Dit scenario is van toepassing op elk bestand in [!DNL Experience Manager] dat groter is dan 2 GB, inclusief inhoudspakketten.
 
 Op dezelfde manier kan het enige tijd duren voordat het bestand, wanneer bestanden een grootte van 2 GB bereiken terwijl een gedeelde S3-datastore wordt gebruikt, volledig doorloopt van de cache naar het bestandssysteem. Dientengevolge, wanneer het gebruiken van binair-minder replicatie, is het mogelijk dat de binaire gegevens niet kunnen zijn voortgeduurd alvorens de replicatie voltooit. Deze situatie kan tot problemen leiden, vooral als de beschikbaarheid van gegevens belangrijk is, bijvoorbeeld in offloadscenario&#39;s.
 
 ## Prestaties testen {#performance-testing}
 
-Stel voor elke AEM implementatie een testregeling voor de prestaties in waarmee knelpunten snel kunnen worden opgespoord en opgelost. Hier volgen enkele belangrijke aandachtsgebieden.
+Stel voor elke [!DNL Experience Manager]-implementatie een testregeling voor prestaties in waarmee knelpunten snel kunnen worden geïdentificeerd en opgelost. Hier volgen enkele belangrijke aandachtsgebieden.
 
 ### Netwerktests {#network-testing}
 
@@ -398,14 +398,14 @@ Voor alle kwesties van netwerkprestaties van de klant, voer de volgende taken ui
 * Door een hulpmiddel van de netwerkbenchmark te gebruiken
 * Testen tegen de verzender
 
-### AEM {#aem-instance-testing}
+### [!DNL Experience Manager] instantie testen {#aem-instance-testing}
 
-Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu en ladingdeling te bereiken, controleer de prestaties van uw AEM instantie regelmatig. Met name:
+Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu en ladingdeling te bereiken, controleer regelmatig de prestaties van uw [!DNL Experience Manager] instantie. Met name:
 
-* Laadtests uitvoeren op de AEM-instantie
+* Laadtests uitvoeren op de [!DNL Experience Manager]-instantie
 * Uploadprestaties en reactiesnelheid van de gebruikersinterface bewaken
 
-## Controlelijst voor AEM Assets-prestaties {#aem-assets-performance-checklist}
+## [!DNL Experience Manager] Checklist voor prestaties van middelen {#aem-assets-performance-checklist}
 
 * Schakel HTTPS in om rondom eventuele bedrijfs-HTTP-verkeersfragmenten te komen.
 * Gebruik een bekabelde verbinding voor het uploaden van zware middelen.
@@ -420,4 +420,4 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Optimaliseer de configuratie van de index van Lucene.
 * Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de klantenservice van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
 * Gebruik `guessTotal` om vraagprestaties te optimaliseren.
-* Als u AEM configureert om bestandstypen te detecteren vanuit de inhoud van de bestanden (door [!UICONTROL Day CQ DAM Mime Type Service] in [!UICONTROL AEM Web Console] te configureren), uploadt u veel bestanden in bulk tijdens niet-piekuren, aangezien de bewerking bronintensief is.
+* Als u [!DNL Experience Manager] configureert om bestandstypen van de inhoud van de bestanden te detecteren (door [!UICONTROL Day CQ DAM Mime Type Service] in [!UICONTROL [!DNL Experience Manager] Web Console] te configureren), uploadt u veel bestanden in bulk tijdens niet-piekuren, aangezien de bewerking bronintensief is.

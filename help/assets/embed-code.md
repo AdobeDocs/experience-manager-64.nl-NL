@@ -1,8 +1,8 @@
 ---
 title: De Dynamic Media Video- of Image-viewer insluiten op een webpagina
-seo-title: De Dynamic Media Video- of Image-viewer insluiten op een webpagina
+seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: Leer hoe u Dynamic Media-video of -afbeeldingen op een webpagina insluit
-seo-description: Leer hoe u video of afbeeldingen van dynamische media op een webpagina insluit
+seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: Onderdelen
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 20%
+source-wordcount: '358'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 20%
 
 Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen of een asset wilt bekijken die op een webpagina is ingesloten. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed Code]**.
 
-U sluit URLs slechts in als u _niet_ gebruikend AEM als WCM bent. Als u AEM gebruikt als uw WCM, [voegt u de activa direct op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U sluit URLs slechts in als u _niet_ gebruikend [!DNL Experience Manager] als WCM bent. Als u [!DNL Experience Manager] als uw WCM gebruikt, [voegt u de activa direct op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
 Zie [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplication.md)
 

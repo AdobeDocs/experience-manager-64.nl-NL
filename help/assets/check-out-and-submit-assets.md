@@ -2,19 +2,19 @@
 title: Uw digitale middelen inchecken en uitchecken voor bewerking
 description: Leer hoe u middelen kunt uitchecken om deze te bewerken en weer in te checken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '385'
 ht-degree: 4%
 
 ---
 
 # Bestanden in elementen inchecken en uitchecken {#check-in-and-check-out-files-in-assets}
 
-Met Adobe Experience Manager (AEM) Assets kunt u elementen uitchecken om ze te bewerken en weer inchecken nadat u de wijzigingen hebt aangebracht. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Andere gebruikers kunnen geen van deze bewerkingen op het element uitvoeren totdat u het element weer incheckt bij AEM Assets. Ze kunnen echter wel de metagegevens van het vergrendelde element wijzigen.
+Met Adobe Experience Manager Assets kunt u elementen uitchecken om ze te bewerken en weer inchecken nadat u de wijzigingen hebt aangebracht. Nadat u een element hebt uitgecheckt, kunt u het element alleen bewerken, annoteren, publiceren, verplaatsen of verwijderen. Als u een element uitcheckt, vergrendelt u het element. Andere gebruikers kunnen geen van deze bewerkingen op het element uitvoeren totdat u het element weer incheckt bij Elementen [!DNL Experience Manager]. Ze kunnen echter wel de metagegevens van het vergrendelde element wijzigen.
 
 Om activa te kunnen uitchecken of inchecken, hebt u schrijftoegang op hen nodig.
 
@@ -58,13 +58,13 @@ Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven d
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   Het gewijzigde element is ingecheckt in AEM Assets en is beschikbaar voor andere gebruikers voor bewerking.
+   Het gewijzigde element wordt ingecheckt bij [!DNL Assets] en is beschikbaar voor andere gebruikers voor bewerking.
 
 ## Geforceerd inchecken {#forced-check-in}
 
 Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheckt.
 
-1. Meld u als beheerder aan bij AEM Assets.
+1. Meld u als beheerder aan bij [!DNL Assets].
 1. Selecteer in de interface Elementen een of meer elementen die door andere gebruikers zijn uitgecheckt.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

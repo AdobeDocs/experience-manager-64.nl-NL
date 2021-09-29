@@ -1,28 +1,28 @@
 ---
 title: Verbeterde sortering van elementen in AEM
-description: Leer hoe AEM Assets sortering aan de serverzijde implementeert om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches op de client te sorteren.
+description: Leer hoe [!DNL Experience Manager] Middelen server-zijsortering aan de activa van de soortomslag of een onderzoeksvraag bij één keer in plaats van het sorteren van hen in partijen op de cliëntkant opstelt.
 contentOwner: AG
-feature: Zoeken
+feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
 
-# Verbeterde sortering van elementen in AEM {#enhanced-sorting-of-assets-in-aem}
+# Verbeterde sortering van elementen in [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Leer hoe AEM Assets sortering aan de serverzijde implementeert om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches op de client te sorteren.
+Leer hoe [!DNL Experience Manager] Middelen server-zijsortering aan de activa van de soortomslag of een onderzoeksvraag bij één keer in plaats van het sorteren van hen in partijen op de cliëntkant opstelt.
 
-De zoekfunctie van Adobe Experience Manager-middelen (AEM) is verbeterd en daarmee kunt u op efficiënte wijze een groot aantal elementen sorteren in de weergave met de mappenlijst en op pagina&#39;s met zoekresultaten. U kunt ook tijdlijnitems sorteren.
+De zoekfunctie van Adobe Experience Manager Assets is verbeterd en biedt nu een efficiënte manier om een groot aantal elementen te sorteren in de weergave met de mappenlijst en pagina&#39;s met zoekresultaten. U kunt ook tijdlijnitems sorteren.
 
-AEM Assets sorteert via de server de gehele set elementen (hoe groot ook) binnen een map of zoekopdracht tegelijk in plaats van deze op de client te sorteren. Op deze manier kunnen vooraf ingestelde resultaten snel worden weergegeven in de gebruikersinterface, waardoor de sorteerbewerking responsiever en kwetsbaarder wordt.
+[!DNL Experience Manager] Middelen plaatsen server-zijhet sorteren om de volledige reeks activa (hoe groot ook) binnen een omslag of een onderzoeksvraag bij één keer te sorteren in plaats van hen in partijen op de cliëntkant te sorteren. Op deze manier kunnen vooraf ingestelde resultaten snel worden weergegeven in de gebruikersinterface, waardoor de sorteerbewerking responsiever en kwetsbaarder wordt.
 
 ## Elementen sorteren in de lijstweergave {#sorting-assets-in-list-view}
 
-Met AEM Assets kunt u mapelementen sorteren op basis van de volgende velden:
+[!DNL Experience Manager] Met middelen kunt u mapelementen sorteren op basis van de volgende velden:
 
 * Landinstelling
 * Status
@@ -75,7 +75,7 @@ U kunt zoekresultaten sorteren op basis van de volgende velden:
 
 ## Elementen in tijdlijn sorteren {#sorting-assets-in-timeline}
 
-Met AEM Assets kunt u tijdlijnvermeldingen chronologisch sorteren, zoals annotaties, versies, workflows en activiteiten.
+[!DNL Assets] Hiermee kunt u tijdlijnitems chronologisch sorteren, zoals annotaties, versies, workflows en activiteiten.
 
 1. Selecteer in de interface Elementen een element waarvoor u de tijdlijn wilt weergeven.
 1. Klik/tik het pictogram GolbalNav en selecteer **[!UICONTROL Timeline]**.

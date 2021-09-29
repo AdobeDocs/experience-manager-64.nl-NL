@@ -5,26 +5,26 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 39%
+source-wordcount: '361'
+ht-degree: 34%
 
 ---
 
 # Assets publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
-Als beheerder van Adobe Experience Manager-middelen (AEM) kunt u elementen voor uw organisatie publiceren naar de AEM Assets Brand Portal-instantie (of de publicatieworkflow plannen op een latere datum of tijd). U moet echter eerst AEM Assets met Brand Portal configureren. Zie [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md) voor meer informatie.
+Als Adobe Experience Manager Assets-beheerder kunt u elementen publiceren naar de [!DNL Experience Manager Assets Brand Portal]-instantie (of de publicatieworkflow plannen op een latere datum/tijd) voor uw organisatie. Nochtans, moet u eerst [!DNL Assets] met [!DNL Brand Portal] vormen. Zie [Configureren [!DNL Assets] met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) voor meer informatie.
 
 Nadat u een middel publiceert, is het beschikbaar aan gebruikers in Brand Portal.
 
-Als u de oorspronkelijke elementen in AEM Assets daarna wijzigt, worden de wijzigingen pas in Brand Portal doorgevoerd als u het element opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
+Als u in [!DNL Assets] verdere wijzigingen in het oorspronkelijke element aanbrengt, worden de wijzigingen pas in Brand Portal doorgevoerd als u het element opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
-Nadat de replicatie succesvol was, kunt u activa, omslagen, en inzamelingen aan Brand Portal publiceren. Voer de volgende stappen uit om elementen te publiceren naar Brand Portal:
+Nadat de replicatie slaagt, kunt u activa, omslagen, en inzamelingen aan [!DNL Brand Portal] publiceren. Voer de volgende stappen uit om elementen te publiceren naar Brand Portal:
 
 >[!NOTE]
 >
->Adobe raadt gefaseerde publicatie aan, bij voorkeur niet tijdens piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
+>Adobe raadt gefaseerde publicatie aan, bij voorkeur tijdens niet-piekuren, zodat de [!DNL Experience Manager]-auteur niet teveel bronnen in beslag neemt.
 
 1. Houd de muisaanwijzer boven de gewenste elementen in de middelenconsole en selecteer de optie **[!UICONTROL Publish]** in de snelhandelingen.
 

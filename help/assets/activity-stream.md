@@ -2,19 +2,19 @@
 title: Activiteitsstroom in tijdlijn
 description: 'In dit artikel wordt beschreven hoe u activiteitenlogboeken voor elementen op de tijdlijn kunt weergeven. '
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User,Admin
 exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 23%
+source-wordcount: '210'
+ht-degree: 11%
 
 ---
 
 # Activiteitsstroom in tijdlijn {#activity-stream-in-timeline}
 
-Deze functie geeft activiteitenlogboeken voor elementen op de tijdlijn weer. Als u een van de volgende bewerkingen met betrekking tot elementen uitvoert in Adobe Experience Manager (AEM) Assets, werkt de functie Activiteitsstroom de tijdlijn bij om de activiteit weer te geven.
+Deze functie geeft activiteitenlogboeken voor elementen op de tijdlijn weer. Als u een van de volgende bewerkingen met betrekking tot elementen uitvoert in [!DNL Adobe Experience Manager Assets], werkt de functie Activiteitenstroom de tijdlijn bij om de activiteit weer te geven.
 
 De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 
@@ -29,7 +29,7 @@ De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 
 De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald vanaf de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar logboekbestanden worden opgeslagen. 
 
-Bovendien wordt de tijdlijnactiviteit vastgelegd wanneer nieuwe assets worden geüpload of wanneer bestaande assets worden gewijzigd en gecontroleerd in AEM via de [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) of de [AEM-desktopapp](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
+Bovendien wordt de tijdlijnactiviteit geregistreerd wanneer de nieuwe activa worden geupload of de bestaande activa worden gewijzigd en in Experience Manager via [Adobe activaVerbinding](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) of [[!DNL Experience Manager] Desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) worden gecontroleerd.
 
 >[!NOTE]
 >

@@ -1,44 +1,44 @@
 ---
-title: ImageMagick installeren en configureren om met AEM Assets te werken
+title: Installeer en vorm ImageMagick om met [!DNL Experience Manager] Middelen te werken
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
-feature: Uitvoeringen,Gereedschappen voor ontwikkelaars
+feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '726'
 ht-degree: 1%
 
 ---
 
-# ImageMagick installeren en configureren om met AEM Assets te werken {#install-and-configure-imagemagick-to-work-with-aem-assets}
+# ImageMagick installeren en configureren om te werken met [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick is een softwareplug-in voor het maken, bewerken, samenstellen of omzetten van bitmapafbeeldingen. Afbeeldingen kunnen in verschillende indelingen (meer dan 200) worden gelezen en geschreven, waaronder PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF en SVG. Met ImageMagick kunt u afbeeldingen vergroten, verkleinen, spiegelen, roteren, vervormen, schuintrekken en transformeren. U kunt ook afbeeldingskleuren aanpassen, verschillende speciale effecten toepassen of tekst, lijnen, veelhoeken, ellipsen en curven tekenen met ImageMagick.
 
-Gebruik de Adobe Experience Manager (AEM) media-handler van de opdrachtregel om afbeeldingen te verwerken via ImageMagick. Zie [Beste werkwijzen voor bestandsindelingen Middelen](assets-file-format-best-practices.md) voor informatie over het werken met verschillende bestandsindelingen die ImageMagick gebruiken. Zie [Middelen ondersteunde indelingen](assets-formats.md) voor informatie over alle ondersteunde bestandsindelingen.
+Gebruik de Adobe Experience Manager media-handler vanaf de opdrachtregel om afbeeldingen te verwerken via ImageMagick. Zie [Beste werkwijzen voor bestandsindelingen Middelen](assets-file-format-best-practices.md) voor informatie over het werken met verschillende bestandsindelingen die ImageMagick gebruiken. Zie [Middelen ondersteunde indelingen](assets-formats.md) voor informatie over alle ondersteunde bestandsindelingen.
 
-Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met hogere geheugenvereisten dan gebruikelijk, mogelijke wijzigingen die vereist zijn voor IM-beleid en de algemene invloed op de prestaties. De geheugenvereisten zijn afhankelijk van verschillende factoren zoals resolutie, bitdiepte, kleurprofiel en bestandsindeling. Als u van plan bent om zeer grote dossiers te verwerken gebruikend ImageMagick, behoorlijk benchmark de AEM server. Aan het eind zijn er enkele nuttige bronnen beschikbaar.
+Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met hogere geheugenvereisten dan gebruikelijk, mogelijke wijzigingen die vereist zijn voor IM-beleid en de algemene invloed op de prestaties. De geheugenvereisten zijn afhankelijk van verschillende factoren zoals resolutie, bitdiepte, kleurprofiel en bestandsindeling. Als u zeer grote bestanden wilt verwerken met ImageMagick, moet u de [!DNL Experience Manager]-server op de juiste wijze als benchmark instellen. Aan het eind zijn er enkele nuttige bronnen beschikbaar.
 
 >[!NOTE]
 >
->Als u AEM gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van de Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
+>Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van Adobe als u van plan bent om veel grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
 
 ## ImageMagick installeren {#installing-imagemagick}
 
 Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor verschillende besturingssystemen. Gebruik de juiste versie voor uw besturingssysteem.
 
 1. Download de geschikte [ImageMagick-installatiebestanden](https://www.imagemagick.org/script/download.php) voor uw besturingssysteem.
-1. Start het installatiebestand om ImageMagick te installeren op de schijf waarop de AEM server wordt gehost.
+1. Start het installatiebestand om ImageMagick te installeren op de schijf waarop de [!DNL Experience Manager]-server zich bevindt.
 
 1. Plaats de variabele van het wegmilieu aan de installatiemap ImageMagic.
 1. Om te controleren of de installatie succesvol was, voer `identify -version` bevel uit.
 
 ## De processtap van de opdrachtregel instellen {#set-up-the-command-line-process-step}
 
-U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om elke keer dat u een JPEG-afbeeldingsbestand toevoegt aan `/content/dam` op de AEM een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren:
+U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om elke keer dat u een JPEG-afbeeldingsbestand toevoegt aan `/content/dam` op de [!DNL Experience Manager]-server een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren:
 
-1. Ga op de AEM server naar de workflowconsole (`https://[aem_server]:[Port]/workflow`) en open het **[!UICONTROL DAM Update Asset]** workflowmodel.
+1. Ga op de [!DNL Experience Manager]-server naar de Workflowconsole (`https://[aem_server]:[Port]/workflow`) en open het **[!UICONTROL DAM Update Asset]**-workflowmodel.
 1. Open in het workflowmodel **[!UICONTROL DAM Update Asset]** de stap **[!UICONTROL EPS thumbnails (powered by ImageMagick)]**.
 1. Voeg in **[!UICONTROL Arguments tab]** `image/jpeg` toe aan de lijst **[!UICONTROL Mime Types]**.
 
@@ -73,7 +73,7 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
    ![web_enabled](assets/web_enabled.png)
 
 1. Sla de workflow op.
-1. Als u wilt controleren of ImageMagic afbeeldingen correct kan verwerken, uploadt u een JPG-afbeelding naar AEM Assets. Controleer of er een gespiegelde afbeelding en de uitvoeringen voor zijn gegenereerd.
+1. Als u wilt controleren of ImageMagic afbeeldingen correct kan verwerken, uploadt u een JPG-afbeelding naar [!DNL Assets]. Controleer of er een gespiegelde afbeelding en de uitvoeringen voor zijn gegenereerd.
 
 ## Beveiligingskwetsbaarheden verminderen {#mitigating-security-vulnerabilities}
 
@@ -88,10 +88,10 @@ Als u ImageMagick of een beïnvloede bibliotheek gebruikt, adviseert Adobe dat u
 
 >[!MORELIKETHIS]
 >
->* [Aanbevolen procedures voor het verwerken van verschillende bestandsindelingen met AEM Assets](assets-file-format-best-practices.md)
-* [Opdrachtregelopties voor ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
-* [Eenvoudige en geavanceerde voorbeelden van het gebruik van ImageMagick](https://www.imagemagick.org/Usage/)
-* [Afstelling van prestaties van middelen voor ImageMagick](performance-tuning-guidelines.md)
-* [Volledige lijst met bestandsindelingen die door AEM Assets worden ondersteund](assets-formats.md)
-* [Begrijp bestandsindelingen en de geheugenkosten van afbeeldingen](https://www.scantips.com/basics1d.html)
+>* [Aanbevolen procedures voor het verwerken van verschillende bestandsindelingen [!DNL Assets]](assets-file-format-best-practices.md)
+>* [Opdrachtregelopties voor ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
+>* [Eenvoudige en geavanceerde voorbeelden van het gebruik van ImageMagick](https://www.imagemagick.org/Usage/)
+>* [Afstelling van prestaties van middelen voor ImageMagick](performance-tuning-guidelines.md)
+>* [Volledige lijst met bestandsindelingen die worden ondersteund door [!DNL Assets]](assets-formats.md)
+>* [Begrijp bestandsindelingen en de geheugenkosten van afbeeldingen](https://www.scantips.com/basics1d.html)
 

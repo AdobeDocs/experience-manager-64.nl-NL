@@ -2,12 +2,12 @@
 title: Referentie metagegevensschema
 description: 'Leer meer over standaardconventies voor het beschrijven van metagegevens van elementen, zoals Dublin Core, IPTC en ander metagegevensschema. '
 contentOwner: AG
-feature: Metagegevens
+feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ De volgende naslaggids bevat informatie over een bepaald metagegevensschema (in 
 
 ## Dublin Core {#dublin-core}
 
-De meta-gegevens van de Kern van Dublin verstrekt een gestandaardiseerde reeks overeenkomsten voor het beschrijven van activa om hen gemakkelijker te maken te vinden. In AEM Assets beschrijft de Dublin Core digitale elementen, zoals video, geluid, afbeeldingen en documenten.
+De meta-gegevens van de Kern van Dublin verstrekt een gestandaardiseerde reeks overeenkomsten voor het beschrijven van activa om hen gemakkelijker te maken te vinden. In [!DNL Experience Manager] Middelen, beschrijft de Kern van Dublin digitale activa met inbegrip van video, geluid, beelden, en documenten.
 
 De eenvoudige Dublin Core Metadata Element Set (DCMES) bevat 15 metagegevenselementen die in de volgende tabel worden vermeld. Elk Dublin Core-element is optioneel en kan worden herhaald. U kunt Dublin Core-metagegevens toevoegen of verwijderen op dezelfde manier als voor mediatype-specifieke metagegevens.
 
@@ -31,7 +31,7 @@ Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-in
 | schepper | De persoon of het bedrijf die verantwoordelijk is voor het maken van de inhoud. |
 | date | Datum of periode die aan het element is gekoppeld. |
 | beschrijving | Meer informatie over het element. |
-| format | De bestandsindeling, het fysieke medium of de afmetingen van het element. AEM gebruikt dc:format om het mime-type van het element aan te geven. |
+| format | De bestandsindeling, het fysieke medium of de afmetingen van het element. [!DNL Experience Manager] gebruikt dc:format om het mime-type van het element aan te geven. |
 | id | Een unieke verwijzing naar het element. |
 | language | De taal van het element (bijvoorbeeld en voor Engels). |
 | uitgever | De persoon of het bedrijf die verantwoordelijk is voor het ter beschikking stellen van het actief. |

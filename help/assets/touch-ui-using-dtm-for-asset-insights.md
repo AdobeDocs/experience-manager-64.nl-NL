@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 3%
+source-wordcount: '619'
+ht-degree: 0%
 
 ---
 
@@ -22,10 +22,10 @@ Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools 
 
 Voer deze stappen uit om Elementeninzichten door DTM toe te laten:
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [AEM instantie configureren met DTM Cloud Service](../sites-administering/dtm.md)
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
+1. [Configureren [!DNL Experience Manager] instantie met DTM-Cloud Service](../sites-administering/dtm.md)
 
-   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** bezoekt via het pictogram Profiel. Deze stap is niet vereist vanuit het oogpunt van Assets Insights, omdat de integratie van AEM Sites met Assets Insights nog steeds in de werkzaamheden plaatsvindt.
+   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** bezoekt via het pictogram Profiel. Deze stap is niet vereist vanuit het standpunt van Activa Insights, omdat de integratie van [!DNL Experience Manager Sites] met Assets Insights nog steeds in de werkzaamheden plaatsvindt.
 
 1. Meld u aan bij [https://dtm.adobe.com](https://dtm.adobe.com/) en selecteer een bedrijf.
 1. Een bestaande webeigenschap maken/openen
@@ -43,7 +43,7 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten:
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets]**.
+1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > Assets]**.
 1. Tik/klik op **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze vervolgens in het dialoogvenster Script dat u in stap 6 hebt geopend. Sla de wijzigingen op.
 
    >[!NOTE]
