@@ -1,23 +1,22 @@
 ---
 title: Indexering via de eiken-run-jar
-seo-title: Indexering via de eiken-run-jar
+seo-title: Indexing via the Oak-run Jar
 description: Leer hoe u indexering uitvoert via de Oak-run Jar.
-seo-description: Leer hoe u indexering uitvoert via de Oak-run Jar.
+seo-description: Learn how to perform indexing via the Oak-run Jar.
 uuid: 09a83ab9-92ec-4b55-8d24-2302f28fc2e4
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
 exl-id: b85fc608-9653-4491-8557-f66a0a7da5ea
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 809a62eeca8b8e30e010beea7d594ced165e8faa
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
 
-# Indexeren via de eiken-run Jar{#indexing-via-the-oak-run-jar}
+# Indexering via de eiken-run-jar{#indexing-via-the-oak-run-jar}
 
 De eiken-looppas steunt alle indexerende gebruiksgevallen op de bevellijn zonder het moeten van JMX niveau werken. De voordelen van de &quot;eak-run&quot;-aanpak zijn:
 
@@ -57,7 +56,7 @@ Dit diagram is een beslissingsboom voor wanneer om de diverse re-indexerende ben
 
 ![eik_-_rendexingwithoak-run](assets/oak_-_reindexingwithoak-run.png)
 
-## MongoMK / RDMBMK {#reindexingmongomk} opnieuw indexeren
+## MongoMK/RDMBMK opnieuw indexeren {#reindexingmongomk}
 
 >[!NOTE]
 >
@@ -75,7 +74,7 @@ Afhankelijk van de `oak-run.jar` indexerende benadering zullen er diverse stappe
 >
 >Oranje duidt activiteiten aan waarbij AEM zich in een onderhoudsvenster moeten bevinden.
 
-### Online opnieuw indexeren voor MongoMK of RDBMK gebruikend oak-run.jar {#onlinere-indexingformongomk}
+### Online opnieuw indexeren voor MongoMK of RDBMK met behulp van eak-run.jar {#onlinere-indexingformongomk}
 
 >[!NOTE]
 >
@@ -87,7 +86,7 @@ Dit proces moet slechts tegen één enkele AEM instantie in de cluster worden ui
 
 ![5](assets/5.png)
 
-## TarMK {#re-indexingtarmk} opnieuw indexeren
+## TarMK opnieuw indexeren {#re-indexingtarmk}
 
 >[!NOTE]
 >
@@ -107,7 +106,7 @@ Dit proces moet slechts tegen één enkele AEM instantie in de cluster worden ui
 >
 >Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Reindex - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
 
-Dit is de methode die wordt gebruikt vóór de implementatie van de nieuwe indexeringsmogelijkheden van eak-run.jar. Dit kan worden gedaan door de eigenschap `reindex=true` op de index van de eik in te stellen.
+Dit is de methode die vóór de introductie van de nieuwe indexeringsmogelijkheden van eak-run.jar wordt gebruikt. Dit kan worden gedaan door de eigenschap `reindex=true` op de index van de eik in te stellen.
 
 Deze benadering kan worden gebruikt als de tijd en prestatiesgevolgen aan index voor de klant aanvaardbaar zijn. Dit is vaak het geval bij kleine tot middelgrote AEM.
 
@@ -119,7 +118,7 @@ Deze benadering kan worden gebruikt als de tijd en prestatiesgevolgen aan index 
 >
 >Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Reindex - SegmentNodeStore - de AEM Instantie loopt](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-Het online opnieuw indexeren van TarMK is sneller dan Online TarkMK die hierboven wordt beschreven opnieuw indexeert. Nochtans, vereist het ook uitvoering tijdens een onderhoudsvenster, met de methode dat het venster korter zal zijn, en meer stappen worden vereist om het re-indexeren uit te voeren.
+Het online opnieuw indexeren van TarMK gebruikend oak-run.jar is sneller dan [Online het Opnieuw indexeren voor TarMK](#onlinere-indexingfortarmk) hierboven beschreven. Het vereist echter ook uitvoering tijdens een onderhoudsvenster; met de vermelding dat het venster korter zal zijn, en meer stappen worden vereist om het re-indexeren uit te voeren.
 
 >[!NOTE]
 >
@@ -127,7 +126,7 @@ Het online opnieuw indexeren van TarMK is sneller dan Online TarkMK die hierbove
 
 ![7](assets/7.png)
 
-### Offline opnieuw indexeren TarMK met behulp van eak-run.jar {#offlinere-indexingtarmkusingoak-run-jar}
+### Offline opnieuw indexeren TarMK met gebruik van eikenrun.jar {#offlinere-indexingtarmkusingoak-run-jar}
 
 >[!NOTE]
 >
@@ -141,7 +140,7 @@ Offline opnieuw indexeren van TarMK is de eenvoudigste `oak-run.jar` gebaseerde 
 
 ![8](assets/8.png)
 
-### Out-of-band re-Indexing TarMK gebruikend oak-run.jar {#out-of-bandre-indexingtarmkusingoak-run-jar}
+### Out-of-band re-Indexing TarMK gebruikend oak-run.jar  {#out-of-bandre-indexingtarmkusingoak-run-jar}
 
 >[!NOTE]
 >
@@ -155,13 +154,13 @@ Het opnieuw indexeren van out-of-band minimaliseert het effect van het opnieuw i
 
 ![9](assets/9.png)
 
-## Indexdefinities {#updatingindexingdefinitions} bijwerken
+## Indexdefinities bijwerken {#updatingindexingdefinitions}
 
 >[!NOTE]
 >
 >Voor meer gedetailleerde informatie over dit scenario, zie [Geval 4 gebruiken - het Bijwerken van de Definities van de Index](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
 
-### Indexdefinities maken en bijwerken op TarMK met ACS Secure Index {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
+### Indexdefinities maken en bijwerken op TarMK met ACS Zorg voor index {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
 
 >[!NOTE]
 >
