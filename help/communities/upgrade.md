@@ -1,8 +1,8 @@
 ---
 title: Opwaarderen naar AEM 6.4 Gemeenschappen
-seo-title: Opwaarderen naar AEM 6.4 Gemeenschappen
+seo-title: Upgrading to AEM 6.4 Communities
 description: Hoe te om van een vroegere versie aan AEM 6.4 Gemeenschappen te bevorderen
-seo-description: Hoe te om van een vroegere versie aan AEM 6.4 Gemeenschappen te bevorderen
+seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
 uuid: c6c2846e-38d4-4e99-9038-bfb486afd8b9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -51,17 +51,17 @@ Als de geüpgrade site is geconfigureerd voor het gebruik van de Adobe-cloudopsl
 
 Aldus, is er de capaciteit om ASRP op te dragen om `AEM 6.0 compatability-mode` te gebruiken om tot UGC toegang te hebben.
 
-Voor alle AEM 6.3 auteur- en publicatieinstanties
+Voor alle AEM 6.3 auteur- en publicatieinstanties:
 
-1. Aanmelden met beheerdersrechten
-2. [ASRP](asrp.md) configureren
-3. Ga als volgt te werk om bestaande UGC zichtbaar te maken:
-i. Naar de webconsole bladeren, bijvoorbeeld
-   [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
-configMgrii. **[!UICONTROL AEM Communities Utilities]**-configuratie zoeken
-iii. Selecteren om configuratievenster uit te vouwen
-   * *Uitschakelen* **`Cloud Storage`**
-   * Selecteer **[!UICONTROL Save]**
+1. Meld u aan met beheerdersrechten en configureer [ASRP](asrp.md).
+1. Ga als volgt te werk om de bestaande UGC zichtbaar te maken:
+
+   i. Blader naar de webconsole. De standaard-URL is
+   `https://localhost:4502/system/console/configMgr`.
+
+   ii. Zoek de **[!UICONTROL AEM Communities Utilities]**-configuratie en selecteer deze om het configuratievenster uit te vouwen.
+
+   iii. Schakel **[!UICONTROL Cloud Storage]** uit en klik **[!UICONTROL Save]**.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
