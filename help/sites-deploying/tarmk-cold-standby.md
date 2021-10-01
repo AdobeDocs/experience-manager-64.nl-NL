@@ -1,24 +1,24 @@
 ---
 title: Hoe te om AEM met TarMK Koude Reserve in werking te stellen
-seo-title: Hoe te om AEM met TarMK Koude Reserve in werking te stellen
+seo-title: How to Run AEM with TarMK Cold Standby
 description: Leer hoe u een TarMK Cold Standby-installatie maakt, configureert en onderhoudt.
-seo-description: Leer hoe u een TarMK Cold Standby-installatie maakt, configureert en onderhoudt.
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 27fd2b64-8983-40be-910e-1776a16e127c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configureren
+feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
+source-git-commit: 63367e85f66d7830183403af6ad32ecca9dc8396
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
 
-# Hoe te om AEM met TarMK Koude Reserve{#how-to-run-aem-with-tarmk-cold-standby} in werking te stellen
+# Hoe te om AEM met TarMK Koude Reserve in werking te stellen{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Inleiding {#introduction}
 
@@ -34,7 +34,17 @@ Inhoud wordt lineair gesynchroniseerd tussen de primaire instantie en de stand-b
 >
 >Voor informatie over meer beschikbare plaatsingen, zie [Aanbevolen Plaatsingen](/help/sites-deploying/recommended-deploys.md) pagina.
 
-## Hoe werkt {#how-it-works}
+>[!NOTE]
+>
+>Wanneer de Standby-instantie is ingesteld of is afgeleid van het primaire knooppunt, biedt deze alleen toegang tot de volgende twee consoles (voor beheergerelateerde activiteiten):
+>
+>* CRXDE Lite
+>* OSGI-webconsole
+
+>
+>Andere consoles zijn niet toegankelijk.
+
+## Hoe werkt het {#how-it-works}
 
 Voor de primaire AEM instantie, wordt een haven van TCP geopend en luistert aan inkomende berichten. Momenteel zijn er twee soorten berichten die de slaven naar de master zullen verzenden:
 
@@ -83,8 +93,7 @@ Bovendien kunt u de reserveinstanties specificeren die worden toegestaan om te v
 >* van org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService to org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
->
-Zorg ervoor u de noodzakelijke configuratieaanpassingen aanbrengt om deze verandering te weerspiegelen.
+>Zorg ervoor u de noodzakelijke configuratieaanpassingen aanbrengt om deze verandering te weerspiegelen.
 
 Als u een TarMK koude stand-byopstelling wilt maken, moet u eerst de stand-byinstanties maken door een kopie van het bestandssysteem van de volledige installatiemap van de primaire toepassing naar een nieuwe locatie uit te voeren. Vervolgens kunt u elke instantie starten met een runmode die de rol ervan opgeeft ( `primary` of `standby`).
 
@@ -206,7 +215,6 @@ De dienst kan ook via de Console van het Web, door worden gevormd:
 >U kunt de rol van een instantie op elk ogenblik controleren door de aanwezigheid van **primaire** of **standby** runmodes in de Console van het Web van de Montages van het Verkopen te controleren.
 >
 >Dit kan worden gedaan door naar *http://localhost:4502/system/console/status-slingsettings* te gaan en **&quot;te controleren Wijzen van de Looppas&quot;** lijn.
-
 
 ## Eerste synchronisatie {#first-time-synchronization}
 
@@ -359,7 +367,7 @@ Bovendien kan informatie voor maximaal 10 cliënten (standby instanties) die met
 * `TransferredSegments:` het totale aantal segmenten dat naar deze client is overgedragen.
 * `TransferredSegmentBytes:`het totale aantal bytes dat naar deze client is overgedragen.
 
-## Onderhoud van opslagplaats in koude stand-by {#cold-standby-repository-maintenance}
+## Onderhoud van Cold Standby Repository {#cold-standby-repository-maintenance}
 
 ### Revisie opschonen {#revision-clean}
 
@@ -386,7 +394,7 @@ Het kan langer duren dan normaal voor de stand-by instantie synchronisatie met d
 
 Als alternatief, kan de primaire bewaarplaats manueel over aan stand-by worden gekopieerd na het in werking stellen van compensatie op de primaire, hoofdzakelijk het herbouwen van reserve telkens als de samenperking loopt.
 
-### Afvalverzameling gegevensopslag {#data-store-garbage-collection}
+### Opruimverzameling gegevensopslag {#data-store-garbage-collection}
 
 Het is belangrijk om afvalophaling op de instanties van de dossierdatastore van tijd tot tijd in werking te stellen aangezien anders, schrapte binaire getallen op het filesystem zullen blijven, uiteindelijk vult de aandrijving. Volg de onderstaande procedure om afvalophaling uit te voeren:
 
