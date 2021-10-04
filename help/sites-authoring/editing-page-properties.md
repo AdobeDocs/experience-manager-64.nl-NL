@@ -1,8 +1,8 @@
 ---
 title: Pagina-eigenschappen bewerken
-seo-title: Pagina-eigenschappen bewerken
+seo-title: Editing Page Properties
 description: De vereiste eigenschappen voor een pagina definiëren
-seo-description: De vereiste eigenschappen voor een pagina definiëren
+seo-description: Define the required properties for a page
 uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1789'
 ht-degree: 3%
 
 ---
@@ -26,7 +25,7 @@ U kunt de vereiste eigenschappen voor een pagina definiëren. Deze kunnen afhank
 
 De eigenschappen worden verdeeld over verscheidene lusjes.
 
-### Standaard {#basic}
+### Basis {#basic}
 
 * **Titel**
 
@@ -125,13 +124,10 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    Geef een alias op die voor deze pagina moet worden gebruikt.
 
-   >[!NOTE]
-   >
-   > Alias plaatst het `sling:alias` bezit om een alias naam voor het middel te bepalen (dit beïnvloedt slechts het middel, niet de weg).
-   >
-   >Bijvoorbeeld: als u een alias van `latin-lang` voor de knoop `/content/we-retail/spanish` bepaalt, dan kan deze pagina via `/content/we-retail/latin-language` worden betreden
-   >
-   >Zie [Gelokaliseerde paginanamen onder SEO en URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names) voor meer informatie
+   * Als u bijvoorbeeld een alias van `private` definieert voor de pagina `/content/wknd/us/en/magazine/members-only`, kan deze pagina ook worden geopend via `/content/wknd/us/en/magazine/private`.
+   * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld, die alleen van invloed is op de bron, niet op het pad naar de opslagplaats.
+   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [Publicatieopties ](/help/sites-authoring/publishing-pages.md) in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
+   * Zie [Gelokaliseerde paginanamen onder SEO en URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names) voor meer informatie
 
 * **Toegestane sjablonen**
 
@@ -179,7 +175,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee geeft u de opties weer die beschikbaar zijn voor [De kerncomponent delen](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
 
    * **Delen door gebruikers voor Facebook inschakelen**
-   * **Gebruikersdeling inschakelen voor Pinterest**
+   * **Delen door gebruikers voor Pinterest inschakelen**
    * **Voorkeur voor XF-**
 variatieDefinieer de fragmentvariatie die wordt gebruikt voor het genereren van metagegevens voor de pagina
 
@@ -248,7 +244,7 @@ U kunt pagina-eigenschappen definiëren:
 
    * **Pagina-informatie** gebruiken (en vervolgens **Eigenschappen openen**)
 
-### Uit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
+### Vanuit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
 
 Klik op **Eigenschappen** of tikken om de pagina-eigenschappen te definiëren:
 
@@ -282,7 +278,7 @@ Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** gebruiken om de pagin
 
 1. Met de knop **Opslaan en sluiten** kunt u de wijzigingen opslaan.
 
-### Uit de siteconsole - Meerdere pagina&#39;s {#from-the-sites-console-multiple-pages}
+### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
 
 Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgens **Eigenschappen weergeven** gebruiken om de pagina-eigenschappen te bekijken en/of te bewerken. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
 
