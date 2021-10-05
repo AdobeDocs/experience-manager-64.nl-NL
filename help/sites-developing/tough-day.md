@@ -1,8 +1,8 @@
 ---
 title: Dag
-seo-title: Dag
+seo-title: Tough Day
 description: De test van de Dag van de Stevige simuleert de dagelijkse lading van ongeveer 1000 auteurs in een worstcasescenario met alle verrichtingen die tezelfdertijd gebeuren.
-seo-description: De test van de Dag van de Stevige simuleert de dagelijkse lading van ongeveer 1000 auteurs in een worstcasescenario met alle verrichtingen die tezelfdertijd gebeuren.
+seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 7a13efe0-c455-4af0-ad7b-c39cb2479d74
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,23 +10,22 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-translation-type: tm+mt
-source-git-commit: 204b28653c8771fead77c484aec40d6ec6629b6c
+source-git-commit: 119023a24d5f21fd003439992fe5a520f48b6861
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
 
-# Grove dag{#tough-day}
+# Dag{#tough-day}
 
-## Wat is Hogere Dag 2 {#what-is-tough-day}
+## Wat is Hoest Dag 2 {#what-is-tough-day}
 
 Dag 2 is een toepassing waarmee u de grenzen van uw AEM-instantie kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt [deze opname](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) voor een presentatie van de toepassing letten.
 
-## Hoe te om Dag 2 {#how-to-run-tough-day} in werking te stellen
+## Hoe wordt Tough Day 2 uitgevoerd {#how-to-run-tough-day}
 
-Download de nieuwste versie van Tough Day 2 van [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Nadat u de toepassing hebt gedownload, kunt u deze uit het vak uitvoeren door de parameter `host` op te geven. In het volgende voorbeeld wordt de AEM instantie lokaal uitgevoerd, zodat de waarde `localhost` wordt gebruikt:
+Download de nieuwste versie van Tough Day 2 van [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Nadat u de toepassing hebt gedownload, kunt u deze uit het vak uitvoeren door de parameter `host` op te geven. In het volgende voorbeeld wordt de AEM instantie lokaal uitgevoerd, zodat de waarde `localhost` wordt gebruikt:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -54,8 +53,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >
 >Dag 2 van de oude dag heeft geen opschoonstap. Als gevolg hiervan wordt aangeraden Dag 2 te gebruiken op een gekloonde staging-instantie en niet op de hoofdproductie-instantie. De testinstantie moet na de tests worden verwijderd.
 
-
-### Help {#getting-help} ophalen
+### Help opvragen {#getting-help}
 
 Dag 2 van de tijd biedt een brede waaier van hulpopties die van de bevellijn kunnen worden betreden. Bijvoorbeeld:
 
@@ -141,7 +139,7 @@ U vindt de relevante parameters in de onderstaande lijst:
 | `--loglevel=<Val>` | Het logniveau voor de Tough Day 2-motor. | INFO | ALLES, FOUTOPSPORING, INFO, WAARSCHUWING, FOUT, FATAAL, UIT |
 | `--dryrun=<Val>` | Indien waar (true), wordt de resulterende configuratie afgedrukt en worden geen tests uitgevoerd. | false | true of false |
 
-## {#customizing} aanpassen
+## Aanpassen {#customizing}
 
 De aanpassing kan op twee manieren worden bereikt: opdrachtregelparameters of normale configuratiebestanden. **De dossiers van de configuratie worden over het algemeen gebruikt voor grote douanereeksen en zij zullen de standaardparameters van Dag 2 van de Hoek met voeten treden. De de lijnparameters van het bevel treden zowel configuratiedossiers als standaardparameters met voeten.**
 
@@ -166,7 +164,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Meerdere exemplaren van dezelfde test toevoegen {#adding-multiple-instances-of-the-same-test}
+### Meerdere exemplaren van dezelfde test toevoegen  {#adding-multiple-instances-of-the-same-test}
 
 U kunt ook meerdere exemplaren van dezelfde test toevoegen en uitvoeren, maar elke instantie moet een unieke naam hebben. De voorbeelden tonen hieronder hoe te om twee instanties van de zelfde test toe te voegen of door bevellijnparameters of een yaml configuratiedossier te gebruiken.
 
@@ -281,7 +279,7 @@ tests:
   - exclude : UploadAsset 
 ```
 
-### Modi {#run-modes} uitvoeren
+### Modi uitvoeren {#run-modes}
 
 Dag 2 van de tijd kan in één van de volgende wijzen lopen: **normal** en **constante load**.
 
@@ -308,7 +306,7 @@ runmode:
 
 De **constante lading** loopwijze verschilt van de normale looppaswijze door een constant aantal begonnen testuitvoeringen, eerder dan een constant aantal draden te produceren. U kunt het laden instellen met de parameter voor de uitvoeringsmodus met dezelfde naam.
 
-### Selectie {#test-selection} testen
+### Selectie testen {#test-selection}
 
 Het testselectieproces is hetzelfde voor beide uitvoermodi en gaat als volgt te werk: alle tests hebben een `weight` bezit, dat de waarschijnlijkheid van uitvoering in een draad bepaalt. Als we bijvoorbeeld twee tests hebben, één met een gewicht van 5 en één met een gewicht van 10, is de kans dat de laatste twee keer zo groot is als de eerste.
 
@@ -335,7 +333,7 @@ or
 >
 >Door parallelle uitvoeringen, zal het daadwerkelijke aantal testlooppas niet precies de hoeveelheid zijn die in de `count` parameter wordt gevormd. Verwacht een afwijking evenredig aan het aantal lopende draden (die door `concurrency parameter` worden gecontroleerd).
 
-### Uitvoeren drogen {#dry-run}
+### Droog {#dry-run}
 
 Een droge looppas ontleedt alle bepaalde input (bevellijnparameters of configuratiedossiers), die het met de gebreken samenvoegen en dan de resultaten uitvoert. Geen van de tests wordt uitgevoerd.
 
