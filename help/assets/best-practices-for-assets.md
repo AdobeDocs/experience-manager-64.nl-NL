@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -37,4 +37,4 @@ Het verwerken van grote bestanden en het uitvoeren van workflows in [!DNL Experi
 * [[!DNL Experience Manager] en Creative Cloud integratie beste ](aem-cc-integration-best-practices.md)
 praktijkenU kunt uw  [!DNL Experience Manager] plaatsing met Creative Cloud op veelvoudige manieren integreren. Door de best practices te volgen om uw workflows voor integratie en overdracht van bedrijfsmiddelen te stroomlijnen, kunt u maximale efficiëntie bereiken. Deze handleiding bevat tips en trucs voor het integreren van [!DNL Experience Manager]-middelen met Adobe Creative Cloud.
 * (Verouderd) [[!DNL Experience Manager] om de map Creative Cloud te delen met aanbevolen werkwijzen](aem-cc-folder-sharing-best-practices.md)
-U kunt [!DNL Experience Manager] zodanig configureren dat gebruikers in DAM mappen kunnen delen met gebruikers van Creative Cloud (CC), zodat ze beschikbaar zijn als gedeelde mappen in de service Creative Cloud Assets. Deze functie kan worden gebruikt voor het uitwisselen van bestanden tussen creatieve teams en DAM-gebruikers. In deze handleiding worden de aanbevolen procedures voor het gebruiken van de functie [!DNL Experience Manager] voor het delen van mappen in Creative Cloud uitgelegd.
+U kunt [!DNL Experience Manager] zodanig configureren dat gebruikers in DAM mappen kunnen delen met Creative Cloud-gebruikers, zodat deze beschikbaar zijn als gedeelde mappen in de service Creative Cloud-middelen. Deze functie kan worden gebruikt voor het uitwisselen van bestanden tussen creatieve teams en DAM-gebruikers. In deze handleiding worden de aanbevolen procedures voor het gebruiken van de functie [!DNL Experience Manager] voor het delen van mappen in Creative Cloud uitgelegd.

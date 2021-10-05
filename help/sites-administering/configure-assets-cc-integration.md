@@ -1,10 +1,10 @@
 ---
 title: AEM Assets-integratie configureren met Experience Cloud
 description: Leer hoe u AEM Assets-integratie met Experience Cloud configureert.
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 1. Selecteer **[!UICONTROL Scope]** in de lijst **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** en **[!UICONTROL cc-share]**.
 1. Klik op **[!UICONTROL Create]**. Een bericht meldt dat de toepassing is gemaakt.
 
-   ![Melding van het feit dat de toepassing is gemaakt om AEM Assets te integreren met Adobe CC](assets/chlimage_1-289.png)
+   ![Melding van geslaagde aanmaak van de toepassing voor de integratie van AEM Assets met Adobe Creative Cloud](assets/chlimage_1-289.png)
 
 1. Kopieer **[!UICONTROL Application ID]** die voor de nieuwe toepassing wordt geproduceerd.
 
@@ -74,13 +74,13 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 
 1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een titel en naam voor de nieuwe configuratie op en klik op **[!UICONTROL Create]**.
 
-   ![Geef een nieuwe configuratie de naam om AEM Assets en CC te integreren](assets/cloudservices_configure_mc.png)
+   ![Geef een nieuwe configuratie de naam om AEM Assets en Creative Cloud te integreren](assets/cloudservices_configure_mc.png)
 
 1. Geef in het veld **[!UICONTROL Tenant URL]** de URL voor AEM Assets op. Als de URL in het verleden is gedefinieerd als `https://<tenant_id>.marketing.adobe.com`, wijzigt u deze in `https://<tenant_id>.experiencecloud.adobe.com`.
 
    1. Navigeer naar **Gereedschappen > Cloud Services > Oudere Cloud Services**. Klik onder Adobe Experience Cloud op **Configuraties tonen**.
    1. Selecteer de bestaande configuratie die u wilt bewerken. Bewerk de configuratie en vervang `marketing.adobe.com` naar `experiencecloud.adobe.com`.
-   1. Sla de configuratie op. Test de MAC-sync replicatieagenten.
+   1. Sla de configuratie op. Test de MAC-sync replicatiemiddelen.
 
 1. Plak in het veld **[!UICONTROL Client ID]** de toepassings-id die u aan het einde van de procedure hebt gekopieerd [een toepassing maken](#create-an-application).
 
@@ -164,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Aanbevolen werkwijzen voor het integreren van middelen en Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
-* [Middelen naar Creative Cloud-map die aanbevolen werkwijzen deelt](/help/assets/aem-cc-folder-sharing-best-practices.md)
+>* [Middelen naar Creative Cloud-map die aanbevolen werkwijzen deelt](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

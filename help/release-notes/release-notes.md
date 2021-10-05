@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2751'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,7 @@ Voor meer informatie, te bezoeken [deze documentatiepagina](/help/sites-deployin
 * [Herstructurering](/help/sites-deploying/repository-restructuring.md) van de opslagplaats: aanzienlijke herstructurering ( hoofdzakelijk / enz . ) om verbeteringen te vergemakkelijken en de toepassing van beste praktijken te bevorderen ;
 * Voor meer algemene informatie over Upgrades raadpleegt u [deze pagina](/help/sites-deploying/upgrade.md) voor meer informatie.
 
-### Sites Experience Managers {#experience-manager-sites}
+### Experience Manager Sites {#experience-manager-sites}
 
 Volledige lijst van veranderingen in [AEM Sites en toe:voegen-ons](sites.md).
 
@@ -117,7 +117,7 @@ De introductie van Fluid Ervaring begin 2017, gesteund door de Fragments van de 
 
 **[Contentfragmenten](/help/assets/content-fragments.md)**
 
-Nieuw in 6.4 zijn een visuele [inhoudsmodel](/help/assets/content-fragments-models.md) redacteur en een nieuwe [configureerbare component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) om flexibele output van HTML en JSON te verstrekken om in de Diensten van de Inhoud te omvatten.
+Nieuw in 6.4 zijn een visuele [inhoudsmodel](/help/assets/content-fragments-models.md) redacteur en een nieuwe [configureerbare component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) om flexibele HTML output en JSON te verstrekken om in de Diensten van de Inhoud te omvatten.
 
 **Ervaringsfragmenten**
 
@@ -181,13 +181,13 @@ De functies Toewijzing en Catalogus zijn nu beschikbaar in groepen. Op deze mani
 
 ![toewijzingscatalogus](assets/assignmentcatalog.png)
 
-### Experience Manager-elementen {#experience-manager-assets}
+### Experience Manager Assets {#experience-manager-assets}
 
 AEM 6.4 bevat verschillende nieuwe functies en verbeteringen voor Middelen, waaronder nieuwe, verbeterde CreativeCloud-integratie, belangrijke vernieuwingen op het gebied van kunstmatige intelligentie, verbeterd metagegevensbeheer, verbeterde rapportering en algemene verbeteringen voor de gebruikerservaring. De volledige lijst van veranderingen beschikbaar in [AEM Assets](assets.md). De belangrijkste punten van de release zijn:
 
 **Adobe-itemkoppeling**
 
-Adobe Asset Link in Creative Cloud for Enterprise stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van content. Het is een nieuwe native mogelijkheid in Creative Cloud voor ondernemingen die Photoshop CC, Illustrator CC en InDesign CC verbindt met AEM — zonder dat creatieve personen hun tools hoeven te verlaten.
+Adobe Asset Link in Creative Cloud for Enterprise stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van content. Het is een nieuwe inheemse capaciteit in Creative Cloud voor onderneming die Photoshop, Illustrator, en InDesign met AEM verbindt — zonder dat de creatieven hun instrumenten van keus moeten verlaten.
 
 Meer over dit vermogen, eerste vereisten, en hoe te om tot het toegang te hebben, zie [Adobe Activa Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 
@@ -255,7 +255,7 @@ AEM 6.4 Forms biedt verschillende nieuwe functies en verbeteringen. De hooglicht
 * Prefill Interactieve Mededelingen van bedrijfstoepassingen
 * Workflowmodernisering en ondersteuning voor mobiele werknemers
 * Lazy laadfragmenten
-* Enig-hop verbetering van LiveCycle aan Experience Manager Forms 6.4
+* Eén-hopupgrade van LiveCycle naar Experience Manager Forms 6.4
 
 Meer informatie over de pagina met opmerkingen bij de release [AEM Forms](forms.md). Zie ook [Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms](/help/forms/using/whats-new.md) voor informatie over nieuwe en verbeterde functies en documentatiebronnen.
 
@@ -304,7 +304,7 @@ Dit proces van prioritering heeft meer dan 500 klant gerichte veranderingen opge
 
 * Adobe Experience Manager-bureaubladtoepassing ([lees meer](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) en [download](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
 
-* Pakket maken om verbeterde PDF-rasterfunctie toe te voegen ([meer lezen](/help/assets/aem-pdf-rasterizer.md) en [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
+* Pakket om verbeterde Rasterizer van PDF toe te voegen ([lees meer](/help/assets/aem-pdf-rasterizer.md) en [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * Pakket om uitgebreide RAW beeldsteun toe te voegen ([lees meer](/help/assets/camera-raw.md))
 
