@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3112'
 ht-degree: 0%
@@ -112,8 +112,8 @@ Adobe raadt aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die 
 
 In de eerste plaats is de optimalisatiestrategie van uw netwerk afhankelijk van de hoeveelheid beschikbare bandbreedte en de belasting van uw [!DNL Experience Manager]-instantie. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
 
-* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw [!DNL Experience Manager] instantie hebt. De adequate bandbreedtetoewijzing is vooral belangrijk als [!DNL Experience Manager] op AWS wordt ontvangen.
-* Als uw [!DNL Experience Manager]-instantie wordt gehost op AWS, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
+* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw [!DNL Experience Manager] instantie hebt. Een adequate bandbreedtetoewijzing is vooral belangrijk als [!DNL Experience Manager] wordt gehost op AWS.
+* Als uw [!DNL Experience Manager]-exemplaar wordt gehost op AWS, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
 * HTTPS: De meeste gebruikers hebben firewalls die het verkeer van HTTP snuffelen, wat het uploaden van dossiers of zelfs corrupte dossiers tijdens het uploaden negatief kan beïnvloeden.
 * Grote bestanden uploaden: Zorg ervoor dat gebruikers een bekabelde verbinding met het netwerk hebben (WiFi-verbindingen verzadigen snel).
 
@@ -184,7 +184,7 @@ Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun w
 
 Vele klanten van Plaatsen voeren een beeldservlet uit die resizes en teelten beelden op het ogenblik zij worden gevraagd, wat extra lading aan de publicatieinstantie oplegt. Maar zolang deze afbeeldingen in het cachegeheugen kunnen worden opgeslagen, kan de uitdaging worden beperkt.
 
-Een alternatieve aanpak is het gebruik van Dynamic Media Classic-technologie om beeldmanipulatie volledig uit te schakelen. Daarnaast kunt u Brand Portal implementeren die niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
+Een andere manier is om Dynamic Media Classic-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Daarnaast kunt u Brand Portal implementeren die niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
 
 #### ImageMagick {#imagemagick}
 
@@ -215,7 +215,7 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het bestand *con
 >
 >De ImageMagick `policy.xml` en `configure.xml` dossiers kunnen onder `/usr/lib64/ImageMagick-*/config/` in plaats van `/etc/ImageMagick/` worden gevonden. Zie [documentatie ImageMagick](https://www.imagemagick.org/script/resources.php) voor details op de plaatsen van het configuratiedossier.
 
-Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van Adobe als u van plan bent om veel grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
+Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Adobe Klantenondersteuning als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
 
 <!-- 
 
@@ -365,7 +365,7 @@ Indexconfiguraties bijwerken om de herindexatietijd te verbeteren:
 
 Lucene-tekstextractie uitschakelen:
 
-Als uw gebruikers niet de inhoud van activa hoeven te kunnen zoeken, bijvoorbeeld, die de tekst in Pdf- documenten doorzoeken, dan kunt u indexprestaties verbeteren door deze eigenschap onbruikbaar te maken.
+Als uw gebruikers niet de inhoud van activa hoeven te kunnen zoeken, bijvoorbeeld, zoekend de tekst in de documenten van de PDF, dan kunt u indexprestaties verbeteren door deze eigenschap onbruikbaar te maken.
 
 1. Ga naar [!DNL Experience Manager] pakketbeheer /crx/packmgr/index.jsp
 1. Upload en installeer het onderstaande pakket
@@ -418,6 +418,6 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Verwijder overbodige stappen uit de DAM Update Asset-workflow.
 * Vorm werkschema en versie het zuiveren.
 * Optimaliseer de configuratie van de index van Lucene.
-* Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de klantenservice van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
+* Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de klantenondersteuning van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
 * Gebruik `guessTotal` om vraagprestaties te optimaliseren.
 * Als u [!DNL Experience Manager] configureert om bestandstypen van de inhoud van de bestanden te detecteren (door [!UICONTROL Day CQ DAM Mime Type Service] in [!UICONTROL [!DNL Experience Manager] Web Console] te configureren), uploadt u veel bestanden in bulk tijdens niet-piekuren, aangezien de bewerking bronintensief is.

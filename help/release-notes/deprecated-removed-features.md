@@ -2,14 +2,14 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
 workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 2%
 
 ---
 
-# Vervangen en verwijderde functies {#deprecated-and-removed-features}
+# Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
 Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies.
 
@@ -151,16 +151,16 @@ afgekeurd.
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integratie met [!DNL Experience Cloud] | U kunt uw elementen synchroniseren met [!DNL Experience Cloud] door middel van een configuratie via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] voorheen genoemd  [!DNL Adobe Marketing Cloud]. | Als u vragen hebt, neemt u contact op met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=General#support). |
+| Integratie met [!DNL Experience Cloud] | U kunt uw elementen synchroniseren met [!DNL Experience Cloud] door middel van een configuratie via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] voorheen genoemd  [!DNL Adobe Marketing Cloud]. | Als u vragen hebt, neemt u contact op met [Adobe Klantenondersteuning](https://experienceleague.adobe.com/?support-solution=General#support). |
 | Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. De [ActivityMap-plug-in van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt. |
-| Components-Forms | Form Captcha (stichting/componenten/form/captcha) | Gebruik in plaats hiervan de component ReCaptcha door Google |
+| Components-Forms | Form Captcha (stichting/componenten/form/captcha) | In plaats hiervan de component ReCaptcha door Google gebruiken |
 | Onderdelen | Presentatie (basis/componenten/presentatie) | Geen vervanging |
 | Onderdelen | Flash (stichting/componenten/flits) | Geen vervanging |
 | Onderdelen | Ondersteuning voor afspelen van SWF-bestanden in de video-component is verwijderd (basis/componenten/video) | Op geen flits gebaseerde video-indelingen gebruiken. |
 | Onderdelen | Producttabel (handel/componenten/product_tabel) | Geen vervanging |
 | Taakbeheer | Klassiek UI Taakbeheer (/libs/cq/taskmanagement/content/taskmanager.html) | Vervangen vanaf 6.0. Gebruik het nieuwe taakbeheer dat met werkschemaUI wordt gecombineerd. |
 | Workflow | Gebruikte meldingsinterface tussen 5.6 en 6.2 (/libs/cq/workflow/content/notifications.html) | Workflow Inbox /aem/inbox |
-| Forms | Export PDF naar PDF/E-1-indeling met PDF Generator is verwijderd. | PDF Generator blijft het exporteren van PDF naar PDF/A-1a/b, PDF/A-2a/b en PDF/A-3a/b-indelingen ondersteunen. |
+| Forms | De indeling Export PDF naar PDF/E-1 met PDF Generator is verwijderd. | De Generator van PDF blijft het uitvoeren van PDF naar PDF a/a-1a/b, PDF a/A-2a/b, en PDF a/A-3a/b formaten steunen. |
 | Forms | Ondersteuning voor afbeeldingen in documentfragmenten is verwijderd. | Interactieve communicatie biedt de mogelijkheid om afbeeldingen rechtstreeks in gedrukte en webkanalen te gebruiken. |
 | Forms | Geen upgrade meer uitvoeren | Er is geen ondersteuning beschikbaar voor het uitvoeren van een upgrade op een andere plaats |
 | Forms | Sidegrade voor TarMK naar DocumentMK-migraties | U kunt de gegevens van een ouder systeem exporteren en vervolgens importeren in een nieuw systeem. Raadpleeg de documentatie bij AEM Forms on JEE-upgrades voor gedetailleerde instructies |

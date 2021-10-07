@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1554'
 ht-degree: 37%
@@ -67,7 +67,7 @@ Zie voor gedetailleerde instructies
 
 * [AEM 6.4 Opmerkingen bij de release Service Pack](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Neem contact op met Customer** Caref als u het nieuwste AEM of Service Pack niet kunt vinden.
+**Neem contact op met de** klantenondersteuning als u het nieuwste AEM of Service Pack niet kunt vinden.
 
 ## Configuratie maken {#configure-new-integration-64}
 
@@ -331,7 +331,7 @@ Voer de volgende stappen uit om de bestaande configuratie te verwijderen:
 
    ![](assets/delete-cloud-service.png)
 
-1. Navigeer naar `/home/users/mac` en verwijder **MAC user** van uw Brand Portal-huurder.
+1. Navigeer naar `/home/users/mac` en verwijder de **MAC-gebruiker** van uw Brand Portal-huurder.
 
    ![](assets/delete-mac-user.png)
 

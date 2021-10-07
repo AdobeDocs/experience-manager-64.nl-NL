@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # ImageMagick installeren en configureren om te werken met [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
-ImageMagick is een softwareplug-in voor het maken, bewerken, samenstellen of omzetten van bitmapafbeeldingen. Afbeeldingen kunnen in verschillende indelingen (meer dan 200) worden gelezen en geschreven, waaronder PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF en SVG. Met ImageMagick kunt u afbeeldingen vergroten, verkleinen, spiegelen, roteren, vervormen, schuintrekken en transformeren. U kunt ook afbeeldingskleuren aanpassen, verschillende speciale effecten toepassen of tekst, lijnen, veelhoeken, ellipsen en curven tekenen met ImageMagick.
+ImageMagick is een softwareplug-in voor het maken, bewerken, samenstellen of omzetten van bitmapafbeeldingen. Het kan beelden in diverse formaten (meer dan 200) lezen en schrijven met inbegrip van PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF, en SVG. Met ImageMagick kunt u afbeeldingen vergroten, verkleinen, spiegelen, roteren, vervormen, schuintrekken en transformeren. U kunt ook afbeeldingskleuren aanpassen, verschillende speciale effecten toepassen of tekst, lijnen, veelhoeken, ellipsen en curven tekenen met ImageMagick.
 
 Gebruik de Adobe Experience Manager media-handler vanaf de opdrachtregel om afbeeldingen te verwerken via ImageMagick. Zie [Beste werkwijzen voor bestandsindelingen Middelen](assets-file-format-best-practices.md) voor informatie over het werken met verschillende bestandsindelingen die ImageMagick gebruiken. Zie [Middelen ondersteunde indelingen](assets-formats.md) voor informatie over alle ondersteunde bestandsindelingen.
 
@@ -22,7 +22,7 @@ Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met
 
 >[!NOTE]
 >
->Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van Adobe als u van plan bent om veel grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
+>Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Adobe Klantenondersteuning als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
 
 ## ImageMagick installeren {#installing-imagemagick}
 
@@ -36,7 +36,7 @@ Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor ve
 
 ## De processtap van de opdrachtregel instellen {#set-up-the-command-line-process-step}
 
-U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om elke keer dat u een JPEG-afbeeldingsbestand toevoegt aan `/content/dam` op de [!DNL Experience Manager]-server een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren:
+U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren telkens wanneer u een JPEG-afbeeldingsbestand toevoegt aan `/content/dam` op de [!DNL Experience Manager]-server:
 
 1. Ga op de [!DNL Experience Manager]-server naar de Workflowconsole (`https://[aem_server]:[Port]/workflow`) en open het **[!UICONTROL DAM Update Asset]**-workflowmodel.
 1. Open in het workflowmodel **[!UICONTROL DAM Update Asset]** de stap **[!UICONTROL EPS thumbnails (powered by ImageMagick)]**.

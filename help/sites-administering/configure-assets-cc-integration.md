@@ -4,7 +4,7 @@ description: Leer hoe u AEM Assets-integratie met Experience Cloud configureert.
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 
 >[!NOTE]
 >
->Deze functie is afgekeurd in AEM Assets. Vind vervangingen in [AEM en de beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Als u vragen hebt, [neem contact op met de klantenservice van Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
+>Deze functie is afgekeurd in AEM Assets. Vind vervangingen in [AEM en de beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Als u vragen hebt, [neem contact op met de klantenondersteuning van Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-287.png)

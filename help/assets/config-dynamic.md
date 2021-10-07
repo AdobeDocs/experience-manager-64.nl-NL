@@ -1,18 +1,18 @@
 ---
 title: Dynamic Media configureren - hybride modus
-seo-title: Dynamic Media configureren - hybride modus
+seo-title: Configuring Dynamic Media - Hybrid mode
 description: Leer hoe u Dynamic Media - Hybride modus configureert.
-seo-description: Leer hoe u Dynamic Media - Hybride modus configureert.
+seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
-feature: Configuratie, hybride modus
+feature: Configuration,Hybrid Mode
 role: Admin,User,Developer
-source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '7421'
+source-wordcount: '7405'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,7 @@ U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerkin
 
 Als u Dynamic Media inschakelt, zijn de dynamische mediafuncties beschikbaar in de gebruikersinterface en ontvangt elk geüpload afbeeldingselement een `cqdam.pyramid.tiff`-uitvoering die wordt gebruikt voor snelle levering van dynamische afbeeldingsuitvoeringen. Deze PTIFF&#39;s hebben belangrijke voordelen, zoals (1) de mogelijkheid om slechts één master afbeelding te beheren en op elk moment oneindige uitvoeringen te genereren zonder extra opslagruimte en (2) de mogelijkheid om interactieve visualisatie te gebruiken, zoals zoomen, pannen, centrifugeren, enzovoort.
 
-Als u Dynamic Media Classic in AEM wilt gebruiken, moet u Dynamic Media alleen inschakelen als u een [specifiek scenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) gebruikt. Dynamic Media is uitgeschakeld, tenzij u Dynamic Media inschakelt in de runmode.
+Als u Dynamic Media Classic in AEM wilt gebruiken, zou u geen Dynamic Media moeten toelaten tenzij u een [specifiek scenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) gebruikt. Dynamic Media is uitgeschakeld, tenzij u Dynamic Media inschakelt in de runmode.
 
 Om dynamische media toe te laten, moet u de dynamische media runmode of van de bevellijn of van de naam van het quickstart dossier toelaten.
 
@@ -250,11 +250,11 @@ Als u de geheugenlimiet voor het maken van PTIFF wilt wijzigen, navigeert u naar
 
 ### Verificatie instellen {#setting-up-authentication}
 
-U moet replicatieverificatie instellen bij de auteur om afbeeldingen te kunnen repliceren naar de Dynamic Media-service voor het leveren van images. U doet dit door een KeyStore te verkrijgen en dan het onder **[!UICONTROL dynamic-media-replication]** gebruiker op te slaan en het te vormen. Uw bedrijfsbeheerder had tijdens het inrichtingsproces een welkomstbericht met het KeyStore-bestand en de benodigde gegevens moeten ontvangen. Neem contact op met de klantenservice als u dit niet hebt ontvangen.
+U moet replicatieverificatie instellen bij de auteur om afbeeldingen te kunnen repliceren naar de Dynamic Media-service voor het leveren van images. U doet dit door een KeyStore te verkrijgen en dan het onder **[!UICONTROL dynamic-media-replication]** gebruiker op te slaan en het te vormen. Uw bedrijfsbeheerder had tijdens het inrichtingsproces een welkomstbericht met het KeyStore-bestand en de benodigde gegevens moeten ontvangen. Neem contact op met Customer Support als je dit niet hebt ontvangen.
 
 **Aan opstellingsauthentificatie**:
 
-1. Neem contact op met de klantenservice voor uw KeyStore-bestand en wachtwoord als u dit nog niet hebt. Dit maakt deel uit van provisioning en de sleutels worden aan uw account gekoppeld.
+1. Neem contact op met de Klantenondersteuning voor uw KeyStore-bestand en wachtwoord als u dit nog niet hebt. Dit maakt deel uit van provisioning en de sleutels worden aan uw account gekoppeld.
 1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Security > Users]**.
 1. Navigeer op de pagina Gebruikersbeheer naar de **[!UICONTROL dynamic-media-replication]**-gebruiker en tik vervolgens om deze te openen.
 
@@ -275,9 +275,9 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te kunnen r
 
    * Op **[!UICONTROL New Alias]** gebied, ga de naam van een alias in die u later in de replicatieconfiguratie zult gebruiken; bijvoorbeeld **replication**.
    * Tik op **[!UICONTROL KeyStore File]**. Navigeer naar het KeyStore-bestand dat u via Adobe ontvangt, selecteer het en tik op **[!UICONTROL Open]**.
-   * Voer in het veld **[!UICONTROL KeyStore File Password]** het wachtwoord voor het sleutelarchief-bestand in. Dit is _niet_ het Wachtwoord KeyStore dat u in stap 5 creeerde maar is de Adobe van het Wachtwoord van het Dossier KeyStore in welkome e-mail die naar u tijdens levering wordt verzonden. Neem contact op met de klantenservice van Adobe als u geen wachtwoord voor een KeyStore-bestand hebt ontvangen.
-   * Voer in het veld **[!UICONTROL Private Key Password]** het wachtwoord voor de persoonlijke sleutel in (dit kan hetzelfde wachtwoord voor de persoonlijke sleutel zijn als in de vorige stap). Adobe geeft het wachtwoord voor de persoonlijke sleutel op in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u geen wachtwoord voor een persoonlijke sleutel hebt ontvangen.
-   * Voer in het veld **[!UICONTROL Private Key Alias]** de alias van de persoonlijke sleutel in. Bijvoorbeeld, `companyname-alias`. Adobe geeft de alias voor de persoonlijke sleutel op in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u geen alias voor een persoonlijke sleutel hebt ontvangen.
+   * Voer in het veld **[!UICONTROL KeyStore File Password]** het wachtwoord voor het sleutelarchief-bestand in. Dit is _niet_ het Wachtwoord KeyStore dat u in stap 5 creeerde maar is de Adobe van het Wachtwoord van het Dossier KeyStore in welkome e-mail die naar u tijdens levering wordt verzonden. Neem contact op met de klantenondersteuning van Adobe als u geen wachtwoord voor een KeyStore-bestand hebt ontvangen.
+   * Voer in het veld **[!UICONTROL Private Key Password]** het wachtwoord voor de persoonlijke sleutel in (dit kan hetzelfde wachtwoord voor de persoonlijke sleutel zijn als in de vorige stap). Adobe geeft het wachtwoord voor de persoonlijke sleutel op in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenondersteuning van Adobe als u geen wachtwoord voor persoonlijke sleutels hebt ontvangen.
+   * Voer in het veld **[!UICONTROL Private Key Alias]** de alias van de persoonlijke sleutel in. Bijvoorbeeld, `companyname-alias`. Adobe geeft de alias voor de persoonlijke sleutel op in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenondersteuning van Adobe als u geen alias voor een persoonlijke sleutel hebt ontvangen.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -294,7 +294,7 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te kunnen r
 
    * **[!UICONTROL Enabled]** - Schakel dit selectievakje in om de replicatieagent in te schakelen.
    * **[!UICONTROL Region]** - Instellen op het juiste gebied: Noord-Amerika, Europa of Azië
-   * **[!UICONTROL Tenant ID]** - Deze waarde is de naam van uw bedrijf/huurder die aan de Dienst van de Replicatie publiceert. Deze waarde is de huurder-id die Adobe opgeeft in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u dit niet hebt ontvangen.
+   * **[!UICONTROL Tenant ID]** - Deze waarde is de naam van uw bedrijf/huurder die aan de Dienst van de Replicatie publiceert. Deze waarde is de huurder-id die Adobe opgeeft in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenondersteuning van Adobe als u dit niet hebt ontvangen.
    * **[!UICONTROL Key Store Alias]** - Deze waarde is gelijk aan de waarde** New Alias** die is ingesteld bij het genereren van de sleutel in  [Setting Up Authentication](#setting-up-authentication). bijvoorbeeld  `replication`. (Zie stap 7 in [Verificatie instellen](#setting-up-authentication).)
    * **[!UICONTROL Key Store Password]** - Dit is het KeyStore-wachtwoord dat u hebt gemaakt toen u hierop tikte  **[!UICONTROL Create KeyStore]**. Adobe geeft dit wachtwoord niet op. Zie stap 5 van [Verificatie instellen](#setting-up-authentication).
 
@@ -677,12 +677,12 @@ Als u Dynamic Media for 1) gebruikt voor beeldbewerking in productie _of_ 2) voo
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media Classic integratie</td> 
+   <td>Dynamic Media Classic-integratie</td> 
    <td><p>filterafbeeldingen</p> <p>filtersets</p> <p>filter-video</p> </td> 
    <td><p>Begint met <strong>image/</strong></p> <p>Bevat <strong>application/</strong> en eindigt met <strong>set</strong>.</p> <p>Begint met <strong>video/</strong></p> </td> 
    <td><p>U vormt het Vervoer URI om aan uw AEM te richten publiceert server in plaats van de Adobe Dynamic Media Cloud Replication Service URL. Als u dit filter instelt, kan Dynamic Media Classic elementen leveren in plaats van AEM publicatie-instantie.</p> <p>Met de 'filter-images', 'filtersets' en 'filter-video' uit de box worden:</p> 
     <ul> 
-     <li>Inclusief PTIFF-afbeelding, proxyvideo-uitvoeringen en metagegevens voor replicatie. Maar omdat ze niet bestaan in het JCR-programma voor AEM - Klassieke integratie van Dynamic Media - doet het in feite niets.</li> 
+     <li>Inclusief PTIFF-afbeelding, proxyvideo-uitvoeringen en metagegevens voor replicatie. Maar omdat ze niet bestaan in het JCR-programma voor AEM - integratie in Dynamic Media Classic - doet het in feite niets.</li> 
      <li>Sluit de oorspronkelijke afbeelding, statische afbeeldingsuitvoeringen, oorspronkelijke video en statische miniatuuruitvoeringen uit van replicatie. In plaats daarvan levert Dynamic Media Classic afbeeldingen en video-elementen.</li> 
     </ul> </td> 
   </tr> 
@@ -757,7 +757,7 @@ Elementfilters optioneel aanpassen voor replicatie:
 
    Als u dit filter wilt toepassen op alle afbeeldingen, ongeacht de indeling, stelt u de waarde in op `image/*`, waarbij `*` een reguliere expressie is die wordt toegepast op alle afbeeldingen in een willekeurige indeling.
 
-   Als u het filter alleen wilt toepassen op afbeeldingen van het type JPEG, voert u de waarde `image/jpeg` in.
+   Als u het filter alleen wilt toepassen op afbeeldingen van het type JPEG, voert u een waarde `image/jpeg` in.
 
 1. Bepaal welke uitvoeringen u van replicatie wilt omvatten of uitsluiten.
 
@@ -790,7 +790,7 @@ De volgende afbeelding is een voorbeeld van de uitvoeringen van een element.
 
 ![chlimage_1-513](assets/chlimage_1-513.png)
 
-Als u in het bovenstaande voorbeeld alleen de PTIFF (Piramid TIFF) wilt repliceren, voert u `+cqdam,*` in, die alle uitvoeringen bevat die beginnen met `cqdam`. In het voorbeeld is die vertoning `cqdam.pyramid.tiff`.
+Als u het bovenstaande voorbeeld gebruikt en alleen de PTIFF (Pyramid TIFF) wilt repliceren, voert u `+cqdam,*` in, dat alle uitvoeringen bevat die beginnen met `cqdam`. In het voorbeeld is die vertoning `cqdam.pyramid.tiff`.
 
 Als u slechts origineel wilde herhalen, dan zou u `+original` ingaan.
 
@@ -801,7 +801,7 @@ Als u de Dynamic Media Image Server configureert, moet u de Adobe CQ Scene7 Imag
 >[!NOTE]
 Dynamic Media werkt uit-van-de-doos [nadat het ](#enabling-dynamic-media) wordt toegelaten. U kunt echter desgewenst de installatie verfijnen door Dynamic Media Image Server te configureren om aan bepaalde specificaties of vereisten te voldoen.
 
-**Vereiste**:  _Voordat_ u Dynamic Media Image Server configureert, moet u ervoor zorgen dat uw VM van Windows een installatie van de Microsoft Visual C++-bibliotheken bevat. De bibliotheken zijn nodig om Dynamic Media Image Server uit te voeren. U kunt [het Visual C++ 2010 Redistributable Pakket van Microsoft (x64) hier ](https://www.microsoft.com/en-us/download/details.aspx?id=26999) downloaden.
+**Vereiste**:  __ Voordat u Dynamic Media Image Server configureert, moet u ervoor zorgen dat uw VM van Windows een installatie van de Microsoft Visual C++-bibliotheken bevat. De bibliotheken zijn nodig om Dynamic Media Image Server uit te voeren. U kunt [het Microsoft Visual C++ 2010 Redistributable Pakket (x64) hier ](https://www.microsoft.com/en-us/download/details.aspx?id=26999) downloaden.
 
 **Dynamic Media Image Server-instellingen** configureren:
 
@@ -875,7 +875,7 @@ Dynamic Media werkt uit-van-de-doos [nadat het ](#enabling-dynamic-media) wordt 
 
 ### Standaardinstellingen voor Manifest {#default-manifest-settings}
 
-Standaard manifest laat u de gebreken vormen die worden gebruikt om de antwoorden van de Levering van Dynamic Media te produceren. U kunt de kwaliteit (JPEG-kwaliteit, resolutie, modus voor het berekenen van nieuwe beeldpixels), het in cache plaatsen (verlopen) en het renderen van te grote afbeeldingen voorkomen (standaard-pix, standaard-miniatuur, maxpix).
+Standaard manifest laat u de gebreken vormen die worden gebruikt om de antwoorden van de Levering van Dynamic Media te produceren. U kunt de kwaliteit (kwaliteit van de JPEG, de resolutie, de modus voor het berekenen van nieuwe pixels), het in cache plaatsen (verlopen) verfijnen en voorkomen dat afbeeldingen die te groot zijn, worden gerenderd (standaardpixel, standaardminiatuur, maxpix).
 
 De locatie van de standaardmanifestconfiguratie wordt ontleend aan de **[!UICONTROL Catalog root]** standaardwaarde van **[!UICONTROL Adobe CQ Scene7 PlatformServer]** bundel. Deze waarde bevindt zich standaard op het volgende pad binnen **[!UICONTROL Tools > General > CRXDE Lite]**:
 
@@ -903,7 +903,7 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr> 
    <td>bkgcolor</td> 
    <td>FFFFFF</td> 
-   <td><p>Standaardachtergrondkleur. De RGB-waarde die wordt gebruikt om een willekeurig gebied van een antwoordafbeelding dat geen werkelijke afbeeldingsgegevens bevat, in te vullen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a> in de API voor beeldbewerking.</p> </td> 
+   <td><p>Standaardachtergrondkleur. De RGB-waarde die wordt gebruikt om elk gebied van een antwoordafbeelding dat geen werkelijke afbeeldingsgegevens bevat, in te vullen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a> in de API voor beeldbewerking.</p> </td> 
   </tr> 
   <tr> 
    <td>defaultPix</td> 
@@ -918,12 +918,12 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr> 
    <td>vervaldatum</td> 
    <td>36000000</td> 
-   <td><p>De standaardtijd voor de clientcache om te live gaan. Biedt een standaardvervalinterval voor het geval dat een bepaalde catalogusrecord geen geldige catalogus bevat::Expiration value.</p> <p>Reëel getal, 0 of hoger. Aantal milliseconden tot aan vervaldatum sinds de antwoordgegevens werden geproduceerd. Reeks aan 0 om altijd het antwoordbeeld onmiddellijk te verlopen, dat effectief cliënt caching onbruikbaar maakt. Deze waarde wordt standaard ingesteld op 10 uur. Als een nieuwe afbeelding wordt gepubliceerd, duurt het tien uur voordat de oude afbeelding de cache van de gebruiker verlaat. Neem contact op met de klantenservice als u de cache sneller moet wissen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Verlopen</a> in de API voor beeldbewerking.</p> </td> 
+   <td><p>De standaardtijd voor de clientcache om te live gaan. Biedt een standaardvervalinterval voor het geval dat een bepaalde catalogusrecord geen geldige catalogus bevat::Expiration value.</p> <p>Reëel getal, 0 of hoger. Aantal milliseconden tot aan vervaldatum sinds de antwoordgegevens werden geproduceerd. Reeks aan 0 om altijd het antwoordbeeld onmiddellijk te verlopen, dat effectief cliënt caching onbruikbaar maakt. Deze waarde wordt standaard ingesteld op 10 uur. Als een nieuwe afbeelding wordt gepubliceerd, duurt het tien uur voordat de oude afbeelding de cache van de gebruiker verlaat. Neem contact op met de Klantenondersteuning als u de cache sneller moet wissen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Verlopen</a> in de API voor beeldbewerking.</p> </td> 
   </tr> 
   <tr> 
    <td>jpegquality</td> 
    <td>80</td> 
-   <td><p>Standaard JPEG-coderingskenmerken. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.</p> <p>Geheel getal en markering, gescheiden door een komma. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 voor het uitschakelen van de downsampling van RGB-chromaticiteit die gewoonlijk door JPEG-codeermodules wordt gebruikt.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a> in de API voor beeldbewerking.</p> </td> 
+   <td><p>Standaardcoderingskenmerken van JPEG. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.</p> <p>Geheel getal en markering, gescheiden door een komma. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 voor het uitschakelen van de downsampling van de RGB-chromaticiteit die gewoonlijk door JPEG-encoders wordt gebruikt.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a> in de API voor beeldbewerking.</p> </td> 
   </tr> 
   <tr> 
    <td>maxpix</td> 
@@ -952,11 +952,11 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
 
 Met dynamisch kleurbeheer voor media kunt u de juiste elementen kleuren om ze voor te vertonen.
 
-Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel in de gegenereerde piramide TIFF-uitvoering. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur gecorrigeerd in de doelkleurruimte. U configureert het uitvoerkleurprofiel in de publicatie-instellingen voor dynamische media in de JCR.
+Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel in de gegenereerde piramide-TIFF-uitvoering. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur gecorrigeerd in de doelkleurruimte. U configureert het uitvoerkleurprofiel in de publicatie-instellingen voor dynamische media in de JCR.
 
 Bij kleurbeheer voor Adobe wordt gebruikgemaakt van ICC-profielen, een indeling die is gedefinieerd door het ICC (International Color Consortium).
 
-U kunt dynamisch kleurbeheer voor media configureren en voorinstellingen voor afbeeldingen configureren met CMYK-, RGB- of grijsuitvoer. Zie [Voorinstellingen voor afbeeldingen configureren](managing-image-presets.md).
+U kunt dynamisch kleurbeheer voor media configureren en voorinstellingen voor afbeeldingen configureren met CMYK, RGB of Grijsuitvoer. Zie [Voorinstellingen voor afbeeldingen configureren](managing-image-presets.md).
 
 Gevallen van geavanceerd gebruik zouden een handmatige configuratie **[!UICONTROL icc=]** bepaling kunnen gebruiken om een profiel van de outputkleur uitdrukkelijk te selecteren:
 
@@ -1011,7 +1011,7 @@ Nadat u het functiepakket hebt geïnstalleerd, moet u de juiste standaardkleurpr
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td> 
       <td>Tekenreeks</td> 
       <td>&lt;empty&gt;</td> 
-      <td>Naam van het standaard RGB-kleurprofiel.</td> 
+      <td>Naam van het standaardkleurprofiel RGB.</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">icprofilecmyk</a></td> 
@@ -1029,7 +1029,7 @@ Nadat u het functiepakket hebt geïnstalleerd, moet u de juiste standaardkleurpr
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td> 
       <td>Tekenreeks</td> 
       <td>&lt;empty&gt;</td> 
-      <td>Naam van het standaard RGB-kleurprofiel dat wordt gebruikt voor RGB-afbeeldingen zonder ingesloten kleurprofiel</td> 
+      <td>Naam van het standaardkleurprofiel RGB dat wordt gebruikt voor RGB-afbeeldingen zonder ingesloten kleurprofiel</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrcmyk</a></td> 
@@ -1236,7 +1236,7 @@ Nadat u het functiepakket hebt geïnstalleerd, moet u de juiste standaardkleurpr
       <tr> 
       <td>WideGamutRGB</td> 
       <td>RGB</td> 
-      <td>Brede RGB-kleuromvang</td> 
+      <td>Brede kleuromvang RGB</td> 
       </tr> 
     </tbody> 
     </table>
@@ -1246,7 +1246,7 @@ Nadat u het functiepakket hebt geïnstalleerd, moet u de juiste standaardkleurpr
 U kunt bijvoorbeeld **[!UICONTROL iccprofilergb]** instellen op `sRGB` en **[!UICONTROL iccprofilecmyk]** op `WebCoated`. Dit doet het volgende:
 
 * Hiermee schakelt u kleurcorrectie in voor RGB- en CMYK-afbeeldingen.
-* RGB-afbeeldingen zonder kleurprofiel worden verondersteld in de kleurruimte `sRGB` te staan.
+* Van RGB-afbeeldingen die geen kleurprofiel hebben, wordt aangenomen dat deze zich in de kleurruimte `sRGB` bevinden.
 * CMYK-afbeeldingen zonder kleurprofiel worden geacht zich in de kleurruimte `WebCoated` te bevinden.
 * Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in de kleurruimte `sRGB`.
 * Dynamische uitvoeringen die CMYK-uitvoer retourneren, retourneren deze in de kleurruimte `WebCoated`.

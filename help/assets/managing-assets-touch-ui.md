@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '9757'
 ht-degree: 1%
@@ -63,7 +63,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat het een [ondersteunde in
 
    ![create_menu](assets/create_menu.png)
 
-   Als u meerdere bestanden wilt selecteren, drukt u op Ctrl/Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Op een iPad kunt u slechts één bestand tegelijk selecteren.
+   Als u meerdere bestanden wilt selecteren, drukt u op Ctrl/Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Vanuit een iPad kunt u slechts één bestand tegelijk selecteren.
 
    U kunt het uploaden van grote elementen (groter dan 500 MB) pauzeren en later vanaf dezelfde pagina hervatten. Tik op het pictogram **[!UICONTROL Pause]** naast de voortgangsbalk die wordt weergegeven wanneer het uploaden start.
 
@@ -145,14 +145,14 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 
 >[!NOTE]
 >
->Om elementen via FTP te uploaden in Dynamic Media - Scene7 mode installeert feature pack (FP) 18912 op [!DNL Experience Manager] auteur. Neem contact op met de klantenservice van Adobe om toegang te krijgen tot FP-18912 en de installatie van uw FTP-account te voltooien. Zie [Actiepakket 18912 installeren voor de migratie van grote hoeveelheden elementen](/help/assets/bulk-ingest-migrate.md).
+>Om elementen via FTP te uploaden in Dynamic Media - Scene7 mode installeert feature pack (FP) 18912 op [!DNL Experience Manager] auteur. Neem contact op met de klantenondersteuning van Adobe om toegang te krijgen tot FP-18912 en de installatie van uw FTP-account te voltooien. Zie [Actiepakket 18912 installeren voor de migratie van grote hoeveelheden elementen](/help/assets/bulk-ingest-migrate.md).
 >
 >Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen die zijn opgegeven in [!DNL Experience Manager] genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
 **Elementen uploaden met FTP**
 
 1. Meld u met uw keuze voor een FTP-client aan bij de FTP-server met de FTP-gebruikersnaam en -wachtwoord die u van de e-mail met de provisioning hebt ontvangen. Upload in de FTP-client bestanden of mappen naar de FTP-server.
-1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account met de gegevens die u hebt ontvangen van de e-mail met provisioning.
+1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account met de gegevens die u hebt ontvangen van de e-mail met provisioning.
 1. Tik op **[!UICONTROL Upload]** op de algemene navigatiebalk.
 1. Tik op de **[!UICONTROL Upload]**-pagina in de linkerbovenhoek op het tabblad **[!UICONTROL Via FTP]**.
 1. Kies links op de pagina een FTP-map waaruit u bestanden wilt uploaden. aan de rechterkant van de pagina kiest u een doelmap.
@@ -162,12 +162,12 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 
    >[!NOTE]
    >
-   >Wanneer u elementen uploadt via FTP, hebben de opties voor uploadtaken die u instelt in Dynamic Media Classic voorrang op de parameters voor elementverwerking die zijn ingesteld in AEM.
+   >Wanneer u elementen uploadt via FTP, hebben de opties voor uploadtaken die u in Dynamic Media Classic hebt ingesteld, voorrang op de parameters voor elementverwerking die in AEM zijn ingesteld.
 
 1. Tik in de rechterbenedenhoek van het dialoogvenster **[!UICONTROL Upload Job Options]** op **[!UICONTROL Save]**.
 1. Tik in de rechterbenedenhoek van de pagina **[!UICONTROL Upload]** op **[!UICONTROL Submit Upload]**.
 
-   Tik op **[!UICONTROL Jobs]** om de voortgang van het uploaden te bekijken. Op de pagina **[!UICONTROL Jobs]** wordt de voortgang van het uploaden weergegeven. U kunt in [!DNL Experience Manager] blijven werken en aan de pagina van Banen in de Klassiek van Dynamic Media op elk ogenblik terugkeren om een lopende baan te herzien.
+   Tik op **[!UICONTROL Jobs]** om de voortgang van het uploaden te bekijken. Op de pagina **[!UICONTROL Jobs]** wordt de voortgang van het uploaden weergegeven. U kunt in [!DNL Experience Manager] blijven werken en op elk ogenblik aan de pagina van Banen in Dynamic Media Classic terugkeren om een lopende baan te herzien.
 
    Als u een actieve uploadtaak wilt annuleren, tikt u op **[!UICONTROL Cancel]** naast de **[!UICONTROL Duration]**-tijd.
 
@@ -187,14 +187,14 @@ Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelij
 |  | Beeldbewerkingsopties | U kunt de knipmaskers in afbeeldingen behouden en een kleurprofiel kiezen.<br> Zie Opties voor  [het bewerken van afbeeldingen tijdens het uploaden](#setting-image-editing-options-at-upload) instellen. |
 |  | PostScript-opties | U kunt PostScript® rasteren, bestanden uitsnijden, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie  [Uploadopties](#setting-postscript-and-illustrator-upload-options) voor PostScript en Illustrator instellen. |
 |  | Photoshop-opties | U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeven hoe lagen worden benoemd, tekst extraheren en opgeven hoe afbeeldingen in sjablonen worden verankerd.<br> Sjablonen worden niet ondersteund in AEM.<br> Zie  [Photoshop-uploadopties](#setting-photoshop-upload-options) instellen. |
-|  | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br> E-catalogi worden niet ondersteund in AEM. <br> Zie  [Opties voor](#setting-pdf-upload-options) PDF-upload instellen. |
+|  | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br> E-catalogi worden niet ondersteund in AEM. <br> Zie  [Opties](#setting-pdf-upload-options) voor het uploaden naar PDF instellen. |
 |  | Illustrator-opties | U kunt Adobe Illustrator®-bestanden rasteren, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie  [Uploadopties](#setting-postscript-and-illustrator-upload-options) voor PostScript en Illustrator instellen. |
 |  | EVideo-opties | U kunt een videobestand transcoderen door een videovoorinstelling te kiezen.<br> Zie  [Opties voor](#setting-evideo-upload-options) eVideo-upload instellen. |
 |  | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingsinstellingen/batchsets van Dynamic Media Classic.<br> Zie Voorinstellingen voor batchsets  [ ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) configureren voor het automatisch genereren van afbeeldingssets en de instellingen voor centrifugeren voor meer informatie over het maken van voorinstellingen voor batchsets.<br> Zie Voorinstellingen  [voor batchset instellen bij uploaden](#setting-batch-set-presets-at-upload). |
 
 #### Opties voor het bewerken van afbeeldingen tijdens het uploaden instellen {#setting-image-editing-options-at-upload}
 
-Wanneer u afbeeldingsbestanden uploadt, inclusief AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het dialoogvenster **[!UICONTROL Upload Job Options]**:
+Wanneer u afbeeldingsbestanden uploadt, zoals AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het dialoogvenster **[!UICONTROL Upload Job Options]**:
 
 * Witruimte uitsnijden vanaf de rand van afbeeldingen (zie beschrijving in bovenstaande tabel).
 * Handmatig uitsnijden vanaf de zijkanten van afbeeldingen (zie beschrijving in bovenstaande tabel).
@@ -227,7 +227,7 @@ Wanneer u PostScript- (EPS) of Illustrator-afbeeldingsbestanden (AI) uploadt, ku
 | Resolutie |  | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het bestand worden weergegeven. |
 | Kleurruimte |  | Selecteer het menu Kleurruimte en kies een van de volgende opties voor kleurruimte: |
 |  | Automatisch detecteren | Hiermee behoudt u de kleurruimte van het bestand. |
-|  | Als RGB forceren | Zet om in de RGB-kleurruimte. |
+|  | Krachten als RGB | Hiermee wordt de kleurruimte RGB omgezet. |
 |  | Inschakelen als CMYK | Zet om in de CMYK-kleurruimte. |
 |  | Forceren als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
@@ -245,19 +245,19 @@ Gebruik de **[!UICONTROL Crop Options]** en **[!UICONTROL Color Profile Options]
 
 | Optie | Suboptie | Beschrijving |
 |---|---|---|
-| Lagen behouden |  | Hiermee worden de lagen in de PSD (indien aanwezig) naar afzonderlijke elementen verplaatst. De elementlagen blijven gekoppeld aan de PSD. U kunt deze weergeven door het PSD-bestand te openen in de gedetailleerde weergave en het deelvenster Lagen te selecteren. |
+| Lagen behouden |  | Hiermee worden de lagen in de PSD, indien aanwezig, uitgelijnd op afzonderlijke elementen. De elementlagen blijven gekoppeld aan de PSD. U kunt deze weergeven door het PSD-bestand te openen in de gedetailleerde weergave en het deelvenster Lagen te selecteren. |
 | Sjabloon maken |  | Hiermee maakt u een sjabloon op basis van de lagen in het PSD-bestand. |
 | Tekst extraheren |  | Extraheert de tekst zodat gebruikers naar tekst in een viewer kunnen zoeken. |
 | Lagen uitbreiden naar achtergrondgrootte |  | Hiermee vergroot u de grootte van de uitgesneden afbeeldingslagen tot de grootte van de achtergrondlaag. |
-| Laagnaamgeving |  | Lagen in het PSD-bestand worden geüpload als afzonderlijke afbeeldingen. |
-|  | Laagnaam | De afbeeldingen krijgen een naam na de namen van de lagen in het PSD-bestand. Een laag met de naam Prijscode in het oorspronkelijke PSD-bestand wordt bijvoorbeeld een afbeelding met de naam Prijscode. Als de laagnamen in het PSD-bestand echter standaard Photoshop-laagnamen zijn (Achtergrond, Laag 1, Laag 2, enzovoort), krijgen de afbeeldingen een naam na hun laagnummers in het PSD-bestand, niet na hun standaardlaagnamen. |
+| Laagnaamgeving |  | Lagen in het PSD-bestand worden geüpload als aparte afbeeldingen. |
+|  | Laagnaam | De afbeeldingen krijgen een naam na hun laagnamen in het PSD-bestand. Een laag met de naam Prijscode in het oorspronkelijke PSD-bestand wordt bijvoorbeeld een afbeelding met de naam Prijscode. Als de laagnamen in het PSD-bestand echter standaard Photoshop-laagnamen zijn (Achtergrond, Laag 1, Laag 2, enzovoort), krijgen de afbeeldingen een naam na hun laagnummers in het PSD-bestand en niet na hun standaardlaagnamen. |
 |  | Photoshop en Layer Number | De afbeeldingen krijgen een naam na hun laagnummer in het PSD-bestand, waarbij de namen van de oorspronkelijke lagen worden genegeerd. Afbeeldingen krijgen de naam Photoshop en een toegevoegd laagnummer. De tweede laag van een bestand met de naam Voorjaar-Ad.psd krijgt bijvoorbeeld de naam Voorjaar-Ad_2, zelfs als deze in Photoshop een andere naam heeft dan de standaardnaam. |
-|  | Photoshop- en laagnaam | De afbeeldingen krijgen een naam na het PSD-bestand, gevolgd door de laagnaam of het laagnummer. Het laagnummer wordt gebruikt als de laagnamen in het PSD-bestand standaard Photoshop-laagnamen zijn. Een laag met de naam Prijstag in een PSD-bestand met de naam SpringAd krijgt bijvoorbeeld de naam Spring Ad_Price Tag. Een laag met de standaardnaam Laag 2 wordt genoemd Lente Ad_2. |
-| Anker |  | Geef op hoe afbeeldingen worden verankerd in sjablonen die worden gegenereerd op basis van de laagcompositie die uit het PSD-bestand is samengesteld. Standaard is het anker het middelpunt. Met een middelste anker kunnen vervangende afbeeldingen dezelfde ruimte het beste vullen, ongeacht de hoogte-breedteverhouding van de vervangende afbeelding. Afbeeldingen met een ander aspect dat deze afbeelding vervangt, nemen bij het verwijzen naar de sjabloon en het gebruik van parametervervanging in feite dezelfde ruimte in. Schakel over naar een andere instelling als de vervangende afbeeldingen de toegewezen ruimte in de sjabloon moeten vullen. |
+|  | Photoshop- en laagnaam | De afbeeldingen krijgen een naam na het PSD-bestand gevolgd door de naam van de laag of het laagnummer. Het laagnummer wordt gebruikt als de laagnamen in het PSD-bestand standaard Photoshop-laagnamen zijn. Een laag met de naam Price Tag in een PSD-bestand met de naam SpringAd krijgt bijvoorbeeld de naam Spring Ad_Price Tag. Een laag met de standaardnaam Laag 2 wordt genoemd Lente Ad_2. |
+| Anker |  | Geef op hoe afbeeldingen worden verankerd in sjablonen die worden gegenereerd op basis van de laagsamenstelling die uit het PSD-bestand is samengesteld. Standaard is het anker het middelpunt. Met een middelste anker kunnen vervangende afbeeldingen dezelfde ruimte het beste vullen, ongeacht de hoogte-breedteverhouding van de vervangende afbeelding. Afbeeldingen met een ander aspect dat deze afbeelding vervangt, nemen bij het verwijzen naar de sjabloon en het gebruik van parametervervanging in feite dezelfde ruimte in. Schakel over naar een andere instelling als de vervangende afbeeldingen de toegewezen ruimte in de sjabloon moeten vullen. |
 
-#### Opties voor PDF-upload instellen {#setting-pdf-upload-options}
+#### Opties voor het uploaden naar PDF instellen {#setting-pdf-upload-options}
 
-Wanneer u een PDF-bestand uploadt, kunt u het op verschillende manieren opmaken. U snijdt zijn pagina&#39;s bij, haalt zoekwoorden op, voert een pixel-per-dun resolutie in, en kiest een kleurenruimte. PDF-bestanden bevatten vaak een snijmarge, snijtekens, registratietekens en andere drukkersmarkeringen. U kunt deze markeringen vanaf de zijkanten van pagina&#39;s bijsnijden terwijl u een PDF-bestand uploadt.
+Wanneer u een PDF-bestand uploadt, kunt u het op verschillende manieren opmaken. U snijdt zijn pagina&#39;s bij, haalt zoekwoorden op, voert een pixel-per-dun resolutie in, en kiest een kleurenruimte. PDF-bestanden bevatten vaak een snijmarge, snijtekens, registratietekens en andere drukkersmarkeringen. U kunt deze markeringen vanaf de zijkanten van pagina&#39;s bijsnijden wanneer u een PDF-bestand uploadt.
 
 >[!NOTE]
 >
@@ -267,14 +267,14 @@ Kies een van de volgende opties:
 
 | Optie | Suboptie | Beschrijving |
 |---|---|---|
-| Verwerking | Rasteren | (Standaard) Hiermee worden de pagina&#39;s in het PDF-bestand weggesneden en worden vectorafbeeldingen naar bitmapafbeeldingen geconverteerd. Kies deze optie om een eCatalog te maken. |
-| Extraheren | Woorden zoeken | Extraheert woorden uit het PDF-bestand, zodat het bestand kan worden doorzocht op trefwoord in een eCatalog-viewer. |
-|  | Koppelingen | Extraheert koppelingen uit de PDF-bestanden en converteert deze naar Afbeeldingen met hyperlinks die in een eCatalog-viewer worden gebruikt. |
-| E-catalogus automatisch genereren op basis van PDF van meerdere pagina&#39;s |  | Er wordt automatisch een eCatalog gemaakt van het PDF-bestand. De eCatalog wordt genoemd naar het Pdf- dossier u uploadde. (Deze optie is alleen beschikbaar als u het PDF-bestand rastert terwijl u het uploadt.) |
+| Verwerking | Rasteren | (Standaard) Hiermee worden de pagina&#39;s in het PDF-bestand weggesneden en worden vectorafbeeldingen omgezet in bitmapafbeeldingen. Kies deze optie om een eCatalog te maken. |
+| Extraheren | Woorden zoeken | Extraheert woorden uit het PDF-bestand, zodat het bestand op trefwoord in een eCatalog-viewer kan worden doorzocht. |
+|  | Koppelingen | Extraheert koppelingen uit de PDF-bestanden en converteert deze naar Afbeeldingen met hyperlinks die worden gebruikt in een eCatalog-viewer. |
+| E-catalogus automatisch genereren op basis van PDF van meerdere pagina&#39;s |  | Hiermee wordt automatisch een eCatalog gemaakt op basis van het PDF-bestand. De eCatalog wordt genoemd naar het dossier van de PDF u uploadde. (Deze optie is alleen beschikbaar als u het PDF-bestand rastert terwijl u het uploadt.) |
 | Resolutie |  | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het PDF-bestand worden weergegeven. De standaardwaarde is 150. |
-| Kleurruimte |  | Selecteer het menu Kleurruimte en kies een kleurruimte voor het PDF-bestand. De meeste PDF-bestanden hebben zowel RGB- als CMYK-kleurenafbeeldingen. De RGB-kleurruimte heeft de voorkeur voor onlineweergave. |
+| Kleurruimte |  | Selecteer het menu Kleurruimte en kies een kleurruimte voor het PDF-bestand. De meeste PDF-bestanden hebben zowel RGB- als CMYK-kleurenafbeeldingen. De kleurruimte RGB heeft de voorkeur voor onlineweergave. |
 |  | Automatisch detecteren | Hiermee behoudt u de kleurruimte van het PDF-bestand. |
-|  | Als RGB forceren | Zet om in de RGB-kleurruimte. |
+|  | Krachten als RGB | Hiermee wordt de kleurruimte RGB omgezet. |
 |  | Krachten als CMYK | Zet om in de CMYK-kleurruimte. |
 |  | Krachtig maken als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
@@ -532,7 +532,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
 
    >[!NOTE]
    >
-   >Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund.
+   >Videoaantekeningen worden alleen ondersteund in browsers met video-indelingen die compatibel zijn met HTML5. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund.
 
 Zie [Subassets beheren](managing-linked-subassets.md) voor informatie over subassets.
 
@@ -634,7 +634,7 @@ Dit komt omdat [!DNL Experience Manager] Elementen wachten tot een time-outperio
 
 De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. Voer afhankelijk van het apparaat de volgende handelingen uit om de snelactiepictogrammen weer te geven:
 
-* Aanraakapparaten: Raak aan en houd de muisknop ingedrukt. Op een iPad kunt u bijvoorbeeld tikken en een element ingedrukt houden, zodat de snelle acties worden weergegeven.
+* Aanraakapparaten: Raak aan en houd de muisknop ingedrukt. Op een iPad kunt u bijvoorbeeld tikken en een element vasthouden, zodat de snelle acties worden weergegeven.
 * Niet-aanraakapparaten: Aanwijzer aanwijzen. Op een bureaubladapparaat wordt bijvoorbeeld de snelle actiebalk weergegeven als u de aanwijzer boven de elementminiatuur houdt.
 
 ### Navigeren naar elementen en deze selecteren {#navigating-and-selecting-assets}
@@ -732,7 +732,7 @@ In de [Collections console](managing-collections-touch-ui.md#navigating-the-coll
 
 Annotaties zijn opmerkingen of toelichtingen die aan afbeeldingen of video&#39;s worden toegevoegd. Annotaties bieden marketers de mogelijkheid samen te werken en feedback over middelen te geven.
 
-Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. De video formaten die [!DNL Experience Manager] Activa steunen hangen van browser af.
+Videoannotaties worden alleen ondersteund in browsers met video-indelingen die compatibel zijn met HTML5. De video formaten die [!DNL Experience Manager] Activa steunen hangen van browser af.
 
 Voor Inhoudsfragmenten worden [annotaties gemaakt in de editor](content-fragments-variations.md#annotating-a-content-fragment); voor deze functionaliteit is [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of hoger vereist.
 
@@ -750,7 +750,7 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
    * [Snelle acties](managing-assets-touch-ui.md#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. U kunt ook een gebied in de afbeelding markeren en een annotatie toevoegen in het dialoogvenster **[!UICONTROL Add Annotation]**.
 
@@ -807,13 +807,13 @@ U kunt slechts één annotatie tegelijk weergeven.
 
 ### Annotaties afdrukken {#printing-annotations}
 
-Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
+Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt u het element samen met annotaties afdrukken en de status controleren als een PDF-bestand voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
 >[!NOTE]
 >
->U kunt meerdere annotaties selecteren tijdens het afdrukken van het geannoteerde element als PDF.
+>U kunt meerdere annotaties selecteren wanneer u het geannoteerde element afdrukt als PDF.
 
 Lengte annotaties worden mogelijk niet correct weergegeven in het PDF-bestand. Voor een optimale rendering raadt Adobe aan om annotaties te beperken tot 50 woorden.
 
@@ -837,11 +837,11 @@ Als u de annotaties en de revisiestatus wilt afdrukken, tikt u op het pictogram 
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-1. Kies in het dialoogvenster **[!UICONTROL Print]** de positie die u wilt dat de annotaties of revisiestatus op de PDF worden weergegeven. Als u bijvoorbeeld wilt dat de annotaties of status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de instelling **[!UICONTROL Top-Left]** (standaard).
+1. Kies in het dialoogvenster **[!UICONTROL Print]** de positie die u wilt instellen voor de annotaties of de revisiestatus op de PDF. Als u bijvoorbeeld wilt dat de annotaties of status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de instelling **[!UICONTROL Top-Left]** (standaard).
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
-   U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties of status in de afgedrukte PDF wilt weergeven. Als u de annotaties of status wilt weergeven op een pagina die gescheiden is van het afgedrukte element, kiest u **[!UICONTROL Next Page]**.
+   U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties of status wilt weergeven in de afgedrukte PDF. Als u de annotaties of status wilt weergeven op een pagina die gescheiden is van het afgedrukte element, kiest u **[!UICONTROL Next Page]**.
 
 1. Tik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties of status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **[!UICONTROL Top-Left]**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
@@ -859,14 +859,14 @@ Als u de annotaties en de revisiestatus wilt afdrukken, tikt u op het pictogram 
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-   Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
+   Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF geeft de wijzigingen weer die u hebt aangebracht.
 
 **Annotaties afdrukken in vreemde talen**: Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de  [!DNL Experience Manager] server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
 
 1. Open de **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** configuratiepagina via de URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Voer een van de volgende handelingen uit om **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** te configureren:
 
-   * Geef in de directory **[!UICONTROL System Fonts]** het volledige pad naar de map Fonts op uw systeem op. Bijvoorbeeld, als u een gebruiker van MAC bent, kunt u de weg als `/Library/Fonts` in de **[!UICONTROL System Fonts]** folderoptie specificeren. [!DNL Experience Manager] haalt de lettertypen op uit deze map.
+   * Geef in de directory **[!UICONTROL System Fonts]** het volledige pad naar de map Fonts op uw systeem op. Bijvoorbeeld, als u een gebruiker van Mac bent, kunt u de weg als `/Library/Fonts` in de **[!UICONTROL System Fonts]** folderoptie specificeren. [!DNL Experience Manager] haalt de lettertypen op uit deze map.
    * Maak een map met de naam **fonts** in de map **[!UICONTROL crx-quickstart]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** haalt automatisch de lettertypen op de locatie op  `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de mapoptie **[!UICONTROL Adobe Server Fonts]**.
    * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de directory **[!UICONTROL Customer Fonts]**.
 
@@ -885,7 +885,7 @@ Hieronder ziet u hoe u [!DNL Experience Manager] configureert voor het afdrukken
    * Noto Sans (voor Europese talen): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
    * Geen lettertypen voor een taal van uw keuze: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
 
-1. Configureer het PDF-bestand met annotaties door de parameter font-family in te stellen op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Deze configuratie is standaard beschikbaar en werkt voor alle Europese en CJK-talen.
+1. Configureer het PDF-bestand van de annotatie door de parameter font-family in te stellen op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Deze configuratie is standaard beschikbaar en werkt voor alle Europese en CJK-talen.
 1. Als de taal van uw keuze afwijkt van de talen die in stap 2 worden genoemd, voegt u een geschikt item (gescheiden door komma&#39;s) toe aan de standaardlettertypefamilie.
 
 ## Elementversie maken {#asset-versioning}

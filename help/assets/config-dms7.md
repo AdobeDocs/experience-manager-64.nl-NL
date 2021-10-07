@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '5171'
 ht-degree: 2%
@@ -63,13 +63,13 @@ Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de voorinst
 
 ## (Optioneel) Functiepakket 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen {#installing-feature-pack}
 
-Met Feature Pack 18912 kunt u middelen bulksgewijs invoeren via FTP, of elementen migreren van Dynamic Media - Hybride modus of Dynamic Media Classic naar Dynamic Media - Scene7 modus op Experience Manager. Het is verkrijgbaar bij Adobe Professional Services.
+Met Feature Pack 18912 kunt u middelen bulksgewijs importeren via FTP of elementen migreren van de Dynamic Media - Hybride modus of Dynamic Media Classic naar de Dynamic Media - Scene7 modus op Experience Manager. Het is verkrijgbaar bij Adobe Professional Services.
 
 Zie [Actiepakket 18912 installeren voor migratie van grote hoeveelheden elementen](bulk-ingest-migrate.md) voor meer informatie.
 
 ## Dynamic Media-Cloud Services configureren {#configuring-dynamic-media-cloud-services}
 
-Wijzig het wachtwoord voordat u Dynamic Media-Cloud Services configureert. Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, moet u zich [aanmelden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) bij de Klassieke Dynamic Media-bureaubladtoepassing om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat Dynamic Media Cloud Service de juiste referenties krijgt.
+Wijzig het wachtwoord voordat u Dynamic Media-Cloud Services configureert. Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, moet u zich [aanmelden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) bij de Dynamic Media Classic-bureaubladtoepassing om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat Dynamic Media Cloud Service de juiste referenties krijgt.
 
 >[!NOTE]
 >
@@ -79,13 +79,13 @@ Wijzig het wachtwoord voordat u Dynamic Media-Cloud Services configureert. Nadat
 
 1. Tik in uw Experience Manager Author-instantie op het logo van de Experience Manager om de algemene navigatieconsole te openen en tik op het pictogram Extra. Tik vervolgens op **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration]**.
 1. Tik op de pagina Dynamic Media Configuration Browser in het linkerdeelvenster op **[!UICONTROL global]** en tik **[!UICONTROL Create]**. Tik niet op het mappictogram of selecteer dit links van [!UICONTROL global].
-1. Voer op de pagina [!UICONTROL Create Dynamic Media Configuration] een titel, het e-mailadres van de Dynamic Media-account en een wachtwoord in. Selecteer uw gebied. Deze informatie wordt door Adobe in uw inrichtingsbericht verstrekt. Neem contact op met de klantenservice van Adobe als u het e-mailbericht niet hebt ontvangen.
+1. Voer op de pagina [!UICONTROL Create Dynamic Media Configuration] een titel, het e-mailadres van de Dynamic Media-account en een wachtwoord in. Selecteer uw gebied. Deze informatie wordt door Adobe in uw inrichtingsbericht verstrekt. Neem contact op met de klantenondersteuning van Adobe als u het e-mailbericht niet hebt ontvangen.
 
    Tik op **[!UICONTROL Connect to Dynamic Media]**.
 
    >[!NOTE]
    >
-   >Nadat u uw levering-e-mail met de geloofsbrieven van Dynamic Media ontvangt, open [Klassieke de Desktoptoepassing van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dan login aan uw bedrijfrekening om uw wachtwoord te veranderen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat de Dynamic Media-Cloud Service de juiste referenties krijgt.
+   >Nadat u uw levering-e-mail met de geloofsbrieven van Dynamic Media ontvangt, open [Dynamic Media Classic Desktoptoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dan login aan uw bedrijfrekening om uw wachtwoord te veranderen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat de Dynamic Media-Cloud Service de juiste referenties krijgt.
 
 1. Als de verbinding tot stand is gebracht, kunt u ook het volgende instellen:
 
@@ -106,7 +106,7 @@ Wijzig het wachtwoord voordat u Dynamic Media-Cloud Services configureert. Nadat
 1. Tik op **[!UICONTROL Save]**.
 1. Als u Dynamic Media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de Experience Manager Auteur-instantie &#39;lijsten van gewenste personen&#39; om verbinding te maken met Dynamic Media:
 
-   * Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account. Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
+   * Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account. Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
    * Tik op de navigatiebalk rechts boven aan de pagina op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
    * Selecteer **[!UICONTROL Test Image Serving]** in de vervolgkeuzelijst Publicatie-context op de pagina Publiceren afbeeldingsserver.
    * Tik **[!UICONTROL Add]** voor het clientadresfilter.
@@ -128,9 +128,9 @@ Als u de configuratie en instelling van de Dynamic Media - Scene7-modus verder w
 
 ### (Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
 
-Wanneer u in **dynamicmedia_scene7** loopwijze bent, gebruikt u de Klassieke gebruikersinterface van Dynamic Media om uw montages van Dynamic Media te veranderen.
+Als u in de uitvoermodus **dynamicmedia_scene7** werkt, gebruikt u de Dynamic Media Classic-gebruikersinterface om uw Dynamic Media-instellingen te wijzigen.
 
-Voor sommige van de bovenstaande taken is het vereist dat u de [Klassieke Dynamic Media-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) opent en zich vervolgens aanmeldt bij uw account.
+Voor sommige van de bovenstaande taken moet u de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) openen en zich vervolgens aanmelden bij uw account.
 
 Setup- en configuratietaken zijn:
 
@@ -159,7 +159,7 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 
 #### Algemene instellingen van toepassing configureren {#configuring-application-general-settings}
 
-Tik in Dynamic Media Classic Global Navigation Bar op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** om de pagina [!UICONTROL Application General Settings] te openen.
+Tik **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** om de pagina [!UICONTROL Application General Settings] in de Dynamic Media Classic Global Navigation Bar te openen.
 
 **[!UICONTROL Servers]** - Dynamic Media levert automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij u expliciet de instructie krijgt dit te doen door ondersteuning voor Experience Managers.
 
@@ -186,7 +186,7 @@ Met dynamisch kleurbeheer voor media kunt u correcte elementen kleuren. Met kleu
 
 **De standaardeigenschappen voor kleuren configureren om kleurcorrectie in te schakelen bij het aanvragen van afbeeldingen:**
 
-1. Open de [Dynamic Media Klassieke bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account met de aanmeldingsgegevens die tijdens de provisioning zijn opgegeven. Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**.
+1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account met de aanmeldingsgegevens die tijdens de provisioning zijn opgegeven. Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**.
 1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
 1. Blader naar de eigenschap die u moet wijzigen. Een eigenschap in het gebied **[!UICONTROL Color Management Attributes]**.
 
@@ -194,7 +194,7 @@ Met dynamisch kleurbeheer voor media kunt u correcte elementen kleuren. Met kleu
 
    * [!UICONTROL CMYK Default Color Space] - Naam van het standaard CMYK-kleurprofiel
    * [!UICONTROL Gray-Scale Default Color Space] - Naam van het standaardgrijskleurprofiel
-   * [!UICONTROL RGB Default Color Space] - Naam van het standaard RGB-kleurprofiel
+   * [!UICONTROL RGB Default Color Space] - Naam van het standaardkleurprofiel RGB
    * [!UICONTROL Color Conversion Rendering Intent] - Geeft de render-intentie op. De acceptabele waarden zijn `perceptual`, `relative` `colometric`, `saturation` en `absolute colometric`. Adobe raadt `relative` als standaardwaarde aan.
 
 1. Tik op **[!UICONTROL Save]**.
@@ -204,7 +204,7 @@ U kunt bijvoorbeeld **[!UICONTROL RGB Default Color Space]** instellen op `sRGB`
 Dit doet het volgende:
 
 * Hiermee schakelt u kleurcorrectie in voor RGB- en CMYK-afbeeldingen.
-* RGB-afbeeldingen zonder kleurprofiel worden verondersteld in de kleurruimte `sRGB` te staan.
+* Van RGB-afbeeldingen die geen kleurprofiel hebben, wordt aangenomen dat deze zich in de kleurruimte `sRGB` bevinden.
 * CMYK-afbeeldingen zonder kleurprofiel worden geacht zich in de kleurruimte `WebCoated` te bevinden.
 * Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in de kleurruimte `sRGB`.
 * Dynamische uitvoeringen die CMYK-uitvoer retourneren, retourneren deze in de kleurruimte `WebCoated`.
@@ -215,7 +215,7 @@ U kunt bepalen welke elementtypen door Dynamic Media worden verwerkt en geavance
 
 * Een Adobe PDF converteren naar een eCatalog-element.
 * Converteer een Adobe Photoshop-document (.PSD) naar een bannersjabloonelement voor personalisatie.
-* Rasteren een Adobe Illustrator-bestand (.AI) of een Adobe Photoshop Encapsulated PostScript® (.EPS).
+* Rasteren een Adobe Illustrator-bestand (.AI) of een Adobe Photoshop Encapsulated-PostScript® (.EPS).
 * [U kunt videoprofielen ](/help/assets/video-profiles.md) en  [beeldbewerkingsprofielen ](/help/assets/image-profiles.md) gebruiken om respectievelijk de verwerking van video&#39;s en afbeeldingen te definiëren.
 
 Zie [Elementen uploaden](managing-assets-touch-ui.md#uploading-assets).
@@ -316,7 +316,7 @@ Twee elementen zijn beschikbaar voor definitie, **[!UICONTROL Match]** en **[!UI
 
 **Standaardnaamgeving configureren:**
 
-1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
+1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
@@ -350,7 +350,7 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 
 **Een voorinstelling voor een batchset maken:**
 
-1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
+1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
@@ -405,7 +405,7 @@ Wanneer de Spin-set wordt geüpload en gepubliceerd, activeert u de naam van het
 
 **Een voorinstelling voor een batch-set maken voor het automatisch genereren van een 2D-set met draaien:**
 
-1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
+1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
@@ -452,7 +452,7 @@ Wanneer de Spin-set wordt geüpload en gepubliceerd, activeert u de naam van het
 
 1. Voor **[!UICONTROL Set Naming]** en **[!UICONTROL Creation Convention]**, specificeer het achtervoegsel of het voorvoegsel aan de basisnaam u in **[!UICONTROL Asset Naming Convention]** bepaalde.
 
-   Bepaal ook waar de centrifugeset wordt gemaakt in de Classic-mapstructuur van Dynamic Media.
+   Definieer ook waar de centrifugeset wordt gemaakt in de Dynamic Media Classic-mapstructuur.
 
    Als u grote aantallen sets definieert, moet u ze gescheiden houden van de mappen die de elementen zelf bevatten. Maak bijvoorbeeld een map met centrifuges waarin de gegenereerde sets hier worden geplaatst.
 
@@ -478,7 +478,7 @@ Gebruik de volgende parameters als u sjabloonontwerp wilt inschakelen: `process=
 
 <!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe raadt u aan de volgende taakparameters voor PDF-, PostScript®- en PSD-bestanden te gebruiken:
+Adobe raadt u aan de volgende &#39;aangepaste&#39; taakparameters te gebruiken voor PDF-, PostScript®- en PSD-bestanden:
 
 <!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
 
@@ -492,7 +492,7 @@ Adobe raadt u aan de volgende taakparameters voor PDF-, PostScript®- en PSD-bes
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Als u een van deze parameters wilt bijwerken, volgt u de stappen in [Ondersteuning voor Classic uploadtaakparameter voor MIME-elementen/Dynamic Media Classic-uploads](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+Als u een van deze parameters wilt bijwerken, volgt u de stappen in [Ondersteuning voor taakparameters uploaden via MIME op type gebaseerde elementen/Dynamic Media Classic](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### De Granite Transient Workflow-wachtrij bijwerken {#updating-the-granite-transient-workflow-queue}
 
@@ -542,7 +542,7 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 
 #### De Scene7-uploadverbinding bijwerken {#updating-the-scene-upload-connection}
 
-Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager Assets naar Dynamic Media Classic-servers.
+Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager Assets met Dynamic Media Classic-servers.
 
 **De Scene7-uploadverbinding bijwerken:**
 
@@ -623,7 +623,7 @@ Als u Dynamic Media gebruikt voor beeldbewerking, video of beide, kunt u de stan
 
    Als u dit filter wilt toepassen op alle afbeeldingen, ongeacht de indeling, stelt u de waarde in op `image/*`, waarbij `*` een reguliere expressie is die wordt toegepast op alle afbeeldingen in een willekeurige indeling.
 
-   Als u het filter alleen wilt toepassen op afbeeldingen van het type JPEG, voert u de waarde `image/jpeg` in.
+   Als u het filter alleen wilt toepassen op afbeeldingen van het type JPEG, voert u een waarde `image/jpeg` in.
 
 1. Bepaal welke uitvoeringen u van replicatie wilt omvatten of uitsluiten.
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 0%
@@ -195,5 +195,5 @@ Tijdens de controle, als u problemen ontmoet, zijn hier sommige het oplossen van
 * Gebruik de workflowconsole om te controleren of uw workflows naar behoren werken. Indien mogelijk kunt u meerdere workflows samenvoegen tot één workflow.
 * Herzie live monitoring en zoek naar extra knelpunten of hoge consumenten van specifieke hulpbronnen.
 * Onderzoek de uitgang punten van het cliëntnetwerk en de ingang richt aan het [!DNL Experience Manager] instantienetwerk, met inbegrip van de verzender. Dit zijn vaak knelpunten. Zie [Elementennetwerkoverwegingen](assets-network-considerations.md) voor meer informatie.
-* Upsize uw [!DNL Experience Manager] server. U kunt een exemplaar van onvoldoende grootte hebben [!DNL Experience Manager]. De klantenservice van Adobe kan u helpen bepalen of uw server te klein is.
+* Upsize uw [!DNL Experience Manager] server. U kunt een exemplaar van onvoldoende grootte hebben [!DNL Experience Manager]. Adobe Klantenondersteuning kan u helpen te bepalen of uw server te klein is.
 * Onderzoek `access.log` en `error.log` dossiers voor ingangen rond de tijd van iets verkeerd ging. Zoek naar patronen die op anomalieën van de douanecode kunnen wijzen. Voeg deze toe aan de lijst met gebeurtenissen die u controleert.

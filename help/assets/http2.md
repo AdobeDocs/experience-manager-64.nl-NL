@@ -1,8 +1,8 @@
 ---
 title: HTTP2 Levering van inhoud
-seo-title: HTTP2 Levering van inhoud
+seo-title: HTTP2 Delivery of Content
 description: HTTP/2 verbetert de manier waarop browsers en servers communiceren, waardoor informatie sneller kan worden overgedragen en de hoeveelheid benodigde verwerkingskracht wordt verminderd.
-seo-description: HTTP/2 verbetert de manier waarop browsers en servers communiceren, waardoor informatie sneller kan worden overgedragen en de hoeveelheid benodigde verwerkingskracht wordt verminderd.
+seo-description: HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of needed processing power.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '705'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 U moet het verzoek in werking stellen om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
 
-1. Initieer een verzoek van de Technische Steun om op HTTP2 over te schakelen. Zie [Toegang tot het AEM Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Initieer een verzoek van de Technische Steun om op HTTP2 over te schakelen. Zie [Toegang tot het klantenondersteuningsportaal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Geef de volgende informatie op in uw supportverzoek:
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 7%
@@ -22,7 +22,7 @@ Voordat u een van de hieronder beschreven stappen uitvoert, bekijkt en implement
 
 >[!NOTE]
 >
->De volgende gereedschappen voor middelenmigratie maken geen deel uit van Adobe Experience Manager. De klantenservice van Adobe ondersteunt deze tools niet.
+>De volgende gereedschappen voor middelenmigratie maken geen deel uit van Adobe Experience Manager. Adobe Klantenondersteuning biedt geen ondersteuning voor deze tools.
 >
 >* ACS [!DNL Experience Manager] Tools Tag Maker
 >* ACS [!DNL Experience Manager] Tools CSV Asset Importer
@@ -79,7 +79,7 @@ Wanneer de activa niet over een netwerk worden overgebracht verbeteren de algeme
 
 ### Procesuitvoeringen {#process-renditions}
 
-Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de DAM Update Asset-workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de DAM Update Asset-workflow dupliceren en aanpassen aan uw wensen. Sommige stappen in de standaardworkflow zijn mogelijk niet nodig voor u, zoals het genereren van Dynamic Media Classic PTIFF of het integreren van een InDesign-server.
+Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de DAM Update Asset-workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de DAM Update Asset-workflow dupliceren en aanpassen aan uw wensen. Sommige stappen in de standaardworkflow zijn mogelijk niet nodig voor u, zoals Dynamic Media Classic PTIFF-generatie of InDesign-serverintegratie.
 
 Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om het uit te voeren:
 
