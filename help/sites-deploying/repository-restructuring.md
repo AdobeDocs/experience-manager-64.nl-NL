@@ -1,19 +1,19 @@
 ---
 title: Herstructurering van de depositaris in AEM 6.4
-seo-title: Herstructurering van de depositaris in AEM 6.4
+seo-title: Repository Restructuring in AEM 6.4
 description: Meer informatie over de grondbeginselen en de redenering achter de herstructurering van de opslagplaats in AEM 6.4
-seo-description: Meer informatie over de grondbeginselen en de redenering achter de herstructurering van de opslagplaats in AEM 6.4
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.4
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: Bijwerken
+feature: Upgrading
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Bij het plannen van een upgrade naar AEM 6.4 moet naar de volgende pagina&#39;s 
 
 * [Herstructurering van de opslagplaats gemeenschappelijk voor alle AEM oplossingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [Herstructurering van AEM Sites-opslagplaats](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [Herstructurering van AEM Assets-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [Herstructurering van AEM Assets-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
 * [Herstructurering van de AEM Assets Dynamic Media-opslagplaats](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [Herstructurering van AEM Forms-opslagplaats](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [Herstructurering van AEM Communities-opslagplaats](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)

@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4 Implementatiegids
 breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.4, inclusief de cloudimplementatie van Adobe Managed Services.
-feature: Implementeren
+feature: Deploying
 role: Architect
-source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 1%
    + [Herstructurering van de depositaris in AEM 6.4](repository-restructuring.md)
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Sites Repositoregeling Herstructurering AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Herstructurering van activa Bewaarinstelling in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+   + [Herstructurering van activa Bewaarinstelling in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
    + [Dynamic Media Repositoregeling Herstructurering in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Forms Repositoregeling Herstructurering in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Herstructurering van de opslagplaats voor elektronische handel in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
