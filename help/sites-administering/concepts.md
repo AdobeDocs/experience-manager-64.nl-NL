@@ -1,8 +1,8 @@
 ---
 title: Concepten
-seo-title: Concepten
+seo-title: Concepts
 description: Algemene concepten van e-handel met AEM.
-seo-description: Algemene concepten van e-handel met AEM.
+seo-description: General Concepts of eCommerce with AEM.
 uuid: 1e3f0518-7797-48a7-bac7-0dc3ddaa0385
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
 feature: Commerce Integration Framework
 exl-id: 8140db99-fec6-4efd-87d9-62efd157d54a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '4535'
+source-wordcount: '4524'
 ht-degree: 0%
 
 ---
@@ -40,15 +39,12 @@ Dit betekent dat:
 >Het eCommerce-kader kan worden gebruikt met:
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   >
-   >
-* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
-   >
-   >
-* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+>
+>* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
+>
+>* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 
 >
-
 
 
 >[!CAUTION]
@@ -139,11 +135,8 @@ AEM eCommerce wordt geïmplementeerd met een eCommerce-motor:
 >
 >AEM eCommerce die wordt uitgevoerd binnen AEM met behulp van generieke ontwikkeling op basis van JCR is:
 >
->* Een zelfstandig, AEM-native voorbeeld van eCommerce om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens, winkelkaarten en kassa&#39;s te controleren in combinatie met de bestaande campagnes voor het weergeven en op de markt brengen van gegevens. In dit geval wordt de productdatabase opgeslagen in de systeemeigen opslagruimte van AEM (Adobe van &lt;a0/ JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)).[\
+>* Een zelfstandig, AEM-native voorbeeld van eCommerce om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens, winkelkaarten en kassa&#39;s te controleren in combinatie met de bestaande campagnes voor het weergeven en op de markt brengen van gegevens. In dit geval wordt de productdatabase opgeslagen in de systeemeigen opslagruimte van AEM (Adobe van &lt;a0/ JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)).[\
    >  De standaard AEM installatie bevat de grondbeginselen van de [generische eCommerce-implementatie](/help/sites-administering/generic.md).
-
->
-
 
 
 ### Handelsleveranciers {#commerce-providers}
@@ -210,9 +203,9 @@ Hoewel de daadwerkelijke plaats van uw implementatie kan afhangen; bijvoorbeeld 
 
 ## Producten {#products}
 
-### Product Gegevens versus marketinggegevens {#product-data-versus-marketing-data}
+### Productgegevens versus marketinggegevens {#product-data-versus-marketing-data}
 
-#### Structuur versus marketing categorieën {#structural-versus-marketing-categories}
+#### Structuur- en marketingcategorieën {#structural-versus-marketing-categories}
 
 Als de volgende twee categorieën kunnen worden onderscheiden, kunt u zo duidelijke URL&#39;s met een zinvolle structuur (bomen van `cq:Page` knopen) maken en daarom, zeer dicht aan het beheer van de klassieke AEM inhoud):
 
@@ -319,7 +312,7 @@ Voor een meertalige opslag, kunt u uw catalogus voor elke taalboom individueel i
 
 Net als bij talen kunnen grote multinationale ondernemingen meerdere merken in aanmerking nemen.
 
-#### Catalogi op labels {#catalogs-by-tags}
+#### Catalogi op tags {#catalogs-by-tags}
 
 Met labels kunt u ook producten groeperen in een catalogus. Deze kunnen worden gebruikt voor meer dynamische catalogi, zoals seizoensaanbiedingen.
 
@@ -337,7 +330,7 @@ Verdere wijzigingen van de productgegevens zijn onvermijdelijk:
 * voor de generische implementatie kunnen deze worden beheerd met de [producteditor](/help/sites-administering/generic.md#editing-product-information)
 * wanneer het gebruiken van een [eCommerce motor moeten de veranderingen worden gesynchroniseerd](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
-#### Gegevenssynchronisatie met een eCommerce Engine (aan de gang) {#data-synchronization-with-an-ecommerce-engine-ongoing}
+#### Gegevenssynchronisatie met een eCommerce-engine (aan de gang) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
 Na de eerste import zijn wijzigingen in de productgegevens onvermijdelijk.
 
@@ -364,13 +357,13 @@ U kunt kiezen uit verschillende strategieën om deze problemen op te lossen:
 * [Prestatietesten](#performance-testing)
 * [Prestaties - Diversen](#performance-miscellaneous)
 
-#### {#bucketing} sluiten
+#### Emmertje {#bucketing}
 
 Als een JCR-knooppunt veel directe onderliggende knooppunten heeft (bijvoorbeeld 1000 en meer), zijn emmers (fantoommappen) vereist om ervoor te zorgen dat de prestaties niet worden beïnvloed. Deze worden gegenereerd volgens een algoritme bij het importeren.
 
 Deze emmers hebben de vorm van fantoommappen die aan uw catalogusstructuur worden geïntroduceerd, maar kunnen worden gevormd zodat zij niet duidelijk in openbare URLs zijn.
 
-#### Middelen na verwerking naar een specifieke instantie {#offload-asset-post-processing-to-a-dedicated-instance} verschuiven
+#### Middelen na verwerking naar een specifieke instantie verplaatsen {#offload-asset-post-processing-to-a-dedicated-instance}
 
 In dit scenario worden twee auteur-instanties ingesteld:
 
@@ -395,7 +388,7 @@ Als producten geen te importeren elementen (afbeeldingen) bevatten, kunt u de pr
 
 [Import throttling](/help/sites-deploying/scaling.md#import-throttling) and [batch saves](/help/sites-deploying/scaling.md#batch-saves) are two general [scaling](/help/sites-deploying/scaling.md) mechanisms that can help when importing large volumes of data.-->
 
-#### Prestaties testen {#performance-testing}
+#### Prestatietesten {#performance-testing}
 
 Bij AEM eCommerce-implementaties moet rekening worden gehouden met prestatietests:
 
@@ -431,7 +424,7 @@ Houd er rekening mee dat voor deze prestatietests kennis en analyse van uw doel 
 
 * Onderhoudsvereisten (back-up, optimalisatie van Tar PM, opschonen van datastore, enz.)
 
-#### Prestaties - Diverse {#performance-miscellaneous}
+#### Prestaties - Diversen {#performance-miscellaneous}
 
 Voor alle implementaties kan rekening worden gehouden met de volgende punten:
 
@@ -547,7 +540,7 @@ In AEM:
 >
 >AEM gebruikt de term **Voucher**, is dit synoniem met de term **Coupon**.
 
-### Promoties {#promotions}
+### Aanbiedingen {#promotions}
 
 Met promoties kunt u samen met vouchers scenario&#39;s realiseren zoals:
 
@@ -576,7 +569,7 @@ Promoties worden gewoonlijk niet onderhouden door productinformatiemanagers, maa
 In AEM zijn de bevorderingen ook geïntegreerd in [Campagne Management](/help/sites-authoring/personalization.md):
 
 * a [campagne](/help/sites-authoring/personalization.md) geeft de aan/uit-tijden aan
-* [De ](/help/sites-authoring/personalization.md) ** ervaring binnen de campagne wordt gebruikt om activa (theaterpagina&#39;s, promoties, enz.) te groeperen volgens het publiekssegment dat zij aan beantwoorden
+* [](/help/sites-authoring/personalization.md) ** de ervaring binnen de campagne wordt gebruikt om activa (theaterpagina&#39;s, promoties, enz.) te groeperen volgens het publiekssegment dat zij aan beantwoorden
 
 Een promotieactie kan worden uitgevoerd in een ervaring of rechtstreeks in de campagne:
 
@@ -698,7 +691,7 @@ De eCommerce-engine gebruikt de context (in feite de verkoopinformatie) om de pr
 
 Wanneer de winkel wordt geopend, bladert de winkelier door de productpagina&#39;s en selecteert hij items om deze in zijn winkelwagentje te plaatsen. Wanneer ze doorgaan met het uitchecken, kan een bestelling worden geplaatst.
 
-### Anonieme winkels {#anonymous-shoppers}
+### Anonieme kopers {#anonymous-shoppers}
 
 Een anonieme klant kan:
 
@@ -720,7 +713,7 @@ Een geregistreerde klant kan:
 * Uitchecken uitvoeren om de bestelling te plaatsen
 * Eerdere bestellingen weergeven en volgen
 
-### Overzicht van winkelwagentinhoud {#shopping-cart-content-overview}
+### Overzicht van winkelwagentje inhoud {#shopping-cart-content-overview}
 
 Het winkelwagentje biedt:
 
@@ -859,7 +852,7 @@ De afhandeling en het bijhouden van bestellingen wordt meestal beheerd door de e
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-## Uitchecken {#checkout}
+## Afhandeling {#checkout}
 
 Afhandeling wordt geïmplementeerd met standaard AEM formulieren. Hierdoor kan de marketingmanager de ervaring met marketinginhoud aanpassen.
 
