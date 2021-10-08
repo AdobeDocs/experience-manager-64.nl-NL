@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release van AEM Assets
 seo-title: AEM Assets
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4 Assets.
-seo-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4 Assets.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,10 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-translation-type: tm+mt
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -22,7 +21,7 @@ ht-degree: 0%
 
 De belangrijkste functies, hooglichten en verbeteringen die zijn uitgevoerd in AEM 6.4 Elementen worden behandeld in deze releaseopmerkingen. Voor gedetailleerde informatie, volg de verstrekte verbindingen.
 
-## Adobe-elementkoppeling {#adobe-asset-link}
+## Adobe-itemkoppeling {#adobe-asset-link}
 
 Adobe Asset Link in Creative Cloud for Enterprise stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van content. Het is een nieuwe inheemse capaciteit in Creative Cloud voor onderneming, die een verbinding aan AEM Assets direct van Adobe Photoshop, Adobe Illustrator, of Adobe InDesign verstrekt — zonder deze hulpmiddelen te verlaten.
 
@@ -37,7 +36,7 @@ AEM 6.4 introduceert de mogelijkheid van kunstmatige intelligentie, verbeterde s
 
 Als u AEM Assets Enhanced Smart Tags wilt gebruiken, installeert u het [nieuwste servicepakket van AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
-## Smart Translation Search (Engelstalig) {#smart-translation-search-powered-by-adobe-sensei}
+## Smart Translation Search (Engelstalig) (aangedreven door Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
 AEM 6.4 introduceert Smart Translation Search mogelijkheid om meertalige zoekscenario&#39;s te ondersteunen. Klanten met wereldwijd gedistribueerde teams voor meerdere landinstellingen hebben nu toegang tot het zoeken in verschillende talen zonder dat ze dure en tijdrovende vertaalworkflows moeten doorlopen.
 
@@ -90,21 +89,21 @@ AEM 6.4 omvat meerdere geavanceerde mogelijkheden voor metagegevensbeheer om met
 AEM 6.4 biedt aanzienlijke verbeteringen op het gebied van middelenrapportage:
 
 * De nieuwe onderneming-vlakke, scalable (voor grote bewaarplaatsen) meldt kader die het Verschuiven banen voor asynchrone verwerkingsrapportverzoeken toepast. U kunt rapport op een specifieke datum en een tijd plannen. U kunt douanekolommen aan een rapport ook toevoegen.
-* Nieuwe OOTB-rapporten die het vaakst door klanten worden gevraagd, zoals schijfgebruik, bestanden, gedeelde koppelingen, publiceren naar Brand-portal en training voor slimme tags.
+* Nieuwe OOTB-rapporten die het meest worden gevraagd door klanten zoals Schijfgebruik, Bestanden, Delen koppelen, Publiceren naar Brand Portal en Training voor slimme tags.
 * De nieuwe verwezenlijking en beheer UI van Rapporten met fijne korrelige opties, capaciteit om tot gearchiveerde rapporten toegang te hebben, zie rapportloopstatus (succes, ontbroken, een rij gevormd, etc.).
 
-## Merk-portal {#brand-portal}
+## Brand Portal {#brand-portal}
 
-* **6.3 Platform-upgrade**: Brand Portal is bijgewerkt van AEM 6.0 naar AEM 6.3 met nieuwe functies en prestatieverbeteringen.
+* **6.3 Platform-upgrade**: Brand Portal is geüpgraded van AEM 6.0 naar AEM 6.3 met nieuwe functies en prestatieverbeteringen.
 * **Parallelle publicatie**: Er kunnen maximaal replicaties plaatsvinden tussen AEM Assets en Brand Portal (voorheen 1), wat de publicatieprestaties aanzienlijk verbetert
 * **Schema en zoekfacet publiceren**: Mogelijkheid om metagegevensschema&#39;s en aangepaste zoekfacetten naar Brand Portal te publiceren, waardoor dubbel werk wordt voorkomen.
-* **Bulklabels publiceren**: Mogelijkheid om taxonomie (samen met hiërarchie) te publiceren naar Brand Portal, waardoor dubbel werk wordt voorkomen.
+* **Bulklabels publiceren**: Mogelijkheid om taxonomie (samen met hiërarchie) naar Brand Portal te publiceren, waardoor dubbel werk wordt voorkomen.
 * **Zelf aanmelden of toegang** aanvragen: Workflow voor niet-geregistreerde gebruikers naar Brand Portal.
 * **Onderhoudsmelding** in de app (op het scherm): Meldingen worden ruim van tevoren weergegeven om verstoring in de bedrijfsvoering te voorkomen.
 * **Verbeteringen** rapporteren: Er zijn drie OOTB-rapporten beschikbaar: downloads, publiceren en delen via koppelingen.
-* **Beperkingen** op basis van DRM: Nadat een gelicentieerd element is verlopen, kan het niet meer worden gedownload van Brand Portal.
+* **Beperkingen** op basis van DRM: Nadat een in licentie gegeven element is verlopen, kan het niet meer worden gedownload van Brand Portal.
 
-## Desktop-app {#aem-desktop-app} AEM
+## Bureaubladapp AEM {#aem-desktop-app}
 
 AEM bureaubladtoepassing wordt bijgewerkt naar versie 1.8, die compatibel is met AEM 6.4. De volledige lijst met wijzigingen voor AEM desktop-app vindt u in een speciaal [AEM document voor de release van de desktop-app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).\
 Hier volgt een lijst met AEM belangrijke kenmerken van de bureaubladtoepassing sinds AEM 6.3 is uitgebracht:
@@ -123,10 +122,10 @@ De volgende documentatie is beschikbaar voor een eenvoudigere toegang tot de doc
 
 ## Gelaagde opslag {#tiered-storage}
 
-AEM 6.4 bevat een reeks functies die verschillende gelaagde opslagvoorkeuren ondersteunen en levenscyclusregels implementeren. De opslagopties ondersteunen (maar zijn niet beperkt) ook openbare wolken - AWS of Azure.
+AEM 6.4 bevat een reeks functies die verschillende gelaagde opslagvoorkeuren ondersteunen en levenscyclusregels implementeren. De opslagopties ondersteunen (maar zijn niet beperkt) ook openbare clouds - AWS of Azure.
 
 * De mogelijkheid voor gebruikers om opslagklasse te selecteren en later naar eigen inzicht te wijzigen en regels te definiëren voor de opslag van elementen van de ene klasse naar de andere of de levenscyclus van hun elementen te beheren.
-* De mogelijkheid voor gebruikers om hun opslagkosten te verlagen door een ander AWS of Azure te selecteren.
+* De mogelijkheid voor gebruikers om hun opslagkosten te verlagen door een andere AWS of Azure te selecteren.
 
 Voor een overzicht van ondersteunde platforms raadpleegt u de [documentatie over technische vereisten](../sites-deploying/technical-requirements.md).
 
@@ -139,11 +138,11 @@ Voor een overzicht van ondersteunde platforms raadpleegt u de [documentatie over
 
 Dynamic Media in 6.4 biedt ondersteuning voor een nieuwe modus - waarbij master middelen worden geüpload en beheerd met de AEM Assets-webinterface en dynamische uitvoeringen en andere dynamische mediafuncties op de achtergrond worden afgehandeld door de Dynamic Media-service voor levering van wolken.
 
-In deze modus (die eerst is geïntroduceerd met de release van [AEM 6.3 Feature Packs 14410 en 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)) profiteren gebruikers van end-to-end asset management en dynamische mediafuncties met behulp van de moderne AEM Assets web UI, en maken ze nog steeds gebruik van de leveringsservices die achterwaarts compatibel zijn met Dynamic Media Classic (Scene7), inclusief ongewijzigde bezorgings-URL&#39;s.
+In deze modus (die eerst is geïntroduceerd met de release van [AEM 6.3 Feature Packs 14410 en 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)) profiteren gebruikers van end-to-end asset management en dynamische mediafuncties met behulp van de moderne AEM Assets web UI, en maken ze nog steeds gebruik van de leveringsservices die achterwaarts compatibel zijn met Dynamic Media Classic (Scene7), waaronder bezorgings-URL&#39;s die ongewijzigd zijn.
 
 Daarnaast introduceert AEM 6.4 nieuwe functies die worden aangedreven door Adobe Sensei, verbeteringen voor opkomende media zoals VR en 3D, Dynamic Media-viewers en ondersteuning voor Experience Fragments in Interactive Images en Carousel Banners.
 
-### Slim uitsnijden (aangedreven door Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
+### Smart Crop (aangedreven door Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
 
 * Met Slim uitsnijden kunt u afbeeldingen automatisch op niet-destructieve wijze uitsnijden, zodat het interessepunt voor een responsief ontwerp behouden blijft. U kunt bijgesneden suggesties vooraf bekijken en ze indien nodig handmatig aanpassen.
 * Met deze functie kunt u ook automatische stalen genereren voor productafbeeldingen. Met Automatisch stalen genereren kunt u automatisch kleurstalen, patroonstalen of beide toevoegen aan productafbeeldingen.
@@ -160,7 +159,7 @@ Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s](../assets/adding-dy
 
 Zie [Smart Imaging](../assets/imaging-faq.md) documentatie voor meer informatie.
 
-### Verbeteringen voor nieuwe media en viewer {#emerging-media-amp-viewer-enhancements}
+### Verbeteringen voor media en viewer {#emerging-media-amp-viewer-enhancements}
 
 * Nieuwe viewers worden ondersteund en bieden een betere en indrukwekkende ervaring voor de gebruiker.
 * De Panoramische Viewer helpt de gebruiker te betrekken en biedt de mogelijkheid om ruimteschalen, eigenschappen, locaties en landschappen beter te ervaren. Zie [Panorama&#39;s](../assets/panoramic-images.md) documentatie voor meer informatie.
