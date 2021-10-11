@@ -1,8 +1,8 @@
 ---
 title: E-maileindpunten configureren
-seo-title: E-maileindpunten configureren
+seo-title: Configuring email endpoints
 description: Leer hoe u e-maileindpunten configureert.
-seo-description: Leer hoe u e-maileindpunten configureert.
+seo-description: Learn how to configure email endpoints.
 uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
@@ -10,21 +10,20 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: f24d9260-31e8-4bdf-8b80-c17cdd2d0747
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bf9b94e8af72ad7b0a2c1d867fa35acfa31e6c1c
 workflow-type: tm+mt
-source-wordcount: '3766'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# E-maileindpunten {#configuring-email-endpoints} configureren
+# E-maileindpunten configureren {#configuring-email-endpoints}
 
 Met e-maileindpunten kunnen gebruikers de service aanroepen door een of meer documenten (als e-mailbijlagen) naar een opgegeven e-mailaccount te verzenden. Het e-mailpostvak fungeert als verzamelpunt voor de bijlagen. De service bewaakt de Postvak IN en verwerkt de bijlagen. De resultaten van de omzetting worden door:sturen aan de gebruiker die in het eindpunt wordt bepaald.
 
 Voor een e-maileindpunt kunnen geautoriseerde gebruikers een proces aanroepen door bestanden naar de juiste account te e-mailen. De resultaten zullen aan de verzendende gebruiker (door gebrek) of aan de gebruiker worden teruggekeerd die in de eindpuntmontages wordt bepaald.
 
-Alvorens u een e-maileindpunt vormt, creeer een POP3 of IMAP e-mailrekening voor gebruik door het eindpunt. Stel een aparte account in voor elk type conversie. U kunt bijvoorbeeld één account configureren om standaard PDF-documenten te genereren op basis van binnenkomende bestandsbijlagen en een andere account configureren om beveiligde PDF-documenten te genereren.
+Alvorens u een e-maileindpunt vormt, creeer een POP3 of IMAP e-mailrekening voor gebruik door het eindpunt. Stel een aparte account in voor elk type conversie. Eén account kan bijvoorbeeld worden geconfigureerd om standaard PDF-documenten te genereren op basis van binnenkomende bestandsbijlagen en een andere account kan worden geconfigureerd om beveiligde PDF-documenten te genereren.
 
 >[!NOTE]
 >
@@ -65,13 +64,13 @@ U kunt de pagina van het Beheer van de Dienst gebruiken om attributen te vormen 
 
 Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruikers ontvangt en afhandelt, moet u een e-maileindpunt voor de service Volledige taak maken. Dit e-maileindpunt vereist extra montages, zoals die in [worden beschreven een E-maileindpunt voor de Volledige dienst van de Taak ](configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service) creëren.
 
-### De standaardwaarden wijzigen voor e-maileindpunten {#change-the-default-values-for-email-endpoints}
+### De standaardwaarden voor e-maileindpunten wijzigen {#change-the-default-values-for-email-endpoints}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Klik op E-mail op de pagina Servicebeheer: 1.0 (de component-id is com.adobe.idp.dsc.provider.service.email.Email).
 1. Voor het lusje van de Configuratie, specificeer de standaard e-maileindpuntmontages en klik dan sparen.
 
-### Standaardinstellingen {#default-email-endpoint-settings} voor e-maileindpunt
+### Standaardinstellingen voor e-maileindpunt {#default-email-endpoint-settings}
 
 **Uitsnijdexpressie:** de uitsnijdexpressie die door het kwartpunt wordt gebruikt om de opiniepeiling van de invoermap te plannen.
 
@@ -107,7 +106,7 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 
 **POP3/IMAP SSL ingeschakeld:** Wanneer deze optie is geselecteerd, wordt SSL ingeschakeld.
 
-**SMTP-host:** de hostnaam van de mailserver die de e-mailprovider gebruikt om resultaten en foutberichten te verzenden. Bijvoorbeeld mail.corp.example.com.
+**SMTP-host:** de hostnaam van de mailserver die de e-mailprovider gebruikt om resultaten en foutberichten te verzenden. Bijvoorbeeld mail.voorbeeld.com.
 
 **SMTP-poort:** de poort die wordt gebruikt om verbinding te maken met de mailserver. De standaardwaarde is 25.
 
@@ -205,7 +204,7 @@ Laat de instelling leeg als u deze instelling wilt uitschakelen. In sommige geva
 
 **asynchroon:** Wanneer ingesteld op synchroon, worden alle invoerdocumenten verwerkt en wordt één reactie geretourneerd. Wanneer ingesteld op asynchroon, wordt een reactie verzonden voor elk document dat wordt verwerkt.
 
-Er wordt bijvoorbeeld een e-maileindpunt gemaakt voor een service die gebruikmaakt van één Word-document en dat document retourneert als een PDF-bestand. Een e-mail kan naar inbox van het eindpunt worden verzonden die de veelvoudige (3) documenten van Word bevat. Wanneer alle drie documenten worden verwerkt, als het eindpunt synchroon wordt gevormd, wordt één enkele reactie-e-mail verzonden met alle drie documenten in bijlage. Als het eindpunt asynchroon is, wordt een antwoord-e-mail verzonden nadat elk Word-document is geconverteerd naar PDF. Het resultaat is drie e-mailberichten, elk met één PDF-bijlage.
+Bijvoorbeeld, wordt een e-maileindpunt gecreeerd voor de dienst die één enkel document van Word neemt en dat document als dossier van PDF terugkeert. Een e-mail kan naar inbox van het eindpunt worden verzonden die de veelvoudige (3) documenten van Word bevat. Wanneer alle drie documenten worden verwerkt, als het eindpunt synchroon wordt gevormd, wordt één enkele reactie-e-mail verzonden met alle drie documenten in bijlage. Als het eindpunt asynchroon is, wordt een antwoord-e-mail verzonden nadat elk document van Word in PDF wordt omgezet. Het resultaat is drie e-mails, elk met één PDF bijlage.
 
 De standaardwaarde is asynchroon.
 
