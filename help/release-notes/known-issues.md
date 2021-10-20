@@ -1,8 +1,8 @@
 ---
 title: Bekende problemen in AEM 6.4
-seo-title: Bekende problemen in AEM 6.4
+seo-title: Known Issues in AEM 6.4
 description: Bekende problemen in Adobe Experience Manager 6.4
-seo-description: Bekende problemen in Adobe Experience Manager 6.4.
+seo-description: Known Issues in Adobe Experience Manager 6.4.
 uuid: 1733f15e-9c4f-4db3-98ee-25c2ea606f0d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,17 +10,16 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
 
 # Bekende problemen {#known-issues}
 
-Deze pagina bevat een lijst met bekende problemen die Adobe Experience Manager 6.4 in april 2018 heeft gepubliceerd. Voor meer informatie over bekende kwesties, [contacteer steun](https://helpx.adobe.com/support/experience-manager.html).
+Deze pagina bevat een lijst met bekende problemen die Adobe Experience Manager 6.4 in april 2018 heeft gepubliceerd. Voor meer informatie over bekende problemen, [contactondersteuning](https://helpx.adobe.com/support/experience-manager.html).
 
 ## Hybride apparaten {#hybrid-devices}
 
@@ -28,20 +27,20 @@ Hybride apparaten worden niet ondersteund. Er kunnen verschillende problemen opt
 
 Als u Google Chrome als browser gebruikt:
 
-* Typ `chrome://flags/` in de adresbalk en druk op Enter.
+* Type `chrome://flags/` in de adresbar en druk binnengaan.
 * Klik op Enable touch events > Disabled.
 * Start de browser opnieuw (alle tabbladen en vensters).
 
 Als u Mozilla Firefox als browser gebruikt:
 
-* Typ `about:config` in de adresbalk en druk op Enter.
-* Filter de instellingen naar `dom.w3c`.
-* Zorg ervoor dat de instellingen `0` en `false` zijn.
+* Type `about:config` in de adresbar en druk binnengaan.
+* De instellingen filteren om `dom.w3c`.
+* Zorg ervoor dat de instellingen `0` en `false`.
 * Start de browser opnieuw.
 
 Als u Microsoft Edge als browser gebruikt:
 
-* Typ `about:flags` in de adresbalk en druk op Return.
+* Type `about:flags` in de adresbar en druk Terugkeer.
 * Blader naar de experimentele functies en **[!UICONTROL Touch]**.
 * Klik op **[!UICONTROL Enable touch events]**.
 * Selecteer **[!UICONTROL Always Off]**.
@@ -49,32 +48,32 @@ Als u Microsoft Edge als browser gebruikt:
 
 ## Platform {#platform}
 
-* **Operations-dashboard:** voortgangsbalk wordt niet weergegeven wanneer het back-upbestand de ZIP-extensie mist. (GRANITE-10713)
+* **Operations-dashboard:** De voortgangsbalk wordt niet weergegeven wanneer de ZIP-extensie van het back-upbestand ontbreekt. (GRANITE-10713)
 * **HTML:** JavaUse-object met navolgende witruimte in de pakketdeclaratie bevriest de SightlyJavaCompilerService (GRANITE-20836)
 * **Apache Felix/Sling:** Config-bestand is nog steeds aanwezig in de opslagplaats, zelfs na configuration.delete() (GRANITE-20618)
 * **Cloud-instellingen:** Console wordt verbroken na het bewerken van de configuratiecontainer (GRANITE-20726)
 * **Beveiliging:** IMS-integratie mislukt met aangepast contextpad (GRANITE-20639)
-* **Beveiliging:** Verbeter standaard JAAS-rangschikking van SSO, External en Default LoginModules (GRANITE-20590)
-* **Gereedschap maken - CRX DE Lite:** Afstand van eigenschappen wordt steeds groter (GRANITE-12040)
-* **Tooling - CRX DE Lite:** Kan veranderingen in &quot;Lange&quot;types van Waarde bewaren tenzij u op de Naam van het Bezit tweemaal klikt (GRANITE-12351)
+* **Beveiliging:** Verbeter standaard JAAS Rangschikking van SSO, Externe en Standaard LoginModules (GRANITE-20590)
+* **Tooling - CRX DE Lite:** Het bereik van de weergave Eigenschappen blijft omhoog (GRANITE-12040)
+* **Tooling - CRX DE Lite:** Kan wijzigingen in &quot;Lange&quot; waardetypen niet opslaan, tenzij u dubbelklikt op de naam van de eigenschap (GRANITE-12351)
 
-* **Tooling - CRX DE Lite:** ctrl+F onderzoek op open tekstdossiers gaat op onderzoek RegExp (GRANITE-5996) wordt geplakt
+* **Tooling - CRX DE Lite:** ctrl+F-zoekopdracht naar geopende tekstbestanden blijft vastzitten bij RegExp-zoekopdracht (GRANITE-5996)
 
-* **Gereedschappen - CRX DE Lite:** Node-eigenschap wordt niet weergegeven nadat de naam van het knooppunt is gewijzigd (GRANITE-7160)
-* **UI:** Pulldown &quot;more...&quot; niet alle elementen tonen wanneer geopend bij een popover element op IE en Firefox (GRANITE-16326)
-* **UI:De tooltip van** Info wordt verborgen wanneer het gebruiken van vaste kolomlay-out met 2 zij-aan-zij kolommen (GRANITE-16869)
-* **UI:** Onverwerkte fout wanneer het nadoen als gebruiker die niet bestaat (GRANITE-23228). Oplossing door [een foutenmanager](/help/sites-developing/customizing-errorhandler-pages.md) uit te voeren om foutenmelding aan te passen.
+* **Tooling - CRX DE Lite:** Node-eigenschap wordt niet weergegeven nadat de naam van het knooppunt is gewijzigd (GRANITE-7160)
+* **UI:** Meer informatie... niet alle elementen tonen wanneer geopend bij een popover element op IE en Firefox (GRANITE-16326)
+* **UI:** De knopinfo voor info wordt verborgen wanneer de lay-out Vaste kolommen met twee kolommen naast elkaar wordt gebruikt (GRANITE-16869)
+* **UI:** Onverwerkte fout bij het nadoen als een gebruiker die niet bestaat (GRANITE-23228). Oplossing via [fouthandler implementeren](/help/sites-developing/customizing-errorhandler-pages.md) om het foutbericht aan te passen.
 
-* **OmnZoeken:** zoekopdrachten met backslash-oorzaak (GRANITE-11769)
-* **Onderzoek:** Open &quot;de Montages van de Mening&quot;in lijstmening veroorzaken onderzoeksfilter om te veranderen (GRANITE-16524)
-* **Omgaan met zoeken:** Onjuiste lijst met kolomconfiguraties die worden weergegeven bij het zoeken naar elementen vanuit sites (GRANITE-16527)
+* **Omnissearch:** Zoekopdrachten met backslash-uitzondering (GRANITE-11769)
+* **Omnissearch:** Door het openen van &quot;Weergave-instellingen&quot; in de lijstweergave wijzigt u het zoekfilter (GRANITE-16524)
+* **Omnissearch:** Verkeerde lijst met kolomconfiguraties die worden weergegeven bij het uitvoeren van middelenzoekopdrachten vanuit sites (GRANITE-16527)
 
-* **Omnissearch:** Left rail predicates getting together with the Omnissearch server request (GRANITE-20524)
+* **Omnissearch:** De voorspelling van de linkerspoorstaaf komt samen met het verzoek van de Omnisonderzoeksserver (GRANITE-20524)
 * **Omnissearch:** Omnissearch biedt geen ondersteuning voor contextpaden (GRANITE-16044)
 
 ## Assets {#assets}
 
-* **Zoeken**: De zoekopdracht retourneert geen resultaten als de zoekreeks begint met een whitespace  [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
+* **Zoeken**: Zoekopdracht retourneert geen resultaten als de zoektekenreeks begint met een witruimte [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
 * **Zoeken**: In de klassieke gebruikersinterface en zijn codes niet zichtbaar in Zoeken (CQ-4235239)
 
@@ -94,21 +93,21 @@ Als u Microsoft Edge als browser gebruikt:
 
 ## Gemeenschappen {#communities}
 
-* **Moderatie**  - Kan bovenliggende post niet verwijderen als één enkele verwijderingsbewerking uit de bulkmoderatie-UI (CQ-4236797)
+* **Moderatie** - Kan bovenliggende post niet verwijderen als één enkele verwijderingsoperatie uit de bulkmoderatie-gebruikersinterface (CQ-4236797)
 
-* **Console**  - Forgot de verbinding van de Gebruikersnaam of van het Wachtwoord richt zich aan de Login Pagina in plaats van het overeenkomstige wachtwoord herwinningsvorm (CQ-4237682)
+* **Console** - De koppeling Gebruikersnaam of Wachtwoord vergeten wordt doorgestuurd naar de aanmeldingspagina in plaats van het bijbehorende formulier voor het opvragen van wachtwoorden (CQ-4237682)
 
 ## Forms {#forms}
 
 ### Installatie en implementatie
 
 * (Alleen AEM Forms JEE) Als het overvullen van JBoss-toepassingsserver tijdens het uitvoeren van Configuration Manager fouten in de aanroep en bootstrap van EJB retourneert. U kunt ze echter negeren. (Ref. CQ-4229793)
-* Wanneer AEM Forms wordt gestart, wordt de waarschuwing `SAX Security Manager could not be setup` weergegeven. (CQ-4297403)
+* Wanneer AEM Forms wordt gestart, wordt `SAX Security Manager could not be setup` verschijnt. (CQ-4297403)
 
 ### Interactieve communicatie
 
 * De agent UI neemt een tijdje om Interactieve Mededelingen te laden die grafiek of beeldelementen omvatten. (CQ-4236630)
-* De indeling voor gegevensweergave in de afdrukvoorvertoning is dd-mm-jjjj, terwijl in de webvoorvertoning `dd-mmm-yy` is (CQ-4237045)
+* De indeling voor gegevensweergave in de afdrukvoorvertoning is dd-mm-jjjj terwijl in de webvoorvertoning `dd-mmm-yy` (CQ-4237045)
 * Het Interactieve Kanaal van het Communicatie Web steunt slechts bevolen en ongeordende lijsten. In fragmenten van het lijstdocument, worden de samengestelde lijst en de inkeping niet gesteund voor het kanaal van het Web van de Interactieve Mededeling. (CQ-4233672)
 * De volgende problemen worden waargenomen bij het synchroniseren van webkanalen met het afdrukkanaal:
 
@@ -136,10 +135,12 @@ Als u Microsoft Edge als browser gebruikt:
 
 ### Adobe Sign-integratie
 
-* De planner van Adobe Sign werkt niet meer periodiek en daarom worden formulieren in afwachting van het teken niet naar verzending verplaatst. Start om het probleem op te lossen de bundel **Apache Sling Scheduler Support** opnieuw vanaf AEM webconsole op https://[*server*]:[*poort*]/system/console/bundles.
+* De planner van Adobe Sign werkt niet meer periodiek en daarom worden formulieren in afwachting van het teken niet naar verzending verplaatst. Start de toepassing **Apache Sling Scheduler-ondersteuning** bundelen via AEM webconsole op https://[*server*]:[*poort*]/systeem/console/bundels.
 
 ### Adaptieve Forms-authoring
 
 * De component Diagram in adaptieve formulieren neemt meer ruimte in beslag dan normaal.
 * Er wordt een uitzondering geretourneerd bij het opslaan van eigenschappen voor adaptieve formulieren, adaptieve formulierfragmenten of interactieve communicatie in de gebruikersinterface van Forms Manager.
 * Het opgegeven maximum aantal tekens voor een adaptief tekstvak in een formulier wordt niet ondersteund op Android 6.0 Samsung-apparaten. (Ref. CQ-4235/2005)
+* Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Apple iOS 15.1 biedt een oplossing voor het probleem.
+
