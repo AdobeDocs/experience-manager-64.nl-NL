@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '636'
 ht-degree: 34%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 34%
 + [Informatie over DAM](assets.md)
 + [Verbeteringen in gebruikerservaring](ux-improvements.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
-+ AEM Assets {#using} gebruiken
++ AEM Assets gebruiken {#using}
    + [AEM Assets-ervaring voor homepage](assets-home-page.md)
    + [Middelen zoeken in AEM](search-assets.md)
    + [GQL zoeken in volledige tekst](gql-search.md)
@@ -72,7 +72,7 @@ ht-degree: 34%
    + [Uw CDN-gecachete content ongeldig maken](invalidate-cdn-cached-content.md)
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)
-+ Elementen {#extending} uitbreiden
++ Elementen uitbreiden {#extending}
    + [Elementen aanpassen en uitbreiden](extending-assets.md)
    + [Middelen verwerken met behulp van media-handlers en workflows](media-handlers.md)
    + [Zoeken naar elementen uitbreiden](searchx.md)
@@ -81,7 +81,7 @@ ht-degree: 34%
    + [Editor van element uitbreiden](asseteditorx.md)
    + [HTTP-API voor assets](mac-api-assets.md)
    + [Ontwikkeling van proxy&#39;s](proxy.md)
-+ Elementen {#administer} beheren
++ Elementen beheren {#administer}
    + [Ondersteunde indelingen voor middelen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Metagegevens voor elementen beheren](metadata.md)
@@ -138,7 +138,7 @@ ht-degree: 34%
    + [Contentfragmenten - Overwegingen verwijderen](content-fragments-delete.md)
    + [Inhoudsfragmenten - Markering](content-fragments-markdown.md)
    + [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md)
-+ Elementen {#managing} beheren
++ Elementen beheren {#managing}
    + [Middelen beheren met de interface voor aanraakoptimalisatie](managing-assets-touch-ui.md)
    + [Meerdere elementen en verzamelingen beheren](managing-multiple-assets.md)
    + [Elementkiezer](asset-selector.md)
@@ -165,3 +165,7 @@ ht-degree: 34%
    + [Persoonlijke map delen](private-folder.md)
    + [Richtlijnen voor training voor Smart Content Service](smart-tags-training-guidelines.md)
    + [Video-uitvoeringen](video-renditions.md)
++ Integratie met andere oplossingen {#integrations}
+   + [Integratie met [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installeren [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-install.md)
+   + [Configureren [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-configure.md)
