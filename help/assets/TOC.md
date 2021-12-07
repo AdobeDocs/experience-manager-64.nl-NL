@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
-source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
+source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 34%
 
 ---
@@ -104,6 +104,7 @@ ht-degree: 34%
    + [PDF-rasterizer gebruiken](aem-pdf-rasterizer.md)
    + [Beperkingen voor het uploaden van middelen configureren](configuring-asset-upload-restrictions.md)
    + [Aanbevolen werkwijzen voor integratie met AEM en Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Koppeling met Adobe-elementen configureren](configure-asset-link.md)
    + [AEM Assets integreren met InDesign-server](indesign.md)
    + [Metadataprofielen](metadata-profiles.md)
    + [Digital Rights Management in activa](drm.md)
