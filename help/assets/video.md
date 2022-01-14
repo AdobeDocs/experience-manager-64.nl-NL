@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 7f4e44eb75ccae4a9ab1d95171b95a5e9fe48f64
+source-git-commit: 18ab491812b1bcc8ceee14e311bd15c0c8dd32fa
 workflow-type: tm+mt
-source-wordcount: '9887'
+source-wordcount: '9905'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * Meer informatie over [Digitale elementen ordenen](organize-assets.md).
    * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
-      * Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 50 x 50.
       * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [Uw video&#39;s uploaden](managing-video-assets.md#uploading-and-previewing-video-assets).
       * Meer informatie over [Ondersteunde bestandsindelingen voor invoer](assets-formats.md#supported-multimedia-formats).
@@ -288,7 +288,7 @@ For advice about video encoding, see the following:
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
-* Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 50 x 50.
 * U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
 
 In de volgende tabel worden de aanbevolen grootte, de hoogte-breedteverhouding en de minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:
