@@ -1,18 +1,17 @@
 ---
 title: Transactierapporten Billable API's
-seo-title: Transactierapporten Billable API's
+seo-title: Transaction Reports Billable APIs
 description: Lijst met alle API's die als transacties worden beschouwd
-seo-description: Lijst met alle API's die als transacties worden beschouwd
+seo-description: List of all the APIs that are accounted as transactions
 uuid: 8861e325-7393-4d2c-9ec1-17f391ca3909
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1859'
 ht-degree: 1%
 
 ---
@@ -23,7 +22,7 @@ Lijst met alle API&#39;s die als transacties worden beschouwd
 
 AEM Forms biedt verschillende API&#39;s voor het verzenden van formulieren, het verwerken van documenten en het weergeven van documenten. Sommige API&#39;s worden beschouwd als transacties en andere zijn gratis. Dit document verstrekt een lijst van alle APIs die als transacties in een transactierapport worden rekenschap gegeven. Hier volgen enkele veelvoorkomende scenario&#39;s waarbij een factureerbare API wordt gebruikt:
 
-* Een adaptief formulier, HTML5-formulier en formulierset verzenden
+* Een adaptief formulier, HTML5-formulier en formulierset indienen
 * Een afdruk- of webversie van een interactieve communicatie renderen
 * Een document omzetten van de ene naar de andere indeling
 * Een dynamisch PDF-document afvlakken
@@ -34,8 +33,8 @@ AEM Forms biedt verschillende API&#39;s voor het verzenden van formulieren, het 
 
 Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van een document of formulier of de uiteindelijke indeling van het gerenderde document. In een transactierapport worden de transacties in drie categorieën verdeeld: Verwerkte documenten, gerenderde documenten en Forms verzonden.
 
-* **Forms Verzonden:** Wanneer gegevens worden verzonden vanuit elk type formulier dat met AEM Forms is gemaakt en de gegevens worden verzonden naar een opslagplaats of database voor gegevensopslag, wordt dit beschouwd als verzending. Het verzenden van bijvoorbeeld een adaptief formulier, HTML5-formulier, PDF forms en formulierset worden beschouwd als verzonden formulieren. Elk formulier in een formulierset wordt beschouwd als een verzending. Als een formulierset bijvoorbeeld 5 formulieren heeft, telt de service voor transactierapportage deze als 5 verzendingen wanneer de formulierset wordt verzonden.
-* **Gerenderde documenten:** Een document genereren door een sjabloon en gegevens te combineren, een document digitaal te ondertekenen of te certificeren, met behulp van factureerbare documentservices-API&#39;s voor documentservices of door een document van de ene naar de andere indeling te converteren, worden beschouwd als documenten die worden gerenderd.
+* **Forms verzonden:** Wanneer gegevens worden verzonden vanuit elk type formulier dat met AEM Forms is gemaakt en de gegevens worden verzonden naar een opslagplaats of database voor gegevensopslag, wordt dit beschouwd als een verzending. Bijvoorbeeld: het verzenden van een adaptief formulier, HTML5-formulier, PDF forms en formulierset worden beschouwd als verzonden formulieren. Elk formulier in een formulierset wordt beschouwd als een verzending. Als een formulierset bijvoorbeeld 5 formulieren heeft, telt de service voor transactierapportage deze als 5 verzendingen wanneer de formulierset wordt verzonden.
+* **Gerenderde documenten:** Het genereren van een document door een sjabloon en gegevens te combineren, een document digitaal te ondertekenen of te certificeren, met behulp van een factureerbare API&#39;s voor documentservices of door een document van de ene naar de andere indeling te converteren, wordt beschouwd als documenten die worden gerenderd.
 
 >[!NOTE]
 >
@@ -43,7 +42,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 
 ## Billable Document Services API&#39;s {#billable-document-services-apis}
 
-### PDF-service {#generate-pdf-service} genereren
+### PDF-service genereren {#generate-pdf-service}
 
 <table> 
  <tbody>
@@ -85,32 +84,32 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td> 
-   <td><p>Hiermee maakt u een PDF van HTML-pagina's.</p> </td> 
+   <td><p>Hiermee maakt u PDF op basis van HTML-pagina's.</p> </td> 
    <td>Verwerkte documenten<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf</a></td> 
-   <td>Hiermee maakt u een PDF van URL's die naar een HTML-pagina verwijzen.</td> 
+   <td>Hiermee maakt u PDF van URL's die naar een HTML-pagina verwijzen.</td> 
    <td>Verwerkte documenten<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlToPdf2-java.lang.String-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-" target="_blank">htmlToPdf2</a></td> 
-   <td>Hiermee maakt u een PDF van URL's die naar een HTML-pagina verwijzen.</td> 
+   <td>Hiermee maakt u PDF van URL's die naar een HTML-pagina verwijzen.</td> 
    <td>Verwerkte documenten<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td> 
-   <td>Hiermee wordt PDF geoptimaliseerd om de bestandsgrootte te reduceren door overbodige metagegevens te verwijderen zonder dat dit van invloed is op de kwaliteit.</td> 
+   <td>Hiermee optimaliseert u PDF om de bestandsgrootte te beperken door overbodige metagegevens uit te knippen zonder dat dit van invloed is op de kwaliteit.</td> 
    <td>Verwerkte documenten<br /> </td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
 
-### Distiller-service {#distiller-service}
+### Distiller Service {#distiller-service}
 
 <table> 
  <tbody>
@@ -178,13 +177,13 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td> 
-   <td>XDP- en PDF-documenten worden geconverteerd naar de bestandsindelingen PostScript (PS), Printer Command Language (PCL) en ZPL. </td> 
+   <td>XDP- en PDF-documenten worden omgezet in de bestandsindelingen PostScript (PS), Printer Command Language (PCL) en ZPL. </td> 
    <td>Verwerkte documenten</td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td> 
-   <td>XDP- en PDF-documenten worden geconverteerd naar de bestandsindelingen PostScript (PS), Printer Command Language (PCL) en ZPL. </td> 
+   <td>XDP- en PDF-documenten worden omgezet in de bestandsindelingen PostScript (PS), Printer Command Language (PCL) en ZPL. </td> 
    <td>Verwerkte documenten</td> 
    <td> </td> 
   </tr>
@@ -197,7 +196,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
  </tbody>
 </table>
 
-### Forms-service {#forms-service}
+### Forms Service {#forms-service}
 
 <table> 
  <tbody>
@@ -215,14 +214,14 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td> 
-   <td>Hiermee worden gegevens geëxtraheerd uit een PDF-formulier of XDP-sjablonen</td> 
+   <td>Hiermee worden gegevens opgehaald uit een PDF-formulier of XDP-sjablonen</td> 
    <td>Verwerkte documenten</td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
 
-### PDF-service {#convert-pdf-service} converteren
+### PDF-service converteren {#convert-pdf-service}
 
 <table> 
  <tbody>
@@ -234,13 +233,13 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td> 
-   <td>Hiermee wordt een PDF-document geconverteerd naar een lijst met afbeeldingsdocumenten. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG2K, PNG en TIFF.</td> 
+   <td>Hiermee wordt een PDF-document omgezet in een lijst met afbeeldingsdocumenten. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG, 2K, PNG en TIFF.</td> 
    <td>Verwerkte documenten</td> 
    <td> </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">naarPS</a></td> 
-   <td>Hiermee converteert u een effen PDF-bestand naar PostScript-indeling met de opties die zijn opgegeven in de optiespecc.</td> 
+   <td>Zet een Flat PDF-bestand om in PostScript-indeling met de opties die zijn opgegeven in de optiesspecificatie.</td> 
    <td>Verwerkte documenten</td> 
    <td> </td> 
   </tr>
@@ -266,7 +265,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
  </tbody>
 </table>
 
-### Assembler Service {#assembler-service}
+### Assembler-service {#assembler-service}
 
 <table> 
  <tbody>
@@ -278,7 +277,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">oproepen</a></td> 
-   <td>Voert het gespecificeerde document DDX uit en keert <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> voorwerp terug dat de resulterende documenten bevat. </td> 
+   <td>Hiermee wordt het opgegeven DDX-document uitgevoerd en wordt een <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> -object dat de resulterende documenten bevat. </td> 
    <td>Verwerkte documenten</td> 
    <td>De volgende transacties worden niet administratief verwerkt als transacties:
     <ul> 
@@ -288,13 +287,13 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">oproepen</a></td> 
-   <td>Voert het gespecificeerde document DDX uit en keert <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> voorwerp terug dat de resulterende documenten bevat. </td> 
+   <td>Hiermee wordt het opgegeven DDX-document uitgevoerd en wordt een <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a> -object dat de resulterende documenten bevat. </td> 
    <td>Verwerkte documenten</td> 
-   <td>Alle invoerbestandsindelingen die worden ondersteund door de services PDF Generator, Forms en Output, Assembler, ondersteunen al deze indelingen als uitvoerbestandsindelingen. </td> 
+   <td>Alle invoerbestandsindelingen die door de PDF Generator, Forms en Output Services worden ondersteund, worden door de Assembler-service ondersteund in al die indelingen als uitvoerbestandsindelingen. </td> 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#toPDFA-com.adobe.aemfd.docmanager.Document-com.adobe.fd.assembler.client.PDFAConversionOptionSpec-" target="_blank">toPDFA</a></td> 
-   <td>Hiermee wordt een opgegeven document geconverteerd naar PDF/A met de opgegeven opties.</td> 
+   <td>Zet een opgegeven document om in PDF/A met de opgegeven opties.</td> 
    <td>Verwerkte documenten</td> 
    <td> </td> 
   </tr>
@@ -304,13 +303,12 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 >[!NOTE]
 >
 >* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. De API voor aanroepen kan dus worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
->* Eén PDF-document dat met de assembleerservice wordt gemaakt, kan worden beschouwd als geen, één of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de geleverde DDX-code.
+>* Eén enkel PDF-document dat met de assembleerservice wordt gemaakt, kan worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de geleverde DDX-code.
 
 >
 
 
-
-### PDF-hulpprogramma {#pdf-utility-service}
+### PDF Utility-service  {#pdf-utility-service}
 
 <table> 
  <tbody>
@@ -322,7 +320,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td> 
-   <td>Hiermee converteert u een PDF-document naar een XDP-bestand. Een PDF-document kan alleen met succes worden geconverteerd naar een XDP-bestand als het PDF-document een XFA-stroom bevat in het AcroForm-woordenboek.</td> 
+   <td>Hiermee wordt een PDF-document omgezet in een XDP-bestand. Een PDF-document kan alleen worden geconverteerd naar een XDP-bestand als het PDF-document een XFA-stroom bevat in het AcroForm-woordenboek.</td> 
    <td>Verwerkte documenten</td> 
    <td> </td> 
   </tr>
@@ -343,14 +341,14 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a></td> 
    <td>Met de API kunt u uw document beveiligen. Met de API kunt u een PDF-document ondertekenen, certificeren, lezen of uitbreiden. </td> 
    <td>Verwerkte documenten</td> 
-   <td>Alleen de bewerking <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> ondertekenen en certificeren wordt gefactureerd.</td> 
+   <td>Alleen de werking van het <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a> worden gefactureerd.</td> 
   </tr>
  </tbody>
 </table>
 
 ## Billable Data Capture API&#39;s {#billable-data-capture-apis}
 
-Alle verzendgebeurtenissen van adaptieve formulieren, HTML5 Forms en formulierset worden als transacties verwerkt. Het verzenden van een PDF-formulier wordt standaard niet als een transactie beschouwd. Gebruik de opgegeven [transactierapporten API](record-transaction-custom-implementation.md) om een PDF forms-verzending als een transactie te registreren.
+Alle verzendingen van adaptieve formulieren, HTML5 Forms en formuliersets worden administratief verwerkt als transacties. Door gebrek, wordt de voorlegging van een Vorm van de PDF niet administratief verwerkt als transactie. Gebruik de opgegeven [transactierapporten, API](record-transaction-custom-implementation.md) om een PDF forms te registreren die als een transactie wordt ingediend.
 
 ### Adaptieve Forms {#adaptive-forms}
 
@@ -368,7 +366,7 @@ Alle verzendgebeurtenissen van adaptieve formulieren, HTML5 Forms en formulierse
    <td>Forms verzonden</td> 
    <td>
     <ul> 
-     <li>Een of twee transacties worden verwerkt met succes verzonden. Het aantal transacties dat wordt meegeteld, is afhankelijk van het type verzendactie dat wordt gebruikt voor verzending. U verzendt bijvoorbeeld een PDF via e-mail voor het verzenden van een actierekening voor twee tellingen van transacties. Eén transactie voor het verzenden van formulieren en een andere voor PDF die is gegenereerd met de service Document of Record (DOR). </li> 
+     <li>Een of twee transacties worden verwerkt met succes verzonden. Het aantal transacties dat wordt meegeteld, is afhankelijk van het type verzendactie dat wordt gebruikt voor verzending. Als u bijvoorbeeld PDF via e-mail verzendt, worden actierekeningen voor twee tellingen van transacties verzonden. Eén transactie voor het verzenden van formulieren en een andere voor PDF die is gegenereerd met de service Document of Record (DOR). </li> 
      <li>Met het adaptieve formulier in een adaptief formulier (adaptief formulierformaat) wordt slechts één transactie verwerkt. U kunt een willekeurig aantal adaptieve formulieren in een adaptief formulier gebruiken.</li> 
     </ul> </td> 
   </tr>
@@ -387,7 +385,7 @@ Alle verzendgebeurtenissen van adaptieve formulieren, HTML5 Forms en formulierse
   </tr>
   <tr>
    <td>Een HTML5-formulier verzenden</td> 
-   <td>Hiermee wordt een HTML5-formulier verzonden voor het verzenden van de URL die in het formulier is geconfigureerd.</td> 
+   <td>Hiermee verzendt u een HTML5-formulier voor het verzenden van de URL die in het formulier is geconfigureerd.</td> 
    <td>Forms verzonden</td> 
    <td> </td> 
   </tr>
@@ -411,7 +409,7 @@ Alle verzendgebeurtenissen van adaptieve formulieren, HTML5 Forms en formulierse
    <td>
     <ul> 
      <li>Met het adaptieve formulier in een adaptief formulier (adaptief formulierformaat) wordt slechts één transactie verwerkt. U kunt een willekeurig aantal adaptieve formulieren in een adaptief formulier gebruiken.</li> 
-     <li>Elk formulier in een HTML5 Forms-formulierset wordt als een afzonderlijke transactie verwerkt. </li> 
+     <li>Elk formulier in een HTML5 Forms-formulierset wordt als een aparte transactie verwerkt. </li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -453,7 +451,7 @@ Wijs taak en de stappen van de documentdiensten van vorm-centric AEM Workflows o
    <td>Aanvullende informatie</td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a>  (converteren naar PDF)</td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">renderen</a> (omzetten in PDF)</td> 
    <td>Genereert de PDF-versie van een interactieve communicatie.</td> 
    <td>Gerenderde documenten</td> 
    <td>
@@ -463,7 +461,7 @@ Wijs taak en de stappen van de documentdiensten van vorm-centric AEM Workflows o
  </tbody>
 </table>
 
-### Form-centric AEM Workflows op OSGi {#form-centric-aem-workflows-on-osgi}
+### Form-centric AEM Workflows op OSGi  {#form-centric-aem-workflows-on-osgi}
 
 <table> 
  <tbody>
@@ -492,9 +490,9 @@ Wijs taak en de stappen van de documentdiensten van vorm-centric AEM Workflows o
  </tbody>
 </table>
 
-## Invulbare API&#39;s opnemen als transacties voor aangepaste code {#recording-billable-apis-as-transactions-for-custom-code}
+## Infactureerbare API&#39;s opnemen als transacties voor aangepaste code {#recording-billable-apis-as-transactions-for-custom-code}
 
-Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de Agent voor het weergeven van een interactieve communicatie, het gebruik van niet-standaardformulierverzending en aangepaste implementaties worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke handelingen op te nemen, zoals transacties. U kunt API van uw douaneimplementaties roepen om [een transactie](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) te registreren.
+Handelingen zoals het verzenden van een PDF-formulier, het gebruik van de gebruikersinterface van de om een voorvertoning van een interactieve communicatie weer te geven, met behulp van niet-standaardformulierverzending, en aangepaste implementaties worden niet als transacties beschouwd. AEM Forms biedt een API om dergelijke handelingen op te nemen, zoals transacties. U kunt de API vanuit uw aangepaste implementaties aanroepen naar [een transactie opnemen](record-transaction-custom-implementation.md).
 
 ## Verwante artikelen {#related-articles}
 
