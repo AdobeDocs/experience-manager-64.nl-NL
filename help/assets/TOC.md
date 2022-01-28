@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
-source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 34%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 34%
    + [Dynamic Media-afbeeldingsprofielen](image-profiles.md)
    + [Smart Imaging](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Dynamic Media Classic-functies aan uw pagina toevoegen](scene7.md)
    + [HTTP2-levering van content](http2.md)
    + [Dynamic Media-assets leveren](delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](hotlink-protection.md)
@@ -65,6 +64,7 @@ ht-degree: 34%
    + [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md)
    + [Dynamic Media-assets vooraf bekijken](previewing-assets.md)
    + [Dynamic Media-assets aan pagina&#39;s toevoegen](adding-dynamic-media-assets-to-pages.md)
+   + [Dynamic Media Classic-componenten aan pagina&#39;s toevoegen](scene7.md)
    + [Viewer voor dynamische video of afbeelding insluiten op een webpagina](embed-code.md)
    + [URL&#39;s koppelen aan uw webapplicatie](linking-urls-to-yourwebapplication.md)
    + [Regelsets gebruiken om URL&#39;s te transformeren](using-rulesets-to-transform-urls.md)
