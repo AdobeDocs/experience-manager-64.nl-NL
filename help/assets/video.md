@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 642ade44cac29d38533cfe724f69ba95e691a647
+source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
 workflow-type: tm+mt
 source-wordcount: '9905'
 ht-degree: 3%
@@ -29,7 +29,6 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 >
 >* Zie [Dynamic Media-Cloud Services configureren in de modus Dynamic Media configureren - hybride.](/help/assets/config-dynamic.md)
 >* Zie [Dynamic Media configureren - Scene7-modus](config-dms7.md) en [Problemen oplossen in de modus Dynamic Media - Scene7](troubleshoot-dms7.md)
-
 >
 
 
@@ -46,7 +45,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * Meer informatie over [Digitale elementen ordenen](organize-assets.md).
    * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
-      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 50 x 50.
+      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 x 25.
       * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [Uw video&#39;s uploaden](managing-video-assets.md#uploading-and-previewing-video-assets).
       * Meer informatie over [Ondersteunde bestandsindelingen voor invoer](assets-formats.md#supported-multimedia-formats).
@@ -288,7 +287,7 @@ For advice about video encoding, see the following:
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
-* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 50 x 50.
+* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 x 25.
 * U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
 
 In de volgende tabel worden de aanbevolen grootte, de hoogte-breedteverhouding en de minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:
