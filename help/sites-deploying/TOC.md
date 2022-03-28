@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Implementatiegids
 breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.4, inclusief de cloudimplementatie van Adobe Managed Services.
 feature: Deploying
 role: Architect
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '370'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
    + [Technische vereisten](technical-requirements.md)
    + [Opslagelementen in AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM met MongoDB](aem-with-mongodb.md)
-+ AEM {#deploying} implementeren
++ AEM implementeren {#deploying}
    + [Implementeren en onderhouden](deploy.md)
    + [Aanbevolen implementaties](recommended-deploys.md)
    + [Installeren van toepassingsserver](application-server-install.md)
@@ -40,7 +40,7 @@ ht-degree: 0%
    + [Probleemoplossing voor Oak-indexen](troubleshooting-oak-indexes.md)
    + [Opteren in verzameling van samengevoegde verbruiksstatistieken](opt-in-aggregated-usage-statistics.md)
    + [Problemen oplossen](troubleshooting.md)
-+ AEM {#configuring} configureren
++ AEM configureren {#configuring}
    + [Basisconfiguratieconcepten](configuring.md)
    + [Logboekregistratie](configure-logging.md)
    + [OSGi configureren](configuring-osgi.md)
@@ -64,7 +64,7 @@ ht-degree: 0%
    + [Hoe kan ik-artikelen configureren](ht-deploy.md)
    + [De sites van de Geometrixx verwijderen](removing-the-geometrixx-sites.md)
    + [Webconsole configureren](configuring-web-console.md)
-+ Upgrade uitvoeren naar AEM 6.4 {#upgrading}
++ Upgrade naar AEM 6.4 {#upgrading}
    + [Upgrade naar AEM 6.4](upgrade.md)
    + [Uw upgrade plannen](upgrade-planning.md)
    + [De complexiteit van upgrades beoordelen met de patroondetector](pattern-detector.md)
@@ -81,7 +81,7 @@ ht-degree: 0%
    + [Code en aanpassingen bijwerken](upgrading-code-and-customizations.md)
    + [Upgradestappen voor installatie van toepassingsservers](app-server-upgrade.md)
    + [Lijst met verouderde bundels die na de upgrade zijn verwijderd](obsolete-bundles.md)
-+ Herstructurering van de opslagplaats {#restructuring}
++ Repositoregeling {#restructuring}
    + [Herstructurering van de depositaris in AEM 6.4](repository-restructuring.md)
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Sites Repositoregeling Herstructurering AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
