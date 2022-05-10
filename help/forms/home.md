@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager 6.4 Forms Guide
-seo-title: AEM 6.4 Forms-gids
+seo-title: AEM 6.4 Forms Guide
 description: Deze handleiding behandelt alle AEM Forms-taken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
-seo-description: Omvat alle AEM Forms-taken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
+seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e25a3b24-c460-49a9-a62c-c9ed1f1128e3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 18%
+source-wordcount: '351'
+ht-degree: 16%
 
 ---
 
@@ -47,7 +46,7 @@ Deze handleiding behandelt alle AEM Forms-taken, waaronder het maken, beheren, p
 * [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

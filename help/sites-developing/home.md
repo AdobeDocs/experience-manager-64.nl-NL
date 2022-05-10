@@ -1,16 +1,15 @@
 ---
 title: AEM 6.4 Gebruikershandleiding ontwikkelen
-seo-title: AEM 6.4 Gebruikershandleiding ontwikkelen
+seo-title: AEM 6.4 Developing User Guide
 description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
-seo-description: Omvat hoe te om uw AEM instantie te bouwen.
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+seo-description: Covers how to build out your AEM instance.
+exl-id: 82ba239f-f83a-4ee1-b201-d44c220fd193
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 19%
+source-wordcount: '335'
+ht-degree: 17%
 
 ---
-
 
 # AEM 6.4 Gebruikershandleiding ontwikkelen
 
@@ -47,7 +46,7 @@ In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 * [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

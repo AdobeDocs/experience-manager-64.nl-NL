@@ -1,16 +1,15 @@
 ---
 title: AEM 6.4 Gebruikershandleiding implementeren
-seo-title: AEM 6.4 Gebruikershandleiding implementeren
-description: 'Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren en implementeren van AEM. '
-seo-description: 'Omvat alle AEM die taken opstelt, zoals het installeren van en het opstellen van AEM. '
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+seo-title: AEM 6.4 Deploying User Guide
+description: Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren en implementeren van AEM.
+seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
+exl-id: ff85787a-1203-4620-bf14-1b09893c3be8
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 18%
+source-wordcount: '341'
+ht-degree: 17%
 
 ---
-
 
 # AEM 6.4 Gebruikershandleiding implementeren
 
@@ -38,7 +37,7 @@ Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
-| [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
+| [Mobile-gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM
@@ -47,7 +46,7 @@ Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren
 * [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

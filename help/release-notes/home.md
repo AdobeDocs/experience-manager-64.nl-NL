@@ -1,14 +1,13 @@
 ---
 title: Opmerkingen bij de release Adobe Experience Manager 6.4
-seo-title: AEM 6.4 Opmerkingen bij de release
+seo-title: AEM 6.4 Release Notes
 description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
-seo-description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
+seo-description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
 exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 16%
+source-wordcount: '373'
+ht-degree: 15%
 
 ---
 
@@ -45,13 +44,13 @@ De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie 
 * [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
 ## Copyright, licenties en disclaimers {#copyright-licenses-and-disclaimers}
 
-Zie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+Zie voor meer informatie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 Kennisgeving van licenties van derden: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

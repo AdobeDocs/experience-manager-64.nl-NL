@@ -1,16 +1,15 @@
 ---
 title: AEM 6.4 Gebruikershandleiding voor implementatie
-seo-title: AEM 6.4 Gebruikershandleiding voor implementatie
+seo-title: AEM 6.4 Implementation User Guide
 description: Een overzicht van de wijze waarop AEM 6.4 moet worden geïmplementeerd
-seo-description: Een overzicht van de wijze waarop AEM 6.4 moet worden geïmplementeerd
+seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 26%
+source-wordcount: '108'
+ht-degree: 22%
 
 ---
 
@@ -20,18 +19,18 @@ ht-degree: 26%
 
 Ben je een AEM ontwikkelaar? [Ga aan de slag met het ontwikkelen van AEM.](/help/sites-developing/home.md)
 
-## Kerncomponenten voor AEM {#core-components-for-aem}
+## Core Components for AEM {#core-components-for-aem}
 
 [Met de uitbreidbare Core Components kunnen auteurs eenvoudig inhoud maken.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 
 ## HTML (HTML Template Language) voor AEM {#htl-for-aem}
 
-[Gebruik de Taal van het Malplaatje van HTML om voor AEM te ontwikkelen.](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+[Gebruik Sjabloontaal HTML om te ontwikkelen voor AEM.](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 
-## Cloudbeheer voor AEM {#cloud-manager-for-aem}
+## Cloud Manager voor AEM {#cloud-manager-for-aem}
 
-[Begrijp hoe u Cloud Manager kunt gebruiken met AEM.](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[Begrijp hoe u Cloud Manager kunt gebruiken met AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 
-## Configuratie {#dispatcher-configuration}
+## Dispatcher Configuration {#dispatcher-configuration}
 
 [Uw verzender configureren met AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
