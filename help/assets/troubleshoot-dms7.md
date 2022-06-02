@@ -6,33 +6,34 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
-feature: Problemen oplossen
+feature: Troubleshooting
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+mini-toc-levels: 3
+source-git-commit: 39518ffbbcd1368cff02c356246dc5b430cc14d6
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1377'
 ht-degree: 0%
 
 ---
 
 # Problemen oplossen in de modus Dynamic Media - Scene7 {#troubleshooting-dynamic-media-scene-mode}
 
-In het volgende document wordt beschreven hoe u problemen kunt oplossen bij het uitvoeren van **dynamicmedia_scene7**-uitvoeringsmodus in Dynamic Media.
+In het volgende document worden de problemen beschreven die optreden bij Dynamic Media **dynamicmedia_scene7** uitvoeringsmodus.
 
 ## Instellen en configureren {#setup-and-configuration}
 
 Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende te doen:
 
-* Het bevel van het begin bevat `-r dynamicmedia_scene7` runmode argument.
-* Om het even welke AEM 6.4 cumulatieve fixfixpakken (GFPs) zijn eerst geïnstalleerd *vóór* om het even welke beschikbare Packs van de Eigenschap van Dynamic Media.
+* Opstarten bevat de opdracht `-r dynamicmedia_scene7` runmode-argument.
+* Alle AEM 6.4 cumulatieve fixeerpakketten (GFP&#39;s) zijn eerst geïnstalleerd *voor* alle beschikbare Dynamic Media Feature Packs.
 * Optioneel Feature Pack 18912 is geïnstalleerd.
 
    Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen van Dynamic Media Classic naar Dynamic Media migreert.
 
-* Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder **[!UICONTROL Available Configurations]** verschijnt.
-* Zorg ervoor dat **[!UICONTROL Dynamic Media Asset Activation (scene7)]** replicatieagent wordt toegelaten.
+* Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder verschijnt **[!UICONTROL Available Configurations]**.
+* Zorg ervoor dat de **[!UICONTROL Dynamic Media Asset Activation (scene7)]** replicatieagent is ingeschakeld.
 
-   Deze replicatieagent wordt gevonden onder **[!UICONTROL Agents]** op Auteur.
+   Deze replicatieagent wordt gevonden onder **[!UICONTROL Agents]** op auteur.
 
 ## Algemeen (alle activa) {#general-all-assets}
 
@@ -51,21 +52,21 @@ De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleer
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
 
-Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG verhogen in het `com.adobe.cq.dam.ips`-pakket via de Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
+Synchronisatiefouten en problemen worden aangemeld `error.log` (AEM servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen, maar u kunt het logbestand voor DEBUG op het tabblad `com.adobe.cq.dam.ips` pakket maken via de Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
 
 ### Verplaatsen, kopiëren of verwijderen {#move-copy-delete}
 
 Voer de volgende handelingen uit voordat u een bewerking Verplaatsen, Kopiëren of Verwijderen uitvoert:
 
-* Bevestig voor afbeeldingen en video&#39;s dat er een `<object_node>/jcr:content/metadata/dam:scene7ID`-waarde bestaat voordat u bewerkingen voor verplaatsen, kopiëren of verwijderen uitvoert.
-* Bevestig voor voorinstellingen voor afbeeldingen en viewers dat er een `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata`-waarde bestaat voordat u bewerkingen voor verplaatsen, kopiëren of verwijderen uitvoert.
+* Bevestig voor afbeeldingen en video&#39;s dat een `<object_node>/jcr:content/metadata/dam:scene7ID` Deze waarde bestaat voordat u bewerkingen voor verplaatsen, kopiëren of verwijderen uitvoert.
+* Controleer voor voorinstellingen voor afbeeldingen en viewers of `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` Deze waarde bestaat voordat u bewerkingen voor verplaatsen, kopiëren of verwijderen uitvoert.
 * Als de bovenstaande metagegevenswaarde ontbreekt, moet u elementen opnieuw uploaden voordat u bewerkingen verplaatst, kopieert of verwijdert.
 
 ### Versiebeheer {#version-control}
 
 Bij het vervangen van een bestaand Dynamic Media-element (dezelfde naam en locatie) kunt u beide elementen behouden of een versie vervangen of maken:
 
-* Als u beide behoudt, wordt een nieuw element gemaakt met een unieke naam voor het gepubliceerde element-URL. **[!UICONTROL image.jpg]** is bijvoorbeeld het oorspronkelijke element en **[!UICONTROL image1.jpg]** is het net geüploade element.
+* Als u beide behoudt, wordt een nieuw element gemaakt met een unieke naam voor het gepubliceerde element-URL. Bijvoorbeeld: **[!UICONTROL image.jpg]** het oorspronkelijke middel is en **[!UICONTROL image1.jpg]** is het nieuw geüploade element.
 
 * Het maken van een versie wordt niet ondersteund in de Dynamic Media- Scene7-modus. De nieuwe versie vervangt het bestaande element in levering.
 
@@ -86,7 +87,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     <ol> 
      <li><p>Ga naar CRX/DE:</p> 
       <ul> 
-       <li>Controleer of de voorinstelling in het JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> is gedefinieerd. Deze locatie is van toepassing als u een upgrade hebt uitgevoerd van AEM 6.x naar 6.4 en de migratie hebt uitgeschakeld. Anders is de locatie <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li> 
+       <li>Controleren of de voorinstelling in het JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> gedefinieerd. Deze locatie is van toepassing als u een upgrade hebt uitgevoerd van AEM 6.x naar 6.4 en de migratie hebt uitgeschakeld. Anders is de locatie <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li> 
        <li>Controleer of het element in de JCR <code>dam:scene7FileStatus</code><strong> </strong>onder Metagegevens wordt weergegeven als <code>PublishComplete</code>.</li> 
       </ul> </li> 
     </ol> </td> 
@@ -102,7 +103,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td><p>Sluit de kiezer en open deze opnieuw.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>De </strong> selectieknop is niet actief nadat u een element hebt geselecteerd als onderdeel van het bewerken van een set</td> 
+   <td><strong>Selecteren</strong> De knop is niet actief nadat u een element hebt geselecteerd als onderdeel van het bewerken van een set</td> 
    <td><p> </p> <p>Bekend probleem dat in 6.4 moet worden opgelost</p> <p> </p> </td> 
    <td><p>Klik eerst op een andere map in de Asset Selector en ga terug om het element te selecteren.</p> </td> 
   </tr> 
@@ -113,7 +114,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   </tr> 
   <tr> 
    <td>De afbeelding wordt niet voorvertoond met de Dynamic Media-viewer</td> 
-   <td><p>Controleer of het element <code>dam:scene7File</code> bevat in de metagegevenseigenschappen (CRXDE Lite)</p> </td> 
+   <td><p>Controleren of het element het element bevat <code>dam:scene7File</code> in de eigenschappen van metagegevens (CRXDE Lite)</p> </td> 
    <td><p>Controleer of alle elementen zijn verwerkt.</p> </td> 
   </tr> 
   <tr> 
@@ -122,14 +123,14 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td><p>Controleer of alle elementen zijn verwerkt.</p> </td> 
   </tr> 
   <tr> 
-   <td>Banner op kaartweergave toont <strong>Nieuw</strong> wanneer het element nog niet is verwerkt</td> 
-   <td>Activeer <code>jcr:content</code> &gt; <code>dam:assetState</code> = als <code>unprocessed</code> niet door de workflow is opgepikt.</td> 
+   <td>Banner op kaartpresentaties <strong>Nieuw</strong> wanneer de verwerking van het element niet is begonnen</td> 
+   <td>Element controleren <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> het is niet opgepikt door de workflow.</td> 
    <td>Wacht tot asset is opgehaald via workflow.</td> 
   </tr> 
   <tr> 
    <td>In afbeeldingen of sets wordt de URL van de viewer of de insluitcode niet weergegeven</td> 
    <td>Controleer of de viewervoorinstelling is gepubliceerd.</td> 
-   <td><p>Ga naar <strong>Gereedschappen</strong> &gt; <strong>Middelen</strong> &gt; <strong>Viewer-voorinstellingen</strong> en publiceer de viewervoorinstelling.</p> </td> 
+   <td><p>Ga naar <strong>Gereedschappen</strong> &gt; <strong>Activa</strong> &gt; <strong>Voorinstellingen viewer</strong> en publiceert u de viewervoorinstelling.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -151,7 +152,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     <ul> 
      <li>Controleer of aan de map een videoprofiel is toegewezen (als de bestandsindeling niet wordt ondersteund). Als deze optie niet wordt ondersteund, wordt alleen een afbeelding weergegeven.</li> 
      <li>Het videoprofiel moet meer dan één coderingsvoorinstelling bevatten om een AVS-set te genereren (enkele coderingen worden behandeld als video-inhoud voor MP4-bestanden). voor niet-ondersteunde bestanden, op dezelfde manier behandeld als niet-verwerkte bestanden).</li> 
-     <li>Controleer of de video is verwerkt door <code>dam:scene7FileAvs</code> van <code>dam:scene7File</code> in metagegevens te bevestigen.</li> 
+     <li>Controleer of de video is verwerkt door te bevestigen <code>dam:scene7FileAvs</code> van <code>dam:scene7File</code> in metagegevens.</li> 
     </ul> </td> 
    <td> 
     <ol> 
@@ -166,7 +167,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td>Video is niet gecodeerd</td> 
    <td> 
     <ul> 
-     <li>Controleer of de runmode <span class="kbd">dynamicmedia_scene7</span> is.</li> 
+     <li>Controleer of de runmode <span class="kbd">dynamicmedia_scene7</span>.</li> 
      <li>Controleer of Dynamic Media-cloudservice is geconfigureerd.</li> 
      <li>Controleer of een videoprofiel is gekoppeld aan de uploadmap.</li> 
     </ul> </td> 
@@ -181,8 +182,8 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td>Videoverwerking duurt te lang</td> 
    <td><p>U kunt als volgt bepalen of videocodering nog wordt uitgevoerd of dat er een foutstatus is ingevoerd:</p> 
     <ul> 
-     <li>Controleer de videostatus <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</span></li> 
-     <li>Controleer de video vanaf de workflowconsole <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instanties, Archiveren, tabbladen met foutmeldingen.</li> 
+     <li>De videostatus controleren <code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</span></li> 
+     <li>De video controleren vanaf de workflowconsole <code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instanties, Archiveren, tabbladen mislukt.</li> 
     </ul> </td> 
    <td> </td> 
   </tr> 
@@ -191,7 +192,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td><p>Wanneer video wordt geüpload, maar er geen gecodeerde vertoningen zijn:</p> 
     <ul> 
      <li>Controleer of aan de map een videoprofiel is toegewezen.</li> 
-     <li>Controleer of de video is verwerkt door <code>dam:scene7FileAvs</code> in metagegevens te bevestigen.</li> 
+     <li>Controleer of de video is verwerkt door te bevestigen <code>dam:scene7FileAvs</code> in metagegevens.</li> 
     </ul> </td> 
    <td> 
     <ol> 
@@ -206,56 +207,71 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
 
 Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u problemen hebt met viewers.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Probleem</strong></td> 
-   <td><strong>Foutopsporing</strong></td> 
-   <td><strong>Oplossing</strong></td> 
-  </tr> 
-  <tr> 
-   <td>Voorinstellingen van viewer worden niet gepubliceerd</td> 
-   <td><p>Ga door naar de diagnostische pagina van de voorbeeldmanager: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Berekende waarden observeren. Als u correct werkt, ziet u het volgende:</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de <strong>Alle niet-geactiveerde elementen weergeven</strong> knoppen om details weer te geven.</p> </td> 
-   <td> 
-    <ol> 
-     <li>Navigeer naar de lijst met voorinstellingen voor viewers in de beheerprogramma's: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
-     <li>Selecteer alle viewervoorinstellingen en klik op <strong>Publiceren</strong>.</li> 
-     <li>Navigeer terug naar voorbeeldbeheer en controleer of het aantal niet-geactiveerde elementen nu nul is.</li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td>Vooraf ingestelde illustraties van de viewer retourneren 404 vanaf de voorvertoning in elementdetails of kopiëren, URL- en insluitcode</td> 
-   <td><p>Ga als volgt te werk bij CRXDE Lite:</p> 
-    <ol> 
-     <li>Navigeer naar de map <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> in de Dynamic Media-synchronisatiemap (bijvoorbeeld <code>/content/dam/_CSS/_OOTB</code>),</li> 
-     <li>Zoek het metagegevensknooppunt van het problematische element (bijvoorbeeld <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li> 
-     <li>Controleer of <code>dam:scene7*</code>-eigenschappen aanwezig zijn. Als het element is gesynchroniseerd en gepubliceerd, ziet u dat de <code>dam:scene7FileStatus</code>-set is ingesteld op <strong>PublishComplete</strong>.</li> 
-     <li>Poging om de illustratie rechtstreeks vanuit Dynamic Media aan te vragen door de waarden van de volgende eigenschappen en letterlijke tekenreeksen samen te voegen 
-      <ul> 
-       <li><code>dam:scene7Domain</code></li> 
-       <li><code>"is/content"</code></li> 
-       <li><code>dam:scene7Folder</code></li> 
-       <li><code>&lt;asset-name&gt;</code></li> 
-       <li>Voorbeeld: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li> 
-      </ul> </li> 
-    </ol> </td> 
-   <td><p>Als de voorbeeldbestanden of voorinstellingsillustraties van de viewer niet zijn gesynchroniseerd of gepubliceerd, start u het gehele kopiëren/synchronisatieproces opnieuw:</p> 
-    <ol> 
-     <li>Navigeer naar CRXDE Lite. 
-      <ul> 
-       <li>Verwijderen <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li> 
-      </ul> </li> 
-     <li>Ga naar het CRX-pakketbeheer: <code>http://localhost:4502/crx/packmgr/</code><a href="http://localhost:4502/crx/packmgr/"></a> 
-      <ol> 
-       <li>Zoeken naar viewerpakket in lijst (begint met <span class="kbd">cq-dam-scene7-viewers-content</span>)</li> 
-       <li>Klik <strong>Opnieuw installeren</strong>.</li> 
-      </ol> </li> 
-     <li>Onder Cloud Services, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7. 
-      <ul> 
-       <li>Breng geen veranderingen aan, klik <strong>sparen</strong>. Hierdoor wordt de logica opnieuw geactiveerd voor het maken en synchroniseren van de voorbeeldelementen, de CSS voor viewervoorinstellingen en illustraties.<br /> <br /> </li> 
-      </ul> </li> 
-    </ol> </td> 
-  </tr> 
- </tbody> 
-</table>
+### Probleem: Viewer-voorinstellingen worden niet gepubliceerd {#viewers-not-published}
+
+**Foutopsporing**
+
+1. Ga door naar de diagnostische pagina van de voorbeeldmanager: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. Berekende waarden observeren. Wanneer correct werkend, ziet u het volgende: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >Het kan ongeveer 10 minuten duren nadat de Dynamic Media-cloudinstellingen zijn geconfigureerd voor synchronisatie van de viewerelementen.
+
+1. Als er niet-geactiveerde elementen overblijven, selecteert u een van de **Alle niet-geactiveerde elementen weergeven** knoppen om details weer te geven.
+
+**Oplossing**
+
+1. Navigeer naar de lijst met voorinstellingen voor viewers in de beheerprogramma&#39;s: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Selecteer alle voorinstellingen van de viewer en selecteer **Publiceren**.
+1. Navigeer terug naar voorbeeldbeheer en controleer of het aantal niet-geactiveerde elementen nu nul is.
+
+### Probleem: Vooraf ingestelde illustraties van de viewer retourneren 404 vanuit Voorvertoning in elementdetails of URL kopiëren/code insluiten {#viewer-preset-404}
+
+**Foutopsporing**
+
+Ga als volgt te werk bij CRXDE Lite:
+
+1. Navigeren naar `<sync-folder>/_CSS/_OOTB` map in uw Dynamic Media-synchronisatiemap (bijvoorbeeld `/content/dam/_CSS/_OOTB`).
+1. Zoek het metagegevensknooppunt van het problematische element (bijvoorbeeld `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. Controleren op de aanwezigheid van `dam:scene7*` eigenschappen. Als het element is gesynchroniseerd en gepubliceerd, ziet u de `dam:scene7FileStatus` set is to **PublishComplete**.
+1. Poging om de illustratie rechtstreeks via Dynasmic Media aan te vragen door de waarden van de volgende eigenschappen en letterlijke tekenreeksen samen te voegen:
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+Voorbeeld: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**Oplossing**
+
+Als de voorbeeldbestanden of de vooraf ingestelde illustratie van de viewer niet zijn gesynchroniseerd of gepubliceerd, start u het gehele kopiëren/synchronisatieproces opnieuw:
+
+1. Navigeer naar CRXDE Lite.
+1. Verwijderen `<sync-folder>/_CSS/_OOTB`.
+1. Ga naar CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Zoeken naar viewerpakket in de lijst; begint met `cq-dam-scene7-viewers-content`.
+1. Selecteren **Opnieuw installeren**.
+1. Onder Cloud Services, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7.
+1. Geen wijzigingen aanbrengen, selecteer **Opslaan**.
+Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en de illustraties te maken en te synchroniseren.
+
+### Probleem: Afbeeldingsvoorvertoning wordt niet geladen in het ontwerpen van viewervoorinstellingen {#image-preview-not-loading}
+
+**Oplossing**
+
+1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Navigeer in de linkertrack naar de map met voorbeeldinhoud op de volgende locatie:
+
+   `/content/dam/_DMSAMPLE`
+
+1. Verwijder de `_DMSAMPLE` map.
+1. Navigeer in de linkertrack naar de map met voorinstellingen op de volgende locatie:
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Verwijder de `viewer` map.
+1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **[!UICONTROL Save All]**.
+1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **Terug naar startpunt** pictogram.
+1. Maak opnieuw een [Dynamic Media-configuratie in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
