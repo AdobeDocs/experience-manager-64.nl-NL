@@ -3,13 +3,13 @@ title: Configureren [!DNL Workfront for Experience Manager enhanced connector]
 description: Configureren [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
+exl-id: dcf90a29-59a9-40d1-b8ee-56d327072b3e
+source-git-commit: 6f9a682f441c1087558f86da65e092e549f75a17
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1598'
 ht-degree: 0%
 
 ---
-
 
 # Configureren [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
@@ -17,9 +17,14 @@ Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] vormt de v
 
 >[!IMPORTANT]
 >
->Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
+>* Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
 >
->Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
+>* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
+>
+>* Adobe steunt verbeterde schakelaarversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Navigeer naar de `digital.hoodoo` groep beschikbaar in het linkerdeelvenster in [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
+>
+>* Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 ## Gebeurtenisabonnementen configureren {#event-subscriptions}
 
