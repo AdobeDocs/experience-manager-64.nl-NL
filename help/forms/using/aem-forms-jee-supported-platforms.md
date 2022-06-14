@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
+source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3330'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,6 @@ In dit document worden de ondersteunde client- en serverplatforms voor AEM Forms
 >
 >* Voor een volledige lijst met uitzonderingen op ondersteunde serverplatforms raadpleegt u [Uitzonderingen op ondersteunde serverplatforms](#exceptions-to-supported-server-platforms).
 >* AEM Forms on JEE ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
-
 >
 
 
@@ -95,7 +94,6 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
 >
 >* AEM Forms on JEE ondersteunt alleen 64-bits JVM&#39;s in productieomgevingen.
 >* Het wordt aanbevolen de beveiligingsbulletins van de Java-leverancier bij te houden om de veiligheid en beveiliging van productieomgevingen te garanderen en de nieuwste Java-updates te installeren.
-
 >
 
 
@@ -197,13 +195,18 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
   </tr> 
   <tr> 
    <td>MySQL</td> 
-   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.30-bin.jar(versie 5.1.30)</p> </td> 
+   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar(versie 5.1.44)</p> </td> 
    <td><p>Wordt geleverd bij AEM Forms op JEE-installatie</p> </td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server<br /> </td> 
-   <td><p>Microsoft® SQL Server JDBC-stuurprogramma 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Microsoft® SQL Server JDBC-stuurprogramma 6.2.1.0 (afgekeurd) <br /> </p> <p>sqljdbc6.jar</p> </td> 
    <td><p>Wordt geleverd bij AEM Forms op JEE-installatie.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Microsoft SQL Server<br /> </td> 
+   <td><p>Microsoft® SQL Server JDBC-stuurprogramma 6.2.2.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Downloaden vanaf Microsoft-website.</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle</td> 
@@ -332,7 +335,6 @@ U kunt AEM Forms op JEE op een fysieke machine of een virtuele omgeving uitvoere
 >
 >* AEM Forms on JEE ondersteunt alleen 64-bits besturingssystemen.
 >* De service PDF Generator wordt niet ondersteund in Windows 10.
-
 >
 
 
@@ -520,7 +522,6 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >* De dienst HTML2PDF is afgekeurd op AIX.
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
 >* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van de PDF van AEM Forms moeten worden betreden. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-
 >
 
 
@@ -738,7 +739,6 @@ Zie voor aanvullende vereisten:
 >[!NOTE]
 >
 >* Forms Portal wordt alleen ondersteund op Safari op iPad.
-
 >
 
 
@@ -797,7 +797,7 @@ Onder omstandigheden waarop Adobe geen invloed heeft, kunnen patches van derden 
 
 Adobe behoudt zich het recht voor om de referentieplatforms van derden die door een AEM Forms bij JEE-release worden ondersteund, en hun ondersteunde patchdefinities op een bepaald punt te wijzigen.
 
-Aanvullende informatie voor patches van derden kunt u ook vinden op de website van Adobe Enterprise Support voor artikelen in de kennisdatabase voor uw product.
+Aanvullende informatie voor patches van derden vindt u ook op de website van Adobe Enterprise Support voor artikelen in de kennisdatabase voor uw product.
 
 [**Contact opnemen met ondersteuning**](https://www.adobe.com/account/sign-in.supportportal.html)
 
