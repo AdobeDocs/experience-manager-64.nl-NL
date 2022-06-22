@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: de466dda2dcafd4c7ba002e91133e975e07b392e
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '163'
 ht-degree: 3%
 
 ---
@@ -34,9 +34,11 @@ Als u een centrifugeset of een afbeeldingsset maakt of PDF uploadt voor het uitn
 | **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
 | **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 | **Set draaien** - Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
-| **PDF** - Maximumaantal pagina&#39;s voor een PDF dat in aanmerking komt voor extractie |  | 5000 (voor nieuwe uploads) | 100 |
 
+<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
+
+
 
 <!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
 
