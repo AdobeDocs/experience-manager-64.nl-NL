@@ -2,11 +2,11 @@
 title: Uw digitale middelen beheren met [!DNL Experience Manager] Activa
 description: Meer informatie over de verschillende taken voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van Touch van [!DNL Experience Manager] Activa
 contentOwner: AG
-mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
+mini-toc-levels: 3
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 7c786e1326c8c65f00d799fed3207e4f0da04fa7
 workflow-type: tm+mt
 source-wordcount: '9818'
 ht-degree: 1%
@@ -331,7 +331,7 @@ Enkele beperkingen van de functie zijn:
 
 1. In de voorvertoningsmodus zijn zoomopties beschikbaar voor [ondersteunde afbeeldingstypen](assets-formats.md#supported-raster-image-formats) (met interactieve bewerkingen).
 
-   Tik op een element om in te zoomen **[!UICONTROL +]** (of tik op het vergrootglas op het element). Tik op **[!UICONTROL -]**. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. De **[!UICONTROL Reset Zoom]** terug naar de oorspronkelijke weergave.
+   Tik op een element om in te zoomen **[!UICONTROL +]** (of tik op het vergrootglas op het middel). Tik op **[!UICONTROL -]**. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. De **[!UICONTROL Reset Zoom]** terug naar de oorspronkelijke weergave.
 
    ![uplodicon](assets/uploadicon.png)
 
