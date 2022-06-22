@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '649'
 ht-degree: 33%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 33%
    + [HTTP2-levering van content](http2.md)
    + [Dynamic Media-assets leveren](delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](hotlink-protection.md)
+   + [Dynamic Media-beperkingen](limitations.md)
    + [Image Sets](image-sets.md)
    + [Mixed Media Sets](mixed-media-sets.md)
    + [Spin Sets](spin-sets.md)
