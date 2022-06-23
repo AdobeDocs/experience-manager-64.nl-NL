@@ -12,9 +12,9 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: Image Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2064'
 ht-degree: 10%
 
 ---
@@ -39,10 +39,10 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 
 Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
 
-| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
-| --- | --- | --- | --- |
-| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
-| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal dubbele elementen per set | Geen duplicaten | 20 |
+| Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
@@ -140,10 +140,10 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
 
-| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
-| --- | --- | --- | --- |
-| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
-| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal dubbele elementen per set | Geen duplicaten | 20 |
+| Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 

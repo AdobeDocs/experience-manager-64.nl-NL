@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 6%
@@ -31,7 +31,7 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 
 Wanneer u een reeks van de Rotatie creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grens:
 
-| Type limiet | Beste praktijken | Implementatielimiet |
+| Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 
@@ -117,7 +117,7 @@ De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor 
 
 Wanneer u een reeks van de Rotatie creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grens:
 
-| Type limiet | Beste praktijken | Implementatielimiet |
+| Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 

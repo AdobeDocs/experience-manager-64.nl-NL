@@ -12,9 +12,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 8d049122fd2a5b39274d0fdcb268dcf660fbc40f
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2649'
 ht-degree: 10%
 
 ---
@@ -36,9 +36,9 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 Wanneer u Slim uitsnijden op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en wordt de volgende limiet toegepast:
 
-| Type limiet | Beste praktijken | Implementatielimiet |
-| --- | --- | --- |
-| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
+| Type limiet | Beste praktijken | Oplegde limiet | Wijziging tot limiet op 31 december 2022 |
+| --- | --- | --- | --- |
+| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 | 20 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
