@@ -5,11 +5,11 @@ audience: end-user
 user-guide-title: AEM 6.4 Gebruikersgids voor gemeenschappen
 breadcrumb-title: Community Guide
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
-feature: Gemeenschappen
+feature: Communities
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,12 @@ ht-degree: 0%
    + [Auteur van een nieuwe communautaire site voor activering](enablement-create-site.md)
    + [Creeer en wijs Middelen toe Enablement](resource.md)
    + [Ervaar de gepubliceerde Enablement Site](enablement-published-site.md)
-+ {#deploy} implementeren
++ Implementeren {#deploy}
    + [Gemeenschappen inzetten](deploy-communities.md)
    + [Opwaarderen naar AEM 6.4 Gemeenschappen](upgrade.md)
    + [Aanbevolen topologieën voor Gemeenschappen](topologies.md)
    + [Dispatcher configureren voor Gemeenschappen](dispatcher.md)
-+ Beheren {#administer}
++ Beheer {#administer}
    + [Gebruikersbeheer en UGC-beheerservice in AEM Communities](user-ugc-management-service.md)
    + [Communitysites](https://experienceleague.adobe.com/docs/experience-manager-64/communities/introduction/administer-landing.html)
    + [Communityconsoles](consoles.md)

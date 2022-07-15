@@ -216,9 +216,9 @@ ht-degree: 5%
    + [JCR-integratie](jcr-integration.md)
    + [Codevoorbeelden](code-samples.md)
    + [Problemen met trage query&#39;s oplossen](troubleshooting-slow-queries.md)
-+ Mobile Web{#mobileweb}
-   + [Mobile Web](mobile-web.md)
++ Mobiel web{#mobileweb}
+   + [Mobiel web](mobile-web.md)
    + [Apparaatgroepfilters maken](groupfilters.md)
    + [Responsief ontwerp voor webpagina&#39;s](responsive.md)
-   + [Sites maken voor Mobile-apparaten](mobile.md)
+   + [Sites maken voor mobiele apparaten](mobile.md)
    + [Emulators](emulators.md)

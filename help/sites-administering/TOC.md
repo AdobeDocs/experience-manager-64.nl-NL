@@ -6,11 +6,11 @@ audience: admin-user
 user-guide-title: AEM 6.4 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
-feature: Beheer
+feature: Administering
 role: Admin
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 # AEM 6.4 Gebruikershandleiding voor het beheer {#administering}
 
 + [Overzicht van de gebruikershandleiding beheren](home.md)
-+ Sitekenmerken {#introduction}
++ Sitefuncties {#introduction}
    + [Websitebeheer](msm-and-translation.md)
    + [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](msm.md)
    + [Console voor live kopiëren](msm-livecopy-overview.md)
@@ -77,7 +77,7 @@ ht-degree: 6%
    + [OWASP Top 10](owasp-top10.md)
    + [AEM uitvoeren in productielocatie](production-ready.md)
    + [Identity Management](identity-management.md)
-   + [Adobe IMS-verificatie en ondersteuning voor Admin Consoles voor AEM Managed Services](ims-config-and-admin-console.md)
+   + [Ondersteuning voor verificatie en Admin Console van Adobe IMS voor AEM Managed Services](ims-config-and-admin-console.md)
    + [Een gesloten gebruikersgroep maken](cug.md)
    + [Het verminderen van rangschikkingskwesties in AEM](mitigating-serialization-issues.md)
    + [Gebruikerssynchronisatie](sync.md)
@@ -124,8 +124,8 @@ ht-degree: 6%
    + [Video bijhouden configureren voor Adobe Analytics](adobeanalytics-video.md)
    + [Veelgestelde vragen over HTTP2-levering van content](scene7-http2faq.md)
    + [Problemen met Adobe Campaign-integratie oplossen](troubleshooting-campaignintegration.md)
-   + [SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers](sharepoint-connector-licenses.md)
-   + [SharePoint-connector](sharepoint-connector.md)
+   + [SharePoint-connectorlicenties, copyrightberichten en Disclaimers](sharepoint-connector-licenses.md)
+   + [SharePoint Connector](sharepoint-connector.md)
    + [Veelgestelde vragen over de gebruiksduur van de DHTML-viewer](dhtml-viewer-endoflifefaqs.md)
    + [Integreren met Adobe Campaign Classic](campaignonpremise.md)
    + [Verwante artikelen van de Gemeenschap](related-community-articles.md)
@@ -133,7 +133,7 @@ ht-degree: 6%
    + [Kennisgeving over de gebruiksduur van Flash-viewers](flash-viewers-eol.md)
    + [Integreren met Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Productfeed](product-feed.md)
-   + [Integreren met dynamisch Adobe-tagbeheer](dtm.md)
+   + [Integreren met Adobe Dynamic Tag Management](dtm.md)
    + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
    + [AEM en portlets](aem-as-portal.md)
    + [Integreren met Dynamic Media Classic](scene7.md)

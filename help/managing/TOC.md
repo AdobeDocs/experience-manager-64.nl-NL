@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: AEM 6.4 Gebruikershandleiding beheren
 breadcrumb-title: Handleiding
 user-guide-description: Leer hoe u een AEM project beheert.
-feature: Implementeren
+feature: Deploying
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 17%
+source-wordcount: '72'
+ht-degree: 18%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 17%
 # AEM 6.4 Gebruikershandleiding beheren {#managing}
 
 + [Gebruikershandleiding beheren](home.md)
-+ Beheren - Controlelijst voor aanbevolen procedures {#managing-best-practices-checklist}
++ Beheren - Checklist voor beste praktijken {#managing-best-practices-checklist}
    + [Projecten beheren - Checklist voor aanbevolen procedures](best-practices.md)
    + [De checklist](best-practices-checklist.md)
    + [Verklarende woordenlijst](best-practices-glossary.md)
    + [Checklist - Verdere referentie](best-practices-further-reference.md)
-+ Beheren - Verdere referentie {#managing-further-reference}
++ Beheer - Verdere verwijzing {#managing-further-reference}
    + [Richtlijnen voor hardwareaanpassing](hardware-sizing-guidelines.md)
    + [Enterprise DevOps](enterprise-devops.md)
    + [Aanbevolen werkwijzen voor SEO- en URL-beheer](seo-and-url-management.md)
