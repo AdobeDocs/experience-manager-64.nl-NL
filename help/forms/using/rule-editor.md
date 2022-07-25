@@ -1,8 +1,8 @@
 ---
 title: Regeleditor voor adaptieve formulieren
-seo-title: Regeleditor voor adaptieve formulieren
+seo-title: Adaptive forms rule editor
 description: Met de Adaptive Form Rule-editor kunt u dynamisch gedrag toevoegen en complexe logica in formulieren opnemen zonder codes of scripts.
-seo-description: Met de Adaptive Form Rule-editor kunt u dynamisch gedrag toevoegen en complexe logica in formulieren opnemen zonder codes of scripts.
+seo-description: Adaptive forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
 uuid: 15c9bb41-ddae-4d3e-b130-5eb1b7572e6e
 content-type: reference
 topic-tags: adaptive_forms, develop
@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 feature: Adaptive Forms
 exl-id: 7cd73bdf-6717-4923-91ca-e8b6d44429ca
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9cb2e3d361503e296b985c5d08bbafd5dd60e194
 workflow-type: tm+mt
-source-wordcount: '6302'
+source-wordcount: '6276'
 ht-degree: 0%
 
 ---
 
-# Redacteur {#adaptive-forms-rule-editor} van de adaptieve vormenregel
+# Regeleditor voor adaptieve formulieren {#adaptive-forms-rule-editor}
 
 ## Overzicht {#overview}
 
@@ -34,23 +33,23 @@ De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterfac
 * Een service van een formuliergegevensmodel aanroepen en een bewerking uitvoeren
 * Eigenschap van een object instellen
 
-De redacteur van de regel vervangt de scriptmogelijkheden in AEM 6.1 Forms en vroegere versies. Nochtans, worden uw bestaande manuscripten bewaard in de nieuwe regelredacteur. Voor meer informatie over het werken met bestaande manuscripten in de regelredacteur, zie [Gevolgen van regelredacteur op bestaande manuscripten](/help/forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p).
+De redacteur van de regel vervangt de scriptmogelijkheden in AEM 6.1 Forms en vroegere versies. Nochtans, worden uw bestaande manuscripten bewaard in de nieuwe regelredacteur. Voor meer informatie over het werken met bestaande manuscripten in de regelredacteur, zie [Effect van regeleditor op bestaande scripts](#impact-of-rule-editor-on-existing-scripts)
 
 Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen nieuwe scripts maken en bestaande scripts bewerken. Gebruikers in de groep met gebruikers van formulieren kunnen de scripts gebruiken, maar kunnen geen scripts maken of bewerken.
 
-## Een regel {#understanding-a-rule}
+## Een regel begrijpen {#understanding-a-rule}
 
-Een regel is een combinatie van handelingen en voorwaarden. In de regeleditor omvatten handelingen zoals verbergen, weergeven, inschakelen, uitschakelen of de waarde van een object in een formulier berekenen. Voorwaarden zijn Booleaanse expressies die worden geëvalueerd door controles en bewerkingen uit te voeren op de status, waarde of eigenschap van een formulierobject. Handelingen worden uitgevoerd op basis van de waarde ( `True` of `False`) die wordt geretourneerd door een voorwaarde te evalueren.
+Een regel is een combinatie van handelingen en voorwaarden. In de regeleditor omvatten handelingen zoals verbergen, weergeven, inschakelen, uitschakelen of de waarde van een object in een formulier berekenen. Voorwaarden zijn Booleaanse expressies die worden geëvalueerd door controles en bewerkingen uit te voeren op de status, waarde of eigenschap van een formulierobject. Handelingen worden uitgevoerd op basis van de waarde ( `True` of `False`) geretourneerd door een voorwaarde te evalueren.
 
 De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes, zoals wanneer, tonen, verbergen, toelaten, onbruikbaar maken, Vastgestelde Waarde van, en Valideren om u te helpen regels schrijven. Elk regeltype staat u toe om voorwaarden en acties in een regel te bepalen. Het document verklaart verder elk regeltype in detail.
 
-Een regel volgt doorgaans een van de volgende elementen:
+Een regel volgt doorgaans een van de volgende constructies:
 
-**Condition-** ActionIn deze constructie definieert een regel eerst een voorwaarde gevolgd door een actie die moet worden geactiveerd. De constructie is vergelijkbaar met if-then statement in programmeertalen.
+**Voorwaarde-actie** In deze constructie definieert een regel eerst een voorwaarde gevolgd door een handeling die moet worden geactiveerd. De constructie is vergelijkbaar met if-then statement in programmeertalen.
 
-In regelredacteur, dwingt **When** regeltype de voorwaarde-actie constructie af.
+In de regeleditor **Wanneer** het regeltype dwingt de voorwaarde-actie constructie af.
 
-**Action-** ConditionIn deze constructie, bepaalt een regel eerst een actie om te teweegbrengen die door voorwaarden voor evaluatie wordt gevolgd. Een andere variatie van deze constructie is actie-voorwaarde-afwisselende actie, die ook een afwisselende actie bepaalt om te teweegbrengen als de voorwaarde Vals terugkeert.
+**Handeling-voorwaarde** In deze constructie, bepaalt een regel eerst een actie die door voorwaarden voor evaluatie wordt gevolgd teweegbrengen. Een andere variatie van deze constructie is actie-voorwaarde-afwisselende actie, die ook een afwisselende actie bepaalt om te teweegbrengen als de voorwaarde Vals terugkeert.
 
 Toon, verberg, laat toe, maak onbruikbaar, plaats Waarde van, en bevestig regeltypes in regelredacteur om de actie-voorwaarde regelconstructie af te dwingen. Standaard is de alternatieve actie voor Tonen Verbergen en voor Inschakelen Uitgeschakeld en andersom. U kunt de alternatieve standaardhandeling niet wijzigen.
 
@@ -58,13 +57,13 @@ Toon, verberg, laat toe, maak onbruikbaar, plaats Waarde van, en bevestig regelt
 >
 >De beschikbare regeltypen, inclusief de voorwaarden en handelingen die u in de regeleditor definieert, zijn ook afhankelijk van het type formulierobject waarop u een regel maakt. In de regeleditor worden alleen geldige regeltypen en opties weergegeven voor het schrijven van voorwaarde- en handelingsinstructies voor een bepaald type formulierobject. U ziet bijvoorbeeld geen regeltypen Valideren, Waarde instellen van, Inschakelen en Uitschakelen voor een deelvensterobject.
 
-Voor meer informatie over regeltypes beschikbaar in de regelredacteur, zie [Beschikbare regeltypes in regelredacteur](/help/forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Voor meer informatie over regeltypes beschikbaar in de regelredacteur, zie [Beschikbare regeltypen in regeleditor](#available-rule-types-in-rule-editor).
 
 ### Richtlijnen voor het kiezen van een regelconstructie {#guidelines-for-choosing-a-rule-construct}
 
-Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelconstructie te gebruiken, zijn hier sommige richtlijnen om één constructie over een andere te kiezen. Voor meer informatie over de beschikbare regels in regelredacteur, zie [Beschikbare regeltypes in regelredacteur](/help/forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelconstructie te gebruiken, zijn hier sommige richtlijnen om één constructie over een andere te kiezen. Voor meer informatie over de beschikbare regels in regelredacteur, zie [Beschikbare regeltypen in regeleditor](#available-rule-types-in-rule-editor).
 
-* Een typische regel van het duim wanneer het creëren van een regel is het denken over het in de context van het voorwerp waarop u een regel schrijft. Denk eraan dat u veld B wilt verbergen of weergeven op basis van de waarde die een gebruiker in veld A heeft opgegeven. In dit geval evalueert u een voorwaarde in veld A en activeert u een actie in veld B op basis van de waarde die wordt geretourneerd.
+* Een typische regel van het duim wanneer het creëren van een regel is het denken over het in de context van het voorwerp waarop u een regel schrijft. Denk eraan dat u veld B wilt verbergen of weergeven op basis van de waarde die een gebruiker in veld A heeft opgegeven. In dit geval evalueert u een voorwaarde in veld A en activeert u een actie in veld B op basis van de waarde die de voorwaarde retourneert.
 
    Daarom als u een regel op gebied B (het voorwerp schrijft waarop u een voorwaarde) evalueert, gebruik de voorwaarde-actie constructie of het wanneer regeltype. Op dezelfde manier gebruikt u de handeling-voorwaarde constructie of toont of verbergt regeltype op gebied A.
 
@@ -90,16 +89,16 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 * **Is leeg**
 * **Is niet leeg**
 * **Heeft geselecteerd:** Retourneert true wanneer de gebruiker een bepaalde optie voor een selectievakje, vervolgkeuzelijst of keuzerondje selecteert.
-* **Is geïnitialiseerd (gebeurtenis):** retourneert true wanneer een formulierobject in de browser wordt weergegeven.
-* **Is gewijzigd (gebeurtenis):** retourneert true wanneer de gebruiker de ingevoerde waarde of de geselecteerde optie voor een formulierobject wijzigt.
+* **Is geïnitialiseerd (gebeurtenis):** Retourneert true wanneer een formulierobject in de browser wordt weergegeven.
+* **Is gewijzigd (gebeurtenis):** Retourneert true wanneer de gebruiker de ingevoerde waarde of de geselecteerde optie voor een formulierobject wijzigt.
 
 ## Beschikbare regeltypen in regeleditor {#available-rule-types-in-rule-editor}
 
-De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in regelredacteur, zie [Write regels](/help/forms/using/rule-editor.md#p-write-rules-p).
+De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebruiken om regels te schrijven. Laten we elk regeltype in detail bekijken. Voor meer informatie over het schrijven van regels in regelredacteur, zie [Schrijfregels](#write-rules).
 
 ### Wanneer {#when}
 
-Het **When** regeltype volgt de **condition-action-afwisselende actie** regelconstructie, of soms, enkel de **condition-action** constructie. In dit regeltype, specificeert u eerst een voorwaarde voor evaluatie die door een actie wordt gevolgd om teweeg te brengen als de voorwaarde ( `True`) wordt tevredengesteld. Wanneer het gebruiken van het Wanneer regeltype, kunt u veelvoudige EN en OF exploitanten gebruiken om [genestelde uitdrukkingen](#nestedexpressions) tot stand te brengen.
+De **Wanneer** regeltype volgt **condition-action-alternate action** regelconstructie, of soms alleen de **voorwaarde-actie** construct. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie gevolgd door een handeling die wordt geactiveerd als aan de voorwaarde is voldaan ( `True`). Wanneer u het regeltype When gebruikt, kunt u meerdere AND- en OR-operatoren gebruiken om [geneste expressies](#nestedexpressions).
 
 Met het regeltype &#39;Wanneer&#39; kunt u een voorwaarde op een formulierobject evalueren en acties op een of meer objecten uitvoeren.
 
@@ -127,45 +126,45 @@ Tijdens het schrijven van een When-regel kunt u de Clear Value of action activer
 
 ![vrijmaking](assets/clearvalueof.png)
 
-**Het opgegeven object** verbergenVerbergen.
+**Verbergen** Verbergt het opgegeven object.
 
-**Het opgegeven object** tonen.
+**Tonen** Hiermee wordt het opgegeven object weergegeven.
 
-**** EnableEnables the specified object.
+**Inschakelen** Hiermee wordt het opgegeven object ingeschakeld.
 
-**** DisableDisables the specified object.
+**Uitschakelen** Hiermee wordt het opgegeven object uitgeschakeld.
 
-**Invoke** serviceInvokes a service die in een model van vormgegevens wordt gevormd. Wanneer u de Invoke-service kiest, wordt een veld weergegeven. Als u op het veld tikt, worden alle services weergegeven die zijn geconfigureerd in alle formuliergegevensmodellen op uw AEM. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service. Zie voorbeeldregel voor het aanroepen van formuliergegevensmodelservices.
+**Invoke-service** Roept de dienst aan die in een model van vormgegevens wordt gevormd. Wanneer u de Invoke-service kiest, wordt een veld weergegeven. Als u op het veld tikt, worden alle services weergegeven die zijn geconfigureerd in alle formuliergegevensmodellen op uw AEM. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service. Zie voorbeeldregel voor het aanroepen van formuliergegevensmodelservices.
 
 Naast formuliergegevensmodelservice kunt u een directe WSDL-URL opgeven om een webservice aan te roepen. Een service voor een formuliergegevensmodel heeft echter vele voordelen en de aanbevolen aanpak om een service aan te roepen.
 
-Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over het configureren van services in formuliergegevensmodel.
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
 
-**Stel de waarde** van Computes in en stel de waarde van het opgegeven object in. U kunt de objectwaarde instellen op een tekenreeks, de waarde van een ander object, de berekende waarde met behulp van de wiskundige expressie of functie, de waarde van een eigenschap van een object of de uitvoerwaarde van een geconfigureerde formuliergegevensmodelservice. Wanneer u de optie Webservice kiest, worden alle services weergegeven die in alle formuliergegevensmodellen op uw AEM zijn geconfigureerd. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service.
+**Waarde instellen van** Berekent en stelt de waarde van het opgegeven object in. U kunt de objectwaarde instellen op een tekenreeks, de waarde van een ander object, de berekende waarde met behulp van de wiskundige expressie of functie, de waarde van een eigenschap van een object of de uitvoerwaarde van een geconfigureerde formuliergegevensmodelservice. Wanneer u de optie Webservice kiest, worden alle services weergegeven die in alle formuliergegevensmodellen op uw AEM zijn geconfigureerd. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service.
 
-Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over het configureren van services in formuliergegevensmodel.
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
 
-**Set** propertySets de waarde van een eigenschap van het opgegeven object.
+**Eigenschap instellen** Stelt de waarde in van een eigenschap van het opgegeven object.
 
-**Waarde** van wissen wist de waarde van het opgegeven object.
+**Waarde wissen van** Wist de waarde van het opgegeven object.
 
-**Stel** FocusSets in op het opgegeven object.
+**Focus instellen** Hiermee wordt de focus op het opgegeven object ingesteld.
 
-**Sla** het formulier op.
+**Formulier opslaan** Hiermee slaat u het formulier op.
 
-**Het formulier wordt verzonden met** FormsSubmit.
+**Forms verzenden** Hiermee verzendt u het formulier.
 
-**Het formulier opnieuw instellen** met FormResets.
+**Formulier opnieuw instellen** Hiermee herstelt u het formulier.
 
-**Valideer** FormValidates het formulier.
+**Formulier valideren** Hiermee valideert u het formulier.
 
-**Voeg** InstanceAdds een geval van het gespecificeerde herhaalbare paneel of de lijstrij toe.
+**Instantie toevoegen** Hiermee wordt een instantie van het opgegeven herhaalbare deelvenster of de opgegeven tabelrij toegevoegd.
 
-**Verwijderen** InstanceVerwijdert een instantie van het opgegeven herhaalbare deelvenster of de opgegeven tabelrij.
+**Instantie verwijderen** Hiermee wordt een instantie van het opgegeven herhaalbare deelvenster of de opgegeven tabelrij verwijderd.
 
 ### Waarde instellen van {#set-value-of}
 
-Met het regeltype **[!UICONTROL Set Value of]** kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een service van een formuliergegevensmodel. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
+De **[!UICONTROL Set Value of]** met regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een service van een formuliergegevensmodel. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
 
 Merk op dat de Vastgestelde Waarde van regeltype niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen is. Een standaardsetwaarde van regel heeft de volgende structuur:
 
@@ -181,7 +180,7 @@ Indien (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is WAAR;
 
-In het volgende voorbeeld wordt de waarde in het veld `dependentid` als invoer gebruikt en wordt de waarde van het veld `Relation` ingesteld op de uitvoer van het argument `Relation` van de service van het formuliergegevensmodel `getDependent`.
+In het volgende voorbeeld wordt de waarde in `dependentid` veld als invoer en stelt de waarde van de `Relation` aan de output van `Relation` argument van de `getDependent` service formuliergegevensmodel.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -193,7 +192,7 @@ Voorbeeld van waardeceregel instellen met de service van het formuliergegevensmo
 
 ### Tonen {#show}
 
-Met het regeltype **Tonen** kunt u een regel schrijven om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Tonen activeert ook de handeling Verbergen voor het geval niet aan de voorwaarde wordt voldaan of `False` wordt geretourneerd.
+Met de **Tonen** regeltype, kunt u een regel schrijven om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Tonen activeert ook de handeling Verbergen als de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
 
 Een typische Show regel is gestructureerd als volgt:
 
@@ -207,9 +206,9 @@ Een typische Show regel is gestructureerd als volgt:
 
 `Hide Object A;`
 
-### {#hide} verbergen
+### Verbergen {#hide}
 
-Net als bij het regeltype Weergeven kunt u het regeltype **Verbergen** gebruiken om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype van de Huid teweegbrengt ook de actie van de Show in werking voor het geval dat de voorwaarde niet wordt voldaan of `False` terugkeert.
+Net als het regeltype Tonen kunt u de opdracht **Verbergen** regeltype om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Verbergen activeert ook de handeling Tonen als de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
 
 Een typische regel van de Huid is gestructureerd als volgt:
 
@@ -223,9 +222,9 @@ Een typische regel van de Huid is gestructureerd als volgt:
 
 `Show Object A;`
 
-### {#enable} inschakelen
+### Inschakelen {#enable}
 
-Met het regeltype **Enable** kunt u een formulierobject in- of uitschakelen op basis van het feit of aan een voorwaarde wordt voldaan of niet. Het Enable regeltype teweegbrengt ook de Disable actie teweeg voor het geval dat de voorwaarde niet wordt voldaan of `False` terugkeert.
+De **Inschakelen** met regeltype kunt u een formulierobject in- of uitschakelen op basis van het feit of aan een voorwaarde wordt voldaan of niet. Het Enable regeltype activeert ook de Disable-actie voor het geval dat de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
 
 Een typisch laat regel toe is gestructureerd als volgt:
 
@@ -239,9 +238,9 @@ Een typisch laat regel toe is gestructureerd als volgt:
 
 `Disable Object A;`
 
-### {#disable} uitschakelen
+### Uitschakelen {#disable}
 
-Net als bij het regeltype Enable kunt u met het regeltype **Disable** een formulierobject in- of uitschakelen op basis van het feit of aan een voorwaarde wordt voldaan. Het onbruikbaar maken regeltype teweegbrengt ook de Enable actie in werking voor het geval de voorwaarde niet wordt tevredengesteld of `False` terugkeert.
+Gelijkaardig aan het Enable regeltype, **Uitschakelen** met regeltype kunt u een formulierobject in- of uitschakelen op basis van het feit of aan een voorwaarde wordt voldaan of niet. Het regeltype Uitschakelen activeert ook de handeling Enable voor het geval dat de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
 
 Een typisch onbruikbaar maken regel is gestructureerd als volgt:
 
@@ -255,9 +254,9 @@ Een typisch onbruikbaar maken regel is gestructureerd als volgt:
 
 `Enable Object A;`
 
-### {#validate} valideren
+### Valideren {#validate}
 
-Het regeltype **Validate** valideert de waarde in een veld met een expressie. U kunt bijvoorbeeld een expressie schrijven om te controleren of het tekstvak voor het opgeven van de naam geen speciale tekens of getallen bevat.
+De **Valideren** regeltype valideert de waarde in een veld met een expressie. U kunt bijvoorbeeld een expressie schrijven om te controleren of het tekstvak voor het opgeven van de naam geen speciale tekens of getallen bevat.
 
 Een typisch Validate regel is gestructureerd als volgt:
 
@@ -269,42 +268,43 @@ Een typisch Validate regel is gestructureerd als volgt:
 
 >[!NOTE]
 >
->Als de opgegeven waarde niet voldoet aan de regel Valideren, kunt u een validatiebericht voor de gebruiker weergeven. U kunt het bericht opgeven in het veld **[!UICONTROL Script validation message]** in de componenteigenschappen op de zijbalk.
+>Als de opgegeven waarde niet voldoet aan de regel Valideren, kunt u een validatiebericht voor de gebruiker weergeven. U kunt het bericht opgeven in het dialoogvenster **[!UICONTROL Script validation message]** in de componenteigenschappen in de zijbalk.
 
 ![scriptvalidatie](assets/script-validation.png)
 
-## Het begrip van het gebruikersinterface van de regelredacteur {#understanding-the-rule-editor-user-interface}
+## Het begrip van de regel redacteursgebruikersinterface {#understanding-the-rule-editor-user-interface}
 
 De redacteur van de regel verstrekt een uitvoerige maar eenvoudige gebruikersinterface om regels te schrijven en te beheren. U kunt de gebruikersinterface van de regeleditor starten vanuit een adaptief formulier in de ontwerpmodus.
 
 Om het gebruikersinterface van de regelredacteur te lanceren:
 
 1. Open een adaptief formulier in de ontwerpmodus.
-1. Tik op het formulierobject waarvoor u een regel wilt schrijven en tik op de werkbalk Component ![edit-rules](assets/edit-rules.png). De gebruikersinterface van de regeleditor wordt weergegeven.
+1. Tik op het formulierobject waarvoor u een regel wilt schrijven en tik op de werkbalk Component ![bewerkingsregels](assets/edit-rules.png). De gebruikersinterface van de regeleditor wordt weergegeven.
 
    ![regels creëren](assets/create-rules.png)
 
-   Eventuele bestaande regels voor de geselecteerde formulierobjecten worden in deze weergave weergegeven. Voor informatie over het beheren van bestaande regels, zie [Regels beheren](/help/forms/using/rule-editor.md#p-manage-rules-p).
+   Eventuele bestaande regels voor de geselecteerde formulierobjecten worden in deze weergave weergegeven. Voor informatie over het beheren van bestaande regels raadpleegt u [Regels beheren](/help/forms/using/rule-editor.md#p-manage-rules-p).
 
-1. Tik **[!UICONTROL Create]** om een nieuwe regel te schrijven. De visuele redacteur van het gebruikersinterface van de regelredacteur opent door gebrek wanneer u de regelredacteur de eerste keer lanceert.
+1. Tikken **[!UICONTROL Create]** om een nieuwe regel te schrijven. De visuele redacteur van het gebruikersinterface van de regelredacteur opent door gebrek wanneer u de regelredacteur de eerste keer lanceert.
    ![Gebruikersinterface van regeleditor](assets/rule-editor-ui.png)
 
-   [Klik om ](assets/rule-editor-ui-1.png)
-  te vergrotenLet bekijken elke component van de regelredacteur UI in detail.
+   [Klik om te vergroten](assets/rule-editor-ui-1.png)
+ 
+Laten wij elke component van de regelredacteur UI in detail bekijken.
 
-### A. Component-regelweergave {#a-component-rule-display}
+### A. Weergave componentregel {#a-component-rule-display}
 
 Hiermee geeft u de titel weer van het adaptieve formulierobject waarmee u de regeleditor hebt gestart en het regeltype dat momenteel is geselecteerd. In het bovenstaande voorbeeld wordt de regeleditor gestart van een adaptief formulierobject met de naam Salary en is het geselecteerde regeltype When.
 
 ### B. Formulierobjecten en -functies {#b-form-objects-and-functions-br}
 
-De ruit op de linkerzijde in het gebruikersinterface van de regelredacteur omvat twee lusjes - **[!UICONTROL Forms Objects]** en **[!UICONTROL Functions]**.
+De ruit op de linkerzijde in het gebruikersinterface van de regelredacteur omvat twee lusjes — **[!UICONTROL Forms Objects]** en **[!UICONTROL Functions]**.
 
 Op het tabblad Formulierobjecten wordt een hiërarchische weergave weergegeven van alle objecten in het aangepaste formulier. De titel en het type van de objecten worden weergegeven. Bij het schrijven van een regel kunt u formulierobjecten naar de regeleditor slepen. Wanneer u een regel maakt of bewerkt en een object of functie naar een tijdelijke aanduiding sleept, neemt de tijdelijke aanduiding automatisch het juiste waardetype.
 
 De formulierobjecten waarop een of meer geldige regels zijn toegepast, worden gemarkeerd met een groene stip. Als een van de regels die op een formulierobject zijn toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
 
-Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of meer, max van, gemiddelde van, aantal en validerende vorm. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en deze tijdens het schrijven van regels te gebruiken in instructies voor handelingen en voorwaarden. U kunt echter ook [aangepaste functies](/help/forms/using/rule-editor.md#custom-functions) maken.
+Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of meer, max van, gemiddelde van, aantal en validerende vorm. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en deze tijdens het schrijven van regels te gebruiken in instructies voor handelingen en voorwaarden. U kunt echter wel [aangepaste functies](/help/forms/using/rule-editor.md#custom-functions) ook.
 
 ![Het tabblad Functies](assets/functions.png)
 
@@ -312,7 +312,7 @@ Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of me
 >
 >U kunt tekstzoekopdrachten uitvoeren op namen en titels van objecten en functies op de tabbladen Objecten en Functies van Forms.
 
-In de linkerstructuur van de formulierobjecten kunt u op de formulierobjecten tikken om de regels weer te geven die op elk object zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Zie [Regels kopiëren/plakken](/help/forms/using/rule-editor.md#p-copy-paste-rules-p) voor meer informatie.
+In de linkerstructuur van de formulierobjecten kunt u op de formulierobjecten tikken om de regels weer te geven die op elk object zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Zie voor meer informatie [Regels kopiëren en plakken](#copy-paste-rules).
 
 ### C. Schakelen tussen formulierobjecten en -functies {#c-form-objects-and-functions-toggle-br}
 
@@ -322,39 +322,39 @@ Met de schakelknop schakelt u, wanneer hierop wordt getikt, de formulierobjecten
 
 De visuele regelredacteur is het gebied op de visuele redacteurswijze van het gebruikersinterface van de regelredacteur waar u regels schrijft. Hiermee kunt u een regeltype selecteren en voorwaarden en handelingen definiëren. Wanneer u voorwaarden en handelingen in een regel definieert, kunt u formulierobjecten en -functies slepen en neerzetten vanuit het deelvenster Formulierobjecten en -functies.
 
-Voor meer informatie over het gebruiken van visuele regelredacteur, zie [Write regels](/help/forms/using/rule-editor.md#p-write-rules-p).
+Voor meer informatie over het gebruiken van visuele regelredacteur, zie [Schrijfregels](#write-rules).
 
-### E. Schakelaar {#e-visual-code-editors-switcher} voor visuele editors
+### E. Schakelaar voor bewerkingsprogramma&#39;s met visuele code {#e-visual-code-editors-switcher}
 
 Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-editor. Voor andere gebruikers is de code-editor niet beschikbaar. Als u de rechten hebt, kunt u van visuele redacteurswijze aan de wijze van de coderedacteur van de regel, en vice versa schakelen, gebruikend de schakelaar recht boven de regelredacteur. Wanneer u regelredacteur de eerste keer lanceert, opent het op de visuele redacteurswijze. U kunt regels op de visuele redacteurswijze schrijven of op de wijze schakelen van de coderedacteur om een regelmanuscript te schrijven. Nochtans, merk op dat als u een regel wijzigt of een regel in coderedacteur schrijft, u niet terug naar de visuele redacteur voor die regel kunt schakelen tenzij u de coderedacteur ontruimt.
 
 AEM Forms volgt de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
 
-1. Ga naar AEM webconsole op https://[host]:[port]/system/console/configMgr.
-1. Klik om **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** te bewerken.
-1. Kies **[!UICONTROL Visual Editor]** of **[!UICONTROL Code Editor]** in de vervolgkeuzelijst **[!UICONTROL Default Mode for Rule Editor]**
+1. Ga naar AEM webconsole op https://[host]:[poort]/system/console/configMgr.
+1. Klik om te bewerken **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]**.
+1. kiezen **[!UICONTROL Visual Editor]** of **[!UICONTROL Code Editor]** van de **[!UICONTROL Default Mode for Rule Editor]** vervolgkeuzelijst
 
 1. Klik op **[!UICONTROL Save]**.
 
 ### F. Gereed en annuleer knoppen {#f-done-and-cancel-buttons}
 
-De **[!UICONTROL Done]** knoop wordt gebruikt om een regel te bewaren. U kunt een onvolledige regel opslaan. Onvolledig zijn echter ongeldig en worden niet uitgevoerd. Opgeslagen regels voor een formulierobject worden weergegeven wanneer u de regeleditor de volgende keer start vanuit hetzelfde formulierobject. U kunt bestaande regels in die weergave beheren. Zie [Regels beheren](/help/forms/using/rule-editor.md#p-manage-rules-p) voor meer informatie.
+De **[!UICONTROL Done]** wordt gebruikt om een regel op te slaan. U kunt een onvolledige regel opslaan. Onvolledig zijn echter ongeldig en worden niet uitgevoerd. Opgeslagen regels voor een formulierobject worden weergegeven wanneer u de regeleditor de volgende keer start vanuit hetzelfde formulierobject. U kunt bestaande regels in die weergave beheren. Zie voor meer informatie [Regels beheren](#manage-rules).
 
-De **[!UICONTROL Cancel]** knoop verwerpt om het even welke veranderingen u aan een regel aanbracht en sluit de regelredacteur.
+De **[!UICONTROL Cancel]** de knoop verwerpt om het even welke veranderingen u aan een regel aanbracht en sluit de regelredacteur.
 
-## Regels {#write-rules} schrijven
+## Schrijfregels {#write-rules}
 
 U kunt regels schrijven gebruikend de visuele regelredacteur of de coderedacteur. Wanneer u de regelredacteur de eerste keer lanceert, opent het op de visuele redacteurswijze. U kunt op de wijze van de coderedacteur schakelen en regels schrijven. Nochtans, merk op dat als u een regel in code redacteur schrijft of wijzigt, u niet aan de visuele redacteur voor die regel kunt schakelen tenzij u de coderedacteur ontruimt. Wanneer u de regelredacteur de volgende keer lanceert, opent het op de wijze die u het laatst gebruikte om regel tot stand te brengen.
 
 Laten we eerst bekijken hoe u regels schrijft met een visuele editor.
 
-### Visuele editor {#using-visual-editor} gebruiken
+### Visuele editor gebruiken {#using-visual-editor}
 
 Laten we begrijpen hoe u een regel maakt in een visuele editor met behulp van het volgende voorbeeldformulier.
 
 ![create-rule-example](assets/create-rule-example.png)
 
-In het gedeelte met vereisten voor leningen in het voorbeeld van het aanvraagformulier voor leningen moeten aanvragers hun echtelijke status, salaris en indien gehuwd, het salaris van hun echtgenoot vermelden. Op basis van de gebruikersinput wordt het bedrag dat voor de lening in aanmerking komt, berekend door de regel en wordt dit weergegeven in het veld Beleenbaarheid van de lening. Pas de volgende regels toe om het scenario uit te voeren:
+In het gedeelte met vereisten voor leningen in het voorbeeldformulier voor het aanvragen van leningen moeten aanvragers hun echtelijke staat, salaris en indien gehuwd, het salaris van hun echtgenoot vermelden. Op basis van de gebruikersinput wordt het bedrag dat voor de lening in aanmerking komt, berekend door de regel en wordt dit weergegeven in het veld Beleenbaarheid van de lening. Pas de volgende regels toe om het scenario uit te voeren:
 
 * Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de huwelijksstatus wordt gehuwd.
 * De beleenbaarheid van de lening bedraagt 50% van het totale salaris.
@@ -363,7 +363,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Eerst schrijft u de regel om de zichtbaarheid van het veld Sjabloon bij echtgeno(o)t(e) in te stellen op basis van de optie die de gebruiker selecteert voor het keuzerondje Genderstatus.
 
-   Open het aanvraagformulier voor de lening in de ontwerpmodus. Tik op de **Marital Status**-component en tik ![edit-rules](assets/edit-rules.png). Tik vervolgens op **[!UICONTROL Create]** om de regeleditor te starten.
+   Open het aanvraagformulier voor de lening in de ontwerpmodus. Tik op de knop **Burgerlijke staat** component en tik ![bewerkingsregels](assets/edit-rules.png). Tik vervolgens op **[!UICONTROL Create]** om de regeleditor te starten.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
@@ -371,25 +371,25 @@ Voer de volgende stappen uit om regels te schrijven:
 
    U kunt het geselecteerde object niet wijzigen of wijzigen, maar u kunt een ander regeltype selecteren met de vervolgkeuzelijst Regel, zoals hieronder wordt weergegeven. Als u een regel voor een ander object wilt maken, tikt u op Annuleren om de regeleditor af te sluiten en start u deze opnieuw vanuit het gewenste formulierobject.
 
-1. Tik **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is equal to]**. Het veld **[!UICONTROL Enter a String]** wordt weergegeven.
+1. Tikken **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is equal to]**. De **[!UICONTROL Enter a String]** wordt weergegeven.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
-   In het keuzerondje huwelijksstatus worden **Getrouwde** en **Enkel** opties respectievelijk **0** en **1** waarden toegewezen. U kunt toegewezen waarden verifiëren op het tabblad Titel van het dialoogvenster Keuzerondje bewerken, zoals hieronder wordt weergegeven.
+   In het keuzerondje Burgerlijke staat **Gehuwd** en **Enkel** opties worden toegewezen **0** en **1** respectievelijk. U kunt toegewezen waarden verifiëren op het tabblad Titel van het dialoogvenster Keuzerondje bewerken, zoals hieronder wordt weergegeven.
 
    ![Waarden voor keuzerondjes in regeleditor](assets/radio-button-values.png)
 
-1. In **ga een gebied van het Koord** in de regel in, specificeer **0**.
+1. In de **Een tekenreeks invoeren** veld in de regel, geef **0**.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
 
    U hebt de voorwaarde gedefinieerd als `When Marital Status is equal to Married`. Definieer vervolgens de actie die moet worden uitgevoerd als deze voorwaarde Waar is.
 
-1. Selecteer **[!UICONTROL Show]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie then.
+1. Selecteer in de instructie Vervolgens de optie **[!UICONTROL Show]** van de **[!UICONTROL Select Action]** vervolgkeuzelijst.
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Sleep het veld **Echtsalaris** van het tabblad Formulierobjecten op het **Dropobject of selecteer hier** veld. Of tik op het **Drop-object of selecteer hier** veld en selecteer het veld **Spouse Salary** in het pop-upmenu, waarin alle formulierobjecten in het formulier worden vermeld.
+1. Sleep de **Echtsalaris** in het tabblad Formulierobjecten op het tabblad **Object neerzetten of hier selecteren** veld. Of tik op de knop **Object neerzetten of hier selecteren** en selecteer de **Echtsalaris** in het pop-upmenu waarin alle formulierobjecten in het formulier worden vermeld.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -397,7 +397,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-   Tik **Done** om de regel op te slaan.
+   Tikken **Gereed** om de regel op te slaan.
 
 1. Herhaal de stappen 1 tot en met 5 om een andere regel te definiëren waarmee het veld Echtloon wordt verborgen als de staat van het huwelijk een enkele regel is. De regel wordt als volgt weergegeven in de regeleditor.
 
@@ -409,31 +409,31 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9.png)
 
-1. Vervolgens schrijft u een regel om het beleenbare bedrag van de lening te berekenen, dat 50% van het totale salaris is, en geeft u dit weer in het veld Beleenbaarheid van de lening. Om dit te bereiken, creeer **Vastgestelde waarde van** regels betreffende het gebied van de Geschiktheid van de Lening.
+1. Vervolgens schrijft u een regel om het beleenbare bedrag van de lening te berekenen, dat 50% van het totale salaris is, en geeft u dit weer in het veld Beleenbaarheid van de lening. Hiertoe maakt u **Waarde instellen van** regels betreffende het veld voor de toelaatbaarheid van leningen.
 
-   Tik in de ontwerpmodus op het veld **[!UICONTROL Loan Eligibility]** en tik ![edit-rules](assets/edit-rules.png). Tik vervolgens op **[!UICONTROL Create]** om de regeleditor te starten.
+   Tik in de ontwerpmodus op de knop **[!UICONTROL Loan Eligibility]** veld en tik ![bewerkingsregels](assets/edit-rules.png). Tik vervolgens op **[!UICONTROL Create]** om de regeleditor te starten.
 
-1. Selecteer **[!UICONTROL Set Value Of]** regel van de regeldrop-down.
+1. Selecteren **[!UICONTROL Set Value Of]** van de regeldrop-down.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Tik **[!UICONTROL Select Option]** en selecteer **[!UICONTROL Mathematical Expression]**. Er wordt een veld voor het schrijven van wiskundige expressies geopend.
+1. Tikken **[!UICONTROL Select Option]** en selecteert u **[!UICONTROL Mathematical Expression]**. Er wordt een veld voor het schrijven van wiskundige expressies geopend.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
 1. In het veld Expressie:
 
-   * Selecteer of sleep-daling van het lusje van de Objecten van Forms **Salary** gebied in het eerste **voorwerp van de Daling of selecteer hier** gebied.
-   * Selecteer **Plus** in het veld **Operator** selecteren.
-   * Selecteer of sleep-daling van het lusje van de Objecten van Forms het **Echtsalaris** gebied in het andere **voorwerp van de Daling of selecteer hier** gebied.
+   * Selecteer of sleep het slepen van het lusje van de Objecten van Forms **Salaris** veld in de eerste **Object neerzetten of hier selecteren** veld.
+   * Selecteren **Plus** van de **Operator selecteren** veld.
+   * Selecteer of sleep het slepen van het lusje van de Objecten van Forms **Echtsalaris** veld in het andere **Object neerzetten of hier selecteren** veld.
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. Tik vervolgens in het gemarkeerde gebied rond het expressieveld en tik **Expressie uitbreiden**.
+1. Tik vervolgens in het gemarkeerde gebied rond het expressieveld en tik op **Expressie uitbreiden**.
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
-   Selecteer in het veld Uitgebreide expressie de optie **gedeeld door** in het veld **Operator selecteren** en **Number** in het veld **Option** selecteren. Geef vervolgens **2** op in het nummerveld.
+   Selecteer in het veld Uitgebreide expressie de optie **gedeeld door** van de **Operator selecteren** veld en **Getal** van de **Optie selecteren** veld. Geef vervolgens **2** in het nummerveld.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
 
@@ -443,19 +443,19 @@ Voer de volgende stappen uit om regels te schrijven:
 
    Maak vervolgens een voorwaarde die, wanneer True wordt geretourneerd, de expressie uitvoert.
 
-1. Tik **Voorwaarde toevoegen** om een instructie When toe te voegen.
+1. Tikken **Voorwaarde toevoegen** om een instructie When toe te voegen.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15.png)
 
    In de instructie When:
 
-   * Selecteer of sleep-daling van het lusje van de Objecten van Forms **Marital Status** gebied in het eerste **voorwerp van de Daling of selecteer hier** gebied.
-   * Selecteer i **s gelijk aan** van **Select Operator** gebied.
-   * Selecteer Tekenreeks in het andere **Drop-object of selecteer hier**-veld en geef **Gehuwd** op in het veld **Voer een tekenreeks** in.
+   * Selecteer of sleep het slepen van het lusje van de Objecten van Forms **Burgerlijke staat** veld in de eerste **Object neerzetten of hier selecteren** veld.
+   * Selecteren i **s gelijk aan** van de **Operator selecteren** veld.
+   * Tekenreeks selecteren in het andere **Object neerzetten of hier selecteren** veld en specificeren **Gehuwd** in de **Een tekenreeks invoeren** veld.
 
    De regel wordt uiteindelijk als volgt weergegeven in de regeleditor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
-   Tik **Done** om de regel op te slaan.
+   Tikken **Gereed** om de regel op te slaan.
 
 1. Herhaal stap 7 tot en met 12 om een andere regel te definiëren om de beleenbaarheid van de lening te berekenen als de burgerlijke stand eenmalig is. De regel wordt als volgt weergegeven in de regeleditor.
 
@@ -469,13 +469,13 @@ Voer de volgende stappen uit om regels te schrijven:
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
-### Code-editor {#using-code-editor} gebruiken
+### Code-editor gebruiken {#using-code-editor}
 
 Gebruikers die aan de gebruikers in formulieren worden toegevoegd, kunnen de code-editor gebruiken. De regeleditor genereert automatisch de JavaScript-code voor elke regel die u met een visuele editor maakt. U kunt van visuele redacteur aan de coderedacteur schakelen om de geproduceerde code te bekijken. Nochtans, als u de regelcode in de coderedacteur wijzigt, kunt u niet terug naar de visuele redacteur schakelen. Als u liever regels schrijft in code-editor dan in een visuele editor, kunt u regels opnieuw schrijven in de code-editor. Met de schakeloptie voor visuele-codeeditors kunt u schakelen tussen de twee modi.
 
-De code-editor JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Zie [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html) voor de volledige lijst met adaptieve formulierklassen, -gebeurtenissen, -objecten en openbare API&#39;s.
+De code-editor JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Voor de volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s raadpleegt u [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html).
 
-Voor meer informatie over richtlijnen om regels in de coderedacteur te schrijven, zie [Aangepaste Uitdrukkingen van de Vorm](/help/forms/using/adaptive-form-expressions.md).
+Voor meer informatie over richtlijnen om regels in de coderedacteur te schrijven, zie [Adaptieve formulierexpressies](/help/forms/using/adaptive-form-expressions.md).
 
 Bij het schrijven van JavaScript-code in de regeleditor zijn de volgende visuele aanwijzingen nuttig voor de structuur en syntaxis:
 
@@ -488,16 +488,16 @@ Bij het schrijven van JavaScript-code in de regeleditor zijn de volgende visuele
 
 #### Aangepaste functies in regeleditor {#custom-functions}
 
-Naast de uit-van-de-doosfuncties zoals *Sum van, *die onder de Output van Functies vermeld zijn, kunt u douanefuncties schrijven die u vaak nodig hebt. Zorg ervoor dat de functie die u schrijft, vergezeld gaat van de `jsdoc` erboven.
+Naast de uit-van-de-doosfuncties zoals *Sum van, *die onder de Output van Functies vermeld zijn, kunt u douanefuncties schrijven die u vaak nodig hebt. Zorg ervoor dat de functie die u schrijft, vergezeld gaat van de `jsdoc` boven.
 
-Begeleidend `jsdoc` wordt vereist:
+Begeleidend `jsdoc` is vereist:
 
 * Als u aangepaste configuratie en beschrijving wilt.
-* Omdat er meerdere manieren zijn om een functie te declareren in `JavaScript,` en opmerkingen u in staat stellen de functies bij te houden.
+* Omdat er meerdere manieren zijn om een functie in te declareren `JavaScript,` Met opmerkingen kunt u de functies bijhouden.
 
-Zie [usejsdoc.org](https://usejsdoc.org/) voor meer informatie.
+Zie voor meer informatie [usejsdoc.org](https://usejsdoc.org/).
 
-Ondersteunde `jsdoc`-tags:
+Ondersteund `jsdoc` tags:
 
 * **Persoonlijk**
 
@@ -509,7 +509,7 @@ Ondersteunde `jsdoc`-tags:
 
    Syntaxis: `@name funcName <Function Name>`
 
-   U kunt ook `,` gebruiken: `@function funcName <Function Name>` **of** `@func` `funcName <Function Name>`.
+   Alternatief `,` u kunt gebruiken: `@function funcName <Function Name>` **of** `@func` `funcName <Function Name>`.
 
    `funcName` is de naam van de functie (geen spaties toegestaan).
 
@@ -525,7 +525,7 @@ Ondersteunde `jsdoc`-tags:
 
    Syntaxis: `@param {type} name <Parameter Description>`
 
-   U kunt ook het volgende gebruiken: `@argument` `{type} name <Parameter Description>` **of** `@arg` `{type}` `name <Parameter Description>`
+   U kunt ook het volgende gebruiken: `@argument` `{type} name <Parameter Description>` **of** `@arg` `{type}` `name <Parameter Description>`.
 
    Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerdere parametertags hebben, één tag voor elke parameter in de volgorde waarin deze voorkomt.
 
@@ -541,7 +541,7 @@ Ondersteunde `jsdoc`-tags:
 
    Syntaxis: `@return {type}`
 
-   U kunt ook `@returns {type}` gebruiken.
+   U kunt ook `@returns {type}`.
 
    Voegt informatie over de functie toe, zoals zijn doel.
 
@@ -565,12 +565,12 @@ U wilt bijvoorbeeld een aangepaste functie toevoegen die het gebied van een vier
 
 Voer de volgende stappen uit om een clientbibliotheek te maken en deze toe te voegen in de CRX-opslagruimte.
 
-1. Maak een clientbibliotheek. Zie [Client-Side Libraries](/help/sites-developing/clientlibs.md) gebruiken voor meer informatie.
-1. In CRXDE, voeg een bezit `categories`met koordtypewaarde als `customfunction` aan `clientlib` omslag toe.
+1. Maak een clientbibliotheek. Zie voor meer informatie [Client-Side bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
+1. In CRXDE, voeg een bezit toe `categories`met tekenreekstype als waarde `customfunction` aan de `clientlib` map.
 
    >[!NOTE]
    >
-   >`customfunction`is een voorbeeldcategorie. U kunt om het even welke naam voor de categorie kiezen u in `clientlib`omslag creeert.
+   >`customfunction`is een voorbeeldcategorie. U kunt elke naam kiezen voor de categorie die u maakt in het dialoogvenster `clientlib`map.
 
 Nadat u de clientbibliotheek in de CRX-opslagplaats hebt toegevoegd, gebruikt u deze in uw adaptieve formulier. Hiermee kunt u uw aangepaste functie als regel in uw formulier gebruiken. Voer de volgende stappen uit om de clientbibliotheek in het aangepaste formulier toe te voegen.
 
@@ -578,16 +578,16 @@ Nadat u de clientbibliotheek in de CRX-opslagplaats hebt toegevoegd, gebruikt u 
 
    Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en tikt u op **Openen**.
 
-1. Selecteer in de bewerkingsmodus een component en tik op ![veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en tik vervolgens op ![cmppr](assets/cmppr.png).
+1. Selecteer in de bewerkingsmodus een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
 1. Voeg in het zijpaneel, onder Naam van clientbibliotheek, uw clientbibliotheek toe. ( `customfunction` in het voorbeeld.)
 
    ![De aangepaste clientbibliotheek van de functie toevoegen](assets/clientlib.png)
 
-1. Selecteer het invoernumerieke vak en tik ![edit-rules](assets/edit-rules.png) om de regeleditor te openen.
-1. Tik **Regel maken**. Maak met de onderstaande opties een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
-   [ ![Het gebruiken van douanefuncties om een ](assets/add-custom-rule.png)](assets/add-custom-rule-1.png)ruleTap  **Done** tot stand te brengen. Uw aangepaste functie wordt toegevoegd.
+1. Selecteer het invoervak en tik op ![bewerkingsregels](assets/edit-rules.png) om de regeleditor te openen.
+1. Tikken **Regel maken**. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
+   [ ![Aangepaste functies gebruiken om een regel te maken](assets/add-custom-rule.png)](assets/add-custom-rule-1.png)Tikken **Gereed**. Uw aangepaste functie wordt toegevoegd.
 
-#### Ondersteunde typen voor functiedeclaratie {#function-declaration-supported-types}
+#### Ondersteunde typen functiedeclaratie {#function-declaration-supported-types}
 
 **Functie, instructie**
 
@@ -597,7 +597,7 @@ function area(len) {
 }
 ```
 
-Deze functie is inbegrepen zonder `jsdoc` commentaren.
+Deze functie is opgenomen zonder `jsdoc` opmerkingen.
 
 **Functie-expressie**
 
@@ -648,53 +648,53 @@ var c = {
 
 >[!NOTE]
 >
->Zorg ervoor dat u `jsdoc` voor elke douanefunctie gebruikt. Hoewel `jsdoc`opmerkingen worden aangeraden, neemt u een lege `jsdoc`opmerking op om uw functie als aangepaste functie te markeren. Het laat standaardbehandeling van uw douanefunctie toe.
+>Zorg ervoor dat u `jsdoc` voor elke aangepaste functie. Hoewel `jsdoc`opmerkingen worden aangemoedigd, inclusief lege `jsdoc`om uw functie als aangepaste functie te markeren. Het laat standaardbehandeling van uw douanefunctie toe.
 
-## Regels {#manage-rules} beheren
+## Regels beheren {#manage-rules}
 
-Bestaande regels op een formulierobject worden weergegeven wanneer u op het object tikt en op ![edit-rules1](assets/edit-rules1.png) tikt. U kunt de titel en een voorvertoning van het regeloverzicht weergeven. Voorts staat UI u toe om de volledige regelsamenvatting uit te breiden en te bekijken, de orde van regels te veranderen, regels uit te geven, en regels te schrappen.
+Eventuele bestaande regels op een formulierobject worden weergegeven wanneer u op het object tikt en vervolgens op het object tikt ![edit-rules1](assets/edit-rules1.png). U kunt de titel en een voorvertoning van het regeloverzicht weergeven. Voorts staat UI u toe om de volledige regelsamenvatting uit te breiden en te bekijken, de orde van regels te veranderen, regels uit te geven, en regels te schrappen.
 
 ![list-rules](assets/list-rules.png)
 
 U kunt de volgende handelingen op regels uitvoeren:
 
-* **Uitvouwen/samenvouwen**: In de kolom Inhoud in de lijst met regels wordt de inhoud van de regel weergegeven. Als de volledige regelinhoud niet zichtbaar is in de standaardweergave, tikt u op ![regel-inhoud uitvouwen](assets/expand-rule-content.png) om deze uit te vouwen.
+* **Uitvouwen/samenvouwen**: In de kolom Inhoud in de lijst met regels wordt de inhoud van de regel weergegeven. Tik op ![expandRule-content](assets/expand-rule-content.png) om het uit te breiden.
 
 * **Opnieuw ordenen**: Nieuwe regels die u maakt, worden onder aan de lijst met regels gestapeld. De regels worden van boven naar beneden uitgevoerd. De regel bij de bovenkant voert eerst gevolgd door andere regels van het zelfde type uit. Bijvoorbeeld, als u hebt wanneer, tonen, toelaten, en wanneer de regels bij eerste, tweede, derde, en vierde posities van bovenkant, respectievelijk, wanneer de regel bij de bovenkant eerst wordt uitgevoerd gevolgd door wanneer de regel bij de vierde positie. Vervolgens worden de regels Tonen en Inschakelen uitgevoerd.
 
-   U kunt de orde van een regel veranderen door ![sort-rules](assets/sort-rules.png) tegen het te tikken of sleep-daling het aan de gewenste orde in de lijst.
+   U kunt de volgorde van een regel wijzigen door te tikken ![sorteerregels](assets/sort-rules.png) of sleep het naar de gewenste volgorde in de lijst.
 
-* **Bewerken**: Als u een regel wilt bewerken, schakelt u het selectievakje naast de titel van de regel in. Er verschijnen extra opties voor het bewerken en verwijderen van de regel. Tik **Bewerk** om de geselecteerde regel in de regeleditor te openen in de modus voor visuele of coderedacteur, afhankelijk van de modus die wordt gebruikt om de regel te maken.
+* **Bewerken**: Als u een regel wilt bewerken, schakelt u het selectievakje naast de titel van de regel in. Er verschijnen extra opties voor het bewerken en verwijderen van de regel. Tikken **Bewerken** om de geselecteerde regel op de regelredacteur op visuele of wijze van de coderedacteur afhankelijk van de wijze te openen die wordt gebruikt om de regel tot stand te brengen.
 
-* **Verwijderen**: Als u een regel wilt verwijderen, selecteert u de regel en tikt u op  **Verwijderen**.
+* **Verwijderen**: Als u een regel wilt verwijderen, selecteert u de regel en tikt u op **Verwijderen**.
 
 * **In-/uitschakelen**: Mogelijk moet u het gebruik van een regel tijdelijk opschorten. U kunt een of meer regels selecteren en op Uitschakelen tikken op de werkbalk Handelingen tikken om deze uit te schakelen. Als een regel is uitgeschakeld, wordt deze niet uitgevoerd tijdens de runtime. Als u een uitgeschakelde regel wilt inschakelen, selecteert u deze en tikt u op Inschakelen op de werkbalk Handelingen. De statuskolom van de regel geeft aan of de regel is ingeschakeld of uitgeschakeld.
 
 ![disableraar](assets/disablerule.png)
 
-## Regels {#copy-paste-rules} kopiëren en plakken
+## Regels kopiëren en plakken {#copy-paste-rules}
 
 U kunt een regel kopiëren-kleven van één gebied aan andere gelijkaardige gebieden om tijd te besparen.
 
 Ga als volgt te werk om regels te kopiëren en te plakken:
 
-1. Tik op het formulierobject waarvan u een regel wilt kopiëren en tik op de componentwerkbalk op ![editrule](assets/editrule.png). De gebruikersinterface van de regeleditor wordt weergegeven terwijl het formulierobject is geselecteerd en de bestaande regels worden weergegeven.
+1. Tik op het formulierobject waarvan u een regel wilt kopiëren en tik op de componentwerkbalk ![editrule](assets/editrule.png). De gebruikersinterface van de regeleditor wordt weergegeven terwijl het formulierobject is geselecteerd en de bestaande regels worden weergegeven.
 
    ![copyrule](assets/copyrule.png)
 
-   Voor informatie over het beheren van bestaande regels, zie [Regels beheren](/help/forms/using/rule-editor.md#p-manage-rules-p).
+   Voor informatie over het beheren van bestaande regels raadpleegt u [Regels beheren](#manage-rules).
 
-1. Schakel het selectievakje naast de titel van de regel in. Er verschijnen extra opties voor het beheer van de regel. Tik **Kopiëren**.
+1. Schakel het selectievakje naast de titel van de regel in. Er verschijnen extra opties voor het beheer van de regel. Tikken **Kopiëren**.
 
    ![copyrule2](assets/copyrule2.png)
 
-1. Selecteer een ander formulierobject waarop u de regel wilt plakken en tik op **Plakken**. Bovendien kunt u de regel bewerken om er wijzigingen in aan te brengen.
+1. Selecteer een ander formulierobject waarop u de regel wilt plakken en tik **Plakken**. Bovendien kunt u de regel bewerken om er wijzigingen in aan te brengen.
 
    >[!NOTE]
    >
    >U kunt een regel alleen in een ander formulierobject plakken als dat formulierobject de gebeurtenis van de gekopieerde regel ondersteunt. Een knop ondersteunt bijvoorbeeld de gebeurtenis click. U kunt een regel met een klikgebeurtenis aan een knoop maar niet aan een controledoos kleven.
 
-1. Tik **Done** om de regel op te slaan.
+1. Tikken **Gereed** om de regel op te slaan.
 
 ## Geneste expressies {#nestedexpressions}
 
@@ -704,7 +704,7 @@ Hieronder ziet u een voorbeeld van een geneste regel die een bericht weergeeft a
 
 ![complexexpressie](assets/complexexpression.png)
 
-U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Tik en houd de muisaanwijzer boven de greep ( ![handle](assets/handle.png)) vóór een voorwaarde. Zodra de aanwijzer verandert in het handsymbool zoals hieronder wordt weergegeven, sleept u de voorwaarde en zet u deze neer op een willekeurige plaats binnen de lijn. De regelstructuur verandert.
+U kunt ook voorwaarden slepen en neerzetten in een regel om deze te bewerken. Tik en houd de muisaanwijzer boven de greep ( ![handgreep](assets/handle.png)) vóór een voorwaarde. Zodra de aanwijzer verandert in het handsymbool zoals hieronder wordt weergegeven, sleept u de voorwaarde en zet u deze neer op een willekeurige plaats binnen de lijn. De regelstructuur verandert.
 
 ![slepen en neerzetten](assets/drag-and-drop.png)
 
@@ -734,7 +734,7 @@ Wanneer de gebruiker mededeelt dat hij minder dan 36 maanden op zijn huidige woo
 
 ![additionalproofrequested](assets/additionalproofrequested.png)
 
-## Effect van regelredacteur op bestaande manuscripten {#impact-of-rule-editor-on-existing-scripts}
+## Effect van regeleditor op bestaande scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In AEM Forms-versies vóór AEM 6.1 Forms-functiepak 1 schrijven formulierauteurs en -ontwikkelaars expressies naar het tabblad Scripts van het dialoogvenster Component bewerken om dynamisch gedrag toe te voegen aan adaptieve formulieren. Het tabblad Scripts wordt nu vervangen door de regeleditor.
 
@@ -742,9 +742,9 @@ Alle scripts of expressies die u op het tabblad Scripts moet schrijven, zijn bes
 
 ## Voorbeelden van regels {#example}
 
-### Service voor formuliergegevensmodel {#invoke} aanroepen
+### Formuliergegevensmodelservice aanroepen {#invoke}
 
-Neem een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt en retourneert een leningenplan met inbegrip van het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get`-service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
+Een webservice overwegen `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input neemt en een leningsprogramma retourneert met inbegrip van het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
 
 De volgende regel toont hoe u de Invoke de dienstactie zult vormen om het voorbeeldscenario te verwezenlijken.
 
@@ -754,9 +754,9 @@ De volgende regel toont hoe u de Invoke de dienstactie zult vormen om het voorbe
 
 In een aanvraagformulier voor een lening wilt u vastleggen of de aanvrager van de lening een bestaande klant is of niet. Op basis van de informatie die de gebruiker opgeeft, moet het veld met de klant-id worden weergegeven of verborgen. Ook, wilt u nadruk op het gebied van identiteitskaart van de klant plaatsen als de gebruiker een bestaande klant is. Het aanvraagformulier voor de lening bestaat uit de volgende onderdelen:
 
-* Een keuzerondje, **Bent u een bestaande klant van de Geometrixx?**, met de opties Ja en Nee. De waarde voor Ja is **0** en Nee is **1**.
+* een keuzerondje, **Bent u een bestaande klant van de Geometrixx?**, met de opties Ja en Nee. De waarde voor Ja is **0** en Nee is **1**.
 
-* Een tekstveld, **Geometrixx klant-id**, om de klant-id op te geven.
+* Een tekstveld, **Geometrixx-klant-id** om de klant-id op te geven.
 
 Wanneer u wanneer regel op het radioknoop schrijft om dit gedrag uit te voeren, verschijnt de regel als volgt in de visuele regelredacteur.  ![when-rule-example](assets/when-rule-example.png)
 
@@ -766,7 +766,7 @@ De regel wordt als volgt weergegeven in de code-editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png)
 
-### Een functie-uitvoer in een regel {#using-a-function-output-in-a-rule} gebruiken
+### Een functie-uitvoer in een regel gebruiken {#using-a-function-output-in-a-rule}
 
 In een inkooporderformulier hebt u de volgende tabel waarin gebruikers hun bestellingen invullen. In deze tabel:
 
@@ -776,7 +776,7 @@ In een inkooporderformulier hebt u de volgende tabel waarin gebruikers hun beste
 
 ![example-function-table](assets/example-function-table.png)
 
-**A.** Rij1  **B.** Hoeveelheid  **C.** Totale hoeveelheid
+**A.** Rij1 **B.** Aantal **C.** Totale hoeveelheid
 
 Nu, wilt u gespecificeerde hoeveelheden in de kolom van de Hoeveelheid van het Product voor alle producten toevoegen en de som in de Totale cel van de Hoeveelheid tonen. U kunt dit bereiken door een Set Value of rule te schrijven voor de cel Totaal aantal, zoals hieronder wordt weergegeven.
 
