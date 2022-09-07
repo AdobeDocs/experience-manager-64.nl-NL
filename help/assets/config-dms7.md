@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
+source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
 workflow-type: tm+mt
-source-wordcount: '5196'
+source-wordcount: '5201'
 ht-degree: 2%
 
 ---
@@ -93,8 +93,8 @@ Wijzig het wachtwoord voordat u Dynamic Media-Cloud Services configureert. Nadat
 
       >[!IMPORTANT]
       >
-      >Slechts één Configuratie van Dynamic Media in Cloud Services wordt gesteund op een geval van Experience Manager; voeg niet meer dan één configuratie toe. Meerdere Dynamic Media-configuraties op een Experience Manager-instantie zijn _niet_ ondersteund of aanbevolen door Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
-   * **[!UICONTROL Company Root Folder Path]**
+      >Slechts één Configuratie van Dynamic Media in Cloud Services wordt gesteund op een geval van Experience Manager; voeg niet meer dan één configuratie toe. Meerdere Dynamic Media-configuraties op een Experience Manager-instantie zijn *niet* ondersteund of aanbevolen door Adobe.<!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL Company Root Folder Path]** - Het pad naar de hoofdmap van uw bedrijf.
    * **[!UICONTROL Publishing Assets]** - de optie **[!UICONTROL Immediately]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en de URL/Embed onmiddellijk levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren. De optie **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat er een URL/Embed-koppeling wordt opgegeven.
    * **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Met andere woorden, nadat uitvoeringen zijn gegenereerd, kan Experience Manager de externe Dynamic Media-uitvoeringen veilig openen en bekijken (er worden geen binaire bestanden teruggestuurd naar de instantie Experience Manager).
 
