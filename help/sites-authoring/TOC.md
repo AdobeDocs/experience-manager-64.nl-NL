@@ -8,10 +8,10 @@ breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '285'
+ht-degree: 39%
 
 ---
 
@@ -78,7 +78,6 @@ ht-degree: 0%
    + [Inhoudsinzicht](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Paginaprestaties analyseren](ci-analyze.md)
    + [Gegevens van paginaanalyse bekijken](pa-using.md)
-   + [Search&amp;Promote toevoegen aan uw pagina](search-and-promote.md)
 + Personalisatie {#personalization}
    + [Personalisatie](personalization.md)
    + [Pagina&#39;s voorvertonen met ContextHub-gegevens](ch-previewing.md)

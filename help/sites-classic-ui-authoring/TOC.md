@@ -8,10 +8,10 @@ breadcrumb-title: Klassieke UI Authoring Guide
 user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 20%
+source-wordcount: '265'
+ht-degree: 21%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 20%
    + [Tags gebruiken](classic-feature-tags.md)
    + [Basisstructuur](classic-feature-scaffolding.md)
    + [Componenten configureren in ontwerpmodus](classic-page-author-design-mode.md)
-   + [Search&amp;Promote toevoegen aan uw pagina](classic-feature-search-promote.md)
    + [Onderdelen](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Deelnemen aan workflows](classic-workflows-participating.md)
@@ -63,7 +62,7 @@ ht-degree: 20%
    + [Lanceringen promoten](classic-launches-promoting.md)
 + Personalisatie {#personalization}
    + [Inzicht in segmentering](classic-personalization-campaigns-segmentation.md)
-   + [Campagnebeheer](classic-personalization-campaigns.md)
+   + [Campaign Management](classic-personalization-campaigns.md)
    + [Teasers en strategieën](classic-personalization-campaigns-teasers-strategy.md)
    + [Openingspagina&#39;s](classic-personalization-campaigns-landingpage.md)
    + [Doelaanbiedingen](classic-personalization-campaigns-target-offers.md)
@@ -83,7 +82,7 @@ ht-degree: 20%
    + [Werken met elementen](classicui-assets.md)
    + [Dynamic Media-middelen leveren](dynamic-media-assets-delivering.md)
    + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
-   + [Dynamic Media Classic (Scene7)-functies toevoegen aan uw pagina](manage-assets-classic-s7.md)
+   + [Dynamic Media Classic (Scene7)-functies aan uw pagina toevoegen](manage-assets-classic-s7.md)
    + [Werken met Dynamic Media](dynamic-media-assets.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Naamconventies voor het testen van elementen](asset-naming-conventions.md)

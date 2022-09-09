@@ -1,8 +1,8 @@
 ---
 title: eCommerce
 seo-title: eCommerce
-description: 'AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren. '
-seo-description: 'AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren. '
+description: AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren.
+seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
 exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -32,12 +31,12 @@ Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
 |  | CIF on prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Ondersteunde AEM | AEM on-prem of AMS 6.x | AEM AMS 6.4 en 6.5 |
-| Terug | - AEM, Java <br> - Monolithische integratie, pre-build mapping (sjabloon)<br> - JCR-opslagplaats | - Magento <br>- Java en Javascript <br>- Geen gegevens van de Handel opgeslagen in de bewaarplaats van JCR |
+| Terug | - AEM, Java <br> - Monolithische integratie, pre-build-toewijzing (sjabloon)<br> - JCR-opslagplaats | - Magento <br>- Java en JavaScript <br>- Geen gegevens over handel opgeslagen in de gegevensopslagruimte van het GCO |
 | Voorkant | Gerenderde pagina&#39;s AEM op de server | Toepassing gemengde pagina (hybride rendering) |
-| Productcatalogus | - Producimporteur, redacteur, caching in AEM <br> - Gewone catalogi met AEM of volmachtspagina&#39;s | - Geen product importeren <br>- Algemene sjablonen <br>- Gegevens op aanvraag via connector |
-| Schaalbaarheid | - Kan maximaal een paar miljoen producten ondersteunen (afhankelijk van het gebruik) <br> - Caching op Dispatcher | - Geen volumebeperking <br>- Caching op Dispatcher of CDN |
+| Productcatalogus | - Producimporteur, redacteur, caching in AEM <br>- Gewone catalogi met AEM- of proxypagina&#39;s | - Geen producten importeren <br>- Algemene sjablonen <br>- Gegevens op aanvraag via connector |
+| Schaalbaarheid | - Kan maximaal een paar miljoen producten ondersteunen (afhankelijk van het gebruiksgeval) <br> - Caching on Dispatcher | - Geen volumebeperking <br>- Caching op Dispatcher of CDN |
 | Gestandaardiseerd gegevensmodel | Nee | Ja, Magento GraphQL-schema |
-| Beschikbaarheid | Ja:<br> - SAP Commerce Cloud (extensie bijgewerkt voor ondersteuning van AEM 6.4 en Hybris 5 (standaard) en handhaaft compatibiliteit met Hybris 4 <br>- Salesforce Commerce Cloud (connector open-sourced voor ondersteuning van AEM 6.4) | Ja via open bron via GitHub. <br> Magento Commerce (Ondersteunt Magento 2.3.2 (standaard) en compatibel met Magento 2.3.1). |
+| Beschikbaarheid | Ja:<br> - SAP Commerce Cloud (extensie die wordt bijgewerkt ter ondersteuning van AEM 6.4 en Hybris 5 (standaard) en die compatibel blijft met Hybris 4 <br>- Salesforce Commerce Cloud (connector open-sourced voor ondersteuning van AEM 6.4) | Ja via open bron via GitHub. <br> Magento Commerce (Ondersteunt Magento 2.3.2 (standaard) en compatibel met Magento 2.3.1). |
 | Wanneer gebruiken | Beperkte gebruiksgevallen: Voor scenario&#39;s waarbij kleine, statische catalogi mogelijk moeten worden geïmporteerd | Voorkeursoplossing in de meeste gebruikscategorieën |
 
 eCommerce handelt samen met Product Information Management (PIM) de activiteiten van een website die gericht is op het verkopen van producten via een online-winkel:
@@ -49,7 +48,7 @@ eCommerce handelt samen met Product Information Management (PIM) de activiteiten
 * Live en gecentraliseerde opslagrecords
 * Webinterfaces
 
-AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren. In de AEM ontwerpomgeving kunt u pagina&#39;s en componenten aanpassen op basis van de context en de marketingstrategieën van de doelbezoeker. bijvoorbeeld:
+AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren. In de AEM ontwerpomgeving kunt u pagina&#39;s en componenten aanpassen op basis van de context en de handelsstrategieën van de doelbezoeker. bijvoorbeeld:
 
 * Productpagina&#39;s
 * Winkelwagentjes
@@ -64,15 +63,15 @@ De implementatie maakt realtime toegang tot productinformatie mogelijk. Dit kan 
 
 >[!NOTE]
 >
->Als u het integratieframework wilt gebruiken met externe eCommerce-providers, moet u eerst de vereiste pakketten installeren. Voor meer informatie, zie [Het Opstellen van eCommerce](/help/sites-deploying/ecommerce.md).
+>Als u het integratieframework wilt gebruiken met externe eCommerce-providers, moet u eerst de vereiste pakketten installeren. Zie voor meer informatie [eCommerce implementeren](/help/sites-deploying/ecommerce.md).
 >
->Voor informatie over het uitbreiden van de mogelijkheden van de eCommerce, zie [Developing eCommerce](/help/sites-developing/ecommerce.md).
+>Voor informatie over het uitbreiden van eCommerce-mogelijkheden raadpleegt u [Ontwikkeling van eCommerce](/help/sites-developing/ecommerce.md).
 
-## Belangrijkste kenmerken {#main-features}
+## Belangrijkste functies {#main-features}
 
 AEM eCommerce biedt:
 
-* Een aantal **out-of-the-box AEM componenten** om te illustreren wat voor uw project kan worden bereikt:
+* Een aantal **out-of-the-box AEM componenten** om te illustreren wat u kunt bereiken voor uw project:
 
    * Productweergave
    * Winkelwagentje
@@ -87,24 +86,24 @@ AEM eCommerce biedt:
    >
    >Met het integratieframework dat AEM biedt, kunt u ook extra AEM maken voor handelsmogelijkheden, onafhankelijk van uw specifieke eCommerce-engine.
 
-* **Zoeken** :
+* **Zoeken** - met gebruikmaking van:
 
    * de AEM
    * het zoeken van het eCommerce-systeem
-   * een zoekopdracht van derden (zoals Search&amp;Promote)
+   * een zoekopdracht van derden
    * of een combinatie daarvan.
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* Gebruikt de AEM mogelijkheid om uw inhoud **op meerdere kanalen te presenteren**, of dat nu het volledige browservenster of het mobiele apparaat is. Hierdoor wordt uw inhoud geleverd in de indeling die uw bezoekers nodig hebben.
+* Gebruikt de AEM **presenteer uw inhoud op meerdere kanalen**, of dit nu het volledige browservenster of het mobiele apparaat is. Hierdoor wordt uw inhoud geleverd in de indeling die uw bezoekers nodig hebben.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-* De mogelijkheid om **uw eigen integratieimplementatie te ontwikkelen op basis van het [AEM eCommerce-framework](#the-framework)**.
+* De mogelijkheid om **uw eigen integratieimplementatie ontwikkelen op basis van de [AEM eCommerce-kader](#the-framework)**.
 
    De twee momenteel beschikbare implementaties zijn beide op dezelfde basis gebaseerd - bovenop de algemene API (het framework). Het implementeren van een nieuwe integratie houdt alleen in dat u de functies implementeert die uw integratie nodig heeft. De front-end componenten kunnen door om het even welke nieuwe implementatie worden gebruikt aangezien zij interfaces (zo onafhankelijk van de implementatie zijn) gebruiken.
 
-* De mogelijkheid om **ervaringsgestuurde handel te ontwikkelen op basis van verkoopgegevens en activiteit**. Dit staat u toe om vele scenario&#39;s te realiseren:
+* De mogelijkheid om **ervaringsgestuurde handel op basis van verkoopgegevens en activiteiten**. Dit staat u toe om vele scenario&#39;s te realiseren:
 
    * Een voorbeeld hiervan kan zijn het verlagen van de verzendkosten wanneer de totale bestelling een bepaald bedrag overschrijdt.
    * Een andere mogelijkheid is mogelijk om seizoensgebonden aanbiedingen te doen die profielgegevens gebruiken (bijvoorbeeld locatie). Deze kunnen vervolgens worden gemarkeerd, ook als dat nodig is, afhankelijk van andere factoren.
@@ -123,9 +122,9 @@ AEM eCommerce biedt:
    * Historie van volledige volgorde
    * Catalogusupdate uitvoeren
 
-## Het framework {#the-framework}
+## Het kader {#the-framework}
 
-In de sectie [Concepts](/help/sites-administering/concepts.md) wordt het framework gedetailleerder beschreven, maar de volgende secties bieden een snelle weergave op hoog niveau van het framework:
+De [Concepten](/help/sites-administering/concepts.md) In dit hoofdstuk wordt het kader nader beschreven, maar wordt het kader op hoog niveau en snel bekeken:
 
 ### Wat? {#what}
 
