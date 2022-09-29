@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b2888dd2d523488b416550d5826f8cf077a25e32
+source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3459'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,6 @@ Er kunnen verschillende parameters worden ingesteld, waaronder:
 * **Scriptgebruiker** - deze optionele eigenschap kan de gegevensopslaggebruikersaccount opgeven die wordt gebruikt voor het lezen van de scripts. Als er geen account is opgegeven, `admin` gebruiker wordt standaard gebruikt.
 
 * **Standaardextensies** De lijst met extensies waarvoor het standaardgedrag wordt gebruikt. Dit betekent dat het laatste wegsegment van het middeltype als manuscriptnaam kan worden gebruikt.
-
-**Day Commons GFX Font Helper** Bij het renderen van afbeeldingen kunt u met DrawText tekst insluiten. Hiervoor kunt u ook uw eigen lettertypen installeren:
 
 * Definieer de **Lettertypepad** om te worden gezocht naar projectspecifieke doopvonten.
 
