@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
+source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3461'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,7 @@ Wanneer het creëren van een nieuwe configuratie, breng geen veranderingen in de
 
 >[!CAUTION]
 >
->Wanneer u de instelling voor een van de **Minieren** of **Gzip** u moet ook de inhoud van `/var/clientlibs`. Dit is een cacheversie van de clientlibs die op verzoek opnieuw wordt samengesteld.
+>Wanneer u de instelling voor een van de **Minieren** of **Gzip** u zult ook de inhoud van cliëntlibs geheim voorgeheugen moeten schrappen. Zie dit [Kennisbank, artikel](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) voor meer informatie.
 
 >[!NOTE]
 >
