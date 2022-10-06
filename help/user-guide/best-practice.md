@@ -1,15 +1,14 @@
 ---
 title: AEM 6.4 Beste praktijken
-seo-title: AEM 6.4 Beste praktijken
+seo-title: AEM 6.4 Best Practices
 description: Bronnen voor best practices, probleemoplossing en training voor AEM 6.4
-seo-description: Bronnen voor best practices, probleemoplossing en training voor AEM 6.4
+seo-description: Resources for best practices, troubleshooting and training for AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: ba222869-1268-481d-b342-27ea12b15999
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -21,12 +20,11 @@ ht-degree: 0%
 Adobe heeft een aantal belangrijke middelen om u te helpen het beste van AEM krijgen.
 
 * [Onze officiële AEM trainingscatalogus is hier.](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1)
-* Als u gecertificeerd wilt worden op AEM, is onze [volledige handleiding voor officiële AEM Certificeringen hier beschikbaar.](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)
+* Als je op AEM gecertificeerd wilt worden, [Klik hier voor een volledige handleiding voor officiële AEM.](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)
 
 De AEM Gemeenschap produceert voortdurend voorbeeldworkflows, zelfstudies en voorbeelden van inhoudscode op basis van suggesties en samenwerkingswerk.
 
-* [Hier vindt u een volledige lijst met AEM 6.4-zelfstudies en video&#39;s.](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Er is een volledige lijst van AEM communautaire &quot;Hoe kan ik&quot;-artikelen.](https://helpx.adobe.com/experience-manager/topics/how-to.html)
+* [Hier vindt u een volledige lijst met AEM 6.4-zelfstudies en video&#39;s.](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html#videos-and-tutorials)
 * [Hier is een volledige lijst van AEM artikelen van de kennisbasis.](https://helpx.adobe.com/experience-manager/kb/index/full_kb_list.html)
 
 ## Aanbevolen procedures voor AEM {#best-practices}
@@ -47,18 +45,18 @@ AEM heeft vele toepassingen in organisaties en is breed genoeg om functionalitei
 * [Aan de slag met AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Aan de slag met AEM Communities](/help/communities/getting-started.md)
-* [Aan de slag AEM Livefyre](https://answers.livefyre.com/developers/getting-started/)
+* [Aan de slag AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
 
-Wij hebben ook een nieuwe [WKND zelfstudie, die een geleidelijke gids aan de verwezenlijking van uw eerste website gebruikend AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) evenals een [geleidelijke recept voor het opstellen van onze oplossing van de Digitale Stichting](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html) is, waarvoor AEM een zeer belangrijke bouwsteen is.
+We hebben ook een nieuwe [WKND-zelfstudie, een stapsgewijze handleiding voor het maken van uw eerste website met AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) en [stap-voor-stap recept voor het opstellen van onze oplossing van de Digitale Stichting](https://experienceleague.adobe.com/#courses), waarvoor AEM een belangrijke bouwsteen is.
 
 ## Aanbevolen implementaties voor AEM {#deployments}
 
 MicroKernels fungeren als persistentiemanagers en om deze te begrijpen is het van essentieel belang voor een geslaagde AEM implementatie. Het kiezen van één om uw behoeften te passen hangt van het doel van uw instantie en het plaatsingstype af u overweegt. [Meer informatie over de aanbevolen toepassingen in de meest gangbare AEM.](/help/sites-deploying/recommended-deploys.md)
 
-## Beveiligingscontrolelijst AEM {#security-checklist}
+## Controlelijst voor AEM {#security-checklist}
 
 De veiligheid is een zeer belangrijke overweging in uw installatie van AEM. [Meer informatie over de verschillende stappen en maatregelen die vereist zijn om ervoor te zorgen dat de AEM veilig is wanneer deze wordt geïmplementeerd.](/help/sites-administering/security-checklist.md) De controlelijst moet van boven naar beneden worden toegepast.
 
-## AEM veelgestelde vragen {#faq}
+## Veelgestelde vragen AEM {#faq}
 
-Controleer [AEM FAQs](/help/sites-administering/aem-faqs.md) om de antwoorden op sommige van de vaakst gestelde vragen over AEM te krijgen.
+Controleer de [Veelgestelde vragen AEM](/help/sites-administering/aem-faqs.md) om de antwoorden te krijgen op enkele van de meest gestelde vragen over AEM.

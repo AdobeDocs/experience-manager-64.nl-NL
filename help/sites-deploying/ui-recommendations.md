@@ -1,8 +1,8 @@
 ---
 title: Gebruikersinterface Recommendations voor klanten
-seo-title: Gebruikersinterface Recommendations voor klanten
-description: 'Een lijst met aanbevelingen voor de klassieke en geoptimaliseerde gebruikersinterfaces. '
-seo-description: 'Een lijst met aanbevelingen voor de klassieke en geoptimaliseerde gebruikersinterfaces. '
+seo-title: User Interface Recommendations for Customers
+description: Een lijst met aanbevelingen voor de klassieke en geoptimaliseerde gebruikersinterfaces.
+seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
 uuid: c661fb10-4dbc-4f8b-93be-3e77af1ad095
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
 exl-id: 1e5172d9-47a3-4d73-b749-166e201f4eef
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -26,23 +25,23 @@ Dit document is bedoeld om klanten te helpen een keuze te maken over welke inter
 
 Belangenvoorwaarden:
 
-* **UI (of standaard UI)**
-Modern gebruikersinterface die in 5.6.0 als technologievoorproef werd geïntroduceerd en in verdere versies werd uitgebreid. De interface is gebaseerd op de ervaring van één gebruiker voor de Adobe Experience Cloud, die voorheen wel een interface met aanraakbediening of een interface met aanraakbediening werd genoemd.
+* **UI (of standaardinterface)**
+Moderne gebruikersinterface die in 5.6.0 als technologievoorproef werd geïntroduceerd en in verdere versies werd uitgebreid. De interface is gebaseerd op de ervaring van één gebruiker voor de Adobe Experience Cloud, die voorheen wel een interface met aanraakbediening of een interface met aanraakbediening werd genoemd.
 
 * **Klassieke interface**
-UIUser gebaseerd op technologie ExtJS die met CQ 5.1 in 2008 werd geïntroduceerd.
+Gebruikersinterface gebaseerd op ExtJS-technologie die in 2008 werd geïntroduceerd met CQ 5.1.
 
-* **Site-**
-beheermogelijkheden om de sitehiërarchie te beheren (verwijzingen verplaatsen, activeren, beheren) en nieuwe pagina&#39;s te maken.
+* **Sitebeheerder**
+Mogelijkheden om de sitehiërarchie te beheren (verplaatsen, activeren, beheerde verwijzingen) en nieuwe pagina&#39;s te maken.
 
-* **Page**
-AuthoringCapabilities om de inhoud van een pagina toe te voegen of te bewerken.
+* **Pagina&#39;s ontwerpen**
+Mogelijkheid om de inhoud van een pagina toe te voegen/te bewerken.
 
-* **DAM/Assets**
-AdminCapabilities voor het beheren van digitale elementen (waaronder afbeeldingen, video, documenten, downloads).
+* **DAM/Assets-beheerder**
+Mogelijkheid om digitale elementen te beheren (zoals afbeeldingen, video, documenten, downloads).
 
-* ****
-ContextHubCapabilities om informatie over de bezoeker samen te voegen en het voor diverse doeleinden te gebruiken. Verstrekt een gebruikersinterface om personen te simuleren die de plaats bezoeken. Beginnend AEM 6.2, vervangt ContextHub de vorige technologie, de Context van de Cliënt.
+* **ContextHub**
+Mogelijkheid om informatie over de bezoeker samen te voegen en voor verschillende doeleinden te gebruiken. Verstrekt een gebruikersinterface om personen te simuleren die de plaats bezoeken. Beginnend AEM 6.2, vervangt ContextHub de vorige technologie, de Context van de Cliënt.
 
 ## Algemeen {#general}
 
@@ -73,11 +72,11 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
    <td> 
     <ol> 
      <li>Bijwerken naar 6.4</li> 
-     <li>De standaardinterface gebruiken voor sitebeheer, elementen, ... etc.<br /> </li> 
-     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Uw interface selecteren</a>.</li> 
+     <li>De standaardinterface gebruiken voor sitebeheer, elementen, ... enz.<br /> </li> 
+     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Gebruikersinterface selecteren</a>.</li> 
     </ol> <p>In een tweede fase:</p> 
     <ol> 
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt aan de <a href="/help/sites-developing/modernization-tools.md">AEM Moderniseringsgereedschappen</a> te gebruiken om de componenten bij te werken.</li> 
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan de <a href="/help/sites-developing/modernization-tools.md">AEM moderniseringsinstrumenten</a> om de componenten bij te werken.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -86,51 +85,50 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
     <ol> 
      <li>Bijwerken naar 6.4</li> 
      <li>De standaardinterface gebruiken voor sitebeheer, elementen, ... enz.</li> 
-     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Uw interface selecteren</a>.</li> 
+     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Gebruikersinterface selecteren</a>.</li> 
     </ol> <p>In een tweede fase:</p> 
     <ol> 
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt aan de <a href="/help/sites-developing/modernization-tools.md">AEM Moderniseringsgereedschappen</a> te gebruiken om de componenten bij te werken.</li> 
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan de <a href="/help/sites-developing/modernization-tools.md">AEM moderniseringsinstrumenten</a> om de componenten bij te werken.</li> 
      <li>Vorm ContextHub (de vervanging voor ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. Merk op dat ContextHub een verenigbaarheidswijze heeft die het laden van douaneClientContext opslag toestaat.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><p>Heeft CQ/AEM jarenlang gebruikt.</p> <p>De interface voor het product (bijvoorbeeld Sitebeheer) is uitgebreid en componenten met uitgebreide bewerkingsdialoogvensters zijn samengesteld.</p> </td> 
-   <td><p>Update aan 6.4 en vorm klassieke UI als gebrek voor paginascreatie voor alle gebruikers. Zie <a href="#selecting-your-ui">Uw interface selecteren</a>.</p> <p>Start vervolgens een project om de deeldialoogvensters aan te passen en te optimaliseren in de indeling Coral 3. Zie <a href="#resources-to-help">Bronnen voor Help</a>.<br /> </p> </td> 
+   <td><p>Update aan 6.4 en vorm klassieke UI als gebrek voor paginascreatie voor alle gebruikers. Zie <a href="#selecting-your-ui">Gebruikersinterface selecteren</a>.</p> <p>Start vervolgens een project om de deeldialoogvensters aan te passen en te optimaliseren in de indeling Coral 3. Zie <a href="#resources-to-help">Hulpbronnen</a>.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Veelgestelde vragen {#faq}
 
-Raadpleeg het Knowledge Base-artikel [Touch UI Authoring FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html) voor meer informatie. met inbegrip van om het even welke informatie over het afschilderingsprogramma voor klassieke UI.
+Zie het artikel in de Knowledge Base. [Veelgestelde vragen over Touch UI-authoring](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)voor nadere bijzonderheden; met inbegrip van om het even welke informatie over het afschilderingsprogramma voor klassieke UI.
 
-## UI {#selecting-your-ui} selecteren
+## Gebruikersinterface selecteren {#selecting-your-ui}
 
-Zie [Uw interface selecteren](/help/sites-authoring/select-ui.md) voor informatie over het configureren van uw systeem zoals vereist.
+Zie [Gebruikersinterface selecteren](/help/sites-authoring/select-ui.md) voor informatie over het configureren van uw systeem naar wens.
 
-## Touch-Optimized UI Status {#touch-optimized-ui-status}
+## Touch-geoptimaliseerde UI-status {#touch-optimized-ui-status}
 
-Zie [Nieuwe functies](/help/release-notes/release-notes.md#what-s-new) in de Opmerkingen bij de release voor meer informatie over de verbeteringen aan de interface met geoptimaliseerde aanrakingen in AEM 6.3.
+Zie voor meer informatie over de verbeteringen aan de interface met geoptimaliseerde aanrakingen in AEM 6.3 [Nieuwe functies](/help/release-notes/release-notes.md#what-s-new) in de opmerkingen bij de release.
 
-Een volledig overzicht vindt u op de pagina [Status van aanraakinterface](/help/release-notes/touch-ui-features-status.md)
+Een volledig overzicht van de [Status van TouchUI-functie](/help/release-notes/touch-ui-features-status.md) page
 
-## Bronnen voor Help {#resources-to-help}
+## Hulpbronnen {#resources-to-help}
 
 Voor achtergrondinformatie over basisverwerking:
 
-* [Werken met de auteuromgeving](/help/sites-authoring/home.md).
-* [Pagina&#39;s](/help/sites-authoring/author-environment-tools.md) ontwerpen.
+* [Werken met de ontwerpomgeving](/help/sites-authoring/home.md).
+* [Pagina&#39;s ontwerpen](/help/sites-authoring/author-environment-tools.md).
 
 Voor gedetailleerde ontwikkelingsinformatie:
 
 * [Touch-geoptimaliseerde UI-architectuur](/help/sites-developing/touch-ui-concepts.md).
-* Met de [AEM Moderniseringsgereedschappen](/help/sites-developing/modernization-tools.md) kunt u dialoogvensters voor het bewerken van componenten omzetten van de klassieke interface naar de interface voor het optimaliseren van aanrakingen.
+* Gebruik de [AEM moderniseringsinstrumenten](/help/sites-developing/modernization-tools.md) Hiermee converteert u dialoogvensters voor bewerken van componenten van de klassieke gebruikersinterface naar de gebruikersinterface voor geoptimaliseerde aanrakingen.
 
-* [Structuur van de geoptimaliseerde interface](/help/sites-developing/touch-ui-structure.md) voor aanrakingen.
+* [Structuur van de gebruikersinterface die geoptimaliseerd is voor aanrakingen](/help/sites-developing/touch-ui-structure.md).
 
-* [De consoles aanpassen in de geoptimaliseerde gebruikersinterface](/help/sites-developing/customizing-consoles-touch.md)  voor aanraakfuncties (inclusief voorbeeldcode).
+* [De consoles aanpassen in de interface voor geoptimaliseerde aanrakingen](/help/sites-developing/customizing-consoles-touch.md) (bevat voorbeeldcode).
 
-* [Het aanpassen van paginaontwerp in touch-geoptimaliseerde UI](/help/sites-developing/customizing-page-authoring-touch.md)  (omvat steekproefcode).
+* [Het ontwerpen van pagina&#39;s aanpassen in de gebruikersinterface met geoptimaliseerde aanrakingen](/help/sites-developing/customizing-page-authoring-touch.md) (bevat voorbeeldcode).
 
-* [AEM Gem-sessie bij aanraakgeoptimaliseerde aanpassing](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).

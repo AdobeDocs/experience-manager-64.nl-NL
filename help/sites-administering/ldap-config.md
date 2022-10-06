@@ -1,8 +1,8 @@
 ---
 title: LDAP configureren met AEM 6
-seo-title: LDAP configureren met AEM 6
+seo-title: Configuring LDAP with AEM 6
 description: Leer hoe u LDAP kunt configureren met AEM.
-seo-description: Leer hoe u LDAP kunt configureren met AEM.
+seo-description: Learn how to configure LDAP with AEM.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,17 +10,16 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 1e329725-538a-4058-8832-4eba036f7972
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
 
 # LDAP configureren met AEM 6 {#configuring-ldap-with-aem}
 
-LDAP (de **L** rechter **D** directory **A** cess **P** Protocol) wordt gebruikt voor toegang tot gecentraliseerde directoryservices. Dit helpt de inspanning verminderen die wordt vereist om gebruikersrekeningen te beheren aangezien zij door veelvoudige toepassingen kunnen worden betreden. Een dergelijke LDAP-server is Active Directory. LDAP wordt vaak gebruikt om Single Sign On te bereiken, waardoor een gebruiker toegang heeft tot meerdere toepassingen nadat hij zich eenmaal heeft aangemeld.
+LDAP (de **L** oprecht **D** irector **A** toegang **P** protocol) wordt gebruikt voor de toegang tot de gecentraliseerde indexdiensten. Dit helpt de inspanning verminderen die wordt vereist om gebruikersrekeningen te beheren aangezien zij door veelvoudige toepassingen kunnen worden betreden. Een dergelijke LDAP-server is Active Directory. LDAP wordt vaak gebruikt om Single Sign On te bereiken, waardoor een gebruiker toegang heeft tot meerdere toepassingen nadat hij zich eenmaal heeft aangemeld.
 
 Gebruikersaccounts kunnen worden gesynchroniseerd tussen de LDAP-server en de gegevensopslagruimte, waarbij de gegevens van de LDAP-account worden opgeslagen in de gegevensopslagruimte. Hierdoor kunnen de accounts worden toegewezen aan groepen in de opslagplaats voor het toewijzen van de vereiste machtigingen en bevoegdheden.
 
@@ -43,15 +42,15 @@ Om LDAP te hebben werkend met AEM, moet u drie configuraties tot stand brengen O
 
 >[!NOTE]
 >
->Bekijk [De externe aanmeldingsmodule van Oak - voor authentiek met LDAP en Beyond](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) om de externe aanmeldingsmodules diep te duwen.
+>Controle [Externe aanmeldingsmodule van Oak — Verifiëren met LDAP en Buiten]https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) naar diepe DIVE External Login Modules.
 >
->Zie [Adobe Experience Manager 6.4 configureren om Apache Directory Service te gebruiken voor een voorbeeld van het configureren van Experience Manager met Apache DS.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
+>Als u een voorbeeld wilt lezen van het configureren van Experience Manager met Apache DS, raadpleegt u [Adobe Experience Manager 6.4 configureren voor het gebruik van Apache Directory Service.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
 
-## De LDAP-identiteitsprovider {#configuring-the-ldap-identity-provider} configureren
+## De LDAP-identiteitsprovider configureren {#configuring-the-ldap-identity-provider}
 
 De LDAP-identiteitsprovider wordt gebruikt om te definiëren hoe gebruikers worden opgehaald van de LDAP-server.
 
-Deze vindt u in de beheerconsole onder de naam **Apache Jackrabbit Oak LDAP Identity Provider**.
+Het is te vinden in de beheersconsole onder **Apache Jackrabbit Oak LDAP Identity Provider** naam.
 
 De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider:
 
@@ -115,7 +114,7 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
   </tr> 
   <tr> 
    <td><strong>Extra filter Gebruiker</strong></td> 
-   <td>Extra LDAP-filter bij het zoeken naar gebruikers. Het uiteindelijke filter wordt als volgt opgemaakt: '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td> 
+   <td>Extra LDAP-filter bij het zoeken naar gebruikers. Het uiteindelijke filter wordt als volgt opgemaakt: '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td> 
   </tr> 
   <tr> 
    <td><strong>DN-paden gebruiker</strong></td> 
@@ -135,7 +134,7 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
   </tr> 
   <tr> 
    <td><strong>Extra filter groeperen</strong></td> 
-   <td>Extra LDAP-filter bij het zoeken naar groepen. Het uiteindelijke filter wordt als volgt opgemaakt: '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td> 
+   <td>Extra LDAP-filter bij het zoeken naar groepen. Het uiteindelijke filter wordt als volgt opgemaakt: '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td> 
   </tr> 
   <tr> 
    <td><strong>DN-paden groeperen</strong></td> 
@@ -148,11 +147,11 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
  </tbody> 
 </table>
 
-## De Synchronisatie-handler {#configuring-the-synchronization-handler} configureren
+## Synchronisatie-handler configureren {#configuring-the-synchronization-handler}
 
 De synchronisatiehandler definieert hoe de gebruikers en groepen van de identiteitsprovider worden gesynchroniseerd met de opslagplaats.
 
-Deze bevindt zich onder de naam **Apache Jackrabbit Oak Default Sync Handler** in de beheerconsole.
+Het bevindt zich onder de **Apache Jackrabbit Oak Handler voor standaardsynchronisatie** naam in de beheersconsole.
 
 De volgende configuratieopties zijn beschikbaar voor de Synchronisatie-handler:
 
@@ -207,11 +206,11 @@ De volgende configuratieopties zijn beschikbaar voor de Synchronisatie-handler:
 
 ## De externe aanmeldingsmodule {#the-external-login-module}
 
-De externe aanmeldingsmodule bevindt zich onder **Apache Jackrabbit Oak External Login Module** onder de beheerconsole.
+De externe aanmeldingsmodule bevindt zich onder de **Apache Jackrabbit Oak External Login Module** onder de beheerconsole.
 
 >[!NOTE]
 >
->De Apache Jackrabbit Oak External Login Module implementeert de Java Authentication and Authorization Service (JAAS)-specificaties. Zie [Officiële Gids van de Verwijzing van de Veiligheid van Java van het Oracle Java](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie.
+>De Apache Jackrabbit Oak External Login Module implementeert de Java Authentication and Authorization Service (JAAS)-specificaties. Zie de [officiële Oracle Java Security Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie .
 
 Zijn baan moet bepalen welke Leverancier van de Identiteit en de Handler van de Synchronisatie aan gebruik, effectief binden de twee modules.
 
@@ -232,7 +231,7 @@ De volgende configuratieopties zijn beschikbaar:
 
 AEM 6 kan worden gevormd om met LDAP over SSL voor authentiek te verklaren door de hieronder procedure te volgen:
 
-1. Schakel het selectievakje **SSL** of **TLS** gebruiken in wanneer u de [LDAP-identiteitsprovider](#configuring-the-ldap-identity-provider) configureert.
+1. Controleer de **SSL gebruiken** of **TLS gebruiken** selectievakjes bij het configureren van de [LDAP-identiteitsprovider](#configuring-the-ldap-identity-provider).
 1. Configureer de synchronisatiehandler en de module Externe aanmelding naar wens.
 1. Installeer indien nodig de SSL-certificaten in uw Java VM. Dit kan worden gedaan door keytool te gebruiken:
 
@@ -246,7 +245,7 @@ Zelfondertekende certificaten kunnen worden gebruikt wanneer u AEM configureert 
 
 1. Zorg ervoor dat u een SSL-bibliotheek hebt geïnstalleerd en werkt. Bij deze procedure wordt OpenSSL als voorbeeld gebruikt.
 
-1. Maak een aangepast cnf-bestand (OpenSSL Configuration). Dit kan worden gedaan door het standaard **openssl.cnf **configuratiedossier te kopiëren en het aan te passen. Bij UNIX-systemen bevindt de software zich gewoonlijk op `/usr/lib/ssl/openssl.cnf`
+1. Maak een aangepast cnf-bestand (OpenSSL Configuration). Dit kan worden gedaan door het standaard **openssl.cnf **configuratiedossier te kopiëren en het aan te passen. Bij UNIX-systemen bevindt de locatie zich gewoonlijk op `/usr/lib/ssl/openssl.cnf`
 
 1. Ga aan het creëren van de wortelsleutel van CA door het hieronder bevel in een terminal in werking te stellen:
 
@@ -271,7 +270,7 @@ Zelfondertekende certificaten kunnen worden gebruikt wanneer u AEM configureert 
 
 1. Voeg ten slotte het certificaat toe aan het sleutelarchief van Java.
 
-## Foutopsporingslogbestand {#enabling-debug-logging} inschakelen
+## Foutopsporingsregistratie inschakelen {#enabling-debug-logging}
 
 Foutopsporingslogbestand kan worden ingeschakeld voor zowel de LDAP-identiteitsprovider als de externe aanmeldingsmodule om verbindingsproblemen op te lossen.
 
@@ -282,12 +281,12 @@ Om het registreren voor foutopsporing in te schakelen, moet u:
 
 * Logniveau: Foutopsporing
 * Logbestand logs/ldap.log
-* Berichtpatroon: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Berichtpatroon: {0,datum,dd.MM.yyjj HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Logniveau: Foutopsporing
 * Logbestand: logs/external.log
-* Berichtpatroon: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Berichtpatroon: {0,datum,dd.MM.yyjj HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Een woord over groepsverbinding {#a-word-on-group-affiliation}
@@ -298,9 +297,9 @@ In de meeste gevallen, kunnen deze groepen zijn die door een lokale AEM beheerde
 
 Als een gebruiker uit een groep op de LDAP-server wordt verwijderd, wordt de wijziging ook aan de AEM kant doorgevoerd bij synchronisatie. Alle andere groepsrelaties van de gebruiker die niet door LDAP zijn toegevoegd, blijven echter wel van kracht.
 
-AEM detecteert en handelt de verwijdering van gebruikers uit externe groepen af door gebruik te maken van de eigenschap `rep:externalId`. Dit bezit wordt automatisch toegevoegd aan om het even welke gebruiker of groep die door de Handler van de Synchronisatie wordt gesynchroniseerd en het bevat informatie over de voortkomende identiteitsleverancier.
+AEM detecteert en handelt de verwijdering van gebruikers uit externe groepen af door gebruik te maken van de `rep:externalId` eigenschap. Dit bezit wordt automatisch toegevoegd aan om het even welke gebruiker of groep die door de Handler van de Synchronisatie wordt gesynchroniseerd en het bevat informatie over de voortkomende identiteitsleverancier.
 
-Raadpleeg de documentatie bij Apache Oak over [Synchronisatie van gebruikers en groepen](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html) voor meer informatie.
+Raadpleeg de documentatie bij Apache Oak over [Synchronisatie van gebruikers en groepen](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
 
 ## Bekende problemen {#known-issues}
 
