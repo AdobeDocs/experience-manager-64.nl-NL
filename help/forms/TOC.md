@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.4 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3729'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ ht-degree: 0%
       + [Forms JEE-workflows](using/forms-workflow-jee-handling-user-data.md)
       + [Forms Portal](using/forms-portal-handling-user-data.md)
       + [Correspondentenbeheer](using/correspondence-management-handling-user-data.md)
-      + [Integratie met Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+      + [Integratie met Acrobat Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Documentbeveiliging](/help/forms/using/document-security-handling-user-data.md)
    + Hardere AEM Forms-omgeving {#hardening-aem-forms-environment}
       + [Verharden en beveiligen van AEM formulieren op OSGi-omgeving](using/hardening-securing-aem-forms-environment.md)
@@ -161,7 +161,7 @@ ht-degree: 0%
 + Adaptieve Forms - Geavanceerde authoring {#adaptive-forms-advanced-authoring}
    + [Aangepaste formulieren maken met JSON-schema](using/adaptive-form-json-schema-form-model.md)
    + [Aangepaste formulieren maken met XML-schema](using/adaptive-form-xml-schema-form-model.md)
-   + [Adobe Sign in een adaptieve vorm gebruiken](using/working-with-adobe-sign.md)
+   + [Acrobat Sign in een adaptieve vorm gebruiken](using/working-with-adobe-sign.md)
    + [Thema&#39;s maken en gebruiken](using/themes.md)
    + [Regeleditor voor adaptieve formulieren](using/rule-editor.md)
    + [API om de service voor formuliergegevensmodellen aan te roepen vanuit adaptieve formulieren](using/invoke-form-data-model-services.md)
@@ -181,7 +181,7 @@ ht-degree: 0%
    + [Testen van adaptieve formulieren automatiseren](using/calvin.md)
    + [Constructies voor stijlen voor adaptieve formulieren](using/styling-constructs-adaptive-forms.md)
    + [Adaptieve Forms synchroniseren met XFA-formuliersjablonen](using/synchronizing-adaptive-forms-xfa.md)
-   + [Adobe Sign integreren met AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
+   + [Acrobat Sign integreren met AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Revisies voor elementen in formulieren maken en beheren](using/create-reviews-forms.md)
    + [Standaardvalidatiefoutenberichten voor adaptieve formulieren](using/standard-validation-error-messages-adaptive-forms.md)
 + Interactieve communicatie {#interactive-communications}

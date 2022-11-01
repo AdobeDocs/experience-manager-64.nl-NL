@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -133,9 +133,9 @@ Als u Microsoft Edge als browser gebruikt:
 
 (CQ-4238462)
 
-### Adobe Sign-integratie
+### Acrobat Sign-integratie
 
-* De planner van Adobe Sign werkt niet meer periodiek en daarom worden formulieren in afwachting van het teken niet naar verzending verplaatst. Start de toepassing **Apache Sling Scheduler-ondersteuning** bundelen via AEM webconsole op https://[*server*]:[*poort*]/systeem/console/bundels.
+* De planner van Acrobat Sign werkt niet meer periodiek en daarom worden formulieren in afwachting van het teken niet naar verzending verplaatst. Start de toepassing **Apache Sling Scheduler-ondersteuning** bundelen via AEM webconsole op https://[*server*]:[*poort*]/systeem/console/bundels.
 
 ### Adaptieve Forms-authoring
 

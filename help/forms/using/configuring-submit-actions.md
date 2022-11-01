@@ -1,34 +1,33 @@
 ---
 title: De handeling Verzenden configureren
-seo-title: De handeling Verzenden configureren
+seo-title: Configuring the Submit action
 description: Met AEM Forms kunt u een verzendactie configureren om te definiëren hoe een adaptief formulier na verzending wordt verwerkt. U kunt ingebouwde verzendacties gebruiken of zelf schrijven.
-seo-description: Met AEM Forms kunt u een verzendactie configureren om te definiëren hoe een adaptief formulier na verzending wordt verwerkt. U kunt ingebouwde verzendacties gebruiken of zelf schrijven.
+seo-description: AEM Forms allows you to configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
 uuid: aa261e65-a1ec-402b-80de-0ba8a294e315
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 feature: Adaptive Forms
 exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1468'
 ht-degree: 0%
 
 ---
 
 # De handeling Verzenden configureren {#configuring-the-submit-action}
 
-## Inleiding om acties {#introduction-to-submit-actions} te verzenden
+## Inleiding om acties te verzenden {#introduction-to-submit-actions}
 
 Een verzendactie wordt geactiveerd wanneer een gebruiker op de knop Verzenden klikt op een adaptief formulier. U kunt de verzendactie configureren op het aangepaste formulier. Adaptieve formulieren bevatten een paar elementen uit het vak Acties verzenden. U kunt de standaardverzendacties kopiëren en uitbreiden om uw eigen verzendactie te maken. Op basis van uw vereisten kunt u echter uw eigen verzendactie schrijven en registreren om gegevens in het verzonden formulier te verwerken.
 
-Wanneer een formulier vooraf wordt ingevuld of verzonden, worden de verzonden gegevens naar AEM gerouteerd voor gegevensmassaging naar tussenliggende indelingen. Gegevens worden niet opgeslagen op een AEM-exemplaar, behalve wanneer het adaptieve formulier gebruikmaakt van Adobe Sign, verify, Forms Portal Concept of submit, of AEM Workflows
+Wanneer een formulier vooraf wordt ingevuld of verzonden, worden de verzonden gegevens naar AEM gerouteerd voor gegevensmassaging naar tussenliggende indelingen. Gegevens worden niet opgeslagen op een AEM-exemplaar, behalve wanneer het adaptieve formulier gebruikmaakt van Acrobat Sign, verify, Forms Portal Concept of submit, of AEM Workflows
 
-U kunt een verzendactie configureren in de sectie **[!UICONTROL Submission]** van de eigenschappen van de container van adaptieve formulieren, in de zijbalk.
+U kunt een verzendactie configureren in het dialoogvenster **[!UICONTROL Submission]** in de zijbalk van de eigenschappen van de container voor adaptieve formulieren.
 
-![Configureer Verzenden ](assets/thank-you-setting.png)
-**ActionFiguur:Handeling Verzenden** *configureren*
+![Verzendhandeling configureren](assets/thank-you-setting.png)
+**Afbeelding:** *Verzendhandeling configureren*
 
 De standaardverzendacties die beschikbaar zijn in aangepaste formulieren zijn:
 
@@ -46,23 +45,23 @@ De standaardverzendacties die beschikbaar zijn in aangepaste formulieren zijn:
 
 >[!NOTE]
 >
->Zorg ervoor dat [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder exists. De map is vereist om bijlagen tijdelijk op te slaan. Als de map niet bestaat, maakt u deze.
+>Zorg ervoor dat de [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder exists. De map is vereist om bijlagen tijdelijk op te slaan. Als de map niet bestaat, maakt u deze.
 
 >[!CAUTION]
 >
->Als u [een formuliersjabloon, formuliergegevensmodel of op schema gebaseerd adaptief formulier met XML- of JSON-gegevensklacht vooraf invult in een schema (XML-schema, JSON-schema, formuliersjabloon of formuliergegevensmodel) dat geen &lt;afData>-, &lt;afBoundData>- en &lt;/afUnboundData>-tags bevat, dan de gegevens van niet-omsloten velden (Niet-omsloten) Gemengde velden zijn adaptieve formuliervelden zonder [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md) eigenschap) van het adaptieve formulier dat verloren gaat.](/help/forms/using/prepopulate-adaptive-form-fields.md)
+>Als u [prefill](/help/forms/using/prepopulate-adaptive-form-fields.md) een formuliersjabloon, formuliergegevensmodel of op schema gebaseerd adaptief formulier met XML- of JSON-gegevensklacht voor een schema (XML-schema, JSON-schema, formuliersjabloon of formuliergegevensmodel) dat geen gegevens bevat &lt;afdata>, &lt;afbounddata>, en &lt;/afunbounddata> -tags, dan worden de gegevens van niet-omsloten velden (Niet-omlijnde velden zijn adaptieve formuliervelden zonder [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md) eigenschap) van het adaptieve formulier verloren gaat.
 
-U kunt een aangepaste verzendactie schrijven voor aangepaste formulieren om aan uw gebruiksscenario te voldoen. Zie [Aangepaste handeling Verzenden schrijven voor adaptieve formulieren](/help/forms/using/custom-submit-action-form.md) voor meer informatie.
+U kunt een aangepaste verzendactie schrijven voor aangepaste formulieren om aan uw gebruiksscenario te voldoen. Zie voor meer informatie [Aangepaste verzendactie schrijven voor adaptieve formulieren](/help/forms/using/custom-submit-action-form.md).
 
 ## Verzenden naar REST-eindpunt {#submit-to-rest-endpoint}
 
-Met de verzendoptie **[!UICONTROL Submit to REST endpoint]** worden de gegevens die in het formulier zijn ingevuld, doorgegeven aan een geconfigureerde bevestigingspagina als onderdeel van de HTTP-aanvraag. U kunt de naam toevoegen van de velden die u wilt aanvragen. De indeling van het verzoek is:
+De **[!UICONTROL Submit to REST endpoint]** Met deze optie worden de gegevens die in het formulier zijn ingevuld, doorgegeven aan een geconfigureerde bevestigingspagina als onderdeel van de HTTP-aanvraag. U kunt de naam toevoegen van de velden die u wilt aanvragen. De indeling van het verzoek is:
 
 `{fieldName}={request parameter name}`
 
-Zoals in de onderstaande afbeelding wordt getoond, worden `param1` en `param2` doorgegeven als parameters met waarden die uit de velden **[!UICONTROL textbox]** en **[!UICONTROL numericbox]** voor de volgende actie worden gekopieerd.
+Zoals in de onderstaande afbeelding wordt getoond: `param1` en `param2` worden doorgegeven als parameters met waarden die zijn gekopieerd uit de **[!UICONTROL textbox]** en **[!UICONTROL numericbox]** velden voor de volgende actie.
 
-U kunt ook **[!UICONTROL Enable POST request]** opgeven en een URL opgeven om het verzoek te posten. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld /content/forms/af/SampleForm.html. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
+U kunt ook **[!UICONTROL Enable POST request]** en geef een URL op om de aanvraag te posten. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld /content/forms/af/SampleForm.html. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
 ![Rest Endpoint-verzendhandeling configureren](assets/action-config.png)
 
@@ -73,7 +72,7 @@ Als u de velden als parameters in een REST-URL wilt doorgeven, moeten alle velde
 
 ### Gegevens naar een bron of een extern eindpunt voor de rusttijd verzenden  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
-Met de handeling **[!UICONTROL Submit to REST Endpoint]** kunt u de verzonden gegevens op een rest-URL plaatsen. De URL kan van een interne (de server waarop het formulier wordt gegenereerd) of van een externe server zijn.
+Gebruik de **[!UICONTROL Submit to REST Endpoint]** actie om de verzonden gegevens op een rest-URL te plaatsen. De URL kan van een interne (de server waarop het formulier wordt gegenereerd) of van een externe server zijn.
 
 Om gegevens aan een interne server te posten, verstrek weg van het middel. De gegevens worden gepost de weg van het middel. Bijvoorbeeld /content/restEndPoint. Voor dergelijke postverzoeken wordt de authenticatieinformatie van het verzendverzoek gebruikt.
 
@@ -81,57 +80,57 @@ Geef een URL op om gegevens naar een externe server te posten. De indeling van d
 
 ![Toewijzing voor veldwaarden die zijn doorgegeven als parameters voor de pagina Bedankt](assets/post-enabled-actionconfig.png)
 
-In het bovenstaande voorbeeld wordt door de gebruiker ingevoerde informatie in `textbox` vastgelegd met parameter `param1`. De syntaxis voor het posten van gegevens die zijn vastgelegd met `param1` is:
+In het bovenstaande voorbeeld heeft de gebruiker informatie ingevoerd in `textbox` wordt vastgelegd met parameter `param1`. Syntaxis om gegevens te posten die zijn vastgelegd met `param1` is:
 
 `String data=request.getParameter("param1");`
 
-De parameters die u gebruikt voor het posten van XML-gegevens en -bijlagen zijn `dataXml` en `attachments`.
+Op dezelfde manier zijn parameters die u gebruikt voor het posten van XML-gegevens en -bijlagen `dataXml` en `attachments`.
 
 U gebruikt deze twee parameters in uw script bijvoorbeeld om gegevens te parseren op een eindpunt in de rest. U gebruikt de volgende syntaxis om de gegevens op te slaan en te ontleden:
 
 `String data=request.getParameter("dataXml");`\
 `String att=request.getParameter("attachments");`
 
-In dit voorbeeld slaat `data` de XML-gegevens op en `att` slaat bijlagegegevens op.
+In dit voorbeeld: `data` de XML-gegevens worden opgeslagen, en `att` slaat gehechtheidsgegevens op.
 
-## E-mail {#send-email} verzenden
+## E-mail verzenden {#send-email}
 
-Met de verzendactie **[!UICONTROL Send Email]** wordt een e-mail naar een of meer ontvangers verzonden wanneer het formulier met succes is verzonden. Het gegenereerde e-mailbericht kan formuliergegevens in een vooraf gedefinieerde indeling bevatten.
+De **[!UICONTROL Send Email]** Met een handeling verzenden wordt een e-mail naar een of meer ontvangers verzonden wanneer het formulier met succes is verzonden. Het gegenereerde e-mailbericht kan formuliergegevens in een vooraf gedefinieerde indeling bevatten.
 
 >[!NOTE]
 Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als ze op verschillende deelvensters zijn geplaatst), om formuliergegevens op te nemen in een e-mailbericht.
 
 ## PDF verzenden via e-mail {#send-pdf-via-email}
 
-Met de handeling **[!UICONTROL Send PDF via Email]** wordt een e-mail met een PDF met formuliergegevens verzonden naar een of meer ontvangers wanneer het formulier met succes is verzonden.
+De **[!UICONTROL Send PDF via Email]** Met een verzendactie wordt een e-mail met een PDF met formuliergegevens verzonden naar een of meer ontvangers wanneer het formulier met succes is verzonden.
 
-**Opmerking:** *Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en op XSD gebaseerde aanpassingsformulieren die beschikken over de sjabloon Document of Record.*
+**Opmerking:** *Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en op XSD gebaseerde aanpassingsformulieren die de sjabloon Document of Record hebben.*
 
 ## Een formulierwerkstroom aanroepen {#invoke-a-forms-workflow}
 
-Met de verzendoptie **[!UICONTROL Submit to Forms workflow]** worden een gegevens-xml en bestandsbijlagen (indien aanwezig) naar een bestaande Adobe-LiveCycle of AEM Forms verzonden bij een JEE-proces.
+De **[!UICONTROL Submit to Forms workflow]** Met de optie Verzenden worden een gegevens-xml en bestandsbijlagen (indien aanwezig) naar een bestaande Adobe LiveCycle of AEM Forms verzonden bij JEE-proces.
 
-Zie [Formulierwerkstromen verzenden en de formuliergegevens verwerken met werkstromen](/help/forms/using/submit-form-data-livecycle-process.md) voor informatie over het configureren van de verzendactie Verzenden naar formulieren.
+Voor informatie over hoe u de handeling Verzenden naar formulierwerkstroom kunt configureren, raadpleegt u [Uw formuliergegevens verzenden en verwerken met behulp van formulierworkflows](/help/forms/using/submit-form-data-livecycle-process.md).
 
 ## Verzenden met gebruik van formuliergegevensmodel {#submit-using-form-data-model}
 
-Met de handeling **[!UICONTROL Submit using Form Data Model]** submit worden verzonden adaptieve formuliergegevens voor het opgegeven gegevensmodelobject in een formuliergegevensmodel naar de gegevensbron. Wanneer het vormen van voorlegt actie, kunt u een voorwerp van het gegevensmodel kiezen waarvan voorgelegde gegevens u terug naar zijn gegevensbron wilt schrijven.
+De **[!UICONTROL Submit using Form Data Model]** Met deze handeling worden verzonden verzonden verzonden aangepaste formuliergegevens voor het opgegeven gegevensmodelobject in een formuliergegevensmodel naar de gegevensbron ervan. Wanneer het vormen van voorlegt actie, kunt u een voorwerp van het gegevensmodel kiezen waarvan voorgelegde gegevens u terug naar zijn gegevensbron wilt schrijven.
 
 Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron.
 
-Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor informatie over het formuliergegevensmodel.
+Voor informatie over het formuliergegevensmodel raadpleegt u [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
 
-## Forms Portal verzendt handeling {#forms-portal-submit-action}
+## Forms Portal-verzendactie {#forms-portal-submit-action}
 
-Met de optie **[!UICONTROL Forms Portal Submit Action]** worden formuliergegevens beschikbaar via een AEM Forms-portal.
+De **[!UICONTROL Forms Portal Submit Action]** maakt formuliergegevens beschikbaar via een AEM Forms-portal.
 
-Zie [Concepten en verzendingscomponent](/help/forms/using/draft-submission-component.md) voor meer informatie over de Forms Portal en de verzendactie.
+Ga voor meer informatie over de Forms Portal en verzend actie naar [Concepten en verzendingen](/help/forms/using/draft-submission-component.md).
 
-## Een AEM-workflow {#invoke-an-aem-workflow} aanroepen
+## Een AEM-workflow aanroepen {#invoke-an-aem-workflow}
 
-Met de verzendactie **[!UICONTROL Invoke an AEM Workflow]** wordt een adaptief formulier gekoppeld aan een AEM workflow. Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart op het verwerkingsknooppunt. Bovendien worden het gegevensbestand, de bijlagen, en het document van Verslag, indien van toepassing, bij de ladingsplaats van het werkschema geplaatst.
+De **[!UICONTROL Invoke an AEM Workflow]** Bij verzenden wordt een adaptief formulier gekoppeld aan een AEM Workflow. Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart op het verwerkingsknooppunt. Bovendien worden het gegevensbestand, de bijlagen, en het document van Verslag, indien van toepassing, bij de ladingsplaats van het werkschema geplaatst.
 
-Voordat u de verzendhandeling **[!UICONTROL Invoke an AEM Workflow]** gebruikt, [configureert u de AEM DS-instellingen](/help/forms/using/configuring-the-processing-server-url-.md). Voor informatie over het creëren van een AEMWerkschema, zie [Formulier-centric werkschema&#39;s op OSGi](/help/forms/using/aem-forms-workflow.md).
+Voordat u de **[!UICONTROL Invoke an AEM Workflow]** actie indienen; [De AEM DS-instellingen configureren](/help/forms/using/configuring-the-processing-server-url-.md). Voor informatie over het creëren van een AEM- Werkstroom, zie [Formuliergerichte workflows op OSGi](/help/forms/using/aem-forms-workflow.md).
 
 ## Revalidatie op de server in adaptieve vorm {#server-side-revalidation-in-adaptive-form}
 
@@ -147,21 +146,21 @@ Alle OOTB-veldvalidaties (out-of-box) van een adaptief formulier die opnieuw op 
 * Clausule voor validatie
 * Validatie-expressie
 
-### Servervalidatie {#enabling-server-side-validation-br} inschakelen
+### Validatie op de server inschakelen {#enabling-server-side-validation-br}
 
-Gebruik **Revalidate op server** onder Adaptieve formuliercontainer in de zijbalk om validatie op de server in of uit te schakelen voor het huidige formulier.
+Gebruik de **Revalidate op server** onder Adaptieve formuliercontainer in de zijbalk om validatie aan de serverzijde voor het huidige formulier in of uit te schakelen.
 
-![Server-Side ](assets/revalidate-on-server.png)
-**validatie inschakelenFiguur:Validatie** *op de server inschakelen*
+![Validatie op de server inschakelen](assets/revalidate-on-server.png)
+**Afbeelding:** *Validatie op de server inschakelen*
 
 Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt de validatie opnieuw uitgevoerd door de server. Als de validatie op het servereinde mislukt, wordt de verzendtransactie gestopt. De eindgebruiker krijgt het oorspronkelijke formulier opnieuw te zien. De vastgelegde gegevens en verzonden gegevens worden als een fout aan de gebruiker gepresenteerd.
 
 ### Aangepaste functies ondersteunen in validatie-expressies {#supporting-custom-functions-in-validation-expressions-br}
 
-In het geval van **complexe validatieregels** bevindt het exacte validatiescript zich soms in aangepaste functies en de auteur roept deze aangepaste functies aan vanuit de expressie voor veldvalidatie. Om deze aangepaste functiebibliotheek bekend te maken en beschikbaar te maken tijdens het uitvoeren van servervalidaties, kan de auteur van het formulier de naam van AEM clientbibliotheek configureren onder het tabblad **[!UICONTROL Basic]** van Adaptief formuliercontainereigenschappen, zoals hieronder wordt weergegeven.
+In geval van **complexe validatieregels** Het exacte validatiescript bevindt zich in aangepaste functies en de auteur roept deze aangepaste functies aan vanuit de expressie voor veldvalidatie. Als u deze aangepaste functiebibliotheek bekend en beschikbaar wilt maken tijdens het uitvoeren van validaties aan de serverzijde, kan de auteur van het formulier de naam van AEM clientbibliotheek configureren onder de **[!UICONTROL Basic]** tabblad Adaptieve formuliercontainereigenschappen, zoals hieronder weergegeven.
 
-![Aangepaste functies ondersteunen in Validatie ](assets/clientlib-cat.png)
-**ExpressionsFigure:Aangepaste functies** *ondersteunen in Validatie-expressies*
+![Aangepaste functies ondersteunen in validatie-expressies](assets/clientlib-cat.png)
+**Afbeelding:** *Aangepaste functies ondersteunen in validatie-expressies*
 
 Auteurs kunnen aangepaste javascript-bibliotheek configureren per adaptief formulier. Houd in de bibliotheek alleen de herbruikbare functies die afhankelijk zijn van bibliotheken van derden jquery en underscore.js.
 
@@ -169,4 +168,4 @@ Auteurs kunnen aangepaste javascript-bibliotheek configureren per adaptief formu
 
 Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 404.jsp en 500.jsp. Deze handlers worden aangeroepen wanneer een formulier 404- of 500-fouten worden verzonden. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht.
 
-Zie [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md) voor meer informatie.
+Zie voor meer informatie [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md).

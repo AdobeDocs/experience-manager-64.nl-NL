@@ -12,7 +12,7 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # AEM Forms-elementen en -documenten migreren {#migrate-aem-forms-assets-and-documents}
 
-Het migratiehulpprogramma converteert de [Adaptieve Forms-elementen](/help/forms/using/introduction-forms-authoring.md), [cloudconfiguraties](/help/sites-developing/extending-cloud-config.md) en [Correspondence Management-elementen](/help/forms/using/cm-overview.md) van de indeling die in de eerdere versies is gebruikt naar de indeling die in AEM 6.4 Forms is gebruikt. Wanneer u migratiehulpprogramma uitvoert, worden de volgende onderdelen gemigreerd:
+Het migratiehulpprogramma converteert het [Aangepaste Forms-middelen](/help/forms/using/introduction-forms-authoring.md), [cloudconfiguraties](/help/sites-developing/extending-cloud-config.md), en [Correspondentenbeheermiddelen](/help/forms/using/cm-overview.md) van de indeling die in de eerdere versies werd gebruikt naar de indeling die in AEM 6.4 Forms werd gebruikt. Wanneer u migratiehulpprogramma uitvoert, worden de volgende onderdelen gemigreerd:
 
 * Aangepaste componenten voor aangepaste formulieren
 * Aangepaste formulieren en correspondentiebeheersjablonen
@@ -34,34 +34,34 @@ Het migratiehulpprogramma converteert de [Adaptieve Forms-elementen](/help/forms
 
 ## Migratieaanpak {#approach-to-migration}
 
-U kunt [upgrade](/help/forms/using/upgrade.md) uitvoeren naar de nieuwste versie van AEM Forms 6.4 vanuit AEM Forms 6.3 of 6.2 of een nieuwe installatie uitvoeren. Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
+U kunt [upgrade](/help/forms/using/upgrade.md) naar de recentste versie van AEM Forms 6.4 van AEM Forms 6.3 of 6.2 of voer een nieuwe installatie uit. Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
 
 **In het geval van een upgrade ter plekke**
 
-Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Maar voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclusief het compatibiliteitspakket Correspondence Management) installeren.
+Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Voordat u de elementen en documenten kunt gebruiken, moet u echter eerst de installatie uitvoeren [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclusief het compatibiliteitspakket voor Correspondentenbeheer)
 
-Vervolgens moet u de elementen en documenten bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren.
+Vervolgens moet u de elementen en documenten vóór [Het migratiehulpprogramma uitvoeren](#runningmigrationutility).
 
 **In geval van installatie buiten de plaats**
 
-Als de installatie op een verkeerde plaats staat (nieuw) voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclusief het pakket Correspondence Management Compatibility) installeren.
+Als de installatie op een verkeerde plaats staat (vers) voordat u de middelen en documenten kunt gebruiken, moet u de installatie [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (inclusief het pakket Correspondence Management Compatibility).
 
-Vervolgens moet u uw elementenpakket (zip of cmp) importeren in de nieuwe installatie en de elementen en documenten vervolgens bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren. Als gevolg van wijzigingen in [achterwaartse compatibiliteit](/help/sites-deploying/backward-compatibility.md) worden de locaties van een paar mappen in crx-repository gewijzigd. Exporteer en importeer handmatig afhankelijkheden (aangepaste bibliotheken en elementen) van vorige installatie naar een nieuwe omgeving.
+Vervolgens moet u uw elementenpakket (zip of cmp) importeren in de nieuwe configuratie en de elementen en documenten vervolgens bijwerken vóór [Het migratiehulpprogramma uitvoeren](#runningmigrationutility). Door [achterwaartse compatibiliteit](/help/sites-deploying/backward-compatibility.md) verandert, worden de plaatsen van een paar omslagen in crx-bewaarplaats veranderd. Exporteer en importeer handmatig afhankelijkheden (aangepaste bibliotheken en elementen) van vorige installatie naar een nieuwe omgeving.
 
 ## Lees deze voordat u verdergaat met de migratie {#prerequisites}
 
 Voor Correspondentenbeheermiddelen:
 
-* Voor de elementen die zijn geïmporteerd vanaf het vorige platform, wordt een eigenschap toegevoegd: **fd:version=1.0**.
+* Voor de elementen die zijn geïmporteerd vanaf het vorige platform, wordt een eigenschap toegevoegd: **fd:versie=1.0**.
 * Sinds AEM 6.1 Forms zijn opmerkingen niet beschikbaar in het tekstvak. De opmerkingen die eerder zijn toegevoegd, zijn beschikbaar in de elementen, maar niet automatisch in de interface. U moet de eigenschap extendedProperties aanpassen in de gebruikersinterface van AEM Forms om de opmerkingen zichtbaar te maken.
-* In sommige van de vorige versies, zoals LiveCycle ES4, werd de tekst uitgegeven gebruikend Flex RichTextEditor, maar sinds AEM 6.1 Forms, wordt de redacteur van HTML gebruikt. Door deze weergave en weergave van de lettertypen kunnen de tekengrootten en lettertypemarges afwijken van de vorige versies in de gebruikersinterface van de auteur. De letters zien er echter hetzelfde uit wanneer ze worden gerenderd.
+* In sommige van de vorige versies zoals LiveCycle ES4, werd de tekst uitgegeven gebruikend Flex RichTextEditor, maar sinds AEM 6.1 Forms, wordt de redacteur van HTML gebruikt. Door deze weergave en weergave van de lettertypen kunnen de tekengrootten en lettertypemarges afwijken van de vorige versies in de gebruikersinterface van de auteur. De letters zien er echter hetzelfde uit wanneer ze worden gerenderd.
 * Lijsten in tekstmodules zijn verbeterd en worden nu anders weergegeven. Er kunnen visuele verschillen zijn. Wij adviseren dat u teruggeeft en de brieven ziet waar u lijsten in tekstmodules gebruikt.
 * Aangezien de modules met afbeeldingsinhoud worden omgezet in DAM-elementen en tijdens de migratie lay-outs en fragmenten worden toegevoegd aan formulieren, verandert de eigenschap Bijgewerkt op voor deze modules in beheer.
 * De versiegeschiedenis van de elementen wordt niet gemigreerd en is niet beschikbaar na de migratie. De volgende versiegeschiedenis na migratie wordt gehandhaafd.
 * De staat Klaar om te publiceren is afgekeurd sinds AEM 6.1 Forms, zodat worden alle activa in Klaar om staat te publiceren veranderd in Gewijzigde staat.
 * Aangezien de gebruikersinterface in AEM Forms 6.3 wordt bijgewerkt, zijn de stappen voor het uitvoeren van de aanpassingen ook verschillend. U moet de aanpassing opnieuw uitvoeren als u van een versie voorafgaand aan 6.3 migreert.
 * Layoutfragmenten worden verplaatst van /content/apps/cm/layouts/fragmentlayouts/1001 naar /content/apps/cm/modules/fragmentlayouts. De verwijzing van het Woordenboek van gegevens in activa toont weg van het Woordenboek van Gegevens in plaats van zijn naam.
-* Alle tabruimten die worden gebruikt voor uitlijning in tekstmodules moeten worden aangepast. Zie [Correspondentiebeheer - Tabspatiëring gebruiken voor het rangschikken van tekst](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html) voor meer informatie.
+* Alle tabruimten die worden gebruikt voor uitlijning in tekstmodules moeten worden aangepast. Zie voor meer informatie [Correspondentenbeheer - Tabspatiëring gebruiken voor het rangschikken van tekst](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 * Configuraties van de middelencomposer veranderen in Correspondence Management-configuraties.
 * Elementen worden onder mappen met namen als Bestaande tekst en Bestaande lijst geplaatst.
 
@@ -92,7 +92,7 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
 
 1. Voer de volgende handelingen uit om de migratie uit te voeren:
 
-   * Tik op **Migratie starten** om **assets** te migreren en tik in het volgende scherm op Migratie starten. De volgende code wordt gemigreerd:
+   * Migreren **elementen** tikken op AEM Forms Assets Migration en tikken in het volgende scherm op **Migratie starten**. De volgende code wordt gemigreerd:
 
       * Aangepaste formulieren
       * Documentfragmenten
@@ -116,16 +116,16 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
    >  * Nieuwe sjablonen - Aangepaste formuliersjablonen die zijn gemaakt met de sjablooneditor onder /conf. Dit omvat migratie van regels en manuscripten die gebruikend de regelredacteur worden gecreeerd.
 
 
-   * Tik op **Aangepaste migratie van Forms Custom Components** en tik op **Migratie starten** op de pagina Aangepaste migratie van componenten. De volgende code wordt gemigreerd:
+   * Tik op Aangepaste componenten om aangepaste formulieren te migreren **Migratie van aangepaste Forms-componenten** en tikt u op de pagina Custom Components Migration op **Migratie starten**. De volgende code wordt gemigreerd:
 
       * Aangepaste componenten geschreven voor Adaptive Forms
       * Eventuele componentbedekkingen.
-   * Tik op **Aangepaste Forms-sjabloonmigratie** en tik op **Migratie starten** op de pagina Aangepaste onderdelen migreren om adaptieve formuliersjablonen te migreren. De volgende code wordt gemigreerd:
+   * Tik op Aangepaste formuliersjablonen om deze te migreren **Adaptieve Forms-sjabloonmigratie** en tikt u op de pagina Custom Components Migration op **Migratie starten**. De volgende code wordt gemigreerd:
 
       * Aangepaste formuliersjablonen die zijn gemaakt onder /apps of /conf met AEM Sjablooneditor.
-   * Migreer AEM Forms Cloud Configuration-services om gebruik te maken van het nieuwe contextbewuste cloudservicepparadigma, dat de interface voor aanraakbediening bevat (onder /conf). Wanneer u AEM Forms Cloud Configuration Services migreert, worden de cloudservices in /etc verplaatst naar /conf. Als u geen aanpassingen van de cloudservices hebt die afhankelijk zijn van de oude paden (/etc), wordt u aangeraden het migratiehulpprogramma direct uit te voeren na de upgrade naar 6.4 en de aanraakinterface voor cloudconfiguratie te gebruiken voor verdere werkzaamheden. Als u een bestaande aanpassing van de cloudservices hebt, blijft u de klassieke interface gebruiken bij de geüpgrade installatie totdat de aanpassingen zijn bijgewerkt en worden uitgelijnd op de gemigreerde paden (/conf). Voer vervolgens het migratiehulpprogramma uit.
+   * Migreer AEM Forms Cloud Configuration-services om gebruik te maken van het nieuwe contextbewuste cloudservicepparadigma, dat de interface voor aanraakbediening bevat (onder /conf). Wanneer u AEM Forms Cloud Configuration Services migreert, worden de cloudservices in /etc. verplaatst naar /conf. Als u geen aanpassingen van de cloudservices hebt die afhankelijk zijn van de oude paden (/etc), wordt u aangeraden het migratiehulpprogramma direct uit te voeren na de upgrade naar 6.4 en de aanraakinterface voor cloudconfiguratie te gebruiken voor verdere werkzaamheden. Als u een bestaande aanpassing van de cloudservices hebt, blijft u de klassieke interface gebruiken bij de geüpgrade installatie totdat de aanpassingen zijn bijgewerkt en worden uitgelijnd op de gemigreerde paden (/conf). Voer vervolgens het migratiehulpprogramma uit.
 
-   Als u **AEM Forms-cloudservices** wilt migreren, waaronder de volgende, tikt u op AEM Forms Cloud Configuration Migration (cloudconfiguratiemigratie is onafhankelijk van AEMFD Compatibility Package), tikt u op Migratie van AEM Forms Cloud Configurations en vervolgens op de pagina Configuration Migration **Start Migration**:
+   Migreren **AEM Forms-cloudservices** tikt u op AEM Forms Cloud Configuration Migration (migratie van cloudconfiguratie is onafhankelijk van het compatibiliteitspakket AEMFD), tikt u op Migratie van AEM Forms Cloud Configurations en vervolgens op de pagina Configuration Migration **Migratie starten**:
 
    * Cloudservices formuliergegevensmodel
 
@@ -135,7 +135,7 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
 
       * Bronpad: /etc/cloudservices/recaptcha
       * Doelpad: /conf/global/settings/cloudconfigs/recaptcha
-   * Adobe Sign
+   * Acrobat Sign
 
       * Bronpad: /etc/cloudservices/echosign
       * Doelpad: /conf/global/settings/cloudconfigs/echosign
@@ -151,26 +151,26 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
 
    Wanneer uitgevoerd, doet het nut van de Migratie het volgende:
 
-   * **Hiermee voegt u de tags toe aan de elementen**: Hiermee voegt u het label Correspondentiebeheer toe: Gemigreerde activa&quot; / &quot;Aangepaste Forms: Gemigreerde activa&quot;. naar de gemigreerde elementen, zodat de gebruikers de gemigreerde elementen kunnen identificeren. Wanneer u het migratiehulpprogramma uitvoert, worden alle bestaande elementen in het systeem gemarkeerd als Gemigreerd.
-   * **Genereert labels**: Categorieën en subcategorieën die zich in het vorige systeem bevinden, worden gemaakt als codes. Deze codes worden vervolgens gekoppeld aan de relevante Correspondence Management-elementen in AEM. Een categorie (claims) en een subcategorie (claims) van een lettertypesjabloon worden bijvoorbeeld gegenereerd als tags.
+   * **Hiermee voegt u de codes toe aan de elementen**: Hiermee voegt u het label Correspondentiebeheer toe: Gemigreerde activa&quot; / &quot;Aangepaste Forms: Gemigreerde activa&quot;. naar de gemigreerde elementen, zodat de gebruikers de gemigreerde elementen kunnen identificeren. Wanneer u het migratiehulpprogramma uitvoert, worden alle bestaande elementen in het systeem gemarkeerd als Gemigreerd.
+   * **Hiermee genereert u tags**: Categorieën en subcategorieën die zich in het vorige systeem bevinden, worden gemaakt als codes. Deze codes worden vervolgens gekoppeld aan de relevante Correspondence Management-elementen in AEM. Een categorie (claims) en een subcategorie (claims) van een lettertypesjabloon worden bijvoorbeeld gegenereerd als tags.
    * **Hiermee verplaatst u lay-outs en lay-outfragmenten naar AEM 6.4 Forms-gebruikersinterface**: Als u een upgrade uitvoert van 6.2 naar 6.4, worden de lay-outsjablonen en lay-outfragmenten toegevoegd als formulieren in de sectie voor de AEM Forms 6.4-gebruikersinterface.
 
    >[!NOTE]
    >
    >Als u een upgrade uitvoert van 6.2 naar 6.4, worden voor Correspondentiebeheer mogelijk nieuwe mappen weergegeven in de gebruikersinterface die uw elementen bevatten. Mogelijk moet u deze mappen controleren om uw elementen te vinden.
 
-1. Nadat het migratiehulpprogramma is uitgevoerd, gaat u verder met de [huishoudelijke taken](#housekeepingtasks).
+1. Nadat het migratiehulpprogramma is uitgevoerd, gaat u verder naar [huishoudelijke taken](#housekeepingtasks).
 
 ### Bewaringstaken na het uitvoeren van het migratiehulpprogramma {#housekeepingtasks}
 
 Nadat u het migratiehulpprogramma hebt uitgevoerd, moet u de volgende huishoudelijke taken uitvoeren:
 
-1. Zorg ervoor dat de XFA-versie van lay-outs en fragmentlay-outs 3.3 of hoger is. Als u lay-outs en fragmentlay-outs van een oudere versie gebruikt, kunnen er problemen optreden bij het renderen van de letter. Voer de volgende stappen uit om de versie van een oudere XFA bij te werken naar de meest recente versie:
+1. Zorg ervoor dat de XFA-versie van lay-outs en fragmentlay-outs 3.3 of hoger is. Als u lay-outs en fragmentlay-outs van een oudere versie gebruikt, kunnen er problemen optreden bij het renderen van de letter. Voer de volgende stappen uit om de versie van een oudere XFA bij te werken naar de nieuwste versie:
 
-   1. [Download XFA als zip-bestand ](/help/forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) vanuit de Forms-gebruikersinterface.
+   1. [XFA downloaden als ZIP-bestand](/help/forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) in de Forms-gebruikersinterface.
    1. Extraheer het bestand.
    1. Open het XFA-bestand in de nieuwste Designer en sla het op. De versie van XFA wordt bijgewerkt naar de nieuwste versie.
    1. Upload de XFA in de Forms-gebruikersinterface.
 
 1. Publiceer alle elementen die vóór de migratie in het vorige systeem zijn gepubliceerd. Het migratiehulpprogramma werkt de elementen alleen bij op de instantie van de auteur en om de elementen in de instantie(s) voor publicatie bij te werken, moet u de elementen publiceren.
-1. In AEM Forms 6.4 worden sommige rechten van de gebruikersgroepen voor formulieren gewijzigd. Als u wilt dat een van uw gebruikers XDP&#39;s en Adaptive Forms met scripts of code-editor kan uploaden, moet u ze toevoegen aan een gebruikersgroep voor formulieren. Op dezelfde manier kunnen de malplaatje-auteurs niet meer de coderedacteur in de Redacteur van de Regel gebruiken. Gebruikers kunnen alleen code-editor gebruiken als ze deze aan de af-template-script-writers-groep toevoegen. Zie [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md) voor instructies voor het toevoegen van gebruikers aan groepen.
+1. In AEM Forms 6.4 worden sommige rechten van de gebruikersgroepen voor formulieren gewijzigd. Als u wilt dat een van uw gebruikers XDP&#39;s en Adaptive Forms met scripts of code-editor kan uploaden, moet u ze toevoegen aan een gebruikersgroep voor formulieren. Op dezelfde manier kunnen de malplaatje-auteurs niet meer de coderedacteur in de Redacteur van de Regel gebruiken. Gebruikers kunnen alleen code-editor gebruiken als ze deze aan de af-template-script-writers-groep toevoegen. Voor instructies over het toevoegen van gebruikers aan groepen raadpleegt u [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).
