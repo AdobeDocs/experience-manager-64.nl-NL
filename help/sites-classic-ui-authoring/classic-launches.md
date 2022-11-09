@@ -1,19 +1,18 @@
 ---
 title: Lanceringen
-seo-title: Lanceringen
+seo-title: Launches
 description: Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina.
-seo-description: Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 exl-id: e1e5dc83-2f9c-4c8d-a031-5ded3f1316a1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '183'
 ht-degree: 1%
 
 ---
@@ -26,12 +25,12 @@ Er wordt een lancering gecreeerd zodat u veranderingen klaar voor toekomstige pu
 
 >[!NOTE]
 >
->De theorie achter lanceringen wordt in detail beschreven onder [Launches](/help/sites-authoring/launches.md) in de standaard auteursdocumentatie.
+>De theorie achter de lanceringen wordt in detail beschreven onder [Starten](/help/sites-authoring/launches.md) in de standaardontwerpdocumentatie.
 >
->De informatie specifiek voor het gebruiken van lanceringen in klassieke UI kan in de volgende documentatie samen met [het Creëren van Lanceringen](/help/sites-classic-ui-authoring/classic-launches-creating.md), [het Uitgeven Lancjes](/help/sites-classic-ui-authoring/classic-launches-editing.md), en [het Bevorderen Lanceringen](/help/sites-classic-ui-authoring/classic-launches-promoting.md) worden gevonden.
+>De informatie specifiek voor het gebruiken van lanceringen in klassieke UI kan in de volgende documentatie samen worden gevonden [Starten maken](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Starten bewerken](/help/sites-classic-ui-authoring/classic-launches-editing.md), en [Starten promoten](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >Meerdere bronvertakkingen voor een lancering is niet mogelijk in klassieke UI.
 
-De console van Lanceringen kan direct tot stand worden gebracht met [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+De Launches-console kan rechtstreeks worden geopend met [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)

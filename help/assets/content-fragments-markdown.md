@@ -1,20 +1,20 @@
 ---
 title: Markering
-seo-title: Markering
+seo-title: Markdown
 description: Wanneer u ontwerpt, gebruikt de inhoudsfragmenteditor markeringssyntaxis, zodat u gemakkelijk inhoud kunt schrijven.
-seo-description: Wanneer u ontwerpt, gebruikt de inhoudsfragmenteditor markeringssyntaxis, zodat u gemakkelijk inhoud kunt schrijven.
+seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
-feature: Contentfragmenten
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '535'
 ht-degree: 4%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Voor bepaalde functionaliteit voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md) vereist.
+>Voor bepaalde functies voor inhoudsfragmenten moet de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of later](/help/release-notes/sp-release-notes.md).
 
-Wanneer u [authoring](content-fragments-variations.md#authoring-your-content) bent, gebruikt de inhoudsfragmenteditor *markdown* syntaxis zodat u eenvoudig inhoud kunt schrijven:
+Wanneer u [ontwerpen](content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud kunt schrijven:
 
 ![markeringseditor](/help/assets/assets/cfm-6420-08.png)
 
@@ -71,7 +71,7 @@ Een regeleinde wordt gemaakt door een regel met twee of meer spaties te eindigen
 
 U kunt inline-koppelingen en verwijzingskoppelingen maken.
 
-In beide stijlen wordt de koppelingstekst gescheiden door vierkante haken `[]`.
+In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]`.
 
 Dit zijn voorbeelden van inlineverbindingen:
 
@@ -141,7 +141,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een niet-geordende lijst wilt maken, gebruikt u de optie &amp;ast; vóór de items in de lijst. Bijvoorbeeld:
+&amp;Als u een ongeordende lijst wilt maken, gebruikt u de voorste lijst; vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 
@@ -177,7 +177,7 @@ U kunt tekst als volgt vet maken:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Als u een bereik van code wilt aangeven, plaatst u de code tussen aanhalingstekens (&amp;grave;). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
+Als u een bereik van code wilt aangeven, plaatst u de code tussen aanhalingstekens (&grave;). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
 
 Bijvoorbeeld:
 

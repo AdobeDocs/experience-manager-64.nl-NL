@@ -1,21 +1,21 @@
 ---
 title: Metagegevens - Fragmenteigenschappen
-seo-title: Metagegevens - Fragmenteigenschappen
+seo-title: Metadata - Fragment Properties
 description: U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewerken.
-seo-description: U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewerken.
+seo-description: You can view and edit the metadata (properties) for content fragments.
 uuid: 2744610b-215a-4ee8-893e-e167376f9df5
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 exl-id: 0123fb44-9f38-4d9e-9dce-7c9cfd4260e1
-feature: Inhoudsfragmenten,metagegevens
+feature: Content Fragments,Metadata
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 8%
+source-wordcount: '109'
+ht-degree: 7%
 
 ---
 
@@ -23,21 +23,21 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Voor bepaalde functionaliteit voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md) vereist.
+>Voor bepaalde functies voor inhoudsfragmenten moet de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of later](/help/release-notes/sp-release-notes.md).
 
 ## Eigenschappen/metagegevens bewerken {#editing-properties-meta-data}
 
 U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewerken:
 
-1. Navigeer in de **[!UICONTROL Assets]**-console naar de locatie van het inhoudsfragment.
+1. In de **[!UICONTROL Assets]** navigeren naar de locatie van het inhoudsfragment.
 1. Ofwel:
 
-   * Selecteer [Eigenschappen weergeven om de dialoogvensters te openen](managing-assets-touch-ui.md#editing-properties). Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
-   * Open het [inhoudsfragment voor Bewerken](content-fragments-managing.md#opening-the-fragment-editor) en selecteer **[!UICONTROL Metadata]** in het zijpaneel.
+   * Selecteren [Eigenschappen weergeven om de dialoogvensters te openen](managing-assets-touch-ui.md#editing-properties). Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
+   * Open de [inhoudsfragment voor bewerken](content-fragments-managing.md#opening-the-fragment-editor)selecteert u vervolgens **[!UICONTROL Metadata]** in het zijpaneel.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. Het tabblad **[!UICONTROL Basic]** bevat opties die u kunt weergeven of bewerken:
+1. De **[!UICONTROL Basic]** bevat opties die u kunt weergeven of bewerken:
 
    * Miniatuur, waarvoor u **Afbeelding uploaden**
    * **Titel**
