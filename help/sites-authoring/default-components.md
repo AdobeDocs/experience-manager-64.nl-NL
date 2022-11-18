@@ -1,8 +1,8 @@
 ---
 title: Onderdelen
-seo-title: Onderdelen
+seo-title: Components
 description: AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden aan auteurs van websites
-seo-description: AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden aan auteurs van websites
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,19 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 8b83e8d2-09ad-4010-a69a-2af1907a1ca6
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 2%
+source-wordcount: '427'
+ht-degree: 0%
 
 ---
 
 # Onderdelen{#components}
 
-Adobe Experience Manager (AEM) wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Ze zijn beschikbaar wanneer u een pagina [bewerkt en worden gegroepeerd op hoofdfunctioneel gebied (de zogenaamde componentgroep) om te filteren.](/help/sites-authoring/editing-content.md)
+Adobe Experience Manager (AEM) wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Deze zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-authoring/editing-content.md) en worden gegroepeerd per hoofdfunctioneel gebied (de zogenaamde componentgroep) om te helpen filteren.
 
-De componenten zijn beschikbaar wanneer [een pagina](/help/sites-authoring/editing-content.md) bewerkt. Om het filtreren te helpen, worden de componenten gegroepeerd door belangrijkste functionele gebied (d.w.z. componentengroep).
+De componenten zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-authoring/editing-content.md). Om het filtreren te helpen, worden de componenten gegroepeerd door belangrijkste functionele gebied (d.w.z. componentengroep).
 
 >[!NOTE]
 >
@@ -32,7 +31,7 @@ De componenten zijn beschikbaar wanneer [een pagina](/help/sites-authoring/editi
 
 ## Algemeen gebruik {#general-usage}
 
-De componenten zijn beschikbaar op het **lusje van Componenten** van het zijpaneel van de paginaredacteur wanneer [het uitgeven van een pagina](/help/sites-authoring/editing-content.md).
+De componenten zijn beschikbaar op de **Componenten** tabblad van het zijpaneel van de pagina-editor wanneer [pagina&#39;s bewerken](/help/sites-authoring/editing-content.md).
 
 U kunt een component selecteren en naar de gewenste locatie op de pagina slepen. U kunt het dan uitgeven gebruikend:
 
@@ -41,10 +40,10 @@ U kunt een component selecteren en naar de gewenste locatie op de pagina slepen.
 
 * [Inhoud bewerken - Modus Volledig scherm](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Zie het artikel [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md) voor meer informatie over het toevoegen van componenten aan een pagina.\
+Zie het artikel voor meer informatie over het toevoegen van componenten aan een pagina [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md).\
 Componenten worden gesorteerd op basis van verschillende categorieën, componentgroepen genaamd. Voorbeelden van dergelijke componentgroepen zijn:
 
-* **Wij.Detailhandel**: Omvat de kerncomponenten proxied voor gebruik met de  [Wij.Retail verwijzingsimplementatie](/help/sites-developing/we-retail.md).
+* **Wij.Detailhandel**: Omvat de kerncomponenten proxied voor gebruik met [We.Retail-referentieimplementatie](/help/sites-developing/we-retail.md).
 
 * **Wij.Detailhandel**: Omvat commerciële componenten zoals winkelwagentjes en productrasters
 
@@ -54,19 +53,19 @@ Componenten worden gesorteerd op basis van verschillende categorieën, component
 
 De [Componentenconsole](/help/sites-authoring/default-components-console.md) geeft een overzicht van de componentengroepen, en componenten, die door uw AEM installatie worden verstrekt. U kunt belangrijke informatie over de individuele componenten en hun gebruik bekijken.
 
-## Componenten - Belangrijke gebieden {#components-major-areas}
+## Componenten - Belangrijkste gebieden {#components-major-areas}
 
 De volgende pagina&#39;s bevatten koppelingen naar enkele aanvullende, belangrijke informatie over componenten:
 
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)  - De Core Components biedt flexibele en functierijke ontwerpfunctionaliteit die essentiële inhoudstypen biedt voor het maken van pagina&#39;s.
+* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) - De Core Components bieden flexibele en functierijke ontwerpfunctionaliteit die essentiële inhoudstypen biedt voor het maken van pagina&#39;s.
 
-* [Community](/help/communities/author-communities.md) -componenten bieden interactieve functies voor een website, zoals forums en opmerkingen. Veel van deze componenten worden inbegrepen wanneer een [Communautaire Plaats ](/help/communities/overview.md) wordt gecreeerd.
+* [Gemeenschappen](/help/communities/author-communities.md) - Componenten bieden interactieve functies voor een website, zoals forums en opmerkingen. Veel van deze componenten worden opgenomen wanneer een [Community-site](/help/communities/overview.md) wordt gemaakt.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - De eCommerce-functie binnen AEM omvat ook een reeks componenten. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
+* [eCommerce](/help/sites-administering/ecommerce.md) - De eCommerce-functie in AEM omvat ook een reeks onderdelen. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
 
-### Componenten {#configuring-components} configureren
+### Componenten configureren {#configuring-components}
 
 Naast de componenten waartoe auteurs in een standaardinstallatie toegang hebben, zijn ook verschillende andere componenten beschikbaar.
 
-* Als uw pagina op het geadviseerde, moderne, editable malplaatje gebaseerd is, kunt u [het malplaatje ](/help/sites-authoring/templates.md) toelaten/onbruikbaar maken en parameters voor specifieke componenten uitgeven.
-* Als uw pagina op een statisch malplaatje gebaseerd is, kunt u [ontwerpwijze ](/help/sites-authoring/default-components-designmode.md#enable-disable-components) gebruiken om deze toe te laten/onbruikbaar te maken en parameters voor specifieke componenten uit te geven.
+* Als uw pagina is gebaseerd op de aanbevolen, moderne, bewerkbare sjabloon, kunt u [de sjabloon bewerken](/help/sites-authoring/templates.md) deze in-/uitschakelen en parameters voor specifieke componenten bewerken.
+* Als uw pagina is gebaseerd op een statische sjabloon, kunt u [ontwerpmodus](/help/sites-authoring/default-components-designmode.md#enable-disable-components) om deze in-/uit te schakelen en parameters voor specifieke componenten te bewerken.

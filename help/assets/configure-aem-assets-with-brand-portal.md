@@ -1,13 +1,13 @@
 ---
 title: AEM Assets configureren met Brand Portal
-description: 'Leer hoe u AEM Assets met Brand Portal configureert voor het publiceren van middelen en verzamelingen naar Brand Portal. '
+description: Leer hoe u AEM Assets met Brand Portal configureert voor het publiceren van middelen en verzamelingen naar Brand Portal.
 contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: a50cd2b50191b86ac27cc228944c6c9e917b08cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1550'
 ht-degree: 37%
 
 ---
@@ -271,14 +271,14 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
    >
    >Vermijd onbruikbaar makend om het even welke replicatieagenten, aangezien het de replicatie van sommige activa kan veroorzaken om te ontbreken.
    >
-   >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie [Problemen met parallelle publicatie naar Brand Portal oplossen](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie [Problemen met parallelle publicatie naar Brand Portal oplossen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal is geconfigureerd met uw AEM Assets-auteurinstantie. U kunt nu het volgende doen:
 
 * [Assets publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Mappen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Verzamelingen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Asset Souring configureren](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) de Brand Portal-gebruikers in staat stellen middelen bij te dragen aan en te publiceren naar AEM Assets.
+* [Asset Souring configureren](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) de Brand Portal-gebruikers in staat stellen middelen bij te dragen aan en te publiceren naar AEM Assets.
 
 ## Upgradeconfiguratie {#upgrade-integration-64}
 

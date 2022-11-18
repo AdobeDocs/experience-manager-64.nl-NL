@@ -1,8 +1,8 @@
 ---
 title: Best practices voor
-seo-title: Best practices voor
+seo-title: Best Practices
 description: Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars
-seo-description: Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars
+seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: a2a299b5-a15a-47d9-a9d8-83f45917d080
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -22,7 +21,7 @@ ht-degree: 1%
 
 ## Aanbevolen procedures voor ontwikkelaars - Aan de slag {#best-practices-for-developers-getting-started}
 
-Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars. Adobe ontwikkelaars volgen deze beste praktijken aangezien zij kern AEM productupdates en klantencode voor klantenimplementaties ontwikkelen.
+De teams van de Techniek en van het Raadpleging van Adobe hebben een uitvoerige reeks beste praktijken voor AEM ontwikkelaars ontwikkeld. Adobe ontwikkelaars volgen deze beste praktijken aangezien zij kern AEM productupdates en klantencode voor klantenimplementaties ontwikkelen.
 
 Voordat u uw AEM ontwikkelingsproject start, moet u eerst de volgende aanbevolen procedures doornemen:
 
@@ -33,7 +32,7 @@ Voordat u uw AEM ontwikkelingsproject start, moet u eerst de volgende aanbevolen
 * [Codepitten](/help/sites-developing/code-pitfalls.md)
 * [JCR-interactie](/help/sites-developing/jcr-integration.md)
 * [OSGi-bundels](/help/sites-developing/osgi-bundles.md)
-* [Aanbevolen werkwijzen voor Java API](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Aanbevolen werkwijzen voor Java API](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Aanvullende informatie over aanbevolen procedures {#additional-best-practices-information}
 
@@ -82,18 +81,18 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
 
 ## Gemeenschappen {#communities}
 
-[AEM ](/help/communities/overview.md) communautarisering vergemakkelijkt de oprichting en het beheer van niet-lokale gemeenschappen.
+[AEM Communities](/help/communities/overview.md) vereenvoudigt de oprichting en het beheer van on-premise Gemeenschappen.
 
 Hier worden enkele beste praktijken voor de Gemeenschappen beschreven:
 
 |  |  |  |
 |---|---|---|
-| Aanbevolen werkwijzen voor het werken met door de gebruiker gegenereerde inhoud (UGC) | [Codeerrichtlijnen](/help/communities/code-guide.md) | Richtlijnen voor de ontwikkeling van flexibele, draagbare code voor het [sociale-componentframework](/help/communities/scf.md) (SCF). |
+| Aanbevolen werkwijzen voor het werken met door de gebruiker gegenereerde inhoud (UGC) | [Codeerrichtlijnen](/help/communities/code-guide.md) | Richtsnoeren voor de ontwikkeling van flexibele, draagbare code voor de [sociale component](/help/communities/scf.md) (SCF). |
 | Voorbeeld van het gebruik van communautaire componenten | [Community Components Guide](/help/communities/components-guide.md) | Een interactief ontwikkelingsprogramma. |
 
 ## Tooling/HTL {#tooling-htl}
 
-HTML Template Language (HTL) is een nieuw HTML-sjabloonsysteem dat is geïntroduceerd met AEM 6.0. JSP en ESP worden vervangen als het voorkeurssjabloonsysteem voor AEM.
+HTML Sjabloontaal (HTL) is een nieuw sjabloonsysteem voor HTML, dat is geïntroduceerd met AEM 6.0. JSP en ESP worden vervangen als het voorkeurssjabloonsysteem voor AEM.
 
 |  |  |  |
 |---|---|---|

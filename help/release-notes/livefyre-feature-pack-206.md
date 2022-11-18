@@ -1,24 +1,23 @@
 ---
 title: Opmerkingen bij de release van Livefyre Feature Pack 2.0.6
-seo-title: Opmerkingen bij de release van Livefyre Feature Pack 2.0.6
+seo-title: Livefyre Feature Pack 2.0.6 Release Notes
 description: Opmerkingen bij de release van Livefyre Feature Pack 2.0.6
-seo-description: Opmerkingen bij de release van Livefyre Feature Pack 2.0.6
+seo-description: Livefyre Feature Pack 2.0.6 Release Notes
 uuid: 81ee0527-72c3-4530-80f1-c802ddbe62d0
 products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '643'
 ht-degree: 1%
 
 ---
 
 # Opmerkingen bij de release van Livefyre Feature Pack 2.0.6 {#livefyre-feature-pack-release-notes}
 
-## Informatie opheffen {#release-information}
+## Geen informatie {#release-information}
 
 | Producten | Livefyre Feature Pack 2.0.6 |
 |--- |--- |
@@ -35,9 +34,9 @@ Met dit pakket worden de toonaangevende mogelijkheden van Livefyre voor het bepe
 
 **UGC-inhoud importeren in AEM Assets**
 
-* Importeer Twitter- en Instagram door de gebruiker gegenereerde inhoud (UGC) van Livefyre Studio naar AEM Assets met de UGC-importmodule.
+* Importeer Twitter- en Instagram door gebruikers gegenereerde inhoud (UGC) van Livefyre Studio naar AEM Assets met de UGC-importmodule.
 * Open de bibliotheek van Livefy.
-* Op Twitter en Instagram kunt u in real-time zoeken met LiveCycle Social Search.
+* Met LiveCycle Social Search kunt u in real-time zoeken op Twitter en Instagram.
 * Rechten op de UGC beheren.
 
 **Livefycomponenten toevoegen aan AEM Sites of Community**
@@ -50,11 +49,11 @@ Met dit pakket worden de toonaangevende mogelijkheden van Livefyre voor het bepe
 * Naadloos uw bestaande productcatalogus integreren in Livefyre om de betrokkenheid en conversie van gebruikers in uw sites te stimuleren, en om onvoorstelbare UGC-ervaringen te bieden.
 * Bewerk of verwijder items in de catalogus met producten voor AEM handel en werk de wijzigingen in LiveCycle automatisch bij.
 
-Zie [Integreren met LiveCycle](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) voor hulp bij de installatie.
+Voor hulp bij de installatie raadpleegt u [Integreren met Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html).
 
-### Aanvullende informatie bij de release {#additional-release-information}
+### Aanvullende releasegegevens {#additional-release-information}
 
-Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakelijke gebruikersaccounts in Instagram, kunnen we geen opmerkingen meer namens u plaatsen of automatisch controleren op antwoorden van de auteur. [Klik hier voor meer](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/) informatie.
+Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakelijke gebruikersaccounts in Instagram, kunnen we geen opmerkingen meer namens u plaatsen of automatisch controleren op antwoorden van de auteur. [Klik hier voor meer informatie](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
 >[!NOTE]
 >
@@ -63,7 +62,7 @@ Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakeli
 #### Nieuwe functie of verbetering {#new-feature-or-improvement}
 
 * De mogelijkheid om UGC te doorzoeken voordat rechten worden ingesteld, is toegevoegd aan de mogelijkheid om sociale accounts aan te vragen in LiveCycle. U moet sociale accounts instellen om rechten aan te vragen of de aanvraag voor rechten overschrijven als u eigenaar bent van de inhoud.
-* Instagram en Twitter [Workflow voor UGC-rechtenaanvraag](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) is bijgewerkt om te voldoen aan de nieuwste API&#39;s.
+* Instagram en Twitter [Workflow voor aanvraag van UGC-rechten](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html) is bijgewerkt om te voldoen aan de nieuwste API&#39;s.
 * De status van rechten en de aangewezen acties worden nu getoond op het scherm van het rechtenverzoek.
 
 #### Bugfixes {#bug-fixes}
@@ -78,8 +77,8 @@ Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakeli
 * Probleem verholpen waarbij het slepen en neerzetten van Chat- en LiveBlog-componenten naar Sites de app niet maakten.
 * Probleem verholpen waarbij de toepassing Opmerking een fout veroorzaakte toen gebruikers probeerden opmerkingen te maken.
 * Probleem verholpen waarbij het toevoegen van de Livefyre Media Wall-app aan een site een extra knooppunt maakte in de Java Content Repository.
-* Probleem verholpen waarbij pagina-einden en consolefouten werden veroorzaakt in UGC-zoekopdracht in Instagram.
-* Probleem verholpen waarbij met pictogrammen voor gebruikers van Instagram API-fouten in Elementen werden gegenereerd.
+* Probleem verholpen dat pagina-einden en consolefouten veroorzaakte in Instagram UGC-zoekopdracht.
+* Probleem verholpen waarbij Instagram-gebruikerspictogrammen API-fouten in Elementen genereerden.
 * Probleem verholpen waarbij de app Revisies werd toegevoegd aan een site zonder vooraf gedefinieerde indeling.
 * Probleem verholpen met de functie Touch UI en inline bewerken.
 * Probleem verholpen die een fout veroorzaakt bij het importeren van bepaalde Instagram-afbeeldingselementen.

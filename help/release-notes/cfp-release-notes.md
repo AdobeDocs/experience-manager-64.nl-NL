@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 1d5d2ef3840a40df7c3b223c7b5835e41553e9f1
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '4608'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ AEM 6.4.8.3 is een Cumulatief Pak van de Fix (GVB) dat van AEM 6.4 Service Pack 
 
 In AEM 6.4.8.3 wordt de ingebouwde opslagplaats (Apache Jackrabbit Oak) bijgewerkt naar versie 1.8.23.
 
-Voor informatie over GVB en andere soorten introducties raadpleegt u [Definities van releasevoertuig AEM bijwerken](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Voor informatie over GVB en andere soorten introducties raadpleegt u [Definities van releasevoertuig AEM bijwerken](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.3 biedt oplossingen voor de volgende problemen.
 
@@ -199,7 +199,7 @@ AEM 6.4.8.2 is een Cumulatief Pak van de Fix (GVB) dat van AEM 6.4 Service Pack 
 
 In AEM 6.4.8.2 wordt de ingebouwde opslagplaats (Apache Jackrabbit Oak) bijgewerkt naar versie 1.8.22.
 
-Voor informatie over GVB en andere soorten introducties raadpleegt u [Definities van releasevoertuig AEM bijwerken](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Voor informatie over GVB en andere soorten introducties raadpleegt u [Definities van releasevoertuig AEM bijwerken](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 
@@ -345,7 +345,7 @@ Enkele belangrijke punten van AEM 6.4.8.1 zijn:
 * Integratie met Adobe Experience Manager voor delen van pakket is verwijderd.
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.8.21.
 
-Voor informatie over GVB en andere soorten introducties raadpleegt u [Definities van releasevoertuig AEM bijwerken](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+Voor informatie over GVB en andere soorten introducties raadpleegt u [Definities van releasevoertuig AEM bijwerken](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
@@ -523,7 +523,7 @@ Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekop
 
 1. Controleer of u het AEM Cumulative Fix Pack hebt geïnstalleerd.
 1. Download het overeenkomstige formulierinvoegpakket dat is vermeld op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) voor uw besturingssysteem.
-1. Het formulierinvoegpakket installeren zoals beschreven in [Toevoegingspakketten voor AEM formulieren installeren](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. Het formulierinvoegpakket installeren zoals beschreven in [Toevoegingspakketten voor AEM formulieren installeren](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### AEM Forms JEE-installatieprogramma installeren {#install-aem-forms-jee-installer}
 
@@ -563,7 +563,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 | Gebied | Functie | Vervanging | Versie |
 |---|---|---|---|
 | Activa | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
-| Integratie van middelen en Adobe Creative Cloud | [AEM naar map Creative Cloud delen](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) werd ingevoerd in AEM 6.2 als een manier om creatieve gebruikers toegang te geven tot activa van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie voor meer informatie [AEM integratie van Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) artikel. | AEM 6.4.4.0 |
+| Integratie van middelen en Adobe Creative Cloud | [AEM naar map Creative Cloud delen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) werd ingevoerd in AEM 6.2 als een manier om creatieve gebruikers toegang te geven tot activa van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie voor meer informatie [AEM integratie van Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) artikel. | AEM 6.4.4.0 |
 
 ## Bekende problemen {#known-issues}
 
@@ -595,4 +595,4 @@ Lijst van inhoudspakketten opgenomen in AEM 6.4.8.4
 Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [Productdownload op licensing.adobe.com](https://licensing.adobe.com/)
-* [Contact opnemen met de klantenondersteuning](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
+* [Contact opnemen met de klantenondersteuning](https://experienceleague.adobe.com/docs/customer-one/using/home.html)

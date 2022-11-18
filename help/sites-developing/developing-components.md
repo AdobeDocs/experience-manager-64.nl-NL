@@ -4,9 +4,9 @@ seo-title: Developing AEM Components
 description: AEM componenten worden gebruikt om de inhoud die op uw webpagina's beschikbaar is, vast te houden, op te maken en weer te geven.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3475'
 ht-degree: 0%
 
 ---
@@ -427,7 +427,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 >[!NOTE]
 >
->De automatische verwezenlijking van componenteninstanties kan nu gemakkelijk binnen UI worden gevormd wanneer het gebruiken [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en bewerkbare sjablonen. Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) voor meer informatie over het bepalen van welke componenten automatisch met bepaalde media types worden geassocieerd.
+>De automatische verwezenlijking van componenteninstanties kan nu gemakkelijk binnen UI worden gevormd wanneer het gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en bewerkbare sjablonen. Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) voor meer informatie over het bepalen van welke componenten automatisch met bepaalde media types worden geassocieerd.
 
 ## De extensie AEM accolades gebruiken {#using-the-aem-brackets-extension}
 

@@ -2,9 +2,9 @@
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
 exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ De plaatsing van de geconstrueerde pakketten aan AEM wordt uitgevoerd door de Ad
 >
 >Zie voor meer informatie:
 >
->* Het [Adobe Inhoudspakket Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) artikel in de AEM as a Cloud Service documentatie voor hoe te om AEM toepassingen op te stellen.
->* Het [AEM artikel van de Structuur van het Project](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM as a Cloud Service documentatie voor hoe te om moderne AEM projecten te structureren.
->* De [AEM documentatie van Archetype van het Project](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) voor hoe te om een nieuw AEM project te beginnen gebruikend archetype.
+>* De [Insteekmodule Adobe-inhoudspakket](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) artikel in de AEM as a Cloud Service documentatie voor hoe te om AEM toepassingen op te stellen.
+>* De [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) artikel in de AEM as a Cloud Service documentatie over de structuur van moderne AEM .
+>* De [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentatie voor hoe te om een nieuw AEM project te beginnen gebruikend archetype.
 >
 >Alle drie de documenten zijn van toepassing op AEM 6.4.

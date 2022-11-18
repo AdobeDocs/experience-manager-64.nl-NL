@@ -2,9 +2,9 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.4.
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan e
 
 ## Verouderde functies {#deprecated-features}
 
-De onderstaande tabel bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.4. In het algemeen worden functies die in een toekomstige versie moeten worden verwijderd, eerst vervangen door een alternatief.
+De onderstaande tabel bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.4. In het algemeen worden functies die in een toekomstige release verwijderd moeten worden, eerst vervangen, met een alternatief dat beschikbaar is.
 
 Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik maken van de functie/mogelijkheid en plannen te maken om hun implementatie te wijzigen en het geboden alternatief te gebruiken.
 
@@ -36,7 +36,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 | Portal Director | De Portal Director is een reeks functies waarmee u via Portlet AEM inhoud kunt hosten op servers van derden. Adobe is niet van plan om verdere verbeteringen aan te brengen in de functie Portal Director onder de hieronder vermelde locatie. AEM 6.4 heeft het Portaal Director inbegrepen, en klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Let erop dat Portal Direct volledig wordt ondersteund terwijl het wordt afgekeurd. <ul><li>/libs/portal/director</li></ul> | Adobe is niet van plan om een vervangend item aan te bieden. |
 | Portlet-component | Portlet-componenten onder /foundation/components/portlet maken het hosten van JSR Portlets in AEM als onderdelen mogelijk. Adobe is niet van plan de functie Portlet-component verder te verbeteren. AEM 6.4 is voorzien van de Portlet-component en klanten die een upgrade uitvoeren van eerdere versies, kunnen deze blijven gebruiken zoals ze zijn. Portlet-component wordt nog steeds volledig ondersteund wanneer deze wordt vervangen. | Adobe is niet van plan om een vervangend item aan te bieden. |
 | Forms | Ondersteuning voor de Adobe Central Migration Bridge-service is afgekeurd omdat het Adobe Central-product niet meer wordt ondersteund. | Geen vervanging |
-| Forms | Vervangen gebruik van JSONObject in Vraag en OperationOptions. De volgende API&#39;s zijn afgekeurd: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | De `IValueMap`-API gebruiken |
+| Forms | Vervangen gebruik van JSONObject in Vraag en OperationOptions. De volgende API&#39;s zijn afgekeurd: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Gebruik de `IValueMap` API |
 | Forms | Vervangen Central Migration Bridge-service. | Er wordt geen vervanging aangeboden. |
 | Assets | Offloading van activa is vanaf AEM 6.4 afgekeurd. |  |
 | Ontwikkelaars | Lodash-/onderstrepingsclientbibliotheek. Adobe is niet van plan om de Lodash/underscore-clientbibliotheek die als onderdeel van de distributie wordt verzonden, verder te onderhouden en bij te werken (Quickstart) | Adobe raadt klanten aan die nog steeds Lodash/onderstrepingsteken voor hun code nodig hebben om het in hun basis van de projectcode toe te voegen. |
@@ -146,13 +146,12 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 
 ## Verwijderde functies {#removed-features}
 
-In de onderstaande tabel staan de functies en mogelijkheden die uit AEM 6.4 zijn verwijderd. In eerdere versies waren deze mogelijkheden gemarkeerd als
-afgekeurd.
+In de onderstaande tabel staan de functies en mogelijkheden die uit AEM 6.4 zijn verwijderd. In eerdere versies waren deze mogelijkheden gemarkeerd als afgekeurd.
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integratie met [!DNL Experience Cloud] | U kunt uw elementen synchroniseren met [!DNL Experience Cloud] door middel van een configuratie via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] voorheen genoemd  [!DNL Adobe Marketing Cloud]. | Als u vragen hebt, neemt u contact op met [Adobe Klantenondersteuning](https://experienceleague.adobe.com/?support-solution=General#support). |
-| Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. De [ActivityMap-plug-in van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt. |
+| Integratie met [!DNL Experience Cloud] | U kunt uw elementen synchroniseren met [!DNL Experience Cloud] het gebruiken van het vormen via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] vroeger werd geroepen [!DNL Adobe Marketing Cloud]. | Als u vragen hebt, neemt u contact op met [Adobe Klantenondersteuning](https://experienceleague.adobe.com/?support-solution=General#support). |
+| Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. De [ActivityMap-plug-in van Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt. |
 | Components-Forms | Form Captcha (stichting/componenten/form/captcha) | In plaats hiervan de component ReCaptcha door Google gebruiken |
 | Onderdelen | Presentatie (basis/componenten/presentatie) | Geen vervanging |
 | Onderdelen | Flash (stichting/componenten/flits) | Geen vervanging |
@@ -179,4 +178,4 @@ De onderstaande tabel bevat een lijst met wijzigingen voor toekomstige release d
 | Gebied | Functie | Aankondiging |
 |---|---|---|
 | Browserondersteuning | Microsoft Internet Explorer | AEM 6.4 is de laatste versie die Microsoft Internet Explorer 11 ondersteunt. |
-| Stichting | UI Framework | Adobe heeft in 2019 de Coral UI 2-componenten afgekeurd. AEM 6.4 is volledig gebaseerd op Coral UI 3 (geïntroduceerd met AEM 6.2). Adobe raadt zijn klanten en partners aan die douane UIs met Koraal 2 hebben gebouwd om deze aan Koraal 3 te refactored. Adobe biedt een gereedschap om de dialoogvensters Koraal 2 om te zetten in koraal 3 - [Meer informatie.](/help/sites-developing/modernization-tools.md) |
+| Stichting | UI Framework | Adobe heeft in 2019 de Coral UI 2-componenten afgekeurd. AEM 6.4 is volledig gebaseerd op Coral UI 3 (geïntroduceerd met AEM 6.2). Adobe raadt zijn klanten en partners aan die douane UIs met Koraal 2 hebben gebouwd om deze aan Koraal 3 te refactored. Adobe biedt een hulpmiddel om de dialogen van Koraal 2 om te zetten in Koraal 3 - [Lees meer.](/help/sites-developing/modernization-tools.md) |

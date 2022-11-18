@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '21546'
+source-wordcount: '21516'
 ht-degree: 0%
 
 ---
@@ -1291,7 +1291,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * Toegevoegde ondersteuning voor MongoDB Enterprise 3.6.
 * De redacteur van de Pagina van Plaatsen voegt steun voor in context het uitgeven en samenstelling met cliënt-zijcomponenten toe bouwt in React of Angular in combinatie met <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>.
 * Verbeteringen voor inhoudsfragmenten: heeft de mogelijkheid toegevoegd om notities aan te brengen in tekstvelden en versies naast elkaar te vergelijken.
-* Toegevoegd [integratie met Adobe Stock](/help/assets/aem-assets-adobe-stock.md) zodat de gebruikers Adobe Stock-middelen rechtstreeks vanuit AEM gebruikersinterface kunnen zoeken, voorvertonen, opslaan en licentiëren. Zie voor meer informatie [Adobe Stock-middelen gebruiken met AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
+* Toegevoegd [integratie met Adobe Stock](/help/assets/aem-assets-adobe-stock.md) zodat de gebruikers Adobe Stock-middelen rechtstreeks vanuit AEM gebruikersinterface kunnen zoeken, voorvertonen, opslaan en licentiëren. Zie voor meer informatie [Adobe Stock-middelen gebruiken met AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * De activa toegevoegde steun voor dynamische voorwaardelijke metaschema en de capaciteit om een meta-gegevensschema voor activaomslagen te plaatsen.
 * Toegevoegde configuratie in elke component om de functionaliteit voor het maken/bijwerken van de mapminiatuur in of uit te schakelen.
 * Verbeteringen in de afbeeldingseditor bij het ontwerpen van pagina&#39;s.
@@ -1338,7 +1338,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * De ON/OFF-tijd wordt opgeslagen in crx/de maar haalt niet het zelfde in de console UI van de paginaeigenschappen. NPR-25154: Hotfix voor CQ-4243431
 * Stijlen - Systeem breekt de beginwaarden van eigenschappen van het dialoogvenster. NPR-25648: Hotfix voor CQ-4250073
 * Wanneer u een eigenschap cq:tagName definieert in een knooppunt cq:htmlTag, wordt de tagnaam niet meegenomen via JSP. NPR-24154: Hotfix voor CQ-4244120
-* Voor genestelde componenten parsys, altijd eerste (met minst genestelde weg) bevredigend ontwerp wordt toegepast van veelvoudige beschikbare componenten. Zie voor meer informatie [Resolutie ontwerppad](https://docs.adobe.com/content/help/en/experience-manager-64/developing/platform/templates/page-templates-static.html). NPR-24973: Hotfix voor CQ-4246276
+* Voor genestelde componenten parsys, altijd eerste (met minst genestelde weg) bevredigend ontwerp wordt toegepast van veelvoudige beschikbare componenten. Zie voor meer informatie [Resolutie ontwerppad](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/templates/page-templates-static.html). NPR-24973: Hotfix voor CQ-4246276
 * Wanneer het kleven van tekst in een component RTE, wordt een pop-up dialoog getoond, maar niet behoorlijk teruggegeven. NPR-24895: Hotfix voor CQ-4245901
 * (RTE) Prestatieproblemen met verplichte veldindicator. NPR-24894: Hotfix voor CQ-4241895
 * (De component van de Pagina) het toevoegen van een component aan Parsys wordt bebouwd van recht en komt uit de breedte van het apparatenkader. NPR-25536: Hotfix voor CQ-4238224
@@ -1553,7 +1553,7 @@ De belangrijkste markeringen voor AEM 6.4.2.0 vormen zijn:
 * Toegevoegde mogelijkheid voor de gebruiker om hetzelfde WSDL-bestand te gebruiken voor meerdere services.
 * Het niet-ondersteunde tijdstempelpatroon is verwijderd uit het vervolgkeuzemenu van de datumkiezer.
 * Extra ondersteuning voor onderstreping van xfaf en pdf in OSGI.
-* Extra ondersteuning voor het gebruik van de [transactiemeldingsmogelijkheid](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) bij on-premise plaatsingen.
+* Extra ondersteuning voor het gebruik van de [transactiemeldingsmogelijkheid](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) bij on-premise plaatsingen.
 * Toegevoegde code om kind var in de redacteur van de voorwaardenregel niet te tonen.
 
 **Forms-invoegtoepassing**
@@ -1656,17 +1656,17 @@ De belangrijkste markeringen voor AEM 6.4.2.0 vormen zijn:
 
 **Activa**
 
-* Toegevoegd [integratie met Adobe Stock](/help/assets/aem-assets-adobe-stock.md) zodat gebruikers rechtstreeks vanuit AEM gebruikersinterface kunnen zoeken, voorvertonen, opslaan en licenties voor Adobe Stock-elementen kunnen maken. Zie voor meer informatie [Adobe Stock-elementen gebruiken met AEM elementen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: Hotfix voor CQ-30857
+* Toegevoegd [integratie met Adobe Stock](/help/assets/aem-assets-adobe-stock.md) zodat gebruikers rechtstreeks vanuit AEM gebruikersinterface kunnen zoeken, voorvertonen, opslaan en licenties voor Adobe Stock-elementen kunnen maken. Zie voor meer informatie [Adobe Stock-elementen gebruiken met AEM elementen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: Hotfix voor CQ-30857
 * Toegevoegde ondersteuning voor dynamische voorwaardelijke metaschema. Zie voor meer informatie [Trapsgewijze metagegevens](/help/assets/cascading-metadata.md). NPR-25189: Hotfix voor CQ-4237413
 * De optie Asset Download is ingeschakeld voor Inhoudsfragmenten. Zie voor meer informatie [Elementrapporten](/help/assets/asset-reports.md). NPR-25186: Hotfix voor CQ-4237410
 * Mogelijkheid om een metagegevensschema voor elementmappen in te stellen. Zie voor meer informatie [Metagegevensschema van map](/help/assets/folder-metadata-schema.md) en verwijst naar [Configuratie-instellingen](#configuration-settings-required-for-npr) post AEM 6.4.2.0 installatie. NPR-21268: Hotfix voor CQ-4221574
 
 **Sites**
 
-* U kunt een inhoudsfragment bewerken zonder machtigingen voor verwijderen. Zie voor meer informatie [Inhoudsfragmenten aanpassen en uitbreiden](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: Hotfix voor CQ-4248750
-* Er is een functie toegevoegd voor het annoteren van inhoudsfragmenten. Zie voor meer informatie [Fragmenten voor variaties schrijven](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: Hotfix voor CQ-4235336
-* Versioning: Vergelijk inhoudsfragmenten naast elkaar. Zie voor meer informatie [Inhoudsfragmenten beheren](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187: Hotfix voor CQ-4237412
-* Verbeteringen in de afbeeldingseditor zijn terug te voeren op AEM 6.4.2.0. Zie voor meer informatie [Afbeeldingseditor](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
+* U kunt een inhoudsfragment bewerken zonder machtigingen voor verwijderen. Zie voor meer informatie [Inhoudsfragmenten aanpassen en uitbreiden](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793: Hotfix voor CQ-4248750
+* Er is een functie toegevoegd voor het annoteren van inhoudsfragmenten. Zie voor meer informatie [Fragmenten voor variaties schrijven](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188: Hotfix voor CQ-4235336
+* Versioning: Vergelijk inhoudsfragmenten naast elkaar. Zie voor meer informatie [Inhoudsfragmenten beheren](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187: Hotfix voor CQ-4237412
+* Verbeteringen in de afbeeldingseditor zijn terug te voeren op AEM 6.4.2.0. Zie voor meer informatie [Afbeeldingseditor](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24467
 
 **SDAB-bundels en inhoudspakketten inbegrepen**
 
@@ -1900,7 +1900,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 
 **DAM - Slimme tags**
 
-* Inleiding [Verbeterde slimme tags](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
+* Inleiding [Verbeterde slimme tags](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
 
 **Forms**
 
@@ -1908,7 +1908,7 @@ AEM Forms-oplossingen worden geleverd via invoegpakketten en andere patchinstall
 
 De belangrijkste markeringen voor AEM Forms zijn:
 
-* AEM Forms introduceert [transactiemeldingsmogelijkheid](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) om transacties zoals verzonden formulieren, verwerkte documenten en gerenderde documenten bij de AEM Forms-implementatie bij te houden en bij te houden. Het biedt inzicht in productgebruik en helpt zakelijke gebruikers de volumes van digitale verwerking te begrijpen.
+* AEM Forms introduceert [transactiemeldingsmogelijkheid](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) om transacties zoals verzonden formulieren, verwerkte documenten en gerenderde documenten bij de AEM Forms-implementatie bij te houden en bij te houden. Het biedt inzicht in productgebruik en helpt zakelijke gebruikers de volumes van digitale verwerking te begrijpen.
 * Ondersteuning voor PDF/UA ingeschakeld voor XML-formulieren.
 * Toegevoegde allowProxy = true voor Clientlib **aemfd.ccm.channel.contentPage**
 * Bijgewerkte code om geavanceerde zoekopdrachten naar titels te maken zoals ze bevatten in plaats van gelijk.
@@ -2066,12 +2066,12 @@ De belangrijkste markeringen voor AEM Forms zijn:
 
 **Activa**
 
-* De functie voor verbeterde slimme tags is toegevoegd. Zie voor meer informatie [Verbeterde slimme tags](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: Hotfix voor CQ-4234883
+* De functie voor verbeterde slimme tags is toegevoegd. Zie voor meer informatie [Verbeterde slimme tags](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: Hotfix voor CQ-4234883
 * Introductie AEM Assets References in InDesign. Zie voor meer informatie [AEM Assets-verwijzingen in InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
 
 **Sites**
 
-* (Paginaontwerp) Verbeteringen in de afbeeldingseditor. Zie voor meer informatie [Afbeeldingseditor](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24267: Hotfix voor CQ-4245502
+* (Paginaontwerp) Verbeteringen in de afbeeldingseditor. Zie voor meer informatie [Afbeeldingseditor](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24267: Hotfix voor CQ-4245502
 
 **SDAB-pakketten en -inhoudspakketten**
 
@@ -2172,7 +2172,7 @@ Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekop
 
 1. Controleer of u het AEM Service Pack hebt geïnstalleerd.
 1. Download het overeenkomstige formulierinvoegpakket dat is vermeld op [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor uw besturingssysteem.
-1. Het formulierinvoegpakket installeren zoals beschreven in [Toevoegingspakketten voor AEM formulieren installeren](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. Het formulierinvoegpakket installeren zoals beschreven in [Toevoegingspakketten voor AEM formulieren installeren](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### AEM Forms JEE-installatieprogramma installeren {#install-aem-forms-jee-installer}
 
@@ -2227,7 +2227,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 | Gebied | Functie | Vervanging | Versie |
 |---|---|---|---|
 | Activa | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
-| Integratie van middelen en Adobe Creative Cloud | [AEM naar map Creative Cloud delen](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) werd ingevoerd in AEM 6.2 als een manier om creatieve gebruikers toegang te geven tot activa van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie voor meer informatie [AEM integratie van Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) artikel. | AEM 6.4.4.0 |
+| Integratie van middelen en Adobe Creative Cloud | [AEM naar map Creative Cloud delen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) werd ingevoerd in AEM 6.2 als een manier om creatieve gebruikers toegang te geven tot activa van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie voor meer informatie [AEM integratie van Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) artikel. | AEM 6.4.4.0 |
 
 ### Bekende problemen {#known-issues}
 
@@ -2273,4 +2273,4 @@ Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-ac
 
 * [Product downloaden op licensing.adobe.com](https://licensing.adobe.com/).
 * Productupdates, patches en pakketten voor extra functionaliteit op [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie voor meer informatie [Nieuwe Adobe Customer Support-ervaring](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie voor meer informatie [Nieuwe Adobe Customer Support-ervaring](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 38bae0d7-9544-42d0-9766-45c66f254e5c
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ AEM heeft een [cookie-uitschakelservice](/help/sites-developing/cookie-optout.md
 
 AEM Sites omvat een optionele integratie met Enhanced Insights van Analytics, die gebruikmaakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Zie voor meer informatie over het beheer van aanvragen van GDPR-betrokkenen met betrekking tot Adobe Analytics [Adobe Analytics en GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+Zie voor meer informatie over het beheer van aanvragen van GDPR-betrokkenen met betrekking tot Adobe Analytics [Adobe Analytics en GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Verbeterde personalisatie door doel {#enhanced-personalization-by-target}
 
 AEM Sites omvat een optionele integratie met Enhanced Personalization by Target, die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Zie voor meer informatie over het beheer van aanvragen van GDPR-betrokkenen met betrekking tot Adobe Target [Adobe Target - Privacy- en algemene gegevensbeschermingsverordening](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Zie voor meer informatie over het beheer van aanvragen van GDPR-betrokkenen met betrekking tot Adobe Target [Adobe Target - Privacy- en algemene gegevensbeschermingsverordening](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 

@@ -1,8 +1,8 @@
 ---
 title: SPA Inleiding en Analyse
-seo-title: SPA Inleiding en Analyse
+seo-title: SPA Introduction and Walkthrough
 description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
-seo-description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
+seo-description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
 uuid: 97a199af-b684-433d-b7b1-a8378513cb3d
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
 exl-id: 85179139-a841-42b0-8590-d1fb88c1ebbf
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -32,7 +31,7 @@ De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binn
 
 ## Inleiding {#introduction}
 
-### Artikel doelstelling {#article-objective}
+### Artikel {#article-objective}
 
 Dit artikel introduceert de basisconcepten van SPA alvorens de lezer door een analyse van de SPA redacteur door een eenvoudige SPA toepassing te gebruiken te leiden om basisinhoud het uitgeven aan te tonen. Vervolgens duikt het neer in de constructie van de pagina en hoe de SPA toepassing zich verhoudt tot en communiceert met de AEM SPA Editor.
 
@@ -45,9 +44,9 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWij.Ret
 
 >[!CAUTION]
 >
->Dit document gebruikt [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
+>In dit document worden de [We.Retail Journal-app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) uitsluitend voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
+>Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -92,9 +91,9 @@ Door het pagina-element op de client weer te geven, reageert het pagina-element 
 
 >[!NOTE]
 >
->Raadpleeg het artikel [Aan de slag met SPA in AEM](/help/sites-developing/spa-getting-started-react.md) voor technische details over hoe SPA werken in AEM.
+>Raadpleeg het artikel voor technische details over hoe SPA werken in AEM [Aan de slag met SPA in AEM](/help/sites-developing/spa-getting-started-react.md).
 >
->Voor een dichtere blik bij het ontwerp, de architectuur, en het technische werkschema van de SPA Redacteur, zie het artikel [SPA Overzicht van de Redacteur](/help/sites-developing/spa-overview.md).
+>Raadpleeg het artikel voor meer informatie over het ontwerp, de architectuur en de technische workflow van de SPA Editor [Overzicht SPA Editor](/help/sites-developing/spa-overview.md).
 
 ## Ervaring voor het bewerken van inhoud met SPA {#content-editing-experience-with-spa}
 
@@ -106,9 +105,7 @@ Wanneer een SPA is gemaakt om de AEM SPA Editor te gebruiken, merkt de auteur va
 >
 >* [AEM versie 6.4 met servicepack 2](/help/release-notes/sp-release-notes.md)
 >* [Installeer de steekproefWij.Retail app van het Dagboek beschikbaar op GitHub hier.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
-
 >
-
 
 
 1. Bewerk de app We.Retail Journal in AEM.
@@ -126,7 +123,7 @@ Wanneer een SPA is gemaakt om de AEM SPA Editor te gebruiken, merkt de auteur va
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
    >[!NOTE]
-   >Zie [SPA het Overzicht van de Redacteur ](spa-overview.md#requirements-limitations) voor verdere informatie over de op zijn plaats tekstredacteur en SPA.
+   >Zie de [Overzicht SPA Editor](spa-overview.md#requirements-limitations) voor meer informatie over de bestaande teksteditor en SPA.
 
 1. Met de middelenbrowser kunt u een nieuwe afbeelding naar een afbeeldingscomponent slepen en neerzetten.
 
@@ -142,15 +139,15 @@ Extra ontwerpgereedschappen, zoals het slepen en neerzetten van aanvullende comp
 >
 >De SPA Editor wijzigt het DOM van de toepassing niet. De SPA zelf is verantwoordelijk voor het DOM.
 >
->Als u wilt zien hoe dit werkt, gaat u verder naar het volgende gedeelte van dit artikel [SPA Apps en de AEM SPA Editor](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor).
+>Ga naar de volgende sectie van dit artikel om te zien hoe dit werkt [Apps en de AEM SPA Editor SPA](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor).
 
-## Apps en de AEM SPA Redacteur {#spa-apps-and-the-aem-spa-editor} SPA
+## Apps en de AEM SPA Editor SPA {#spa-apps-and-the-aem-spa-editor}
 
 Door te ervaren hoe een SPA zich gedraagt voor de eindgebruiker en vervolgens de SPA pagina te inspecteren, kunt u beter begrijpen hoe een SAP-app werkt met de SPA Editor in AEM.
 
-### Een SPA toepassing {#using-an-spa-application} gebruiken
+### Een SPA toepassing gebruiken {#using-an-spa-application}
 
-1. Laad de toepassing We.Retail Journal op de publicatieserver of met de optie **[!UICONTROL View as Published]** in het menu **Pagina-informatie** in de paginaeditor.
+1. Laad de toepassing van het Dagboek Wij.Retail of op de publicatieserver of gebruikend de optie **[!UICONTROL View as Published]** van de **Pagina-informatie** in de pagina-editor.
 
    `/content/we-retail-journal/react.html`
 
@@ -172,11 +169,11 @@ Door te ervaren hoe een SPA zich gedraagt voor de eindgebruiker en vervolgens de
 
 Dus als de pagina niet opnieuw wordt geladen wanneer u door de onderliggende pagina&#39;s navigeert, hoe wordt deze geladen?
 
-In de volgende sectie, [Een SPA toepassing laden](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application), wordt dieper ingegaan op de mechanica van het laden van de SPA en hoe de inhoud synchroon en asynchroon kan worden geladen.
+de volgende afdeling, [Een SPA laden](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application), gaat dieper in de mechanica van het laden van de SPA en hoe de inhoud synchroon en asynchroon kan worden geladen.
 
-### Een SPA {#loading-an-spa-application} laden
+### Een SPA laden {#loading-an-spa-application}
 
-1. Laad, indien nog niet geladen, de toepassing We.Retail Journal op de publicatieserver of met de optie **[!UICONTROL View as Published]** in het menu **Pagina-informatie** in de pagina-editor.
+1. Als niet reeds geladen, laad de toepassing van het Dagboek Wij.Retail of op de publicatieserver of gebruikend de optie **[!UICONTROL View as Published]** van de **Pagina-informatie** in de pagina-editor.
 
    `/content/we-retail-journal/react.html`
 
@@ -223,13 +220,13 @@ In de volgende sectie, [Een SPA toepassing laden](/help/sites-developing/spa-wal
 
    ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
 
-1. Laad `react.model.json` in een nieuw lusje.
+1. Laad de `react.model.json` op een nieuw tabblad.
 
    `/content/we-retail-journal/react.model.json`
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   De AEM SPA Editor gebruikt [AEM Content Services](/help/assets/content-fragments.md) om de volledige inhoud van de pagina als een JSON-model te leveren.
+   De AEM SPA Editor gebruikt [AEM Content Services](/help/assets/content-fragments.md) om de volledige inhoud van de pagina als JSON-model te leveren.
 
    Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
 
@@ -237,7 +234,7 @@ In de volgende sectie, [Een SPA toepassing laden](/help/sites-developing/spa-wal
 
 1. Het model kan pagina&#39;s ook groeperen zodat ze synchroon worden geladen, waardoor het aantal pagina&#39;s dat opnieuw moet worden geladen, afneemt.
 
-   In het voorbeeld van We.Retail Journal worden de pagina&#39;s `home`, `blog` en `aboutus` synchroon geladen, aangezien bezoekers doorgaans alle pagina&#39;s bezoeken. De pagina `weather` wordt echter asynchroon geladen, omdat bezoekers de pagina waarschijnlijk minder zullen bezoeken.
+   In het voorbeeld van We.Retail Journal: `home`, `blog`, en `aboutus` De pagina&#39;s worden synchroon geladen, aangezien bezoekers doorgaans al deze pagina&#39;s bezoeken. De `weather` De pagina wordt asynchroon geladen, omdat bezoekers deze minder waarschijnlijk bezoeken.
 
    Dit gedrag is niet verplicht en is volledig definieerbaar.
 
@@ -245,11 +242,11 @@ In de volgende sectie, [Een SPA toepassing laden](/help/sites-developing/spa-wal
 
 1. Als u dit verschil in gedrag wilt weergeven, laadt u de pagina opnieuw en wist u de netwerkactiviteit van de inspecteur. Navigeer naar de blog en over de webpagina&#39;s in het paginamenu en controleer of er geen netwerkactiviteiten zijn gerapporteerd.
 
-   Navigeer naar de weerpagina en controleer of `weather.model.json` asynchroon wordt aangeroepen.
+   Navigeer naar de weerpagina en controleer of de `weather.model.json` wordt asynchroon aangeroepen.
 
    ![screen_shot_2018-06-07at155738](assets/screen_shot_2018-06-07at155738.png)
 
-### Interactie met de SPA-editor {#interaction-with-the-spa-editor}
+### Interactie met de SPA Editor {#interaction-with-the-spa-editor}
 
 Met behulp van de voorbeeldtoepassing We.Retail Journal is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, waarbij gebruik wordt gemaakt van contentservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
 
@@ -257,7 +254,7 @@ Voor de auteur van de inhoud is het maken van inhoud met een SPA-editor bovendie
 
 In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur toestaat om componenten binnen de SPA met AEM componenten te verbinden en deze naadloze het uitgeven ervaring te bereiken.
 
-1. Laad de toepassing van het Dagboek Wij.Retail in de redacteur en schakelaar aan **Voorproef** wijze.
+1. Laad de toepassing van het Dagboek Wij.Retail in de redacteur en schakelaar aan **Voorvertoning** in.
 
    `http://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
@@ -279,7 +276,7 @@ In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur to
 
    >[!NOTE]
    >
-   >Dit is een gedragswijziging van gerenderde pagina&#39;s op de server in AEM, waarbij een element `cq` voor elke bewerkbare component wordt ingevoegd.
+   >Dit is een gedragswijziging van gerenderde pagina&#39;s op de server in AEM, waar een `cq` element ingevoegd voor elke bewerkbare component.
    >
    >Deze benadering in SPA verwijdert de behoefte om douaneelementen te injecteren, die slechts een extra gegevensattribuut baseren, die de prijsverhoging voor de frontend ontwikkelaar eenvoudiger maken.
 
@@ -287,6 +284,6 @@ In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur to
 
 Nu u de SPA het uitgeven ervaring in AEM begrijpt en hoe een SPA op de SPA Redacteur betrekking heeft, neem een diepgaande duik in het begrijpen van hoe een SPA wordt gebouwd.
 
-* [Aan de slag met SPA in ](/help/sites-developing/spa-getting-started-react.md) AEMshows hoe een basisSPA wordt gebouwd om met de SPA Redacteur in AEM te werken
-* [SPA de ](/help/sites-developing/spa-overview.md) Overzichten van de Redacteur gaat dieper in het communicatie model tussen AEM en de SPA.
-* [Het ontwikkelen van SPA voor ](/help/sites-developing/spa-architecture.md) AEMbeschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen evenals hoe SPA met AEM architectuur in wisselwerking staan.
+* [Aan de slag met SPA in AEM](/help/sites-developing/spa-getting-started-react.md) toont hoe een basis SPA wordt gebouwd om met de SPARedacteur in AEM te werken
+* [Overzicht SPA Editor](/help/sites-developing/spa-overview.md) gaat dieper in het communicatie model tussen AEM en de SPA.
+* [SPA ontwikkelen voor AEM](/help/sites-developing/spa-architecture.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen evenals hoe SPA met AEM architectuur in wisselwerking staan.

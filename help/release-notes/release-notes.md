@@ -1,7 +1,7 @@
 ---
 title: Algemene opmerkingen bij de release van Adobe Experience Manager 6.4
 seo-title: Release Notes
-description: 'In Adobe Experience Manager 6.4 worden de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen beschreven. '
+description: In Adobe Experience Manager 6.4 worden de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen beschreven.
 seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: 722a82c1048105c18d59dfc35815548f9b7eace4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '2751'
+source-wordcount: '2729'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ De introductie van Fluid Ervaring begin 2017, gesteund door de Fragments van de 
 
 **[Contentfragmenten](/help/assets/content-fragments.md)**
 
-Nieuw in 6.4 is visueel [inhoudsmodel](/help/assets/content-fragments-models.md) editor en een nieuwe [configureerbare component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) om flexibele HTML-uitvoer en JSON te bieden die kunnen worden opgenomen in Content Services.
+Nieuw in 6.4 is visueel [inhoudsmodel](/help/assets/content-fragments-models.md) editor en een nieuwe [configureerbare component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) om flexibele HTML-uitvoer en JSON te bieden die kunnen worden opgenomen in Content Services.
 
 **Ervaringsfragmenten**
 
@@ -131,13 +131,13 @@ Er zijn verschillende verbeteringen aangebracht in Sling Model Exporter en de Co
 
 AEM 6.4 voltooit de transformatie naar het volgende generatie componentenmodel. Het concept van de Componenten van de Kern dat in AEM 6.3 wordt geïntroduceerd, en nu door het Systeem van de Stijl wordt aangesloten, verstrekt een efficiënte manier om nieuwe te bouwen en bestaande plaatsen uit te breiden.
 
-Aanbevolen zelfstudie voor meer informatie over hoe u het nieuwe componentmodel het beste kunt gebruiken: [Aan de slag met AEM Sites - WKND-zelfstudie](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Aanbevolen zelfstudie voor meer informatie over hoe u het nieuwe componentmodel het beste kunt gebruiken: [Aan de slag met AEM Sites - WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### Scherminvoegtoepassing {#screens-add-on}
 
 AEM Screens staat voor een consistente boodschap via alle marketingkanalen, inclusief Digital Signage en kiosk-netwerken. AEM 6.4 biedt extra ondersteuning voor het uitvoeren van de Sigage Player op Microsoft Windows- en Google Chrome OS-hardware. Bovendien zijn verbeteringen op het gebied van extern apparaatbeheer en programma&#39;s (groepen kanalen) beschikbaar.
 
-Zie voor meer informatie over de updates voor schermen [AEM Screens-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Zie voor meer informatie over de updates voor schermen [AEM Screens-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager {#experience-manager-communities}
 
@@ -195,9 +195,9 @@ Ga voor meer informatie over deze mogelijkheid, voorwaarden en toegang tot de fu
 
 **Bureaubladapp AEM**
 
-AEM bureaubladtoepassing is bijgewerkt naar versie 1.8, die compatibel is met AEM 6.4. De volledige lijst met wijzigingen voor AEM bureaubladtoepassing vindt u in een speciale [Opmerkingen bij de release AEM bureaublad](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html) document.
+AEM bureaubladtoepassing is bijgewerkt naar versie 1.8, die compatibel is met AEM 6.4. De volledige lijst met wijzigingen voor AEM bureaubladtoepassing vindt u in een speciale [Opmerkingen bij de release AEM bureaublad](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) document.
 
-De verbeteringen die sinds AEM 6.3 versie worden geïntroduceerd omvatten de capaciteit om hiërarchische omslagen op de achtergrond te uploaden, een nieuwe UI om activa achtergrondverrichtingen te controleren, verbeterde caching, voorzien van een netwerk en login, evenals algemene stabiliteitsverbeteringen. De documentatie bevat ook een [handleiding voor best practices](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+De verbeteringen die sinds AEM 6.3 versie worden geïntroduceerd omvatten de capaciteit om hiërarchische omslagen op de achtergrond te uploaden, een nieuwe UI om activa achtergrondverrichtingen te controleren, verbeterde caching, voorzien van een netwerk en login, evenals algemene stabiliteitsverbeteringen. De documentatie bevat ook een [handleiding voor best practices](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html).
 
 **Adobe Sensei Services**
 
@@ -219,7 +219,7 @@ Meerdere verbeteringen om het bladeren, zoeken en beheren van middelen voor gebr
 
 **Brand Portal**
 
-Verschillende verbeteringen op het gebied van metagegevens, rapportage, digitale rechten, aanmeldingservaring en publicatieprestaties voor middelendistributie. Ga voor meer informatie over de nieuwe verbeteringen en functies naar [Nieuwe functies in AEM Assets Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html).
+Verschillende verbeteringen op het gebied van metagegevens, rapportage, digitale rechten, aanmeldingservaring en publicatieprestaties voor middelendistributie. Ga voor meer informatie over de nieuwe verbeteringen en functies naar [Nieuwe functies in AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### Dynamic Media-invoegtoepassing {#dynamic-media-add-on}
 
@@ -263,7 +263,7 @@ Meer informatie over [AEM Forms](forms.md) releasepagina voor notities. Zie ook 
 
 U kunt Livefyre met uw AEM 6.4 instantie integreren. Hier vindt u informatie over de integratie van Livefyre met AEM:
 
-* [Integratie van Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
+* [Integratie van Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html)
 
 ### Gebruik klantgerichte ontwikkeling {#leverage-customer-focused-development}
 
@@ -279,7 +279,7 @@ Dit proces van prioritering heeft meer dan 500 klant gerichte veranderingen opge
 
 * Standalone QuickStart: cq-quickstart-6.4.0.jar
 * Quickstart toepassingsserver: cq-quickstart-6.4.0.war
-* Dispatcher 4.3.1 of hoger voor verschillende webservers en -platforms. Zie [downloadkoppeling](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
+* Dispatcher 4.3.1 of hoger voor verschillende webservers en -platforms. Zie [downloadkoppeling](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html).
 * Plug-in voor Eclipse IDE. [Lees meer en download](/help/sites-developing/aem-eclipse.md).
 
 * Extension for Brackets Code Editor. [Lees meer en download](/help/sites-developing/aem-brackets.md).
@@ -302,7 +302,7 @@ Dit proces van prioritering heeft meer dan 500 klant gerichte veranderingen opge
 
 **Assets**
 
-* Adobe Experience Manager-bureaubladtoepassing ([meer lezen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) en [downloaden](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
+* Adobe Experience Manager-bureaubladtoepassing ([meer lezen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) en [downloaden](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html))
 
 * Pakket maken om verbeterde PDF Rasterizer toe te voegen ([meer lezen](/help/assets/aem-pdf-rasterizer.md) en [downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -377,4 +377,4 @@ Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-ac
 
 * [Product downloaden op licensing.adobe.com](https://licensing.adobe.com/).
 * Productupdates, patches en pakketten voor extra functionaliteit op [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie voor meer informatie [Nieuwe Adobe Customer Support-ervaring](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie voor meer informatie [Nieuwe Adobe Customer Support-ervaring](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

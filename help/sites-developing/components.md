@@ -1,8 +1,8 @@
 ---
 title: Overzicht van componenten
-seo-title: Onderdelen
+seo-title: Components
 description: Componenten zijn modulaire eenheden die specifieke functionaliteit realiseren om uw inhoud op uw website weer te geven
-seo-description: Componenten zijn modulaire eenheden die specifieke functionaliteit realiseren om uw inhoud op uw website weer te geven
+seo-description: Components are modular units which realize specific functionality to present your content on your website
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,17 +10,16 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 3444d7df-fc43-4383-87b0-0f00fef116bc
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 4%
+source-wordcount: '580'
+ht-degree: 0%
 
 ---
 
 # Overzicht van componenten{#components-overview}
 
-Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals de [die worden gebruikt voor het ontwerpen van pagina&#39;s](/help/sites-authoring/default-components-foundation.md).
+Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals [gebruikt voor het ontwerpen van pagina&#39;s](/help/sites-authoring/default-components-foundation.md).
 
 ## Wat zijn componenten? {#what-exactly-is-a-component}
 
@@ -33,7 +32,7 @@ Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, 
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters gebruiken die zijn gebouwd met subelementen op basis van graniet UI-componenten
-* Ontwikkeld met behulp van [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (aanbevolen) of JSP.
+* worden ontwikkeld met [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (aanbevolen) of JSP.
 * Kan worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
@@ -47,9 +46,9 @@ Elke AEM component:
 
 * Is een middeltype.
 * Is een inzameling van manuscripten die een specifieke functie volledig realiseren.
-* Kan functioneren in *isolatie*, betekenend of binnen AEM of een portaal.
+* Kan werken in *isolatie*, ofwel in AEM of een portaal.
 
-## Buiten-de-doos componenten binnen AEM {#out-of-the-box-components-within-aem}
+## Buiten-de-box Componenten binnen AEM {#out-of-the-box-components-within-aem}
 
 AEM wordt geleverd met verschillende [out-of-the-box componenten](/help/sites-authoring/default-components.md) die uitgebreide functionaliteit bieden, waaronder:
 
@@ -59,40 +58,40 @@ AEM wordt geleverd met verschillende [out-of-the-box componenten](/help/sites-au
 * Afbeelding, met bijbehorende tekst
 * Werkbalk
 
-De geleverde componenten en hun gebruik binnen de [voorbeeldwebsites ](/help/sites-developing/we-retail.md) illustreren hoe u componenten kunt implementeren en gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
+De geleverde onderdelen en het gebruik ervan binnen de [voorbeeld weergeven.Handelswebsites](/help/sites-developing/we-retail.md) Hieronder ziet u hoe u componenten kunt implementeren en gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
-### Core Components and Foundation Components {#core-components-and-foundation-components}
+### Basiscomponenten en basiscomponenten {#core-components-and-foundation-components}
 
 Er zijn twee reeksen van Adobe-Geleverde AEM beschikbare componenten:
 
-* [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Elementaire componenten](/help/sites-authoring/default-components-foundation.md)
 
-**De** Componenten van de kern werden geïntroduceerd met AEM 6.3 en bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan. De [Wij.Retail verwijzingsplaats](/help/sites-developing/we-retail.md) illustreert hoe de kerncomponenten kunnen worden gebruikt en de huidige beste praktijken van componentenontwikkeling vertegenwoordigen.
+**Kernonderdelen** werden geïntroduceerd met AEM 6.3 en bieden flexibele en functies-rijke ontwerpfunctionaliteit. De [We.Retail-referentiesite](/help/sites-developing/we-retail.md) illustreert hoe de kerncomponenten kunnen worden gebruikt en de huidige beste praktijken van componentenontwikkeling vertegenwoordigen.
 
-**De Componenten van de stichting** waren beschikbaar met AEM voor vele versies en zijn beschikbaar uit-van-de-doos in een standaard AEM installatie. Hoewel nog steeds ondersteund, zijn de meeste vervangen, worden ze niet meer uitgebreid en zijn ze gebaseerd op oudere technologieën.
+**Elementaire componenten** zijn beschikbaar met AEM voor vele versies en zijn beschikbaar uit-van-de-doos in een standaard AEM installatie. Hoewel nog steeds ondersteund, zijn de meeste vervangen, worden ze niet meer uitgebreid en zijn ze gebaseerd op oudere technologieën.
 
 >[!NOTE]
 >
->[De Componenten van de kern ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) vertegenwoordigen de huidige beste praktijken voor componentenontwerp en ontwikkeling en dienen als verwijzingsimplementaties.
+>[Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) de huidige beste praktijken voor componentenontwerp en ontwikkeling vertegenwoordigen en als verwijzingsimplementaties dienen.
 >
->[AEM ](modernization-tools.md) Moderniseringstoolscan helpt de migratie naar Core Components.
+>[AEM moderniseringsinstrumenten](modernization-tools.md) kan helpen bij de migratie naar Core Components.
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
-Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik [de Console van Componenten](/help/sites-authoring/default-components-console.md).
+Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik [Componentenconsole](/help/sites-authoring/default-components-console.md).
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 
-1. Selecteer **[!UICONTROL CRXDE Lite]** in **[!UICONTROL Tools]** op de werkbalk en **[!UICONTROL Query]**. Hiermee wordt het tabblad **[!UICONTROL Query]** geopend.
+1. In **[!UICONTROL CRXDE Lite]**, selecteert u **[!UICONTROL Tools]** vanaf de werkbalk, dan **[!UICONTROL Query]**, die de **[!UICONTROL Query]** tab.
 
-1. Selecteer **[!UICONTROL Query]** op het tabblad `XPath` als **[!UICONTROL Type]**.
+1. In de **[!UICONTROL Query]** tab, selecteert u `XPath` als **[!UICONTROL Type]**.
 
-1. Voer in het invoerveld **[!UICONTROL Query]** de volgende tekenreeks in:
+1. In de **[!UICONTROL Query]** invoerveld, voer de volgende tekenreeks in:
 
    `//element(*, cq:Component)`
 
-1. Klik op **[!UICONTROL Execute]** en de componenten worden weergegeven.
+1. Klikken **[!UICONTROL Execute]** en de componenten worden vermeld.
 
 ## Aanvullende bronnen {#further-reading}
 
@@ -107,7 +106,7 @@ De volgende pagina&#39;s verstrekken meer gedetailleerde informatie over het ont
 * [Componenten voor inhoudsfragmenten](/help/sites-developing/components-content-fragments.md)
 * [Pagina-informatie ophalen in JSON-indeling](/help/sites-developing/pageinfo.md)
 * [Internationaliserende componenten](/help/sites-developing/i18n.md)
-* [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Voorwaarden verbergen gebruiken](/help/sites-developing/hide-conditions.md)
 * Klassieke interface
 

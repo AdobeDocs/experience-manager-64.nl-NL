@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.4 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3721'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 + [AEM 6.4 Forms-gids](home.md)
 + Releaseopmerkingen {#release-notes-new-features}
-   + [Releaseopmerkingen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
+   + [Releaseopmerkingen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [Overzicht van nieuwe functies](using/whats-new.md)
-   + [Verouderde functies](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [Verouderde functies](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Aan de slag {#getting-started}
    + [Inleiding tot AEM Forms](using/introduction-aem-forms.md)
    + [Inleiding tot het ontwerpen van adaptieve formulieren](using/introduction-forms-authoring.md)
@@ -573,8 +573,8 @@ ht-degree: 0%
    + [Ad hoc Vragen in Proces het Melden](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Problemen met procesrapportage oplossen](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referentie ontwikkelaar {#developer-reference}
-   + [Grondbeginselen van ontwikkelaars](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML Sjabloontaal](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [Grondbeginselen van ontwikkelaars](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html)
+   + [HTML Sjabloontaal](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
    + [AEM insteekmodule voor het opsporen van fouten in adaptieve formulieren](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)

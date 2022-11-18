@@ -6,10 +6,10 @@ seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
-source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 22%
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +21,11 @@ Ben je een AEM ontwikkelaar? [Ga aan de slag met het ontwikkelen van AEM.](/help
 
 ## Core Components for AEM {#core-components-for-aem}
 
-[Met de uitbreidbare Core Components kunnen auteurs eenvoudig inhoud maken.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+[Met de uitbreidbare Core Components kunnen auteurs eenvoudig inhoud maken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
 ## HTML (HTML Template Language) voor AEM {#htl-for-aem}
 
-[Gebruik Sjabloontaal HTML om te ontwikkelen voor AEM.](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+[Gebruik Sjabloontaal HTML om te ontwikkelen voor AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 
 ## Cloud Manager voor AEM {#cloud-manager-for-aem}
 
@@ -33,4 +33,4 @@ Ben je een AEM ontwikkelaar? [Ga aan de slag met het ontwikkelen van AEM.](/help
 
 ## Dispatcher Configuration {#dispatcher-configuration}
 
-[Uw verzender configureren met AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+[Uw verzender configureren met AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

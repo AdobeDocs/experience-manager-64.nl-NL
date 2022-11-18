@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 exl-id: 2e06d1c8-e7c0-41ce-8799-9e762663eded
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1452'
 ht-degree: 0%
 
 ---
@@ -40,15 +40,15 @@ Er zijn drie manieren om Livefy in een douane AEM component of andere CMSs zoals
 **Methode 1: Designer-app-implementatie**
 
 * **Wat:** Eenvoudige en snelste manier om een LiveCycle-app te integreren. U kunt een aangepaste JavaScript-insluitcode ontwerpen, configureren en genereren om een Media Wall-app op een pagina in minuten te integreren.
-* **Hoe:**  [Een Media Wall-app maken, voorvertonen, publiceren en insluiten](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **Hoe:**  [Een Media Wall-app maken, voorvertonen, publiceren en insluiten](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **Voorbeeld:** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
 **Methode 2: SDK-implementatie**
 
-* **Wat:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) is de kernbibliotheek die Apps en Auth op een plaats macht. Het definieert de globale *window.Livefyre* object en één openbare methode; *Livefyre.require*, die kan worden gebruikt om andere LiveCycle JavaScript-bibliotheken te laden die u helpen bij het insluiten van LiveCycle-apps en de integratie met externe gebruikersauteplatforms.
+* **Wat:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) is de kernbibliotheek die Apps en Auth op een plaats macht. Het definieert de globale *window.Livefyre* object en één openbare methode; *Livefyre.require*, die kan worden gebruikt om andere LiveCycle JavaScript-bibliotheken te laden die u helpen bij het insluiten van LiveCycle-apps en de integratie met externe gebruikersauteplatforms.
 
-* **Hoe**: [Gebruik het streamhub-wallpakket van de Livefyre JavaScript SDK](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-media-wall-integration.html)
+* **Hoe**: [Gebruik het streamhub-wallpakket van de Livefyre JavaScript SDK](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
 
 * **Voorbeeld**: [https://codepen.io/dharafyre/pen/KZKBNv?editors=1010](https://codepen.io/dharafyre/pen/KZKBNv?editors=1010)
 
@@ -56,7 +56,7 @@ Voor geavanceerde aanpassingen met de SDK raadpleegt u [StreamHub SDKs](https://
 
 **Methode 3: API-implementatie**
 
-* Voor het maken van aangepaste ervaringen en gegevensvisualisaties kunnen Livefyre-apps helemaal vanaf het begin worden gemaakt met behulp van de [Bootstrap- en Stream-API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* Voor het maken van aangepaste ervaringen en gegevensvisualisaties kunnen Livefyre-apps helemaal vanaf het begin worden gemaakt met behulp van de [Bootstrap- en Stream-API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
 Zorg ervoor dat u volgt [Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://en.facebookbrand.com/guidelines/brand), en [Instagram](https://en.instagram-brand.com/) weergaverichtlijnen bij het samenstellen van de gebruikersinterface voor UGC.
 
@@ -65,7 +65,7 @@ Zorg ervoor dat u volgt [Twitter](https://developer.twitter.com/en/developer-ter
 Voor de Integraties van de Muur van Media die authentificatie vereisen, gelieve te verwijzen naar:
 
 * [Single Sign on Integration aanpassen](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) voor AEM Identity Management
-* [Identiteitsintegratie](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
+* [Identiteitsintegratie](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
 
 ### Hoofdlettergebruik - overzicht {#use-case-overview}
 
@@ -76,7 +76,7 @@ Uitvoeringsmaatregelen:
 1. [Aan de slag](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [AEM configureren voor gebruik van Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [Sleep AEM Media Wall-component naar de pagina](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
-1. [Vorm Streams en voeg regels toe om UGC en vertoning op de component van de Muur van Media te leiden](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
+1. [Vorm Streams en voeg regels toe om UGC en vertoning op de component van de Muur van Media te leiden](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html)
 
 Ga voor trainingsvideo&#39;s over het streamen van UGC naar [Automatische inhoudsstromen maken en sociale inhoud zoeken in Adobe Experience Manager LiveCycle](https://helpx.adobe.com/experience-manager/tutorials.html).
 
@@ -85,9 +85,9 @@ Ga voor trainingsvideo&#39;s over het streamen van UGC naar [Automatische inhoud
 * [CNN Media Wall](https://edition.cnn.com/specials/nepal-earthquake-media-wall)
 * [PGA-kleurendrukschijf](https://www.pgatour.com/social-hub.html)
 
-Voor het maken van aangepaste ervaringen en gegevensvisualisaties kunnen Livefyre-apps helemaal vanaf het begin worden gemaakt met behulp van de [Bootstrap- en Stream-API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+Voor het maken van aangepaste ervaringen en gegevensvisualisaties kunnen Livefyre-apps helemaal vanaf het begin worden gemaakt met behulp van de [Bootstrap- en Stream-API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-Voor LiveCyre-toepassingen die verificatie vereisen, raadpleegt u [Identiteitsintegratie](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms.
+Voor LiveCyre-toepassingen die verificatie vereisen, raadpleegt u [Identiteitsintegratie](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms.
 
 * [PGA-kleurendrukschijf](https://www.pgatour.com/social-hub.html)
 * [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
@@ -105,18 +105,18 @@ Er zijn drie manieren om Livefyre Commentaar App in een douane AEM component of 
 **Methode 1: Designer-app-implementatie**
 
 * **Wat:** Eenvoudige en snelste manier om een LiveCycle-app te integreren. U kunt een aangepaste JavaScript-insluitcode ontwerpen, configureren en genereren om een Media Wall-app op een pagina in minuten te integreren.
-* **Hoe:** [Een app voor opmerkingen maken, voorvertonen, publiceren en insluiten](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **Hoe:** [Een app voor opmerkingen maken, voorvertonen, publiceren en insluiten](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **Voorbeeld:** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
 **Methode 2: SDK-implementatie**
 
-* **Wat:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) is de kernbibliotheek die Apps en Auth op een plaats macht. Het definieert de globale *window.Livefyre* object en één openbare methode; *Livefyre.require*, die kan worden gebruikt om andere LiveCycle JavaScript-bibliotheken te laden die u helpen bij het insluiten van LiveCycle-apps en de integratie met externe gebruikersauteplatforms.
+* **Wat:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) is de kernbibliotheek die Apps en Auth op een plaats macht. Het definieert de globale *window.Livefyre* object en één openbare methode; *Livefyre.require*, die kan worden gebruikt om andere LiveCycle JavaScript-bibliotheken te laden die u helpen bij het insluiten van LiveCycle-apps en de integratie met externe gebruikersauteplatforms.
 
 * **Hoe:**
 
-   * Een verzameling/app maken met [CollectionMeta-token](https://docs.adobe.com/content/help/en/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
-   * Integreren [App met opmerkingen](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/comments/c-comments-integration.html) in sites die de codestructuur Livefyre.js gebruiken.
+   * Een verzameling/app maken met [CollectionMeta-token](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
+   * Integreren [App met opmerkingen](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/comments/c-comments-integration.html) in sites die de codestructuur Livefyre.js gebruiken.
 
 * **Voorbeeld:**  [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
@@ -124,12 +124,12 @@ Voor geavanceerde aanpassingen met de SDK raadpleegt u [StreamHub SDKs](https://
 
 **Methode 3: API-implementatie**
 
-* Voor het maken van aangepaste ervaringen en gegevensvisualisaties kunnen Livefyre-apps helemaal vanaf het begin worden gemaakt met behulp van de [Bootstrap- en Stream-API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* Voor het maken van aangepaste ervaringen en gegevensvisualisaties kunnen Livefyre-apps helemaal vanaf het begin worden gemaakt met behulp van de [Bootstrap- en Stream-API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
 ### Integratie van verificatie van opmerkingen {#comments-app-authentication-integration}
 
 * [Single Sign on Integration aanpassen](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) voor AEM Identity Management
-* [Identiteitsintegratie](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
+* [Identiteitsintegratie](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
 
 
 ## De Livefyre AEM Assets-integratie gebruiken om UGC te importeren in AEM Assets {#use-livefyre-aem-assets-integration-to-import-ugc-in-aem-assets}
@@ -168,12 +168,12 @@ Er zijn twee manieren om de app van de Revisies van Livefy in een douane AEM com
 
 **Methode 1: SDK-implementatie**
 
-* **Wat:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) is de kernbibliotheek die Apps en Auth op een plaats macht. Het definieert de globale *window.Livefyre* object en één openbare methode; *Livefyre.require*, die kan worden gebruikt om andere LiveCycle JavaScript-bibliotheken te laden die u helpen bij het insluiten van LiveCycle-apps en de integratie met externe gebruikersauteplatforms.
+* **Wat:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) is de kernbibliotheek die Apps en Auth op een plaats macht. Het definieert de globale *window.Livefyre* object en één openbare methode; *Livefyre.require*, die kan worden gebruikt om andere LiveCycle JavaScript-bibliotheken te laden die u helpen bij het insluiten van LiveCycle-apps en de integratie met externe gebruikersauteplatforms.
 
 * **Hoe:**
 
-   * De revisies maken [CollectionMeta-token](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-reviews-integration.html) om metagegevens op te geven die moeten worden opgeslagen in de verzameling Revisies.
-   * Integreren [Revisies-app](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-reviews-integration.html) naar sites met de *Livefyre.js* codestructuur insluiten
+   * De revisies maken [CollectionMeta-token](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) om metagegevens op te geven die moeten worden opgeslagen in de verzameling Revisies.
+   * Integreren [Revisies-app](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) naar sites met de *Livefyre.js* codestructuur insluiten
 
 * **Voorbeeld:**  [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
@@ -188,7 +188,7 @@ Aanvullende beoordelingen en revisies-API&#39;s vindt u [hier](https://api.livef
 ### Integratie van verificatie van opmerkingen {#comments-app-authentication-integration-1}
 
 * [Single Sign on Integration aanpassen](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) voor AEM Identity Management
-* [Identiteitsintegratie](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
+* [Identiteitsintegratie](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
 
 ### Voorbeelden van klanten {#customer-examples-2}
 

@@ -1,8 +1,8 @@
 ---
 title: Bewerkbare sjablonen uitproberen in We.Detailhandel
-seo-title: Bewerkbare sjablonen uitproberen in We.Detailhandel
+seo-title: Trying out Editable Templates in We.Retail
 description: Bewerkbare sjablonen uitproberen in We.Detailhandel
-seo-description: 'null'
+seo-description: null
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: 268edb9b-0f52-44c4-a75c-d9dfe39e7d17
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 10%
+source-wordcount: '481'
+ht-degree: 8%
 
 ---
 
-# Bewerkbare sjablonen uitproberen in We.Retail{#trying-out-editable-templates-in-we-retail}
+# Bewerkbare sjablonen uitproberen in We.Detailhandel{#trying-out-editable-templates-in-we-retail}
 
 Met de bewerkbare sjablonen is het maken en onderhouden van sjablonen niet langer alleen een taak voor ontwikkelaars. Een type van macht-gebruiker, die een malplaatjeauteur wordt genoemd, kan malplaatjes nu tot stand brengen. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de maker van sjablonen sjablonen maken en configureren zonder een ontwikkelingsproject.
 
@@ -31,7 +30,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. De moduskiezer biedt niet langer een ontwerpmodus. Alle pagina&#39;s voor We.Retail zijn gebaseerd op bewerkbare sjablonen en om het ontwerp van bewerkbare sjablonen te wijzigen, moeten deze worden bewerkt in de sjablooneditor.
-1. Selecteer **Sjabloon bewerken** in het menu **Pagina-informatie**.
+1. Van de **Pagina-informatie** menu selecteren **Sjabloon bewerken**.
 1. U bewerkt nu de sjabloon voor de hoofdpagina.
 
    In de structuurmodus van de pagina kunt u de structuur van de sjabloon wijzigen. Dit geldt bijvoorbeeld voor de componenten die zijn toegestaan in de lay-outcontainer.
@@ -68,12 +67,12 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. In de sjablooneditor kunt u de moduskiezer gebruiken om de modus **Oorspronkelijke inhoud** te wijzigen en te definiëren welke inhoud op de pagina is vereist.
+1. In de sjablooneditor kunt u de moduskiezer gebruiken om over te schakelen op **Oorspronkelijke inhoud** om te bepalen welke inhoud op de pagina wordt vereist.
 
-   **De** layoutmodus kan worden gebruikt zoals deze zich op een normale pagina bevindt om de lay-out voor de sjabloon te definiëren.
+   **Layout** Deze modus kan worden gebruikt zoals deze zich op een normale pagina bevindt om de indeling voor de sjabloon te definiëren.
 
 ## Meer informatie {#more-information}
 
-Raadpleeg voor meer informatie het ontwerpdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of het document voor ontwikkelaars Pagina [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige technische details over bewerkbare sjablonen.
+Voor meer informatie raadpleegt u het ontwerpdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of de pagina voor ontwikkelaarsdocumenten [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige technische details over bewerkbare sjablonen.
 
-U kunt ook [kerncomponenten](/help/sites-developing/we-retail-core-components.md) willen onderzoeken. Zie het ontwerpdocument [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het document [Developer Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
+Misschien wilt u ook een onderzoek instellen [kerncomponenten](/help/sites-developing/we-retail-core-components.md). Zie het ontwerpdocument [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.

@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1641'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ De belangrijkste functies, hooglichten en verbeteringen die zijn uitgevoerd in A
 
 ## Adobe-itemkoppeling {#adobe-asset-link}
 
-Adobe Asset Link in Creative Cloud for Enterprise stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van content. Het is een nieuwe inheemse capaciteit in Creative Cloud voor onderneming, die een verbinding aan AEM Assets direct van Adobe Photoshop, Adobe Illustrator, of Adobe InDesign verstrekt — zonder deze hulpmiddelen te verlaten.
+Adobe Asset Link in Creative Cloud for Enterprise stroomlijnt de samenwerking tussen ontwerpers en marketers in het proces voor het maken van inhoud. Het is een nieuwe inheemse capaciteit in Creative Cloud voor onderneming, die een verbinding aan AEM Assets direct van Adobe Photoshop, Adobe Illustrator, of Adobe InDesign verstrekt — zonder deze hulpmiddelen te verlaten.
 
-Meer over het vermogen, de eerste vereisten, en hoe te om tot het toegang te hebben, zie [Adobe de pagina van de Activa van de Verbinding](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
+Als u meer wilt weten over de mogelijkheden, voorwaarden en toegangsvoorwaarden, raadpleegt u de [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) pagina.
 
 ## Verbeterde slimme tags (aangedreven door Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
@@ -34,7 +34,7 @@ AEM 6.4 introduceert de mogelijkheid van kunstmatige intelligentie, verbeterde s
 * De Slimme Dienst van de Inhoud leert de bedrijfstaxonomie van de klant en gebruikt het om digitale activa met klant relevante markeringen naast generische markeringen automatisch te etiketteren. Het verbetert de ontdekkbaarheid van activa beduidend en vermindert tijd aan markt.
 * Adobe Sensei is verantwoordelijk voor de Smart Content Service. Hiermee kunt u het algoritme voor imageherkenning trainen op uw bedrijfsconomie. Deze inhouds-informatie wordt vervolgens gebruikt om relevante tags toe te passen op vergelijkbare elementen.
 
-Als u AEM Assets Enhanced Smart Tags wilt gebruiken, installeert u het [nieuwste servicepakket van AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Als u AEM Assets Enhanced Smart Tags wilt gebruiken, installeert u de [nieuwste servicepack van AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
 ## Smart Translation Search (Engelstalig) (aangedreven door Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
@@ -74,7 +74,7 @@ Verbeteringen voor beheerprogramma&#39;s
 
 Catalogi
 
-* Verbeterde gebruikerservaring, uitlijning met de gebruikersinterface van Sjablonen. Zie [Catalog Producer](../sites-administering/catalog-producer.md) voor meer informatie.
+* Verbeterde gebruikerservaring, uitlijning met de gebruikersinterface van Sjablonen. Zie voor meer informatie [Catalogusproducent](../sites-administering/catalog-producer.md).
 
 ## Metagegevens {#metadata}
 
@@ -94,18 +94,18 @@ AEM 6.4 biedt aanzienlijke verbeteringen op het gebied van middelenrapportage:
 
 ## Brand Portal {#brand-portal}
 
-* **6.3 Platform-upgrade**: Brand Portal is geüpgraded van AEM 6.0 naar AEM 6.3 met nieuwe functies en prestatieverbeteringen.
-* **Parallelle publicatie**: Er kunnen maximaal replicaties plaatsvinden tussen AEM Assets en Brand Portal (voorheen 1), wat de publicatieprestaties aanzienlijk verbetert
-* **Schema en zoekfacet publiceren**: Mogelijkheid om metagegevensschema&#39;s en aangepaste zoekfacetten naar Brand Portal te publiceren, waardoor dubbel werk wordt voorkomen.
-* **Bulklabels publiceren**: Mogelijkheid om taxonomie (samen met hiërarchie) naar Brand Portal te publiceren, waardoor dubbel werk wordt voorkomen.
-* **Zelf aanmelden of toegang** aanvragen: Workflow voor niet-geregistreerde gebruikers naar Brand Portal.
-* **Onderhoudsmelding** in de app (op het scherm): Meldingen worden ruim van tevoren weergegeven om verstoring in de bedrijfsvoering te voorkomen.
-* **Verbeteringen** rapporteren: Er zijn drie OOTB-rapporten beschikbaar: downloads, publiceren en delen via koppelingen.
-* **Beperkingen** op basis van DRM: Nadat een in licentie gegeven element is verlopen, kan het niet meer worden gedownload van Brand Portal.
+* **Upgrade van 6,3 Platform**: Brand Portal is geüpgraded van AEM 6.0 naar AEM 6.3 met nieuwe functies en prestatieverbeteringen.
+* **Parallel publiceren**: Er kunnen maximaal replicaties plaatsvinden tussen AEM Assets en Brand Portal (voorheen 1), wat de publicatieprestaties aanzienlijk verbetert
+* **Publiceren van schema&#39;s en zoekmogelijkheden**: Mogelijkheid om metagegevensschema&#39;s en aangepaste zoekfacetten naar Brand Portal te publiceren, waardoor dubbel werk wordt voorkomen.
+* **Bulktags publiceren**: Mogelijkheid om taxonomie (samen met hiërarchie) naar Brand Portal te publiceren, waardoor dubbel werk wordt voorkomen.
+* **Zelf aanmelden of toegang aanvragen**: Workflow voor niet-geregistreerde gebruikers naar Brand Portal.
+* **Onderhoudsmelding in app (op scherm)**: Meldingen worden ruim van tevoren weergegeven om verstoring in de bedrijfsvoering te voorkomen.
+* **Rapportageverbeteringen**: Er zijn drie OOTB-rapporten beschikbaar: downloads, publiceren en delen via koppelingen.
+* **Beperkingen op basis van DRM**: Nadat een in licentie gegeven element is verlopen, kan het niet meer worden gedownload van Brand Portal.
 
 ## Bureaubladapp AEM {#aem-desktop-app}
 
-AEM bureaubladtoepassing wordt bijgewerkt naar versie 1.8, die compatibel is met AEM 6.4. De volledige lijst met wijzigingen voor AEM desktop-app vindt u in een speciaal [AEM document voor de release van de desktop-app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).\
+AEM bureaubladtoepassing wordt bijgewerkt naar versie 1.8, die compatibel is met AEM 6.4. De volledige lijst met wijzigingen voor AEM bureaubladtoepassing vindt u in een speciale [Opmerkingen bij de release AEM bureaublad](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) document.\
 Hier volgt een lijst met AEM belangrijke kenmerken van de bureaubladtoepassing sinds AEM 6.3 is uitgebracht:
 
 * Mogelijkheid om hiërarchische mappen op de achtergrond te uploaden.
@@ -117,8 +117,8 @@ Hier volgt een lijst met AEM belangrijke kenmerken van de bureaubladtoepassing s
 
 De volgende documentatie is beschikbaar voor een eenvoudigere toegang tot de documentatie en de aanbevolen procedures:
 
-* [Gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) voor eindgebruikers die met de toepassing werken.
-* [Installatiehandleiding](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html) voor beheerders die AEM en AEM bureaubladtoepassing instellen om samen te werken
+* [Gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html), bedoeld voor eindgebruikers die met de toepassing werken.
+* [Installatiehandleiding](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/install-upgrade.html), gericht op beheerders die AEM en AEM bureaubladtoepassing instellen om samen te werken
 
 ## Gelaagde opslag {#tiered-storage}
 
@@ -127,7 +127,7 @@ AEM 6.4 bevat een reeks functies die verschillende gelaagde opslagvoorkeuren ond
 * De mogelijkheid voor gebruikers om opslagklasse te selecteren en later naar eigen inzicht te wijzigen en regels te definiëren voor de opslag van elementen van de ene klasse naar de andere of de levenscyclus van hun elementen te beheren.
 * De mogelijkheid voor gebruikers om hun opslagkosten te verlagen door een andere AWS of Azure te selecteren.
 
-Voor een overzicht van ondersteunde platforms raadpleegt u de [documentatie over technische vereisten](../sites-deploying/technical-requirements.md).
+Voor een overzicht van ondersteunde platforms raadpleegt u de [Documentatie over technische vereisten](../sites-deploying/technical-requirements.md).
 
 ## Gesloten gebruikersgroep {#closed-user-group}
 
@@ -138,7 +138,7 @@ Voor een overzicht van ondersteunde platforms raadpleegt u de [documentatie over
 
 Dynamic Media in 6.4 biedt ondersteuning voor een nieuwe modus - waarbij master middelen worden geüpload en beheerd met de AEM Assets-webinterface en dynamische uitvoeringen en andere dynamische mediafuncties op de achtergrond worden afgehandeld door de Dynamic Media-service voor levering van wolken.
 
-In deze modus (die eerst is geïntroduceerd met de release van [AEM 6.3 Feature Packs 14410 en 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)) profiteren gebruikers van end-to-end asset management en dynamische mediafuncties met behulp van de moderne AEM Assets web UI, en maken ze nog steeds gebruik van de leveringsservices die achterwaarts compatibel zijn met Dynamic Media Classic (Scene7), waaronder bezorgings-URL&#39;s die ongewijzigd zijn.
+In deze modus (eerst geïntroduceerd met de release van [AEM 6.3 Functiepacks 14410 en 18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)) gebruiken, profiteren gebruikers van end-to-end functies voor middelenbeheer en dynamische media met behulp van de moderne AEM Assets-webinterface, en maken nog steeds gebruik van de leveringsservices die achterwaarts compatibel zijn met Dynamic Media Classic (Scene7), waaronder ongewijzigde bezorgings-URL&#39;s.
 
 Daarnaast introduceert AEM 6.4 nieuwe functies die worden aangedreven door Adobe Sensei, verbeteringen voor opkomende media zoals VR en 3D, Dynamic Media-viewers en ondersteuning voor Experience Fragments in Interactive Images en Carousel Banners.
 
@@ -147,7 +147,7 @@ Daarnaast introduceert AEM 6.4 nieuwe functies die worden aangedreven door Adobe
 * Met Slim uitsnijden kunt u afbeeldingen automatisch op niet-destructieve wijze uitsnijden, zodat het interessepunt voor een responsief ontwerp behouden blijft. U kunt bijgesneden suggesties vooraf bekijken en ze indien nodig handmatig aanpassen.
 * Met deze functie kunt u ook automatische stalen genereren voor productafbeeldingen. Met Automatisch stalen genereren kunt u automatisch kleurstalen, patroonstalen of beide toevoegen aan productafbeeldingen.
 
-Zie [Documentatie voor afbeeldingsprofielen](../assets/image-profiles.md) voor meer informatie.
+Zie [Afbeeldingsprofielen](../assets/image-profiles.md) documentatie voor meer informatie.
 
 Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s](../assets/adding-dynamic-media-assets-to-pages.md) documentatie voor meer informatie over het gebruik van SmartCrop met de Dynamic Media-component.
 
@@ -157,12 +157,12 @@ Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s](../assets/adding-dy
 * Afbeeldingen worden automatisch geconverteerd naar verschillende indelingen op basis van de mogelijkheden van de browser.
 * De instellingen voor de afbeeldingskwaliteit worden bepaald in de browser en toegepast. Deze intelligentie zorgt ervoor dat de prestaties bij het laden van afbeeldingen acceptabel blijven voor een beperkte bandbreedte en een lage verbindingssnelheid.
 
-Zie [Smart Imaging](../assets/imaging-faq.md) documentatie voor meer informatie.
+Zie [Slimme afbeeldingen](../assets/imaging-faq.md) documentatie voor meer informatie.
 
 ### Verbeteringen voor media en viewer {#emerging-media-amp-viewer-enhancements}
 
 * Nieuwe viewers worden ondersteund en bieden een betere en indrukwekkende ervaring voor de gebruiker.
-* De Panoramische Viewer helpt de gebruiker te betrekken en biedt de mogelijkheid om ruimteschalen, eigenschappen, locaties en landschappen beter te ervaren. Zie [Panorama&#39;s](../assets/panoramic-images.md) documentatie voor meer informatie.
+* De Panoramische Viewer helpt de gebruiker te betrekken en biedt de mogelijkheid om ruimteschalen, eigenschappen, locaties en landschappen beter te ervaren. Zie [Panoramische afbeeldingen](../assets/panoramic-images.md) documentatie voor meer informatie.
 
 * VR Viewer biedt een indrukwekkende ervaring voor eigenschappen, locaties en landschappen.
 * Vertical Image Viewer geoptimaliseerd voor productafbeeldingen.

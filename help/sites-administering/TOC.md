@@ -8,9 +8,9 @@ breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature: Administering
 role: Admin
-source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '639'
 ht-degree: 6%
 
 ---
@@ -131,7 +131,7 @@ ht-degree: 6%
    + [Verwante artikelen van de Gemeenschap](related-community-articles.md)
    + [Integreren met Adobe Campaign Standard](campaignstandard.md)
    + [Kennisgeving over de gebruiksduur van Flash-viewers](flash-viewers-eol.md)
-   + [Integreren met Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
+   + [Integreren met Adobe Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Integreren met Adobe Dynamic Tag Management](dtm.md)
    + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
    + [AEM en portlets](aem-as-portal.md)
