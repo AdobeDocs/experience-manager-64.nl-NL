@@ -12,10 +12,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
 workflow-type: tm+mt
-source-wordcount: '2649'
-ht-degree: 10%
+source-wordcount: '2813'
+ht-degree: 9%
 
 ---
 
@@ -36,9 +36,9 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 Wanneer u Slim uitsnijden op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en wordt de volgende limiet toegepast:
 
-| Type limiet | Beste praktijken | Oplegde limiet | Wijziging tot limiet op 31 december 2022 |
-| --- | --- | --- | --- |
-| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 | 20 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
@@ -48,7 +48,21 @@ De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverho
 
 Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Smart Crop op mapniveau kunt toepassen, raadt Adobe u aan het gereedschap in mappen te gebruiken *alleen* waar dat nodig is.
 
-U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt ook het maken van kleuren- en afbeeldingsstalen automatiseren.
+**Richtlijnen voor het definiëren van SmartCrop in een afbeeldingsprofiel**
+Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren:
+
+* Maak geen dubbele slimme uitsnijdprofielen met dezelfde breedte- en hoogtewaarden.
+* Noem slimme gewassen die op gewassenafmetingen worden gebaseerd, niet op eindgebruik. Dit helpt u te optimaliseren voor duplicaten waarbij één dimensie op meerdere pagina&#39;s wordt gebruikt.
+* Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
+* Een afbeeldingsprofiel dat u op submappen toepast, overschrijft een afbeeldingsprofiel dat op de map is toegepast.
+* In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
+
+U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
+
+>[!IMPORTANT]
+>
+>・ Adobe raadt u aan de gegenereerde gewassen en stalen te herzien om ervoor te zorgen dat ze geschikt en relevant zijn voor uw merk en waarden.
+・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
 
 <table> 
  <tbody> 
@@ -86,11 +100,10 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U
 
 ## Onscherp masker {#unsharp-mask}
 
-U gebruikt **Onscherp masker** om een verscherpingsfiltereffect in de uiteindelijke gedownsampelde afbeelding precies af te stemmen. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast die wordt genegeerd, instellen. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Adobe Photoshop.
+U gebruikt **Onscherp masker** om een verscherpingsfiltereffect in de uiteindelijke gedownsampelde afbeelding precies af te stemmen. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast die wordt genegeerd, instellen. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker in Adobe Photoshop.
 
 >[!NOTE]
->
->Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen in PTIFF niet worden beïnvloed door een onscherp masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker tonen).
+Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen in PTIFF niet worden beïnvloed door een onscherp masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker tonen).
 
 In **Onscherp masker** hebt u de volgende filteropties:
 
@@ -200,8 +213,7 @@ Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepas
 ## Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!NOTE]
->
->Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
+Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
 
 U kunt het venster voor slimme uitsnijden van een afbeelding handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 
