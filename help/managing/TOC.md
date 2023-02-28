@@ -2,20 +2,20 @@
 cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Gebruikershandleiding beheren
-breadcrumb-title: Handleiding
-user-guide-description: Leer hoe u een AEM project beheert.
+user-guide-title: AEM 6.4 Gebruikershandleiding voor beheren
+breadcrumb-title: Gids voor beheren
+user-guide-description: Leer hoe u een AEM-project beheert.
 feature: Deploying
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '72'
+ht-degree: 41%
 
 ---
 
 
-# AEM 6.4 Gebruikershandleiding beheren {#managing}
+# AEM 6.4 Gebruikershandleiding voor beheren {#managing}
 
 + [Gebruikershandleiding beheren](home.md)
 + Beheren - Checklist voor beste praktijken {#managing-best-practices-checklist}

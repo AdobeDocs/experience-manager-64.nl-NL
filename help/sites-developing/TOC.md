@@ -3,20 +3,20 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.4 Gebruikershandleiding ontwikkelen
-breadcrumb-title: Handleiding voor ontwikkelen
-user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
+user-guide-title: AEM 6.4 Gebruikershandleiding voor ontwikkeling
+breadcrumb-title: Handleiding voor ontwikkeling
+user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM-instantie kunt samenstellen.
 feature: Developing
 role: Developer
 source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 
-# AEM 6.4 Gebruikershandleiding ontwikkelen {#developing}
+# AEM 6.4 Gebruikershandleiding voor ontwikkeling {#developing}
 
 + [Overzicht van de gebruikershandleiding voor ontwikkeling](home.md)
 + Inleiding voor ontwikkelaars{#introduction}

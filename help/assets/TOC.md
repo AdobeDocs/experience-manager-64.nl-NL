@@ -3,18 +3,18 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Assets
 audience: end-user
-user-guide-title: Hulplijn voor middelen
-breadcrumb-title: Hulplijn voor middelen
-user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
+user-guide-title: Handleiding voor assets
+breadcrumb-title: Handleiding voor assets
+user-guide-description: Digitale assets maken, beheren, leveren en optimaliseren.
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '649'
+ht-degree: 35%
 
 ---
 
 
-# Hulplijn voor middelen {#assets}
+# Handleiding voor assets {#assets}
 
 + [Gebruikershandleiding voor middelen](home.md)
 + [AEM 6.4 Opmerkingen bij de release van activa](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
