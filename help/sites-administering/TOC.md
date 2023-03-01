@@ -8,9 +8,9 @@ breadcrumb-title: Gids voor beheerders
 user-guide-description: Meer informatie over het beheren van AEM.
 feature: Administering
 role: Admin
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 9dcaf2538e5f968b25ce4f643ac307eff295d07d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '633'
 ht-degree: 8%
 
 ---
@@ -116,7 +116,6 @@ ht-degree: 8%
    + [Integreren met services van derden](third-party-services.md)
    + [Integratie met Salesforce](salesforce.md)
    + [Integreren met Adobe Target](target.md)
-   + [Integreren met Livefyre](livefyre.md)
    + [Integreren met Adobe Analytics](adobeanalytics.md)
    + [Verbinding maken met Adobe Analytics en frameworks maken](adobeanalytics-connect.md)
    + [Koppeling bijhouden configureren voor Adobe Analytics](adobeanalytics-link.md)
@@ -136,7 +135,6 @@ ht-degree: 8%
    + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
    + [AEM en portlets](aem-as-portal.md)
    + [Integreren met Dynamic Media Classic](scene7.md)
-   + [AEM leverontvangers](aem-livefyre-recipes.md)
    + [Problemen met integratie oplossen](troubleshooting-integration-issues.md)
    + [Integreren met BrightStor Content Optimizer](brightedge.md)
    + [Aanbevolen procedures voor e-mailsjablonen](best-practices-for-email-templates.md)
