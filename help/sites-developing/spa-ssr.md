@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruik
 
 >[!NOTE]
 >
->Adobe beveelt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enz.). Dit staat voor typische patronen van de het levenscyclus van de systeemontwikkeling (SDLC) met verschillende versies van één enkele toepassing toe die aan verschillende milieu&#39;s worden opgesteld. Zie het document [CI/CD voor de Toepassingen van de Vuurwerk van het Project](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) voor meer informatie .
+>Adobe beveelt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enz.). Dit staat voor typische patronen van de het levenscyclus van de systeemontwikkeling (SDLC) met verschillende versies van één enkele toepassing toe die aan verschillende milieu&#39;s worden opgesteld. Zie het document [CI/CD voor de Toepassingen van de Bouwer van de Project](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) voor meer informatie .
 >
 >Er is geen aparte werkruimte nodig per instantie (auteur, publiceren), tenzij er verschillen zijn in de runtimplementatie per instantietype.
 
@@ -190,7 +190,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 De configuratie van de standaardmanager moet worden gevormd zoals die in de sectie wordt beschreven [Configuratie renderfunctie voor externe inhoud](#remote-content-renderer-configuration).
 
-###  Renderergebruik van externe inhoud {#usage}
+### Gebruik van renderer voor externe inhoud {#usage}
 
 Om een servlet te hebben halen en wat inhoud terug te keren die in de pagina kan worden ingespoten:
 
