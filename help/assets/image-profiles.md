@@ -12,9 +12,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 1bda0ff04752dec663f251d28a4274599fd0e17d
+source-git-commit: 56d711eb5aa87a2aa4c5476bae0627afccc579d1
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2844'
 ht-degree: 6%
 
 ---
@@ -51,12 +51,21 @@ Voor elke SmartCrop-generatie die u maakt, is extra verwerkingstijd nodig. Als u
 **Richtlijnen voor het definiëren van SmartCrop in een afbeeldingsprofiel**
 Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren:
 
-* Op afbeeldingselementen waarop een slimme uitsnijding wordt toegepast, moet minimaal 50 x 50 pixels of groter zijn. <!-- CQDOC-20087 -->
-* Een afbeeldingsprofiel dat dubbele slimme-uitsnijdafmetingen bevat, is niet toegestaan. <!-- CQDOC-20087 -->
-* Dubbele benoemde afbeeldingsprofielen waarvoor opties voor slim uitsnijden zijn ingesteld, zijn niet toegestaan. <!-- CQDOC-20087 -->
+* Maak geen dubbele slimme uitsnijdprofielen met dezelfde breedte- en hoogtewaarden.
+* Noem slimme gewassen die op gewassenafmetingen worden gebaseerd, niet op eindgebruik. Dit helpt u te optimaliseren voor duplicaten waarbij één dimensie op meerdere pagina&#39;s wordt gebruikt.
+* Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
+* Een afbeeldingsprofiel dat u op submappen toepast, overschrijft een afbeeldingsprofiel dat op de map is toegepast.
 * Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
 * Een afbeeldingsprofiel dat u toepast op submappen, overschrijft een afbeeldingsprofiel dat is toegepast op de map.
 * In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
+
+<!--
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
+* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
+* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
+* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
@@ -121,7 +130,7 @@ In **Onscherp masker** hebt u de volgende filteropties:
    <td>Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde is 1,75. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot maximaal 5. Beschouw Hoeveelheid als een maat voor de filterintensiteit. Bereik is 0-5.</td> 
   </tr> 
   <tr> 
-   <td>Radius</td> 
+   <td>Straal</td> 
    <td>Hiermee bepaalt u het aantal pixels rondom de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een waarde in tussen 1 en 2. Bij een lage waarde worden alleen de randpixels verscherpt. met een hoge waarde wordt een grotere reeks pixels verscherpt . De juiste waarde is afhankelijk van de grootte van de afbeelding. De standaardwaarde is 0,2. Bereik is 0-250.</td> 
   </tr> 
   <tr> 
