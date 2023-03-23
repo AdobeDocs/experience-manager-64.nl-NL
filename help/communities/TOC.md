@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Gebruikersgids voor community's
+user-guide-title: AEM 6.4 Gebruikershandleiding voor communities
 breadcrumb-title: Handleiding Communities
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 feature: Communities
@@ -15,7 +15,7 @@ ht-degree: 5%
 ---
 
 
-# AEM 6.4 Gebruikersgids voor community&#39;s {#communities}
+# AEM 6.4 Gebruikershandleiding voor communities {#communities}
 
 + [AEM Communities-overzicht](home.md)
 + Inleiding tot AEM Communities {#introduction}
