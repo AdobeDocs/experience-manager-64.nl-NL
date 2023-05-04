@@ -8,14 +8,18 @@ contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 17%
+source-wordcount: '914'
+ht-degree: 16%
 
 ---
 
 # Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows  {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## AEM Postvak IN en HTML-werkruimte {#aem-inbox-and-html-workspace}
 
@@ -24,7 +28,7 @@ AEM Inbox wordt gebruikt om Forms-centric AEM Workflows op OSGi uit te voeren en
 <table> 
  <tbody>
   <tr>
-   <td>Acties</td> 
+   <td>Handelingen</td> 
    <td>AEM Postvak IN</td> 
    <td>HTML-werkruimte</td> 
   </tr>
@@ -338,7 +342,7 @@ In de volgende tabel worden de mogelijkheden van de toepassingen AEM Inbox en AE
 <table> 
  <tbody>
   <tr>
-   <td><p><strong>Acties</strong></p> </td> 
+   <td><p><strong>Handelingen</strong></p> </td> 
    <td><p><strong>AEM Postvak IN</strong></p> </td> 
    <td><p><strong>AEM Forms App</strong></p> </td> 
   </tr>

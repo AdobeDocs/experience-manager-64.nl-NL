@@ -1,8 +1,8 @@
 ---
 title: Ontwikkelingsgemeenschappen
-seo-title: Ontwikkelingsgemeenschappen
+seo-title: Developing Communities
 description: communityfuncties zoals forums, gebruikersgroepen en meer maken en aanpassen
-seo-description: communityfuncties zoals forums, gebruikersgroepen en meer maken en aanpassen
+seo-description: Create and customize community features such as forums, user groups, and more
 uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,21 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: b051b279-b0d9-41a3-b5d8-4b9bad448c0f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '428'
 ht-degree: 1%
 
 ---
 
 # Ontwikkelingsgemeenschappen {#developing-communities}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Overzicht {#overview}
 
-AEM Communities vereenvoudigt het maken en aanpassen van community-functies, zoals forums, gebruikersgroepen, blogs, vragen en antwoorden, kalenders, opmerkingen, revisies, stemmingen, beoordelingen en toewijzingen. Deze functies leiden ertoe dat door de gebruiker gegenereerde inhoud (UGC) wordt ingevoerd in de publicatieomgeving.
+AEM Communities vereenvoudigt het maken en aanpassen van community-functies, zoals forums, gebruikersgroepen, blogs, vragen en antwoorden, kalenders, opmerkingen, revisies, stemmen, beoordelingen en toewijzingen. Deze functies leiden ertoe dat door de gebruiker gegenereerde inhoud (UGC) wordt ingevoerd in de publicatieomgeving.
 
-De basis van een [communitysite](overview.md#communitiessites) is het [sociale-componentframework](scf.md) (SCF). Het creëren van een communautaire plaats begint met de selectie van [communautaire plaatsmalplaatje](sites-console.md) die uit [communautaire functies](functions.md) bestaat.
+De stichting van een [community-site](overview.md#communitiessites) is de [sociale component](scf.md) (SCF). Het maken van een gemeenschapssite begint met het selecteren van een [sjabloon voor community-site](sites-console.md) die bestaat uit [communautaire functies](functions.md).
 
 Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
@@ -34,26 +37,26 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 >[!NOTE]
 >
->Het wordt ten zeerste aanbevolen up-to-date te blijven met de [nieuwste releases](deploy-communities.md#latest-releases).
+>Het wordt ten zeerste aanbevolen de [nieuwste releases](deploy-communities.md#latest-releases).
 
 ## Aanbevolen implementaties {#recommended-deployments}
 
-* [Opslag](working-with-srp.md) voor community-inhoud: bespreekt de beschikbare keuzen SRP voor een gemeenschappelijk opslag UGC
+* [Opslag van communautaire inhoud](working-with-srp.md): bespreekt de beschikbare keuzen SRP voor een gemeenschappelijk opslag UGC
 * [Aanbevolen topologieën voor Gemeenschappen](topologies.md): bespreekt topologieën die op gebruiksgeval en keus SRP worden gebaseerd
 
-## Framework voor sociale componenten {#social-component-framework}
+## Framework sociale component {#social-component-framework}
 
-* [Kader](scf.md) voor sociale component: overzicht van framework en API&#39;s
-* [SCF-handgrepen Helpers](handlebars-helpers.md): standaardhelpers en hoe aangepaste helpers worden geschreven
-* [Aanpassing](client-customize.md) aan clientzijde: code aanpassen die in browser wordt uitgevoerd
-* [Aanpassing](server-customize.md) op de server: aanpassen van code die op de server wordt uitgevoerd
+* [Framework sociale component](scf.md): overzicht van framework en API&#39;s
+* [SCF Handlebars Helpers](handlebars-helpers.md): standaardhelpers en hoe aangepaste helpers worden geschreven
+* [Aanpassing aan clientzijde](client-customize.md): code aanpassen die in browser wordt uitgevoerd
+* [Aanpassing op de server](server-customize.md): aanpassen van code die op de server wordt uitgevoerd
 * [Storage Resource Provider (SRP)](srp.md): overzicht van de opslag van inhoud in de gemeenschap
 * [Codeerrichtlijnen](code-guide.md): richtlijnen, tips en trucs
-* [Community Components guide](components-guide.md): instrument voor interactieve ontwikkeling
+* [Community Components Guide](components-guide.md): instrument voor interactieve ontwikkeling
 
-## Elementen van componenten, functies en functies {#component-function-and-feature-essentials}
+## Componenten, functies en essentiële functies {#component-function-and-feature-essentials}
 
-De componenten, de functies en de eigenschappen van AEM Communities verstrekken de bouwstenen voor [communautaire plaatsen](sites-console.md).
+AEM Communities-componenten, -functies en -functies bieden de bouwstenen voor [communitysites](sites-console.md).
 
 * [Componenten, functies en essentiële functies](essentials.md)
 * [Clientlibs voor Community-componenten](clientlibs.md)
@@ -61,14 +64,14 @@ De componenten, de functies en de eigenschappen van AEM Communities verstrekken 
 * [Gemeenschapsgroepsjablonen](tools-groups.md)
 * [Sjablonen voor communautaire sites](sites.md)
 
-## Community-leden {#community-members}
+## Communautaire leden {#community-members}
 
 * [Gebruikers en gebruikersgroepen beheren](users.md)
 * [Sociale aanmelding met Facebook en Twitter](social-login.md)
 
 ## Communautaire groepen {#community-groups}
 
-[Communautaire ](overview.md#communitygroups) groepering stelt zich ten doel de leden van de gemeenschap in staat te stellen subgemeenschappen op te richten binnen de communautaire site. Het maken van een community-groep kan plaatsvinden in de publicatie- of auteursomgeving.
+[Communautaire groepen](overview.md#communitygroups) is het concept om leden van de gemeenschap toe te staan subgemeenschappen binnen de communautaire site te vormen. Het maken van een community-groep kan plaatsvinden in de publicatie- of auteursomgeving.
 
 * [Essentiële elementen van gebruikersgroepen](essentials-groups.md)
 * [Functie Groepen](functions.md#groups-function)
@@ -76,10 +79,10 @@ De componenten, de functies en de eigenschappen van AEM Communities verstrekken 
 * [Gebruikers en gebruikersgroepen beheren](users.md)
 * [Communautaire groepen auteurs](creating-groups.md)
 
-## Gegevens {#managing-data} beheren
+## Gegevens beheren {#managing-data}
 
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP API hulpprogrammamethodes en voorbeelden
-* [Belangrijkste elementen](tag.md)  van tags: leden van de gemeenschap kunnen UGC en/of gecatalogiseerde actiemiddelen van tags voorzien
+* [SRP en UGC Essentials](srp-and-ugc.md) - Hulpprogrammamethoden en -voorbeelden van SRP API
+* [Grondbeginselen van tags](tag.md) - de mogelijkheid voor leden van de gemeenschap om UGC en/of gecatalogiseerde actiemiddelen van tags te voorzien
 
 ## Tutorials {#tutorials}
 
@@ -92,10 +95,10 @@ De componenten, de functies en de eigenschappen van AEM Communities verstrekken 
 * [Problemen oplossen](troubleshooting.md)
 * [Bekende problemen](/help/release-notes/known-issues.md)
 
-## Documentatie van verwante gemeenschappen {#related-communities-documentation}
+## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
-* Bezoek [Gemeenschappen implementeren](deploy-communities.md) voor meer informatie over aanbevolen implementaties en de configuratie van de verzender.
+* Bezoek [Gemeenschappen inzetten](deploy-communities.md) voor meer informatie over aanbevolen implementaties en de configuratie van de verzender.
 
-* Bezoek [Communitysites beheren](administer-landing.md) voor meer informatie over het maken van een Community Site, het configureren van Sjablonen voor communautaire sites, het moderniseren van inhoud van de community, het beheren van leden en het configureren van berichten.
+* Bezoek [Communitysites beheren](administer-landing.md) om over het creëren van een Communautaire Plaats te leren, vormend Communautaire Malplaatjes van de Plaats, het modereren van communautaire inhoud, het beheren van leden, en het vormen overseinen.
 
-* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het schrijven en configureren van Community-componenten.
+* Bezoek [Componenten van Gemeenschappen ontwerpen](author-communities.md) om te leren om met te schrijven en de componenten van de Gemeenschappen te vormen.

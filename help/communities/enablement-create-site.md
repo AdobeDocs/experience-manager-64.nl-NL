@@ -1,8 +1,8 @@
 ---
 title: Auteur van een nieuwe communautaire site voor activering
-seo-title: Auteur van een nieuwe communautaire site voor activering
+seo-title: Author a New Community Site for Enablement
 description: Een communitysite maken voor activering
-seo-description: Een communitysite maken voor activering
+seo-description: Create a community site for enablement
 uuid: 6822cc99-e272-4661-bddf-aa0800b88c41
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,23 +10,26 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
 exl-id: 5b16c775-3bd0-4a55-ba9e-f326224e8bae
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1720'
 ht-degree: 1%
 
 ---
 
-# Auteur een Nieuwe Communautaire Plaats voor Enablement {#author-a-new-community-site-for-enablement}
+# Auteur van een nieuwe communautaire site voor activering {#author-a-new-community-site-for-enablement}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Community-site maken {#create-community-site}
 
-[Bij het ](sites-console.md) maken van een Community Site wordt een wizard gebruikt die u begeleidt bij het maken van een communitysite. U kunt naar de `Next`stap of `Back`vorige stap gaan voordat u de site in de laatste stap toewijst.
+[Creatie van gemeenschapssite](sites-console.md) Hiermee gebruikt u een wizard die u door de stappen begeleidt bij het maken van een communitysite. Het is mogelijk verder te gaan naar de `Next`stap of `Back`naar de vorige stap voordat u de site in de laatste stap toewijst.
 
 Ga als volgt te werk om een nieuwe communitysite te maken:
 
-De [auteurinstantie](http://localhost:4502/) gebruiken
+Met de [auteurinstantie](http://localhost:4502/)
 
 * Aanmelden met beheerdersrechten
 * Ga naar **[!UICONTROL Communities > Sites]**
@@ -37,25 +40,25 @@ De [auteurinstantie](http://localhost:4502/) gebruiken
 
 ![enablementsitetemplate](assets/enablementsitetemplate.png)
 
-Voer in de stap **Sitesjabloon** een titel, beschrijving, naam voor de URL in en selecteer bijvoorbeeld een sjabloon voor een communitysite:
+Op de **Sitesjabloon** Voer vervolgens een titel, beschrijving, naam voor de URL in en selecteer een sjabloon voor een community-site, bijvoorbeeld:
 
-* **Titel** van communautaire site:  `Enablement Tutorial`
+* **Titel van gemeenschapssite**: `Enablement Tutorial`
 
-* **Beschrijving** van communautaire site:  `A site for enabling the community to learn.`
+* **Beschrijving van community-site**: `A site for enabling the community to learn.`
 
-* **Hoofdmap** van gemeenschapssite: (leeg laten voor standaardhoofdmap  `/content/sites`)
+* **Hoofdmap van gemeenschapssite**: (leeg laten voor standaardhoofdmap `/content/sites`)
 
 * **Cloudconfiguraties**: (leeg laten als er geen cloudconfiguraties zijn opgegeven) het pad naar de opgegeven cloudconfiguraties bieden.
-* **Basistaal** van gemeenschapssite: (ongewijzigd laten voor één taal: (Engels) gebruik het keuzemenu om één  *of* meer basistalen te kiezen uit de beschikbare talen: Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel) en Chinees (Vereenvoudigd). Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze wordt in dezelfde sitemap gebruikt volgens de best practices die worden beschreven in [Inhoud vertalen voor meertalige sites](../../help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
+* **Basis van gemeenschapssite**: (ongewijzigd laten voor één taal: Engels) gebruik het keuzemenu om één te kiezen *of meer* basistalen uit de beschikbare talen: Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (traditioneel) en Chinees (vereenvoudigd). Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze site bestaat in dezelfde sitemap volgens de in [Inhoud vertalen voor meertalige sites](../../help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
 
 * **[!UICONTROL Community Site Name]**: `enable`
 
    * de eerste URL wordt onder de naam van de communautaire site weergegeven
    * voor een geldige URL voegt u een basistaalcode + &quot;.html&quot; toe
 
-      *bijvoorbeeld* http://localhost:4502/content/sites/  `enable/en.html`
+      *bijvoorbeeld*, http://localhost:4502/content/sites/ `enable/en.html`
 
-* **[!UICONTROL Reference Site Template]**: naar beneden halen om te kiezen  `Reference Structured Learning Site Template`
+* **[!UICONTROL Reference Site Template]**: naar beneden halen om te kiezen `Reference Structured Learning Site Template`
 
 Selecteer **[!UICONTROL Next]**
 
@@ -63,13 +66,13 @@ Selecteer **[!UICONTROL Next]**
 
 De stap Ontwerp wordt in twee secties weergegeven voor het selecteren van het thema en de brandingbanner:
 
-#### THEMA VAN COMMUNAUTAIRE SITE {#community-site-theme}
+#### COMMUNAUTAIR SITE-THEMA {#community-site-theme}
 
 Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie is geselecteerd, wordt het thema bedekt met een vinkje.
 
 ![enablementsite-thema](assets/enablementsitetheme.png)
 
-#### COMMUNAUTAIRE SITEBRANDING {#community-site-branding}
+#### COMMUNAUTAIRE SITOBRANDING {#community-site-branding}
 
 (optioneel) Upload een bannerafbeelding voor weergave op de sitepagina&#39;s. De banner is vastgezet aan de linkerrand van browser, tussen de communautaire plaatsheader en menu (navigatiekoppelingen). De bannerhoogte wordt bijgesneden tot 120 pixels. Er wordt geen grootte van de banner aangepast aan de breedte van de browser en de hoogte van 120 pixels.
 
@@ -79,29 +82,29 @@ Selecteer **[!UICONTROL Next]**.
 
 ### Stap 3: Instellingen {#step-settings}
 
-Voor de stap van Montages, alvorens `Next` te selecteren, merk er zeven secties zijn die toegang tot configuraties verlenen die gebruikersbeheer, het etiketteren, rollen, moderatie, analyse, vertaling, en enablement impliceren.
+Selecteer in de stap Instellingen voordat u `Next`, merk op dat er zeven secties zijn die toegang tot configuraties verlenen die gebruikersbeheer, het etiketteren, rollen, moderatie, analyses, vertaling, en toelaat.
 
 #### GEBRUIKERSBEHEER {#user-management}
 
-Aanbevolen wordt [enablement Communities](overview.md#enablement-community) privé te maken.
+Het wordt aanbevolen [gemeenschappen](overview.md#enablement-community) privé zijn.
 
 Een gemeenschapssite is persoonlijk wanneer anonieme sitebezoekers geen toegang krijgen, zich mogelijk niet zelf registreren en geen gebruik maken van sociale aanmelding.
 
-Zorg ervoor dat de meeste selectievakjes zijn uitgeschakeld voor [Gebruikersbeheer](sites-console.md#user-management):
+De meeste selectievakjes zijn uitgeschakeld [Gebruikersbeheer](sites-console.md#user-management):
 
 * Websitebezoekers niet toestaan zich te registreren
 * Anonieme sitebezoekers mogen de site niet bekijken
 * Facultatief al dan niet overseinen onder communautaire leden toestaan
 * Aanmelden met Facebook NIET toestaan
-* Aanmelden met Twitter niet toestaan
+* Aanmelden met Twitter NIET toestaan
 
 ![chlimage_1-285](assets/chlimage_1-285.png)
 
 #### TAGS {#tagging}
 
-De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) (zoals de [Zelfstudie-naamruimte](enablement-setup.md#create-tutorial-tags)).
+De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingsconsole](../../help/sites-administering/tags.md#tagging-console) (zoals de [Naamruimte voor zelfstudie](enablement-setup.md#create-tutorial-tags)).
 
-Als u bovendien Tagnaamruimten selecteert voor de communitysite, beperkt u de selectie die wordt weergegeven bij het definiëren van catalogi en machtigingsbronnen. Zie [Tags toewijzen Bronnen](tag-resources.md) voor belangrijke informatie.
+Als u bovendien Tagnaamruimten selecteert voor de communitysite, beperkt u de selectie die wordt weergegeven bij het definiëren van catalogi en machtigingsbronnen. Zie [Tags toewijzen](tag-resources.md) voor belangrijke informatie.
 
 Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
 
@@ -110,26 +113,26 @@ Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. 
 
 ![chlimage_1-286](assets/chlimage_1-286.png)
 
-### ROLLEN {#roles}
+### ROLES {#roles}
 
-[De communautaire ](users.md) leden worden toegewezen door de montages in de sectie van Rollen.
+[Rol van leden van de Gemeenschap](users.md) worden toegewezen via de instellingen in de sectie Rollen.
 
 Als u een lid van de gemeenschap (of groep leden) de site wilt laten ervaren als gemeenschapsbeheerder, gebruikt u de typecontrole en selecteert u de naam van het lid of de groep in de keuzelijst.
 
 Bijvoorbeeld,
 
 * Type &quot;q&quot;
-* Selecteer [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)
+* Selecteren [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
->[Met de tunnelservice ](deploy-communities.md#tunnel-service-on-author) kunt u leden en groepen selecteren die alleen in de publicatieomgeving aanwezig zijn.
+>[Tunneldienst](deploy-communities.md#tunnel-service-on-author) Hiermee kunt u leden en groepen selecteren die alleen in de publicatieomgeving aanwezig zijn.
 
 ![community_rollen](assets/community_roles.png)
 
 #### MODERING {#moderation}
 
-Accepteer de standaard algemene instellingen voor [het modereren](sites-console.md#moderation) door de gebruiker gegenereerde inhoud (UGC).
+Accepteer de standaard algemene instellingen voor [gematigd](sites-console.md#moderation) door de gebruiker gegenereerde inhoud (UGC).
 
 ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -137,20 +140,20 @@ Accepteer de standaard algemene instellingen voor [het modereren](sites-console.
 
 Selecteer in het keuzemenu het cloudserviceframework Analytics dat voor deze communitysite is geconfigureerd.
 
-De selectie in het schermafbeelding, `Communities`, is het kadervoorbeeld van de [configuratiedocumentatie.](analytics.md#aem-analytics-framework-configuration)
+De selectie in de schermafbeelding, `Communities`, is het kadervoorbeeld van de [configuratiedocumentatie.](analytics.md#aem-analytics-framework-configuration)
 
 ![chlimage_1-288](assets/chlimage_1-288.png)
 
-#### TRANSLATION {#translation}
+#### VERTALING {#translation}
 
-Met de [Vertaalinstellingen](sites-console.md#translation) wordt aangegeven of UGC kan worden vertaald en in welke taal, als dat het geval is.
+De [Vertaalinstellingen](sites-console.md#translation) specificeren of de UGC al dan niet vertaald kan worden en in welke taal, indien dat het geval is.
 
-* Vinkje **[!UICONTROL Allow Machine Translation]**
+* Controleren **[!UICONTROL Allow Machine Translation]**
 * De standaardinstellingen gebruiken
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
-#### INSCHAKELEN {#enablement}
+#### UITSCHAKELING {#enablement}
 
 Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communautaire Beheerders van Enablement te identificeren.
 
@@ -162,7 +165,7 @@ Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communa
    * Selecteer `Sirius Nilson`
 
 * **[!UICONTROL Marketing Cloud Org Id]**
-(optioneel) De id voor een Adobe Analytics-account die nodig is wanneer  [Video Heartbeat ](analytics.md#video-heartbeat-analytics) Analytics wordt opgenomen in de rapportage over activering.
+(optioneel) De id van een Adobe Analytics-account die nodig is wanneer [Video-hartslaganalyse](analytics.md#video-heartbeat-analytics) in de rapportage over activering.
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
@@ -178,7 +181,7 @@ Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in 
 
 ![vereffening](assets/enablementsitecreated.png)
 
-### De nieuwe communautaire site publiceren {#publish-the-new-community-site}
+### De nieuwe Community-site publiceren {#publish-the-new-community-site}
 
 De gecreeerde plaats zou van de Gemeenschappen - de console van Plaatsen moeten worden beheerd, de zelfde console van waar de nieuwe plaatsen kunnen worden gecreeerd.
 
@@ -192,26 +195,26 @@ Als u het pictogram Ovalen selecteert (pictogram Meer handelingen), worden de op
 
 Van links naar rechts zijn ze:
 
-* **Open**
-SiteSelecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren
+* **Site openen**
+Selecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren
 
-* **Site bewerkenSelecteer het eigenschappenpictogram om de site van de community te openen voor wijziging van eigenschappen, zoals de titel, of om het thema te wijzigen**
+* **Site bewerken**
+Selecteer het eigenschappenpictogram om de communitysite te openen voor wijziging van eigenschappen, zoals de titel of om het thema te wijzigen
 
+* **Site publiceren**
+Selecteer het wereldpictogram om de communitysite te publiceren (standaard op localhost:4503)
 
-* **Publiceer**
-SiteSelecteer het wereldpictogram om de communitysite te publiceren (standaard naar localhost:4503)
-
-* **Exporteer**
-SiteSelecteer het exportpictogram om een pakket van de communitysite te maken dat zowel in  [pakketbeheer wordt opgeslagen als wordt ](../../help/sites-administering/package-manager.md) gedownload.
+* **Site exporteren**
+Selecteer het exportpictogram om een pakket te maken van de communitysite waarin beide zijn opgeslagen [pakketbeheer](../../help/sites-administering/package-manager.md) en gedownload.
 
    UGC is niet opgenomen in het sitepakket.
 
-* **Verwijder**
-SiteAls u de site van de community wilt verwijderen, selecteert u het pictogram Site verwijderen dat wordt weergegeven wanneer u de muisaanwijzer op de site in de Community Site-console plaatst. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
+* **Site verwijderen**
+Als u de communitysite wilt verwijderen, selecteert u het pictogram Site verwijderen dat verschijnt wanneer u de muisaanwijzer op de site in de Community Site Console plaatst. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
 
 ![inschakelen](assets/enablesiteactions.png)
 
-#### Publiceren {#select-publish} selecteren
+#### Publiceren selecteren {#select-publish}
 
 Selecteer het pictogram van de wereld om de communitysite te publiceren.
 
@@ -223,28 +226,28 @@ Er wordt een indicatie gegeven dat de site is gepubliceerd.
 
 ## Community-gebruikers en -gebruikersgroepen {#community-users-user-groups}
 
-### Nieuwe gebruikersgroepen van de Gemeenschap {#notice-new-community-user-groups} melden
+### Nieuwe gebruikersgroepen in de Gemeenschap melden {#notice-new-community-user-groups}
 
-Samen met de nieuwe communautaire plaats, worden de nieuwe gebruikersgroepen gecreeerd die de aangewezen toestemmingen hebben die voor diverse administratieve functies worden geplaatst. Voor details, bezoek [Gebruikersgroepen voor Communautaire Plaatsen](users.md#usergroupsforcommunitysites).
+Samen met de nieuwe communautaire plaats, worden de nieuwe gebruikersgroepen gecreeerd die de aangewezen toestemmingen hebben die voor diverse administratieve functies worden geplaatst. Ga voor meer informatie naar [Gebruikersgroepen voor communitysites](users.md#usergroupsforcommunitysites).
 
-Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;laat&quot;in Stap 1 toe, kunnen de nieuwe gebruikersgroepen die in het publiceren milieu bestaan van [de leden &amp; van Groepen van Gemeenschappen console](members.md#groups-console) worden gezien:
+Voor deze nieuwe communautaire plaats, op basis van de plaatsnaam &quot;laat&quot;toe in Stap 1, kunnen de nieuwe gebruikersgroepen die in het publicatiemilieu bestaan van de [Console leden en groepen van gemeenschappen](members.md#groups-console):
 
 ![chlimage_1-294](assets/chlimage_1-294.png)
 
-### Leden toewijzen aan de groep leden {#assign-members-to-community-enable-members-group} voor Community Enable
+### Leden toewijzen aan de groep van leden voor Community Enable {#assign-members-to-community-enable-members-group}
 
-Op auteur, met de toegelaten tunneldienst, is het mogelijk om [gebruikers toe te wijzen die tijdens Begeleidende Opstelling](enablement-setup.md#publishcreateenablementmembers) aan de groep van Leden Gemeenschap voor de pas gecreëerde communautaire plaats worden gecreeerd.
+Op auteur, met de toegelaten tunneldienst, is het mogelijk om toe te wijzen [gebruikers die tijdens de eerste setup zijn gemaakt](enablement-setup.md#publishcreateenablementmembers) aan de communautaire ledengroep voor de nieuwe communautaire site.
 
 Met behulp van de Community Group-console kunnen leden afzonderlijk worden toegevoegd of via lidmaatschap aan een groep worden toegevoegd.
 
-In dit voorbeeld wordt de groep `Community Ski Class` toegevoegd als lid van de groep `Community Enable Members` en als lid `Quinn Harper`.
+In dit voorbeeld wordt de groep `Community Ski Class` wordt toegevoegd als lid van de groep `Community Enable Members` en lid `Quinn Harper`.
 
-* Naar **[!UICONTROL Communities > Groups]**-console navigeren
-* Groep selecteren **[!UICONTROL Community Enable Members]**
-* `ski` invoeren in het zoekvak **[!UICONTROL Add Members To Group]**
-* Selecteer **[!UICONTROL Community Ski Class]** (groep studenten)
-* `quinn` invoeren in het zoekvak
-* Selecteer **[!UICONTROL Quinn Harper]** (resablement resource contact inschakelen)
+* Navigeren naar **[!UICONTROL Communities > Groups]** console
+* Selecteren **[!UICONTROL Community Enable Members]** groep
+* Enter `ski` in de **[!UICONTROL Add Members To Group]** zoekvak
+* Selecteren **[!UICONTROL Community Ski Class]** (groep studenten)
+* Enter `quinn` in het zoekvak
+* Selecteren **[!UICONTROL Quinn Harper]** (resablement resource contact)
 
 * Selecteer **[!UICONTROL Save]**
 
@@ -258,9 +261,9 @@ In dit voorbeeld wordt de groep `Community Ski Class` toegevoegd als lid van de 
 
 ### Configureren voor verificatiefout {#configure-for-authentication-error}
 
-Nadat een site is geconfigureerd en geduwd op publiceren, [configureert u de aanmeldingstoewijzing](sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) op de publicatieinstantie. Het voordeel is dat wanneer aanmeldingsgegevens niet correct worden ingevoerd, de verificatiefout de aanmeldingspagina van de communautaire site opnieuw weergeeft met een foutbericht.
+Nadat een site is geconfigureerd en geduwd op publiceren, [aanmeldingstoewijzing configureren](sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) op het publicatieexemplaar. Het voordeel is dat wanneer aanmeldingsgegevens niet correct worden ingevoerd, de verificatiefout de aanmeldingspagina van de communautaire site opnieuw weergeeft met een foutbericht.
 
-Een `Login Page Mapping` toevoegen als
+Voeg een `Login Page Mapping` als
 
 * /content/sites/enable/nl/sign:/content/sites/enable/nl
 
@@ -268,38 +271,38 @@ Een `Login Page Mapping` toevoegen als
 
 Als u met de publicatiesite werkt voor demonstratiedoeleinden, is het handig om de standaardstartpagina te wijzigen in de nieuwe site.
 
-Hiervoor moet u [CRX|DE](http://localhost:4503/crx/de) Lite gebruiken om de [bronnentoewijzing](../../help/sites-deploying/resource-mapping.md)-tabel bij publicatie te bewerken.
+Hiervoor is het gebruik van [CRX|DE](http://localhost:4503/crx/de) Lite om de [resourcetoewijzing](../../help/sites-deploying/resource-mapping.md) publicatietabel.
 
 Aan de slag
 
 1. Bij publiceren, heb toegang tot CRXDE en login met beheerdervoorrechten
 
-   * Blader bijvoorbeeld naar [http://localhost:4503/crx/de](http://localhost:4503/crx/de) en meld u aan met `admin/admin`
+   * Blader bijvoorbeeld naar [http://localhost:4503/crx/de](http://localhost:4503/crx/de) en aanmelden met `admin/admin`
 
-1. Vouw `/etc/map` in de projectbrowser uit
-1. Selecteer de `http` knoop
+1. Vouw in de projectbrowser uit `/etc/map`
+1. Selecteer `http` node
 
    * Selecteer **[!UICONTROL Create Node]**
 
-      * **** Namelocalhost.4503
+      * **Naam** localhost.4503
 
-         (Gebruik *not* `:`)
+         (Do *niet* gebruiken `:`)
 
-      * **** [lettertypen:toewijzen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+      * **Type** [schuintrekken:toewijzen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
-1. Met nieuw aangemaakt `localhost.4503`-knooppunt geselecteerd
+1. Met nieuw gemaakt `localhost.4503` knooppunt geselecteerd
 
    * Eigenschap toevoegen
 
-      * **** naamgeving:overeenkomst
-      * **** TypeString
-      * **** Valuelocalhost.4503/\$
+      * **Naam** sling:match
+      * **Type** String
+      * **Waarde** localhost.4503/\$
 
          (Moet eindigen met &#39;$&#39; teken)
    * Eigenschap toevoegen
 
-      * **** naamgeving:internalRedirect
-      * **** TypeString
+      * **Naam** sling:internalRedirect
+      * **Type** String
       * **Waarde** /content/sites/enable/en.html
 
 
@@ -311,33 +314,33 @@ Aan de slag
 
 >[!NOTE]
 >
->Als u deze optie wilt uitschakelen, voegt u de waarde van de eigenschap `sling:match` gewoon aan met een &#39;x&#39; - `xlocalhost.4503/$` - en **[!UICONTROL Save All]**.
+>Als u wilt uitschakelen, voegt u de opdracht `sling:match` eigenschapswaarde met een &#39;x&#39; - `xlocalhost.4503/$` - en **[!UICONTROL Save All]**.
 
 ![chlimage_1-297](assets/chlimage_1-297.png)
 
 #### Problemen oplossen: Fout bij opslaan van kaart {#troubleshooting-error-saving-map}
 
-Als u wijzigingen niet kunt opslaan, moet u ervoor zorgen dat de knooppuntnaam `localhost.4503` is, met een &#39;punt&#39;-scheidingsteken en niet `localhost:4503` met een &#39;dubbele punt&#39;-scheidingsteken, omdat `localhost`geen geldig naamruimtevoorvoegsel is.
+Als u de wijzigingen niet kunt opslaan, moet u controleren of de knooppuntnaam `localhost.4503`, met een &#39;punt&#39;-scheidingsteken, en niet `localhost:4503` met een &#39;dubbele punt&#39;-scheidingsteken, als `localhost`is geen geldig naamruimtevoorvoegsel.
 
 ![chlimage_1-298](assets/chlimage_1-298.png)
 
-#### Problemen oplossen: Kan {#troubleshooting-fail-to-redirect} niet omleiden
+#### Problemen oplossen: Doorsturen mislukt {#troubleshooting-fail-to-redirect}
 
-De tekenreeks &#39;**$**&#39; aan het einde van de reguliere expressie `sling:match`is van cruciaal belang, zodat alleen exact `http://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM probeert om naar de aanmeldingspagina om te leiden, mislukt dit.
+De &#39;**$**&#39; aan het einde van de reguliere expressie `sling:match`tekenreeks is van cruciaal belang, zodat alleen `http://localhost:4503/` wordt toegewezen, anders wordt de omleidingswaarde prepended aan om het even welk weg die na server zou kunnen bestaan:haven in URL. Wanneer AEM probeert om naar de aanmeldingspagina om te leiden, mislukt dit.
 
-## Het wijzigen van de Communautaire Plaats {#modifying-the-community-site}
+## Het aanpassen van de communautaire Plaats {#modifying-the-community-site}
 
-Nadat de site voor het eerst is gemaakt, kunnen auteurs het [pictogram Open Site](sites-console.md#authoring-site-content) gebruiken om standaard AEM ontwerpactiviteiten uit te voeren.
+Nadat de site voor het eerst is gemaakt, kunnen auteurs de opdracht [Site openen, pictogram](sites-console.md#authoring-site-content) standaardinstellingen voor AEM ontwerpactiviteiten uit te voeren.
 
-Daarnaast kunnen beheerders het [Sitepictogram bewerken](sites-console.md#modifying-site-properties) gebruiken om eigenschappen van de site, zoals de titel, te wijzigen.
+Daarnaast kunnen beheerders de opdracht [Site-pictogram bewerken](sites-console.md#modifying-site-properties) om eigenschappen van de site te wijzigen, zoals de titel.
 
-Na om het even welke wijziging, herinner aan **sparen** en re-**Publish** de plaats.
+Vergeet niet om na elke wijziging **Opslaan** en re-**Publiceren** de site.
 
 >[!NOTE]
 >
->Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md) en een [handleiding voor het schrijven van pagina&#39;s](../../help/sites-authoring/qg-page-authoring.md).
+>Als u niet bekend bent met AEM, kunt u de documentatie raadplegen op [basisbehandeling](../../help/sites-authoring/basic-handling.md) en [snelle handleiding voor het ontwerpen van pagina&#39;s](../../help/sites-authoring/qg-page-authoring.md).
 
-### Een catalogus {#add-a-catalog} toevoegen
+### Een catalogus toevoegen {#add-a-catalog}
 
 Het sjabloon voor de communitysite dat voor deze communitysite is gekozen, moet de catalogusfunctie bevatten.
 
@@ -345,15 +348,15 @@ Als dat niet het geval is, kan de catalogusfunctie eenvoudig worden toegevoegd. 
 
 Als de sitestructuur al de catalogusfunctie bevat, kan de titel worden gewijzigd.
 
-Als u de structuur van de site wilt wijzigen, navigeert u naar de **[!UICONTROL Communities, Sites]**-console, opent u de map `enable` en selecteert u het pictogram **Site bewerken** om toegang te krijgen tot de eigenschappen van `Enablement Tutorial`.
+Als u de structuur van de site wilt wijzigen, navigeert u naar de **[!UICONTROL Communities, Sites]** console, opent `enable` en selecteert u de **Site bewerken** pictogram voor toegang tot de eigenschappen van `Enablement Tutorial`.
 
 Selecteer het deelvenster STRUCTUUR om een catalogus toe te voegen of een bestaande catalogus te wijzigen:
 
-* **Titel**:  `Ski Catalog`
+* **Titel**: `Ski Catalog`
 
-* **URL**:  `catalog`
+* **URL**: `catalog`
 
-* **Alle naamruimten** selecteren: blijven staan.
+* **Alle naamruimten selecteren**: blijven staan.
 * Selecteer **[!UICONTROL Save]**
 
 ![chlimage_1-299](assets/chlimage_1-299.png)
@@ -362,6 +365,6 @@ Gebruik het pictogram Positie om de functie Catalog naar de tweede positie te ve
 
 ![chlimage_1-300](assets/chlimage_1-300.png)
 
-Selecteer **[!UICONTROL Save]** in de hogere juiste hoek om de veranderingen in de communautaire plaats te bewaren.
+Selecteren **[!UICONTROL Save]** in de rechterbovenhoek om de wijzigingen in de communitysite op te slaan.
 
-Vervolgens kunt u de site opnieuw **publiceren**.
+Dan re-**Publiceren** de site.

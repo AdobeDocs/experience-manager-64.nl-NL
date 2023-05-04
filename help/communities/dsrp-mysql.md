@@ -1,8 +1,8 @@
 ---
 title: MySQL-configuratie voor DSRP
-seo-title: MySQL-configuratie voor DSRP
+seo-title: MySQL Configuration for DSRP
 description: Hoe te met de server te verbinden MySQL en het gegevensbestand te vestigen UGC
-seo-description: Hoe te met de server te verbinden MySQL en het gegevensbestand te vestigen UGC
+seo-description: How to connect to the MySQL server and establish the UGC database
 uuid: c058cc88-7ca2-4aed-9a36-b080e603f886
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: 1de1ffc6-63f8-4316-a2fa-5095d407c265
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
 
 # MySQL-configuratie voor DSRP {#mysql-configuration-for-dsrp}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 MySQL is een relationele database die kan worden gebruikt om door gebruikers gegenereerde inhoud (UGC) op te slaan.
 
@@ -30,7 +34,7 @@ Deze instructies beschrijven hoe te met de server te verbinden MySQL en het gege
 * [JDBC-stuurprogramma voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * Een relationele database:
 
-   * [MySQL ](https://dev.mysql.com/downloads/mysql/) serverCommunity Server versie 5.6 of hoger
+   * [MySQL-server](https://dev.mysql.com/downloads/mysql/) Community Server versie 5.6 of hoger
 
       * Kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd
    * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
@@ -38,7 +42,7 @@ Deze instructies beschrijven hoe te met de server te verbinden MySQL en het gege
 
 ## MySQL installeren {#installing-mysql}
 
-[](https://dev.mysql.com/downloads/mysql/) MySQL moet worden gedownload en geïnstalleerd volgens de instructies voor het doel-besturingssysteem.
+[MySQL](https://dev.mysql.com/downloads/mysql/) moet worden gedownload en geïnstalleerd volgens de instructies voor het doelbesturingssysteem.
 
 ### Tabelnamen met kleine letters {#lower-case-table-names}
 
@@ -46,8 +50,8 @@ Aangezien SQL niet hoofdlettergevoelig is, is het voor hoofdlettergevoelige best
 
 Als u bijvoorbeeld alle tabelnamen met kleine letters wilt opgeven op een Linux-besturingssysteem:
 
-* Bestand `/etc/my.cnf` bewerken
-* Voeg in de sectie `[mysqld]` de volgende regel toe:
+* Bestand bewerken `/etc/my.cnf`
+* In de `[mysqld]` de volgende regel toevoegen:
 
    `lower_case_table_names = 1`
 
@@ -61,12 +65,12 @@ Wijzig MySQL om UTF8 in te stellen als tekenset:
 
 Wijzig de MySQL-database in de standaardwaarde voor UTF8:
 
-* Bestand `/etc/my.cnf` bewerken
-* Voeg in de sectie `[client]` de volgende regel toe:
+* Bestand bewerken `/etc/my.cnf`
+* In de `[client]` de volgende regel toevoegen:
 
    `default-character-set=utf8`
 
-* Voeg in de sectie `[mysqld]` de volgende regel toe:
+* In de `[mysqld]` de volgende regel toevoegen:
 
    `character-set-server=utf8`
 
@@ -84,8 +88,8 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 
 ### Nieuwe verbindingsinstellingen {#new-connection-settings}
 
-1. Selecteer het pictogram `+` rechts van `MySQL Connections`.
-1. Voer in het dialoogvenster `Setup New Connection` de waarden in die geschikt zijn voor uw platform
+1. Selecteer `+` pictogram rechts van `MySQL Connections`.
+1. In het dialoogvenster `Setup New Connection`Voer de waarden in die geschikt zijn voor uw platform
 
    Voor demonstratiedoeleinden, met de auteur AEM instantie en MySQL op de zelfde server:
 
@@ -96,12 +100,12 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
    * Wachtwoord: `no password by default`
    * Standaardschema: `leave blank`
 
-1. Selecteer `Test Connection` om de verbinding met de actieve dienst te verifiëren MySQL
+1. Selecteren `Test Connection` om de verbinding aan de lopende dienst te verifiëren MySQL
 
-**Opmerkingen**:
+**Notities**:
 
 * De standaardpoort is `3306`
-* De gekozen Naam van de Verbinding is ingegaan als naam van de gegevensbron in [JDBC OSGi configuratie](#configurejdbcconnections)
+* De gekozen verbindingsnaam is ingevoerd als naam van de gegevensbron in [JDBC OSGi-configuratie](#configurejdbcconnections)
 
 #### Nieuwe verbinding met Gemeenschappen {#new-communities-connection}
 
@@ -119,17 +123,17 @@ Het SQL-script is afkomstig uit de AEM opslagplaats:
 
 1. Bladeren naar CRXDE Lite
 
-   * Bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+   * Bijvoorbeeld: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Selecteer de map /libs/social/config/datastore/dsrp/schema
-1. `init-schema.sql` downloaden
+1. Downloaden `init-schema.sql`
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
 Eén methode voor het downloaden van het schema is:
 
-* Selecteer het `jcr:content`knooppunt voor het sql-bestand
-* De waarde voor de eigenschap `jcr:data`is een weergavekoppeling
+* Selecteer `jcr:content`knooppunt voor het sql-bestand
+* Let op de waarde voor de `jcr:data`eigenschap is een weergavekoppeling
 
 * Selecteer de weergavekoppeling om de gegevens in een lokaal bestand op te slaan
 
@@ -137,7 +141,7 @@ Eén methode voor het downloaden van het schema is:
 
 Voer de onderstaande stappen uit om de database te installeren. De standaardnaam van de database is `communities`.
 
-Als de gegevensbestandnaam in het manuscript wordt veranderd, ben zeker om het in [JDBC config](#configurejdbcconnections) ook te veranderen.
+Als de databasenaam in het script wordt gewijzigd, moet u deze ook wijzigen in het dialoogvenster [JDBC-configuratie](#configurejdbcconnections).
 
 #### Stap 1: SQL-bestand openen {#step-open-sql-file}
 
@@ -150,21 +154,21 @@ In MySQL Workbench
 
 #### Stap 2: SQL-script uitvoeren {#step-execute-sql-script}
 
-Selecteer `lightening (flash) icon` in het Workbench-venster voor het bestand dat in Stap 1 wordt geopend om het script uit te voeren.
+Selecteer in het Workbench-venster voor het bestand dat in Stap 1 wordt geopend de optie `lightening (flash) icon` om het script uit te voeren.
 
-In de volgende afbeelding kan het `init_schema.sql`-bestand worden uitgevoerd:
+In de volgende afbeelding worden de `init_schema.sql` bestand kan worden uitgevoerd:
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
 #### Vernieuwen {#refresh}
 
-Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om `SCHEMAS`sectie van `Navigator` te verfrissen om het nieuwe gegevensbestand te zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
+Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om te verfrissen `SCHEMAS`van de `Navigator` om de nieuwe database te kunnen zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
 ## JDBC-verbinding configureren {#configure-jdbc-connection}
 
-De configuratie OSGi voor **de Pool van Verbindingen JDBC van de Bevelen van de Dag** vormt de Bestuurder MySQL JDBC.
+De configuratie OSGi voor **Day Commons JDBC-verbindingspool** configureert het MySQL JDBC-stuurprogramma.
 
 Alle publicatie- en auteur-AEM moeten verwijzen naar dezelfde MySQL-server.
 
@@ -172,25 +176,25 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 
 * Op elke auteur en publiceer AEM instantie
 * Aangemeld met beheerdersrechten
-* Toegang tot de [webconsole](../../help/sites-deploying/configuring-osgi.md)
+* Toegang krijgen tot [webconsole](../../help/sites-deploying/configuring-osgi.md)
 
-   * Bijvoorbeeld [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+   * Bijvoorbeeld: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
-* `Day Commons JDBC Connections Pool` zoeken
-* Selecteer het pictogram `+` om een nieuwe verbindingsconfiguratie tot stand te brengen
+* Zoek de `Day Commons JDBC Connections Pool`
+* Selecteer `+` pictogram om een nieuwe verbindingsconfiguratie tot stand te brengen
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 * Voer de volgende waarden in:
 
    * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
-   * **[!UICONTROL JDBC connection URI]**:  `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
+   * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
       Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM server
 
-      *De* standaardnaam van de database (schema) is
+      *gemeenschappen* is de standaardnaam van de database (schema)
 
-   * **[!UICONTROL Username]**:  `root`
+   * **[!UICONTROL Username]**: `root`
 
       Of ga gevormde Gebruikersnaam voor de server MySQL in, als niet &quot;wortel&quot;
 
@@ -199,6 +203,6 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
       Wis dit gebied als geen wachtwoord voor MySQL wordt geplaatst,
 
       else ga het gevormde wachtwoord voor de Gebruikersnaam MySQL in
-   * **[!UICONTROL Datasource name]**: naam ingevoerd voor de verbinding [ ](#new-connection-settings)MySQL, bijvoorbeeld &quot;gemeenschappen&quot;
+   * **[!UICONTROL Datasource name]**: naam ingevoerd voor de [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &quot;gemeenschappen&quot;
 
 * Selecteer **[!UICONTROL Save]**

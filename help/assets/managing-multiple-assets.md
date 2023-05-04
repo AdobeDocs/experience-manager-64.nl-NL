@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 13%
+source-wordcount: '447'
+ht-degree: 12%
 
 ---
 
 # Meerdere elementen en verzamelingen beheren {#managing-multiple-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Leer hoe u de metagegevens van meerdere elementen en verzamelingen tegelijk kunt bewerken om snel algemene wijzigingen in metagegevens door te geven.
 
@@ -33,10 +37,10 @@ Gebruik de Schema-editor om de pagina met metagegevenseigenschappen aan te passe
 
 1. Navigeer in de gebruikersinterface Elementen naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
-1. Klik in de werkbalk op **[!UICONTROL Properties]** om de pagina met eigenschappen voor de geselecteerde elementen te openen.
+1. Klik op de werkbalk op **[!UICONTROL Properties]** om de pagina met eigenschappen voor de geselecteerde elementen te openen.
 1. Wijzig de eigenschappen van metagegevens voor geselecteerde elementen onder de verschillende tabbladen.
-1. Als u de metagegevens van een specifiek element wilt weergeven, annuleert u de selectie van de resterende elementen in de lijst. Als u de selectie van een paar elementen op de pagina [!UICONTROL Properties] annuleert, worden de metagegevens van dergelijke elementen niet bijgewerkt.
-1. Als u een ander metagegevensschema voor de elementen wilt selecteren, klikt u op **[!UICONTROL Settings]** op de werkbalk en selecteert u een schema. Klik op **[!UICONTROL Save & Close]**.
+1. Als u de metagegevens van een specifiek element wilt weergeven, annuleert u de selectie van de resterende elementen in de lijst. Als u de selectie van een aantal elementen op de knop [!UICONTROL Properties] , worden de metagegevens van dergelijke elementen niet bijgewerkt.
+1. Als u een ander metagegevensschema voor de elementen wilt selecteren, klikt u op **[!UICONTROL Settings]** op de werkbalk en selecteer een schema. Klik op **[!UICONTROL Save & Close]**.
 1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Klik op **[!UICONTROL Submit]**.
 
 ![De bulk van het metagegevensschema is van toepassing op meerdere elementen](assets/metadata-schema-bulk-edit.gif)
@@ -47,11 +51,11 @@ Gebruik de Schema-editor om de pagina met metagegevenseigenschappen aan te passe
 
 ## Limiet voor bijwerken van bulkmetagegevens configureren {#configure-limit-for-bulk-metadata-update}
 
-Om DOS als situatie te verhinderen, [!DNL Experience Manager] beperkt het aantal parameters die in een Verschuivend verzoek worden gesteund. Wanneer u metagegevens van vele elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. [!DNL Experience Manager] Hiermee genereert u de volgende waarschuwing in de logboeken:
+Om situaties als DOS te voorkomen, [!DNL Experience Manager] Hiermee wordt het aantal parameters beperkt dat wordt ondersteund in een Sling-aanvraag. Wanneer u metagegevens van veel elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. [!DNL Experience Manager] Hiermee genereert u de volgende waarschuwing in de logboeken:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Als u de limiet wilt wijzigen, opent u **[!UICONTROL Tools > Operations > Web Console]** en wijzigt u de waarde van [!UICONTROL Maximum POST Parameters] in de OSGi-configuratie [!UICONTROL Apache Sling Request Parameter Handling].
+Om de grens te veranderen, toegang **[!UICONTROL Tools > Operations > Web Console]** en wijzigt u de waarde van [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi-configuratie.
 
 >[!MORELIKETHIS]
 >

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release van AEM Sites
 seo-title: AEM Sites
 description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Sites.
-seo-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Sites.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Sites.
 uuid: 593928ec-5d1a-4a88-bd73-897421c5984a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,15 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
 exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
 
 # Opmerkingen bij de release van AEM Sites {#aem-sites-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Sites {#sites}
 
@@ -35,26 +38,26 @@ Zie het volgende voor AEM Sites 6.4-verbeteringen in detail:
 
 ### Pagina-editor {#page-editor}
 
-* Bijgewerkte apparaatlijst voor responsieve sitevoorvertoning, nu inclusief Apple iPhone 8, 8 Plus en X, en Samsung S7
+* Bijgewerkte apparaatlijst voor responsieve sitevoorvertoning, nu inclusief Apple iPhone 8, 8 Plus en X en Samsung S7
 * Verplaatste standaardplaats voor de informatie van het malplaatjeontwerp vanaf /etc/design om plaatsen specifieke montages in /conf te steunen. Klanten die een upgrade uitvoeren van eerdere AEM, kunnen /etc/design blijven gebruiken.
 
 ### Component- en sjabloonontwikkeling {#component-amp-template-development}
 
-* Project Archetype 13+, zie [Github voor versienota&#39;s](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases).
-* HTL versie 1.3.1, zie [Github voor versienota&#39;s](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1).
-* Core Components 2.0.4+, zie [Github voor versienota&#39;s](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
+* Projectarchetype 13+, zie [Github voor opmerkingen bij de release](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases).
+* HTML versie 1.3.1, zie [Github voor opmerkingen bij de release](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1).
+* Core Components 2.0.4+, zie [Github voor opmerkingen bij de release](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Stijlsysteem
 
    * Een geheel nieuw concept toegevoegd om CSS-klassen toe te wijzen aan componenten en gebruikers in de Pagina-editor toe te staan uit een subset stijlen te kiezen via de gebruikersinterface
-   * Mogelijkheid toegevoegd om de HTML-elementnaam te definiëren die rondom de component wordt gerenderd, bijvoorbeeld &lt;main>, &lt;reserve>
+   * Toegevoegde mogelijkheid om de naam van het HTML-element te definiëren die rondom de component wordt weergegeven, bijvoorbeeld &lt;main>, &lt;aside>
 
-* Het Systeem van het net voor de Container van de Lay-out, zie [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
+* Rastersysteem voor lay-outcontainer, zie [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
 * Sjablooneditor en beleidsregels
 
    * Het beleid steunt nu de configuraties van het Systeem van de Stijl per component, per container, per malplaatje.
    * Verbeterde ondersteuning voor het definiëren van lay-out in sjablonen op bewerkbare componenten
 
-* Referentiesite We.Retail 3.0, zie [Github voor releaseopmerkingen](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
+* Referentie Site We.Retail 3.0, zie [Github voor opmerkingen bij de release](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
 
 >[!CAUTION]
 >
@@ -104,14 +107,14 @@ Zie het volgende voor AEM Sites 6.4-verbeteringen in detail:
 * De updates voor slimme vertaling herkennen nu nieuwe pagina&#39;s die zijn toegevoegd aan een master taalvertakking
 * Introductie van de rapportage over de vertaalstatus in de lijstweergave Sites Admin
 
-### Meersitebeheer (MSM) {#multi-site-management-msm}
+### Multisite beheer (MSM) {#multi-site-management-msm}
 
 * Verbeterde MSM-schaalbaarheid met een op eik gebaseerde index versus in-geheugen (LiveCopyIndex)
 
 ### Lanceringen {#launches}
 
 * Verbeterde prestaties van lanceringen die grote plaatsboom bevatten en als er vele Lanceringen actief zijn
-* Verbeterde automatische promotie en publicatie van lanceringen met meerdere basispagina&#39;s.
+* Verbeterde automatische promotie en publicatie van introducties met meerdere basispagina&#39;s.
 * Probleem verholpen waardoor de voorvertoning van het responsieve apparaat niet kon werken met pagina&#39;s die werden bewerkt in de context van een opstart.
 
 ### Inhoud richten en simuleren {#content-targeting-simulation}
@@ -123,16 +126,16 @@ Zie het volgende voor AEM Sites 6.4-verbeteringen in detail:
 
 * Geïntegreerde AEM Ervaring Fragments met Adobe Target. Het synchroniseren van de Fragmenten van de Ervaring aan Doel zal aanbiedingen in Adobe Target tot stand brengen die met Composer van de Ervaring van het Doel kunnen worden gebruikt om het in om het even welk Doel toegelaten ervaring in te bedden.
 * Adobe Target mbox.js versie 63 is nu inbegrepen. Adobe raadt aan om de implementatie over te schakelen naar at.js.
-* at.js versie 1.2.2 is nu inbegrepen. Adobe raadt u aan om Dynamic Tag Management (DTM) of [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) te gebruiken om in het bestand .js naar de site te gaan.
+* at.js versie 1.2.2 is nu inbegrepen. Adobe raadt aan om Dynamic Tag Management (DTM) of [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) naar de locatie van . js.
 
 ### AEM en Adobe Analytics {#aem-amp-adobe-analytics}
 
 * s_code.js H.27.5 is nu opgenomen. Adobe raadt aan om de implementatie over te schakelen naar AppMeasurement.js
-* AppMeasurement.js 1.8.0 is nu inbegrepen. Adobe raadt u aan om Dynamic Tag Management (DTM) of [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) te gebruiken om AppMeasurement.js op de site te plaatsen.
+* AppMeasurement.js 1.8.0 is nu inbegrepen. Adobe raadt aan om Dynamic Tag Management (DTM) of [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) om AppMeasurement.js op de site te plaatsen.
 
 ## Invoegtoepassing Gemeenschappen {#communities-add-on}
 
-Zie [pagina Opmerkingen bij de release van Gemeenschappen](/help/release-notes/communities-release-notes.md)
+Zie [Opmerkingen bij de release van Gemeenschappen](/help/release-notes/communities-release-notes.md)
 
 ## Scherminvoegtoepassing {#screens-add-on}
 
@@ -141,5 +144,5 @@ Zie [pagina Opmerkingen bij de release van Gemeenschappen](/help/release-notes/c
 * Kanaaltoewijzingen hebben nu de begin- en einddatum
 * Het dashboard van het apparaat toont nu speler shell en ingebouwde programmatuurversie
 * Apparaatdashboardlijst bevat verbindingsstatus van speler
-* Extra ondersteuning voor Google Chrome OS voor AEM Screens Player
+* Ondersteuning voor Google Chrome OS toegevoegd voor AEM Screens Player
 * Microsoft Windows 10 voor AEM Screens Player toegevoegd

@@ -1,8 +1,8 @@
 ---
 title: Best practices voor
-seo-title: Best practices voor
+seo-title: Best Practices
 description: Hoe AEM op de meest efficiënte en meest effectieve manier wordt gebruikt
-seo-description: Hoe AEM op de meest efficiënte en meest effectieve manier wordt gebruikt
+seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 84db73b0-1bc3-4c39-9bc2-0840e24832b0
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 4%
+source-wordcount: '321'
+ht-degree: 3%
 
 ---
 
 # Best practices voor{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
@@ -79,4 +82,4 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
 |  |  |  |
 |---|---|---|
 | Aangepaste formulieren | [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md) | Beschrijft beste praktijken voor vestiging, creatie, en het aanpassen van adaptieve vormen. |
-| HTML5-formulieren | [Aanbevolen procedures voor het ontwerpen van HTML5-formulieren](/help/forms/using/best-practices-for-html5-forms.md) | Hierin worden de aanbevolen werkwijzen beschreven voor het werken aan de indeling en het ontwerp van HTML5-formulieren. |
+| HTML5-formulieren | [Aanbevolen procedures voor het ontwerpen van HTML5-formulieren](/help/forms/using/best-practices-for-html5-forms.md) | Beschrijft beste praktijken voor het werken aan lay-out en ontwerp van HTML5 vormen. |

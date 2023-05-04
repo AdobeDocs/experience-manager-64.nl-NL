@@ -1,33 +1,36 @@
 ---
 title: AEM
-seo-title: AEM
+seo-title: Troubleshooting AEM
 description: AEM
-seo-description: AEM
+seo-description: Troubleshooting AEM
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: fef17396-eed2-4c0b-a962-c1f2ae2c5d1d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
 
-# AEM {#troubleshooting-aem} oplossen
+# AEM {#troubleshooting-aem}
 
-## Prestaties {#performance} van de Instantie van de Auteur van het oplossen van problemen
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+## Prestaties van authorinstantie-instantie oplossen {#performance}
 
 [Zie deze handleiding en tips voor het oplossen van problemen met de AEM auteur.](/help/sites-authoring/troubleshooting.md)
 
-## Problemen met beheer van probleemoplossing {#administering}
+## Problemen met beheer oplossen {#administering}
 
 [Zie deze handleiding en tips voor het oplossen van problemen met beheer in AEM.](/help/sites-administering/troubleshoot.md)
 
-## Problemen AEM logbestanden {#logs} oplossen
+## Problemen met AEM logboeken oplossen {#logs}
 
 [Zie deze handleiding en tips voor het oplossen van problemen AEM logboeken.](/help/sites-administering/troubleshooting.md)
 
-## Problemen met replicatie {#replication} oplossen
+## Problemen met replicatie oplossen {#replication}
 
 [Zie deze handleiding en tips voor het oplossen van problemen met replicatie in AEM.](/help/sites-deploying/troubleshoot-rep.md)

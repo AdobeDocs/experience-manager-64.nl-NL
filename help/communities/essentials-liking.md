@@ -1,8 +1,8 @@
 ---
 title: Belangrijkste elementen
-seo-title: Belangrijkste elementen
+seo-title: Liking Essentials
 description: Overzicht van Liking-component
-seo-description: Overzicht van Liking-component
+seo-description: Liking component overview
 uuid: 89f16859-c901-4090-8e16-363b95c508de
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: 509d1fb4-a88d-4438-a618-ba063adb6fb9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-# Liking Essentials {#liking-essentials}
+# Belangrijkste elementen {#liking-essentials}
 
-De koppelende component, een [tally](tally.md) subklasse, is een nuttig hulpmiddel dat leden toestaat om een positieve mening over een bepaald stuk van inhoud te uiten door het hartpictogram eenvoudig te selecteren.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Het plaatsen van meerdere instanties van een koppelingscomponent op dezelfde pagina is toegestaan. elke instantie moet met een uniek `tally name` bezit worden gevormd.
+De koppelende component, a [tally](tally.md) subklasse, is een nuttig hulpmiddel dat leden toestaat om een positieve mening over een bepaald stuk van inhoud te uiten door het hartpictogram eenvoudig te selecteren.
+
+Het plaatsen van meerdere instanties van een koppelingscomponent op dezelfde pagina is toegestaan. elke instantie moet met een uniek `tally name` eigenschap.
 
 Anonieme post van een soortgelijk object wordt niet ondersteund. Sitebezoekers moeten zich registreren en aanmelden om deel te nemen aan een abonnement. De ondertekende bezoeker (lid) kan te allen tijde in- en uitschakelen.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table> 
  <tbody> 
@@ -37,14 +40,14 @@ Anonieme post van een soortgelijk object wordt niet ondersteund. Sitebezoekers m
   </tr> 
   <tr> 
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td> 
-   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerpmodus </i>modus</td> 
+   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerp </i>mode</td> 
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
    <td> cq.social.hbs.liking</td> 
   </tr> 
   <tr> 
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td><p> /libs/social/tally/components/hbs/liking/liking.hbs<br /> /libs/social/tally/components/hbs/liking/activity-icon.hbs<br /> /libs/social/tally/components/hbs/liking/activity-title.hbs</p> </td> 
   </tr> 
   <tr> 
@@ -68,18 +71,18 @@ Anonieme post van een soortgelijk object wordt niet ondersteund. Sitebezoekers m
 
 * [Aanpassingen op de server](server-customize.md)
 
-### Toegang tot Geposte Stemming (UGC) {#accessing-posted-voting-ugc}
+### Toegang tot gebste stemmen (UGC) {#accessing-posted-voting-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.\
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
+* [Overzicht opslagbronprovider](srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes

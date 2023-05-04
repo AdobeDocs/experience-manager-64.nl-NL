@@ -1,8 +1,8 @@
 ---
-title: '"Microsoft SQL Server-database: De configuratie verfijnen"'
-seo-title: '"Microsoft SQL Server-database: De configuratie verfijnen"'
-description: Leer hoe u de configuratie van uw gegevensbestand van de Server van Microsoft SQL kunt verfijnen.
-seo-description: Leer hoe u de configuratie van uw gegevensbestand van de Server van Microsoft SQL kunt verfijnen.
+title: "Microsoft SQL Server-database: De configuratie verfijnen"
+seo-title: "Microsoft SQL Server database: Fine-tuning the configuration"
+description: Leer hoe u de configuratie van uw Microsoft SQL gegevensbestand van de Server kunt verfijnen.
+seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS, SG_AEMFORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 exl-id: 5392027c-eb5a-49c4-bf9b-fe7d399ae0a1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
-# Microsoft SQL Server-database: De configuratie {#microsoft-sql-server-database-fine-tuning-the-configuration} verfijnen
+# Microsoft SQL Server-database: De configuratie verfijnen {#microsoft-sql-server-database-fine-tuning-the-configuration}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 U zou de standaardconfiguratiemontages moeten veranderen wanneer het gebruiken van de Server van Microsoft SQL. Klik met de rechtermuisknop op de lokale server in Oracle Enterprise Manager om het dialoogvenster met eigenschappen te openen.
 

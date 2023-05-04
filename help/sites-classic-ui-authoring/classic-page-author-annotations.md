@@ -1,8 +1,8 @@
 ---
 title: Annotaties bij het bewerken van een pagina
-seo-title: Annotaties bij het bewerken van een pagina
+seo-title: Annotations when Editing a Page
 description: Het toevoegen van inhoud aan de pagina's van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant u toe om een aantekening toe te voegen.
-seo-description: Het toevoegen van inhoud aan de pagina's van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant u toe om een aantekening toe te voegen.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -11,15 +11,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
 
 # Annotaties bij het bewerken van een pagina{#annotations-when-editing-a-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Het toevoegen van inhoud aan de pagina&#39;s van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant (in tegenstelling, bijvoorbeeld, aan lay-out) u toe om een aantekening toe te voegen.
 
@@ -72,7 +75,7 @@ Met de drie pictogrammen linksboven kunt u de annotatie minimaliseren (samen met
 >Annotaties kunnen niet worden toegevoegd aan een pagina die is vergrendeld door een andere gebruiker.
 
 
-## Annotatiesets {#annotation-sketches}
+## Annotatieskettes {#annotation-sketches}
 
 >[!NOTE]
 >
@@ -80,9 +83,7 @@ Met de drie pictogrammen linksboven kunt u de annotatie minimaliseren (samen met
 >
 >* het pictogram wordt niet weergegeven.
 >* bestaande schetsen die in een andere browser zijn gemaakt, worden niet weergegeven.
-
 >
-
 
 
 Schetsen zijn een functie van annotaties waarmee u overal in het browservenster eenvoudige lijnafbeeldingen kunt maken (zichtbaar gedeelte):
@@ -98,12 +99,12 @@ Schetsen zijn een functie van annotaties waarmee u overal in het browservenster 
 
    * recht:
 
-      houdt `ALT` en klikt de begin en eindpunten; voltooien met een dubbelklik.
+      onderdrukken `ALT` en klik op de begin- en eindpunten; voltooien met een dubbelklik.
 
 * Nadat u de modus Schets hebt verlaten, kunt u op een schetslijn klikken om die schets te selecteren.
 * Verplaats een schets door de schets te selecteren en vervolgens naar de gewenste positie te slepen.
 * Een schets bedekt de inhoud. Dit betekent dat u binnen de vier hoeken van de schets niet op de onderliggende alinea kunt klikken. bijvoorbeeld als u een koppeling moet bewerken of openen. Als dit een probleem wordt (bijvoorbeeld als u een schets hebt die een groot gebied van de pagina bedekt), minimaliseert u de juiste annotatie, aangezien hierdoor ook alle verwante schetsen worden geminimaliseerd, zodat u toegang hebt tot het onderliggende gebied.
-* Om een individuele schets te schrappen - selecteer de vereiste schets, dan duw **Delete** sleutel (**fn**-**backspace** op MAC).
+* Als u een afzonderlijke schets wilt verwijderen, selecteert u de gewenste schets en drukt u vervolgens op de knop **Verwijderen** key (**fn**-**backspace** op een MAC).
 
 * Als u een alinea verplaatst of kopieert, worden eventuele verwante annotaties en de bijbehorende schetsen ook verplaatst of gekopieerd. hun standpunt ten aanzien van de alinea blijft ongewijzigd .
 * Als u een annotatie verwijdert, worden ook alle aan die annotatie gekoppelde schetsen verwijderd.

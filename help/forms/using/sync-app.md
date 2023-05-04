@@ -1,8 +1,8 @@
 ---
 title: De app synchroniseren
-seo-title: De app synchroniseren
+seo-title: Synchronizing the app
 description: Synchroniseer de AEM Forms-toepassing op uw mobiele apparaat met de AEM Forms-server.
-seo-description: Synchroniseer de AEM Forms-toepassing op uw mobiele apparaat met de AEM Forms-server.
+seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 uuid: 7e1526e1-13bd-498a-a265-cd4f2d05ccdd
 contentOwner: robhagat
 content-type: reference
@@ -10,17 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 exl-id: b5681fe5-69ba-4fc0-95e3-6ffdcdd95382
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
-# De app {#synchronizing-the-app} synchroniseren
+# De app synchroniseren {#synchronizing-the-app}
 
-## De app {#synchronizing-the-app-1} synchroniseren
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+## De app synchroniseren {#synchronizing-the-app-1}
 
 De formulieren in uw app worden gedownload van de AEM Forms-server. De formulieren worden gedownload onder Taken en op de tabbladen Forms. Concepten die zijn gemaakt op basis van formulieren, worden gedownload op het tabblad Concepten en concepten die zijn gemaakt op basis van taken, worden gedownload op het tabblad Taken. Voor een zelfstandig formulier op de OSGi-server worden formulieren en concepten gedownload in respectievelijk Forms en Concept tabbladen.
 
@@ -34,7 +37,7 @@ Tik op de knop Synchroniseren ![sync-app](assets/sync-app.png) in de rechterbene
 
 **De synchronisatiefrequentie wijzigen**
 
-1. Tik op de menuknop linksboven in het scherm Home om naar het scherm Instelling te gaan en tik vervolgens op **Instellingen**.
+1. Tik op de menuknop linksboven in het scherm Home om naar het scherm Instelling te gaan. Tik vervolgens op **Instellingen**.
 1. Tik in het scherm Instellingen op het tabblad Algemeen.
 
    ![Frequentie-instelling synchroniseren in venster Algemene instellingen](assets/gen-settings-1.png)

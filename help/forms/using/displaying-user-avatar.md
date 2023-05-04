@@ -1,8 +1,8 @@
 ---
 title: De gebruikersavatar weergeven
-seo-title: De gebruikersavatar weergeven
+seo-title: Displaying the user avatar
 description: De AEM Forms-werkruimte aanpassen om de afbeelding van een aangemelde gebruiker weer te geven.
-seo-description: De AEM Forms-werkruimte aanpassen om de afbeelding van een aangemelde gebruiker weer te geven.
+seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
 uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
 content-type: reference
@@ -10,15 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: 2bc70cd6-1ea6-4594-9b42-ab3d3000a0c5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
-# De gebruikersavatar {#displaying-the-user-avatar} weergeven
+# De gebruikersavatar weergeven {#displaying-the-user-avatar}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste hoek van de werkruimte van AEM Forms. Ook, worden de avatars van directe rapporten in de organisatorische hiërarchie getoond in de Mening van de Manager. U kunt de AEM Forms-werkruimte zodanig configureren dat de gebruikersafbeeldingen in uw database, bijvoorbeeld de LDAP-server, worden gekozen.
 
@@ -26,7 +29,7 @@ Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste 
 >
 >De ondersteunde hoogte-breedteverhouding van de gebruikersafbeeldingen is 1:1.
 
-1. Maak een DSC met de details die in de volgende stap worden vermeld. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor Vormen AEM&quot;onderwerp in [Programmering met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) gids.
+1. Maak een DSC met de details die in de volgende stap worden vermeld. Voor meer informatie, zie het onderwerp van &quot;het Ontwikkelen van Componenten voor Vormen AEM&quot;in [Programmeren met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) hulplijn.
 1. Definieer in de DSC een nieuwe SPI die de methoden getCurrentUserImageUrl en getUserImageUrl beschikbaar maakt om een afbeeldings-URL voor een AEM Forms-gebruiker op te halen. Hier volgt een voorbeeld van een Java™-codefragment:
 
    ```as3
@@ -84,5 +87,5 @@ Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste 
    </component>
    ```
 
-1. Implementeer DSC via Workbench. Start `ProcessManagementClientSessionService`-service opnieuw.
+1. Implementeer DSC via Workbench. Opnieuw starten `ProcessManagementClientSessionService` service.
 1. Mogelijk moet u de browser vernieuwen of u opnieuw afmelden/aanmelden bij de gebruiker.

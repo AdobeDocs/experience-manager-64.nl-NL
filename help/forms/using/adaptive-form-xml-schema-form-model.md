@@ -1,8 +1,8 @@
 ---
 title: Aangepaste formulieren maken met XML-schema
-seo-title: Aangepaste formulieren maken met XML-schema
+seo-title: Creating adaptive forms using XML Schema
 description: Adaptieve formulieren kunnen het XML-schema als formuliermodel gebruiken, zodat u bestaande XSD-sjablonen kunt gebruiken om adaptieve formulieren te maken. U kunt schema-elementen van XSD naar het aangepaste formulier slepen.
-seo-description: Adaptieve formulieren kunnen het XML-schema als formuliermodel gebruiken, zodat u bestaande XSD-sjablonen kunt gebruiken om adaptieve formulieren te maken. U kunt schema-elementen van XSD naar het aangepaste formulier slepen.
+seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
 topic-tags: adaptive_forms, develop
@@ -10,15 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 feature: Adaptive Forms
 exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 1%
+source-wordcount: '1080'
+ht-degree: 0%
 
 ---
 
 # Aangepaste formulieren maken met XML-schema {#creating-adaptive-forms-using-xml-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Vereisten {#prerequisites}
 
@@ -130,7 +133,7 @@ Hier is een voorbeeld van een XML-schema.
 >
 >Zorg ervoor dat uw XML-schema slechts één basiselement heeft. Een XML-schema met meer dan één hoofdelement wordt niet ondersteund.
 
-## Speciale eigenschappen toevoegen aan velden met XML-schema {#adding-special-properties-to-fields-using-xml-schema}
+## Speciale eigenschappen aan velden toevoegen met XML-schema {#adding-special-properties-to-fields-using-xml-schema}
 
 U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speciale eigenschappen toe te voegen aan de velden van het gekoppelde adaptieve formulier.
 
@@ -143,7 +146,7 @@ U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speci
   </tr> 
   <tr> 
    <td><code>use=required </code></td> 
-   <td>Hiermee markeert u een verplicht veld<br /> </td> 
+   <td>Hiermee wordt een veld verplicht gemarkeerd<br /> </td> 
    <td>Kenmerk</td> 
   </tr> 
   <tr> 
@@ -171,12 +174,10 @@ U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speci
 >
 >* Het eerste teken van de elementnaam omzetten in hoofdletters
 >* Witruimte invoegen bij grenzen van camelhoofdletters.
-
 >
->
-Als u bijvoorbeeld het schema-element `userFirstName` toevoegt, is het bijschrift dat in het adaptieve formulier wordt gegenereerd `User First Name`.
+>Als u bijvoorbeeld de opdracht `userFirstName` schema-element, het bijschrift dat in het adaptieve formulier wordt gegenereerd, is `User First Name`.
 
-## Acceptabele waarden beperken voor een adaptieve formuliercomponent {#limit-acceptable-values-for-an-adaptive-form-component}
+## Acceptabele waarden voor een adaptieve formuliercomponent beperken {#limit-acceptable-values-for-an-adaptive-form-component}
 
 U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de waarden te beperken die acceptabel zijn voor een adaptieve formuliercomponent:
 
@@ -190,7 +191,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr> 
   <tr> 
    <td><p><code>totalDigits</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee wordt het maximale aantal cijfers opgegeven dat in een component is toegestaan. Het opgegeven aantal cijfers moet groter zijn dan nul.</p> </td> 
    <td> 
     <ul> 
@@ -200,18 +201,18 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr> 
   <tr> 
    <td><p><code>maximum</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee geeft u de bovengrens voor numerieke waarden en datums op. Standaard wordt de maximumwaarde opgenomen.</p> </td> 
    <td> 
     <ul> 
      <li>Numeriek vak</li> 
-     <li>Numerieke Stepper<br /> </li> 
+     <li>Numerieke stap<br /> </li> 
      <li>Datumkiezer</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p><code>minimum</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee geeft u de ondergrens voor numerieke waarden en datums op. Standaard wordt de minimumwaarde opgenomen.</p> </td> 
    <td> 
     <ul> 
@@ -244,7 +245,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr> 
   <tr> 
    <td><p><code>minLength</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee wordt het minimale aantal tekens opgegeven dat in een component is toegestaan. De minimumlengte moet gelijk zijn aan of groter zijn dan nul.</p> </td> 
    <td> 
     <ul> 
@@ -253,7 +254,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr> 
   <tr> 
    <td><p><code>maxLength</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee wordt het maximale aantal tekens opgegeven dat in een component is toegestaan. De maximumlengte moet groter zijn dan nul.</p> </td> 
    <td> 
     <ul> 
@@ -262,7 +263,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr> 
   <tr> 
    <td><p><code>length</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee wordt het exacte aantal tekens opgegeven dat in een component is toegestaan. De lengte moet gelijk zijn aan of groter zijn dan nul.</p> </td> 
    <td> 
     <ul> 
@@ -271,7 +272,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr> 
   <tr> 
    <td><p><code>fractionDigits</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee wordt het maximale aantal decimalen opgegeven dat in een component is toegestaan. De fractionDigits moet gelijk zijn aan of groter dan nul.</p> </td> 
    <td> 
     <ul> 
@@ -280,7 +281,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr> 
   <tr> 
    <td><p><code>pattern</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee geeft u de volgorde van de tekens op. Een component accepteert de tekens als de tekens overeenkomen met het opgegeven patroon.</p> <p>De eigenschap pattern verwijst naar het validatiepatroon van de overeenkomstige adaptieve formuliercomponent.</p> </td> 
    <td> 
     <ul> 
@@ -294,15 +295,15 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
 
 **Hoe weet ik welk element in de structuur is gekoppeld aan welk XML-element?**
 
-Wanneer u dubbelklikt op een element in de Inhoudszoeker, worden een veldnaam en een eigenschap met de naam `bindRef` weergegeven in een pop-up. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
+Wanneer u dubbelklikt op een element in de Inhoudszoeker, worden een veldnaam en een eigenschap met de naam `bindRef`. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
 
 ![Een bindveld van een element in een XML-schema](assets/dblclick.png)
 
-Het bindRef</code> gebied toont de vereniging tussen een boomelement en een element of een attribuut in een schema.
+bindRef</code> in het veld wordt de koppeling weergegeven tussen een structuurelement en een element of kenmerk in een schema.
 
 >[!NOTE]
 >
->Attributen hebben een `@` symbool in hun `bindRef`waarde om hen van elementen te onderscheiden. Bijvoorbeeld, `/config/projectDetails/@duration`.
+>Kenmerken hebben een `@` in hun `bindRef`waarde om ze van elementen te onderscheiden. Bijvoorbeeld, `/config/projectDetails/@duration`.
 
 **Waarom kan ik geen afzonderlijke elementen van een subformulier (structuur gegenereerd van een complex type) slepen voor herhaalbare subformulieren (waarden voor minOccurs of maxOccurs zijn groter dan 1)?**
 
@@ -317,4 +318,4 @@ U hebt twee opties:
 
 **Wat is een bindRef?**
 
-A `bindRef` is de verbinding tussen een adaptieve vormcomponent en een schemaelement of attribuut. Het dicteert `XPath` waar de waarde die van deze component of het gebied wordt gevangen beschikbaar in de outputXML is. Een `bindRef`wordt ook gebruikt bij het vooraf invullen van een veldwaarde in vooraf ingevulde (vooraf ingevulde) XML.
+A `bindRef` is de verbinding tussen een adaptieve formuliercomponent en een schema-element of -kenmerk. Het dicteert de `XPath` waarbij de waarde die is vastgelegd vanuit deze component of dit veld beschikbaar is in de uitvoer-XML. A `bindRef`wordt ook gebruikt bij het vooraf invullen van een veldwaarde in vooraf ingevulde (vooraf ingevulde) XML.

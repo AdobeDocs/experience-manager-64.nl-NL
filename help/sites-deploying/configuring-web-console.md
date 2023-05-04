@@ -1,23 +1,26 @@
 ---
 title: Webconsole
-seo-title: Webconsole
+seo-title: Web Console
 description: Leer hoe u de webconsole in AEM gebruikt.
-seo-description: Leer hoe u de webconsole in AEM gebruikt.
+seo-description: Learn how to use the web console in AEM.
 uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: e03d2075-1d65-4ab3-b1bb-0bae925824c6
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 1%
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
 # Webconsole{#web-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De webconsole in AEM is gebaseerd op de [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het Platform van de Dienst van OSGi R4 uit te voeren, dat het kader OSGi en de standaarddiensten omvat.
 
@@ -41,13 +44,13 @@ De console is toegankelijk vanaf `../system/console`; bijvoorbeeld:
 
 ## Configuratie {#configuration}
 
-Het **tabblad Configuration** wordt gebruikt voor het configureren van de OSGi-bundels en is daarom het onderliggende mechanisme voor het configureren van AEM systeemparameters.
+De **Configuratie** tab wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters.
 
 >[!NOTE]
 >
->Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
+>Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor nadere bijzonderheden.
 
-De **tab Configuration** kan worden benaderd door:
+De **Configuratie** tab kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -106,7 +109,7 @@ Vervolgens kunt u de parameters naar wens bijwerken en:
 
 ## Bundels {#bundles}
 
-Het tabblad **Bundels** is het mechanisme voor de installatie van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
+De **Bundels** tab is het mechanisme voor het installeren van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
 
 * Het vervolgkeuzemenu:
 
@@ -124,7 +127,7 @@ Met dit tabblad kunt u:
 
 * **Installeren of bijwerken**
 
-   U kunt **Bladeren** om het dossier te vinden die uw bundel bevatten en te specificeren of het **Begin** onmiddellijk en zou moeten **Begin Niveau**.
+   U kunt **Bladeren** om het bestand te zoeken dat uw bundel bevat en op te geven of dit nodig is **Start** onmiddellijk **Beginniveau**.
 
 * **Opnieuw laden**
 
@@ -136,7 +139,7 @@ Met dit tabblad kunt u:
 
    Na een update kan de oude en de nieuwe versie bijvoorbeeld nog steeds actief zijn vanwege eerdere verwijzingen. Met deze optie worden alle verwijzingen naar de nieuwe versie gecontroleerd en verplaatst, zodat de oude versie stopt.
 
-* **Begin**
+* **Start**
 
    Hiermee wordt een bundel gestart op basis van het opgegeven beginniveau.
 
@@ -154,11 +157,11 @@ Met dit tabblad kunt u:
 
 >[!NOTE]
 >
->Na **Update** wordt het geadviseerd om **Pakketten vernieuwen** uit te voeren.
+>Na **Bijwerken** het wordt aanbevolen een **Pakketten vernieuwen**.
 
 ## Onderdelen {#components}
 
-Met het tabblad **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
+De **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 

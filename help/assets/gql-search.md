@@ -1,20 +1,24 @@
 ---
 title: GQL Full-text zoeken
-description: Ontdek de GQL full-text zoekfunctie in [!DNL Experience Manager] Middelen. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
+description: Ontdek de GQL full-text zoekfunctie in [!DNL Experience Manager] Elementen. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
 
 # GQL Full-text zoeken {#gql-full-text-search}
 
-Ontdek de GQL full-text zoekfunctie in [!DNL Experience Manager] Middelen. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Ontdek de GQL full-text zoekfunctie in [!DNL Experience Manager] Elementen. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
 
 Met de zoekfunctie voor volledige tekst van GQL kunt u zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving, auteur, enzovoort.
 
@@ -24,12 +28,12 @@ Als u bijvoorbeeld wilt zoeken naar elementen met de titel &quot;Doel&quot;, voe
 
 ## Zoeken in middelen {#searching-assets}
 
-1. Klik of tik op het pictogram **[!UICONTROL Search]** op de werkbalk van de gebruikersinterface Elementen om het vak Onderzoek weer te geven.
+1. Klik of tik in de werkbalk van de gebruikersinterface Elementen op de knop **[!UICONTROL Search]** om het vak Onderzoek weer te geven.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Met de curseur in het vakje van het Onderzoek, druk binnengaan.
-1. Klik of tik op het GlobalNav-pictogram om het **[!UICONTROL Filters]**-deelvenster weer te geven.
+1. Klik of tik op het GlobalNav-pictogram om het **[!UICONTROL Filters]** deelvenster.
 1. Geef in het vak Universeel zoeken de waarde &quot;Doel&quot; op. Als u de zoekopdracht wilt beperken tot een specifieke map, klikt of tikt u op het pictogram Bladeren in het deelvenster Filters en selecteert u de map. In dit geval wordt alleen gezocht naar de map en de submappen eronder.
 
    >[!NOTE]
@@ -38,7 +42,7 @@ Als u bijvoorbeeld wilt zoeken naar elementen met de titel &quot;Doel&quot;, voe
 
    ![gql_search](assets/gql_search.png)
 
-1. Druk op **[!UICONTROL Enter]**. In de gebruikersinterface [!DNL Assets] worden alleen die elementen weergegeven waarvan de titel precies overeenkomt met &quot;Doel&quot;.
+1. Druk **[!UICONTROL Enter]**. De [!DNL Assets] in de gebruikersinterface worden alleen die elementen weergegeven waarvan de titel precies overeenkomt met &quot;Doel&quot;.
 
 Met de zoekfunctie voor volledige tekst van GQL kunt u op het volgende gebaseerde elementen zoeken:
 
@@ -63,12 +67,12 @@ Met de zoekfunctie voor volledige tekst van GQL kunt u zoeken naar elementen op 
 | [!UICONTROL Copyright Owner] | copyrightowner:&quot;Adobe Systems&quot; |
 | [!UICONTROL Contributor] | contribuant:John |
 | [!UICONTROL Usage Terms] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Created] | gemaakt:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Expires Date] | validate:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Created] | gemaakt:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Expires Date] | verloopt:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL On time] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Off time] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Range of time] (verloopt dateontime, offtime) | Veld facet: lager gebonden..bovenaan |
-| [!UICONTROL Path] | /content/dam/&lt;naam map> |
+| [!UICONTROL Path] | /content/dam/&lt;folder name=&quot;&quot;> |
 | [!UICONTROL PDF Title] | pdftitle:&quot;Adobe-document&quot; |
 | [!UICONTROL Subject] | onderwerp: &quot;Opleiding&quot; |
 | [!UICONTROL Tags] | tags:&quot;Locatie en reizen&quot; |
@@ -124,11 +128,11 @@ Het zoeken naar volledige tekst ondersteunt ook operatoren zoals -, ^, enzovoort
 U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoekopdrachten op basis van trefwoorden te stimuleren. Met andere woorden, de afbeeldingen waarvoor u specifieke trefwoorden promoot, worden boven aan de zoekresultaten weergegeven wanneer u op basis van deze trefwoorden zoekt.
 
 1. Open vanuit de interface Elementen de pagina met eigenschappen voor het element waarvoor u een trefwoord wilt opwaarderen.
-1. Schakel over naar het tabblad **[!UICONTROL Advanced]** en klik/tik **[!UICONTROL Add]** onder **[!UICONTROL Elevate for search keywords]**.
+1. Naar de **[!UICONTROL Advanced]** en klikken/tikken **[!UICONTROL Add]** krachtens **[!UICONTROL Elevate for search keywords]**.
 
    ![elevate_for_search](assets/elevate_for_search.png)
 
-1. Geef in het tekstvak **[!UICONTROL Search Promote]** een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik/tik **[!UICONTROL Add]**. Geef indien nodig meerdere trefwoorden op dezelfde manier op.
+1. In de **[!UICONTROL Search Promote]** , geeft u een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klikt/tikt u op **[!UICONTROL Add]**. Geef indien nodig meerdere trefwoorden op dezelfde manier op.
 
    ![add_search_word](assets/add_search_word.png)
 

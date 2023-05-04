@@ -1,8 +1,8 @@
 ---
 title: JavaAPI Quick Start (SOAP), service voor integratie van formuliergegevens
-seo-title: JavaAPI Quick Start (SOAP), service voor integratie van formuliergegevens
-description: Met de service Formuliergegevensintegratie kunt u gegevens in een PDF-formulier importeren en gegevens uit een PDF-formulier exporteren met de Java API.
-seo-description: Met de service Formuliergegevensintegratie kunt u gegevens in een PDF-formulier importeren en gegevens uit een PDF-formulier exporteren met de Java API.
+seo-title: Form Data Integration Service JavaAPI Quick Start(SOAP)
+description: Met de service Formuliergegevensintegratie kunt u gegevens importeren in een PDF-formulier en gegevens exporteren uit een PDF-formulier met de Java API.
+seo-description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 role: Developer
 exl-id: c60ef25a-26a0-4421-b635-ced54baa324d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
+# Java API Quick Start (SOAP), service voor integratie van formuliergegevens {#form-data-integration-service-javaapi-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Integratie van de Gegevens van de Vorm.
 
@@ -137,7 +140,7 @@ In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-form
 
 ## Snel starten (SOAP-modus): Formuliergegevens exporteren met de Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden gegevens uit een PDF-formulier geëxporteerd. De formuliergegevens worden opgeslagen als een XML-bestand met de naam *Loan_data.xml*. (Zie [Formuliergegevens exporteren](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+In het volgende Java-codevoorbeeld worden gegevens geëxporteerd uit een PDF-formulier. De formuliergegevens worden opgeslagen als een XML-bestand met de naam *Loan_data.xml*. (Zie [Formuliergegevens exporteren](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```as3
  /* 

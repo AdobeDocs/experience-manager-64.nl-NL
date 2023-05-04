@@ -8,7 +8,8 @@ breadcrumb-title: Handleiding voor ontwikkeling
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM-instantie kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 6%

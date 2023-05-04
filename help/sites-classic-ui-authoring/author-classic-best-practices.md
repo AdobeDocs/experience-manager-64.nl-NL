@@ -1,24 +1,27 @@
 ---
 title: Best practices voor
-seo-title: Best practices voor
+seo-title: Best Practices
 description: De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
-seo-description: De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 3%
+source-wordcount: '315'
+ht-degree: 2%
 
 ---
 
 
 # Best practices voor{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
@@ -69,10 +72,10 @@ De beste praktijken rond Activa, met inbegrip van het dynamische media vermogen 
 
 Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen procedures die als volgt worden beschreven:
 
-Authoring: [Auteursomgeving en -gereedschappen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Hiermee geeft u een overzicht van het schrijven van pagina&#39;s.
+Authoring: [Auteursomgeving en -gereedschappen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Geeft een overzicht van het schrijven van pagina&#39;s.
 
 ## Forms {#forms}
 
-Aangepaste formulieren: [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md) - Beschrijft beste werkwijzen voor het instellen, ontwerpen en aanpassen van adaptieve formulieren.
+Aangepaste formulieren: [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md) - Beschrijft beste praktijken voor vestiging, creatie, en het aanpassen van adaptieve vormen.
 
-HTML5-formulieren: [Aanbevolen werkwijzen voor het ontwerpen van HTML5-formulieren](/help/forms/using/best-practices-for-html5-forms.md) - Beschrijft aanbevolen werkwijzen voor het werken aan de indeling en het ontwerp van HTML5-formulieren.
+HTML5-formulieren: [Aanbevolen procedures voor het ontwerpen van HTML5-formulieren](/help/forms/using/best-practices-for-html5-forms.md) - Beschrijft beste praktijken voor het werken aan lay-out en ontwerp van HTML5 vormen.

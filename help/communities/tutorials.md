@@ -2,7 +2,7 @@
 title: Tutorials
 seo-title: Tutorials
 description: Voorbeelden om te helpen bij het leren en werken met het AEM Communities Social Component Framework (SCF)
-seo-description: Voorbeelden om te helpen bij het leren en werken met het AEM Communities Social Component Framework (SCF)
+seo-description: Examples to help in learning and working with AEM Communities social component framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 exl-id: 4e5c63af-78f1-4005-8dc1-2b30cb0b6c5a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
 
 # Tutorials {#tutorials}
 
-Dit zijn voorbeelden om te helpen bij het leren en werken met AEM 6.1 Communities [social component framework (SCF)](scf.md).
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-## Aanpassing aan clientzijde {#client-side-customization}
+Dit zijn voorbeelden die helpen bij het leren en werken met AEM 6.1-gemeenschappen [Sociaal-componentkader (SCF)](scf.md).
+
+## Aanpassing op de client {#client-side-customization}
 
 Zie ook [SCF client-side aanpassing](client-customize.md).
 
@@ -32,11 +35,11 @@ Zie ook [SCF client-side aanpassing](client-customize.md).
 
 * [Component Opmerkingen uitbreiden](extend-comments.md)
 
-## Aanpassing aan serverzijde {#server-side-customization}
+## Aanpassing op de server {#server-side-customization}
 
-Zie ook [SCF server-side aanpassing](server-customize.md).
+Zie ook [SCF-serveraanpassing](server-customize.md).
 
-De code van de steekproef is beschikbaar in [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) bewaarplaats:
+Voorbeeldcode is beschikbaar in het dialoogvenster [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) opslagplaats:
 
 * [Voorbeeld van SCF-component aanpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -58,13 +61,13 @@ De code van de steekproef is beschikbaar in [Adobe Marketing Cloud GitHub](https
 
 * [Een voorbeeldpagina maken](create-sample-page.md)
 
-## Demopgebruikers {#demo-users}
+## Demo-gebruikers {#demo-users}
 
-Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopende) en, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met [Community Components guide](components-guide.md).
+Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopende) en, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met het [Community Components Guide](components-guide.md).
 
-Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Tools > Operations > Security > Users]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
+Voor een volledige lijst van de demogebruikers, navigeer het gebruiken van Rail aan **[!UICONTROL Tools > Operations > Security > Users]**. Of gebruik de klassieke gebruikersinterface [beveiligingsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
 
-Als een [communityplaats is gecreeerd](getting-started.md), is het mogelijk om demogebruikers aan zijn [communautaire gebruikersgroepen](users.md) toe te wijzen.
+Indien een [communitysite is gemaakt](getting-started.md), is het mogelijk demogebruikers aan zijn [gebruikersgroepen in de gemeenschap](users.md).
 
 ***gebruikersnaam* / *wachtwoord:***
 

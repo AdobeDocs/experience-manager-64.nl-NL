@@ -10,32 +10,36 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 1%
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
 # Het bericht van de dag instellen {#setting-the-message-of-the-day}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 U kunt een bericht instellen dat op de welkomstpagina in de gebruikersinterface van Workspace moet worden weergegeven.
 
 Indien nodig kunt u de HTML-tags gebruiken die worden ondersteund door Adobe Flash® Player om de weergave van de tekst op te maken:
 
-* &lt;a> Tag voor anker&lt;/a>
-* &lt;b> Vet label&lt;/b>
+* &lt;a> Tag voor anker
+* &lt;b> Vet label
 * &lt;br> Tag voor einde
-* &lt;font> Font-tag&lt;/font>
+* &lt;font> Font-tag
 * &lt;img> Tag voor afbeelding
-* &lt;i> Cursieve tag&lt;/i>
+* &lt;i> Cursieve tag
 * &lt;li> Tag voor lijstitem
 * &lt;p> Tag voor alinea
-* &lt;span> Tag voor bereik&lt;/span>
+* &lt;span> Tag voor bereik
 * &lt;textformat> Tag voor tekstopmaak
-* &lt;u> Tag Onderstrepen&lt;/u>
+* &lt;u> Tag Onderstrepen
 
-Zie de definitie van de eigenschap `htmlText` voor de klasse TextField in de [Flex Language Reference](https://flex.apache.org/) voor meer informatie over de ondersteunde labels.
+Zie de definitie van de `htmlText` eigenschap voor de klasse TextField in de [Flex Language Reference](https://flex.apache.org/).
 
 ## Bericht van de dag instellen {#set-the-message-of-the-day}
 

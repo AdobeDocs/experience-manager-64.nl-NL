@@ -1,23 +1,26 @@
 ---
 title: Inleiding tot het publiceren van formulieren op een portal
-seo-title: Inleiding tot het publiceren van formulieren op een portal
+seo-title: Introduction to publishing forms on a portal
 description: AEM Forms biedt componenten die u kunt gebruiken om uw formulierportal te maken. In deze artikelen wordt u kennisgemaakt met de beschikbare onderdelen van de portal Formulieren.
-seo-description: AEM Forms biedt componenten die u kunt gebruiken om uw formulierportal te maken. In deze artikelen wordt u kennisgemaakt met de beschikbare onderdelen van de portal Formulieren.
+seo-description: AEM Forms provides with components that you can use to build your forms portal. This articles introduces you to the available forms portal components.
 uuid: 96aa4fe2-a111-4675-a33c-7dee8b82cbc2
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 44871fe1-ddc9-492c-8784-5df3ca392f9b
-translation-type: tm+mt
-source-git-commit: da7691a64cebd8c279ec72eca2a41c468a79f9fb
+exl-id: a91e23e8-339d-4090-9872-2e066ab66590
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
 
-
 # Inleiding tot het publiceren van formulieren op een portal {#introduction-to-publishing-forms-on-a-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht van AEM Forms Portal-componenten {#aem-forms-portal-components-overview}
 
@@ -42,9 +45,9 @@ Met de onderdelen van het formulierportaal kunt u de volgende functionaliteit to
 * Koppelingen naar formulieren maken.
 * Hier worden concepten en verzendingen weergegeven die betrekking hebben op een adaptief formulier dat door de eindgebruiker is gemaakt.
 
-## Beschikbare AEM Forms-portalcomponenten {#available-aem-forms-portal-components}
+## Beschikbare AEM Forms Portal-onderdelen {#available-aem-forms-portal-components}
 
-AEM Forms biedt de volgende poortcomponenten uit de doos, gegroepeerd onder **Document Services** en **Document Services Predicates** componentengroepen:
+AEM Forms biedt de volgende poortcomponenten uit het vak, gegroepeerd onder **Document Services** en **Voorspellingen voor documentservices** componentgroepen:
 
 ### Zoeken en registreren {#search-amp-lister}
 
@@ -62,22 +65,22 @@ Met de component Koppeling kunt u overal op de pagina een koppeling naar een for
 
 Met Forms Portal kunt u formulieren vanuit de formulieropslagplaats op uw portalpagina weergeven. U kunt hiermee ook zoekcriteria opgeven waarmee gebruikers van uw portal kunnen zoeken in de lijst met formulieren. U kunt ook de component Concepten en verzendingen gebruiken om formulieren weer te geven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. U moet een bepaalde set bewerkingen uitvoeren voordat deze functies beschikbaar komen op een sitepagina. Voer de stappen in de vermelde opeenvolging uit om de componenten en respectieve functionaliteit op een plaatspagina beschikbaar te maken:
 
-1. **Forms Portal-componenten** inschakelen: De onderdelen van de portal Formulieren zijn niet beschikbaar voor gebruik. [Schakel de componenten van AEM ](/help/forms/using/enabling-forms-portal-components.md) sidekickon in voor een AEM Sites-pagina.
-1. **Formulieren weergeven op een pagina (pagina Formulierportal maken):** u kunt formulieren weergeven op zowel AEM Sites- als niet-AEM sitepagina&#39;s. De lijst bevat formulieren die beschikbaar zijn in de publicatie-instantie. Een gebruiker kan formulieren openen en invullen. Wanneer een gebruiker een formulier opent, wordt er een nieuw exemplaar van het formulier gemaakt:
+1. **Forms Portal-componenten inschakelen**: De onderdelen van de portal Formulieren zijn niet beschikbaar voor gebruik. [De componenten van AEM sidekick inschakelen](/help/forms/using/enabling-forms-portal-components.md) voor een AEM Sites-pagina.
+1. **Formulieren weergeven op een pagina (pagina Formulierportal maken):** U kunt formulieren weergeven op zowel AEM Sites- als niet-AEM sitepagina&#39;s. De lijst bevat formulieren die beschikbaar zijn in de publicatie-instantie. Een gebruiker kan formulieren openen en invullen. Wanneer een gebruiker een formulier opent, wordt er een nieuw exemplaar van het formulier gemaakt:
 
-   1. **Formulieren weergeven op een AEM Sites-pagina**: Voeg de component  **[Zoeken &amp;](/help/forms/using/creating-form-portal-page.md)** Listercomponent aan de pagina toe en configureer het  **[lijstpaneel](/help/forms/using/creating-form-portal-page.md#p-list-pane-p)** erin om formulieren op een pagina weer te geven. Voeg en vorm **[de component van het Pane van het Onderzoek](/help/forms/using/creating-form-portal-page.md#search-pane)** aan **Onderzoek &amp; van de Registratie** toe ook om onderzoeksfunctionaliteit aan de pagina toe te voegen. De pagina met de poortcomponent voor formulieren wordt de pagina [Formulierportal pagina](/help/forms/using/creating-form-portal-page.md) genoemd.
-   1. **Formulieren weergeven op een niet-AEM Sites-pagina:** Gebruik de zoekAPI&#39;s van de  [ ](/help/forms/using/listing-forms-webpage-using-apis.md) portal Formulieren om formulieren op niet-AEM Sites-pagina&#39;s te zoeken, op te halen en weer te geven.
+   1. **Formulieren weergeven op een AEM Sites-pagina**: Voeg de **[Zoeken en registreren](/help/forms/using/creating-form-portal-page.md)** component aan de pagina en vorm de **[Lijstvenster](/help/forms/using/creating-form-portal-page.md#p-list-pane-p)** hiermee kunt u formulieren op een pagina weergeven. Voeg en vorm toe **[Zoekvenster](/help/forms/using/creating-form-portal-page.md#search-pane)** aan de **Zoeken en registreren** om ook zoekfunctionaliteit aan de pagina toe te voegen. De pagina met de taalcomponent voor formulieren wordt ook wel [pagina Formulierportal](/help/forms/using/creating-form-portal-page.md).
+   1. **Formulieren weergeven op een niet-AEM Sites-pagina:** Gebruik de [zoekAPI&#39;s voor formulierportal](/help/forms/using/listing-forms-webpage-using-apis.md) om formulieren op niet-AEM Sites-pagina&#39;s te zoeken, op te halen en weer te geven.
 
-1. **Concepten en ingediende formulieren weergeven op een pagina** van een formulierportal: Voeg de component Concepten en verzendingen toe aan en configureer deze op de pagina Formulierportal. De component bevat een lijst met alle formulieren in het concept en de formulieren die al zijn verzonden.
+1. **Concepten en verzonden formulieren weergeven op een pagina van een formulierportal**: Voeg de component Concepten en verzendingen toe aan en configureer deze op de pagina Formulierportal. De component bevat een lijst met alle formulieren in het concept en de formulieren die al zijn verzonden.
 
-   Als u wilt dat een ingediend adaptief formulier op het verzendtabblad wordt weergegeven, stelt u de handeling **Verzenden in op**[ Forms Portal Handeling verzenden](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/configuring-submit-actions.html).**** U kunt ook de optie Forms Portal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
+   Als u een ingediend adaptief formulier wilt weergeven op het tabblad Verzending, stelt u de optie **Handeling verzenden** tot **[Forms Portal-verzendactie](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/configuring-submit-actions.html).** U kunt ook de optie Forms Portal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
 
-1. **Opslag configureren voor concept- en verzonden formuliergegevens:** standaard worden concepten- en verzendgegevens opgeslagen in de AEM-opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. [Configureer de poortcomponent voor formulieren om gegevens op een beveiligde locatie](/help/forms/using/draft-submission-component.md#customizing-the-storage) op te slaan.
-1. **(Optioneel) De onderdelen van de portal Formulieren aanpassen:**  [Pas de paginamplate voor de portal Formulieren ](/help/forms/using/customizing-templates-forms-portal-components.md) aan om de onderdelen een duidelijk uiterlijk te geven.
-1. **(Optioneel) Voeg aangepaste metagegevens toe aan formulieren:** [Voeg aangepaste metagegevens toe aan ](/help/forms/using/customizing-templates-forms-portal-components.md) formulieren om de ervaring van lijsten en zoekopdrachten te verbeteren.
-1. **Publiceer de pagina Formulierportal:** De pagina Formulierportal is nu gereed. Publiceer de pagina.
+1. **Opslag configureren voor het concept en de verzonden formuliergegevens:** Concepten en verzendgegevens worden standaard opgeslagen in de AEM-opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. [Formulierportal-component configureren om gegevens op te slaan op een beveiligde locatie](/help/forms/using/draft-submission-component.md#customizing-the-storage).
+1. **(Optioneel) De onderdelen van de portal Formulieren aanpassen:**  [Sjablonen voor pagina&#39;s van uw portal Formulieren aanpassen](/help/forms/using/customizing-templates-forms-portal-components.md) om de componenten een duidelijk uiterlijk te geven.
+1. **(Optioneel) Voeg aangepaste metagegevens toe aan formulieren:** [Aangepaste metagegevens toevoegen aan formulieren](/help/forms/using/customizing-templates-forms-portal-components.md) om aanbiedingen en zoekresultaten te verbeteren.
+1. **De pagina Formulierportal publiceren:** De pagina Formulierportal is nu gereed. Publiceer de pagina.
 
-## Gerelateerde artikelen {#related-articles}
+## Verwante artikelen {#related-articles}
 
 * [Formulierportonderdelen inschakelen](/help/forms/using/enabling-forms-portal-components.md)
 * [Pagina Formulierportal maken](/help/forms/using/creating-form-portal-page.md)
@@ -88,4 +91,3 @@ Met Forms Portal kunt u formulieren vanuit de formulieropslagplaats op uw portal
 
 * [Sjablonen aanpassen voor componenten van een formulierportal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Inleiding tot het publiceren van formulieren op een portal](/help/forms/using/introduction-publishing-forms.md)
-

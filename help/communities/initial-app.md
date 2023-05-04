@@ -1,8 +1,8 @@
 ---
 title: Aanvankelijke zandbaktoepassing
-seo-title: Aanvankelijke zandbaktoepassing
+seo-title: Initial Sandbox Application
 description: Sjabloon, component en script maken
-seo-description: Sjabloon, component en script maken
+seo-description: Create template, component, and script
 uuid: b0d03376-d8bc-4e98-aea2-a01744c64ccd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,20 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 exl-id: 3da30cb4-39b2-4495-9e8b-93567b73b644
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 1%
+source-wordcount: '617'
+ht-degree: 0%
 
 ---
 
 # Aanvankelijke zandbaktoepassing {#initial-sandbox-application}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 In deze sectie maakt u het volgende:
 
-* De **[sjabloon](#createthepagetemplate)** die wordt gebruikt om inhoudspagina&#39;s in de voorbeeldwebsite te maken
-* De **[component en het script](#create-the-template-s-rendering-component)** waarmee de websitepagina&#39;s worden weergegeven
+* De **[template](#createthepagetemplate)** die wordt gebruikt om inhoudspagina&#39;s in de voorbeeldwebsite te maken
+* De **[component en script](#create-the-template-s-rendering-component)** waarmee de websitepagina&#39;s worden weergegeven
 
 ## De inhoudssjabloon maken {#create-the-content-template}
 
@@ -33,22 +36,22 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
 1. In het deelvenster Verkenner van CRXDE Lite
 
-   * select `/apps/an-scf-sandbox/templates`
+   * selecteren `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Create > Create Template]**
 
-1. Typ de volgende waarden in het dialoogvenster Sjabloon maken en klik op **[!UICONTROL Next]**:
+1. Typ in het dialoogvenster Sjabloon maken de volgende waarden en klik vervolgens op **[!UICONTROL Next]**:
 
    * Label: `playpage`
    * Titel: `An SCF Sandbox Play Template`
    * Beschrijving: `An SCF Sandbox template for play pages`
    * Type bron: `an-scf-sandbox/components/playpage`
-   * Rangschikking: &lt;Als standaard verlaten>
+   * Rangschikking: &lt;leave as=&quot;&quot; default=&quot;&quot;>
 
    Het label wordt gebruikt voor de knooppuntnaam.
 
-   Het Type van Middel verschijnt op jcr van `playpage`:content knoop als bezit `sling:resourceType`. Het identificeert de component (bron) die de inhoud teruggeeft wanneer daarom door browser wordt gevraagd.
+   Het type resource wordt weergegeven op het tabblad `playpage`jcr:content node as the property `sling:resourceType`. Het identificeert de component (bron) die de inhoud teruggeeft wanneer daarom door browser wordt gevraagd.
 
-   In dit geval worden alle pagina&#39;s die met de `playpage`sjabloon zijn gemaakt, gerenderd door de `an-scf-sandbox/components/playpage` component. Door overeenkomst, is de weg aan de component relatief, toestaand Sling om naar het middel eerst in `/apps` omslag en, als niet gevonden, in `/libs` omslag te zoeken.
+   In dit geval worden alle pagina&#39;s gemaakt met de `playpage`sjabloon wordt weergegeven door de `an-scf-sandbox/components/playpage` component. Door overeenkomst, is de weg aan de component relatief, toestaand Sling om naar het middel eerst in te zoeken `/apps` en, indien niet gevonden, in de `/libs` map.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -56,13 +59,13 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
    Klik op **[!UICONTROL Next]**.
 
-1. &quot;Toegestane paden&quot; verwijst naar de paden van pagina&#39;s die deze sjabloon gebruiken, zodat de sjabloon wordt weergegeven voor het dialoogvenster **[!UICONTROL New Page]**.
+1. &quot;Toegestane paden&quot; verwijst naar de paden van pagina&#39;s die deze sjabloon gebruiken, zodat de sjabloon wordt weergegeven voor de **[!UICONTROL New Page]** .
 
-   Als u een pad wilt toevoegen, klikt u op de plusknop `+` en typt u `/content(/.&ast;)?` in het tekstvak dat wordt weergegeven. Als u kopiëren/plakken gebruikt, dient u ervoor te zorgen dat er geen voorloopspaties of volgspaties zijn.
+   Als u een pad wilt toevoegen, klikt u op de plusknop `+` en type `/content(/.&ast;)?` in het tekstvak dat wordt weergegeven. Als u kopiëren/plakken gebruikt, dient u ervoor te zorgen dat er geen voorloopspaties of volgspaties zijn.
 
-   Opmerking: De waarde van de toegestane padeigenschap is een *reguliere expressie.* Inhoudspagina&#39;s met een pad dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van de map **/content** en alle subpagina&#39;s ervan.
+   Opmerking: De waarde van de eigenschap allowed path is a *reguliere expressie.* Inhoudspagina&#39;s met een pad dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van het **/content** en alle bijbehorende subpagina&#39;s.
 
-   Als een auteur een pagina onder `/content` maakt, wordt de sjabloon `playpage`getiteld &quot;An SCF Sandbox Page Template&quot; weergegeven in een lijst met beschikbare sjablonen die moeten worden gebruikt.
+   Wanneer een auteur hieronder een pagina maakt `/content`de `playpage`De sjabloon &#39;Een SCF-sjabloon voor een sandbox-pagina&#39; wordt weergegeven in een lijst met beschikbare sjablonen.
 
    Nadat de basispagina van de sjabloon is gemaakt, kan de toegang tot de sjabloon worden beperkt tot deze website door de eigenschap zodanig te wijzigen dat het hoofdpad wordt opgenomen in de reguliere expressie, d.w.z...
 
@@ -72,40 +75,40 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
 1. Klik op **[!UICONTROL Next]**.
 
-   Klik **[!UICONTROL Next]** in **[!UICONTROL Allowed Parents]** paneel.
+   Klikken **[!UICONTROL Next]** in de **[!UICONTROL Allowed Parents]** deelvenster.
 
-   Klik **[!UICONTROL Next]** in **[!UICONTROL Allowed Children]** panelen.
+   Klikken **[!UICONTROL Next]** in de **[!UICONTROL Allowed Children]** deelvensters.
 
    Klik op **[!UICONTROL OK]**.
 
-1. Nadat u op OK hebt geklikt en de sjabloon hebt gemaakt, ziet u rode driehoeken in de hoeken van de waarden op het tabblad Eigenschappen voor de nieuwe sjabloon `playpage`. Deze rode driehoeken geven bewerkingen aan die niet zijn opgeslagen.
+1. Als u eenmaal op OK hebt geklikt en de sjabloon hebt gemaakt, ziet u rode driehoeken in de hoeken van de waarden op het tabblad Eigenschappen voor de nieuwe sjabloon `playpage`sjabloon. Deze rode driehoeken geven bewerkingen aan die niet zijn opgeslagen.
 
-   Klik op **[!UICONTROL Save All]** om de nieuwe sjabloon op te slaan in de repository.
+   Klikken **[!UICONTROL Save All]** om de nieuwe sjabloon op te slaan in de repository.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### De rendercomponent {#create-the-template-s-rendering-component} van de sjabloon maken
+### De renderingcomponent van de sjabloon maken {#create-the-template-s-rendering-component}
 
-Maak de *component* die de inhoud definieert en rendert alle pagina&#39;s die zijn gemaakt op basis van de [playpage template](#createthepagetemplate).
+Maak de *component* dat de inhoud definieert en alle gemaakte pagina&#39;s rendert op basis van de [playpasjabloon](#createthepagetemplate).
 
-1. Klik in CRXDE Lite met de rechtermuisknop op **`/apps/an-scf-sandbox/components`** en klik op **[!UICONTROL Create > Component]**.
-1. Door de naam van het knooppunt (Label) in te stellen op *playpage*, is het pad naar de component
+1. In CRXDE Lite klikt u met de rechtermuisknop **`/apps/an-scf-sandbox/components`** en klik op **[!UICONTROL Create > Component]**.
+1. Door de naam van het knooppunt (Label) in te stellen op *playpage*, het pad naar de component is
 
    `/apps/an-scf-sandbox/components/playpage`
 
-   die overeenkomt met het bronnentype van de playpage-sjabloon (optioneel minus het oorspronkelijke **`/apps/`**-gedeelte van het pad).
+   die overeenkomt met het bronnentype van de playpage-sjabloon (optioneel minus de initiële waarde **`/apps/`** deel van het pad).
 
-   Typ in het dialoogvenster **[!UICONTROL Create Component]** de volgende eigenschapswaarden:
+   In de **[!UICONTROL Create Component]** typt u de volgende eigenschapswaarden:
 
    * Label: **playpage**
    * Titel: **Een SCF Sandbox Play-component**
    * Omschrijving: **Dit is de component die inhoud voor een SCF Sandbox pagina teruggeeft.**
-   * Supertype: *&lt;leave blank>*
-   * Groeperen:
+   * Supertype: *&lt;leave blank=&quot;&quot;>*
+   * Groep:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Klik op **[!UICONTROL Next]** totdat het deelvenster **[!UICONTROL Allowed Children]** van het dialoogvenster verschijnt
+1. Klikken **[!UICONTROL Next]** tot de **[!UICONTROL Allowed Children]** wordt weergegeven
 
    * Klik op **[!UICONTROL OK]**
    * Klik op **[!UICONTROL Save All]**

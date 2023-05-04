@@ -1,8 +1,8 @@
 ---
 title: Snel aan de slag met de oproepings-API
-seo-title: Snel aan de slag met de oproepings-API
+seo-title: Invocation API Quick Starts
 description: Gebruik Snel begint om de diensten van AEM Forms programmatically aan te halen.
-seo-description: Gebruik Snel begint om de diensten van AEM Forms programmatically aan te halen.
+seo-description: Use the Quick Starts to programmatically invoke AEM Forms services.
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 role: Developer
 exl-id: dcfc1c9f-fedd-4e00-9b09-19268620fc6d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
 
-# Snelle start voor oproepAPI {#invocation-api-quick-starts}
+# Snel aan de slag met de oproepings-API {#invocation-api-quick-starts}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De volgende snelstarthandleidingen zijn beschikbaar voor het programmatically aanhalen van de diensten van AEM Forms:
 
@@ -46,43 +49,43 @@ De volgende snelstarthandleidingen zijn beschikbaar voor het programmatically aa
    <td><p>N.v.t.</p></td> 
   </tr> 
   <tr> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">AEM Forms aanroepen met Base64-codering</a>  (Java-webserviceproxy)</p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">AEM Forms aanroepen met Base64-codering</a> (Java-proxy voor webservices)</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_java_proxy_files_and_base64_encoding">Snel starten: Een service aanroepen met Java-proxybestanden en Base64-codering</a></p></td> 
   </tr> 
   <tr> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">AEM Forms aanroepen met Base64-codering</a>  (.NET-webserviceproxy)</p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">AEM Forms aanroepen met Base64-codering</a> (.NET de volmacht van de Webdienst)</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">Snel starten: Het aanhalen van de dienst die base64 in een project van Microsoft .NET gebruikt</a></p></td> 
   </tr> 
   <tr> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom">AEM Forms aanroepen met MTOM</a>  (.NET-voorbeeld voor webservices)</p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom">AEM Forms aanroepen met MTOM</a> (voorbeeld van .NET-webservice)</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_mtom_in_a_net_project">Snel starten: Het aanhalen van de dienst die MTOM in een .NET project gebruikt</a></p></td> 
   </tr> 
   <tr> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">AEM Forms aanroepen met SwaRef</a>  (voorbeeld Java-webservice)</p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">AEM Forms aanroepen met SwaRef</a> (voorbeeld Java-webservice)</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_swaref_in_a_java_project">Snel starten: Een service aanroepen met SwaRef in een Java-project</a></p></td> 
   </tr> 
   <tr> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP</a>  (voorbeeld van Java-webservice)</p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP</a> (voorbeeld Java-webservice)</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">Snel starten: Het aanhalen van de dienst die gegevens BLOB over HTTP in een .NET project gebruikt</a></p></td> 
   </tr> 
   <tr> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP</a>  (.NET web service example)</p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP</a> (voorbeeld van .NET-webservice)</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">Snel starten: Een service aanroepen met BLOB-gegevens via HTTP in een Java-project</a></p></td> 
   </tr> 
   <tr> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">AEM Forms aanroepen met DIME</a>  (voorbeeld van Java-webservice)</p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">AEM Forms aanroepen met DIME</a> (voorbeeld Java-webservice)</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p>N.v.t.</p></td> 
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">Snel starten: Een service aanroepen met DIME in een Java-project</a></p></td> 
@@ -116,7 +119,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten: Een kortstondig proces aanroepen met de API voor aanroepen {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
-In het volgende Java-codevoorbeeld wordt een kortstondig proces met de naam `MyApplication/EncryptDocument` aangeroepen. Dit proces wordt synchroon aangeroepen. De invoerparameter voor dit proces krijgt de naam `inDoc`. De uitvoerparameter voor dit proces krijgt de naam `outDoc`. Het met wachtwoord gecodeerde PDF-document wordt opgeslagen als een PDF-bestand met de naam `EncryptLoan.pdf`. (Zie [Een kortstondig proces aanroepen met de API voor aanroepen](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
+In het volgende Java-codevoorbeeld wordt een kortstondig proces met de naam `MyApplication/EncryptDocument`. Dit proces wordt synchroon aangeroepen. De invoerparameter voor dit proces krijgt de naam `inDoc`. De uitvoerparameter voor dit proces krijgt een naam `outDoc`. Het met een wachtwoord gecodeerde PDF-document wordt opgeslagen als een PDF-bestand met de naam `EncryptLoan.pdf`. (Zie [Een kortstondig proces aanroepen met de API voor aanroepen](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
 
 ```as3
  /* 
@@ -228,11 +231,11 @@ In het volgende Java-codevoorbeeld wordt een kortstondig proces met de naam `MyA
  }
 ```
 
-## Snel starten: Het aanhalen van de dienst die base64 in een project van Microsoft .NET {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project} gebruikt
+## Snel starten: Het aanhalen van de dienst die base64 in een project van Microsoft .NET gebruikt {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
 
-Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een project van Microsoft .NET gebruikend het coderen Base64 aan. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+Het volgende C# codevoorbeeld roept een proces genoemd aan `MyApplication/EncryptDocument` van een project van Microsoft .NET gebruikend Base64 het coderen. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
-Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf* wordt doorgegeven aan het AEM Forms-proces. Het proces retourneert een PDF-document met wachtwoordcodering dat is opgeslagen als een PDF-bestand met de naam *EncryptedPDF.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf* wordt doorgegeven aan het AEM Forms-proces. Het proces retourneert een met wachtwoord gecodeerd PDF-document dat is opgeslagen als een PDF-bestand met de naam *EncryptedPDF.pdf*.
 
 ```as3
  /* 
@@ -311,9 +314,9 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
 
 ## Snel starten: Een service aanroepen met Java-proxybestanden en Base64-codering {#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding}
 
-In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen met Java-proxybestanden die zijn gemaakt met JAX-WS en Base64-codering. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` Java-proxybestanden gebruiken die zijn gemaakt met JAX-WS- en Base64-codering. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
-Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf* wordt doorgegeven aan het AEM Forms-proces. Het proces retourneert een PDF-document met wachtwoordcodering dat is opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf* wordt doorgegeven aan het AEM Forms-proces. Het proces retourneert een met wachtwoord gecodeerd PDF-document dat is opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
 
 ```as3
  /** 
@@ -397,11 +400,11 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
 
 ## Snel starten: Een kortstondig proces aanroepen door een onbeveiligd document door te geven met (Vervangen voor AEM formulieren) AEM Forms Remoting {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
 
-In het volgende Flex-codevoorbeeld wordt een kortstondig proces met de naam `MyApplication/EncryptDocument` aangeroepen. (Zie [AEM Forms aanroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+In het volgende Flex-codevoorbeeld wordt een kortstondig proces met de naam `MyApplication/EncryptDocument`. (Zie [AEM Forms aanroepen met (Vervangen voor AEM formulieren) AEM Forms verwijderen](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 >[!NOTE]
 >
->Deze snelle start roept een AEM Forms-proces aan en uploadt een onbeveiligd document. Voor deze snelle start moet AEM Forms zijn geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over hoe te om AEM Forms te vormen om onveilige documenten goed te keuren, zie [Het Vormen AEM Forms om veilige en onveilige documenten](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents) goed te keuren.
+>Deze snelle start roept een AEM Forms-proces aan en uploadt een onbeveiligd document. Voor deze snelle start moet AEM Forms zijn geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over hoe u AEM Forms kunt configureren voor het accepteren van onbeveiligde documenten raadpleegt u [AEM Forms configureren voor het accepteren van beveiligde en onbeveiligde documenten](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?> 
@@ -552,9 +555,9 @@ In het volgende Flex-codevoorbeeld wordt een kortstondig proces met de naam `MyA
  
 ```
 
-## Snel starten: Het aanhalen van de dienst die DIME in een .NET project {#quick-start-invoking-a-service-using-dime-in-a-net-project} gebruikt
+## Snel starten: Het aanhalen van de dienst die DIME in een .NET project gebruikt {#quick-start-invoking-a-service-using-dime-in-a-net-project}
 
-Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een project van Microsoft .NET gebruikend Dime aan. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+Het volgende C# codevoorbeeld roept een proces genoemd aan `MyApplication/EncryptDocument` vanuit een Microsoft .NET-project dat Dime gebruikt. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *map.pdf* wordt met DIME doorgegeven aan het AEM Forms-proces. Het proces retourneert een met wachtwoord gecodeerd PDF-document dat is opgeslagen als een PDF-bestand met de naam *mapEncrypt.pdf*.
 
@@ -659,9 +662,9 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *ma
 
 ## Snel starten: Een service aanroepen met DIME in een Java-project {#quick-start-invoking-a-service-using-dime-in-a-java-project}
 
-In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen met DIME. (Zie [AEM Forms aanroepen met DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime).)
+In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` met DIME. (Zie [AEM Forms aanroepen met DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime).)
 
-Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf* wordt met DIME doorgegeven aan het AEM Forms-proces. Het proces retourneert een met wachtwoord gecodeerd PDF-document dat is opgeslagen als een PDF-bestand met de naam *EncryptLoan.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf* wordt met DIME doorgegeven aan het AEM Forms-proces. Het proces retourneert een met wachtwoord gecodeerd PDF-document dat is opgeslagen als een PDF-bestand met de naam *EncryptLoan.pdf*.
 
 ```as3
  /** 
@@ -760,9 +763,9 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
 
 ## Snel starten: Een service aanroepen met BLOB-gegevens via HTTP in een Java-project {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
 
-In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` aangeroepen waarbij gegevens via HTTP worden gebruikt. (Zie [AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
+In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` gegevens via HTTP gebruiken. (Zie [AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-Een niet-beveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf* wordt doorgegeven aan het AEM Forms-proces met SOAP via HTTP. Het PDF-bestand bevindt zich op de volgende URL: `https://[server]:[port]/FormsQS`. Het proces retourneert een PDF-document met wachtwoordcodering dat is opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf* wordt doorgegeven aan het AEM Forms-proces met SOAP via HTTP. Het PDF-bestand bevindt zich op de volgende URL: `https://[server]:[port]/FormsQS`. Het proces retourneert een met wachtwoord gecodeerd PDF-document dat is opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
 
 ```as3
  /** 
@@ -833,11 +836,11 @@ Een niet-beveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam 
  
 ```
 
-## Snel starten: De aanroepende dienst die gegevens BLOB over HTTP in een .NET project {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project} gebruikt
+## Snel starten: Het aanhalen van de dienst die gegevens BLOB over HTTP in een .NET project gebruikt {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
 
-Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een project van Microsoft .NET gebruikend gegevens over HTTP aan. (Zie [AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
+Het volgende C# codevoorbeeld roept een proces genoemd aan `MyApplication/EncryptDocument` van een Microsoft .NET project dat gegevens over HTTP gebruikt. (Zie [AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf* wordt doorgegeven aan het AEM Forms-proces met behulp van BLOB via HTTP. Het proces retourneert een PDF-document met wachtwoordcodering dat is opgeslagen als een PDF-bestand met de naam *EncryptedPDF.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf* wordt doorgegeven aan het AEM Forms-proces met BLOB via HTTP. Het proces retourneert een met wachtwoord gecodeerd PDF-document dat is opgeslagen als een PDF-bestand met de naam *EncryptedPDF.pdf*.
 
 ```as3
  /* 
@@ -933,11 +936,11 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
  
 ```
 
-## Snel starten: Het aanhalen van de dienst die MTOM in een .NET project {#quick-start-invoking-a-service-using-mtom-in-a-net-project} gebruikt
+## Snel starten: Het aanhalen van de dienst die MTOM in een .NET project gebruikt {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
 
-Het volgende C# codevoorbeeld roept een proces genoemd `MyApplication/EncryptDocument` van een project van Microsoft .NET gebruikend MTOM aan. (Zie [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
+Het volgende C# codevoorbeeld roept een proces genoemd aan `MyApplication/EncryptDocument` vanuit een Microsoft .NET-project dat MTOM gebruikt. (Zie [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
 
-Een niet-beveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *loan.pdf* wordt met MTOM doorgegeven aan het AEM Forms-proces. Het proces retourneert een PDF-document met wachtwoordcodering dat is opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *loan.pdf* wordt doorgegeven aan het AEM Forms-proces met behulp van MTOM. Het proces retourneert een met wachtwoord gecodeerd PDF-document dat is opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
 
 ```as3
  ???/** 
@@ -1025,9 +1028,9 @@ Een niet-beveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam 
 
 ## Snel starten: Een service aanroepen met SwaRef in een Java-project {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 
-Het volgende codevoorbeeld van Java haalt een proces genoemd `MyApplication/EncryptDocument` van een project van Java aan. Dit Java-project gebruikt proxyklassen die zijn gemaakt met JAX-WS en SwaRef als het coderingstype. (Zie [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref).)
+In het volgende Java-codevoorbeeld wordt een proces met de naam `MyApplication/EncryptDocument` uit een Java-project. Dit Java-project gebruikt proxyklassen die zijn gemaakt met JAX-WS en SwaRef als het coderingstype. (Zie [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref).)
 
-Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf* wordt met SwaRef doorgegeven aan het AEM Forms-proces. Het versleutelde PDF-document wordt opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf* wordt doorgegeven aan het AEM Forms-proces met gebruik van SwaRef. Het gecodeerde PDF-document wordt opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
 
 ```as3
  /** 

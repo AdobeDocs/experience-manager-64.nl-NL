@@ -1,23 +1,26 @@
 ---
 title: API's die worden gebruikt in de AEM Forms-werkruimte
-seo-title: API's die worden gebruikt in de AEM Forms-werkruimte
+seo-title: APIs used in AEM Forms workspace
 description: Openbare Java- en JavaScript-API's en methoden van de LiveCycle AEM Forms-werkruimte, beschikbaar voor aanpassing en automatisering.
-seo-description: Openbare Java- en JavaScript-API's en methoden van de LiveCycle AEM Forms-werkruimte, beschikbaar voor aanpassing en automatisering.
+seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 1d74fdb9-c118-45f7-93c6-116cacb2f1c4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 1%
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
 # API&#39;s die worden gebruikt in de AEM Forms-werkruimte {#apis-used-in-aem-forms-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
 
@@ -50,7 +53,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
   <tr>
    <td>submitTask</td> 
    <td>ProcessManagementDocumentHandlingService</td> 
-   <td>submit</td> 
+   <td>indienen</td> 
    <td>Het verzendt het documentvoorwerp verbonden aan een taak (en verzendt beurtelings proces).</td> 
   </tr>
   <tr>
@@ -108,7 +111,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>De formuliergegevens (doorgegeven als tekenreeks) die aan een taak zijn gekoppeld, worden met de verzendAPI van TaskManager verzonden. Deze wordt gebruikt voor flex-formulieren die de verzend-API van de callTaskManager niet oproepen.</td> 
   </tr>
   <tr>
-   <td>save</td> 
+   <td>opslaan</td> 
    <td>ProcessManagementTaskService</td> 
    <td>opslaan</td> 
    <td>Er wordt een taak op de server opgeslagen.</td> 
@@ -189,7 +192,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>getUsers</td> 
    <td>ProcessManagementUserProxyService</td> 
    <td>getUsers</td> 
-   <td>Het wordt gebruikt voor het zoeken van gebruikers. Alle gebruikers worden geretourneerd als er geen andere naam is opgegeven, en als gebruikers met de opgegeven naam worden geretourneerd.</td> 
+   <td>Het wordt gebruikt voor het zoeken van gebruikers. Hiermee worden alle gebruikers geretourneerd als er geen naam is opgegeven. Anders worden gebruikers met de opgegeven naam geretourneerd.</td> 
   </tr>
   <tr>
    <td>getUsersInGroup</td> 
@@ -267,7 +270,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>getProcessInstance<br /> </td> 
    <td>ProcessManagementProcessService<br /> </td> 
    <td>getProcessInstance<br /> </td> 
-   <td>Het haalt details van een procesinstantie.<br /> </td> 
+   <td>Er worden details van een procesinstantie opgehaald.<br /> </td> 
   </tr>
   <tr>
    <td>getProcessInstances</td> 
@@ -318,7 +321,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>Hiermee wordt een bijlage verwijderd.</td> 
   </tr>
   <tr>
-   <td>initialize</td> 
+   <td>initialiseren</td> 
    <td>ProcessManagementClientSessionService</td> 
    <td>initialiseren</td> 
    <td>Zo nodig wordt dit opnieuw bevestigd. Hiermee wordt de gebruiker geverifieerd. Stelt sessieparameters in voor server-/clientinformatie. Retourneert gebruikersinformatie en opiniepeilingsinterval.</td> 

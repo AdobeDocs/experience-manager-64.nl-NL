@@ -1,35 +1,38 @@
 ---
 title: Een bevestiging van het verzenden van een formulier verzenden via e-mail
-seo-title: Een bevestiging van het verzenden van een formulier verzenden via e-mail
+seo-title: Sending a form submission acknowledgement via email
 description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren. Hiermee wordt een bevestiging verzonden naar een gebruiker bij het verzenden van het formulier.
-seo-description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren. Hiermee wordt een bevestiging verzonden naar een gebruiker bij het verzenden van het formulier.
+seo-description: AEM Forms allows you to configure the email submit action that sends an acknowledgement to a user on submitting the form.
 uuid: 77b3c836-6011-48bd-831c-ebc214218efb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
 exl-id: e850d2a5-cb5f-4bd4-81dd-57951923b6d3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
 
 # Een bevestiging van het verzenden van een formulier verzenden via e-mail {#sending-a-form-submission-acknowledgement-via-email}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Aangepaste verzending van formuliergegevens {#adaptive-form-data-submission}
 
-Aangepaste formulieren bieden verschillende workflows voor het verzenden van formuliergegevens naar verschillende eindpunten voor het verzenden van [acties](/help/forms/using/configuring-submit-actions.md).
+Adaptieve formulieren bieden verschillende kant-en-klare versies [acties verzenden](/help/forms/using/configuring-submit-actions.md) workflows voor het verzenden van de formuliergegevens naar verschillende eindpunten.
 
-Met de verzendactie **E-mail** wordt bijvoorbeeld een e-mail verzonden wanneer een adaptief formulier met succes is verzonden. Het kan ook worden geconfigureerd om de formuliergegevens en de PDF in de e-mail te verzenden.
+De **E-mailactie** Met een handeling verzenden wordt een e-mail verzonden wanneer een adaptief formulier met succes is verzonden. Het kan ook worden geconfigureerd om de formuliergegevens en de PDF in de e-mail te verzenden.
 
 In dit artikel worden de stappen beschreven die nodig zijn om de e-mailactie in te schakelen voor een adaptief formulier en voor verschillende configuraties.
 
 >[!NOTE]
 >
->U kunt ook de **e-mailactie PDF** gebruiken om het ingevulde formulier per e-mail te verzenden als PDF-bijlage. De configuratieopties die beschikbaar zijn voor deze actie zijn gelijk aan de opties die beschikbaar zijn voor de e-mailactie. De actie PDF-bestand via e-mail is alleen beschikbaar voor op XFA gebaseerde adaptieve formulieren
+>U kunt ook de opdracht **E-mailactie** om het ingevulde formulier per e-mail te verzenden als PDF-bijlage. De configuratieopties die beschikbaar zijn voor deze actie zijn gelijk aan de opties die beschikbaar zijn voor de e-mailactie. De actie Email PDF is alleen beschikbaar voor op XFA gebaseerde adaptieve formulieren
 
 ## E-mailactie {#email-action}
 
@@ -37,19 +40,19 @@ Met de e-mailactie kan een auteur automatisch e-mail verzenden naar een of meer 
 
 >[!NOTE]
 >
->Om de actie E-mail te gebruiken, moet u de AEM postdienst vormen zoals die in [het Vormen van de postdienst](/help/sites-administering/notification.md#configuring-the-mail-service) wordt beschreven.
+>Om de actie E-mail te gebruiken, moet u de AEM postdienst vormen zoals die in wordt beschreven [De mailservice configureren](/help/sites-administering/notification.md#configuring-the-mail-service).
 
 ### E-mailactie inschakelen op een adaptief formulier {#enabling-email-action-on-an-adaptive-form}
 
 1. Open een adaptief formulier in de bewerkingsmodus.
 
-1. Klik op **Bewerken** naast de werkbalk **Begin van een adaptief formulier**.
+1. Klikken **Bewerken** naast de **Begin van een adaptief formulier** werkbalk.
 
    Het dialoogvenster Component bewerken wordt geopend.
 
    ![Dialoogvenster van component bewerken voor een adaptief formulier](assets/start_of_adp_form.png)
 
-1. Selecteer het tabblad **Handelingen verzenden** en kies **Handeling e-mailen** in de vervolgkeuzelijst Handeling verzenden.
+1. Selecteer **Handelingen verzenden** en kiest u **E-mailactie** in de vervolgkeuzelijst Handeling verzenden.
 
    Op het tabblad vindt u de opties voor het configureren van de e-mailactie voor het huidige formulier.
 
@@ -59,15 +62,15 @@ Met de e-mailactie kan een auteur automatisch e-mail verzenden naar een of meer 
 
    Geef het onderwerp en de inhoud van de e-mail op in de sjabloonvelden Onderwerp en E-mail.
 
-   U kunt ook variabele plaatsaanduidingen opgeven in de velden. In dat geval worden de waarden van de velden verwerkt wanneer het formulier met succes wordt verzonden door een eindgebruiker. Zie [Aangepaste formulierveldnamen gebruiken om dynamisch e-mailinhoud te maken](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p) voor meer informatie.
+   U kunt ook variabele plaatsaanduidingen opgeven in de velden. In dat geval worden de waarden van de velden verwerkt wanneer het formulier met succes wordt verzonden door een eindgebruiker. Zie voor meer informatie [Aangepaste formulierveldnamen gebruiken om e-mailinhoud dynamisch te maken](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
    Selecteer Inclusief bijlagen als het formulier bestandsbijlagen bevat en u deze bestanden in de e-mail wilt bijvoegen.
 
    >[!NOTE]
    >
-   >Als u de **e-mailactie PDF** kiest, moet u de Inclusief optie Bijlagen selecteren.
+   >Als u **E-mailactie**, moet u de optie Bijlagen opnemen selecteren.
 
-1. Klik **OK** om de wijzigingen op te slaan.
+1. Klikken **OK** om de wijzigingen op te slaan.
 
 ### Aangepaste formulierveldnamen gebruiken om e-mailinhoud dynamisch te maken {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
@@ -75,19 +78,19 @@ De veldnamen in een adaptief formulier worden plaatsaanduidingen genoemd die wor
 
 Op het tabblad E-mailactie kunt u plaatsaanduidingen gebruiken die worden verwerkt wanneer de handeling wordt uitgevoerd. Dit betekent dat de kopteksten van de e-mail (zoals Mailto, CC, BCC, onderwerp) worden gegenereerd wanneer de gebruiker het formulier verzendt.
 
-Als u een tijdelijke aanduiding wilt definiëren, geeft u `${<field name>}` op in een veld op het tabblad Handelingen verzenden.
+Als u een tijdelijke aanduiding wilt definiëren, geeft u `${<field name>}` in een veld op het tabblad Handelingen verzenden.
 
-Als het formulier bijvoorbeeld het veld **E-mailadres** bevat met de naam `email_addr` voor het vastleggen van de e-mailid van een gebruiker, kunt u het volgende opgeven in de velden Mailto, CC of BCC.
+Als het formulier bijvoorbeeld het **E-mailadres** veld, naam `email_addr`Voor het vastleggen van de e-mailid van een gebruiker kunt u het volgende opgeven in de velden Mailto, CC of BCC.
 
 `${email_addr}`
 
-Wanneer een gebruiker het formulier verzendt, wordt een e-mail verzonden naar de e-mailid die is ingevoerd in het veld `email_addr` van het formulier.
+Wanneer een gebruiker het formulier verzendt, wordt een e-mail verzonden naar de e-mailid die is ingevoerd in het dialoogvenster `email_addr` van het formulier.
 
 >[!NOTE]
 >
 >U kunt de naam van een veld vinden in het dialoogvenster **Bewerken** voor het veld.
 
-U kunt ook plaatsaanduidingen voor variabelen gebruiken in de velden **Onderwerp** en **E-mailsjabloon**.
+U kunt ook plaatsaanduidingen voor variabelen gebruiken in het dialoogvenster **Onderwerp** en **E-mailsjabloon** velden.
 
 Bijvoorbeeld:
 

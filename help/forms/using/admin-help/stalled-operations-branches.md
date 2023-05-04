@@ -1,8 +1,8 @@
 ---
 title: Werken met stilstaande bewerkingen en vertakkingen
-seo-title: Werken met stilstaande bewerkingen en vertakkingen
+seo-title: Working with stalled operations and branches
 description: De gestalte pagina van Verrichtingen en de Geroepen pagina van Trappen tonen de processen die hebben vastgezet.
-seo-description: De gestalte pagina van Verrichtingen en de Geroepen pagina van Trappen tonen de processen die hebben vastgezet.
+seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
 uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 exl-id: 04a832d5-1ab5-4db3-b185-57fba21eb839
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # Werken met stilstaande bewerkingen en vertakkingen {#working-with-stalled-operations-and-branches}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De gestalte pagina van Verrichtingen en de Geroepen pagina van Trappen tonen de processen die hebben vastgezet. Een proces kan stagneren wanneer een fout tijdens of na de uitvoering van een bewerking optreedt of als gevolg van een opzettelijke stallbewerking in het proces:
 
@@ -29,24 +32,24 @@ Wanneer een proces stagneert, worden geen verdere verrichtingen in werking geste
 
 Voor elk opgebouwd punt, toont de lijst de volgende informatie:
 
-**Naam van bewerking of vertakking:** de naam van de bewerking of vertakking.
+**Naam van bewerking of tak:** De naam van de bewerking of vertakking.
 
 **Status:** Altijd STALLED voor opgezette items.
 
 **Fout:** Een korte beschrijving van het probleem.
 
-**Procesid:** het positieve gehele getal dat door de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (dat wil zeggen wanneer een gebruiker of een geautomatiseerde stap een proces start). U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
+**Proces-id:** Het positieve gehele getal dat door de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (wanneer een gebruiker of een geautomatiseerde stap een proces start). U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
 
-**Procesnaam - versie:** de naam van het proces dat in Workbench is toegewezen.
+**Procesnaam - Versie:** De naam van het proces dat is toegewezen in Workbench.
 
-**Opgeslagen datum:** de datum en tijd waarop de bewerking of vertakking is geïnstalleerd.
+**Opgeslagen datum:** De datum en tijd waarop de bewerking of vertakking is gestapeld.
 
 U kunt de volgende taken op de Geroepen pagina van Verrichtingen of Geroepen Tanden doen:
 
 * Selecteer een fout om details over het te bekijken. Als u een fout selecteert, wordt de pagina Foutdetails weergegeven.
 * Beëindig of herprobeer gestalte verrichtingen of herhaal gestalte takken.
 
-## Opgeslagen bewerkingen of vertakkingen {#terminating-or-retrying-stalled-operations-or-branches} beëindigen of opnieuw proberen
+## Opgeslagen bewerkingen of vertakkingen beëindigen of opnieuw proberen {#terminating-or-retrying-stalled-operations-or-branches}
 
 Op de Geroepen pagina van Verrichtingen, kunt u de getoonde procesinstanties eindigen.
 
@@ -56,12 +59,12 @@ Op de Geroepen pagina van Verrichtingen of de Geroepen pagina van Vertakkingen, 
 
 Wanneer u een bewerking opnieuw uitvoert, wordt een verzoek verzonden om de bewerking opnieuw te starten. Als de fout die het proces aan stagnatie veroorzaakte is opgelost en het verzoek om opnieuw te proberen succesvol is, begint het proces opnieuw lopend van het punt het, en zijn statusveranderingen in RUNNING. Als de bewerking niet opnieuw kan worden gestart, blijft deze STALLED en moet u deze wellicht beëindigen.
 
-### Een gestapelde bewerking {#terminate-a-stalled-operation} beëindigen
+### Een gestapelde bewerking beëindigen {#terminate-a-stalled-operation}
 
 1. Klik in de beheerconsole op Services > Formulierwerkstroom > Fouten met opgezette bewerkingen.
 1. Voor de Geroepen pagina van Verrichtingen, selecteer het punt u wilt eindigen en klik beëindigen.
 
-### Een gestapelde bewerking of vertakking opnieuw uitvoeren {#retry-a-stalled-operation-or-branch}
+### Een stilgezette bewerking of vertakking opnieuw uitvoeren {#retry-a-stalled-operation-or-branch}
 
 1. Klik in de beheerconsole op Services > Formulierwerkstroom en klik vervolgens op Fouten met betrekking tot gestagte bewerkingen of Geroepelde vertakkingsfouten.
 1. Selecteer op de pagina Geroepen bewerkingen of Geroepen vertakkingen het item dat u opnieuw wilt proberen en klik op Opnieuw.
@@ -74,13 +77,13 @@ Het vak onder aan de pagina bevat de foutgegevens.
 
 U kunt opgezette bewerkingen ook beëindigen of opnieuw proberen en opgezette vertakkingen opnieuw proberen op de pagina Foutdetails.
 
-## Het proces wordt niet vastgezet wanneer de escalatiegebruiker niet {#process-does-not-stall-when-escalation-user-does-not-exist} bestaat
+## Het proces wordt niet vastgezet als de escalatiegebruiker niet bestaat {#process-does-not-stall-when-escalation-user-does-not-exist}
 
 De fouten komen voor wanneer de Assign verrichting van de Taak in de dienst van de Gebruiker van de AEM vormen wordt gevormd om de taak aan een andere gebruiker na een specifieke periode te escaleren, en de escalatiegebruiker wordt geschrapt nadat de Assign verrichting van de Taak uitvoert maar alvorens de escalatie voorkomt.
 
 Wanneer deze situatie voorkomt, verandert de staat van het proces en de taak niet in de gevormde escalatietijd, en de escalatie komt niet voor maar het proces stagneert niet. Het volgende bericht wordt weergegeven in het serverlogboek:
 
-&quot;Het hoofd dat voor escalatie wordt gespecificeerd is ongeldig, voor taskID: *nummer*, opgegeven wachtrij: *nummer*.&quot;
+&quot;Het hoofd dat voor escalatie wordt gespecificeerd is ongeldig, voor taskID: *getal*, opgegeven wachtrij: *getal*.&quot;
 
 Als de escalatiegebruiker wordt geschrapt alvorens de taak wordt geproduceerd (alvorens de Assign verrichting van de Taak uitvoert), wordt de processtalls of de InvalidPrincipal uitzonderingsgebeurtenis geworpen.
 

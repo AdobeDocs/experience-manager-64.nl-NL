@@ -1,8 +1,8 @@
 ---
 title: Adaptieve sjabloonrendering
-seo-title: Adaptieve sjabloonrendering
+seo-title: Adaptive Template Rendering
 description: Adaptieve sjabloonrendering
-seo-description: 'null'
+seo-description: null
 uuid: 97226ae1-e42a-40ae-a5e0-886cd77559d8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,17 +10,20 @@ topic-tags: platform
 content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 exl-id: a2adc825-2a18-42b8-a639-c48243b2279c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
 # Adaptieve sjabloonrendering{#adaptive-template-rendering}
 
-De adaptieve sjabloonrendering biedt een manier om een pagina met variaties te beheren. Oorspronkelijk handig om verschillende HTML-uitvoer te leveren voor mobiele apparaten (bijv. functielefoon versus smartphone), is deze functie nuttig wanneer ervaringen moeten worden geleverd aan verschillende apparaten die verschillende markeringen of HTML-uitvoer nodig hebben.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+De adaptieve sjabloonrendering biedt een manier om een pagina met variaties te beheren. Oorspronkelijk handig om verschillende HTML-uitvoer voor mobiele apparaten te leveren (bijvoorbeeld functielefoon versus smartphone), is deze functie nuttig wanneer ervaringen moeten worden geleverd aan verschillende apparaten die verschillende markeringen of HTML-uitvoer nodig hebben.
 
 ## Overzicht {#overview}
 
@@ -37,25 +40,25 @@ Onthoud dat u apparaatgroepen instelt:
 
 >[!NOTE]
 >
->De apparaatgroep **Responsieve apparaten** zal nooit een kiezer hebben omdat apparaten die worden herkend als ondersteunend responsief ontwerp, geen adaptieve lay-out nodig hebben
+>De apparaatgroep **Responsieve apparaten** zal nooit een kiezer hebben omdat apparaten die herkend worden als ondersteuning voor een responsief ontwerp, verondersteld worden geen adaptieve lay-out te hebben
 
 ## Configuratie {#configuration}
 
 Aangepaste renderingkiezers kunnen worden geconfigureerd voor bestaande apparaatgroepen of voor [groepen die u zelf hebt gemaakt.](/help/sites-developing/mobile.md#device-groups)
 
-In dit voorbeeld configureren we de bestaande apparaatgroep **Slimme telefoons** om een adaptieve renderingkiezer te hebben als onderdeel van de sjabloon **Experience Page** in We.Retail.
+Voor dit voorbeeld gaan we de bestaande apparaatgroep configureren **Slimme telefoons** om een aangepaste renderingkiezer als onderdeel van de **Experience Page** template in We.Retail.
 
 1. Bewerk de apparaatgroep waarvoor een adaptieve kiezer nodig is in `http://localhost:4502/miscadmin#/etc/mobile/groups`
 
-   Stel de optie **Emulator** uitschakelen in en sla deze op.
+   De optie instellen **Emulator uitschakelen** en opslaan.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. De kiezer is beschikbaar voor de **Blackberry** en **iPhone 4**, op voorwaarde dat de apparaatgroep **Smart Phone** in de volgende stappen wordt toegevoegd aan de sjabloon- en paginastructuren.
+1. De kiezer is beschikbaar voor de **Blackberry** en **iPhone 4** voorzien de apparatengroep **Slimme telefoon** wordt in de volgende stappen toegevoegd aan de sjabloon- en paginastructuren.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. Gebruikend CRX DE Lite, sta de apparatengroep toe om op uw malplaatje worden gebruikt door het aan het multi-waardebezit van het koord `cq:deviceGroups` op de structuur van uw malplaatje toe te voegen.
+1. Gebruikend CRX DE Lite, sta de apparatengroep toe die op uw malplaatje wordt gebruikt door het aan het multi-waardebezit van het koord toe te voegen `cq:deviceGroups` over de structuur van de sjabloon.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -65,19 +68,19 @@ In dit voorbeeld configureren we de bestaande apparaatgroep **Slimme telefoons**
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Met behulp van CRX DE Lite, laat u de apparaatgroep die op uw site wordt gebruikt toe door deze toe te voegen aan de eigenschap multivalue string `cq:deviceGroups` op de structuur van uw site.
+1. Gebruikend CRX DE Lite, sta de apparatengroep toe om op uw plaats worden gebruikt door het aan het multi-waardebezit van het koord toe te voegen `cq:deviceGroups` op de structuur van uw site.
 
    `/content/<your-site>/jcr:content`
 
-   Bijvoorbeeld als wij de **Slimme Telefoon** apparatengroep willen toestaan:
+   Als we bijvoorbeeld de **Slimme telefoon** apparaatgroep:
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-Wanneer u nu de [emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de pagina-editor gebruikt (bijvoorbeeld wanneer [de layout wijzigt](/help/sites-authoring/responsive-layout.md)) en u een apparaat van de geconfigureerde apparaatgroep kiest, wordt de pagina weergegeven met een kiezer als onderdeel van de URL.
+Nu wanneer u de [emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de pagina-editor (bijvoorbeeld wanneer [de lay-out wijzigen](/help/sites-authoring/responsive-layout.md)) en u kiest een apparaat van de geconfigureerde apparaatgroep, wordt de pagina weergegeven met een kiezer als onderdeel van de URL.
 
-In ons voorbeeld wordt bij het bewerken van een pagina op basis van de sjabloon **Experience Page** en het kiezen van iPhone 4 in de emulator de pagina weergegeven met daarin de kiezer als `arctic-surfing-in-lofoten.smart.html` in plaats van `arctic-surfing-in-lofoten.html`
+In ons voorbeeld, wanneer het uitgeven van een pagina die op **Experience Page** sjabloon, en iPhone 4 kiezen in de emulator, wordt de pagina weergegeven inclusief de kiezer als `arctic-surfing-in-lofoten.smart.html` in plaats van `arctic-surfing-in-lofoten.html`
 
 De pagina kan ook rechtstreeks worden aangeroepen met deze kiezer.
 

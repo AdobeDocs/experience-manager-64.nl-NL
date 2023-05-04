@@ -1,8 +1,8 @@
 ---
 title: MySQL-configuratie voor functies van Enablement
-seo-title: MySQL-configuratie voor functies van Enablement
+seo-title: MySQL Configuration for Enablement Features
 description: Uw MySQL-server verbinden
-seo-description: Uw MySQL-server verbinden
+seo-description: Connecting your MySQL server
 uuid: e02d9404-de75-4fdb-896c-ea3f64f980a3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 role: Admin
 exl-id: 1dfb55c2-41cb-445f-9bf8-f12ab6b8e9d8
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
 
 # MySQL-configuratie voor functies van Enablement {#mysql-configuration-for-enablement-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 MySQL is een relationele database die voornamelijk wordt gebruikt voor het bijhouden en rapporteren van SCORM-gegevens voor actiemiddelen. Ingesloten tabellen zijn tabellen voor andere functies, zoals het bijhouden van een pauze/resume.
 
@@ -28,12 +32,12 @@ Deze instructies beschrijven hoe te met de server te verbinden MySQL, het enable
 
 Voordat u MySQL voor de functie enablement van Communities configureert, moet u
 
-* [MySQL server](https://dev.mysql.com/downloads/mysql/) Community Server versie 5.6 installeren
+* Installeren [MySQL-server](https://dev.mysql.com/downloads/mysql/) Community Server versie 5.6
    * Versie 5.7 wordt niet ondersteund voor SCORM
    * Kan dezelfde server zijn als AEM instantie van de auteur
-* Installeer op alle AEM de officiële [JDBC-driver voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)
-* [MySQL-workbench](https://dev.mysql.com/downloads/tools/workbench/) installeren
-* Installeer in alle AEM het SCORM-pakket ](enablement.md#scorm)[
+* Installeer de officiële AEM [JDBC-stuurprogramma voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)
+* Installeren [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
+* Installeer bij alle AEM [SCORM-pakket](enablement.md#scorm)
 
 ## MySQL installeren {#installing-mysql}
 
@@ -45,8 +49,8 @@ Aangezien SQL niet hoofdlettergevoelig is, is het voor hoofdlettergevoelige best
 
 Als u bijvoorbeeld alle tabelnamen met kleine letters wilt opgeven op een Linux-besturingssysteem:
 
-* Bestand `/etc/my.cnf` bewerken
-* Voeg in de sectie `[mysqld]` de volgende regel toe:
+* Bestand bewerken `/etc/my.cnf`
+* In de `[mysqld]` de volgende regel toevoegen:
    `lower_case_table_names = 1`
 
 ### UTF8-tekenset {#utf-character-set}
@@ -57,10 +61,10 @@ Wijzig MySQL om UTF8 in te stellen als tekenset:
 * mysql> SET NAMES &#39;utf8&#39;;
 
 Wijzig de MySQL-database in de standaardwaarde voor UTF8:
-* Bestand `/etc/my.cnf` bewerken
-* Voeg in de sectie `[client]` de volgende regel toe:
+* Bestand bewerken `/etc/my.cnf`
+* In de `[client]` de volgende regel toevoegen:
    `default-character-set=utf8`
-* Voeg in de sectie `[mysqld]` de volgende regel toe:
+* In de `[mysqld]` de volgende regel toevoegen:
    `character-set-server=utf8`
 
 ## MySQL Workbench installeren {#installing-mysql-workbench}
@@ -78,19 +82,19 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 ### Nieuwe verbindingsinstellingen {#new-connection-settings}
 
 1. Selecteer het plusteken (+) rechts van `MySQL Connections`.
-1. In de dialoog `Setup New Connection`, ga waarden aangewezen voor uw platform voor demonstratiedoeleinden, met de auteur AEM instantie en MySQL op de zelfde server in:
+1. In het dialoogvenster `Setup New Connection`, voer waarden in die geschikt zijn voor uw platform voor demonstratiedoeleinden, waarbij de auteur AEM instantie en MySQL zich op dezelfde server bevinden:
    * Verbindingsnaam: `Enablement`
    * Verbindingsmethode: `Standard (TCP/IP)`
    * Hostnaam: `127.0.0.1`
    * Gebruikersnaam: `root`
    * Wachtwoord: `no password by default`
    * Standaardschema: `leave blank`
-1. Selecteer `Test Connection` om de verbinding met de actieve dienst te verifiëren MySQL
+1. Selecteren `Test Connection` om de verbinding aan de lopende dienst te verifiëren MySQL
 
-**Opmerkingen**:
+**Notities**:
 
 * De standaardpoort is `3306`
-* De gekozen `Connection Name` wordt ingevoerd als `datasource` naam in [JDBC OSGi configuratie](#configure-jdbc-connections)
+* De `Connection Name` gekozen wordt ingevoerd als `datasource` name in [JDBC OSGi-configuratie](#configure-jdbc-connections)
 
 #### Verbinding gelukt {#successful-connection}
 
@@ -108,20 +112,20 @@ Bij het openen van de nieuwe verbinding Enablement, merk op dat er een testschem
 
 ### SQL-scripts verkrijgen {#obtain-sql-scripts}
 
-De SQL manuscripten worden verkregen gebruikend CRXDE Lite op de auteursinstantie. Het [SCORM-pakket](deploy-communities.md#scorm) moet worden geïnstalleerd:
+De SQL manuscripten worden verkregen gebruikend CRXDE Lite op de auteursinstantie. De [SCORM-pakket](deploy-communities.md#scorm) moeten zijn geïnstalleerd:
 
 1. Bladeren naar CRXDE Lite
-   * Bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
-1. De map `/libs/social/config/scorm/` uitvouwen
-1. `database_scormengine.sql` downloaden
-1. `database_scorm_integration.sql` downloaden
+   * Bijvoorbeeld: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. Breid uit `/libs/social/config/scorm/` map
+1. Downloaden `database_scormengine.sql`
+1. Downloaden `database_scorm_integration.sql`
 
 ![chlimage_1-331](assets/chlimage_1-331.png)
 
 Eén methode voor het downloaden van het schema is:
 
-* Selecteer het `jcr:content`knooppunt voor het sql-bestand
-* De waarde voor de eigenschap `jcr:data`is een weergavekoppeling
+* Selecteer `jcr:content`knooppunt voor het sql-bestand
+* Let op de waarde voor de `jcr:data`eigenschap is een weergavekoppeling
 * Selecteer de weergavekoppeling om de gegevens in een lokaal bestand op te slaan
 
 ### SCORM-database maken {#create-scorm-database}
@@ -133,7 +137,7 @@ De toe te voegen SCORM-database is:
    * schema: `database_scormengine.sql`
    * gegevens: `database_scorm_integration.sql`
 Voer de onderstaande stappen uit (
-[openen](#step-open-sql-file),  [uitvoeren](#step-execute-sql-script)) om elk  [SQL-script](#obtain-sql-scripts)  te installeren. [Vernieuw indien nodig ](#refresh) om de resultaten van de uitvoering van het script te zien.
+[open](#step-open-sql-file), [uitvoeren](#step-execute-sql-script)) om elk te installeren [SQL-script](#obtain-sql-scripts) . [Vernieuwen](#refresh) wanneer nodig om de resultaten van de manuscriptuitvoering te zien.
 
 Installeer het schema voordat u de gegevens installeert.
 
@@ -142,8 +146,8 @@ Installeer het schema voordat u de gegevens installeert.
 >Als de databasenaam is gewijzigd, moet u deze correct opgeven in
 >
 >* [JDBC-configuratie](#configure-jdbc-connections)
-* [SCORM-configuratie](#configure-scorm)
-
+>* [SCORM-configuratie](#configure-scorm)
+>
 
 
 #### Stap 1: SQL-bestand openen {#step-open-sql-file}
@@ -160,70 +164,70 @@ In MySQL Workbench
 
 #### Stap 2: SQL-script uitvoeren {#step-execute-sql-script}
 
-Selecteer `lightening (flash) icon` in het Workbench-venster voor het bestand dat in Stap 1 wordt geopend om het script uit te voeren.
+Selecteer in het Workbench-venster voor het bestand dat in Stap 1 wordt geopend de optie `lightening (flash) icon` om het script uit te voeren.
 
-Merk op dat de uitvoering van het `database_scormengine.sql` manuscript om het SCORM gegevensbestand tot stand te brengen een minuut kan vergen om te voltooien.
+De uitvoering van de `database_scormengine.sql` Het kan even duren voordat het script voor het maken van de SCORM-database is voltooid.
 
 ![chlimage_1-333](assets/chlimage_1-333.png)
 
 #### Vernieuwen {#refresh}
 
-Zodra de manuscripten worden uitgevoerd, is het noodzakelijk om `SCHEMAS`sectie van `Navigator` te verfrissen om het nieuwe gegevensbestand te zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
+Als de scripts eenmaal zijn uitgevoerd, moet u de `SCHEMAS`van de `Navigator` om de nieuwe database te kunnen zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
 
 ![chlimage_1-334](assets/chlimage_1-334.png)
 
 #### Resultaat: scormenginedb {#result-scormenginedb}
 
-Na het installeren en vernieuwen van SCHEMAS, zal **`scormenginedb`** zichtbaar zijn.
+Na installatie en verfrissing van SCHEMAS, **`scormenginedb`** wordt weergegeven.
 
 ![chlimage_1-335](assets/chlimage_1-335.png)
 
 ## JDBC-verbindingen configureren {#configure-jdbc-connections}
 
-De configuratie OSGi voor **de Pool van Verbindingen JDBC van de Bevelen van de Dag** vormt de Bestuurder MySQL JDBC.
+De configuratie OSGi voor **Day Commons JDBC-verbindingspool** configureert het MySQL JDBC-stuurprogramma.
 
 Alle publicatie- en auteur-AEM moeten verwijzen naar dezelfde MySQL-server.
 
-Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in plaats van &quot;localhost&quot;in de schakelaar worden gespecificeerd JDBC (die [ScormEngine](#configurescormengineservice) config bevolkt).
+Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in plaats van &quot;localhost&quot;in de schakelaar worden gespecificeerd JDBC (die bevolkt [ScormEngine](#configurescormengineservice) config).
 
 * Op elke auteur en publiceer AEM instantie
 * Aangemeld met beheerdersrechten
-* Toegang tot de [webconsole](../../help/sites-deploying/configuring-osgi.md)
-   * Bijvoorbeeld [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-* `Day Commons JDBC Connections Pool` zoeken
-* Selecteer het `+` pictogram om een nieuwe configuratie tot stand te brengen
+* Toegang krijgen tot [webconsole](../../help/sites-deploying/configuring-osgi.md)
+   * Bijvoorbeeld: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+* Zoek de `Day Commons JDBC Connections Pool`
+* Selecteer `+` pictogram om een nieuwe configuratie tot stand te brengen
 
 ![chlimage_1-336](assets/chlimage_1-336.png)
 
 * Voer de volgende waarden in:
    * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
-   * **DBC-verbindingsURIJ**:  `jdbc:mysql://localhost:3306/aem63reporting` server opgeven in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM server
+   * **DBC-verbindingsURIJ**: `jdbc:mysql://localhost:3306/aem63reporting` server opgeven in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM server
    * **[!UICONTROL Username]**: Hoofdmap of voer de geconfigureerde gebruikersnaam voor de MySQL-server in als dit niet het geval is.
    * **[!UICONTROL Password]**: Wis dit gebied als geen wachtwoord dat voor MySQL wordt geplaatst, anders het gevormde wachtwoord voor de Gebruikersnaam MySQL ingaat
-   * **[!UICONTROL Datasource name]**: Naam die u hebt ingevoerd voor de  [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &#39;enablement&#39;
+   * **[!UICONTROL Datasource name]**: Naam ingevoerd voor de [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &#39;enablement&#39;
 * Selecteer **[!UICONTROL Save]**
 
 ## Muziek configureren {#configure-scorm}
 
 ### AEM Communities ScormEngine-service {#aem-communities-scormengine-service}
 
-De configuratie OSGi voor **AEM Communities ScormEngine Service** vormt SCORM voor het gebruik van de MySQL-server door een enablement-gemeenschap.
+De configuratie OSGi voor **AEM Communities ScormEngine-service** configureert SCORM voor het gebruik van de MySQL-server door een enablement-gemeenschap.
 
-Deze configuratie is aanwezig wanneer [SCORM package](deploy-communities.md#scorm-package) wordt geïnstalleerd.
+Deze configuratie is aanwezig wanneer de [SCORM-pakket](deploy-communities.md#scorm-package) is geïnstalleerd.
 
 Alle publicatie- en auteurinstanties verwijzen naar dezelfde MySQL-server.
 
-Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in plaats van &quot;localhost&quot;in de Dienst worden gespecificeerd ScormEngine, die typisch van [JDBC Verbinding](#configure-jdbc-connections) config wordt bevolkt.
+Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in plaats van &quot;localhost&quot;in de Dienst worden gespecificeerd ScormEngine, die typisch van bevolkt is [JDBC-verbinding](#configure-jdbc-connections) config.
 
 * Op elke auteur en publiceer AEM instantie
 * Aangemeld met beheerdersrechten
-* Toegang tot de [webconsole](../../help/sites-deploying/configuring-osgi.md)
-   * Bijvoorbeeld [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-* `AEM Communities ScormEngine Service` zoeken
+* Toegang krijgen tot [webconsole](../../help/sites-deploying/configuring-osgi.md)
+   * Bijvoorbeeld: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+* Zoek de `AEM Communities ScormEngine Service`
 * Het bewerkingspictogram selecteren
    ![chlimage_1-337](assets/chlimage_1-337.png)
-* Verifieer de volgende parameterwaarden met [JDBC Verbinding](#configurejdbcconnectionspool) config verenigbaar zijn:
-   * **[!UICONTROL JDBC connection URI]**:  `jdbc:mysql://localhost:3306/ScormEngineDB` ** ScormEngineDB is de standaarddatabasenaam in de SQL-scripts
+* Controleer of de volgende parameterwaarden consistent zijn met de [JDBC-verbinding](#configurejdbcconnectionspool) config:
+   * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/ScormEngineDB` *ScormEngineDB* is de standaarddatabasenaam in de SQL-scripts
    * **[!UICONTROL Username]**: Hoofdmap of voer de geconfigureerde gebruikersnaam voor de MySQL-server in als dit niet het geval is.
    * **[!UICONTROL Password]**: Wis dit gebied als geen wachtwoord dat voor MySQL wordt geplaatst, anders het gevormde wachtwoord voor de Gebruikersnaam MySQL ingaat
 * Wat de volgende parameter betreft:
@@ -238,11 +242,11 @@ Om ervoor te zorgen dat de cursussen in- en uitgeschakeld werken in alle browser
 
 * Op elke publicatie-AEM
 * Aangemeld met beheerdersrechten
-* Toegang tot de [webconsole](../../help/sites-deploying/configuring-osgi.md)
-   * Bijvoorbeeld [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
-* `Adobe Granite CSRF Filter` zoeken
+* Toegang krijgen tot [webconsole](../../help/sites-deploying/configuring-osgi.md)
+   * Bijvoorbeeld: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+* Zoeken `Adobe Granite CSRF Filter`
 * Het bewerkingspictogram selecteren
    ![chlimage_1-338](assets/chlimage_1-338.png)
-* Selecteer het pictogram `[+]` om een veilige gebruikersagent toe te voegen
-* `Mozilla/*` invoeren
+* Selecteer `[+]` pictogram om een veilige gebruikersagent toe te voegen
+* Enter `Mozilla/*`
 * Selecteer **[!UICONTROL Save]**

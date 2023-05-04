@@ -1,8 +1,8 @@
 ---
 title: Functie voor activiteitsstromen
-seo-title: Functie voor activiteitsstromen
+seo-title: Activity Streams Feature
 description: Activiteiten van een aangemeld lid van de gemeenschap
-seo-description: Activiteiten van een aangemeld lid van de gemeenschap
+seo-description: Activities of a signed-in community member
 uuid: 8a05a5ed-0edf-4528-a145-f9dc37d10247
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
 exl-id: e62b7c0d-5004-4672-9fdc-566ece2785c9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
 
 # Functie voor activiteitsstromen {#activity-streams-feature}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Inleiding {#introduction}
 
-De activiteiten van een ondertekend lid van de gemeenschap, zoals het posten aan een forum of blog, worden verzameld in een stroom die op verschillende manieren door configuratie van `Activity Streams` component kan worden gefiltreerd en getoond.
+De activiteiten van een getekend lid van de gemeenschap, zoals posten op een forum of blog, worden verzameld in een stream die op verschillende manieren kan worden gefilterd en weergegeven via de configuratie van de `Activity Streams` component.
 
 De mogelijkheid om te volgen voegt nog een weergave van activiteiten toe wanneer leden van de gemeenschap belangenverklaringen volgen of de activiteiten van andere leden van de gemeenschap volgen.
 
@@ -33,25 +36,25 @@ In deze sectie van de documentatie wordt beschreven
 
 ## Activiteitsstromen toevoegen aan een pagina {#adding-activity-streams-to-a-page}
 
-Als u een component `Activity Streams` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Activity Streams` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van
 
 * `Communities / Activity Streams`
 
 en sleep het naar de juiste plaats op een pagina waar de activiteitenstromen moeten verschijnen.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](essentials-activities.md#essentials-for-client-side) worden opgenomen, wordt de `Activity Streams`-component op deze manier weergegeven:
+Wanneer de [vereiste clientbibliotheken](essentials-activities.md#essentials-for-client-side) worden opgenomen, is dit hoe `Activity Streams` wordt weergegeven:
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
 ## Activiteitenstromen configureren {#configuring-activity-streams}
 
-Selecteer de geplaatste `Activity Streams` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `Activity Streams` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-Geef onder het tabblad **[!UICONTROL User Activities]** op welke activiteiten u wilt weergeven:
+Onder de **[!UICONTROL User Activities]** tabblad, geeft u op welke activiteiten moeten worden weergegeven:
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -66,17 +69,17 @@ Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad dat
 * **[!UICONTROL Display Following View]**
 Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
 
-## Na weergave {#following-view}
+## Volgende weergave {#following-view}
 
-Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [agenda](calendar.md), [bestandsbibliotheek](file-library.md) en [commentaren](comments.md).
+Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [kalender](calendar.md), [bestandsbibliotheek](file-library.md), en [opmerkingen](comments.md).
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-Met de knop **Follow** kunt u vermeldingen als activiteiten, [meldingen](notifications.md) en/of [abonnementen](subscriptions.md) volgen. Telkens wanneer de **Follow** knoop wordt geselecteerd, is het mogelijk om of van een selectie van een knevel te voorzien. De `Email Subscriptions` selectie is slechts aanwezig wanneer gevormd.
+De **Volg** button biedt een manier om inzendingen te volgen als activiteiten, [meldingen](notifications.md), en/of [abonnementen](subscriptions.md). Elke keer als **Volg** is geselecteerd, is het mogelijk om een selectie in of uit te schakelen. De `Email Subscriptions` selectie is alleen aanwezig als dit is geconfigureerd.
 
-Als een methode van het volgende wordt geselecteerd, verandert de tekst van de knoop in **volgend**. Voor het gemak, is het mogelijk om `Unfollow All` te selecteren om alle methodes van een knevel te voorzien.
+Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **volgende**. Voor het gemak is het mogelijk om `Unfollow All` om alle methoden uit te schakelen.
 
-De **Follow** knoop zal verschijnen:
+De **Volg** wordt weergegeven:
 
 * Wanneer het bekijken van het profiel van een ander lid
 * Op een hoofdpagina met functies, zoals forums, QnA en blogs
@@ -87,4 +90,4 @@ De **Follow** knoop zal verschijnen:
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Activiteitsstromen Essentials](essentials-activities.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Essentiële elementen voor activiteitsstromen](essentials-activities.md) pagina voor ontwikkelaars.

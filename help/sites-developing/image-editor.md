@@ -1,8 +1,8 @@
 ---
 title: Afbeeldingseditor
-seo-title: Afbeeldingseditor
+seo-title: Image Editor
 description: De Afbeeldingseditor is een AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
-seo-description: De Afbeeldingseditor is een AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
+seo-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,29 +10,32 @@ content-type: reference
 topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: 843c67d6-dda1-448f-a992-19574066e1c3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
 # Afbeeldingseditor{#image-editor}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 De Afbeeldingseditor is een AEM en kan door componenten worden gebruikt om het bewerken van afbeeldingen door makers van inhoud te vergemakkelijken.
 
 >[!CAUTION]
 >
->Als u de functies van de Image Editor die in dit artikel worden beschreven, wilt gebruiken, moet [functiepak 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) zijn geïnstalleerd.
+>Om de eigenschappen van de Redacteur van het Beeld te gebruiken die in dit artikel worden beschreven, [functiepakket 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) moet geïnstalleerd zijn.
 
-## Relatieve eenheden voor afbeeldingskaart {#relative-units-for-image-map}
+## Relatieve eenheden voor afbeelding met hyperlinks {#relative-units-for-image-map}
 
 In de Afbeeldingseditor blijven afbeeldingskaartgebieden behouden als absolute en relatieve eenheden. Relatieve eenheden zijn handig wanneer deze worden opgegeven als gegevenskenmerken voor het dynamisch wijzigen van de grootte van een afbeeldingskaart (ten opzichte van de afbeeldingsgrootte) aan de clientzijde in een responsieve afbeeldingscomponent.
 
-### imageMap-eigenschap {#imagemap-property}
+### imageMap, eigenschap {#imagemap-property}
 
-De coördinaten van de afbeeldingskaart blijven bij de JCR aanwezig als een `imageMap`-eigenschap van de Afbeeldingseditor. Deze heeft de volgende indeling.
+De coördinaten van de afbeeldingskaart blijven als een `imageMap` door de Afbeeldingseditor. Deze heeft de volgende indeling.
 
 In de eigenschap worden kaartgebieden als volgt opgeslagen:
 
@@ -49,21 +52,21 @@ Voorbeeld:
 
 ## Ondersteuning voor SVG-afbeeldingen {#support-for-svg-images}
 
-SVG (Scalable Vector Graphics) wordt ondersteund door de Afbeeldingseditor.
+Scalable Vector Graphics (SVG) wordt ondersteund door de Afbeeldingseditor.
 
-* Het slepen en neerzetten van een SVG-element van DAM en het uploaden van een SVG-bestandsupload vanuit een lokaal bestandssysteem worden beide ondersteund.
+* De belemmering-en-daling van SVG activa van DAM en het uploaden van een SVG dossier van een lokaal dossiersysteem worden allebei gesteund.
 
-## Insteekmodules inschakelen op MIME-type {#enabling-plugins-by-mime-type}
+## Plug-ins inschakelen op basis van MIME-type {#enabling-plugins-by-mime-type}
 
 In bepaalde situaties moeten ontwerpacties voor bepaalde MIME-typen worden beperkt, omdat er geen ondersteuning is voor verwerking op de server. Het bewerken van SVG-afbeeldingen is bijvoorbeeld niet toegestaan.
 
-Plugins in de Redacteur van het Beeld kunnen selectief door MIME type worden toegelaten door een `supportedMimeTypes` bezit op de de configuratieknoop van de individuele stop te plaatsen.
+Plug-ins in de Afbeeldingseditor kunnen selectief worden ingeschakeld door een MIME-type in te stellen als `supportedMimeTypes` eigenschap op het configuratieknooppunt van de individuele plug-in.
 
 ### Voorbeeld {#example}
 
-Stel bijvoorbeeld dat de mogelijkheid om uit te snijden alleen is toegestaan voor GIF-, JPEG-, PNG-, WEBP- en TIFF-afbeeldingen.
+Laten we bijvoorbeeld zeggen dat de mogelijkheid om uit te snijden alleen moet worden toegestaan voor GIF-, JPEG-, PNG-, WEBP- en TIFF-afbeeldingen.
 
-De eigenschap `supportedMimeTypes` moet vervolgens worden ingesteld als een tekenreeks van de toegestane MIME-typen op het configuratieknooppunt van de plug-in op het knooppunt `cq:editConfig` van de afbeeldingscomponent.
+De `supportedMimeTypes` eigenschap moet vervolgens worden ingesteld als een tekenreeks van de toegestane MIME-typen op het configuratieknooppunt van de plug-in op het tabblad `cq:editConfig` knooppunt van de afbeeldingscomponent.
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

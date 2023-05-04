@@ -1,7 +1,7 @@
 ---
 title: Referentielettersjablonen
 seo-title: Reference letter templates
-description: 'AEM Forms biedt lay-outsjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
+description: AEM Forms biedt lay-outsjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken.
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -9,18 +9,22 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 319db420-3318-4ef7-be2b-1ff2b1c08563
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
 # Referentielettersjablonen {#reference-letter-templates}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 In Correspondence Management bevat een lettertypesjabloon typische formuliervelden, indelingsfuncties zoals een kop- en voettekst en lege &quot;doelgebieden&quot; voor de plaatsing van inhoud.
 
-Correspondence Management biedt lettertypesjablonen in het AEM Forms-pakket [AEM Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor het installeren van een pakket. U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
+Correspondentenbeheer biedt briefsjablonen in het AEM Forms-pakket [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Voor het installeren van een pakket raadpleegt u [Werken met pakketten](/help/sites-administering/package-manager.md). U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
 
 * Klassiek
 * Klassiek eenvoudig
@@ -36,7 +40,7 @@ Nadat u het pakket hebt geïnstalleerd, worden de lay-outsjablonen (XDP&#39;s) w
 
 Hier volgen de veelvoorkomende velden in alle sjablonen in dit pakket:
 
-* Date
+* Datum
 * Aanhef
 * Tekst sluiten
 * Handtekeningtekst
@@ -51,7 +55,7 @@ Met een logo bovenaan is de klassieke sjabloon geschikt voor een gewone professi
 
 ![klassiek](assets/classic.png)
 
-PDF-voorbeeld van een letter die is gemaakt met de klassieke sjabloon
+PDF voorbeeld van een letter die is gemaakt met de klassieke sjabloon
 
 ## Klassiek eenvoudig {#classic-simple}
 
@@ -59,7 +63,7 @@ Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres. Een 
 
 ![Fragment met contactgegevens](assets/classicsimple.png)
 
-PDF-voorbeeld van een letter die is gemaakt met de klassieke eenvoudige sjabloon
+PDF voorbeeld van een letter die is gemaakt met de klassieke eenvoudige sjabloon
 
 ## Evenwichtig links {#balanced-left}
 
@@ -67,7 +71,7 @@ De sjabloon Balanced Left bevat een logo links van de letter.
 
 ![balanceerleft](assets/balancedleft.png)
 
-PDF-voorbeeld van een letter die is gemaakt met de sjabloon Balanced Left
+PDF voorbeeld van een letter die is gemaakt met de sjabloon Balanced Left
 
 ## Evenwichtig rechts {#balanced-right}
 
@@ -75,7 +79,7 @@ Een evenwichtige rechtersjabloon heeft het bedrijfslogo aan de linkerkant en bie
 
 ![balanceerright](assets/balancedright.png)
 
-PDF-voorbeeld van een letter die is gemaakt met de sjabloon Evenwichtig recht
+PDF voorbeeld van een letter die is gemaakt met de sjabloon Balanced Right
 
 ## Zichtbaar links {#visual-left}
 
@@ -83,7 +87,7 @@ Het Visuele Linkermalplaatje heeft een zijhoofd op de linkerzijde van de pagina 
 
 ![visualleft](assets/visualleft.png)
 
-PDF-voorbeeld van een letter die is gemaakt met de sjabloon Visueel links
+PDF voorproef van een gemaakte brief gebruikend het Visuele Linkermalplaatje
 
 ## Visueel boven {#visual-top}
 
@@ -91,7 +95,7 @@ Het visuele Bovenste malplaatje heeft visuele marge op de bovenkant. Het Visuele
 
 ![visualtop](assets/visualtop.png)
 
-PDF-voorbeeld van een letter die is gemaakt met de sjabloon Visueel boven
+PDF voorproef van een gemaakte brief gebruikend het Visuele Top malplaatje
 
 ## Visueel bovenste - Klassiek {#visual-top-classic}
 
@@ -99,4 +103,4 @@ De visuele Top - de Klassieke malplaatje heeft een kopbal bovenop de pagina met 
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-PDF-voorbeeld van een letter die is gemaakt met de klassieke sjabloon Visual Top
+PDF voorproef van een gemaakte brief gebruikend Visuele Top - Klassieke malplaatje

@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2741'
+source-wordcount: '2777'
 ht-degree: 0%
 
 ---
 
 # AEM Forms-referentiesites instellen en configureren {#set-up-and-configure-aem-forms-reference-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 AEM Forms biedt implementatie van referentiesite om aan te tonen hoe AEM Forms organisaties van de Financial Services Industry en de overheid helpt om hun complexe transacties om te zetten in eenvoudige en aantrekkelijke digitale ervaringen op elk apparaat, waar en wanneer dan ook.
 
@@ -65,7 +69,7 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
   <tr> 
    <th><strong>Stap</strong></th> 
    <th><strong>Configureren</strong></th> 
-   <th><strong>Opmerkingen</strong></th> 
+   <th><strong>Notities</strong></th> 
   </tr> 
   <tr> 
    <td><a href="#installaemforms">AEM Forms installeren en configureren</a></td> 

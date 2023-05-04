@@ -1,8 +1,8 @@
 ---
 title: Het wachtwoord voor LDAP-binding configureren
-seo-title: Het wachtwoord voor LDAP-binding configureren
-description: 'Leer hoe te om het bind wachtwoordgebied te vormen alvorens u het configuratiedossier in een ander systeem invoert. '
-seo-description: 'Leer hoe te om het bind wachtwoordgebied te vormen alvorens u het configuratiedossier in een ander systeem invoert. '
+seo-title: Configure the LDAP bind password
+description: Leer hoe te om het bind wachtwoordgebied te vormen alvorens u het configuratiedossier in een ander systeem invoert.
+seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
 uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
 contentOwner: admin
 content-type: reference
@@ -10,21 +10,24 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 exl-id: eaa2c889-d116-4209-9063-0c0b32dd8849
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 3%
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
-# Vorm LDAP bindt wachtwoord{#configure-the-ldap-bind-password}
+# Het wachtwoord voor LDAP-binding configureren{#configure-the-ldap-bind-password}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het uitgevoerde configuratiedossier (config.xml) niet wordt gevormd. Alvorens u het configuratiedossier in een ander systeem invoert, zorg ervoor dat u dit wachtwoord vormt. Dit wachtwoord negeert een bestaand wachtwoord dat in het gegevensbestand wordt opgeslagen. Een null-wachtwoord negeert een bestaande wachtwoordwaarde die niet gelijk is aan null.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op Exporteren en slaat u het configuratiebestand op een andere locatie op.
-1. Zoek in het bestand het knooppunt `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig`. Hier volgt een voorbeeld:
+1. Zoek in het bestand de locatie `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` knooppunt. Hier volgt een voorbeeld:
 
    ```as3
     <node name="LDAPGroupConfig"> 
@@ -39,7 +42,7 @@ Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het 
 
    Typ een waarde voor `bindpassword` en sla uw wijzigingen op.
 
-1. Zoek in het bestand het knooppunt `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Hier volgt een voorbeeld:
+1. Zoek in het bestand de locatie `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` knooppunt. Hier volgt een voorbeeld:
 
    ```as3
     <node name="LDAPUserConfig"> 

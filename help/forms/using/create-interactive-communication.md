@@ -1,23 +1,26 @@
 ---
 title: Een interactieve communicatie maken
-seo-title: Een interactieve communicatie maken
-description: 'Creeer een Interactieve Mededeling gebruikend de Interactieve Communicatie redacteur. Gebruik de functie voor slepen en neerzetten om de interactieve communicatie te maken en een voorvertoning van zowel afdruk- als webuitvoer weer te geven voor verschillende apparaattypen. '
-seo-description: 'Creeer een Interactieve Mededeling gebruikend de Interactieve Communicatie redacteur. Gebruik de functie voor slepen en neerzetten om de interactieve communicatie te maken en een voorvertoning van zowel afdruk- als webuitvoer weer te geven voor verschillende apparaattypen. '
+seo-title: Create an Interactive Communication
+description: Creeer een Interactieve Mededeling gebruikend de Interactieve Communicatie redacteur. Gebruik de functie voor slepen en neerzetten om de interactieve communicatie te maken en een voorvertoning van zowel afdruk- als webuitvoer weer te geven voor verschillende apparaattypen.
+seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
 uuid: b98e9a49-cef2-42f2-b484-8765b859895b
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
 feature: Interactive Communication
 exl-id: a65b775d-040c-4069-b43a-6815be959b31
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
 
-# Een interactieve communicatie maken {#create-an-interactive-communication}
+# Een interactieve communicatie maken  {#create-an-interactive-communication}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Creeer een Interactieve Mededeling gebruikend de Interactieve Communicatie redacteur. Gebruik de functie voor slepen en neerzetten om de interactieve communicatie te maken en een voorvertoning van zowel afdruk- als webuitvoer weer te geven voor verschillende apparaattypen.
 
@@ -29,15 +32,15 @@ De interactieve Mededelingen centraliseren en beheert de verwezenlijking, de ass
 
 Het volgende is de eerste vereisten voor het creëren van een Interactieve Mededeling:
 
-* Stel een [Formuliergegevensmodel](/help/forms/using/data-integration.md) in dat testgegevens of een werkelijke gegevensbron bevat, zoals een instantie van Microsoft® Dynamics.
-* Zorg ervoor dat u de [Documentfragmenten](/help/forms/using/document-fragments.md) hebt.
-* Zorg ervoor dat u [Sjablonen hebt voor afdrukken en webkanaal](/help/forms/using/web-channel-print-channel.md).
-* Zorg ervoor dat u het vereiste [thema](/help/forms/using/themes.md) voor het Webkanaal hebt.
+* Een [Formuliergegevensmodel](/help/forms/using/data-integration.md) met testgegevens of met een werkelijke gegevensbron, zoals een instantie van Microsoft® Dynamics.
+* Zorg ervoor dat u beschikt over de [Documentfragmenten](/help/forms/using/document-fragments.md).
+* Zorg ervoor dat u [Sjablonen voor afdrukken en webkanaal](/help/forms/using/web-channel-print-channel.md).
+* Zorg ervoor dat u de vereiste [thema](/help/forms/using/themes.md) voor het webkanaal.
 
-## Interactieve communicatie {#createic} maken
+## Interactieve communicatie maken {#createic}
 
 1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Tik **[!UICONTROL Create]** en selecteer **[!UICONTROL Interactive Communication]**. De pagina Interactieve communicatie maken wordt weergegeven.
+1. Tikken **[!UICONTROL Create]** en selecteert u **[!UICONTROL Interactive Communication]**. De pagina Interactieve communicatie maken wordt weergegeven.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
@@ -46,10 +49,10 @@ Het volgende is de eerste vereisten voor het creëren van een Interactieve Meded
    * **[!UICONTROL Title]**: Voer de titel van de interactieve communicatie in.
    * **[!UICONTROL Name*]**: De naam van de Interactieve Mededeling wordt afgeleid uit de titel u ingaat. Bewerk indien nodig de selectie.
    * **[!UICONTROL Description]**: Ga een beschrijving over de Interactieve Communicatie in.
-   * **[!UICONTROL Form Data Model*]**: Blader naar het gegevensmodel van het formulier en selecteer dit. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over het formuliergegevensmodel.
+   * **[!UICONTROL Form Data Model*]**: Blader naar het gegevensmodel van het formulier en selecteer dit. Zie voor meer informatie over het formuliergegevensmodel [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
    * **[!UICONTROL Prefill Service]**: Selecteer de prefill dienst om de gegevens terug te winnen en de Interactieve Communicatie vooraf in te vullen.
    * **[!UICONTROL Post Process Type]**: U kunt AEM of Forms-workflow selecteren die moet worden geactiveerd wanneer de interactieve communicatie wordt verzonden. Selecteer het type workflow dat moet worden geactiveerd.
-   * **[!UICONTROL Post Process]**: Selecteer de naam van de workflow die moet worden geactiveerd. Wanneer u AEM workflow selecteert, moet u het pad naar Bijlage, Lay-out, PDF-pad, Gegevenspad afdrukken en Webgegevenspad opgeven.
+   * **[!UICONTROL Post Process]**: Selecteer de naam van de workflow die moet worden geactiveerd. Wanneer u AEM werkstroom selecteert, verstrekt de Weg van de Bijlage, de Weg van de Lay-out, de Weg van de PDF, de Weg van Gegevens van de Druk, en de Weg van Gegevens van het Web.
    * **[!UICONTROL Tags]**: Selecteer de tags die u wilt toepassen op Interactieve communicatie. U kunt ook een nieuwe/aangepaste tagnaam typen en op Enter drukken om deze te maken.
    * **[!UICONTROL Author]**:De auteursnaam wordt automatisch genomen van de het programma geopende gebruikersnaam.
    * **[!UICONTROL Publish Date:]** Voer de datum in waarop u de interactieve communicatie wilt publiceren.
@@ -60,35 +63,35 @@ Het volgende is de eerste vereisten voor het creëren van een Interactieve Meded
 
    * **[!UICONTROL Print]**: Selecteer deze optie om het afdrukkanaal van de interactieve communicatie te genereren.
    * **[!UICONTROL Print Template*:]** Blader naar een XDP als afdruksjabloon en selecteer deze.
-   * **[!UICONTROL Use Print As Master For Web Channel:]** Selecteer deze optie om het webkanaal synchroon met het afdrukkanaal te maken. Als u het afdrukkanaal gebruikt als master voor het webkanaal, zorgt u ervoor dat de inhoud en de gegevensbinding van het webkanaal worden afgeleid van het afdrukkanaal en dat de wijzigingen die u in het afdrukkanaal hebt aangebracht, worden weerspiegeld in het webkanaal wanneer u op Synchroniseren tikt. De auteurs mogen echter desgewenst de overerving voor specifieke componenten in het webkanaal verbreken. Zie [Webkanaal synchroniseren met afdrukkanaal](/help/forms/using/create-interactive-communication.md#synchronize) voor meer informatie.
+   * **[!UICONTROL Use Print As Master For Web Channel:]** Selecteer deze optie om het webkanaal synchroon met het afdrukkanaal te maken. Als u het afdrukkanaal gebruikt als master voor het webkanaal, zorgt u ervoor dat de inhoud en de gegevensbinding van het webkanaal worden afgeleid van het afdrukkanaal en dat de wijzigingen die u in het afdrukkanaal hebt aangebracht, worden weerspiegeld in het webkanaal wanneer u op Synchroniseren tikt. De auteurs mogen echter desgewenst de overerving voor specifieke componenten in het webkanaal verbreken. Zie voor meer informatie [Webkanaal synchroniseren met afdrukkanaal](/help/forms/using/create-interactive-communication.md#synchronize).
    * **[!UICONTROL Web:]** Selecteer deze optie om het webkanaal of de responsieve uitvoer van Interactieve communicatie te genereren.
    * **[!UICONTROL Interactive Communication Web Template*:]** Blader naar de websjabloon en selecteer deze.
-   * **[!UICONTROL Theme]** en  **[!UICONTROL Select Theme*]**: Blader en selecteer het thema om het webkanaal van de interactieve communicatie op te maken. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md) voor meer informatie.
-   Zie [Kanaal en webkanaal afdrukken](/help/forms/using/web-channel-print-channel.md) voor meer informatie over het afdrukkanaal en het webkanaal.
+   * **[!UICONTROL Theme]** en **[!UICONTROL Select Theme*]**: Blader en selecteer het thema om het webkanaal van de interactieve communicatie op te maken. Zie voor meer informatie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md).
+   Ga voor meer informatie over het afdrukkanaal en het webkanaal naar [Kanaal en webkanaal afdrukken](/help/forms/using/web-channel-print-channel.md).
 
-1. Tik op **[!UICONTROL Create]**. De interactieve communicatie wordt gemaakt en er verschijnt een waarschuwingsvenster. Tik **[!UICONTROL Edit]** om de inhoud van de interactieve communicatie op te bouwen, zoals wordt uitgelegd in [Inhoud toevoegen met de interactieve gebruikersinterface voor communicatie ontwerpen](#step2). U kunt ook **[!UICONTROL Done]** tikken en ervoor kiezen om de interactieve communicatie later te bewerken.
+1. Tik op **[!UICONTROL Create]**. De interactieve communicatie wordt gemaakt en er verschijnt een waarschuwingsvenster. Tikken **[!UICONTROL Edit]** beginnen met het opbouwen van de inhoud van de interactieve communicatie, zoals uiteengezet in [Inhoud toevoegen met de gebruikersinterface voor interactieve communicatie](#step2). U kunt ook op **[!UICONTROL Done]** en kiest u om de interactieve communicatie later te bewerken.
 
 ## Inhoud toevoegen aan de interactieve communicatie {#step2}
 
 Nadat u een Interactieve Communicatie hebt gecreeerd, kunt u de Interactieve Communicatie auteursinterface gebruiken om zijn inhoud te construeren.
 
-Voor meer informatie over de Interactieve Communicatie auteursinterface, zie [Inleiding aan Interactieve Communicatie creatie](/help/forms/using/introduction-interactive-communication-authoring.md).
+Voor meer informatie over de Interactieve Communicatie auteursinterface, zie [Inleiding tot interactieve communicatie authoring](/help/forms/using/introduction-interactive-communication-authoring.md).
 
-1. De Interactieve Communicatie auteursinterface wordt gelanceerd wanneer u Tik geef zoals vermeld in [Interactieve Communicatie](#createic) tot stand brengen. Alternatief, kunt u aan een bestaand Interactief Communicatie middel op AEM navigeren, het selecteren, en tikken **[!UICONTROL Edit]** om de Interactieve Communicatie auteursinterface te lanceren.
+1. De Interactieve Communicatie auteursinterface wordt gelanceerd wanneer u Tik geef zoals vermeld in [Interactieve communicatie maken](#createic). U kunt ook naar een bestaand interactief communicatiemiddel navigeren op AEM, dit selecteren en erop tikken **[!UICONTROL Edit]** om de Interactieve Communicatie auteursinterface te lanceren.
 
    Standaard wordt het afdrukkanaal van de interactieve communicatie weergegeven, tenzij Interactieve communicatie alleen via het web plaatsvindt. In het afdrukkanaal van de interactieve communicatie worden de doelgebieden weergegeven die beschikbaar zijn in de geselecteerde XDP/afdruksjabloon. In deze doelgebieden en -velden kunt u componenten of elementen toevoegen.
 
-1. Selecteer het kanaal Afdrukken en selecteer het tabblad **[!UICONTROL Components]**. De volgende componenten zijn beschikbaar in het afdrukkanaal:
+1. Selecteer het kanaal Afdrukken en selecteer de optie **[!UICONTROL Components]** tab. De volgende componenten zijn beschikbaar in het afdrukkanaal:
 
    | **Component** | **Functionaliteit** |
    |---|---|
-   | Diagram | Hiermee voegt u een grafiek toe die u in Interactieve communicatie kunt gebruiken voor de visuele weergave van tweedimensionale gegevens die zijn opgehaald uit een verzameling formuliergegevensmodellen. Voor meer informatie, zie [Het gebruiken van grafieken in Interactieve Mededelingen](/help/forms/using/chart-component-interactive-communications.md). |
+   | Diagram | Hiermee voegt u een grafiek toe die u in Interactieve communicatie kunt gebruiken voor de visuele weergave van tweedimensionale gegevens die zijn opgehaald uit een verzameling formuliergegevensmodellen. Zie voor meer informatie [Het gebruiken van grafieken in Interactieve Mededelingen](/help/forms/using/chart-component-interactive-communications.md). |
    | Documentfragment | Staat u toe om een herbruikbare component, zoals tekst, lijst, of voorwaarde, aan een Interactieve Communicatie toe te voegen. De toegevoegde component kan gebaseerd zijn op een formuliergegevensmodel of zonder een formuliergegevensmodel. |
    | Afbeelding | Hiermee kunt u een afbeelding invoegen. |
 
    Sleep de componenten in uw Interactieve Communicatie en vorm hen zoals vereist.
 
-1. Selecteer het afdrukkanaal en ga naar het tabblad **[!UICONTROL Assets]** en pas het filter toe om alleen de elementen weer te geven die u wilt zien.
+1. Selecteer het afdrukkanaal en ga naar het **[!UICONTROL Assets]** en pas het filter toe om alleen de elementen weer te geven die u wilt zien.
 
    Met behulp van de middelenbrowser kunt u ook rechtstreeks elementen slepen en neerzetten in interactieve communicatiedoelgebieden.
 
@@ -117,22 +120,22 @@ Voor meer informatie over de Interactieve Communicatie auteursinterface, zie [In
  </tbody> 
 </table>
 
-Zie [Documentfragmenten](/help/forms/using/document-fragments.md) voor meer informatie over documentfragmenten.
+Zie voor meer informatie over documentfragmenten [Documentfragmenten](/help/forms/using/document-fragments.md).
 
-1. Tik op een variabele om de binding van variabelen in te stellen en selecteer ![configure_icon](assets/configure_icon.png) (Configure) en stel vervolgens de bindingseigenschappen in het deelvenster Eigenschappen in het zijpaneel in.
+1. Tik op een variabele en selecteer ![configure_icon](assets/configure_icon.png) (Configureer) en stel vervolgens de bindingseigenschappen in het deelvenster Eigenschappen in het zijpaneel in.
 
    * **[!UICONTROL None]**: De agent zal de waarde voor de variabele invullen.
    * **[!UICONTROL Text Fragment]**: Als deze optie is geselecteerd, kunt u door een tekstdocumentfragment bladeren en dit selecteren waarvan de inhoud in het veld wordt weergegeven. Alleen tekstdocumentfragmenten kunnen worden gebonden aan variabelen die geen variabelen bevatten.
    * **[!UICONTROL Data Model Object]**: Selecteer een eigenschap van het formuliergegevensmodel waarvan de waarde in het veld is ingevuld.
-   U kunt ook het desbetreffende tekstdocumentfragment configureren. In het deelvenster Eigenschappen wordt de lijst met variabelen in het tekstdocumentfragment weergegeven. U kunt ![edit](assets/edit.png) (uitgeven) naast een veranderlijke naam tikken om de montages van die variabele voor het uitgeven te tonen.
+   U kunt ook het desbetreffende tekstdocumentfragment configureren. In het deelvenster Eigenschappen wordt de lijst met variabelen in het tekstdocumentfragment weergegeven. U kunt tikken ![bewerken](assets/edit.png) (Bewerken) naast de naam van een variabele om de instellingen van die variabele voor bewerking weer te geven.
 
-1. Als u een tabel wilt toevoegen terwijl het afdrukkanaal is geselecteerd, past u op het tabblad **[!UICONTROL Assets]** het filter toe om alleen de layoutfragmenten weer te geven. Sleep het vereiste lay-outfragment naar de interactieve communicatie en zet het neer. Een lay-outfragment is gebaseerd op een XDP en kan worden gebruikt om grafische lay-outs of statische en dynamische lijsten in Interactieve Communicatie tot stand te brengen die met dynamische gegevens worden bevolkt.
+1. Als u een tabel wilt toevoegen met het afdrukkanaal geselecteerd in het dialoogvenster **[!UICONTROL Assets]** past u het filter toe om alleen de layoutfragmenten weer te geven. Sleep het vereiste lay-outfragment naar de interactieve communicatie en zet het neer. Een lay-outfragment is gebaseerd op een XDP en kan worden gebruikt om grafische lay-outs of statische en dynamische lijsten in Interactieve Communicatie tot stand te brengen die met dynamische gegevens worden bevolkt.
 
    Voorbeeld: Een lay-outlijst om bruto premie, loyaliteitskorting %, en noodhulp langs de weg voor oud en nieuw beleid te tonen.
 
-   Zie [Documentfragmenten](/help/forms/using/document-fragments.md) voor meer informatie over layoutfragmenten.
+   Voor meer informatie over layoutfragmenten raadpleegt u [Documentfragmenten](/help/forms/using/document-fragments.md).
 
-1. Selecteer het afdrukkanaal en pas op het tabblad **[!UICONTROL Assets]** het filter toe op de weergave van afbeeldingen. Sleep de vereiste afbeeldingen naar de interactieve communicatie, bijvoorbeeld voor het bedrijfslogo.
+1. Selecteer het afdrukkanaal in het dialoogvenster **[!UICONTROL Assets]** past u het filter toe op de weergave van afbeeldingen. Sleep de vereiste afbeeldingen naar de interactieve communicatie, bijvoorbeeld voor het bedrijfslogo.
 
    Bovendien, beheer het volgende in de Interactieve Mededeling:
 
@@ -148,17 +151,17 @@ Zie [Documentfragmenten](/help/forms/using/document-fragments.md) voor meer info
    * [Regels toevoegen aan componenten](/help/forms/using/create-interactive-communication.md#rules)
 
 
-1. Schakel over naar **[!UICONTROL Web Channel]**. Het webkanaal wordt weergegeven in de interactieve communicatieeditor. Wanneer u voor het eerst van het kanaal van de Druk aan het kanaal van het Web schakelt, vindt de automatische synchronisatie plaats. Zie [Webkanaal synchroniseren vanuit het afdrukkanaal](/help/forms/using/create-interactive-communication.md#synchronize) voor meer informatie.
+1. Overschakelen op **[!UICONTROL Web Channel]**. Het webkanaal wordt weergegeven in de interactieve communicatieeditor. Wanneer u voor het eerst van het kanaal van de Druk aan het kanaal van het Web schakelt, vindt de automatische synchronisatie plaats. Zie voor meer informatie [Webkanaal synchroniseren via het afdrukkanaal](/help/forms/using/create-interactive-communication.md#synchronize).
 
    Omdat we Afdrukken in dit voorbeeld als master voor het web gebruiken, worden de plaatsaanduidingen, inhoud en gegevensbinding van het kanaal Afdrukken gesynchroniseerd met het webkanaal. U kunt de specifieke inhoud in het webkanaal echter naar wens wijzigen en aanpassen.
 
    ![webchannelmiddelen](assets/webchannelassets.png)
 
-1. Tik **[!UICONTROL Components]** om extra componenten aan het webkanaal toe te voegen terwijl het webkanaal is geselecteerd. De belemmering-en-dalingscomponenten in het Webkanaal van uw Interactieve Communicatie zoals vereist en ga te werk om hen te vormen.
+1. Tik op **[!UICONTROL Components]**. De belemmering-en-dalingscomponenten in het Webkanaal van uw Interactieve Communicatie zoals vereist en ga te werk om hen te vormen.
 
    | Onderdelen | Functionaliteit |
    |---|---|
-   | Diagram | Hiermee voegt u een grafiek toe die u in Interactieve communicatie kunt gebruiken voor de visuele weergave van tweedimensionale gegevens die zijn opgehaald uit een verzameling formuliergegevensmodellen. Voor meer informatie, zie [Het gebruiken van grafiekcomponent](/help/forms/using/chart-component-interactive-communications.md). |
+   | Diagram | Hiermee voegt u een grafiek toe die u in Interactieve communicatie kunt gebruiken voor de visuele weergave van tweedimensionale gegevens die zijn opgehaald uit een verzameling formuliergegevensmodellen. Zie voor meer informatie [Grafiekcomponent gebruiken](/help/forms/using/chart-component-interactive-communications.md). |
    | Documentfragment | Staat u toe om een herbruikbare component, een tekst, een lijst, of een voorwaarde, aan een Interactieve Communicatie toe te voegen. De herbruikbare component die u toevoegt aan een interactieve communicatie kan gebaseerd zijn op een formuliergegevensmodel of geen formuliergegevensmodel. |
    | Afbeelding | Hiermee kunt u een afbeelding invoegen. |
    | Deelvenster | De component van het Comité is placeholder voor het groeperen van andere componenten samen en controleert hoe een groep componenten, zoals accordeon en lusjes, in de Interactieve Mededeling worden uiteengezet. Met een deelvenstercomponent kunt u ook een groep componenten herhaalbaar maken voor de eindgebruiker, bijvoorbeeld in meerdere items die nodig zijn om de gegevens van het onderwijs in te vullen. |
@@ -168,31 +171,31 @@ Zie [Documentfragmenten](/help/forms/using/document-fragments.md) voor meer info
 
 1. Voeg desgewenst elementen in uw webkanaal in.
 
-   U kunt [voorproef uw Interactieve Communicatie](#previewic) om te zien wat de druk en Weboutput van de Interactieve Communicatie kijken als en verder makend veranderingen, zoals vereist.
+   U kunt [voorproef uw Interactieve Communicatie](#previewic) om te zien hoe de afdruk- en webuitvoer van de interactieve communicatie eruitziet en door te gaan met het aanbrengen van wijzigingen, indien nodig.
 
-## Een voorvertoning weergeven van de interactieve communicatie {#previewic}
+## Een voorvertoning van de interactieve communicatie weergeven {#previewic}
 
-U kunt de optie **[!UICONTROL Preview]** gebruiken om verschijning van de Interactieve Mededeling te evalueren. Het Webkanaal van Interactieve Communicatie verstrekt ook een optie om ervaring van een Interactieve Mededeling voor diverse apparaten te simuleren. Bijvoorbeeld iPhone, iPad en Desktop. U kunt zowel de **[!UICONTROL Preview]** als **[!UICONTROL Emulator]** ![liniaal](assets/ruler.png) opties in combinatie met elkaar gebruiken om een voorvertoning van de webuitvoer voor apparaten van verschillende schermgrootten weer te geven. De voorbeeldgegevens in de voorbeeldweergave worden gevuld vanuit het opgegeven gegevensmodel voor formulieren.
+U kunt de **[!UICONTROL Preview]** optie om de weergave van de interactieve communicatie te evalueren. Het Webkanaal van Interactieve Communicatie verstrekt ook een optie om ervaring van een Interactieve Mededeling voor diverse apparaten te simuleren. Bijvoorbeeld iPhone, iPad en Desktop. U kunt beide **[!UICONTROL Preview]** en **[!UICONTROL Emulator]** ![liniaal](assets/ruler.png) in combinatie met elkaar de uitvoerbestanden van het web voor apparaten van verschillende schermgrootten voor te vertonen. De voorbeeldgegevens in de voorbeeldweergave worden gevuld vanuit het opgegeven gegevensmodel voor formulieren.
 
 1. Selecteer het kanaal (afdrukken of web) voor een voorvertoning en tik op de voorvertoning. De interactieve communicatie wordt weergegeven.
 
    >[!NOTE]
    >
-   >Het voorbeeld wordt gevuld met de voorbeeldgegevens van het opgegeven formuliergegevensmodel. Zie [Formuliergegevensmodel gebruiken](/help/forms/using/using-form-data-model.md) en [Werken met formuliergegevensmodel](/help/forms/using/work-with-form-data-model.md) voor meer informatie over het bekijken van een voorbeeld van de interactieve communicatie met andere gegevens of het gebruik van de Prefill-service.
+   >Het voorbeeld wordt gevuld met de voorbeeldgegevens van het opgegeven formuliergegevensmodel. Voor meer informatie bij het voorvertonen van de Interactieve Communicatie met wat andere gegevens of het gebruiken van de Prefill dienst, zie [Formuliergegevensmodel gebruiken](/help/forms/using/using-form-data-model.md) en [Werken met formuliergegevensmodel](/help/forms/using/work-with-form-data-model.md).
 
-1. Voor het Webkanaal, gebruik ![heerser](assets/ruler.png) om te bekijken hoe de Interactieve Communicatie op diverse apparaten kijkt.
+1. Gebruik voor het webkanaal ![liniaal](assets/ruler.png) om te bekijken hoe de Interactieve Communicatie op diverse apparaten kijkt.
 
    ![webchannelvoorvertoning](assets/webchannelpreview.png)
 
-Verder, kunt u [Interactieve Mededeling voorbereiden en verzenden gebruikend de Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
+Verder kunt u [Bereid en verzend Interactieve Communicatie gebruikend de Agent UI voor](/help/forms/using/prepare-send-interactive-communication.md).
 
-## Eigenschappen configureren in interactieve communicatie {#configuring-properties-in-interactive-communication}
+## Eigenschappen configureren in interactieve communicatie  {#configuring-properties-in-interactive-communication}
 
 ### Bijlagen en bibliotheektoegang {#attachmentslibrary}
 
 In het kanaal van de Druk, kunt u de gehechtheid en bibliotheektoegang vormen om de Agent toe te staan beheer gehechtheid in de Agent UI voor de Interactieve Mededeling:
 
-1. Markeer in het kanaal Afdrukken de documentcontainer en tik **[!UICONTROL Properties]**.
+1. Markeer in het kanaal Afdrukken de documentcontainer en tik op **[!UICONTROL Properties]**.
 
    ![documentcontainereigenschappen](assets/documentcontainerproperties.png)
 
@@ -200,12 +203,12 @@ In het kanaal van de Druk, kunt u de gehechtheid en bibliotheektoegang vormen om
 
    ![eigenschappen, bijlagen](assets/propertiesattachments.png)
 
-1. Vouw **[!UICONTROL Attachments]** uit en geef de volgende eigenschappen op:
+1. Uitbreiden **[!UICONTROL Attachments]** en geeft u de volgende eigenschappen op:
 
    * **[!UICONTROL Allow Library Access]**: Selecteer om bibliotheektoegang voor de agent in de Agent UI toe te laten. Indien toegelaten, kan de Agent dossiers van de bibliotheek toevoegen terwijl het voorbereiden van de Interactieve Communicatie.
    * **[!UICONTROL Allow Re-Ordering Of Attachments]**: Selecteer om de Agent toe te laten om de gehechtheid met de Interactieve Mededeling opnieuw in orde te brengen.
    * **[!UICONTROL Max Number Of Attachments Allowed]**: Geef het maximumaantal toegestane bijlagen voor de interactieve communicatie op.
-   * **[!UICONTROL Files To Be Attached]**: Tik op de bestanden  **[!UICONTROL Add]** en blader naar de bestanden die u wilt bijvoegen en geef de volgende instellingen op:
+   * **[!UICONTROL Files To Be Attached]**: Tikken **[!UICONTROL Add]** en blader naar de geselecteerde bestanden die u wilt bijvoegen en geef de volgende instellingen op:
 
       * **[!UICONTROL Attach This File To Document By Default]**: U kunt deze optie wijzigen als alleen de bijlage niet verplicht is.
       * **[!UICONTROL Mandatory:]** De agent zal niet de gehechtheid in de Agent UI kunnen verwijderen.
@@ -213,9 +216,9 @@ In het kanaal van de Druk, kunt u de gehechtheid en bibliotheektoegang vormen om
 
 1. Tik op **[!UICONTROL Done]**.
 
-### XDP/Layout-veldeigenschappen {#xdplayoutfieldproperties}
+### Eigenschappen van XDP/Layout-velden {#xdplayoutfieldproperties}
 
-1. Terwijl het uitgeven van het kanaal van de Druk van een Interactieve Mededeling, houd over een gebied, dat in het het kanaalmalplaatje van de Druk wordt gebouwd, en selecteer ![configure_icon](assets/configure_icon.png) (vorm).
+1. Houd de muisaanwijzer tijdens het bewerken van het kanaal Afdrukken van een interactieve communicatie boven een veld dat is ingebouwd in de sjabloon Afdrukkanaal en selecteer ![configure_icon](assets/configure_icon.png) (Configureren).
 
    Het dialoogvenster Eigenschappen wordt weergegeven in het zijpaneel.
 
@@ -238,13 +241,13 @@ In het kanaal van de Druk, kunt u de gehechtheid en bibliotheektoegang vormen om
    * **[!UICONTROL Allow multiple lines]**: Selecteer dit veld als u meerdere tekstregels als invoer in het veld wilt toestaan. Deze instelling is niet van toepassing als Type binding tekstfragment is.
 
 
-1. Tik ![done_icon](assets/done_icon.png).
+1. Tikken ![done_icon](assets/done_icon.png).
 
-## Pas regels op Interactieve Communicatie componenten {#rules} toe
+## Pas regels op Interactieve Communicatie componenten toe {#rules}
 
-Als u componenten of inhoud in de interactieve communicatie wilt conditionaliseren, tikt u op de component/het stuk inhoud en selecteert u ![createruleicon](assets/createruleicon.png) (Regel maken) om de Rule Editor te starten.
+Tik op de component of het deel van de inhoud en selecteer ![createruleus](assets/createruleicon.png) (Regel maken) om de Regel-editor te starten.
 
-Meer informatie:
+Zie voor meer informatie:
 
 * [Regeleditor](/help/forms/using/rule-editor.md)
 * [Inleiding tot interactieve communicatie authoring](/help/forms/using/introduction-interactive-communication-authoring.md)
@@ -266,7 +269,7 @@ U kunt dynamische tabellen toevoegen in Interactieve communicatie met behulp van
 
 1. Geef de gegevensbinding op voor elk van de cellen in de tabel. Als u een herhaalbare rij wilt maken, voegt u eigenschappen van het formuliergegevensmodel in de rij in die bij een algemene eigenschap voor de verzameling horen.
 
-   1. Tik op een cel in de tabel en selecteer ![configure_icon](assets/configure_icon.png) (Configure).
+   1. Tik op een cel in de tabel en selecteer ![configure_icon](assets/configure_icon.png) (Configureren).
 
       Het dialoogvenster Eigenschappen wordt weergegeven in het zijpaneel.
 
@@ -283,7 +286,7 @@ U kunt dynamische tabellen toevoegen in Interactieve communicatie met behulp van
       * **[!UICONTROL Data Model Object]**: De eigenschap van het gegevensmodel van het formulier waarvan de waarde in het veld wordt ingevuld.
       * **[!UICONTROL Default Value]**: De standaardwaarde zorgt ervoor dat het veld niet leeg is wanneer het opgegeven gegevensmodelobject geen waarde bevat. De standaardwaarde is vooraf ingevuld in het veld.
       * **[!UICONTROL Editable By Agent]**: Selecteer om de agent toe te staan om de waarde op het gebied in de Agent UI uit te geven.
-   1. Tik ![done_icon](assets/done_icon.png).
+   1. Tikken ![done_icon](assets/done_icon.png).
 
 
 
@@ -291,7 +294,7 @@ U kunt dynamische tabellen toevoegen in Interactieve communicatie met behulp van
 
    ![lf_preview](assets/lf_preview.png)
 
-### Alleen webkanaaltabellen {#web-channel-only-tables}
+### Alleen webkanalen {#web-channel-only-tables}
 
 U kunt een Web-kanaal slechts dynamische lijst in een Interactieve Mededeling tot stand brengen gebruikend een bezit van het gegevensmodel van typeinzameling. Een dergelijke tabel is een weergave van de onderliggende eigenschappen van een eigenschap van een verzameling. U kunt alleen de opmaakeigenschappen van de verschillende cellen in de tabel bewerken.
 
@@ -307,7 +310,7 @@ U kunt een Web-kanaal slechts dynamische lijst in een Interactieve Mededeling to
 Wanneer u Afdrukken als Master voor webkanaal selecteert terwijl u een interactieve communicatie maakt, wordt het webkanaal gemaakt in synchronisatie met het kanaal Afdrukken en worden de inhoud en de gegevensbinding van het webkanaal afgeleid van het afdrukkanaal en worden de wijzigingen weerspiegeld in het webkanaal wanneer u op Synchroniseren tikt.
 
 De auteurs mogen echter desgewenst de overerving voor componenten in het webkanaal verbreken.
-![printtweb_2-3](assets/printweb_2-3.png)
+![printweb_2-3](assets/printweb_2-3.png)
 [Klik om te vergroten](assets/printweb_2-3.png)
 
 ![Afdrukken en webkanalen in de interactieve communicatieeditor](assets/printweb_2-1.png)
@@ -320,31 +323,31 @@ Als u het kanaal van de Druk als master voor het kanaal van het Web gebruikt en 
 >
 >Als u de kanalen synchroniseert, worden alleen de documentfragmenten, afbeeldingen, voorwaarden, lijsten en layoutfragmenten gesynchroniseerd van het afdrukkanaal naar het webkanaal. De subformulieren of bovenliggende knooppunten van die elementen worden niet gesynchroniseerd.
 
-### Overerving {#cancel-inheritance} annuleren
+### Overerving annuleren {#cancel-inheritance}
 
 In het webkanaal worden de componenten ingesloten in de doelgebieden.
 
-Houd de cursor boven het desbetreffende doelgebied in het webkanaal en selecteer ![cancelinheritance](assets/cancelinheritance.png) (Overerving annuleren) en tik vervolgens in het dialoogvenster Overerving annuleren op **[!UICONTROL Yes]**.
+Houd de muisaanwijzer boven het desbetreffende doelgebied in het webkanaal en selecteer ![cancelovererving](assets/cancelinheritance.png) (Overerving annuleren) en tik vervolgens in het dialoogvenster Overerving annuleren op **[!UICONTROL Yes]**.
 
 De overerving van de componenten binnen het doelgebied wordt geannuleerd en u kunt deze nu naar wens bewerken.
 
 ### Overerving opnieuw inschakelen {#re-enable-inheritance}
 
-In het kanaal van het Web, als u overerving van een component hebt geannuleerd, kunt u het re-toelaten. Als u overerving weer wilt inschakelen, plaatst u de cursor boven de grens van het desbetreffende doelgebied, dat de component omvat, en tikt u op ![opnieuw in te schakelen overerving](assets/reenableinheritance.png).
+In het kanaal van het Web, als u overerving van een component hebt geannuleerd, kunt u het re-toelaten. Als u overerving weer wilt inschakelen, plaatst u de muisaanwijzer boven de grens van het desbetreffende doelgebied, inclusief de component, en tikt u op ![reenableerbaarheid](assets/reenableinheritance.png).
 
 Het dialoogvenster Overerving herstellen wordt weergegeven.
 
 ![revertovererving](assets/revertinheritance.png)
 
-Selecteer **[!UICONTROL Synchronize The Page After Reverting Inheritance]** indien nodig. Selecteer deze optie om de volledige interactieve communicatie te synchroniseren. Als u deze optie niet selecteert, wordt alleen het desbetreffende doelgebied gesynchroniseerd bij het opnieuw instellen van de overerving.
+Selecteer indien nodig **[!UICONTROL Synchronize The Page After Reverting Inheritance]**. Selecteer deze optie om de volledige interactieve communicatie te synchroniseren. Als u deze optie niet selecteert, wordt alleen het desbetreffende doelgebied gesynchroniseerd bij het opnieuw instellen van de overerving.
 
 Tik op **[!UICONTROL Yes]**.
 
-### {#synchronize-1} synchroniseren
+### Synchroniseren {#synchronize-1}
 
 Als u Afdrukken gebruikt als Master voor webkanaal en wijzigingen aanbrengt in het afdrukkanaal, kunt u op Synchroniseren tikken om de zojuist aangebrachte wijzigingen door te voeren in het webkanaal.
 
-1. Tik op **[!UICONTROL Synchronize]** om het webkanaal te synchroniseren met het kanaal Afdrukken.
+1. Tik op **[!UICONTROL Synchronize]**.
 
    Het dialoogvenster Inhoud synchroniseren vanaf Master kanaal wordt weergegeven.
 

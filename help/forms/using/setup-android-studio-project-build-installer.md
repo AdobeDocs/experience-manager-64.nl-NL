@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
 
 # Het Android-studioproject instellen en de Android-app ontwikkelen {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Dit artikel is bedoeld voor het maken van de AEM Forms App 6.3.1.1 en latere versies. Ga voor het maken van een app met broncode van de AEM Forms App 6.3 naar [Het Eclipse-project instellen en de Android™-app ontwikkelen](/help/forms/using/setup-eclipse-project-build-installer.md).
 

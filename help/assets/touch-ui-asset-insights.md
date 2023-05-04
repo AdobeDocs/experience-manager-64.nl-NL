@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '787'
 ht-degree: 2%
 
 ---
 
 # Assets Insights {#asset-insights}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Leer hoe u met behulp van Assets Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van middelen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 
@@ -22,7 +26,7 @@ Met Elementinzichten worden details van gebruikersactiviteiten vastgelegd, zoals
 
 Als u met behulp van Assets gebruiksstatistieken wilt vastleggen voor elementen van een website, moet u de insluitcode voor het element opnemen in de websitecode.
 
-Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van [!DNL Adobe Analytics] te halen. Voor details, zie [Elementen inzichten](touch-ui-configuring-asset-insights.md) vormen. Als u deze functie wilt gebruiken in een on-premise installatie, moet u [!DNL Adobe Analytics] licentie afzonderlijk aanschaffen. Klanten op [!DNL Managed Services] ontvangen [!DNL Analytics] licentie gebundeld met [!DNL Experience Manager]. Zie [Managed Services productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Om de statistieken van het vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van te halen [!DNL Adobe Analytics]. Zie voor meer informatie [Elementengegevens configureren](touch-ui-configuring-asset-insights.md). Aanschaf als u deze functie wilt gebruiken in een installatie op locatie [!DNL Adobe Analytics] licentie afzonderlijk. Klanten op [!DNL Managed Services] ontvangen [!DNL Analytics] licentie gebundeld met [!DNL Experience Manager]. Zie [Managed Services-productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -32,15 +36,15 @@ Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor ac
 
 U kunt de elementinzichten van de metagegevenspagina weergeven.
 
-1. Selecteer in de gebruikersinterface Elementen (UI) het element en tik op het pictogram **[!UICONTROL Properties]** op de werkbalk.
-1. Tik/klik op het tabblad **[!UICONTROL Insights]** op de pagina Eigenschappen.
-1. Controleer de gebruiksdetails voor het element op het tabblad **[!UICONTROL Insights]**. In de sectie **[!UICONTROL Score]** worden het totale gebruik en de prestatiesbronnen van een element beschreven.
+1. Selecteer het element in de gebruikersinterface Elementen (UI) en tik op het element **[!UICONTROL Properties]** op de werkbalk.
+1. Tik op de pagina Eigenschappen of klik op de knop **[!UICONTROL Insights]** tab.
+1. Bekijk de gebruiksdetails voor het element in de **[!UICONTROL Insights]** tab. De **[!UICONTROL Score]** in deze sectie wordt het totale gebruik en de prestatiesbronnen van een actief beschreven.
 
    De score van het gebruik beschrijft het aantal tijden activa wordt gebruikt in diverse oplossingen.
 
-   De **[!UICONTROL Impressions]** score is het aantal keren dat het element op de website wordt geladen. Het getal dat onder **[!UICONTROL Clicks]** wordt weergegeven, is het aantal keren dat op het element wordt geklikt.
+   De **[!UICONTROL Impressions]** De score is het aantal keren dat het element op de website wordt geladen. Het nummer dat onder wordt weergegeven **[!UICONTROL Clicks]** is het aantal keren dat op het element wordt geklikt.
 
-1. Controleer de sectie **[!UICONTROL Usage Statistics]** om te weten van welke entiteiten het middel deel uitmaakte en welke creatieve oplossingen het onlangs gebruikten. Hoe hoger het gebruik, hoe groter de kans dat het middel populair is bij gebruikers. Gebruiksgegevens worden onder de volgende koppen weergegeven:
+1. Controleer de **[!UICONTROL Usage Statistics]** sectie om te weten van welke entiteiten het actief deel uitmaakte en welke creatieve oplossingen het onlangs gebruikten. Hoe hoger het gebruik, hoe groter de kans dat het middel populair is bij gebruikers. Gebruiksgegevens worden onder de volgende koppen weergegeven:
 
    * **[!UICONTROL Asset]**: Het aantal keren dat het actief deel uitmaakte van een collectie of samengesteld actief
    * **[!UICONTROL Web & Mobile]**: Het aantal keren dat het middel deel uitmaakte van websites en apps
@@ -51,9 +55,9 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
 
    >[!NOTE]
    >
-   >Met de functie Assets Insights worden de oplossingsgegevens van [!DNL Adobe Analytics] periodiek opgehaald. Het is mogelijk dat de sectie Solutions de meest recente gegevens niet weergeeft. De tijdsperiode waarvoor de gegevens worden weergegeven, is afhankelijk van het schema van de ophaalbewerking die Assets Insights uitvoert om [!DNL Analytics]-gegevens op te halen.
+   >Met de functie Assets Insights haalt u de oplossingsgegevens op van [!DNL Adobe Analytics] in de sectie Oplossingen worden de meest recente gegevens mogelijk niet periodiek weergegeven. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa in werking stellen om terug te winnen [!DNL Analytics] gegevens.
 
-1. Als u de prestatiestatistieken voor het element gedurende een bepaalde periode grafisch wilt weergeven, selecteert u een punt in de sectie **[!UICONTROL Performance Statistics]**. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
+1. Als u de prestatiestatistieken voor het actief grafisch wilt weergeven over een tijdsperiode, selecteert u de periode in het dialoogvenster **[!UICONTROL Performance Statistics]** sectie. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -61,13 +65,13 @@ U kunt de elementinzichten van de metagegevenspagina weergeven.
    >
    >In tegenstelling tot de gegevens in de oplossingssectie, toont de sectie van prestatiesstatistieken de meest recente gegevens.
 
-1. Klik **[!UICONTROL Get Embed Code]** onder de elementminiatuur om de insluitcode te verkrijgen voor het element dat u in websites opneemt om prestatiegegevens op te halen. Voor meer informatie over hoe te om uw Embed code in derdeWeb-pagina&#39;s op te nemen, zie [Gebruikend de Traceur van de Pagina en bedt code in Web-pagina&#39;s](touch-ui-using-page-tracker.md) in.
+1. Klik op **[!UICONTROL Get Embed Code]** onder de elementminiatuur. Ga voor meer informatie over het opnemen van uw insluitcode in externe webpagina&#39;s naar [Paginanummering gebruiken en code insluiten in webpagina&#39;s](touch-ui-using-page-tracker.md).
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
 ## Samengevoegde statistieken voor activa weergeven {#viewing-aggregate-statistics-for-assets}
 
-U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!UICONTROL Insights View]**.
+U kunt de scores van alle elementen in een map tegelijk weergeven met **[!UICONTROL Insights View]**.
 
 1. Navigeer in de interface Elementen naar de map met de elementen waarvoor u inzichten wilt weergeven.
 1. Tik/klik op het pictogram Lay-out op de werkbalk en kies **[!UICONTROL Insights View]**.
@@ -75,10 +79,10 @@ U kunt de scores van alle elementen in een map tegelijkertijd weergeven met **[!
 
 ## Achtergrondtaak plannen {#scheduling-background-job}
 
-Assets Insights haalt gebruiksgegevens voor middelen van Adobe Analytics op periodieke wijze. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM in werking aan de ophaalgegevens. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
+Assets Insights haalt gebruiksgegevens voor middelen van Adobe Analytics op periodieke wijze. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM in werking aan de ophaalgegevens. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door te vormen **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** van de webconsole.
 
-1. Tik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > Operations > Web Console]**.
-1. Open de serviceconfiguratie **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**.
+1. Tik op de knop [!DNL Experience Manager] logo en ga naar **[!UICONTROL Tools > Operations > Web Console]**.
+1. Open de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** serviceconfiguratie.
 
    ![chlimage_1-304](assets/chlimage_1-304.png)
 

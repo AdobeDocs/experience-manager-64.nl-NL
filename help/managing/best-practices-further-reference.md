@@ -10,14 +10,18 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: d561bb0a-352f-4be2-95ed-32dd1e2b4019
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3741'
+source-wordcount: '3777'
 ht-degree: 0%
 
 ---
 
 # Checklist - Verdere referentie{#the-checklist-further-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Deze pagina bevat nadere gegevens voor de uitwerking en/of de aanvulling van de documenten en beginselen die onder de [Projecten beheren - Checklist voor aanbevolen procedures](/help/managing/best-practices.md).
 
@@ -361,7 +365,7 @@ Voordat u de gerelateerde metriek gaat bespreken, geeft u een snelle definitie v
    | Verzendcache | Servergeheugen van de webserver (hoofdgeheugen en vaste schijf). | Webserver (hoofdgeheugen en vaste schijf). Aantal en formaat van de pagina&#39;s in de cache. |
    | Uitvoercache | Servergeheugen van de AEM (hoofdgeheugen en vaste schijf). | Aantal en grootte van de pagina&#39;s in de uitvoercache, het aantal afhankelijkheden per pagina. Dit volume wordt verlaagd door de verzendercache. |
    | Webserver | De computermacht van de server van het Web. | Hoeveelheid verzoeken. Dit volume wordt verlaagd door caching. |
-   | Sjabloonmodel | De computermacht van de server van het Web. | Complexiteit van de sjablonen. |
+   | Sjabloon | De computermacht van de server van het Web. | Complexiteit van de sjablonen. |
    | Bewaarplaats | Prestaties van de opslagplaats. | Aantal pagina&#39;s dat vanuit de gegevensopslagruimte is geladen. |
 
 ### Overige cijfers {#other-metrics}

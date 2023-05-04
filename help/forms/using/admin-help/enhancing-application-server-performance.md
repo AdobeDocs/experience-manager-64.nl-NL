@@ -1,8 +1,8 @@
 ---
 title: Prestaties van toepassingsservers verbeteren
-seo-title: Prestaties van toepassingsservers verbeteren
+seo-title: Enhancing application server performance
 description: In dit document worden optionele instellingen beschreven die u kunt configureren om de prestaties van de toepassingsserver voor AEM formulieren te verbeteren.
-seo-description: In dit document worden optionele instellingen beschreven die u kunt configureren om de prestaties van de toepassingsserver voor AEM formulieren te verbeteren.
+seo-description: This document describes optional settings that you can configure to improve the performance of your AEM forms application server.
 uuid: 88d2f96a-3b59-410d-8160-20581d27acad
 contentOwner: admin
 content-type: reference
@@ -10,23 +10,26 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 88f692de-f88b-4459-97e9-73506bf87525
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1899'
 ht-degree: 0%
 
 ---
 
 # Prestaties van toepassingsservers verbeteren{#enhancing-application-server-performance}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 In deze inhoud worden optionele instellingen beschreven die u kunt configureren om de prestaties van de toepassingsserver voor AEM formulieren te verbeteren.
 
-## Gegevensbronnen van toepassingsserver {#configuring-application-server-data-sources} configureren
+## Gegevensbronnen van toepassingsservers configureren {#configuring-application-server-data-sources}
 
 AEM formulieren gebruiken de opslagplaats voor AEM formulieren als gegevensbron. De opslagplaats voor AEM formulieren slaat toepassingselementen op en bij uitvoering kunnen services elementen ophalen uit de opslagplaats als onderdeel van het voltooien van een geautomatiseerd bedrijfsproces.
 
-Toegang tot de gegevensbron kan significant zijn, afhankelijk van het aantal AEM formuliermodules dat u gebruikt en het aantal gelijktijdige gebruikers dat de toepassing opent. De toegang van de gegevensbron kan worden geoptimaliseerd gebruikend verbinding het pooling. *Verbinding* samenvoegen is een techniek die wordt gebruikt om de overhead van het maken van nieuwe databaseverbindingen te voorkomen telkens wanneer een toepassing of serverobject toegang tot de database vereist. Verbindingspooling wordt gewoonlijk gebruikt in web-based en ondernemingstoepassingen en wordt gewoonlijk behandeld door, maar niet beperkt tot, een toepassingsserver.
+Toegang tot de gegevensbron kan significant zijn, afhankelijk van het aantal AEM formuliermodules dat u gebruikt en het aantal gelijktijdige gebruikers dat de toepassing opent. De toegang van de gegevensbron kan worden geoptimaliseerd gebruikend verbinding het pooling. *Verbinding samenvoegen* Dit is een techniek die wordt gebruikt om de overhead van het maken van nieuwe databaseverbindingen te voorkomen telkens wanneer een toepassing of serverobject toegang tot de database vereist. Verbindingspooling wordt gewoonlijk gebruikt in web-based en ondernemingstoepassingen en wordt gewoonlijk behandeld door, maar niet beperkt tot, een toepassingsserver.
 
 Het is belangrijk om uw parameters van de verbindingspool behoorlijk te vormen zodat u nooit uit verbindingen loopt, die toepassingsprestaties kunnen veroorzaken om te verslechteren.
 
@@ -63,21 +66,21 @@ Wanneer de beheerder van de toepassingsserver de correcte montages van de verbin
 1. Klik op Opslaan en vervolgens op Wijzigingen activeren.
 1. Start WebLogic managed server opnieuw.
 
-### Verbindingspool-instellingen voor WebSphere voor DB2 {#configure-connection-pool-settings-for-websphere-for-db2} configureren
+### Verbindingspool-instellingen voor WebSphere voor DB2 configureren {#configure-connection-pool-settings-for-websphere-for-db2}
 
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers. Klik in het rechterdeelvenster op de gegevensbron die u hebt gemaakt: DB2 Universal JDBC Driver Provider of LiveCycle - db2 - IDP_DS.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van Verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in.
 1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
 
-### Verbindingspoolinstellingen voor WebSphere voor Oracle {#configure-connection-pool-settings-for-websphere-for-oracle} configureren
+### Verbindingspool-instellingen voor WebSphere voor Oracle configureren {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers. Klik in het rechterdeelvenster op de JDBC-gegevensbron voor het Oracle-stuurprogramma die u hebt gemaakt.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van Verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in.
 1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
 
-### Verbindingspoolinstellingen configureren voor WebSphere voor SqlServer {#configure-connection-pool-settings-for-websphere-for-sqlserver}
+### Verbindingspool-instellingen voor WebSphere voor SqlServer configureren {#configure-connection-pool-settings-for-websphere-for-sqlserver}
 
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers en klik in het rechterdeelvenster op de door de gebruiker gedefinieerde JDBC-gegevensbron voor stuurprogramma&#39;s die u hebt gemaakt.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
@@ -154,41 +157,41 @@ Als u rekening wilt houden met heapfragmentatie, mag de grootte van het inlinedo
 
 Deze sectie beschrijft montages specifiek voor een milieu van de Server van de Toepassing WebSphere.
 
-### Het maximale geheugen dat aan de JVM is toegewezen {#increasing-the-maximum-memory-allocated-to-the-jvm} vergroten
+### Het maximale geheugen dat aan de JVM is toegewezen verhogen {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
-Als u de Manager van de Configuratie in werking stelt of probeert om de code van de Onderneming te produceren JavaBeans (EJB) op te stellen door het nut *ejbdeploy* te gebruiken en een fout OutOfMemory komt voor, vergroot de hoeveelheid geheugen die aan JVM wordt toegewezen.
+Als u de Manager van de Configuratie in werking stelt of probeert om Onderneming JavaBeans (EJB) te produceren, stel code door het nut van de bevellijn te gebruiken op *ejbopstellen* en er een OutOfMemory-fout optreedt, vergroot de hoeveelheid geheugen die aan de JVM is toegewezen.
 
-1. Bewerk het ejbdistributiescript in de map *[appserver root]*/DeploymentTool/itp/:
+1. Bewerk het JBImplementatiescript in het dialoogvenster *[appserver-hoofdmap]*/DeploymentTool/itp/ directory:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux en UNIX) `ejbdeploy.sh`
 
-1. Zoek de parameter `-Xmx256M` en wijzig deze in een hogere waarde, zoals `-Xmx1024M`.
+1. Zoek de `-Xmx256M` en verander deze in een hogere waarde, zoals `-Xmx1024M`.
 1. Sla het bestand op.
-1. Stel `ejbdeploy` bevel in werking of herstelt gebruikend de Manager van de Configuratie.
+1. Voer de `ejbdeploy` bevel of herstelt gebruikend de Manager van de Configuratie.
 
-## De prestaties van Windows Server 2003 verbeteren met LDAP {#improving-windows-server-2003-performance-with-ldap}
+## Windows Server 2003-prestaties verbeteren met LDAP {#improving-windows-server-2003-performance-with-ldap}
 
 Deze inhoud beschrijft instellingen die specifiek zijn voor een Microsoft Windows Server 2003-besturingssysteemomgeving.
 
 Het gebruiken van verbinding het groeperen op de onderzoeksverbinding kan het aantal havens nodig met wel 50% verminderen. Dit komt omdat die verbinding altijd dezelfde referenties gebruikt voor een bepaald domein en de context en verwante objecten expliciet worden gesloten.
 
-### Uw Windows-server configureren voor samenvoeging van verbindingen {#configure-your-windows-server-for-connection-pooling}
+### Vorm uw Server van Vensters voor verbinding het poolen {#configure-your-windows-server-for-connection-pooling}
 
-1. Klik op Start > Uitvoeren om de registereditor te starten en typ `regedit` in het vak Openen en klik op OK.
-1. Naar de registersleutel `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+1. Klik op Start > Uitvoeren om de registereditor te starten en typ in het vak Openen `regedit` en klik op OK.
+1. Ga naar de registersleutel `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. In de juiste ruit van de registratieredacteur, vind de TcpTimedWaitDelay waardenaam. Als de naam niet wordt weergegeven, kiest u Bewerken > Nieuw > DWORD-waarde in de menubalk om de naam toe te voegen.
-1. Typ `TcpTimedWaitDelay` in het vak Naam
+1. Typ in het vak Naam `TcpTimedWaitDelay`
 
    >[!NOTE]
    >
-   >Als u geen het opvlammen curseur en `New Value #` binnen de doos ziet, klik binnen het juiste paneel met de rechtermuisknop aan, uitgezocht anders noemt en, in de doos van de Naam, type `TcpTimedWaitDelay`*.*
+   >Als er geen knipperende cursor wordt weergegeven en `New Value #` in het vak klikt u met de rechtermuisknop in het rechterdeelvenster, selecteert u Naam wijzigen en typt u in het vak Naam `TcpTimedWaitDelay`*.*
 
 1. Herhaal stap 4 voor de waardenamen MaxUserPort, MaxHashTableSize en MaxFreeTcbs.
-1. Dubbelklik in het rechterdeelvenster om de TcpTimedWaitDelay-waarde in te stellen. Selecteer Decimaal onder Basis en typ `30` in het vak Waarde.
-1. Dubbelklik in het rechterdeelvenster om de waarde MaxUserPort in te stellen. Selecteer Decimaal onder Basis en typ `65534` in het vak Waarde.
-1. Dubbelklik in het rechterdeelvenster om de waarde MaxHashTableSize in te stellen. Selecteer Decimaal onder Basis en typ `65536` in het vak Waarde.
-1. Dubbelklik in het rechterdeelvenster om de waarde MaxFreeTcbs in te stellen. Selecteer Decimaal onder Basis en typ `16000` in het vak Waarde.
+1. Dubbelklik in het rechterdeelvenster om de TcpTimedWaitDelay-waarde in te stellen. Selecteer Decimaal onder Basis en typ in het vak Waarde `30`.
+1. Dubbelklik in het rechterdeelvenster om de waarde MaxUserPort in te stellen. Selecteer Decimaal onder Basis en typ in het vak Waarde `65534`.
+1. Dubbelklik in het rechterdeelvenster om de waarde MaxHashTableSize in te stellen. Selecteer Decimaal onder Basis en typ in het vak Waarde `65536`.
+1. Dubbelklik in het rechterdeelvenster om de waarde MaxFreeTcbs in te stellen. Selecteer Decimaal onder Basis en typ in het vak Waarde `16000`.
 
 >[!NOTE]
 >

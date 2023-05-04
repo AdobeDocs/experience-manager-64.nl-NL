@@ -1,8 +1,8 @@
 ---
 title: Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP)
-seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP)
-description: Gebruik de service Acrobat Reader DC Extensions om gebruiksrechten toe te passen op een PDF-document, gebruiksrechten te verwijderen uit PDF-documenten en informatie op te halen over de referentie die wordt gebruikt om gebruiksrechten toe te passen op een PDF-document met gebruiksrechten genaamd LoanUsageRights.pdf.
-seo-description: Gebruik de service Acrobat Reader DC Extensions om gebruiksrechten toe te passen op een PDF-document, gebruiksrechten te verwijderen uit PDF-documenten en informatie op te halen over de referentie die wordt gebruikt om gebruiksrechten toe te passen op een PDF-document met gebruiksrechten genaamd LoanUsageRights.pdf.
+seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)
+description: Gebruik de service Acrobat Reader DC Extensions om gebruiksrechten toe te passen op een PDF-document, gebruiksrechten te verwijderen uit PDF-documenten en informatie op te halen over de referentie die wordt gebruikt om gebruiksrechten toe te passen op een PDF-document met de naam LoanUsageRights.pdf dat geschikt is voor rechten.
+seo-description: Use the  Acrobat Reader DC Extensions service to apply usage rights to a PDF document, remove usage rights from PDF documents, and retrieve  information about the credential that is used to apply usage-rights to a rights-enabled PDF document named LoanUsageRights.pdf.
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,18 @@ topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 role: Developer
 exl-id: e95d8be5-04a3-4158-be5a-de1af08ab640
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service Acrobat Reader DC Extensions.
 
@@ -36,7 +39,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-document met de naam *Loan.pdf*. Het PDF-document waarvoor rechten zijn ingeschakeld, wordt opgeslagen als een PDF-bestand met de naam *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn` en `enabledDigitalSignatures`. (Zie [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
+In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-document met de naam *Lening.pdf*. Het PDF-document waarvoor rechten zijn ingeschakeld, wordt opgeslagen als een PDF-bestand met de naam *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn`, en `enabledDigitalSignatures`. (Zie [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
 
 ```as3
  /* 
@@ -148,7 +151,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-d
 
 ## Snel starten (SOAP-modus): Gebruiksrechten verwijderen uit een PDF-document met de Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF-document met de naam *LoanUsageRights.pdf*. (Zie [Gebruiksrechten verwijderen uit PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
+In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF-document waarvoor rechten zijn ingeschakeld met de naam *LoanUsageRights.pdf*. (Zie [Gebruiksrechten verwijderen uit PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
 
 ```as3
  /* 

@@ -1,8 +1,8 @@
 ---
 title: Paginacontent bewerken
-seo-title: Paginacontent bewerken
+seo-title: Editing Page Content
 description: Inhoud wordt toegevoegd met componenten die naar de pagina kunnen worden gesleept. Deze kunnen vervolgens worden bewerkt, verplaatst of verwijderd.
-seo-description: Inhoud wordt toegevoegd met componenten die naar de pagina kunnen worden gesleept. Deze kunnen vervolgens worden bewerkt, verplaatst of verwijderd.
+seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: 0b34fb45-286a-4acb-b5d1-efc3d0e4ab70
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 exl-id: 2d0f11ac-f24b-431e-9076-3e6099eab4ac
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 1%
+source-wordcount: '1791'
+ht-degree: 0%
 
 ---
 
 # Paginacontent bewerken{#editing-page-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Nadat u de pagina hebt gemaakt (nieuw of als onderdeel van een opstart of live kopie), kunt u de inhoud bewerken en de gewenste updates uitvoeren.
 
@@ -26,7 +29,7 @@ Inhoud wordt toegevoegd met onderdelen (die geschikt zijn voor het inhoudstype) 
 
 >[!NOTE]
 >
->Uw account heeft de [juiste toegangsrechten](/help/sites-administering/security.md) en [machtigingen](/help/sites-administering/security.md#permissions) nodig om pagina&#39;s te kunnen bewerken. bijvoorbeeld het toevoegen, bewerken of verwijderen van componenten, het annoteren en ontgrendelen.
+>Uw account heeft [passende toegangsrechten](/help/sites-administering/security.md) en [machtigingen](/help/sites-administering/security.md#permissions) pagina&#39;s bewerken; bijvoorbeeld het toevoegen, bewerken of verwijderen van componenten, het annoteren en ontgrendelen.
 >
 >Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder contacteert.
 
@@ -54,9 +57,9 @@ Deze bieden toegang tot een brede selectie van functies; met inbegrip van:
 * [verwijzingen tonen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
 * [toegang tot het auditlogboek](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
 * [schakelmodi](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
-* [maken](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version),  [](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) herstellen en  [](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) vergelijken van versies
+* [maken](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [herstellen](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) en [vergelijking](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versies
 
-* [publiceren](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page),  [](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) publicatie van een pagina ongedaan maken
+* [publiceren](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [unpublishing](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) een pagina
 
 * [bewerken, pagina-eigenschappen](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
@@ -64,9 +67,9 @@ Deze bieden toegang tot een brede selectie van functies; met inbegrip van:
 
 * [clientcontext](/help/sites-administering/client-context.md)
 
-## Een component {#inserting-a-component} invoegen
+## Een component invoegen {#inserting-a-component}
 
-### Een component {#inserting-a-component-1} invoegen
+### Een component invoegen {#inserting-a-component-1}
 
 Nadat u de pagina hebt geopend, kunt u beginnen met het toevoegen van inhoud. U doet dit door componenten (ook wel alinea&#39;s genoemd) toe te voegen.
 
@@ -74,21 +77,21 @@ Een nieuwe component invoegen:
 
 1. Er zijn verschillende methoden om het type alinea te selecteren dat u wilt invoegen:
 
-   * Dubbelklik op het gebied met het label **Componenten of elementen hier slepen..** - De werkbalk **Nieuwe component invoegen** wordt geopend. Selecteer een component en klik **OK**.
+   * Dubbelklik op het gebied met het label **Componenten of elementen hierheen slepen...** - de **Nieuwe component invoegen** wordt geopend. Selecteer een component en klik op **OK**.
    * Sleep een component van de zwevende werkbalk (sidekick genoemd) om een nieuwe alinea in te voegen.
-   * Klik met de rechtermuisknop op een bestaande alinea en selecteer **Nieuw...** - de werkbalk Nieuwe component invoegen wordt geopend. Selecteer een component en klik **OK**.
+   * Klik met de rechtermuisknop op een bestaande alinea en selecteer **Nieuw...** - De werkbalk Nieuwe component invoegen wordt geopend. Selecteer een component en klik op **OK**.
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. In zowel de hulpwerkbalk als de werkbalk **Nieuwe component invoegen** ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden opgesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enz.) die naar behoefte kunnen worden uitgebreid.
+1. In zowel de sidekick als de **Nieuwe component invoegen** op de werkbalk ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden opgesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enz.) die naar behoefte kunnen worden uitgebreid.
 
-   Afhankelijk van uw productieomgeving kunnen deze opties afwijken. Zie [Standaardcomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) voor volledige informatie over componenten.
+   Afhankelijk van uw productieomgeving kunnen deze opties afwijken. Voor volledige informatie over componenten raadpleegt u [Standaardcomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
 1. Voeg de gewenste component op de pagina in. Dubbelklik vervolgens op de alinea en er wordt een venster geopend waarin u de alinea kunt configureren en inhoud kunt toevoegen.
 
 ### Een component invoegen met de Inhoudszoeker {#inserting-a-component-using-the-content-finder}
 
-U kunt ook een nieuwe component aan de pagina toevoegen door een element te slepen van de [Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Hiermee wordt automatisch een nieuwe component van het juiste type gemaakt die het element bevat.
+U kunt ook een nieuwe component aan de pagina toevoegen door een element van de [Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Hiermee wordt automatisch een nieuwe component van het juiste type gemaakt die het element bevat.
 
 Dit is geldig voor de volgende elementtypen (sommige zijn afhankelijk van het pagina-/alineasysteem):
 
@@ -101,35 +104,35 @@ Dit is geldig voor de volgende elementtypen (sommige zijn afhankelijk van het pa
 
 >[!NOTE]
 >
->Dit gedrag kan voor uw installatie worden gevormd. Zie [Een alineasysteem zo configureren dat door het slepen van een element een componentinstantie](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) wordt gemaakt voor meer informatie.
+>Dit gedrag kan voor uw installatie worden gevormd. Zie [Een alineasysteem configureren, zodat een componentinstantie wordt gemaakt wanneer u een element sleept](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) voor nadere bijzonderheden.
 
 Een component maken door een van de bovenstaande elementtypen te slepen:
 
-1. Zorg ervoor dat uw pagina [**Edit** wijze](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes) is.
+1. Zorg ervoor dat de pagina zich bevindt in [**Bewerken** mode](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Open de [Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Sleep het vereiste element naar de gewenste positie. De [tijdelijke aanduiding voor componenten](#componentplaceholder) geeft aan waar de component wordt geplaatst.
+1. Sleep het vereiste element naar de gewenste positie. De [tijdelijke aanduiding voor onderdeel](#componentplaceholder) Hiermee kunt u zien waar de component wordt geplaatst.
 
    Een component die geschikt is voor het type element, wordt op de vereiste locatie gemaakt. De component bevat het geselecteerde element.
 
-1. [De component indien nodig ](#editmovecopypastedelete) bewerken.
+1. [Bewerken](#editmovecopypastedelete) de component, indien vereist.
 
 ## Een component bewerken (inhoud en eigenschappen) {#editing-a-component-content-and-properties}
 
 Voer een van de volgende handelingen uit om een bestaande alinea te bewerken:
 
-* **Dubbelklik** op de alinea om deze te openen. U ziet hetzelfde venster als wanneer u de alinea met de bestaande inhoud hebt gemaakt. Breng de gewenste wijzigingen aan en klik op **OK**.
+* **Dubbelklikken** de alinea die u wilt openen. U ziet hetzelfde venster als wanneer u de alinea met de bestaande inhoud hebt gemaakt. Breng uw veranderingen aan en klik **OK**.
 
-* **Klik met de** rechtermuisknop op de alinea en klik op  **Bewerken**.
+* **Klikken met rechtermuisknop** de alinea en klik op **Bewerken**.
 
-* **Dubbelklik** op de alinea (langzaam dubbelklikken) om de bewerkingsmodus op de plaats in te schakelen. U kunt de tekst op de pagina rechtstreeks bewerken in plaats van in een dialoogvenster. In deze modus krijgt u een werkbalk boven aan de pagina. Breng gewoon uw wijzigingen aan en deze worden automatisch opgeslagen.
+* **Klikken** twee keer op de alinea (een langzame dubbelklik) om naar de bewerkingsmodus op de plaats te gaan. U kunt de tekst op de pagina rechtstreeks bewerken in plaats van in een dialoogvenster. In deze modus krijgt u een werkbalk boven aan de pagina. Breng gewoon uw wijzigingen aan en deze worden automatisch opgeslagen.
 
-## Een component {#moving-a-component} verplaatsen
+## Een component verplaatsen {#moving-a-component}
 
 Een alinea verplaatsen:
 
 >[!NOTE]
 >
->U kunt ook [Knippen en Plakken](#cut-copy-paste-a-component) gebruiken om een component te verplaatsen.
+>U kunt ook [Knippen en plakken](#cut-copy-paste-a-component) om een component te verplaatsen.
 
 1. Selecteer de alinea die u wilt verplaatsen:
 
@@ -140,31 +143,31 @@ Een alinea verplaatsen:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
-## Een component {#deleting-a-component} verwijderen
+## Een component verwijderen {#deleting-a-component}
 
 Een alinea verwijderen:
 
-1. Selecteer de alinea en **klik met de rechtermuisknop**:
+1. Selecteer de alinea en **rechtsklikken**:
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Selecteer **Delete** van het menu. AEM WCM vraagt om bevestiging dat u de paragraaf wilt schrappen aangezien deze actie niet ongedaan kan worden gemaakt.
-1. Klik **OK**.
+1. Selecteren **Verwijderen** in het menu. AEM WCM vraagt om bevestiging dat u de paragraaf wilt schrappen aangezien deze actie niet ongedaan kan worden gemaakt.
+1. Klikken **OK**.
 
 >[!NOTE]
 >
->Als u de [Gebruikerseigenschappen hebt ingesteld om de algemene bewerkingswerkbalk weer te geven](/help/sites-classic-ui-authoring/author-env-user-props.md), kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de knoppen **Kopiëren**, **Knippen**, **Plakken**, **Verwijderen**.\
->Verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zijn ook beschikbaar.
+>Als u uw [Gebruikerseigenschappen om de algemene bewerkingswerkbalk weer te geven](/help/sites-classic-ui-authoring/author-env-user-props.md) u kunt ook bepaalde handelingen op de alinea&#39;s uitvoeren met de opdracht **Kopiëren**, **Knippen**, **Plakken**, **Verwijderen** beschikbare knoppen.\
+>Diversen [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zijn ook beschikbaar.
 
 ## Een component knippen/kopiëren/plakken {#cut-copy-paste-a-component}
 
-Zoals wanneer [Een component verwijderen](#deleting-a-component) kunt u het contextmenu gebruiken om een component te kopiëren, te knippen en/of te plakken
+Als wanneer [Een component verwijderen](#deleting-a-component) u kunt het contextmenu gebruiken om een component te kopiëren, te knippen en/of te plakken
 
 >[!NOTE]
 >
->Als u de [Gebruikerseigenschappen hebt ingesteld om de algemene bewerkingswerkbalk weer te geven](/help/sites-classic-ui-authoring/author-env-user-props.md), kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de knoppen **Kopiëren**, **Knippen**, **Plakken**, **Verwijderen**.
+>Als u uw [Gebruikerseigenschappen om de algemene bewerkingswerkbalk weer te geven](/help/sites-classic-ui-authoring/author-env-user-props.md) u kunt ook bepaalde handelingen op de alinea&#39;s uitvoeren met de opdracht **Kopiëren**, **Knippen**, **Plakken**, **Verwijderen** beschikbare knoppen.
 >
->Verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zijn ook beschikbaar.
+>Diversen [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zijn ook beschikbaar.
 
 >[!NOTE]
 >
@@ -174,9 +177,9 @@ Zoals wanneer [Een component verwijderen](#deleting-a-component) kunt u het cont
 
 Overerfde componenten kunnen het product van diverse scenario&#39;s zijn, die omvatten:
 
-* [beheer](/help/sites-administering/msm.md) van meerdere locaties; ook in combinatie met  [steigers](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Beheer van meerdere sites](/help/sites-administering/msm.md); ook in combinatie met [steigers](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
-* [Hiermee wordt gestart](/help/sites-classic-ui-authoring/classic-launches.md)  (op basis van livecopy).
+* [Starten](/help/sites-classic-ui-authoring/classic-launches.md) (op basis van livecopy).
 * specifieke onderdelen; bijvoorbeeld het Overgenomen alineasysteem in Geometrixx.
 
 U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk van de component, kan dit beschikbaar zijn bij:
@@ -199,11 +202,11 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-## Annotaties {#adding-annotations} toevoegen
+## Annotaties toevoegen {#adding-annotations}
 
-[Andere ](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) auteurs krijgen nu de mogelijkheid om feedback te geven over de inhoud. Dit wordt vaak gebruikt voor evaluatie- en validatiedoeleinden.
+[Annotaties](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) andere auteurs toestaan feedback over uw inhoud te geven. Dit wordt vaak gebruikt voor evaluatie- en validatiedoeleinden.
 
-## Pagina&#39;s voorvertonen{#previewing-pages}
+## Pagina&#39;s voorvertonen {#previewing-pages}
 
 Er zijn twee pictogrammen in de onderrand van het hulpstuk die belangrijk zijn voor het voorvertonen van pagina&#39;s:
 
@@ -221,11 +224,11 @@ Er zijn twee pictogrammen in de onderrand van het hulpstuk die belangrijk zijn v
 
    ![](do-not-localize/chlimage_1-10.png)
 
-## {#find-replace} zoeken en vervangen
+## Zoeken en vervangen {#find-replace}
 
-Voor grootschaliger bewerkingen van dezelfde zin kunt u met de menuoptie **[Zoeken en vervangen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** in een sectie van de website naar meerdere instanties van een tekenreeks zoeken en deze vervangen.
+Voor grootschaliger bewerkingen van dezelfde zin als a **[Zoeken en vervangen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** kunt u in een sectie van de website naar meerdere instanties van een tekenreeks zoeken en deze vervangen.
 
-## Een pagina {#locking-a-page} vergrendelen
+## Een pagina vergrendelen {#locking-a-page}
 
 AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
 
@@ -235,25 +238,25 @@ AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen.
 
 Een pagina vergrendelen:
 
-1. Selecteer op het tabblad **Websites** de pagina die u wilt vergrendelen.
+1. In de **Websites** selecteert u de pagina die u wilt vergrendelen.
 1. Dubbelklik op de pagina om deze te openen voor bewerking.
-1. Selecteer **Pagina vergrendelen** op het tabblad **Pagina** van dekick:
+1. In de **Pagina** tab of sidekick, selecteer **Pagina vergrendelen**:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Daarnaast wordt in het rechterdeelvenster van de **Websites**-console AEM WCM de pagina als vergrendeld weergegeven en wordt aangegeven welke gebruiker de pagina heeft vergrendeld.
+   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Bovendien in de juiste ruit van **Websites** -console, AEM WCM de pagina als vergrendeld weergeeft en aangeeft welke gebruiker de pagina heeft vergrendeld.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
-## Een pagina {#unlocking-a-page} ontgrendelen
+## Een pagina ontgrendelen {#unlocking-a-page}
 
 Een pagina ontgrendelen:
 
-1. Selecteer op het tabblad **Websites** de pagina die u wilt ontgrendelen.
+1. In de **Websites** selecteert u de pagina die u wilt ontgrendelen.
 1. Dubbelklik op de pagina om deze te openen.
-1. Selecteer **Pagina ontgrendelen** op het tabblad **Pagina** van secundair bureaublad.
+1. In de **Pagina** tab of sidekick, selecteer **Pagina ontgrendelen**.
 
-## Paginabewerkingen {#undoing-and-redoing-page-edits} ongedaan maken en opnieuw uitvoeren
+## Paginabewerkingen ongedaan maken en opnieuw uitvoeren {#undoing-and-redoing-page-edits}
 
 Gebruik de volgende sneltoetsen terwijl het inhoudsframe van de pagina de focus heeft:
 
@@ -264,13 +267,13 @@ Wanneer u het verwijderen, optellen of verplaatsen van een of meer alinea&#39;s 
 
 >[!NOTE]
 >
->Zie [Paginabewerkingen ongedaan maken en opnieuw uitvoeren - De theorie](#undoing-and-redoing-page-edits-the-theory) voor de volledige details van wat mogelijk is bij het ongedaan maken en opnieuw uitvoeren van paginabewerkingen.
+>Zie [Paginabewerkingen ongedaan maken en opnieuw uitvoeren - De theorie](#undoing-and-redoing-page-edits-the-theory) voor de volledige details van wat mogelijk is wanneer het ongedaan maken van en het opnieuw doen van paginaedetingen.
 
 ## Paginabewerkingen ongedaan maken en opnieuw uitvoeren - De theorie {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
->Uw systeembeheerder kan [diverse aspecten van Undo/Opnieuw eigenschappen ](/help/sites-administering/config-undo.md) volgens de vereisten voor uw instantie vormen.
+>Uw systeembeheerder kan [Verschillende aspecten van de functies Ongedaan maken/Opnieuw configureren](/help/sites-administering/config-undo.md) volgens de vereisten voor uw exemplaar.
 
 AEM slaat een geschiedenis op van acties die u uitvoert en de opeenvolging waarin u hen uitvoerde. U maakt dus verschillende handelingen ongedaan in de volgorde waarin u deze hebt uitgevoerd. Vervolgens kunt u de opdracht Opnieuw uitvoeren gebruiken om een of meer handelingen opnieuw toe te passen.
 
@@ -284,10 +287,8 @@ Het gedrag van de opdrachten Ongedaan maken en Opnieuw is vergelijkbaar met dat 
 >
 >* Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u de bewerking ongedaan hebt gemaakt.
 >* U kunt maximaal 20 bewerkhandelingen ongedaan maken (standaardinstelling).
->* ook [Sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) gebruiken voor ongedaan maken en opnieuw uitvoeren.
-
+>* ook gebruiken [Sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
 >
-
 
 
 U kunt de volgende typen paginawijzigingen ongedaan maken en opnieuw uitvoeren:

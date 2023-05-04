@@ -2,7 +2,7 @@
 title: SAP Commerce Cloud
 seo-title: SAP Commerce Cloud
 description: Leer hoe te om eCommerce met SAP Commerce Cloud op te stellen.
-seo-description: Leer hoe te om eCommerce met SAP Commerce Cloud op te stellen.
+seo-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,21 +12,24 @@ discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 feature: Commerce Integration Framework
 exl-id: 71d0a249-8ad1-416e-ad78-d651b413e5c3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
 >Deze pagina bevat koppelingen naar de website van de hybris. Voor bepaalde pagina&#39;s hebt u een account nodig om u aan te melden.
 
-## Elektronische handel implementeren met SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
+## eCommerce implementeren met SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -34,32 +37,30 @@ ht-degree: 0%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-Door de [noodzakelijke eCommerce-pakketten](#packages-needed-for-ecommerce-with-hybris) te implementeren, wordt de volledige functionaliteit van het eCommerce-kader geboden, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien van een hybris-implementatie (inclusief een demonstratiecatalogus)
+De [noodzakelijke eCommerce-pakketten](#packages-needed-for-ecommerce-with-hybris) zal de volledige functionaliteit van het eCommerce-kader bieden, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien in een hybris-implementatie (inclusief een demonstratiecatalogus)
 
-Dit is beschikbaar onder de Engelse vertakking ( `/content/geometrixx-outdoors/en_US`) van de site Geometrixx Outdoors:
+Dit is beschikbaar onder de Engelse (Amerikaanse) tak ( `/content/geometrixx-outdoors/en_US`) van de site Geometrixx Outdoors:
 
-* [Productinformatie](#productinformationwithcolorvariants)  (eventueel met kleurvarianten)
+* [Productinformatie](#productinformationwithcolorvariants) (eventueel met kleurvarianten)
 
 * [Overzichten van winkelwagentinhoud](#shoppingcartcontentoverview)
-* [Aanmelden bij ](#customersignup) klant en aanmelden bij  [klant](#customersignin)
+* [Aanmelden bij klant](#customersignup) en [Aanmelden bij klant](#customersignin)
 
 * [Toegang tot de hybris Management Console](#accesstothehybrismanagementconsole)
 
-### Technische vereisten - hybris Server {#technical-requirements-hybris-server}
+### Technische vereisten - hybrusserver {#technical-requirements-hybris-server}
 
-De hybris uitbreiding van het eCommerce Integration Framework is bijgewerkt om Hybris 5 (als gebrek) te steunen, terwijl het handhaven van achterwaartse verenigbaarheid met [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
+De hybris-uitbreiding van het eCommerce Integration Framework is bijgewerkt om Hybris 5 (als standaard) te ondersteunen, terwijl achterwaartse compatibiliteit met [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
 >* Ondersteunt maximaal hybris 6.4 met OCC versie 2.
->* U hebt Java 7 nodig om de [hybris 5-server uit te voeren.](https://www.hybris.com/en/architecture-technology)
->* De hybris add-on, de [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), wordt niet ondersteund door de AEM extensie.
-
+>* U hebt Java 7 nodig om de [hybris 5-server.](https://www.hybris.com/en/architecture-technology)
+>* De hybris-invoegtoepassing, de [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), wordt niet ondersteund door de AEM extensie.
 >
 
 
-
-### Pakketten nodig voor e-handel met hybris {#packages-needed-for-ecommerce-with-hybris}
+### Pakketten die nodig zijn voor e-handel met hybris {#packages-needed-for-ecommerce-with-hybris}
 
 Voor de installatie van eCommerce-functionaliteit hebt u het volgende nodig:
 
@@ -83,22 +84,22 @@ Voor de installatie van eCommerce-functionaliteit hebt u het volgende nodig:
 
 Voor het installeren van een volledige configuratie (met de demonstratiecatalogus, Geometrixx Outdoors) zijn de basisstappen:
 
-1. [AEM](/help/sites-deploying/deploy.md) installeren.
+1. [AEM installeren](/help/sites-deploying/deploy.md).
 1. Het Geometrixx-all-pakket installeren
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Installeer de demonstratie-inhoudpakketten met behulp van [pakketbeheer](/help/sites-administering/package-manager.md):
+1. Installeer de demonstratieinhoudpakketten met de [pakketbeheer](/help/sites-administering/package-manager.md):
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
 
-1. [Download en maak uw hybris Server](#download-and-build-your-hybris-server).
+1. [Uw hybrusserver downloaden en bouwen](#download-and-build-your-hybris-server).
 1. Construeer uw catalogus in uw eCommerce-engine:
 
-   1. [Stel de Geometrixx Outdoorwinkel](#setup-the-geometrixx-outdoors-store) in.
+   1. [De buitenwinkel van de Geometrixx instellen](#setup-the-geometrixx-outdoors-store).
 
-1. [](/help/sites-authoring/qg-page-authoring.md) Geef aanvullende pagina&#39;s op die u in AEM nodig hebt.
+1. [Auteur](/help/sites-authoring/qg-page-authoring.md) aanvullende pagina&#39;s die u nodig hebt in AEM.
 
 >[!CAUTION]
 >
@@ -106,9 +107,9 @@ Voor het installeren van een volledige configuratie (met de demonstratiecatalogu
 
 >[!NOTE]
 >
->Voor ontwikkelaars [API documentatie](/help/sites-developing/ecommerce.md#api-documentation) is ook beschikbaar voor download.
+>Voor ontwikkelaars [API-documentatie](/help/sites-developing/ecommerce.md#api-documentation) kan ook worden gedownload.
 
-### Uw hybride server {#download-and-build-your-hybris-server} downloaden en samenstellen
+### Uw hybrisserver downloaden en samenstellen {#download-and-build-your-hybris-server}
 
 De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het zal ook de aanvankelijke configuraties die voor de verbindingen tussen hybris en cq worden vereist maken. De extensie kan dan worden gebruikt met de standaardinstellingen.
 
@@ -118,15 +119,15 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
 
 >[!NOTE]
 >
->Om dit te voltooien, zult u [Groovy](https://groovy-lang.org/) op uw systeem geïnstalleerd nodig hebben.
+>Om dit te voltooien, zult u nodig hebben [Groovy](https://groovy-lang.org/) op uw systeem geïnstalleerd.
 
-1. Download de **hybris Commerce Suite** distributie van de hybris downloadsite.
+1. Download de **hybris Commerce Suite** distributie via de hybris - downloadsite .
 
    >[!CAUTION]
    >
    >U hebt een account (van hybris) nodig om dit te kunnen openen.
 
-1. Pak het distributiebestand uit op de gewenste locatie (wordt &lt;hybris-root-directory> genoemd).
+1. Pak het distributiebestand uit op de gewenste locatie (doorverwijzen naar &lt;hybris-root-directory>).
 1. Voer de volgende handelingen uit vanaf de opdrachtregel:
 
    ```shell
@@ -142,7 +143,7 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
    >
    >`ant clean all`
    >
-   >Druk indien nodig op `Return`.
+   >Druk `Return` indien vereist.
 
 1. Download de volgende bestanden naar de hoofdmap van de geëxtraheerde hybrisdistributie,
 
@@ -151,7 +152,7 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
    ```
 
 
-   [Bestand ophalen](assets/setup.groovy)
+[Bestand ophalen](assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -159,7 +160,7 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
 
    5.6.0 en hoger
 
-   [Bestand ophalen](assets/setup-1.groovy)
+[Bestand ophalen](assets/setup-1.groovy)
 
 1. Voer vanaf de opdrachtregel de volgende handelingen uit:
 
@@ -178,19 +179,19 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
    >
    >Afhankelijk van uw systeem kunnen verschillende van deze stappen enkele minuten duren.
 
-1. Navigeer in uw browser naar de **hybris-beheerconsole** op:
+1. Navigeer in uw browser naar de **hybris-beheerconsole** om:
 
    [http://localhost:9002](http://localhost:9002)
 
-1. Klik **Initialiseren** en bevestig vervolgens de initialisatiehandeling (aangezien bestaande gegevens worden verwijderd).
+1. Klikken **Initialiseren** en bevestig vervolgens de initialisatieactie (aangezien bestaande gegevens worden verwijderd).
 
-   De voortgang wordt weergegeven op de console, met `FINISHED` als aanduiding voor voltooiing.
+   De voortgang wordt weergegeven op de console, met `FINISHED` afwerking aangeven.
 
    >[!NOTE]
    >
    >Afhankelijk van uw systeem kan het enkele minuten duren voordat de bewerking is voltooid.
 
-### De Geometrixx Outdoors opslaan {#setup-the-geometrixx-outdoors-store} instellen
+### De Geometrixx Outdoors Store instellen {#setup-the-geometrixx-outdoors-store}
 
 Deze procedure zal de demonstratieopslag - Geometrixx Online uploaden en vormen.
 
@@ -201,45 +202,45 @@ Deze procedure zal de demonstratieopslag - Geometrixx Online uploaden en vormen.
    sh hybrisserver.sh
    ```
 
-1. Navigeer in uw browser naar de **hybris management console** op:
+1. Navigeer in uw browser naar de **hybrusbeheerconsole** om:
 
    [http://localhost:9002/hmc/hybris](http://localhost:9002/hmc/hybris)
 
-1. Van de zijbalknavigatie, breid **System** en **Tools** uit. Selecteer vervolgens **Import** om de **Wizard te openen: Het venster CSV-import**.
-1. In **Configuration** tabel, **Upload** het volgende **Import file**:
+1. Van de sidebar navigatie, breid uit **Systeem** en **Gereedschappen**. Selecteer vervolgens **Importeren** om de **Wizard: CSV-import** venster.
+1. In de **Configuratie** tab, **Uploaden** het volgende **Bestand importeren**:
 
-   [Bestand ophalen](assets/geometrixx-outdoors-export.csv)
+[Bestand ophalen](assets/geometrixx-outdoors-export.csv)
 
-1. Stel de **Landinstelling** in op:
+1. Stel de **Landinstelling** tot:
 
    `en_US - English (United States)`
 
-1. Open het tabblad **Bronnen**.
-1. **** Uploadt de volgende  **media-Zip**:
+1. Open de **Bronnen** tab.
+1. **Uploaden** het volgende **Media-Zip**:
 
-   [Bestand ophalen](assets/geometrixx-outdoors-images.zip)
+[Bestand ophalen](assets/geometrixx-outdoors-images.zip)
 
-1. Klik **Start** om de opgegeven bestanden te importeren. Op het tabblad **Resultaat** worden alle logbestandvermeldingen weergegeven.
+1. Klikken **Start** om de opgegeven bestanden te importeren. De **Resultaat** worden alle logbestandvermeldingen weergegeven.
 
-1. Klik **Done** om het importvenster te sluiten.
+1. Klikken **Gereed** om het importvenster te sluiten.
 
-1. Selecteer **Systeem** in het zijpaneel, vervolgens **Gereedschappen** en **Importeren**.
+1. Selecteer in het zijpaneel de optie **Systeem** vervolgens **Gereedschappen** vervolgens **Importeren**.
 
-1. **** Uploadt het volgende  **importbestand**:
+1. **Uploaden** het volgende **Bestand importeren**:
 
-   [Bestand ophalen](assets/base-store.csv)
+[Bestand ophalen](assets/base-store.csv)
 
    Gebruik voor hybris 5.7 het volgende:
 
-   [Bestand ophalen](assets/base-store-5_7.csv)
+[Bestand ophalen](assets/base-store-5_7.csv)
 
-1. Stel de **Landinstelling** in op:
+1. Stel de **Landinstelling** tot:
 
    `en_US - English (United States)`
 
-1. Klik **Start** om de opgegeven bestanden te importeren. Op het tabblad **Resultaat** worden alle logbestandvermeldingen weergegeven.
+1. Klikken **Start** om de opgegeven bestanden te importeren. De **Resultaat** worden alle logbestandvermeldingen weergegeven.
 
-1. Klik **Done** om het importvenster te sluiten.
+1. Klikken **Gereed** om het importvenster te sluiten.
 
 1. U kunt nu de cockpit met producten gebruiken om de geïmporteerde catalogi en producten weer te geven:
 

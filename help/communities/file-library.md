@@ -1,8 +1,8 @@
 ---
 title: Functie bestandsbibliotheek
-seo-title: Functie bestandsbibliotheek
+seo-title: File Library Feature
 description: Met de functie Bestandsbibliotheek kunnen aangemelde sitebezoekers bestanden uploaden, beheren en downloaden
-seo-description: Met de functie Bestandsbibliotheek kunnen aangemelde sitebezoekers bestanden uploaden, beheren en downloaden
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: 7da94703-8334-4c02-ba2a-55b5cde22e6c
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,15 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
 exl-id: c72b246d-442e-4841-810d-1045e83f60f9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # Functie bestandsbibliotheek {#file-library-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -27,31 +30,31 @@ De functie voor bestandsbibliotheek biedt een plaats voor ingetekende sitebezoek
 In deze sectie van de documentatie wordt beschreven
 
 * De functie voor de bestandsbibliotheek toevoegen aan een AEM site
-* Configuratie-instellingen voor de `File Library`-component
+* De montages van de configuratie voor de `File Library` component
 
 ## Een bestandsbibliotheek toevoegen aan een pagina {#adding-a-file-library-to-a-page}
 
-Als u een `File Library`-component wilt toevoegen aan een pagina in de ontwerpmodus, zoekt u de component
+Als u een `File Library` naar een pagina in de modus Schrijver, zoek de component
 
 * `Communities / File Library`
 
 en sleep het naar de juiste plaats op een pagina.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](essentials-file-library.md#essentials-for-client-side) worden opgenomen, wordt de `File Library`-component op deze manier weergegeven:
+Wanneer de [vereiste clientbibliotheken](essentials-file-library.md#essentials-for-client-side) worden opgenomen, is dit hoe `File Library` wordt weergegeven:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
-## Bestandsbibliotheek {#configuring-file-library} configureren
+## Bestandsbibliotheek configureren {#configuring-file-library}
 
-Selecteer de geplaatste `File Library` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `File Library` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
 ### Tabblad Opmerkingen {#comments-tab}
 
-Geef op het tabblad **[!UICONTROL Comments]** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+Onder de **[!UICONTROL Comments]** , geeft u op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
 
 * **[!UICONTROL Allow Comments on Files]**
 Als deze optie is ingeschakeld, kunt u opmerkingen op geüploade bestanden toestaan. De optie Standaard is uitgeschakeld.
@@ -88,14 +91,14 @@ Als u Tags toestaan inschakelt, beperkt deze instelling het aantal voorgestelde 
 Als deze optie is ingeschakeld, wordt de mogelijkheid om voor een bestand te stemmen ingeschakeld. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Following]**
-Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen, waarmee leden op de  [](notifications.md) hoogte kunnen worden gesteld van nieuwe berichten. De optie Standaard is uitgeschakeld.
+Indien ingeschakeld, neemt u de volgende functie voor blogartikelen op, waardoor leden kunnen worden [aangemeld](notifications.md) van nieuwe posten. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Threaded Replies]**
 Als deze optie is ingeschakeld, kunt u reacties op geposte opmerkingen toestaan. De optie Standaard is uitgeschakeld.
 
 ### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Configureer onder het tabblad **[!UICONTROL User Moderation]** de moderatie van opmerkingen als opmerkingen zijn toegestaan:
+Onder de **[!UICONTROL User Moderation]** tab, configureer de moderatie van opmerkingen als opmerkingen zijn toegestaan:
 
 * **[!UICONTROL Pre-Moderation]**
 Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
@@ -124,12 +127,12 @@ Voer het aantal keren in dat een opmerking moet worden gemarkeerd door bezoekers
 
 * **[!UICONTROL Flagging Limit]**
 Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het 
-**Moderatiedrempel**. De standaardwaarde is 5.
+**Moderniseringsdrempel**. De standaardwaarde is 5.
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Essentiële elementen bestandsbibliotheek](essentials-file-library.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Essentiële elementen bestandsbibliotheek](essentials-file-library.md) pagina voor ontwikkelaars.
 
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor de moderatie van geposte onderwerpen en opmerkingen.
+Voor moderatie van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Zie [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) voor het labelen van geposte onderwerpen en opmerkingen.
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md).

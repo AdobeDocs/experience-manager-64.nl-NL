@@ -1,8 +1,8 @@
 ---
 title: Leaderboard-functie
-seo-title: Leaderboard-functie
+seo-title: Leaderboard Feature
 description: Een Leaderboard-component aan een pagina toevoegen
-seo-description: Een Leaderboard-component aan een pagina toevoegen
+seo-description: Adding a Leaderboard component to a page
 uuid: 2a766b63-3ab4-44cd-8a26-629a71b837ea
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,56 +10,59 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 exl-id: 1ebe0cbb-33be-4101-92e3-64253a7f7f31
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
 
 # Leaderboard-functie {#leaderboard-feature}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Inleiding {#introduction}
 
-De `Leaderboard` component verstrekt de capaciteit om een idee van te verkrijgen hoe de leden binnen de gemeenschap interactie door leden volgens verdiende punten (basis het scoren) of hun deskundigheid (geavanceerde het scoren) te rangschikken.
+De `Leaderboard` de component biedt de mogelijkheid om een idee te krijgen van de manier waarop leden binnen de gemeenschap met elkaar communiceren door leden te rangschikken op basis van verdiende punten (basisscore) of hun deskundigheid (geavanceerde scoring).
 
-Voordat de leaderboard-component op een pagina wordt opgenomen, moet u [Communityscores en Badges](implementing-scoring.md) configureren.
+Voordat u de leaderboard-component op een pagina plaatst, moet u [Scores en badges van gemeenschappen](implementing-scoring.md).
 
 In deze sectie van de documentatie wordt beschreven
 
-* De `Leaderboard`-component toevoegen aan een [communitysite](overview.md#community-sites)
+* Het toevoegen van `Leaderboard` component aan een [community-site](overview.md#community-sites)
 
-* Configuratie-instellingen voor de `Leaderboard`-component
+* De montages van de configuratie voor de `Leaderboard` component
 
-## Leaderboard toevoegen aan een pagina {#adding-a-leaderboard-to-a-page}
+## Een Leaderboard toevoegen aan een pagina {#adding-a-leaderboard-to-a-page}
 
-Als u een `Leaderboard`-component wilt toevoegen aan een pagina in de ontwerpmodus, zoekt u de component
+Als u een `Leaderboard` naar een pagina in de modus Schrijver, zoek de component
 
 * `Communities / Leaderboard`
 
 en sleep het naar de juiste plaats op een pagina.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-## Leaderboard {#configuring-leaderboard} configureren
+## Leaderboard configureren {#configuring-leaderboard}
 
-Selecteer de geplaatste `Leaderboard` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `Leaderboard` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
-### Tabblad Instellingen {#settings-tab}
+### Het tabblad Instellingen {#settings-tab}
 
-Geef onder het tabblad **[!UICONTROL Settings]** op welke informatie met betrekking tot het lid wordt weergegeven:
+Onder de **[!UICONTROL Settings]** tabblad geeft u op welke informatie over het lid wordt weergegeven:
 
 * **[!UICONTROL Display Name]**
 Een beschrijvende naam die voor het bord moet worden weergegeven en die de regels weergeeft die zijn geselecteerd voor het weergeven van badges en scores.
 
-   De standaardwaarde is `Leaderboard`, als er niets is ingevoerd.
+   Standaard is `Leaderboard`, als er niets is ingevoerd.
 
 * **[!UICONTROL Badge]**
 Als deze optie is ingeschakeld, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
@@ -78,7 +81,7 @@ Als deze optie is ingeschakeld, wordt de avatarafbeelding van het lid opgenomen 
 
 ### Regels, tabblad {#rules-tab}
 
-Onder het tabblad **[!UICONTROL Rules]** vindt u de site van de gebruikersgemeenschap en de bijbehorende regels voor scoring en badging
+Onder de **[!UICONTROL Rules]** tab, de site van de community en de bijbehorende regels voor scoring en badging
 
 * **[!UICONTROL Rule Location]**
 (Vereist) Plaats waar de het Scoren/het Bedragen regel wordt gevormd.
@@ -113,12 +116,12 @@ Configuratie van de component Leaderboard:
 
    * Locatie van regel = `/content/sites/communities/jcr:content`
    * Scoreregel = `/etc/community/scoring/rules/forums-scoring`
-   * Badging Rule = `/etc/community/badging/rules/reference-badging`
+   * Badgingregel = `/etc/community/badging/rules/reference-badging`
    * Weergavelimiet = `10`
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-## Voorbeeld: Leaderboard van experts {#example-experts-leaderboard}
+## Voorbeeld: Expert Leaderboard {#example-experts-leaderboard}
 
 Dit leaderboard-rapport is het resultaat van het toepassen van geavanceerde scoreregels.
 
@@ -136,13 +139,13 @@ Configuratie van de component Leaderboard:
 
    * Locatie van regel = `/content/sites/communities/jcr:content`
    * Scoreregel = `/etc/community/scoring/rules/adv-forums-scoring`
-   * Badging Rule = `/etc/community/badging/rules/adv-forums-badging`
+   * Badgingregel = `/etc/community/badging/rules/adv-forums-badging`
    * Weergavelimiet = `10`
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Leaderboard Essentials](leaderboard.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Essentiële elementen op Leaderboard](leaderboard.md) pagina voor ontwikkelaars.
 
-Instructies voor het maken van regels vindt u op de pagina [Community Scoring and Badges](implementing-scoring.md) voor beheerders.
+De instructies voor het creëren van regels worden verstrekt op [Scores en badges van gemeenschappen](implementing-scoring.md) pagina voor beheerders.

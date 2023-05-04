@@ -5,22 +5,26 @@ contentOwner: AG
 feature: Collaboration
 role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 6%
+source-wordcount: '469'
+ht-degree: 5%
 
 ---
 
 # Persoonlijke map delen {#private-folder-sharing}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience Manager Assets die exclusief voor u beschikbaar is. U kunt deze privémap delen met andere gebruikers en hun verschillende rechten toewijzen. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
 
-1. Tik in de middelenconsole op **[!UICONTROL Create]** op de werkbalk en kies **[!UICONTROL Folder]** in het menu.
+1. Tik/klik in de middelenconsole op **[!UICONTROL Create]** op de werkbalk en kies vervolgens **[!UICONTROL Folder]** in het menu.
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
-1. Voer in het dialoogvenster **[!UICONTROL Add Folder]** een titel en naam (optioneel) voor de map in en selecteer **[!UICONTROL Private]**.
+1. In de **[!UICONTROL Add Folder]** voert u een titel en naam (optioneel) voor de map in en selecteert u **[!UICONTROL Private]**.
 
    ![chlimage_1-412](assets/chlimage_1-412.png)
 
@@ -36,7 +40,7 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
    >
    >De map is pas zichtbaar voor andere gebruikers als u deze deelt.
 
-1. Selecteer op de pagina Mapeigenschappen een gebruiker in de lijst **[!UICONTROL Add User]**, wijs een rol toe aan de gebruiker in uw persoonlijke map en klik op **[!UICONTROL Add]**.
+1. Selecteer op de pagina Mapeigenschappen een gebruiker in het menu **[!UICONTROL Add User]** een rol toewijzen aan de gebruiker in uw persoonlijke map en klikken **[!UICONTROL Add]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
@@ -44,9 +48,9 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
    >
    >U kunt verschillende rollen, zoals Editor, Eigenaar of Viewer, toewijzen aan de gebruiker met wie u de map deelt. Als u een rol van de Eigenaar aan de gebruiker toewijst, heeft de gebruiker de voorrechten van Redacteurs op de omslag. Bovendien kan de gebruiker de map met anderen delen. Als u een rol van de Editor toewijst, kan de gebruiker de elementen in uw persoonlijke map bewerken. Als u een Viewer-rol toewijst, kan de gebruiker alleen de elementen in uw persoonlijke map bekijken.
 
-1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, wordt aan de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij [!DNL Experience Manager] Middelen.
-1. Klik **[!UICONTROL Ok]** om het bevestigingsbericht te sluiten.
-1. De gebruiker met wie u de map deelt, ontvangt een melding voor delen. Meld u aan bij [!DNL Experience Manager] Middelen met de referenties van de gebruiker om het bericht weer te geven.
+1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, wordt aan de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij [!DNL Experience Manager] Elementen.
+1. Klikken **[!UICONTROL Ok]** om het bevestigingsbericht te sluiten.
+1. De gebruiker met wie u de map deelt, ontvangt een melding voor delen. Aanmelden bij [!DNL Experience Manager] Hier kunt u de referenties van de gebruiker zien.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
@@ -58,4 +62,4 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
 
 >[!NOTE]
 >
->Om een privé omslag te kunnen tot stand brengen, vereist u Gelezen en geeft ACL toestemmingen op de ouderomslag uit waaronder u een privé omslag wilt tot stand brengen. Als u geen beheerder bent, worden deze toestemmingen niet toegelaten voor u door gebrek op */content/dam*. In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken of mapinstellingen weer te geven.
+>Om een privé omslag te kunnen tot stand brengen, vereist u Gelezen en geeft ACL toestemmingen op de ouderomslag uit waaronder u een privé omslag wilt tot stand brengen. Als u geen beheerder bent, worden deze machtigingen standaard niet voor u ingeschakeld */content/dam*. In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken of mapinstellingen weer te geven.

@@ -1,64 +1,65 @@
 ---
 title: Integreren met Dynamic Media Classic
-description: Leer hoe u AEM kunt integreren met Dynamic Media Classic.
+description: Leer hoe u AEM met Dynamic Media Classic kunt integreren.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 0bfb05b8-7d10-4984-9e89-f1af88938c03
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5311'
+source-wordcount: '5347'
 ht-degree: 0%
 
 ---
 
 # Integreren met Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan web, mobiele apparaten, e-mail en displays en drukwerk via internet.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Als u Dynamic Media Classic wilt gebruiken, moet u de cloudconfiguratie zodanig configureren dat Dynamic Media Classic en Adobe Experience Manager Assets met elkaar kunnen communiceren. In dit document wordt beschreven hoe u Experience Manager en Dynamic Media Classic configureert.
+Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan Web, mobiel, e-mail en displays en drukwerk via internet.
 
-Zie [Dynamic Media Classic](../assets/scene7.md) gebruiken voor informatie over het gebruik van alle klassieke Dynamic Media-componenten op een pagina en het werken met video.
+Als u Dynamic Media Classic wilt gebruiken, moet u de cloudconfiguratie zodanig configureren dat Dynamic Media Classic en Adobe Experience Manager Assets met elkaar kunnen communiceren. In dit document wordt beschreven hoe u Experience Manager en Dynamic Media Classic kunt configureren.
+
+Ga voor informatie over het gebruik van alle Dynamic Media Classic-componenten op een pagina en het werken met video naar [Dynamic Media Classic gebruiken](../assets/scene7.md).
 
 >[!NOTE]
 >
->* Het DHTML-viewerplatform van Dynamic Media Classic bereikte op 31 januari 2014 officieel het einde van de levensduur. Zie [Veelgestelde vragen over einde levensduur van DHTML-viewer](../sites-administering/dhtml-viewer-endoflifefaqs.md) voor meer informatie.
->* Alvorens Dynamic Media Klassiek te vormen om met Experience Manager te werken, zie [Beste praktijken](#best-practices-for-integrating-scene-with-aem) voor het integreren van Klassiek Dynamic Media met Experience Manager.
->* Als u Dynamic Media Classic met een aangepaste proxyconfiguratie gebruikt, configureert u beide proxyconfiguraties van de HTTP-client als sommige functies van Experience Manager de 3.x-API&#39;s en sommige andere de 4.x-API&#39;s gebruiken. 3.x wordt gevormd met [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) en 4.x wordt gevormd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
-
+>* Dynamic Media Classic&#39;s DHTML-viewerplatform bereikte officieel het einde van de levensduur op 31 januari 2014. Zie voor meer informatie de [Veelgestelde vragen over eindversie van DHTML-viewer](../sites-administering/dhtml-viewer-endoflifefaqs.md).
+>* Voordat u Dynamic Media Classic configureert voor gebruik met Experience Manager, raadpleegt u [Aanbevolen werkwijzen](#best-practices-for-integrating-scene-with-aem) voor de integratie van Dynamic Media Classic met Experience Manager.
+>* Als u Dynamic Media Classic met een configuratie van de douanevolmacht gebruikt, vorm zowel de volmachtsconfiguraties van de Cliënt van HTTP aangezien sommige functionaliteiten van Experience Manager 3.x APIs en sommige anderen 4.x APIs gebruiken. 3.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) en 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator).
 >
 
 
-
-## Experience Manager/Dynamic Media Klassieke integratie versus Dynamic Media {#aem-scene-integration-versus-dynamic-media}
+## Integratie Experience Manager/Dynamic Media Classic versus Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
 Gebruikers van Experience Managers kunnen kiezen uit twee oplossingen om met Dynamic Media te werken:
 
-* Uw geïntegreerde instantie van Experience Manager gebruiken met *Dynamic Media Classic*.
-* Het gebruiken van *Dynamic Media* die in Experience Manager geïntegreerd is.
+* Het gebruiken van uw geïntegreerde instantie van Experience Manager met *Dynamic Media Classic*.
+* Gebruiken *Dynamic Media* dat in de Experience Manager is geïntegreerd.
 
 Gebruik de volgende criteria om te bepalen welke oplossing het beste voor u is:
 
-* Als u een **bestaande** Classic klant bent van Dynamic Media waarvan de rijke media activa in de Classic van Dynamic Media voor publicatie en levering verblijven, maar u wilt die activa met de auteursrechten en/of de Activa van de Experience Manager van Plaatsen (WCM) voor beheer integreren, dan [Experience Manager/Dynamic Media Classic point-to-point integratie](#aem-scene-point-to-point-integration) gebruiken die in dit document wordt beschreven.
+* Als u een **bestaand** De klant van Dynamic Media Classic van wie rijke media activa in Dynamic Media Classic voor publicatie en levering verblijven, maar u wilt die activa met het auteursrecht van Plaatsen (WCM) en/of Experience Manager Assets voor beheer integreren, dan gebruik [Experience Manager/Dynamic Media Classic point-to-point integratie](#aem-scene-point-to-point-integration) beschreven in dit document.
 
-* Als u een **nieuwe** klant bent die rijke media leveringsbehoeften heeft, selecteer [de optie van Dynamic Media](#aem-dynamic-media). Deze optie heeft de meeste zin als u geen bestaande S7-account hebt en veel middelen die in dat systeem zijn opgeslagen.
+* Als u een **new** De klant van de Experience Manager die rijke media leveringsbehoeften heeft, selecteert [Dynamic Media, optie](#aem-dynamic-media). Deze optie heeft de meeste zin als u geen bestaande S7-account hebt en veel middelen die in dat systeem zijn opgeslagen.
 
-* Gebruik in bepaalde gevallen beide oplossingen. Het [scenario voor tweeërlei gebruik](/help/sites-administering/scene7.md#dual-use-scenario) beschrijft dat scenario.
+* Gebruik in bepaalde gevallen beide oplossingen. De [scenario voor tweeërlei gebruik](/help/sites-administering/scene7.md#dual-use-scenario) beschrijft dat scenario.
 
-### Experience Manager/Dynamic Media Klassieke point-to-point integratie {#aem-scene-point-to-point-integration}
+### Experience Manager/Dynamic Media Classic point-to-point integratie {#aem-scene-point-to-point-integration}
 
 Wanneer u met middelen in deze oplossing werkt, doet u één van het volgende:
 
-* Upload middelen rechtstreeks naar Dynamic Media Classic en open vervolgens via de **Dynamic Media Classic**-inhoudbrowser voor het ontwerpen van pagina&#39;s of
-* Uploaden naar Experience Manager Assets en vervolgens automatisch publiceren naar Dynamic Media Classic inschakelen; via de inhoudbrowser **Middelen** voor het ontwerpen van pagina&#39;s
+* Upload elementen rechtstreeks naar Dynamic Media Classic en open ze via de **Dynamic Media Classic** inhoudbrowser voor het ontwerpen van pagina&#39;s of
+* Uploaden naar Experience Manager Assets en vervolgens automatisch publiceren naar Dynamic Media Classic inschakelen; toegang via **Activa** inhoudbrowser voor paginaontwerp
 
-De componenten die u voor deze integratie gebruikt, bevinden zich in het gebied **Dynamic Media Classic** in de ontwerpmodus.[Design.](/help/sites-authoring/author-environment-tools.md#page-modes)
+De componenten die u voor deze integratie gebruikt, vindt u in het dialoogvenster **Dynamic Media Classic** componentgebied in [Ontwerpmodus.](/help/sites-authoring/author-environment-tools.md#page-modes)
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
-Experience Manager Dynamic Media is de eenmaking van de Klassieke eigenschappen van Dynamic Media direct binnen het Platform van de Experience Manager.
+Experience Manager Dynamic Media is de eenmaking van de eigenschappen van Dynamic Media Classic direct binnen het Platform van de Experience Manager.
 
 Wanneer u met middelen in deze oplossing werkt, volgt u deze workflow:
 
@@ -67,19 +68,19 @@ Wanneer u met middelen in deze oplossing werkt, volgt u deze workflow:
 1. Stel op afbeeldingen gebaseerde sets rechtstreeks samen binnen de Experience Manager.
 1. Voeg, indien van toepassing, interactiviteit toe aan afbeeldingen of video&#39;s.
 
-De componenten die u voor Dynamic Media gebruikt, bevinden zich in het componentgebied **[!UICONTROL Dynamic Media]** in [Ontwerpmodus](/help/sites-authoring/author-environment-tools.md#page-modes). Deze omvatten:
+De componenten die u voor Dynamic Media gebruikt, vindt u in het dialoogvenster **[!UICONTROL Dynamic Media]** componentgebied in [Ontwerpmodus](/help/sites-authoring/author-environment-tools.md#page-modes). Deze omvatten:
 
-* **[!UICONTROL Dynamic Media]** - De  **[!UICONTROL Dynamic Media]** component is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. De component ondersteunt voorinstellingen voor afbeeldingen, op afbeeldingen gebaseerde viewers, zoals afbeeldingssets, centrifuges, gemengde mediasets en video. Bovendien reageert de viewer snel. De grootte van het scherm verandert automatisch op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
+* **[!UICONTROL Dynamic Media]** - de **[!UICONTROL Dynamic Media]** is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. De component ondersteunt voorinstellingen voor afbeeldingen, op afbeeldingen gebaseerde viewers, zoals afbeeldingssets, centrifuges, gemengde mediasets en video. Bovendien reageert de viewer snel. De grootte van het scherm verandert automatisch op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
 
-* **[!UICONTROL Interactive Media]** - De  **[!UICONTROL Interactive Media]** component is bedoeld voor carrouselbanners, interactieve afbeeldingen en interactieve video&#39;s die interactiviteit bevatten, zoals hotspots of afbeeldingen met hyperlinks. Deze component is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. Bovendien reageert de viewer snel. De grootte van het scherm verandert dus automatisch op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
+* **[!UICONTROL Interactive Media]** - de **[!UICONTROL Interactive Media]** is bedoeld voor carrouselbanners, interactieve afbeeldingen en interactieve video&#39;s die interactiviteit in deze banners hebben, zoals hotspots of afbeeldingen met hyperlinks. Deze component is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. Bovendien reageert de viewer snel. De grootte van het scherm verandert dus automatisch op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
 
 ### Scenario voor tweeërlei gebruik {#dual-use-scenario}
 
-U kunt zowel de Dynamic Media- als de Dynamic Media Classic-integratiefuncties van Experience Manager tegelijk gebruiken. In de volgende tabel met gebruiksgevallen wordt beschreven wanneer u bepaalde gebieden in- en uitschakelt.
+U kunt de integratiefuncties van Experience Manager zowel voor Dynamic Media als voor Dynamic Media Classic tegelijk gebruiken. In de volgende tabel met gebruiksgevallen wordt beschreven wanneer u bepaalde gebieden in- en uitschakelt.
 
-Dynamic Media en Dynamic Media Classic gelijktijdig gebruiken:
+Dynamic Media en Dynamic Media Classic tegelijk gebruiken:
 
-1. Configureer [Dynamic Media Classic](#creating-a-cloud-configuration-for-scene) in Cloud Services.
+1. Configureren [Dynamic Media Classic](#creating-a-cloud-configuration-for-scene) in Cloud Services.
 1. Volg de specifieke instructies voor uw gebruiksgeval op:
 
    <table> 
@@ -89,7 +90,7 @@ Dynamic Media en Dynamic Media Classic gelijktijdig gebruiken:
     <td> </td> 
     <td><strong> Dynamic Media </strong></td> 
     <td> </td> 
-    <td><strong>Dynamic Media Klassieke integratie</strong></td> 
+    <td><strong>Dynamic Media Classic-integratie</strong></td> 
     <td> </td> 
     </tr> 
     <tr> 
@@ -110,7 +111,7 @@ Dynamic Media en Dynamic Media Classic gelijktijdig gebruiken:
     </tr> 
     <tr> 
     <td>In de detailhandel, en nieuw aan Plaatsen en Dynamic Media</td> 
-    <td>Niet-productmiddelen uploaden naar Experience Manager voor beheer en levering. Upload PRODUCT-middelen naar Dynamic Media Classic en gebruik Dynamic Media Classic-inhoudsbrowser in Experience Manager en onderdeel om productdetailpagina's op sites te maken.</td> 
+    <td>Niet-productmiddelen uploaden naar Experience Manager voor beheer en levering. Upload PRODUCT-middelen naar Dynamic Media Classic en gebruik Dynamic Media Classic-inhoudbrowser in Experience Manager en onderdeel om productdetailpagina's op sites te maken.</td> 
     <td><p>Aan</p> <p>(Zie stap 3)</p> </td> 
     <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">Aan</a></td> 
     <td><a href="/help/assets/scene7.md#scene-content-browser">Aan</a></td> 
@@ -118,7 +119,7 @@ Dynamic Media en Dynamic Media Classic gelijktijdig gebruiken:
     </tr> 
     <tr> 
     <td>Nieuw bij Middelen en Dynamic Media</td> 
-    <td>Elementen uploaden naar Experience Manager Assets en gepubliceerde URL/insluitcode van Dynamic Media gebruiken</td> 
+    <td>Elementen uploaden naar Experience Manager Assets en gepubliceerde URL-/insluitcode van Dynamic Media gebruiken</td> 
     <td><p>Aan</p> <p>(Zie stap 3)</p> </td> 
     <td>Uit</td> 
     <td>Uit</td> 
@@ -126,31 +127,31 @@ Dynamic Media en Dynamic Media Classic gelijktijdig gebruiken:
     </tr> 
     <tr> 
     <td>Nieuw bij Dynamic Media en Sjabloon</td> 
-    <td>Gebruik Dynamic Media voor beeldbewerking en video. Auteur afbeeldingssjablonen in Dynamic Media Classic en gebruik Dynamic Media Classic Content Finder om sjablonen op te nemen in sitepagina's.</td> 
+    <td>Gebruik Dynamic Media voor beeldbewerking en video. Auteur afbeeldingssjablonen in Dynamic Media Classic en gebruik Dynamic Media Classic content finder om sjablonen op te nemen in sitepagina's.</td> 
     <td><p>Aan</p> <p>(Zie stap 3)</p> </td> 
     <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">Aan</a></td> 
     <td><a href="/help/assets/scene7.md#scene-content-browser">Aan</a></td> 
     <td>Uit</td> 
     </tr> 
     <tr> 
-    <td>Een bestaande Dynamic Media Classic-klant en is nieuw voor sites</td> 
-    <td>Elementen uploaden naar Dynamic Media Classic en Experience Manager Dynamic Media Classic-inhoudbrowser gebruiken om elementen op sitepagina's te zoeken en te ontwerpen</td> 
+    <td>Een bestaande Dynamic Media Classic-klant en is nieuw voor Sites</td> 
+    <td>Elementen uploaden naar Dynamic Media Classic en Experience Manager Dynamic Media Classic-inhoudsbrowser gebruiken om elementen op sitepagina's te zoeken en te ontwerpen</td> 
     <td>Uit</td> 
     <td>Uit</td> 
     <td><a href="/help/assets/scene7.md#scene-content-browser">Aan</a></td> 
     <td>Uit</td> 
     </tr> 
     <tr> 
-    <td>Een bestaande Dynamic Media Classic-klant en is nieuw voor sites en middelen</td> 
-    <td>Elementen uploaden naar DAM en automatisch publiceren naar Dynamic Media Classic voor levering. Gebruik Experience Manager Dynamic Media Classic-inhoudbrowser om elementen op sitepagina's te zoeken en te ontwerpen.</td> 
+    <td>Een bestaande Dynamic Media Classic-klant en is nieuw voor Sites en Assets</td> 
+    <td>Elementen uploaden naar DAM en automatisch publiceren naar Dynamic Media Classic voor levering. Gebruik de Experience Manager Dynamic Media Classic-inhoudbrowser om elementen op sitepagina's te zoeken en te ontwerpen.</td> 
     <td>Uit</td> 
     <td>Uit</td> 
     <td><a href="/help/assets/scene7.md#scene-content-browser">Aan</a></td> 
     <td><p><a href="#configuringautouploadingfromaemassets">Aan</a></p> <p>(Zie stap 4)</p> </td> 
     </tr> 
     <tr> 
-    <td>Bestaande Dynamic Media Classic-klant en nieuw voor middelen</td> 
-    <td><p>Elementen uploaden naar Experience Manager en Dynamic Media gebruiken om uitvoeringen te genereren voor downloaden/delen. Publiceer automatisch Experience Manager Assets naar Dynamic Media Classic voor levering.</p> <p><strong>Belangrijk:</strong> Incurs dupliceert verwerking en uitvoeringen die in Experience Manager worden gegenereerd, worden niet gesynchroniseerd met Dynamic Media Classic</p> </td> 
+    <td>Bestaande Dynamic Media Classic-klant en nieuw op Middelen</td> 
+    <td><p>Elementen uploaden naar Experience Manager en Dynamic Media gebruiken om uitvoeringen te genereren voor downloaden/delen. Experience Manager Assets automatisch publiceren naar Dynamic Media Classic voor levering.</p> <p><strong>Belangrijk:</strong> Gelijktijdige verwerking en uitvoeringen die worden gegenereerd in Experience Manager, worden niet gesynchroniseerd met Dynamic Media Classic</p> </td> 
     <td><p>Aan</p> <p>(Zie stap 3)</p> </td> 
     <td>Uit</td> 
     <td>Uit</td> 
@@ -159,29 +160,29 @@ Dynamic Media en Dynamic Media Classic gelijktijdig gebruiken:
     </tbody> 
     </table>
 
-1. (facultatief; zie gebruikscase table) - Stel de [Dynamic Media cloud configuration](/help/assets/config-dynamic.md) en [enable de Dynamic Media server](/help/assets/config-dynamic.md) in.
+1. (facultatief; zie tabel met gebruiksscenario&#39;s) - Stel de opties [Dynamic Media-cloudconfiguratie](/help/assets/config-dynamic.md) en [de Dynamic Media-server inschakelen](/help/assets/config-dynamic.md).
 1. (facultatief; Zie use case table) - Als u Automatisch uploaden van middelen naar Dynamic Media Classic wilt inschakelen, moet u het volgende toevoegen:
 
-   1. Automatische upload instellen op Dynamic Media Classic.
-   1. Voeg de stap **Dynamic Media Klassieke upload** toe na alle Dynamic Media-workflowstappen *aan het einde van* **Dam Update Asset**-workflow ( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
-   1. (Optioneel) Beperk het uploaden van klassieke Dynamic Media-elementen door MIME-type in [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl). Elementen MIME-typen die niet in deze lijst voorkomen, worden niet geüpload naar de Dynamic Media Classic-server.
-   1. (Optioneel) Stel video in de Klassieke Dynamic Media-configuratie in. U kunt videocodering voor zowel Dynamic Media als Dynamic Media Classic tegelijk inschakelen. Dynamische uitvoeringen worden gebruikt voor voorvertoning en lokaal afspelen in Experience Manager-instantie, terwijl Dynamic Media Classic-video-uitvoeringen worden gegenereerd en opgeslagen op Dynamic Media Classic-servers. Wanneer u videocoderingsservices instelt voor zowel Dynamic Media als Dynamic Media Classic, past u een [videoverwerkingsprofiel](/help/assets/video-profiles.md) toe op de map met klassieke Dynamic Media-elementen.
+   1. Automatisch uploaden naar Dynamic Media Classic instellen.
+   1. Voeg de **Dynamic Media Classic-upload** stap na alle Dynamic Media-workflowstappen *aan het einde van* **Dam Update-element** workflow ( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
+   1. (Optioneel) Beperk het uploaden van Dynamic Media Classic-elementen op basis van het MIME-type in [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl). Elementen MIME-typen die niet in deze lijst voorkomen, worden niet geüpload naar de Dynamic Media Classic-server.
+   1. (Optioneel) Stel video in Dynamic Media Classic-configuratie in. U kunt videocodering voor zowel Dynamic Media als Dynamic Media Classic tegelijk inschakelen. Dynamische uitvoeringen worden gebruikt voor voorvertoning en lokaal afspelen in Experience Manager-instantie, terwijl Dynamic Media Classic-video-uitvoeringen worden gegenereerd en opgeslagen op Dynamic Media Classic-servers. Pas een [videoverwerkingsprofiel](/help/assets/video-profiles.md) naar de map met Dynamic Media Classic-middelen.
    1. (Optioneel) [Beveiligde voorvertoning configureren in Dynamic Media Classic](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
 
 #### Beperkingen {#limitations}
 
-Wanneer u zowel Dynamic Media Classic als Dynamic Media hebt ingeschakeld, gelden de volgende beperkingen:
+Als u zowel Dynamic Media Classic als Dynamic Media hebt ingeschakeld, gelden de volgende beperkingen:
 
-* Het handmatig uploaden naar Dynamic Media Classic door een element te selecteren en naar een Classic Dynamic Media-component op een Experience Manager-pagina te slepen, werkt niet.
-* Hoewel Experience Manager-Dynamic Media Classic gesynchroniseerde elementen automatisch worden bijgewerkt naar Dynamic Media Classic wanneer het element wordt bewerkt in Elementen, wordt een terugdraaiactie niet geactiveerd om een nieuwe upload te starten. Als zodanig krijgt Dynamic Media Classic niet meteen na een terugdraaiactie de nieuwste versie. Als tussenoplossing kunt u het terugdraaien opnieuw uitvoeren.
-* Als u Dynamic Media moet gebruiken voor één gebruiksgeval en Dynamic Media Classic integratie voor een andere, zodat Dynamic Media-elementen niet met het Klassieke Dynamic Media-systeem communiceren, moet u de Klassieke Dynamic Media-configuratie niet toepassen op de Dynamic Media-map. En pas de Dynamic Media-configuratie (verwerkingsprofiel) niet toe op een Classic-map van Dynamic Media.
+* Het handmatig uploaden naar Dynamic Media Classic door een element te selecteren en naar een Dynamic Media Classic-component op een pagina met Experience Managers te slepen, werkt niet.
+* Hoewel de gesynchroniseerde elementen van Experience Manager-Dynamic Media Classic automatisch worden bijgewerkt naar Dynamic Media Classic wanneer het element wordt bewerkt in Elementen, wordt een terugdraaiactie niet geactiveerd om een nieuwe upload te starten. Als zodanig krijgt Dynamic Media Classic niet onmiddellijk na een terugdraaiing de nieuwste versie. Als tussenoplossing kunt u het terugdraaien opnieuw uitvoeren.
+* Als u Dynamic Media moet gebruiken voor één gebruiksgeval en de integratie van Dynamic Media Classic voor een andere zodat de activa van Dynamic Media niet met het systeem van Dynamic Media Classic in wisselwerking staan, dan pas de configuratie van Dynamic Media Classic op de omslag van Dynamic Media niet toe. En pas de Dynamic Media-configuratie (verwerkingsprofiel) niet toe op een Dynamic Media Classic-map.
 
-## Aanbevolen procedures voor het integreren van Dynamic Media Classic met Experience Manager {#best-practices-for-integrating-scene-with-aem}
+## Aanbevolen procedures voor de integratie van Dynamic Media Classic met Experience Manager {#best-practices-for-integrating-scene-with-aem}
 
-Bij de integratie van Dynamic Media Classic met Experience Manager zijn er enkele belangrijke aanbevolen procedures die in de volgende gebieden moeten worden gevolgd:
+Bij de integratie van Dynamic Media Classic met Experience Manager zijn er enkele belangrijke best practices die in acht moeten worden genomen op de volgende gebieden:
 
 * Uw integratie testen
-* Het rechtstreeks uploaden van middelen vanuit Dynamic Media Classic wordt aanbevolen voor bepaalde scenario&#39;s
+* Voor bepaalde scenario&#39;s wordt het uploaden van middelen rechtstreeks vanuit Dynamic Media Classic aanbevolen
 
 Zie [bekende beperkingen](#known-limitations-and-design-implications).
 
@@ -191,53 +192,53 @@ Adobe raadt u aan de integratie te testen door uw hoofdmap alleen naar een subma
 
 >[!CAUTION]
 >
->Het importeren van activa van een bestaande Dynamic Media Classic-bedrijfsaccount kan lang duren voordat deze in Experience Manager worden weergegeven. Zorg ervoor dat u een map in Dynamic Media Classic aanwijst die niet te veel elementen bevat (de hoofdmap bevat bijvoorbeeld vaak te veel elementen en het systeem kan vastlopen).
+>Het importeren van activa van een bestaande Dynamic Media Classic-bedrijfsaccount kan lang duren voordat deze in Experience Manager worden weergegeven. Zorg ervoor dat u een map in Dynamic Media Classic aanwijst die niet te veel elementen bevat (de hoofdmap bevat bijvoorbeeld vaak te veel elementen en kan uw systeem vastlopen).
 
-### Elementen uploaden vanaf Experience Manager Assets versus vanuit Dynamic Media Classic {#uploading-assets-from-aem-assets-versus-from-scene}
+### Elementen uploaden van Experience Manager Assets naar Dynamic Media Classic {#uploading-assets-from-aem-assets-versus-from-scene}
 
 U kunt elementen uploaden met behulp van de functionaliteit voor middelenbeheer (digital asset management) of door Dynamic Media Classic rechtstreeks in Experience Manager te openen via de Dynamic Media Classic-inhoudbrowser. Welke optie u kiest, is afhankelijk van de volgende factoren:
 
-* Dynamic Media Classic-elementtypen die Experience Manager Assets nog niet ondersteunt, moeten rechtstreeks vanuit Dynamic Media Classic aan een website voor Experience Managers worden toegevoegd via de Dynamic Media Classic-inhoudbrowser. Bijvoorbeeld afbeeldingssjablonen.
-* Voor elementtypen die zowel door Experience Manager Assets als door Dynamic Media Classic worden ondersteund, is het van het volgende afhankelijk hoe u deze kunt uploaden:
+* Dynamic Media Classic-elementtypen die Experience Manager Assets nog niet ondersteunt, moeten rechtstreeks vanuit Dynamic Media Classic via de Dynamic Media Classic-inhoudbrowser aan een website van een Experience Manager worden toegevoegd. Bijvoorbeeld afbeeldingssjablonen.
+* Voor de typen elementen die zowel door Experience Manager Assets als door Dynamic Media Classic worden ondersteund, is het van het volgende afhankelijk hoe u deze kunt uploaden:
 
    * Waar de activa vandaag zijn, EN
    * Hoe belangrijk is het beheer ervan in een gemeenschappelijke gegevensopslagplaats?
 
-Als de activa reeds in Dynamic Media Classic zijn en het beheren van hen in een gemeenschappelijke bewaarplaats niet belangrijk is, dan is het uitvoeren van hen naar de Activa van de Experience Manager slechts om hen terug naar Dynamic Media Classic voor levering terug te synchroniseren een onnodige roundtrip. Anders wordt de voorkeur gegeven aan het opslaan van elementen in één opslagplaats en het synchroniseren naar Dynamic Media Classic voor alleen levering.
+Als de activa reeds in Dynamic Media Classic zijn en het beheren van hen in een gemeenschappelijke bewaarplaats niet belangrijk is, dan is het uitvoeren van hen naar Experience Manager Assets slechts om hen terug naar Dynamic Media Classic voor levering terug te synchroniseren een onnodige roundtrip. Anders wordt de voorkeur gegeven aan het opslaan van elementen in één opslagplaats en het synchroniseren naar Dynamic Media Classic voor alleen levering.
 
 ## Dynamic Media Classic-integratie configureren {#configuring-scene-integration}
 
-U kunt Experience Manager configureren om elementen te uploaden naar Dynamic Media Classic. Middelen uit een CQ-doelmap kunnen (automatisch of handmatig) van Experience Manager naar een Classic-bedrijfsaccount van Dynamic Media worden geüpload.
+U kunt Experience Manager configureren om elementen te uploaden naar Dynamic Media Classic. Middelen uit een CQ-doelmap kunnen (automatisch of handmatig) van Experience Manager naar een Dynamic Media Classic-bedrijfsaccount worden geüpload.
 
 >[!NOTE]
 >
->Adobe raadt u aan alleen de toegewezen doelmap te gebruiken voor het importeren van Klassieke Dynamic Media-elementen. Digitale middelen die zich buiten de doelmap bevinden, kunnen alleen worden gebruikt in Klassieke Dynamic Media-componenten op pagina&#39;s waarop de Klassieke Dynamic Media-configuratie is ingeschakeld. Bovendien worden ze in een map op aanvraag in Dynamic Media Classic geplaatst. De map op aanvraag is niet gesynchroniseerd met Experience Manager (maar elementen zijn wel te vinden in de browser met klassieke inhoud van Dynamic Media).
+>Adobe raadt u aan alleen de toegewezen doelmap te gebruiken voor het importeren van Dynamic Media Classic-elementen. Digitale middelen die zich buiten de doelmap bevinden, kunnen alleen worden gebruikt in Dynamic Media Classic-componenten op pagina&#39;s waarop de Dynamic Media Classic-configuratie is ingeschakeld. Bovendien worden ze in een map op aanvraag in Dynamic Media Classic geplaatst. De map op aanvraag wordt niet gesynchroniseerd met Experience Manager (maar elementen zijn te vinden in de Dynamic Media Classic-inhoudbrowser).
 
 Als u Dynamic Media Classic wilt configureren voor integratie met Experience Manager, moet u de volgende stappen uitvoeren:
 
-1. [Definieer een wolkenconfiguratie](#creating-a-cloud-configuration-for-scene)  - Definieert de toewijzing tussen een klassieke Dynamic Media-map en een map Middelen. Voltooi deze stap zelfs als u slechts éénrichtingssynchronisatie (middelen van de Experience Manager aan de Klassieke Dynamic Media) wilt.
-1. [Schakel de  **Adobe CQ s7dam Dam Listener**](#enabling-the-adobe-cq-scene-dam-listener)  - Done in de  [!UICONTROL OSGi] console in.
-1. Als u wilt dat Experience Manager-elementen automatisch worden geüpload naar Dynamic Media Classic, schakelt u deze optie in en voegt u Dynamic Media Classic toe aan de DAM-workflow voor update-elementen. U kunt ook handmatig elementen uploaden.
-1. Dynamic Media Classic-componenten toevoegen aan het hulpwerkstation. Hiermee kunnen gebruikers Dynamic Media Classic-componenten gebruiken op hun pagina&#39;s met Experience Managers.
-1. [De configuratie in Experience Manager](#enabling-scene-for-wcm)  toewijzen aan de pagina - Deze stap is vereist voor het weergeven van videovoorinstellingen die u in Dynamic Media Classic hebt gemaakt. Dit is ook vereist als u een middel van buiten de CQ-doelmap naar Dynamic Media Classic moet publiceren.
+1. [Een cloudconfiguratie definiëren](#creating-a-cloud-configuration-for-scene) - Definieert de toewijzing tussen een Dynamic Media Classic-map en een Assets-map. Voltooi deze stap, zelfs als u synchronisatie in één richting (Experience Manager Assets naar Dynamic Media Classic) wilt uitvoeren.
+1. [De optie **Adobe CQ s7dam Dam Listener**](#enabling-the-adobe-cq-scene-dam-listener) - Gereed in het [!UICONTROL OSGi] console.
+1. Als u wilt dat Experience Manager-elementen automatisch naar Dynamic Media Classic worden geüpload, schakelt u deze optie in en voegt u Dynamic Media Classic toe aan de DAM-workflow voor update-elementen. U kunt ook handmatig elementen uploaden.
+1. Dynamic Media Classic-componenten toevoegen aan het hulpwerkstation. Hiermee kunnen gebruikers Dynamic Media Classic-componenten op hun pagina&#39;s met Experience Managers gebruiken.
+1. [De configuratie toewijzen aan de pagina in Experience Manager](#enabling-scene-for-wcm) - Deze stap is vereist om videovoorinstellingen weer te geven die u in Dynamic Media Classic hebt gemaakt. Dit is ook vereist als u een middel van buiten de CQ-doelmap naar Dynamic Media Classic moet publiceren.
 
 In deze sectie wordt beschreven hoe u al deze stappen uitvoert en worden belangrijke beperkingen weergegeven.
 
 ### Hoe synchronisatie tussen Dynamic Media Classic en Experience Manager Assets werkt {#how-synchronization-between-scene-and-aem-assets-works}
 
-Het is belangrijk dat u het volgende begrijpt wanneer u Experience Manager Assets en Dynamic Media Classic-synchronisatie instelt:
+Bij het instellen van Experience Manager Assets- en Dynamic Media Classic-synchronisatie is het belangrijk dat u het volgende begrijpt:
 
-#### Uploaden naar Dynamic Media Classic vanaf Experience Manager Assets {#uploading-to-scene-from-aem-assets}
+#### Uploaden naar Dynamic Media Classic vanuit Experience Manager Assets {#uploading-to-scene-from-aem-assets}
 
 * Er is een toegewezen synchronisatiemap in Experience Manager voor Dynamic Media Classic-uploads.
-* Uploads naar Dynamic Media Classic kunnen worden geautomatiseerd als de digitale elementen in de toegewezen synchronisatiemap worden geplaatst.
+* Uploads naar Dynamic Media Classic kunnen worden geautomatiseerd als de digitale middelen in de aangewezen synchronisatiemap worden geplaatst.
 * De map- en submapstructuur in Experience Manager wordt gerepliceerd in Dynamic Media Classic.
 
 >[!NOTE]
 >
->Met Experience Manager worden alle metagegevens ingesloten zoals XMP voordat deze naar Dynamic Media Classic worden geüpload. Alle eigenschappen op het metagegevensknooppunt zijn dus beschikbaar in Dynamic Media Classic als XMP.
+>Experience Manager sluit alle metagegevens in zoals XMP voordat deze naar Dynamic Media Classic worden geüpload. Alle eigenschappen op het metagegevensknooppunt zijn dus in Dynamic Media Classic als XMP beschikbaar.
 
-#### Bekende beperkingen en ontwerpimplicaties {#known-limitations-and-design-implications}
+#### Bekende beperkingen en gevolgen voor het ontwerp {#known-limitations-and-design-implications}
 
 Bij de synchronisatie tussen Experience Manager Assets en Dynamic Media Classic zijn er momenteel de volgende beperkingen/ontwerpimplicaties:
 
@@ -249,50 +250,50 @@ Bij de synchronisatie tussen Experience Manager Assets en Dynamic Media Classic 
   </tr> 
   <tr> 
    <td>Eén toegewezen synchronisatiemap (doel)</td> 
-   <td>U kunt per bedrijf slechts één toegewezen map in Experience Manager gebruiken voor Dynamic Media Classic-uploads. U kunt meerdere configuraties maken als u toegang moet hebben tot meer dan één bedrijfsaccount in Dynamic Media Classic.</td> 
+   <td>U kunt per bedrijf slechts één toegewezen map in de Experience Manager voor Dynamic Media Classic-uploads gebruiken. U kunt meerdere configuraties maken als u toegang moet hebben tot meer dan één bedrijfsaccount in Dynamic Media Classic.</td> 
   </tr> 
   <tr> 
    <td>Mapstructuur</td> 
-   <td>Als u een gesynchroniseerde map met middelen verwijdert, worden alle Dynamic Media Classic externe middelen verwijderd, maar blijft de map ongewijzigd.</td> 
+   <td>Als u een gesynchroniseerde map met middelen verwijdert, worden alle externe Dynamic Media Classic-middelen verwijderd, maar blijft de map.</td> 
   </tr> 
   <tr> 
    <td>Ad-hocmap</td> 
-   <td>Elementen die zich buiten de doelmap bevinden en die handmatig naar Dynamic Media Classic in de WCM worden geüpload, worden automatisch in een aparte ad-hocmap op Dynamic Media Classic geplaatst. U configureert deze functionaliteit in de Cloud Configuration in Experience Manager.</td> 
+   <td>Elementen die zich buiten de doelmap bevinden en die handmatig in de WCM naar Dynamic Media Classic worden geüpload, worden automatisch in een aparte ad-hocmap op Dynamic Media Classic geplaatst. U configureert deze functionaliteit in de Cloud Configuration in Experience Manager.</td> 
   </tr> 
   <tr> 
    <td>Gemengde media</td> 
    <td>Gemengde mediasets worden in de Experience Manager weergegeven, maar niet in de Experience Manager.</td> 
   </tr> 
   <tr> 
-   <td>PDF's</td> 
-   <td>Gegenereerde PDF's van eCatalogs in Dynamic Media Classic worden geïmporteerd in de CQ-doelmap.</td> 
+   <td>PDF</td> 
+   <td>Gegenereerde PDF van eCatalogs in Dynamic Media Classic worden geïmporteerd in de CQ-doelmap.</td> 
   </tr> 
   <tr> 
    <td>interface vernieuwen</td> 
-   <td>Wanneer het synchroniseren tussen Experience Manager en Klassiek Dynamic Media, ben zeker om het gebruikersinterface te verfrissen om veranderingen te bekijken. </td> 
+   <td>Wanneer het synchroniseren tussen Experience Manager en Dynamic Media Classic, ben zeker om het gebruikersinterface te verfrissen om veranderingen te bekijken. </td> 
   </tr> 
   <tr> 
    <td>Videominiaturen</td> 
-   <td>Als u een video uploadt naar Experience Manager Assets voor codering via Dynamic Media Classic, kan het enige tijd duren voordat de videominiaturen en gecodeerde video's beschikbaar zijn in Experience Manager Assets, afhankelijk van de videoverwerkingstijd.</td> 
+   <td>Als u een video naar Experience Manager Assets uploadt voor codering via Dynamic Media Classic, kan het enige tijd duren voordat de videominiaturen en gecodeerde video's beschikbaar zijn in Experience Manager Assets, afhankelijk van de verwerkingstijd van de video.</td> 
   </tr> 
   <tr> 
    <td>Doelsubmappen</td> 
-   <td><p>Als u submappen in de doelmap gebruikt, gebruikt u unieke namen voor elk element (ongeacht de locatie) of configureert u Dynamic Media Classic (in het gedeelte Instellen) om elementen niet te overschrijven, ongeacht de locatie.</p> <p>Anders worden elementen met dezelfde naam die naar een Classic-doelsubmap van Dynamic Media zijn geüpload, wel geüpload, maar wordt het element met dezelfde naam in de doelmap verwijderd. </p> </td> 
+   <td><p>Als u submappen in de doelmap gebruikt, gebruikt u unieke namen voor elk element (ongeacht de locatie) of configureert u Dynamic Media Classic (in het gedeelte Instellen) om elementen niet te overschrijven, ongeacht de locatie.</p> <p>Anders worden elementen met dezelfde naam die naar een Dynamic Media Classic-doelsubmap zijn geüpload, wel geüpload, maar het element met dezelfde naam in de doelmap wordt verwijderd. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Dynamic Media Classic-servers configureren {#configuring-scene-servers}
 
-Als u Experience Manager achter een volmacht in werking stelt of speciale firewallmontages hebt, moet u de gastheren van de verschillende gebieden uitdrukkelijk toelaten. De servers worden beheerd in inhoud in `/etc/cloudservices/scene7/endpoints` en kunnen worden aangepast zoals vereist. Tik op een URL en bewerk deze vervolgens om de URL indien nodig te wijzigen. In vorige versies van Experience Manager waren deze waarden hard-gecodeerd.
+Als u Experience Manager achter een volmacht in werking stelt of speciale firewallmontages hebt, moet u de gastheren van de verschillende gebieden uitdrukkelijk toelaten. Servers worden beheerd in inhoud in `/etc/cloudservices/scene7/endpoints` en kan naar wens worden aangepast. Tik op een URL en bewerk deze vervolgens om de URL indien nodig te wijzigen. In vorige versies van Experience Manager waren deze waarden hard-gecodeerd.
 
-Als u naar `/etc/cloudservices/scene7/endpoints.html` navigeert, worden de servers weergegeven (en kunt u ze bewerken door op de URL te klikken):
+Als u navigeert naar `/etc/cloudservices/scene7/endpoints.html`, ziet u de vermelde servers (en kunt hen uitgeven door URL te klikken):
 
 ![chlimage_1-296](assets/chlimage_1-296.png)
 
-### Een cloudconfiguratie maken voor Dynamic Media Classic {#creating-a-cloud-configuration-for-scene}
+### Een cloudconfiguratie voor Dynamic Media Classic maken {#creating-a-cloud-configuration-for-scene}
 
-Een wolkenconfiguratie bepaalt de afbeelding tussen een Klassieke omslag van Dynamic Media en een omslag van de Middelen van de Experience Manager. Het moet worden gevormd om de Middelen van de Experience Manager met Dynamic Media Klassiek te synchroniseren. Zie Hoe de Synchronisatie voor meer informatie werkt.
+Een wolkenconfiguratie bepaalt de afbeelding tussen een omslag van Dynamic Media Classic en een omslag van Experience Manager Assets. Deze moet zijn geconfigureerd om Experience Manager Assets met Dynamic Media Classic te synchroniseren. Zie Hoe de Synchronisatie voor meer informatie werkt.
 
 >[!CAUTION]
 >
@@ -302,9 +303,9 @@ Een wolkenconfiguratie bepaalt de afbeelding tussen een Klassieke omslag van Dyn
 
 >[!NOTE]
 >
->U kunt meerdere configuraties hebben: één wolkenconfiguratie vertegenwoordigt één gebruiker bij een Klassiek bedrijf van Dynamic Media. Als u andere Klassieke bedrijven of gebruikers van Dynamic Media wilt openen, creeer veelvoudige configuraties.
+>U kunt meerdere configuraties hebben: één wolkenconfiguratie vertegenwoordigt één gebruiker bij een bedrijf van Dynamic Media Classic. Als u andere Dynamic Media Classic-bedrijven of -gebruikers wilt openen, maakt u meerdere configuraties.
 
-Om Experience Manager te vormen om activa aan Dynamic Media Klassiek te kunnen publiceren:
+Om Experience Manager te vormen om activa aan Dynamic Media Classic te kunnen publiceren:
 
 1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]** om toegang te krijgen tot Adobe Dynamic Media Classic.
 
@@ -312,25 +313,25 @@ Om Experience Manager te vormen om activa aan Dynamic Media Klassiek te kunnen p
 
    ![chlimage_1-297](assets/chlimage_1-297.png)
 
-1. Voer in het veld **[!UICONTROL Title]** en eventueel in het veld **[!UICONTROL Name]** de juiste gegevens in. Tik op **[!UICONTROL Create]**.
+1. In de **[!UICONTROL Title]** en eventueel in het veld **[!UICONTROL Name]** Voer de juiste gegevens in. Tik op **[!UICONTROL Create]**.
 
    >[!NOTE]
    >
-   >Als u meer configuraties maakt, wordt het veld **[!UICONTROL parent configuration]** weergegeven.
+   >Als u meer configuraties maakt, **[!UICONTROL parent configuration]** wordt weergegeven.
    >
-   >Wijzig de bovenliggende configuratie niet **niet**. Het wijzigen van de bovenliggende configuratie kan de integratie onderbreken.
+   >Do **niet** de bovenliggende configuratie wijzigen. Het wijzigen van de bovenliggende configuratie kan de integratie onderbreken.
 
-1. Voer het e-mailadres, het wachtwoord en de regio van uw Dynamic Media Classic-account in en tik op **[!UICONTROL Connect to Dynamic Media Classic]**. U hebt verbinding met de Klassieke Dynamic Media-server en het dialoogvenster wordt uitgebreid met meer opties.
+1. Voer het e-mailadres, het wachtwoord en de regio van uw Dynamic Media Classic-account in en tik op **[!UICONTROL Connect to Dynamic Media Classic]**. U hebt verbinding met de Dynamic Media Classic-server en het dialoogvenster wordt uitgebreid met meer opties.
 
-1. Voer de naam **[!UICONTROL Company]** en **[!UICONTROL Root Path]** in. Dit is de naam van de gepubliceerde server en het pad dat u wilt opgeven. Als u de gepubliceerde servernaam niet kent, gaat u in Dynamic Media Classic naar **[!UICONTROL Setup > Application Setup]**.
+1. Voer de **[!UICONTROL Company]** naam en **[!UICONTROL Root Path]**. Dit is de naam van de gepubliceerde server en het pad dat u wilt opgeven. Als u de naam van de gepubliceerde server in Dynamic Media Classic niet kent, gaat u naar **[!UICONTROL Setup > Application Setup]**.
 
    >[!NOTE]
    >
-   >Het klassieke Dynamic Media-hoofdpad is het pad van de Classic-map van Dynamic Media waarmee de Experience Manager verbinding maakt. U kunt de map verkleinen tot een specifieke map.
+   >Het Dynamic Media Classic-hoofdpad is het pad waarmee de Experience Manager van de Dynamic Media Classic-map verbinding maakt. U kunt de map verkleinen tot een specifieke map.
 
    >[!CAUTION]
    >
-   >Afhankelijk van de grootte van de klassieke Dynamic Media-map kan het importeren van een hoofdmap lang duren. Bovendien zouden de Klassieke gegevens van Dynamic Media de opslag van de Experience Manager kunnen overschrijden. Controleer of u de juiste map importeert. Door te veel gegevens te importeren, kan uw systeem worden gestopt.
+   >Afhankelijk van de grootte van de Dynamic Media Classic-map kan het importeren van een hoofdmap lang duren. Bovendien zouden de gegevens van Dynamic Media Classic de opslag van de Experience Manager kunnen overschrijden. Controleer of u de juiste map importeert. Door te veel gegevens te importeren, kan uw systeem worden gestopt.
 
    ![chlimage_1-298](assets/chlimage_1-298.png)
 
@@ -340,21 +341,19 @@ Om Experience Manager te vormen om activa aan Dynamic Media Klassiek te kunnen p
 >
 >Als u opnieuw verbinding maakt:
 >
->* Wanneer u bij het publiceren opnieuw verbinding maakt met Dynamic Media Classic, kunt u het wachtwoord bij het publiceren of opnieuw verbinden niet opnieuw instellen (geen probleem voor de instantie Auteur).
+>* Wanneer u bij het publiceren opnieuw verbinding maakt met Dynamic Media Classic, kunt u het wachtwoord opnieuw instellen bij het publiceren of opnieuw verbinden. Dit werkt niet (geen probleem in de instantie Auteur).
 >* Als u waarden wijzigt, zoals uw regio of bedrijfsnaam, moet u opnieuw verbinding maken met Dynamic Media Classic. Als de configuratieopties zijn gewijzigd maar niet opgeslagen, geeft de Experience Manager ten onrechte nog aan dat de configuratie geldig is. Zorg ervoor dat u opnieuw verbinding maakt.
-
 >
 
 
+### Adobe CQ Dynamic Media Classic Dam Listener inschakelen {#enabling-the-adobe-cq-scene-dam-listener}
 
-### Adobe CQ Dynamic Media Classic Dam Listener {#enabling-the-adobe-cq-scene-dam-listener} inschakelen
+Schakel de Adobe CQ Dynamic Media Classic Dam Listener in, die standaard is uitgeschakeld.
 
-Schakel de Klassieke Dam Listener van Adobe CQ Dynamic Media in, die standaard is uitgeschakeld.
+De Adobe CQ Dynamic Media Classic Dam Listener inschakelen:
 
-Adobe CQ Dynamic Media Classic Dam Listener inschakelen:
-
-1. Tik op het pictogram [!UICONTROL Tools] en navigeer naar **[!UICONTROL Operations > Web Console]**. De webconsole wordt geopend.
-1. Navigeer naar **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** en selecteer het selectievakje **[!UICONTROL Enabled]**.
+1. Tik op de knop [!UICONTROL Tools] pictogram, navigeer vervolgens naar **[!UICONTROL Operations > Web Console]**. De webconsole wordt geopend.
+1. Navigeren naar **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** en selecteert u de **[!UICONTROL Enabled]** selectievakje.
 
    ![chlimage_1-299](assets/chlimage_1-299.png)
 
@@ -362,59 +361,59 @@ Adobe CQ Dynamic Media Classic Dam Listener inschakelen:
 
 ### Aanpasbare time-out toevoegen aan Dynamic Media Classic Upload-workflow {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Wanneer een instantie van de Experience Manager wordt gevormd om videocodering door Dynamic Media Classic te behandelen, door gebrek, is er een onderbreking van 35 minuten op om het even welke uploadbaan. U kunt deze instelling configureren om taken voor het mogelijk langer uitvoeren van videocodering aan te passen:
+Wanneer een instantie van de Experience Manager wordt gevormd om videocodering door Dynamic Media Classic te behandelen, door gebrek, is er een 35 minieme onderbreking op om het even welke uploadbaan. U kunt deze instelling configureren om taken voor het mogelijk langer uitvoeren van videocodering aan te passen:
 
-1. Navigeer naar **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
+1. Navigeren naar **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
    ![chlimage_1-300](assets/chlimage_1-300.png)
 
-1. Wijzig het nummer naar wens in het veld **[!UICONTROL Active job timeout]**. Alle niet-negatieve getallen worden in seconden met de maateenheid geaccepteerd. Standaard is dit aantal ingesteld op 2100.
+1. Wijzig het nummer in het dialoogvenster **[!UICONTROL Active job timeout]** veld. Alle niet-negatieve getallen worden in seconden met de maateenheid geaccepteerd. Standaard is dit aantal ingesteld op 2100.
 
    >[!NOTE]
    >
-   >Beste praktijken: De meeste elementen worden maximaal minuten ingesloten (bijvoorbeeld afbeeldingen). Maar in bepaalde gevallen, zoals grotere video&#39;s, verhoogt u de time-outwaarde tot 7200 seconden (twee uur) om ruimte te maken voor lange verwerkingstijd. Anders wordt deze klassieke Dynamic Media-uploadtaak gemarkeerd als **[!UICONTROL UploadFailed]** in de JCR-metagegevens.
+   >Beste praktijken: De meeste elementen worden maximaal minuten ingesloten (bijvoorbeeld afbeeldingen). Maar in bepaalde gevallen, zoals grotere video&#39;s, verhoogt u de time-outwaarde tot 7200 seconden (twee uur) om ruimte te maken voor lange verwerkingstijd. Anders wordt deze Dynamic Media Classic-uploadtaak gemarkeerd als **[!UICONTROL UploadFailed]** in de JCR-metagegevens.
 
 1. Tik op **[!UICONTROL Save]**.
 
-### Automatische verwerking van Experience Manager Assets {#autouploading-from-aem-assets}
+### Autouploading vanuit Experience Manager Assets {#autouploading-from-aem-assets}
 
-Vanaf Experience Manager 6.3.2 is de Experience Manager Assets nu geconfigureerd voor u, zodat alle digitale elementen die u uploadt naar de Digital Asset Manager automatisch worden bijgewerkt naar Dynamic Media Classic als de elementen zich in een CQ-doelmap bevinden.
+Vanaf Experience Manager 6.3.2 is Experience Manager Assets nu voor u geconfigureerd, zodat alle digitale elementen die u uploadt naar de beheerder van digitale middelen automatisch worden bijgewerkt naar Dynamic Media Classic als de elementen zich in een CQ-doelmap bevinden.
 
-Wanneer een element wordt toegevoegd aan Experience Manager Assets, wordt het automatisch geüpload en gepubliceerd naar Dynamic Media Classic.
+Wanneer een element aan Experience Manager Assets wordt toegevoegd, wordt het automatisch geüpload en gepubliceerd naar Dynamic Media Classic.
 
 >[!NOTE]
 >
 >De maximale bestandsgrootte voor automatisch uploaden van Experience Manager Assets naar Dynamic Media Classic is 500 MB.
 
-Om automatisch laden van de Middelen van de Experience Manager te vormen:
+Om automatisch laden te configureren vanuit Experience Manager Assets:
 
-1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]** en tik onder de kop Dynamic Media onder Beschikbare configuraties op **[!UICONTROL dms7 (Dynamic Media]**)
-1. Tik op de tab **[!UICONTROL Advanced]**, selecteer het selectievakje **[!UICONTROL Enable Automatic Upload]** en tik vervolgens op **[!UICONTROL OK]**. U moet nu de DAM Asset-workflow zodanig configureren dat het uploaden naar Dynamic Media Classic wordt opgenomen.
+1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]** Tik vervolgens onder de kop Dynamic Media onder Beschikbare configuraties op **[!UICONTROL dms7 (Dynamic Media]**)
+1. Tik op de knop **[!UICONTROL Advanced]** selecteert u de **[!UICONTROL Enable Automatic Upload]** selectievakje, dan tikken **[!UICONTROL OK]**. U moet nu de DAM Asset-workflow zodanig configureren dat het uploaden naar Dynamic Media Classic wordt opgenomen.
 
    >[!NOTE]
    >
-   >Zie [De status (gepubliceerd/niet gepubliceerd) configureren van elementen die naar Dynamic Media Classic worden geduwd](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) voor informatie over het doorsturen van elementen naar Dynamic Media Classic in een niet-gepubliceerde status.
+   >Zie [De status (gepubliceerd/niet gepubliceerd) van naar Dynamic Media Classic geduwde middelen configureren](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) voor informatie over het ongepubliceerd naar Dynamic Media Classic duwen van activa.
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
-1. Navigeer terug naar de welkomstpagina van de Experience Manager en tik **[!UICONTROL Workflows]**. Dubbelklik op de **DAM Update Asset**-workflow om deze te openen.
-1. Navigeer in het hulpwerkgebied naar de **[!UICONTROL Workflow]**-componenten en selecteer **[!UICONTROL Dynamic Media Classic]**. Sleep **[!UICONTROL Dynamic Media Classic]** naar de workflow en tik **[!UICONTROL Save]**. Middelen die in de doelmap aan Experience Manager Assets worden toegevoegd, worden automatisch geüpload naar Dynamic Media Classic.
+1. Ga terug naar de welkomstpagina van de Experience Manager en tik op **[!UICONTROL Workflows]**. Dubbelklik op de knop **DAM Update-element** te openen.
+1. Navigeer in de assistent naar de knop **[!UICONTROL Workflow]** en selecteert u **[!UICONTROL Dynamic Media Classic]**. Slepen **[!UICONTROL Dynamic Media Classic]** naar de workflow en tik op **[!UICONTROL Save]**. Middelen die in de doelmap aan Experience Manager Assets worden toegevoegd, worden automatisch naar Dynamic Media Classic geüpload.
 
    ![chlimage_1-301](assets/chlimage_1-301.png)
 
    >[!NOTE]
    >
-   >* Wanneer u na het automatiseren elementen toevoegt die niet in de CQ-doelmap staan, worden deze niet geüpload naar Dynamic Media Classic.
-   >* Met Experience Manager worden alle metagegevens ingesloten zoals XMP voordat deze naar Dynamic Media Classic worden geüpload. Alle eigenschappen op het metagegevensknooppunt zijn dus beschikbaar in Dynamic Media Classic als XMP.
+   >* Wanneer u na het automatiseren elementen toevoegt die niet in de CQ-doelmap staan, worden deze niet naar Dynamic Media Classic geüpload.
+   >* Experience Manager sluit alle metagegevens in zoals XMP voordat deze naar Dynamic Media Classic worden geüpload. Alle eigenschappen op het metagegevensknooppunt zijn dus in Dynamic Media Classic als XMP beschikbaar.
 
 
-### De status (gepubliceerd/niet gepubliceerd) van aan Dynamic Media Classic {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene} doorgegeven elementen configureren
+### De status (gepubliceerd/niet gepubliceerd) van naar Dynamic Media Classic geduwde middelen configureren {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
-Als u middelen van de Activa van de Experience Manager aan de Klassiek van Dynamic Media duwt, kunt u of hen automatisch publiceren (standaardgedrag) of hen duwen aan de Klassiek van Dynamic Media in een niet gepubliceerde staat.
+Als u middelen van Experience Manager Assets naar Dynamic Media Classic duwt, kunt u of hen publiceren automatisch (standaardgedrag) of hen duwen aan Dynamic Media Classic in een niet gepubliceerde staat.
 
-Het is mogelijk dat u elementen niet direct op Dynamic Media Classic wilt publiceren als u ze in een testomgeving wilt testen voordat u live gaat. U kunt Experience Manager met de Veilige omgeving van de Test van Dynamic Media Classic gebruiken om activa van Activa in de Klassiek van Dynamic Media in een niet gepubliceerde staat direct te duwen.
+Het is mogelijk dat u elementen niet direct op Dynamic Media Classic wilt publiceren als u ze in een testomgeving wilt testen voordat u live gaat. U kunt Experience Manager met de Veilige omgeving van de Test van Dynamic Media Classic gebruiken om activa van Activa in Dynamic Media Classic in een niet gepubliceerde staat direct te duwen.
 
-Dynamic Media Klassieke elementen blijven beschikbaar via een beveiligde voorvertoning. Alleen wanneer de activa binnen de Experience Manager worden gepubliceerd, worden de Klassieke activa van Dynamic Media ook in productie genomen.
+Dynamic Media Classic-elementen blijven beschikbaar via een beveiligde voorvertoning. Alleen wanneer de activa binnen Experience Manager worden gepubliceerd, worden de activa van Dynamic Media Classic ook in productie genomen.
 
 Als u elementen direct wilt publiceren wanneer u ze naar Dynamic Media Classic duwt, hoeft u geen opties te configureren. Dit gedrag is de standaardinstelling.
 
@@ -422,18 +421,18 @@ Als u echter niet wilt dat elementen die aan Dynamic Media Classic worden doorge
 
 #### Vereisten om elementen naar Dynamic Media Classic te verzenden zonder publicatie {#prerequisites-to-push-assets-to-scene-unpublished}
 
-Voordat u elementen naar Dynamic Media Classic kunt verzenden zonder ze te publiceren, moet u het volgende instellen:
+Voordat u elementen naar Dynamic Media Classic kunt duwen zonder ze te publiceren, moet u het volgende instellen:
 
-1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In het geval van ondersteuning, vraag of beveiligde voorvertoning is ingeschakeld voor uw Dynamic Media Classic-account.
-1. Volg de aanwijzingen op [Beveiligde voorvertoning voor uw Dynamic Media Classic-account instellen.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
+1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In het geval van uw support, verzoek u dat de beveiligde voorvertoning is ingeschakeld voor uw Dynamic Media Classic-account.
+1. Volg de aanwijzingen [stel een veilige voorvertoning voor uw Dynamic Media Classic-account in.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
 
-Dit zijn dezelfde stappen die u zou volgen om een veilige testinstallatie te maken in Dynamic Media Classic.
+Dit zijn dezelfde stappen die u zou volgen om een veilige testinstallatie in Dynamic Media Classic te maken.
 
 >[!NOTE]
 >
->Als uw installatieomgeving een 64-bits UNIX®-besturingssysteem is, raadpleegt u [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) betreffende andere configuratieopties die u moet instellen.
+>Als uw installatieomgeving een UNIX® 64-bits besturingssysteem is, raadpleegt u [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) met betrekking tot andere configuratieopties moet u plaatsen.
 
-#### Bekende beperkingen voor het doorduwen van elementen in niet-gepubliceerde toestand {#known-limitations-for-pushing-assets-in-unpublished-state}
+#### Bekende beperkingen voor het doorduwen van elementen in niet-gepubliceerde toestand  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
 Houd rekening met de volgende beperkingen als u deze functie gebruikt:
 
@@ -442,20 +441,20 @@ Houd rekening met de volgende beperkingen als u deze functie gebruikt:
 
 >[!NOTE]
 >
->Als u elementen direct wilt publiceren, kunt u het beste **[!UICONTROL Enable Secure Preview]** ingesteld houden op **[!UICONTROL Immediately]** en de functie **[!UICONTROL Enable Automatic Upload]** gebruiken.
+>Als u elementen direct wilt publiceren, kunt u het beste de volgende methoden gebruiken: **[!UICONTROL Enable Secure Preview]** instellen op **[!UICONTROL Immediately]** en gebruiken de **[!UICONTROL Enable Automatic Upload]** gebruiken.
 
-### De status van naar Dynamic Media Classic geduwde elementen instellen als niet-gepubliceerd {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
+### De status van naar Dynamic Media Classic geduwde middelen instellen als niet-gepubliceerd {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
 >Als een gebruiker het element in Experience Manager publiceert, wordt het S7-element automatisch geactiveerd voor de productie/het actieve element (het element bevindt zich niet meer in een beveiligde voorvertoning/is niet gepubliceerd).
 
-De status van elementen die naar Dynamic Media Classic worden geduwd, instellen als niet-gepubliceerd:
+De status van aan Dynamic Media Classic geduwde middelen instellen als niet-gepubliceerd:
 
-1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]**, tik **[!UICONTROL Dynamic Media Classic]** en selecteer de configuratie in Dynamic Media Classic.
-1. Tik op het tabblad **[!UICONTROL Advanced]**. Selecteer **[!UICONTROL Upon AEM Publish Activation]** in het vervolgkeuzemenu **[!UICONTROL Enable Secure View]** om elementen naar Dynamic Media Classic te verzenden zonder te publiceren. (Deze waarde wordt standaard ingesteld op **[!UICONTROL Immediately]**, waarbij Klassieke Dynamic Media-elementen direct worden gepubliceerd.)
+1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]**, tikken **[!UICONTROL Dynamic Media Classic]** en selecteer uw configuratie in Dynamic Media Classic.
+1. Tik op het tabblad **[!UICONTROL Advanced]**. In de **[!UICONTROL Enable Secure View]** vervolgkeuzelijst, selecteert u **[!UICONTROL Upon AEM Publish Activation]** om elementen naar Dynamic Media Classic te verzenden zonder te publiceren. (Deze waarde is standaard ingesteld op **[!UICONTROL Immediately]**, waarbij Dynamic Media Classic-activa onmiddellijk worden gepubliceerd.)
 
-   Zie [Klassieke documentatie van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish) voor meer informatie over testmiddelen alvorens hen openbaar te maken.
+   Zie [Dynamic Media Classic-documentatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish) voor meer informatie over het testen van bedrijfsmiddelen alvorens deze openbaar te maken.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -463,160 +462,160 @@ De status van elementen die naar Dynamic Media Classic worden geduwd, instellen 
 
 Als u Beveiligde weergave inschakelt, worden uw elementen zonder publicatie naar de beveiligde voorvertoningsserver verplaatst.
 
-Navigeer naar een klassieke Dynamic Media-component op een pagina in Experience Manager om te zien of Voorvertoning beveiligen is ingeschakeld. Tik op **[!UICONTROL Edit]**. Het element heeft de beveiligde voorvertoningsserver die in de URL wordt vermeld. Na publicatie in Experience Manager wordt het serverdomein in de bestandsverwijzing bijgewerkt van de voorbeeld-URL naar de productie-URL.
+Navigeer naar een Dynamic Media Classic-component op een pagina in Experience Manager om te zien of Voorvertoning beveiligen is ingeschakeld. Tik op **[!UICONTROL Edit]**. Het element heeft de beveiligde voorvertoningsserver die in de URL wordt vermeld. Na publicatie in Experience Manager wordt het serverdomein in de bestandsverwijzing bijgewerkt van de voorbeeld-URL naar de productie-URL.
 
 ### Dynamic Media Classic inschakelen voor WCM {#enabling-scene-for-wcm}
 
-U moet Dynamic Media Classic voor WCM inschakelen om twee redenen:
+Dynamic Media Classic inschakelen voor WCM is om twee redenen vereist:
 
-* Hiermee wordt de vervolgkeuzelijst met universele videoprofielen ingeschakeld voor het ontwerpen van pagina&#39;s. Zonder deze lijst, is **[!UICONTROL Universal Video Preset]** drop-down leeg en kan niet worden geplaatst.
-* Als een digitaal element niet in de doelmap staat, kunt u het element uploaden naar Dynamic Media Classic als u Dynamic Media Classic voor die pagina in de pagina-eigenschappen inschakelt. Vervolgens sleept u het element naar een klassieke Dynamic Media-component. Normale overervingsregels zijn van toepassing (dat wil zeggen dat onderliggende pagina&#39;s de configuratie overnemen van de bovenliggende pagina).
+* Hiermee wordt de vervolgkeuzelijst met universele videoprofielen ingeschakeld voor het ontwerpen van pagina&#39;s. Zonder deze lijst **[!UICONTROL Universal Video Preset]** drop-down is leeg en kan niet worden geplaatst.
+* Als een digitaal element niet in de doelmap staat, kunt u het element uploaden naar Dynamic Media Classic als u Dynamic Media Classic voor die pagina inschakelt in de pagina-eigenschappen. Vervolgens sleept u het element naar een Dynamic Media Classic-component. Normale overervingsregels zijn van toepassing (dat wil zeggen dat onderliggende pagina&#39;s de configuratie overnemen van de bovenliggende pagina).
 
-Wanneer het toelaten van de Klassiek van Dynamic Media voor WCM, zoals met andere configuraties, zijn de overervingsregels van toepassing. U kunt Dynamic Media Classic voor WCM inschakelen in de geoptimaliseerde aanraakinterface of in de klassieke gebruikersinterface.
+Wanneer het toelaten van Dynamic Media Classic voor WCM, zoals met andere configuraties, zijn de overervingsregels van toepassing. U kunt Dynamic Media Classic for WCM inschakelen in de geoptimaliseerde aanraakinterface of in de klassieke gebruikersinterface.
 
-#### Dynamic Media Classic inschakelen voor WCM in de geoptimaliseerde gebruikersinterface {#enabling-scene-for-wcm-in-the-touch-optimized-user-interface}
+#### Dynamic Media Classic for WCM inschakelen in de Touch-Optimized Gebruikersinterface {#enabling-scene-for-wcm-in-the-touch-optimized-user-interface}
 
-Dynamic Media Classic voor WCM inschakelen in de gebruikersinterface voor geoptimaliseerde aanrakingen:
+Dynamic Media Classic for WCM inschakelen in de gebruikersinterface voor geoptimaliseerde aanrakingen:
 
-1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Sites]** en vervolgens naar de hoofdpagina van uw website (niet taalspecifiek).
+1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Sites]** en vervolgens de hoofdpagina van uw website (niet taalspecifiek).
 
-1. Selecteer in de werkbalk het pictogram [!UICONTROL settings] en tik **[!UICONTROL Open Properties]**.
+1. Selecteer in de werkbalk de optie [!UICONTROL settings] pictogram en tik **[!UICONTROL Open Properties]**.
 
-1. Tik **[!UICONTROL Cloud Services]** en tik **[!UICONTROL Add Configuration]** en selecteer **[!UICONTROL Dynamic Media Classic]**.
-1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Adobe Dynamic Media Classic]** de gewenste configuratie en tik **[!UICONTROL OK]**.
+1. Tikken **[!UICONTROL Cloud Services]** en tikken **[!UICONTROL Add Configuration]** en selecteert u **[!UICONTROL Dynamic Media Classic]**.
+1. In de **[!UICONTROL Adobe Dynamic Media Classic]** vervolgkeuzelijst, selecteert u de gewenste configuratie en tikt u op **[!UICONTROL OK]**.
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
-   Videovoorinstellingen uit die configuratie van Dynamic Media Classic zijn beschikbaar voor gebruik in Experience Manager met de Klassieke Dynamic Media-videocomponent op die pagina en onderliggende pagina&#39;s.
+   De video stelt van die configuratie van Dynamic Media Classic zijn beschikbaar voor gebruik in Experience Manager met de videocomponent van Dynamic Media Classic op die pagina en kindpagina&#39;s.
 
-#### Dynamic Media Classic inschakelen voor WCM in de klassieke gebruikersinterface {#enabling-scene-for-wcm-in-the-classic-user-interface}
+#### Dynamic Media Classic for WCM inschakelen in de klassieke gebruikersinterface {#enabling-scene-for-wcm-in-the-classic-user-interface}
 
-Dynamic Media Classic voor WCM inschakelen in de klassieke gebruikersinterface:
+Dynamic Media Classic for WCM inschakelen in de klassieke gebruikersinterface:
 
 1. Tik in Experience Manager op **[!UICONTROL Websites]** en navigeer naar de hoofdpagina van uw website (niet taalspecifiek).
 
-1. Tik in het hulpdekick op het pictogram **[!UICONTROL Page]** en tik **[!UICONTROL Page Properties]**.
+1. Tik in het hulpstuk op de knop **[!UICONTROL Page]** pictogram en tik **[!UICONTROL Page Properties]**.
 
 1. Tik op **[!UICONTROL Cloud Services > Add services > Dynamic Media Classic]**.
-1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Adobe Dynamic Media Classic]** de gewenste configuratie en tik **[!UICONTROL OK]**.
+1. In de **[!UICONTROL Adobe Dynamic Media Classic]** vervolgkeuzelijst, selecteert u de gewenste configuratie en tikt u op **[!UICONTROL OK]**.
 
-   Videovoorinstellingen uit die configuratie van Dynamic Media Classic zijn beschikbaar voor gebruik in Experience Manager met de Klassieke Dynamic Media-videocomponent op die pagina en onderliggende pagina&#39;s.
+   De video stelt van die configuratie van Dynamic Media Classic zijn beschikbaar voor gebruik in Experience Manager met de videocomponent van Dynamic Media Classic op die pagina en kindpagina&#39;s.
 
-### Een standaardconfiguratie {#configuring-a-default-configuration} configureren
+### Een standaardconfiguratie configureren {#configuring-a-default-configuration}
 
-Als u meerdere Klassieke Dynamic Media-configuraties hebt, kunt u er een als standaard opgeven voor de Dynamic Media Klassieke-inhoudbrowser.
+Als u meerdere Dynamic Media Classic-configuraties hebt, kunt u een van deze configuraties als standaard opgeven voor de Dynamic Media Classic-inhoudbrowser.
 
-Slechts één Klassieke configuratie van Dynamic Media kan als gebrek op een bepaald ogenblik worden gemerkt. De standaardconfiguratie is de bedrijfsactiva die door gebrek in de Browser van de Inhoud van Dynamic Media Klassieke tonen.
+Er kan slechts één Dynamic Media Classic-configuratie op een bepaald moment als standaard worden gemarkeerd. De standaardconfiguratie is de bedrijfsactiva die door gebrek in Browser van de Inhoud van Dynamic Media Classic tonen.
 
 De standaardconfiguratie configureren:
 
-1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]**, tik **[!UICONTROL Dynamic Media Classic]** en selecteer de configuratie in Dynamic Media Classic.
-1. Tik op **[!UICONTROL Edit]** om de configuratie te openen.
+1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]**, tikken **[!UICONTROL Dynamic Media Classic]** en selecteer uw configuratie in Dynamic Media Classic.
+1. Tik op **[!UICONTROL Edit]**.
 
-1. Schakel op het tabblad **[!UICONTROL General]** het selectievakje **[!UICONTROL Default Configuration]** in om dit het standaardbedrijf en basispad te maken dat wordt weergegeven in de Dynamic Media Klassieke inhoudbrowser.
+1. In de **[!UICONTROL General]** selecteert u de **[!UICONTROL Default Configuration]** Schakel dit selectievakje in om het als standaardbedrijf en basispad in te stellen dat in de Dynamic Media Classic-inhoudbrowser wordt weergegeven.
 
    ![chlimage_1-304](assets/chlimage_1-304.png)
 
    >[!NOTE]
    >
-   >Als er slechts één configuratie is, heeft het selecteren van **[!UICONTROL Default Configuration]** controledoos geen effect.
+   >Als er slechts één configuratie is, selecteert u **[!UICONTROL Default Configuration]** selectievakje heeft geen effect.
 
-### De ad-hocmap {#configuring-the-ad-hoc-folder} configureren
+### De map Ad hoc configureren {#configuring-the-ad-hoc-folder}
 
-U kunt de map configureren waarnaar elementen worden geüpload in Dynamic Media Classic wanneer het element zich niet in de CQ-doelmap bevindt. Zie Elementen publiceren van buiten de CQ-doelmap.
+U kunt de map configureren waarnaar elementen in Dynamic Media Classic worden geüpload wanneer het element zich niet in de CQ-doelmap bevindt. Zie Elementen publiceren van buiten de CQ-doelmap.
 
 U configureert de ad-hocmap als volgt:
 
-1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]**, tik **[!UICONTROL Dynamic Media Classic]** en selecteer de configuratie in Dynamic Media Classic.
-1. Tik op **[!UICONTROL Edit]** om de configuratie te openen.
+1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]**, tikken **[!UICONTROL Dynamic Media Classic]** en selecteer uw configuratie in Dynamic Media Classic.
+1. Tik op **[!UICONTROL Edit]**.
 
-1. Tik op het tabblad **[!UICONTROL Advanced]**. In het veld **[!UICONTROL Ad-hoc Folder]** kunt u de map **Ad-hoc** wijzigen. Standaard is dit de **naam_van_het_bedrijf/CQ5_adhoc**.
+1. Tik op het tabblad **[!UICONTROL Advanced]**. In de **[!UICONTROL Ad-hoc Folder]** veld kunt u de **Ad hoc** map. Standaard is dit de **name_of_the_company/CQ5_adhoc**.
 
    ![chlimage_1-305](assets/chlimage_1-305.png)
 
-### Universal Presets {#configuring-universal-presets} configureren
+### Universal Presets configureren {#configuring-universal-presets}
 
-Zie [Video](/help/assets/s7-video.md) om Universal Presets voor de videocomponent te configureren.
+Als u universele voorinstellingen voor de videocomponent wilt configureren, raadpleegt u [Video](/help/assets/s7-video.md).
 
-## Ondersteuning voor MIME-op type gebaseerde assets/Dynamic Media Classic upload Job parameter{#enabling-mime-type-based-assets-scene-upload-job-parameter-support}
+## Ondersteuning van MIME-op type gebaseerde middelen/Dynamic Media Classic-upload taakparameters inschakelen {#enabling-mime-type-based-assets-scene-upload-job-parameter-support}
 
-U kunt configureerbare Dynamic Media Classic-uploadtaakparameters inschakelen die worden geactiveerd door de synchronisatie van Digital Asset Manager/Dynamic Media Classic-middelen.
+U kunt configureerbare Dynamic Media Classic-taakparameters inschakelen die worden geactiveerd door de synchronisatie van Digital Asset Manager/Dynamic Media Classic-elementen.
 
 Specifiek, vormt u het erkende dossierformaat door MIME type in het OSGi (Open het initiatief van de Gateway van de Dienst) gebied van het paneel van de Configuratie van de Console van het Web van de Experience Manager. Vervolgens kunt u de afzonderlijke taakparameters voor uploaden aanpassen die worden gebruikt voor elk MIME-type in de JCR (Java™ Content Repository).
 
 **Op MIME gebaseerde elementen inschakelen:**
 
 1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Tools > Operations > Web Console]**.
-1. Tik in het configuratievenster van de Adobe Experience Manager-webconsole **[!UICONTROL OSGi]** in het menu **[!UICONTROL Configuration]**.
-1. Onder de kolom Naam zoekt en tikt u **[!UICONTROL Adobe CQ Dynamic Media Classic Asset MIME type Service]** om de configuratie te bewerken.
+1. In het configuratiescherm van de Adobe Experience Manager-webconsole, op het tabblad **[!UICONTROL OSGi]** menu, tikken **[!UICONTROL Configuration]**.
+1. Zoek en tik onder de kolom Naam **[!UICONTROL Adobe CQ Dynamic Media Classic Asset MIME type Service]** om de configuratie te bewerken.
 1. Tik in het gebied MIME-typetoewijzing op een plusteken (+) om een MIME-type toe te voegen.
 
    Zie [Ondersteunde MIME-typen](/help/assets/assets-formats.md#supported-mime-types).
 
 1. Typ de nieuwe naam van het MIME-type in het tekstveld.
 
-   U kunt bijvoorbeeld een `<file_extension>=<mime_type>` typen zoals in `EPS=application/postscript` OF `PSD=image/vnd.adobe.photoshop`.
+   U kunt bijvoorbeeld een `<file_extension>=<mime_type>` zoals in `EPS=application/postscript` OF `PSD=image/vnd.adobe.photoshop`.
 
 1. Tik in de rechterbenedenhoek van het configuratievenster op **[!UICONTROL Save]**.
 1. Ga terug naar de Experience Manager en tik op de CRXDE Lite.
-1. Navigeer op de pagina CRXDE Lite in de linkertrack naar `/etc/cloudservices/scene7/<environment>` (vervang `<environment>` voor de eigenlijke naam).
-1. Breid `<environment>` (substitueer `<environment>` voor de daadwerkelijke naam) uit om de `mimeTypes` knoop te openbaren.
+1. Navigeer op de pagina CRXDE Lite in het linkerspoor naar `/etc/cloudservices/scene7/<environment>` (vervanging `<environment>` voor de werkelijke naam).
+1. Uitbreiden `<environment>` (vervanging `<environment>` voor de eigenlijke naam) `mimeTypes` knooppunt.
 1. Tik op het mimeType dat u zojuist hebt toegevoegd.
 
-   Bijvoorbeeld `mimeTypes > application_postscript` OF `mimeTypes > image_vnd.adobe.photoshop`.
+   Bijvoorbeeld: `mimeTypes > application_postscript` OF `mimeTypes > image_vnd.adobe.photoshop`.
 
-1. Tik rechts van de pagina CRXDE Lite op het tabblad **[!UICONTROL Properties]**.
-1. Geef een klassieke Dynamic Media-taakparameter voor uploaden op in het waardeveld **[!UICONTROL jobParam]**.
+1. Tik rechts van de pagina CRXDE Lite op de knop **[!UICONTROL Properties]** tab.
+1. Een Dynamic Media Classic-taakparameter voor uploaden opgeven in het dialoogvenster **[!UICONTROL jobParam]** waardeveld.
 
    Bijvoorbeeld, `psprocess="rasterize"&psresolution=120` .
 
-   Zie [Adobe Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) voor meer uploadtaakparameters die u kunt gebruiken.
+   Zie de [Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) voor meer uploadtaakparameters die u kunt gebruiken.
 
    >[!NOTE]
    >
-   >Als u PSD-bestanden uploadt en u wilt deze als sjablonen met laagextracties verwerken, voert u het volgende in het waardeveld **[!UICONTROL jobParam]** in:
+   >Als u PSD-bestanden uploadt en u wilt deze als sjablonen met laagextracties verwerken, voert u het volgende in het dialoogvenster **[!UICONTROL jobParam]** waardeveld:
    >
    >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   >Zorg ervoor dat uw PSD-bestand &#39;lagen&#39; heeft. Als het strikt genomen één afbeelding of een afbeelding met een masker is, wordt de afbeelding alleen verwerkt als een afbeelding omdat er geen lagen zijn om te verwerken.
+   >Zorg ervoor dat het PSD-bestand &#39;lagen&#39; heeft. Als het strikt genomen één afbeelding of een afbeelding met een masker is, wordt de afbeelding alleen verwerkt als een afbeelding omdat er geen lagen zijn om te verwerken.
 
 1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All]**.
 
-## Problemen met de integratie van Dynamic Media Classic en Experience Manager {#troubleshooting-scene-and-aem-integration} oplossen
+## Problemen met Dynamic Media Classic en integratie met Experience Managers oplossen {#troubleshooting-scene-and-aem-integration}
 
 Als u problemen hebt met het integreren van Experience Manager met Dynamic Media Classic, raadpleegt u de volgende scenario&#39;s voor oplossingen.
 
 **Als het publiceren van uw digitale middelen naar Dynamic Media Classic mislukt:**
 
-* Controleer of het element dat u wilt uploaden, zich in de map **[!UICONTROL CQ target]** bevindt (u geeft deze map op in de Classic-cloudconfiguratie van Dynamic Media).
-* Als dit niet het geval is, moet u de wolkenconfiguratie in **[!UICONTROL Page Properties]** voor die pagina vormen om het uploaden naar **[!UICONTROL CQ adhoc]** omslag toe te staan.
+* Controleer of het element dat u wilt uploaden zich in het deelvenster **[!UICONTROL CQ target]** (u geeft deze map op in de Dynamic Media Classic-cloudconfiguratie).
+* Als dit niet het geval is, moet u de cloudconfiguratie configureren in **[!UICONTROL Page Properties]** voor die pagina uploaden naar de **[!UICONTROL CQ adhoc]** map.
 
 * Controleer de logboeken voor om het even welke informatie.
 
 **Als uw videovoorinstellingen niet worden weergegeven:**
 
-* Zorg ervoor dat u de wolkenconfiguratie van die pagina door **[!UICONTROL Page Properties]** hebt gevormd. Videovoorinstellingen zijn beschikbaar in de klassieke Dynamic Media-videocomponent.
+* Zorg ervoor dat u de wolkenconfiguratie van die pagina door hebt gevormd **[!UICONTROL Page Properties]**. Videovoorinstellingen zijn beschikbaar in de Dynamic Media Classic-videocomponent.
 
 **Als uw video-elementen niet in Experience Manager worden afgespeeld:**
 
-* Controleer of u de juiste videocomponent hebt gebruikt. Dynamic Media Klassieke videocomponent is anders dan de basis-videocomponent. Zie [Elementaire videocomponent versus Dynamic Media Klassieke videocomponent](/help/assets/s7-video.md).
+* Controleer of u de juiste videocomponent hebt gebruikt. Dynamic Media Classic video component is verschillend van de stichting Video component. Zie [Foundation Video Component versus Dynamic Media Classic Video Component](/help/assets/s7-video.md).
 
 **Als nieuwe of gewijzigde middelen in Experience Manager niet automatisch naar Dynamic Media Classic worden geüpload:**
 
-* Zorg ervoor dat de elementen zich in de CQ-doelmap bevinden. Alleen elementen in de CQ-doelmap worden automatisch bijgewerkt (op voorwaarde dat u Experience Manager-elementen hebt geconfigureerd voor het automatisch uploaden van elementen).
-* Zorg ervoor dat u de configuratie Cloud Services zodanig hebt geconfigureerd dat Automatisch uploaden is ingeschakeld en dat u de DAM Asset-workflow hebt bijgewerkt en opgeslagen, zodat deze ook Dynamic Media Classic-uploaden omvat.
+* Zorg ervoor dat de elementen zich in de CQ-doelmap bevinden. Alleen elementen in de CQ-doelmap worden automatisch bijgewerkt (op voorwaarde dat u Experience Manager Assets hebt geconfigureerd voor het automatisch uploaden van middelen).
+* Zorg ervoor dat u de configuratie van de Cloud Services hebt geconfigureerd voor Automatisch uploaden inschakelen en dat u de DAM Asset-workflow hebt bijgewerkt en opgeslagen, zodat deze ook het uploaden van Dynamic Media Classic omvat.
 * Wanneer u een afbeelding uploadt naar een submap van de Dynamic Media Classic-doelmap, moet u een van de volgende handelingen uitvoeren:
 
    * Zorg ervoor dat de namen van alle elementen, ongeacht de locatie, uniek zijn. Anders wordt het element in de hoofddoelmap verwijderd en blijft alleen het element in de submap over.
    * Wijzig de manier waarop Dynamic Media Classic elementen overschrijft in het gedeelte Setup van de Dynamic Media Classic-account. Stel Dynamic Media Classic niet in om elementen te overschrijven, ongeacht de locatie als u elementen met dezelfde naam in submappen gebruikt.
 
-**Als uw verwijderde elementen of mappen niet zijn gesynchroniseerd tussen Dynamic Media Classic en Experience Manager:**
+**Als uw verwijderde elementen of mappen niet worden gesynchroniseerd tussen Dynamic Media Classic en Experience Manager:**
 
-* Elementen en mappen die zijn verwijderd uit Experience Manager Assets, worden nog steeds weergegeven in de gesynchroniseerde map in Dynamic Media Classic. Verwijder deze handmatig.
+* Middelen en mappen die zijn verwijderd uit Experience Manager Assets, worden nog steeds weergegeven in de gesynchroniseerde map in Dynamic Media Classic. Verwijder deze handmatig.
 
 **Als het uploaden van video mislukt**
 
-* Als uw video uploadt ontbreekt en u gebruikt Experience Manager om video door de Klassieke integratie van Dynamic Media te coderen, zie [Aanpasbare onderbreking toevoegen aan Klassieke de uploadworkflow van Dynamic Media](#adding-configurable-timeout-to-scene-upload-workflow).
+* Als het uploaden van uw video mislukt en u Experience Manager gebruikt om video te coderen via de Dynamic Media Classic-integratie, raadpleegt u [Aanpasbare time-out toevoegen aan Dynamic Media Classic Upload-workflow](#adding-configurable-timeout-to-scene-upload-workflow).
 
 >[!CAUTION]
 >

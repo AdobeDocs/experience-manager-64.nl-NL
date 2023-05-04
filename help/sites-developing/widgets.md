@@ -1,8 +1,8 @@
 ---
 title: Widgets gebruiken en uitbreiden (klassieke UI)
-seo-title: Widgets gebruiken en uitbreiden (klassieke UI)
+seo-title: Using and Extending Widgets (Classic UI)
 description: AEM webinterface gebruikt AJAX en andere moderne browsertechnologieën om WYSIWYG-bewerking en -opmaak van inhoud door auteurs rechtstreeks op de webpagina mogelijk te maken
-seo-description: AEM webinterface gebruikt AJAX en andere moderne browsertechnologieën om WYSIWYG-bewerking en -opmaak van inhoud door auteurs rechtstreeks op de webpagina mogelijk te maken
+seo-description: AEM's web-based interface uses AJAX and other modern browser technologies to enable WYSIWYG editing and formatting of content by authors right on the web page
 uuid: e8dfa140-dab7-4e08-a790-d703adf86d6f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,33 +10,36 @@ topic-tags: components
 content-type: reference
 discoiquuid: 508f4fab-dd87-4306-83ae-12e544b8b723
 exl-id: c747bfda-e82a-4b2d-a4af-5792bfe82576
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5182'
+source-wordcount: '5187'
 ht-degree: 0%
 
 ---
 
 # Widgets gebruiken en uitbreiden (klassieke UI){#using-and-extending-widgets-classic-ui}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Adobe Experience Manager-webinterface gebruikt AJAX en andere moderne browsertechnologieën om WYSIWYG-bewerking en -opmaak van inhoud door auteurs rechtstreeks op de webpagina mogelijk te maken.
 
-Adobe Experience Manager (AEM) gebruikt de [ExtJS](https://www.sencha.com/) widget-bibliotheek, die de hoogst gepolijste gebruikersinterface-elementen verstrekt die over alle belangrijkste browsers werken en de verwezenlijking van Desktop-rang UI ervaringen toestaan.
+Adobe Experience Manager (AEM) gebruikt de [ExtJS](https://www.sencha.com/) Widget-bibliotheek, die de zeer gepolijste elementen van de gebruikersinterface biedt die in alle belangrijkste browsers werken en het maken van gebruikersinterface van desktopniveau mogelijk maken.
 
 Deze widgets zijn opgenomen in AEM en kunnen, naast het gebruik door AEM zelf, worden gebruikt door elke website die met AEM is gemaakt.
 
-Voor een volledige referentie van alle beschikbare widgets in AEM kunt u naar de [widget API documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) of naar de [lijst van bestaande xtypes](/help/sites-developing/xtypes.md) verwijzen. Daarnaast zijn er veel voorbeelden beschikbaar van het gebruik van het ExtJS-framework op de [Sencha](https://www.sencha.com/products/extjs/examples/)-site, de eigenaar van het framework.
+Voor een volledige verwijzing naar alle beschikbare widgets in AEM kunt u verwijzen naar de [API-documentatie voor widget](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) of aan de [lijst van bestaande xtypes](/help/sites-developing/xtypes.md). Daarnaast zijn er veel voorbeelden beschikbaar van het gebruik van het ExtJS-framework op de [Sencha](https://www.sencha.com/products/extjs/examples/) , de eigenaar van het raamwerk.
 
-Deze pagina biedt inzicht in het gebruik en uitbreiden van widgets. Het beschrijft eerst hoe te om [cliënt-zijcode in een pagina ](#including-the-client-sided-code-in-a-page) te omvatten. Vervolgens worden enkele voorbeeldcomponenten beschreven die zijn gemaakt om een aantal basistoepassingen en -extensies te illustreren. Deze componenten zijn beschikbaar in het **Gebruikend ExtJS Widgets** pakket op **Pakket Share**.
+Deze pagina biedt inzicht in het gebruik en uitbreiden van widgets. Hierin wordt eerst beschreven hoe u [clientcode op een pagina opnemen](#including-the-client-sided-code-in-a-page). Vervolgens worden enkele voorbeeldcomponenten beschreven die zijn gemaakt om een aantal basistoepassingen en -extensies te illustreren. Deze componenten zijn beschikbaar in de **ExtJS-widgets gebruiken** pakket op **Pakket delen**.
 
 Het pakket bevat voorbeelden van:
 
-* [Standaarddialoogvensters ](#basic-dialogs) die zijn samengesteld met widgets die niet in de verpakking staan.
-* [Dynamische ](#dynamic-dialogs) dialoogvensters die zijn samengesteld met kant-en-klare widgets en aangepaste javascript-logica.
+* [Standaarddialoogvensters](#basic-dialogs) gemaakt met kant-en-klare widgets.
+* [Dynamische dialoogvensters](#dynamic-dialogs) gemaakt met kant-en-klare widgets en aangepaste javascript-logica.
 * Dialoogvensters gebaseerd op [aangepaste widgets](#custom-widgets).
-* A [tree panel](#tree-overview) displaying a JCR tree under a given path.
-* Een [rastervenster](#grid-overview) waarin gegevens in tabelvorm worden weergegeven.
+* A [deelvenster met boomstructuur](#tree-overview) een JCR-structuur onder een bepaald pad weergeven.
+* A [rasterdeelvenster](#grid-overview) gegevens weergeven in tabelvorm.
 
 >[!NOTE]
 >
@@ -44,15 +47,15 @@ Het pakket bevat voorbeelden van:
 
 >[!NOTE]
 >
->Op deze pagina wordt het gebruik van widgets in de klassieke gebruikersinterface beschreven. Adobe raadt u aan de moderne, [touch-ingeschakelde UI](/help/sites-developing/touch-ui-concepts.md) te benutten op basis van [Korale UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) en [graniet UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Op deze pagina wordt het gebruik van widgets in de klassieke gebruikersinterface beschreven. Adobe raadt u aan de moderne [interface met aanraakbediening](/help/sites-developing/touch-ui-concepts.md) gebaseerd op [Koraalinterface](/help/sites-developing/touch-ui-concepts.md#coral-ui) en [Graniet-interface](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
-## De code aan de clientzijde opnemen op een pagina {#including-the-client-sided-code-in-a-page}
+## De code aan de clientzijde opnemen in een pagina {#including-the-client-sided-code-in-a-page}
 
 JavaScript- en stijlbladcode aan clientzijde moet in een clientbibliotheek worden geplaatst.
 
 Een clientbibliotheek maken:
 
-1. Maak een knooppunt onder `/apps/<project>` met de volgende eigenschappen:
+1. Hieronder een knooppunt maken `/apps/<project>` met de volgende eigenschappen:
 
    ```
        name="clientlib"
@@ -67,11 +70,11 @@ Een clientbibliotheek maken:
    >
    >Opmerking: `<category-name>` is de naam van de aangepaste bibliotheek (bijvoorbeeld &quot;cq.extjstraining&quot;) en wordt gebruikt om de bibliotheek op de pagina op te nemen.
 
-1. Onder `clientlib` creeer `css` en `js` omslagen (nt:omslag).
+1. Onder `clientlib` de `css` en `js` mappen (nt:folder).
 
-1. Onder `clientlib` creeer `css.txt` en `js.txt` dossiers (nt:dossiers). Deze .txt-bestanden bevatten de bestanden die in de bibliotheek zijn opgenomen.
+1. Onder `clientlib` de `css.txt` en `js.txt` bestanden (nt:bestanden). Deze .txt-bestanden bevatten de bestanden die in de bibliotheek zijn opgenomen.
 
-1. Bewerken `js.txt`: moet beginnen met &#39; `#base=js`&#39; gevolgd door de lijst met bestanden die worden samengevoegd door de CQ-clientbibliotheekservice, bijvoorbeeld:
+1. Bewerken `js.txt`: moet beginnen met &#39; `#base=js`&quot;, gevolgd door de lijst van bestanden die door de CQ-clientbibliotheekservice worden samengevoegd, bijvoorbeeld:
 
    ```
    #base=js
@@ -82,16 +85,16 @@ Een clientbibliotheek maken:
     InsertTextPlugin.js
    ```
 
-1. Bewerken `css.txt`: moet beginnen met &#39; `#base=css`&#39; gevolgd door de lijst met bestanden die worden samengevoegd door de CQ-clientbibliotheekservice, bijvoorbeeld:
+1. Bewerken `css.txt`: moet beginnen met &#39; `#base=css`&quot;, gevolgd door de lijst van bestanden die door de CQ-clientbibliotheekservice worden samengevoegd, bijvoorbeeld:
 
    ```
    #base=css
     components.css
    ```
 
-1. Plaats onder de map `js` de javascript-bestanden die bij de bibliotheek horen.
+1. Onder de `js` , plaatst u de javascript-bestanden die bij de bibliotheek horen.
 
-1. Plaats onder de map `css` de `.css`-bestanden en de bronnen die door de CSS-bestanden worden gebruikt (bijvoorbeeld `my_icon.png`).
+1. Onder de `css` map, plaats de `.css` bestanden en de bronnen die door de CSS-bestanden worden gebruikt (bv. `my_icon.png`).
 
 >[!NOTE]
 >
@@ -103,13 +106,13 @@ De clientbibliotheek opnemen in de jsp voor de paginacomponent:
 
    `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
 
-   waarbij `<category-nameX>` de naam van de clientbibliotheek is.
+   waar `<category-nameX>` is de naam van de bibliotheek aan de clientzijde.
 
 * alleen javascript-code opnemen:
 
    `<ui:includeClientLib js="<category-name>"/>`
 
-Zie de beschrijving van de tag [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) voor meer informatie.
+Zie voor meer informatie de beschrijving van de [&lt;ui:includeclientlib>](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) tag.
 
 In sommige gevallen mag een clientbibliotheek alleen beschikbaar zijn in de modus Schrijver en moet deze worden uitgesloten in de publicatiemodus. Dit kan als volgt worden bereikt:
 
@@ -121,20 +124,20 @@ In sommige gevallen mag een clientbibliotheek alleen beschikbaar zijn in de modu
 
 ### Aan de slag met de voorbeelden {#getting-started-with-the-samples}
 
-Als u de zelfstudies op deze pagina wilt volgen, installeert u het pakket **ExtJS-widgets** gebruiken in een lokale AEM en maakt u een voorbeeldpagina waarin de componenten worden opgenomen. Daartoe:
+Installeer het pakket met de naam **ExtJS-widgets gebruiken** in een lokale AEM en maak een voorbeeldpagina waarin de componenten worden opgenomen. Daartoe:
 
-1. Download in uw AEM het pakket **ExtJS-widgets (v01)** gebruiken vanuit Package Share en installeer het pakket. Het leidt tot het project `extjstraining` onder `/apps` in de bewaarplaats.
+1. Download het pakket met de naam **ExtJS-widgets gebruiken (v01)** van Package Share en installeer het pakket. Het leidt tot het project `extjstraining` onder `/apps` in de repository.
 
-1. Neem de clientbibliotheek met de scripts (js) en het stijlblad (css) op in de koptag van de geometrixx page jsp, aangezien u de voorbeeldcomponenten opneemt op een nieuwe pagina van de **Geometrixx**-vertakking:
+1. Neem de clientbibliotheek met de scripts (js) en het stijlblad (css) op in de koptag van de geometrixx page jsp, aangezien u de voorbeeldcomponenten opneemt op een nieuwe pagina van de pagina **Geometrixx** vertakking:
 
-   in **CRXDE Lite** open het bestand `/apps/geometrixx/components/page/headlibs.jsp` en voeg de categorie `cq.extjstraining` als volgt toe aan de bestaande tag `<ui:includeClientLib>`:
+   in **CRXDE Lite** het bestand openen `/apps/geometrixx/components/page/headlibs.jsp` en voeg de `cq.extjstraining` categorie `<ui:includeClientLib>` label als volgt:
 
    `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 
-1. Maak een nieuwe pagina in de **Geometrixx**-vertakking onder `/content/geometrixx/en/products` en noem deze **ExtJS-widgets** gebruiken.
+1. Een nieuwe pagina maken in het dialoogvenster **Geometrixx** vertakking onder `/content/geometrixx/en/products` en noem het **ExtJS-widgets gebruiken**.
 
-1. Ga in ontwerpwijze en voeg alle componenten van de groep genoemd **Gebruikend ExtJS Widgets** aan het ontwerp van Geometrixx toe
-1. Ga terug in bewerkingsmodus: de componenten van de groep **ExtJS Widgets** gebruiken zijn beschikbaar in de Sidetrap.
+1. Ga in ontwerpwijze en voeg alle componenten van de geroepen groep toe **ExtJS-widgets gebruiken** aan het ontwerp van Geometrixx
+1. Ga terug in bewerkingsmodus: de onderdelen van de groep **ExtJS-widgets gebruiken** zijn beschikbaar in de Sidetrap.
 
 >[!NOTE]
 >
@@ -146,19 +149,19 @@ Dialoogvensters worden doorgaans gebruikt om inhoud te bewerken, maar kunnen ook
 
 `http://localhost:4502/<path-to-dialog>.-1.json`
 
-De eerste component van de **Using ExtJS Widgets** groep in de Sidetrap wordt genoemd **1. De Grondbeginselen van de dialoog** en omvat vier basisdialogen die met uit-van-de-doos widgets en zonder aangepaste javascript logica worden gebouwd. De dialoogvensters worden onder `/apps/extjstraining/components/dialogbasics` opgeslagen. De basisdialoogvensters zijn:
+De eerste component van de **ExtJS-widgets gebruiken** groep in de Sidetrap wordt **1. Grondbeginselen van dialoogvensters** en bevat vier basisdialoogvensters die zijn samengesteld met widgets die buiten de box vallen en zonder aangepaste javascript-logica. De dialoogvensters worden hieronder opgeslagen `/apps/extjstraining/components/dialogbasics`. De basisdialoogvensters zijn:
 
-* het volledige dialoogvenster ( `full` node): er wordt een venster weergegeven met drie tabbladen, die elk twee tekstvelden hebben.
+* het volledige dialoogvenster ( `full` knooppunt): er wordt een venster weergegeven met drie tabbladen, die elk twee tekstvelden hebben.
 
-* het dialoogvenster Eén deelvenster ( `singlepanel` node): er wordt een venster weergegeven met 1 tab die 2 tekstvelden heeft.
-* het dialoogvenster Multi Panel ( `multipanel` node): de weergave is hetzelfde als het dialoogvenster Volledig, maar het is anders opgebouwd.
-* het dialoogvenster Ontwerpen ( `design` node): er wordt een venster weergegeven met twee tabbladen. De eerste tab heeft een tekstveld, een vervolgkeuzemenu en een inklapbaar tekstgebied. Het tweede tabblad bevat een veldset met 4 tekstvelden en een inklapbaar veld met 2 tekstvelden.
+* Het dialoogvenster Eén deelvenster ( `singlepanel` knooppunt): er wordt een venster weergegeven met 1 tab die 2 tekstvelden heeft.
+* Het dialoogvenster Meerdere deelvensters ( `multipanel` knooppunt): de weergave is hetzelfde als het dialoogvenster Volledig, maar het is anders opgebouwd.
+* het dialoogvenster Ontwerpen( `design` knooppunt): er wordt een venster weergegeven met twee tabbladen. De eerste tab heeft een tekstveld, een vervolgkeuzemenu en een inklapbaar tekstgebied. Het tweede tabblad bevat een veldset met 4 tekstvelden en een inklapbaar veld met 2 tekstvelden.
 
-Neem de **1 op. De component van de dialoog Grondbeginselen** in de steekproefpagina:
+Inclusief de **1. Grondbeginselen van dialoogvensters** component in de voorbeeldpagina:
 
-1. Voeg **1 toe. De component van de dialoog Grondbeginselen** aan de steekproefpagina van **Gebruikend ExtJS Widgets** tabel in **Sidetrap**.
+1. Voeg de **1. Grondbeginselen van dialoogvensters** naar de voorbeeldpagina van de **ExtJS-widgets gebruiken** in de **Sidetrap**.
 
-1. De component geeft een titel, tekst en een **EIGENSCHAPPEN**-koppeling weer: Klik op de koppeling om de eigenschappen van de alinea weer te geven die in de repository zijn opgeslagen. Klik nogmaals op de koppeling om de eigenschappen te verbergen.
+1. De component geeft een titel, tekst en een **EIGENSCHAPPEN** koppeling: Klik op de koppeling om de eigenschappen van de alinea weer te geven die in de repository zijn opgeslagen. Klik nogmaals op de koppeling om de eigenschappen te verbergen.
 
 De component wordt als volgt weergegeven:
 
@@ -166,12 +169,12 @@ De component wordt als volgt weergegeven:
 
 #### Voorbeeld 1: Volledig dialoogvenster {#example-full-dialog}
 
-In het dialoogvenster **Volledig** wordt een venster met drie tabbladen weergegeven, elk met twee tekstvelden. Dit is het standaarddialoogvenster van de component **Dialoogbeginselen**. De kenmerken zijn:
+De **Volledig** wordt een venster weergegeven met drie tabbladen, die elk twee tekstvelden hebben. Dit is het standaarddialoogvenster van het dialoogvenster **Grondbeginselen van dialoogvensters** component. De kenmerken zijn:
 
 * Wordt gedefinieerd door een knooppunt: knooppunttype = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog).
 
 * Geeft 3 tabbladen weer (knooppunttype = `cq:Panel`).
-* Elk tabblad heeft twee tekstvelden (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield)).
+* Elke tab heeft twee tekstvelden (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield)).
 
 * Wordt gedefinieerd door het knooppunt:
 
@@ -187,11 +190,11 @@ Het dialoogvenster wordt als volgt weergegeven:
 
 #### Voorbeeld 2: Dialoogvenster Eén venster {#example-single-panel-dialog}
 
-In het dialoogvenster **Enkel deelvenster** wordt een venster weergegeven met één tab die twee tekstvelden heeft. De kenmerken zijn:
+De **Eén deelvenster** wordt een venster weergegeven met één tabblad dat twee tekstvelden heeft. De kenmerken zijn:
 
 * Geeft 1 tab weer (knooppunttype = `cq:Dialog`, xtype = [`panel`](/help/sites-developing/xtypes.md#panel))
 
-* Het tabblad bevat twee tekstvelden (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield))
+* De tab heeft twee tekstvelden (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield))
 
 * Wordt gedefinieerd door het knooppunt:
 
@@ -201,15 +204,15 @@ In het dialoogvenster **Enkel deelvenster** wordt een venster weergegeven met é
 
    `http://localhost:4502/apps/extjstraining/components/dialogbasics/singlepanel.-1.json`
 
-* Één voordeel over **Volledige Dialoog** is dat minder configuratie nodig is.
+* Eén voordeel ten opzichte van **Volledig dialoogvenster** is dat er minder configuratie nodig is.
 * Aanbevolen gebruik: voor eenvoudige dialoogvensters die informatie weergeven of slechts een paar velden bevatten.
 
 Het dialoogvenster Eén deelvenster gebruiken:
 
-1. Vervang het dialoogvenster van de **component Dialoogbeginselen** door het dialoogvenster **Enkel deelvenster**:
+1. Het dialoogvenster van het dialoogvenster **Grondbeginselen van dialoogvensters** met de **Eén deelvenster** dialoogvenster:
 
-   1. Verwijder in **CRXDE Lite** het knooppunt: `/apps/extjstraining/components/dialogbasics/dialog`
-   1. Klik **Alles opslaan** om de wijzigingen op te slaan.
+   1. In **CRXDE Lite**, verwijdert u het knooppunt: `/apps/extjstraining/components/dialogbasics/dialog`
+   1. Klikken **Alles opslaan** om de wijzigingen op te slaan.
    1. Kopieer het knooppunt: `/apps/extjstraining/components/dialogbasics/singlepanel`
    1. Plak het gekopieerde knooppunt hieronder: `/apps/extjstraining/components/dialogbasics`
    1. Selecteer het knooppunt: `/apps/extjstraining/components/dialogbasics/Copy of singlepanel`en hernoemen `dialog`.
@@ -218,14 +221,14 @@ Het dialoogvenster Eén deelvenster gebruiken:
 
 ![screen_shot_2012-01-31at45952pm](assets/screen_shot_2012-01-31at45952pm.png)
 
-#### Voorbeeld 3: Dialoogvenster voor meerdere deelvensters {#example-multi-panel-dialog}
+#### Voorbeeld 3: Dialoogvenster Meerdere deelvensters {#example-multi-panel-dialog}
 
-Het dialoogvenster **Multi Panel** heeft dezelfde weergave als het dialoogvenster **Full**, maar het wordt anders samengesteld. De kenmerken zijn:
+De **Meerdere deelvensters** wordt dezelfde weergave weergegeven als het dialoogvenster **Volledig** , maar anders samengesteld. De kenmerken zijn:
 
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel)).
 
 * Geeft 3 tabbladen weer (knooppunttype = `cq:Panel`).
-* Elk tabblad heeft twee tekstvelden (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield)).
+* Elke tab heeft twee tekstvelden (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield)).
 
 * Wordt gedefinieerd door het knooppunt:
 
@@ -235,15 +238,15 @@ Het dialoogvenster **Multi Panel** heeft dezelfde weergave als het dialoogvenste
 
    `http://localhost:4502/apps/extjstraining/components/dialogbasics/multipanel.-1.json`
 
-* Een voordeel ten opzichte van de **Volledige dialoog** is dat deze een vereenvoudigde structuur heeft.
+* Eén voordeel ten opzichte van **Volledig dialoogvenster** is dat het een vereenvoudigde structuur heeft.
 
 * Aanbevolen gebruik: voor dialoogvensters met meerdere tabbladen.
 
 Het dialoogvenster Meerdere deelvensters gebruiken:
 
-1. Vervang het dialoogvenster van de **component Dialoogbeginselen** door het dialoogvenster **Multi Panel**:
+1. Het dialoogvenster van het dialoogvenster **Grondbeginselen van dialoogvensters** met de **Meerdere deelvensters** dialoogvenster:
 
-   Voer de stappen uit die worden beschreven voor [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
+   volgt u de beschreven stappen voor de [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
 
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
@@ -251,14 +254,14 @@ Het dialoogvenster Meerdere deelvensters gebruiken:
 
 #### Voorbeeld 4: Rich Dialog {#example-rich-dialog}
 
-In het dialoogvenster **Rich** wordt een venster met twee tabbladen weergegeven. De eerste tab heeft een tekstveld, een vervolgkeuzemenu en een inklapbaar tekstgebied. Het tweede tabblad bevat een veldset met vier tekstvelden en een set opvouwbare velden met twee tekstvelden. De kenmerken zijn:
+De **Rich** wordt een venster met twee tabbladen weergegeven. De eerste tab heeft een tekstveld, een vervolgkeuzemenu en een inklapbaar tekstgebied. Het tweede tabblad bevat een veldset met vier tekstvelden en een set opvouwbare velden met twee tekstvelden. De kenmerken zijn:
 
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)).
 
 * Geeft 2 tabbladen weer (knooppunttype = `cq:Panel`).
-* Het eerste tabblad heeft een [`dialogfieldset`](/help/sites-developing/xtypes.md#dialogfieldset)-widget met een [`textfield`](/help/sites-developing/xtypes.md#textfield)- en een [`selection`](/help/sites-developing/xtypes.md#selection)-widget met drie opties en een inklapbaar [`dialogfieldset`](/help/sites-developing/xtypes.md#dialogfieldset) met een [`textarea`](/help/sites-developing/xtypes.md#textarea)-widget.
+* Het eerste tabblad bevat een [`dialogfieldset`](/help/sites-developing/xtypes.md#dialogfieldset) widget met een [`textfield`](/help/sites-developing/xtypes.md#textfield) en [`selection`](/help/sites-developing/xtypes.md#selection) widget met 3 opties en een inklapbaar object [`dialogfieldset`](/help/sites-developing/xtypes.md#dialogfieldset) met een [`textarea`](/help/sites-developing/xtypes.md#textarea) widget.
 
-* Het tweede tabblad heeft een [`dialogfieldset`](/help/sites-developing/xtypes.md#dialogfieldset)-widget met 4 [`textfield`](/help/sites-developing/xtypes.md#textfield)-widgets en een inklapbaar `dialogfieldset` met 2 [`textfield`](/help/sites-developing/xtypes.md#textfield)-widgets.
+* Het tweede tabblad bevat een [`dialogfieldset`](/help/sites-developing/xtypes.md#dialogfieldset) widget met 4 [`textfield`](/help/sites-developing/xtypes.md#textfield) widgets en een inklapbaar `dialogfieldset` met 2 [`textfield`](/help/sites-developing/xtypes.md#textfield) widgets.
 
 * Wordt gedefinieerd door het knooppunt:
 
@@ -268,29 +271,29 @@ In het dialoogvenster **Rich** wordt een venster met twee tabbladen weergegeven.
 
    `http://localhost:4502/apps/extjstraining/components/dialogbasics/rich.-1.json`
 
-Het dialoogvenster **Rich** gebruiken:
+Als u de opdracht **Rich** dialoogvenster:
 
-1. Vervang het dialoogvenster van de **component Dialoogbeginselen** door het dialoogvenster **Rich**:
+1. Het dialoogvenster van het dialoogvenster **Grondbeginselen van dialoogvensters** met de **Rich** dialoogvenster:
 
-   Voer de stappen uit die worden beschreven voor [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
+   volgt u de beschreven stappen voor de [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
 
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
-![screen_shot_2012-01-31at50429](assets/screen_shot_2012-01-31at50429pm.png) ![pmscreen_shot_2012-01-31at50519pm](assets/screen_shot_2012-01-31at50519pm.png)
+![screen_shot_2012-01-31at50429pm](assets/screen_shot_2012-01-31at50429pm.png) ![screen_shot_2012-01-31at50519pm](assets/screen_shot_2012-01-31at50519pm.png)
 
 ### Dynamische dialoogvensters {#dynamic-dialogs}
 
-De tweede component van de **Het gebruiken van de Widgets van ExtJS** groep in de Sidetrap wordt genoemd **2. Dynamische dialoogvensters** en bevat drie dynamische dialoogvensters die zijn samengesteld met widgets die buiten het vak staan en **met aangepaste javascript-logica**. De dialoogvensters worden onder `/apps/extjstraining/components/dynamicdialogs` opgeslagen. De dynamische dialoogvensters zijn:
+De tweede component van de **ExtJS-widgets gebruiken** groep in de Sidetrap wordt **2. Dynamische dialoogvensters** en bevat drie dynamische dialoogvensters die zijn samengesteld met widgets die niet in de verpakking staan, en **met aangepaste javascript-logica**. De dialoogvensters worden hieronder opgeslagen `/apps/extjstraining/components/dynamicdialogs`. De dynamische dialoogvensters zijn:
 
-* het dialoogvenster Switch Tabs (knooppunt `switchtabs`): er wordt een venster weergegeven met twee tabbladen. Het eerste tabblad bevat een keuzerondje met drie opties: als een optie is geselecteerd, wordt een tabblad weergegeven dat betrekking heeft op de optie. Het tweede tabblad bevat twee tekstvelden.
-* het willekeurige dialoogvenster ( `arbitrary`-knooppunt): er wordt een venster weergegeven met één tab. Het tabblad bevat een veld voor het neerzetten of uploaden van een element en een veld dat informatie weergeeft over de pagina die het element bevat en over het element als ernaar wordt verwezen.
-* het dialoogvenster Velden in-/uitschakelen ( `togglefield` node): er wordt een venster weergegeven met één tab. De tab heeft een selectievakje: wanneer deze is ingeschakeld, wordt een veldset met twee tekstvelden weergegeven.
+* het dialoogvenster Tabs wisselen ( `switchtabs` knooppunt): er wordt een venster weergegeven met twee tabbladen. Het eerste tabblad bevat een keuzerondje met drie opties: als een optie is geselecteerd, wordt een tabblad weergegeven dat betrekking heeft op de optie. Het tweede tabblad bevat twee tekstvelden.
+* het Arbitrage dialoogvenster ( `arbitrary` knooppunt): er wordt een venster weergegeven met één tab. Het tabblad bevat een veld voor het neerzetten of uploaden van een element en een veld dat informatie weergeeft over de pagina die het element bevat en over het element als ernaar wordt verwezen.
+* het dialoogvenster Velden in-/uitschakelen ( `togglefield` knooppunt): er wordt een venster weergegeven met één tab. De tab heeft een selectievakje: wanneer deze is ingeschakeld, wordt een veldset met twee tekstvelden weergegeven.
 
-De **2 opnemen. Dynamische dialoogvensters** op de voorbeeldpagina:
+Als u de opdracht **2. Dynamische dialoogvensters** component op de voorbeeldpagina:
 
-1. Voeg **2 toe. Dynamische dialoogvensters**-component naar de voorbeeldpagina vanaf het tabblad **ExtJS-widgets** in **Sidetrap** gebruiken.
+1. Voeg de **2. Dynamische dialoogvensters** naar de voorbeeldpagina van de **ExtJS-widgets gebruiken** in de **Sidetrap**.
 
-1. De component geeft een titel, tekst en een **EIGENSCHAPPEN**-koppeling weer: Klik om de eigenschappen van de alinea weer te geven die in de repository zijn opgeslagen. Klik nogmaals om de eigenschappen te verbergen.
+1. De component geeft een titel, tekst en een **EIGENSCHAPPEN** koppeling: Klik om de eigenschappen van de alinea weer te geven die in de repository zijn opgeslagen. Klik nogmaals om de eigenschappen te verbergen.
 
 De component wordt als volgt weergegeven:
 
@@ -298,16 +301,16 @@ De component wordt als volgt weergegeven:
 
 #### Voorbeeld 1: Dialoogvenster Tabs wisselen {#example-switch-tabs-dialog}
 
-In het dialoogvenster **Tabs wisselen** wordt een venster met twee tabbladen weergegeven. Het eerste tabblad bevat een keuzerondje met drie opties: als een optie is geselecteerd, wordt een tabblad weergegeven dat betrekking heeft op de optie. Het tweede tabblad bevat twee tekstvelden.
+De **Tabs wisselen** wordt een venster met twee tabbladen weergegeven. Het eerste tabblad bevat een keuzerondje met drie opties: als een optie is geselecteerd, wordt een tabblad weergegeven dat betrekking heeft op de optie. Het tweede tabblad bevat twee tekstvelden.
 
 De belangrijkste kenmerken zijn:
 
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)).
 
 * Geeft 2 tabbladen weer (knooppunttype = `cq:Panel`): 1 selectietab. is het tweede tabblad afhankelijk van de selectie op het eerste tabblad (3 opties).
-* Heeft 3 facultatieve lusjes (knooptype = `cq:Panel`), elk heeft 2 tekstgebieden (knooptype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield)). Er wordt slechts één optioneel tabblad tegelijk weergegeven.
+* Bevat 3 optionele tabbladen (knooppunttype = `cq:Panel`), heeft elk twee tekstvelden (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield)). Er wordt slechts één optioneel tabblad tegelijk weergegeven.
 
-* Wordt gedefinieerd door het knooppunt `switchtabs` op:
+* Wordt gedefinieerd door de `switchtabs` knooppunt bij:
 
    `/apps/extjstraining/components/dynamicdialogs/switchtabs`
 
@@ -317,37 +320,37 @@ De belangrijkste kenmerken zijn:
 
 De logica wordt als volgt geïmplementeerd via gebeurtenislisteners en javascript-code:
 
-* Het dialoogknooppunt heeft een listener &quot; `beforeshow`&quot; die alle optionele tabbladen verbergt voordat het dialoogvenster wordt weergegeven:
+* Het knooppunt Dialoogvenster heeft een &quot; `beforeshow`&quot; listener die alle optionele tabbladen verbergt voordat het dialoogvenster wordt weergegeven:
 
    `beforeshow="function(dialog){Ejst.x2.manageTabs(dialog.items.get(0));}"`
 
    `dialog.items.get(0)` Hiermee krijgt u het deelvenster met tabbladen dat het selectievenster en de drie optionele deelvensters bevat.
 
-* Het object `Ejst.x2` wordt gedefinieerd in het bestand `exercises.js` op:
+* De `Ejst.x2` object wordt gedefinieerd in het dialoogvenster `exercises.js` bestand op:
 
    `/apps/extjstraining/clientlib/js/exercises.js`
 
-* Bij de methode `Ejst.x2.manageTabs()` zijn, aangezien de waarde van `index` -1 is, alle facultatieve lusjes verborgen (i gaat van 1 naar 3).
+* In de `Ejst.x2.manageTabs()` als de waarde van `index` is -1, zijn alle optionele tabbladen verborgen (ik ga van 1 naar 3).
 
-* Het selectietabblad heeft twee listeners: een tab die het geselecteerde tabblad weergeeft wanneer het dialoogvenster wordt geladen (&quot; `loadcontent`&quot;-gebeurtenis) en een tab die het geselecteerde tabblad weergeeft wanneer de selectie wordt gewijzigd (&quot; `selectionchanged`&quot;-gebeurtenis):
+* Het selectietabblad heeft twee listeners: een tab die het geselecteerde tabblad weergeeft wanneer het dialoogvenster wordt geladen (&quot; `loadcontent`&quot; (gebeurtenis) en een item dat het geselecteerde tabblad weergeeft wanneer de selectie wordt gewijzigd (&quot; `selectionchanged`&quot; (gebeurtenis):
 
    `loadcontent="function(field,rec,path){Ejst.x2.showTab(field);}"`
 
    `selectionchanged="function(field,value){Ejst.x2.showTab(field);}"`
 
-* In de methode `Ejst.x2.showTab()`:
+* In de `Ejst.x2.showTab()` methode:
 
-   `field.findParentByType('tabpanel')` Hiermee wordt het deelvenster met alle tabbladen opgehaald ( `field` vertegenwoordigt de selectiewidget)
+   `field.findParentByType('tabpanel')` Hiermee wordt het deelvenster met tabbladen opgehaald dat alle tabbladen bevat ( `field` staat voor de selectiewidget)
 
    `field.getValue()` Hiermee wordt de waarde van de selectie opgehaald, bijvoorbeeld: tab2
 
    `Ejst.x2.manageTabs()` geeft het geselecteerde tabblad weer.
 
-* Elk optioneel tabblad heeft een listener die het tabblad op de gebeurtenis &quot; `render`&quot; verbergt:
+* Elk optioneel tabblad bevat een listener die het tabblad &quot; `render`&quot; gebeurtenis:
 
    `render="function(tab){Ejst.x2.hideTab(tab);}"`
 
-* In de methode `Ejst.x2.hideTab()`:
+* In de `Ejst.x2.hideTab()` methode:
 
    `tabPanel` is het deelvenster met tabbladen dat alle tabbladen bevat
 
@@ -361,19 +364,19 @@ Het wordt als volgt weergegeven:
 
 #### Voorbeeld 2: Willekeurig dialoogvenster {#example-arbitrary-dialog}
 
-Heel vaak wordt de inhoud van de onderliggende component in een dialoogvenster weergegeven. Het dialoogvenster dat hier wordt beschreven, met de naam **Willekeurig**, trekt inhoud van een andere component.
+Heel vaak wordt de inhoud van de onderliggende component in een dialoogvenster weergegeven. Het hier beschreven dialoogvenster, genaamd **Instelbaar** wordt de inhoud van een andere component opgehaald.
 
-In het dialoogvenster **Willekeurig** wordt een venster met één tab weergegeven. De tab heeft twee velden: een om een element te plaatsen of te uploaden en een element dat informatie over de pagina met het element en over het element weergeeft als er naar wordt verwezen.
+De **Instelbaar** wordt een venster met één tab weergegeven. De tab heeft twee velden: een om een element te plaatsen of te uploaden en een element dat informatie over de pagina met het element en over het element weergeeft als er naar wordt verwezen.
 
 De belangrijkste kenmerken zijn:
 
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)).
 
-* Geeft 1 tabpaneelwidget weer (knooppunttype = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel)) met 1 paneel (knooppunttype = `cq:Panel`)
+* Geeft 1 widget van tabbladen weer (knooppunttype = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel)) met 1 paneel (knooppunttype = `cq:Panel`)
 
-* Het deelvenster heeft een widget smartfile (knooppunttype = `cq:Widget`, xtype = [`smartfile`](/help/sites-developing/xtypes.md#smartfile)) en een widget ownerdraw (knooppunttype = `cq:Widget`, xtype = [`ownerdraw`](/help/sites-developing/xtypes.md#ownerdraw))
+* Het deelvenster heeft een widget voor een slim bestand (knooppunttype = `cq:Widget`, xtype = [`smartfile`](/help/sites-developing/xtypes.md#smartfile)) en een ownerdraw-widget (knooppunttype = `cq:Widget`, xtype = [`ownerdraw`](/help/sites-developing/xtypes.md#ownerdraw))
 
-* Wordt gedefinieerd door het knooppunt `arbitrary` op:
+* Wordt gedefinieerd door de `arbitrary` knooppunt bij:
 
    `/apps/extjstraining/components/dynamicdialogs/arbitrary`
 
@@ -383,7 +386,7 @@ De belangrijkste kenmerken zijn:
 
 De logica wordt als volgt geïmplementeerd via gebeurtenislisteners en javascript-code:
 
-* De widget ownerdraw heeft een listener &quot; `loadcontent`&quot; die informatie bevat over de pagina die de component bevat en het element waarnaar door de widget smartfile wordt verwezen wanneer de inhoud wordt geladen:
+* De ownerdraw-widget heeft een &quot; `loadcontent`&quot; listener die informatie weergeeft over de pagina die de component bevat en het element waarnaar wordt verwezen door de widget voor het slimme bestand wanneer de inhoud wordt geladen:
 
    `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
 
@@ -391,11 +394,11 @@ De logica wordt als volgt geïmplementeerd via gebeurtenislisteners en javascrip
 
    `path` wordt ingesteld met het inhoudspad van de component (bijvoorbeeld: /content/geometrixx/nl/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs)
 
-* Het object `Ejst.x2` wordt gedefinieerd in het bestand `exercises.js` op:
+* De `Ejst.x2` object wordt gedefinieerd in het dialoogvenster `exercises.js` bestand op:
 
    `/apps/extjstraining/clientlib/js/exercises.js`
 
-* In de methode `Ejst.x2.showInfo()`:
+* In de `Ejst.x2.showInfo()` methode:
 
    `pagePath` is het pad van de pagina die de component bevat
 
@@ -407,29 +410,29 @@ De logica wordt als volgt geïmplementeerd via gebeurtenislisteners en javascrip
 
    `ownerdraw.getEl().update(html);` Hiermee wordt de gemaakte HTML weergegeven in het dialoogvenster
 
-Het dialoogvenster **Instelbaar** gebruiken:
+Als u de opdracht **Instelbaar** dialoogvenster:
 
-1. Vervang het dialoogvenster van de component **Dynamisch dialoogvenster** door het dialoogvenster **Willekeurig**:
+1. Het dialoogvenster van het dialoogvenster **Dynamisch dialoogvenster** met de **Instelbaar** dialoogvenster:
 
-   Voer de stappen uit die worden beschreven voor [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
+   volgt u de beschreven stappen voor de [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
 
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
 ![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
 
-#### Voorbeeld 3: Dialoogvenster Velden in-/uitschakelen{#example-toggle-fields-dialog}
+#### Voorbeeld 3: Dialoogvenster Velden in-/uitschakelen {#example-toggle-fields-dialog}
 
-In het dialoogvenster **Velden in-/uitschakelen** wordt een venster met één tab weergegeven. De tab heeft een selectievakje: wanneer deze is ingeschakeld, wordt een veldset met twee tekstvelden weergegeven.
+De **Velden in-/uitschakelen** wordt een venster met één tab weergegeven. De tab heeft een selectievakje: wanneer deze is ingeschakeld, wordt een veldset met twee tekstvelden weergegeven.
 
 De belangrijkste kenmerken zijn:
 
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)).
 
-* Geeft 1 tabpaneelwidget weer (knooppunttype = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#textpanel)) met 1 paneel (knooppunttype = `cq:Panel`).
+* Geeft 1 widget van tabbladen weer (knooppunttype = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#textpanel)) met 1 paneel (knooppunttype = `cq:Panel`).
 
-* Het paneel heeft een selectie/checkbox widget (knooppunttype = `cq:Widget`, xtype = [`selection`](/help/sites-developing/xtypes.md#selection), type = [`checkbox`](/help/sites-developing/xtypes.md#checkbox)) en een inklapbaar dialogfieldset widget (knooppunttype = `cq:Widget`, xtype = [`dialogfieldset`](/help/sites-developing/xtypes.md#dialogfieldset)) die door gebrek, met 2 tekstgebiedwidgets (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield)) wordt verborgen.
+* Het deelvenster heeft een widget selectie/selectievakje (knooppunttype = `cq:Widget`, xtype = [`selection`](/help/sites-developing/xtypes.md#selection), type = [`checkbox`](/help/sites-developing/xtypes.md#checkbox)) en een inklapbaar dialogfieldset-widget (knooppunttype = `cq:Widget`, xtype = [`dialogfieldset`](/help/sites-developing/xtypes.md#dialogfieldset)) die standaard verborgen is, met 2 tekstveldobjecten (knooppunttype = `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield)).
 
-* Wordt gedefinieerd door het knooppunt `togglefields` op:
+* Wordt gedefinieerd door de `togglefields` knooppunt bij:
 
    `/apps/extjstraining/components/dynamicdialogs/togglefields`
 
@@ -439,29 +442,29 @@ De belangrijkste kenmerken zijn:
 
 De logica wordt als volgt geïmplementeerd via gebeurtenislisteners en javascript-code:
 
-* het selectietabblad heeft twee listeners: een die de dialogfieldset toont wanneer de inhoud wordt geladen (&quot; `loadcontent`&quot; gebeurtenis) en een die de dialogfieldset weergeeft wanneer de selectie wordt gewijzigd (&quot; `selectionchanged`&quot; gebeurtenis):
+* het selectietabblad heeft twee listeners: die de dialogfieldset weergeeft wanneer de inhoud wordt geladen (&quot; `loadcontent`&quot; (gebeurtenis) en een gebeurtenis die de dialogfieldset weergeeft wanneer de selectie wordt gewijzigd (&quot; `selectionchanged`&quot; (gebeurtenis):
 
    `loadcontent="function(field,rec,path){Ejst.x2.toggleFieldSet(field);}"`
 
    `selectionchanged="function(field,value){Ejst.x2.toggleFieldSet(field);}"`
 
-* Het object `Ejst.x2` wordt gedefinieerd in het bestand `exercises.js` op:
+* De `Ejst.x2` object wordt gedefinieerd in het dialoogvenster `exercises.js` bestand op:
 
    `/apps/extjstraining/clientlib/js/exercises.js`
 
-* In de methode `Ejst.x2.toggleFieldSet()`:
+* In de `Ejst.x2.toggleFieldSet()` methode:
 
    * `box` is het selectieobject
-   * `panel` is het deelvenster met de selectie en de widgets voor de dialogfieldset
+   * `panel` Dit is het deelvenster met de selectie en de widgets voor de dialogfieldset
    * `fieldSet` is het dialogfieldset-object
    * `show` is de waarde van de selectie (waar of onwaar)
-   * gebaseerd op &#39; `show`&#39; wordt de dialogfieldset al dan niet weergegeven
+   * gebaseerd op &#39; `show`&#39; De dialogfieldset wordt al dan niet weergegeven
 
-Het dialoogvenster **Velden in-/uitschakelen** gebruiken:
+Als u de opdracht **Velden in-/uitschakelen** dialoogvenster:
 
-1. Vervang het dialoogvenster van de component **Dynamisch dialoogvenster** door het dialoogvenster **Velden in-/uitschakelen**:
+1. Het dialoogvenster van het dialoogvenster **Dynamisch dialoogvenster** met de **Velden in-/uitschakelen** dialoogvenster:
 
-   Voer de stappen uit die worden beschreven voor [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
+   volgt u de beschreven stappen voor de [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
 
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
@@ -469,18 +472,18 @@ Het dialoogvenster **Velden in-/uitschakelen** gebruiken:
 
 ### Aangepaste widgets {#custom-widgets}
 
-De widgets uit de doos die bij AEM worden geleverd, moeten de meeste gevallen van gebruik bestrijken. Het kan echter soms nodig zijn om een aangepaste widget te maken die voldoet aan een projectspecifieke vereiste. Aangepaste widgets kunnen worden gemaakt door bestaande widgets uit te breiden. Om u te helpen aan de slag te gaan met dergelijke aanpassingen, bevat het **Using ExtJS Widgets**-pakket drie dialoogvensters die drie verschillende aangepaste widgets gebruiken:
+De widgets uit de doos die bij AEM worden geleverd, moeten de meeste gevallen van gebruik bestrijken. Het kan echter soms nodig zijn om een aangepaste widget te maken die voldoet aan een projectspecifieke vereiste. Aangepaste widgets kunnen worden gemaakt door bestaande widgets uit te breiden. Om u te helpen met dergelijke aanpassingen aan de slag te gaan, **ExtJS-widgets gebruiken** Het pakket bevat drie dialoogvensters die drie verschillende aangepaste widgets gebruiken:
 
-* In het dialoogvenster Multi Field (knooppunt `multifield`) wordt een venster met één tab weergegeven. De tab heeft een aangepaste widget met meerdere velden die twee velden heeft: een vervolgkeuzemenu met twee opties en een tekstveld. Aangezien het op uit-van-de-doos `multifield` widget (die slechts een tekstgebied heeft) is gebaseerd, heeft het alle eigenschappen van `multifield` widget.
+* Het dialoogvenster Meerdere velden ( `multifield` node) geeft een venster weer met één tab. De tab heeft een aangepaste widget met meerdere velden die twee velden heeft: een vervolgkeuzemenu met twee opties en een tekstveld. Omdat het gebaseerd is op het uit-van-de-doos `multifield` widget (die alleen een tekstveld heeft), heeft deze alle functies van de `multifield` widget.
 
-* In het dialoogvenster Bladeren door structuur ( `treebrowse` node) wordt een venster weergegeven met één tab die een widget voor padbrowsers bevat: wanneer u op de pijl klikt, wordt een venster geopend waarin u door een hiërarchie kunt bladeren en een item kunt selecteren. Het pad van het item wordt vervolgens toegevoegd aan het padveld en wordt voortgezet wanneer het dialoogvenster wordt gesloten.
-* een op plug-in gebaseerd dialoogvenster van de rijke teksteditor ( `rteplugin` node) dat een aangepaste knop toevoegt aan de Rich Text Editor om aangepaste tekst in te voegen in de hoofdtekst. Het bestaat uit een `richtext` widget (RTE) en van een douaneeigenschap die door het de insteekmechanisme van RTE wordt toegevoegd.
+* Het dialoogvenster Bladeren in structuur ( `treebrowse` knooppunt) geeft een venster weer met één tabblad dat een widget voor padbrowsers bevat: wanneer u op de pijl klikt, wordt een venster geopend waarin u door een hiërarchie kunt bladeren en een item kunt selecteren. Het pad van het item wordt vervolgens toegevoegd aan het padveld en wordt voortgezet wanneer het dialoogvenster wordt gesloten.
+* een op plug-in gebaseerd dialoogvenster van de teksteditor ( `rteplugin` node) die een aangepaste knop toevoegt aan de Rich Text Editor om aangepaste tekst in te voegen in de hoofdtekst. Het bestaat uit een `richtext` widget (RTE) en van een douaneeigenschap die door het mechanisme van de stop van RTE wordt toegevoegd.
 
-De aangepaste widgets en de insteekmodule worden opgenomen in de component **3. Aangepaste widgets** van het **pakket ExtJS-widgets** gebruiken. Deze component opnemen in de voorbeeldpagina:
+De aangepaste widgets en de insteekmodule zijn opgenomen in de component **3. Aangepaste widgets** van de **ExtJS-widgets gebruiken** pakket. Deze component opnemen in de voorbeeldpagina:
 
-1. Voeg **3 toe. Aangepaste widgets** component aan de steekproefpagina van **Het gebruiken van Breedgets ExtJS** tabel in **Sidetrap**.
+1. Voeg de **3. Aangepaste widgets** naar de voorbeeldpagina van de **ExtJS-widgets gebruiken** in de **Sidetrap**.
 
-1. De component geeft een titel, wat tekst en, wanneer u op de koppeling **PROPERTIES** klikt, de eigenschappen van de alinea weer die in de opslagplaats zijn opgeslagen. Als u nogmaals klikt, worden de eigenschappen verborgen.
+1. De component geeft een titel, wat tekst en **EIGENSCHAPPEN** koppeling, de eigenschappen van de alinea die in de opslagplaats zijn opgeslagen. Als u nogmaals klikt, worden de eigenschappen verborgen.
 
    De component wordt als volgt weergegeven:
 
@@ -488,26 +491,26 @@ De aangepaste widgets en de insteekmodule worden opgenomen in de component **3. 
 
 #### Voorbeeld 1: Aangepaste widget voor meerdere velden {#example-custom-multifield-widget}
 
-In het dialoogvenster **Aangepast multiveld** op basis van widget wordt een venster met één tab weergegeven. De tab heeft een aangepaste widget met meerdere velden die, in tegenstelling tot de standaard widget met één veld, twee velden heeft: een vervolgkeuzemenu met twee opties en een tekstveld.
+De **Aangepast multiveld** op widget gebaseerd dialoogvenster toont een venster met één tab. De tab heeft een aangepaste widget met meerdere velden die, in tegenstelling tot de standaard widget met één veld, twee velden heeft: een vervolgkeuzemenu met twee opties en een tekstveld.
 
-Het dialoogvenster **Aangepast multiveld** op basis van widget:
+De **Aangepast multiveld** dialoogvenster op basis van widget:
 
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)).
 
-* Geeft 1 tabpaneelwidget weer (knooppunttype = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel)) met een paneel (knooppunttype = `cq:Widget`, xtype = [`panel`](/help/sites-developing/xtypes.md#panel)).
+* Geeft 1 widget van tabbladen weer (knooppunttype = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel)) met een deelvenster (knooppunttype = `cq:Widget`, xtype = [`panel`](/help/sites-developing/xtypes.md#panel)).
 
-* Het deelvenster heeft een `multifield`-widget (knooppunttype = `cq:Widget`, xtype = [`multifield`](/help/sites-developing/xtypes.md#multifield)).
+* Het deelvenster bevat een `multifield` widget (knooppunttype = `cq:Widget`, xtype = [`multifield`](/help/sites-developing/xtypes.md#multifield)).
 
-* De widget `multifield` heeft een veldconfig (knooppunttype = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) die op het aangepaste xtype &#39; `ejstcustom`&#39; gebaseerd is:
+* De `multifield` widget heeft een fieldconfig (knooppunttype = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) die is gebaseerd op het aangepaste xtype &#39; `ejstcustom`&quot;:
 
-   * &#39; `fieldconfig`&#39; is een configuratieoptie van het [`CQ.form.MultiField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.MultiField) voorwerp.
-   * &#39; `optionsProvider`&#39; is een configuratie van de `ejstcustom` widget. Deze wordt ingesteld met de methode `Ejst.x3.provideOptions` die is gedefinieerd in `exercises.js` op:
+   * &#39; `fieldconfig`&#39; is een configuratieoptie van de [`CQ.form.MultiField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.MultiField) object.
+   * &#39; `optionsProvider`&#39; is een configuratie van de `ejstcustom` widget. Deze is ingesteld met de `Ejst.x3.provideOptions` methode die wordt gedefinieerd in `exercises.js` om:
 
       `/apps/extjstraining/clientlib/js/exercises.js`
 
       en retourneert twee opties.
 
-* Wordt gedefinieerd door het knooppunt `multifield` op:
+* Wordt gedefinieerd door de `multifield` knooppunt bij:
 
    `/apps/extjstraining/components/customwidgets/multifield`
 
@@ -517,46 +520,46 @@ Het dialoogvenster **Aangepast multiveld** op basis van widget:
 
 De aangepaste multifield-widget (xtype = `ejstcustom`):
 
-* Is een javascript-object met de naam `Ejst.CustomWidget`.
+* Is een JavaScript-object dat wordt aangeroepen `Ejst.CustomWidget`.
 
-* Wordt gedefinieerd in het JavaScript-bestand `CustomWidget.js` op:
+* Is gedefinieerd in de `CustomWidget.js` javascript-bestand op:
 
    `/apps/extjstraining/clientlib/js/CustomWidget.js`
 
-* Breidt de [`CQ.form.CompositeField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) widget uit.
+* Hiermee breidt u de [`CQ.form.CompositeField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) widget.
 
 * Bevat 3 velden: `hiddenField` (TextField), `allowField` (ComboBox) en `otherField` (TextField)
 
-* Overschrijft `CQ.Ext.Component#initComponent` om de drie velden toe te voegen:
+* Overschrijvingen `CQ.Ext.Component#initComponent` om de drie velden toe te voegen:
 
-   * `allowField` is een  [CQ.form.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Selection) SelectionObject van het type &#39;select&#39;. optionsProvider is een configuratie van het Selection-object die wordt geïnstantieerd met de optionsProvider-configuratie van de CustomWidget die is gedefinieerd in het dialoogvenster
-   * `otherField` is een  [CQ.Ext.form.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) TextFieldObject
+   * `allowField` is een [CQ.form.Selection](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Selection) object van het type &#39;select&#39;. optionsProvider is een configuratie van het Selection-object die wordt geïnstantieerd met de optionsProvider-configuratie van de CustomWidget die is gedefinieerd in het dialoogvenster
+   * `otherField` is een [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) object
 
-* Overschrijft de methoden `setValue`, `getValue` en `getRawValue` van [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) om de waarde CustomWidget met de indeling in te stellen en op te halen:
+* Hiermee overschrijft u de methoden `setValue`, `getValue` en `getRawValue` van [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) om de waarde van CustomWidget met de indeling in te stellen en op te halen:
 
    `<allowField value>/<otherField value>, e.g.: 'Bla1/hello'`.
 
-* Registreert zichzelf als xtype &#39; `ejstcustom`&#39;:
+* Registreert zichzelf als &#39; `ejstcustom`&#39; xtype:
 
    `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
 
-Het dialoogvenster **Aangepast multiveld** op basis van widget wordt als volgt weergegeven:
+De **Aangepast multiveld** Op widget gebaseerde dialoogvensters worden als volgt weergegeven:
 
 ![screen_shot_2012-02-01at115840am](assets/screen_shot_2012-02-01at115840am.png)
 
-#### Voorbeeld 2: Aangepaste widget Treebrowse {#example-custom-treebrowse-widget}
+#### Voorbeeld 2: Aangepaste Edge-widget {#example-custom-treebrowse-widget}
 
-Het aangepaste dialoogvenster **De widget** op basis van een pad toont een venster met één tabblad dat een aangepaste widget voor padbrowsers bevat: wanneer u op de pijl klikt, wordt een venster geopend waarin u door een hiërarchie kunt bladeren en een item kunt selecteren. Het pad van het item wordt vervolgens toegevoegd aan het padveld en wordt voortgezet wanneer het dialoogvenster wordt gesloten.
+De aangepaste **Treebrowse** Op widget gebaseerd dialoogvenster geeft een venster weer met één tabblad dat een aangepast pad bevat voor de browserwidget: wanneer u op de pijl klikt, wordt een venster geopend waarin u door een hiërarchie kunt bladeren en een item kunt selecteren. Het pad van het item wordt vervolgens toegevoegd aan het padveld en wordt voortgezet wanneer het dialoogvenster wordt gesloten.
 
 Het dialoogvenster Aangepaste browse:
 
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)).
 
-* Geeft 1 tabpaneelwidget weer (knooppunttype = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel)) met een paneel (knooppunttype = `cq:Widget`, xtype = [`panel`](/help/sites-developing/xtypes.md#panel)).
+* Geeft 1 widget van tabbladen weer (knooppunttype = `cq:Widget`, xtype = [`tabpanel`](/help/sites-developing/xtypes.md#tabpanel)) met een deelvenster (knooppunttype = `cq:Widget`, xtype = [`panel`](/help/sites-developing/xtypes.md#panel)).
 
 * Het deelvenster heeft een aangepaste widget (knooppunttype = `cq:Widget`, xtype = `ejstbrowse`)
 
-* Wordt gedefinieerd door het knooppunt `treebrowse` op:
+* Wordt gedefinieerd door de `treebrowse` knooppunt bij:
 
    `/apps/extjstraining/components/customwidgets/treebrowse`
 
@@ -564,49 +567,49 @@ Het dialoogvenster Aangepaste browse:
 
    `http://localhost:4502/apps/extjstraining/components/customwidgets/treebrowse.-1.json`
 
-De aangepaste widget voor browse (xtype = `ejstbrowse`):
+De aangepaste widget voor browsers (xtype = `ejstbrowse`):
 
-* Is een javascript-object met de naam `Ejst.CustomWidget`.
-* Wordt gedefinieerd in het JavaScript-bestand `CustomBrowseField.js` op:
+* Is een JavaScript-object dat wordt aangeroepen `Ejst.CustomWidget`.
+* Is gedefinieerd in de `CustomBrowseField.js` javascript-bestand op:
 
    `/apps/extjstraining/clientlib/js/CustomBrowseField.js`
 
-* Breidt [`CQ.Ext.form.TriggerField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField) uit.
-* Definieert een bladervenster met de naam `browseWindow`.
+* Uitbreidingen [`CQ.Ext.form.TriggerField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField).
+* Hiermee definieert u een bladervenster met de naam `browseWindow`.
 
-* Overschrijft [`CQ.Ext.form.TriggerField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField#onTriggerClick) om het bladervenster te tonen wanneer de pijl wordt geklikt.
-* Definieert een [`CQ.Ext.tree.TreePanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)-object:
+* Overschrijvingen [`CQ.Ext.form.TriggerField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField#onTriggerClick) om het bladervenster te tonen wanneer de pijl wordt geklikt.
+* Definieert een [`CQ.Ext.tree.TreePanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) object:
 
-   * Het krijgt zijn gegevens door servlet te roepen die bij `/bin/wcm/siteadmin/tree.json` wordt geregistreerd.
+   * Het krijgt zijn gegevens door servlet te roepen die bij wordt geregistreerd `/bin/wcm/siteadmin/tree.json`.
    * De basis is &quot; `apps/extjstraining`&quot;.
 
-* Definieert een `window`-object ([`CQ.Ext.Window`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)):
+* Definieert een `window` object ([`CQ.Ext.Window`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)):
 
    * Gebaseerd op het vooraf gedefinieerde deelvenster.
-   * Heeft een **OK** knop die de waarde van het geselecteerde pad instelt en het deelvenster verbergt.
+   * Heeft een **OK** die de waarde van het geselecteerde pad instelt en het deelvenster verbergt.
 
-* Het venster is verankerd onder het **veld Pad**.
-* Het geselecteerde pad wordt bij een gebeurtenis `show` van het veld Bladeren naar het venster doorgegeven.
+* Het venster is verankerd onder de **Pad** veld.
+* Het geselecteerde pad wordt van het bladerveld naar het venster doorgegeven `show` gebeurtenis.
 
-* Registreert zichzelf als xtype &#39; `ejstbrowse`&#39;:
+* Registreert zichzelf als &#39; `ejstbrowse`&#39; xtype:
 
    `CQ.Ext.reg('ejstbrowse', Ejst.CustomBrowseField);`
 
-Het dialoogvenster **Aangepaste webbrowse** op basis van widget gebruiken:
+Als u de opdracht **Aangepaste Treebrowse** dialoogvenster op basis van widget:
 
-1. Vervang het dialoogvenster van de component **Aangepaste widgets** door het dialoogvenster **Aangepaste Treebrowse**:
+1. Het dialoogvenster van het dialoogvenster **Aangepaste widgets** met de **Aangepaste Treebrowse** dialoogvenster:
 
-   Voer de stappen uit die worden beschreven voor [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
+   volgt u de beschreven stappen voor de [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
 
 1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
 ![screen_shot_2012-02-01at120104pm](assets/screen_shot_2012-02-01at120104pm.png)
 
-#### Voorbeeld 3: Insteekmodule {#example-rich-text-editor-rte-plug-in} Rich Text Editor (RTE)
+#### Voorbeeld 3: Insteekmodule Rich Text Editor (RTE) {#example-rich-text-editor-rte-plug-in}
 
-Het op **Rich Text Editor (RTE)-plug-in** gebaseerde dialoogvenster is een op Rich Text Editor gebaseerd dialoogvenster met een aangepaste knop om aangepaste tekst tussen vierkante haakjes in te voegen. De aangepaste tekst kan worden geparseerd door bepaalde logica aan serverzijde (niet geïmplementeerd in dit voorbeeld), bijvoorbeeld door tekst toe te voegen die op het opgegeven pad is gedefinieerd:
+De **Insteekmodule Rich Text Editor (RTE)** Het dialoogvenster is gebaseerd op een dialoogvenster van de Rich Text Editor met een aangepaste knop waarmee u aangepaste tekst tussen vierkante haakjes kunt invoegen. De aangepaste tekst kan worden geparseerd door bepaalde logica aan serverzijde (niet geïmplementeerd in dit voorbeeld), bijvoorbeeld door tekst toe te voegen die op het opgegeven pad is gedefinieerd:
 
-Het dialoogvenster **RTE-insteekmodule**:
+De **RTE-insteekmodule** gebaseerd dialoogvenster:
 
 * Wordt gedefinieerd door het knooppunt rteplugin op:
 
@@ -616,67 +619,67 @@ Het dialoogvenster **RTE-insteekmodule**:
 
    `http://localhost:4502/apps/extjstraining/components/customwidgets/rteplugin.-1.json`
 
-* Het knooppunt `rtePlugins` heeft een onderliggend knooppunt `inserttext` (knooppunttype = `nt:unstructured`) dat naar de insteekmodule wordt genoemd. Het heeft een bezit genoemd `features`, die bepaalt welke van de plugin eigenschappen beschikbaar aan RTE zijn.
+* De `rtePlugins` node heeft een onderliggende node `inserttext` (knooppunttype = `nt:unstructured`) genoemd naar de plug-in. Het heeft een eigenschap genaamd `features`, die bepaalt welke van de plugin eigenschappen beschikbaar aan RTE zijn.
 
 De RTE-plug-in:
 
-* Is een javascript-object met de naam `Ejst.InsertTextPlugin`.
+* Is een JavaScript-object dat wordt aangeroepen `Ejst.InsertTextPlugin`.
 
-* Wordt gedefinieerd in het JavaScript-bestand `InsertTextPlugin.js` op:
+* Is gedefinieerd in de `InsertTextPlugin.js` javascript-bestand op:
 
    `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
 
-* Breidt het [`CQ.form.rte.plugins.Plugin`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) voorwerp uit.
-* De volgende methoden definiëren het object [`CQ.form.rte.plugins.Plugin`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) en worden overschreven in de implementerende insteekmodule:
+* Hiermee breidt u de [`CQ.form.rte.plugins.Plugin`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) object.
+* De volgende methoden definiëren de [`CQ.form.rte.plugins.Plugin`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) -object en worden overschreven in de implementerende plug-in:
 
    * `getFeatures()` retourneert een array met alle functies die de plug-in beschikbaar stelt.
    * `initializeUI()` voegt de nieuwe knoop aan de toolbar van RTE toe.
    * `notifyPluginConfig()` geeft de titel en de tekst weer wanneer de knop wordt aangeroepen.
    * `execute()` wordt aangeroepen wanneer op de knop wordt geklikt en de insteekactie wordt uitgevoerd: er wordt een venster weergegeven waarin de tekst wordt gedefinieerd die moet worden opgenomen.
 
-* `insertText()` Voegt tekst in met behulp van het bijbehorende dialoogvenster  `Ejst.InsertTextPlugin.Dialog` (zie verderop).
+* `insertText()` voegt tekst in met behulp van het bijbehorende dialoogobject `Ejst.InsertTextPlugin.Dialog` (zie hierna).
 
-* `executeInsertText()` wordt aangeroepen door de  `apply()` methode van het dialoogvenster, dat wordt geactiveerd wanneer op de  **** knop OK wordt geklikt.
+* `executeInsertText()` wordt opgeroepen door `apply()` methode van de dialoog, die wordt teweeggebracht wanneer **OK** wordt geklikt.
 
-* Registreert zichzelf als insteekmodule `inserttext`:
+* Registreert zichzelf als &#39; `inserttext`&#39;plug-in:
 
    `CQ.form.rte.plugins.PluginRegistry.register("inserttext", Ejst.InsertTextPlugin);`
 
-* het `Ejst.InsertTextPlugin.Dialog`-object definieert het dialoogvenster dat wordt geopend wanneer op de insteekmodule wordt geklikt. Het dialoogvenster bestaat uit een deelvenster, een formulier, een tekstveld en 2 knoppen (**OK** en **Annuleren**).
+* de `Ejst.InsertTextPlugin.Dialog` wordt het dialoogvenster gedefinieerd dat wordt geopend wanneer op de insteekmodule wordt geklikt. Het dialoogvenster bestaat uit een deelvenster, een formulier, een tekstveld en 2 knoppen (**OK** en **Annuleren**).
 
-Het dialoogvenster **Rich Text Editor (RTE)-plug-in** gebruiken:
+Als u de opdracht **Insteekmodule Rich Text Editor (RTE)** gebaseerd dialoogvenster:
 
-1. Vervang het dialoogvenster van de **Aangepaste widgets** component door het op **Rich Text Editor (RTE)-plug-in** gebaseerde dialoogvenster:
+1. Het dialoogvenster van het dialoogvenster **Aangepaste widgets** met de **Insteekmodule Rich Text Editor (RTE)** gebaseerd dialoogvenster:
 
-   Voer de stappen uit die worden beschreven voor [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
+   volgt u de beschreven stappen voor de [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
 
 1. Bewerk de component.
 1. Klik op het laatste pictogram aan de rechterkant (het pictogram met vier pijlen). Voer een pad in en klik op **OK**:
 
-   Het pad wordt weergegeven tussen haakjes (`[]`).
+   Het pad wordt tussen haakjes weergegeven (`[]`).
 
-1. Klik **OK** om de Rich Text Editor te sluiten.
+1. Klikken **OK** om de Rich Text Editor te sluiten.
 
-Het dialoogvenster **Rich Text Editor (RTE)-plug-in** ziet er als volgt uit:
+De **Insteekmodule Rich Text Editor (RTE)** Het dialoogvenster ziet er als volgt uit:
 
 ![screen_shot_2012-02-01at120254pm](assets/screen_shot_2012-02-01at120254pm.png)
 
 >[!NOTE]
 >
->In dit voorbeeld wordt alleen getoond hoe u het clientgedeelte van de logica implementeert: de plaatsaanduidingen (*[text]*) moeten dan expliciet op de server worden geparseerd (bijvoorbeeld in de JSP-component).
+>In dit voorbeeld wordt alleen getoond hoe u het clientgedeelte van de logica implementeert: de plaatsaanduidingen (*[text]*) moet vervolgens expliciet op de server worden geparseerd (bijvoorbeeld in de JSP-component).
 
 ### Overzicht van boomstructuur {#tree-overview}
 
-Het uit-van-de-doos [`CQ.Ext.tree.TreePanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) voorwerp verstrekt boom-gestructureerde vertegenwoordiging UI van boom-gestructureerde gegevens. De component Overzicht van de Boom inbegrepen in **Gebruikend het Widgets van ExtJS** pakket toont hoe te om het `TreePanel` voorwerp te gebruiken om een boom JCR onder een bepaald weg te tonen. Het venster zelf kan worden gekoppeld of losgekoppeld. In dit voorbeeld wordt de vensterlogica ingesloten in de spa van de component tussen &lt;script>&lt;/script>-tags.
+De out-of-the-box [`CQ.Ext.tree.TreePanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) -object biedt een gestructureerde UI-representatie van gegevens met boomstructuur. De component Overzicht van de Boom inbegrepen in **ExtJS-widgets gebruiken** toont hoe u het pakket kunt gebruiken `TreePanel` object om een JCR-structuur onder een bepaald pad weer te geven. Het venster zelf kan worden gekoppeld of losgekoppeld. In dit voorbeeld is de vensterlogica ingesloten in de JSP-component tussen &lt;script>&lt;/script> -tags.
 
-De component **Tree Overview** opnemen in de voorbeeldpagina:
+Als u de opdracht **Overzicht van boomstructuur** aan de steekproefpagina:
 
-1. Voeg **4 toe. Overzicht van de structuur** component aan de steekproefpagina van **het Gebruiken van Breedgets ExtJS** tabel in **Sidetrap**.
+1. Voeg de **4. Overzicht van boomstructuur** naar de voorbeeldpagina van de **ExtJS-widgets gebruiken** in de **Sidetrap**.
 
 1. De component wordt weergegeven:
 
    * een titel, met tekst
-   * a **EIGENSCHAPPEN** koppeling: Klik om de eigenschappen van de alinea weer te geven die in de repository zijn opgeslagen. Klik nogmaals om de eigenschappen te verbergen.
+   * a **EIGENSCHAPPEN** verbinding: Klik om de eigenschappen van de alinea weer te geven die in de repository zijn opgeslagen. Klik nogmaals om de eigenschappen te verbergen.
    * een zwevend venster met een boomrepresentatie van de repository, die kan worden uitgebreid.
 
 De component wordt als volgt weergegeven:
@@ -695,24 +698,24 @@ The component jsp:
 
 * Haalt de breedte, hoogte en gedokte eigenschappen op van de repository.
 * Geeft enige tekst weer over de gegevensindeling van het boomoverzicht.
-* Sluit de vensterlogica in component jsp tussen javascript markeringen in.
+* Hiermee sluit u de vensterlogica in de jsp van de component tussen javascript-tags in.
 * Wordt gedefinieerd bij:
 
    `apps/extjstraining/components/treeoverview/content.jsp`
 
 De javascript-code die is ingesloten in de jsp van de component:
 
-* Definieert een `tree`-object door te proberen een structuurvenster van de pagina op te halen.
+* Definieert een `tree` door te proberen een structuurvenster van de pagina op te halen.
 
-* Als het venster met de boomstructuur niet bestaat, wordt `treePanel` ([CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) gemaakt:
+* Als het venster met de boomstructuur niet bestaat, `treePanel` ([CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) is gemaakt:
 
    * `treePanel` bevat de gegevens die worden gebruikt om het venster te maken.
    * De gegevens worden teruggewonnen door servlet te roepen die bij wordt geregistreerd:
       `/bin/wcm/siteadmin/tree.json`
 
-* De `beforeload` luisteraar zorgt ervoor de klikte knoop wordt geladen.
-* Met het object `root` wordt het pad `apps/extjstraining` ingesteld als de hoofdmap van de structuur.
-* `tree` ([`CQ.Ext.Window`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)) wordt ingesteld op basis van de vooraf gedefinieerde  `treePanel`en wordt weergegeven met:
+* De `beforeload` listener zorgt ervoor dat het aangeklikte knooppunt wordt geladen.
+* De `root` object stelt het pad in `apps/extjstraining` als de hoofdstructuur van de boom.
+* `tree` ([`CQ.Ext.Window`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)) wordt ingesteld op basis van de vooraf gedefinieerde `treePanel`en wordt weergegeven met:
 
    `tree.show();`
 
@@ -723,7 +726,7 @@ Het dialoogvenster Component:
 * Geeft 1 tab met 2 velden weer om de grootte (breedte en hoogte) van het venster met het overzicht van de structuur in te stellen en 1 veld om het venster te koppelen/ontkoppelen
 * Wordt gedefinieerd door een knooppunt (knooppunttype = `cq:Dialog`, xtype = [`panel`](/help/sites-developing/xtypes.md#panel)).
 
-* Het deelvenster heeft een widget sizefeld (knooppunttype = `cq:Widget`, xtype = [`sizefield`](/help/sites-developing/xtypes.md#sizefield)) en een selectiewidget (knooppunttype = `cq:Widget`, xtype = [`selection`](/help/sites-developing/xtypes.md#selection), type = `radio`) met 2 opties (true/false)
+* Het deelvenster heeft een widget Deelveld sizefield (knooppunttype = `cq:Widget`, xtype = [`sizefield`](/help/sites-developing/xtypes.md#sizefield)) en een selectiewidget (knooppunttype = `cq:Widget`, xtype = [`selection`](/help/sites-developing/xtypes.md#selection), type = `radio`) met 2 opties (true/false)
 
 * Wordt gedefinieerd door het dialoogknooppunt op:
 
@@ -746,14 +749,14 @@ Een deelvenster Raster vertegenwoordigt gegevens in tabelvorm van rijen en kolom
 * Weergave: kapselt het gebruikersinterface in.
 * Selectiemodel: het selectiegedrag.
 
-De component van het Overzicht van het Net inbegrepen in **Gebruikend het pakket ExtJS Widgets** toont hoe te om gegevens in een tabellarische formaat te tonen:
+De component Rasteroverzicht die is opgenomen in de **ExtJS-widgets gebruiken** Het pakket toont hoe u gegevens in tabelvorm kunt weergeven:
 
 * In voorbeeld 1 worden statische gegevens gebruikt.
 * In voorbeeld 2 worden gegevens gebruikt die uit de gegevensopslagruimte zijn opgehaald.
 
 De component Rasteroverzicht opnemen in de voorbeeldpagina:
 
-1. Voeg **5 toe. Rasteroverzicht** van de component aan de steekproefpagina van **het Gebruiken van Widgets ExtJS** tabel in **Sidetrap**.
+1. Voeg de **5. Rasteroverzicht** naar de voorbeeldpagina van de **ExtJS-widgets gebruiken** in de **Sidetrap**.
 
 1. De component wordt weergegeven:
 
@@ -767,7 +770,7 @@ De component wordt als volgt weergegeven:
 
 #### Voorbeeld 1: Standaardraster {#example-default-grid}
 
-In zijn uit-van-de-doosversie, toont de **Overzicht van het Net** component een venster met statische gegevens in een tabelformaat. In dit voorbeeld wordt de logica op twee manieren ingesloten in de jsp van de component:
+In zijn uit-van-de-doosversie, toont de **component van het Overzicht van het Net** een venster met statische gegevens in een in tabelvorm formaat. In dit voorbeeld wordt de logica op twee manieren ingesloten in de jsp van de component:
 
 * de algemene logica wordt gedefinieerd tussen &lt;script>&lt;/script>-tags
 * de specifieke logica is beschikbaar in een afzonderlijk JS-bestand en is gekoppeld in het Jsp. Met deze instelling kunt u eenvoudig schakelen tussen de twee logica (statisch/dynamisch) door de gewenste &lt;script>-tags toe te voegen.
@@ -788,7 +791,7 @@ The component jsp:
 
    `<script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script>`
 
-   `defaultgrid.js` bepaalt sommige statische gegevens als basis voor het voorwerp GridPanel.
+   `defaultgrid.js` definieert enkele statische gegevens als basis voor het GridPanel-object.
 
 * Hiermee wordt javascript-code ingesloten tussen javascript-tags die het Window-object definiëren dat het GridPanel-object gebruikt.
 * Wordt gedefinieerd bij:
@@ -797,26 +800,26 @@ The component jsp:
 
 De javascript-code die is ingesloten in de jsp van de component:
 
-* Definieert het `grid`-object door te proberen de venstercomponent van de pagina op te halen:
+* Definieert de `grid` -object door te proberen de venstercomponent van de pagina op te halen:
 
    `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
 
-* Als `grid` niet bestaat, wordt een [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)-object ( `gridPanel`) bepaald door de `getGridPanel()`-methode aan te roepen (zie hieronder). Deze methode wordt gedefinieerd in `defaultgrid.js`.
+* Indien `grid` bestaat niet, a [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object ( `gridPanel`) wordt gedefinieerd door het aanroepen van de `getGridPanel()` methode (zie hieronder). Deze methode is gedefinieerd in `defaultgrid.js`.
 
-* `grid` is een  [`CQ.Ext.Window`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)voorwerp, dat op vooraf bepaalde GridPanel wordt gebaseerd, en getoond:  `grid.show();`
+* `grid` is een [`CQ.Ext.Window`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)object, gebaseerd op het vooraf gedefinieerde GridPanel, en wordt weergegeven: `grid.show();`
 
-* Als `grid` al bestaat, wordt deze weergegeven op basis van de breedte, hoogte en gedokte eigenschappen die zijn opgehaald uit de opslagplaats.
+* Indien `grid` al bestaat, wordt deze weergegeven op basis van de breedte, hoogte en gedokte eigenschappen die zijn opgehaald uit de opslagplaats.
 
-Het javascript-bestand ( `defaultgrid.js`) waarnaar wordt verwezen in de component-jsp, definieert de methode `getGridPanel()` die wordt aangeroepen door het script dat is ingesloten in de JSP en retourneert een [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)-object op basis van statische gegevens. De logica is als volgt:
+Het javascript-bestand ( `defaultgrid.js`) waarnaar wordt verwezen in de component jsp definieert de `getGridPanel()` methode die wordt aangeroepen door het script dat is ingesloten in de JSP en die een [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object, op basis van statische gegevens. De logica is als volgt:
 
 * `myData` is een array van statische gegevens die zijn opgemaakt als een tabel van 5 kolommen en 4 rijen.
-* `store` is een  `CQ.Ext.data.Store` object dat verbruikt  `myData`.
+* `store` is een `CQ.Ext.data.Store` object dat verbruikt `myData`.
 
 * `store` wordt geladen in het geheugen:
 
    `store.load();`
 
-* `gridPanel` is een  [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object dat verbruikt  `store`:
+* `gridPanel` is een [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object dat verbruikt `store`:
 
    * de kolombreedten worden altijd opnieuw proportioneel:
 
@@ -826,23 +829,23 @@ Het javascript-bestand ( `defaultgrid.js`) waarnaar wordt verwezen in de compone
 
       `singleSelect:true`
 
-#### Voorbeeld 2: Zoekraster referentie {#example-reference-search-grid}
+#### Voorbeeld 2: Zoekraster van verwijzing {#example-reference-search-grid}
 
-Wanneer u het pakket installeert, `content.jsp` van de **Rasteroverzicht** component toont een net dat op statische gegevens gebaseerd is. Het is mogelijk om de component te wijzigen om een raster met de volgende kenmerken weer te geven:
+Wanneer u het pakket installeert, `content.jsp` van de **Rasteroverzicht** geeft een raster weer dat is gebaseerd op statische gegevens. Het is mogelijk om de component te wijzigen om een raster met de volgende kenmerken weer te geven:
 
 * Bevat drie kolommen.
 * Is gebaseerd op gegevens die van de bewaarplaats door een servlet te roepen worden teruggewonnen.
-* De cellen van de laatste kolom kunnen worden bewerkt. De waarde wordt in een `test` bezit onder de knoop voortgeduurd die door de weg wordt bepaald die in de eerste kolom wordt getoond.
+* De cellen van de laatste kolom kunnen worden bewerkt. De waarde blijft bestaan in een `test` eigenschap onder het knooppunt dat wordt gedefinieerd door het pad dat in de eerste kolom wordt weergegeven.
 
-Zoals uitgelegd in de sectie ervoor, krijgt het venstervoorwerp zijn [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) voorwerp door de `getGridPanel()` methode te roepen die in het `defaultgrid.js` dossier op `/apps/extjstraining/components/gridoverview/defaultgrid.js` wordt bepaald. De **Rasteroverzicht** component verstrekt een verschillende implementatie voor de `getGridPanel()` methode, die in het `referencesearch.js` dossier bij `/apps/extjstraining/components/gridoverview/referencesearch.js` wordt bepaald. Door het .js dossier te schakelen dat in component jsp van verwijzingen wordt voorzien, zal het net op gegevens worden gebaseerd die van de bewaarplaats worden teruggewonnen.
+Zoals eerder uitgelegd in de sectie, krijgt het vensterobject zijn [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object aanroepen `getGridPanel()` in de `defaultgrid.js` bestand bij `/apps/extjstraining/components/gridoverview/defaultgrid.js`. De **Rasteroverzicht** biedt een andere implementatie voor de `getGridPanel()` methode, gedefinieerd in de `referencesearch.js` bestand bij `/apps/extjstraining/components/gridoverview/referencesearch.js`. Door het .js dossier te schakelen dat in component jsp van verwijzingen wordt voorzien, zal het net op gegevens worden gebaseerd die van de bewaarplaats worden teruggewonnen.
 
 Van .js dossier schakelen dat in component jsp van verwijzingen wordt voorzien:
 
-1. Wijs in **CRXDE Lite** in het `content.jsp`-bestand van de component de regel aan die het `defaultgrid.js`-bestand bevat, zodat deze er als volgt uitziet:
+1. In **CRXDE Lite** in de `content.jsp` bestand van de component, de regel met het `defaultgrid.js` zodat het er als volgt uitziet:
 
    `<!-- script type="text/javascript" src="/apps/extjstraining/components/gridoverview/defaultgrid.js"></script-->`
 
-1. Verwijder de opmerking uit de regel met het bestand `referencesearch.js`, zodat deze er als volgt uitziet:
+1. Verwijder de opmerking uit de regel met de `referencesearch.js` zodat het er als volgt uitziet:
 
    `<script type="text/javascript" src="/apps/extjstraining/components/gridoverview/referencesearch.js"></script>`
 
@@ -853,11 +856,11 @@ De component wordt als volgt weergegeven:
 
 ![screen_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
-De javascript-code waarnaar wordt verwezen in de component jsp (`referencesearch.js`) definieert de `getGridPanel()`-methode die wordt aangeroepen vanuit de component jsp en retourneert een [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)-object, op basis van gegevens die dynamisch worden opgehaald uit de opslagplaats. De logica in `referencesearch.js` bepaalt sommige dynamische gegevens als basis voor GridPanel:
+De javascript-code waarnaar in de component jsp wordt verwezen (`referencesearch.js`) definieert de `getGridPanel()` methode geroepen van component jsp en keert een [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) object, op basis van gegevens die dynamisch uit de gegevensopslagruimte worden opgehaald. De logica in `referencesearch.js` bepaalt sommige dynamische gegevens als basis voor GridPanel:
 
-* `reader` is een  [`CQ.Ext.data.JsonReader`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader) object dat de servlet-reactie in json-indeling voor 3 kolommen leest.
+* `reader` is een [`CQ.Ext.data.JsonReader`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader) -object dat de servlet-reactie in json-indeling voor 3 kolommen leest.
 
-* `cm` is een  [`CQ.Ext.grid.ColumnModel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel) object voor 3 kolommen.
+* `cm` is een [`CQ.Ext.grid.ColumnModel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel) object voor 3 kolommen.
 
    De kolomcellen van de &quot;Test&quot;kunnen worden uitgegeven aangezien zij met een redacteur worden bepaald:
 
@@ -867,20 +870,20 @@ De javascript-code waarnaar wordt verwezen in de component jsp (`referencesearch
 
    `cm.defaultSortable = true;`
 
-* `store` is een  [`CQ.Ext.data.GroupingStore`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore) object:
+* `store` is een [`CQ.Ext.data.GroupingStore`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore) object:
 
-   * het krijgt zijn gegevens door servlet te roepen die bij &quot; `/bin/querybuilder.json`&quot;met een paar parameters wordt geregistreerd die worden gebruikt om de vraag te filtreren
-   * het is gebaseerd op `reader`, vooraf gedefinieerd
-   * de tabel wordt in oplopende volgorde gesorteerd volgens de kolom &#39;**jcr:path**&#39;
+   * het krijgt zijn gegevens door servlet te roepen die bij &quot; wordt geregistreerd `/bin/querybuilder.json`&quot; met een paar parameters die worden gebruikt om de query te filteren
+   * zij is gebaseerd op `reader`, vooraf gedefinieerd
+   * de tabel wordt gesorteerd volgens de &quot;**jcr:pad**&#39; kolom in oplopende volgorde
 
-* `gridPanel` is een  [`CQ.Ext.grid.EditorGridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel) object dat kan worden bewerkt:
+* `gridPanel` is een [`CQ.Ext.grid.EditorGridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel) object dat kan worden bewerkt:
 
-   * het is gebaseerd op vooraf gedefinieerd `store` en op het kolommodel `cm`
+   * het is gebaseerd op de vooraf gedefinieerde `store` en op het kolommodel `cm`
    * u kunt slechts één rij tegelijk selecteren:
 
       `sm: new `[`CQ.Ext.grid.RowSelectionModel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)`({singleSelect:true})`
 
-   * de `afteredit` luisteraar zorgt ervoor dat na een cel in &quot;**Test**&quot;kolom is uitgegeven:
+   * de `afteredit` listener zorgt ervoor dat na een cel in de map &quot;**Testen**&quot; kolom is bewerkt:
 
-      * de eigenschap &#39; `test`&#39; van het knooppunt op het pad dat is gedefinieerd door de kolom &quot;**jcr:path**&quot; wordt in de opslagplaats ingesteld met de waarde van de cel
-      * als de POST succesvol is, wordt de waarde toegevoegd aan het `store` voorwerp, anders wordt het verworpen
+      * de eigenschap &#39; `test`&#39; van het knooppunt op het pad dat wordt gedefinieerd door &quot;**jcr:pad**&quot; column wordt ingesteld in de repository met de waarde van de cel
+      * als de POST is gelukt, wordt de waarde toegevoegd aan de `store` object, anders wordt het geweigerd

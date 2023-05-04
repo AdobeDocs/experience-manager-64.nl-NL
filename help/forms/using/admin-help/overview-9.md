@@ -1,8 +1,8 @@
 ---
 title: Overzicht van de Forms-workflow
-seo-title: Overzicht van de Forms-workflow
+seo-title: Overview of Forms workflow
 description: Met Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
-seo-description: Met Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
+seo-description: Forms workflow lets users design, manage, and optimize human-centric processes. Using forms workflow, users can also manage automated business-process applications that connect systems and people.
 uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 exl-id: df534e6d-ec34-4851-bbd2-5b9b06d1da10
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 1%
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
 # Overzicht van de Forms-workflow {#overview-of-forms-workflow}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Met Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
 

@@ -1,8 +1,8 @@
 ---
 title: AEM
-seo-title: AEM
+seo-title: AEM Repo Tool
 description: Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP. Het gereedschap AEM repo is vergelijkbaar met het gereedschap Jackrabbit FileVault, maar is sneller, heeft minimale afhankelijkheden en is een eenvoudig bash-script.
-seo-description: Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP. Het gereedschap AEM repo is vergelijkbaar met het gereedschap Jackrabbit FileVault, maar is sneller, heeft minimale afhankelijkheden en is een eenvoudig bash-script.
+seo-description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP. The AEM Repo Tool is similar to the Jackrabbit FileVault tool, but is faster, has minimal dependencies, and is a simple bash script.
 uuid: 6c4a3504-e8e8-46c0-83cb-c18d9791f93e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,33 +10,36 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
 exl-id: 8da27ef5-bb61-4246-8a13-96a60188ebbb
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
-# AEM gereedschap Repo{#aem-repo-tool}
+# AEM{#aem-repo-tool}
 
-Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP. Het gereedschap AEM repo is vergelijkbaar met het [Jackrabbit FileVault-gereedschap](/help/sites-developing/ht-vlttool.md), maar is sneller, heeft minimale afhankelijkheden en is een eenvoudig basisscript.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Het gereedschap AEM repo is een eenvoudige oplossing voor het overbrengen van JCR-inhoud tussen uw lokale bestandssysteem en de AEM server via een opdrachtregel die vergelijkbaar is met FTP. Het gereedschap AEM herhalen is vergelijkbaar met het gereedschap [Jackrabbit FileVault, gereedschap](/help/sites-developing/ht-vlttool.md), maar is sneller, heeft minimale gebiedsdelen, en is een eenvoudig bash manuscript.
 
 Dit hulpmiddel vereenvoudigt de overdracht van dossiers voor de ontwikkelaar en kan ook in IntelliJ en Eclipse worden geïntegreerd om ontwikkeling nog efficiënter te maken.
 
 ## Overzicht {#overview}
 
-Voor een bepaald pad binnen een `jcr_root`-bestandsstructuur op het bestandssysteem maakt AEM Repo Tool een pakket met één filter voor de gehele substructuur en plaatst deze op de server (vergelijkbaar met FTP `put`), haalt deze op van de server ( `get`) of vergelijkt de verschillen ( `status` en `diff`).
+Voor een bepaald pad binnen een `jcr_root` AEM Repo Tool maakt een pakket met één filter voor de gehele substructuur en plaatst dat op de server (vergelijkbaar met FTP) `put`), haalt het op van de server ( `get`) of vergelijkt de verschillen ( `status` en `diff`).
 
-Het gereedschap biedt geen ondersteuning voor meerdere filterpaden of `filter.xml` van FileVault.
+Het gereedschap biedt geen ondersteuning voor meerdere filterpaden of FileVault-paden `filter.xml`.
 
 >[!CAUTION]
 >
 >Houd er rekening mee dat het gereedschap AEM repo altijd het volledige opgegeven bestand of de opgegeven map overschrijft.
 
-## {#download-and-documentation} downloaden en documentatie
+## Downloaden en documentatie {#download-and-documentation}
 
-Het [AEM Hulpmiddel van de Repo is beschikbaar op GitHub via deze verbinding](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) samen met gedetailleerde installatie en gebruiksinstructies.
+De [AEM Repo Tool is beschikbaar op GitHub via deze koppeling](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) samen met gedetailleerde installatie- en gebruiksinstructies.
 
 Als u wenst om de bron van het AEM Hulpmiddel van de Repo te downloaden, verwijs naar het hieronder verbonden project GitHub.
 

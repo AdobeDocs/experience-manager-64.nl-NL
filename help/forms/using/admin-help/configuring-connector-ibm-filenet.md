@@ -1,8 +1,8 @@
 ---
 title: Connector configureren voor IBM FileNet
-seo-title: Connector configureren voor IBM FileNet
-description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM formulieren en IBM FileNet mogelijk te maken.
-seo-description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM formulieren en IBM FileNet mogelijk te maken.
+seo-title: Configuring Connector for IBM FileNet
+description: Leer hoe u de Connector voor IBM FileNet configureert om communicatie tussen AEM formulieren en IBM FileNet mogelijk te maken.
+seo-description: Learn how to configure the Connector for IBM FileNet to enable communication between AEM forms and IBM FileNet.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
 content-type: reference
@@ -10,23 +10,26 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 exl-id: 3a3d59c2-6811-4513-8384-aa77fdc38686
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
 
 # Connector configureren voor IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM formulieren en IBM FileNet. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63) voor aanvullende achtergrondinformatie.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM formulieren en IBM FileNet. Zie &quot;Connectors for ECM&quot; in [Servicereferentie](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
 >In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In deze versie worden de elementen opgeslagen in de systeemeigen opslagruimte voor AEM formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de opslagplaats voor AEM formulieren vindt plaats wanneer u een upgrade uitvoert naar AEM formulieren. Zie de handleiding voor het upgraden van AEM formulieren voor uw toepassingsserver voor meer informatie.
 
-## De verbinding met de inhoudsengine {#configure-the-connection-to-the-content-engine} configureren
+## De verbinding met de inhoudsengine configureren {#configure-the-connection-to-the-content-engine}
 
 IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijfsinhoud en door de klant gedefinieerde zakelijke objecten in opslagruimten voor FileNet-inhoud.
 
@@ -43,8 +46,8 @@ IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijf
 
 1. Selecteer een van de volgende beveiligingsniveaus in de lijst Referentiebeschermingsregeling:
 
-   * **Wissen:** verzendt referenties via het netwerk in een niet-beveiligde modus
-   * **Symmetrisch:** verzendt gecodeerde geloofsbrieven over het netwerk
+   * **Wissen:** Verzendt gegevens in een niet-beveiligde modus via het netwerk
+   * **Symmetrisch:** Verzendt gecodeerde gegevens via het netwerk
 
 1. Voer in het vak Locatie van versleutelingsbestand het pad naar het versleutelingsbestand in:
 
@@ -55,12 +58,12 @@ IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijf
 1. Voer in het vak Gebruikersnaam de gebruikersnaam in van een gebruiker die toegangsrechten heeft tot de standaardobberwinkel die u in de vorige stap hebt opgegeven.
 1. Voer in het vak Wachtwoord het wachtwoord voor de gebruiker in en klik op Opslaan.
 
-## De instellingen voor de procesengine configureren {#configure-the-process-engine-settings}
+## De instellingen van de procesengine configureren {#configure-the-process-engine-settings}
 
-De connector voor IBM FileNet bevat de Process Engine Connector voor de IBM FileNet-service, die wordt gebruikt voor interactie met de IBM FileNet Process Engine. U kunt instellingen voor deze service configureren.
+De connector voor IBM FileNet bevat de Process Engine Connector voor de IBM FileNet-service, die wordt gebruikt voor interactie met de IBM FileNet-procesengine. U kunt instellingen voor deze service configureren.
 
 1. Klik in de beheerconsole op Services > Connector voor IBM FileNet.
-1. Om het gebruik van de Schakelaar van de Motor van het Proces voor de dienst van IBM FileNet toe te laten, de uitgezochte Dienst van de Schakelaar van de Motor van het Proces van het Gebruik.
+1. Om het gebruik van de Schakelaar van de Motor van het Proces voor de dienst van IBM toe te laten FileNet, de uitgezochte Dienst van de Schakelaar van de Motor van het Proces van het Gebruik.
 1. In het vakje van de Router van het Proces/van het Punt, ga de gastheernaam of IP adres en havenaantal in dat door de naam van de procesrouter wordt gevolgd. Bijvoorbeeld:
 
    `rmi://ProcessEngineHostNameorIP:port/Name`
@@ -72,20 +75,20 @@ De connector voor IBM FileNet bevat de Process Engine Connector voor de IBM File
 
 Als u een onjuiste gebruikersnaam of wachtwoord invoert wanneer u de verbinding met de Content Engine of de instellingen van de procesengine configureert, krijgt u de volgende resultaten, afhankelijk van of de services momenteel worden uitgevoerd:
 
-* Als zowel de dienst van de Leverancier van de Bewaarplaats voor IBM FileNet als de Schakelaar van de Bewaarplaats van de Inhoud voor de dienst van IBM FileNet worden tegengehouden, wanneer u sparen de informatie van de de dienstconfiguratie, geen fout verschijnt. Nochtans, de volgende tijd u de dienst begint, zal een uitzondering worden geworpen en de dienst zal niet beginnen.
+* Als zowel de dienst van de Leverancier van de Bewaarplaats voor IBM FileNet als de Schakelaar van de Bewaarplaats van de Inhoud voor de dienst van IBM FileNet worden tegengehouden, wanneer u de informatie van de de dienstconfiguratie opslaat, verschijnt geen fout. Nochtans, de volgende tijd u de dienst begint, zal een uitzondering worden geworpen en de dienst zal niet beginnen.
 * Als of de dienst van de Leverancier van de Bewaarplaats voor IBM FileNet of de Verbinding van de Bewaarplaats van de Inhoud voor de dienst van IBM FileNet begonnen zijn, wanneer u sparen de informatie van de de dienstconfiguratie, probeert de dienst om de referentie informatie onmiddellijk te bevestigen. In dit geval treedt een fout op en worden de configuratiegegevens niet opgeslagen.
 
-## De serviceprovider {#change-the-repository-service-provider} wijzigen
+## De provider van de dataopslagservice wijzigen {#change-the-repository-service-provider}
 
 U kunt configureren welke serviceprovider voor gegevensopslag moet worden gebruikt met FileNet. De de dienstvraag van de bewaarplaats wordt gedelegeerd aan de leverancier u vormt.
 
 De volgende opties zijn beschikbaar:
 
-**Huidige naam leverancier van opslagplaats:** de naam van de huidige aanbieder van opslagplaats
+**Huidige naam leverancier van opslagplaats:** De naam van de huidige aanbieder van datadiensten
 
-**IBM FileNet Repository Provider:** Maakt van de leverancier van de opslagplaats FileNet de leverancier voor de bewaarplaats. Deze optie is vervangen.
+**IBM FileNet Repository Provider:** Maakt van de aanbieder van de FileNet-opslagplaats de provider voor de opslagplaats. Deze optie is vervangen.
 
-**opslagprovider:** maakt van de native opslagopslagprovider de provider voor de opslagplaats
+**aanbieder opslagplaats:** Maakt van de native opslagprovider de provider voor de opslagplaats
 
 >[!NOTE]
 >

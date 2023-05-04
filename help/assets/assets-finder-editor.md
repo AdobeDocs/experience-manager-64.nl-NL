@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools,Asset Management
 role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3218'
 ht-degree: 0%
 
 ---
 
 # Elementeditorpagina&#39;s maken en configureren {#creating-and-configuring-asset-editor-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In dit document wordt het volgende beschreven:
 
@@ -22,17 +26,17 @@ In dit document wordt het volgende beschreven:
 
 >[!NOTE]
 >
->Asset Share is beschikbaar als een open-source referentie-implementatie. Zie [Commons voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/). Het wordt niet officieel gesteund.
+>Asset Share is beschikbaar als een open-source referentie-implementatie. Zie [Commentaar voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/) . Het wordt niet officieel gesteund.
 
 ## Waarom de Pagina&#39;s van de Redacteur van Activa creëren en vormen? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management wordt in steeds meer scenario&#39;s gebruikt. Bij de overgang van een kleinschalige oplossing voor een kleine gebruikersgroep professionele gebruikers - bijvoorbeeld fotografen of taxonomisten - naar grotere en meer uiteenlopende gebruikersgroepen - bijvoorbeeld zakelijke gebruikers, WCM-auteurs, journalisten, enzovoort - kan de krachtige gebruikersinterface van [!DNL Adobe Experience Manager Assets] voor professionele gebruikers te veel informatie bieden en kunnen belanghebbenden specifieke gebruikersinterfaces of toepassingen aanvragen om toegang te krijgen tot de digitale middelen die voor hen van belang zijn.
+Digital Asset Management wordt in steeds meer scenario&#39;s gebruikt. Wanneer u overschakelt van een kleinschalige oplossing voor een kleine gebruikersgroep van professioneel opgeleide gebruikers - bijvoorbeeld fotografen of taxonomisten - naar grotere en meer uiteenlopende gebruikersgroepen - bijvoorbeeld zakelijke gebruikers, WCM-auteurs, journalisten, enzovoort - de krachtige gebruikersinterface van [!DNL Adobe Experience Manager Assets] professionele gebruikers kunnen te veel informatie verstrekken en belanghebbenden beginnen specifieke gebruikersinterfaces of toepassingen te vragen om toegang te krijgen tot de digitale middelen die voor hen van belang zijn.
 
 Deze asset-centric toepassingen kunnen eenvoudige fotogalerieën in een Intranet zijn waar de werknemers foto&#39;s van handelsshowbezoeken of een perscentrum in een openbaar-onder ogen ziet website kunnen uploaden, zoals het voorbeeld dat van Geometrixx wordt voorzien. Asset-centric toepassingen kunnen ook worden uitgebreid tot complete oplossingen, zoals winkelwagentjes, kassa&#39;s en verificatieprocessen.
 
-Het creëren van een middel-centric toepassing wordt grotendeels een configuratieproces dat geen codering vereist, slechts kennis van gebruikersgroepen en hun behoeften evenals kennis van de meta-gegevens die worden gebruikt. Elementgerichte toepassingen die zijn gemaakt met [!DNL Assets] zijn uitbreidbaar: met een matige codeerinspanning kunnen herbruikbare componenten voor het zoeken, bekijken, en het wijzigen van activa worden gecreeerd.
+Het creëren van een middel-centric toepassing wordt grotendeels een configuratieproces dat geen codering vereist, slechts kennis van gebruikersgroepen en hun behoeften evenals kennis van de meta-gegevens die worden gebruikt. Asset-centric toepassingen die zijn gemaakt met [!DNL Assets] uitbreidbaar zijn: met een matige codeerinspanning kunnen herbruikbare componenten voor het zoeken, bekijken, en het wijzigen van activa worden gecreeerd.
 
-Een op elementen gerichte toepassing in [!DNL Experience Manager] bestaat uit een pagina van de Redacteur van Activa, die kan worden gebruikt om een gedetailleerde mening van een specifiek middel te krijgen. Een pagina van de Redacteur van Activa staat ook voor het uitgeven van meta-gegevens toe, op voorwaarde dat de gebruiker die tot de activa toegang heeft de noodzakelijke toestemmingen heeft.
+Een toepassing die op elementen is gericht in [!DNL Experience Manager] bestaat uit een pagina Asset Editor, die kan worden gebruikt voor een gedetailleerde weergave van een specifiek element. Een pagina van de Redacteur van Activa staat ook voor het uitgeven van meta-gegevens toe, op voorwaarde dat de gebruiker die tot de activa toegang heeft de noodzakelijke toestemmingen heeft.
 
 ## Een pagina voor het delen van elementen maken en configureren {#creating-and-configuring-an-asset-share-page}
 
@@ -51,13 +55,13 @@ Als u een nieuwe pagina voor het delen van elementen wilt maken, kunt u deze mak
 
 >[!NOTE]
 >
->Wanneer u een pagina voor het delen van bedrijfsmiddelen maakt op basis van **New** in het beheer van digitale middelen, worden standaard automatisch een viewer voor middelen en een Asset-editor voor u gemaakt.
+>Wanneer u een pagina voor het delen van bedrijfsmiddelen maakt van **Nieuw** in het beheer van digitale middelen worden automatisch een Asset Viewer en Asset Editor gemaakt.
 
-Een nieuwe pagina voor het delen van bedrijfsmiddelen maken in de **console Websites**:
+Als u een nieuwe pagina voor het delen van elementen wilt maken in het dialoogvenster **Websites** console:
 
-1. Navigeer op het tabblad **[!UICONTROL Websites]** naar de plaats waar u een pagina voor het delen van elementen wilt maken en klik op **[!UICONTROL New]**.
+1. In de **[!UICONTROL Websites]** , navigeert u naar de plaats waar u een pagina voor het delen van elementen wilt maken en klikt u op **[!UICONTROL New]**.
 
-1. Selecteer de pagina **[!UICONTROL Asset Share]** en klik **[!UICONTROL Create]**. De nieuwe pagina wordt gemaakt en de pagina voor het delen van elementen wordt weergegeven op het tabblad **[!UICONTROL Websites]**.
+1. Selecteer **[!UICONTROL Asset Share]** pagina en klik op **[!UICONTROL Create]**. De nieuwe pagina wordt gemaakt en de pagina voor het delen van elementen wordt weergegeven in de **[!UICONTROL Websites]** tab.
 
 ![dam8](assets/dam8.png)
 
@@ -71,8 +75,8 @@ Als u de pagina voor het delen van elementen wilt aanpassen, gebruikt u elemente
 
 Een nieuwe pagina voor het delen van elementen maken via Digital Asset Manager:
 
-1. Selecteer **[!UICONTROL New Asset Share]** in **[!UICONTROL New]** in het beheer van digitale elementen.
-1. Voer in **[!UICONTROL Title]** de naam in van de pagina voor het delen van elementen. Voer desgewenst een naam voor de URL in.
+1. In de beheerder van digitale middelen, in **[!UICONTROL New]**, selecteert u **[!UICONTROL New Asset Share]**.
+1. In de **[!UICONTROL Title]**, voert u de naam in van de pagina voor het delen van elementen. Voer desgewenst een naam voor de URL in.
 
    ![screen_shot_2012-04-19at23626pm](assets/screen_shot_2012-04-19at23626pm.png)
 
@@ -80,7 +84,7 @@ Een nieuwe pagina voor het delen van elementen maken via Digital Asset Manager:
 
    ![screen_shot_2012-04-19at24114pm](assets/screen_shot_2012-04-19at24114pm.png)
 
-   Wanneer u een pagina voor het delen van bedrijfsmiddelen maakt op basis van **[!UICONTROL New]**, worden standaard automatisch een viewer voor middelen en een Asset-editor gemaakt.
+   Wanneer u een pagina voor het delen van bedrijfsmiddelen maakt van **[!UICONTROL New]** Er wordt automatisch een viewer voor middelen en een Asset Editor gemaakt.
 
 #### Handelingen aanpassen {#customizing-actions}
 
@@ -88,21 +92,21 @@ U kunt bepalen welke handelingen gebruikers kunnen uitvoeren op geselecteerde di
 
 Handelingen toevoegen aan de pagina Asset Share:
 
-1. Op de pagina van het Aandeel van Activa die u wilt aanpassen, klik **[!UICONTROL Actions]** in sidekick.
+1. Klik op de pagina Asset Share die u wilt aanpassen op **[!UICONTROL Actions]** in het hulpje.
 
    De volgende acties zijn beschikbaar:
    ![assetshare2](assets/assetshare2.bmp)
 
-| Actie | Beschrijving |
+| Handeling | Beschrijving |
 |---|---|
 | [!UICONTROL Delete Action] | Gebruikers kunnen de geselecteerde elementen verwijderen. |
 | [!UICONTROL Download Action] | Hiermee kunnen gebruikers geselecteerde elementen downloaden naar hun computers. |
-| [!UICONTROL Lightbox Action] | Hiermee slaat u elementen op in een &quot;lichtbak&quot;   waar u andere acties op hen kunt uitvoeren. Dit is handig wanneer u werkt   met elementen op meerdere pagina&#39;s. De lichtbak kan ook als een   winkelwagentje voor bedrijfsmiddelen. |
-| [!UICONTROL Move Action] | Gebruikers kunnen het element naar een andere locatie verplaatsen   locatie |
+| [!UICONTROL Lightbox Action] | Hiermee slaat u elementen op in een &#39;lichtbak&#39; waar u andere handelingen op kunt uitvoeren. Dit is handig wanneer u met elementen op meerdere pagina&#39;s werkt. De lichtbak kan ook worden gebruikt als winkelwagentje voor bedrijfsmiddelen. |
+| [!UICONTROL Move Action] | Gebruikers kunnen het element naar een andere locatie verplaatsen |
 | [!UICONTROL Tags Action] | Gebruikers kunnen tags toevoegen aan geselecteerde elementen |
-| [!UICONTROL View Asset Action] | Hiermee opent u het element in de Asset Editor voor   manipulatie door de gebruiker. |
+| [!UICONTROL View Asset Action] | Hiermee opent u het element in de Asset Editor, zodat de gebruiker het kan bewerken. |
 
-1. Sleep de aangewezen actie aan **Acties** gebied op de pagina. Als u dit doet, wordt een knop gemaakt waarmee die handeling wordt uitgevoerd.
+1. Sleep de gewenste actie naar de **Handelingen** op de pagina. Als u dit doet, wordt een knop gemaakt waarmee die handeling wordt uitgevoerd.
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
@@ -112,7 +116,7 @@ U bepaalt hoe de resultaten worden weergegeven in een vooraf gedefinieerde lijst
 
 Zo wijzigt u de weergave van zoekresultaten:
 
-1. Klik op **[!UICONTROL Search]** op de pagina Asset Share die u wilt aanpassen.
+1. Klik op de pagina Asset Share die u wilt aanpassen op **[!UICONTROL Search]**.
 
    ![chlimage_1](assets/chlimage_1.bmp)
 
@@ -139,23 +143,23 @@ Met de querybuilder kunt u zoektermen invoeren en inhoud maken voor de pagina As
 
 U kunt als volgt de builder van query aanpassen:
 
-1. In de pagina van het Aandeel van Activa die u wilt aanpassen, klik **[!UICONTROL Edit]** in de Bouwer van de Vraag. Standaard wordt het tabblad **[!UICONTROL General]** geopend.
+1. Klik op de pagina Asset Share die u wilt aanpassen op **[!UICONTROL Edit]** in de Bouwer van de Vraag. Standaard worden de **[!UICONTROL General]** wordt geopend.
 
 1. Selecteer het aantal resultaten per pagina, het pad van de middeleneditor (als u een aangepaste editor voor elementen hebt) en de titel Handelingen.
 
    ![screen_shot_2012-04-23at15055pm](assets/screen_shot_2012-04-23at15055pm.png)
 
-1. Klik op het tabblad **[!UICONTROL Paths]**. Voer een of meerdere paden in die de zoekopdracht moet uitvoeren. Deze paden worden overschreven als de gebruiker de voorspelling van paden gebruikt.
+1. Klik op de knop **[!UICONTROL Paths]** tab. Voer een of meerdere paden in die de zoekopdracht moet uitvoeren. Deze paden worden overschreven als de gebruiker de voorspelling van paden gebruikt.
 
    ![screen_shot_2012-04-23at15150pm](assets/screen_shot_2012-04-23at15150pm.png)
 
 1. Voer desgewenst een ander knooppunttype in.
 
-1. In het **[!UICONTROL Query Builder URL]** gebied, kunt u de vraagbouwer met voeten treden of verpakken en nieuwe servlet URLs met de bestaande component van de vraagbouwer ingaan. In het veld **[!UICONTROL Feed URL]** kunt u ook de URL van het voer overschrijven.
+1. In de **[!UICONTROL Query Builder URL]** in het veld kunt u de querybuilder overschrijven of omsluiten en de nieuwe servlet-URL&#39;s invoeren met de bestaande query-builder-component. In de **[!UICONTROL Feed URL]** kunt u ook de URL van de feed overschrijven.
 
    ![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
-1. Voer in het veld **[!UICONTROL Text]** de tekst in die u wilt weergeven voor de resultaten en paginanummers. Klik **[!UICONTROL OK]** wanneer het maken van veranderingen gebeëindigd.
+1. In de **[!UICONTROL Text]** Voer de tekst in die u wilt weergeven voor de resultaten en paginanummers. Klikken **[!UICONTROL OK]** wanneer u klaar bent met het aanbrengen van wijzigingen.
 
    ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
@@ -165,7 +169,7 @@ U kunt als volgt de builder van query aanpassen:
 
 Voorspelden toevoegen:
 
-1. Klik op **[!UICONTROL Search]** op de pagina Asset Share die u wilt aanpassen.
+1. Klik op de pagina Asset Share die u wilt aanpassen op **[!UICONTROL Search]**.
 
    ![assetshare3](assets/assetshare3.bmp)
 
@@ -182,7 +186,7 @@ Voorspelden toevoegen:
 | **[!UICONTROL Path Predicate]** | Gebruikers kunnen het pad en de submappen desgewenst definiëren. |
 | **[!UICONTROL Property Predicate]** | De eigenaar van de site geeft een eigenschap op waarnaar moet worden gezocht, bijvoorbeeld tiff:ImageLength en de gebruiker kan vervolgens een waarde invoeren, bijvoorbeeld 800. Hiermee worden alle afbeeldingen geretourneerd die 800 pixels hoog zijn. Nuttige voorspelling als uw bezit willekeurige waarden kan hebben. |
 
-Zie [javadocs voorspellen](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) voor meer informatie.
+Zie voor meer informatie de [javadocs voorspellen](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. Als u de voorspelling verder wilt configureren, dubbelklikt u erop. Als u bijvoorbeeld het pad wilt openen, moet u het hoofdpad toewijzen.
 
@@ -194,17 +198,17 @@ U kunt de middeleneditor aanpassen om te bepalen hoe gebruikers de digitale elem
 
 >[!NOTE]
 >
->Als u aangepaste velden wilt toevoegen aan de DAM-elementeditor, voegt u nieuwe cq:Widget-knooppunten toe aan `/apps/dam/content/asseteditors.`
+>Als u aangepaste velden wilt toevoegen aan de DAM-middeleneditor, voegt u nieuwe cq:Widget-knooppunten toe aan `/apps/dam/content/asseteditors.`
 
 ### De pagina Asset Editor maken {#creating-the-asset-editor-page}
 
 Als u de pagina Asset Editor maakt, is het verstandig de pagina direct onder de pagina Asset Share te maken.
 
-Een pagina voor de Asset Editor maken:
+Een pagina voor de Editor van middelen maken:
 
-1. Navigeer op het tabblad **[!UICONTROL Websites]** naar de plaats waar u een pagina voor een elementeditor wilt maken en klik op **[!UICONTROL New]**.
+1. In de **[!UICONTROL Websites]** , navigeert u naar de plaats waar u een pagina voor de middeleneditor wilt maken en klikt u **[!UICONTROL New]**.
 
-1. Selecteer **[!UICONTROL Geometrixx Asset Editor]** en klik **[!UICONTROL Create]**. De nieuwe pagina wordt gemaakt en de pagina wordt weergegeven op het tabblad **[!UICONTROL Websites]**.
+1. Selecteren **[!UICONTROL Geometrixx Asset Editor]** en klik op **[!UICONTROL Create]**. De nieuwe pagina wordt gemaakt en de pagina wordt weergegeven in het dialoogvenster **[!UICONTROL Websites]** tab.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
@@ -212,7 +216,7 @@ De basispagina die is gemaakt met de sjabloon Geometrixx Asset Editor ziet er al
 
 ![assetshare5](assets/assetshare5.bmp)
 
-Als u de pagina Asset Editor wilt aanpassen, gebruikt u elementen van de assistent. De pagina Asset Editor die wordt geopend vanuit de **[!UICONTROL Geometrixx Press Center]** is een aangepaste versie van een pagina die is gebaseerd op deze sjabloon:
+Als u de pagina Asset Editor wilt aanpassen, gebruikt u elementen van de assistent. De pagina Asset Editor die wordt geopend via de **[!UICONTROL Geometrixx Press Center]** is een aangepaste versie van een pagina die op deze sjabloon is gebaseerd:
 
 ![assetshare6](assets/assetshare6.bmp)
 
@@ -222,13 +226,13 @@ Nadat u de aangepaste pagina Asset Editor hebt gemaakt, moet u ervoor zorgen dat
 
 De pagina Asset Editor instellen:
 
-1. In de pagina van het Aandeel van Activa, klik **[!UICONTROL Edit]** naast de Bouwer van de Vraag.
+1. Klik op de pagina Asset Share op **[!UICONTROL Edit]** naast de Query Builder.
 
    ![screen_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
 
-1. Klik op het tabblad **[!UICONTROL General]** als dit nog niet is geselecteerd.
+1. Klik op de knop **[!UICONTROL General]** als deze nog niet is geselecteerd.
 
-1. Typ in het veld **[!UICONTROL Path of Asset Editor]** het pad naar de editor voor elementen waarin u de pagina Asset Share wilt plaatsen om elementen te openen en klik op **[!UICONTROL OK]**.
+1. In de **[!UICONTROL Path of Asset Editor]** Voer het pad in naar de middeleneditor waarin u de pagina Asset Share wilt openen en klik op **[!UICONTROL OK]**.
 
    ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
@@ -238,7 +242,7 @@ U bepaalt welke functionaliteit een middeleneditor heeft door componenten aan de
 
 Elementeditorcomponenten toevoegen:
 
-1. Selecteer **[!UICONTROL Asset Editor]** in de assistent op de pagina Asset Editor die u wilt aanpassen. Alle beschikbare componenten van de middeleneditor worden weergegeven.
+1. Selecteer op de pagina Asset Editor die u wilt aanpassen **[!UICONTROL Asset Editor]** in het hulpje. Alle beschikbare componenten van de middeleneditor worden weergegeven.
 
    >[!NOTE]
    >
@@ -252,7 +256,7 @@ Elementeditorcomponenten toevoegen:
 
    | Component | Beschrijving |
    |---|---|
-   | **[!UICONTROL Metadata Form]and[!UICONTROL Metadata Text Field]** | Hiermee kunt u aanvullende metagegevens aan een element toevoegen en een handeling op dat element uitvoeren, zoals verzenden. |
+   | **[!UICONTROL Metadata Form]en[!UICONTROL Metadata Text Field]** | Hiermee kunt u aanvullende metagegevens aan een element toevoegen en een handeling op dat element uitvoeren, zoals verzenden. |
    | **[!UICONTROL Sub Assets]** | Hiermee kunt u subelementen aanpassen. |
    | **Tags** | Gebruikers kunnen tags selecteren en aan een element toevoegen. |
    | **[!UICONTROL Thumbnail]** | Toont een duimnagel van het element, zijn filename, en laat u een afwisselende tekst toevoegen. U kunt hier ook acties voor middeleneditors toevoegen. |
@@ -262,30 +266,30 @@ Elementeditorcomponenten toevoegen:
 
 #### Metagegevensformulier en tekstveld - De component Metagegevens weergeven configureren {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Het metagegevensformulier is een formulier met een begin- en eindactie. Tussendoor voert u **[!UICONTROL Text]** velden in. Zie [Forms](../sites-authoring/default-components.md) voor meer informatie over het werken met formulieren.
+Het metagegevensformulier is een formulier met een begin- en eindactie. Tussen haakjes voert u in **[!UICONTROL Text]** velden. Zie [Forms](../sites-authoring/default-components.md) voor meer informatie over het werken met formulieren.
 
-1. Maak een startactie door te klikken op **[!UICONTROL Edit]** in het begingebied van het formulier. U kunt desgewenst een titel voor een vak invoeren. Standaard is de titel van het vak **[!UICONTROL Metadata]**. Schakel het selectievakje Clientvalidatie in als u de Java-Script-clientcode voor validatie wilt genereren.
+1. Een startactie maken door op **[!UICONTROL Edit]** in het gebied Start van het formulier. U kunt desgewenst een titel voor een vak invoeren. Standaard is de titel van het vak **[!UICONTROL Metadata]**. Schakel het selectievakje Clientvalidatie in als u de Java-Script-clientcode voor validatie wilt genereren.
 
    ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Maak een actie Einde door op **[!UICONTROL Edit]** in het gebied Einde van het formulier te klikken. U kunt bijvoorbeeld een knop **[!UICONTROL Submit]** maken waarmee gebruikers hun wijzigingen in metagegevens kunnen verzenden. U kunt desgewenst een knop **[!UICONTROL Reset]** toevoegen waarmee de metagegevens worden teruggezet naar de oorspronkelijke staat.
+1. Een actie Einde maken door op **[!UICONTROL Edit]** in het gebied Einde van het formulier. U kunt bijvoorbeeld een **[!UICONTROL Submit]** om gebruikers toe te staan hun meta-gegevensveranderingen voor te leggen. U kunt desgewenst een **[!UICONTROL Reset]** knop waarmee de metagegevens worden teruggezet naar de oorspronkelijke staat.
 
    ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
-1. Sleep Metagegevenstekstvelden tussen **[!UICONTROL Form Start]** en **Einde formulier** naar het formulier. Gebruikers vullen metagegevens in deze tekstvelden in. Deze kunnen worden verzonden of een andere actie uitvoeren.
+1. In tussen de **[!UICONTROL Form Start]** en de **Einde formulier** Sleep Metagegevenstekstvelden naar het formulier. Gebruikers vullen metagegevens in deze tekstvelden in. Deze kunnen worden verzonden of een andere actie uitvoeren.
 
-1. Dubbelklik bijvoorbeeld op de veldnaam **Titel** om het metagegevensveld te openen en wijzigingen aan te brengen. Op het tabblad **[!UICONTROL General]** van het venster [!UICONTROL Edit Component] definieert u de naamruimte en het veldlabel, evenals het type, bijvoorbeeld `dc:title`.
+1. Dubbelklik bijvoorbeeld op de veldnaam. **Titel** om het metagegevensveld te openen en wijzigingen aan te brengen. In de **[!UICONTROL General]** tabblad van het dialoogvenster [!UICONTROL Edit Component] kunt u bijvoorbeeld de naamruimte en het veldlabel definiëren, evenals het type. `dc:title`.
 
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   Zie [Aanpassen en uitbreiden [!DNL Assets]](extending-assets.md) voor informatie over het wijzigen van de naamruimten beschikbaar in de meta-gegevensvorm.
+   Zie [Aanpassen en uitbreiden [!DNL Assets]](extending-assets.md) voor informatie over het wijzigen van de naamruimten die beschikbaar zijn in het metagegevensformulier.
 
-1. Klik op het tabblad **[!UICONTROL Constraints]**. Hier kunt u selecteren of een veld vereist is en zo nodig beperkingen toevoegen.
+1. Klik op de knop **[!UICONTROL Constraints]** tab. Hier kunt u selecteren of een veld vereist is en zo nodig beperkingen toevoegen.
 
    ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
-1. Klik op het tabblad **[!UICONTROL Display]**. Hier kunt u een nieuwe breedte en een nieuw aantal rijen voor het meta-gegevensgebied ingaan. Schakel het selectievakje **Veld is alleen-lezen** in zodat gebruikers de metagegevens kunnen bewerken.
+1. Klik op de knop **[!UICONTROL Display]** tab. Hier kunt u een nieuwe breedte en een nieuw aantal rijen voor het meta-gegevensgebied ingaan. Selecteer **Veld is alleen-lezen** Schakel het selectievakje in om gebruikers toe te staan de metagegevens te bewerken.
 
    ![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
@@ -297,7 +301,7 @@ Op de pagina Asset Editor kunnen gebruikers vervolgens waarden invoeren in de me
 
 #### Subactiva {#sub-assets}
 
-In de component Subelementen kunt u subelementen weergeven en selecteren. U kunt bepalen welke namen onder [hoofdelement](assets.md#what-are-digital-assets) en subelementen worden weergegeven.
+In de component Subelementen kunt u subelementen weergeven en selecteren. U kunt bepalen welke namen onder de [hoofdmiddel](assets.md#what-are-digital-assets) en subactiva.
 
 ![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
 
@@ -319,7 +323,7 @@ De component Tags is een component waarin gebruikers bestaande tags aan een elem
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Dubbelklik op de component Tags om het dialoogvenster Codes te openen waarin u desgewenst de titel van Codes kunt wijzigen en waarin u de toegewezen naamruimten kunt selecteren. Als u dit veld bewerkbaar wilt maken, schakelt u het selectievakje **Bewerken verbergen** uit. Standaard zijn codes bewerkbaar.
+Dubbelklik op de component Tags om het dialoogvenster Codes te openen waarin u desgewenst de titel van Codes kunt wijzigen en waarin u de toegewezen naamruimten kunt selecteren. Als u dit veld bewerkbaar wilt maken, wist u het **Bewerken verbergen** selectievakje. Standaard zijn codes bewerkbaar.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -333,11 +337,11 @@ Hier volgt een gevulde component Tags:
 
 #### Miniatuur {#thumbnail}
 
-In het element Miniatuur wordt de geselecteerde miniatuur weergegeven (bij veel van de indelingen wordt de miniatuur automatisch geëxtraheerd). Bovendien toont de component filename, en [acties die u kunt wijzigen ](assets-finder-editor.md#adding-asset-editor-actions).
+In het element Miniatuur wordt de geselecteerde miniatuur weergegeven (bij veel van de indelingen wordt de miniatuur automatisch geëxtraheerd). Bovendien geeft de component de bestandsnaam weer, en [acties die u kunt wijzigen](assets-finder-editor.md#adding-asset-editor-actions).
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Dubbelklik op de miniatuurcomponent om het dialoogvenster met miniaturen te openen waarin u de alt-tekst kunt wijzigen. Standaard wordt de alt-tekst van de miniatuur standaard ingesteld op **[!UICONTROL Click to download]**.
+Dubbelklik op de miniatuurcomponent om het dialoogvenster met miniaturen te openen waarin u de alt-tekst kunt wijzigen. Standaard wordt de alt-tekst van de miniatuur ingesteld op **[!UICONTROL Click to download]** activa.
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -351,13 +355,13 @@ In de component Title worden de titel van het element en een beschrijving weerge
 
 ![chlimage_1-391](assets/chlimage_1-391.png)
 
-Standaard bevindt het bestand zich in de modus Alleen-lezen, zodat gebruikers het bestand niet kunnen bewerken. Als u dit bewerkbaar wilt maken, dubbelklikt u op de component en schakelt u het selectievakje **Bewerken verbergen** uit. Voer bovendien een titel in voor meerdere elementen.
+Standaard bevindt het bestand zich in de modus Alleen-lezen, zodat gebruikers het bestand niet kunnen bewerken. Als u de component bewerkbaar wilt maken, dubbelklikt u op de component en wist u de **Knop Bewerken verbergen** selectievakje. Voer bovendien een titel in voor meerdere elementen.
 
 ![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
-Als de titel kan worden bewerkt, kunt u een titel en een beschrijving toevoegen door op het potlood te klikken om het venster **Eigenschappen van element** te openen. Bovendien kunt u het element in- en uitschakelen door de datum en tijd te selecteren.
+Als de titel kan worden bewerkt, kunt u een titel en beschrijving toevoegen door op het potlood te klikken om het dialoogvenster **Eigenschappen van element** venster. Bovendien kunt u het element in- en uitschakelen door de datum en tijd te selecteren.
 
-Wanneer gebruikers de Titel bewerken door op het potloodpictogram te klikken, kunnen ze de **Titel**, **Beschrijving** wijzigen en **On** en **Off Times** invoeren om het element in of uit te schakelen.
+Wanneer gebruikers de titel bewerken door op het pictogram Potlood te klikken, kunnen ze de knop **Titel**, **Beschrijving** en voert u **Aan** en **Off Times** om het actief in- en uit te schakelen.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -371,63 +375,63 @@ U kunt bepalen welke handelingen gebruikers kunnen uitvoeren op geselecteerde di
 
 Handelingen toevoegen aan de pagina Asset Editor:
 
-1. In de pagina van de Redacteur van Activa die u wilt aanpassen, klik **[!UICONTROL Asset Editor]** in sidekick.<br>
+1. Klik op de pagina Asset Editor die u wilt aanpassen **[!UICONTROL Asset Editor]** in het hulpje.<br>
 
    ![editor voor middelen selecteren in sidekick](assets/screen_shot_2012-04-23at35515pm.png)
 
    De volgende acties zijn beschikbaar:
 
-   | Actie | Beschrijving |
+   | Handeling | Beschrijving |
    |---|---|
-   | [!UICONTROL Download] | Hiermee kunnen gebruikers een selectie downloaden   elementen naar hun computers. |
-   | [!UICONTROL Editors] | Gebruikers kunnen een afbeelding bewerken   (interactieve bewerkingen) |
-   | [!UICONTROL Lightbox] | Hiermee slaat u elementen op als een   &quot;lichtbak&quot; waar u andere handelingen op kunt uitvoeren. Dit komt   handig wanneer u met elementen op meerdere pagina&#39;s werkt. |
-   | [!UICONTROL Locking] | Hiermee kunnen gebruikers een element vergrendelen. Dit   functionaliteit is niet standaard ingeschakeld en moet in de lijst worden ingeschakeld   van componenten. |
-   | [!UICONTROL References] | Klik hierop om te tonen op welke pagina&#39;s   het actief wordt gebruikt. |
-   | [!UICONTROL Versioning] | Hiermee kunt u bestanden maken en herstellen   versies van een element. |
+   | [!UICONTROL Download] | Hiermee kunnen gebruikers geselecteerde elementen downloaden naar hun computers. |
+   | [!UICONTROL Editors] | Gebruikers kunnen een afbeelding bewerken (interactief bewerken) |
+   | [!UICONTROL Lightbox] | Hiermee slaat u elementen op in een &#39;lichtbak&#39; waar u andere handelingen op kunt uitvoeren. Dit is handig wanneer u met elementen op meerdere pagina&#39;s werkt. |
+   | [!UICONTROL Locking] | Hiermee kunnen gebruikers een element vergrendelen. Deze functionaliteit is niet standaard ingeschakeld en moet worden ingeschakeld in de lijst met componenten. |
+   | [!UICONTROL References] | Klik hierop om te tonen op welke pagina&#39;s het element wordt gebruikt. |
+   | [!UICONTROL Versioning] | Hiermee kunt u versies van een element maken en herstellen. |
 
-1. Sleep de aangewezen actie aan **Acties** gebied op de pagina. Als u dit doet, wordt een knop gemaakt waarmee die handeling wordt uitgevoerd.
+1. Sleep de gewenste actie naar de **Handelingen** op de pagina. Als u dit doet, wordt een knop gemaakt waarmee die handeling wordt uitgevoerd.
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
 ## Meerdere elementen bewerken met de pagina Asset Editor {#multi-editing-assets-with-the-asset-editor-page}
 
-Met [!DNL Assets] kunt u wijzigingen in meerdere elementen tegelijk aanbrengen. Nadat u elementen hebt geselecteerd, kunt u tegelijkertijd de volgende wijzigingen aanbrengen:
+Met [!DNL Assets] u kunt meerdere elementen tegelijk wijzigen. Nadat u elementen hebt geselecteerd, kunt u tegelijkertijd de volgende wijzigingen aanbrengen:
 
 * Tags
 * Metagegevens
 
 Elementen bewerken via de pagina Asset Editor:
 
-1. Open de pagina Geometrixx **[!UICONTROL Press Center]** op `http://localhost:4502/content/geometrixx/en/company/press.html`.
+1. De Geometrixx openen **[!UICONTROL Press Center]** pagina bij `http://localhost:4502/content/geometrixx/en/company/press.html`.
 1. Selecteer de elementen:
 
    * in Windows: `Ctrl + click` elk element.
    * op Mac: `Cmd + click` elk element.
 
-   Een reeks elementen selecteren: Klik op het eerste element en `Shift + click` op het laatste element.
+   Een reeks elementen selecteren: Klik vervolgens op het eerste element `Shift + click` het laatste activum.
 
-1. Klik **[!UICONTROL Edit Metadata]** in **Acties** gebied (linkerdeel van de pagina).
+1. Klikken **[!UICONTROL Edit Metadata]** in de **Handelingen** veld (linkergedeelte van de pagina).
 
-1. De pagina Geometrixx **[!UICONTROL Press Center Asset Editor]** wordt geopend op een nieuw tabblad. De metagegevens van de elementen worden als volgt weergegeven:
+1. De Geometrixx **[!UICONTROL Press Center Asset Editor]** wordt geopend in een nieuw tabblad. De metagegevens van de elementen worden als volgt weergegeven:
 
    * Een tag, die niet van toepassing is op alle elementen, maar alleen op een paar elementen, wordt cursief weergegeven.
    * Een label dat op alle elementen van toepassing is, wordt met een normaal lettertype weergegeven.
    * Andere metagegevens dan codes: de waarde van het veld wordt alleen weergegeven als deze voor alle geselecteerde elementen gelijk is.
 
-1. Klik op **[!UICONTROL Download]** om een ZIP-bestand met de elementen van de oorspronkelijke uitvoeringen te downloaden.
-1. Klik op het potloodpictogram naast het veld **[!UICONTROL Tags]** om de codes te bewerken:
+1. Klikken **[!UICONTROL Download]** om een ZIP-bestand te downloaden dat de elementen van de oorspronkelijke uitvoeringen bevat.
+1. Klik op het potloodpictogram naast het pictogram **[!UICONTROL Tags]** veld voor het bewerken van de codes:
 
    * Een tag die niet van toepassing is op alle elementen, maar alleen op een paar elementen, heeft een grijze achtergrond.
    * Een tag die van toepassing is op alle elementen heeft een witte achtergrond.
 
    U kunt:
 
-   * Klik op het pictogram `x` om de tag voor alle elementen te verwijderen.
-   * Klik op het pictogram `+` om de tag aan alle elementen toe te voegen.
-   * Klik op `arrow` en selecteer een tag om een nieuwe tag aan alle elementen toe te voegen.
+   * Klik op de knop `x` pictogram om de tag voor alle elementen te verwijderen.
+   * Klik op de knop `+` pictogram om de tag aan alle elementen toe te voegen.
+   * Klik op de knop `arrow` en selecteer een tag om een nieuwe tag aan alle elementen toe te voegen.
 
-   Klik op **[!UICONTROL OK]** om de wijzigingen in het formulier te schrijven. Het vakje naast het **Codes** gebied wordt automatisch gecontroleerd.
+   Klikken **[!UICONTROL OK]** om de wijzigingen in het formulier te schrijven. De doos naast **Tags** wordt automatisch gecontroleerd.
 
 1. Bewerk het veld Beschrijving. Stel bijvoorbeeld in op: `This is a common description`. Wanneer een veld wordt bewerkt, overschrijft de waarde de bestaande waarden van de geselecteerde elementen wanneer het formulier wordt verzonden. Het vak naast het veld wordt automatisch ingeschakeld wanneer het veld wordt bewerkt.
 
@@ -437,4 +441,4 @@ Elementen bewerken via de pagina Asset Editor:
 
    Opmerking: Het vak naast het veld wordt automatisch ingeschakeld wanneer het veld wordt bewerkt.
 
-1. Klik op **[!UICONTROL Update Metadata]** om het formulier te verzenden en de wijzigingen voor alle elementen op te slaan. Alleen de geselecteerde metagegevens worden gewijzigd.
+1. Klikken **[!UICONTROL Update Metadata]** om het formulier te verzenden en de wijzigingen voor alle elementen op te slaan. Alleen de geselecteerde metagegevens worden gewijzigd.

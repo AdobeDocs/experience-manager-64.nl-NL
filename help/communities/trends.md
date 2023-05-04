@@ -1,8 +1,8 @@
 ---
 title: Activiteitendensen
-seo-title: Activiteitendensen
+seo-title: Activity Trends
 description: Een component Community Activity List aan een pagina toevoegen
-seo-description: Een component Community Activity List aan een pagina toevoegen
+seo-description: Adding a Community Activity List component to a page
 uuid: 6a030340-0e69-432a-98f1-3effb2b97136
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,49 +10,52 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 93a112fc-ef34-4281-89b8-a0f1b3d3aca9
 exl-id: a2cb9738-98a5-4ea6-8d5a-a6c0aa04cd32
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
 
 # Activiteitendensen {#activity-trends}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Inleiding {#introduction}
 
-Met de component `Community Activity List` kunt u trending-informatie over posts en weergaven door leden en posts en weergaven van inhoud toevoegen.
+De `Community Activity List` biedt de mogelijkheid om trendinformatie toe te voegen over posten en weergaven door leden, alsmede over posten en weergaven van inhoud.
 
 In deze sectie van de documentatie wordt beschreven
 
-* De `Community Activity List`-component toevoegen aan een [communitysite](overview.md#community-sites)
+* Het toevoegen van `Community Activity List` component aan een [community-site](overview.md#community-sites)
 
-* Configuratie-instellingen voor de `Community Activity List`-component
+* De montages van de configuratie voor de `Community Activity List` component
 
 ## Vereiste {#requirement}
 
-Gegevens voor de `Community Activity List` zijn alleen beschikbaar wanneer Adobe Analytics een licentie heeft en is geconfigureerd voor de communitysite.
+Gegevens voor de `Community Activity List` is alleen beschikbaar als Adobe Analytics een licentie heeft en geconfigureerd voor de community-site.
 
-Zie [Analyseconfiguratie voor Gemeenschappen-functies](analytics.md).
+Zie [Analytische configuratie voor functies van Gemeenschappen](analytics.md).
 
 ## Een communautaire activiteitenlijst toevoegen aan een pagina {#adding-a-community-activity-list-to-a-page}
 
-Als u een component `Community Activity List` in de modus Schrijver aan een pagina wilt toevoegen, zoekt u de component `Communities / Community Activity List` en sleept u deze naar de gewenste plaats op een pagina.
+Als u een `Community Activity List` naar een pagina in de modus Schrijver, zoek de component `Communities / Community Activity List` en sleep het naar de juiste plaats op een pagina.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## Lijst met communautaire activiteiten configureren {#configuring-community-activity-list}
+## Lijst met communautaire activiteiten configureren  {#configuring-community-activity-list}
 
-Selecteer de geplaatste `Community Activity List` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `Community Activity List` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
-Geef op het tabblad **[!UICONTROL Comments]** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+Onder de **[!UICONTROL Comments]** , geeft u op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -64,7 +67,7 @@ Geef op het tabblad **[!UICONTROL Comments]** op of en hoe opmerkingen voor geü
    * `Members`
    * `Content`
 
-   De standaardwaarde is `Members`.
+   Standaard is `Members`.
 
 * **[!UICONTROL Display title]**
 
@@ -98,7 +101,7 @@ Geef op het tabblad **[!UICONTROL Comments]** op of en hoe opmerkingen voor geü
    * `This year (since Jan 1st)`
    * `Total`
 
-   De standaardwaarde is `Total`.
+   Standaard is `Total`.
 
 * **[!UICONTROL Context path]**
 
@@ -108,18 +111,18 @@ Geef op het tabblad **[!UICONTROL Comments]** op of en hoe opmerkingen voor geü
 
 * **[!UICONTROL Member count aggregation]**
 
-   Als deze optie uitgeschakeld is, worden alleen berichten op het hoogste niveau geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), wordt bij een `Activity Type`van `Posts`geen activiteit weergegeven omdat er geen inhoud naar de hoofdpagina kan worden gepost. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
+   Als deze optie uitgeschakeld is, worden alleen berichten op het hoogste niveau geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type`van `Posts`geen activiteit tonen omdat inhoud niet op de hoofdpagina kan worden geplaatst. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
 
    Standaard is ingeschakeld.
 
-## Voorbeeld van pagina met 4 componenten {#example-page-with-components}
+## Voorbeeldpagina met 4 componenten {#example-page-with-components}
 
-**Top** Visitorsconfig: Type = Leden, Type activiteit = Weergaven
+**Topbezoekers** config: Type = Leden, Type activiteit = Weergaven
 
-**Top** Contributorsconfig: Type = Leden, Type activiteit = Posten
+**Belangrijkste bijdragers** config: Type = Leden, Type activiteit = Posten
 
-**Top** Contentconfig: Type = Inhoud, Type activiteit = Weergaven
+**Bovenste inhoud** config: Type = Inhoud, Type activiteit = Weergaven
 
-**Trending** Contentconfig: Type = Inhoud, Type activiteit = Post
+**Trend Content** config: Type = Inhoud, Type activiteit = Post
 
 ![chlimage_1-230](assets/chlimage_1-230.png)

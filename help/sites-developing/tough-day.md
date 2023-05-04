@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1931'
 ht-degree: 0%
 
 ---
 
 # Dag{#tough-day}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Wat is Hoest Dag 2 {#what-is-tough-day}
 
@@ -131,7 +135,7 @@ U vindt de relevante parameters in de onderstaande lijst:
 | `--port=<Val>` | De poort van de host. | 4502 |  |
 | `--user=<Val>` | De gebruikersnaam voor de instantie. | beheerder |  |
 | `--password=<Val>` | Wachtwoord voor de opgegeven gebruiker. | beheerder |  |
-| `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**) seconden, (**m**)minuten, (**h**) en (**d**). | 1 quinquies |  |
+| `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**) seconden, (**m**)minuten, (**h**) en (**d**). | 1d |  |
 | `--timeout=<Val>` | Hoe lang een test zal lopen alvorens het zal worden onderbroken en als ontbroken gemerkt. Uitgedrukt in seconden. | 180 |  |
 | `--suite=<Val>` | De waarde kan één of een lijst (gescheiden door komma&#39;s) van vooraf bepaalde testsuites zijn. | nachtmerrie |  |
 | `--configfile=<Val>` | Het doelafbeeldingsconfiguratiebestand. |  |  |
@@ -316,7 +320,7 @@ Bovendien kunnen tests een `count` eigenschap, die het aantal uitvoeringen tot e
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20 
 ```
 
-or
+of
 
 ```xml
 - add : CreateAssetTreeTest

@@ -1,8 +1,8 @@
 ---
 title: Registreren als gebruiker
-seo-title: Registreren als gebruiker
+seo-title: Registering as a User
 description: Leer hoe u met beleid beveiligde documenten kunt gebruiken die u van een gebruiker van de documentveiligheid ontvangt, zelfs als u zich buiten de organisatie van de gebruiker bevindt.
-seo-description: Leer hoe u met beleid beveiligde documenten kunt gebruiken die u van een gebruiker van de documentveiligheid ontvangt, zelfs als u zich buiten de organisatie van de gebruiker bevindt.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
@@ -10,15 +10,18 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 24641bf5-7c1c-4c92-8c11-2134039085f7
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '736'
 ht-degree: 0%
 
 ---
 
-# Registreren als een gebruiker {#registering-as-a-user}
+# Registreren als gebruiker {#registering-as-a-user}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 U kunt documenten gebruiken die met een beleid zijn beveiligd en die u van een gebruiker voor documentbeveiliging ontvangt, zelfs als u zich buiten de organisatie van de gebruiker bevindt. Als u een document wilt gebruiken dat met een beleid is beveiligd, moet u zich registreren bij documentbeveiliging. Als u niet eerder bent uitgenodigd om te registreren, start de documentbeveiliging het registratieproces wanneer deze gebeurtenissen zich voordoen:
 
@@ -46,7 +49,7 @@ Als u een uitgenodigde gebruiker bent en u ontvangt een e-mailregistratiebericht
 1. Typ uw naam, telefoonnummer, adres, organisatie en wachtwoord in de daarvoor bestemde vakken en typ uw wachtwoord nogmaals in het vak Wachtwoord bevestigen. Uw wachtwoord kan elke combinatie van acht tekens zijn.
 1. Klik op Opslaan. Er verschijnt een dankwoord waarin u wordt geïnformeerd om uw e-mail te controleren op een activeringsbericht. U moet nu uw account activeren om het registratieproces te voltooien.
 
-## Uw uitgenodigde gebruikersaccount {#activate-your-invited-user-account} activeren
+## Je uitgenodigde gebruikersaccount activeren {#activate-your-invited-user-account}
 
 Nadat u zich hebt geregistreerd, stuurt documentbeveiliging u een activeringse-mail. U moet uw account activeren met de URL in het bericht. Vervolgens kunt u zich aanmelden bij de documentbeveiliging om documenten te gebruiken die met een beleid zijn beveiligd en waartoe u toegang hebt. Afhankelijk van de eigenschappen die de beheerder voor externe gebruikers toelaat, kunt u toestemming hebben om beleid tot stand te brengen, beleid op documenten toe te passen, en andere externe gebruikers toe te voegen aan uw beleid.
 
@@ -58,7 +61,7 @@ Uw account blijft actief totdat de beheerder de account deactiveert of verwijder
 1. Typ in het vak Gebruikersnaam het e-mailadres dat u onder documentbeveiliging hebt geregistreerd. Dit e-mailadres is de standaardgebruikersnaam voor documentbeveiliging.
 1. Typ in het vak Wachtwoord het wachtwoord dat u hebt gemaakt toen u zich hebt geregistreerd en klik op Aanmelden.
 
-## Uw wachtwoord {#reset-your-password} opnieuw instellen
+## Wachtwoord opnieuw instellen {#reset-your-password}
 
 Als u uw wachtwoord vergeet, kan de beleidsbeheerder het voor u terugstellen. Als u een wachtwoord opnieuw instelt, wordt een e-mail gegenereerd waarin u wordt gevraagd u aan te melden met een tijdelijk wachtwoord. Vervolgens kunt u een nieuw wachtwoord maken.
 

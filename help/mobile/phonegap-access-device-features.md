@@ -1,8 +1,8 @@
 ---
 title: Apparaatfuncties openen
-seo-title: Apparaatfuncties openen
+seo-title: Access Device Features
 description: Volg deze pagina om te leren over het bouwen AEM componenten die tot apparateneigenschappen toegang hebben. De AEM gegevensopslagruimte van PhoneGap Kitchen Sink Github biedt ontwikkelaars een functionele AEM app die het gebruik van een aantal core Cordova-API's illustreert.
-seo-description: Volg deze pagina om te leren over het bouwen AEM componenten die tot apparateneigenschappen toegang hebben. De AEM gegevensopslagruimte van PhoneGap Kitchen Sink Github biedt ontwikkelaars een functionele AEM app die het gebruik van een aantal core Cordova-API's illustreert.
+seo-description: Follow this page to learn about building AEM components that access device features. The AEM PhoneGap Kitchen Sink Github repository provides developers with a functional AEM app that illustrates the use of a number of core Cordova APIs.
 uuid: 1996f017-21d3-4d90-9f55-95c626bc4c60
 contentOwner: User
 content-type: reference
@@ -10,29 +10,32 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 0019e367-8edc-4a23-bfa4-5beda266ace6
 exl-id: 7f3a5081-9640-49ce-a8e7-8061fc080ec1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
-# Functies van toegangsapparaat{#access-device-features}
+# Apparaatfuncties openen{#access-device-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-## AEM componenten bouwen die tot apparateneigenschappen {#building-aem-components-that-access-device-features} toegang hebben
+## AEM maken voor toegang tot apparaatfuncties {#building-aem-components-that-access-device-features}
 
-De opbergplaats [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github verstrekt ontwikkelaars van een functionele AEM app die het gebruik van een aantal kernCordova APIs illustreert. Wanneer de app wordt uitgevoerd op iOS of Android via de PhoneGap CLI, wordt de app geopend op de volgende pagina die een koppeling bevat naar elke apparaat-API die wordt gedemonstreerd:
+De [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) De gegevensopslagruimte van Github voorziet ontwikkelaars van een functionele AEM app die het gebruik van een aantal kernCordova APIs illustreert. Wanneer de app wordt uitgevoerd op iOS of Android via PhoneGap CLI, wordt de app geopend op de volgende pagina die een koppeling bevat naar elke apparaat-API die wordt gedemonstreerd:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
 De broncode voor elk van deze apparaat-API-componenten is [beschikbaar op Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-Voor meer informatie over het gebruik van elke API, adviseer ik een blik bij de [Cordova plugin documentatie](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html) nemen.
+Voor meer informatie over het gebruik van elke API, adviseer ik een blik te nemen bij [Documentatie voor Cordova-insteekmodule](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
 
 ## De volgende stappen {#the-next-steps}
 

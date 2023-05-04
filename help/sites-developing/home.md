@@ -1,19 +1,23 @@
 ---
-title: AEM 6.4 Gebruikershandleiding ontwikkelen
+title: AEM 6.4 Gebruikershandleiding voor ontwikkeling
 seo-title: AEM 6.4 Developing User Guide
-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
+description: In deze handleiding wordt uitgelegd hoe u uw AEM-instantie kunt samenstellen.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 82ba239f-f83a-4ee1-b201-d44c220fd193
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 11%
+source-wordcount: '342'
+ht-degree: 23%
 
 ---
 
-# AEM 6.4 Gebruikershandleiding ontwikkelen
+# AEM 6.4 Gebruikershandleiding voor ontwikkeling
 
-In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+In deze handleiding wordt uitgelegd hoe u uw AEM-instantie kunt samenstellen.
 
 ## AEM
 
@@ -30,8 +34,8 @@ In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u digitale middelen maakt, beheert, levert en optimaliseert. |
 | [Forms-gebruikershandleiding](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
-| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
-| [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
+| [Gids voor beheerders](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
+| [Handleiding voor authoring](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
 | [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |

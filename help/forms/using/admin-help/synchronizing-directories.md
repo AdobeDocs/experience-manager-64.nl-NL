@@ -1,5 +1,5 @@
 ---
-title: 'Mappen synchroniseren '
+title: Mappen synchroniseren
 seo-title: Synchronizing directories
 description: Leer hoe u de gebruikersbeheerdatabase synchroniseert met wijzigingen in de brondirectoryservers via handmatige of geplande synchronisatie.
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
 
 # Mappen synchroniseren {#synchronizing-directories}
 
-Als u domeinen wilt synchroniseren, kunt u een handmatige of geplande synchronisatie uitvoeren. Een *handmatige synchronisatie* synchroniseert geselecteerde domeinen. Met een *geplande synchronisatie* worden alle domeinen gesynchroniseerd.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Als u domeinen wilt synchroniseren, kunt u een handmatige of geplande synchronisatie uitvoeren. A *handmatige synchronisatie* Hiermee synchroniseert u geselecteerde domeinen. A *geplande synchronisatie* Hiermee worden alle domeinen gesynchroniseerd.
 
 De synchronisatie van de folder wordt gebruikt om details van de indexservers te trekken die u in uw foldermontages in het gegevensbestand van het Beheer van de Gebruiker specificeerde. Later kunt u ook handmatig synchroniseren als er wijzigingen of updates optreden op de directoryservers. U kunt bijvoorbeeld een handmatige synchronisatie uitvoeren als gebruikers en groepen worden toegevoegd of als er wijzigingen worden aangebracht in de account van een gebruiker.
 
@@ -35,7 +39,7 @@ U kunt ook een dagelijkse synchronisatieplanning instellen om de gebruikersbehee
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe-productlevenscyclusdocument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Synchronisatie van delta-directory inschakelen {#enable-delta-directory-synchronization}
 
@@ -53,7 +57,7 @@ Gebruikersbeheer voert de volgende stappen uit wanneer de synchronisatie van de 
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Schakel het selectievakje Delta Synch in en klik op Opslaan.
-1. Bewerk de directory-instellingen voor elk van de bedrijfsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en voer `modify TimeStamp` in als de waarde. Zie [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains) voor meer informatie over het bewerken van ondernemingsdomeinen.
+1. Bewerk de directory-instellingen voor elk van de bedrijfsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en typ `modify TimeStamp` als de waarde. Zie voor meer informatie over het bewerken van ondernemingsdomeinen [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Gedetailleerde logboekregistratie tijdens synchronisatie inschakelen of uitschakelen {#enable-or-disable-detailed-logging-during-synchronization}
 
@@ -69,7 +73,7 @@ U kunt Gebruikersbeheer configureren om periodiek te controleren op mislukte pog
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren.
 1. Onder de Uitdrukking van de Uitsnede van de Finisher van de Synch, ga een kroonuitdrukking in die het interval vertegenwoordigt waarmee het Beheer van de Gebruiker mislukte synchronisaties opnieuw probeert. Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 
-   De standaardwaarde is 0 0/13 &amp;ast; ? &amp;ast; , wat betekent dat de controle elke 13 minuten plaatsvindt.
+   De standaardwaarde is 0 0/13 &amp;oost; ? &amp;asteren; , wat betekent dat de controle elke 13 minuten plaatsvindt.
 
 ## Mappen handmatig synchroniseren {#manually-synchronize-directories}
 

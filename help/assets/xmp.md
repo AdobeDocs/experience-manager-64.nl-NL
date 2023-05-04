@@ -1,34 +1,38 @@
 ---
 title: Metagegevens XMP
-description: Meer informatie over de metagegevensstandaard voor XMP (Extensible Metadata Platform) die wordt gebruikt door  [!DNL Experience Manager] Middelen voor metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
+description: Meer informatie over de metagegevensstandaard XMP (Extensible Metadata Platform) die wordt gebruikt door [!DNL Experience Manager] Middelen voor metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 19%
+source-wordcount: '846'
+ht-degree: 18%
 
 ---
 
 # XMP-metadata {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door [!DNL Experience Manager] Middelen voor al het metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Naast het aanbieden van universele meta-gegevenscodering die in alle dossierformaten kan worden ingebed, verstrekt XMP een rijk [inhoudsmodel](xmp.md#xmp-core-concepts) en [gesteund door Adobe](xmp.md#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Experience Manager] Activa een krachtig platform hebben om op te bouwen.
+XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door [!DNL Experience Manager] Elementen voor al het metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-De [XMP specificatie](https://www.adobe.com/devnet/xmp.html) is beschikbaar bij Adobe.
+Naast het aanbieden van universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, biedt XMP [inhoudsmodel](xmp.md#xmp-core-concepts) en is [ondersteund door Adobe](xmp.md#advantages-of-xmp) en andere ondernemingen, zodat gebruikers van XMP in combinatie met [!DNL Experience Manager] Middelen hebben een krachtig platform waarop kan worden voortgebouwd.
+
+De [XMP](https://www.adobe.com/devnet/xmp.html) is beschikbaar bij Adobe.
 
 ## Wat is XMP? {#what-is-xmp}
 
 [!DNL Experience Manager] Elementen ondersteunen native het XMP - het Extensible Metadata Platform dat wordt geleid door Adobe. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP wordt ontworpen om de gemeenschappelijke norm te zijn die veelvoudige toepassingen toestaat om effectief met meta-gegevens te werken.
 
-Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP ondersteuning binnen toepassingen om informatie in meerdere indelingen door te geven. De gegevensopslagplaats [!DNL Experience Manager] Middelen haalt de XMP meta-gegevens uit en gebruikt het om de inhoudslevenscyclus te beheren en biedt de capaciteit om automatiseringswerkschema&#39;s tot stand te brengen.
+Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP ondersteuning binnen toepassingen om informatie in meerdere indelingen door te geven. De [!DNL Experience Manager] De gegevensopslagplaats van activa haalt de XMP meta-gegevens uit en gebruikt het om de inhoudslevenscyclus te beheren en biedt de capaciteit om automatiseringswerkschema&#39;s tot stand te brengen.
 
 XMP standaardiseren hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
 
-Alle oudere meta-gegevens van EXIF, ID3, of Microsoft Office wordt automatisch vertaald aan XMP, die kan worden uitgebreid om klant-specifiek meta-gegevensschema, zoals productcatalogi te steunen.
+Alle verouderde meta-gegevens van EXIF, ID3, of Microsoft Office wordt automatisch vertaald aan XMP, die kan worden uitgebreid om klant-specifiek meta-gegevensschema, zoals productcatalogi te steunen.
 
 Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen zijn altijd gekoppeld aan een\
 bijzondere entiteit die als bron wordt aangeduid; dat wil zeggen dat de eigenschappen &quot;over&quot; de bron zijn. In het geval van XMP is de bron altijd het middel.
@@ -69,7 +73,7 @@ De volgende secties beschrijven de kernconcepten van XMP, met inbegrip van names
 Een XMP schema is een set eigenschapnamen in een algemene XML-naamruimte die\
 het gegevenstype en de beschrijvende informatie. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
 
-De eigenschap **Creator** in twee onafhankelijk ontworpen schema&#39;s kan bijvoorbeeld betekenen dat de persoon die het element heeft gemaakt of dat de toepassing die het element heeft gemaakt, kan betekenen (bijvoorbeeld Adobe Photoshop).
+De **Maker** eigenschap in twee onafhankelijk ontworpen schema&#39;s kan de persoon zijn die het element heeft gemaakt of de toepassing die het element heeft gemaakt (bijvoorbeeld Adobe Photoshop).
 
 ### Eigenschappen en waarden {#properties-and-values}
 
@@ -84,4 +88,4 @@ Een standaardsubset die door veel Adobe-toepassingen wordt gebruikt, kan bijvoor
 
 ### Taalalternatieven {#language-alternatives}
 
-XMP biedt u de capaciteit om een **xml:lang** bezit aan teksteigenschappen toe te voegen om de taal van de tekst te specificeren.
+XMP biedt u de mogelijkheid om een **xml:lang** eigenschap aan teksteigenschappen om de taal van de tekst op te geven.

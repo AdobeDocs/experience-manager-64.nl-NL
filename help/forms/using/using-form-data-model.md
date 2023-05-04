@@ -1,23 +1,26 @@
 ---
 title: Formuliergegevensmodel gebruiken
-seo-title: Formuliergegevensmodel gebruiken
+seo-title: Use form data model
 description: Leer hoe u het formuliergegevensmodel kunt gebruiken om adaptieve formulieren en interactieve communicatie te maken en te gebruiken.
-seo-description: Leer hoe u het formuliergegevensmodel kunt gebruiken om adaptieve formulieren en interactieve communicatie te maken en te gebruiken.
+seo-description: Learn how to use form data model to create and work with adaptive forms and interactive communications.
 uuid: 9a8bd44a-34a1-41ef-a57b-d5e3dd0a77ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 7a1bfd43-39b1-478b-a294-92c78eaebbf2
 feature: Form Data Model
 exl-id: 39408af6-439c-4ade-8062-155be9141dfa
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
 
-# Formuliergegevensmodel {#use-form-data-model} gebruiken
+# Formuliergegevensmodel gebruiken {#use-form-data-model}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ![](do-not-localize/data-integeration.png)
 
@@ -39,23 +42,23 @@ Een formuliergegevensmodel is een uitbreiding van het JSON-schema waarmee u:
 
 ## Aangepaste formulieren en fragmenten maken {#create-af}
 
-U kunt [adaptieve formulieren](/help/forms/using/creating-adaptive-form.md) en [adaptieve formulierfragmenten](/help/forms/using/adaptive-form-fragments.md) maken op basis van een formuliergegevensmodel. Ga als volgt te werk om een formuliergegevensmodel te gebruiken bij het maken van een adaptief formulier of adaptief formulierfragment:
+U kunt [adaptieve formulieren](/help/forms/using/creating-adaptive-form.md) en [adaptieve formulierfragmenten](/help/forms/using/adaptive-form-fragments.md) op basis van een formuliergegevensmodel. Ga als volgt te werk om een formuliergegevensmodel te gebruiken bij het maken van een adaptief formulier of adaptief formulierfragment:
 
-1. Selecteer **[!UICONTROL Form Data Model]** in de vervolgkeuzelijst **[!UICONTROL Select From]** op het tabblad Formuliermodel in het scherm Eigenschappen toevoegen.
+1. Selecteer op het tabblad Formuliermodel in het scherm Eigenschappen toevoegen de optie **[!UICONTROL Form Data Model]** in de **[!UICONTROL Select From]** vervolgkeuzelijst.
 
    ![create-af-1](assets/create-af-1.png)
 
-1. Tik om **[!UICONTROL Select Form Data Model]** uit te vouwen. Alle beschikbare formuliergegevensmodellen worden weergegeven.
+1. Tik om uit te breiden **[!UICONTROL Select Form Data Model]**. Alle beschikbare formuliergegevensmodellen worden weergegeven.
 
    Selecteer een gegevensmodel.
 
    ![create-af-2](assets/create-af-2.png)
 
-1. (**Alleen adaptieve formulierfragmenten**) U kunt een adaptief formulierfragment maken op basis van slechts één gegevensmodelobject in een formuliergegevensmodel. Vergroot **[!UICONTROL Form Data Model Definitions]** vervolgkeuzelijst. Hiermee worden alle gegevensmodelobjecten in het opgegeven formuliergegevensmodel weergegeven. Selecteer een gegevensmodelobject in de lijst.
+1. (**Alleen adaptieve formulierfragmenten**) U kunt een adaptief formulierfragment maken op basis van slechts één gegevensmodelobject in een formuliergegevensmodel. Uitbreiden **[!UICONTROL Form Data Model Definitions]** vervolgkeuzelijst. Hiermee worden alle gegevensmodelobjecten in het opgegeven formuliergegevensmodel weergegeven. Selecteer een gegevensmodelobject in de lijst.
 
    ![create-af-3](assets/create-af-3.png)
 
-Nadat het adaptieve formulier of het adaptieve formulierfragment op basis van een formuliergegevensmodel is gemaakt, worden formuliergegevensmodelobjecten weergegeven op het tabblad **[!UICONTROL Data Model Objects]** van de inhoudbrowser in de adaptieve formuliereditor.
+Nadat het adaptieve formulier of het adaptieve formulierfragment op basis van een formuliergegevensmodel is gemaakt, worden formuliergegevensmodelobjecten weergegeven in het dialoogvenster **[!UICONTROL Data Model Objects]** tabblad van de inhoudbrowser in de adaptieve formuliereditor.
 
 >[!NOTE]
 >
@@ -65,7 +68,7 @@ Nadat het adaptieve formulier of het adaptieve formulierfragment op basis van ee
 
 U kunt gegevensmodelobjecten naar het aangepaste formulier of fragment slepen om formuliervelden toe te voegen. De toegevoegde formuliervelden behouden de eigenschappen van de metagegevens en de binding met de eigenschappen van gegevensmodelobjecten. De binding zorgt ervoor dat de veldwaarden bij het verzenden van het formulier worden bijgewerkt in de bijbehorende gegevensbronnen en dat deze worden voorgevuld wanneer het formulier wordt gegenereerd.
 
-## Interactieve communicatie {#create-ic} maken
+## Interactieve communicatie maken {#create-ic}
 
 U kunt een interactieve communicatie tot stand brengen die op een model van vormgegevens wordt gebaseerd dat u kunt gebruiken om interactieve mededeling met gegevens van gevormde gegevensbronnen vooraf in te vullen. Bovendien kunnen de bouwstenen van een interactieve communicatie, zoals tekst, lijst, en de fragmenten van het voorwaardendocument op een model van vormgegevens worden gebaseerd.
 
@@ -75,7 +78,7 @@ U kunt een formuliergegevensmodel kiezen wanneer u een interactieve communicatie
 
 Tabblad Algemeen van dialoogvenster Interactieve communicatie maken
 
-Meer informatie:
+Zie voor meer informatie:
 
 [Een interactieve communicatie maken](/help/forms/using/create-interactive-communication.md)
 
@@ -87,25 +90,25 @@ Meer informatie:
 
 ## Voorvertonen met voorbeeldgegevens {#preview-ic}
 
-Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelobjecten genereren en bewerken in het formuliergegevensmodel. U kunt deze gegevens gebruiken om interactieve communicatie en adaptieve formulieren voor te vertonen en te testen. U moet de voorbeeldgegevens genereren voordat u een voorbeeld weergeeft, zoals beschreven in [Werken met formuliergegevensmodel](/help/forms/using/work-with-form-data-model.md#sample).
+Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelobjecten genereren en bewerken in het formuliergegevensmodel. U kunt deze gegevens gebruiken om interactieve communicatie en adaptieve formulieren voor te vertonen en te testen. U moet de voorbeeldgegevens genereren voordat u een voorvertoning weergeeft zoals beschreven in [Werken met formuliergegevensmodel](/help/forms/using/work-with-form-data-model.md#sample).
 
 Een voorvertoning weergeven van een interactieve communicatie met voorbeeldgegevens van het formuliergegevensmodel:
 
-1. Navigeer op AEM auteurinstantie naar **[!UICONTROL Forms > Forms & Documents]**.
-1. Selecteer een interactieve communicatie en tik **[!UICONTROL Preview]** in de werkbalk om **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]** of **[!UICONTROL Both Channels]** te selecteren voor een voorvertoning van de interactieve communicatie.
-1. Controleer in het dialoogvenster Voorvertoning [*kanaal*] of **[!UICONTROL Test Data of Form Data Model]** is geselecteerd en tik **[!UICONTROL Preview]**.
+1. Navigeer bij AEM instantie van de auteur naar **[!UICONTROL Forms > Forms & Documents]**.
+1. Selecteer een interactieve communicatie en tik op **[!UICONTROL Preview]** in de werkbalk om **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, of **[!UICONTROL Both Channels]** om een voorvertoning van de interactieve communicatie te bekijken.
+1. In de voorvertoning [*kanaal*] ervoor te zorgen dat **[!UICONTROL Test Data of Form Data Model]** is geselecteerd en tikt **[!UICONTROL Preview]**.
 
 De interactieve communicatie wordt geopend met vooraf ingevulde voorbeeldgegevens.
 
 ![webvoorvertoning](assets/web-preview.png)
 
-Als u een voorbeeld van een adaptief formulier met voorbeeldgegevens wilt bekijken, opent u het adaptieve adaptieve formulier in de modus Schrijven en tikt u op **[!UICONTROL Preview]**.
+Als u een voorbeeld van een adaptief formulier wilt bekijken met voorbeeldgegevens, opent u het adaptieve adaptieve formulier in de modus Ontwerpen en tikt u op **[!UICONTROL Preview]**.
 
-## Vooraf invullen met service van formuliergegevensmodel {#prefill}
+## Vooraf invullen met service voor formuliergegevensmodellen {#prefill}
 
 AEM Forms biedt een vooraf ingevulde service voor het out-of-the-box formuliergegevensmodel die u kunt inschakelen voor adaptieve formulieren en interactieve communicatie op basis van het formuliergegevensmodel. De Prefill-service zoekt naar gegevensbronnen voor gegevensmodelobjecten in het adaptieve formulier en de interactieve communicatie en vult daarom gegevens aan tijdens het weergeven van het formulier of de communicatie.
 
-Als u de service Vooraf invullen formuliergegevensmodel wilt inschakelen voor een adaptief formulier, opent u de eigenschappen van de container van het adaptieve formulier en selecteert u **[!UICONTROL Form Data Model Prefill service]** in de vervolgkeuzelijst **[!UICONTROL Prefill Service]** in de basisaccordeon. Sla vervolgens de eigenschappen op.
+Open de eigenschappen van de container van het adaptieve formulier en selecteer **[!UICONTROL Form Data Model Prefill service]** van de **[!UICONTROL Prefill Service]** in de Basis accordeon. Sla vervolgens de eigenschappen op.
 
 ![Prefill-service](assets/prefill-service.png)
 
@@ -115,11 +118,11 @@ Als u de service voor het vooraf invullen van het formuliergegevensmodel wilt co
 
 Dialoogvenster Eigenschappen bewerken voor interactieve communicatie
 
-## Verzonden adaptieve formuliergegevens naar gegevensbronnen {#write-af} schrijven
+## Ingediende adaptieve formuliergegevens naar gegevensbronnen schrijven {#write-af}
 
-Wanneer een gebruiker een formulier verzendt dat is gebaseerd op een formuliergegevensmodel, kunt u het formulier zo configureren dat de verzonden gegevens voor een gegevensmodelobject naar de bijbehorende gegevensbronnen worden geschreven. Om dit te gebruiken, biedt AEM Forms [Formuliergegevensmodel verzenden actie](/help/forms/using/configuring-submit-actions.md), alleen beschikbaar buiten de box voor adaptieve formulieren op basis van een formuliergegevensmodel. Het schrijft voorgelegde gegevens voor een voorwerp van het gegevensmodel in zijn gegevensbron.
+Wanneer een gebruiker een formulier verzendt dat is gebaseerd op een formuliergegevensmodel, kunt u het formulier zo configureren dat de verzonden gegevens voor een gegevensmodelobject naar de bijbehorende gegevensbronnen worden geschreven. AEM Forms biedt [Handeling Formuliergegevensmodel verzenden](/help/forms/using/configuring-submit-actions.md), alleen beschikbaar buiten de box voor adaptieve formulieren op basis van een formuliergegevensmodel. Het schrijft voorgelegde gegevens voor een voorwerp van het gegevensmodel in zijn gegevensbron.
 
-Als u de handeling Verzenden van het formuliergegevensmodel wilt configureren, opent u de eigenschappen van de container voor adaptieve formulieren en selecteert u **[!UICONTROL Submit using Form Data Model]** in de vervolgkeuzelijst Handeling verzenden onder de verzendingaccordion. Blader vervolgens naar een gegevensmodelobject in de vervolgkeuzelijst **[!UICONTROL Name of the data model object to submit]** en selecteer dit. Sla de eigenschappen op.
+Als u de verzendactie van het formuliergegevensmodel wilt configureren, opent u de eigenschappen van de container van het adaptieve formulier en selecteert u **[!UICONTROL Submit using Form Data Model]** in de vervolgkeuzelijst Handeling verzenden onder de verzendaccordeon. Blader vervolgens naar een gegevensmodelobject en selecteer dit in het menu **[!UICONTROL Name of the data model object to submit]** vervolgkeuzelijst. Sla de eigenschappen op.
 
 Bij het verzenden van formulieren worden gegevens voor het geconfigureerde gegevensmodelobject naar de desbetreffende gegevensbron geschreven.
 
@@ -128,20 +131,20 @@ Bij het verzenden van formulieren worden gegevens voor het geconfigureerde gegev
 U kunt ook formulierbijlagen verzenden naar een gegevensbron met binaire objecteigenschappen van gegevensmodellen. Ga als volgt te werk om bijlagen naar een JDBC-gegevensbron te verzenden:
 
 1. Voeg een gegevensmodelobject dat een binaire eigenschap bevat toe aan het formuliergegevensmodel.
-1. In het adaptieve formulier sleept u de **[!UICONTROL File Attachment]** component van de browser Components naar het adaptieve formulier.
-1. Tik om de toegevoegde component te selecteren en tik ![settings_icon](assets/settings_icon.png) om de browser Eigenschappen voor de component te openen.
-1. Tik in het veld Bindverwijzing op ![folder_search_18](assets/foldersearch_18.png) en selecteer de binaire eigenschap die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
+1. Sleep in het adaptieve formulier de **[!UICONTROL File Attachment]** van de browser Components op het adaptieve formulier.
+1. Tik om de toegevoegde component te selecteren en tik ![settings_icon](assets/settings_icon.png) om de browser van Eigenschappen voor de component te openen.
+1. Tik in het veld Bindverwijzing op ![mapSearch_18](assets/foldersearch_18.png) en navigeer om de binaire eigenschap te selecteren die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
 
-   Tik ![check-button](assets/check-button.png) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
+   Tikken ![check-button](assets/check-button.png) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
 
-1. Schakel **[!UICONTROL Submit Form Attachments]** in het gedeelte Verzending van de eigenschappen van de container van de adaptieve vorm in. De bijlage in het binaire-eigenschapveld wordt naar de gegevensbron verzonden bij het verzenden van het formulier.
+1. Schakel in het gedeelte Verzending van de eigenschappen van de container van adaptieve formulieren de optie **[!UICONTROL Submit Form Attachments]**. De bijlage in het binaire-eigenschapveld wordt naar de gegevensbron verzonden bij het verzenden van het formulier.
 
-## Services aanroepen in aangepaste formulieren met behulp van regels {#invoke-services}
+## Invoers van diensten in adaptieve formulieren met behulp van regels {#invoke-services}
 
-In een adaptief formulier dat is gebaseerd op een formuliergegevensmodel, kunt u [regels maken](/help/forms/using/rule-editor.md) om services aan te roepen die zijn geconfigureerd in het formuliergegevensmodel. De **[!UICONTROL Invoke Services]**-bewerking in een regel bevat een lijst met alle beschikbare services in het formuliergegevensmodel en u kunt invoer- en uitvoervelden voor de service selecteren. U kunt ook het regeltype **Waarde instellen** gebruiken om een service van een formuliergegevensmodel aan te roepen en de waarde van een veld in te stellen op de uitvoer die door de service wordt geretourneerd.
+In een adaptief formulier op basis van een formuliergegevensmodel kunt u [regels maken](/help/forms/using/rule-editor.md) om de diensten aan te halen die in het model van vormgegevens worden gevormd. De **[!UICONTROL Invoke Services]** bewerking in een regel bevat een lijst met alle beschikbare services in het formuliergegevensmodel en u kunt invoer- en uitvoervelden voor de service selecteren. U kunt ook de opdracht **Waarde instellen** regeltype om een service van een formuliergegevensmodel aan te roepen en de waarde van een veld in te stellen op de uitvoer die door de service wordt geretourneerd.
 
 Bijvoorbeeld, haalt de volgende regel de dienst aan die Werknemeridentiteitskaart als input neemt en de teruggekeerde waarden in overeenkomstige Afhankelijke identiteitskaart, Familienaam, Voornaam, en Gendergebieden in de vorm worden bevolkt.
 
 ![oproepdienst](assets/invoke-service.png)
 
-Daarnaast kunt u de API `guidelib.dataIntegrationUtils.executeOperation` gebruiken om een JavaScript in de code-editor voor de regeleditor te schrijven. Zie [API voor API-details om service van het formuliergegevensmodel aan te roepen](/help/forms/using/invoke-form-data-model-services.md).
+Daarnaast kunt u de opdracht `guidelib.dataIntegrationUtils.executeOperation` API om een JavaScript in de coderedacteur voor de regelredacteur te schrijven. Voor API-details raadpleegt u [API om formuliergegevensmodelservice aan te roepen](/help/forms/using/invoke-form-data-model-services.md).

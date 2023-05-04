@@ -1,8 +1,8 @@
 ---
 title: Bestanden met meerdere threads omzetten
-seo-title: Bestanden met meerdere threads omzetten
+seo-title: Enabling multi-threaded file conversions
 description: Leer hoe u bestanden met meerdere threads kunt omzetten.
-seo-description: Leer hoe u bestanden met meerdere threads kunt omzetten.
+seo-description: Learn how to enable multi-threaded file conversions.
 uuid: 830c78aa-4f68-4e01-8b24-69a0275689c7
 contentOwner: admin
 content-type: reference
@@ -11,25 +11,28 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 feature: PDF Generator
 exl-id: f0441588-7c16-40ab-841f-e89576a0d292
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
 
-# Multithread-bestandsconversies inschakelen {#enabling-multi-threaded-file-conversions}
+# Bestanden met meerdere threads omzetten {#enabling-multi-threaded-file-conversions}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 PDF Generator biedt de mogelijkheid om multi-threaded bestandsconversies in te schakelen voor bepaalde bestandstypen. Bestandsconversie via meerdere threads verbetert de prestaties van de PDF Generator doordat deze meerdere conversies tegelijk kan uitvoeren.
 
 ## Multithread-bestandsconversies inschakelen voor OpenOffice-, Word- en PowerPoint-documenten {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
 
-PDF Generator kan standaard slechts één OpenOffice-, Microsoft Word- of PowerPoint-document tegelijk converteren. Als u multi-threaded conversies inschakelt, kan PDF Generator meer dan een van de documenten gelijktijdig converteren. Met de PDF Generator worden meerdere instanties van OpenOffice of PDFMaker gestart (die worden gebruikt om de conversies van Word en PowerPoint uit te voeren).
+Standaard kan PDF Generator slechts één OpenOffice-, Microsoft Word- of PowerPoint-document tegelijk converteren. Als u multi-threaded omzettingen toelaat, kan de Generator van PDF meer dan één van de documenten gelijktijdig omzetten. PDF Generator start meerdere instanties van OpenOffice of PDFMaker (die worden gebruikt voor het uitvoeren van Word- en PowerPoint-conversies).
 
 >[!NOTE]
 >
->Bestanden met meerdere threads worden niet ondersteund in Microsoft Word 2003 en PowerPoint 2003. Om multi-threaded dossieromzettingen toe te laten, bevorder aan Microsoft Word 2007 en PowerPoint 2007 of Microsoft Word 2010 en PowerPoint 2010.
+>Bestanden met meerdere threads worden niet ondersteund in Microsoft Word 2003 en PowerPoint 2003. Als u bestanden met meerdere threads wilt converteren, voert u een upgrade uit naar Microsoft Word 2007 en PowerPoint 2007 of Microsoft Word 2010 en PowerPoint 2010.
 
 >[!NOTE]
 >
@@ -37,16 +40,16 @@ PDF Generator kan standaard slechts één OpenOffice-, Microsoft Word- of PowerP
 
 Elke instantie van OpenOffice of PDFMaker wordt gestart met een aparte gebruikersaccount. Elke gebruikersaccount die u toevoegt, moet een geldige gebruiker zijn met beheerdersrechten op de computer van de formulierserver. In een gegroepeerd milieu, moet de zelfde reeks gebruikers voor alle knopen van de cluster geldig zijn.
 
-Op de pagina Gebruikersaccounts in de beheerconsole kunt u opgeven welke gebruikersaccounts moeten worden gebruikt voor bestanden met meerdere threads. U kunt accounts toevoegen, verwijderen of wachtwoorden voor accounts wijzigen. Als u de Generator PDF op de Server 2003 van Vensters of de Server 2008 van Vensters in werking stelt, voeg minstens drie gebruikersrekeningen toe die beheerdervoorrechten hebben.
+Op de pagina Gebruikersaccounts in de beheerconsole kunt u opgeven welke gebruikersaccounts moeten worden gebruikt voor bestanden met meerdere threads. U kunt accounts toevoegen, verwijderen of wachtwoorden voor accounts wijzigen. Als u de Generator van PDF op de Server 2003 van Vensters of de Server 2008 van Vensters in werking stelt, voeg minstens drie gebruikersrekeningen toe die beheerdervoorrechten hebben.
 
 Wanneer het toevoegen van gebruikers voor OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2003 of 2008 van Vensters, of voor OpenOffice op Linux of Sun™ Solaris™, de aanvankelijke activeringsdialogen voor alle gebruikers verwerpen.
 
-### Voeg het recht toe om het proces-vlakke teken {#add-the-right-to-replace-the-process-level-token} te vervangen
+### Voeg het recht toe om het proces-vlakke teken te vervangen {#add-the-right-to-replace-the-process-level-token}
 
-In een Windows-besturingssysteem moeten de beheerdersgebruikersaccounts die worden gebruikt voor PDF-conversie (PDFG-gebruikers) de tokenrechten op procesniveau vervangen. U kunt dit recht toevoegen door de Redacteur van het Beleid van de Groep te gebruiken:
+Op een Windows-besturingssysteem moeten de beheerdersgebruikersaccounts die worden gebruikt voor PDF-conversie (PDFG-gebruikers) de tokenrechten op procesniveau vervangen. U kunt dit recht toevoegen door de Redacteur van het Beleid van de Groep te gebruiken:
 
 1. Klik in het menu Start van Windows op Uitvoeren en voer vervolgens gpedit.msc in.
-1. Klik op Lokaal computerbeleid > Computerconfiguratie > Windows-instellingen > Beveiligingsinstellingen > Lokaal beleid > Toewijzing gebruikersrechten. Bewerk het beleid *Een token* op procesniveau vervangen om de groep Beheerders op te nemen.
+1. Klik op Lokaal computerbeleid > Computerconfiguratie > Windows-instellingen > Beveiligingsinstellingen > Lokaal beleid > Toewijzing gebruikersrechten. Bewerk de *Een token op procesniveau vervangen* beleid om de groep van Beheerders te omvatten.
 1. Voeg de gebruiker toe aan de Replace een Symbolische ingang van het Niveau van het Proces.
 
 ### Aanvullende configuratie vereist voor OpenOffice, Microsoft Word en Microsoft PowerPoint op Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -72,7 +75,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u de gebruikersrollen van de systeemgebruiker en PDFG aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Om rol PDFG aan een gebruiker toe te wijzen, zie [een gebruikersrekening toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Zorg ervoor dat u de gebruikersrollen van de systeemgebruiker en PDFG aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Als u een PDFG-rol wilt toewijzen aan een gebruiker, raadpleegt u [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. Zoek en becommentariëer deze regel ook in het bestand /etc/sudoers door een hekje (#) aan het begin van de regel toe te voegen:
 
@@ -83,7 +86,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
    Hiermee kunt u Linux-gebruikers toevoegen.
 
 1. Wijzig de machtiging voor het bestand e-mail/submenu&#39;s weer in 440.
-1. Hiermee kunnen alle gebruikers die u via [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account) hebt toegevoegd, verbinding maken met de formulierserver. Als u een lokale gebruiker met de naam user1 bijvoorbeeld toestemming wilt geven om verbinding te maken met de formulierserver, gebruikt u de volgende opdracht
+1. Alle gebruikers toestaan die u via hebt toegevoegd [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account) om verbindingen met de formulierserver te maken. Als u een lokale gebruiker met de naam user1 bijvoorbeeld toestemming wilt geven om verbinding te maken met de formulierserver, gebruikt u de volgende opdracht
 
    `xhost +local:user1@`
 
@@ -95,7 +98,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 >
 >OpenOffice moet zijn geïnstalleerd op een maplocatie waartoe alle PDFG-gebruikers toegang hebben. U kunt dit verifiëren door u aan te melden als gebruiker PDFG en te controleren of u OpenOffice zonder problemen kunt starten.
 
-### Een gebruikersaccount {#add-a-user-account} toevoegen
+### Een gebruikersaccount toevoegen {#add-a-user-account}
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
 1. Klik op Toevoegen en voer de gebruikersnaam en het wachtwoord in van een gebruiker die beheerdersrechten heeft op de formulierserver. Als u gebruikers voor OpenOffice vormt, verwerp de aanvankelijke activeringsdialoogvensters OpenOffice.
@@ -106,7 +109,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 
 1. Start de formulierserver opnieuw.
 
-### Verwijder een gebruiker uit de lijst die voor multi-threaded dossieromzettingen {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions} wordt gebruikt
+### Een gebruiker verwijderen uit de lijst die wordt gebruikt voor bestanden met meerdere threads {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
 1. Klik op het selectievakje naast de gebruiker die u wilt verwijderen en klik op Verwijderen.
@@ -116,4 +119,4 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 ### Het wachtwoord voor een account wijzigen {#change-the-password-for-an-account}
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
-1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig het. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.
+1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig dit. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.

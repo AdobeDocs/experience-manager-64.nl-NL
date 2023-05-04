@@ -1,6 +1,6 @@
 ---
 title: Hulplijn voor middelengrootte
-description: 'Beste praktijken om efficiënte metriek voor het schatten van de infrastructuur en de middelen te bepalen die voor het opstellen van [!DNL Experience Manager] Middelen worden vereist. '
+description: Beste praktijken om efficiënte metriek voor het schatten van de infrastructuur en de middelen te bepalen die voor plaatsing worden vereist [!DNL Experience Manager] Elementen.
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,14 +8,18 @@ discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
 
 # Hulplijn voor middelengrootte {#assets-sizing-guide}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Wanneer het rangschikken van het milieu voor een implementatie van de Middelen van Adobe Experience Manager, is het belangrijk om ervoor te zorgen dat er voldoende middelen in termen van schijf, cpu, geheugen, IO, en netwerkproductie beschikbaar zijn. Als u veel van deze bronnen wilt vergroten, moet u weten hoeveel elementen in het systeem worden geladen. Als er geen betere maateenheid beschikbaar is, kunt u de grootte van de bestaande bibliotheek delen door de leeftijd van de bibliotheek om de snelheid te vinden waarmee elementen worden gemaakt.
 
@@ -23,7 +27,7 @@ Wanneer het rangschikken van het milieu voor een implementatie van de Middelen v
 
 ### DataStore {#datastore}
 
-Een algemene fout die wordt gemaakt bij het instellen van de grootte van de vereiste schijfruimte voor een middelenimplementatie, is het baseren van de berekeningen op de grootte van de Raw-afbeeldingen die in het systeem worden opgenomen. [!DNL Experience Manager] maakt standaard drie uitvoeringen naast de oorspronkelijke afbeelding voor gebruik bij het renderen van de UI-elementen [!DNL Experience Manager]. In vorige implementaties, zijn deze vertoningen waargenomen tweemaal de grootte van de activa veronderstellen die worden opgenomen.
+Een algemene fout die wordt gemaakt bij het instellen van de grootte van de vereiste schijfruimte voor een middelenimplementatie, is het baseren van de berekeningen op de grootte van de Raw-afbeeldingen die in het systeem worden opgenomen. Standaard, [!DNL Experience Manager] maakt drie uitvoeringen naast de originele afbeelding voor het renderen van de [!DNL Experience Manager] UI-elementen. In vorige implementaties, zijn deze vertoningen waargenomen tweemaal de grootte van de activa veronderstellen die worden opgenomen.
 
 De meeste gebruikers definiëren aangepaste uitvoeringen naast de uitvoeringen buiten de box. Naast de vertoningen, laat de Activa u subactiva uit gemeenschappelijke dossiertypes, zoals InDesign en Illustrator halen.
 
@@ -34,11 +38,11 @@ Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige
 1. Bepaal de grootte en het aantal elementen dat in het systeem wordt geladen.
 1. Hiermee ontvangt u een representatieve steekproef van de elementen die in AEM moeten worden geüpload. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
-1. Maak de uitvoeringen in [!DNL Experience Manager] met de Creative Cloud-toepassingen ImageMagick of Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamic Media Classic implementeren, kunt u het binaire bestand IC gebruiken om de PTIFF-uitvoeringen te genereren die in AEM moeten worden opgeslagen.
-1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen. Zie de onlinedocumentatie over het genereren van pagina&#39;s met subelementen op basis van InDesign-bestanden of PNG-/PDF-bestanden op basis van Illustrator-lagen.
+1. De uitvoeringen maken in [!DNL Experience Manager] gebruiken van de toepassingen van ImageMagick of van de Creative Cloud van Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamic Media Classic implementeren, kunt u het binaire IC-bestand gebruiken om de PTIFF-uitvoeringen te genereren die in AEM moeten worden opgeslagen.
+1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen. Zie de onlinedocumentatie over het genereren van pagina&#39;s met subelementen op basis van InDesign-bestanden of PNG/PDF-bestanden op basis van Illustrator-lagen.
 1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor van de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.
-1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Als [!DNL Experience Manager] wordt gebruikt als een samenwerkingscentrum in creatieve werkschema&#39;s, is de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
+1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Indien [!DNL Experience Manager] wordt gebruikt als een samenwerkingscentrum in creatieve werkschema&#39;s, zijn de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
 1. Bepaal hoeveel elementen elke maand in het systeem worden geladen. Als u niet zeker weet, controleert u het aantal elementen dat momenteel beschikbaar is en verdeelt u het getal door de leeftijd van het oudste element om een geschatte waarde te berekenen.
 
 Door stap 1-9 uit te voeren kunt u het volgende bepalen:
@@ -73,7 +77,7 @@ Door sommige valkuilen wordt het delen van een datastore niet in alle gevallen a
 
 Met een gedeelde datastore introduceert u één foutpunt in een infrastructuur. Overweeg een scenario waarin uw systeem één auteur en twee publiceer instanties heeft, elk met hun eigen datastore. Als één van hen crasht, kunnen de andere twee nog lopen. Nochtans, als datastore wordt gedeeld, kan één enkele schijfmislukking de volledige infrastructuur onderdrukken. Zorg daarom dat u een back-up van de gedeelde datastore bijhoudt vanaf waar u de datastore snel kunt herstellen.
 
-Het implementeren van de AWS S3-service voor gedeelde datastores heeft de voorkeur, omdat dit de kans op mislukking aanzienlijk verkleint in vergelijking met normale schijfarchitecturen.
+De voorkeur wordt gegeven aan de AWS S3-service voor gedeelde datastores, omdat hierdoor de kans op mislukking aanzienlijk afneemt in vergelijking met normale schijfarchitecturen.
 
 #### Meer complexiteit {#increased-complexity}
 
@@ -106,11 +110,11 @@ Voor de opslagplaats, gebruik SSDs of schijven met een IOPS niveau groter dan 30
 
 ## Netwerk {#network}
 
-[!DNL Assets] heeft een aantal gebruiksgevallen die netwerkprestaties belangrijker maken dan op veel van onze  [!DNL Experience Manager] projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het onderdrukkingspunt in de netwerkverbinding van een gebruiker aan [!DNL Experience Manager] bij [[!DNL Experience Manager]  de overwegingen van Activa voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](assets-network-considerations.md) te bepalen.
+[!DNL Assets] heeft een aantal gebruiksgevallen die netwerkprestaties belangrijker maken dan op veel van onze [!DNL Experience Manager] projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het knooppunt in de netwerkverbinding van een gebruiker te bepalen met [!DNL Experience Manager] om [[!DNL Experience Manager]  De overwegingen van activa voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
-Als u de [!DNL Experience Manager] desktop app aan de mix toevoegt, worden de netwerkproblemen ernstiger als gevolg van inefficiëntie in het WebDAV-protocol.
+Als u de [!DNL Experience Manager] desktop app aan de mix, worden de netwerkproblemen ernstiger als gevolg van inefficiënties in het WebDAV-protocol.
 
 Adobe heeft de systeemprestaties getest met WebDAV op OS X om deze inefficiënties te illustreren. Er is een InDesign-bestand van 3,5 MB geopend, bewerkt en opgeslagen. De volgende opmerkingen werden gemaakt:
 
@@ -122,7 +126,7 @@ Adobe heeft de systeemprestaties getest met WebDAV op OS X om deze inefficiënti
 
 Tijdens het analyseren van de gemiddelde opslagtijd voor bestanden via WebDAV werd vastgesteld dat de prestaties aanzienlijk toenemen naarmate de bandbreedte toeneemt tot het niveau van 5-10 Mbps. Daarom adviseert Adobe dat elke gebruiker die tot het systeem gelijktijdig toegang heeft minstens 10Mbps van uploadsnelheid en 5-10Mbps van bandbreedte zou moeten hebben.
 
-Zie [Problemen oplossen [!DNL Experience Manager] desktop app](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html) voor meer informatie.
+Zie voor meer informatie [Problemen oplossen [!DNL Experience Manager] bureaubladtoepassing](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Beperkingen {#limitations}
 
@@ -130,7 +134,7 @@ Wanneer het rangschikken van een implementatie, is het belangrijk om systeembepe
 
 Bestandsgrootte is niet de enige factor die bijdraagt aan problemen met onvoldoende geheugen (OOM). Het hangt ook van afmetingen van het beeld af. U kunt OOM-problemen voorkomen door een hogere heapgrootte op te geven wanneer u AEM.
 
-Bovendien kunt u het bezit van de drempelgrootte van de `com.day.cq.dam.commons.handler.StandardImageHandler` component in de Manager van de Configuratie uitgeven om tussentijds tijdelijk dossier groter dan nul te gebruiken.
+Bovendien kunt u de eigenschap voor drempelgrootte van het dialoogvenster `com.day.cq.dam.commons.handler.StandardImageHandler` in de Manager van de Configuratie aan gebruik tijdelijk tussendossier groter dan nul.
 
 ## Maximum aantal activa {#maximum-number-of-assets}
 
@@ -138,12 +142,12 @@ Bovendien kunt u het bezit van de drempelgrootte van de `com.day.cq.dam.commons.
 
 While the limit for the number of nodes in a repository has not been determined, assuming each asset generates roughly 30 nodes, putting the 8 million asset test at 240 million nodes from the assets alone. This does not include audit logs, archived workflows, or versions. -->
 
-De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de gegevensopslagruimte problemen tegenkomt vanwege een groot aantal knooppunten lang voordat de datastore-limiet wordt bereikt.
+De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de opslagplaats problemen door groot aantal knopen lang alvorens de datastore grens te bereiken ontmoet.
 
-Gebruik de Camera Raw bibliotheek als de uitvoeringen onjuist zijn gegenereerd. In dit geval mag de langste zijde van de afbeelding echter niet groter zijn dan 65000 pixels. Bovendien mag de afbeelding niet meer dan 512 MP (512 &amp;ast) bevatten. 1024 &amp;ast; 1024 pixels)&quot;. *De omvang van het actief is onevenredig*.
+Gebruik de Camera Raw bibliotheek als de uitvoeringen onjuist zijn gegenereerd. In dit geval mag de langste zijde van de afbeelding echter niet groter zijn dan 65000 pixels. Bovendien mag de afbeelding niet meer dan 512 MP (512 &amp;oost) bevatten. 1024 &amp;Laatste; 1024 pixels)&quot;. *De omvang van het actief heeft geen gevolgen*.
 
-Het is moeilijk nauwkeurig de grootte te schatten van het TIF dossier dat uit-van-de-doos (OOTB) met een specifieke heap voor [!DNL Experience Manager] wordt gesteund omdat de extra factoren, zoals pixelgrootte verwerking beïnvloeden. Het is mogelijk dat [!DNL Experience Manager] een dossier van grootte van 255 MB OOTB kan verwerken, maar niet een dossiergrootte van 18 MB backoffice kan verwerken omdat het laatstgenoemde uit een ongewoon hoger aantal pixel dan eerstgenoemde omvat.
+Het is moeilijk nauwkeurig de grootte te schatten van het TIFF dossier dat uit-van-de-doos (OTB) met een specifieke hoop voor [!DNL Experience Manager] omdat extra factoren, zoals pixelgrootte, de verwerking beïnvloeden. Het is mogelijk dat [!DNL Experience Manager] kan een bestand verwerken van 255 MB OOTB, maar kan geen bestandsgrootte van 18 MB verwerken omdat het laatste bestand een ongewoon groter aantal pixels bevat dan het eerste.
 
 ## Grootte van activa {#size-of-assets}
 
-Met [!DNL Experience Manager] kunt u standaard bestanden van maximaal 2 GB uploaden. Zie [Configuratie voor het uploaden van zeer grote elementen](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb) voor informatie over het uploaden van AEM.
+Standaard, [!DNL Experience Manager] kunt u bestanden van maximaal 2 GB uploaden. Als u zeer grote elementen in AEM wilt uploaden, raadpleegt u [Configuratie om zeer grote elementen te uploaden](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).

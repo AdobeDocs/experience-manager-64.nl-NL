@@ -1,8 +1,8 @@
 ---
 title: Uw gebruikers en gebruikersgroepen configureren
-seo-title: Uw gebruikers en gebruikersgroepen configureren
+seo-title: Configure Your Users and User Groups
 description: Volg deze pagina om inzicht te krijgen in de gebruikersrollen en hoe u uw gebruikers en groepen configureert voor ondersteuning van het ontwerpen en beheren van uw mobiele apps.
-seo-description: Volg deze pagina om inzicht te krijgen in de gebruikersrollen en hoe u uw gebruikers en groepen configureert voor ondersteuning van het ontwerpen en beheren van uw mobiele apps.
+seo-description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile apps.
 uuid: 55cea2b3-d7e6-4174-92b3-ee97e46b59c4
 contentOwner: User
 content-type: reference
@@ -10,30 +10,33 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 exl-id: 598ec9cd-e23b-4cc4-be1c-0836a1e3f118
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
 
-# Uw gebruikers en gebruikersgroepen {#configure-your-users-and-user-groups} configureren
+# Uw gebruikers en gebruikersgroepen configureren {#configure-your-users-and-user-groups}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 In dit hoofdstuk worden de gebruikersrollen beschreven en wordt beschreven hoe u uw gebruikers en groepen kunt configureren om het ontwerpen en beheren van uw mobiele apps te ondersteunen.
 
-## AEM Mobile Application Users and Group Administration {#aem-mobile-application-users-and-group-administration}
+## AEM Mobile Application Users en Group Administration {#aem-mobile-application-users-and-group-administration}
 
 Voor het organiseren en beheren van het machtigingsmodel voor AEM apps zijn de volgende twee groepen beschikbaar:
 
 * app-admins voor App Admins
 * app-authors voor App Authors
 
-### AEM Mobile Application Content Authors (app-auteurgroep) {#aem-mobile-application-content-authors-app-author-group}
+### AEM Mobile Application Content Authors (groep voor het schrijven van apps) {#aem-mobile-application-content-authors-app-author-group}
 
 Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het ontwerpen AEM inhoud van mobiele toepassingen, zoals pagina&#39;s, tekst, afbeeldingen en video&#39;s.
 
@@ -53,13 +56,13 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
    App-auteurs toevoegen aan de groep Auteurs
 
-1. Nu u de app-auteursGebruikersgroep hebt gecreeerd, kunt u individuele teamleden aan deze nieuwe groep door [de console van Admin van de Gebruiker toevoegen ](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nu u de gebruikersgroep voor toepassingsauteurs hebt gemaakt, kunt u via de [Admin-console gebruiker](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    Gebruikersgroepen bewerken
 
-1. Navigeer naar [Machtigingen console](http://localhost:4502/useradmin) en voeg machtigingen toe om cloudservices te beheren
+1. Ga naar de [Machtigingenconsole](http://localhost:4502/useradmin) en machtigingen toevoegen om cloudservices te beheren
 
    * (Lezen) op /etc/cloudservices
    >[!NOTE]
@@ -68,7 +71,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 ### AEM Mobile Application Administrators Group (app-admins-groep) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Leden van de app-admins-groep kunnen toepassingsinhoud met de zelfde toestemmingen ontwerpen inbegrepen bij app-auteurs **AND** zijn ook verantwoordelijk voor:
+Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen maken die bij de auteur van de app worden geleverd **EN** voorts zijn ook verantwoordelijk voor :
 
 * Cloudservices voor PhoneGap Build en Adobe Mobile Services configureren in AEM
 * OTA-updates voor inhoudssynchronisatie van toepassingen opslaan, publiceren en wissen
@@ -79,7 +82,7 @@ Leden van de app-admins-groep kunnen toepassingsinhoud met de zelfde toestemming
 >
 >Sommige opties zijn niet beschikbaar voor toepassingsauteurs die beschikbaar zijn voor app-beheerders.
 
-#### Groepsconfiguratie - app-admins {#group-configuration-app-admins}
+#### Groepsconfiguratie - app-beheerders {#group-configuration-app-admins}
 
 1. Maak een nieuwe groep met de naam app-admins.
 1. Voeg de volgende groepen toe aan uw nieuwe app-admins-groep:
@@ -89,7 +92,7 @@ Leden van de app-admins-groep kunnen toepassingsinhoud met de zelfde toestemming
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Navigeer naar [Machtigingen console](http://localhost:4502/useradmin) en voeg machtigingen toe om cloudservices te beheren
+1. Ga naar de [Machtigingenconsole](http://localhost:4502/useradmin) en machtigingen toevoegen om cloudservices te beheren
 
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/cloudservices/mobileservices
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/cloudservices/phonegap-build
@@ -111,18 +114,18 @@ Leden van de app-admins-groep kunnen toepassingsinhoud met de zelfde toestemming
 
 1. Voeg zo nodig leden toe aan deze groep
 
-## Machtigingen voor dashboard-tegel {#dashboard-tile-permissions}
+## Machtigingen voor dashboard-blokken {#dashboard-tile-permissions}
 
 Dashboardblokken kunnen verschillende handelingen blootstellen op basis van de machtigingen die de gebruiker heeft. Hieronder wordt beschreven welke acties beschikbaar zijn voor elke tegel.
 
-Naast deze machtigingen kan een handeling ook worden weergegeven of verborgen op basis van de configuratie van de huidige app. Het heeft bijvoorbeeld geen zin om de handeling &#39;Remote Build&#39; beschikbaar te maken als er geen PhoneGap-cloudconfiguratie aan de app is toegewezen. Deze zullen hieronder onder &quot;**de secties van de Voorwaarde van de Configuratie**&quot;worden vermeld.
+Naast deze machtigingen kan een handeling ook worden weergegeven of verborgen op basis van de configuratie van de huidige app. Het heeft bijvoorbeeld geen zin om de handeling &#39;Remote Build&#39; beschikbaar te maken als er geen PhoneGap-cloudconfiguratie aan de app is toegewezen. Deze worden hieronder vermeld onder &#39;**Configuratievoorwaarde**&#39; secties.
 
 ### App-tegel beheren {#manage-app-tile}
 
 De tegel bevat momenteel geen handelingen waarvoor machtigingen vereist zijn, maar de detailpagina voor de toepassing heeft de volgende handelingen:
 
-* ** Bewerken voor app-auteur en app-admin (UI Trigger - jcr:write - on /content/phonegap/{suffix})
-* ** Downloaden voor app-auteur en app-admin (UI-activering - op /content/phonegap/{suffix})
+* *Bewerken* voor app-auteur en app-admin (UI Trigger - jcr:write - on /content/phonegap/{suffix})
+* *Downloaden* voor app-auteur en app-admin (UI Trigger - on /content/phonegap/{suffix})
 
 In de onderstaande afbeelding ziet u de opties voor downloaden en bewerken voor een app:
 

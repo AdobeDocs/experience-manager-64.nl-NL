@@ -1,33 +1,36 @@
 ---
 title: API om de service voor formuliergegevensmodellen aan te roepen vanuit adaptieve formulieren
-seo-title: API om de service voor formuliergegevensmodellen aan te roepen vanuit adaptieve formulieren
-description: 'Verklaart invokeWebServices API die u kunt gebruiken om Webdiensten aan te halen die in WSDL van binnen een adaptief vormgebied worden geschreven. '
-seo-description: 'Verklaart invokeWebServices API die u kunt gebruiken om Webdiensten aan te halen die in WSDL van binnen een adaptief vormgebied worden geschreven. '
+seo-title: API to invoke form data model service from adaptive forms
+description: Verklaart invokeWebServices API die u kunt gebruiken om Webdiensten aan te halen die in WSDL van binnen een adaptief vormgebied worden geschreven.
+seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptive Forms
 exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 1%
+source-wordcount: '387'
+ht-degree: 0%
 
 ---
 
-# API om formuliergegevensmodelservice aan te roepen vanuit adaptieve formulieren {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API om de service voor formuliergegevensmodellen aan te roepen vanuit adaptieve formulieren {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
-Met AEM Forms kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die vanuit een adaptief formulierveld zijn geconfigureerd in een formuliergegevensmodel. Om een dienst van het gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of een JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van [rule redacteur](/help/forms/using/rule-editor.md).
+Met AEM Forms kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die vanuit een adaptief formulierveld zijn geconfigureerd in een formuliergegevensmodel. Als u een gegevensmodelservice wilt aanroepen, kunt u een regel maken in de visuele editor of een JavaScript opgeven met de `guidelib.dataIntegrationUtils.executeOperation` API in de code-editor van de [regeleditor](/help/forms/using/rule-editor.md).
 
-Dit document is gericht op het schrijven van een JavaScript met de `guidelib.dataIntegrationUtils.executeOperation`-API om een service aan te roepen.
+Dit document is vooral bedoeld voor het schrijven van een JavaScript met het `guidelib.dataIntegrationUtils.executeOperation` API om de service aan te roepen.
 
-## API {#using-the-api} gebruiken
+## De API gebruiken {#using-the-api}
 
-De `guidelib.dataIntegrationUtils.executeOperation`-API roept een service aan vanuit een adaptief formulierveld. De API-syntaxis ziet er als volgt uit:
+De `guidelib.dataIntegrationUtils.executeOperation` API roept een service aan vanuit een adaptief formulierveld. De API-syntaxis ziet er als volgt uit:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -86,11 +89,11 @@ De API-structuur geeft de volgende details over de servicebewerking op.
  </tbody> 
 </table>
 
-## Voorbeeldscript om de service {#sample-script-to-invoke-a-service} aan te roepen
+## Voorbeeldscript om een service aan te roepen {#sample-script-to-invoke-a-service}
 
-In het volgende voorbeeldscript wordt de `guidelib.dataIntegrationUtils.executeOperation`-API gebruikt om de `getAccountById`-servicebewerking aan te roepen die in het formuliergegevensmodel `employeeAccount` is geconfigureerd.
+In het volgende voorbeeldscript wordt het `guidelib.dataIntegrationUtils.executeOperation` API om de `getAccountById` de dienstverrichting die in `employeeAccount` formuliergegevensmodel.
 
-De bewerking `getAccountById` neemt de waarde in het formulierveld `employeeID` als invoer voor het argument `empId` en retourneert de werknemernaam, het accountnummer en het rekeningssaldo voor de corresponderende employee. De uitvoerwaarden worden ingevuld in de opgegeven formuliervelden. De waarde in het argument `name` wordt bijvoorbeeld ingevuld in het formulierelement `fullName` en de waarde voor het argument `accountNumber` in het formulierelement `account`.
+De `getAccountById` de bewerking neemt de waarde in de `employeeID` formulierveld als invoer voor de `empId` argument en retourneert werknemersnaam, accountnummer en rekeningsaldo voor de corresponderende werknemer. De uitvoerwaarden worden ingevuld in de opgegeven formuliervelden. De waarde in `name` argument is ingevuld in het dialoogvenster `fullName` formulierelement en -waarde voor `accountNumber` argument in `account` formulierelement.
 
 ```
 var operationInfo = {

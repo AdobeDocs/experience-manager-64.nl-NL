@@ -1,25 +1,28 @@
 ---
 title: De sites van de Geometrixx verwijderen
-seo-title: De sites van de Geometrixx verwijderen
+seo-title: Removing the Geometrixx Sites
 description: Leer hoe u de inhoud van de Geometrixx van het voorbeeld kunt verwijderen.
-seo-description: Leer hoe u de inhoud van de Geometrixx van het voorbeeld kunt verwijderen.
+seo-description: Learn how to remove the sample Geometrixx content.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
 exl-id: 495031fb-b559-4071-abc4-93d238ce136d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
 
-# Het verwijderen van de Plaatsen van de Geometrixx{#removing-the-geometrixx-sites}
+# De sites van de Geometrixx verwijderen{#removing-the-geometrixx-sites}
 
-AEM wordt geleverd met een set websites met voorbeeldpagina&#39;s. U kunt deze voorbeeldinhoud verwijderen via **Package Manager**.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+AEM wordt geleverd met een set websites met voorbeeldpagina&#39;s. U kunt deze voorbeeldinhoud verwijderen via het dialoogvenster **Pakketbeheer**.
 
 De afzonderlijke geometrixx-gerelateerde pakketten zijn:
 
@@ -33,13 +36,13 @@ De afzonderlijke geometrixx-gerelateerde pakketten zijn:
 * `cq-geometrixx-commons-pkg-*<version>*.zip`
 * `cq-geometrixx-media-pkg-*<version>*.zip`
 
-Als u een afzonderlijk pakket wilt verwijderen, klikt u op **Uninstall** op dat pakket.
+Als u een afzonderlijk pakket wilt verwijderen, klikt u op **Verwijderen** over dat pakket.
 
 Er is ook een superpakket:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Dit pakket bevat alle bovenstaande afzonderlijke pakketten. Als u alle geometrixx-gerelateerde inhoud tegelijk wilt verwijderen, klikt u op **Verwijderen** op dit pakket. Het superpakket wordt verwijderd en alle afzonderlijke pakketten verdwijnen uit de weergave voor pakketbeheer.
+Dit pakket bevat alle bovenstaande afzonderlijke pakketten. Als u alle geometrixx-gerelateerde inhoud tegelijk wilt verwijderen, klikt u op **Verwijderen** over dit pakket. Het superpakket wordt verwijderd en alle afzonderlijke pakketten verdwijnen uit de weergave voor pakketbeheer.
 
 U hebt nu een &quot;lege&quot; AEM-instantie zonder demonstratiesites.
 

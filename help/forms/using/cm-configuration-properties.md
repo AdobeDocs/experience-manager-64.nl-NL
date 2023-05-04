@@ -1,8 +1,8 @@
 ---
 title: Eigenschappen van Correspondentenbeheer
-seo-title: Eigenschappen van Correspondentenbeheer
+seo-title: Correspondence Management Configuration Properties
 description: Dit onderwerp verklaart hoe u de Composer van Activa met oplossing-specifieke configuraties kunt wijzigen. In dit onderwerp worden de eigenschappen beschreven die u kunt bewerken, met de beschrijving, standaardwaarden en acceptabele waarden.
-seo-description: Dit onderwerp verklaart hoe u de Composer van Activa met oplossing-specifieke configuraties kunt wijzigen. In dit onderwerp worden de eigenschappen beschreven die u kunt bewerken, met de beschrijving, standaardwaarden en acceptabele waarden.
+seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
 exl-id: 102e4f39-192e-4cc1-a249-4b6bc641919d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '881'
 ht-degree: 1%
 
 ---
 
-# Eigenschappen van Correspondentenbeheer voor configuratie {#correspondence-management-configuration-properties}
+# Eigenschappen van Correspondentenbeheer {#correspondence-management-configuration-properties}
 
-Als u deze eigenschappen wilt configureren, opent u de volgende URL in een browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` en selecteer **Correspondence Management Configurations**.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Als u deze eigenschappen wilt configureren, opent u de volgende URL in een browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` en selecteert u **Correspondentiebeheerconfiguraties**.
 
 Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
 
@@ -35,30 +38,30 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr> 
    <td><p>Inspringing</p> </td> 
    <td>Inspringing op modules<p> </p> </td> 
-   <td><p>12,7 mm</p> </td> 
+   <td><p>12.7mm</p> </td> 
    <td><p>Willekeurig getal</p> </td> 
   </tr> 
   <tr> 
    <td>Minimumbreedte aantal</td> 
    <td>Minimumbreedte die moet worden toegepast op het veld opsommingsteken/nummer wanneer u genummerde lijsten naast Romeinse nummers gebruikt</td> 
-   <td>8,0 mm</td> 
+   <td>8.0mm</td> 
    <td>Willekeurig getal</td> 
   </tr> 
   <tr> 
    <td><p>Roman Numbers Minimum Width</p> </td> 
    <td><p>Minimumbreedte die moet worden toegepast op het veld opsommingsteken/nummer bij gebruik van Romeinse getallen</p> </td> 
-   <td><p>12,7 mm</p> </td> 
+   <td><p>12.7mm</p> </td> 
    <td><p>Willekeurig getal</p> </td> 
   </tr> 
   <tr> 
    <td>Type vertoning</td> 
    <td>Het type uitvoering dat de toepassing Correspondentie maken gebruikt om de lettervoorvertoning weer te geven. </td> 
-   <td>HTML-uitvoering</td> 
-   <td>HTML-uitvoering / PDF-uitvoering</td> 
+   <td>HTML-vertoning</td> 
+   <td>HTML-vertoning / PDF-vertoning</td> 
   </tr> 
   <tr> 
-   <td><p>CCR PDF-markering inschakelen</p> </td> 
-   <td><p>Hiermee wordt markeringen op PDF ingeschakeld in de toepassing Correspondentie maken</p> </td> 
+   <td><p>CCR-markering PDF inschakelen</p> </td> 
+   <td><p>Hiermee wordt markering bij PDF ingeschakeld in de toepassing Correspondentie maken</p> </td> 
    <td><p>true</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
@@ -77,7 +80,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr> 
    <td><p>Type markering van inhoud</p> </td> 
    <td><p>Type markering voor inhoud in de toepassing Correspondentie maken</p> </td> 
-   <td><p>Opvulling</p> </td> 
+   <td><p>Vullen</p> </td> 
    <td><p>border / fill / none</p> </td> 
   </tr> 
   <tr> 
@@ -89,7 +92,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr> 
    <td><p>Type markering veld</p> </td> 
    <td><p>Type veldmarkering in de toepassing Correspondentie maken</p> </td> 
-   <td><p>fill</p> </td> 
+   <td><p>vullen</p> </td> 
    <td><p>border / fill / none</p> </td> 
   </tr> 
   <tr> 
@@ -129,14 +132,14 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
    <td><p>Willekeurige naam van tekenreeksvariabele</p> </td> 
   </tr> 
   <tr> 
-   <td><p>PDF-verzendtype</p> </td> 
-   <td><p>PDF-verzendtype (type PDF dat wordt gegenereerd bij verzending via de toepassing Correspondentie maken)</p> </td> 
+   <td><p>Type PDF verzenden</p> </td> 
+   <td><p>PDF Verzendtype (type PDF dat wordt gegenereerd bij verzending via de toepassing Correspondentie maken)</p> </td> 
    <td><p>nonInteractive</p> </td> 
    <td><p>interactief/niet-interactief</p> </td> 
   </tr> 
   <tr> 
    <td><p>Gegevenswoordenboekinstantie optimaliseren</p> </td> 
-   <td><p>Hiermee wordt geoptimaliseerde overdracht van gegevenswoordenboekinstanties via de server en client ingeschakeld</p> </td> 
+   <td><p>Maakt geoptimaliseerde overdracht van gegevenswoordenboekinstantie via b/w-server en -client mogelijk</p> </td> 
    <td><p>true</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
@@ -162,7 +165,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
    <td><p>Gegevensbewerkingsindeling</p> </td> 
    <td><p>Opmaak voor gegevens bewerken. Dit wordt gebruikt wanneer het schrijven van gegevens als Koord of het ontleden gegevens van Koord</p> </td> 
    <td><p>locale=nl_NL; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
-   <td>—<p> </p> </td> 
+   <td>--<p> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Lettervarianten beheren bij publicatie</p> </td> 
@@ -245,18 +248,18 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr> 
    <td><p>CM-gebruikersbasis</p> </td> 
    <td><p>URL van de map met alle Correspondentenbeheergebruikerselementen</p> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
    <td><p>Geldige maplocatie</p> </td> 
   </tr> 
   <tr> 
    <td><p>Grootte lettercache</p> </td> 
-   <td><p>Geef het maximumaantal letters op dat in de cache moet worden opgeslagen.</p> <p>Als u deze waarde wijzigt, wordt de cache <code>in-memory</code> opgeschoond.</p> </td> 
+   <td><p>Geef het maximumaantal letters op dat in de cache moet worden opgeslagen.</p> <p>Als u deze waarde wijzigt, wordt de opdracht <code>in-memory</code> cache.</p> </td> 
    <td><p>100</p> </td> 
    <td><p>Willekeurige numerieke waarde</p> </td> 
   </tr> 
   <tr> 
    <td><p>Lettercache inschakelen</p> </td> 
-   <td><p>De lettercache in-/uitschakelen.</p> <p>Als u deze waarde wijzigt, wordt de cache <code>in-memory </code> opgeschoond.</p> </td> 
+   <td><p>De lettercache in-/uitschakelen.</p> <p>Als u deze waarde wijzigt, wordt de opdracht <code>in-memory </code> cache.</p> </td> 
    <td><p>true</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
@@ -292,7 +295,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   </tr> 
   <tr> 
    <td><p>Foutopsporingsdirectory </p> <p> </p> </td> 
-   <td>Locatie bestandssysteemmap voor foutopsporing. Als de map niet <code>exists</code> is, worden er geen foutopsporingsdumps gegenereerd.</td> 
+   <td>Locatie bestandssysteemmap voor foutopsporing. Als de map niet <code>exists</code>Er worden geen foutopsporingsdumps gegenereerd.</td> 
    <td>acm.debugDirectory</td> 
    <td> </td> 
   </tr> 

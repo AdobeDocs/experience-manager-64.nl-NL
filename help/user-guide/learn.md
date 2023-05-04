@@ -6,14 +6,18 @@ seo-description: An description of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: 5cb966c3-1e19-47c8-a691-067f6d4680c0
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 2%
+source-wordcount: '432'
+ht-degree: 1%
 
 ---
 
 # Meer informatie over AEM 6.4-mogelijkheden {#learn-about-aem-64-capabilities}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## AEM Sites {#aem-sites}
 
@@ -44,7 +48,7 @@ Schermen is een Adobe Experience Manager-mogelijkheid waarmee u dynamische en in
 
 ## AEM Communities {#aem-communities}
 
-De Gemeenschappen zijn een Adobe Experience Manager-mogelijkheid waarmee u online gemeenschapservaringen kunt maken, zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies die van groot belang zijn voor klanten, werknemers en uw merk. [Meer weten?](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)
+Deze gemeenschappen zijn een Adobe Experience Manager-functie waarmee u online gemeenschapservaringen kunt maken, zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies die van groot belang zijn voor klanten, werknemers en uw merk. [Meer weten?](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)
 
 ## AEM Livefyre {#aem-livefyre}
 

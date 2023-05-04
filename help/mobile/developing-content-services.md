@@ -1,27 +1,30 @@
 ---
 title: Inhoudsservices
-seo-title: Inhoudsservices
+seo-title: Content Services
 description: Inhoudsservices
-seo-description: 'null'
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e900d93e-f7cd-4a0d-a866-7fc6c7882797
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
+# Inhoudsservices{#content-services}
 
-# Content Services{#content-services}
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -45,7 +48,7 @@ Content Services kan de inhoud leveren als elementen, verpakte HTML (HTML/CSS/JS
 >
 >Zie **[Inhoudsservices beheren](/help/mobile/developing-content-services.md)** voor meer informatie.
 >
->Zie de [documentatie van de Browser van de Configuratie](/help/sites-administering/configurations.md) voor meer informatie.
+>Zie de [Documentatie van de configuratievenster](/help/sites-administering/configurations.md) voor meer informatie .
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -53,4 +56,3 @@ Zodra u de vlag van de Diensten van de Inhoud en toegelaten gegevensmodellen in 
 
 * Modellen in opslagplaats
 * Rendering en levering
-

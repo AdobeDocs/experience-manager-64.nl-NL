@@ -1,8 +1,8 @@
 ---
 title: Standaard SSL
-seo-title: Standaard SSL
+seo-title: SSL By Default
 description: Leer hoe u in AEM SSL standaard kunt gebruiken.
-seo-description: Leer hoe u in AEM SSL standaard kunt gebruiken.
+seo-description: Learn how to use SSL by Default in AEM.
 uuid: 262474b0-f5fa-4cff-8727-9f39c5b5f760
 contentOwner: User
 content-type: reference
@@ -10,15 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 exl-id: 07f89673-125b-4205-bc54-c90287a1e9a5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
-# SSL standaard{#ssl-by-default}
+# Standaard SSL{#ssl-by-default}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In een poging om de veiligheid van AEM voortdurend te verbeteren, heeft Adobe een eigenschap genoemd SSL Door Standaard geïntroduceerd. Het doel is het gebruik van HTTPS aan te moedigen om verbinding te maken met AEM instanties.
 
@@ -26,17 +29,17 @@ In een poging om de veiligheid van AEM voortdurend te verbeteren, heeft Adobe ee
 
 U kunt SSL door Standaard te vormen door het relevante Inbox bericht van uw AEM homescherm te klikken. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op **Alles weergeven**. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
 
-Selecteer en open in de lijst de waarschuwing **HTTPS** configureren:
+Selecteer in de lijst de optie **HTTPS configureren** waarschuwing:
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
 >[OPMERKING!]
 >
->Als de **HTTPS** waarschuwing niet aanwezig in Inbox is, kunt u rechtstreeks naar de Tovenaar navigeren HTTPS door naar *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* te gaan
+>Als de **HTTPS configureren** waakzaamheid is niet aanwezig in Inbox, u kunt rechtstreeks aan de Tovenaar navigeren HTTPS door te gaan *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-Voor deze functie is een servicegebruiker met de naam **ssl-service** gemaakt. Zodra u het alarm opent, zult u door de volgende configuratietovenaar worden geleid:
+Een servicegebruiker die **ssl-service** is gemaakt voor deze functie. Zodra u het alarm opent, zult u door de volgende configuratietovenaar worden geleid:
 
-1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de referenties voor de sleutelopslag van de systeemgebruiker **ssl-service** die de persoonlijke sleutel en vertrouwde opslag voor de luisteraar HTTPS zal bevatten.
+1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de referenties voor de **ssl-service** sleutelarchief van de systeemgebruiker dat de persoonlijke sleutel en vertrouwde opslag voor de luisteraar HTTPS zal bevatten.
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
@@ -46,7 +49,7 @@ Voor deze functie is een servicegebruiker met de naam **ssl-service** gemaakt. Z
 
    >[!NOTE]
    >
-   >Zie [deze procedure](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder voor informatie over het genereren van een persoonlijke sleutel en een certificaat voor gebruik met de wizard.
+   >Ga voor informatie over het genereren van een persoonlijke sleutel en een certificaat voor gebruik met de wizard naar [deze procedure](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder.
 
 1. Geef ten slotte de hostnaam HTTPS en de TCP-poort voor de HTTPS-listener op.
 
@@ -93,11 +96,11 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-De servlet zal, net als elke sling POST servlet, met 200 OK of een foutHTTP- statuscode antwoorden. U vindt details over de status in de HTML-hoofdtekst van de reactie.
+De servlet zal, net als elke sling POST servlet, met 200 OK of een foutHTTP- statuscode antwoorden. U kunt meer informatie over de status vinden in de HTML-hoofdtekst van de reactie.
 
 Hieronder staan voorbeelden voor zowel een geslaagde reactie als een fout.
 
-**SUCCESS-VOORBEELD** (status = 200):
+**SUCCESVOORBEELD** (status = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -128,7 +131,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**FOUTVOORBEELD**  (status = 500):
+**FOUTVOORBEELD** (status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -154,10 +157,10 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 U kunt de SSL-installatie ook automatiseren door een pakket te uploaden dat al de volgende vereiste items bevat:
 
-* Het sleutelarchief van de ssl-dienst gebruiker. Dit bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
-* De `GraniteSslConnectorFactory`-configuratie
+* Het sleutelarchief van de ssl-dienst gebruiker. Deze bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
+* De `GraniteSslConnectorFactory` configuratie
 
-### Genereren van een privésleutel/certificaatpaar voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
+### Een privésleutel/certificaatpaar genereren voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
 Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaat in de indeling DER die de SSL-wizard kan gebruiken.
 
@@ -190,13 +193,13 @@ Zet de Persoonlijke Sleutel in het formaat van DER om. De reden hiervoor is dat 
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Tot slot uploadt u **localhostprivate.der** als Private Key en **localhost.crt** als SSL-certificaat in stap 2 van de grafische SSL-wizard die aan het begin van deze pagina wordt beschreven.
+Ten slotte uploadt u de **localhostprivate.der** als persoonlijke sleutel en **localhost.crt** als het SSL-certificaat in stap 2 van de grafische SSL-wizard die aan het begin van deze pagina wordt beschreven.
 
 ### De SSL-configuratie bijwerken via cURL {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->Zie [URL gebruiken met AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL-opdrachten in AEM.
+>Zie [cURL gebruiken met AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
 
 U kunt de SSL-configuratie ook automatiseren met het gereedschap cURL. U kunt dit doen door de configuratieparameters aan dit URL te posten:
 
@@ -221,9 +224,9 @@ Hieronder ziet u de parameters die u kunt gebruiken om de verschillende instelli
 
 >[!NOTE]
 >
->De snelste manier om cURL uit te voeren om de SSL configuratie te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in de argumenten `privatekeyFile` en certificateFile.
+>De snelste manier om cURL uit te voeren om de SSL configuratie te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in het dialoogvenster `privatekeyFile` en certificateFile-argumenten.
 >
->U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor u het cURL bevel met de `-u user:passeword` parameter toevoegt.
+>U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor dat u de opdracht cURL toevoegt aan de opdracht `-u user:passeword` parameter.
 >
 >Een correcte post cURL zou als dit moeten kijken:
 

@@ -1,8 +1,8 @@
 ---
 title: Inhoud-eigenschappen gebruiken om inhoud te exporteren
-seo-title: Inhoud-eigenschappen gebruiken om inhoud te exporteren
+seo-title: Using Content Properties to Export Content
 description: Op de volgende pagina worden App-eigenschappen en -knooppunten weergegeven.
-seo-description: Op de volgende pagina worden App-eigenschappen en -knooppunten weergegeven.
+seo-description: The following page shows App Properties and Nodes.
 uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
@@ -10,27 +10,30 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: 27aa405d-2388-4f91-85d0-1a8709e0d5d0
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 1%
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
 # Inhoud-eigenschappen gebruiken om inhoud te exporteren{#using-content-properties-to-export-content}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-Apps worden vertegenwoordigd als *cq:Pages* in AEM.
+Apps worden weergegeven als *cq:pagina&#39;s* in AEM.
 
-Zij delen de zelfde gemeenschappelijke eigenschappen die in om het even welke *cq worden gevonden:Pagina* naast hieronder getoonde anderen die integratie ondersteunende eigenschappen vertegenwoordigen.
+Ze delen dezelfde gemeenschappelijke eigenschappen die in *cq:pagina* naast de hieronder getoonde andere die integratie ondersteunende eigenschappen vertegenwoordigen.
 
-## Toepassingseigenschappen {#app-properties}
+## App-eigenschappen {#app-properties}
 
-In de volgende tabel worden **App-eigenschappen en -knooppunten** weergegeven.
+De volgende tabel toont **Eigenschappen en knooppunten van app**.
 
 <table>
  <tbody>
@@ -51,22 +54,22 @@ In de volgende tabel worden **App-eigenschappen en -knooppunten** weergegeven.
   </tr>
   <tr>
    <td>dps-projectId</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td><p>Id/URI van het Mobile On-Demand-project waaraan deze app is gekoppeld of gekoppeld.</p> <p>Deze vereniging wordt gevormd via de Manage tegel van de Verbinding wanneer een auteur het project van een lijst van beschikbare projecten voor de bijbehorende Mobiele Cloud Service On-Demand kiest.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>App-titel.</td>
   </tr>
   <tr>
    <td>dps-resourceType</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Inhoudstype.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
-   <td>Date</td>
+   <td>Datum</td>
    <td>Datum van laatste upload van gedeelde bronnen van AEM naar AEM Mobile.</td>
   </tr>
   <tr>
@@ -82,12 +85,12 @@ In de volgende tabel worden **App-eigenschappen en -knooppunten** weergegeven.
   <tr>
    <td>sling:resourceType</td>
    <td>String:Path</td>
-   <td><p>Pad naar een cq:Component die <i>mobileapps/core/components/instance is of uitbreidt.</i></p> <p>Dit biedt de aanwezigheid en rendering in de Apps Catalog.</p> </td>
+   <td><p>Pad naar cq:Component die is of is uitgebreid <i>mobiele apps/core/components/instance.</i></p> <p>Dit biedt de aanwezigheid en rendering in de Apps Catalog.</p> </td>
   </tr>
  </tbody>
 </table>
 
-U kunt ***Inhoudseigenschappen*** gebruiken om inhoud te maken. Zie de volgende bronnen voor het maken en exporteren van artikelen en gedeelde bronnen:
+U kunt ***Eigenschappen van inhoud*** om inhoud te maken. Zie de volgende bronnen voor het maken en exporteren van artikelen en gedeelde bronnen:
 
 * [Eigenschappen van inhoud](/help/mobile/content-properties.md)
 * [Artikel-exportconfiguratie maken](/help/mobile/creating-article-export-configuration.md)

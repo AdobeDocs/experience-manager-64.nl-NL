@@ -1,8 +1,8 @@
 ---
 title: Credential Service Java API QuickStart (SOAP)
-seo-title: Credential Service Java API QuickStart (SOAP)
+seo-title: Credential Service Java API QuickStart(SOAP)
 description: Gebruik de Credential Service Java API om referenties te importeren en te verwijderen.
-seo-description: Gebruik de Credential Service Java API om referenties te importeren en te verwijderen.
+seo-description: Use the Credential Service Java API to import and delete credentials.
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
 exl-id: a81b2360-9d17-46c7-9443-51b366b0724a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
-# Referentieservice Java API Quick Start (SOAP) {#credential-service-java-api-quickstart-soap}
+# Java API Quick Start (SOAP) van Credential Service {#credential-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Java API Quick Start (SOAP) is beschikbaar voor de Credential-service.
 
@@ -39,7 +42,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Referenties importeren met de Java API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een referentie geïmporteerd op basis van een bestand met de naam *cred.p12*. De aliaswaarde die wordt gebruikt om de referentie te importeren, is `Secure`. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+In het volgende codevoorbeeld wordt een referentie geïmporteerd op basis van een bestand met de naam *cred.p12*. De aliaswaarde die wordt gebruikt voor het importeren van de referentie is `Secure`. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```as3
  /* 
@@ -138,9 +141,9 @@ In het volgende codevoorbeeld wordt een referentie geïmporteerd op basis van ee
  
 ```
 
-## Snel starten (SOAP-modus): Bevoegdheden verwijderen met de Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Snel starten (SOAP-modus): Referenties verwijderen met de Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een referentie verwijderd op basis van een aliaswaarde *secure*. (Zie [Referenties verwijderen met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+In het volgende codevoorbeeld wordt een referentie verwijderd op basis van een aliaswaarde *beveiligen*. (Zie [Referenties verwijderen met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```as3
  /* 

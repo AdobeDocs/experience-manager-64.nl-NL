@@ -1,42 +1,45 @@
 ---
 title: Extra gegevens weergeven in de lijst ToDo
-seo-title: Extra gegevens weergeven in de lijst ToDo
+seo-title: Displaying additional data in ToDo list
 description: Hoe te om de vertoning van de te doen lijst van de werkruimte van LiveCycle AEM Forms aan te passen om meer informatie naast het gebrek te tonen.
-seo-description: Hoe te om de vertoning van de te doen lijst van de werkruimte van LiveCycle AEM Forms aan te passen om meer informatie naast het gebrek te tonen.
+seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
 uuid: 4c678d9c-7794-4b62-8705-d62c7780c13f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 exl-id: 42d8472d-0eab-4cf9-a7c3-bf2775ee6bec
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
 # Extra gegevens weergeven in de lijst ToDo {#displaying-additional-data-in-todo-list}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Standaard worden in de lijst Taak-weergavenaam en -beschrijving van de AEM Forms-werkruimte weergegeven. U kunt echter andere gegevens toevoegen, zoals de aanmaakdatum en de einddatum. U kunt ook pictogrammen toevoegen en de stijl van de weergave wijzigen.
 
-![Een blik bij de Te doen lusje van de Werkruimte van HTML die standaardconfiguratie toont](assets/html-todo-list.png)
+![Een blik bij de Te doen lusje van de Werkruimte van de HTML die standaardconfiguratie tonen](assets/html-todo-list.png)
 
 In dit artikel worden de stappen beschreven die moeten worden uitgevoerd om informatie toe te voegen die voor elke taak in de lijst AanDoe moet worden weergegeven.
 
 ## Wat kan worden toegevoegd {#what-can-be-added}
 
-U kunt de informatie toevoegen die beschikbaar is in `task.json` die door de server wordt verzonden. De informatie kan als gewone tekst worden toegevoegd of u kunt stijlen gebruiken om de informatie te formatteren.
+U kunt de informatie toevoegen die beschikbaar is in `task.json` verzonden door de server. De informatie kan als gewone tekst worden toegevoegd of u kunt stijlen gebruiken om de informatie te formatteren.
 
-Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel voor meer informatie over de beschrijving van het JSON-object.
+Zie voor meer informatie over de beschrijving van het JSON-object [dit](/help/forms/using/html-workspace-json-object-description.md) artikel.
 
 ## Informatie weergeven over een taak {#displaying-information-on-a-task}
 
-1. Volg de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Om extra informatie voor een taak te tonen, moeten de overeenkomstige zeer belangrijk-waardeparen binnen het taakblok van `translation.json` worden toegevoegd.
+1. Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Als u aanvullende informatie voor een taak wilt weergeven, moeten de corresponderende sleutel-waardeparen worden toegevoegd binnen het taakblok van `translation.json`.
 
-   Wijzigen `/apps/ws/locales/en-US/translation.json` bijvoorbeeld voor Engels:
+   Bijvoorbeeld wijzigen `/apps/ws/locales/en-US/translation.json` voor het Engels:
 
    ```
    "task" : {
@@ -123,7 +126,7 @@ Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel v
 
 ## CSS definiëren voor de nieuwe eigenschap {#defining-css-for-the-new-property}
 
-1. U kunt stijl toepassen op de informatie (eigenschap) die aan een taak is toegevoegd. Hiervoor moet u stijlinformatie toevoegen voor de nieuwe eigenschap die aan `/apps/ws/css/newStyle.css` is toegevoegd.
+1. U kunt stijl toepassen op de informatie (eigenschap) die aan een taak is toegevoegd. Hiervoor moet u stijlinformatie toevoegen voor de nieuwe eigenschap die is toegevoegd aan `/apps/ws/css/newStyle.css`.
 
    Voeg bijvoorbeeld toe:
 
@@ -144,9 +147,9 @@ Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan d
    * Van: `/libs/ws/js/runtime/templates/`
    * tot: `/apps/ws/js/runtime/templates/`
 
-1. Voeg de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/task.html`.
+1. Nieuwe informatie toevoegen aan `/apps/ws/js/runtime/templates/task.html`.
 
-   Voeg bijvoorbeeld toe onder `div class="taskProperties"`:
+   Bijvoorbeeld, toevoegen onder `div class="taskProperties"`:
 
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

@@ -1,8 +1,8 @@
 ---
 title: Page Diff-optie
-seo-title: Page Diff-optie
+seo-title: Page Diff
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
-seo-description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 1%
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
 # Page Diff-optie{#page-diff}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -28,22 +31,22 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 
 >[!CAUTION]
 >
->Als u een versie voorafgaand aan AEM 6.4.3 in werking stelt, moet de gebruiker **Modify/Create/Delete** toestemming op de knoop `/content/versionhistory` hebben om de eigenschap te gebruiken.
+>Als u een versie uitvoert die ouder is dan AEM 6.4.3, moet de gebruiker beschikken over **Wijzigen/Maken/Verwijderen** toestemming voor het knooppunt `/content/versionhistory` om deze functie te gebruiken.
 >
 >Zie [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) voor meer technische details over deze functie.
 
-## {#use} gebruiken
+## Gebruiken {#use}
 
 De zijdelingse scheiding kan het volgende vergelijken:
 
-* [Versies](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page)  - Eerdere versie van een pagina met de huidige status
-* [Actieve kopieën](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)  - Live kopie met vervaging
-* [Starten](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page)  - Starten met bron
-* [Taalkopieën](/help/sites-administering/tc-manage.md#comparing-language-copies)  - Een pagina voor en na (her)vertaling
+* [Versies](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met de huidige staat
+* [Actieve kopieën](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live kopie met bijbehorende blauwdruk
+* [Starten](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Starten met bron
+* [Taalkopieën](/help/sites-administering/tc-manage.md#comparing-language-copies) - Een pagina voor en na (her)vertaling
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
-### Presentatie van verschillen {#presentation-of-differences}
+### Presentatie van de verschillen {#presentation-of-differences}
 
 Ongeacht de inhoud die wordt vergeleken, blijft de presentatie van het diff gelijk.
 
@@ -56,7 +59,7 @@ De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk bo
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
-De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
+Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
 **Componentwijzigingen**
 
@@ -67,7 +70,7 @@ De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn ge
 
 De kleuren Gewijzigd en Verplaatst zijn hetzelfde.
 
-**HTML-wijzigingen**
+**HTML wijzigen**
 
 * Donkergroen - HTML toegevoegd
 * Rood - HTML verwijderd
@@ -76,7 +79,7 @@ De kleuren Gewijzigd en Verplaatst zijn hetzelfde.
 >
 >Bij het vergelijken van taalkopieën wordt het markeren gedeactiveerd, omdat in een vertaling alles verandert en het markeren geen nut zou hebben.
 
-### Volledig scherm en {#fullscreen-and-exiting} afsluiten
+### Volledig scherm en afsluiten {#fullscreen-and-exiting}
 
 Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om het venster te vergroten naar het volledige browservenster.
 
@@ -102,7 +105,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Het diff kan beeldomwenteling niet ontdekken.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
 
-   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
+   * Als u problemen ondervindt met een diff, controleert u [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
 
 >[!NOTE]
 >
@@ -110,4 +113,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Raadpleeg de [documentatie voor ontwikkelaars](/help/sites-developing/pagediff.md) van deze functie voor meer informatie over de werking van het mechanisme voor paginagecheiding en de beperkingen die paginaafbreking kunnen beïnvloeden.
+>Zie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die invloed kunnen hebben op pagina-diff de [ontwikkelaarsdocumentatie](/help/sites-developing/pagediff.md) van deze functie.

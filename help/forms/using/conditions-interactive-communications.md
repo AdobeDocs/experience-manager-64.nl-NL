@@ -1,29 +1,32 @@
 ---
 title: Voorwaarden voor interactieve communicatie
-seo-title: Voorwaarden voor interactieve communicatie
-description: 'Het creëren en het uitgeven van voorwaardelementen die in Interactieve Mededelingen moeten worden gebruikt - de voorwaarde is één van de vier soorten documentfragmenten die worden gebruikt om Interactieve Mededelingen te bouwen. De andere drie zijn teksten, lijsten, en lay-outfragmenten.  '
-seo-description: Het creëren van en het uitgeven van voorwaarden die in Interactieve Mededelingen moeten worden gebruikt
+seo-title: Conditions in Interactive Communications
+description: Het creëren en het uitgeven van voorwaardelementen die in Interactieve Mededelingen moeten worden gebruikt - de voorwaarde is één van de vier soorten documentfragmenten die worden gebruikt om Interactieve Mededelingen te bouwen. De andere drie zijn teksten, lijsten, en lay-outfragmenten.
+seo-description: Creating and editing conditions to be used in Interactive Communications
 uuid: 93d69398-aead-4e23-8db3-b3e890477113
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3ade2a54-cb9a-4e34-808c-c6feec23cfe1
 feature: Interactive Communication
 exl-id: 0ffb297f-8c5a-4909-b4c0-2d8253548640
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1486'
 ht-degree: 0%
 
 ---
 
-# Voorwaarden in interactieve communicatie {#conditions-in-interactive-communications}
+# Voorwaarden voor interactieve communicatie {#conditions-in-interactive-communications}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Het creëren en het uitgeven van voorwaardelementen die in Interactieve Mededelingen moeten worden gebruikt - de voorwaarde is één van de vier soorten documentfragmenten die worden gebruikt om Interactieve Mededelingen te bouwen. De andere drie zijn teksten, lijsten, en lay-outfragmenten.
 
 ## Overzicht {#overview}
 
-Voorwaarde is een documentfragment dat u kunt opnemen in een interactieve communicatie. De andere documentfragmenten zijn [text](/help/forms/using/texts-interactive-communications.md), list, en lay-outfragment. De voorwaarden laten u toe om één of meerdere contextafhankelijke activa te bepalen die in een Interactieve Mededeling inbegrepen worden die op de verstrekte gegevens en de regels wordt gebaseerd.
+Voorwaarde is een documentfragment dat u kunt opnemen in een interactieve communicatie. De andere documentfragmenten zijn [text](/help/forms/using/texts-interactive-communications.md), lijst en lay-outfragment. De voorwaarden laten u toe om één of meerdere contextafhankelijke activa te bepalen die in een Interactieve Mededeling inbegrepen worden die op de verstrekte gegevens en de regels wordt gebaseerd.
 
 Voorbeelden:
 
@@ -39,7 +42,7 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
 * Wiskundige expressies
 * Datums
 
-## Voorwaarde {#createcondition} maken
+## Voorwaarde maken {#createcondition}
 
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Condition]**.
@@ -48,7 +51,7 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
    * **[!UICONTROL Title]**: (Optioneel) Voer de titel voor de voorwaarde in. Titels hoeven niet uniek te zijn en kunnen speciale tekens en niet-Engelse tekens bevatten. De voorwaarden worden verwezen door hun titels (indien beschikbaar) zoals in duimnagels en eigenschappen.
    * **[!UICONTROL Name]**: De unieke naam voor de voorwaarde, in een map. Geen twee documentfragmenten (tekst, voorwaarde of lijst) in een staat kunnen bestaan met dezelfde naam in een map. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **[!UICONTROL Description]**: Typ een beschrijving van het documentfragment.
-   * **[!UICONTROL Form Data Model]**: Selecteer desgewenst het keuzerondje Formuliergegevensmodel om de voorwaarde te maken op basis van een formuliergegevensmodel. Wanneer u het keuzerondje Formuliergegevensmodel selecteert, wordt het veld **[!UICONTROL Form Data Model*]** weergegeven. Blader naar een formuliergegevensmodel en selecteer dit. Zorg tijdens het creëren van voorwaarde voor een Interactieve Communicatie, dat u het zelfde gegevensmodel gebruikt dat u in Interactieve Communicatie van plan bent te gebruiken. Zie [Gegevensintegratie](/help/forms/using/data-integration.md) voor meer informatie over het formuliergegevensmodel.
+   * **[!UICONTROL Form Data Model]**: Selecteer desgewenst het keuzerondje Formuliergegevensmodel om de voorwaarde te maken op basis van een formuliergegevensmodel. Wanneer u het keuzerondje Formuliergegevensmodel selecteert, **[!UICONTROL Form Data Model*]** wordt weergegeven. Blader naar een formuliergegevensmodel en selecteer dit. Zorg tijdens het creëren van voorwaarde voor een Interactieve Communicatie, dat u het zelfde gegevensmodel gebruikt dat u in Interactieve Communicatie van plan bent te gebruiken. Zie voor meer informatie over het formuliergegevensmodel [Gegevensintegratie](/help/forms/using/data-integration.md).
    * **[!UICONTROL Tags]**: Als u een aangepaste tag wilt maken, typt u een waarde in het tekstveld en tikt u op Enter. Wanneer u deze voorwaarde opslaat, worden de nieuwe tags gemaakt.
 
 1. Tik op **[!UICONTROL Next]**.
@@ -65,7 +68,7 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
    >
    >Alleen op basis van geen gemaakte, nieuw gemaakte elementen en op FDM gebaseerde elementen (die zijn gemaakt met dezelfde FDM als de voorwaarde die wordt gemaakt) worden weergegeven op de pagina Elementen selecteren.
 
-1. Tik op de desbetreffende elementen om deze te selecteren en tik vervolgens op **[!UICONTROL Done]**.
+1. Tik op de juiste middelen om deze te selecteren en vervolgens op te nemen in de voorwaarde **[!UICONTROL Done]**.
 
    De pagina Voorwaarde maken wordt weergegeven met de toegevoegde elementen.
 
@@ -88,9 +91,9 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
    U kunt de volgende opties selecteren om op te geven hoe de voorwaarde zich gedraagt bij uitvoering:
 
    * **Meerdere resultaten evaluatie uitgeschakeld\Meerdere resultaten evaluatie ingeschakeld**: Wanneer deze optie wordt toegelaten (verschijnt als &quot;Meerdere Resultaten Toegelaten Evaluatie), worden alle regels geëvalueerd en het resultaat is de som van alle ware regels. Als deze optie is uitgeschakeld (wordt &#39;&#39;Multiple Results Evaluation Disabled&#39; weergegeven), wordt alleen de eerste regel die waar wordt gevonden, geëvalueerd en wordt deze de uitvoer van de voorwaarde.
-   * **Pagina-einde**: Selecteer deze optie ( ![onderbreking](assets/break.png)) om een pagina-einde tussen de elementen van de voorwaarden toe te voegen. Als deze optie niet is geselecteerd ( ![nobreak](assets/nobreak.png)) en een voorwaarde overloopt naar de volgende pagina in de afgedrukte uitvoer, wordt de hele voorwaarde verplaatst naar de volgende pagina in plaats van de pagina te verbreken tussen de elementen in de voorwaarde.
+   * **Pagina-einde**: Selecteer deze optie ( ![break](assets/break.png)) om een pagina-einde toe te voegen tussen de elementen van de voorwaarden. Wanneer deze optie niet is geselecteerd ( ![noord](assets/nobreak.png)), als een voorwaarde overloopt naar de volgende pagina in de afdrukuitvoer, wordt de hele voorwaarde verplaatst naar de volgende pagina in plaats van de pagina tussen de elementen in de voorwaarde te verbreken.
 
-1. Tik **[!UICONTROL Create Rule]** om regels toe te voegen om de elementen weer te geven of te verbergen. Zie [Variabelen maken](#variables) om variabelen in de regels te gebruiken. Zie [Regels toevoegen aan voorwaarde](#ruleeditor) voor meer informatie.
+1. Tikken **[!UICONTROL Create Rule]** om regels toe te voegen om de elementen weer te geven of te verbergen. Als u variabelen in de regels wilt gebruiken, raadpleegt u [variabelen maken](#variables). Zie voor meer informatie [Regels toevoegen aan voorwaarde](#ruleeditor).
 
    De gemaakte regels worden weergegeven in de kolom REGEL in het scherm Voorwaarde maken.
 
@@ -108,35 +111,35 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
    >
    >Als u een nieuwe of bewerkte voorwaarde wilt opslaan, moet u ten minste één regel hebben voor elk element dat in de voorwaarde is toegevoegd.
 
-## Een voorwaarde {#edit-a-condition} bewerken
+## Een voorwaarde bewerken {#edit-a-condition}
 
 U kunt een voorwaarde bewerken door de volgende stappen uit te voeren. U kunt een voorwaarde ook bewerken vanuit een interactieve communicatie door Fragment bewerken te selecteren in het pop-upmenu.
 
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Navigeer naar de voorwaarde en selecteer deze.
 1. Tik op **[!UICONTROL Edit]**.
-1. Breng de gewenste wijzigingen aan in de voorwaarde. Zie [Voorwaarde maken](#createcondition) voor meer informatie over de informatie die u in een voorwaarde kunt wijzigen.
-1. Tik **[!UICONTROL Save]** en tik **[!UICONTROL Close]**.
+1. Breng de gewenste wijzigingen aan in de voorwaarde. Voor meer informatie over de informatie kunt u in een voorwaarde veranderen, zie [Voorwaarde maken](#createcondition).
+1. Tikken **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]**.
 
-## Regels maken in voorwaarde {#ruleeditor}
+## Voorwaardelijke regels maken {#ruleeditor}
 
-Gebruikend regelredacteur in een voorwaarde, kunt u regels tot stand brengen om activa te tonen of te verbergen die op **vooraf ingestelde voorwaarden** worden gebaseerd. Deze voorwaarden kunnen worden geconstrueerd op basis van:
+Gebruikend regelredacteur in een voorwaarde, kunt u regels tot stand brengen om activa te tonen of te verbergen die op worden gebaseerd **vooraf ingestelde voorwaarden**. Deze voorwaarden kunnen worden geconstrueerd op basis van:
 
 * Tekenreeksen
 * Getallen
 * Wiskundige expressies
 * Datums
 * Eigenschappen van gekoppeld formuliergegevensmodel
-* Eventuele [variabelen](#variables) die u hebt gemaakt
+* Alle [variabelen](#variables) die u hebt gemaakt
 
 ### Regel maken in voorwaarde {#create-rule-in-condition}
 
-1. Tik tijdens het maken of bewerken van een voorwaarde op ![ruleeditorpictogram](assets/ruleeditoricon.png) (Regeleditor)-pictogram voor het desbetreffende element.
+1. Tik tijdens het maken of bewerken van een voorwaarde op ![ruleeditoricon](assets/ruleeditoricon.png) (Redacteur van de Regel) pictogram voor de relevante activa.
 
    Het dialoogvenster Regel maken wordt weergegeven. Naast tekenreeks, nummer, wiskundige expressie en datum zijn in de Regeleditor ook de volgende opties beschikbaar voor het maken van instructies van de regels:
 
    * Eigenschappen van gekoppeld formuliergegevensmodel
-   * Eventuele [variabelen](#variables) die u hebt gemaakt.
+   * Alle [variabelen](#variables) die u hebt gemaakt.
 
    ![createruleus](assets/createruledialog.png)
 
@@ -153,25 +156,25 @@ Gebruikend regelredacteur in een voorwaarde, kunt u regels tot stand brengen om 
 
    Regel om een element te tonen wanneer het beleidstype standaard is
 
-   * Tijdens het creëren van of het uitgeven van een regel, kunt u ![icon_resize](assets/icon_resize.png) (Resize) ook tikken om de Create Regel/Edit dialoog van de Regel uit te breiden. Met het uitgebreide dialoogvenster voor een volledig venster kunt u [variabelen](#variables) maken om regels samen te stellen. Tik nogmaals op Vergroten/verkleinen om terug te keren naar het normale dialoogvenster Regel maken.
+   * Tijdens het maken of bewerken van een regel kunt u ook tikken op ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken/regel bewerken uit te vouwen. Met het uitgebreide dialoogvenster voor een volledig venster kunt u [variabelen](#variables) om regels samen te stellen. Tik nogmaals op Vergroten/verkleinen om terug te keren naar het normale dialoogvenster Regel maken.
    * U kunt ook meerdere voorwaarden in een regel maken.
 
 1. Tik op **[!UICONTROL Done]**.
 
    De regel wordt toegepast op het element.
 
-## Variabelen maken en gebruiken in een voorwaarde {#variables}
+## Variabelen in een voorwaarde maken en gebruiken {#variables}
 
-Tijdens het creëren van of het uitgeven van een regel in een voorwaarde, kunt u ![icon_resize](assets/icon_resize.png) (Resize) tikken om de Create Regel uit te breiden \ geeft de dialoog van de Regel uit. Met het uitgebreide dialoogvenster voor een volledig venster kunt u:
+Tijdens het maken of bewerken van een regel in een voorwaarde kunt u tikken op ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken uit te vouwen.\n Met het uitgebreide dialoogvenster voor een volledig venster kunt u:
 
 * Variabelen in de regel maken en gebruiken
 * De eigenschappen en variabelen van het formuliergegevensmodel slepen en neerzetten in de regel
 
 Tik nogmaals op Vergroten/verkleinen om terug te keren naar het dialoogvenster Regel maken.\Bewerk regel.
 
-### Variabelen {#create-variables} maken
+### Variabelen maken {#create-variables}
 
-1. Wanneer u een regel maakt of bewerkt in een voorwaarde, kunt u ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) tikken om het dialoogvenster Regel maken/Regel bewerken uit te vouwen.
+1. Tijdens het maken of bewerken van een regel in een voorwaarde kunt u tikken op ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken/regel bewerken uit te vouwen.
 
    Het dialoogvenster Uitgebreid en volledig venster wordt weergegeven.
 
@@ -187,18 +190,18 @@ Tik nogmaals op Vergroten/verkleinen om terug te keren naar het dialoogvenster R
 
    Het deelvenster Variabelen maken wordt weergegeven.
 
-1. Voer de volgende informatie in en tik **[!UICONTROL Create]**:
+1. Voer de volgende gegevens in en tik op **[!UICONTROL Create]**:
 
    * **[!UICONTROL Name*]**: Naam van de variabele.
    * **[!UICONTROL Description]**: Voer desgewenst een beschrijving van de variabele in.
    * **[!UICONTROL Type*]**: Selecteer een type variabele: Tekenreeks, Aantal, Boolean of Datum.
-   * **[!UICONTROL Allow Specific Values Only]**: Voor de variabelen van het Koord en van het Aantal, kunt u ervoor zorgen dat de agent van een specifieke reeks waarden voor placeholder in de Agent UI kiest. Als u de reeks waarden wilt opgeven, selecteert u deze optie en geeft u door komma&#39;s gescheiden waarden op die zijn toegestaan in het veld **[!UICONTROL Values*]**.
+   * **[!UICONTROL Allow Specific Values Only]**: Voor de variabelen van het Koord en van het Aantal, kunt u ervoor zorgen dat de agent van een specifieke reeks waarden voor placeholder in de Agent UI kiest. Als u de reeks waarden wilt opgeven, selecteert u deze optie en geeft u door komma&#39;s gescheiden waarden op die zijn toegestaan in het dialoogvenster **[!UICONTROL Values*]** veld.
 
 1. Tik op **[!UICONTROL Create]**.
 
    De variabele wordt gemaakt en vermeld in het deelvenster Variabelen.
 
 1. Als u een variabele in de regel wilt invoegen, sleept u de variabele naar een tijdelijke aanduiding voor een optie in de regel.
-1. Tik **[!UICONTROL Done]** nadat u een geldige regel hebt gemaakt.
+1. Tik op **[!UICONTROL Done]**.
 
    Ga zo nodig verder met het aanbrengen van wijzigingen in de voorwaarde en sla deze op.

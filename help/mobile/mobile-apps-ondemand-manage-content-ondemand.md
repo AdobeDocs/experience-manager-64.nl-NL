@@ -1,8 +1,8 @@
 ---
 title: Inhoud beheren
-seo-title: Inhoud beheren
+seo-title: Managing Content
 description: De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. Volg deze pagina voor meer informatie.
-seo-description: De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. Volg deze pagina voor meer informatie.
+seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn more.
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
@@ -10,37 +10,40 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 exl-id: 2721826e-fbe8-461a-9d44-a26a099005b5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
 # Inhoud beheren{#managing-content}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
-## Inhoudsoverzicht {#content-overview}
+## Overzicht van inhoud {#content-overview}
 
 Als u aan een online tijdschrift denkt, omvat de belangrijkste inhoud artikelen, advertenties, en de omslagen. Binnen AEM kunnen drie hoofdtypen mobiele on-demand-inhoud worden gemaakt:
 
 * **Artikelen**: tekst die is gebaseerd op illustraties om informatie over te brengen
-* **Banners:** doorgaans grafische promotiekoppelingen
-* **Verzamelingen:** vertegenwoordigen een goed gedefinieerde  ** bucketketvulling met inhoud, zoals artikelen of banners, die het thema van de omslag aanpast
+* **Banners:** typisch grafische promotionele verbindingen
+* **Verzamelingen:** een goed gedefinieerde *emmer* gevuld met inhoud, zoals artikelen of banners die het thema van de omslag uitpakken
 
-* **Gedeelde bronnen:** kan gemeenschappelijke onderdelen opnieuw gebruiken of delen in artikelen
+* **Gedeelde bronnen:** staat hergebruik of het delen van gemeenschappelijke stukken over artikelen toe
 
 >[!NOTE]
 >
->Raadpleeg [Ontwerpoverwegingen voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in de online Help voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps.
+>Ga voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps naar [Ontwerpaspecten voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in online Help.
 
-## Inhoud {#creating-and-managing-content} maken en beheren
+## Inhoud maken en beheren {#creating-and-managing-content}
 
 De volgende onderwerpen beschrijven het creëren en het beheer van inhoud, namelijk artikelen, banners, en inzamelingen. Als u eenmaal hebt geleerd hoe u de inhoud kunt maken en beheren, kunt u aanvullende onderwerpen zien, zoals het uploaden van gedeelde bronnen, het publiceren/verwijderen van inhoud en het voorvertonen met Preflight.
 
@@ -52,7 +55,7 @@ De volgende onderwerpen beschrijven het creëren en het beheer van inhoud, namel
 
 >[!NOTE]
 >
->Meestal moet u Preflight uitvoeren voordat u inhoud publiceert. Zie [Voorvertonen met Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md) voor meer informatie.
+>Meestal moet u Preflight uitvoeren voordat u inhoud publiceert. Zie [Voorvertonen met Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md) voor meer informatie .
 
 ### Aanvullende bronnen {#additional-resources}
 

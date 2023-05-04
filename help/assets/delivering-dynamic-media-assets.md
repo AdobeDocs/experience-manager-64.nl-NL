@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media-middelen leveren
-seo-title: Dynamic Media-middelen leveren
+seo-title: Delivering Dynamic Media Assets
 description: Leer hoe u dynamische media-elementen kunt leveren
-seo-description: Leer hoe u dynamische media-elementen kunt leveren
+seo-description: Learn how to deliver dynamic media assets
 uuid: e87754a9-4c34-4658-9971-cd7ceb26523f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,16 +10,20 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 10%
+source-wordcount: '353'
+ht-degree: 9%
 
 ---
 
 # Dynamic Media-middelen leveren {#delivering-dynamic-media-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Hoe u dynamische media-elementen kunt leveren (zowel video als afbeeldingen), hangt af van de manier waarop uw website is geïmplementeerd.
 
@@ -34,7 +38,7 @@ Met Dynamic Media hebt u verschillende opties:
 
 >[!NOTE]
 >
->Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme beeldverwerking](imaging-faq.md) voor meer informatie.
+>Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme afbeeldingen](imaging-faq.md) voor meer informatie .
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
@@ -52,4 +56,4 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 
 AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
 
-Zie [HTTP/2 Levering van Inhoud Veelgestelde Vragen](/help/sites-administering/scene7-http2faq.md) om meer te leren.
+Zie [HTTP/2 Levering van inhoud Veelgestelde Vragen](/help/sites-administering/scene7-http2faq.md) voor meer informatie.

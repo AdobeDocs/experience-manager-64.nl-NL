@@ -1,8 +1,8 @@
 ---
 title: Componenten, functies en essentiële functies
-seo-title: Componenten, functies en essentiële functies
+seo-title: Component, Function and Feature Essentials
 description: De werking van gemeenschapssites, sjablonen en groepen
-seo-description: De werking van gemeenschapssites, sjablonen en groepen
+seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: bde29d3a-8bc8-4c30-b764-a2fa1ac34069
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '245'
 ht-degree: 2%
 
 ---
 
-# Elementen van componenten, functies en functies {#component-function-and-feature-essentials}
+# Componenten, functies en essentiële functies {#component-function-and-feature-essentials}
 
-Voor AEM Communities-functies moeten bezoekers lid worden van de site en zich aanmelden bij de [communitysite](overview.md#communitiessites) voordat ze inhoud kunnen posten. Zo worden [communitysitesjablonen](sites.md), waarvan een community-site [gemaakt](sites-console.md) is, ontworpen om een aanmeldingsfunctie en gebruikersprofielen, berichten, zoeken, modereren en vertalen op te nemen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Een communautaire plaats zal leden steunen die communautaire groepen creëren wanneer [communitygroepenfunctie](functions.md#groups-function) in het geselecteerde malplaatje van de communautaire plaats inbegrepen is.
+Voor AEM Communities-functies moeten sitebezoekers lid worden en zich aanmelden bij de [community-site](overview.md#communitiessites) voordat u inhoud kunt plaatsen. Daarom [communitysjablonen](sites.md), waarvan een communautaire site [gemaakt](sites-console.md), zijn ontworpen om een aanmeldingsfunctie en gebruikersprofielen, berichten, zoeken, modereren en vertalen op te nemen.
+
+Een site van een gemeenschap ondersteunt leden die groepen van gemeenschappen maken wanneer de [gemeenschapsgroepfunctie](functions.md#groups-function) is opgenomen in het geselecteerde sjabloon voor de communitysite.
 
 Hieronder vindt u koppelingen naar essentiële informatie voor onderdelen, functies en kenmerken van de Gemeenschappen.
 
@@ -41,7 +44,7 @@ Hieronder vindt u koppelingen naar essentiële informatie voor onderdelen, funct
 
 * [Activiteitsstromen](essentials-activities.md)
 * [Toewijzingen](essentials-assignments.md)
-* [Blog](blog-developer-basics.md) (  `Journal`)
+* [Blog](blog-developer-basics.md) ( `Journal`)
 
 * [Kalender](calendar-basics-for-developers.md)
 * [Catalogus](catalog-developer-essentials.md)
@@ -70,10 +73,10 @@ Hieronder vindt u koppelingen naar essentiële informatie voor onderdelen, funct
 
 ## Javadocs {#javadocs}
 
-De [online javadocs](../../help/sites-developing/reference-materials.md) weerspiegelen de API&#39;s die beschikbaar zijn in de AEM 6.3-release.\
-Community API&#39;s bevinden zich in pakketten `com.adobe.cq.social.*`.
+De [online javadocs](../../help/sites-developing/reference-materials.md) weerspiegelt de API&#39;s die beschikbaar zijn in de AEM 6.3-release.\
+Community API&#39;s bevinden zich in `com.adobe.cq.social.*` pakketten.
 
-Voor elk [functiepak](deploy-communities.md#latestfeaturepack), wordt een javadoc jar ter beschikking gesteld. Voor meer informatie, bezoek [Gebruikend Gemaakt voor Gemeenschappen](maven.md#javadocs).
+Voor elke [functiepakket](deploy-communities.md#latestfeaturepack), wordt een jar van javadoc beschikbaar gesteld. Ga voor meer informatie naar [Maven gebruiken voor Gemeenschappen](maven.md#javadocs).
 
 ## Aanvullende informatie {#additional-information}
 

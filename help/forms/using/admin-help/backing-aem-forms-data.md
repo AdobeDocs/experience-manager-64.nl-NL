@@ -1,8 +1,8 @@
 ---
 title: Back-ups maken van de AEM formuliergegevens
-seo-title: Back-ups maken van de AEM formuliergegevens
+seo-title: Backing up the AEM forms data
 description: In dit document worden de stappen beschreven die vereist zijn om een hot of online back-up te maken van de AEM formulierdatabase, de GDS- en inhoudsopslaghoofddirectory's.
-seo-description: In dit document worden de stappen beschreven die vereist zijn om een hot of online back-up te maken van de AEM formulierdatabase, de GDS- en inhoudsopslaghoofddirectory's.
+seo-description: This document describes the steps that are required to complete a hot, or online, backup of the AEM forms database, the GDS, and Content Storage Root directories.
 uuid: ac7856be-e3b7-4b81-b8b9-fc909b5907b4
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 exl-id: d86cf58f-6595-4f37-977f-09437a7f89f9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
 
-# Back-up maken van de AEM formuliergegevens {#backing-up-the-aem-forms-data}
+# Back-ups maken van de AEM formuliergegevens {#backing-up-the-aem-forms-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In deze sectie worden de stappen beschreven die vereist zijn om een hot-of online back-up te maken van de AEM formulierdatabase, de GDS- en inhoudsopslaghoofddirectory&#39;s.
 
@@ -38,20 +41,20 @@ Als de database wordt uitgevoerd in een logmodus, zoals beschreven in de vorige 
 >
 >Bestanden waarnaar niet wordt verwezen, blijven mogelijk na het herstelproces in de GDS-map staan. Dit is op dit moment een bekende beperking.
 
-## Back-ups maken van de mappen {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories} voor database, GDS, AEM opslagplaats en Content Storage Root
+## Maak een back-up van de directory&#39;s database, GDS, AEM opslagplaats en Content Storage Root {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 U moet AEM formulieren in de modus voor veilige back-ups (momentopnamen) of in de modus voor rolback-ups (doorlopende dekking) plaatsen. Voordat u AEM formulieren instelt op een van de back-upmodi, moet u het volgende controleren:
 
 * Controleer de systeemversie en registreer de patches of updates die zijn toegepast sinds de laatste volledige back-up van het image van het systeem is uitgevoerd.
-* Als u het rollen of momentopnamemodesteunen gebruikt, zorg ervoor dat uw gegevensbestand met de correcte logboekmontages wordt gevormd om voor hete steunen van het gegevensbestand toe te staan. (Zie [AEM formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
+* Als u of het rollen of momentopnamemodesteunen gebruikt, zorg ervoor dat uw gegevensbestand met de correcte logboekmontages wordt gevormd om voor hete steunen van het gegevensbestand toe te staan. (Zie [AEM formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
 
 Daarnaast moet u de volgende richtlijnen voor het back-up-/herstelproces in acht nemen.
 
 * Maak een back-up van de GDS-map met behulp van een beschikbaar besturingssysteem of een back-uphulpprogramma van derden. (Zie [GDS-locatie](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
-* (Optioneel) Maak een back-up van de hoofdmap van de Content Storage met behulp van een beschikbaar besturingssysteem of een externe back-up en hulpprogramma. (Zie [Hoofdlocatie van inhoudsopslag (zelfstandige omgeving)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) of [Hoofdlocatie van inhoudsopslag (geclusterde omgeving)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Back-up maken   auteur- en publicatieinstanties ( crx -repository backup).
+* (Optioneel) Maak een back-up van de hoofdmap van de Content Storage met behulp van een beschikbaar besturingssysteem of een externe back-up en hulpprogramma. (Zie [Locatie van opslaghoofdmap voor inhoud (zelfstandige omgeving)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) of [Hoofdlocatie voor opslag van inhoud (geclusterde omgeving)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
+* Maak een back-up van auteur- en publicatieinstanties ( crx -repository backup).
 
-   Als u een back-up wilt maken van de Correspondence Management Solution-omgeving, voert u de stappen uit op de auteur en publiceert u exemplaren zoals beschreven in [Back-up en herstel](/help/sites-administering/backup-and-restore.md).
+   Als u een back-up wilt maken van de Correspondentenbeheeroplossing, voert u de stappen uit op de auteur en publiceert u instanties zoals beschreven in [Back-up en herstel](/help/sites-administering/backup-and-restore.md).
 
    Houd rekening met de volgende punten wanneer u een back-up maakt van de auteur en instanties publiceert:
 
@@ -73,7 +76,7 @@ Deze artikelen bieden richtlijnen voor basisdatabasefuncties voor het maken van 
 >
 >De databaseback-up moet voltooid zijn voordat u begint met het maken van een back-up van de GDS. Als de back-up van de database niet is voltooid, zijn de gegevens niet gesynchroniseerd.
 
-### De back-upmodi {#entering-the-backup-modes} invoeren
+### De back-upmodi invoeren {#entering-the-backup-modes}
 
 U kunt ofwel de beheerconsole, de LCBackupMode-opdracht, ofwel de API die beschikbaar is bij de installatie van AEM formulieren gebruiken om de back-upmodi in en uit te voeren. Merk op dat voor het rollen steun (ononderbroken dekking), de optie van de beleidsconsole niet beschikbaar is; U moet de opdrachtregeloptie of de API gebruiken. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
 
@@ -91,15 +94,15 @@ U kunt ofwel de beheerconsole, de LCBackupMode-opdracht, ofwel de API die beschi
 
 **De opdrachtregeloptie gebruiken om de veilige back-upmodus te activeren**
 
-Met de opdrachtregelinterface `LCBackupMode`-scripts kunt u AEM formulieren in de veilige back-upmodus plaatsen.
+U kunt de opdrachtregelinterface gebruiken `LCBackupMode` scripts om AEM formulieren in de veilige back-upmodus te zetten.
 
 1. Stel ADOBE_LIVECYCLE in en start de toepassingsserver.
-1. Ga naar de `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` omslag.
-1. Afhankelijk van uw besturingssysteem kunt u het script `LCBackupMode.cmd` of `LCBackupMode.sh` bewerken om standaardwaarden op te geven die geschikt zijn voor uw systeem.
+1. Ga naar de `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` map.
+1. Afhankelijk van uw besturingssysteem kunt u de opdracht `LCBackupMode.cmd` of `LCBackupMode.sh` gebruiken om standaardwaarden op te geven die geschikt zijn voor uw systeem.
 1. Bij de bevelherinnering, stel het volgende bevel op één enkele lijn in werking:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*hostnaam* `] [-port=`*portnumber* `] [-user=`*gebruikersnaam* `] [-password=`*wachtwoord* `] [-label=`*labelnaam* `] [-timeout=`*seconds* `]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostnaam* `] [-port=`*poortnummer* `] [-user=`*gebruikersnaam`] [-password=`* *wachtwoord* `] [-label=`*labelnaam* `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*hostnaam* `] [-port=`*portnumber* `] [-user=`*gebruikersnaam* `] [-password=`*password* `] [-label=`*labelnaam* `] [-timeout=`*seconden* `]`
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostnaam* `] [-port=`*portnumber* `] [-user=`*gebruikersnaam* `] [-password=`*password* `] [-label=`*labelnaam* `]`
 
    In de vorige opdrachten worden de plaatsaanduidingen als volgt gedefinieerd:
 
@@ -117,7 +120,7 @@ Met de opdrachtregelinterface `LCBackupMode`-scripts kunt u AEM formulieren in d
 
    Zie het Leesmij-bestand in de map BackupRestoreCommandline voor meer informatie over de opdrachtregelinterface naar de back-upmodus.
 
-### Back-upmodi {#leaving-backup-modes} laten staan
+### Back-upmodi verlaten {#leaving-backup-modes}
 
 U kunt of de beleidsconsole of de optie van de bevellijn gebruiken om reservewijzen te verlaten.
 
@@ -133,17 +136,17 @@ Om de Console van het Beleid te gebruiken om AEM vormen uit veilige reservewijze
 
 U kunt de opdrachtregelinterface gebruiken om AEM formulieren uit de veilige back-upmodus te halen (modus voor momentopnamen) of om de huidige back-upmodussessie te beëindigen (modus rollen). Merk op dat u niet de beleidsconsole kunt gebruiken om het rollen reservewijze te verlaten. In de schuifmodus voor back-ups zijn de besturingselementen voor back-uphulpprogramma&#39;s in de beheerconsole uitgeschakeld. U moet de API-aanroep gebruiken of de opdracht LCBackupMode gebruiken.
 
-1. Ga naar de `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` omslag.
-1. Afhankelijk van uw besturingssysteem kunt u het script `LCBackupMode.cmd` of `LCBackupMode.sh` bewerken om standaardwaarden op te geven die geschikt zijn voor uw systeem.
+1. Ga naar de `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` map.
+1. Afhankelijk van uw besturingssysteem kunt u de opdracht `LCBackupMode.cmd` of `LCBackupMode.sh` gebruiken om standaardwaarden op te geven die geschikt zijn voor uw systeem.
 
    >[!NOTE]
    >
-   >U moet de directory JAVA_HOME instellen zoals beschreven in het betreffende hoofdstuk voor uw toepassingsserver in [Voorbereiden op installatie van AEM formulieren](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >U moet de directory JAVA_HOME instellen zoals beschreven in het betreffende hoofdstuk voor uw toepassingsserver in [Installatie van AEM formulieren voorbereiden](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Voer de volgende opdracht op één regel uit:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostnaam* `] [-port=`*poortnummer* `] [-user=`*gebruikersnaam* `] [-password=`*wachtwoord* `]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostnaam* `] [-port=`*poortnummer* `] [-user=`*gebruikersnaam* `] [-password=`*wachtwoord* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostnaam* `] [-port=`*portnumber* `] [-user=`*gebruikersnaam* `] [-password=`*password* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostnaam* `] [-port=`*portnumber* `] [-user=`*gebruikersnaam* `] [-password=`*password* `]`
 
       In de vorige opdrachten worden de plaatsaanduidingen als volgt gedefinieerd:
 

@@ -1,32 +1,35 @@
 ---
 title: Inline styling van adaptieve formuliercomponenten
-seo-title: Inline CSS-eigenschappen voor adaptieve formuliercomponenten
+seo-title: Inline CSS properties for adaptive form components
 description: U kunt aangepaste stijlen toepassen op een adaptief formulier, maar u kunt ook inline CSS-eigenschappen toepassen op afzonderlijke componenten van een adaptief formulier.
-seo-description: U kunt aangepaste stijlen toepassen op een adaptief formulier, maar u kunt ook inline CSS-eigenschappen toepassen op afzonderlijke componenten van een adaptief formulier.
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 feature: Adaptive Forms
 exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 1%
+source-wordcount: '562'
+ht-degree: 0%
 
 ---
 
 # Inline styling van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
-U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met de themaeditor](/help/forms/using/themes.md). [ Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met [themaeditor](/help/forms/using/themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
 
 ## Inline CSS-eigenschappen toepassen {#apply-inline-css-properties}
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Tik op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl** om de modus te wijzigen in de opmaakmodus.
-1. Selecteer een component op de pagina en tik op de bewerkknop ![edit-button](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
+1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Tik op de pagina op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
+1. Selecteer een component op de pagina en tik op de knop Bewerken ![bewerken, knop](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
 
@@ -44,7 +47,7 @@ Inline stijlen toevoegen aan een component:
    * Geavanceerd (hiermee kunt u aangepaste CSS voor de component schrijven)
 
 1. Op dezelfde manier kunt u stijlen toepassen op andere delen van een component, zoals Widget, Bijschrift en Help.
-1. Tik **Done** om de wijzigingen te bevestigen of **Cancel** om de wijzigingen te verwijderen.
+1. Tikken **Gereed** om de wijzigingen te bevestigen of **Annuleren** om de wijzigingen te verwijderen.
 
 ## Voorbeeld: inline stijlen voor een veldcomponent {#example-inline-styles-for-a-field-component}
 
@@ -79,7 +82,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
   <tr> 
    <td><p>Label</p> </td> 
    <td><p>Afmetingen en positie &gt; breedte</p> </td> 
-   <td><p>100 px</p> </td> 
+   <td><p>100px</p> </td> 
    <td><p>Hiermee stelt u de breedte in op 100 px voor het label</p> </td> 
   </tr> 
   <tr> 
@@ -91,14 +94,14 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
   <tr> 
    <td><p>Lange beschrijving</p> </td> 
    <td><p>text-align</p> </td> 
-   <td><p>center</p> </td> 
+   <td><p>midden</p> </td> 
    <td><p>Lijnt de lange beschrijving voor het centreren uit</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-![Stijl van tekstvak na inline-opmaak wordt ](assets/applied-style.png)
-**toegepastFiguur:component** *Tekstvak na toepassing van inline-stijleigenschappen*
+![Stijl van tekstvak nadat inline-opmaak is toegepast](assets/applied-style.png)
+**Afbeelding:** *Component van tekstvak na toepassen van inline-stijleigenschappen*
 
 Na de bovenstaande stappen kunt u andere componenten selecteren en opmaken, zoals deelvensters, verzendknoppen en keuzerondjes.
 

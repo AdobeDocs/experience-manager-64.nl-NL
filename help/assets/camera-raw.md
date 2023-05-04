@@ -5,16 +5,20 @@ contentOwner: AG
 feature: Developer Tools
 role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
 # Camera Raw gebruiken om afbeeldingen te verwerken {#camera-raw-support}
 
-U kunt de Camera Raw ondersteuning inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en het renderen van afbeeldingen in JPEG-indeling. De functionaliteit wordt ondersteund in Adobe Experience Manager Assets met behulp van het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is bij Softwaredistributie.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+U kunt de Camera Raw ondersteuning inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en het renderen van afbeeldingen in de JPEG-indeling. De functionaliteit wordt ondersteund in Adobe Experience Manager Assets met de [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) beschikbaar bij Softwaredistributie.
 
 >[!NOTE]
 >
@@ -22,28 +26,28 @@ U kunt de Camera Raw ondersteuning inschakelen voor het verwerken van Raw-bestan
 
 Ga als volgt te werk om Camera Raw ondersteuning in Adobe Experience Manager Assets in te schakelen:
 
-1. Download het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van de Distributie van de Software.
+1. Download de [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van de Distributie van de Software.
 
 1. Ga naar `https://[aem_server]:[port]/workflow`. Open de **[!UICONTROL DAM Update Asset]** workflow.
 
-1. Open de stap **[!UICONTROL Process Thumbnails]**.
+1. Open de **[!UICONTROL Process Thumbnails]** stap.
 
-1. Geef de volgende configuratie op het tabblad **[!UICONTROL Thumbnails]** op:
+1. Geef de volgende configuratie op in de **[!UICONTROL Thumbnails]** tab:
 
    * **[!UICONTROL Thumbnails]**: `140:100:false, 48:48:false, 319:319:false`
-   * **[!UICONTROL Skip Mime Types]**:  `skip:image/dng, skip:image/x-raw-(.*)`
+   * **[!UICONTROL Skip Mime Types]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![schil](assets/chlimage_1-334.png)
 
-1. Geef op het tabblad **[!UICONTROL Web Enabled Image]** in het veld **[!UICONTROL Skip List]** `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)` op.
+1. In de **[!UICONTROL Web Enabled Image]** tabblad, in het dialoogvenster **[!UICONTROL Skip List]** veld, specificeren `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![schil](assets/chlimage_1-335.png)
 
-1. Voeg vanuit het zijpaneel de stap **[!UICONTROL Camera Raw/DNG Handler]** onder de stap **[!UICONTROL Thumbnail creation]** toe.
+1. Voeg vanuit het zijpaneel de **[!UICONTROL Camera Raw/DNG Handler]** stap onder de **[!UICONTROL Thumbnail creation]** stap.
 
-1. Voeg in de stap **[!UICONTROL Camera Raw/DNG Handler]** de volgende configuratie toe op het tabblad **[!UICONTROL Arguments]**:
+1. In de **[!UICONTROL Camera Raw/DNG Handler]** stap, voeg de volgende configuratie in toe **[!UICONTROL Arguments]** tab:
 
-   * **[!UICONTROL Mime Types]**:  `image/dng` en  `image/x-raw-(.*)`
+   * **[!UICONTROL Mime Types]**: `image/dng` en `image/x-raw-(.*)`
    * **[!UICONTROL Command]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
@@ -57,9 +61,9 @@ Ga als volgt te werk om Camera Raw ondersteuning in Adobe Experience Manager Ass
 
 >[!NOTE]
 >
->Zorg ervoor dat de bovenstaande configuratie het zelfde als **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuratie is.
+>Zorg ervoor dat de bovenstaande configuratie gelijk is aan de **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuratie.
 
-U kunt Camera Raw-bestanden nu importeren in Elementen [!DNL Experience Manager]. Nadat u het Camera Raw pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de optie **[!UICONTROL Image Adjust]** weergegeven in de lijst met zijvensters.
+U kunt nu Camera Raw-bestanden importeren in [!DNL Experience Manager] Elementen. Nadat u het Camera Raw pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, **[!UICONTROL Image Adjust]** wordt weergegeven in de lijst met zijvensters.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -69,7 +73,7 @@ U kunt Camera Raw-bestanden nu importeren in Elementen [!DNL Experience Manager]
 
 *Afbeelding: Met deze optie kunt u lichte bewerkingen uitvoeren op uw afbeeldingen*
 
-Nadat u de bewerkingen hebt opgeslagen in een Camera Raw afbeelding, wordt een nieuwe uitvoering `AdjustedPreview.jpg` gegenereerd voor de afbeelding. Voor andere afbeeldingstypen, behalve Camera Raw, worden de wijzigingen in alle uitvoeringen doorgevoerd.
+Nadat u de bewerkingen hebt opgeslagen in een Camera Raw afbeelding, wordt een nieuwe vertoning weergegeven `AdjustedPreview.jpg` wordt voor de afbeelding gegenereerd. Voor andere afbeeldingstypen, behalve Camera Raw, worden de wijzigingen in alle uitvoeringen doorgevoerd.
 
 ## Beste werkwijzen, bekende problemen en beperkingen {#best-practices}
 

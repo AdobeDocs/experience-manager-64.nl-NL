@@ -1,8 +1,8 @@
 ---
 title: API's voor het werken met verzonden formulieren op een formulierportal
-seo-title: API's voor het werken met verzonden formulieren op een formulierportal
-description: 'AEM Forms biedt API''s die u kunt gebruiken om query''s uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de portal Formulieren. '
-seo-description: 'AEM Forms biedt API''s die u kunt gebruiken om query''s uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de portal Formulieren. '
+seo-title: APIs to work with submitted forms on forms portal
+description: AEM Forms biedt API's die u kunt gebruiken om query's uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de portal Formulieren.
+seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,21 +10,24 @@ topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
 exl-id: 6d860fe3-6884-4141-ad3a-5315c514c843
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 5%
+source-wordcount: '577'
+ht-degree: 1%
 
 ---
 
-# API&#39;s voor het werken met verzonden formulieren op formulierportal {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API&#39;s voor het werken met verzonden formulieren op een formulierportal {#apis-to-work-with-submitted-forms-on-forms-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 AEM Forms biedt API&#39;s die u kunt gebruiken voor het zoeken naar formuliergegevens die via de portal Formulieren worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
 
 >[!NOTE]
 >
->Gebruikers die de API&#39;s aanroepen, moeten worden toegevoegd aan de revisorgroep zoals wordt beschreven in [Verzendrevisoren koppelen aan een formulier](/help/forms/using/adding-reviewers-form.md).
+>Gebruikers die de API&#39;s aanroepen, moeten worden toegevoegd aan de groep met revisoren, zoals wordt beschreven in [Verzendrevisoren koppelen aan een formulier](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -34,7 +37,7 @@ Retourneert een lijst met alle in aanmerking komende formulieren.
 
 Voor deze API zijn geen aanvullende parameters vereist.
 
-### Reactie {#response}
+### Antwoord {#response}
 
 Het reactieobject bevat een JSON-array die formuliernamen en het pad naar de opslagplaats bevat. De structuur van de respons is als volgt:
 
@@ -88,11 +91,11 @@ Geef de volgende parameters op in de aanvraag-URL:
   </tr> 
   <tr> 
    <td><code>orderby</code> <br /> (optioneel)</td> 
-   <td>Specifies the property for sorting results. De standaardwaarde is <strong>jcr:lastModified</strong>, die resultaten sorteert op basis van de laatst gewijzigde tijd.</td> 
+   <td>Specifies the property for sorting results. De standaardwaarde is <strong>jcr:lastModified</strong>, die resultaten sorteert op basis van de laatste gewijzigde tijd.</td> 
   </tr> 
   <tr> 
    <td><code>sort</code> <br /> (optioneel)</td> 
-   <td>Hiermee geeft u de volgorde voor het sorteren van resultaten op. De standaardwaarde is <strong>desc</strong>, die resultaten in dalende orde sorteert. U kunt <code>asc</code> specificeren om resultaten in stijgende orde te sorteren.</td> 
+   <td>Hiermee geeft u de volgorde voor het sorteren van resultaten op. De standaardwaarde is <strong>desc</strong>en sorteert resulteert in aflopende volgorde. U kunt <code>asc</code> om de resultaten in oplopende volgorde te sorteren.</td> 
   </tr> 
   <tr> 
    <td><code>cutPoints</code> <br /> (optioneel)</td> 
@@ -105,7 +108,7 @@ Geef de volgende parameters op in de aanvraag-URL:
  </tbody> 
 </table>
 
-### Reactie {#response-1}
+### Antwoord {#response-1}
 
 Het reactieobject bevat een JSON-array die details van de opgegeven formulieren bevat. De structuur van de respons is als volgt:
 
@@ -143,7 +146,7 @@ Geef de volgende parameters op in de aanvraag-URL:
 | `submitID` | Hiermee wordt de metagegevens-id opgegeven die aan een verzendinstantie is gekoppeld. |
 | `Comment` | Geeft de tekst aan voor de opmerking die moet worden toegevoegd aan de opgegeven verzendinstantie. |
 
-### Reactie {#response-2}
+### Antwoord {#response-2}
 
 Retourneert een opmerking-id bij het plaatsen van een opmerking.
 
@@ -173,7 +176,7 @@ Geef de volgende parameter op in de aanvraag-URL:
 |---|---|
 | `submitID` | Hiermee wordt de metagegevens-id van een verzendinstantie opgegeven. |
 
-### Reactie {#response-3}
+### Antwoord {#response-3}
 
 Het reactieobject bevat een JSON-array die alle opmerkingen bevat die aan de opgegeven verzendings-id zijn gekoppeld. De structuur van de respons is als volgt:
 
@@ -213,7 +216,7 @@ Geef de volgende parameters op in de aanvraag-URL:
 | `property` | Hiermee geeft u de formuliereigenschap op die moet worden bijgewerkt. |
 | `value` | Hiermee wordt de waarde opgegeven van de eigenschap form die moet worden bijgewerkt. |
 
-### Reactie {#response-4}
+### Antwoord {#response-4}
 
 Retourneert een JSON-object met informatie over de geposte update.
 

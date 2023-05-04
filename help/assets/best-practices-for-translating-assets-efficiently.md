@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 0%
 
 ---
 
 # Aanbevolen procedures om middelen efficiënt te vertalen {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager Assets biedt ondersteuning voor meertalige workflows om binaire gegevens, metagegevens en tags voor digitale middelen naar meerdere landinstellingen te vertalen en de vertaalde middelen te beheren. Zie [Meertalige elementen](multilingual-assets.md) voor meer informatie.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Voor efficiënt beheer van middelen om ervoor te zorgen dat verschillende vertaalde versies gesynchroniseerd blijven, creeer [taalexemplaren](preparing-assets-for-translation.md) van activa alvorens vertaalwerkschema&#39;s in werking te stellen.
+Adobe Experience Manager Assets biedt ondersteuning voor meertalige workflows om binaire gegevens, metagegevens en tags voor digitale middelen naar meerdere landinstellingen te vertalen en de vertaalde middelen te beheren. Zie voor meer informatie [Meertalige activa](multilingual-assets.md).
+
+Voor een efficiënt beheer van middelen, zodat verschillende vertaalde versies gesynchroniseerd blijven, kunt u [taalkopieën](preparing-assets-for-translation.md) van elementen voordat u vertaalworkflows uitvoert.
 
 Een taalkopie van een element of een groep elementen is een op hetzelfde niveau staande taal (of een versie van het element of de elementen in een cognattaal) met een vergelijkbare inhoudshiërarchie.
 
@@ -33,17 +37,17 @@ U kunt ook enkele configuratiewijzigingen aanbrengen in een aantal workflows en 
    * [Bestandsgegevensopslag instellen](/help/sites-deploying/data-store-config.md)
    * [Amazon S3 Data Store instellen](/help/sites-deploying/data-store-config.md)
 
-1. [DAM MetaData Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading)-workflow uitschakelen
+1. De opdracht [DAM MetaData Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading) werkstroom
 
-   Zoals de naam suggereert, worden de metagegevens in de *DAM-metagegevensterugdraaiworkflow* opnieuw genoteerd naar het binaire bestand. Omdat de metagegevens na de vertaling veranderen, wordt bij het terugschrijven naar het binaire bestand een andere binaire waarde voor een taalkopie gegenereerd.
+   Zoals de naam suggereert, wordt *DAM-metagegevensterugkoppeling* de metagegevens worden opnieuw naar het binaire bestand geschreven. Omdat de metagegevens na de vertaling veranderen, wordt bij het terugschrijven naar het binaire bestand een andere binaire waarde voor een taalkopie gegenereerd.
 
    >[!NOTE]
    >
-   >Als u de *DAM MetaData Writeback*-workflow uitschakelt, wordt XMP terugschrijven van metagegevens op binaire elementen uitgeschakeld. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
+   >Het onbruikbaar maken van *DAM MetaData Writeback* Met workflow worden XMP metagegevens afgeschreven op binaire bestanden met elementen. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
 
-1. Schakel de *Laatst gewijzigde datum instellen*-workflow in.
+1. De optie *Laatst gewijzigde datum instellen* workflow.
 
-   Met de *DAM MetaData Writeback*-workflow configureert u de laatste gewijzigde datum voor een element. Omdat u deze workflow in stap 2 uitschakelt, kan [!DNL Experience Manager Assets] de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de *Laatste gewijzigde datum instellen*-workflow in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
+   De *DAM MetaData Writeback* wordt de datum van de laatste wijziging voor een element geconfigureerd. Omdat u deze workflow in stap 2 uitschakelt, [!DNL Experience Manager Assets] kan de laatste gewijzigde datum van de activa niet meer actueel houden. Daarom moet de *Laatst gewijzigde datum instellen* workflow om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
 
-1. [Configureer het ](/help/sites-administering/tc-tic.md) framework voor vertaalintegratie om het vertalen van binaire bestanden met middelen te stoppen. Schakel de optie Vertaalactiva uit onder het tabblad Elementen om de vertaling van binaire middelen te stoppen.
-1. Metagegevens/tags van elementen vertalen met [Workflows van meerdere bedrijfsmiddelen](multilingual-assets.md).
+1. [Het vertaalintegratieframework configureren](/help/sites-administering/tc-tic.md) om het vertalen van binaire elementen te stoppen. Schakel de optie Vertaalactiva uit onder het tabblad Elementen om de vertaling van binaire middelen te stoppen.
+1. Metagegevens/tags van elementen vertalen met [Workflows met meerdere bedrijfsmiddelen](multilingual-assets.md).

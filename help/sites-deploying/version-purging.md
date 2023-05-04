@@ -1,8 +1,8 @@
 ---
 title: Versie leegmaken
-seo-title: Versie leegmaken
+seo-title: Version Purging
 description: In dit artikel worden de beschikbare opties voor versiereiniging beschreven.
-seo-description: In dit artikel worden de beschikbare opties voor versiereiniging beschreven.
+seo-description: This article describes the available options for version purging.
 uuid: 6140c87e-ae1c-409d-bdbb-71b397f0b738
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 feature: Configuring
 exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-# Versie opruimen{#version-purging}
+# Versie leegmaken{#version-purging}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In een standaardinstallatie AEM maakt een nieuwe versie van een pagina of knooppunt wanneer u een pagina activeert nadat u de inhoud hebt bijgewerkt.
 
@@ -27,7 +30,7 @@ In een standaardinstallatie AEM maakt een nieuwe versie van een pagina of knoopp
 >
 >Als er geen inhoudwijzigingen worden aangebracht, wordt het bericht weergegeven dat de pagina is geactiveerd, maar er wordt geen nieuwe versie gemaakt
 
-U kunt extra versies op verzoek tot stand brengen gebruikend **Versioning** lusje van sidekick. Deze versies worden opgeslagen in de opslagplaats en kunnen indien nodig worden hersteld.
+U kunt op verzoek extra versies maken met de **Versioning** tabblad van het hulpwerkje. Deze versies worden opgeslagen in de opslagplaats en kunnen indien nodig worden hersteld.
 
 Deze versies worden nooit gewist, zodat de grootte van de opslagplaats na verloop van tijd zal groeien en daarom moet worden beheerd.
 
@@ -37,7 +40,7 @@ AEM wordt geleverd met verschillende mechanismen om u te helpen uw opslagplaats 
 
    Dit kan worden gevormd om oude versies te zuiveren wanneer de nieuwe versies worden gecreeerd.
 
-* het gereedschap [Versies wissen](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
+* de [Purperen](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) gereedschap
 
    Dit wordt gebruikt als onderdeel van het bewaken en onderhouden van uw opslagplaats.
 
@@ -51,7 +54,7 @@ AEM wordt geleverd met verschillende mechanismen om u te helpen uw opslagplaats 
 
       Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de opslagplaats verwijderd.
 
-* de [onderhoudstaak voor versiezuivering](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Dit minimaliseert daarom de noodzaak om handmatig de gereedschappen voor het wissen van versies te gebruiken.
+* de [Onderhoudstaken voor versiewissing](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Dit minimaliseert daarom de noodzaak om handmatig de gereedschappen voor het wissen van versies te gebruiken.
 
 >[!CAUTION]
 >
@@ -75,7 +78,7 @@ De volgende opties zijn beschikbaar:
 
    Een versie wordt slechts gecreeerd als de activering op een wegen gebeurt die in versionmanager.ivPaths (zie hieronder) bevat.
 
-* `versionmanager.ivPaths` (Tekenreeks[], standaard: {&quot;/&quot;})
+* `versionmanager.ivPaths` (String[], standaard: {&quot;/&quot;})
 
    paden waarop impliciet versies worden gemaakt bij activering als versionmanager.createVersionOnActivation true is.
 
@@ -83,7 +86,7 @@ De volgende opties zijn beschikbaar:
 
    Bepaalt of leegmaken wordt ingeschakeld wanneer nieuwe versies worden gemaakt
 
-* `versionmanager.purgePaths` (Tekenreeks[], standaard: {&quot;/content&quot;})
+* `versionmanager.purgePaths` (String[], standaard: {&quot;/content&quot;})
 
    op welke paden naar purge versies wanneer nieuwe versies worden gemaakt.
 
@@ -105,7 +108,7 @@ De volgende opties zijn beschikbaar:
 
 ### Bewaaropties combineren {#combining-retention-options}
 
-De opties die bepalen hoe versies moeten worden behouden ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), kunnen afhankelijk van uw vereisten worden gecombineerd.
+De opties die bepalen hoe versies behouden moeten blijven ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), kan worden gecombineerd afhankelijk van uw vereisten.
 
 Als u bijvoorbeeld het maximumaantal versies definieert dat u wilt behouden EN de oudste versie die u wilt behouden:
 
@@ -141,4 +144,4 @@ Als u bijvoorbeeld het maximum EN minimum aantal versies definieert dat behouden
 
 ## Versies wissen {#purge-versions-tool}
 
-Het gereedschap [Versies wissen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
+De [Purperen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.

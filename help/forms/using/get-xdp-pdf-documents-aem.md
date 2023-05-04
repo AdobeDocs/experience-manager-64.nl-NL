@@ -1,8 +1,8 @@
 ---
 title: XDP- en PDF-documenten ophalen in AEM Forms
-seo-title: XDP- en PDF-documenten ophalen in AEM Forms
+seo-title: Getting XDP and PDF documents in AEM Forms
 description: Met AEM Forms kunt u formulieren en ondersteunde elementen uploaden en gebruiken met adaptieve formulieren. U kunt uploadformulieren en verwante bronnen ook als een ZIP-bestand bulksgewijs verzenden.
-seo-description: Met AEM Forms kunt u formulieren en ondersteunde elementen uploaden en gebruiken met adaptieve formulieren. U kunt uploadformulieren en verwante bronnen ook als een ZIP-bestand bulksgewijs verzenden.
+seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
 # XDP- en PDF-documenten ophalen in AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
@@ -25,19 +29,19 @@ U kunt uw formulieren vanuit uw lokale bestandssysteem importeren in de CRX-opsl
 
 * Formuliersjablonen (XFA-formulieren)
 * PDF forms
-* Document (vlakke PDF-documenten)
+* Document (vlakke PDF documenten)
 
-U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U kunt een element van het type `Resource`, slechts naast een XFA vorm in een archief van het PIT uploaden.
+U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U kunt een element van het type uploaden `Resource`, alleen naast een XFA-formulier in een ZIP-archief.
 
 >[!NOTE]
 >
->Zorg ervoor dat u lid bent van de groep `form-power-users` om XDP-bestanden te kunnen uploaden. Neem contact op met de beheerder om lid te worden van de groep.
+>Zorg ervoor dat u lid bent van de `form-power-users` groep die XDP-bestanden kan uploaden. Neem contact op met de beheerder om lid te worden van de groep.
 
 ## Formulieren uploaden {#uploading-forms}
 
-1. Meld u aan bij de AEM Forms-gebruikersinterface door `https://[server]:[port]/aem/forms.html` te openen.
+1. Meld u aan bij de gebruikersinterface van AEM Forms via `https://[server]:[port]/aem/forms.html`.
 1. Navigeer naar de map waarin u het formulier of de map met formulieren wilt uploaden.
-1. Tik op **Maken > Bestand uploaden** op de werkbalk Handelingen.
+1. Tik op de werkbalk Handelingen op **Maken > Bestand uploaden**.
 
    ![Bestanden van lokale opslagoptie bij Maken](assets/step.png)
 
@@ -75,7 +79,7 @@ De beveiligde modus is standaard ingeschakeld. Indien nodig kunt u de beveiligde
 
 In AEM Forms kan naar een XFA-formuliersjabloon worden verwezen door een adaptief formulier of een andere XFA-formuliersjabloon. Ook, kan een malplaatje naar een middel of een ander malplaatje verwijzen XFA.
 
-Voor een adaptief formulier dat verwijst naar een XFA, zijn de velden gebonden aan de velden die beschikbaar zijn in de XFA. Bij het bijwerken van een formuliersjabloon probeert het bijbehorende adaptieve formulier te synchroniseren met de XFA. Zie [Aangepaste formulieren synchroniseren met de bijbehorende XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md) voor meer informatie.
+Voor een adaptief formulier dat verwijst naar een XFA, zijn de velden gebonden aan de velden die beschikbaar zijn in de XFA. Bij het bijwerken van een formuliersjabloon probeert het bijbehorende adaptieve formulier te synchroniseren met de XFA. Zie voor meer informatie [Aangepaste formulieren synchroniseren met de bijbehorende XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md).
 
 Als u een formuliersjabloon verwijdert, wordt het afhankelijke adaptieve formulier of de afhankelijke formuliersjabloon beschadigd. Een dergelijk adaptief formulier wordt soms informeel een vuile vorm genoemd. In de gebruikersinterface van AEM Forms kunt u op de volgende twee manieren de vuile formulieren vinden.
 
@@ -85,6 +89,6 @@ Als u een formuliersjabloon verwijdert, wordt het afhankelijke adaptieve formuli
 
 ![Waarschuwing voor een adaptief formulier dat niet gesynchroniseerd is na het bijwerken van de bijbehorende XFA](assets/dirtyaf.png)
 
-Er wordt een vlag onderhouden om aan te geven of een adaptief formulier bevuild is. Deze informatie is beschikbaar op de pagina met formuliereigenschappen, naast de metagegevens van het formulier. Alleen voor vuile adaptieve formulieren geeft een metagegevenseigenschap `Model Refresh` `Recommended` waarde weer.
+Er wordt een vlag onderhouden om aan te geven of een adaptief formulier bevuild is. Deze informatie is beschikbaar op de pagina met formuliereigenschappen, naast de metagegevens van het formulier. Alleen voor vuile adaptieve formulieren, een eigenschap metadata `Model Refresh` displays `Recommended` waarde.
 
 ![Indicatie van een adaptief formulier dat niet synchroon is met het XFA-model](assets/model-refresh.png)

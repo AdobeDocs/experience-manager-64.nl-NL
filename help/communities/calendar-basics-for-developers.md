@@ -1,8 +1,8 @@
 ---
 title: Essentiële elementen van agenda
-seo-title: Essentiële elementen van agenda
+seo-title: Calendar Essentials
 description: Overzicht van de functie Kalender
-seo-description: Overzicht van de functie Kalender
+seo-description: Calendar feature overview
 uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 exl-id: cdf5e5d3-a78c-4f32-ad40-665876392a97
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 1%
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
-# Essentiële elementen voor kalender {#calendar-essentials}
+# Essentiële elementen van agenda {#calendar-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -39,7 +42,7 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
    <td>cq.social.hbs.calendar</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td>/libs/social/calendar/components/hbs/calendar/calendar.hbs</td> 
    <td> </td> 
   </tr>
@@ -66,17 +69,17 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 
 ### Kalenderfunctie {#calendar-function}
 
-Een community-sitestructuur die de [Kalenderfunctie](functions.md#calendar-function) bevat, heeft een geconfigureerde c `alendar`component. De functie van de Kalender steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group).
+Een community-sitestructuur die de [Kalenderfunctie](functions.md#calendar-function) zal gevormd c hebben `alendar`component. De functie Kalender ondersteunt het identificeren van een [geprivilegieerde gebruikersgroep](users.md#privileged-members-group).
 
 ### Toegang tot agendaberichten (UGC) {#accessing-calendar-posts-ugc}
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
+* [Overzicht opslagbronprovider](srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes

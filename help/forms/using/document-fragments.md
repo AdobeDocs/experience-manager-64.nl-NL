@@ -1,23 +1,26 @@
 ---
 title: Documentfragmenten
-seo-title: Documentfragmenten
+seo-title: Document Fragments
 description: Met documentfragmenten, zoals tekst, lijsten, voorwaarden en layoutfragmenten, kunt u in Correspondence Management de statische, dynamische en herhaalbare componenten van klantcorrespondentie vormen.
-seo-description: Met documentfragmenten, zoals tekst, lijsten, voorwaarden en layoutfragmenten, kunt u in Correspondence Management de statische, dynamische en herhaalbare componenten van klantcorrespondentie vormen.
+seo-description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
 uuid: 053a17e5-69a5-463d-af4f-46a86534158f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1f48548c-4222-454d-ad16-53da37170de2
 feature: Correspondence Management
 exl-id: 54159851-bae1-4efd-8c8f-3a855776ecc4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
 # Documentfragmenten {#document-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Documentfragmenten zijn herbruikbare onderdelen/componenten van een correspondentie waarmee u interactieve communicatie/letters kunt samenstellen. De documentfragmenten zijn van de volgende typen:
 
@@ -29,5 +32,5 @@ Documentfragmenten zijn herbruikbare onderdelen/componenten van een corresponden
 
    * [Voorwaarden voor interactieve communicatie](/help/forms/using/conditions-interactive-communications.md)
 
-* **List:** List is een groep documentfragmenten, waaronder tekst, lijsten, voorwaarden en afbeeldingen. De volgorde van de lijstelementen kan vast of bewerkbaar zijn. Tijdens het maken van een letter kunt u enkele of alle lijstelementen gebruiken om een herbruikbaar patroon van elementen te repliceren.
+* **Lijst:** List is een groep documentfragmenten, waaronder tekst, lijsten, voorwaarden en afbeeldingen. De volgorde van de lijstelementen kan vast of bewerkbaar zijn. Tijdens het maken van een letter kunt u enkele of alle lijstelementen gebruiken om een herbruikbaar patroon van elementen te repliceren.
 * **Lay-outfragment**: Een lay-outfragment is een lay-out die binnen één of meerdere letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De lay-outs (XDP&#39;s) worden gemaakt in Designer en worden vervolgens geüpload naar AEM Forms.

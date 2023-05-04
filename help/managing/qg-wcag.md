@@ -1,8 +1,8 @@
 ---
 title: Snelle gids aan WCAG 2.0
-seo-title: Snelle gids aan WCAG 2.0
+seo-title: Quick Guide to WCAG 2.0
 description: Lees een kort overzicht van de WCAG 2.0 toegankelijkheidsrichtlijnen.
-seo-description: Lees een kort overzicht van de WCAG 2.0 toegankelijkheidsrichtlijnen.
+seo-description: Read a quick overview of the WCAG 2.0 accessibility guidelines.
 uuid: a5cf463e-89e9-4cc0-9c91-69a1fd3d8ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,19 +10,22 @@ topic-tags: managing-accessibility
 content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
 exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 82%
+source-wordcount: '1708'
+ht-degree: 81%
 
 ---
 
-# Snelle Gids aan WCAG 2.0{#quick-guide-to-wcag}
+# Snelle gids aan WCAG 2.0{#quick-guide-to-wcag}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Er zijn AEM ontwikkeld om zo veel mogelijk te voldoen aan de Web Content Accessibility Guidelines:
 
-De [Web Content Accessibility Guidelines versie 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) zijn een reeks internationaal erkende richtlijnen die zijn ontwikkeld door het [World Wide Web Consortium (W3C)](https://www.w3.org/) onder hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+De [Web Content Accessibility Guidelines versie 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) zijn een reeks internationaal erkende richtsnoeren die door de [World Wide Web Consortium (W3C)](https://www.w3.org/) onder hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.0 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap. Zij adviseren auteurs, ontwerpers en ontwikkelaars van webcontent om ervoor te zorgen dat de bronnen die zij produceren, zo toegankelijk mogelijk zijn voor zoveel mogelijk mensen, ongeacht hun handicap, bijvoorbeeld een visuele handicap, gehoorverlies, leermoeilijkheden of leeftijdsgebonden beperkingen.
 
@@ -36,11 +39,11 @@ Daarom is het begrijpen van de doelstellingen van WCAG 2.0 en de structuur van d
 
 De bedoeling van WCAG 2.0 is het verstrekken van richtlijnen die:
 
-* Zijn **technologie-agnostisch:**
+* zijn **technologie-agnost:**
 
    Met andere woorden, richtlijnen die kunnen worden toegepast op een reeks webinhoud-indelingen, niet alleen op HTML. WCAG 2.0 kan dus betrekking hebben op content die is gegenereerd door of wordt geleverd in PDF, Flash, JavaScript en andere huidige en toekomstige webtechnologieën. Dit is bedoeld om een erkende zwakte van WCAG 1.0 aan te pakken, aangezien het gericht was op HTML ten koste van andere webinhoud-indelingen.
 
-* Zijn **testbaar:**
+* zijn **testbaar:**
 
    Elk richtsnoer is zodanig opgesteld dat het objectief kan worden getest om te garanderen dat een groep toegankelijkheidsdeskundigen het er in het algemeen over eens is dat aan het richtsnoer is voldaan. Een van de uitdagingen van toegankelijkheidsrichtlijnen is dat sommige richtlijnen technisch getest kunnen worden, terwijl andere vereisen dat mensen oordelen of de richtlijn al dan niet succesvol is nageleefd. WCAG 2.0 is geschreven om de subjectiviteit te verminderen die in sommige van de WCAG 1.0-richtsnoeren en -controlepunten aanwezig was.
 
@@ -91,8 +94,8 @@ Hoewel WCAG 2.0 een stabiel document is en niet zal veranderen, zijn de meeste v
 
 ### WCAG 2.0-bronnen {#wcag-resources}
 
-* [een overzicht van alle met WCAG 2.0 verband houdende documenten](https://www.w3.org/WAI/intro/wcag.php);
-* [een toelichting op de onderlinge](https://www.w3.org/WAI/intro/wcag20) relatie tussen de verschillende onderdelen;
+* [Een overzicht van alle aan WCAG 2.0 gerelateerde documenten](https://www.w3.org/WAI/intro/wcag.php);
+* [Uitleg over de onderlinge relatie tussen de verschillende onderdelen](https://www.w3.org/WAI/intro/wcag20);
 * [Veelgestelde vragen over WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
 ### Technieken voor WCAG 2.0 {#techniques-for-wcag}

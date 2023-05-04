@@ -1,8 +1,8 @@
 ---
 title: Grondbeginselen van Tally
-seo-title: Grondbeginselen van Tally
+seo-title: Tally Essentials
 description: Overzicht van de klasse Tally
-seo-description: Overzicht van de klasse Tally
+seo-description: Tally class overview
 uuid: c369c6a1-9ced-4b5c-af43-8c03236eaa52
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,31 +10,34 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 exl-id: f04ec253-08b8-4ee2-9873-4a51549daeba
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-# Essentiële elementen tellen {#tally-essentials}
+# Grondbeginselen van Tally {#tally-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Tally is een abstracte klasse die een standaardmethode verstrekt om terugkoppelen van leden te verzamelen over hoe zij specifieke producten en de diensten waarderen. Anonieme feedback wordt niet ondersteund. De bezoeker van de site moet zich registreren en aanmelden om deel te nemen en zich aan te melden om zijn feedback te wijzigen. De verplichting om zich aan te melden vergemakkelijkt de matiging en verhoogt de waarde van de feedback door meerdere posten te voorkomen.
 
 Een aangepaste telcomponent kan worden gecreeerd door de abstracte tellingsklasse uit te breiden.
 
-[Op ](essentials-liking.md) dezelfde manier wordt de overeenkomst toegepast. Dat is een eenvoudige manier om een positief oordeel uit te spreken.
+[Vergelijken](essentials-liking.md) is een uitvoering van de overeenkomst die een eenvoudige vorm is om een positief oordeel uit te spreken.
 
-[De ](essentials-voting.md) stemming is een uitvoering van de overeenkomst, die een eenvoudige vorm is van het uiten van een positief of negatief advies.
+[Stemming](essentials-voting.md) is een uitvoering van een overeenkomst die een eenvoudige vorm van positief of negatief advies is.
 
-[](rating-basics.md) Ratingis een implementatie van tally die een sterrenstelsel gebruikt voor het uiten van een reeks meningen van positief tot negatief.
+[Classificatie](rating-basics.md) is een uitvoering van tally die een sterrenstelsel gebruikt om een reeks meningen van positief tot negatief uit te drukken.
 
-Vanaf AEM 6.1 is de *poll*-component niet meer beschikbaar.
+Vanaf AEM 6.1 *opiniepeiling* is niet meer beschikbaar.
 
-[](reviews-basics.md) Reviewsis een SCF component die een hybride van  [](essentials-comments.md) commentaren en  [classificatie](rating-basics.md) is.
+[Revisies](reviews-basics.md) is een SCF-component die een hybride van [opmerkingen](essentials-comments.md) en [beoordeling](rating-basics.md).
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 * [Aanpassingen aan de clientzijde](client-customize.md)
 
@@ -51,13 +54,13 @@ Vanaf AEM 6.1 is de *poll*-component niet meer beschikbaar.
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.\
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
+* [Overzicht opslagbronprovider](srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes

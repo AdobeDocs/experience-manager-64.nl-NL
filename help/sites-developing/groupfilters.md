@@ -1,8 +1,8 @@
 ---
 title: Apparaatgroepfilters maken
-seo-title: Apparaatgroepfilters maken
+seo-title: Creating Device Group Filters
 description: Maak een apparaatgroepfilter om een set vereisten voor apparaatmogelijkheden te definiëren
-seo-description: Maak een apparaatgroepfilter om een set vereisten voor apparaatmogelijkheden te definiëren
+seo-description: Create a device group filter to define a set of device capability requirements
 uuid: 8db98b98-f26d-4924-930a-a682cd7df866
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,31 +11,34 @@ content-type: reference
 discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: abbbf606-aff2-44b4-b16e-ceb54997115f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
 
 # Apparaatgroepfilters maken{#creating-device-group-filters}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Maak een apparaatgroepfilter om een set vereisten voor apparaatmogelijkheden te definiëren. Maak zoveel filters als u nodig hebt om de benodigde groepen apparaatmogelijkheden als doel in te stellen.
 
 Ontwerp uw filters zodat u combinaties ervan kunt gebruiken om de groepen mogelijkheden te bepalen. Gewoonlijk zijn de mogelijkheden van verschillende apparaatgroepen elkaar overlappen. Daarom zou u sommige filters met veelvoudige definities van de apparatengroep kunnen gebruiken.
 
-Nadat u een filter creeert, kunt u het in [groepsconfiguratie gebruiken.](/help/sites-developing/mobile.md#creating-a-device-group)
+Nadat u een filter hebt gemaakt, kunt u het in het dialoogvenster [groepconfiguratie.](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## De filterJava-klasse {#the-filter-java-class}
+## De Java-klasse Filter {#the-filter-java-class}
 
-Een apparaatgroepfilter is een OSGi-component die de interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementeert. Wanneer opgesteld, verleent de implementatieklasse de filterdienst die aan de configuraties van de apparatengroep beschikbaar is.
+Een filter van de apparatengroep is een component OSGi die uitvoert [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. Wanneer opgesteld, verleent de implementatieklasse de filterdienst die aan de configuraties van de apparatengroep beschikbaar is.
 
-De oplossing die in dit artikel wordt beschreven gebruikt Apache Felix Maven SCR Insteekmodule om de ontwikkeling van de component en de dienst te vergemakkelijken. Daarom gebruikt de voorbeeldklasse Java de annotaties `@Component`en `@Service`. De klasse heeft de volgende structuur:
+De oplossing die in dit artikel wordt beschreven gebruikt Apache Felix Maven SCR Insteekmodule om de ontwikkeling van de component en de dienst te vergemakkelijken. Daarom gebruikt de voorbeeldklasse Java de `@Component`en `@Service` annotaties. De klasse heeft de volgende structuur:
 
 ```java
 package com.adobe.example.myapp;
@@ -73,9 +76,9 @@ U moet code opgeven voor de volgende methoden:
 * getTitle: Retourneert de naam van het filter. De naam wordt weergegeven wanneer u filters voor de apparaatgroep selecteert.
 * overeenkomsten: Hiermee wordt bepaald of het apparaat de vereiste mogelijkheden heeft.
 
-### De filternaam en -beschrijving opgeven {#providing-the-filter-name-and-description}
+### Filternaam en -beschrijving opgeven {#providing-the-filter-name-and-description}
 
-De methoden `getTitle` en `getDescription` retourneren respectievelijk de filternaam en beschrijving. De volgende code illustreert de eenvoudigste implementatie:
+De `getTitle` en `getDescription` methoden retourneren de filternaam en beschrijving. De volgende code illustreert de eenvoudigste implementatie:
 
 ```java
 public String getDescription() {
@@ -91,13 +94,13 @@ De harde codering van de naam en beschrijvingstekst is voldoende voor niet-taals
 
 ### Evalueren aan de hand van filtercriteria {#evaluating-against-filter-criteria}
 
-De functie `matches` retourneert `true` als de apparaatmogelijkheden aan alle filtercriteria voldoen. Evalueer de informatie die in methodeargumenten wordt verstrekt om te bepalen als het apparaat tot de groep behoort. De volgende waarden worden als argumenten opgegeven:
+De `matches` functie retourneert `true` als de mogelijkheden van het apparaat aan alle filtercriteria voldoen. Evalueer de informatie die in methodeargumenten wordt verstrekt om te bepalen als het apparaat tot de groep behoort. De volgende waarden worden als argumenten opgegeven:
 
 * Een DeviceGroup-object
 * De naam van de gebruikersagent
 * Een object Map dat de apparaatmogelijkheden bevat. De sleutels van de Kaart zijn de WURFL™ bezitsnamen en de waarden zijn de overeenkomstige waarden van het WURFL™ gegevensbestand.
 
-De interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) bevat een subset van de WURFL™-capaciteitsnamen in statische velden. Gebruik deze veldconstanten als toetsen bij het ophalen van waarden uit de Kaart met apparaatmogelijkheden.
+De [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface bevat een subset van de WURFL™-capaciteitsnamen in statische velden. Gebruik deze veldconstanten als toetsen bij het ophalen van waarden uit de Kaart met apparaatmogelijkheden.
 
 In het volgende codevoorbeeld wordt bijvoorbeeld bepaald of het apparaat CSS ondersteunt:
 
@@ -106,7 +109,7 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-Het `org.apache.commons.lang.math` pakket verstrekt de `NumberUtils` klasse.
+De `org.apache.commons.lang.math` pakket biedt de `NumberUtils` klasse.
 
 >[!NOTE]
 >
@@ -116,7 +119,7 @@ Het `org.apache.commons.lang.math` pakket verstrekt de `NumberUtils` klasse.
 
 De volgende voorbeeldimplementatie DeviceGroupFilter bepaalt of de fysieke grootte van het apparaat aan minimumvereisten voldoet. Dit filter is bedoeld om granulariteit toe te voegen aan de groep aanraakapparaten. De grootte van knoppen in de gebruikersinterface van de toepassing moet gelijk zijn, ongeacht de fysieke schermgrootte. De grootte van andere items, zoals tekst, kan variëren. Het filter laat de dynamische selectie van bepaalde CSS toe die de grootte van de elementen UI controleert.
 
-Dit filter past groottecriteria op `physical_screen_height` en `physical_screen_width` WURFL™ bezitsnamen toe.
+Met dit filter past u groottecriteria toe op de `physical_screen_height` en `physical_screen_width` Namen van WURFL™-eigenschappen.
 
 ```java
 package com.adobe.example.myapp;
@@ -173,7 +176,7 @@ De waarden van het Koord die getTitle en getDescription methodes terugkeren zijn
 
 ![filterbeschrijving](assets/filterdescription.png)
 
-### Het gemaakte POM-bestand {#the-maven-pom-file}
+### Het Maven POM-bestand {#the-maven-pom-file}
 
 De volgende POM-code is handig als u Maven gebruikt om uw toepassingen te maken. De POM verwijst naar verschillende vereiste plug-ins en afhankelijkheden.
 
@@ -191,7 +194,7 @@ De volgende POM-code is handig als u Maven gebruikt om uw toepassingen te maken.
 
 De interfaces DeviceGroup en DeviceGroupFilter zijn inbegrepen in de Communicatie van Dag 5 van de mobiele API bundel van WCM. De Felix-annotaties zijn opgenomen in de bundel Apache Felix Declarative Services. U kunt dit JAR-bestand opvragen bij de openbare Adobe-opslagplaats.
 
-Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. De Console van het Web van de Adobe van het gebruik ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) om dit te verzekeren is de bundelversie die in uw milieu wordt opgesteld.
+Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. Adobe webconsole gebruiken ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) om ervoor te zorgen dat dit de bundelversie is die in uw omgeving wordt geïmplementeerd.
 
 **POM:** (Uw POM gebruikt een andere groupId en versie.)
 
@@ -258,4 +261,4 @@ Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die 
 </project>
 ```
 
-Voeg het profiel toe dat de sectie [Verkrijgen van de Inhoudspakket Gemaakte Insteekmodule](/help/sites-developing/vlt-mavenplugin.md) aan uw gemaskeerde montageendossier verstrekt om de openbare bewaarplaats van de Adobe te gebruiken.
+Voeg het profiel toe dat de [De insteekmodule voor het inhoudspakket verkrijgen](/help/sites-developing/vlt-mavenplugin.md) biedt het bestand met instellingen die u hebt toegewezen aan het gebruik van de openbare opslagplaats voor Adobe.

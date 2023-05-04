@@ -2,7 +2,7 @@
 title: AEM Forms
 seo-title: AEM Forms
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.3 Forms.
-seo-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.3 Forms.
+seo-description: Release notes specific to Adobe Experience Manager 6.3 Forms.
 uuid: 317770c9-bb59-4bdf-8a14-be265e8f5f81
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,17 +10,20 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 3f592c5a-4e59-436e-b67b-3ed575c6afc3
 exl-id: 94989316-02df-4cfa-bb2e-c0d357dff728
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # AEM Forms {#aem-forms}
 
-Deze sectie bevat hooglichten van de AEM 6.4 Forms-release. Een gedetailleerde beschrijving van alle nieuwe functies vindt u in het [Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms](/help/forms/using/whats-new.md).
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Deze sectie bevat hooglichten van de AEM 6.4 Forms-release. Een gedetailleerde beschrijving van alle nieuwe functies vindt u in de [Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms](/help/forms/using/whats-new.md).
 
 ## Interactieve communicatie via meerdere kanalen {#multi-channel-interactive-communications}
 
@@ -59,6 +62,6 @@ Deze sectie bevat hooglichten van de AEM 6.4 Forms-release. Een gedetailleerde b
 * De componenten Bestandsbijlage en Voorwaarden kunnen worden gebruikt in luie geladen formulierfragmenten
 * Ondersteuning voor lazy geladen adaptieve formulierfragmenten in herhaalbare deelvensters
 
-## Single-hop verbetering van LiveCycle aan Experience Manager Forms 6.4 {#single-hop-upgrade-from-livecycle-to-experience-manager-forms}
+## Eén-hopupgrade van LiveCycle naar Experience Manager Forms 6.4 {#single-hop-upgrade-from-livecycle-to-experience-manager-forms}
 
 * Rechtstreeks upgraden van LiveCycle ES4 naar AEM 6.4 Forms JEE

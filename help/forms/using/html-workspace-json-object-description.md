@@ -1,23 +1,26 @@
 ---
 title: JSON-objectbeschrijving in de AEM Forms-werkruimte
-seo-title: JSON-objectbeschrijving in de AEM Forms-werkruimte
+seo-title: AEM Forms workspace JSON object description
 description: Conceptuele informatie over de JSON JavaScript-objecten die in de LiveCycle AEM Forms-werkruimte worden gebruikt voor aanpassing, uitbreiding, wijziging en hergebruik.
-seo-description: Conceptuele informatie over de JSON JavaScript-objecten die in de LiveCycle AEM Forms-werkruimte worden gebruikt voor aanpassing, uitbreiding, wijziging en hergebruik.
+seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: 8c7e1ee2-0f7f-427e-aca2-d4bf523fd7f1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 8%
+source-wordcount: '2145'
+ht-degree: 0%
 
 ---
 
-# AEM Forms-werkruimte - JSON-objectbeschrijving {#aem-forms-workspace-json-object-description}
+# JSON-objectbeschrijving in de AEM Forms-werkruimte {#aem-forms-workspace-json-object-description}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder beschreven.
 
@@ -43,7 +46,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>Categorie-id<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>description<br type="_moz" /> </td> 
+   <td>beschrijving<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Categoriebeschrijving<br type="_moz" /> </td> 
   </tr>
@@ -100,7 +103,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>classOfTask</td> 
    <td>F</td> 
-   <td>De klasse van taak is "LC8"wanneer de taak lc8 taak anders "Standaard"is.<br /> </td> 
+   <td>De taakklasse is 'LC8' wanneer de taak een andere lc8-taak is dan 'Standaard'.<br /> </td> 
   </tr>
   <tr>
    <td>completeTime<br /> </td> 
@@ -115,17 +118,17 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>createTime<br /> </td> 
    <td>F</td> 
-   <td>Het bevat de tijdstempel wanneer de taak wordt gemaakt.<br /> </td> 
+   <td>De tijdstempel wordt weergegeven wanneer een taak wordt gemaakt.<br /> </td> 
   </tr>
   <tr>
    <td>creationId<br /> </td> 
    <td>F</td> 
-   <td>Het bevat identiteitskaart van de gebruiker die de taak creeerde.<br /> </td> 
+   <td>Het bevat de id van de gebruiker die de taak heeft gemaakt.<br /> </td> 
   </tr>
   <tr>
    <td>currentAssignment<br /> </td> 
    <td>F</td> 
-   <td>Het bevat details over huidige taak.<br /> </td> 
+   <td>Het bevat details over de huidige taaktoewijzing.<br /> </td> 
   </tr>
   <tr>
    <td>deadline<br /> </td> 
@@ -133,14 +136,14 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>Het bevat de tijdstempel dat wanneer een taak zijn deadline zal bereiken.<br /> </td> 
   </tr>
   <tr>
-   <td>description<br /> </td> 
+   <td>beschrijving<br /> </td> 
    <td>F</td> 
    <td>Het bevat een beschrijving van de taak.<br /> </td> 
   </tr>
   <tr>
    <td>displayName<br /> </td> 
    <td>F</td> 
-   <td>Het bevat vertoningsnaam van de taak.<br /> </td> 
+   <td>Deze bevat de weergavenaam van de taak.<br /> </td> 
   </tr>
   <tr>
    <td>forwardGroupId<br /> </td> 
@@ -160,12 +163,12 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>isMustOpenToComplete<br /> </td> 
    <td>F</td> 
-   <td>True if task form must open to complete the task.<br /> </td> 
+   <td>True if task form must be opened to complete the task.<br /> </td> 
   </tr>
   <tr>
    <td>isOpenFullScreen<br /> </td> 
    <td>F</td> 
-   <td>Indien waar (true), wordt bij het openen van de taak het formulier voor het eerst op volledig scherm weergegeven.<br /> </td> 
+   <td>Indien waar (true), neemt het formulier bij het openen van de taak de eerste keer het volledige scherm in beslag.<br /> </td> 
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td> 
@@ -180,7 +183,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>isStartTask<br /> </td> 
    <td>F</td> 
-   <td>Indien waar (true), wordt de taak gemaakt vanaf het beginpunt.<br /> </td> 
+   <td>Indien waar (true), wordt de taak vanaf het beginpunt gemaakt.<br /> </td> 
   </tr>
   <tr>
    <td>isVisible<br /> </td> 
@@ -193,9 +196,9 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>Tijdstempel voor de volgende herinnering.<br /> </td> 
   </tr>
   <tr>
-   <td>priority<br /> </td> 
+   <td>prioriteit<br /> </td> 
    <td>F</td> 
-   <td>Het bevat een prioriteit.<br /> 1 = hoogste prioriteit<br /> 2 = hoge prioriteit<br /> 3 = normale prioriteit<br />  4 = lage prioriteit<br />  5 = laagste prioriteit<br /> </td> 
+   <td>Het bevat een prioriteit.<br /> 1 = hoogste prioriteit<br /> 2 = Hoge prioriteit<br /> 3 = Normale prioriteit<br /> 4 = Lage prioriteit<br /> 5 = Laagste prioriteit<br /> </td> 
   </tr>
   <tr>
    <td>processInstanceId</td> 
@@ -205,7 +208,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>processInstanceStatus<br /> </td> 
    <td>F</td> 
-   <td>Status van de procesinstantie van de taak.<br /> </td> 
+   <td>Status van procesexemplaar van taak.<br /> </td> 
   </tr>
   <tr>
    <td>reminderCount<br /> </td> 
@@ -220,12 +223,12 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>selectedRoute<br /> </td> 
    <td>F</td> 
-   <td>Het bevat naam van de geselecteerde route toen de taak werd voltooid.<br /> </td> 
+   <td>Het bevat naam van de route die werd geselecteerd toen de taak werd voltooid.<br /> </td> 
   </tr>
   <tr>
    <td>serializedImageTicket<br /> </td> 
    <td>F</td> 
-   <td>Het bevat een afbeeldingsticket dat overeenkomt met een taak. Dit afbeeldingsticket wordt gebruikt in het taakveld imageUrl om een image voor een taak van de server op te halen.<br /> <br /> </td> 
+   <td>Het bevat een afbeeldingsticket dat overeenkomt met een taak. Dit beeldkaartje wordt gebruikt in imageUrl gebied van taak, om beeld voor taak van de server te krijgen.<br /> <br /> </td> 
   </tr>
   <tr>
    <td>serviceName<br /> </td> 
@@ -235,7 +238,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>serviceTitle<br /> </td> 
    <td>F</td> 
-   <td>Het bevat een titel van de service voor een taak.<br /> </td> 
+   <td>Het bevat titel van de dienst voor taak.<br /> </td> 
   </tr>
   <tr>
    <td>status<br /> </td> 
@@ -245,7 +248,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>stepName<br /> </td> 
    <td>F</td> 
-   <td>Het bevat naam van de taakreeks tijdens proces het ontwerpen.<br /> </td> 
+   <td>Deze bevat een naam van de taakset tijdens het ontwerpen van processen.<br /> </td> 
   </tr>
   <tr>
    <td>summaryUrl<br /> </td> 
@@ -270,12 +273,12 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>formUrl<br /> </td> 
    <td>T</td> 
-   <td>Het bevat url van vorm voor een taak.<br /> </td> 
+   <td>Het bevat URL van formulier voor een taak.<br /> </td> 
   </tr>
   <tr>
    <td>taskFormType<br /> </td> 
    <td>T</td> 
-   <td>Het bevat het type taakformulier. Met dit veld wordt de taak op de client weergegeven als pdf for, swf form enz.<br /> </td> 
+   <td>Het bevat het type taakformulier. Met dit veld wordt de taak op de client weergegeven als pdf for, swf form enzovoort.<br /> </td> 
   </tr>
   <tr>
    <td>showDirectActions<br /> </td> 
@@ -285,7 +288,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>showACLActions<br /> </td> 
    <td>T</td> 
-   <td>Indien waar (true), zijn acties zoals forward, consult, share zichtbaar in de werkruimte.<br /> </td> 
+   <td>Indien waar (true), zijn acties zoals forward, consult en share zichtbaar in de werkruimte.<br /> </td> 
   </tr>
   <tr>
    <td>supportsOffline<br /> </td> 
@@ -300,7 +303,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>readerSubmitOptions<br /> </td> 
    <td>T</td> 
-   <td>Dit object bevat opties waarmee u PDF-formulieren via een lezer kunt verzenden als het PDF-formulier geen verzendknop bevat.<br /> </td> 
+   <td>Dit object bevat opties die worden gebruikt om PDF-formulieren via Reader te verzenden als het PDF-formulier geen verzendknop bevat.<br /> </td> 
   </tr>
   <tr>
    <td>isDefaultImage<br /> </td> 
@@ -310,7 +313,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>historyTaskList<br /> </td> 
    <td>T</td> 
-   <td>Het bevat een lijst van taken die in geschiedenislusje van taakdetails worden gebruikt.<br /> </td> 
+   <td>Het bevat een lijst met taken die op het tabblad Historie van taakdetails worden gebruikt.<br /> </td> 
   </tr>
   <tr>
    <td>isOwner<br /> </td> 
@@ -345,12 +348,12 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>processVariables<br /> </td> 
    <td>T<br /> </td> 
-   <td>Het bevat een array van objecten met procesvariabelen, indien aanwezig.<br /> </td> 
+   <td>De klasse bevat een array van objecten met procesvariabelen, indien aanwezig.<br /> </td> 
   </tr>
   <tr>
    <td>pendingTasks<br /> </td> 
    <td>T</td> 
-   <td>Het bevat een lijst van hangende taken voor de het procesinstantie van de taak.<br /> </td> 
+   <td>Het bevat een lijst met in behandeling zijnde taken voor de procesinstantie van de taak.<br /> </td> 
   </tr>
   <tr>
    <td>userActions<br /> </td> 
@@ -360,15 +363,15 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>dataUrl<br /> </td> 
    <td>T</td> 
-   <td>Het is url voor de gegevens van de vorm van een taak.<br /> </td> 
+   <td>Het is de URL voor de gegevens van de vorm van een taak.<br /> </td> 
   </tr>
   <tr>
    <td>externalAppConfig<br /> </td> 
    <td>T</td> 
-   <td>Dit is configuratie voor derdetoepassingsvormen.<br /> </td> 
+   <td>Dit is de configuratie voor toepassingsformulieren van derden.<br /> </td> 
   </tr>
   <tr>
-   <td>verzonden<br /> </td> 
+   <td>ingediend<br /> </td> 
    <td>T</td> 
    <td>Waar als de taak wordt voorgelegd.<br /> </td> 
   </tr>
@@ -380,7 +383,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>toewijzingen<br /> </td> 
    <td>T</td> 
-   <td>Lijst met toewijzingen van een taak.<br /> </td> 
+   <td>Lijst met taakopdrachten.<br /> </td> 
   </tr>
  </tbody>
 </table>
@@ -424,7 +427,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>taken</td> 
    <td>T</td> 
-   <td>Het bevat een lijst van alle taken die tot een filter behoren.<br type="_moz" /> </td> 
+   <td>Deze bevat een lijst met alle taken die bij een filter horen.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -443,12 +446,12 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Het bevat arrayvoorwerpen van uit-van-bureauprogramma's van een gebruiker. In elk planningsvoorwerp, bevat het begingebied van startDate de begindatum van het programma en einddatum het gebied bevat de einddatum van het programma. Als endDate in programma ongeldig is, impliceert het dat de gebruiker niet de einddatum van uit-van-bureauprogramma heeft gepland.<br type="_moz" /> </td> 
+   <td>Het bevat arrayvoorwerpen van uit-van-bureauprogramma's van een gebruiker. In elk planningsvoorwerp, bevat het begingebied van startDate de begindatum van het programma en einddatum het gebied bevat de einddatum van het programma. Als endDate in programma ongeldig is, impliceert het dat de gebruiker niet de einddatum van out-of-office programma heeft gepland.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Waar als er geen primair aanwijst in als de gebruiker buiten kantoor is.<br type="_moz" /> </td> 
+   <td>Waar als er geen primair aanwijst in het geval als de gebruiker buiten-van-bureau is.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td> 
@@ -458,12 +461,12 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>outOfOfficeDesignate<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Het bevat details van gebruiker die als primair aanwijzen door gebruiker wordt toegewezen.<br type="_moz" /> </td> 
+   <td>Het bevat details van gebruiker die als primaire aanduiding door gebruiker wordt toegewezen.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Het bevat serie van voorwerpen voor proces-specifieke uit-van-bureau aangewezen. In elk proces-specifiek wijs voorwerp toe, bevat processName de naam van het proces, isNotDesignated is waar als geen gebruiker voor het overeenkomstige proces wordt toegewezen, en userDesignated is ongeldig als geen gebruiker anders details van de gebruiker toewees voor het overeenkomstige proces.<br type="_moz" /> </td> 
+   <td>Het bevat een array met objecten voor processpecifieke aanwijzen buiten het kantoor. In elk proces-specifiek wijs voorwerp toe, bevat processName de naam van het proces, isNotDesignated is waar als geen gebruiker voor het overeenkomstige proces wordt toegewezen, en userDesignated is ongeldig als geen gebruiker anders details van de gebruiker toewees voor het overeenkomstige proces.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processen<br type="_moz" /> </td> 
@@ -483,7 +486,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Het bevat lijst van gebruikers die door het programma geopende gebruiker tot datum worden gezocht.<br type="_moz" /> </td> 
+   <td>Het bevat een lijst met gebruikers die door de aangemelde gebruiker tot de datum worden doorzocht.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -500,7 +503,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td><strong>Opmerkingen</strong></td> 
   </tr>
   <tr>
-   <td>description<br type="_moz" /> </td> 
+   <td>beschrijving<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Beschrijving van procesinstantie<br type="_moz" /> </td> 
   </tr>
@@ -527,7 +530,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 = geïnitieerd<br /> 1 = bezig<br /> 2 = voltooid<br /> 3 = voltooid<br /> 4 = beëindigd<br /> 5 = eindigend<br /> 6 = opgeschort<br /> 7 = opgeschort<br /> 8 = ononderbroken<br type="_moz" /> </td> 
+   <td>0 = geïnitieerd<br /> 1 = Uitvoeren<br /> 2 = voltooid<br /> 3 = Voltooien<br /> 4 = beëindigd<br /> 5 = Beëindiging<br /> 6 = Opgeschort<br /> 7 = opschorting<br /> 8 = Ononderbroken<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td> 
@@ -545,7 +548,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>Array van objecten met procesvariabelen. Elk procesveranderlijke voorwerp bevat naam die naam is van procesvariabele, waarde die waarde van procesvariabele is en type dat type van procesvariabele is.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>tasklist<br type="_moz" /> </td> 
+   <td>taaklijst<br type="_moz" /> </td> 
    <td>T</td> 
    <td>Taken die door deze procesinstantie worden gegenereerd.<br type="_moz" /> </td> 
   </tr>
@@ -608,7 +611,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>assignType<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 = Oorspronkelijke Toewijzing<br /> 1 = Voorwaarts (De Taak is door:sturen aan huidige eigenaar van taak.)<br /> 2 = teruggekeerd (Taak is teruggekeerd aan huidige eigenaar van taak door vorige eigenaar van taak.)<br /> 3 = Gevraagd (Taak is gevorderd door huidige eigenaar van taak.)<br /> 4 = Escalatie (Taak is toegewezen aan huidige eigenaar van taak na escalatie.)<br /> 5 = Toegewezen beheerder (Taak is toegewezen door beheerder aan huidige eigenaar van taak.)<br /> 6 = geraadpleegd (Taak is geraadpleegd aan de huidige eigenaar van de taak.)<br type="_moz" /> </td> 
+   <td>0 = Eerste toewijzing<br /> 1 = Voorwaarts (De Taak is door:sturen aan huidige eigenaar van taak.)<br /> 2 = teruggekeerd (Taak is teruggekeerd aan huidige eigenaar van taak door vorige eigenaar van taak.)<br /> 3 = Gevraagd (Taak is gevorderd door huidige eigenaar van taak.)<br /> 4 = Escalatie (Taak is toegewezen aan huidige eigenaar van taak na escalatie.)<br /> 5 = Toegewezen beheerder (Taak is toegewezen door beheerder aan huidige eigenaar van taak.)<br /> 6 = geraadpleegd (Taak is geraadpleegd aan de huidige eigenaar van de taak.)<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>assignUpdateTime<br type="_moz" /> </td> 
@@ -647,17 +650,17 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>canAddAttachments<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Indien waar (true), kunnen bijlagen worden toegevoegd aan de taak.<br type="_moz" /> </td> 
+   <td>Indien waar (true), kunnen bijlagen aan de taak worden toegevoegd.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canAddNotes<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Indien waar (true), kunnen notities worden toegevoegd aan de taak.<br type="_moz" /> </td> 
+   <td>Indien waar (true), kunnen notities aan de taak worden toegevoegd.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canClaim<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Indien waar (true), kan de taak worden geclaimd.<br type="_moz" /> </td> 
+   <td>Indien waar (true), kan de taak worden opgehaald.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canConsult<br type="_moz" /> </td> 
@@ -701,10 +704,10 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>creatorName<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Naam van de gebruiker die de gehechtheid toevoegde.<br type="_moz" /> </td> 
+   <td>Naam van de gebruiker die de bijlage heeft toegevoegd.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>description<br type="_moz" /> </td> 
+   <td>beschrijving<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Beschrijving van de bijlage.<br type="_moz" /> </td> 
   </tr>
@@ -721,7 +724,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>lastModifiedDate<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Tijdstempel bij laatste wijziging van bijlage.<br type="_moz" /> </td> 
+   <td>Tijdstempel wanneer bijlage voor het laatst is gewijzigd.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>noteExtended<br type="_moz" /> </td> 
@@ -729,9 +732,9 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>Indien waar (true), is de opmerking een uitgebreide (lange) notitie.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>permissions<br type="_moz" /> </td> 
+   <td>machtigingen<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Machtigingen die aan een bijlage zijn gekoppeld. allowRead-veld is voor leesmachtiging, allowWrite is voor schrijfmachtiging, allowDelete is voor verwijderingsbevoegdheid.<br type="_moz" /> </td> 
+   <td>Machtigingen die aan een bijlage zijn gekoppeld. allowRead-veld is bestemd voor leesmachtigingen, allowWrite is voor schrijfmachtigingen, allowDelete is voor verwijderingsmachtigingen.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>size<br type="_moz" /> </td> 
@@ -741,22 +744,22 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>taskId<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Id van taak waaraan gehechtheid wordt toegevoegd.<br type="_moz" /> </td> 
+   <td>Id van taak waaraan bijlage wordt toegevoegd.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>type<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Type is bijlage voor dossiers en Type is nota voor nota's.<br type="_moz" /> </td> 
+   <td>Type is een bijlage voor bestanden en Type is een notitie voor notities.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Het bevat de aanmaakdatum van de bijlage volgens de gebruikersinterface-instellingen.<br type="_moz" /> </td> 
+   <td>Deze bevat de aanmaakdatum van de bijlage volgens de gebruikersinterface-instellingen.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedDescription<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Beschrijving van opgemaakte bijlage. Wordt gebruikt om speciale tekens weer te geven die aanwezig zijn in de bijlagebeschrijving in de AEM Forms-werkruimte.<br type="_moz" /> </td> 
+   <td>Beschrijving van opgemaakte bijlage. Wordt gebruikt om speciale tekens weer te geven die aanwezig zijn in de beschrijving van de bijlage in de AEM Forms-werkruimte.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedFileName<br type="_moz" /> </td> 
@@ -788,14 +791,14 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>Algemene naam van de gebruiker.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>description<br type="_moz" /> </td> 
+   <td>beschrijving<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Beschrijving van de gebruiker.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>directGroupMembership<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Lijst van gebruikersgroep.<br type="_moz" /> </td> 
+   <td>Lijst met gebruikersgroepen.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>displayName<br type="_moz" /> </td> 
@@ -813,12 +816,12 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>True if user is out-of-office.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>achterNaam<br type="_moz" /> </td> 
+   <td>lastName<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Achternaam van de gebruiker.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>voorNaam<br type="_moz" /> </td> 
+   <td>firstName<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Voornaam van de gebruiker.<br type="_moz" /> </td> 
   </tr>
@@ -850,7 +853,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>userid<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Login id van de gebruiker.<br type="_moz" /> </td> 
+   <td>Login-id van de gebruiker.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>

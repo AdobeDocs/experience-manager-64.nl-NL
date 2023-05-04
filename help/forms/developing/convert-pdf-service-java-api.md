@@ -1,8 +1,8 @@
 ---
-title: Java API QuickStart (SOAP) van PDF-service converteren
-seo-title: Java API QuickStart (SOAP) van PDF-service converteren
-description: Met de Java API voor PDF-service converteren kunt u een PDF-document converteren naar PostScript- en JPEG-bestanden.
-seo-description: Met de Java API voor PDF-service converteren kunt u een PDF-document converteren naar PostScript- en JPEG-bestanden.
+title: Java API QuickStart (SOAP) van PDF Service converteren
+seo-title: Convert PDF Service Java API QuickStart(SOAP)
+description: Met de Java API voor converteren van PDF-service kunt u een PDF-document converteren naar PostScript- en JPEG-bestanden.
+seo-description: Use the Convert PDF service Java API to convert a PDF document to PostScript and JPEG files.
 uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
 contentOwner: admin
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 role: Developer
 exl-id: af0cb623-c29c-4b9e-9ffd-736047a45b8d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
 
-# Converteer PDF-service Java API Quick Start (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+# Java API Quick Start (SOAP) van PDF Service converteren {#convert-pdf-service-java-api-quickstart-soap}
 
-De volgende snelstarthandleidingen zijn beschikbaar voor de Convert PDF service-API.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+De volgende snelstarthandleidingen zijn beschikbaar voor de service-API van Convert PDF.
 
 [Snel starten (SOAP-modus): Een PDF-document converteren naar PostScript met de Java API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
@@ -35,7 +38,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Een PDF-document converteren naar PostScript met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een PostScript-document met de naam *Loan.ps*. (Zie [PDF-documenten converteren naar PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
+In het volgende codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een PostScript-document dat *Lening.ps*. (Zie [PDF-documenten converteren naar PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
 ```as3
  /* 
@@ -150,7 +153,7 @@ In het volgende codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geco
 
 ## Snel starten (SOAP-modus): Een PDF-document converteren naar JPEG-bestanden met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een set JPEG-bestanden en opgeslagen in de map C:\Adobe directory. Elk bestand heeft de naam *tempFile[index].jpg*, waarbij het eerste afbeeldingsbestand de naam *tempFile0.jpg* heeft. (Zie [PDF-documenten converteren naar afbeeldingsindelingen](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* aan een reeks dossiers van JPEG en slaat hen in C:\Adobe directory op. Elk bestand krijgt een naam *tempFile[index].jpg*, waarbij het eerste afbeeldingsbestand een naam heeft *tempFile0.jpg*. (Zie [PDF-documenten omzetten in afbeeldingsindelingen](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```as3
  /* 

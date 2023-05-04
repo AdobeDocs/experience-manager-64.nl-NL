@@ -1,8 +1,8 @@
 ---
 title: CRXDE Lite inschakelen in AEM
-seo-title: CRXDE Lite inschakelen in AEM
+seo-title: Enabling CRXDE Lite in AEM
 description: Leer hoe u CRXDE Lite in AEM kunt inschakelen.
-seo-description: Leer hoe u CRXDE Lite in AEM kunt inschakelen.
+seo-description: Learn how to enable CRXDE Lite in AEM.
 uuid: d7a3db67-6384-463b-9aa9-f08ecc6c99c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,21 +10,24 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: 3d8dc987-2ff9-4f71-bc07-48018caa3af4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
 # CRXDE Lite inschakelen in AEM{#enabling-crxde-lite-in-aem}
 
-Om ervoor te zorgen dat AEM installaties zo veilig mogelijk zijn, raadt de beveiligingscontrolelijst [aan WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) uit te schakelen in productieomgevingen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Nochtans, hangt CRXDE Lite van de `org.apache.sling.jcr.davex` bundel om behoorlijk te functioneren af, zodat zal het onbruikbaar maken WebDAV effectief CRXDE Lite ook onbruikbaar maken.
+Om ervoor te zorgen dat AEM installaties zo veilig mogelijk zijn, wordt in de beveiligingscontrolelijst aanbevolen [WebDAV uitschakelen](/help/sites-administering/security-checklist.md#disable-webdav) in productieomgevingen.
 
-Wanneer dit gebeurt, zal het doorbladeren aan `https://serveraddress:4502/crx/de/index.jsp` een leeg wortelknoop tonen, en alle HTTP- verzoeken aan de middelen van CRXDE Lite zullen ontbreken:
+CRXDE Lite is echter afhankelijk van de `org.apache.sling.jcr.davex` bundel om behoorlijk te functioneren, zodat zal onbruikbaar makend WebDAV effectief CRXDE Lite ook onbruikbaar maken.
+
+Wanneer dit gebeurt, bladert u naar `https://serveraddress:4502/crx/de/index.jsp` zal een leeg wortelknooppunt tonen, en alle HTTP- verzoeken aan de middelen van CRXDE Lite zullen ontbreken:
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -46,7 +49,7 @@ Als deze optie is uitgeschakeld, kunt u CRXDE Lite inschakelen door de onderstaa
 1. Maak de volgende configuratie:
 
    * **Hoofdpad:** `/crx/server`
-   * Tik op het vak onder **Absolute URI&#39;s gebruiken**.
+   * Vink het vakje onder aan **Absolute URI&#39;s gebruiken**.
 
 1. Als u klaar bent met het gebruik van CRXDE Lite, moet u WebDAV opnieuw uitschakelen.
 

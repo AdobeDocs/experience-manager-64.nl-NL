@@ -1,8 +1,8 @@
 ---
 title: Een pagina ontwerpen voor mobiele apparaten
-seo-title: Een pagina ontwerpen voor mobiele apparaten
+seo-title: Authoring a Page for Mobile Devices
 description: Wanneer het ontwerpen voor mobiel, kunt u tussen verscheidene mededingers schakelen om te zien wat de eindgebruiker ziet
-seo-description: Wanneer het ontwerpen voor mobiel, kunt u tussen verscheidene mededingers schakelen om te zien wat de eindgebruiker ziet
+seo-description: When authoring for mobile, you can switch between several emulators to see what the end-user sees
 uuid: a7a1ba68-d608-4819-88d1-0dab5955d3f4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 exl-id: 97f0b0d2-7d7b-4a90-a4e5-348a306e1622
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
 
 # Een pagina ontwerpen voor mobiele apparaten{#authoring-a-page-for-mobile-devices}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Wanneer u een mobiele pagina ontwerpt, wordt de pagina weergegeven op een manier die het mobiele apparaat emuleert. Wanneer u de pagina ontwerpt, kunt u schakelen tussen verschillende emulators om te zien wat de eindgebruiker ziet wanneer hij of zij de pagina opent.
 
@@ -32,10 +35,10 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
-1. Open vanuit globale navigatie de **Sites**-console.
-1. Open de pagina **We.Retail** -> **United States** -> **English**.
+1. Via globale navigatie opent u de **Sites** console.
+1. De pagina openen **Wij.Detailhandel** -> **Verenigde Staten** -> **Engels**.
 
-1. Schakel over naar de modus **Voorvertoning**.
+1. Overschakelen op **Voorvertoning** in.
 1. Schakel over naar de gewenste emulator door op het apparaatpictogram boven aan de pagina te klikken.
 1. Sleep componenten van de componentbrowser naar de pagina.
 

@@ -1,8 +1,8 @@
 ---
 title: Forms Portal | Gebruikersgegevens verwerken
-seo-title: Forms Portal | Gebruikersgegevens verwerken
-description: Het AEM Forms-portaal biedt componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-elementen op de AEM Sites-pagina kunt weergeven. Leer hoe Forms Portal gegevens opslaat voor concepten en verzonden formulieren. Dig dieper op hoe te om tot ontwerp en voorgelegde vormengegevens voor het programma geopende en anonieme gebruikers in de gevormde gegevensopslag toegang te hebben, en indien nodig, het te schrappen.
-seo-description: Het AEM Forms-portaal biedt componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-elementen op de AEM Sites-pagina kunt weergeven. Leer hoe Forms Portal gegevens opslaat voor concepten en verzonden formulieren. Dig dieper op hoe te om tot ontwerp en voorgelegde vormengegevens voor het programma geopende en anonieme gebruikers in de gevormde gegevensopslag toegang te hebben, en indien nodig, het te schrappen.
+seo-title: Forms Portal | Handling user data
+description: AEM Forms Portal biedt componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-middelen op de AEM Sites-pagina kunt weergeven. Leer hoe Forms Portal gegevens opslaat voor concepten en verzonden formulieren. Dig dieper op hoe te om tot ontwerp en voorgelegde vormengegevens voor het programma geopende en anonieme gebruikers in de gevormde gegevensopslag toegang te hebben, en indien nodig, het te schrappen.
+seo-description: AEM Forms portal provides components that you can use to list adaptive forms, HTML5 forms, and other Forms assets on AEM Sites page. Learn how Forms portal stores data for draft and submitted forms. Dig deeper on how to access draft and submitted forms data for logged-in and anonymous users in the configured data stores, and if required, delete it.
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
@@ -10,25 +10,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 role: Admin
 exl-id: 05dbb6ee-09fd-44ee-bb8b-a3f3ebb32f5a
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
 
 # Forms Portal | Gebruikersgegevens verwerken {#forms-portal-handling-user-data}
 
-Het AEM Forms-portaal biedt componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-elementen op de AEM Sites-pagina kunt weergeven. Daarnaast kunt u het configureren om concepten en verzonden adaptieve formulieren en HTML5-formulieren weer te geven voor een aangemelde gebruiker. Zie [Inleiding tot het publiceren van formulieren op een portal](/help/forms/using/introduction-publishing-forms.md) voor meer informatie over het portal Formulieren.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Wanneer een aangemelde gebruiker een adaptief formulier opslaat als concept of het verzendt, worden deze weergegeven op de tabbladen Concepten en Verzending op de portal Formulieren. De gegevens voor concepten of verzonden formulieren worden opgeslagen in de gegevensopslag die is geconfigureerd voor AEM implementatie. Concepten en opmerkingen van anonieme gebruikers worden niet weergegeven op de pagina Formulierportal. nochtans, wordt het gegeven opgeslagen in de gevormde gegevensopslag. Zie [Opslagservices configureren voor concepten en verzendingen](/help/forms/using/configuring-draft-submission-storage.md) voor meer informatie.
+AEM Forms Portal biedt componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-middelen op de AEM Sites-pagina kunt weergeven. Bovendien kunt u het configureren om concepten en verzonden adaptieve formulieren en HTML5 formulieren voor een aangemelde gebruiker weer te geven. Voor meer informatie over formulierportal raadpleegt u [Inleiding tot het publiceren van formulieren op een portal](/help/forms/using/introduction-publishing-forms.md).
+
+Wanneer een aangemelde gebruiker een adaptief formulier opslaat als concept of het verzendt, worden deze weergegeven op de tabbladen Concepten en Verzending op de portal Formulieren. De gegevens voor concepten of verzonden formulieren worden opgeslagen in de gegevensopslag die is geconfigureerd voor AEM implementatie. Concepten en opmerkingen van anonieme gebruikers worden niet weergegeven op de pagina Formulierportal. nochtans, wordt het gegeven opgeslagen in de gevormde gegevensopslag. Zie voor meer informatie [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
 In Forms Portal worden gegevens voor concepten en verzonden formulieren opgeslagen in de volgende scenario&#39;s:
 
-* De verzendactie die in het adaptieve formulier is geconfigureerd, is **Forms Portal verzendt Action**.
-* Voor verzendacties anders dan **Forms Portal Handeling verzenden**, is de optie **[!UICONTROL Store data in forms portal]** ingeschakeld in de **Verzending**-eigenschappen van de adaptieve formuliercontainer.
+* De verzendactie die in het adaptieve formulier is geconfigureerd, is **Forms Portal-verzendactie**.
+* Voor het verzenden van andere acties dan **Forms Portal-verzendactie** de **[!UICONTROL Store data in forms portal]** optie is ingeschakeld in het dialoogvenster **Indiening** eigenschappen van de adaptieve formuliercontainer.
 
 Voor elk ontwerp en voorgelegd formulier voor het programma geopende en anonieme gebruikers, slaat het portaal van formulieren de volgende gegevens op:
 
@@ -58,7 +62,7 @@ Afhankelijk van de geconfigureerde persistentie van de gegevensopslag worden con
   <tr> 
    <td><p>Database</p> </td> 
    <td><p>AEM gegevensopslagruimte van auteurinstantie en databasetabellen</p> </td> 
-   <td>Databasetabellen <code>data</code>, <code>metadata</code> en <code>additionalmetadata</code></td> 
+   <td>Databasetabellen <code>data</code>, <code>metadata</code>, en <code>additionalmetadata</code></td> 
   </tr> 
  </tbody> 
 </table>
@@ -69,19 +73,19 @@ U kunt tot ontwerp en voorgelegde vormengegevens voor het programma geopende en 
 
 ### AEM {#aem-instances}
 
-Alle concepten en verzonden formuliergegevens in AEM exemplaren (auteur, publicatie of extern) voor aangemelde en anonieme gebruikers worden opgeslagen in het knooppunt `/content/forms/fp/` van de toepasselijke AEM. Telkens wanneer een aangemelde of anonieme gebruiker een concept opslaat of een formulier verzendt, worden een `draft ID` of `submission ID`, een `user data ID` en een willekeurige `ID` voor elke bijlage (indien van toepassing) gegenereerd, die is gekoppeld aan het desbetreffende concept of de respectievelijke verzending.
+Alle concepten en verzonden formuliergegevens in AEM instanties (auteur, publicatie of extern) voor aangemelde en anonieme gebruikers worden opgeslagen in het dialoogvenster `/content/forms/fp/` knooppunt van de toepasselijke AEM opslagplaats. Telkens wanneer een aangemelde of anonieme gebruiker een concept opslaat of een formulier, een `draft ID` of `submission ID`, `user data ID`en een willekeurige `ID` voor elke (indien van toepassing) bijlage wordt gegenereerd, die bij het desbetreffende ontwerp of de respectieve indiening hoort.
 
 #### Gebruikersgegevens openen {#access-user-data}
 
-Wanneer een aangemelde gebruiker een concept opslaat of een formulier verzendt, wordt een onderliggend knooppunt gemaakt met haar gebruikersnaam. Concepten en verzendgegevens voor Sarah Rose waarvan de gebruikers-id `srose` is, worden bijvoorbeeld opgeslagen in het knooppunt `/content/forms/fp/srose/` in AEM opslagplaats. Binnen de knoop van identiteitskaart van de gebruiker, worden de gegevens georganiseerd in een hiërarchische structuur.
+Wanneer een aangemelde gebruiker een concept opslaat of een formulier verzendt, wordt een onderliggend knooppunt gemaakt met haar gebruikersnaam. Concepten en verzendgegevens voor Sarah Rose waarvan de gebruikersnaam `srose` worden opgeslagen in `/content/forms/fp/srose/` knooppunt in AEM repository. Binnen de knoop van identiteitskaart van de gebruiker, worden de gegevens georganiseerd in een hiërarchische structuur.
 
-In de volgende tabel wordt uitgelegd hoe de gegevens voor alle concepten van `srose` in AEM opslagplaats worden opgeslagen.
+In de volgende tabel wordt uitgelegd hoe de gegevens voor alle concepten `srose` wordt opgeslagen in AEM opslagplaats.
 
 >[!NOTE]
 >
->Een exacte structuur zoals `drafts` wordt gerepliceerd voor verzonden formulieren voor `srose` onder het `/content/forms/fp/srose/submit/`-knooppunt.
+>Een exacte structuur zoals `drafts` wordt gerepliceerd voor verzonden formulieren voor `srose` onder de `/content/forms/fp/srose/submit/` knooppunt.
 >
->Alle concepten en verzendingen door `anonymous` gebruikers worden opgeslagen onder het knooppunt `/content/forms/fp/anonymous/`, dat concepten en verzendingen voor alle anonieme gebruikers onder de knooppunten `draft` en `submit` organiseert.
+>Alle ontwerpen en opmerkingen van `anonymous` gebruikers worden opgeslagen onder de `/content/forms/fp/anonymous/` knooppunt, dat concepten en verzendingen voor alle anonieme gebruikers onder de `draft` en `submit` knooppunten.
 
 | Knooppunt | Beschrijving |
 |---|---|
@@ -95,21 +99,21 @@ In de volgende tabel wordt uitgelegd hoe de gegevens voor alle concepten van `sr
 
 #### Gebruikersgegevens verwijderen {#delete-user-data}
 
-Als u gebruikersgegevens uit concepten en verzendingen voor een aangemelde gebruiker wilt verwijderen uit AEM systemen, moet u het knooppunt `user ID` voor een specifieke gebruiker uit het auteurknooppunt verwijderen. U moet gegevens handmatig verwijderen uit alle toepasselijke AEM.
+Als u gebruikersgegevens uit concepten en verzendingen voor een aangemelde gebruiker volledig van AEM systemen wilt verwijderen, moet u de `user ID` knooppunt voor een specifieke gebruiker van het auteurknooppunt. U moet gegevens handmatig verwijderen uit alle toepasselijke AEM.
 
-Concepten en verzendgegevens voor alle anonieme gebruikers worden opgeslagen in de gemeenschappelijke `drafts`- en `submit`-knooppunten onder `/content/forms/fp/anonymous`. Er is geen methode om gegevens voor een bepaalde anonieme gebruiker te vinden tenzij bepaalde identificeerbare informatie bekend is.In dit geval, kunt u naar de informatie zoeken die de anonieme gebruiker in AEM bewaarplaats identificeert en manueel de knoop schrappen die het bevat van alle toepasselijke AEM instanties om gegevens uit het AEM systeem te verwijderen. Als u echter gegevens voor alle anonieme gebruikers wilt verwijderen, kunt u het knooppunt `anonymous` verwijderen om concepten en verzendgegevens voor alle anonieme gebruikers te verwijderen.
+Concepten en verzendgegevens voor alle anonieme gebruikers worden opgeslagen in de algemene `drafts` en `submit` knooppunten onder `/content/forms/fp/anonymous`. Er is geen methode om gegevens voor een bepaalde anonieme gebruiker te vinden tenzij bepaalde identificeerbare informatie bekend is.In dit geval, kunt u naar de informatie zoeken die de anonieme gebruiker in AEM bewaarplaats identificeert en manueel de knoop schrappen die het bevat van alle toepasselijke AEM instanties om gegevens uit het AEM systeem te verwijderen. Als u echter gegevens voor alle anonieme gebruikers wilt verwijderen, kunt u de opdracht `anonymous` knooppunt om concepten en verzendgegevens voor alle anonieme gebruikers te verwijderen.
 
 ### Database {#database}
 
 Wanneer AEM wordt gevormd om gegevens in een gegevensbestand op te slaan, vormen portalconcept en voorleggingsgegevens in de volgende gegevensbestandlijsten voor zowel het programma geopende als anonieme gebruikers worden opgeslagen:
 
-* gegevens
-* metadata
+* data
+* metagegevens
 * aanvullende metagegevens
 
 #### Gebruikersgegevens openen {#access-user-data-1}
 
-Om tot concepten en voorleggingsgegevens voor het programma geopende en anonieme gebruikers in de gegevensbestandlijsten toegang te hebben, stel het volgende gegevensbestandbevel in werking. Vervang `logged-in user` in de query door de gebruikersnaam waartoe u toegang wilt hebben of door `anonymous` voor anonieme gebruikers.
+Om tot concepten en voorleggingsgegevens voor het programma geopende en anonieme gebruikers in de gegevensbestandlijsten toegang te hebben, stel het volgende gegevensbestandbevel in werking. In de query vervangt u `logged-in user` met de gebruikersnaam waarvan u de gegevens wilt openen of gebruiken `anonymous` voor anonieme gebruikers.
 
 ```sql
 select * from metadata, data, additionalmetadatatable where metadata.owner = 'logged-in user' and metadata.id = additionalmetadatatable.id and metadata.userdataID = data.id
@@ -117,7 +121,7 @@ select * from metadata, data, additionalmetadatatable where metadata.owner = 'lo
 
 #### Gebruikersgegevens verwijderen {#delete-user-data-1}
 
-Als u concepten en verzendingsgegevens voor een aangemelde gebruiker wilt verwijderen uit de databasetabellen, voert u de volgende databaseopdracht uit. Vervang `logged-in user` in de query door de gebruikers-id waarvan u de gegevens wilt verwijderen of door `anonymous` voor anonieme gebruikers. Merk op dat om gegevens voor een bepaalde anonieme gebruiker van het gegevensbestand te schrappen, u het moet vinden gebruikend wat identificeerbare informatie en het schrappen van gegevensbestandlijsten die de informatie bevatten.
+Als u concepten en verzendingsgegevens voor een aangemelde gebruiker wilt verwijderen uit de databasetabellen, voert u de volgende databaseopdracht uit. In de query vervangt u `logged-in user` met de gebruikersnaam waarvan u de gegevens wilt verwijderen of met `anonymous` voor anonieme gebruikers. Merk op dat om gegevens voor een bepaalde anonieme gebruiker van het gegevensbestand te schrappen, u het moet vinden gebruikend wat identificeerbare informatie en het schrappen van gegevensbestandlijsten die de informatie bevatten.
 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'

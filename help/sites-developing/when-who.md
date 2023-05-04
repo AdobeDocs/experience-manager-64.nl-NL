@@ -1,8 +1,8 @@
 ---
 title: Testen - wanneer en met wie?
-seo-title: Testen - wanneer en met wie?
+seo-title: Testing - when and with whom?
 description: Verschillende rollen kunnen bij het testen en in diverse stadia van de projectontwikkeling worden betrokken
-seo-description: Verschillende rollen kunnen bij het testen en in diverse stadia van de projectontwikkeling worden betrokken
+seo-description: Various roles can be involved in testing and at various stages of project development
 uuid: 431e8f06-80eb-4fb3-a4c7-2580608b0a1c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 exl-id: cba4a814-052b-4b9f-96f2-8c80b2766ecc
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
 # Testen - wanneer en met wie?{#testing-when-and-with-whom}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Verschillende rollen kunnen bij het testen en in diverse stadia van de projectontwikkeling worden betrokken.
 
@@ -45,7 +48,7 @@ Verschillende rollen kunnen bij het testen en in diverse stadia van de projecton
     <ul> 
      <li><p>Verstrekt de klant van ervaring van het project dat wordt ontwikkeld.</p> </li> 
      <li><p>Biedt vroege feedback van de klant.</p> </li> 
-     <li><p>Gebruikers geven vaak hun eisen uit in termen van ervaring uit het verleden; Als de klanten zo vroeg mogelijk worden betrokken bij het testen, wordt hun ervaring met het nieuwe project in termen van <i>hands-on</i>-ervaring vergroot.</p> </li> 
+     <li><p>Gebruikers geven vaak hun eisen uit in termen van ervaring uit het verleden; het zo vroeg mogelijk betrekken van de klanten bij het testen vergroot hun ervaring met het nieuwe project in termen van <i>hands-on</i> ervaring.</p> </li> 
     </ul> </td> 
    <td><p>Opnieuw is vroege betrokkenheid goed, hoewel om het even welke versie de klanten gebruiken stabiel zou moeten zijn, met redelijke functionaliteit.</p> <p>Eerste indrukken zijn altijd belangrijk.</p> </td> 
   </tr> 

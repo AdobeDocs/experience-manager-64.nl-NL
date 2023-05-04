@@ -2,7 +2,7 @@
 title: Dashboards
 seo-title: Dashboards
 description: Leer hoe u nieuwe AEM-dashboards maakt, configureert en ontwikkelt.
-seo-description: Leer hoe u nieuwe AEM-dashboards maakt, configureert en ontwikkelt.
+seo-description: Learn how to create, configure and develop new AEM dashboards.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: e1f0e210-2c63-4a5f-9e69-4e73624a4304
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
 
 # Dashboards{#dashboards}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Wanneer u AEM gebruikt, kunt u veel verschillende inhoudstypen beheren (zoals pagina&#39;s, elementen). AEM dashboards verstrekken een makkelijk te gebruiken en aanpasbare manier om pagina&#39;s te bepalen die geconsolideerde gegevens tonen.
 
@@ -27,7 +30,7 @@ Wanneer u AEM gebruikt, kunt u veel verschillende inhoudstypen beheren (zoals pa
 >AEM dashboards worden gecreeerd op een per gebruikersbasis, zodat kan een gebruiker tot hun eigen dashboard slechts toegang hebben.
 >
 >
->Nochtans, [kunnen de malplaatjes van het dashboard](#creating-a-dashboard-template) worden gebruikt om gemeenschappelijke configuratie en lay-out van het dashboard te delen.
+>Maar [Dashboardsjablonen](#creating-a-dashboard-template) kan worden gebruikt om algemene configuratie en dashboardlay-out te delen.
 
 ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -37,82 +40,82 @@ Wanneer u AEM gebruikt, kunt u veel verschillende inhoudstypen beheren (zoals pa
 
 Ga als volgt te werk om een nieuw dashboard te maken:
 
-1. Klik in de sectie **Tools** op **Configuratieconsole**.
+1. In de **Gereedschappen** sectie, klikt u op **Configuratieconsole**.
 
 1. Dubbelklik in de structuur op **Dashboard**.
 
-1. Klik **Nieuw dashboard**.
+1. Klikken **Nieuw dashboard**.
 
-1. Typ de **Titel** (bijvoorbeeld Mijn dashboard) en **Naam**.
+1. Typ de **Titel** (bijvoorbeeld Mijn dashboard) en de **Naam**.
 
-1. Klik **Maken**.
+1. Klikken **Maken**.
 
 ### Een dashboard klonen {#cloning-a-dashboard}
 
 Mogelijk wilt u meerdere dashboards hebben om snel informatie over uw inhoud vanuit verschillende weergaven te bekijken. AEM biedt een kloonfunctie waarmee u een bestaand dashboard kunt dupliceren, zodat u een nieuw dashboard kunt maken. Ga als volgt te werk om een dashboard te klonen:
 
-1. Klik in de sectie **Tools** op **Configuratieconsole**.
+1. In de **Gereedschappen** sectie, klikt u op **Configuratieconsole**.
 
 1. Klik in de structuur op **Dashboard**.
 1. Klik op het dashboard dat u wilt klonen.
 
-1. Klik **Klonen**.
+1. Klikken **Klonen**.
 
-1. Typ de **Naam** van het nieuwe dashboard.
+1. Typ de **Naam** van uw nieuwe dashboard.
 
 ### Een dashboard verwijderen {#removing-a-dashboard}
 
-1. Klik in de sectie **Tools** op **Configuratieconsole**.
+1. In de **Gereedschappen** sectie, klikt u op **Configuratieconsole**.
 
 1. Klik in de structuur op **Dashboard**.
 1. Klik op het dashboard dat u wilt verwijderen.
 
-1. Klik **Verwijderen**.
+1. Klikken **Verwijderen**.
 
-1. Klik **Ja** om te bevestigen.
+1. Klikken **Ja** ter bevestiging.
 
-## Dashboard-componenten {#dashboard-components}
+## Dashboardcomponenten {#dashboard-components}
 
 ### Overzicht {#overview}
 
-De componenten van het dashboard zijn niets meer dan gewone [AEM componenten](/help/sites-developing/developing-components-samples.md). In deze sectie worden de rapportonderdelen beschreven die bij AEM worden geleverd.
+Onderdelen van het dashboard zijn niet meer dan normaal [AEM componenten](/help/sites-developing/developing-components-samples.md). In deze sectie worden de rapportonderdelen beschreven die bij AEM worden geleverd.
 
 ### Webanalytische rapportagecomponenten {#web-analytics-reporting-components}
 
-AEM wordt geleverd met een set componenten die meerdere metrische gegevens van uw [SiteCatalyst](/help/sites-administering/adobeanalytics.md)-gegevens renderen. Deze componenten worden vermeld in de Sidetrap onder de sectie **Dashboard**.
+AEM schepen met een reeks componenten die veelvoudige metriek van uw teruggeven [SiteCatalyst](/help/sites-administering/adobeanalytics.md) gegevens. Deze componenten worden vermeld in de Sidetrap onder de **Dashboard** sectie.
 
 Elke rapportcomponent bevat ten minste drie tabbladen:
 
-* **Standaard**: bevat de hoofdconfiguratie.
+* **Basis**: bevat de hoofdconfiguratie.
 
-* **Rapport:** bevat de configuratie specifiek van elk rapport.
+* **Rapport:** bevat specifiek de configuratie van elk rapport.
 * **Stijl**: bevat opmaakconfiguratie zoals diagramgrootte en -marge.
 
 De rapportcomponenten worden geïnitialiseerd met een standaardconfiguratie die u helpt snel opstelling uw dashboard.
 
 #### Basisconfiguratie {#basic-configuration}
 
-Het **Basis** lusje verleent toegang tot de volgende configuratieingangen:
+De **Basis** verleent toegang tot de volgende configuratieingangen:
 
-**** TitleThe title displayed op the dashboard.
+**Titel** De titel die op het dashboard wordt weergegeven.
 
-**Request-** typeDe manier waarop gegevens worden aangevraagd.
+**Type aanvraag** De manier waarop gegevens worden aangevraagd.
 
-**SiteCatalyst Configuration (optioneel)** The configuration you want to use to connect to SiteCatalyst. Indien niet verstrekt wordt de configuratie verondersteld om op de pagina van het Dashboard (via paginaeigenschappen) te worden gevormd.
+**SiteCatalyst-configuratie (optioneel)** De configuratie u wilt gebruiken om met SiteCatalyst te verbinden. Indien niet verstrekt wordt de configuratie verondersteld om op de pagina van het Dashboard (via paginaeigenschappen) te worden gevormd.
 
 **ID rapportsuite (optioneel)** De SiteCatalyst-rapportsuite die u wilt gebruiken om de grafiek te genereren.
 
 #### Rapportconfiguratie {#report-configuration}
 
-Als u webstatistieken wilt weergeven, moet u het datumbereik definiëren van de gegevens die u wilt genereren. Het **tabblad Report** biedt twee velden om dat bereik te definiëren.
+Als u webstatistieken wilt weergeven, moet u het datumbereik definiëren van de gegevens die u wilt genereren. De **Rapport** bevat twee velden om dat bereik te definiëren.
 
 >[!NOTE]
 >
 >Als u een datumbereik voor een grote datum instelt, kan de reactiesnelheid van het dashboard afnemen.
 
-**Datum** van Absolute of relatieve datum vanaf wanneer de gegevens worden opgehaald.
+**Datum vanaf** Absolute of relatieve datum vanaf wanneer de gegevens worden opgehaald.
 
-**Datum** tot absolute of relatieve datum waarop de gegevens zijn opgehaald.
+**Datum tot** Absolute of relatieve datum waarop de gegevens worden opgehaald.
 
 Elke component definieert ook specifieke instellingen.
 
@@ -120,83 +123,83 @@ Elke component definieert ook specifieke instellingen.
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-**Date** GranularityTime-eenheid van de X-as (bijvoorbeeld dag, uur).
+**Datum van granulariteit** Tijdeenheid van de X-as (bijvoorbeeld dag, uur).
 
-**** MetricsThe list of events you want to display.
+**Metrisch** De lijst met gebeurtenissen die u wilt weergeven.
 
-**** ElementsThe list of elements that break down the metrics data in the graph.
+**Elementen** De lijst met elementen die de metagegevens in de grafiek opsplitst.
 
 #### Rapport met gerangschikte lijst {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-**** ElementsHet element dat de meetgegevens in de grafiek opsplitst.
+**Elementen** Het element dat de cijfergegevens in de grafiek opsplitst.
 
-**** MetricsDe gebeurtenis die u wilt weergeven.
+**Metrisch** De gebeurtenis die u wilt weergeven.
 
-**Nee. van hoogste punten** Aantal punten die door het rapport worden getoond.
+**Nee. van bovenste objecten** Aantal punten door het rapport worden getoond dat.
 
 #### Geregistreerd rapport {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-**** MetricsDe gebeurtenis die u wilt weergeven.
+**Metrisch** De gebeurtenis die u wilt weergeven.
 
-**** ElementsHet element dat de meetgegevens in de grafiek opsplitst.
+**Elementen** Het element dat de cijfergegevens in de grafiek opsplitst.
 
-#### Rapport {#top-site-section-report} voor bovenste sectie
+#### Rapport voor bovenste sectie {#top-site-section-report}
 
 Deze component geeft een grafiek weer met de meer bezochte sectie van een website volgens de volgende configuratie.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-**Nee. van hoogste punten** Aantal sectie die door in het rapport wordt getoond.
+**Nee. van bovenste objecten** Aantal sectie die door in het rapport wordt getoond.
 
-#### Trend rapport {#trended-report}
+#### Trend Report {#trended-report}
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
-**Date** GranularityTime-eenheid van de X-as (bijvoorbeeld dag, uur).
+**Datum van granulariteit** Tijdeenheid van de X-as (bijvoorbeeld dag, uur).
 
-**** MetricsDe gebeurtenis die u wilt weergeven.
+**Metrisch** De gebeurtenis die u wilt weergeven.
 
-**** ElementsHet element dat de meetgegevens in de grafiek opsplitst.
+**Elementen** Het element dat de cijfergegevens in de grafiek opsplitst.
 
-## Het dashboard {#extending-dashboard} uitbreiden
+## Het dashboard uitbreiden {#extending-dashboard}
 
 ### Overzicht {#overview-1}
 
-Dashboards zijn normale pagina&#39;s ( `cq:Page`), daarom kunnen om het even welke componenten worden gebruikt om Dashboards samen te stellen.
+Dashboards zijn normale pagina&#39;s ( `cq:Page`), kunnen daarom alle componenten worden gebruikt om dashboards samen te stellen.
 
-Er is een standaardcomponentengroep `Dashboard` die analytische rapportcomponenten bevat die door gebrek op het malplaatje worden toegelaten.
+Er is een standaardcomponentgroep `Dashboard` met analytische rapportagecomponenten die standaard op de sjabloon zijn ingeschakeld.
 
 ### Een dashboardsjabloon maken {#creating-a-dashboard-template}
 
 Een sjabloon definieert de standaardinhoud van een nieuw dashboard. U kunt verschillende sjablonen gebruiken voor het maken van verschillende typen dashboards.
 
-Dashboardsjablonen worden net als andere paginasjablonen gemaakt, maar worden opgeslagen onder `/libs/cq/dashboards/templates/`. Zie de sectie [Sjabloon voor inhoudspagina maken](/help/sites-developing/website.md#creating-the-contentpage-template).
+Dashboardsjablonen worden net als andere paginasjablonen gemaakt, behalve dat ze onder `/libs/cq/dashboards/templates/`. Zie de [Sjabloon voor inhoudspagina maken](/help/sites-developing/website.md#creating-the-contentpage-template) sectie.
 
 >[!NOTE]
 >
 >Dashboardsjablonen worden door gebruikers gedeeld.
 
-### Een dashboardcomponent {#developing-a-dashboard-component} ontwikkelen
+### Een dashboardcomponent ontwikkelen {#developing-a-dashboard-component}
 
 Het ontwikkelen van een dashboardcomponent bestaat uit het maken van een gewone AEM. Deze sectie beschrijft een voorbeeld van een component die hoogste 10 van contribuanten toont.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-De bovenste auteurcomponenten worden opgeslagen in de bewaarplaats op `/apps/geometrixx-outdoors/components/reporting` en bestaat uit:
+De bovenste auteurcomponenten worden opgeslagen in de repository op `/apps/geometrixx-outdoors/components/reporting` en bestaat uit:
 
-1. een `jsp`-bestand dat jcr-gegevens leest en de tijdelijke aanduiding `html` definieert.
+1. a `jsp` bestand dat jcr-gegevens leest en dat de `html` plaatsaanduiding.
 
-1. een client-side bibliotheek met één `js`-bestand dat de gegevens ophaalt en bestelt, vult vervolgens de tijdelijke aanduiding `html`.
+1. een bibliotheek aan de clientzijde met één `js` bestand dat de gegevens ophaalt en bestelt, vult vervolgens het `html` plaatsaanduiding.
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-Het volgende Javascript-bestand wordt in `geout.reporting.topauthors` [Clientbibliotheek](/help/sites-developing/clientlibs.md) gedefinieerd als een onderliggend item van de component zelf.
+Het volgende JavaScript-bestand wordt gedefinieerd in het dialoogvenster `geout.reporting.topauthors` [Clientbibliotheek](/help/sites-developing/clientlibs.md) als een onderliggend element van de component zelf.
 
-De [QueryBuilder](/help/sites-developing/querybuilder-api.md) wordt gebruikt om de opslagplaats te vragen om `cq:AuditEvent` knopen te lezen. Het queryresultaat is een JSON-object waaruit de bijdragen van de auteur worden geëxtraheerd.
+De [QueryBuilder](/help/sites-developing/querybuilder-api.md) wordt gebruikt om de gegevensopslagruimte te vragen om te lezen `cq:AuditEvent` knooppunten. Het queryresultaat is een JSON-object waaruit de bijdragen van de auteur worden geëxtraheerd.
 
 #### top_authors.js {#top-authors-js}
 
@@ -243,7 +246,7 @@ $.ajax({
 });  
 ```
 
-`JSP` omvat zowel `global.jsp` als `clientlib`.
+De `JSP` omvat beide `global.jsp` en `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 

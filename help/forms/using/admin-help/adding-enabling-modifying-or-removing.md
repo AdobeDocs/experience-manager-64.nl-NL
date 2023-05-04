@@ -1,8 +1,8 @@
 ---
 title: Eindpunten toevoegen, inschakelen, wijzigen of verwijderen
-seo-title: Eindpunten toevoegen, inschakelen, wijzigen of verwijderen
+seo-title: Adding, enabling, modifying, or removing endpoints
 description: Leer hoe u eindpunten toevoegt, inschakelt, wijzigt en verwijdert.
-seo-description: Leer hoe u eindpunten toevoegt, inschakelt, wijzigt en verwijdert.
+seo-description: Learn how to add, enable, modify and remove endpoints.
 uuid: c53f225b-3d55-42f6-8982-0cd7dde0c4f5
 contentOwner: admin
 content-type: reference
@@ -10,17 +10,20 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: 8aed1439-aa39-4f75-909b-6a7ad7840a08
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
 # Eindpunten toevoegen, inschakelen, wijzigen of verwijderen {#adding-enabling-modifying-or-removing-endpoints}
 
-## Een eindpunt toevoegen aan een service {#add-an-endpoint-to-a-service}
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+## Voeg een eindpunt aan de dienst toe {#add-an-endpoint-to-a-service}
 
 Eindpunten kunnen alleen aan services worden toegevoegd. Een eindpunt kan niet alleen bestaan; het moet met een dienst worden geassocieerd.
 
@@ -33,17 +36,17 @@ Eindpunten kunnen alleen aan services worden toegevoegd. Een eindpunt kan niet a
 1. Selecteer in de lijst op het tabblad Eindpunten het type eindpunt dat u wilt toevoegen en klik op Toevoegen.
 1. Afhankelijk van het eindpunttype, vorm extra eindpuntmontages.
 
-   [Instellingen voor het eindpunt van gecontroleerde mappen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+[Instellingen voor het eindpunt van gecontroleerde mappen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-   [Instellingen voor e-maileindpunt](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+[Instellingen voor e-maileindpunt](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-   [Eindpunten van Taakbeheer configureren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+[Eindpunten van Taakbeheer configureren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-   [Instellingen voor eindpunten verwijderen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+[Instellingen voor eindpunten verwijderen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. Klik op Toevoegen.
 
-## Een eindpunt {#enable-or-disable-an-endpoint} in- of uitschakelen
+## Een eindpunt in- of uitschakelen {#enable-or-disable-an-endpoint}
 
 Nieuwe eindpunten worden standaard automatisch ingeschakeld. Maar als u een eindpunt hebt onbruikbaar gemaakt, zult u het voor het operationeel moeten toelaten.
 
@@ -52,7 +55,7 @@ Als u problemen met de diensten ervaart, maak de bijbehorende eindpunten onbruik
 1. Klik in de beheerconsole op Services > Toepassingen en services > Eindpuntbeheer.
 1. Voor de pagina van het Beheer van het Eindpunt, selecteer de controledoos voor het eindpunt om toe te laten of onbruikbaar te maken en toe te laten of onbruikbaar te maken en te klikken of onbruikbaar te maken.
 
-## Een eindpunt {#modify-an-endpoint} wijzigen
+## Een eindpunt wijzigen {#modify-an-endpoint}
 
 >[!NOTE]
 >
@@ -70,7 +73,7 @@ Als u problemen met de diensten ervaart, maak de bijbehorende eindpunten onbruik
 
 U kunt deze taak van de pagina van het Beheer van de Dienst ook doen door de dienst te selecteren en dan de Eindpunten tabel te klikken.
 
-## Een eindpunt {#remove-an-endpoint} verwijderen
+## Een eindpunt verwijderen {#remove-an-endpoint}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Eindpuntbeheer.
 1. Voor de pagina van het Beheer van het Eindpunt, selecteer de controledoos voor het eindpunt te verwijderen en te klikken verwijdert. Het eindpunt wordt niet meer weergegeven.

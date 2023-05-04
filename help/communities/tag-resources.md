@@ -1,8 +1,8 @@
 ---
 title: Tags toewijzen
-seo-title: Tags toewijzen
+seo-title: Tagging Enablement Resources
 description: Tags toewijzen van bronnen voor activering maakt het mogelijk bronnen te filteren en paden te leren terwijl leden door catalogi bladeren
-seo-description: Tags toewijzen van bronnen voor activering maakt het mogelijk bronnen te filteren en paden te leren terwijl leden door catalogi bladeren
+seo-description: Tagging of enablement resources allows for filtering of resources and learning paths as members browse catalogs
 uuid: daf8a4f4-486b-498c-99e9-d1533a830e64
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,31 +11,35 @@ content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 role: Admin
 exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
 
 # Tags toewijzen {#tagging-enablement-resources}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Overzicht {#overview}
 
-Door tags toe te wijzen aan bronnen voor activering kunt u bronnen filteren en paden leren terwijl leden door [catalogs](functions.md#catalog-function) bladeren.
+Het etiketteren van enablement middelen staat voor het filtreren van middelen en het leren wegen toe aangezien de leden doorbladeren [catalogi](functions.md#catalog-function).
 
 Hoofdzakelijk:
 
-* [Een ](../../help/sites-administering/tags.md#creating-a-namespace) naamruimte voor tags maken voor elke catalogus
+* [Een naamruimte voor tags maken](../../help/sites-administering/tags.md#creating-a-namespace) voor elke catalogus
 
    * [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions)
 
       * Alleen voor leden van de gemeenschap (gesloten community)
 
-         * Leestoegang toestaan voor de [lidgroep van de communitysite](users.md#publish-group-roles)
+         * Leestoegang voor de [community site member group](users.md#publish-group-roles)
       * Voor elke bezoeker van de site, aangemeld of anoniem (open community)
 
-         * Leestoegang toestaan voor de `Everyone`groep
+         * Leestoegang voor de `Everyone`groep
    * [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -45,15 +49,15 @@ Hoofdzakelijk:
    * [Catalogi configureren die in de structuur van de site bestaan](functions.md#catalog-function)
 
       * Kan tags toevoegen aan de catalogusinstantie om de lijst met tags in de UI-filters te beheren
-      * Kan [voorfilters](catalog-developer-essentials.md#pre-filters) toevoegen om de opgenomen bronnen van een catalogus te beperken
+      * Kan toevoegen [voorfilters](catalog-developer-essentials.md#pre-filters), om de opgenomen bronnen van een catalogus te beperken
 
 * [De communitysite publiceren](sites-console.md#publishing-the-site)
-* [Tags toepassen op ](resources.md#create-a-resource) activering van resources, zodat deze categoriaal kunnen worden gefilterd
+* [Tags toepassen op bronnen voor activering](resources.md#create-a-resource) zodat ze categorisch gefilterd kunnen worden
 * [De bronnen voor activering publiceren](resources.md#publish)
 
 ## Codes voor communautaire sites {#community-site-tags}
 
-Wanneer u een communitysite maakt of bewerkt, stelt u met de instelling [Tags toevoegen](sites-console.md#tagging) het bereik van de tags in die beschikbaar zijn voor functies van de site door een subset van bestaande tagnaamruimten te selecteren.
+Wanneer u een communitysite maakt of bewerkt, [Taginstelling](sites-console.md#tagging) Hiermee stelt u het bereik van beschikbare tags voor functies van de site in door een subset van bestaande tagnaamruimten te selecteren.
 
 Hoewel tags te allen tijde kunnen worden gemaakt en toegevoegd aan de site van de community, wordt aangeraden vooraf een taxonomie te ontwerpen, vergelijkbaar met het ontwerpen van een database. Zie [Tags gebruiken](../../help/sites-authoring/tags.md).
 
@@ -61,7 +65,7 @@ Wanneer u later tags toevoegt aan een bestaande communitysite, moet u de bewerki
 
 Voor een communautaire plaats, nadat de plaats wordt gepubliceerd en de markeringen worden gepubliceerd, is het noodzakelijk om gelezen toegang tot leden van de gemeenschap toe te laten. Zie [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Hieronder wordt beschreven hoe de code wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tags/ski-catalog` voor de groep `Community Enable Members`.
+Hieronder wordt beschreven hoe het wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tags/ski-catalog` voor de groep `Community Enable Members`.
 
 ![chlimage_1-420](assets/chlimage_1-420.png)
 
@@ -75,15 +79,15 @@ De functie Catalog bevat een taginstelling die de tags definieert die worden ver
 
 ## Tags toepassen op Enablement Resources {#applying-tags-to-enablement-resources}
 
-Inschakelingsbronnen en leerpaden worden in alle catalogus weergegeven wanneer `Show in Catalog` wordt gecontroleerd. Als u tags toevoegt aan bronnen en leerpaden, kunt u vooraf filteren in specifieke catalogi en filteren in de interface van de catalogus.
+Bronnen en leerpaden inschakelen worden in alle catalogi weergegeven wanneer `Show in Catalog` is ingeschakeld. Als u tags toevoegt aan bronnen en leerpaden, kunt u vooraf filteren in specifieke catalogi en filteren in de interface van de catalogus.
 
-Het beperken van enablement middelen en het leren wegen aan specifieke catalogi wordt verwezenlijkt door [pre-filters](catalog-developer-essentials.md#pre-filters) te creëren.
+Het beperken van enablement middelen en het leren wegen aan specifieke catalogi wordt verwezenlijkt door het creëren [voorfilters](catalog-developer-essentials.md#pre-filters).
 
 Met de interface van de catalogus kunnen bezoekers een tagfilter toepassen op de lijst met bronnen en leerpaden die in die catalogus worden weergegeven.
 
 De beheerder die de markeringen op enablement middelen toepast moet zich van de markeringsnamespaces verbonden aan de catalogi, evenals taxonomie bewust zijn om een sub-markering voor meer verfijnde categorisatie te selecteren.
 
-Als bijvoorbeeld een naamruimte `ski-catalog` is gemaakt en is ingesteld in een catalogus met de naam `Ski Catalog`, heeft deze mogelijk twee onderliggende tags: `lesson-1` en `lesson-2`.
+Als een `ski-catalog` naamruimte is gemaakt en ingesteld in een catalogus met de naam `Ski Catalog`, heeft deze mogelijk twee onderliggende tags: `lesson-1` en `lesson-2`.
 
 Aldus, om het even welke enablement middelen die met één van worden geëtiketteerd:
 
@@ -91,7 +95,7 @@ Aldus, om het even welke enablement middelen die met één van worden geëtikett
 * ski-catalogus:les-1
 * ski-catalogus:les-2
 
-verschijnt in `Ski Catalog` nadat de enablement resource is gepubliceerd.
+wordt weergegeven in `Ski Catalog` nadat de enablement resource is gepubliceerd.
 
 ![chlimage_1-422](assets/chlimage_1-422.png)
 
@@ -99,7 +103,7 @@ verschijnt in `Ski Catalog` nadat de enablement resource is gepubliceerd.
 
 Zodra alles is opstelling van het auteursmilieu en gepubliceerd, kan de ervaring van het gebruiken van de catalogus om enablement middelen te vinden in het publicatiemilieu worden ervaren.
 
-Als de vervolgkeuzelijst geen tagnaamruimten bevat, controleert u of de machtigingen correct zijn ingesteld in de publicatieomgeving.
+Als er geen tagnaamruimten worden weergegeven in de vervolgkeuzelijst, controleert u of de machtigingen correct zijn ingesteld in de publicatieomgeving.
 
 Als er tagnaamruimten zijn toegevoegd en ontbreken, controleert u of de tags en de site opnieuw zijn gepubliceerd.
 

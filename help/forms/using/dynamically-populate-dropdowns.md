@@ -1,23 +1,26 @@
 ---
-title: 'Vervolgkeuzelijsten dynamisch vullen '
-seo-title: 'Vervolgkeuzelijsten dynamisch vullen '
+title: Vervolgkeuzelijsten dynamisch vullen
+seo-title: Dynamically populating drop-down lists
 description: Procedure voor het dynamisch vullen van vervolgkeuzelijsten op basis van logica
-seo-description: Procedure voor het dynamisch vullen van vervolgkeuzelijsten op basis van logica
+seo-description: Procedure to dynamically populate drop-down lists based on some logic
 uuid: b58a184f-6c96-47ff-8a2e-829c93b63324
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
-# Vervolgkeuzelijsten {#dynamically-populating-drop-down-lists} dynamisch vullen
+# Vervolgkeuzelijsten dynamisch vullen  {#dynamically-populating-drop-down-lists}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Vereisten {#prerequisites}
 
@@ -28,7 +31,7 @@ ht-degree: 0%
 
 ## Procedure voor het dynamisch vullen van vervolgkeuzelijsten {#procedure-to-dynamically-populate-drop-down-lists}
 
-Overweeg een scenario waar u **Staat** drop-down lijst wilt bevolken die op een waarde wordt gebaseerd die u in **Land** drop-down lijst selecteert. Als u Australië in **Land** drop-down lijst selecteert, **Staat** toont de staten binnen Australië. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
+Overweeg een scenario waar u wilt bevolken **Staat** vervolgkeuzelijst gebaseerd op een waarde die u in het dialoogvenster **Land** vervolgkeuzelijst. Als u Australië selecteert in het dialoogvenster **Land** vervolgkeuzelijst, de **Staat** in de vervolgkeuzelijst worden de staten in Australië weergegeven. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
 
 1. Creeer een project met de volgende modules:
 
@@ -146,7 +149,7 @@ Overweeg een scenario waar u **Staat** drop-down lijst wilt bevolken die op een 
    }
    ```
 
-1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de parameter `sling:resourceType` voor het knooppunt gelijk is aan de parameter waarmee het servlet-punt (/apps/populatedropdown).
+1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de `sling:resourceType` parameter voor het knooppunt is dezelfde als die waaraan de servlet-punten (/apps/populatedropdown) wijzen.
 
    ![Een vervolgkeuzelijst maken](assets/dropdown-node.png)
 
@@ -155,7 +158,7 @@ Overweeg een scenario waar u **Staat** drop-down lijst wilt bevolken die op een 
 
    Voeg de namen van de landen toe die u wilt weergeven in de lijst Land. Voeg in de lijst Staat een script toe om het te vullen op basis van de naam van het land in de lijst Land.
 
-   ![Landnamen ](assets/country-dropdown.png) ![toevoegenScript toevoegen om ](assets/state-dropdown.png) ![statusnamenLand en Staat te vullen vervolgkeuzelijsten om te verzamelen](assets/2dropdowns.png)
+   ![Landnamen toevoegen](assets/country-dropdown.png) ![Script toevoegen om statusnamen te vullen](assets/state-dropdown.png) ![Vervolgkeuzelijsten voor landen en staten](assets/2dropdowns.png)
 
    ```
    JSON.parse(

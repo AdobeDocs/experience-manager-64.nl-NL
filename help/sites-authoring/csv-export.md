@@ -1,8 +1,8 @@
 ---
 title: Exporteren naar CSV
-seo-title: Exporteren naar CSV
+seo-title: Export to CSV
 description: Informatie over uw pagina's exporteren naar een CSV-bestand op uw lokale systeem
-seo-description: Informatie over uw pagina's exporteren naar een CSV-bestand op uw lokale systeem
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: aa03adac-bbfb-4566-a153-25fe6f6843dd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,19 +10,22 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 15%
+source-wordcount: '226'
+ht-degree: 12%
 
 ---
 
 # Exporteren naar CSV{#export-to-csv}
 
-**Maak CSV-** exportfuncties waarmee u informatie over uw pagina&#39;s kunt exporteren naar een CSV-bestand op uw lokale systeem.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-* Het gedownloade bestand wordt `export.csv`
+**CSV-export maken** kunt u informatie over uw pagina&#39;s naar een CSV-bestand op uw lokale systeem exporteren.
+
+* Het gedownloade bestand wordt aangeroepen `export.csv`
 * De inhoud is afhankelijk van de eigenschappen die u selecteert.
 * U kunt het pad samen met de diepte van het exporteren definiëren.
 
@@ -52,18 +55,18 @@ Met de wizard CSV-export maken kunt u het volgende selecteren:
    * Aanvullende niveaus voor kinderen
    * Niveaus
 
-Het resulterende `export.csv` dossier kan in Excel of een andere compatibele toepassing worden geopend.
+Het resultaat `export.csv` kan worden geopend in Excel of een andere compatibele toepassing.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-De optie **CSV-export** is beschikbaar wanneer u in de **Sites**-console bladert (in de lijstweergave): het is een optie van **Create** drop-down menu:
+Maak **CSV-export** Deze optie is beschikbaar wanneer u in het dialoogvenster **Sites** console (in lijstweergave): het is een optie van **Maken** vervolgkeuzemenu:
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 Een CSV-export maken:
 
 1. Open de **Sites**-console en ga indien nodig naar de gewenste locatie.
-1. Selecteer op de werkbalk **Maken** en **CSV-export** om de wizard te openen:
+1. Selecteer op de werkbalk de optie **Maken** dan **CSV-export** om de wizard te openen:
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 

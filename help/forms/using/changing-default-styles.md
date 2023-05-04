@@ -1,8 +1,8 @@
 ---
 title: Standaardstijlen van HTML5-formulieren wijzigen
-seo-title: Standaardstijlen van HTML5-formulieren wijzigen
-description: HTML5-formulieropmaak is gebaseerd op CSS. U kunt de standaardstijlen van het formulier wijzigen.
-seo-description: HTML5-formulieropmaak is gebaseerd op CSS. U kunt de standaardstijlen van het formulier wijzigen.
+seo-title: Changing default styles of HTML5 forms
+description: HTML5-formulierstijlen zijn gebaseerd op CSS. U kunt de standaardstijlen van het formulier wijzigen.
+seo-description: HTML5 forms styling is based on CSS. You can change the default styles of the form.
 uuid: dab888b1-d1a9-4990-ab21-96570beafd26
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,19 +10,22 @@ topic-tags: hTML5_forms
 discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
 feature: Mobile Forms
 exl-id: 74e54d96-e418-40aa-9b93-561fbdd6312d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
 
 # Standaardstijlen van HTML5-formulieren wijzigen {#changing-default-styles-of-html-forms}
 
-HTML5-formulieren worden gegenereerd met HTML5-mogelijkheden en de opmaak van het gegenereerde formulier wordt uitgevoerd met CSS. De standaardweergave van een HTML5-formulier is vergelijkbaar met de PDF-uitvoering ervan. Ontwikkelaars kunnen aangepaste CSS gebruiken om de standaardweergave van HTML5-formulieren te wijzigen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Dit artikel bevat stapsgewijze informatie over het wijzigen van de stijl van een HTML5-formulier en het artikel [Introductie tot stijlen](/help/forms/using/css-styles.md) bevat gedetailleerde informatie over diverse opmaakaspecten van HTML5-formulieren. Zorg ervoor dat u Inleiding aan stijlartikel leest alvorens stappen uit te voeren die in dit artikel worden vermeld.
+HTML5-formulieren worden gegenereerd met HTML5-functies en de opmaak van het gegenereerde formulier wordt uitgevoerd met CSS. De standaardweergave van een HTML5-formulier is vergelijkbaar met de uitvoering van de PDF. Ontwikkelaars kunnen aangepaste CSS gebruiken om de standaardweergave van HTML5-formulieren te wijzigen.
+
+Dit artikel biedt stapsgewijze informatie om de stijl van een HTML5-formulier te wijzigen en [Inleiding tot stijlen](/help/forms/using/css-styles.md) het artikel bevat gedetailleerde informatie over diverse opmaakaspecten van HTML5 - formulieren . Zorg ervoor dat u Inleiding aan stijlartikel leest alvorens stappen uit te voeren die in dit artikel worden vermeld.
 
 De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aangepaste stijlen.
 
@@ -32,14 +35,14 @@ De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aan
 
 1. **Een profiel kiezen om aangepaste stijlen toe te voegen**
 
-   Heb toegang tot de interface CRX DE bij URL: **https://&lt;server>:&lt;port>/crx/de** en maak een profiel of kies een bestaand profiel. Zie [Een nieuw profiel maken](/help/forms/using/custom-profile.md) voor informatie over het maken van een profiel
+   Heb toegang tot de interface CRX DE bij URL: **https://&lt;server>:&lt;port>/crx/de** en maak een profiel of kies een bestaand profiel. Ga voor meer informatie over het maken van een profiel naar [Een nieuw profiel maken](/help/forms/using/custom-profile.md)
 
 1. **Een CSS-stijlpagina maken voor het opmaken van de HTML5-formulieren**
 
    Navigeer naar de map waarin u de profielrenderer hebt gemaakt en maak een CSS-stijlbladbestand. De volgende stappen zijn
 
-   1. Klik met de rechtermuisknop op de map en selecteer **create** -> **create File** in het menu
-   Zie [Inleiding tot stijlen](/help/forms/using/css-styles.md) om te weten welke CSS-klassen u voor een bepaalde component in uw HTML5-formulieren wilt maken.
+   1. Klik met de rechtermuisknop op de map en selecteer **maken** -> **bestand maken** in het menu
+   Als u wilt weten welke CSS-klassen u voor een bepaalde component in uw HTML5-formulieren wilt maken, raadpleegt u [Inleiding tot stijlen](/help/forms/using/css-styles.md).
 
 1. **Stijlblad opnemen in renderer profiel**
 
@@ -47,10 +50,10 @@ De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aan
 
    1. Zoek op de rendererpagina naar de volgende regel:
 
-      &lt;cq:includeclientlib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib categories=&quot;xfaforms.profile&quot; />
 
    1. Voeg het volgende onder de bovenstaande regel in om de stijlpagina op te nemen:
 
-      &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; />
+      &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/>
 
    1. Sla het bestand op.

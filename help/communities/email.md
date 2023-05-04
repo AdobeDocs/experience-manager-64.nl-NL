@@ -1,8 +1,8 @@
 ---
 title: E-mail configureren
-seo-title: E-mail configureren
+seo-title: Configuring Email
 description: E-mailconfiguratie voor gemeenschappen
-seo-description: E-mailconfiguratie voor gemeenschappen
+seo-description: Email configuration for Communities
 uuid: e8422cc2-1594-43b0-b587-82825636cec1
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,14 +12,18 @@ discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 role: Admin
 exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
 
 # E-mail configureren {#configuring-email}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 AEM Communities gebruikt e-mail voor
 
@@ -30,7 +34,7 @@ De e-mailfunctie werkt standaard niet omdat hiervoor een SMTP-server en een SMTP
 
 >[!CAUTION]
 >
->E-mail voor meldingen en abonnementen moet alleen worden geconfigureerd op de [primaire uitgever](deploy-communities.md#primary-publisher).
+>E-mail voor meldingen en abonnementen moet alleen zijn geconfigureerd op de [primaire uitgever](deploy-communities.md#primary-publisher).
 
 ## Standaardconfiguratie e-mailservice {#default-mail-service-configuration}
 
@@ -38,26 +42,26 @@ De standaardmailservice is vereist voor zowel meldingen als abonnementen.
 
 * Op de primaire uitgever
 * Aangemeld met beheerdersrechten
-* Toegang tot de [webconsole](../../help/sites-deploying/configuring-osgi.md)
+* Toegang krijgen tot [Webconsole](../../help/sites-deploying/configuring-osgi.md)
 
-   * Bijvoorbeeld [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Bijvoorbeeld: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* `Day CQ Mail Service` zoeken
+* Zoek de `Day CQ Mail Service`
 * Het bewerkingspictogram selecteren
 
-Dit is gebaseerd op de documentatie voor [Het vormen E-mailbericht](../../help/sites-administering/notification.md), maar met een verschil in dat het gebied `"From" address` *not* wordt vereist en zou leeg moeten worden verlaten.
+Dit is gebaseerd op de documentatie voor [E-mailmelding configureren](../../help/sites-administering/notification.md), maar met een verschil op dat gebied `"From" address` is *niet* vereist en moet leeg blijven.
 
 Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
-* **[!UICONTROL SMTP server host name]**:  *(vereist)* De te gebruiken server SMTP.
+* **[!UICONTROL SMTP server host name]**: *(vereist)* De SMTP-server die moet worden gebruikt.
 
 * **[!UICONTROL SMTP server port]** *(vereist)* De SMTP serverhaven moet 25 of hoger zijn.
 
-* **[!UICONTROL SMTP user]**:  *(Vereist)* De SMTP-gebruiker.
+* **[!UICONTROL SMTP user]**: *(vereist)* De SMTP-gebruiker.
 
-* **[!UICONTROL SMTP password]**:  *(vereist)* Het wachtwoord van de gebruiker SMTP.
+* **[!UICONTROL SMTP password]**: *(vereist)* Het wachtwoord van de SMTP-gebruiker.
 
 * **[!UICONTROL "From" address]**: Leeg laten
 * **[!UICONTROL SMTP use SSL]**: Als deze optie is ingeschakeld, wordt beveiligde e-mail verzonden. Zorg ervoor dat de poort is ingesteld op 465 of zoals is vereist voor de SMTP-server.
@@ -65,7 +69,7 @@ Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
 
 ## AEM Communities E-mailconfiguratie {#aem-communities-email-configuration}
 
-Zodra [standaardpostdienst ](#default-mail-service-configuration) wordt gevormd, worden de twee bestaande instanties van `AEM Communities Email Reply Configuration` OSGi config, inbegrepen in de versie, functioneel.
+Wanneer de [standaardmailservice](#default-mail-service-configuration) wordt gevormd, de twee bestaande instanties van `AEM Communities Email Reply Configuration` OSGi config, inbegrepen in de versie, wordt functioneel.
 
 Slechts moet de instantie voor abonnementen verder worden gevormd wanneer het toestaan van antwoord door e-mail.
 
@@ -81,11 +85,11 @@ U bereikt als volgt de e-mailconfiguratieinstanties van de Gemeenschappen:
 
 * Op de primaire uitgever
 * Aangemeld met beheerdersrechten
-* Toegang tot de [webconsole](../../help/sites-deploying/configuring-osgi.md)
+* Toegang krijgen tot [Webconsole](../../help/sites-deploying/configuring-osgi.md)
 
-   * Bijvoorbeeld [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Bijvoorbeeld: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* `AEM Communities Email Reply Configuration` zoeken
+* Zoeken `AEM Communities Email Reply Configuration`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -95,11 +99,11 @@ De instantie van `AEM Communities Email Reply Configuration` OSGi config met de 
 
 Deze configuratie moet niet worden gewijzigd.
 
-* `AEM Communities Email Reply Configuration` zoeken
+* Zoek de `AEM Communities Email Reply Configuration`
 * Het bewerkingspictogram selecteren
-* Verifieer **Naam** is `email`
+* Controleer de **Naam** is `email`
 
-* Verifiëren **Een bericht maken van een antwoorde-mail** is `unchecked`
+* Verifiëren **Bericht maken van e-mail met antwoord** is `unchecked`
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -107,31 +111,31 @@ Deze configuratie moet niet worden gewijzigd.
 
 Voor Gemeenschapsabonnementen is het mogelijk om de mogelijkheid voor een lid om inhoud te posten in of uit te schakelen door op een e-mail te antwoorden.
 
-* `AEM Communities Email Reply Configuration` zoeken
+* Zoek de `AEM Communities Email Reply Configuration`
 * Het bewerkingspictogram selecteren
-* Verifieer **Naam** is `subscriptions-email`
+* Controleer de **Naam** is `subscriptions-email`
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-* **[!UICONTROL Name]** : *(required)* `subscriptions-email`. Niet bewerken.
+* **[!UICONTROL Name]** : *(vereist)* `subscriptions-email`. Niet bewerken.
 
 * **[!UICONTROL Create post from reply email]**: Als deze optie is ingeschakeld, kan de ontvanger van het e-mailbericht met abonnement inhoud posten door een antwoord te verzenden. Standaard is ingeschakeld.
-* **[!UICONTROL Add tracked id to header]**: Standaard is dit  `Reply-To`.
+* **[!UICONTROL Add tracked id to header]**: Standaard is `Reply-To`.
 
 * **[!UICONTROL Maximum length of Subject]**: Als tracker-id aan de onderwerpregel wordt toegevoegd, is dit de maximumlengte van het onderwerp, met uitzondering van de bijgehouden id, waarna het wordt bijgesneden. Deze waarde moet zo klein mogelijk zijn om te voorkomen dat bijgehouden id-informatie verloren gaat. De standaardwaarde is 200.
-* **[!UICONTROL Email "From" address]**:  *(vereist)* Adres dat bericht e-mail van zou worden geleverd. Waarschijnlijk dezelfde **SMTP-gebruiker** die is opgegeven voor de [standaardmailservice](#configuredefaultmailservice). De standaardwaarde is `no-reply@example.com`.
+* **[!UICONTROL Email "From" address]**: *(vereist)* Adres dat de bericht e-mail van zou worden geleverd. Waarschijnlijk hetzelfde **SMTP-gebruiker** gespecificeerd voor [standaardmailservice](#configuredefaultmailservice). Standaard is `no-reply@example.com`.
 
-* **[!UICONTROL Reply-to-Delimiter]**: Als tracker-id wordt toegevoegd aan de header die reageert, wordt dit scheidingsteken gebruikt. De standaardwaarde is `+` (plusteken).
+* **[!UICONTROL Reply-to-Delimiter]**: Als tracker-id wordt toegevoegd aan de header die reageert, wordt dit scheidingsteken gebruikt. Standaard is `+` (plusteken).
 
-* **[!UICONTROL Tracker Id prefix in subject]**: Als tracker-id aan de onderwerpregel wordt toegevoegd, wordt dit voorvoegsel gebruikt. De standaardwaarde is `post#`.
+* **[!UICONTROL Tracker Id prefix in subject]**: Als tracker-id aan de onderwerpregel wordt toegevoegd, wordt dit voorvoegsel gebruikt. Standaard is `post#`.
 
-* **[!UICONTROL Tracker id prefix in message body]**: Als tracker-id aan de hoofdtekst van het bericht wordt toegevoegd, wordt dit voorvoegsel gebruikt. De standaardwaarde is `Please do not remove this:`.
+* **[!UICONTROL Tracker id prefix in message body]**: Als tracker-id aan de hoofdtekst van het bericht wordt toegevoegd, wordt dit voorvoegsel gebruikt. Standaard is `Please do not remove this:`.
 
-* **[!UICONTROL Email as HTML]**: Als deze optie is ingeschakeld, wordt het inhoudstype van e-mail ingesteld op  `"text/html;charset=utf-8"`. Standaard is ingeschakeld.
+* **[!UICONTROL Email as HTML]**: Indien ingeschakeld, wordt het inhoudstype van het e-mailbericht ingesteld op `"text/html;charset=utf-8"`. Standaard is ingeschakeld.
 
-* **[!UICONTROL Default user name]**: Deze naam wordt gebruikt voor geen naamgebruikers. De standaardwaarde is `no-reply@example.com`.
+* **[!UICONTROL Default user name]**: Deze naam wordt gebruikt voor geen naamgebruikers. Standaard is `no-reply@example.com`.
 
-* **[!UICONTROL Templates root path]**: De e-mail wordt samengesteld met een sjabloon die op dit hoofdpad is opgeslagen. De standaardwaarde is `/etc/community/templates/subscriptions-email`.
+* **[!UICONTROL Templates root path]**: De e-mail wordt samengesteld met een sjabloon die op dit hoofdpad is opgeslagen. Standaard is `/etc/community/templates/subscriptions-email`.
 
 ## Opiniepeilingimportmodule configureren {#configure-polling-importer}
 
@@ -141,33 +145,32 @@ Om de e-mail in de gegevensopslagplaats te brengen, is het noodzakelijk om een o
 
 * Op de primaire uitgever
 * Aangemeld met beheerdersrechten
-* Bladeren naar de pollingimporterconsole
-Bijvoorbeeld [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+* Blader bijvoorbeeld naar de pollingimporterconsole. [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 * Selecteer **[!UICONTROL Add]**
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
-* **[!UICONTROL Type]**:  *(vereist)* Trek naar beneden om te selecteren  `POP3 (over SSL).`
+* **[!UICONTROL Type]**: *(vereist)* Omlaag trekken en selecteren `POP3 (over SSL).`
 
-* **[!UICONTROL URL]**:  *(vereist)* De uitgaande postserver. Bijvoorbeeld, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
+* **[!UICONTROL URL]**: *(vereist)* De uitgaande mailserver. Bijvoorbeeld, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
 
-* **[!UICONTROL Import to Path]**&amp;last:  *(vereist)* Stel dit in  `/content/usergenerated/mailFolder/postEmails`
+* **[!UICONTROL Import to Path]**&amp;last: *(vereist)* Instellen op `/content/usergenerated/mailFolder/postEmails`
 door naar de 
-`postEmails`en selecteer  **OK**
+`postEmails`map en selecteer **OK**
 
-* **[!UICONTROL Update Interval in Seconds]**:  *(facultatief)* De postserver die voor de standaard postdienst wordt gevormd kan vereisten betreffende de waarde van het updateinterval hebben. Voor Gmail is bijvoorbeeld mogelijk een interval van `300` vereist.
+* **[!UICONTROL Update Interval in Seconds]**: *(optioneel)* De postserver die voor de standaard postdienst wordt gevormd kan vereisten betreffende de waarde van het updateinterval hebben. Voor Gmail kan bijvoorbeeld een interval van `300`.
 
-* **[!UICONTROL Login]**:  *(optioneel)*
+* **[!UICONTROL Login]**: *(optioneel)*
 
-* **[!UICONTROL Password]**:  *(optioneel)*
+* **[!UICONTROL Password]**: *(optioneel)*
 
 * Selecteer **[!UICONTROL OK]**
 
 ### Protocol aanpassen voor nieuwe pollingimportmodule {#adjust-protocol-for-new-polling-importer}
 
-Nadat de nieuwe opiniepeilingsconfiguratie is opgeslagen, moeten de eigenschappen van de e-mailimporter met abonnement verder worden gewijzigd om het protocol te wijzigen van `POP3` in `emailreply`
+Nadat de nieuwe stemconfiguratie is opgeslagen, moeten de eigenschappen van de e-mailimportfunctie met abonnement verder worden gewijzigd om het protocol te wijzigen van `POP3` tot `emailreply`
 
-Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Op de primaire uitgever
 * Aangemeld met beheerdersrechten
@@ -175,8 +178,8 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 * Selecteer de nieuwe configuratie
 * De volgende eigenschappen wijzigen
 
-   * **feedType**: vervangen  `pop3s` door  **`emailreply`**
-   * **bron**: protocol van bron vervangen  `pop3s://` door  **`emailreply://`**
+   * **feedType**: vervangen `pop3s` with **`emailreply`**
+   * **bron**: protocol van bron vervangen `pop3s://` with **`emailreply://`**
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 

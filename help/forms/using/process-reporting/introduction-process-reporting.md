@@ -1,23 +1,26 @@
 ---
 title: Inleiding tot Process Reporting
-seo-title: Inleiding tot Process Reporting
+seo-title: Introduction to Process Reporting
 description: Inleiding en belangrijkste mogelijkheden van AEM Forms bij JEE Process Reporting
-seo-description: Inleiding en belangrijkste mogelijkheden van AEM Forms bij JEE Process Reporting
+seo-description: Introduction and key capabilities of AEM Forms on JEE Process Reporting
 uuid: a33ea729-7e1f-4093-bdb6-b8dc3afd59a7
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 exl-id: 279b2f89-5b91-4b8f-ab0f-8ade9b9f3932
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot Process Reporting {#introduction-to-process-reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ![procesrapportage](assets/process-reporting.png)
 
@@ -27,7 +30,7 @@ De Rapportering van het proces verstrekt een reeks out-of-the-box rapporten die 
 
 De extra Rapportering van het Proces verstrekt een interface om ad hoc vragen in werking te stellen en de meningen van het douanerapport in het Proces te integreren Meldend gebruikersinterface.
 
-Zie [Door AEM Forms ondersteunde Platforms](/help/forms/using/aem-forms-jee-supported-platforms.md) voor de lijst met ondersteunde browsers.
+Voor de lijst met ondersteunde browsers raadpleegt u [Door AEM Forms ondersteunde Platforms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Procesrapportage is gebaseerd op modules die:
 
@@ -35,7 +38,7 @@ Procesrapportage is gebaseerd op modules die:
 * Procesgegevens publiceren naar een ingesloten Process Reporting-opslagplaats
 * Biedt een op een browser gebaseerde gebruikersinterface voor het weergeven van rapporten
 
-## Belangrijke mogelijkheden {#key-capabilities}
+## Belangrijkste mogelijkheden {#key-capabilities}
 
 ### Altijd melden {#always-on-reporting}
 
@@ -57,7 +60,7 @@ U kunt meerdere filters combineren om specifieke rapporten te maken.
 
 U kunt de rapportfilters dan opslaan om op een recentere datum of een tijd te lopen.
 
-### Proces/taakgeschiedenis {#process-task-history}
+### Proces-/taakgeschiedenis {#process-task-history}
 
 ![bestandsbeheer](assets/file-management.png)
 

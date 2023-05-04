@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 exl-id: 83f978ca-d451-4d27-820f-3620331285cf
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
 
 # Een aangepaste aangepaste formuliersjabloon maken {#creating-a-custom-adaptive-form-template}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Vereisten {#prerequisites}
 
@@ -45,7 +49,7 @@ In de volgende tabel wordt de koppeling tussen sjablonen en paginacomponent opge
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Sjabloonmodel</strong></p> </td> 
+   <td><p><strong>Sjabloon</strong></p> </td> 
    <td><p><strong>Pagina-component</strong></p> </td> 
   </tr> 
   <tr> 

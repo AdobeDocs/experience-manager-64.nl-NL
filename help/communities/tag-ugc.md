@@ -1,8 +1,8 @@
 ---
 title: Door gebruiker gegenereerde inhoud labelen
-seo-title: Door gebruiker gegenereerde inhoud labelen
+seo-title: Tagging User Generated Content
 description: Door tags toe te wijzen aan door gebruikers gegenereerde inhoud (UGC) kunnen leden van de gebruikersgemeenschap andere leden helpen bij het zoeken naar inhoud
-seo-description: Door tags toe te wijzen aan door gebruikers gegenereerde inhoud (UGC) kunnen leden van de gebruikersgemeenschap andere leden helpen bij het zoeken naar inhoud
+seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 role: Admin
 exl-id: 834df392-df38-498c-9e2a-489484e20e0a
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
 # Door gebruiker gegenereerde inhoud labelen {#tagging-user-generated-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
@@ -42,9 +46,9 @@ De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staa
 
 Zie [Tags beheren](../../help/sites-administering/tags.md#tagging-console) voor het maken en beheren van tagnaamruimten en -taxonomieën.
 
-Zie [Tagelementen](tag.md) voor informatie over ontwikkelaars.
+Zie [Grondbeginselen van tags](tag.md) voor informatie over ontwikkelaars.
 
-Zie [Cloud van sociale tag gebruiken](tagcloud.md) voor het toevoegen van een component van de sociale tag Cloud aan een pagina om het zoeken naar geposte UGC met behulp van de toegepaste tags te vergemakkelijken.
+Zie [Sociale tagcloud gebruiken](tagcloud.md) voor het toevoegen van een component Social Tag Cloud aan een pagina om het zoeken naar geposte UGC te vergemakkelijken met behulp van de toegepaste tags.
 
 ### Tagmachtigingen {#tag-permissions}
 
@@ -54,6 +58,6 @@ Omdat tags worden toegepast op UGC in de publicatieomgeving, moet leesmachtiging
 
 Zie [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Hieronder wordt beschreven hoe de code wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `*Community Engage Members*`.
+Hieronder wordt beschreven hoe het wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `*Community Engage Members*`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)

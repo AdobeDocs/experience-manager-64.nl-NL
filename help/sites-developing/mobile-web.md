@@ -1,8 +1,8 @@
 ---
 title: Mobiel web
-seo-title: Mobiel web
+seo-title: Mobile Web
 description: AEM biedt verschillende gereedschappen waarmee u sites kunt ontwikkelen voor mobiele apparaten en uw inhoud kunt integreren in mobiele toepassingen
-seo-description: AEM biedt verschillende gereedschappen waarmee u sites kunt ontwikkelen voor mobiele apparaten en uw inhoud kunt integreren in mobiele toepassingen
+seo-description: AEM provides several tools that enable you to develop sites for mobile devices and to integrate your content into mobile applications
 uuid: 283667fa-1891-4a93-b074-792a8e15efc1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: 20a0b2a8-7347-4875-a202-9cedd8e187ff
 legacypath: /content/docs/en/aem/6-0/develop/mobile
 exl-id: a8005a0a-b90e-465c-8521-780d21d72e55
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
 # Mobiel web{#mobile-web}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 AEM biedt verschillende gereedschappen waarmee u sites voor mobiele apparaten kunt ontwikkelen en inhoud kunt integreren in mobiele toepassingen.
 
-Deze pagina moet worden gelezen in combinatie met de pagina [Mobiel voor auteurs](/help/sites-authoring/mobile.md).
+Deze pagina moet worden gelezen in combinatie met de [Mobiele pagina voor auteurs](/help/sites-authoring/mobile.md).
 
 ## Websites ontwikkelen voor mobiele apparaten {#developing-web-sites-for-mobile}
 
@@ -38,6 +41,6 @@ Ontwikkelen van paginasjablonen en onderdelen die zijn geoptimaliseerd voor weer
 * [Sites maken voor mobiele apparaten](/help/sites-developing/mobile.md)
 * [Emulators](/help/sites-developing/emulators.md)
 
-## Mobiele toepassingen ontwikkelen {#developing-mobile-apps}
+## Mobiele apps ontwikkelen {#developing-mobile-apps}
 
-Ontwikkel mobiele toepassingen die AEM pagina&#39;s als toepassingsinterface gebruiken. AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps. Klik [hier](/help/mobile/phonegap-contentsync.md) voor meer informatie over Inhoud synchroniseren.
+Ontwikkel mobiele toepassingen die AEM pagina&#39;s als toepassingsinterface gebruiken. AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps. Voor meer informatie over Inhoud synchroniseren klikt u op [hier](/help/mobile/phonegap-contentsync.md).

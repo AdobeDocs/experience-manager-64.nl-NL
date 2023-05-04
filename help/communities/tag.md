@@ -1,8 +1,8 @@
 ---
 title: Grondbeginselen van tags
-seo-title: Grondbeginselen van tags
+seo-title: Tag Essentials
 description: Overzicht van tags
-seo-description: Overzicht van tags
+seo-description: Tag overview
 uuid: a5d52319-f821-4608-b0ab-abc8a1374343
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,29 +10,32 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 863ee5e3-daa7-4f7d-8897-291d367cf29d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
 
-# Grondbeginselen van tag {#tag-essentials}
+# Grondbeginselen van tags {#tag-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Wanneer AEM Communities-componenten zijn geconfigureerd met codering ingeschakeld, kunnen communityleden de inhoud die ze plaatsen in de publicatieomgeving coderen.
 
 De onderliggende infrastructuur voor tags die worden toegepast in de publicatieomgeving, is gelijk aan de infrastructuur voor tags die worden toegepast op inhoud in de ontwerpomgeving, zoals pagina&#39;s en elementen:
 
-* Zie [Tags beheren](../../help/sites-administering/tags.md) en [Door gebruiker gegenereerde inhoud coderen](tag-ugc.md) (UGC) voor informatie over het maken en beheren van tags.
+* Zie [Tags beheren](../../help/sites-administering/tags.md) en [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) (UGC) voor informatie over het maken en beheren van tags.
 
-* Zie [Tags toevoegen voor ontwikkelaars](../../help/sites-developing/tags.md) voor informatie over het [tagging framework](../../help/sites-developing/framework.md) en het opnemen en uitbreiden van tags in [aangepaste toepassingen](../../help/sites-developing/building.md).
+* Zie [Tags voor ontwikkelaars](../../help/sites-developing/tags.md) voor informatie over de [coderingskader](../../help/sites-developing/framework.md) alsmede tags opnemen en uitbreiden in [aangepaste toepassingen](../../help/sites-developing/building.md).
 
-* Zie [De cloud van de sociale tag gebruiken](tagcloud.md) voor informatie voor auteurs over het toevoegen van een `social tag cloud`-component aan een pagina om de tags te markeren die in de publicatieomgeving op UGC zijn toegepast.
+* Zie [Sociale tagcloud gebruiken](tagcloud.md) voor informatie aan auteurs over het toevoegen van een `social tag cloud` op een pagina om de tags te markeren die in de publicatieomgeving op UGC zijn toegepast.
 
-* Zie [Tags toewijzen Bronnen](tag-resources.md) voor informatie over het labelen van bronnen voor catalogi.
+* Zie [Tags toewijzen](tag-resources.md) voor informatie over het coderen van bronnen voor catalogi.
 
-Het coderen van UGC kan worden toegelaten wanneer het vormen van een [communityplaats](sites-console.md#tagging) of één van de volgende eigenschappen:
+Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-console.md#tagging) of een van de volgende kenmerken:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
@@ -40,7 +43,7 @@ Het coderen van UGC kan worden toegelaten wanneer het vormen van een [communityp
 * [Forum](forum.md)
 * [QnA](working-with-qna.md)
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 ### Sociale-tagcloud {#social-tag-cloud}
 
@@ -59,7 +62,7 @@ Het coderen van UGC kan worden toegelaten wanneer het vormen van een [communityp
    <td>cq.social.hbs.tagcloud</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td> 
   </tr>
   <tr>
@@ -83,8 +86,8 @@ Het coderen van UGC kan worden toegelaten wanneer het vormen van een [communityp
 
 * [Aanpassingen op de server](server-customize.md)
 
-## Zoeken naar tags {#tag-searching}
+## Zoeken met tags {#tag-searching}
 
-Vanaf [functiepak 1](deploy-communities.md#latestfeaturepack) (FP1) wordt het zoeken naar tags uitgevoerd met behulp van [tagtitels](../../help/sites-developing/framework.md#tag-characteristics).
+Vanaf [functiepakket 1](deploy-communities.md#latestfeaturepack) (FP1), wordt het zoeken van tags uitgevoerd gebruikend [titels labelen](../../help/sites-developing/framework.md#tag-characteristics).
 
-Voorafgaand aan FP1, werd het onderzoek uitgevoerd gebruikend [markering ids](../../help/sites-developing/framework.md#tagid).
+Voorafgaand aan FP1, werd het onderzoek uitgevoerd gebruikend [tag id](../../help/sites-developing/framework.md#tagid).

@@ -2,7 +2,7 @@
 title: Cloud Configuration
 seo-title: Cloud Configuration
 description: Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-gehoste project door een tweerichtingskoppeling tot stand te brengen. Volg deze pagina voor meer informatie.
-seo-description: Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-gehoste project door een tweerichtingskoppeling tot stand te brengen. Volg deze pagina voor meer informatie.
+seo-description: Associating an On-Demand App to a Cloud Configuration allows Adobe Experience Manager (AEM) to communicate directly with a Mobile On-Demand hosted project by establishing a two way link. Follow this page to learn more.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
 content-type: reference
@@ -10,19 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: eff852b0-99cd-4242-bac8-992ee10401e2
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
 
 ---
 
-# Cloudconfiguratie{#cloud-configuration}
+# Cloud Configuration{#cloud-configuration}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-gehoste project door een tweerichtingskoppeling tot stand te brengen. Door uw app aan een mobiel On-Demand-project te koppelen, kunt u inhoud maken, zoals artikelen, banners en verzamelingen binnen AEM, maar u kunt deze inhoud ook op aanvraag aanbieden voor mobiele apparaten.
 
@@ -34,11 +37,11 @@ Vanaf dat punt wordt het publiceren, voorvertonen en beheren van inhoud mogelijk
 >
 >Voordat u de cloudconfiguratie voor uw On-Demand-app gaat configureren, moet u bekend zijn met AEM Mobile Provisioning and Configuring AEM Mobile On-demand Services Client.
 >
->Zie [AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) instellen in de sectie Beheer voor meer informatie.
+>Zie voor meer informatie [AEM Mobile On-demand Services instellen](/help/mobile/aem-mobile-setup.md) in de sectie Beheer.
 
-Om Mobiele Cloud Services op bestelling te vormen, klik de hoogste versnelling op de hoogste juiste hoek van **Manage Verbinding** tegel van uw app dashboard.
+Als u mobiele Cloud Services op aanvraag wilt configureren, klikt u op de bovenste versnelling in de rechterbovenhoek van het dialoogvenster **Verbinding beheren** element uit het dashboard van uw app.
 
-U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie.
+U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie .
 
 ### Koppeling naar cloudconfiguratie instellen {#setting-up-link-to-cloud-configuration}
 
@@ -46,26 +49,26 @@ U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [
 >
 >Zorg ervoor dat u een bestaande configuratie voor on-demand clients en cloud hebt.
 >
->Zie [AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) instellen in de sectie Beheer voor meer informatie.
+>Zie voor meer informatie [AEM Mobile On-demand Services instellen](/help/mobile/aem-mobile-setup.md) in de sectie Beheer.
 
 In de volgende stappen wordt beschreven hoe u een koppeling naar de cloudconfiguratie instelt:
 
-1. Kies **Mobiel** **Apps** en vervolgens uw Mobile On-Demand-app uit de catalogus.
-1. Klik op het tandwielpictogram op de **tegel Verbinding beheren**.
+1. Van **Mobiel** kiest u **Apps** en vervolgens uw Mobile On-Demand-app uit de catalogus.
+1. Klik op het tandwielpictogram op het tabblad **Verbinding beheren** tegel.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Ga reeds bestaande configuratie in of creeer nieuwe door **Titel van de Configuratie**, **Apparaatidentiteitskaart**, en **Apparaattoken** in te gaan.
+1. Voer de bestaande configuratie in of maak een nieuwe configuratie door de **Configuratietitel**, **Apparaat-id**, en **Apparaattoken**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Als uw **Apparaatid** en **Apparaattoken** zijn geverifieerd, kiest u uw On-Demand-project in de lijst.
+1. Eenmaal uw **Apparaat-id** en **Apparaattoken** Kies uw On-Demand-project in de lijst.
 
-   Klik **Verzenden**.
+   Klikken **Verzenden**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   De tegel **Verbinding beheren** toont uw Configuratie van de Wolk.
+   De **Verbinding beheren** De tegel toont uw Configuratie van de Wolk.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

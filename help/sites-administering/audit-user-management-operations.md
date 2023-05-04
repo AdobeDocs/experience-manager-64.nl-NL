@@ -1,9 +1,9 @@
 ---
 title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
-seo-title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
+seo-title: How to Audit User Management Operations in AEM
 description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
 feature: Operations
-seo-description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
-translation-type: tm+mt
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 0%
 
 ---
 
-# Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM{#how-to-audit-user-management-operations-in-aem} te controleren
+# Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren{#how-to-audit-user-management-operations-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -31,24 +34,24 @@ Dankzij deze uitbreiding kunt u de CRUD-handelingen (Maken, Lezen, Bijwerken, Ve
 * Een gebruiker die aan een groep wordt toegevoegd
 * Wijzigingen in machtigingen voor een bestaande gebruiker of groep
 
-Standaard worden de items naar het `error.log`-bestand geschreven. Om controle gemakkelijker te maken, adviseert men dat zij aan een afzonderlijk logboekdossier worden opnieuw gericht. In de onderstaande alinea vindt u meer informatie over hoe u dit kunt doen.
+Standaard worden de items naar de `error.log` bestand. Om controle gemakkelijker te maken, adviseert men dat zij aan een afzonderlijk logboekdossier worden opnieuw gericht. In de onderstaande alinea vindt u meer informatie over hoe u dit kunt doen.
 
 ## De uitvoer wordt omgeleid naar een afzonderlijk logbestand {#redirecting-the-output-to-a-separate-log-file}
 
-Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, moet u een nieuwe **Logboekregistratie voor Apache Sling Logger**-configuratie maken. `useraudit.log` wordt gebruikt als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
+Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, moet u een nieuw logbestand maken **Logboekregistratie voor Apache Sling** configuratie. We gebruiken `useraudit.log` als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
 
-1. Ga naar de webconsole door naar `https://<serveraddress>:<serverport>/system/console/configMgr` te bladeren
-1. Zoek naar **Apache Sling Logging Logger Configuration**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een nieuwe fabrieksconfiguratie te maken.
+1. Ga naar de webconsole door naar `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. Zoeken naar **Logboekconfiguratie Apache Sling Logging**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een nieuwe fabrieksconfiguratie te maken.
 1. Maak de volgende configuratie:
 
-   * **Logniveau:** informatie
-   * **logbestand:** logs/useraudit.log
-   * **Berichtpatroon:standaard** niveau
+   * **Logniveau:** Informatie
+   * **Logbestand:** logs/useraudit.log
+   * **Berichtpatroon:** niveau standaard
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Om beide loggers in het **Logger** gebied in te gaan, moet u de naam van eerste ingaan, dan een ander gebied tot stand brengen door &quot;+&quot;knoop te drukken en de naam van de tweede registreerder in te gaan.
+   Om beide loggers in te voeren in de **Aanmelder** in het veld moet u de naam van de eerste invoeren en vervolgens een ander veld maken door op de knop &quot;+&quot; te drukken en de naam van het tweede logger in te voeren.
 
-## Voorbeeld van uitvoer {#example-output}
+## Voorbeeld-uitvoer {#example-output}
 
 Indien correct gevormd, zou de output als dit moeten kijken:
 

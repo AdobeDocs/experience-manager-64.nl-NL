@@ -1,8 +1,8 @@
 ---
 title: Adobe Analytics-tracking toevoegen aan componenten
-seo-title: Adobe Analytics-tracking toevoegen aan componenten
+seo-title: Adding Adobe Analytics Tracking to Components
 description: Adobe Analytics-tracking toevoegen aan componenten
-seo-description: 'null'
+seo-description: null
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,21 +10,24 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: f3926a15-4378-464f-968f-661745af117c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
 
 # Adobe Analytics-tracking toevoegen aan componenten{#adding-adobe-analytics-tracking-to-components}
 
-## De Adobe Analytics-module opnemen in een paginacomponent {#including-the-adobe-analytics-module-in-a-page-component}
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Componenten van paginasjablonen (bijvoorbeeld `head.jsp, body.jsp`) behoefte JSP omvat om ContextHub en de integratie van Adobe Analytics te laden (die een deel van Cloud Services is). Alles omvat JavaScript-bestanden laden.
+## De Adobe Analytics-module opnemen in een pagina-component {#including-the-adobe-analytics-module-in-a-page-component}
 
-Het ContextHub-item moet direct onder de `<head>`-tag worden opgenomen, terwijl Cloud Services moeten worden opgenomen in de `<head>`- en voor de `</body>`-sectie; bijvoorbeeld:
+Componenten van paginasjablonen (bijvoorbeeld `head.jsp, body.jsp`) behoefte omvat JSP om ContextHub en de integratie van Adobe Analytics te laden (die een deel van Cloud Services is). Alles omvat JavaScript-bestanden laden.
+
+Het ContextHub-item moet direct onder het `<head>` -tag, terwijl Cloud Services moeten worden opgenomen in de `<head>` en vóór de `</body>` sectie; bijvoorbeeld:
 
 ```xml
 <head>
@@ -39,11 +42,11 @@ Het ContextHub-item moet direct onder de `<head>`-tag worden opgenomen, terwijl 
 </body>
 ```
 
-Het `contexthub` manuscript dat u na het `<head>` element opneemt voegt de eigenschappen ContextHub aan de pagina toe.
+De `contexthub` script dat u na het `<head>` het element voegt de eigenschappen ContextHub aan de pagina toe.
 
-De `cloudservices` manuscripten die u in `<head>` en `<body>` secties toevoegt zijn op de configuraties van de wolkendiensten van toepassing die aan de pagina worden toegevoegd. (Als de pagina meer dan één configuratie van Cloud Services gebruikt, moet u ContextHub jsp en Cloud Services jsp slechts eenmaal omvatten.)
+De `cloudservices` scripts die u toevoegt in het dialoogvenster `<head>` en de `<body>` de secties zijn van toepassing op de configuraties van de wolkendiensten die aan de pagina worden toegevoegd. (Als de pagina meer dan één configuratie van Cloud Services gebruikt, moet u ContextHub jsp en Cloud Services jsp slechts eenmaal omvatten.)
 
-Wanneer een Adobe Analytics-framework aan de pagina wordt toegevoegd, genereren de scripts `cloudservices` JavaScript met betrekking tot Adobe Analytics en verwijzingen naar bibliotheken aan de clientzijde, vergelijkbaar met het volgende voorbeeld:
+Wanneer een Adobe Analytics-framework aan de pagina wordt toegevoegd, wordt `cloudservices` scripts genereren Adobe Analytics-gerelateerde javascript en verwijzingen naar client-side bibliotheken, vergelijkbaar met het volgende voorbeeld:
 
 ```xml
 <div class="sitecatalyst cloudservice">
@@ -115,32 +118,32 @@ Deze code is opgenomen in alle AEM voorbeeldsites, zoals Geometrixx Outdoors.
 
 ### De gebeurtenis sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
-Met het script `cloudservices` wordt de gebeurtenis `sitecatalystAfterCollect` geactiveerd:
+De `cloudservices` script activeert de `sitecatalystAfterCollect` gebeurtenis:
 
 ```
 $CQ(document).trigger("sitecatalystAfterCollect");
 ```
 
-Deze gebeurtenis wordt geactiveerd om aan te geven dat het bijhouden van pagina&#39;s is voltooid. Als u aanvullende traceringsbewerkingen uitvoert op deze pagina, moet u naar deze gebeurtenis luisteren in plaats van naar de gebeurtenis document laden of document gereed. Met de gebeurtenis `sitecatalystAfterCollect` vermijdt u botsingen of ander onvoorspelbaar gedrag.
+Deze gebeurtenis wordt geactiveerd om aan te geven dat het bijhouden van pagina&#39;s is voltooid. Als u aanvullende traceringsbewerkingen uitvoert op deze pagina, moet u naar deze gebeurtenis luisteren in plaats van naar de gebeurtenis document laden of document gereed. Met de `sitecatalystAfterCollect` voorkomt botsingen of ander onvoorspelbaar gedrag.
 
 >[!NOTE]
 >
->De bibliotheek `/libs/cq/analytics/clientlibs/sitecatalyst/sitecatalyst.js` bevat de code uit het Adobe Analytics `s_code.js`-bestand.
+>De `/libs/cq/analytics/clientlibs/sitecatalyst/sitecatalyst.js` De bibliotheek bevat de code van de Adobe Analytics `s_code.js` bestand.
 
-## Adobe Analytics-tracering implementeren voor aangepaste componenten {#implementing-adobe-analytics-tracking-for-custom-components}
+## Adobe Analytics-tracking voor aangepaste componenten implementeren {#implementing-adobe-analytics-tracking-for-custom-components}
 
 Laat uw AEM componenten toe om met het kader van Adobe Analytics in wisselwerking te staan. Configureer vervolgens uw framework zodat Adobe Analytics de componentgegevens bijhoudt.
 
-Componenten die invloed hebben op het Adobe Analytics-framework worden weergegeven in SideKick wanneer u een framework bewerkt. Nadat u de component naar het framework hebt gesleept, worden de componenteigenschappen weergegeven en kunt u deze vervolgens toewijzen met Adobe Analytics-eigenschappen. (Zie [Een framework instellen voor basistracking](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
+Componenten die invloed hebben op het Adobe Analytics-framework worden weergegeven in SideKick wanneer u een framework bewerkt. Nadat u de component naar het framework hebt gesleept, worden de componenteigenschappen weergegeven en kunt u deze vervolgens toewijzen met Adobe Analytics-eigenschappen. (Zie [Een kader instellen voor basisopvolging](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
 
-Componenten kunnen communiceren met het Adobe Analytics-framework wanneer de component een onderliggende node heeft met de naam `analytics`. Het knooppunt `analytics` heeft de volgende eigenschappen:
+Componenten kunnen communiceren met het Adobe Analytics-framework wanneer de component een onderliggende node heeft met de naam `analytics`. De `analytics` node heeft de volgende eigenschappen:
 
 * `cq:trackevents`: Identificeert de CQ-gebeurtenissen die de component beschikbaar maakt. (Zie Aangepaste gebeurtenissen.)
 * `cq:trackvars`: De CQ-variabelen die zijn toegewezen aan Adobe Analytics-eigenschappen krijgen een naam.
 * `cq:componentName`: De naam voor de component die in Sidetrap wordt weergegeven.
 * `cq:componentGroup`: De groep in Sidetrap die de component bevat.
 
-De code in de component JSP voegt javascript aan de pagina toe die het volgen teweegbrengt, en bepaalt de gegevens die worden gevolgd. De naam van de gebeurtenis en de gegevensnamen die in javascript worden gebruikt moeten de overeenkomstige waarden van de `analytics` knoopeigenschappen aanpassen.
+De code in de component JSP voegt javascript aan de pagina toe die het volgen teweegbrengt, en bepaalt de gegevens die worden gevolgd. De naam van de gebeurtenis en de gegevensnamen die in javascript worden gebruikt, moeten overeenkomen met de overeenkomstige waarden van de `analytics` knoopeigenschappen.
 
 * Gebruik het kenmerk voor het bijhouden van gegevens om gebeurtenisgegevens bij te houden wanneer een pagina wordt geladen. (Zie [Aangepaste gebeurtenissen bijhouden bij laden van pagina](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
 * Gebruik de functie CQ_Analytics.record om gebeurtenisgegevens bij te houden wanneer gebruikers met paginafuncties werken. (Zie [Aangepaste gebeurtenissen bijhouden na laden van pagina](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
@@ -156,15 +159,15 @@ De volgende procedures vereisen dat u reeds de volgende taken hebt uitgevoerd:
 * Een CQ-toepassing gemaakt.
 * Adobe Analytics Configuration and a Adobe Analytics Framework.
 
-#### De bovenste component {#copy-the-topnav-component} kopiëren
+#### De bovenste component kopiëren {#copy-the-topnav-component}
 
 Kopieer de bovenste component naar de CQ-toepassing. De procedure vereist dat uw toepassing is ingesteld in CRXDE Lite.
 
-1. Klik met de rechtermuisknop op het knooppunt `/libs/foundation/components/topnav` en klik op Kopiëren.
+1. Klik met de rechtermuisknop op de knop `/libs/foundation/components/topnav` en klik op Kopiëren.
 1. Klik met de rechtermuisknop op de map Components onder de toepassingsmap en klik op Plakken.
 1. Klik op Alles opslaan.
 
-#### Integratie van topnav met het Adobe Analytics-framework {#integrating-topnav-with-the-adobe-analytics-framework}
+#### Integratie van topnav met het Adobe Analytics-kader {#integrating-topnav-with-the-adobe-analytics-framework}
 
 Configureer de bovenste component en bewerk het JSP-bestand om de volgende gebeurtenissen en gegevens te definiëren.
 
@@ -310,7 +313,7 @@ Voeg componenten die u kunt bijhouden met de Adobe Analytics toe aan Sidetrap, z
 
 #### De component topnav toevoegen aan uw framework {#adding-the-topnav-component-to-your-framework}
 
-Sleep de bovenste component naar het Adobe Analytics-framework en wijs de componentvariabelen en -gebeurtenissen toe aan Adobe Analytics-variabelen en -gebeurtenissen. (Zie [Een framework instellen voor basistracking](/help/sites-administering/adobeanalytics-connect.md).)
+Sleep de bovenste component naar het Adobe Analytics-framework en wijs de componentvariabelen en -gebeurtenissen toe aan Adobe Analytics-variabelen en -gebeurtenissen. (Zie [Een kader instellen voor basisopvolging](/help/sites-administering/adobeanalytics-connect.md).)
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -320,8 +323,8 @@ De bovenstaande component is nu geïntegreerd met het Adobe Analytics-framework.
 
 Componenten kunnen gegevens genereren voor de variabele s.products die naar Adobe Analytics wordt verzonden. Ontwerp uw componenten om aan de variabele s.products bij te dragen:
 
-* Neem een waarde op met de naam `product` van een specifieke structuur.
-* Stel de gegevensleden van de waarde `product` bloot zodat zij met de variabelen van Adobe Analytics in het kader van Adobe Analytics kunnen worden in kaart gebracht.
+* Een benoemde waarde opnemen `product` van een specifieke structuur.
+* Maak de gegevensleden van beschikbaar `product` zodat ze kunnen worden toegewezen aan Adobe Analytics-variabelen in het Adobe Analytics-framework.
 
 De variabele Adobe Analytics s.products gebruikt de volgende syntaxis:
 
@@ -329,7 +332,7 @@ De variabele Adobe Analytics s.products gebruikt de volgende syntaxis:
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
 ```
 
-De integratiemodule van Adobe Analytics construeert de `s.products` variabele gebruikend de `product` waarden die AEM componenten produceren. De waarde `product` in javascript die AEM componenten produceren is een serie van waarden die de volgende structuur hebben:
+In de Adobe Analytics-integratiemodule worden de `s.products` variabele die de `product` waarden die AEM componenten genereren. De `product` De waarde in javascript die AEM componenten produceren is een serie van waarden die de volgende structuur hebben:
 
 ```
 "product": [{
@@ -348,13 +351,13 @@ De integratiemodule van Adobe Analytics construeert de `s.products` variabele ge
 }]
 ```
 
-Wanneer een gegevensitem wordt weggelaten uit de waarde `product`, wordt het als een lege tekenreeks in s.products verzonden.
+Wanneer een gegevensitem wordt weggelaten uit het `product` value, wordt het verzonden als lege koord in s.products.
 
 >[!NOTE]
 >
->Als er geen gebeurtenis aan een productwaarde is gekoppeld, gebruikt Adobe Analytics standaard de gebeurtenis `prodView`.
+>Als er geen gebeurtenis aan een productwaarde is gekoppeld, gebruikt Adobe Analytics de optie `prodView` gebeurtenis standaard.
 
-De `analytics` knoop van de component moet de veranderlijke namen blootstellen gebruikend het `cq:trackvars` bezit:
+De `analytics` knooppunt van de component moet de variabelenamen zichtbaar maken met de `cq:trackvars` eigenschap:
 
 * product.category
 * product.sku
@@ -365,7 +368,7 @@ De `analytics` knoop van de component moet de veranderlijke namen blootstellen g
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-De module eCommerce biedt verschillende componenten die variabele gegevens van s.products genereren. Bijvoorbeeld, produceert de voorleggingscomponent ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) javascript die aan het volgende voorbeeld gelijkaardig is:
+De module eCommerce biedt verschillende componenten die variabele gegevens van s.products genereren. Bijvoorbeeld, de subordercomponent ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genereert javascript die vergelijkbaar is met het volgende voorbeeld:
 
 ```
 <script type="text/javascript">
@@ -441,6 +444,6 @@ De module eCommerce biedt verschillende componenten die variabele gegevens van s
 
 #### Het beperken van de Grootte van het Volgen Vraag {#limiting-the-size-of-tracking-calls}
 
-Webbrowsers beperken doorgaans de grootte van GET-aanvragen. Omdat CQ-product- en SKU-waarden opslagpaden zijn, kunnen productarrays met meerdere waarden de limiet van de aanvraaggrootte overschrijden. Daarom moeten uw componenten het aantal punten in `product` serie van elk `CQ_Analytics.record function` beperken. Maak meerdere functies als het aantal items dat u wilt bijhouden de limiet kan overschrijden.
+Webbrowsers beperken doorgaans de grootte van GET-aanvragen. Omdat CQ-product- en SKU-waarden opslagpaden zijn, kunnen productarrays met meerdere waarden de limiet van de aanvraaggrootte overschrijden. Uw componenten moeten daarom het aantal items in de `product` array van elk `CQ_Analytics.record function`. Maak meerdere functies als het aantal items dat u wilt bijhouden de limiet kan overschrijden.
 
-Bijvoorbeeld, beperkt de eCommerce voorleggingscomponent het aantal punten `product` in een vraag aan vier. Wanneer de kar meer dan vier producten bevat, produceert het veelvoudige `CQ_Analytics.record` functies.
+Met de component eCommerce-submitorder wordt bijvoorbeeld het aantal `product` punten in een vraag aan vier. Wanneer de kar meer dan vier producten bevat, produceert het veelvoudige `CQ_Analytics.record` functies.

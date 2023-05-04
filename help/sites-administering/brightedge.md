@@ -1,8 +1,8 @@
 ---
 title: Integreren met BrightStor Content Optimizer
-seo-title: Integreren met BrightStor Content Optimizer
+seo-title: Integrating with BrightEdge Content Optimizer
 description: Leer hoe u AEM kunt integreren met BrightStor Content Optimizer.
-seo-description: Leer hoe u AEM kunt integreren met BrightStor Content Optimizer.
+seo-description: Learn about integrating AEM with BrightEdge Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: 46d0513c-04b2-41ed-bb56-e0778fa5fd10
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
 
 # Integreren met BrightStor Content Optimizer{#integrating-with-brightedge-content-optimizer}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Maak een BrightEdge-cloudconfiguratie zodat AEM verbinding kunnen maken met de referenties van uw BrightStor-account. U kunt meerdere configuraties maken als u meerdere accounts gebruikt.
 
@@ -36,7 +39,7 @@ Wanneer u de configuratie creeert, specificeert u een titel. De titel moet besch
 1. Typ een titel voor de configuratie. Naar keuze, typ een naam voor de knoop die wordt gebruikt om de configuratie in de bewaarplaats op te slaan. Klik op Maken.
 1. Typ in het dialoogvenster Configuratie van BrightStor Content Optimizer de gebruikersnaam en het wachtwoord van de BrightStor-account en klik op OK.
 
-## Een BrightEdge-configuratie {#editing-a-brightedge-configuration} bewerken
+## Een BrightEdge-configuratie bewerken {#editing-a-brightedge-configuration}
 
 Wijzig indien nodig de gebruikersnaam en het wachtwoord van een BrightStor-configuratie. De wijzigingen zijn van invloed op alle pagina&#39;s die de configuratie gebruiken.
 
@@ -60,7 +63,7 @@ Koppel pagina&#39;s aan een BrightStor-configuratie om paginagegevens naar de Br
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-## Een BrightEdge-configuratie {#activating-a-brightedge-configuration} activeren
+## Een BrightEdge-configuratie activeren {#activating-a-brightedge-configuration}
 
 Activeer een BrightEdge-configuratie om deze te repliceren op de publicatie-instantie en om gepubliceerde pagina&#39;s in staat te stellen te communiceren met de BrightStor-service.
 

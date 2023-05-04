@@ -2,7 +2,7 @@
 title: Enterprise DevOps
 seo-title: Enterprise DevOps
 description: Leer over de processen, methoden en communicatie die zijn vereist om implementatie en samenwerking te vereenvoudigen.
-seo-description: Leer over de processen, methoden en communicatie die zijn vereist om implementatie en samenwerking te vereenvoudigen.
+seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
 uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,15 +10,18 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
 exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 93%
+source-wordcount: '1025'
+ht-degree: 90%
 
 ---
 
 # Enterprise DevOps{#enterprise-devops}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 DevOps omvat de processen, methoden en communicatie die nodig zijn voor de volgende stappen:
 
@@ -63,7 +66,7 @@ Afhankelijk van de schaal van uw systeem kan de ontwikkelomgeving beschikken ove
 
 ### Kwaliteitsborging {#quality-assurance}
 
-Deze omgeving wordt door het kwaliteitsbewakingsteam gebruikt om uw nieuwe systeem volledig [test](/help/sites-developing/test-plan.md); zowel ontwerp als functie. De omgeving moet beschikken over auteur- en publicatieomgevingen met geschikte content. Ook moet het alle noodzakelijke services bieden om een volledige reeks tests mogelijk te maken.
+Deze omgeving wordt door het team voor kwaliteitsborging uitgebreid gebruikt [test](/help/sites-developing/test-plan.md) uw nieuwe systeem; zowel ontwerp als functie. De omgeving moet beschikken over auteur- en publicatieomgevingen met geschikte content. Ook moet het alle noodzakelijke services bieden om een volledige reeks tests mogelijk te maken.
 
 ### Staging {#staging}
 
@@ -141,6 +144,6 @@ Productiecontent moet van de productieomgeving naar de stagingomgeving worden ve
 Content kan worden overgedragen:
 
 * Tussen de verschillende omgevingen: door pakketten te exporteren en te importeren.
-* Tussen verschillende instanties - door ([AEM replicatie](/help/sites-deploying/replication.md)) de inhoud (gebruikend een HTTP, of HTTPS, verbinding) direct te herhalen.
+* Tussen verschillende instanties - door rechtstreeks te repliceren ([AEM replicatie](/help/sites-deploying/replication.md)) de inhoud (via een HTTP- of HTTPS-verbinding).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

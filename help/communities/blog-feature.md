@@ -1,8 +1,8 @@
 ---
 title: Blogonderdeel
-seo-title: Blogonderdeel
+seo-title: Blog Feature
 description: Informatie van de Gemeenschap in een journalistiek formaat
-seo-description: Informatie van de Gemeenschap in een journalistiek formaat
+seo-description: Community information in a journaling format
 uuid: 01f1a547-d22b-4da6-a69c-ab420e5a9e19
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,15 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
 exl-id: 12ae8b4c-73c5-4ec9-beea-b682b55ebdfd
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1510'
 ht-degree: 0%
 
 ---
 
-# Blogfunctie {#blog-feature}
+# Blogonderdeel {#blog-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -31,11 +34,11 @@ De blogfunctie biedt:
 * Blogartikelen en opmerkingen maken
 * RTF-bewerking
 * Inline-afbeeldingen (met ondersteuning voor slepen en neerzetten)
-* Inhoud van ingesloten sociale netwerken ([Ondersteuning insluiten](blog-developer-basics.md#allowing-rich-media))
+* Inhoud ingesloten sociale netwerken ([Ondersteuning voor insluiten](blog-developer-basics.md#allowing-rich-media))
 * Conceptmodus
 * Geplande publicatie
-* Compose on-name (een [geprivilegieerd lid](users.md#privileged-members-group) kan inhoud namens een verschillend lid van de Gemeenschap tot stand brengen)
-* [In context en bulksgewijze ](moderate-ugc.md) modernisering van blogartikelen en commentaar
+* Samenstellen namens (a) [geprivilegieerd lid](users.md#privileged-members-group) kan inhoud maken namens een ander lid van de gemeenschap)
+* [In de context en bulkmatiging](moderate-ugc.md) blogartikelen en commentaar
 
 In deze sectie van de documentatie wordt beschreven
 
@@ -44,7 +47,7 @@ In deze sectie van de documentatie wordt beschreven
 
 >[!NOTE]
 >
->De componenten `Journal`en `Journal Sidebar` hebben de naam `Blog` en `Blog Sidebar`.
+>De componenten `Journal`en `Journal Sidebar` worden `Blog` en `Blog Sidebar`.
 >
 >De blogfunctie in AEM 6.0 en eerdere versies wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
 
@@ -57,25 +60,25 @@ Als u een blog wilt toevoegen aan een pagina in de ontwerpmodus, gebruikt u de c
 
 En sleep ze naar de juiste plaats op een pagina waarop de blog moet worden weergegeven.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](blog-developer-basics.md#essentials-for-client-side) worden opgenomen, wordt de `Blog`component als volgt weergegeven:
+Wanneer de [vereiste clientbibliotheken](blog-developer-basics.md#essentials-for-client-side) worden opgenomen, is dit hoe `Blog`wordt weergegeven:
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-En hoe `Blog Sidebar` zal verschijnen:
+En hoe `Blog Sidebar` wordt weergegeven:
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Blog {#configuring-blog} configureren
+### Blog configureren {#configuring-blog}
 
-Selecteer de geplaatste `Blog` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `Blog` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
-![configureren, ](assets/chlimage_1-149.png) ![pictogrambloginstellingen](assets/Blog-configure.png)
+![Configuratiepictogram](assets/chlimage_1-149.png) ![Bloginstellingen](assets/Blog-configure.png)
 
-#### Tabblad Instellingen {#settings-tab}
+#### Het tabblad Instellingen {#settings-tab}
 
-Geef onder het tabblad **[!UICONTROL Settings]** de basisfuncties van de blog op:
+Onder de **[!UICONTROL Settings]** kunt u de basisfuncties van de blog opgeven:
 
 * **[!UICONTROL Allow Attachment Thumbnail]**
 Als deze optie is ingeschakeld, wordt een miniatuur van de bijgevoegde afbeelding gemaakt.
@@ -124,7 +127,7 @@ De blogbeschrijving.
 
 * **[!UICONTROL Allow Tagging]**
 
-   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan hun advertentie (zie **[!UICONTROL Tag field]** ). De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow File Uploads]**
 
@@ -152,11 +155,11 @@ De blogbeschrijving.
 
 * **[!UICONTROL Allow Following]**
 
-   Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen. Hiermee kunnen leden [op de hoogte worden gesteld](notifications.md) van nieuwe berichten. De optie Standaard is uitgeschakeld.
+   Indien ingeschakeld, neemt u de volgende functie voor blogartikelen op, waardoor leden kunnen worden [aangemeld](notifications.md) van nieuwe posten. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Email Subscriptions]**
 
-   Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). `Allow Following` moet worden gecontroleerd en [e-mail geconfigureerd](email.md). De optie Standaard is uitgeschakeld.
+   Als deze optie ingeschakeld is, kunnen leden per e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). Vereisten `Allow Following` te controleren en [e-mail geconfigureerd](email.md). De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Voting]**
 
@@ -164,15 +167,15 @@ De blogbeschrijving.
 
 * **[!UICONTROL Display Badges]**
 
-   Indien ingeschakeld, toont u verdiende en toegewezen [badges](implementing-scoring.md) met het blogbericht van een lid. De optie Standaard is uitgeschakeld.
+   Indien ingeschakeld, verdiende en toegewezen weergave [badges](implementing-scoring.md) met het blogbericht van een lid. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Featured Content]**
 
-   als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
+   als het idee wordt gecontroleerd, kan het worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef onder het tabblad **[!UICONTROL User Moderation]** de moderatie-instellingen op:
+Onder de **[!UICONTROL User Moderation]** tab, geeft u de instellingen voor de moderatie op:
 
 * **[!UICONTROL Deny Posts]**
 
@@ -202,23 +205,23 @@ Geef onder het tabblad **[!UICONTROL User Moderation]** de moderatie-instellinge
 
    Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-#### Tabblad {#tag-field-tab} voor tagveld
+#### Tabblad Tagveld {#tag-field-tab}
 
-Geef onder het tabblad **[!UICONTROL Tag field]** aan welke tags mogen worden toegepast als **[!UICONTROL Allow Tagging]** is ingeschakeld op het tabblad **[!UICONTROL Settings]**:
+Onder de **[!UICONTROL Tag field]** -tab, geeft u op welke tags mogen worden toegepast als **[!UICONTROL Allow Tagging]** wordt gecontroleerd op **[!UICONTROL Settings]** tab:
 
 * **[!UICONTROL Allowed Namespaces]**
 
-   Relevant als `Allow Tagging` wordt gecontroleerd onder **[!UICONTROL Settings]** tabel. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant indien `Allow Tagging` wordt gecontroleerd onder de **[!UICONTROL Settings]** tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **[!UICONTROL Suggestion Limit]**
 
    Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde -1 betekent geen limieten. De standaardwaarde is 0.
 
-### Blogzijbalk {#configuring-blog-sidebar} configureren
+### Blogzijbalk configureren {#configuring-blog-sidebar}
 
-Wanneer u dubbelklikt op de component `Blog Sidebar`, wordt een dialoogvenster voor bewerken geopend.
+Wanneer u dubbelklikt op de knop `Blog Sidebar` wordt geopend.
 
-Geef onder het tabblad **[!UICONTROL Journal Sidebar Settings]** de datumnotatie voor archieven op en het type items dat op de zijbalk moet worden weergegeven:
+Onder de **[!UICONTROL Journal Sidebar Settings]** op, geeft u de datumnotatie voor archieven op en het type items dat op de zijbalk moet worden weergegeven:
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -244,7 +247,7 @@ Geef onder het tabblad **[!UICONTROL Journal Sidebar Settings]** de datumnotatie
 
 * **[!UICONTROL Journal Component Path]**
 
-   *(Optioneel)* De locatie van de blogbron waaruit blogartikelen moeten worden vermeld. Als deze optie leeg wordt gelaten, wordt de component resourceType `social/journal/components/hbs/journal` gebruikt die op dezelfde pagina wordt weergegeven.
+   *(Optioneel)* De locatie van de blogbron waaruit blogartikelen moeten worden vermeld. Indien leeg gelaten, wordt de component van resourceType gebruikt `social/journal/components/hbs/journal` die op dezelfde pagina wordt weergegeven.
 
    * Bijvoorbeeld, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -252,7 +255,7 @@ Geef onder het tabblad **[!UICONTROL Journal Sidebar Settings]** de datumnotatie
 
    Het aantal blogartikelen dat moet worden weergegeven. De waarde -1 betekent geen limiet. De standaardwaarde is -1.
 
-## Ervaring {#site-visitor-experience} voor bezoekers van site
+## Ervaring met sitebezoekers {#site-visitor-experience}
 
 In de publicatieomgeving wordt met de blogfunctie het meest recente blogartikel weergegeven, gevolgd door oudere blogartikelen in aflopende volgorde van ontwerp. Met blogzijbalken kunnen sitebezoekers filters toepassen om de selectie van weergegeven blogartikelen te beperken.
 
@@ -274,13 +277,13 @@ De blogartikelen worden op het juiste tabblad (Gepubliceerd, Concepten of Geplan
 
 #### Moderatoren en beheerders {#moderators-and-administrators}
 
-Wanneer de aangemelde gebruiker moderator of beheerdersrechten heeft, kunnen zij [moderatietaken](moderate-ugc.md) (zoals toegestaan door de configuratie van de component) uitvoeren op alle blogartikelen en commentaar dat op een blog wordt geplaatst.
+Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij uitvoeren [matigingstaken](moderate-ugc.md) (zoals toegestaan door de configuratie van de component) op alle blogartikelen en op blogberichten gepost commentaar.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 ### Leden {#members}
 
-Wanneer de aangemelde gebruiker een communitylid of [geprivilegieerd lid](users.md#privileged-members-group) is (afhankelijk van de configuratie), kunnen ze `New Article` selecteren om een nieuw blogartikel te maken en te plaatsen.
+Wanneer de gebruiker met de aanmelding lid is van de gemeenschap of [geprivilegieerd lid](users.md#privileged-members-group) (afhankelijk van de configuratie), kunnen zij selecteren `New Article` om een nieuw blogartikel te maken en te plaatsen.
 
 Zij kunnen met name:
 
@@ -293,7 +296,7 @@ Zij kunnen met name:
 
 ![chlimage_1-153](assets/chlimage_1-153.png) ![chlimage_1-154](assets/chlimage_1-154.png)
 
-### Anonieme {#anonymous}
+### Anoniem {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte blogartikelen en opmerkingen lezen, deze vertalen als ze worden ondersteund, maar mogen geen blogartikel of commentaar toevoegen en de artikelen of opmerkingen van anderen niet markeren.
 
@@ -301,10 +304,10 @@ Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte blogartikelen en op
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Blog Essentials](blog-developer-basics.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Grondbeginselen van blogs](blog-developer-basics.md) pagina voor ontwikkelaars.
 
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor de moderatie van blogberichten en opmerkingen.
+Zie voor de moderatie van blogberichten en commentaar [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Zie [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) voor het labelen van blogberichten en opmerkingen.
+Zie voor het labelen van blogberichten en opmerkingen [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md).
 
-Zie [Door gebruiker gegenereerde inhoud omzetten](translate-ugc.md) voor een vertaling van blogberichten en opmerkingen.
+Zie voor een vertaling van blogberichten en opmerkingen [Door gebruiker gegenereerde inhoud vertalen](translate-ugc.md).

@@ -9,14 +9,18 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
 
 # Problemen oplossen in de modus Dynamic Media - Scene7 {#troubleshooting-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In het volgende document worden de problemen beschreven die optreden bij Dynamic Media **dynamicmedia_scene7** uitvoeringsmodus.
 
@@ -48,7 +52,7 @@ De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleer
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | `a\|364266` | Algemene indicator dat de knoop met Dynamic Media wordt verbonden. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** of fouttekst | Status van het uploaden van middelen naar Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | Moet worden gevuld om URL&#39;s te genereren naar externe middelen van Dynamic Media. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | `success` or `failed:<error text>` | Synchronisatiestatus van sets (centrifuges, afbeeldingssets, enzovoort), voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, updates van afbeeldingen met hyperlinks voor een element of afbeeldingen die zijn bewerkt. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | `success` of `failed:<error text>` | Synchronisatiestatus van sets (centrifuges, afbeeldingssets, enzovoort), voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, updates van afbeeldingen met hyperlinks voor een element of afbeeldingen die zijn bewerkt. |
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
 

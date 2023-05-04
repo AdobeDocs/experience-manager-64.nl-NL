@@ -1,8 +1,8 @@
 ---
 title: Tekenreeksen uitnemen voor vertaling
-seo-title: Tekenreeksen uitnemen voor vertaling
+seo-title: Extracting Strings for Translating
 description: Met de Xgettext-maven-plug-in kunt u tekenreeksen uit uw broncode extraheren die moeten worden vertaald
-seo-description: Met de Xgettext-maven-plug-in kunt u tekenreeksen uit uw broncode extraheren die moeten worden vertaald
+seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 50c2479b-72b6-42fa-8e48-45c8e9596161
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-# Tekenreeksen extraheren voor vertaling{#extracting-strings-for-translating}
+# Tekenreeksen uitnemen voor vertaling{#extracting-strings-for-translating}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Gebruik de xgettext-maven-plug-in om tekenreeksen uit uw broncode te extraheren die moeten worden vertaald. Met de plug-in Maven worden tekenreeksen geëxtraheerd naar een XLIFF-bestand dat u verzendt voor vertaling. Tekenreeksen worden geëxtraheerd van de volgende locaties:
 
@@ -26,7 +29,7 @@ Gebruik de xgettext-maven-plug-in om tekenreeksen uit uw broncode te extraheren 
 * Javascript-bronbestanden
 * XML-representaties van SVN-bronnen (JCR-knooppunten)
 
-## Het vormen de Extractie van het Koord {#configuring-string-extraction}
+## Tekenreeksovername configureren {#configuring-string-extraction}
 
 Configureer hoe de functie voor het insteekmodule xgettext-maven tekenreeksen voor uw project extraheert.
 
@@ -54,7 +57,7 @@ Configureer hoe de functie voor het insteekmodule xgettext-maven tekenreeksen vo
 | /parsers/regexp | Vormt het ontleden van Java-, JSP-, en ExtJS malplaatjedossiers. U hoeft deze sectie niet te wijzigen. |
 | /potentials | De formule voor het detecteren van tekenreeksen die moeten worden geïnternationaliseerd. |
 
-### De te parseren bestanden {#identifying-the-files-to-parse} identificeren
+### De te parseren bestanden identificeren {#identifying-the-files-to-parse}
 
 Het /filter gedeelte van het i18n.any-bestand identificeert de bestanden die met het gereedschap Xgettext-maven-plugin worden geparseerd. Voeg verschillende include- en uitsluitingsregels toe die respectievelijk geparseerde en genegeerde bestanden identificeren. Neem alle bestanden op en sluit de bestanden uit die u niet wilt parseren. Gewoonlijk sluit u bestandstypen uit die geen bijdrage leveren aan de interface, of bestanden die wel UI definiëren maar niet worden omgezet. De regels include en exclude hebben de volgende indeling:
 
@@ -68,10 +71,10 @@ Het patroongedeelte van een regel wordt gebruikt om de namen van de bestanden di
 | Voorvoegsel | Effect |
 |---|---|
 | / | Geeft een JCR-pad aan. Dit voorvoegsel komt daarom overeen met bestanden onder de map jcr_root. |
-| &amp;ast; | Geeft een normaal bestand op het bestandssysteem aan. |
+| &amp;asteren; | Geeft een normaal bestand op het bestandssysteem aan. |
 | none | Geen voorvoegsel of patroon dat begint met een map of bestandsnaam, geeft een normaal bestand op het bestandssysteem aan. |
 
-Bij gebruik in een patroon geeft het teken / een submap en het teken &amp;ast aan; alle tekens. In de volgende tabel staan verschillende voorbeeldregels.
+Bij gebruik in een patroon geeft /-teken een submap en de &amp;laatste aan; alle tekens. In de volgende tabel staan verschillende voorbeeldregels.
 
 <table> 
  <tbody> 
@@ -100,7 +103,7 @@ Bij gebruik in een patroon geeft het teken / een submap en het teken &amp;ast aa
  </tbody> 
 </table>
 
-### De tekenreeksen uitnemen {#extracting-the-strings}
+### De tekenreeksen extraheren  {#extracting-the-strings}
 
 geen POM:
 
@@ -137,7 +140,7 @@ mvn xgettext:extract
 ### Uitvoerbestanden {#output-files}
 
 * `raw.xliff`: geëxtraheerde tekenreeksen
-* `warn.log`: eventuele waarschuwingen als de  `CQ.I18n.getMessage()` API onjuist wordt gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
+* `warn.log`: eventuele waarschuwingen, indien `CQ.I18n.getMessage()` API wordt onjuist gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
 
 * `parserwarn.log`: parserwaarschuwingen (indien aanwezig), bv. JS-parserproblemen
 * `potentials.xliff`: &quot;potentiële&quot; kandidaten die niet worden geëxtraheerd, maar leesbare tekenreeksen kunnen zijn die vertaald moeten worden (kan worden genegeerd, levert nog steeds een enorme hoeveelheid valse positieven op)

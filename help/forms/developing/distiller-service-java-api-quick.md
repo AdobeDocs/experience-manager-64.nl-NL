@@ -1,8 +1,8 @@
 ---
 title: Distiller Service Java API QuickStart (SOAP)
-seo-title: Distiller Service Java API QuickStart (SOAP)
+seo-title: Distiller Service Java API QuickStart(SOAP)
 description: Met de Distiller Service Java API kunt u een PostScript-bestand converteren naar een PDF-document.
-seo-description: Met de Distiller Service Java API kunt u een PostScript-bestand converteren naar een PDF-document.
+seo-description: Use the Distiller Service Java API to convert a PostScript file to a PDF document.
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
 exl-id: 0d7cdb60-e892-4644-8a72-a8068ca2e224
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
 # Distiller Service Java API Quick Start (SOAP) {#distiller-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Java API Quick Start (SOAP) is beschikbaar voor de Distiller®-service:
 
@@ -33,7 +36,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Een PostScript-bestand converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een PostScript-bestand met de naam *Loan.ps *geconverteerd naar een PDF-bestand met de naam *Loan.pdf*. (Zie [PostScript converteren naar PDF-documenten](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
+In het volgende codevoorbeeld wordt een PostScript-bestand met de naam *Loan.ps *omgezet in een PDF-bestand met de naam *Lening.pdf*. (Zie [PostScript converteren naar PDF-documenten](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
 ```as3
  /* 

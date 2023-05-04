@@ -1,8 +1,8 @@
 ---
 title: XFA of een PDF-formuliersjabloon downloaden
-seo-title: XFA of een PDF-formuliersjabloon downloaden
+seo-title: Download an XFA or a PDF form template
 description: U kunt formulieren vanuit de gegevensopslagruimte exporteren naar het lokale systeem en de gedownloade formulieren migreren naar een nieuwe gegevensopslagruimte.
-seo-description: U kunt formulieren vanuit de gegevensopslagruimte exporteren naar het lokale systeem en de gedownloade formulieren migreren naar een nieuwe gegevensopslagruimte.
+seo-description: You can export forms from the repository to the local system and migrate the downloaded forms to new repository.
 uuid: 5f7fbd14-cb9d-4749-8708-7efe49df89d7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 role: Admin
 exl-id: 68d881c6-7507-4018-b40e-205604221d0c
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # XFA of een PDF-formuliersjabloon downloaden {#download-an-xfa-or-a-pdf-form-template}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Met de downloadbewerking kunt u, zoals de naam aangeeft, formulieren exporteren van de opslagplaats naar het lokale systeem. In combinatie met het uploaden kunt u met deze bewerking uw formulieren migreren van de ene opslagplaats naar de andere.
 
@@ -25,19 +29,19 @@ In AEM Forms wordt het downloaden ondersteund voor de volgende elementtypen:
 
 * Formuliersjablonen (XFA Forms)
 * PDF forms
-* Documenten (vlakke PDF-bestanden)
+* Documenten (bestanden met platte PDF)
 
 AEM Forms ondersteunt het downloaden van deze formuliertypen afzonderlijk of in een map met een of meer ondersteunde formulieren.
 
-Naast deze elementen kunt u het type element `Resource` downloaden als dit in een map aanwezig is. Deze functie is beschikbaar zodat u de bron waarnaar wordt verwezen door een XFA-formulier, samen met het formulier kunt downloaden.
+Naast deze elementen kunt u de opdracht `Resource` type element als dit voorkomt in een map. Deze functie is beschikbaar zodat u de bron waarnaar wordt verwezen door een XFA-formulier, samen met het formulier kunt downloaden.
 
 ## Een of meer formulieren downloaden {#download-one-or-more-forms}
 
-1. Meld u aan bij de AEM Forms-gebruikersinterface op `https://<server>:<port>/aem/forms.html`.
+1. Meld u aan bij de gebruikersinterface van AEM Forms op `https://<server>:<port>/aem/forms.html`.
 
 1. Navigeer naar de locatie van het element dat u wilt downloaden.
 
-1. Selecteer het element. Klik op het pictogram **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png) op de werkbalk.
+1. Selecteer het element. Klik op de knop **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png) in de werkbalk.
 
    >[!NOTE]
    >
@@ -49,7 +53,7 @@ Naast deze elementen kunt u het type element `Resource` downloaden als dit in ee
 
    Als u een map downloadt, worden de ondersteunde elementen in de map gedownload in de bestaande hiërarchie.
 
-   Het ZIP-bestand wordt opgeslagen in de map `Downloads` op uw systeem.
+   Het ZIP-bestand wordt opgeslagen in het `Downloads` op uw systeem.
 
 ## Verwante overwegingen voor het uploaden {#related-considerations-for-the-upload-operation}
 

@@ -1,49 +1,52 @@
 ---
-title: '"Zelfstudie: Plan de Interactieve Communicatie"'
-seo-title: Uw interactieve communicatie plannen
+title: "Zelfstudie: Plan de Interactieve Communicatie"
+seo-title: Plan your Interactive Communication
 description: Plan de anatomie voor uw Interactieve Communicatie
-seo-description: Plan de anatomie voor uw Interactieve Communicatie
+seo-description: Plan the anatomy for your Interactive Communication
 uuid: 1c2b5c5b-c655-4559-8748-3e0b343779c2
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: 40f6297d-7238-4e56-9fd1-6df3a6362724
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
 
-# Zelfstudie: Plan de Interactieve Communicatie {#tutorial-plan-the-interactive-communication}
+# Zelfstudie: De interactieve communicatie plannen {#tutorial-plan-the-interactive-communication}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Plan de anatomie voor uw Interactieve Communicatie
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Deze zelfstudie is een stap in de serie [Maak uw eerste interactieve communicatiemodellen](/help/forms/using/create-your-first-interactive-communication.md). U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Deze zelfstudie is een stap in de [Maak uw eerste interactieve communicatie](/help/forms/using/create-your-first-interactive-communication.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 De eerste stap in het plannen van een Interactieve Mededeling is de inhoud van de Interactieve Mededeling te voltooien. Experts met onderwerpen van afdelingen zoals juridische afdeling, financiën, ondersteuning of marketing kunnen u helpen de inhoud te voltooien. Nadat de inhoud wordt voltooid, moet u het analyseren om de diverse activatypes te identificeren die worden vereist om de Interactieve Mededeling tot stand te brengen.
 
-## Planningsoverwegingen {#planning-considerations}
+## Planning {#planning-considerations}
 
 Een interactieve communicatie omvat de volgende elementen:
 
-* **Statische** tekst omvat vooral de delen van de interactieve mededeling die algemeen van aard zijn en in mededeling aan alle klanten inbegrepen zijn. Bijvoorbeeld kop-, voettekst-, aanhef- of disclaimers.
-* **Gegevens die afkomstig zijn van een back-endsysteem (formuliergegevensmodel)** zijn klantspecifiek en worden dynamisch samengevoegd met de interactieve communicatie. Het beleidsnummer of adres kan bijvoorbeeld worden opgehaald aan de hand van het formuliergegevensmodel.
-* **Lay-out of** malplaatjes voor de versie van de Druk en van het Web van de Interactieve Mededeling.
-* **De volgorde** waarin de verschillende tekstalinea&#39;s worden weergegeven in de interactieve communicatie.
-* **Gegevens ingegaan door een frontline werknemer (Agent UI)** die de mededeling alvorens het uit te verzenden aanpast. Bijvoorbeeld de vervaldatum van de betaling.
+* **Statische tekst** Het omvat vooral de delen van de interactieve communicatie die van generieke aard zijn en in communicatie aan alle klanten inbegrepen zijn. Bijvoorbeeld kop-, voettekst-, aanhef- of disclaimers.
+* **Gegevens afkomstig van een back-endsysteem (formuliergegevensmodel)** is klantspecifiek en wordt dynamisch samengevoegd met de interactieve communicatie. Het beleidsnummer of adres kan bijvoorbeeld worden opgehaald aan de hand van het formuliergegevensmodel.
+* **Layout of sjablonen** voor de versie van de Druk en van het Web van de Interactieve Communicatie.
+* **Volgorde** waarin de verschillende tekstalinea&#39;s worden weergegeven in de interactieve communicatie.
+* **Gegevens ingegaan door een frontline werknemer (Agent UI)** wie de communicatie aanpast voordat deze wordt verzonden. Bijvoorbeeld de vervaldatum van de betaling.
 
-* **Voorwaardelijke** gegevens die worden gevuld op basis van vooraf gedefinieerde voorwaarden. Bijvoorbeeld de datum waarop de interactieve communicatie wordt gegenereerd.
+* **Voorwaardelijke gegevens** die wordt gevuld op basis van vooraf gedefinieerde voorwaarden. Bijvoorbeeld de datum waarop de interactieve communicatie wordt gegenereerd.
 * **Afbeeldingen die zijn opgeslagen in een opslagplaats**, zoals logo&#39;s en handtekeningafbeeldingen. Afbeeldingen zoals bedrijfslogo&#39;s worden in de meeste of alle interactieve communicatie weergegeven.
-* **Grafieken en** tabellen die nodig zijn om de weergave van complexe gegevens in een interactieve communicatie te vereenvoudigen
+* **Grafieken en tabellen** vereist om de weergave van complexe gegevens in een interactieve communicatie te vereenvoudigen
 
 ## Anatomie van de interactieve communicatie {#anatomy-of-the-interactive-communication}
 
-Zodra u de inhoud en de elementen hebt voltooid die worden gebruikt om uw Interactieve Mededeling tot stand te brengen, kunt u een anatomie van de Interactieve Communicatie tot stand brengen. De anatomie moet de details hebben die in [de sectie van de Overwegingen van de Planning ](/help/forms/using/planning-interactive-communications.md#planning-considerations) worden vermeld. Gebaseerd op ons gebruiksgeval, is het volgende een voorbeeld van een anatomie van de maandelijkse rekening die een telecomexploitant aan zijn klanten verzendt.
+Zodra u de inhoud en de elementen hebt voltooid die worden gebruikt om uw Interactieve Mededeling tot stand te brengen, kunt u een anatomie van de Interactieve Communicatie tot stand brengen. De anatomie moet de in de [Overwegingen bij de planning](/help/forms/using/planning-interactive-communications.md#planning-considerations) sectie. Gebaseerd op ons gebruiksgeval, is het volgende een voorbeeld van een anatomie van de maandelijkse rekening die een telecomexploitant aan zijn klanten verzendt.
 
 De anatomie bevat gegevens met de volgende invoermodi:
 
@@ -53,7 +56,7 @@ De anatomie bevat gegevens met de volgende invoermodi:
 * Voorwaardelijke gegevens
 * Afbeeldingen
 
-In elke sectie staat de vetgedrukte tekst voor statische tekst. Het gegevensbestand omvat klant, rekeningen, en vraaglijsten. Een formuliergegevensmodel kan gegevens uit al deze tabellen ontvangen. Zie [Formuliergegevensmodel maken](create-form-data-model-tutorial.md) voor meer informatie.
+In elke sectie staat de vetgedrukte tekst voor statische tekst. Het gegevensbestand omvat klant, rekeningen, en vraaglijsten. Een formuliergegevensmodel kan gegevens uit al deze tabellen ontvangen. Zie voor meer informatie [Formuliergegevensmodel maken](create-form-data-model-tutorial.md).
 
 De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van interactieve communicatie:
 
@@ -69,7 +72,7 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
   <tr>
    <td>Bill Details</td> 
    <td><p>Factuurnummer</p> <p>Bill Date</p> <p>Bill Period</p> <p>Uw abonnement</p> </td> 
-   <td><p>Waarde voor <strong>Uw abonnement </strong>veld</p> <p>Tabel - klant</p> </td> 
+   <td><p>Waarde voor <strong>Uw abonnement </strong>field</p> <p>Tabel - klant</p> </td> 
    <td><p>Waarden voor de volgende velden:</p> 
     <ul> 
      <li>Factuurnummer</li> 
@@ -95,12 +98,12 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
      <li>Statuscode</li> 
      <li>Aantal verbindingen</li> 
     </ul> </td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Bill Summary</td> 
    <td><p>Vorig saldo</p> <p>Betalingen</p> <p>Aanpassingen</p> <p>Lopende factuurperiode</p> <p>Te betalen bedrag</p> <p>Vervaldatum</p> </td> 
-   <td><p>Waarde voor het veld <strong>Lopende factuurperiode </strong></p> <p>Tabel - rekeningen</p> </td> 
+   <td><p>Waarde voor de <strong>Lopende factuurperiode </strong> field</p> <p>Tabel - rekeningen</p> </td> 
    <td><p>Waarden voor de volgende velden:</p> 
     <ul> 
      <li>Vorig saldo</li> 
@@ -109,7 +112,7 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
      <li>Te betalen bedrag</li> 
      <li>Vervaldatum</li> 
     </ul> </td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Overzicht van kosten</td> 
@@ -127,34 +130,34 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
      <li>TOTAAL BETAALBAAR (veld gebruiksrechten berekend)</li> 
     </ul> <p>Tabel - rekeningen</p> </td> 
    <td>Geen velden</td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Gespecialiseerde vraag - Uitgaand</td> 
    <td><p>Kolomnamen:</p> 
     <ul> 
-     <li>Date</li> 
-     <li>Time</li> 
+     <li>Datum</li> 
+     <li>Tijd</li> 
      <li>Getal</li> 
      <li>Duur</li> 
      <li>Heffingen</li> 
     </ul> </td> 
    <td><p>Alle waarden</p> <p>Tabel - aanroepen</p> </td> 
    <td>Geen velden</td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Nu betalen</td> 
-   <td>—</td> 
-   <td>—</td> 
-   <td>—</td> 
+   <td>--</td> 
+   <td>--</td> 
+   <td>--</td> 
    <td>Nu betalen</td> 
   </tr>
   <tr>
    <td>Services voor toegevoegde waarde</td> 
-   <td>—</td> 
-   <td>—</td> 
-   <td>—</td> 
+   <td>--</td> 
+   <td>--</td> 
+   <td>--</td> 
    <td>ValueAddedServices</td> 
   </tr>
  </tbody>

@@ -1,26 +1,30 @@
 ---
 title: Inleiding tot [!DNL Adobe Experience Manager Assets]
-description: Leer wat het beheer van digitale middelen, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
+description: Leer wat het beheer van digitale middelen, zijn gebruiksgevallen is, en [!DNL Adobe Experience Manager Asset] aanbieden.
 contentOwner: AG
 feature: Asset Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
 
-# Informatie over [!DNL Adobe Experience Manager Assets] als DAM-oplossing {#about-assets}
+# Info [!DNL Adobe Experience Manager Assets] als DAM-oplossing {#about-assets}
 
-[!DNL Assets] is een DAM-hulpmiddel (Digital Asset Management) dat een integraal onderdeel is van het  [!DNL Experience Manager] platform en waarmee uw onderneming digitale middelen kan beheren en distribueren. Gebruikers in een organisatie kunnen vele typen digitale elementen beheren, opslaan en openen, zoals afbeeldingen, video&#39;s, documenten, audioclips, 3D-bestanden en rijke media voor gebruik op het web, in gedrukte vorm en voor digitale distributie.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+[!DNL Assets] is een DAM-hulpmiddel (Digital Asset Management) dat een integraal onderdeel vormt van het [!DNL Experience Manager] en stelt uw onderneming in staat om digitale middelen te beheren en te distribueren. Gebruikers in een organisatie kunnen vele typen digitale elementen beheren, opslaan en openen, zoals afbeeldingen, video&#39;s, documenten, audioclips, 3D-bestanden en rijke media voor gebruik op het web, in gedrukte vorm en voor digitale distributie.
 
 ## Wat is Digital Asset Management? {#what-is-digital-asset-management}
 
 [!DNL Assets] zorgt voor bedrijfsbreed delen en distributie van de belangrijkste digitale middelen van een organisatie. Gebruikers in een organisatie kunnen digitale elementen zoals afbeeldingen, afbeeldingen, audio, video en documenten via een webinterface (of een CIFS- of WebDAV-map) opslaan, beheren en benaderen.
 
-[!DNL Assets] mogelijkheden van  [!DNL Experience Manager] laten u het volgende doen:
+[!DNL Assets] vermogen van [!DNL Experience Manager] Hiermee kunt u het volgende doen:
 
 * U kunt afbeeldingen, documenten, audiobestanden en videobestanden in verschillende bestandsindelingen toevoegen en delen.
 * Elementen beheren door deze te groeperen op tags, lichtbakken of sterren (uw favorieten). Annotaties toevoegen aan elementen.
@@ -29,9 +33,9 @@ ht-degree: 0%
 * Voer functies voor het bewerken van afbeeldingen uit, zoals schalen en afbeeldingsfilters toevoegen. U kunt meerdere digitale elementen tegelijk importeren en exporteren met een WebDAV- of CIFS-map.
 * Gebruik workflows en meldingen om gezamenlijke verwerking en downloads van een set elementen mogelijk te maken en toegangsrechten voor elementen te beheren.
 
-### [!DNL Experience Manager Assets] is geïntegreerd met  [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
+### [!DNL Experience Manager Assets] is geïntegreerd met [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-[!DNL Assets] volledig geïntegreerd met  [!DNL Sites] en werkt naadloos voor alle gebruiksgevallen. Wanneer u bijvoorbeeld webpagina&#39;s ontwerpt, kunnen de [!DNL Sites] auteurs de digitale elementen zoeken en gebruiken via de Inhoudszoeker. De gebruikersinterface van [!DNL Assets] is het zelfde als dat van [!DNL Sites]. Zie [overzicht van sites](/help/sites-authoring/qg-page-authoring.md) voor volledige details.
+[!DNL Assets] volledig geïntegreerd met [!DNL Sites] en werkt naadloos voor alle gebruiksgevallen. Wanneer u bijvoorbeeld webpagina&#39;s ontwerpt, worden de [!DNL Sites] auteurs kunnen de digitale middelen vinden en gebruiken via de Inhoudszoeker. De gebruikersinterface van [!DNL Assets] is gelijk aan die van [!DNL Sites]. Zie [overzicht van sites](/help/sites-authoring/qg-page-authoring.md) voor volledige informatie.
 
 <!-- TBD: Update image for branding 
 
@@ -52,35 +56,35 @@ Houd rekening met de levenscyclus van de afbeelding wanneer u bepaalt of een afb
 
 Middelen zijn digitale documenten, afbeeldingen, video of audio (of een deel daarvan) die meerdere uitvoeringen kunnen hebben en subelementen kunnen bevatten (bijvoorbeeld lagen in een Photoshop-bestand, dia&#39;s in een PowerPoint-bestand, pagina&#39;s in een PDF, bestanden in een ZIP).
 
-Een element is in wezen een binair plus metagegevens plus uitvoeringen plus subelementen. Zie de [DAM Performance Guide](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html) voor gedetailleerde informatie.
+Een element is in wezen een binair plus metagegevens plus uitvoeringen plus subelementen. Zie de [DAM Performance Guide](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html) voor nadere informatie.
 
 >[!CAUTION]
 >
->Het uploaden en/of bewerken van een groot volume aan middelen (in het bijzonder afbeeldingen) kan de prestaties van uw [!DNL Experience Manager]-implementatie beïnvloeden.
+>Het uploaden en/of bewerken van een groot volume aan elementen (in het bijzonder afbeeldingen) kan van invloed zijn op de prestaties van uw [!DNL Experience Manager] implementatie.
 
 ### [!DNL Experience Manager Assets] terminologie {#aem-assets-terminology}
 
-Wanneer u werkt met digitale elementen in [!DNL Experience Manager], hebt u de volgende terminologie nodig:
+Wanneer u werkt met digitale middelen in [!DNL Experience Manager]moet u de volgende terminologie begrijpen:
 
 * **Verzameling**: Een verzameling elementen op basis van de fysieke locatie (map), algemene eigenschappen (opgeslagen zoekmap) of gebruikersselectie (lichtbakmappen).
 
-* **metagegevens** [!DNL Assets] hebben; bijvoorbeeld auteur, vervaldatum, DRM-informatie (Digital Rights Management) enzovoort. Metagegevens zijn toegankelijk. [!DNL Assets] ondersteunt de volgende verschillende algemene metagegevensschema&#39;s uit het vak:
+* **Metagegevens** [!DNL Assets] beschikken over metagegevens; bijvoorbeeld auteur, vervaldatum, DRM-informatie (Digital Rights Management) enzovoort. Metagegevens zijn toegankelijk. [!DNL Assets] ondersteunt de volgende verschillende algemene metagegevensschema&#39;s uit het vak:
 
    * Dublin Core: inclusief auteur, beschrijving, datum, onderwerp, enzovoort.
    * IPTC: inclusief gebeurtenis, model, locatie, enzovoort.
-   * WCM: inclusief pagina-eigenschappen, [!UICONTROL On Time] en [!UICONTROL Off Time] enzovoort.
+   * WCM: inclusief pagina-eigenschappen, [!UICONTROL On Time] en [!UICONTROL Off Time], enzovoort.
 
-* **Tags**:  [!DNL Assets] kunnen worden gelabeld en geclassificeerd. Zie [elementen ordenen](/help/assets/organize-assets.md).
+* **Tags**: [!DNL Assets] kunnen worden gelabeld en geclassificeerd. Zie [elementen ordenen](/help/assets/organize-assets.md).
 
 * **Uitvoeringen**: Een vertoning is de binaire representatie van een element. [!DNL Assets] altijd een primaire representatie hebben, namelijk die van het geüploade bestand. Ze kunnen een willekeurig aantal aanvullende voorstellingen hebben die worden gemaakt, bijvoorbeeld door aangepaste workflowstappen of wanneer een element wordt geüpload. Uitvoeringen kunnen een andere grootte hebben, met een andere resolutie, met een toegevoegd watermerk of een ander gewijzigd kenmerk.
 
 * **Versies**: Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie [versioning in [!DNL Assets]](managing-assets-touch-ui.md#asset-versioning).
 
-* **Subactiva**: Subelementen zijn elementen die een element vormen, bijvoorbeeld lagen in een  [!DNL Adobe Photoshop] bestand of pagina&#39;s in een PDF-bestand. In [!DNL Assets] kunt u subelementen op dezelfde manier beheren als elementen.
+* **Subactiva**: Subelementen zijn elementen die een element vormen, bijvoorbeeld lagen in een [!DNL Adobe Photoshop] bestand of pagina&#39;s in een PDF-bestand. In [!DNL Assets]U kunt subelementen beheren op dezelfde manier als elementen.
 
 ### Werken met digitale middelen {#how-to-work-with-assets}
 
-U voert een actie op een middel of een inzameling uit. Met handelingen kunt u elementen, verzamelingen en uitvoeringen maken of wijzigen. Veel van de basishandelingen die u uitvoert op elementen - uploaden, verwijderen, bijwerken, opslaan van subelementen - activeren vooraf geconfigureerde workflows. Deze worden automatisch ingeschakeld in [!DNL Assets] en worden gedetailleerd beschreven in [!DNL Assets] media managers.
+U voert een actie op een middel of een inzameling uit. Met handelingen kunt u elementen, verzamelingen en uitvoeringen maken of wijzigen. Veel van de basishandelingen die u uitvoert op elementen - uploaden, verwijderen, bijwerken, opslaan van subelementen - activeren vooraf geconfigureerde workflows. Deze worden automatisch ingeschakeld [!DNL Assets] en worden in detail beschreven [!DNL Assets] mediahandlers.
 
 De taken u met deze vooraf gevormde werkschema&#39;s kunt uitvoeren:
 
@@ -89,13 +93,13 @@ De taken u met deze vooraf gevormde werkschema&#39;s kunt uitvoeren:
 * Uitvoeringen en miniaturen genereren voor het element; inclusief, waar nodig, automatisch vergroten/verkleinen en uitsnijden.
 * Transcodeer het element waar nodig. Zo wordt video voor mobiel gebruik en webgebruik getranscodeerd met 24 frames per seconde. Download video met 30 frames per seconde. Audio voor mobiel en webgebruik wordt getranscodeerd met 128 Kbps, audio voor downloaden met 192 Kbps.
 
-Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Elementen Media Handlers](media-handlers.md)voor een lijst met standaardworkflows.
+Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Media Handlers voor middelen](media-handlers.md)voor een lijst met standaardworkflows.
 
-## [!DNL Experience Manager Assets] and [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] en [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
 Zie [Middelen en Media Library](medialibrary.md) voor informatie over de verschillen.
 
 >[!MORELIKETHIS]
 >
->* [Video-introductie - Experience Manager-elementen als een moderne DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
+>* [Introductie van video - Experience Manager Assets als moderne DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
 

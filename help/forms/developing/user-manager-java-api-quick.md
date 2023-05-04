@@ -1,8 +1,8 @@
 ---
 title: Java API Quick Start (SOAP) voor gebruikersbeheer
-seo-title: Java API Quick Start (SOAP) voor gebruikersbeheer
+seo-title: User Manager Java API Quick Start(SOAP)
 description: De Manager API van de Gebruiker van het gebruik om gebruikers toe te voegen, gebruikers te schrappen, groepen tot stand te brengen, gebruikers en groepen te leiden, rollen en toestemmingen te beheren, gebruikers programmatically te synchroniseren, en de Knoop van de Voorkeur te beheren programmatically.
-seo-description: De Manager API van de Gebruiker van het gebruik om gebruikers toe te voegen, gebruikers te schrappen, groepen tot stand te brengen, gebruikers en groepen te leiden, rollen en toestemmingen te beheren, gebruikers programmatically te synchroniseren, en de Knoop van de Voorkeur te beheren programmatically.
+seo-description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
 exl-id: 130b5669-4533-4e88-9a64-bbbd7c68a5ca
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP) {#user-manager-java-api-quick-start-soap}
+# Java API Quick Start (SOAP) voor gebruikersbeheer {#user-manager-java-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Java API Quick Start (SOAP) is beschikbaar voor de gebruikersbeheer-API.
 
@@ -44,7 +47,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 >De snelle start in Programmeren met AEM formulieren is gebaseerd op het document als u een ander besturingssysteem gebruikt, zoals Unix, vervangt Windows-specifieke paden door paden die door het toepasselijke besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 
-## Snel starten (SOAP-modus): Gebruikers toevoegen met de Java-API {#quick-start-soap-mode-adding-users-using-the-java-api}
+## Snel starten (SOAP-modus): Gebruikers toevoegen met de Java API {#quick-start-soap-mode-adding-users-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue aan AEM Forms toegevoegd. (Zie [Gebruikers toevoegen](/help/forms/developing/users.md#adding-users).)
 
@@ -162,7 +165,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue aan AEM
  
 ```
 
-## Snel starten (SOAP-modus): Gebruikers verwijderen met de Java-API {#quick-start-soap-mode-deleting-users-using-the-java-api}
+## Snel starten (SOAP-modus): Gebruikers verwijderen met de Java API {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue uit AEM Forms verwijderd. (Zie [Gebruikers verwijderen](/help/forms/developing/users.md#deleting-users).)
 
@@ -634,7 +637,7 @@ In het volgende Java-codevoorbeeld worden gebruikers gesynchroniseerd met de API
  
 ```
 
-## Snel starten (SOAP-modus): Gebruikers toevoegen met de Java-API {#quick_start_soap_mode_adding_users_using_the_java_api-1}
+## Snel starten (SOAP-modus): Gebruikers toevoegen met de Java API {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue aan AEM Forms toegevoegd. (Zie [Gebruikers toevoegen](/help/forms/developing/users.md#adding-users).)
 
@@ -904,9 +907,9 @@ In het volgende codevoorbeeld wordt een groep gemaakt met de naam AdobeGroup naa
  }
 ```
 
-## Snel starten (SOAP-modus) met voorkeurenknooppunten {#quick-start-soap-mode-managing-preferences-nodes}
+## Snel starten (SOAP-modus) Voorkeursknooppunten beheren {#quick-start-soap-mode-managing-preferences-nodes}
 
-De volgende Java-codemodellen die het beheer van knooppunten voorkeuren uitvoeren met de API&#39;s voor gebruikersbeheer. (Zie [Programmaticaal het Beheer van de Nodes van de Voorkeur](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+De volgende Java-codemodellen die het beheer van knooppunten voorkeuren uitvoeren met de API&#39;s voor gebruikersbeheer. ( Zie [Programmaticaal beheer van de knooppunten van de voorkeuren](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```as3
 /* 
@@ -1007,9 +1010,9 @@ public class ManagePreferences {
 }
 ```
 
-## Snel starten (SOAP-modus): Programmaticaal beheer van de Knooppunten van de Voorkeur gebruikend Java API {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+## Snel starten (SOAP-modus): De voorkeursknooppunten via programmacode beheren met de Java API {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
-De volgende Java-codemodellen die het beheer van voorkeursknooppunten beheren met behulp van de API&#39;s voor gebruikersbeheer (zie [De voorkeursknooppunten programmatisch beheren](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+De volgende Java-codemodellen die het beheer van voorkeuren uitvoeren met de API&#39;s voor gebruikersbeheer ( Zie [Programmaticaal beheer van de knooppunten van de voorkeuren](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
 ```as3
 /* 

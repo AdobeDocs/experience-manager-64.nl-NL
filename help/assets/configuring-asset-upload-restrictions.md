@@ -5,19 +5,23 @@ contentOwner: AG
 feature: Upload,Asset Ingestion,Asset Management
 role: Admin,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 29%
+source-wordcount: '238'
+ht-degree: 24%
 
 ---
 
 # Beperkingen voor het uploaden van middelen configureren {#configuring-asset-upload-restrictions}
 
-U kunt Adobe Experience Manager Assets zodanig configureren dat het type elementen (bestanden) dat gebruikers kunnen uploaden, wordt beperkt. Met deze functie voorkomt u dat gebruikers elementen in een ongewenste indeling kunnen uploaden of schadelijke bestanden kunnen uploaden. Met de service `Day CQ DAM Asset Upload Restriction` kunt u bepalen welk type bestanden gebruikers kunnen uploaden. Standaard kunnen gebruikers elementen van alle MIME-typen uploaden via [!DNL Experience Manager]. U kunt de service echter zo configureren dat gebruikers alleen bestanden van bepaalde MIME-typen kunnen uploaden.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+U kunt Adobe Experience Manager Assets zodanig configureren dat het type elementen (bestanden) dat gebruikers kunnen uploaden, wordt beperkt. Met deze functie voorkomt u dat gebruikers elementen in een ongewenste indeling kunnen uploaden of schadelijke bestanden kunnen uploaden. De `Day CQ DAM Asset Upload Restriction` Met deze service kunt u bepalen welk type bestanden gebruikers kunnen uploaden. Standaard, [!DNL Experience Manager] Met elementen kunnen gebruikers elementen van alle MIME-typen uploaden. U kunt de service echter zo configureren dat gebruikers alleen bestanden van bepaalde MIME-typen kunnen uploaden.
 
 1. Om de Webconsole van de Manager van de Configuratie te openen, toegang `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Open de service **[!UICONTROL Day CQ DAM Asset Upload Restriction]** in de modus Bewerken. Standaard is de optie **Alle MIME** toestaan geselecteerd, waarmee gebruikers bestanden van alle MIME-typen kunnen uploaden.
+1. Open de **[!UICONTROL Day CQ DAM Asset Upload Restriction]** in de modus Bewerken. Standaard worden de **Alle MIME toestaan** is geselecteerd, zodat gebruikers bestanden van alle MIME-typen kunnen uploaden.
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 

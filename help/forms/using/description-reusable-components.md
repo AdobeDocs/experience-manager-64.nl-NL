@@ -1,8 +1,8 @@
 ---
 title: Beschrijving van herbruikbare onderdelen
-seo-title: Beschrijving van herbruikbare onderdelen
+seo-title: Description of reusable components
 description: Een volledige lijst met herbruikbare componenten met bestandsnamen en afhankelijkheden, waarmee u de AEM Forms-werkruimtecomponent kunt integreren in uw webtoepassingen.
-seo-description: Een volledige lijst met herbruikbare componenten met bestandsnamen en afhankelijkheden, waarmee u de AEM Forms-werkruimtecomponent kunt integreren in uw webtoepassingen.
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
@@ -10,17 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: 2790a2d3-444a-4c13-99b0-ea31923fc547
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 6%
+source-wordcount: '1267'
+ht-degree: 0%
 
 ---
 
-# Beschrijving van herbruikbare componenten {#description-of-reusable-components}
+# Beschrijving van herbruikbare onderdelen {#description-of-reusable-components}
 
-De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integrating-html-ws-components-web.md) componenten die in een specifieke [omslagstructuur](/help/forms/using/folder-structure.md) in CRX™ worden georganiseerd. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integrating-html-ws-components-web.md) onderdelen die in een specifieke [mapstructuur](/help/forms/using/folder-structure.md) in CRX™. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
 
 ## TaskList {#tasklist}
 
@@ -35,7 +38,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>tasklist.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>tasklist.html</p></td> 
   </tr> 
   <tr> 
@@ -84,7 +87,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>task.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>task.html</p></td> 
   </tr> 
   <tr> 
@@ -127,7 +130,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>filterlist.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>filterlist.html</p></td> 
   </tr> 
   <tr> 
@@ -161,7 +164,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>filter.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>filter.html</p> </td> 
   </tr> 
   <tr> 
@@ -186,7 +189,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
  </tbody> 
 </table>
 
-## Teamwachtrijen {#teamqueues}
+## TeamQueues {#teamqueues}
 
 <table> 
  <tbody> 
@@ -199,7 +202,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>teamqueues.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>teamqueues.html</p></td> 
   </tr> 
   <tr> 
@@ -236,7 +239,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>teamfilter.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>teamfilter.html</p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +282,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>taskdetails.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>taskdetails.html</p> </td> 
   </tr> 
   <tr> 
@@ -337,7 +340,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>categorylist.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>startprocess.html (in de routeomslag)</p></td> 
   </tr> 
   <tr> 
@@ -380,7 +383,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>category.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>category.html</p></td> 
   </tr> 
   <tr> 
@@ -420,7 +423,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>startpointlist.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>startprocess.html (in de routeomslag)</p></td> 
   </tr> 
   <tr> 
@@ -471,7 +474,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>startpoint.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>startpoint.html</p></td> 
   </tr> 
   <tr> 
@@ -502,7 +505,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>startprocess.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>startprocess.html</p> </td> 
   </tr> 
   <tr> 
@@ -565,7 +568,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>processnamelist.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>tracking.html (in de routemap)</p></td> 
   </tr> 
   <tr> 
@@ -605,7 +608,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>procesnaam (in processnamelist.js)</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>processname.html</p></td> 
   </tr> 
   <tr> 
@@ -636,7 +639,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>processinstancelist.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>tracking.html (in de routemap)</p></td> 
   </tr> 
   <tr> 
@@ -660,7 +663,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
 
 >[!NOTE]
 >
->ProcessInstanceList verwacht een gebeurtenis van ProcessNameList die de procesnaam voor het halen en tonen van instanties wijst. Als u ProcessInstanceList onafhankelijk wilt gebruiken, moet u de gebeurtenistrigger afzonderlijk simuleren.
+>ProcessInstanceList verwacht een gebeurtenis van ProcessNameList die de procesnaam voor het ophalen en weergeven van instanties wijst. Als u ProcessInstanceList onafhankelijk wilt gebruiken, moet u de gebeurtenistrigger afzonderlijk simuleren.
 
 ## ProcessInstance {#processinstance}
 
@@ -675,7 +678,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>procesnaam in procesnamelist.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>processinstance.html</p></td> 
   </tr> 
   <tr> 
@@ -706,7 +709,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>processinstancehistory.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>processinstancehistory.html</p></td> 
   </tr> 
   <tr> 
@@ -750,7 +753,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>outofoffice.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>outofoffice.html</p> </td> 
   </tr> 
   <tr> 
@@ -791,7 +794,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>sharequeue.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>sharequeue.html</p> </td> 
   </tr> 
   <tr> 
@@ -835,7 +838,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>uisettings.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>uisettings.html</p></td> 
   </tr> 
   <tr> 
@@ -874,7 +877,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>appnavigation.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>appnavigation.html</p></td> 
   </tr> 
   <tr> 
@@ -909,7 +912,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>userinfo.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>userinfo.html</p> </td> 
   </tr> 
   <tr> 
@@ -925,7 +928,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td> 
     <ul> 
      <li>userImageUrlFetched - userinfo model</li> 
-     <li>sessionRenewed - userinfo model <br /> </li> 
+     <li>sessionRenewed - gebruikersinformatiemodel <br /> </li> 
      <li>sessionExpired - gebruikersinformatiemodel </li> 
     </ul> </td> 
   </tr> 
@@ -949,7 +952,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>wserror.js</p></td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p></td> 
+   <td><p>Sjabloon</p></td> 
    <td><p>wserror.html</p></td> 
   </tr> 
   <tr> 
@@ -980,7 +983,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>usersearch.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>usersearch.html</p> </td> 
   </tr> 
   <tr> 
@@ -1015,7 +1018,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>searchtemplate (in searchtemplatelist.js) </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>searchtemplate.html</p> </td> 
   </tr> 
   <tr> 
@@ -1046,7 +1049,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>searchtemplatelist.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>tracking.html (in de routemap)</p> </td> 
   </tr> 
   <tr> 
@@ -1077,7 +1080,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td><p>searchtemplatedetails.js</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Sjabloonmodel</p> </td> 
+   <td><p>Sjabloon</p> </td> 
    <td><p>searchtemplatedetails.html</p> </td> 
   </tr> 
   <tr> 

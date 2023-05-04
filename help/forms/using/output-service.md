@@ -1,23 +1,26 @@
 ---
 title: Uitvoerservice
-seo-title: Uitvoerservice
+seo-title: Output Service
 description: Beschrijft de Dienst van de Output, die deel van AEM Diensten van het Document uitmaakt
-seo-description: Beschrijft de Dienst van de Output, die deel van AEM Diensten van het Document uitmaakt
+seo-description: Describes Output Service, which is part of AEM Document Services
 uuid: acd64bbb-91df-49bc-9216-2e860812bbe9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 8b96ba2d-007e-472a-875f-2caedd35ecf4
 exl-id: ccc291fc-f4c5-4d14-816a-c57f56a95663
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
 # Uitvoerservice {#output-service}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
@@ -27,7 +30,7 @@ Met uitvoerservice kunt u toepassingen maken waarmee u:
 
 * Definitieve formulierdocumenten genereren door sjabloonbestanden te vullen met XML-gegevens.
 * Uitvoerformulieren genereren in verschillende indelingen, waaronder niet-interactieve PDF-, PostScript-, PCL- en ZPL-afdrukstromen.
-* Afdruk-PDF&#39;s genereren op basis van XFA-formulier-PDF&#39;s.
+* Afdruk-PDF genereren op basis van XFA-formulier-PDF.
 * Genereer bulksgewijs PDF-, PostScript-, PCL- en ZPL-documenten door meerdere gegevenssets samen te voegen met de meegeleverde sjablonen.
 
 >[!NOTE]
@@ -38,19 +41,19 @@ Met uitvoerservice kunt u toepassingen maken waarmee u:
 
 ![usingoutput_modified](assets/usingoutput_modified.png)
 
-Gewoonlijk maakt u sjablonen met AEM Forms Designer. Met de API&#39;s `generatePDFOutput` en `generatePrintedOutput` van de Output-service kunt u deze sjablonen rechtstreeks converteren naar verschillende indelingen, zoals PDF, PostScript, ZPL en PCL.
+Gewoonlijk maakt u sjablonen met AEM Forms Designer. De `generatePDFOutput` en `generatePrintedOutput` Met API&#39;s van de Output-service kunt u deze sjablonen rechtstreeks converteren naar verschillende indelingen, zoals PDF, PostScript, ZPL en PCL.
 
-Met de bewerking `generatePDFOutput` worden PDF&#39;s gegenereerd, terwijl met de bewerking `generatePrintedOutput` PostScript-, ZPL- en PCL-indelingen worden gegenereerd. De eerste parameter van beide bewerkingen accepteert de naam van het sjabloonbestand (bijvoorbeeld `ExpenseClaim.xdp`) of een object Document dat de sjabloon bevat. Wanneer u de naam van het sjabloonbestand opgeeft, geeft u ook de hoofdmap van de inhoud op als het pad naar de map die de sjabloon bevat. U kunt de hoofdmap van de inhoud opgeven met de parameter `PDFOutputOptions` of `PrintedOutputOptions`. Zie Javadoc voor meer informatie over andere opties die u met deze parameters kunt opgeven.
+De `generatePDFOutput` bewerking genereert PDF terwijl de `generatePrintedOutput` Deze bewerking genereert PostScript-, ZPL- en PCL-indelingen. De eerste parameter van beide bewerkingen accepteert de naam van het sjabloonbestand (bijvoorbeeld `ExpenseClaim.xdp`) of een object Document dat de sjabloon bevat. Wanneer u de naam van het sjabloonbestand opgeeft, geeft u ook de hoofdmap van de inhoud op als het pad naar de map die de sjabloon bevat. U kunt de hoofdmap van de inhoud opgeven met de `PDFOutputOptions` of de `PrintedOutputOptions` parameter. Zie Javadoc voor meer informatie over andere opties die u met deze parameters kunt opgeven.
 
 De tweede parameter accepteert een XML-document dat met de sjabloon wordt samengevoegd tijdens het genereren van het uitvoerdocument.
 
-Met de bewerking `generatePDFOutput` kunt u ook een op XFA gebaseerd PDF-formulier accepteren als invoer en een niet-interactieve versie van het PDF-formulier retourneren als uitvoer.
+De `generatePDFOutput` Deze bewerking kan ook een op XFA gebaseerd PDF-formulier accepteren als invoer en een niet-interactieve versie van het PDF-formulier retourneren als uitvoer.
 
 ## Niet-interactieve formulierdocumenten genereren {#generating-non-interactive-form-documents}
 
 Overweeg een scenario waar u één of meerdere malplaatjes en veelvoudige verslagen van de gegevens van XML voor elke malplaatje hebt.
 
-Gebruik de bewerkingen `generatePDFOutputBatch` en `generatePrintedOutputBatch` van de service Uitvoer om een afdrukdocument te genereren voor elke record.
+Gebruik de `generatePDFOutputBatch` en `generatePrintedOutputBatch` bewerkingen van de uitvoerservice om een afdrukdocument voor elke record te genereren.
 
 U kunt de records ook in één document combineren. Beide bewerkingen hebben vier parameters.
 
@@ -58,10 +61,10 @@ De eerste parameter is een Kaart die een willekeurige tekenreeks als sleutel en 
 
 De tweede parameter is een andere map waarvan de waarde een object Document is dat XML-gegevens bevat. De sleutel is het zelfde als dat u voor de eerste parameter specificeert.
 
-De derde parameter voor `generatePDFOutputBatch` of `generatePrintedOutputBatch` is van respectievelijk type `PDFOutputOptions` of `PrintedOutputOptions`.
+De derde parameter voor `generatePDFOutputBatch` of `generatePrintedOutputBatch` is van type `PDFOutputOptions` of `PrintedOutputOptions` respectievelijk.
 
-De parametertypes zijn het zelfde als types van de parameters voor `generatePDFOutput` en `generatePrintedOutput` verrichtingen en hebben het zelfde effect.
+De parametertypen zijn hetzelfde als de typen parameters voor de parameter `generatePDFOutput` en `generatePrintedOutput` en hebben hetzelfde effect.
 
-De vierde parameter is van het type `BatchOptions`, dat u gebruikt om op te geven of een afzonderlijk bestand voor elke record kan worden gegenereerd. De standaardwaarde van deze parameter is false.
+De vierde parameter is van het type `BatchOptions`, die u gebruikt om op te geven of voor elke record een afzonderlijk bestand kan worden gegenereerd. De standaardwaarde van deze parameter is false.
 
-Zowel `generatePrintedOutputBatch` als `generatePDFOutputBatch` retourneren een waarde van het type `BatchResult`. De waarde bevat een lijst met gegenereerde documenten. Het bevat ook een metagegevensdocument in XML-indeling dat informatie bevat die betrekking heeft op elk document dat wordt gegenereerd.
+Beide `generatePrintedOutputBatch` en `generatePDFOutputBatch` Hiermee wordt een waarde van het type geretourneerd `BatchResult`. De waarde bevat een lijst met gegenereerde documenten. Het bevat ook een metagegevensdocument in XML-indeling dat informatie bevat die betrekking heeft op elk document dat wordt gegenereerd.

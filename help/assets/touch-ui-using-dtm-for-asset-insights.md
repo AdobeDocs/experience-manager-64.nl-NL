@@ -1,70 +1,74 @@
 ---
 title: Elementeninzicht inschakelen via DTM
-description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Elementinzichten in te schakelen.
+description: Leer hoe u Adobe Dynamic Tag Management (DTM) gebruikt om Assets Insights in te schakelen.
 contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
 
 # Elementeninzicht inschakelen via DTM {#enabling-asset-insights-through-dtm}
 
-Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt de trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen om Assets Insights te gebruiken, of u kunt DTM gebruiken om asset Insights-tags in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Adobe Dynamic Tag Management is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt de trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen om Assets Insights te gebruiken, of u kunt DTM gebruiken om asset Insights-tags in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
 
 >[!CAUTION]
 >
->Adobe DTM is vervangen door [!DNL Adobe Experience Platform] en zal binnenkort [einde van levensduur](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. Adobe raadt u aan [gebruik [!DNL Adobe Experience Platform] voor elementinzichten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) te gebruiken.
+>Adobe DTM is vervangen door [!DNL Adobe Experience Platform] en zal binnenkort [einde van leven](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe raadt u aan [gebruiken [!DNL Adobe Experience Platform] voor informatie over activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Voer deze stappen uit om Elementeninzichten door DTM toe te laten:
 
-1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Configureren [!DNL Experience Manager] instantie met DTM-Cloud Service](../sites-administering/dtm.md)
+1. Tik/klik op de knop [!DNL Experience Manager] logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
+1. [Configureren [!DNL Experience Manager] -instantie met DTM-Cloud Service](../sites-administering/dtm.md)
 
-   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** bezoekt via het pictogram Profiel. Deze stap is niet vereist vanuit het standpunt van Activa Insights, omdat de integratie van [!DNL Experience Manager Sites] met Assets Insights nog steeds in de werkzaamheden plaatsvindt.
+   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en bezoek **[!UICONTROL Account Settings]** van het pictogram Profiel. Deze stap is niet vereist vanuit het standpunt van Assets Insights, omdat de integratie van [!DNL Experience Manager Sites] met Assets Insights bevindt zich nog in de werkzaamheden.
 
-1. Meld u aan bij [https://dtm.adobe.com](https://dtm.adobe.com/) en selecteer een bedrijf.
+1. Aanmelden bij [https://dtm.adobe.com](https://dtm.adobe.com/)en selecteert u, naar gelang van het geval, een maatschappij.
 1. Een bestaande webeigenschap maken/openen
 
-   * Selecteer de tab **[!UICONTROL Web Properties]** en tik op **[!UICONTROL Add Property]**.
+   * Selecteer **[!UICONTROL Web Properties]** en tikken/klikken **[!UICONTROL Add Property]**.
    * Werk de velden naar wens bij en tik/klik op **[!UICONTROL Create Property]** (zie [documentatie](https://helpx.adobe.com/experience-manager/using/dtm.html)).
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
-1. Selecteer op het tabblad **[!UICONTROL Rules]** **[!UICONTROL Page Load Rules]** in het navigatievenster en tik/klik **[!UICONTROL Create New Rule]**.
+1. In de **[!UICONTROL Rules]** tab, selecteert u **[!UICONTROL Page Load Rules]** vanuit het navigatievenster en tik/klik **[!UICONTROL Create New Rule]**.
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
-1. **[!UICONTROL Javascript /Third Party Tags]** uitbreiden. Tik vervolgens op **[!UICONTROL Add New Script]** op het tabblad **[!UICONTROL Sequential HTML]** om het dialoogvenster Script te openen.
+1. Uitbreiden **[!UICONTROL Javascript /Third Party Tags]**. Tik/klik op **[!UICONTROL Add New Script]** in de **[!UICONTROL Sequential HTML]** om het dialoogvenster Script te openen.
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. Tik/klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools > Assets]**.
-1. Tik/klik op **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze vervolgens in het dialoogvenster Script dat u in stap 6 hebt geopend. Sla de wijzigingen op.
+1. Tik/klik op de knop [!DNL Experience Manager] logo en ga naar **[!UICONTROL Tools > Assets]**.
+1. Tikken/klikken **[!UICONTROL Insights Page Tracker]**, kopieert u de trackercode en plakt u deze in het dialoogvenster Script dat u in stap 6 hebt geopend. Sla de wijzigingen op.
 
    >[!NOTE]
    >
    >* `AppMeasurement.js` is verwijderd. Naar verwachting is het beschikbaar via het Adobe Analytics-hulpprogramma van DTM.
-   >* De vraag aan `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
+   >* De oproep tot `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
    >* Afhankelijk van de locatie waar Assets Insights Page Tracker wordt gehost (bijvoorbeeld AEM, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
    >* Voor AEM paginanummering moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzendingsinstantie.
 
 
-1. Open [https://dtm.adobe.com](https://dtm.adobe.com). Klik op Overzicht in de webeigenschap en klik op Gereedschap toevoegen of open een bestaand Adobe Analytics-gereedschap. Tijdens het creëren van het hulpmiddel, kunt u de Methode van de Configuratie aan Automatisch plaatsen.
+1. Openen [https://dtm.adobe.com](https://dtm.adobe.com). Klik op Overzicht in de webeigenschap en klik op Gereedschap toevoegen of open een bestaand Adobe Analytics-gereedschap. Tijdens het creëren van het hulpmiddel, kunt u de Methode van de Configuratie aan Automatisch plaatsen.
 
    ![chlimage_1-196](assets/chlimage_1-196.png)
 
    Selecteer de gewenste opties voor het rapport Staging/Productie.
 
-1. Vouw **[!UICONTROL Library Management]** uit en controleer of **[!UICONTROL Load Library at]** is ingesteld op **[!UICONTROL Page Top]**.
+1. Uitbreiden **[!UICONTROL Library Management]** en ervoor zorgen dat **[!UICONTROL Load Library at]** is ingesteld op **[!UICONTROL Page Top]**.
 
    ![chlimage_1-197](assets/chlimage_1-197.png)
 
-1. Vouw **[!UICONTROL Customize Page Code]** uit en klik of tik **[!UICONTROL Open Editor]**.
+1. Uitbreiden **[!UICONTROL Customize Page Code]** en klik of tik op **[!UICONTROL Open Editor]**.
 
    ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -106,13 +110,13 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten:
    })();
    ```
 
-   * De regel voor het laden van pagina&#39;s in DTM bevat alleen de code pagetracker.js. Alle `assetAnalytics`-velden worden beschouwd als overschrijvingen voor standaardwaarden. Deze zijn niet standaard vereist.
-   * De code roept `assetAnalytics.dispatcher.init()` na ervoor te zorgen dat `_satellite.getToolsByType('sc')[0].getS()` wordt geïnitialiseerd en `assetAnalytics,dispatcher.init` beschikbaar is. Daarom kunt u overslaan toevoegend het in stap 11.
-   * Zoals aangegeven in opmerkingen in de code voor Paginanummering met inzichten (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), zijn de eerste drie argumenten (RSID, Tracking Server en Naamruimte bezoeker) irrelevant wanneer Paginanummering geen `AppMeasurement`-object maakt. Lege tekenreeksen worden doorgegeven om dit te markeren.
+   * De regel voor het laden van pagina&#39;s in DTM bevat alleen de code pagetracker.js. Alle `assetAnalytics` velden worden beschouwd als overschrijvingen voor standaardwaarden. Deze zijn niet standaard vereist.
+   * De codeaanroepen `assetAnalytics.dispatcher.init()` na te gaan of `_satellite.getToolsByType('sc')[0].getS()` is geïnitialiseerd en `assetAnalytics,dispatcher.init` is beschikbaar. Daarom kunt u overslaan toevoegend het in stap 11.
+   * Zoals aangegeven in opmerkingen binnen de code voor Inzichten van paginanummers (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), wanneer Paginanummer geen `AppMeasurement` -object, zijn de eerste drie argumenten (RSID, Tracking Server en Visitor Namespace) irrelevant. Lege tekenreeksen worden doorgegeven om dit te markeren.
 
-      De resterende argumenten beantwoorden aan wat in de pagina van de Configuratie van Inzichten (**[!UICONTROL Tools > Assets > Insights Configuration]**) wordt gevormd.
+      De resterende argumenten komen overeen met wat is geconfigureerd in de pagina voor Inzichten configureren (**[!UICONTROL Tools > Assets > Insights Configuration]**).
 
-   * Het object AppMeasurement wordt opgehaald door `satelliteLib` te vragen voor alle beschikbare SiteCatalyst engines. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de SiteCatalyst-gereedschappen die beschikbaar zijn in de DTM-interface.
+   * Het object AppMeasurement wordt opgehaald door een query uit te voeren `satelliteLib` voor alle beschikbare SiteCatalyst-motoren. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de SiteCatalyst-gereedschappen die beschikbaar zijn in de DTM-interface.
 
 1. Sla het venster Code-editor op, sluit dit en sla de wijzigingen vervolgens op in de configuratie van het gereedschap.
-1. Goedkeuren beide goedkeuringen die in behandeling zijn op het tabblad **[!UICONTROL Approvals]**. De tag DTM kan worden ingevoegd in uw webpagina. Zie de gearchiveerde pagina over [integratie van DTM in aangepaste paginasjablonen](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template) voor meer informatie over het invoegen van DTM-tags in webpagina&#39;s.
+1. In de **[!UICONTROL Approvals]** , keurt beide goedkeuringen goed die in behandeling zijn. De tag DTM kan worden ingevoegd in uw webpagina. Zie de gearchiveerde pagina over informatie over het invoegen van DTM-tags in webpagina&#39;s voor meer informatie over [DTM integreren in aangepaste paginasjablonen](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template).

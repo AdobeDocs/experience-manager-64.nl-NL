@@ -1,8 +1,8 @@
 ---
 title: Essentiële elementen voor ideeën
-seo-title: Essentiële elementen voor ideeën
+seo-title: Ideation Essentials
 description: Overzicht van de functie Ideatie
-seo-description: Overzicht van de functie Ideatie
+seo-description: Ideation feature overview
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 exl-id: 7fb68293-c6e3-4793-b433-205bcfc23e20
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 1%
+source-wordcount: '142'
+ht-degree: 0%
 
 ---
 
 # Essentiële elementen voor ideeën {#ideation-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Deze pagina biedt de essentiële informatie voor het werken met de ideatiefunctie, die vergelijkbaar is met een forum, maar met de mogelijkheid om op te slaan als een concept en een meer op samenwerking gericht gevoel.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -36,10 +39,10 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.voice<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
+   <td>cq.social.hbs.stemden<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td> /libs/social/ideation/components/hbs/ideation/ideation.hbs<br /> /libs/social/ideation/components/hbs/ideation/ideationlists.hbs<br /> /libs/social/ideation/components/hbs/ideation/composer.hbs</td> 
   </tr>
   <tr>
@@ -57,4 +60,4 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
 
 ### Idealisatiefunctie {#ideation-function}
 
-Een community-sitestructuur die de [Ideatiefunctie](functions.md#ideation-function) bevat, bevat een geconfigureerde `ideation`-component.
+Een community-sitestructuur die de [Idealisatiefunctie](functions.md#ideation-function)bevat een configuratie `ideation` component.

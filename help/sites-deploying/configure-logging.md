@@ -1,8 +1,8 @@
 ---
 title: Logboekregistratie
-seo-title: Logboekregistratie
+seo-title: Logging
 description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
-seo-description: Leer hoe te om globale parameters voor de centrale registrerendienst, specifieke montages voor de individuele diensten te vormen of hoe te om gegevensregistreren te verzoeken.
+seo-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 uuid: 8c9e3628-2f2c-445d-9706-5c7725b85fe2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: d94b776d-db06-4f46-ac7f-c3b8e4160b69
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
 
 # Logboekregistratie{#logging}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 AEM biedt u de mogelijkheid om te vormen:
 
@@ -27,15 +30,15 @@ AEM biedt u de mogelijkheid om te vormen:
 * verzoeken om registratie van gegevens; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
 * specifieke instellingen voor de afzonderlijke diensten; bijvoorbeeld een afzonderlijk logbestand en een indeling voor de logberichten
 
-Dit zijn allemaal [OSGi configuraties](/help/sites-deploying/configuring-osgi.md).
+Dit zijn allemaal [OSGi-configuraties](/help/sites-deploying/configuring-osgi.md).
 
 >[!NOTE]
 >
->Aanmelden in AEM is gebaseerd op verkoopbeginselen. Zie [Logboekregistratie voor verkoop](https://sling.apache.org/site/logging.html) voor meer informatie.
+>Aanmelden in AEM is gebaseerd op verkoopbeginselen. Zie [Logboekregistratie voor verkoop](https://sling.apache.org/site/logging.html) voor nadere informatie.
 
-## Globale registratie {#global-logging}
+## Globale logboekregistratie {#global-logging}
 
-[Apache Sling Logging ](/help/sites-deploying/osgi-configuration-settings.md) Configuration wordt gebruikt om het hoofdlogger te configureren. Hiermee worden de algemene instellingen voor het aanmelden van AEM gedefinieerd:
+[Configuratie van Apache Sling-logboekregistratie](/help/sites-deploying/osgi-configuration-settings.md) wordt gebruikt om het wortelregistreerapparaat te vormen. Hiermee worden de algemene instellingen voor het aanmelden van AEM gedefinieerd:
 
 * het registratieniveau
 * de locatie van het centrale logbestand
@@ -45,7 +48,7 @@ Dit zijn allemaal [OSGi configuraties](/help/sites-deploying/configuring-osgi.md
 
 >[!NOTE]
 >
->Dit [artikel](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) van de Kennisbank verklaart hoe te om de request.log en access.log dossiers te roteren.
+>Dit [Kennisbank, artikel](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) verklaart hoe te om de request.log en access.log dossiers te roteren.
 
 ## Loggers en schrijvers voor de Individuele Diensten {#loggers-and-writers-for-individual-services}
 
@@ -62,9 +65,9 @@ Dit staat u toe om logboekberichten voor één enkele dienst in een afzonderlijk
 
 AEM gebruikt het volgende om logberichten naar bestand te schrijven:
 
-1. Een **OSGi service** (logger) schrijft een logboekbericht.
-1. Een **Logging Logger** neemt dit bericht en formatteert het volgens uw specificatie.
-1. Een **Logging Writer** schrijft al deze berichten aan het fysieke dossier dat u hebt bepaald.
+1. An **OSGi-service** (logger) schrijft een logboekbericht.
+1. A **Logboekregistratie** neemt dit bericht en formatteert het volgens uw specificatie.
+1. A **Logboekschrijver** schrijft al deze berichten aan het fysieke dossier dat u hebt bepaald.
 
 Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende elementen:
 
@@ -84,11 +87,11 @@ Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende 
 
    Dit moet gelijk zijn aan dezelfde parameter in de configuratie van Logging Writer, anders wordt de overeenkomst niet gemaakt. Als er geen gelijke is dan zal een impliciete Schrijver met standaardconfiguratie (dagelijkse logboekomwenteling) worden gecreeerd.
 
-### Standaardregistreerapparaten en -schrijvers {#standard-loggers-and-writers}
+### Standaardloggers en -schrijvers {#standard-loggers-and-writers}
 
 Bepaalde loggers en schrijvers zijn opgenomen in een standaard AEM installatie.
 
-Het eerste is een speciaal geval aangezien het zowel de `request.log` als `access.log` dossiers controleert:
+Het eerste is een speciaal geval omdat het zowel de `request.log` en `access.log` bestanden:
 
 * De logboekregistratie:
 
@@ -96,7 +99,7 @@ Het eerste is een speciaal geval aangezien het zowel de `request.log` als `acces
 
       (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * Schrijf berichten over verzoekinhoud aan `request.log`.
+   * Berichten schrijven over aanvraaginhoud aan `request.log`.
 
 * Koppelingen naar:
 
@@ -104,7 +107,7 @@ Het eerste is een speciaal geval aangezien het zowel de `request.log` als `acces
 
       (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * Schrijft de berichten naar `request.log` of `access.log`.
+   * Schrijft de berichten naar of `request.log` of `access.log`.
 
 Deze kunnen indien nodig worden aangepast, hoewel de standaardconfiguratie geschikt is voor de meeste installaties.
 
@@ -116,7 +119,7 @@ De andere paren volgen de standaardconfiguratie:
 
       (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * Schrijft `Information` berichten aan `logs/error.log`.
+   * Schrijven `Information` berichten aan `logs/error.log`.
 
 * Koppelingen naar de schrijver:
 
@@ -126,10 +129,9 @@ De andere paren volgen de standaardconfiguratie:
 
 * De logboekregistratie:
 
-   * Logboekconfiguratie Apache Sling Logging
-(org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+   * Configuratie van Apache Sling Logging Logger (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * Schrijft `Warning` berichten aan `../logs/error.log` voor de dienst `org.apache.pdfbox`.
+   * Schrijven `Warning` berichten aan `../logs/error.log` voor de dienst `org.apache.pdfbox`.
 
 * Koppelt niet aan een specifieke schrijver, zodat er een impliciete schrijver met standaardconfiguratie (dagelijkse logrotatie) wordt gemaakt en gebruikt.
 
@@ -137,17 +139,17 @@ De andere paren volgen de standaardconfiguratie:
 
 U kunt uw eigen registreerapparaat/schrijfpaar definiëren:
 
-1. Maak een nieuwe instantie van de Configuratie [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Creeer een nieuw geval van de Configuratie van de Fabriek [Logboekconfiguratie Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geef het logbestand op.
    1. Geef de logboekregistratie op.
    1. Configureer de overige parameters naar wens.
 
-1. Maak een nieuwe instantie van de Configuratie [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Creeer een nieuw geval van de Configuratie van de Fabriek [Configuratie van auteur van Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geef het logbestand op. Dit moet overeenkomen met het logbestand dat is opgegeven voor de gebruiker.
    1. Configureer de overige parameters naar wens.
 
 >[!NOTE]
 >
->In bepaalde omstandigheden wilt u wellicht een [aangepast logbestand](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file) maken.
+>In bepaalde omstandigheden kunt u een [aangepast logbestand](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).

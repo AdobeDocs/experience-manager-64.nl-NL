@@ -1,8 +1,8 @@
 ---
 title: Inleiding tot het AEM Platform
-seo-title: Inleiding tot het AEM Platform
+seo-title: Introduction to the AEM Platform
 description: Dit artikel biedt een algemeen overzicht van het AEM en de belangrijkste componenten ervan.
-seo-description: Dit artikel biedt een algemeen overzicht van het AEM en de belangrijkste componenten ervan.
+seo-description: This article provides a general overview of the AEM platform and its most important components.
 uuid: 214d4c49-1f5c-432c-a2c0-c1fbdceee716
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: afd8f9ab-ae44-4845-9cb4-f6e28a35ad27
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot het AEM Platform{#introduction-to-the-aem-platform}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Het AEM platform in AEM 6 is gebaseerd op Apache Jackrabbit Oak.
 
@@ -29,7 +32,7 @@ Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als standaard b
 
 ## Ontwerpbeginselen en -doelstellingen {#design-principles-and-goals}
 
-Met eikenhout wordt de [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0)-specificatie geïmplementeerd. De belangrijkste ontwerpdoelstellingen zijn:
+De eiken implementeert de [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0) - specificatie. De belangrijkste ontwerpdoelstellingen zijn:
 
 * Betere ondersteuning voor grote opslagplaatsen
 * Meerdere gedistribueerde clusterknooppunten voor hoge beschikbaarheid
@@ -56,7 +59,7 @@ Met de Oak Core voegt u verschillende lagen toe aan de opslaglaag:
 * Zoeken en indexeren
 * Waarneming
 
-### JCR {#oak-jcr}
+### Oak JCR {#oak-jcr}
 
 Het hoofddoel van het JCR voor de eik is om de semantische eigenschappen van het JCR om te zetten in boombewerkingen. Zij is ook verantwoordelijk voor:
 
@@ -69,7 +72,7 @@ Bovendien zijn niet-Java-implementaties nu mogelijk en maken ze deel uit van het
 
 De eiken-opslaglaag biedt een abstractielaag voor de werkelijke opslag van de inhoud.
 
-Er zijn momenteel twee opslagimplementaties beschikbaar in AEM6: **Tar Storage** en **MongoDB Storage**.
+Er zijn momenteel twee opslagimplementaties beschikbaar in AEM6: **Teeropslag** en **MongoDB-opslag**.
 
 ### Teeropslag {#tar-storage}
 
@@ -129,7 +132,7 @@ Omdat eiken is ontworpen om achterwaarts compatibel te zijn met de JCR 1.0-stand
 * In tegenstelling tot Jackrabbit 2, waar sessies altijd de meest recente status van de opslagplaats weerspiegelen, waarbij een sessie voor eik een stabiele weergave van de opslagplaats weerspiegelt vanaf het moment dat de sessie werd verkregen. Dit komt door het MVCC-model waarop eiken is gebaseerd.
 * SNS (Same Name siblings) wordt niet ondersteund in Oak.
 
-## Overige documentatie over Platform {#other-platform-related-documentation}
+## Overige documentatie over Platforms {#other-platform-related-documentation}
 
 Raadpleeg ook de volgende artikelen voor meer informatie over het AEM platform:
 

@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9120'
+source-wordcount: '9156'
 ht-degree: 0%
 
 ---
 
 # We.Financiële referentiesite doorlopen {#we-finance-reference-site-walkthrough}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Voorwaarden {#pre-requisites}
 
@@ -480,7 +484,7 @@ Sarah klikt op Instructie bekijken in de e-mail om de hypotheekrekeningverklarin
 
 In de volgende afbeelding ziet u een ander deel van de accountinstructie op Desktop.
 
-![Rekeningoverzicht hypotheek](assets/mortgage-statement.png)
+![Rekeningen-courant](assets/mortgage-statement.png)
 
 Het gedetailleerde overzicht wordt uiteengezet in een ontvankelijke lijst en verstrekt een optie om een deel of het volledige verschuldigde bedrag van binnen het overzicht te betalen.
 

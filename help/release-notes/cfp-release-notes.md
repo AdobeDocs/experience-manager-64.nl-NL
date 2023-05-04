@@ -4,14 +4,18 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4632'
 ht-degree: 0%
 
 ---
 
 # AEM 6.4 Opmerkingen bij de release Cumulative Fix Pack {#aem-cumulative-fix-pack-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Geen informatie {#release-information}
 
@@ -19,9 +23,9 @@ ht-degree: 0%
 
 | Producten | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
-| Versie | 6.4.8.4. |
+| Versie | 6.4.8.4 |
 | Type | Cumulatief reparatiepakket |
-| Date | 25 februari 2021 |
+| Datum | 25 februari 2021 |
 | Vereiste | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
 
@@ -144,7 +148,7 @@ Adobe Experience Manager 6.4.8.3 biedt oplossingen voor de volgende problemen.
 * A `NullPointerException` wordt geretourneerd bij dagelijkse of wekelijkse onderhoudstaken (NPR-34702).
 * De [!DNL Apache Sling Health Check] is vervangen. Gebruik in plaats daarvan [Patroondetector](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html) om schendingen van inhoud op te sporen (NPR-33929).
 
-#### Integraties {#integrations-6483}
+#### Integrations {#integrations-6483}
 
 * De [!UICONTROL Create] wordt weergegeven op de knop [!UICONTROL Audiences] pagina bij het navigeren van een map naar de [!UICONTROL Audiences] bladzijde (NPR-35152).
 
@@ -264,7 +268,7 @@ Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 * De onderhoudstaakplanner begint en stopt te vaak onderhoudstaken dan gevormd (NPR-33520).
 * Kan logboeken niet downloaden met het hulpprogramma Diagnosis op een geüpgrade Experience Manager-instantie (NPR-34419).
 
-#### Integraties {#integrations-6482}
+#### Integrations {#integrations-6482}
 
 * De waarde van `library_path` wordt niet in aanmerking genomen bij het genereren [!DNL Adobe Launch] bibliotheek-URL voor bibliotheken die zijn gemigreerd van [!DNL Adobe Dynamic Tag Management]. Bovendien gebruiken de gemigreerde bibliotheken een ander voorvoegsel dan [!DNL Adobe Launch] bibliotheken. (NPR-34238).
 * De eigenschappen die van een cloudservice worden overgeërfd, blijven niet behouden bij het bijwerken van de pagina-eigenschappen (NPR-33865).
@@ -367,7 +371,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 * De integratie van Salesforce is kwetsbaar voor SSRF (NPR-32671).
 * Gereflecteerde XSS in PreferencesServlet (NPR-33439).
 
-#### Activa {#assets-6481}
+#### Assets {#assets-6481}
 
 * Het aantal activa verandert niet zoals in de verandering in selectie in Lijstmening (NPR-33285).
 
@@ -402,7 +406,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 * A `NullPointerException` Er is een fout opgetreden in de logboeken met een vertaaltaak (NPR-32220).
 
-#### Integraties {#integrations-6481}
+#### Integrations {#integrations-6481}
 
 * Xxx-site scripting voor JSON (NPR-32745).
 
@@ -562,7 +566,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 
 | Gebied | Functie | Vervanging | Versie |
 |---|---|---|---|
-| Activa | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
+| Assets | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
 | Integratie van middelen en Adobe Creative Cloud | [AEM naar map Creative Cloud delen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) werd ingevoerd in AEM 6.2 als een manier om creatieve gebruikers toegang te geven tot activa van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie voor meer informatie [AEM integratie van Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) artikel. | AEM 6.4.4.0 |
 
 ## Bekende problemen {#known-issues}

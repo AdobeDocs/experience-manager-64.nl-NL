@@ -1,8 +1,8 @@
 ---
 title: RTF-editor
-seo-title: RTF-editor
+seo-title: Rich Text Editor
 description: De rijke Redacteur van de Tekst is een basisbouwsteen voor het invoeren van tekstuele inhoud in AEM.
-seo-description: De rijke Redacteur van de Tekst is een basisbouwsteen voor het invoeren van tekstuele inhoud in AEM.
+seo-description: The Rich Text Editor is a basic building block for inputting textual content into AEM.
 uuid: 42001071-f7a7-475d-8aab-a8054303db68
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
 
-# Rich Text Editor{#rich-text-editor}
+# RTF-editor{#rich-text-editor}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De rijke Redacteur van de Tekst is een basisbouwsteen voor het invoeren van tekstuele inhoud in AEM. Het vormt de basis van verschillende componenten, waaronder:
 
@@ -26,7 +29,7 @@ De rijke Redacteur van de Tekst is een basisbouwsteen voor het invoeren van teks
 * Tekstafbeelding
 * Tabel
 
-## Rich Text Editor {#rich-text-editor-2}
+## RTF-editor {#rich-text-editor-2}
 
 Het WYSIWYG-bewerkingsdialoogvenster biedt een groot aantal functies:
 
@@ -52,15 +55,15 @@ U kunt de tekst op de pagina rechtstreeks bewerken in plaats van in een dialoogv
 >
 >Als de zoeker naar inhoud niet geopend is, wordt de werkbalk niet weergegeven.
 
-Momenteel is de modus Op plaats bewerken ingeschakeld voor pagina-elementen die zijn gegenereerd door de componenten **Text** en **Title**.
+Op dit moment is de modus Plaatsen bewerken ingeschakeld voor pagina-elementen die zijn gegenereerd door de **Tekst** en **Titel** componenten.
 
 >[!NOTE]
 >
->De component **Title** is ontworpen om een korte tekst zonder regeleinden te bevatten. Als u een titel bewerkt in de modus voor het bewerken van een titel, wordt een nieuw **Text**-component onder de titel geopend wanneer u een regeleinde invoert.
+>De **Titel** is ontworpen voor korte tekst zonder regeleinden. Als u een titel bewerkt in de modus Op plaats bewerken, wordt een nieuw regeleinde geopend als u een regeleinde invoert **Tekst** onder de titel.
 
 ## Functies van de Rich Text Editor {#features-of-the-rich-text-editor}
 
-De rijke Redacteur van de Tekst verstrekt een waaier van eigenschappen, deze [hangen van de configuratie ](/help/sites-administering/rich-text-editor.md) van de individuele component af. De functies zijn beschikbaar voor zowel de geoptimaliseerde interface voor aanrakingen als de klassieke interface.
+De rijke Redacteur van de Tekst verstrekt een waaier van eigenschappen, deze [afhankelijk van de configuratie](/help/sites-administering/rich-text-editor.md) van het afzonderlijke bestanddeel. De functies zijn beschikbaar voor zowel de geoptimaliseerde interface voor aanrakingen als de klassieke interface.
 
 ### Standaardtekenopmaak {#basic-character-formats}
 
@@ -82,7 +85,7 @@ Alles wordt als een schakeloptie gebruikt, dus bij herselectie wordt de indeling
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Uw installatie kan vooraf gedefinieerde stijlen en indelingen bevatten. Deze zijn beschikbaar bij **Stijl** en **Formaat** drop-down lijsten en kunnen op tekst worden toegepast die u hebt geselecteerd.
+Uw installatie kan vooraf gedefinieerde stijlen en indelingen bevatten. Deze zijn beschikbaar bij de **Stijl** en **Indeling** vervolgkeuzelijsten en kan worden toegepast op tekst die u hebt geselecteerd.
 
 Een stijl kan worden toegepast op een specifieke tekenreeks (een stijl heeft een CSS-correlatie):
 
@@ -92,7 +95,7 @@ Terwijl een opmaak wordt toegepast op de gehele tekstalinea (een opmaak is gebas
 
 ![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
-Een specifiek formaat kan slechts worden veranderd (het gebrek is **Paragraaf**).
+Een specifieke indeling kan alleen worden gewijzigd (de standaardinstelling is **Alinea**).
 
 Een stijl kan worden verwijderd. Plaats de cursor in de tekst waarop de stijl is toegepast en klik op het verwijderpictogram:
 
@@ -100,17 +103,17 @@ Een stijl kan worden verwijderd. Plaats de cursor in de tekst waarop de stijl is
 >
 >U mag de tekst waarop de stijl is toegepast niet opnieuw selecteren of het pictogram moet worden gedeactiveerd.
 
-### {#cut-copy-paste} knippen, kopiëren en plakken
+### Knippen, kopiëren en plakken {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
-De standaardfuncties van **Cut** en **Copy** zijn beschikbaar. Verschillende kleveringen van **Paste** worden geleverd om rekening te houden met verschillende indelingen.
+De standaardfuncties van **Knippen** en **Kopiëren** zijn beschikbaar. Verschillende aroma&#39;s van **Plakken** worden verstrekt om rekening te houden met verschillende formaten.
 
 * Knippen (**Ctrl-X**)
 * Kopiëren (**Ctrl-C**)
 * Plakken
 
-   Dit is het standaardmechanisme voor plakken (**Ctrl-V**) voor de component; als deze functie is geïnstalleerd buiten de box, is deze geconfigureerd als &quot;Plakken van Word&quot;.
+   Dit is het standaardmechanisme voor plakken (**Ctrl-V**) voor het onderdeel; als deze functie is geïnstalleerd buiten de box, is deze geconfigureerd als &quot;Plakken van Word&quot;.
 
 * Plakken als tekst
 
@@ -166,7 +169,7 @@ U kunt de stijl van een lijst wijzigen door de cursor in de lijst te plaatsen en
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Een koppeling naar een URL (binnen uw website of een externe locatie) wordt gegenereerd door de vereiste tekst te markeren en vervolgens op het pictogram **Hyperlink** te klikken:
+Er wordt een koppeling naar een URL (binnen uw website of een externe locatie) gegenereerd door de vereiste tekst te markeren en vervolgens op de knop **Hyperlink** pictogram:
 
 ![](do-not-localize/chlimage_1-12.png)
 
@@ -184,10 +187,9 @@ U kunt:
 
 >[!NOTE]
 >
->URI kan met om het even welke protocollen worden voorafgegaan die voor uw installatie worden gevormd. In een standaardinstallatie zijn dit `https://`, `ftp://`, en `mailto:`. Protocollen die niet voor uw installatie zijn geconfigureerd, worden afgewezen en als ongeldig gemarkeerd.
+>URI kan met om het even welke protocollen worden voorafgegaan die voor uw installatie worden gevormd. In een standaardinstallatie zijn deze `https://`, `ftp://`, en `mailto:`. Protocollen die niet voor uw installatie zijn geconfigureerd, worden afgewezen en als ongeldig gemarkeerd.
 
-
-U verbreekt de koppelingspositie door de cursor ergens in de koppelingstekst te plaatsen en op het pictogram **Ontkoppelen** te klikken:
+Als u de koppelingspositie wilt verbreken, plaatst u de cursor ergens in de koppelingstekst en klikt u op de knop **Ontkoppelen** pictogram:
 
 ![](do-not-localize/chlimage_1-13.png)
 
@@ -195,7 +197,7 @@ U verbreekt de koppelingspositie door de cursor ergens in de koppelingstekst te 
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
-U kunt overal in de tekst een anker maken door de cursor te plaatsen of tekst te selecteren. Klik vervolgens op het pictogram **Anker** om het dialoogvenster te openen.
+U kunt overal in de tekst een anker maken door de cursor te plaatsen of tekst te selecteren. Klik vervolgens op de knop **Anker** om het dialoogvenster te openen.
 
 Voer de naam van het anker in en klik op **OK** om op te slaan.
 
@@ -205,19 +207,19 @@ Het anker wordt weergegeven wanneer de component wordt bewerkt en kan nu worden 
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-### {#find-and-replace} zoeken en vervangen
+### Zoeken en vervangen {#find-and-replace}
 
 ![](do-not-localize/cq55_rte_findreplace.png)
 
-AEM biedt zowel een functie **Zoeken** als een functie **Vervangen** (zoeken en vervangen).
+AEM biedt beide **Zoeken** en **Vervangen** (zoeken en vervangen).
 
-Beide hebben een **Volgende** knoop van de Vondst om de open component naar de gespecificeerde tekst te zoeken. U kunt ook opgeven of de hoofdletters/kleine letters moeten worden gevonden.
+Beide hebben een **Volgende zoeken** om in de open component naar de opgegeven tekst te zoeken. U kunt ook opgeven of de hoofdletters/kleine letters moeten worden gevonden.
 
 De zoekopdracht begint altijd op de huidige cursorpositie in de tekst. Wanneer het einde van de component is bereikt, wordt u gewaarschuwd dat de volgende zoekbewerking van bovenaf zal beginnen.
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-Met de optie **Vervangen** kunt u **Zoeken**, vervolgens **Een afzonderlijke instantie vervangen** door de opgegeven tekst of **Alle instanties** in de huidige component vervangen.
+De **Vervangen** kunt u **Zoeken** vervolgens **Vervangen** een afzonderlijke instantie met de opgegeven tekst, of **Alles vervangen** instanties in de huidige component.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
@@ -229,7 +231,7 @@ Afbeeldingen kunnen worden gesleept vanuit de zoekfunctie voor inhoud om ze aan 
 
 >[!NOTE]
 >
->AEM biedt ook gespecialiseerde componenten voor meer gedetailleerde beeldconfiguratie. De componenten **Image** en **Text Image** zijn bijvoorbeeld beschikbaar.
+>AEM biedt ook gespecialiseerde componenten voor meer gedetailleerde beeldconfiguratie. Bijvoorbeeld de **Afbeelding** en **Tekstafbeelding** zijn beschikbaar.
 
 ### Spellingcontrole {#spelling-checker}
 
@@ -243,31 +245,31 @@ Eventuele onjuiste spelling wordt gemarkeerd:
 
 >[!NOTE]
 >
->De spellingcontrole wordt uitgevoerd in de taal van de website door de eigenschap language van de substructuur te gebruiken of de taal uit de URL te halen. De `en`-vertakking wordt bijvoorbeeld gecontroleerd op Engels en de `de`-vertakking op Duits.
+>De spellingcontrole wordt uitgevoerd in de taal van de website door de eigenschap language van de substructuur te gebruiken of de taal uit de URL te halen. Bijvoorbeeld de `en` de tak zal voor Engels en de `de` vertakking voor Duits.
 
 ### Tabellen {#tables}
 
 Tabellen zijn beschikbaar:
 
-* Als **component Table**
+* Als de **Tabel** component
 
    ![chlimage_1-146](assets/chlimage_1-146.png)
 
-* Vanuit de component **Text**
+* Van binnen **Tekst** component
 
    ![](do-not-localize/chlimage_1-14.png)
 
    >[!NOTE]
    >
-   >Hoewel de lijsten in RTE beschikbaar zijn, wordt het geadviseerd om de **component te gebruiken** wanneer het creëren van lijsten.
+   >Hoewel de lijsten in RTE beschikbaar zijn, wordt het geadviseerd om te gebruiken **Tabel** gebruiken bij het maken van tabellen.
 
-In zowel **Tekst** als **Tabel** is de functionaliteit van de componentenlijst beschikbaar via het contextmenu (gewoonlijk de juist-muis-knoop) geklikt binnen de lijst; bijvoorbeeld:
+In beide **Tekst** en **Tabel** de functionaliteit van de componentenlijst is beschikbaar via het contextmenu (gewoonlijk de juist-muis-knoop) binnen de lijst wordt geklikt; bijvoorbeeld:
 
 ![cq55_rte_tablemenu](assets/cq55_rte_tablemenu.png)
 
 >[!NOTE]
 >
->In de **component Table**, is een gespecialiseerde toolbar ook beschikbaar, met inbegrip van diverse standaard rijke functies van de tekstredacteur, samen met een ondergroep van de lijst-specifieke functies.
+>In de **Tabel** is er ook een gespecialiseerde werkbalk beschikbaar, die diverse functies voor teksteditors met tekstopmaak bevat en een subset van de tabelspecifieke functies.
 
 De tabelspecifieke functies zijn:
 
@@ -307,7 +309,7 @@ De tabelspecifieke functies zijn:
 
 ![cq55_rte_tableproperties_icon](assets/cq55_rte_tableproperties_icon.png)
 
-De basiseigenschappen van de lijst kunnen worden gevormd, alvorens **OK** te klikken om te bewaren:
+De basiseigenschappen van de lijst kunnen worden gevormd, alvorens te klikken **OK** opslaan:
 
 ![cq55_rte_tableproperties_dialog](assets/cq55_rte_tableproperties_dialog.png)
 
@@ -333,7 +335,7 @@ De basiseigenschappen van de lijst kunnen worden gevormd, alvorens **OK** te kli
 
 >[!NOTE]
 >
->**Breedte**,  **** Hoogte en bepaalde celeigenschappen kunnen worden gedefinieerd in:
+>**Breedte**, **Hoogte** en bepaalde celeigenschappen kunnen worden gedefinieerd in:
 >
 >* pixels
 >* percentages
@@ -341,7 +343,7 @@ De basiseigenschappen van de lijst kunnen worden gevormd, alvorens **OK** te kli
 
 >[!CAUTION]
 >
->Adobe adviseert sterk dat u **Breedte** voor uw lijst bepaalt.
+>Adobe raadt u ten zeerste aan een **Breedte** voor uw tabel.
 
 #### Celeigenschappen {#cell-properties}
 
@@ -353,9 +355,9 @@ De eigenschappen van een specifieke cel, of reeks cellen, kunnen worden gevormd:
 
 * **Breedte**
 * **Hoogte**
-* **Horizontaal uitlijnen**  - Links, Midden of Rechts
-* **Verticaal uitlijnen**  - Boven, Midden, Onder of Basislijn
-* **Celtype**  - Gegevens of Koptekst
+* **Horizontaal uitlijnen** - Links, Midden of Rechts
+* **Verticaal uitlijnen** - Boven, Midden, Onder of Basislijn
+* **Celtype** - Gegevens of koptekst
 * **Toepassen op:**
    * Eén cel
    * Volledige rij
@@ -369,7 +371,7 @@ U kunt rijen boven of onder de huidige rij toevoegen.
 
 De huidige rij kan ook worden verwijderd.
 
-#### Kolommen {#add-or-delete-columns} toevoegen of verwijderen
+#### Kolommen toevoegen of verwijderen {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -377,7 +379,7 @@ Kolommen kunnen links of rechts van de huidige kolom worden toegevoegd.
 
 De huidige kolom kan ook worden verwijderd.
 
-#### Volledige rijen of kolommen selecteren {#selecting-entire-rows-or-columns}
+#### Gehele rijen of kolommen selecteren {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -385,7 +387,7 @@ Hiermee selecteert u de gehele huidige rij of kolom. Vervolgens zijn specifieke 
 
 #### Cellen samenvoegen {#merge-cells}
 
-![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Als u een groep cellen hebt geselecteerd, kunt u deze samenvoegen tot één groep cellen.
 * Als u slechts één cel hebt geselecteerd, kunt u deze samenvoegen met de cel rechts of onder.
@@ -411,16 +413,14 @@ Als u een geneste tabel maakt, wordt er een nieuwe, op zichzelf staande tabel in
 >
 >* Windows IE: Gebruik Ctrl+klikken terwijl u de muis ingedrukt houdt (meestal links) om meerdere cellen te selecteren.
 >* Firefox: Sleep de muis om een celbereik te selecteren.
-
 >
 
 
-
-#### Tabel {#remove-table} verwijderen
+#### Tabel verwijderen {#remove-table}
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
-Hierdoor wordt de tabel verwijderd uit de component **Text**.
+Hierdoor wordt de tabel uit de **Tekst** component.
 
 ### Speciale tekens {#special-characters}
 

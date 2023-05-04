@@ -1,8 +1,8 @@
 ---
 title: Classificaties gebruiken
-seo-title: Classificaties gebruiken
+seo-title: Using Ratings
 description: Een beoordelingscomponent toevoegen aan een pagina
-seo-description: Een beoordelingscomponent toevoegen aan een pagina
+seo-description: Adding a Rating component to a page
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,51 +10,54 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 exl-id: 1de28140-5334-4ca2-a476-5ad253809808
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
-# Waarderingen {#using-ratings} gebruiken
+# Classificaties gebruiken {#using-ratings}
 
-De `Rating`component wordt gebruikt standalone of samen met andere eigenschappen van Gemeenschappen. Met deze component kunnen leden van de gemeenschap die zich hebben aangemeld hun mening kenbaar maken door inhoud te beoordelen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+De `Rating`wordt gebruikt op zichzelf of in combinatie met andere communautaire kenmerken. Met deze component kunnen leden van de gemeenschap die zich hebben aangemeld hun mening kenbaar maken door inhoud te beoordelen.
 
 ## Een waardering toevoegen aan een pagina {#adding-a-rating-to-a-page}
 
-Als u een component `Rating`aan een pagina wilt toevoegen in de modus Schrijven, zoekt u de component `Communities / Rating` en sleept u deze naar een plaats op een pagina, zoals een positie ten opzichte van de functie waarop leden een waardering moeten toepassen.
+Als u een `Rating`naar een pagina in de modus Schrijver, zoek de component `Communities / Rating` en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die leden kunnen waarderen.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
-Als de [vereiste client-side bibliotheken](rating-basics.md#essentials-for-client-side) worden opgenomen, wordt de `Rating`-component op deze manier weergegeven.
+Wanneer de [vereiste clientbibliotheken](rating-basics.md#essentials-for-client-side) worden opgenomen, is dit hoe `Rating` wordt weergegeven.
 
 ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## Classificatie {#configuring-rating} configureren
+## Classificatie configureren {#configuring-rating}
 
-Selecteer de geplaatste `Rating` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `Rating` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
-Onder **[!UICONTROL Texts & Labels]** lusje specificeert u het interne herkenningsteken voor de Classificatie.
+Onder de **[!UICONTROL Texts & Labels]** geeft u de interne id voor de waardering op.
 
 ![chlimage_1-495](assets/chlimage_1-495.png)
 
 **[!UICONTROL Tally Name]**
-(*Vereist*) Een eenvoudige naam voor  `Rating`welke uniek dit geval identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.
+(*Vereist*) Een eenvoudige naam voor de `Rating`die dit exemplaar uniek identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.
 
-## Ervaring {#site-visitor-experience} voor bezoekers van site
+## Ervaring met sitebezoekers {#site-visitor-experience}
 
 ### Leden {#members}
 
 Er is slechts één score per lid toegestaan. Het lid kan zijn rating te allen tijde wijzigen.
 
-### Anonieme {#anonymous}
+### Anoniem {#anonymous}
 
 Anonieme detachering van een rating wordt niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen.
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Beoordelingsbasisbegrippen](rating-basics.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Grondbeginselen van classificaties](rating-basics.md) pagina voor ontwikkelaars.

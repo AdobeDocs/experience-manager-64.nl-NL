@@ -1,32 +1,35 @@
 ---
 title: Tabs aanpassen voor een taak
-seo-title: Tabs aanpassen voor een taak
+seo-title: Customizing tabs for a task
 description: Hoe kan ik de namen van de tabbladen voor uw taken aanpassen in de werkruimte van LiveCycle AEM Forms.
-seo-description: Hoe kan ik de namen van de tabbladen voor uw taken aanpassen in de werkruimte van LiveCycle AEM Forms.
+seo-description: How-to customize the names of the tabs for your tasks, in LiveCycle AEM Forms workspace.
 uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
 exl-id: 42671435-e0f0-41db-af83-182b01742954
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
-# Tabbladen aanpassen voor een taak {#customizing-tabs-for-a-task}
+# Tabs aanpassen voor een taak {#customizing-tabs-for-a-task}
 
-U kunt tabnamen voor de `Start Process` component aanpassen in de `Start Process` Uberweergave en de `Task Details` component in de `ToDo` Uberweergave.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-1. Volg de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Wijzig de waarde van `tabname`in het `translation.json`-bestand.
+U kunt tabnamen aanpassen voor de `Start Process` in de `Start Process` De Uberweergave en de `Task Details` in de `ToDo` Uberweergave.
 
-   Wijzig bijvoorbeeld `/apps/ws/locales/en-US/translation.json` voor Engels in het volgende.
+1. Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. De waarde wijzigen van `tabname`in de `translation.json` bestand.
 
-   * Voor taken die in het beginproces in werking worden gesteld, gebruik het volgende fragment van het `"startprocess" : {}` blok.
+   Bijvoorbeeld, wijzigen `/apps/ws/locales/en-US/translation.json` voor Engels naar het volgende.
+
+   * Voor taken die in het beginproces worden gestart, gebruikt u het volgende fragment uit het dialoogvenster `"startprocess" : {}` blokkeren.
 
    ```
    "tabname" : {
@@ -37,7 +40,7 @@ U kunt tabnamen voor de `Start Process` component aanpassen in de `Start Process
            }
    ```
 
-   * Voor taken in te doen, gebruik het volgende fragment van het `"todo" : {}` blok.
+   * Voor taken in Te-doen, gebruik het volgende fragment van `"todo" : {}` blokkeren.
 
    ```
    "tabname" : {

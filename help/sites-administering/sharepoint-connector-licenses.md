@@ -1,8 +1,8 @@
 ---
-title: SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers
-seo-title: SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers
-description: Meer informatie over SharePoint-connectorlicenties, Copyrightmeldingen en Disclaimers.
-seo-description: Meer informatie over SharePoint-connectorlicenties, Copyrightmeldingen en Disclaimers.
+title: SharePoint-connectorlicenties, copyrightberichten en Disclaimers
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
+description: Meer informatie over SharePoint Connector-licenties, Copyright Notices en Disclaimers.
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,21 +10,24 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '398'
 ht-degree: 4%
 
 ---
 
-# SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# SharePoint-connectorlicenties, copyrightberichten en Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-In deze sectie worden alle licenties, copyrightmeldingen en disclaimers vermeld die expliciet moeten worden vermeld in verband met de Day JCR Connector voor MS SharePoint.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+In deze sectie worden alle licenties, copyrightmeldingen en disclaimers weergegeven die expliciet moeten worden vermeld in verband met de Day JCR Connector voor MS SharePoint.
 
 ## Overzicht van de Bibliotheken van derde partijen van de Schakelaar {#overview-of-connector-rd-party-libraries}
 
-De volgende tabel bevat een lijst met bibliotheken van derden die worden gebruikt in de kernbibliotheken van de SharePoint-connector, samen met de licenties, copyrightmeldingen of disclaimers waarop deze betrekking hebben:
+De volgende tabel bevat een lijst met bibliotheken van derden die in de kernbibliotheken van de SharePoint Connector worden gebruikt, samen met de licenties, copyrightkennisgevingen of disclaimers waarop deze betrekking hebben:
 
 | Bibliotheek | Licentietype |
 |---|---|
@@ -41,7 +44,7 @@ De volgende tabel bevat een lijst met bibliotheken van derden die worden gebruik
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| gelijktijdige | [Gelijktijdig](#concurrent)  (openbaar domein) |
+| gelijktijdige | [Gelijktijdig](#concurrent) (Openbaar domein) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -60,10 +63,10 @@ De volgende tabel bevat een lijst met bibliotheken van derden die worden gebruik
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache)  (bevat delen die vallen onder licenties voor openbare domein en W3C-software) |
+| xml-apis | [Apache](#apache) (bevat delen die vallen onder licenties voor het publieke domein en W3C-software) |
 | XmlSchema | [Apache](#apache) |
 
-## Overzicht van CRX bibliotheken van derden {#overview-of-crx-rd-party-libraries}
+## Overzicht van CRX-bibliotheken van derden {#overview-of-crx-rd-party-libraries}
 
 De volgende tabel bevat een lijst met bibliotheken van derden die in CRX worden gebruikt, samen met de licenties, copyrightkennisgevingen of disclaimers waarop deze betrekking hebben:
 

@@ -1,8 +1,8 @@
 ---
 title: Webpagina's voor documentbeveiliging gebruiken
-seo-title: Webpagina's voor documentbeveiliging gebruiken
+seo-title: Using the document security webpages
 description: Leer hoe u zich kunt aanmelden, door de webpagina's met documentbeveiliging kunt navigeren en deze kunt gebruiken.
-seo-description: Leer hoe u zich kunt aanmelden, door de webpagina's met documentbeveiliging kunt navigeren en deze kunt gebruiken.
+seo-description: Learn how you can login, navigate and use the document security web pages.
 uuid: b4863343-cda5-474a-a101-a20e39b1f8c7
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
 exl-id: f93d496e-6bd3-462a-b57a-80085647a636
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
 
 # Webpagina&#39;s voor documentbeveiliging gebruiken {#using-the-document-security-webpages}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Gebruikers en beheerders gebruiken de webpagina&#39;s voor documentbeveiliging om beleid te maken en te beheren, documenten die met een beleid zijn beveiligd te beheren en gebeurtenissen te controleren die aan met een beleid beveiligde documenten zijn gekoppeld. Beheerders gebruiken de webpagina&#39;s ook om beleidssets te maken en beleidssetcoördinatoren aan te wijzen, de standaardinstellingen voor documentbeveiliging te configureren, uitgenodigde gebruikersregistratie en accounts te beheren en server-, beleid-, gebruiker- en documentgerelateerde gebeurtenissen te controleren en te beheren.
 
@@ -29,7 +32,7 @@ Gebruikers en beheerders gebruiken de webpagina&#39;s voor documentbeveiliging o
 
 Als u de webpagina&#39;s wilt openen, hebt u voor documentbeveiliging een browser en de URL en uw aanmeldingsgegevens nodig. De URL voor gebruikers is anders dan de URL voor beheerders.
 
-Omdat documentbeveiliging verwijst naar de bestaande directory&#39;s van uw organisatie voor gebruikersgegevens, kunnen uw aanmeldingsgegevens voor documentbeveiliging dezelfde gegevens zijn als die u gebruikt om u aan te melden bij uw netwerk en andere toepassingen. Raadpleeg de systeembeheerder of beheerder voor meer informatie over uw account.
+Aangezien documentbeveiliging verwijst naar de bestaande directory&#39;s van uw organisatie voor gebruikersgegevens, kunnen uw aanmeldingsgegevens voor documentbeveiliging dezelfde gegevens zijn als die u gebruikt om u aan te melden bij uw netwerk en andere toepassingen. Raadpleeg de systeembeheerder of beheerder voor meer informatie over uw account.
 
 Als u zich wilt aanmelden als beheerder, moet u de beheerdersrol hebben die aan u is toegewezen. U kunt de standaard superbeheerdersaccount gebruiken die tijdens het installatieproces is gemaakt.
 
@@ -37,9 +40,9 @@ Als u zich wilt aanmelden als beheerder, moet u de beheerdersrol hebben die aan 
 
 Als u zich met een browser wilt aanmelden bij de webpagina&#39;s, hebt u de URL voor documentbeveiliging en een account nodig. De URL voor gebruikers is anders dan de URL voor beheerders. Beheerders kunnen zich ook aanmelden bij de gebruikerspagina&#39;s om beleid te maken.
 
-Als u toegang hebt tot meer dan één installatie van documentbeveiliging, hebt u de URL nodig voor de instantie van documentbeveiliging die u wilt openen. Zie de beheerder als u deze informatie niet hebt. De standaard-URL voor de gebruikerspagina&#39;s is https://*[host]*:*[port]*/edc. In sommige gevallen is het poortnummer niet vereist. Vraag de beheerder om meer informatie.
+Als u toegang hebt tot meer dan één installatie van documentbeveiliging, hebt u de URL nodig voor de instantie van documentbeveiliging die u wilt openen. Zie de beheerder als u deze informatie niet hebt. De standaard-URL voor de gebruikerspagina&#39;s is https://*[host]*:*[poort]*/dec. In sommige gevallen is het poortnummer niet vereist. Vraag de beheerder om meer informatie.
 
-De standaard-URL voor beheerders is https://*[host]*:*[port]*/adminui.
+De standaard-URL voor beheerders is https://*[host]*:*[poort]*/adminui.
 
 Voor beheerders wordt tijdens de installatie een standaard superbeheerdersaccount gemaakt. U kunt dit account gebruiken om u aan te melden wanneer documentbeveiliging voor het eerst wordt geïnstalleerd.
 
@@ -49,9 +52,9 @@ Voor beheerders wordt tijdens de installatie een standaard superbeheerdersaccoun
 
 1. Typ de URL in uw browser:
 
-   URL voor documentbeveiliging: `https://`*[host ]*`:`*[port]* `/edc`
+   URL voor documentbeveiliging: `https://`*[host ]*`:`*[poort]* `/edc`
 
-   of beheerconsole-URL: `https://`*[host ]*`:`*[port]* `/adminui`
+   of beheerconsole-URL: `https://`*[host ]*`:`*[poort]* `/adminui`
 
 1. Typ uw gebruikersnaam en wachtwoord in het aanmeldingsvenster en klik op OK.
 1. Klik in Beheerconsole op Services > Documentbeveiliging.
@@ -86,7 +89,7 @@ Gebruik deze koppelingen om toegang te krijgen tot de verschillende pagina&#39;s
 
 ## Toegang tot documentbeveiliging instellen vanuit clienttoepassingen {#setting-up-access-to-document-security-from-client-applications}
 
-Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie *Acrobat Help* of de juiste *RightsManagementExtension Help* voor informatie over het configureren van de verbinding binnen de clienttoepassing.
+Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie *Acrobat Help* of *RightsManagementExtension Help* voor informatie over het vormen van de verbinding binnen de cliënttoepassing.
 
 Documentbeveiliging is toegankelijk via SSL (Secure Sockets Layer). U moet het certificaat van de website installeren in het certificaatarchief, zodat u toegang hebt tot documentbeveiliging via de clienttoepassingen.
 

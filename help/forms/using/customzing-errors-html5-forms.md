@@ -1,25 +1,28 @@
 ---
 title: Foutberichten voor HTML5-formulieren aanpassen
-seo-title: Foutberichten voor HTML5-formulieren aanpassen
-description: Leer hoe u de weergave van foutberichten voor HTML5-formulieren kunt aanpassen, inclusief hoe u de positie en weergave van deze berichten kunt wijzigen.
-seo-description: Leer hoe u de weergave van foutberichten voor HTML5-formulieren kunt aanpassen, inclusief hoe u de positie en weergave van deze berichten kunt wijzigen.
+seo-title: Customizing error messages for HTML5 forms
+description: Leer hoe u de weergave van foutberichten voor HTML5-formulieren kunt aanpassen, inclusief hoe u de positie en weergave van deze formulieren kunt wijzigen.
+seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
 uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
 exl-id: e8a53976-e9bd-459d-92f5-88527c72428b
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
 
-# Foutberichten voor HTML5-formulieren {#customizing-error-messages-for-html-forms} aanpassen
+# Foutberichten voor HTML5-formulieren aanpassen {#customizing-error-messages-for-html-forms}
 
-In HTML5-formulieren hebben foutberichten en -waarschuwingen een vaste positie en weergave (font en color). De fout wordt alleen voor een geselecteerd veld weergegeven en er wordt slechts één fout weergegeven.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+In HTML5-formulieren hebben foutberichten en -waarschuwingen een vaste positie en weergave (font en color), maar wordt de fout alleen voor een geselecteerd veld weergegeven. Er wordt slechts één fout weergegeven.
 
 Het artikel bevat de stappen waarmee u foutberichten voor HTML5-formulieren kunt aanpassen aan
 
@@ -37,10 +40,10 @@ Nadat u het pakket hebt uitgepakt, opent u de map CustomErrorManager-1.0-SNAPSHO
 
 ### De positie van foutberichten aanpassen  {#customizing-the-position-of-error-messages-nbsp}
 
-Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div>-tag toe voor elk fout- en waarschuwingsveld, plaatst u de tag &lt;div> links of rechts en past u CSS-stijlen toe op de tag &lt;div>. Voor gedetailleerde stappen, zie de hieronder vermelde procedure:
+Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div> -tag voor elk fout- en waarschuwingsveld plaatsen op &lt;div> links of rechts labelen en CSS-stijlen toepassen op de &lt;div> tag. Voor gedetailleerde stappen, zie de hieronder vermelde procedure:
 
-1. Navigeer naar de map `CustomErrorManager-1.0-SNAPSHOT`en open de map `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
-1. Open het `customErrorManager.js`-bestand voor bewerking. De functie `markError` in het bestand accepteert de volgende parameters:
+1. Ga naar de `CustomErrorManager-1.0-SNAPSHOT`en opent u de `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` map.
+1. Open de `customErrorManager.js` bestand voor bewerking. De `markError` -functie in het bestand accepteert de volgende parameters:
 
    |  |  |
    |---|---|
@@ -78,7 +81,7 @@ Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div>-tag toe vo
    ```
 
 1. Sla het bestand op en sluit het.
-1. Navigeer naar de map `CustomErrorManager-1.0-SNAPSHOT` en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Ga naar de `CustomErrorManager-1.0-SNAPSHOT` en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Gebruik pakketbeheer om het pakket te uploaden en te installeren.
 
 ## Foutberichten weergeven voor meerdere velden  {#display-error-messages-for-multiple-fields-nbsp}
@@ -121,9 +124,9 @@ Gebruik het bijgevoegde pakket om foutberichten voor alle velden tegelijk weer t
 
 ## Het formulier weergeven met het nieuwe profiel.  {#render-the-form-with-the-new-profile-nbsp}
 
-HTML5-formulieren gebruiken een standaardprofiel uit het vak: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+HTML5-formulieren gebruiken een standaardprofiel uit het vak: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
 
-Als u een formulier wilt weergeven met de aangepaste foutberichten, geeft u het formulier weer met het foutprofiel: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+Als u een formulier wilt weergeven met de aangepaste foutberichten, geeft u het formulier weer met het foutprofiel: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
 
 >[!NOTE]
 >

@@ -1,34 +1,38 @@
 ---
 title: Correspondentenbeheer | Gebruikersgegevens verwerken
-seo-title: Correspondentenbeheer | Gebruikersgegevens verwerken
+seo-title: Correspondence Management | Handling user data
 description: Met AEM Forms Correspondence Management kunt u veilige en gepersonaliseerde klantcorrespondentie maken, beheren en stroomlijnen. Leer hoe u het opslaan van gegevens voor concepten en verzonden brieven in AEM opslagplaats configureert, toegang krijgt tot opgeslagen gegevens en opgeslagen gegevens verwijdert.
-seo-description: Met AEM Forms Correspondence Management kunt u veilige en gepersonaliseerde klantcorrespondentie maken, beheren en stroomlijnen. Leer hoe u het opslaan van gegevens voor concepten en verzonden brieven in AEM opslagplaats configureert, toegang krijgt tot opgeslagen gegevens en opgeslagen gegevens verwijdert.
+seo-description: AEM Forms Correspondence Management enables you to create, manage, and streamline secure and personalized customer correspondences. Learn how to configure storing data for draft and submitted letters in AEM repository, access stored data, and delete stored data.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: 4a6b3403-2941-4098-bb30-769281adedc2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
 # Correspondentenbeheer | Gebruikersgegevens verwerken {#correspondence-management-handling-user-data}
 
-Met AEM Forms Correspondence Management kunt u veilige en gepersonaliseerde klantcorrespondentie maken, beheren en stroomlijnen. Het verstrekt een intuïtieve gebruikersinterface voor bedrijfsgebruikers om correspondentie tot stand te brengen gebruikend vooraf goedgekeurde inhoudsblokken en media elementen. Zie [Correspondentie maken](/help/forms/using/create-correspondence.md) voor meer informatie over het maken van correspondentie.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Met AEM Forms Correspondence Management kunt u veilige en gepersonaliseerde klantcorrespondentie maken, beheren en stroomlijnen. Het verstrekt een intuïtieve gebruikersinterface voor bedrijfsgebruikers om correspondentie tot stand te brengen gebruikend vooraf goedgekeurde inhoudsblokken en media elementen. Zie voor meer informatie over het maken van correspondentie [Correspondentie maken](/help/forms/using/create-correspondence.md).
 
 Wanneer een zakelijke gebruiker of een agent een correspondentie opslaat als concept of deze verzendt, wordt een letterinstantie opgeslagen in de AEM-opslagplaats. De brieveninstantie omvat brievengegevens en meta-gegevens.
 
 >[!NOTE]
 >
->In AEM 6.4 Forms is het correspondentiebeheer niet beschikbaar in het tekstvak. Als u een upgrade uitvoert vanaf een eerdere AEM Forms-versie, installeert u het compatibiliteitspakket en migreert u de middelen voor correspondentiebeheer om deze te blijven gebruiken in AEM 6.4 Forms. Zie [Compatibiliteitspakket](/help/forms/using/compatibility-package.md) voor meer informatie.
+>In AEM 6.4 Forms is het correspondentiebeheer niet beschikbaar in het tekstvak. Als u een upgrade uitvoert vanaf een eerdere AEM Forms-versie, installeert u het compatibiliteitspakket en migreert u de middelen voor correspondentiebeheer om deze te blijven gebruiken in AEM 6.4 Forms. Zie voor meer informatie [Compatibiliteitspakket](/help/forms/using/compatibility-package.md).
 
 ## Gebruikersgegevens en gegevensopslag {#data}
 
-In het Correspondentiebeheer worden gegevens voor concept en verzonden brieven alleen in AEM opslagplaats opgeslagen als de publicatie-instantie is geconfigureerd voor het beheren van brievenexemplaren. Voor meer informatie over de configuratie, zie [de configuratieeigenschappen van het Beheer van de correspondentie](/help/forms/using/cm-configuration-properties.md).
+In het Correspondentiebeheer worden gegevens voor concept en verzonden brieven alleen in AEM opslagplaats opgeslagen als de publicatie-instantie is geconfigureerd voor het beheren van brievenexemplaren. Voor meer informatie over de configuratie, zie [Eigenschappen van de Correspondentenbeheerconfiguratie](/help/forms/using/cm-configuration-properties.md).
 
 Afhankelijk van de persistentie van de gegevensopslag die voor uw AEM plaatsing wordt gevormd, worden de concepten en de voorgelegde brievengegevens opgeslagen bij de volgende plaatsen.
 
@@ -58,7 +62,7 @@ Op de hierboven vermelde locatie van AEM opslagplaats:
 * `[node-id]` is de id die is toegewezen aan de map met de letter
 * `[letter-instance-name]` is de naam die is opgegeven bij het opslaan of verzenden van een letter
 
-Onder het knooppunt [letter-instance-name] wordt de volgende knooppuntstructuur gemaakt en worden de gegevens voor elke letterinstantie opgeslagen in de AEM opslagplaats:
+Onder de [letter-instance-name] knooppunt, wordt de volgende knooppuntstructuur gemaakt en worden de gegevens voor elke letterinstantie opgeslagen in de AEM opslagplaats:
 
 | Knooppunt | Beschrijving |
 |---|---|
@@ -73,9 +77,9 @@ U kunt tot ontwerp en voorgelegde brievengegevens in de gevormde gegevensopslag 
 
 ### Gebruikersgegevens openen {#access-user-data}
 
-Correspondentiebeheer biedt API&#39;s die u kunt gebruiken om concepten en verzonden brieven te zoeken en te openen. Met behulp van de API&#39;s kunt u lettervarianten zoeken en openen met de id van het lettertype of de gebruiker die de correspondentie heeft opgeslagen of verzonden. Zie [API&#39;s voor toegang tot letterinstanties](/help/forms/using/cm-apis-to-access-letter-instances.md) voor meer informatie.
+Correspondentiebeheer biedt API&#39;s die u kunt gebruiken om concepten en verzonden brieven te zoeken en te openen. Met behulp van de API&#39;s kunt u lettervarianten zoeken en openen met de id van het lettertype of de gebruiker die de correspondentie heeft opgeslagen of verzonden. Zie voor meer informatie [API&#39;s voor toegang tot lettervarianten](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-U kunt ook met behulp van CRX DELite naar de letter-instantie in AEM repository navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslaglocatie.
+U kunt ook met behulp van CRX DELite naar de letter-instantie in AEM repository navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslagplaats.
 
 ### Gebruikersgegevens verwijderen {#delete-user-data}
 

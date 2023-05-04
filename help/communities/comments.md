@@ -1,8 +1,8 @@
 ---
 title: Opmerkingen gebruiken
-seo-title: Opmerkingen gebruiken
+seo-title: Using Comments
 description: Met de functie Opmerkingen kunnen aangemelde bezoekers hun mening en kennis delen
-seo-description: Met de functie Opmerkingen kunnen aangemelde bezoekers hun mening en kennis delen
+seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
 uuid: 30fc48ac-134c-4acb-a65c-398855c93829
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,15 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 exl-id: 8ad5ce3e-c5dd-48d7-8812-43172eda36cc
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # Opmerkingen gebruiken {#using-comments}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -26,8 +29,8 @@ De functie voor opmerkingen wordt gebruikt om bezoekers die zich hebben aangemel
 
 In deze sectie van de documentatie wordt beschreven
 
-* `Comments`toevoegen aan een pagina
-* De montages van de configuratie voor `Comments`component
+* Toevoegen `Comments`naar een pagina
+* De montages van de configuratie voor de `Comments`component
 
 >[!NOTE]
 >
@@ -35,31 +38,31 @@ In deze sectie van de documentatie wordt beschreven
 
 ## Opmerkingen toevoegen aan een pagina {#adding-comments-to-a-page}
 
-Als u een `Comments`component wilt toevoegen aan een pagina in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Comments`van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van
 
 * `Communities / Comments`
 
 en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie waar gebruikers opmerkingen over kunnen plaatsen, of gewoon onder aan de pagina.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
-Als de [vereiste client-side bibliotheken](essentials-comments.md#essentials-for-client-side) worden opgenomen, wordt de `Comments`component op deze manier weergegeven.
+Wanneer de [vereiste clientbibliotheken](essentials-comments.md#essentials-for-client-side) worden opgenomen, is dit hoe `Comments`wordt weergegeven.
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Er mag slechts één `Comments`component op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
+>Slechts één `Comments`kan op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
 
-## Opmerkingen {#configuring-comments} configureren
+## Opmerkingen configureren {#configuring-comments}
 
-Selecteer de geplaatste `Comments` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `Comments` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
-![](assets/configure.png) ![configurecommenssettings](assets/commentssettings.png)
+![vormen](assets/configure.png) ![commentaarinstellingen](assets/commentssettings.png)
 
 ### Tabblad Opmerkingen {#comments-tab}
 
-Geef onder het tabblad **[!UICONTROL Comments]** op hoe bezoekers opmerkingen invoeren.
+Onder de **[!UICONTROL Comments]** , geeft u op hoe bezoekers opmerkingen invoeren.
 
 * **[!UICONTROL Allow replies]**
 
@@ -91,7 +94,7 @@ Geef onder het tabblad **[!UICONTROL Comments]** op hoe bezoekers opmerkingen in
 
 * **[!UICONTROL Allow Voting]**
 
-   Als deze optie is ingeschakeld, wordt de optie om omhoog of omlaag te stemmen weergegeven met het tekstinvoervak. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, wordt het tekstinvoervak weergegeven met de optie om omhoog of omlaag te stemmen. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Following]**
 
@@ -103,7 +106,7 @@ Geef onder het tabblad **[!UICONTROL Comments]** op hoe bezoekers opmerkingen in
 
 ### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte opmerkingen worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor meer informatie.
+Onder de **[!UICONTROL User Moderation]** , geeft u op hoe de geposte opmerkingen worden beheerd. Zie voor meer informatie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
 * **[!UICONTROL Pre-Moderation]**
 
@@ -139,47 +142,47 @@ Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte opmerk
 
 * **[!UICONTROL Flagging Limit]**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter dan of gelijk zijn aan **[!UICONTROL Moderation Threshold]**. De standaardwaarde is 5.
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het **[!UICONTROL Moderation Threshold]**. De standaardwaarde is 5.
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef onder het tabblad **[!UICONTROL Sort Settings]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Onder de **[!UICONTROL Sort Settings]** , geeft u op hoe de geposte opmerkingen worden gesorteerd wanneer deze worden weergegeven.
 
 * **[!UICONTROL Sort Field]**
 
-   Trek neer om één van `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked` te selecteren.
+   Omlaag trekken om een van de volgende opties te selecteren `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`.
 
 * **[!UICONTROL Sort Order]**
 
-   Trek neer om één van `Ascending` of `Descending` te selecteren.
+   Omlaag trekken om een van de volgende opties te selecteren `Ascending` of `Descending`.
 
 ### Wijzigen in type aangepaste opmerking {#changing-to-a-custom-comment-type}
 
 Door het Type van Middel van Commentaar te veranderen, zal het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder een produceren die (uitgebreid) door ontwikkelaars is aangepast.
 
-Zodra de types van douanemiddel bekend zijn, ga [Ontwerpwijze](../../help/sites-authoring/default-components-designmode.md) in en klik op de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
+Zodra de types van douanemiddel gekend zijn, ga binnen [Ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) en dubbelklik op de geplaatste `Comments` om een dialoogvenster met een extra tabblad te openen.
 
-Geef onder het tabblad **[!UICONTROL Resource Types]** het aangepaste resourceType op voor nieuwe instanties van de `Comments or Voting`componenten:
+Onder de **[!UICONTROL Resource Types]** tab, specificeer het custom resourceType voor nieuwe instanties van `Comments or Voting`componenten:
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL Comment Resource Type]**
 
-   Navigeer naar het resourceType van uitgebreide `comment`component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
+   Navigeer naar het resourceType van uitgebreid `comment`component (enkele opmerking) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
 
    Deze bron identificeert het resourceType van de UGC die is gemaakt wanneer een bezoeker een opmerking plaatst.
 
 * **[!UICONTROL Voting Resource Type]**
 
-   Navigeer naar het resourceType van een uitgebreide `voting`component in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
+   Navigeer naar het resourceType van uitgebreid `voting`in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
 
    Met deze bron wordt het bronnentype van de UGC geïdentificeerd die wordt gemaakt wanneer een bezoeker een stem plaatst.
 
 * **[!UICONTROL Comment System Resource Type]**
 
-   Navigeer naar het resourceType van uitgebreide `comments`component (het Systeem van de Commentaar) in /apps. Leeg laten tenzij het paginamalplaatje [dynamisch ](scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop) omvat. Leer meer door over [ te lezen {{include} helper](handlebars-helpers.md#include).
+   Navigeer naar het resourceType van uitgebreid `comments`component (Opmerkingssysteem) in /apps. Leeg laten, tenzij de paginasjabloon [dynamisch omvat](scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [{{include}} helper](handlebars-helpers.md#include).
 
-## Ervaring {#site-visitor-experience} voor bezoekers van site
+## Ervaring met sitebezoekers {#site-visitor-experience}
 
 ### Moderatoren en beheerders {#moderators-and-administrators}
 
@@ -194,14 +197,14 @@ Wanneer de bezoeker van de site zich heeft aangemeld, kunnen deze, afhankelijk v
 * Een eigen opmerking verwijderen
 * Opmerkingen van anderen markeren
 
-### Anonieme {#anonymous}
+### Anoniem {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte opmerkingen lezen, deze vertalen indien deze worden ondersteund, maar kunnen geen opmerking toevoegen of opmerkingen van anderen markeren.
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Comments Essentials](essentials-comments.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Essentiële opmerkingen](essentials-comments.md) pagina voor ontwikkelaars.
 
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor de moderatie van geposte opmerkingen.
+Zie voor een moderatie van gepubliceerde opmerkingen [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Zie [Door gebruiker gegenereerde inhoud omzetten](translate-ugc.md) voor een vertaling van geposte opmerkingen.
+Zie voor een vertaling van geposte opmerkingen [Door gebruiker gegenereerde inhoud vertalen](translate-ugc.md).

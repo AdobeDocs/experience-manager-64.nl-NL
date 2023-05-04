@@ -1,25 +1,28 @@
 ---
-title: 'Metagegevens gebruiken in een e-mailmelding '
-seo-title: 'Metagegevens gebruiken in een e-mailmelding '
+title: Metagegevens gebruiken in een e-mailmelding
+seo-title: Use metadata in an email notification
 description: Metagegevens gebruiken om informatie in te vullen in een e-mailmelding in een formulierwerkstroom
-seo-description: Metagegevens gebruiken om informatie in te vullen in een e-mailmelding in een formulierwerkstroom
+seo-description: Use metadata to populate information in a forms workflow email notification
 uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
 topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
 exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
 
-# Metagegevens gebruiken in een e-mailmelding {#use-metadata-in-an-email-notification}
+# Metagegevens gebruiken in een e-mailmelding  {#use-metadata-in-an-email-notification}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Metagegevens gebruiken om informatie in te vullen in een e-mailmelding in een formulierwerkstroom
 
-Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of groep. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of naar elk lid van de bepaalde groep. Een typisch [e-mailbericht](/help/forms/using/use-custom-email-template-assign-task-step.md) bevat verbinding van de toegewezen taak en informatie met betrekking tot de taak.
+Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of groep. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of naar elk lid van de bepaalde groep. Een standaard [e-mailmelding](/help/forms/using/use-custom-email-template-assign-task-step.md) bevat een koppeling van de toegewezen taak en informatie met betrekking tot de taak.
 
 U kunt metagegevens in een e-mailsjabloon gebruiken om gegevens in een e-mailbericht dynamisch in te vullen. De waarde van de titel, beschrijving, vervaldatum, prioriteit, workflow en laatste datum in het volgende e-mailbericht wordt bijvoorbeeld dynamisch geselecteerd tijdens de runtime (wanneer een e-mailmelding wordt gegenereerd).
 
@@ -98,7 +101,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## Door het systeem gegenereerde metagegevens gebruiken in een e-mailbericht {#using-system-generated-metadata-in-an-email-notification}
+## Door het systeem gegenereerde metagegevens in een e-mailbericht gebruiken {#using-system-generated-metadata-in-an-email-notification}
 
 Een AEM Forms-toepassing bevat verschillende metagegevensvariabelen (sleutelwaardeparen) uit het vak. U kunt deze variabelen in een e-mailsjabloon gebruiken. De waarde van de variabele is gebaseerd op de bijbehorende formuliertoepassing. In de volgende tabel worden alle metagegevensvariabelen weergegeven die in het vak beschikbaar zijn:
 
@@ -151,13 +154,13 @@ Een AEM Forms-toepassing bevat verschillende metagegevensvariabelen (sleutelwaar
  </tbody> 
 </table>
 
-## Aangepaste metagegevens gebruiken in een e-mailmelding {#using-custom-metadata-in-an-email-notification}
+## Aangepaste metagegevens gebruiken in een e-mailbericht {#using-custom-metadata-in-an-email-notification}
 
 U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste metagegevens bevatten naast door het systeem gegenereerde metagegevens ook informatie. Zo worden bijvoorbeeld beleidsdetails opgehaald uit een database. U kunt een bundel ECMAScript of OSGi gebruiken om douanemetagegevens in crx-bewaarplaats toe te voegen:
 
-### ECMAScript gebruiken om aangepaste metagegevens {#use-ecmascript-to-add-custom-metadata} toe te voegen
+### ECMAScript gebruiken om aangepaste metagegevens toe te voegen  {#use-ecmascript-to-add-custom-metadata}
 
-[](https://en.wikipedia.org/wiki/ECMAScript) ECMAScriptis is een scripttaal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om ECMAScript te gebruiken om douanemetagegevens voor een e-mailmalplaatje toe te voegen:
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is een scripttaal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om ECMAScript te gebruiken om douanemetagegevens voor een e-mailmalplaatje toe te voegen:
 
 1. Meld u aan bij CRX DE met een beheeraccount. De URL is `https://[server]:[port]/crx/de/index.jsp`
 
@@ -187,20 +190,20 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
    Als u de titel niet opgeeft, wordt in het veld Aangepaste metagegevens het volledige pad van het ECMAScript-bestand weergegeven. Voer de volgende stappen uit om een betekenisvolle titel voor het script op te geven:
 
-   1. Breid de manuscriptknoop uit, klik **[!UICONTROL jcr:content]** knoop met de rechtermuisknop aan, en klik **[!UICONTROL Mixins]**.
-   1. Type mix:titel in Edit Mixins dialoog en klik **+**.
+   1. Breid de manuscriptknoop uit, klik met de rechtermuisknop aan **[!UICONTROL jcr:content]** en klik op **[!UICONTROL Mixins]**.
+   1. Tekstmix:titel in dialoogvenster Mixingen bewerken en klik op **+**.
    1. Voeg een eigenschap met de volgende waarden toe.
 
       | Naam | jcr:titel |
       |---|---|
-      | Type | Tekenreeks |
+      | Type | String |
       | Waarde | Geef de titel van het script op. Bijvoorbeeld, douanemetagegevens voor de verzekeringnemer. De opgegeven waarde wordt weergegeven in de taakstap toewijzen. |
 
 ### Een OSGi-bundel en Java-interface gebruiken om aangepaste metagegevens toe te voegen {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
 U kunt de interface WorkitemUserMetadataService Java gebruiken om aangepaste metagegevens voor e-mailsjablonen toe te voegen. U kunt een bundel OSGi tot stand brengen die de interface van Java WorkitemUserMetadataService gebruikt en het aan de server van AEM Forms opstelt. De metagegevens worden beschikbaar gesteld voor selectie in de stap Taak toewijzen.
 
-Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden toe als externe afhankelijkheden aan het OSGi-bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granietjar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) dossiers als externe gebiedsdelen aan het OSGi bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar Bestand > Nieuw project.
 

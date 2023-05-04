@@ -2,7 +2,7 @@
 title: SocialUtils Refactoring
 seo-title: SocialUtils Refactoring
 description: Het pakket com.adobe.cq.social.ugcbase.SocialUtils is vervangen in AEM 6.1
-seo-description: Het pakket com.adobe.cq.social.ugcbase.SocialUtils is vervangen in AEM 6.1
+seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,23 +10,26 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 exl-id: ba23188b-a72a-4349-b3e5-0fb50fd6312f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
-# Refactoring voor sociale hulpmiddelen {#socialutils-refactoring}
+# SocialUtils Refactoring {#socialutils-refactoring}
 
-## Pakket met sociale hulpmiddelen Vervangen {#socialutils-package-deprecated}
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Het pakket **com.adobe.cq.social.ugcbase.SocialUtils** is vervangen in AEM 6.1.
+## Pakket met sociale hulpmiddelen is vervangen {#socialutils-package-deprecated}
+
+Het pakket **com.adobe.cq.social.ugcbase.SocialUtils** is afgekeurd in AEM 6.1.
 
 In de volgende tabellen worden de methoden weergegeven die moeten worden gebruikt in plaats van de methoden SocialUtils.
 
-## Pakket met socialeResourceUtilities {#socialresourceutilities-package}
+## SocialResourceUtilities-pakket  {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -48,7 +51,7 @@ In de volgende tabellen worden de methoden weergegeven die moeten worden gebruik
 |---|
 | SocialResourceProvider getSocialResourceProvider(resource) | vervangt SocialResourceProvider getConfiguredProvider(resource) |
 
-## SCFUtilities Package {#scfutilities-package}
+## SCFUtilities-pakket {#scfutilities-package}
 
 | Methoden in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|

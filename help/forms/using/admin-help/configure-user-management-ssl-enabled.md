@@ -1,8 +1,8 @@
 ---
 title: Gebruikersbeheer configureren voor een LDAP-server die geschikt is voor SSL
-seo-title: Gebruikersbeheer configureren voor een LDAP-server die geschikt is voor SSL
+seo-title: Configure User Management for an SSL-enabled LDAP server
 description: Leer hoe u gebruikersbeheer configureert voor een LDAP-server die geschikt is voor SSL, zodat synchronisatie correct werkt via LDAPS.
-seo-description: Leer hoe u gebruikersbeheer configureert voor een LDAP-server die geschikt is voor SSL, zodat synchronisatie correct werkt via LDAPS.
+seo-description: Learn how  to configure User Management for an SSL-enabled LDAP server to enable synchronization to work properly over LDAPS.
 uuid: 4b3f8ac7-fa38-4adf-a851-82d55fe431fe
 contentOwner: admin
 content-type: reference
@@ -10,17 +10,20 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 exl-id: 9ed22c75-bce7-4d26-a4cd-a58e41e5068e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-# Gebruikersbeheer configureren voor een LDAP-server met SSL-functionaliteit {#configure-user-management-for-an-ssl-enabled-ldap-server}
+# Gebruikersbeheer configureren voor een LDAP-server die geschikt is voor SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
-Synchronisatie werkt alleen correct via LDAPS als de LDAP-certificaten die de certificeringsinstantie (CA) heeft uitgegeven, aanwezig zijn in de JRE-omgeving (Java Runtime Environment) van de toepassingsserver. Importeer het certificaat in het JRE-cacerts-bestand van de toepassingsserver, dat zich gewoonlijk in de map *[JAVA_HOME]*/jre/lib/security/cacerts bevindt.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Synchronisatie werkt alleen correct via LDAPS als de LDAP-certificaten die de certificeringsinstantie (CA) heeft uitgegeven, aanwezig zijn in de JRE-omgeving (Java Runtime Environment) van de toepassingsserver. Importeer het certificaat in het JRE-cacerts-bestand van de toepassingsserver, dat zich gewoonlijk in het *[JAVA_HOME]*/jre/lib/security/cacerts directory.
 
 1. Schakel SSL in op de directoryserver. Zie de documentatie die is geleverd door de leverancier van de directory voor meer informatie.
 1. Exporteer een clientcertificaat van de directoryserver.
@@ -29,7 +32,7 @@ Synchronisatie werkt alleen correct via LDAPS als de LDAP-certificaten die de ce
    `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
 1. Typ desgevraagd het wachtwoord. (Voor Java is het standaardwachtwoord `changeit`.) Er verschijnt een bericht met de mededeling dat het certificaat is geïmporteerd.
-1. Typ `Yes` als u hierom wordt gevraagd om het certificaat te vertrouwen.
+1. Typ desgevraagd `Yes` om het certificaat te vertrouwen.
 1. Schakel SSL in Gebruikersbeheer in en selecteer bij het configureren van de directory-instellingen Ja voor de SSL-optie en wijzig de poortinstelling dienovereenkomstig. Het standaardpoortnummer is 636.
 
 >[!NOTE]

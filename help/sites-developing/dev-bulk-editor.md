@@ -1,8 +1,8 @@
 ---
 title: De Bulk-editor ontwikkelen
-seo-title: De Bulk-editor ontwikkelen
+seo-title: Developing the Bulk Editor
 description: Door tags toe te wijzen, kan inhoud worden gecategoriseerd en ingedeeld
-seo-description: Door tags toe te wijzen, kan inhoud worden gecategoriseerd en ingedeeld
+seo-description: Tagging allows content to be categorized and organized
 uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,19 +10,22 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: a0094d45-70f9-4616-ab61-1087a2b2ea15
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 1%
+source-wordcount: '1873'
+ht-degree: 0%
 
 ---
 
 # De Bulk-editor ontwikkelen{#developing-the-bulk-editor}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Deze sectie beschrijft hoe te om het bulkredacteurshulpmiddel te ontwikkelen en hoe te om de component van de Lijst van het Product uit te breiden, die op de bulkredacteur gebaseerd is.
 
-## Parameters voor query-bulkeditor {#bulk-editor-query-parameters}
+## Query-parameters voor de bulkeditor {#bulk-editor-query-parameters}
 
 Wanneer het werken met de bulkredacteur, zijn er verscheidene vraagparameters die u aan URL kunt toevoegen om de bulkredacteur met een specifieke configuratie te roepen. Als u de bulkredacteur altijd met een bepaalde configuratie wilt worden gebruikt, bijvoorbeeld, zoals in de component van de Lijst van het Product, dan moet u bulkeditor.jsp (die in /libs/wcm/core/components/bulkeditor wordt gevestigd) wijzigen of een component met de specifieke configuratie tot stand brengen. Wijzigingen die zijn aangebracht met behulp van queryparameters zijn niet permanent.
 
@@ -30,13 +33,13 @@ Als u bijvoorbeeld het volgende in de URL van uw browser typt:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-de bulkredacteur toont zonder het **gebied van de Weg** aangezien hrp=true het gebied verbergt. Met de parameter hrp=false wordt het veld weergegeven (de standaardwaarde).
+de bulkredacteur toont zonder **Hoofdpad** veld als hrp=true verbergt het veld. Met de parameter hrp=false wordt het veld weergegeven (de standaardwaarde).
 
 Hier volgt een lijst met de queryparameters voor bulkeditors:
 
 >[!NOTE]
 >
->Elke parameter kan een lange en een korte naam hebben. De lange naam voor het hoofdpad van de zoekopdracht is bijvoorbeeld `rootPath`, de korte naam is `rp`. Als de lange naam niet wordt bepaald, wordt korte gelezen van het verzoek.
+>Elke parameter kan een lange en een korte naam hebben. De lange naam voor het hoofdpad van de zoekopdracht is bijvoorbeeld `rootPath`De korte is `rp`. Als de lange naam niet wordt bepaald, wordt korte gelezen van het verzoek.
 
 <table> 
  <tbody> 
@@ -52,43 +55,43 @@ Hier volgt een lijst met de queryparameters voor bulkeditors:
   </tr> 
   <tr> 
    <td> rootPath / rp<br /> </td> 
-   <td> Tekenreeks </td> 
+   <td> String </td> 
    <td> zoekhoofdpad</td> 
   </tr> 
   <tr> 
    <td> queryParams / qp<br /> </td> 
-   <td> Tekenreeks</td> 
+   <td> String</td> 
    <td> zoekquery</td> 
   </tr> 
   <tr> 
    <td> contentMode / cm<br /> </td> 
    <td> Boolean</td> 
-   <td> wanneer waar (true), wordt de inhoudsmodus ingeschakeld<br /> </td> 
+   <td> indien waar (true), wordt de inhoudsmodus ingeschakeld<br /> </td> 
   </tr> 
   <tr> 
    <td> colsValue / cv<br /> </td> 
-   <td> Tekenreeks[]</td> 
+   <td> String[]</td> 
    <td> gezochte eigenschappen (gecontroleerde waarden van colsSelection weergegeven als checkboxes)</td> 
   </tr> 
   <tr> 
    <td> extraCols / ec<br /> </td> 
-   <td> Tekenreeks[]</td> 
+   <td> String[]</td> 
    <td> extra gezochte eigenschappen (die in een komma-gescheiden tekstgebied worden getoond)</td> 
   </tr> 
   <tr> 
    <td> initialSearch / is<br /> </td> 
    <td> Boolean</td> 
-   <td> wanneer waar (true), wordt de query uitgevoerd op paginading<br /> </td> 
+   <td> indien waar (true), wordt de query uitgevoerd bij het laden van de pagina<br /> </td> 
   </tr> 
   <tr> 
    <td> colsSelection / cs<br /> </td> 
-   <td> Tekenreeks[]</td> 
+   <td> String[]</td> 
    <td> selectie van gezochte eigenschappen (weergegeven als selectievakjes)</td> 
   </tr> 
   <tr> 
    <td> showGridOnly / sgo<br /> </td> 
    <td> Boolean</td> 
-   <td> Indien waar (true), wordt alleen het raster weergegeven en niet het deelvenster Zoeken <br /> </td> 
+   <td> indien waar (true), alleen het raster en niet het deelvenster Zoeken wordt weergegeven <br /> </td> 
   </tr> 
   <tr> 
    <td> searchPanelCollapsed / spc</td> 
@@ -167,14 +170,14 @@ Hier volgt een lijst met de queryparameters voor bulkeditors:
 
 Deze sectie verstrekt een overzicht van hoe te om de bulkredacteur te gebruiken en geeft een beschrijving van de bestaande die component van de Geometrixx op de bulkredacteur wordt gebaseerd: de component Productlijst.
 
-Met de component Productlijst kunnen gebruikers een tabel met gegevens weergeven en bewerken. U kunt bijvoorbeeld de component Productlijst gebruiken om producten in een catalogus te vertegenwoordigen. De informatie wordt weergegeven in een standaard HTML-tabel en alle bewerkingen worden uitgevoerd in het dialoogvenster **Bewerken**, dat een BulkEditor-widget bevat. (Deze Bulk-editor is precies hetzelfde als de editor die u kunt openen via /etc/importers/bulkeditor.html of via het menu Gereedschappen). De component van de Lijst van het Product is gevormd voor specifieke, beperkte bulkredacteursfunctionaliteit. Elk deel van de bulkredacteur (of componenten die uit de bulkredacteur worden afgeleid) kan worden gevormd.
+Met de component Productlijst kunnen gebruikers een tabel met gegevens weergeven en bewerken. U kunt bijvoorbeeld de component Productlijst gebruiken om producten in een catalogus te vertegenwoordigen. De informatie wordt weergegeven in een standaard HTML-tabel en alle bewerkingen worden uitgevoerd in het dialoogvenster **Bewerken** , die een BulkEditor-widget bevat. (Deze Bulk-editor is precies hetzelfde als de editor die u kunt openen via /etc/importers/bulkeditor.html of via het menu Gereedschappen). De component van de Lijst van het Product is gevormd voor specifieke, beperkte bulkredacteursfunctionaliteit. Elk deel van de bulkredacteur (of componenten die uit de bulkredacteur worden afgeleid) kan worden gevormd.
 
 Met de bulkeditor kunt u de rijen toevoegen, wijzigen, verwijderen, filteren en exporteren, wijzigingen opslaan en een set rijen importeren. Elke rij wordt opgeslagen als een knoop onder de de componenteninstantie van de Lijst van het Product zelf. Elke cel is een eigenschap van elk knooppunt. Dit is een ontwerpkeuze die eenvoudig kan worden gewijzigd. U kunt knooppunten bijvoorbeeld ergens anders in de opslagplaats opslaan. De rol van de vraagserver is de lijst van de knopen terug te keren aan vertoning; het zoekpad wordt gedefinieerd als een instantie van de productlijst.
 
 De broncode van de component Product List is beschikbaar in de gegevensopslagruimte op /apps/geometrixx/components/productlist en bestaat uit verschillende onderdelen, zoals alle AEM:
 
-* HTML-rendering: wordt de rendering uitgevoerd in een JSP-bestand (/apps/geometrixx/components/productlist/productlist.jsp). JSP leest subnodes van de huidige component van de Lijst van het Product en toont elk van hen als rij van een HTML- lijst.
-* Het dialoogvenster Bewerken waarin u de configuratie van de Bulk-editor definieert. Configureer het dialoogvenster zodat dit voldoet aan de behoeften van de component: beschikbare kolommen en mogelijke acties die worden uitgevoerd op het raster of op de zoekopdracht. Zie [bulkbewerkingsconfiguratieeigenschappen](#bulk-editor-configuration-properties) voor informatie over alle configuratieeigenschappen.
+* HTML renderen: wordt de rendering uitgevoerd in een JSP-bestand (/apps/geometrixx/components/productlist/productlist.jsp). JSP leest subnodes van de huidige component van de Lijst van het Product en toont elk van hen als rij van een lijst van HTML.
+* Het dialoogvenster Bewerken waarin u de configuratie van de Bulk-editor definieert. Configureer het dialoogvenster zodat dit voldoet aan de behoeften van de component: beschikbare kolommen en mogelijke acties die worden uitgevoerd op het raster of op de zoekopdracht. Zie [configuratieeigenschappen van bulkeditors](#bulk-editor-configuration-properties) voor informatie over alle configuratieeigenschappen.
 
 Hier volgt een XML-weergave van de subknooppunten van het dialoogvenster:
 
@@ -267,7 +270,7 @@ Hier volgt een XML-weergave van de subknooppunten van het dialoogvenster:
         </editor>
 ```
 
-### Eigenschappen van configuratie-bulkeditor {#bulk-editor-configuration-properties}
+### Eigenschappen van Bulkeditor {#bulk-editor-configuration-properties}
 
 Elk deel van de bulkredacteur kan worden gevormd. De volgende lijst maakt een lijst van alle configuratieeigenschappen voor de bulkredacteur.
 
@@ -447,7 +450,7 @@ Elk deel van de bulkredacteur kan worden gevormd. De volgende lijst maakt een li
  </tbody> 
 </table>
 
-### Configuratie van metagegevens van kolommen {#columns-metadata-configuration}
+### Configuratie van kolommetagegevens {#columns-metadata-configuration}
 
 U kunt voor elke kolom vormen:
 
@@ -461,7 +464,7 @@ CSS- en alleen-lezen kolommen
 De bulkredacteur heeft drie kolomconfiguraties:
 
 * CSS-klassenaam van cel (cellCls): een CSS klassennaam die aan elke cel van de gevormde kolom wordt toegevoegd.
-* Celstijl (cellStyle): een HTML-stijl die aan elke cel van de geconfigureerde kolom wordt toegevoegd.
+* Celstijl (cellStyle): een stijl van HTML die aan elke cel van de gevormde kolom wordt toegevoegd.
 * Alleen-lezen (alleen-lezen): read only wordt geplaatst voor elke cel van de gevormde kolom.
 
 De configuratie moet als volgt worden gedefinieerd:
@@ -513,19 +516,19 @@ Het volgende voorbeeld is te vinden in de component productlist (/apps/geometrix
 
 **Selectievakje**
 
-Als het checkbox configuratiebezit aan waar wordt geplaatst, worden alle cellen van de kolom teruggegeven als checkboxes. Een aangevinkt vakje verzendt **true** naar de server Save servlet, anders **false**. In het kopbalmenu kunt u ook **all** of **select none** selecteren. Deze opties worden ingeschakeld als de geselecteerde koptekst de koptekst van een kolom in het selectievakje is.
+Als het checkbox configuratiebezit aan waar wordt geplaatst, worden alle cellen van de kolom teruggegeven als checkboxes. Een selectievakje verzendt **true** naar de server Save servlet, **false** anders. In het koptekstmenu kunt u ook **alles selecteren** of **geen selecteren**. Deze opties worden ingeschakeld als de geselecteerde koptekst de koptekst van een kolom in het selectievakje is.
 
 In het eerste voorbeeld bevat de selectiekolom alleen selectievakjes als checkbox=&quot;true&quot;.
 
 **Geforceerde positie**
 
-Met de metagegevens voor geforceerde positie kunt u opgeven waar de kolom in het raster wordt geplaatst: 0 is de eerste plaats en &lt;aantal kolommen>-1 is de laatste positie. Eventuele andere waarden worden genegeerd.
+Met de metagegevens voor geforceerde positie kunt u opgeven waar de kolom in het raster wordt geplaatst: 0 is de eerste plaats en &lt;number of=&quot;&quot; columns=&quot;&quot;>-1 is de laatste positie. Eventuele andere waarden worden genegeerd.
 
 In het eerste voorbeeld is de selectiekolom de eerste kolom zoals forcePosition=&quot;0&quot;.
 
 ### Query-server {#query-servlet}
 
-Door gebrek, kan servlet van de Vraag bij `/libs/wcm/core/components/bulkeditor/json.java` worden gevonden. U kunt een ander pad configureren om de gegevens op te halen.
+Standaard kunt u de Query-server vinden op `/libs/wcm/core/components/bulkeditor/json.java`. U kunt een ander pad configureren om de gegevens op te halen.
 
 De servlet van de Vraag werkt als volgt: het ontvangt een vraag GQL en de kolommen om terug te keren, verwerkt de resultaten, en verzendt de resultaten terug naar de bulkredacteur als stroom JSON.
 
@@ -557,13 +560,13 @@ U kunt de server van de Vraag uitbreiden om een complex overervingsmodel terug t
 
 ### Servlet opslaan {#save-servlet}
 
-In de standaardconfiguratie van de bulkredacteur is elke rij een knoop en de weg van deze knoop wordt opgeslagen in het rijverslag. De bulkredacteur houdt het verband tussen de rij en de knoop door de jcr weg. Wanneer een gebruiker het raster bewerkt, wordt een lijst met alle wijzigingen gemaakt. Wanneer een gebruiker **sparen** klikt, wordt een vraag van de POST verzonden naar elke weg met de bijgewerkte eigenschappen waarden. Dit is de basis van het Sling-concept en het werkt goed als elke cel een eigenschap van het knooppunt is. Maar als servlet van de Vraag wordt uitgevoerd om overervingsberekening uit te voeren, kan dit model niet als bezit werken dat door servlet van de Vraag is teruggekeerd kan van een andere knoop worden geërft.
+In de standaardconfiguratie van de bulkredacteur is elke rij een knoop en de weg van deze knoop wordt opgeslagen in het rijverslag. De bulkredacteur houdt het verband tussen de rij en de knoop door de jcr weg. Wanneer een gebruiker het raster bewerkt, wordt een lijst met alle wijzigingen gemaakt. Wanneer een gebruiker klikt **Opslaan**, wordt een vraag van de POST verzonden naar elk weg met de bijgewerkte eigenschappen waarden. Dit is de basis van het Sling-concept en het werkt goed als elke cel een eigenschap van het knooppunt is. Maar als servlet van de Vraag wordt uitgevoerd om overervingsberekening uit te voeren, kan dit model niet als bezit werken dat door servlet van de Vraag is teruggekeerd kan van een andere knoop worden geërft.
 
 Het serverconcept Opslaan is dat de wijzigingen niet rechtstreeks naar elk knooppunt worden gepost, maar naar één servlet die de opslagtaak uitvoert. Dit geeft servlet de mogelijkheid om de wijzigingen te analyseren en de eigenschappen op de juiste knoop te bewaren.
 
 Elke bijgewerkte eigenschap wordt in de volgende indeling naar de servlet verzonden:
 
-* Parameternaam: &lt;jcr path>/&lt;property name>
+* Parameternaam: &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
 
    Voorbeeld: /content/geometrixx/nl/products/jcr:content/par/productlist/1258674859000/SellingSku
 
@@ -573,6 +576,6 @@ Elke bijgewerkte eigenschap wordt in de volgende indeling naar de servlet verzon
 
 servlet moet weten waar het catalogCode bezit wordt opgeslagen.
 
-Een standaard Save servlet implementatie is beschikbaar in /libs/wcm/bulkeditor/save/POST.jsp en wordt gebruikt in de component van de Lijst van het Product. Alle parameters van de aanvraag (met de indeling &lt;jcr path>/&lt;property name>) worden gebruikt en eigenschappen op knooppunten worden geschreven met de JCR API. Er wordt ook een knooppunt gemaakt als deze niet bestaan (raster ingevoegde rijen).
+Een standaard Save servlet implementatie is beschikbaar in /libs/wcm/bulkeditor/save/POST.jsp en wordt gebruikt in de component van de Lijst van het Product. Het neemt alle parameters van het verzoek (met a &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> en schrijft eigenschappen op knooppunten die de JCR API gebruiken. Er wordt ook een knooppunt gemaakt als deze niet bestaan (raster ingevoegde rijen).
 
-De standaardcode zou niet moeten worden gebruikt aangezien het is wat de server native (een POST op &lt;jcr weg>/&lt;property name>) uitvoert en daarom slechts een goed uitgangspunt voor de bouw van sparen servlet is die een model van de bezitsovererving zal beheren.
+De standaardcode zou niet moeten worden gebruikt zoals het is herimplementeert wat de server native doet (een POST op &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) en is daarom slechts een goed uitgangspunt voor de bouw van sparen servlet die een model van de bezitsovererving zal beheren.

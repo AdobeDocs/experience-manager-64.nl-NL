@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: e68b5a5c-e12a-4b7b-b607-451ef8fdeff0
-source-git-commit: a9459872f9ce8e68dccb46e7dfddebe9eeb39bd4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1586'
 ht-degree: 0%
 
 ---
 
 # Het framework voor vertaalintegratie configureren{#configuring-the-translation-integration-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Het vertaalintegratiekader integreert met vertaaldiensten van derden om de vertaling van AEM inhoud te ordenen.
 
@@ -26,14 +30,14 @@ Het vertaalintegratiekader integreert met vertaaldiensten van derden om de verta
 * Creeer een configuratie van het Kader van de Integratie van de Vertaling.
 * Koppel de cloudconfiguraties aan uw pagina&#39;s.
 
-Zie [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md) voor een overzicht van de functies voor het vertalen van inhoud in AEM.
+Voor een overzicht van de vertaalfuncties voor inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
 Maak een cloudconfiguratie die AEM verbindt met uw vertaalserviceprovider. AEM biedt standaard de mogelijkheid verbinding te maken met Microsoft Translator.
 De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor de Vertaalprojecten. Koppelingen voor meer informatie over de integratie:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
+* [Translaties.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologieën](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -53,11 +57,10 @@ De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor d
 >
 >* [AEM menselijke vertaling](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM machinevertaling](https://www.adobe.com/go/aem-machine-translation-connectors)
-
 >
 
 
-Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar tot stand brengen. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een wolkenconfiguratie voor de schakelaar van de Vertaler van Microsoft, zie [Integrating met de Vertaler van Microsoft](/help/sites-administering/tc-msconf.md).
+Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar tot stand brengen. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een cloudconfiguratie voor de Microsoft Translator-aansluiting raadpleegt u [Integreren met Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
 Indien nodig kunt u meerdere cloudconfiguraties voor dezelfde aansluiting maken. U kunt bijvoorbeeld één configuratie maken voor elk van de accounts of projecten die u bij dezelfde leverancier hebt.
 
@@ -75,9 +78,9 @@ Nadat u een kaderconfiguratie creeert, associeert u de wolkenconfiguratie met de
 
 Wanneer verschillende gedeelten van uw website verschillende vertaalvereisten hebben, kunt u overeenkomstig meerdere frameworkconfiguraties maken. Een meertalige website bevat bijvoorbeeld kopieën in de Engelse, Spaanse en Japanse taal. De eigenaar van de site gebruikt twee verschillende vertaalserviceproviders voor Spaanse en Japanse vertalingen. Daarom worden twee configuraties van het kader gevormd. Elke configuratie gebruikt een verschillende leverancier van vertaaldiensten.
 
-Nadat u een kader van de vertaalintegratie vormt, kunt u [het met de pagina&#39;s ](/help/sites-administering/tc-prep.md) associëren die het gebruiken.
+Nadat u een vertaalintegratieframework hebt geconfigureerd, kunt u [koppelen aan de pagina&#39;s](/help/sites-administering/tc-prep.md) die het gebruiken.
 
-**Opmerking:** Zie Inhoud  [omzetten voor meertalige sites](/help/sites-administering/translation.md) voor een overzicht van de functies voor het vertalen van inhoud in AEM.
+**Opmerking:** Voor een overzicht van de vertaalfuncties voor inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud, community-inhoud en elementen moeten worden omgezet.
 ![chlimage_1-386](assets/translation-config-64.jpg)
@@ -131,7 +134,7 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
 
 ### Eigenschappen van Gemeenschappen {#communities-configuration-properties}
 
-De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated inhoud wordt uitgevoerd. Voor het vertalen van door de gebruiker gegenereerde inhoud wordt altijd machinevertaling gebruikt. Zie [Door gebruiker gegenereerde inhoud omzetten](/help/communities/translate-ugc.md) voor meer informatie.
+De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated inhoud wordt uitgevoerd. Voor het vertalen van door de gebruiker gegenereerde inhoud wordt altijd machinevertaling gebruikt. Zie voor meer informatie [Door gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md).
 
 | Eigenschap | Beschrijving |
 |---|---|
@@ -141,7 +144,7 @@ De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated 
 
 ### Eigenschappen van middelenconfiguratie {#assets-configuration-properties}
 
-De eigenschappen van activa bepalen hoe te om activa te vormen. Zie [Taalkopieën maken voor elementen](/help/assets/translation-projects.md) voor meer informatie over het vertalen van elementen.
+De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer informatie over het vertalen van elementen [Taalkopieën voor middelen maken](/help/assets/translation-projects.md).
 
 <table> 
  <tbody> 
@@ -188,7 +191,7 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie [Taalkopieë
 1. Klik of tik in de zijbalk op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
 1. In het gebied van de Integratie van de Vertaling, bepaalt of om het even welke configuraties zijn gecreeerd welke verbinding verschijnt:
 
-   * Als er geen configuraties zijn gemaakt, klikt u of tikt u op Nu configureren.
+   * Als er geen configuraties zijn gemaakt, klikt of tikt u op Nu configureren.
    * Als er al configuraties zijn, klikt of tikt u op Configuraties tonen en klikt of tikt u op de +-koppeling naast Beschikbare configuraties.
 
 1. Typ een naam voor de configuratie en klik op Maken of tik op Maken.
@@ -205,9 +208,9 @@ Merk op dat de cloudconfiguratie van het vertaalintegratieframework de cloudconf
 
 Wanneer u een pagina aan een wolkenconfiguratie associeert, erven de nakomelingen van de pagina de vereniging. Als u bijvoorbeeld de pagina /content/geometrixx/nl/products aan een Translation Integration Framework koppelt, worden de pagina Producten en alle onderliggende pagina&#39;s vertaald volgens het framework.
 
-Indien nodig kunt u de koppeling op een afstammende pagina overschrijven. De inhoud van een website gaat bijvoorbeeld vooral over kleding. Eén vertakking met pagina&#39;s beschrijft het bedrijf echter. De hoofdpagina van de site is gekoppeld aan een vertaalintegratieframework dat automatische vertaling opgeeft met de categorie Koud. De tak die het bedrijf beschrijft gebruikt een kader dat machinevertaling gebruikend de Algemene categorie uitvoert.
+Indien nodig, kunt u de koppeling op een afstammende pagina overschrijven. De inhoud van een website gaat bijvoorbeeld vooral over kleding. Eén vertakking met pagina&#39;s beschrijft het bedrijf echter. De hoofdpagina van de site is gekoppeld aan een vertaalintegratieframework dat automatische vertaling opgeeft met de categorie Koud. De tak die het bedrijf beschrijft gebruikt een kader dat machinevertaling gebruikend de Algemene categorie uitvoert.
 
-Verder, voor om het even welke gemeenschappen [SCF componenten](/help/communities/scf.md) op de pagina&#39;s, zal de gebruiker geproduceerde inhoud (UGC) de capaciteit voor gebruikers omvatten om inhoud te vertalen. Zie [Vertaling van door de gebruiker gegenereerde inhoud](/help/communities/translate-ugc.md) voor meer informatie.
+Voor alle gemeenschappen [SCF-componenten](/help/communities/scf.md) op de pagina&#39;s bevat de door de gebruiker gegenereerde inhoud (UGC) de mogelijkheid voor gebruikers om inhoud te vertalen. Zie voor meer informatie [Vertaling van door de gebruiker gegenereerde inhoud](/help/communities/translate-ugc.md).
 
 ### Een pagina koppelen aan een vertaalbureau {#associating-a-page-with-a-translation-provider}
 

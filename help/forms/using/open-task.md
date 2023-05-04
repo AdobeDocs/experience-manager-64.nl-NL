@@ -1,27 +1,30 @@
 ---
 title: Een taak openen
-seo-title: Een taak openen
+seo-title: Opening a task
 description: Stappen om een taak te openen in uw AEM Forms-app.
-seo-description: Stappen om een taak te openen in uw AEM Forms-app.
+seo-description: Steps to open a task on your AEM Forms app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 exl-id: c87a35d5-3371-472d-af28-14d3412d6ebe
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
 
 # Een taak openen {#opening-a-task}
 
-Als de AEM Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd. Bijvoorbeeld, zie [Conard krijgt de beoordelingstaak in de de verwijzingsplaats van het Gov van de Geometrixx.](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). U kunt wijzigingen aanbrengen in elke taak die momenteel aan u is toegewezen. Alle taken zijn beschikbaar op het lusje van de Taak. Taken die als concepten zijn opgeslagen, blijven op het tabblad Taken staan.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [Concepten](/help/forms/using/save-as-draft.md) opslaan.
+Als de AEM Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd. Zie bijvoorbeeld [Conard krijgt de beoordelingstaak in de de verwijzingsplaats van de Gov van de Geometrixx](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). U kunt wijzigingen aanbrengen in elke taak die momenteel aan u is toegewezen. Alle taken zijn beschikbaar op het lusje van de Taak. Taken die als concepten zijn opgeslagen, blijven op het tabblad Taken staan.
+
+Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [Concepten opslaan](/help/forms/using/save-as-draft.md).
 
 **Een taak openen**
 
@@ -34,11 +37,11 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [
 
 1. Tik op de taak om deze te openen.
 
-   U kunt **Samenvatting van de Mening** tikken om extra instructies te bekijken die in het proces Workbench worden gespecificeerd.
+   U kunt tikken **Overzicht weergeven** om aanvullende instructies weer te geven die zijn opgegeven in het Workbench-proces.
 
 **Een toepassing openen**
 
-1. Tik op de **toepassing** op het tabblad **Forms**.
+1. Tik op de knop **toepassing** in de **Forms** tab.
 
    Wanneer u een toepassing selecteert, wordt de beschrijving van de toepassing onder de toepassingsnaam weergegeven. Na de beschrijving worden de gebruikershandeling/handelingen die aan de toepassing zijn gekoppeld, weergegeven.
 
@@ -47,4 +50,4 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [
 
 1. Tik op de taak om deze te openen.
 
-   Tik op **Samenvatting weergeven** om aanvullende instructies weer te geven die voor de toepassing zijn opgegeven.
+   U kunt tikken **Overzicht weergeven** om extra instructies te bekijken die voor de toepassing worden gespecificeerd.

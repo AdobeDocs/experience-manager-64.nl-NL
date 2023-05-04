@@ -1,8 +1,8 @@
 ---
 title: Functie voor aanbevolen inhoud
-seo-title: Functie voor aanbevolen inhoud
-description: 'Met de functie Aanbevolen inhoud kunnen aangemelde sitebezoekers inhoud markeren '
-seo-description: 'Met de functie Aanbevolen inhoud kunnen aangemelde sitebezoekers inhoud markeren '
+seo-title: Featured Content Feature
+description: Met de functie Aanbevolen inhoud kunnen aangemelde sitebezoekers inhoud markeren
+seo-description: The Featured Content feature lets signed-in site visitors highlight content
 uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,15 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 exl-id: a0dcffed-1040-4d6d-b8e9-3bbe5f30deb4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
 
-# Kenmerk aanbevolen inhoud {#featured-content-feature}
+# Functie voor aanbevolen inhoud {#featured-content-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -37,54 +40,54 @@ De mogelijkheid om inhoud te voorzien van functies is per component mogelijk toe
 In deze sectie van de documentatie wordt beschreven
 
 * Aanbevolen inhoud toevoegen aan een communitysite
-* De montages van de configuratie voor `Featured Content`component
+* De montages van de configuratie voor de `Featured Content`component
 
 ## Aanbevolen inhoud toevoegen aan een pagina {#adding-featured-content-to-a-page}
 
-Als u een `Featured Content`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Featured Content` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van
 
 * `Communities / Featured Content`
 
 en sleep de inhoud naar de juiste plaats op een pagina waar de aanbevolen inhoud moet worden weergegeven.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](essentials-featured.md#essentials-for-client-side) worden opgenomen, wordt de `Featured Content`component als volgt weergegeven:
+Wanneer de [vereiste clientbibliotheken](essentials-featured.md#essentials-for-client-side) worden opgenomen, is dit hoe `Featured Content`wordt weergegeven:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
 ## Aanbevolen inhoud configureren {#configuring-featured-content}
 
-Selecteer de geplaatste `Featured Content` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `Featured Content` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![chlimage_1-14](assets/chlimage_1-14.png) ![chlimage_1-15](assets/chlimage_1-15.png)
 
-### Tabblad Instellingen {#settings-tab}
+### Het tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **[!UICONTROL Settings]** aan welke inhoud u wilt gebruiken:
+Onder de **[!UICONTROL Settings]** , geeft u aan welke inhoud u wilt gebruiken:
 
 * **[!UICONTROL Display Name]**
 De titel voor de lijst met aanbevolen inhoud. Bijvoorbeeld 
-`Featured Questions` or `Featured Ideas`. De standaardwaarde is `Featured Content` als deze leeg wordt gelaten.
+`Featured Questions` of `Featured Ideas`. Standaard is `Featured Content` indien leeg gelaten.
 
 * **[!UICONTROL Location of the Featured Content]**
 
-   *(Vereist)* Blader naar de pagina die de inhoud bevat die mogelijk aanwezig is (onderdelen van die pagina moeten zo zijn geconfigureerd dat aanbevolen inhoud is toegestaan). Bijvoorbeeld, `/content/sites/engage/en/forum`
+   *(Vereist)* Blader naar de pagina die de inhoud bevat die mogelijk aanwezig is (componenten van die pagina moeten zo zijn geconfigureerd dat aanbevolen inhoud is toegestaan). Bijvoorbeeld, `/content/sites/engage/en/forum`
 
 * **[!UICONTROL Display Limit]**
 Het maximumaantal aanbevolen inhoud dat kan worden weergegeven. De standaardwaarde is 5.
 
-## Ervaring {#site-visitor-experience} voor bezoekers van site
+## Ervaring met sitebezoekers {#site-visitor-experience}
 
 De capaciteit om inhoud als kenmerkende inhoud te markeren vereist moderatorvoorrechten.
 
-Wanneer een moderator geposte inhoud bekijkt, hebben zij toegang tot de vlaggen van de in-context moderatie, die de nieuwe `Feature` vlag omvat.
+Wanneer een moderator geposte inhoud bekijkt, hebben zij toegang tot de vlaggen van de in-context moderatie, die nieuwe omvat `Feature` markering.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-Als de markering eenmaal is gemarkeerd als functie, verandert de markering voor beweging in `Unfeature`.
+Als de markering voor beweging eenmaal is gemarkeerd, wordt de markering voor beweging ingesteld op `Unfeature`.
 
-Deze post wordt nu opgenomen op de pagina die de component `Featured Content` bevat.
+De pagina met de `Featured Content` bevat nu dit bericht.
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -92,6 +95,6 @@ Deze post wordt nu opgenomen op de pagina die de component `Featured Content` be
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Aanbevolen inhoud](essentials-featured.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Aanbevolen inhoud](essentials-featured.md) pagina voor ontwikkelaars.
 
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor het markeren van inhoud zoals aanbevolen.
+Voor het markeren van inhoud zoals aanbevolen raadpleegt u [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).

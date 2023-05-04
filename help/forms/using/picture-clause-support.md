@@ -1,8 +1,8 @@
 ---
 title: Ondersteuning voor afbeeldingsclausules voor HTML5-formulieren
-seo-title: Ondersteuning voor afbeeldingsclausules voor HTML5-formulieren
-description: HTML5-formulieren ondersteunen de XFA-afbeeldingscomponent voor de weergavewaarde en de opgemaakte waarde voor datum, tekst en numerieke symbolen.
-seo-description: HTML5-formulieren ondersteunen de XFA-afbeeldingscomponent voor de weergavewaarde en de opgemaakte waarde voor datum, tekst en numerieke symbolen.
+seo-title: Picture clause support for HTML5 forms
+description: HTML5-formulieren ondersteunen de XFA-afbeeldingsvoorwaarde voor de weergavewaarde en de opgemaakte waarde voor datum, tekst en numerieke symbolen.
+seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
 exl-id: b63758f1-b375-4c05-bd53-69e0346733c6
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 5%
+source-wordcount: '648'
+ht-degree: 0%
 
 ---
 
 # Ondersteuning voor afbeeldingsclausules voor HTML5-formulieren {#picture-clause-support-for-html-forms}
 
-HTML5-formulieren ondersteunen de XFA-afbeeldingscomponent voor de weergavewaarde en de opgemaakte waarde voor datum, tekst en numerieke symbolen. De volgende uitdrukkingen van de Beeldclausule worden gesteund:
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+HTML5-formulieren ondersteunen de XFA-afbeeldingsvoorwaarde voor de weergavewaarde en de opgemaakte waarde voor datum, tekst en numerieke symbolen. De volgende uitdrukkingen van de Beeldclausule worden gesteund:
 
 * category (locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}
@@ -69,26 +72,26 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
   </tr>
   <tr>
    <td>MMM</td> 
-   <td>Afkorting van de naam van de maand van de huidige landinstelling<br /> </td> 
+   <td>Verkorte naam van de maand van de huidige landinstelling<br /> </td> 
   </tr>
   <tr>
    <td>MMMM</td> 
    <td>Volledige naam maand van huidige landinstelling<br /> </td> 
   </tr>
   <tr>
-   <td>EEE</td> 
-   <td>Afgekort op weekdagnaam van de huidige landinstelling<br /> </td> 
+   <td>EEA</td> 
+   <td>Verkorte weekdagnaam van de huidige landinstelling<br /> </td> 
   </tr>
   <tr>
    <td>EEEE</td> 
    <td>Volledige weekdagnaam van de huidige landinstelling<br /> </td> 
   </tr>
   <tr>
-   <td>YY</td> 
+   <td>JJ</td> 
    <td>Jaar met twee cijfers, waarbij 00 = 2000, 29 = 2029, 30 = 1930 en 99 = 1999<br /> </td> 
   </tr>
   <tr>
-   <td>YYYY</td> 
+   <td>JJJJ</td> 
    <td>Jaar met vier cijfers<br /> </td> 
   </tr>
  </tbody>
@@ -96,19 +99,19 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
 
 ## Numerieke afbeeldingsclausule {#numeric-picture-clause}
 
-HTML5-formulieren ondersteunen numerieke afbeeldingssymbolen. Er is echter een verschil in ondersteuning tussen PDF forms en HTML Forms.
+HTML5-formulieren ondersteunen numerieke afbeeldingssymbolen. Er is echter een verschil in steun tussen PDF forms en HTML Forms.
 
-In **PDF forms** wordt een getal opgemaakt ongeacht het aantal symbolen in de Fotocomponent
+In **PDF forms**, wordt een getal opgemaakt ongeacht het aantal symbolen in de afbeeldingscomponent
 
-In **HTML Forms** wordt een getal alleen opgemaakt als het getal cijfers bevat die kleiner zijn dan het aantal symbolen in de Fotocomponent.
+In **HTML Forms**, wordt een getal alleen opgemaakt als het getal cijfers bevat die kleiner zijn dan het aantal symbolen in de Fotocomponent.
 
 **Voorbeeld**: Neem bijvoorbeeld een afbeeldingsvoorwaarde: num{zzz,zzz,zz9}.
 
-Het getal **10000** wordt opgemaakt als **10.000** in zowel HTML als PDF forms.
+Het getal **10000** is opgemaakt als **10 000** zowel in HTML als in PDF forms.
 
-Het getal 1000000 wordt opgemaakt als 1000.000 in PDF forms. In HTML Forms blijft het getal echter niet opgemaakt als 1000000.
+Het getal 1000000 wordt opgemaakt als 1000.000 in PDF forms. In HTML Forms blijft het getal echter ongeformatteerd als 1000000.
 
-Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn:
+Ondersteunde expressies voor de component Numeriek beeld in **HTML Forms** zijn:
 
 * num.integer{}
 * num.decimal{}
@@ -125,7 +128,7 @@ Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn
   </tr>
   <tr>
    <td>9</td> 
-   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor het nul-cijfer als de inputgegevens of een ruimte in de overeenkomstige positie leeg zijn.<br /> </td> 
+   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor het cijfer nul als de invoergegevens leeg zijn of een ruimte op de corresponderende positie.<br /> </td> 
    <td>Eén cijfer</td> 
   </tr>
   <tr>
@@ -140,7 +143,7 @@ Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn
   </tr>
   <tr>
    <td>E</td> 
-   <td><strong>Uitvoeropmaak</strong>: het exponentgedeelte van een drijvende-kommagetal bestaande uit het exponentiële symbool (E). gevolgd door een optioneel plus- of minteken. Gevolgd door de exponentwaarde.<br /> </td> 
+   <td><strong>Uitvoeropmaak</strong>: het exponentgedeelte van een drijvende-kommagetal bestaande uit het exponentiële symbool (E). gevolgd door een optioneel plus- of minteken. Wordt gevolgd door de exponentwaarde.<br /> </td> 
    <td>Hetzelfde als voor uitvoeropmaak</td> 
   </tr>
   <tr>
@@ -150,7 +153,7 @@ Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn
   </tr>
   <tr>
    <td>S of s<br /> </td> 
-   <td>Uitvoeropmaak: een minteken als het getal negatief is. Anders spatie.<br /> </td> 
+   <td>Uitvoeropmaak: een minteken als het getal negatief is. Anders ruimte.<br /> </td> 
    <td>Min teken als het getal negatief is. plusteken als het getal positief is</td> 
   </tr>
   <tr>
@@ -201,7 +204,7 @@ Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn
  </tbody>
 </table>
 
-## Tekstbeeldingsclausule {#text-picture-clause}
+## Clausule tekstafbeelding {#text-picture-clause}
 
 HTML5-formulieren ondersteunen de volgende Text Picture-componentexpressies:
 

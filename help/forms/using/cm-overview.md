@@ -1,8 +1,8 @@
 ---
 title: Overzicht van Correspondentenbeheer
-seo-title: Correspondentenbeheer
+seo-title: Correspondence Management
 description: Dit onderwerp geeft u een overzicht van Correspondentiebeheer.
-seo-description: Dit onderwerp geeft u een overzicht van Correspondentiebeheer.
+seo-description: This topic gives you an overview of Correspondence Management.
 uuid: fa230c7e-fef1-4996-bdda-1637b36dac68
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,15 +10,18 @@ topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 feature: Correspondence Management
 exl-id: 3cda92c9-5f3e-4704-a52b-55eda3b3fd2a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
 
-# Overzicht Correspondentenbeheer {#correspondence-management-overview}
+# Overzicht van Correspondentenbeheer {#correspondence-management-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 

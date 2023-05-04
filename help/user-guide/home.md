@@ -1,26 +1,29 @@
 ---
 title: AEM 6.4 de Hub van de Gids van de Gebruiker
-seo-title: AEM 6.4 de Hub van de Gids van de Gebruiker
+seo-title: AEM 6.4 User Guide Hub
 description: Een overzicht van alle essentiële bronnen voor het begrijpen, installeren, beheren en gebruiken van AEM 6.4
-seo-description: Een overzicht van alle essentiële bronnen voor het begrijpen, installeren, beheren en gebruiken van AEM 6.4
+seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: dbeb093b-489b-46c3-b136-e33a430793e0
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '250'
 ht-degree: 1%
 
 ---
 
-# AEM 6.4 Hub van de Gids van de Gebruiker {#aem-64-user-guide}
+# AEM 6.4 de Hub van de Gids van de Gebruiker {#aem-64-user-guide}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
 | [Eerste stappen](https://helpx.adobe.com/experience-manager/get-started.html) | [Functievideo&#39;s](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html) | [Releaseopmerkingen](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) |
 |:-:|:-:|:-:|
-| Zelfstudies en artikelen om aan de slag te gaan met AEM | Een selectie video&#39;s waarin de nieuwe functies van 6.4 worden benadrukt | Ontdek nieuwe functies in AEM 6.4 |
+| Zelfstudies en artikelen voor AEM | Een selectie video&#39;s waarin de nieuwe functies van 6.4 worden benadrukt | Ontdek nieuwe functies in AEM 6.4 |
 
 ## Gebruikershandleidingen en -bronnen {#user-guides-and-resources}
 
@@ -45,9 +48,9 @@ Ondersteuningsafgevaardigden kunnen ondersteuning krijgen via:
 
 >[!NOTE]
 >
->Weet u niet zeker of u een **supportafgevaardigde** bent? Kom te weten als dit [gebruikerstype op u](https://helpx.adobe.com/experience-cloud/supported-users.html) van toepassing is en over onze [termijnen van de ondernemingssteun](https://helpx.adobe.com/support/programs/enterprise-support-terms.html) te leren.
+>Niet zeker of u een **supportgedelegeerde**? Ontdek of dit [gebruikerstype is op u van toepassing](https://helpx.adobe.com/experience-cloud/supported-users.html) en meer informatie over onze [voorwaarden voor bedrijfsondersteuning](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
-## Community {#community}
+## Gemeenschap {#community}
 
 Doe mee aan het gesprek!
 

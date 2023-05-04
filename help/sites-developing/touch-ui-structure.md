@@ -1,8 +1,8 @@
 ---
 title: Structuur van de interface voor AEM aanraakbediening
-seo-title: Structuur van de interface voor AEM aanraakbediening
+seo-title: Structure of the AEM Touch-Enabled UI
 description: De interface die is geoptimaliseerd voor aanrakingen, zoals geïmplementeerd in AEM, heeft verschillende onderliggende principes en bestaat uit verschillende sleutelelementen
-seo-description: De interface die is geoptimaliseerd voor aanrakingen, zoals geïmplementeerd in AEM, heeft verschillende onderliggende principes en bestaat uit verschillende sleutelelementen
+seo-description: The touch-optimized UI, as implemented in AEM, has several underlying principles and is made up of several key elements
 uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,21 +10,24 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 exl-id: 9eeb3203-e27a-4960-a4ec-58dd9dd098a2
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
 
-# Structuur van de AEM Touch-Enabled UI{#structure-of-the-aem-touch-enabled-ui}
+# Structuur van de interface voor AEM aanraakbediening{#structure-of-the-aem-touch-enabled-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De AEM interface met aanraakbediening heeft verschillende onderliggende principes en bestaat uit verschillende belangrijke elementen:
 
 ## Consoles {#consoles}
 
-### Basislay-out en formaat {#basic-layout-and-resizing}
+### Basislay-out en -formaat {#basic-layout-and-resizing}
 
 De interface kan zowel voor mobiele apparaten als voor desktopapparaten worden gebruikt, maar in plaats van twee stijlen te maken, heeft Adobe besloten één stijl te gebruiken die voor alle schermen en apparaten werkt.
 
@@ -75,7 +78,7 @@ De standaardwaarde is **Alleen inhoud** (spoorstaaf verborgen).
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-## Pagina-ontwerp {#page-authoring}
+## Pagina&#39;s ontwerpen {#page-authoring}
 
 Bij het ontwerpen van pagina&#39;s ziet u de volgende structurele gebieden.
 
@@ -91,7 +94,7 @@ Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werk
 
 In het bewerkingsframe worden de bewerkingsfuncties gerealiseerd.
 
-Het editorkader is een container (abstract) voor alle *pagina auteurselementen*. Het leeft bovenop het inhoudskader, en omvat:
+Het editorkader is een container (abstract) voor alle *pagina-ontwerpelementen*. Het leeft bovenop het inhoudskader, en omvat:
 
 * de bovenste werkbalk
 * zijpaneel
@@ -128,7 +131,7 @@ Op het tabblad Componenten kunt u een keuze maken uit het bereik van componenten
 
 ### Bedekkingen {#overlays}
 
-Deze bedekken het inhoudskader en worden gebruikt door [layers](#layer) om de mechanica te realiseren van hoe u (volledig transparant) met de componenten en hun inhoud kunt in wisselwerking staan.
+Deze bedekken het inhoudsframe en worden gebruikt door de [lagen](#layer) om te realiseren hoe u (volledig transparant) kunt communiceren met de componenten en hun inhoud.
 
 De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelementen), hoewel ze de juiste componenten in het inhoudsframe bedekken.
 
@@ -157,7 +160,7 @@ De laagschakelaar is beschikbaar als daling onderaan van de toolbar (bij de bove
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Deelwerkbalk {#component-toolbar}
+### Werkbalk Component {#component-toolbar}
 
 Elke instantie van een component zal zijn toolbar tonen wanneer geklikt (of eens of met een langzaam tweemaal klikken). De werkbalk bevat de specifieke handelingen (bijvoorbeeld kopiëren, plakken, open editor) die beschikbaar zijn voor de componentinstantie (Bewerkbaar) op de pagina.
 
@@ -167,6 +170,6 @@ Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst b
 
 ## Aanvullende informatie {#further-information}
 
-Voor meer details over de concepten rond aanraking-toegelaten UI, ga aan het artikel [Concepten van AEM toe:laten UI](/help/sites-developing/touch-ui-concepts.md).
+Ga voor meer informatie over de concepten van de interface met aanraakbediening naar het artikel [Concepten van de interface AEM Touch-Enabled](/help/sites-developing/touch-ui-concepts.md).
 
-Zie de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor meer technische informatie over de pagina-editor met aanraakbediening.
+Voor meer technische informatie raadpleegt u de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor met aanraakbediening.

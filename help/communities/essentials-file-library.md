@@ -1,8 +1,8 @@
 ---
 title: Essentiële elementen bestandsbibliotheek
-seo-title: Essentiële elementen bestandsbibliotheek
+seo-title: File Library Essentials
 description: Werken met de bestandsbibliotheekfunctie
-seo-description: Werken met de bestandsbibliotheekfunctie
+seo-description: Working with the file library feature
 uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 exl-id: 0e9d508e-d7dc-478a-99c0-c6885bcdcb81
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 1%
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
 # Essentiële elementen bestandsbibliotheek {#file-library-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibliotheekfunctie.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -36,10 +39,10 @@ Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibli
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.stem<br /> cq.social.hbs.filelibrary</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.filelibrary</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td> /libs/social/filelibrary/components/hbs/filelibrary/filelibrary.hbs<br /> /libs/social/filelibrary/components/hbs/folder/folder.hbs<br /> /libs/social/filelibrary/components/hbs/folder/item.hbs<br /> /libs/social/filelibrary/components/hbs/document/document.hbs<br /> /libs/social/filelibrary/components/hbs/document/item.hbs<br /> </td> 
   </tr>
   <tr>
@@ -48,7 +51,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibli
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td> 
-   <td>Zie <a href="file-library.md">Bestandsbibliotheekfunctie</a></td> 
+   <td>Zie <a href="file-library.md">Functie bestandsbibliotheek</a></td> 
   </tr>
  </tbody>
 </table>
@@ -63,22 +66,22 @@ Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibli
 
 * [Aanpassingen op de server](server-customize.md)
 
-### Bestandsbibliotheekfunctie {#file-library-function}
+### Functie bestandsbibliotheek {#file-library-function}
 
-Een community-sitestructuur die de functie [File Library](functions.md#file-library-function) bevat, bevat een geconfigureerde `file library`-component.
+Een community-sitestructuur die de [File Library, functie](functions.md#file-library-function)bevat een configuratie `file library` component.
 
 ### Opmerkingen benaderen die zijn gepost voor bestandsbibliotheken (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.\
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
+* [Overzicht opslagbronprovider](srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes

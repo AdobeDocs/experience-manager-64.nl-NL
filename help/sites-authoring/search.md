@@ -1,8 +1,8 @@
 ---
 title: Zoeken
-seo-title: Zoeken
+seo-title: Search
 description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
-seo-description: Vind sneller uw inhoud dankzij uitgebreide zoekopdracht
+seo-description: Find your content faster with comprehensive search
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 6%
+source-wordcount: '548'
+ht-degree: 5%
 
 ---
 
 # Zoeken{#search-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeken, afhankelijk van het middeltype.
 
@@ -26,7 +29,7 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 >
 >Buiten de auteursomgeving zijn andere mechanismen ook beschikbaar voor het zoeken, zoals [Query Builder](/help/sites-developing/querybuilder-api.md) en [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## Basisinformatie zoeken {#search-basics}
+## Grondbeginselen van zoekopdrachten {#search-basics}
 
 Zoeken is beschikbaar op de bovenste werkbalk:
 
@@ -36,17 +39,17 @@ Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag.
 * Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte, enzovoort.
-* Definieer en gebruik een [opgeslagen zoekopdracht](#saved-searches) - op basis van de bovenstaande criteria.
+* Definieer en gebruik een [opgeslagen zoekopdracht](#saved-searches) - op basis van bovenstaande criteria.
 
 >[!NOTE]
 >
->De zoekopdracht kan ook worden aangeroepen door de sneltoets `/` (forward slash) te gebruiken wanneer de zoekrail zichtbaar is.
+>Zoeken kan ook worden aangeroepen door de sneltoets te gebruiken `/` (slash) wanneer de zoekrail zichtbaar is.
 
-## {#search-and-filter} zoeken en filteren
+## Zoeken en filteren {#search-and-filter}
 
 U kunt als volgt uw bronnen zoeken en filteren:
 
-1. Open **Zoeken** (met het vergrootglas in de werkbalk) en voer uw zoekterm in. Er worden voorstellen gedaan die kunnen worden geselecteerd:
+1. Openen **Zoeken** (met het vergrootglas in de werkbalk) en voer uw zoekterm in. Er worden voorstellen gedaan die kunnen worden geselecteerd:
 
    ![screen_shot_2018-03-23at101404](assets/screen_shot_2018-03-23at101404.png)
 
@@ -54,14 +57,14 @@ U kunt als volgt uw bronnen zoeken en filteren:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Indien nodig, kunt u de locatiefilter verwijderen (selecteer **X** op de filter u wilt verwijderen) over alle consoles/middeltypes te zoeken.
+1. Indien nodig kunt u het locatiefilter verwijderen (selecteer **X** op het filter dat u wilt verwijderen) om te zoeken in alle consoles/middeltypen.
 1. De resultaten zullen worden getoond, gegroepeerd volgens console en verwant middeltype.
 
    U kunt of een specifieke middel selecteren (voor verdere actie), of boren neer door het vereiste middeltype te selecteren; bijvoorbeeld **Alle sites weergeven**:
 
    ![screen_shot_2018-03-23at101523](assets/screen_shot_2018-03-23at101523.png)
 
-1. Als u verder omlaag wilt boren, selecteert u het symbool Rail (linksboven) om het zijpaneel te openen **Filters &amp; Opties**.
+1. Als u verder omlaag wilt boren, selecteert u het symbool Rail (linksboven) om het zijpaneel te openen **Filters en opties**.
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 
@@ -79,7 +82,7 @@ U kunt als volgt uw bronnen zoeken en filteren:
    >De zoekcriteria kunnen variëren:
    >
    >* Afhankelijk van het type resource dat u hebt geselecteerd; Zo zijn bijvoorbeeld de activa- en Gemeenschapscriteria begrijpelijkerwijs gespecialiseerd.
-   >* Uw exemplaar als [Onderzoek Forms](/help/sites-administering/search-forms.md) kan worden aangepast (aangewezen aan de plaats binnen AEM).
+   >* Uw instantie als de [Zoeken in Forms](/help/sites-administering/search-forms.md) kan worden aangepast (aangepast aan de locatie in AEM).
 
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
@@ -104,7 +107,7 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 
    ![screen_shot_2018-03-23at101710-1](assets/screen_shot_2018-03-23at101710-1.png)
 
-1. Wijs een naam toe, dan gebruik **sparen** om te bevestigen:
+1. Wijs een naam toe, dan gebruik **Opslaan** ter bevestiging:
 
    ![screen_shot_2018-03-23at101852](assets/screen_shot_2018-03-23at101852.png)
 
@@ -114,8 +117,8 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 
 1. Nadat u het bestand hebt opgeslagen, kunt u:
 
-   * Gebruik **x** (tegen de naam van de opgeslagen zoekopdracht) om een nieuwe query te starten (de opgeslagen zoekopdracht zelf wordt niet verwijderd).
-   * **Bewerk Opgeslagen zoekopdracht**, wijzig de zoekvoorwaarden en  **** sla de zoekopdracht nogmaals op.
+   * Gebruiken **x** (naast de naam van de opgeslagen zoekopdracht) om een nieuwe query te starten (de opgeslagen zoekopdracht zelf wordt niet verwijderd).
+   * **Opgeslagen zoekopdracht bewerken** wijzigt u vervolgens de zoekvoorwaarden **Opslaan** opnieuw.
 
 Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 

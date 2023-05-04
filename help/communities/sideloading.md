@@ -2,7 +2,7 @@
 title: Component Sideloading
 seo-title: Component Sideloading
 description: sideloading in een Community-component is handig wanneer een webpagina is ontworpen als een eenvoudige app van één pagina die dynamisch wijzigt wat wordt weergegeven, afhankelijk van wat de bezoeker van de site heeft geselecteerd
-seo-description: sideloading in een Community-component is handig wanneer een webpagina is ontworpen als een eenvoudige app van één pagina die dynamisch wijzigt wat wordt weergegeven, afhankelijk van wat de bezoeker van de site heeft geselecteerd
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,15 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 12fdc503-29b6-4970-a883-c22162f7a9eb
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # Component Sideloading {#component-sideloading}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
@@ -34,7 +37,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 1. [De component toevoegen aan de DOM](#dynamically-add-component-to-dom)
 
-1. [Laad de ](#sideload-by-invoking-scf) component met een van de volgende twee methoden:
+1. [De component laden](#sideload-by-invoking-scf) met behulp van een van de volgende twee methoden:
 
 * [Dynamische insluiting](#dynamic-inclusion)
    * Alle dynamisch toegevoegde componenten versterken
@@ -43,7 +46,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 >[!NOTE]
 >
->Sideloading van [niet-bestaande middelen](scf.md#add-or-include-a-communities-component) wordt niet gesteund.
+>Tideloading van [niet-bestaande middelen](scf.md#add-or-include-a-communities-component) wordt niet ondersteund.
 
 ## Component dynamisch toevoegen aan DOM {#dynamically-add-component-to-dom}
 
@@ -53,11 +56,11 @@ Bij het toevoegen van de SCF-component is de meest gebruikte tag de DIV-tag, maa
 
 Welk label ook wordt gebruikt, het element moet minstens voldoen aan het normale patroon van het SCF-hoofdelement door deze twee kenmerken te bevatten:
 
-* **data-component-**
-idThe effective path to the added component
+* **data-component-id**
+Het effectieve pad naar de toegevoegde component
 
-* **data-scf-**
-componentThe resourceType of the component
+* **data-scf-component**
+Het resourceType van de component
 
 Hieronder ziet u een voorbeeld van een component voor toegevoegde opmerkingen:
 
@@ -70,9 +73,9 @@ Hieronder ziet u een voorbeeld van een component voor toegevoegde opmerkingen:
 </div>
 ```
 
-## Sideload door SCF {#sideload-by-invoking-scf} aan te roepen
+## Sideload door SCF aan te roepen {#sideload-by-invoking-scf}
 
-### Dynamische integratie {#dynamic-inclusion}
+### Dynamische insluiting {#dynamic-inclusion}
 
 De dynamische opneming gebruikt een laarzentrekkerverzoek dat in SCF onderzoek DOM resulteert en bootsrapping alle componenten SCF die op de pagina worden gevonden.
 
@@ -86,6 +89,6 @@ Dynamisch laden biedt controle over het laden van SCF-componenten.
 
 In plaats van alle SCF-componenten die in het DOM worden gevonden, te bootstrappen, is het mogelijk om een specifieke SCF-component op te geven die moet worden geladen met deze JavaScript-methode:
 
-SCF.addComponent(document.getElementById(*someId*));
+SCF.addComponent(document.getElementById()*someId*));
 
-Waarbij *someId* de waarde van het **data-component-id**-kenmerk is.
+Wanneer *someId* is de waarde van de **data-component-id** kenmerk.

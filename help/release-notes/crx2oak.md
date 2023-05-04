@@ -1,8 +1,8 @@
 ---
 title: CRX2OAK-migratiehulpprogramma
-seo-title: CRX2OAK-migratiehulpprogramma
+seo-title: CRX2OAK Migration Tool
 description: Opmerkingen bij de release die specifiek zijn voor het Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
-seo-description: Opmerkingen bij de release die specifiek zijn voor het Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
+seo-description: Release notes specific to the Adobe Experience Manager 6.4 CRX2OAK Migration tool.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,15 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 exl-id: 441c8ba0-f8b2-4c2c-b7be-cfdad9e1e498
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
-# CRX2OAK-migratiehulpmiddel {#crx-oak-migration-tool}
+# CRX2OAK-migratiehulpprogramma {#crx-oak-migration-tool}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Lijst met wijzigingen en correcties {#list-of-changes-and-fixes}
 
@@ -49,8 +52,8 @@ ht-degree: 0%
 
 * Oak-versie upgraden naar 1.4.1
 * OAK-3846 / GRANITE-10748 noem SNS knopen anders als zij nodetype beperkingen overtreden
-* OAK-3910 / GRANITE-10730 Migrerend knoop die van `mix:versionable` zonder versiegeschiedenis erft
-* OAK-4128/GRANITE-11757 `RepositorySidegrade` kopieert de eigenschappen van de wortelknoop niet
+* OAK-3910 / GRANITE-10730 Migrating node inheriting from `mix:versionable` zonder versiegeschiedenis
+* OAK-4128 / GRANITE-11757 `RepositorySidegrade` Geen eigenschappen van hoofdknooppunt kopiëren
 
 ### Versie 1.3.4 (januari 2016) {#version-january}
 

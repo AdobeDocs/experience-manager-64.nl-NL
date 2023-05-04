@@ -1,8 +1,8 @@
 ---
 title: Moderatieconsole
-seo-title: Moderatieconsole
+seo-title: Moderation Console
 description: Hoe te om tot de console van de Moderatie toegang te hebben
-seo-description: Hoe te om tot de console van de Moderatie toegang te hebben
+seo-description: How to access the Moderation console
 uuid: 920124b9-af6f-4622-adb6-b8e294c5607d
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,24 +11,28 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1879'
 ht-degree: 0%
 
 ---
 
 # Moderatieconsole {#moderation-console}
 
-In AEM Communities is grote [moderatie van communautaire inhoud](moderate-ugc.md) mogelijk van zowel auteur als publicatiemilieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen).
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Beheerders en moderatoren van de gemeenschap kunnen [contextmoderatie](in-context.md) ook uitvoeren in het publicatiemilieu.
+In AEM Communities, bulkgoederen [modernisering van de communautaire inhoud](moderate-ugc.md) is mogelijk van zowel auteur als publiceer milieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen).
 
-Een functie van alle [communitysites](sites-console.md) is een `Administration`menu-item dat beschikbaar is voor gebruikers die zich aanmelden met beheerdersrechten. De `Administration`verbinding verleent toegang tot de console van de Moderatie.
+Beheerders en moderatoren van de gemeenschap kunnen ook [contextmatiging](in-context.md) in de publicatieomgeving.
+
+Een kenmerk van alles [communitysites](sites-console.md) is een `Administration`menu-item beschikbaar voor gebruikers die zich aanmelden met beheerdersrechten. De `Administration`de verbinding verleent toegang tot de console van de Moderatie.
 
 Van de console van de Moderatie, zullen de beheerders en de communautaire moderatoren toegang tot al gebruiker geproduceerde inhoud (UGC) hebben waarvoor zij toestemming hebben te matigen. Als u meerdere sites wilt gematigd, is het mogelijk om posten op alle sites weer te geven of door geselecteerde communitysites te filteren.
 
-Voor gedetailleerdere informatie gaat u naar [Gebruikers en gebruikersgroepen beheren](users.md).
+Voor meer informatie gaat u naar [Gebruikers en gebruikersgroepen beheren](users.md).
 
 De console van de Moderatie steunt:
 * Het uitvoeren van matigingstaken in bulk
@@ -36,7 +40,7 @@ De console van de Moderatie steunt:
 * UGC-details weergeven
 * UGC-auteurdetails weergeven
 
-Alleen wanneer u bent aangemeld als beheerder of een lid met ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, kunnen moderatietaken worden uitgevoerd.
+Alleen bij aanmelding als beheerder of lid met ` [moderator permissions](in-context.md#identifyingtrustedmembers)`kan worden uitgevoerd.
 
 ## Toegang tot omgeving publiceren {#publish-environment-access}
 
@@ -54,11 +58,11 @@ In het auteursmilieu, om de console van de Moderatie te bereiken
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation > Communities > Moderation]**
 
-Alleen wanneer u bent aangemeld als beheerder of als lid met ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, kunnen moderatietaken worden uitgevoerd. De enige inhoud van de gemeenschap die wordt weergegeven, is de inhoud die de ondertekenaar mag verkleinen.
+Alleen bij aanmelding als beheerder of als lid met ` [moderator permissions](in-context.md#identifyingtrustedmembers)`kan worden uitgevoerd. De enige inhoud van de gemeenschap die wordt weergegeven, is de inhoud die de ondertekenaar mag verkleinen.
 
 >[!NOTE]
 >
->UGC van het publicatiemilieu zal slechts op auteur zichtbaar zijn als gekozen SRP een gemeenschappelijke opslag uitvoert. De opslag is standaard bijvoorbeeld JSRP, wat geen algemene opslag is voor auteur en publiceren. Zie [Community Content Storage](working-with-srp.md).
+>UGC van het publicatiemilieu zal slechts op auteur zichtbaar zijn als gekozen SRP een gemeenschappelijke opslag uitvoert. De opslag is standaard bijvoorbeeld JSRP, wat geen algemene opslag is voor auteur en publiceren. Zie [Opslag van communautaire inhoud](working-with-srp.md).
 
 ![moderationconsoletoewijzing](assets/moderationconsoleauthor.png)
 
@@ -72,13 +76,13 @@ Afgezien van de linkse navigatiespoor (die bij auteur, maar niet bij publicatie 
 
 ### Bovenste navigatiebalk {#top-navigation-bar}
 
-De bovenste navigatiebalk is voor alle consoles constant. Zie [Basisverwerking](../../help/sites-authoring/basic-handling.md) voor meer informatie.
+De bovenste navigatiebalk is voor alle consoles constant. Zie voor meer informatie [Basisverwerking](../../help/sites-authoring/basic-handling.md).
 
 ### Werkbalk {#toolbar}
 
 De werkbalk, die zich onder de bovenste navigatiebalk bevindt, biedt de volgende schakeloptie aan de linkerkant:
 
-* [Filterrails ](moderation.md#filter-rail) openen een rails waarin u de eigenschappen kunt kiezen waarop u de inhoud wilt filteren.
+* [Filterrail](moderation.md#filter-rail) opent een rails waarin u de eigenschappen kunt kiezen waarop u de inhoud wilt filteren.
 
 De werkbalk, die zich onder de bovenste navigatiebalk bevindt, biedt de volgende schakeloptie aan de linkerkant:
 
@@ -99,13 +103,13 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 * Plaats van de post
 * Wanneer het is geplaatst
 * Aantal reacties op de post
-* [Aan het bericht ](moderate-ugc.md#sentiment) gekoppelde melding
+* [Sentiment](moderate-ugc.md#sentiment) in verband met het bericht
 * Indien goedgekeurd, wordt een vinkje weergegeven
 * Als er een bijlage is, wordt een paperclip weergegeven
 
 >[!NOTE]
 >
->Het inhoudsgebied heeft een *oneindige scroll*, zo betekent het dat u zal blijven scrollen tot u het eind van de inhoud hebt bereikt. De werkbalk blijft tijdens het schuiven op een vaste, zichtbare positie boven het inhoudsgebied staan.
+>Het inhoudsgebied bevat een *oneindig schuiven*, wat betekent dat u kunt blijven schuiven totdat u het einde van de inhoud hebt bereikt. De werkbalk blijft tijdens het schuiven op een vaste, zichtbare positie boven het inhoudsgebied staan.
 
 ### Rail filteren {#filter-rail}
 
@@ -113,11 +117,11 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 
 Met het pictogram van het zijpaneel wordt de filterrail geopend. De filterrail, die links van het inhoudsgebied verschijnt, verstrekt verschillende filters, elk die een onmiddellijk effect op referenced UGC hebben die in het inhoudsgebied verschijnt.
 
-De filters binnen elke categorie zijn **OR** ed samen, en de filters in verschillende categorieën zijn **AND** ed samen.
+De filters binnen elke categorie zijn **OF** worden samengevoegd en de filters in verschillende categorieën zijn **EN** rd samen.
 
-Als u bijvoorbeeld zowel **Vraag** als **Antwoord** controleert, wordt inhoud weergegeven die ofwel een **Vraag** *of* en **Antwoord** is.
+Als u bijvoorbeeld beide incheckt **Vraag** en **Antwoord**, ziet u inhoud die een van de **Vraag** *of* een **Antwoord**.
 
-Nochtans als u **Vraag** en **In behandeling** controleert, zult u slechts inhoud zien die **Vraag** is en **In behandeling** is.
+Als u echter **Vraag** en **In behandeling**, ziet u alleen inhoud die een **Vraag** en is **In behandeling**.
 
 >[!NOTE]
 >
@@ -147,7 +151,7 @@ De site beperkt de UGC waarnaar wordt verwezen, tot advertenties aan geselecteer
 
 >[!NOTE]
 >
->Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen die niet met [tovenaar van de plaatsverwezenlijking](sites-console.md), zoals de steekproeven van Geometrixx worden gecreeerd.
+>Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen niet gecreeerd met [wizard voor het maken van sites](sites-console.md), zoals de Geometrixx monsters.
 >
 >Wanneer de bulkmoderatieconsole bij publiceren door een vertrouwd communautair lid wordt betreden, dan slechts worden de verwijzingen naar UGC die voor communautaire plaatsen worden gecreeerd het lid aan gematigd wordt toegelaten getoond, en met de filter van de Plaats kunnen worden gefiltreerd.
 
@@ -177,8 +181,8 @@ Aanvullende bronnen toevoegen waarop moet worden gefilterd:
 
 * Op een instantie van een auteur
 * Aanmelden als beheerder
-* [Webconsole](http://localhost:4502/system/console/configMgr) openen
-* `AEM Communities Moderation Dashboard Filters` zoeken
+* Openen [Webconsole](http://localhost:4502/system/console/configMgr)
+* Zoeken `AEM Communities Moderation Dashboard Filters`
 * Selecteer de configuratie die u wilt openen in de bewerkingsmodus
 * Ga het ResourceType van een component in waarop te filtreren
    * Als u bijvoorbeeld wilt filteren op opgenomen stemcomponenten, voert u het volgende in:\
@@ -187,7 +191,7 @@ Aanvullende bronnen toevoegen waarop moet worden gefilterd:
 ![chlimage_1-475](assets/chlimage_1-475.png)
 
 * Selecteer Opslaan
-* De Gemeenschappen vernieuwen - Moderniseringsconsole
+* Vernieuw de Gemeenschappen - Moderniseringsconsole
 
 Het resultaat is een nieuw selecteerbaar filter voor `Voting`onder de `Content Type` filtergroep.
 
@@ -207,7 +211,7 @@ De status beperkt de UGC waarnaar wordt verwezen, tot posten van de geselecteerd
 
 Als u een vlag voert, wordt de UGC waarnaar wordt verwezen, beperkt tot publicaties die zijn gemarkeerd of verborgen.
 
-Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door nogmaals op de knop **[!UICONTROL Flag]** te klikken. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
+Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door de optie **[!UICONTROL Flag]** nogmaals. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
 
 ![chlimage_1-476](assets/chlimage_1-476.png)
 
@@ -225,21 +229,21 @@ Gepost in de Laatste grenzen UGC van verwijzingen aan posten die in het laatste 
 
 #### Sentiment {#sentiment}
 
-[Met ](moderate-ugc.md#sentiment) Sentimentatie beperkt u de UGC waarnaar wordt verwezen tot posten met een sentiment-waarde die positief, negatief of neutraal is.
+[Sentiment](moderate-ugc.md#sentiment) beperkt de UGC waarnaar wordt verwezen, tot posten met een sentiment-waarde die positief, negatief of neutraal is.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
 ## Moderatiehandelingen {#moderation-actions}
 
-[Moderatiehandelingen ](moderate-ugc.md#moderation-actions) kunnen worden uitgevoerd op een of meer selecties in het inhoudsgebied of bij het weergeven van de inhouddetails.
+[Moderniseringsacties](moderate-ugc.md#moderation-actions) kan worden uitgevoerd op een of meer selecties die in het inhoudsgebied zijn gemaakt of wanneer u de details van de inhoud weergeeft.
 
-Als u de positie in een artikel in bulk wilt verkleinen, klikt u in het inhoudsgebied op het pictogram Selecteren ( ![selecticon](assets/selecticon.png)) op een post, dat verschijnt wanneer u de muis (bureaublad) erop plaatst of wanneer u een vinger op de post (mobiel) ingedrukt houdt. Op deze manier opent u de multiselectiemodus en kunt u nu de volgende posts selecteren die bulksgewijs moeten worden gemodereerd door er gewoon op te klikken. Gebruik de knoppen op de werkbalk om moderatiehandelingen uit te voeren op de geselecteerde posten. Alle acties worden ter bevestiging voorgelegd.
+Klik in het inhoudsgebied op Selecteren ( ![selecticon](assets/selecticon.png)) op een post, die verschijnt als u de muisaanwijzer (bureaublad) op het desbetreffende artikel plaatst of met een vinger op het betreffende artikel (mobiel) drukt. Op deze manier opent u de multiselectiemodus en kunt u nu de volgende posts selecteren die bulksgewijs moeten worden gemodereerd door er gewoon op te klikken. Gebruik de knoppen op de werkbalk om moderatiehandelingen uit te voeren op de geselecteerde posten. Alle acties worden ter bevestiging voorgelegd.
 
 Als u één artikel in het inhoudsgebied wilt gematigd, houdt u de muisaanwijzer (bureaublad) of drukt u met een vinger op de post (mobiel), zodat er knoppen op de post verschijnen. Als u op één inhoudsgegeven werkt, wordt alleen een verwijderactie ter bevestiging verzonden.
 
 ### Meerdere posts modereren {#moderating-multiple-posts}
 
-Ga de bulkselectiemodus in door op het pictogram `Select` op een post te klikken:
+U opent de modus voor bulkselectie door op de knop `Select` pictogram op een bericht:
 
 ![select-icon](assets/select-icon.png)
 
@@ -294,7 +298,7 @@ Wanneer u met één bericht werkt, wordt het pictogram Toestaan weergegeven wann
 
 ![chlimage_1-482](assets/chlimage_1-482.png)
 
-De **Weigeren** matigactie is slechts beschikbaar voor inhoud die wordt gematigd, en verschijnt niet op ongematigde inhoud behalve in multi-selectiemodus.
+De **Weigeren** matigheidsactie is slechts beschikbaar voor inhoud die wordt gematigd, en niet op ongematigde inhoud behalve in multi-selectiemodus verschijnt.
 
 Inhoud die niet wordt gematigd, wordt altijd goedgekeurd.
 
@@ -332,7 +336,7 @@ Bijvoorbeeld:
 
 Als u met één artikel werkt, kunt u meer details bekijken door de UGC in de detailmodus te openen.
 
-Als u dit wilt doen, plaatst u de muisaanwijzer boven de post om het pictogram `View Detail` weer te geven en selecteert u deze om een deelvenster weer te geven met meer details over de advertentie.
+Houd hiertoe de muisaanwijzer boven de post om de `View Detail` en selecteert u deze om een deelvenster weer te geven met meer details over de advertentie.
 
 Als u wilt terugkeren naar de weergave van het inhoudsgebied van meerdere UGC-posten, selecteert u de X in de rechterbovenhoek van het deelvenster met weergavedetails.
 

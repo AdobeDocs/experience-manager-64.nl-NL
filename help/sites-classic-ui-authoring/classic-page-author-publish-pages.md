@@ -1,8 +1,8 @@
 ---
 title: Pagina's publiceren
-seo-title: Pagina's publiceren
+seo-title: Publishing Pages
 description: Nadat u de inhoud hebt gemaakt en gecontroleerd in de auteursomgeving, is het de bedoeling deze beschikbaar te maken op uw openbare website.
-seo-description: Nadat u de inhoud hebt gemaakt en gecontroleerd in de auteursomgeving, is het de bedoeling deze beschikbaar te maken op uw openbare website.
+seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
 uuid: 2b1cb08b-dbe9-4032-8527-15a11aa59d51
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 exl-id: 7b3f58df-036e-46a8-913e-e695de34ddd7
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
 
 # Pagina&#39;s publiceren{#publishing-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Nadat u de inhoud in de ontwerpomgeving hebt gemaakt en gecontroleerd, kunt u deze beschikbaar stellen op uw openbare website (uw publicatieomgeving).
 
@@ -32,16 +35,13 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >
 >* **Publiceren/Publiceren ongedaan maken**
    >  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
-   >
-   >
-* **Activeren/deactiveren**
+>
+>* **Activeren/deactiveren**
    >  Deze termen zijn synoniem met publiceren/verwijderen.
-   >
-   >
-* **Replicatie/replicatie**
+>
+>* **Replicatie/replicatie**
    >  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
 >
-
 
 
 >[!NOTE]
@@ -53,8 +53,7 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >
 
 
-
-## Een pagina {#publishing-a-page} publiceren
+## Pagina&#39;s publiceren {#publishing-a-page}
 
 Er zijn twee methoden om een pagina te activeren:
 
@@ -63,16 +62,16 @@ Er zijn twee methoden om een pagina te activeren:
 
 >[!NOTE]
 >
->U kunt ook een substructuur van meerdere pagina&#39;s activeren met [Tree](#howtoactivateacompletesectiontreeofyourwebsite) activeren op de console Tools.
+>U kunt ook een substructuur van meerdere pagina&#39;s activeren met [Boom activeren](#howtoactivateacompletesectiontreeofyourwebsite) op de console van Hulpmiddelen.
 
 ### Een pagina activeren via de websiteconsole {#activating-a-page-from-the-websites-console}
 
 U kunt pagina&#39;s activeren in de console Websites. Nadat u een pagina hebt geopend en de inhoud ervan hebt gewijzigd, keert u terug naar de console Websites:
 
 1. Selecteer in de websiteconsole de pagina die u wilt activeren.
-1. Selecteer **Activeer** in het bovenste menu of in het vervolgkeuzemenu op het geselecteerde pagina-item.
+1. Selecteren **Activeren** in het bovenste menu of in het vervolgkeuzemenu van het geselecteerde pagina-item.
 
-   Om de inhoud van de pagina en al zijn subpagina&#39;s te activeren gebruik [**Tools** console](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
+   Als u de inhoud van de pagina en alle subpagina&#39;s wilt activeren, gebruikt u de opdracht [**Gereedschappen** console](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
@@ -82,9 +81,9 @@ U kunt pagina&#39;s activeren in de console Websites. Nadat u een pagina hebt ge
 
 1. Indien nodig, AEM u verzoeken om elementen die aan de pagina zijn gekoppeld, te activeren of opnieuw te activeren. U kunt de selectievakjes in- of uitschakelen om deze elementen te activeren.
 
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
-1. AEM WCM activeert de geselecteerde inhoud. De gepubliceerde pagina of pagina&#39;s worden weergegeven in de [Websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (groen gemarkeerd) met informatie over wie de inhoud heeft geactiveerd en over de datum en tijd van activering.
+1. AEM WCM activeert de geselecteerde inhoud. De gepubliceerde pagina of pagina&#39;s worden weergegeven in het dialoogvenster [Websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (groen gemarkeerd) met informatie over wie de inhoud heeft geactiveerd en over de datum en tijd van activering.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
@@ -94,85 +93,85 @@ U kunt een pagina ook activeren wanneer u deze hebt geopend voor bewerking.
 
 Nadat u de pagina hebt geopend en de inhoud ervan hebt gewijzigd, kunt u:
 
-1. Selecteer het tabblad **Pagina** in de Sidetrap.
-1. Klik **Pagina activeren**.
+1. Selecteer **Pagina** in de Sidetrap.
+1. Klikken **Pagina activeren**.
 
    Rechtsboven in het venster wordt een bericht weergegeven waarin wordt bevestigd dat de pagina is geactiveerd.
 
-## Publicatie van een pagina {#unpublishing-a-page} ongedaan maken
+## Publicatie van een pagina ongedaan maken {#unpublishing-a-page}
 
 Als u een pagina uit de publicatieomgeving wilt verwijderen, deactiveert u de inhoud.
 
 Een pagina deactiveren:
 
 1. Selecteer in de websiteconsole de pagina die u wilt deactiveren.
-1. Selecteer **Deactiveren** in het bovenste menu of in het vervolgkeuzemenu op het geselecteerde pagina-item. U wordt gevraagd de verwijdering te bevestigen.
+1. Selecteren **Deactiveren** in het bovenste menu of in het vervolgkeuzemenu van het geselecteerde pagina-item. U wordt gevraagd de verwijdering te bevestigen.
 
    ![screen_shot_2012-02-08at14859pm](assets/screen_shot_2012-02-08at14859pm.png)
 
-1. Vernieuw de [Websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) en de inhoud is rood gemarkeerd, erop wijzend dat het niet meer wordt gepubliceerd.
+1. Vernieuw de [Websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) en de inhoud is rood gemarkeerd om aan te geven dat deze niet langer wordt gepubliceerd.
 
    ![screen_shot_2012-02-08at15018pm](assets/screen_shot_2012-02-08at15018pm.png)
 
-## Later {#activate-deactivate-later} activeren/deactiveren
+## Later activeren/deactiveren {#activate-deactivate-later}
 
-### Later {#activate-later} activeren
+### Later activeren {#activate-later}
 
 Uw activering voor een later tijdstip plannen:
 
-1. Ga in de websiteconsole naar het menu **Activeren** en selecteer **Later activeren**.
-1. In het dialoogvenster dat wordt geopend, geeft u de datum en tijd voor activering op en klikt u op **OK**. Hiermee wordt een versie van de pagina gemaakt die op het opgegeven tijdstip wordt geactiveerd.
+1. Ga in de websiteconsole naar de **Activeren** en selecteert u **Later activeren**.
+1. Geef in het dialoogvenster dat nu wordt geopend de datum en tijd voor activering op en klik op **OK**. Hiermee wordt een versie van de pagina gemaakt die op het opgegeven tijdstip wordt geactiveerd.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
 Als u later activeert, wordt een workflow gestart om deze versie van de pagina op het opgegeven tijdstip te activeren. Als u later deactiveert, wordt daarentegen een workflow gestart om deze versie van de pagina op een bepaald moment te deactiveren.
 
-Als u deze activering/deactivering wilt annuleren, gaat u naar [Workflowconsole](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) om de bijbehorende workflow te beëindigen.
+Als u deze activering/deactivering wilt annuleren, gaat u naar [Workflowconsole](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) om de corresponderende workflow te beëindigen.
 
-### Later {#deactivate-later} deactiveren
+### Later deactiveren {#deactivate-later}
 
 U kunt als volgt de deactivering voor een later tijdstip plannen:
 
-1. Ga in de console van de Website, naar **Deactivate** menu, en selecteer **Deactivate later**.
+1. Ga in de console van de Website naar **Deactiveren** en selecteert u **Later deactiveren**.
 
-1. In het dialoogvenster dat wordt geopend, geeft u de datum en tijd voor deactivering op en klikt u op **OK**.
+1. Geef in het dialoogvenster dat nu wordt geopend de datum en tijd op voor deactivering en klik op **OK**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
-**Als u** later deactiveert, wordt een workflow gestart om deze versie van de pagina op een bepaald moment te deactiveren.
+**Deactivering laat** r start een workflow om deze versie van de pagina op een bepaald tijdstip te deactiveren.
 
-Als u deze deactivering wilt annuleren, gaat u naar [Workflowconsole](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) om de bijbehorende workflow te beëindigen.
+Als u deze deactivering wilt annuleren, gaat u naar [Workflowconsole](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd) om de corresponderende workflow te beëindigen.
 
-## Geplande activering/deactivering (aan/uit tijd) {#scheduled-activation-deactivation-on-off-time}
+## Geplande activering/deactivering (aan/uit-tijd) {#scheduled-activation-deactivation-on-off-time}
 
-U kunt tijden voor een pagina plannen die worden gepubliceerd/unpublished gebruikend **On Tijd** en **Uit Tijd** die in [Pagina Eigenschappen](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) kan worden bepaald.
+U kunt tijden voor een te publiceren pagina/unpublished plannen gebruikend **Op tijd** en **Uit-tijd** die kunnen worden gedefinieerd in de [Pagina-eigenschappen](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
-### Status van paginapublicatie bepalen - Klassieke UI {#determining-page-publication-status-classic-ui}
+### Status van paginapublicatie bepalen - klassieke gebruikersinterface {#determining-page-publication-status-classic-ui}
 
-De status kan van [Websites worden gezien console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). De kleuren geven de publicatiestatus aan.
+De status kan worden bekeken vanuit de [Websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). De kleuren geven de publicatiestatus aan.
 
-## Een volledige sectie (structuur) van uw website {#activating-a-complete-section-tree-of-your-website} activeren
+## Een volledige sectie (structuur) van uw website activeren {#activating-a-complete-section-tree-of-your-website}
 
-Via het tabblad **Websites** kunt u de afzonderlijke pagina&#39;s activeren. Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerkt - die allen onder de zelfde wortelpagina ingezeten zijn - kan het gemakkelijker zijn om de volledige boom in één actie te activeren. U kunt ook een droog programma uitvoeren om een activering na te bootsen en te markeren welke pagina&#39;s moeten worden geactiveerd.
+Van de **Websites** kunt u de afzonderlijke pagina&#39;s activeren. Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerkt - die allen onder de zelfde wortelpagina ingezeten zijn - kan het gemakkelijker zijn om de volledige boom in één actie te activeren. U kunt ook een droog programma uitvoeren om een activering na te bootsen en te markeren welke pagina&#39;s moeten worden geactiveerd.
 
-1. Open de **Tools**-console door deze te selecteren op de pagina **Welkom** en dubbelklik vervolgens op **Replication** om de console te openen ( `http://localhost:4502/etc/replication.html`).
+1. Open de **Gereedschappen** console door het van de **Welkom** en dubbelklikken **Replicatie** om de console te openen ( `http://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
-1. Op **Replication** console, klik op **Activate Tree**.
+1. Op de **Replicatie** console, klik op **Boom activeren**.
 
-   Het volgende venster ( `http://localhost:4502/etc/replication/treeactivation.html`) zal worden getoond.
+   Het volgende venster ( `http://localhost:4502/etc/replication/treeactivation.html`) wordt weergegeven.
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Voer het **Beginpad** in. Hiermee geeft u het pad op naar de hoofdmap van de sectie die u wilt activeren (publiceren). Deze pagina en alle onderliggende pagina&#39;s worden in overweging genomen voor activering (of worden gebruikt in de emulatie als er een Droge Run is geselecteerd).
+1. Voer de **Startpad**. Hiermee geeft u het pad op naar de hoofdmap van de sectie die u wilt activeren (publiceren). Deze pagina en alle onderliggende pagina&#39;s worden in overweging genomen voor activering (of worden gebruikt in de emulatie als er een Droge Run is geselecteerd).
 1. Activeer de selectiecriteria naar wens:
 
    * **Alleen gewijzigd**: alleen pagina&#39;s activeren die zijn gewijzigd.
    * **Alleen geactiveerd**: alleen pagina&#39;s activeren die (al) zijn geactiveerd. Werkt als een vorm van reactivering.
-   * **gedeactiveerd** negeren: pagina&#39;s die zijn gedeactiveerd, negeren.
+   * **Negeren gedeactiveerd**: pagina&#39;s die zijn gedeactiveerd, negeren.
 
 1. Selecteer de handeling die u wilt uitvoeren:
 
-   1. Selecteer **Drogen uitvoeren** als u wilt controleren welke pagina *zou* moeten worden geactiveerd. Dit is slechts een emulatie, er worden geen pagina&#39;s geactiveerd.
-   1. Selecteer **Activeren** als u de pagina&#39;s wilt activeren.
+   1. Selecteren **Droog** als u wilt controleren welke pagina&#39;s *zou* worden geactiveerd. Dit is slechts een emulatie, er worden geen pagina&#39;s geactiveerd.
+   1. Selecteren **Activeren** als u de pagina&#39;s wilt activeren.

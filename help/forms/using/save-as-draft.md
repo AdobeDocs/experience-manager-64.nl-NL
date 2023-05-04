@@ -1,38 +1,41 @@
 ---
 title: Een taak of formulier opslaan als concept
-seo-title: Een taak of formulier opslaan als concept
+seo-title: Saving a task or form as a draft
 description: Stappen voor het opslaan van een conceptkopie van een taak of formulier in de AEM Forms-app
-seo-description: Stappen voor het opslaan van een conceptkopie van een taak of formulier in de AEM Forms-app
+seo-description: Steps to save a draft copy of a task or a form in the AEM Forms app
 uuid: 1192d2c2-05a4-4a96-9015-e56111aa2646
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 exl-id: c21cddb3-d12d-4e1b-bd62-cf75946569be
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # Een taak of formulier opslaan als concept {#saving-a-task-or-form-as-a-draft}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Met de optie Opslaan als concept slaat u een momentopname van een taak of formulier op, samen met de gegevens die in het bijbehorende formulier zijn ingevuld. U kunt ook een concept maken op basis van een sjabloon. De concepten worden opgeslagen op het mobiele apparaat en gesynchroniseerd met de Adobe Experience Manager Forms-server voor een latere opvraging.
 
-U kunt het formulier [bijwerken](/help/forms/using/working-with-form.md), [notities aanbrengen](/help/forms/using/add-attachments.md) met foto&#39;s en scriptnotities. Terwijl u doorgaat met het bijwerken van een formulier, wordt aangeraden het formulier op te slaan als concept. In situaties waarin u besluit een ingevuld formulier later te verzenden, is het handig het formulier op te slaan als concept.
+U kunt [het formulier bijwerken](/help/forms/using/working-with-form.md), [annoteren](/help/forms/using/add-attachments.md) met foto&#39;s en krabbelnotities. Terwijl u doorgaat met het bijwerken van een formulier, wordt aangeraden het formulier op te slaan als concept. In situaties waarin u besluit een ingevuld formulier later te verzenden, is het handig het formulier op te slaan als concept.
 
-Zie [Een HTML5-formulier opslaan als een concept](/help/forms/using/saving-html5-form-draft.md) als u de functie Opslaan als concept wilt inschakelen voor formulieren die worden opgeslagen op een formulierportal.\
-Zie [Concepten en verzendingscomponent](/help/forms/using/draft-submission-component.md) om de verzending van adaptieve formulieren te configureren. (Niet geldig voor formulieren die zijn gesynchroniseerd met AEM Forms JEE-server.)
+Als u de functie Opslaan als concept wilt inschakelen voor formulieren die zijn opgeslagen op de portal Formulieren, raadpleegt u [Een HTML5-formulier opslaan als concept](/help/forms/using/saving-html5-form-draft.md).\
+Als u de verzending van adaptieve formulieren wilt configureren, raadpleegt u [Concepten en verzendingen](/help/forms/using/draft-submission-component.md). (Niet geldig voor formulieren die zijn gesynchroniseerd met AEM Forms JEE-server.)
 
-Als u een concept wilt maken, opent u het formulier en tikt u op **Opslaan als concept** ![save-as-concept](assets/save-as-draft.png). Geef de naam van het concept op en tik op **Opslaan**. Het concept wordt opgeslagen in de map Concepten en gesynchroniseerd met de server. De app wordt opgeslagen in de map Outbox als de app offline is.
+Als u een concept wilt maken, opent u het formulier en tikt u op de knop **Opslaan als concept** ![save-as-concept](assets/save-as-draft.png). Geef de naam van het concept op en tik op **Opslaan**. Het concept wordt opgeslagen in de map Concepten en gesynchroniseerd met de server. De app wordt opgeslagen in de map Outbox als de app offline is.
 
 Als u het bijbehorende formulier later bijwerkt, worden de wijzigingen direct doorgevoerd. Bij het synchroniseren van de AEM Forms-toepassing met de AEM Forms-server wordt het concept geüpload naar de AEM Forms-server. Bovendien wordt het concept verplaatst van het Postvak UIT naar de map Taken of Concepten. Er verschijnt een bewerkingspictogram naast het pictogram.
 
 Wanneer u aan meerdere taken en beginpunten blijft werken en deze opslaat, worden de concepten opgeslagen. Telkens wanneer uw app wordt gesynchroniseerd met de AEM Forms-server, wordt het concept opgeslagen op de server. Hiermee zorgt u ervoor dat u de concepten op elk gewenst moment kunt herstellen op basis van de laatst opgeslagen datum en tijd. Als u de toepassing bijvoorbeeld opnieuw installeert of uw mobiele apparaat wijzigt, kunt u het concept downloaden van de server.
 
-## Concepten {#delete-a-draft} verwijderen
+## Concepten verwijderen {#delete-a-draft}
 
 In de map Concepts worden alle concepten weergegeven. Met de optie Concept verwijderen kunt u concepten permanent van het mobiele apparaat en de mobiele server verwijderen.
 
@@ -43,6 +46,6 @@ U kunt concepten zowel offline als online verwijderen. Bij het verwijderen van c
 Voer de volgende stappen uit om een concept te verwijderen:
 
 1. Navigeer in de AEM Forms-app naar **Forms.**
-1. Selecteer **Concepten** in de vervolgkeuzelijst naast Zoeken.
-1. Een formulier met het bewerkingspictogram ![edit-concept-app](assets/edit-draft-app.png) geeft een concept aan. Tik op de horizontale ellips naast het concept.
-1. Tik op **Concept** verwijderen in de opties die worden weergegeven wanneer u op de horizontale ellips tikt.
+1. Selecteren **Concepten** in de vervolgkeuzelijst naast Zoeken.
+1. Een formulier met het bewerkingspictogram ![edit-concept-app](assets/edit-draft-app.png) duidt een concept aan. Tik op de horizontale ellips naast het concept.
+1. Tik in de opties die worden weergegeven wanneer u op de horizontale ellips tikt **Concept verwijderen**.

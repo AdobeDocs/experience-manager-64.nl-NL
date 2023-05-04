@@ -1,22 +1,26 @@
 ---
 title: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
-seo-title: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
+seo-title: Forms-centric workflows on OSGi | Handling user data
 description: Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Dig dieper op gebruikersgegevens en gegevensopslag. Leer hoe u gebruikersgegevens kunt openen en verwijderen.
-seo-description: Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Dig dieper op gebruikersgegevens en gegevensopslag. Leer hoe u gebruikersgegevens kunt openen en verwijderen.
+seo-description: Forms-centric AEM workflows enable you to automate real-world Forms-centric business processes. Dig deeper on user data and data stores. Learn how to access and delete user data.
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
 
 # Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken {#forms-centric-workflows-on-osgi-handling-user-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
 
@@ -28,7 +32,7 @@ Een op formulieren gerichte workflow kan op een van de volgende manieren worden 
 * Een controlemap gebruiken
 * Een interactieve communicatie of een brief indienen
 
-Voor meer informatie over Forms-centric AEM werkschema&#39;s en mogelijkheden, zie [Forms-centric werkschema op OSGi](/help/forms/using/aem-forms-workflow.md).
+Voor meer informatie over Forms-centric AEM workflows en mogelijkheden raadpleegt u [Forms-centric workflow op OSGi](/help/forms/using/aem-forms-workflow.md).
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
@@ -48,7 +52,7 @@ De standaardopslagplaatsen waar lading, concepten, en geschiedenis van een werks
    <td>AEM 6.3 Forms</td> 
   </tr> 
   <tr> 
-   <td><strong>Workflow <br />-instantie</strong></td> 
+   <td><strong>Workflow <br /> instance</strong></td> 
    <td>/var/workflow/instances/[server_id]/&lt;date&gt;/[workflow-instance]/</td> 
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td> 
   </tr> 
@@ -59,13 +63,13 @@ De standaardopslagplaatsen waar lading, concepten, en geschiedenis van een werks
   </tr> 
   <tr> 
    <td><strong>Concepten</strong></td> 
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td> 
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td> 
+   <td>/var/fd/dashboard/instances/[server_id]/<br /> [datum]/[werkstroominstantie]/concept/[werkitem]/</td> 
+   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [datum]/[werkstroominstantie]/concept/[werkitem]/</td> 
   </tr> 
   <tr> 
    <td><strong>Historie</strong></td> 
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td> 
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow_instance]/history/</td> 
+   <td>/var/fd/dashboard/instances/[server_id]/<br /> [datum]/[werkstroom_instantie]/geschiedenis/</td> 
+   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [datum]/[werkstroom_instantie]/geschiedenis/</td> 
   </tr> 
  </tbody> 
 </table>
@@ -77,15 +81,15 @@ U kunt gebruikersgegevens uit een werkstroominstantie in de gegevensopslagruimte
 U kunt de resultaten echter niet identificeren of dubbelzinnig weergeven wanneer u werkstromen identificeert die aan een aanvrager zijn gekoppeld in de volgende scenario&#39;s:
 
 * **Workflow geactiveerd door een gecontroleerde map**: Een workflowinstantie kan niet worden geïdentificeerd met de initiator als de workflow wordt geactiveerd door een gecontroleerde map. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
-* **Workflow gestart vanaf AEM instantie** publiceren: Alle workflowinstanties worden gemaakt met behulp van een servicegebruiker wanneer adaptieve formulieren, interactieve communicatie of letters vanuit AEM publicatie-instantie worden verzonden. In deze gevallen wordt de gebruikersnaam van de aangemelde gebruiker niet vastgelegd in de gegevens van de workflowinstantie.
+* **Workflow gestart vanaf AEM publicatie-instantie**: Alle workflowinstanties worden gemaakt met behulp van een servicegebruiker wanneer adaptieve formulieren, interactieve communicatie of letters worden verzonden vanuit AEM publicatie-instantie. In deze gevallen wordt de gebruikersnaam van de aangemelde gebruiker niet vastgelegd in de gegevens van de workflowinstantie.
 
 ### Gebruikersgegevens openen {#access}
 
 Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benaderen die voor een workflowinstantie zijn opgeslagen:
 
-1. Ga bij AEM auteurinstantie naar `https://[server]:[port]/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
+1. Ga bij AEM auteur naar `https://[server]:[port]/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
 
-   Selecteer **[!UICONTROL SQL2]** van **[!UICONTROL Type]** drop-down.
+   Selecteren **[!UICONTROL SQL2]** van de **[!UICONTROL Type]** vervolgkeuzelijst.
 
 1. Voer afhankelijk van de beschikbare informatie een van de volgende query&#39;s uit:
 
@@ -99,7 +103,7 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
    De query retourneert de locatie van alle werkstroominstanties voor de opgegeven werkstroominitiator of de huidige werkstroomontvanger.
 
-   De volgende query retourneert bijvoorbeeld twee pad naar workflowinstanties van het knooppunt `/var/workflow/instances` waarvan de initiator van de workflow `srose` is.
+   De volgende query retourneert bijvoorbeeld twee pad naar workflowinstanties van het dialoogvenster `/var/workflow/instances` knooppunt waarvan de werkstroominitiator `srose`.
 
    ![workflow-instance](assets/workflow-instance.png)
 
@@ -107,7 +111,7 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
    ![status](assets/status.png)
 
-1. Navigeer in het knooppunt voor workflowinstanties naar `data/payload/`. In de eigenschap `path` wordt het pad naar de nuttige lading voor de werkstroominstantie opgeslagen. U kunt naar het pad navigeren om toegang te krijgen tot gegevens die zijn opgeslagen in de payload.
+1. Navigeer in het knooppunt voor workflowinstanties naar `data/payload/`. De `path` eigenschap slaat het pad naar de payload voor de werkstroominstantie op. U kunt naar het pad navigeren om toegang te krijgen tot gegevens die zijn opgeslagen in de payload.
 
    ![payload-path](assets/payload-path.png)
 
@@ -129,25 +133,25 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
 U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te verwijderen door de volgende stappen uit te voeren:
 
-1. Volg de instructies in [Toegang tot gebruikersgegevens](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) en neem nota van het volgende:
+1. Volg de instructies in [Gebruikersgegevens openen](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) en nemen nota van het volgende :
 
    * Paden naar werkstroominstanties die aan de gebruiker zijn gekoppeld
    * Status van de workflowinstanties
    * Paden naar ladingen voor de workflowinstanties
    * Paden naar concepten en historie voor workflowinstanties
 
-1. Voer deze stap uit voor workflowinstanties in **RUNNING**, **SUSPENDED** of **STALE** status:
+1. Voer deze stap uit voor workflowinstanties in **UITVOEREN**, **GESCHORST**, of **STAAL** status:
 
-   1. Ga naar `https://[server]:[port]/aem/start.html` en login met beheerdergeloofsbrieven.
+   1. Ga naar `https://[server]:[port]/aem/start.html` en aanmelden met beheerdersreferenties.
    1. Ga naar **[!UICONTROL Tools > Workflow> Instances]**.
-   1. Selecteer relevante workflowinstanties voor de gebruiker en tik **[!UICONTROL Terminate]** om actieve exemplaren te beëindigen.
+   1. Selecteer relevante workflowinstanties voor de gebruiker en tik op **[!UICONTROL Terminate]** om actieve exemplaren te beëindigen.
 
-   Zie [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md) voor meer informatie over het werken met workflowinstanties.
+   Zie voor meer informatie over het werken met workflowinstanties [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md).
 
-1. Ga naar de console van CRXDE Lite, navigeer aan de nuttige weg voor een werkschemainstantie, en schrap `payload` knoop.
-1. Navigeer naar het pad naar concepten voor een workflowinstantie en verwijder het knooppunt `draft`.
-1. Navigeer naar het historiepad voor een workflowinstantie en verwijder het knooppunt `history`.
-1. Navigeer naar het pad van de workflowinstantie voor een workflowinstantie en verwijder het knooppunt `[workflow-instance-ID]` voor de workflow.
+1. Ga naar de CRXDE Lite-console, navigeer naar het payload-pad voor een werkstroominstantie en verwijder de `payload` knooppunt.
+1. Navigeer naar het pad naar concepten voor een werkstroominstantie en verwijder de `draft` knooppunt.
+1. Navigeer naar het historiepad voor een werkstroominstantie en verwijder de `history` knooppunt.
+1. Navigeer naar het pad van de workflowinstantie voor een workflowinstantie en verwijder de `[workflow-instance-ID]` knooppunt voor de workflow.
 
    >[!NOTE]
    >

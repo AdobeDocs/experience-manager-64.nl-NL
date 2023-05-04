@@ -1,8 +1,8 @@
 ---
 title: Uw inbox
-seo-title: Uw inbox
+seo-title: Your Inbox
 description: U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
-seo-description: U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
+seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
 uuid: 90a3b4db-add9-47d4-a95d-fcc3863d6255
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,28 +10,31 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
 exl-id: e7111c21-1f38-4d0d-ac4b-c83133c0d8d6
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '617'
 ht-degree: 0%
 
 ---
 
 # Uw inbox{#your-inbox}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
 
 U ontvangt deze meldingen in twee Postvakken, die worden gescheiden door het type meldingen:
 
 * In de volgende sectie wordt een postvak weergegeven waarin de meldingen worden weergegeven die u ontvangt als gevolg van abonnementen.
-* Een gespecialiseerd Postvak IN voor workflowitems wordt beschreven in het document [Deelnemen aan Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
+* Een speciaal postvak voor workflowitems wordt beschreven in het dialoogvenster [Deelnemen aan workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
 
-## Uw meldingen bekijken {#viewing-your-notifications}
+## Je meldingen bekijken {#viewing-your-notifications}
 
 Om uw meldingen weer te geven:
 
-1. Open het inbox van de melding: Klik in de **Websites**-console op de gebruikerstoets in de rechterbovenhoek en selecteer **Notification Inbox**.
+1. Open het inbox van de melding: in de **Websites** -console, klikt u op de gebruikerknop in de rechterbovenhoek en selecteert u **Melding in vak**.
 
    ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
@@ -52,7 +55,7 @@ Om uw meldingen weer te geven:
 
 Abonneren op meldingen:
 
-1. Open het inbox van de melding: Klik in de **Websites**-console op de gebruikerstoets in de rechterbovenhoek en selecteer **Notification Inbox**.
+1. Open het inbox van de melding: in de **Websites** -console, klikt u op de gebruikerknop in de rechterbovenhoek en selecteert u **Melding in vak**.
 
    ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
@@ -62,18 +65,18 @@ Abonneren op meldingen:
    >
    >`https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Klik **Configureren..** in de linkerbovenhoek om het configuratiedialoogvenster te openen.
+1. Klikken **Configureren...** in de linkerbovenhoek om het configuratiedialoogvenster te openen.
 
    ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
 1. Selecteer het berichtkanaal:
 
-   * **Postvak IN**: meldingen worden weergegeven in uw AEM Postvak IN.
+   * **Inbox**: meldingen worden weergegeven in uw AEM Postvak IN.
    * **E-mail**: meldingen worden per e-mail verzonden naar het e-mailadres dat is gedefinieerd in uw gebruikersprofiel.
 
    >[!NOTE]
    >
-   >U dient enkele instellingen te configureren om via e-mail op de hoogte te worden gesteld. Het is ook mogelijk om de e-mailsjabloon aan te passen of een e-mailsjabloon voor een nieuwe taal toe te voegen. Raadpleeg [E-mailmelding configureren](/help/sites-administering/notification.md#configuringemailnotification) om e-mailmeldingen in AEM te configureren.
+   >U dient enkele instellingen te configureren om via e-mail op de hoogte te worden gesteld. Het is ook mogelijk om de e-mailsjabloon aan te passen of een e-mailsjabloon voor een nieuwe taal toe te voegen. Zie [E-mailmelding configureren](/help/sites-administering/notification.md#configuringemailnotification) om e-mailberichten in AEM te configureren.
 
 1. Selecteer de paginahandelingen waarvan u een melding wilt ontvangen:
 
@@ -90,24 +93,24 @@ Abonneren op meldingen:
 
 1. Definieer de paden van de pagina&#39;s waarvoor u een melding krijgt:
 
-   * Klik **Add** om een nieuwe rij aan de lijst toe te voegen.
-   * Klik op de tabelcel **Pad** en voer het pad in, bijvoorbeeld `/content/docs`.
-   * Om op de hoogte te worden gesteld voor alle pagina&#39;s die tot de substructuur behoren, plaats **Exact?** naar  **Nee**.
+   * Klikken **Toevoegen** om een nieuwe rij aan de tabel toe te voegen.
+   * Klik op de knop **Pad** tabelcel en voer het pad in, bijvoorbeeld `/content/docs`.
+   * Op de hoogte worden gesteld van alle pagina&#39;s die tot de subboomstructuur behoren **Precies?** tot **Nee**.
 
-      Alleen een melding ontvangen voor handelingen op de pagina die door het pad worden gedefinieerd, stelt u **Exact in?** op  **Ja**.
+      Alleen een melding ontvangen voor acties op de pagina die door het pad wordt gedefinieerd, stelt u **Precies?** tot **Ja**.
 
-   * Om de regel toe te staan, plaats **Regel** aan **Allow**. Als de reeks aan **ontkent**, wordt de regel ontkend maar niet verwijderd en kan later worden toegestaan.
+   * Als u de regel wilt toestaan, stelt u **Regel** tot **Toestaan**. Indien ingesteld op **Weigeren**, wordt de regel geweigerd maar niet verwijderd en kan later worden toegestaan.
 
-   Als u een definitie wilt verwijderen, selecteert u de rij door op een tabelcel te klikken en op **Delete** te klikken.
+   Als u een definitie wilt verwijderen, selecteert u de rij door op een tabelcel te klikken en klikt u op **Verwijderen**.
 
-1. Klik **OK** om de configuratie op te slaan.
+1. Klikken **OK** om de configuratie op te slaan.
 
-## Uw meldingen verwerken {#processing-your-notifications}
+## Je meldingen verwerken {#processing-your-notifications}
 
-Als u ervoor hebt gekozen om meldingen in uw AEM-postvak te ontvangen, vult uw postvak in met meldingen. U kunt uw meldingen [weergeven](#viewing-your-notifications) en vervolgens de gewenste meldingen selecteren voor:
+Als u ervoor hebt gekozen om meldingen in uw AEM-postvak te ontvangen, vult uw postvak in met meldingen. U kunt [uw meldingen weergeven](#viewing-your-notifications) Selecteer vervolgens de vereiste melding(en) aan:
 
-* Goedkeuren door te klikken op **Goedkeuren**: De waarde in de **Read**-kolom wordt ingesteld op **true**.
+* Goedkeuren door op **Goedkeuren**: de waarde in de **Lezen** kolom is ingesteld op **true**.
 
-* Verwijder het door **Delete** te klikken.
+* Verwijderen door erop te klikken **Verwijderen**.
 
 ![chlimage_1-9](assets/chlimage_1-9.jpeg)

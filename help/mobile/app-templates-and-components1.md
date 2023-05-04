@@ -1,8 +1,8 @@
 ---
 title: App-sjablonen en -componenten
-seo-title: App-sjablonen en -componenten
+seo-title: App Templates and Components
 description: Volg deze pagina voor meer informatie over App Templates en Components. Deze biedt gedetailleerde informatie over de structuur van sjablonen.
-seo-description: Volg deze pagina voor meer informatie over App Templates en Components. Deze biedt gedetailleerde informatie over de structuur van sjablonen.
+seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
 uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
@@ -10,34 +10,37 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 5480ac38-f651-4211-94f6-c588fb44ad55
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
 
-# Toepassingssjablonen en -componenten{#app-templates-and-components}
+# App-sjablonen en -componenten{#app-templates-and-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Een malplaatje wordt gebruikt om een Pagina tot stand te brengen en bepaalt welke componenten binnen het geselecteerde werkingsgebied kunnen worden gebruikt. Een sjabloon is een hiërarchie van knooppunten die dezelfde structuur heeft als de pagina die moet worden gemaakt, maar zonder daadwerkelijke inhoud.
 
 Elke sjabloon bevat een selectie van componenten die beschikbaar zijn voor gebruik.
 
-* Sjablonen zijn opgebouwd uit [Componenten](/help/sites-developing/components.md);
+* Sjablonen zijn samengesteld uit [Componenten](/help/sites-developing/components.md);
 * Componenten gebruiken widgets en staan toegang tot deze widgets toe. Deze worden gebruikt om de inhoud te renderen.
 
 >[!NOTE]
 >
->Zie [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) voor meer informatie over het ontwikkelen van uw AEM met CRXDE Lite.
+>Ga voor meer informatie over het ontwikkelen van uw AEM toepassing met behulp van CRXDE Lite naar [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Een sjabloon is de basis van een pagina.
 
-Als u een pagina wilt maken, moet de sjabloon naar de corresponderende positie in de sitestructuur worden gekopieerd (knooppunt-boomstructuur **/apps/&lt;myapp>/templates/&lt;mytemplate>**): Dit gebeurt als een pagina wordt gemaakt met het tabblad **Websites**.
+Als u een pagina wilt maken, moet de sjabloon worden gekopieerd (node-tree) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) op de corresponderende positie in de sitestructuur: dit gebeurt als een pagina wordt gemaakt met de **Websites** tab.
 
 Deze kopieeractie geeft de pagina ook zijn aanvankelijke inhoud (gewoonlijk Top-Level Inhoud slechts) en het bezit die:resourceType, de weg aan de paginacomponent plaatsen die wordt gebruikt om de pagina (alles in de kindknoop jcr:content) terug te geven.
 
@@ -48,14 +51,14 @@ Er zijn twee aspecten die in overweging moeten worden genomen:
 * de structuur van de template zelf
 * de structuur van de inhoud die wordt geproduceerd wanneer een sjabloon wordt gebruikt
 
-Een malplaatje wordt gecreeerd onder een knoop van type **cq:Malplaatje**.
+Een malplaatje wordt gecreeerd onder een knoop van type **cq:sjabloon**.
 
 Er kunnen verschillende eigenschappen worden ingesteld, met name:
 
-* **jcr:title** - titel voor de sjabloon; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
-* **jcr:description** - description for the template; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
+* **jcr:titel** - titel van de template; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
+* **jcr:beschrijving** - beschrijving van het model; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
 
-Dit knooppunt bevat *a jcr:content (cq:PageContent)*-knooppunt dat wordt gebruikt als basis voor het inhoudsknooppunt van resulterende pagina&#39;s. deze verwijzingen, gebruikend *sling:resourceType*, de component die voor het teruggeven van de daadwerkelijke inhoud van een nieuwe pagina moet worden gebruikt.
+Dit knooppunt bevat *a jcr:content (cq:PageContent)* knooppunt dat wordt gebruikt als basis voor het inhoudsknooppunt van de resulterende pagina&#39;s; deze verwijzingen, gebruiken *sling:resourceType*, de component die moet worden gebruikt voor het weergeven van de daadwerkelijke inhoud van een nieuwe pagina.
 
 >[!NOTE]
 >
@@ -63,9 +66,7 @@ Dit knooppunt bevat *a jcr:content (cq:PageContent)*-knooppunt dat wordt gebruik
 >
 >* [Sjablonen](/help/sites-developing/templates.md)
 >* [Onderdelen](/help/sites-developing/components.md)
-
 >
-
 
 
 Nadat u het basisbegrip van Malplaatjes en Componenten hebt, zie de volgende middelen:

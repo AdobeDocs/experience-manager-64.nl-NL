@@ -1,8 +1,8 @@
 ---
 title: Proxyserver (proxy.jar)
-seo-title: Proxyserver (proxy.jar)
+seo-title: Proxy Server Tool (proxy.jar)
 description: Leer over het Hulpmiddel van de Server van de Volmacht in AEM.
-seo-description: Leer over het Hulpmiddel van de Server van de Volmacht in AEM.
+seo-description: Learn about the Proxy Server Tool in AEM.
 uuid: 9a095b12-1d54-4b79-b0c5-d973f16479d3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 exl-id: fb96ed26-b5b6-4afc-a820-3ef45a9f3abd
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
 
 # Proxyserver (proxy.jar){#proxy-server-tool-proxy-jar}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt. De volmachtsserver houdt spoor van alle cliënt-server interactie en output een logboek van de volledige mededeling van TCP. Dit staat u toe om precies te controleren wat aan de hand is, zonder het moeten tot de belangrijkste server toegang hebben.
 
@@ -36,7 +39,7 @@ U kunt de volmachtsserver gebruiken om alle cliënt-server interactie, ongeacht 
 
 U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een AEM pagina aanvraagt.
 
-## Het gereedschap Proxyserver {#starting-the-proxy-server-tool} starten
+## Het gereedschap Proxyserver starten {#starting-the-proxy-server-tool}
 
 U vindt het gereedschap in de map /opt/helpers van de AEM-installatie. Het type starten:
 
@@ -46,13 +49,13 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ### Opties {#options}
 
-* **q (stille Wijze)** schrijft niet de verzoeken aan het consolevenster. Gebruik deze optie als u de verbinding niet wilt vertragen of als u de uitvoer naar een bestand wilt vastleggen (zie de optie -logfile).
-* **b (binaire Wijze)** Als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat vervolgens de hexadecimale uitvoer en de tekenuitvoer.
-* **t (logitems voor tijdstempels)** Hiermee voegt u een tijdstempel toe aan elke loguitvoer. Het tijdstempel is in seconden, zodat het mogelijk niet geschikt is voor het controleren van afzonderlijke aanvragen. Gebruik het om van gebeurtenissen de plaats te bepalen die in een specifiek ogenblik voorkwamen als u de volmachtsserver over een langere tijdspanne gebruikt.
-* **logfile  &lt;filename> (schrijven aan logboekdossier)** Schrijft het cliënt-server gesprek aan een logboekdossier. Deze parameter werkt ook in de stille modus.
-* **i  &lt;numindentions> (inspringing toevoegen)** Elke actieve verbinding springt in voor betere leesbaarheid. De standaardwaarde is 16 niveaus. (Nieuw in proxy.jar versie 1.16).
+* **q (stille modus)** Schrijft niet de verzoeken aan het consolevenster. Gebruik deze optie als u de verbinding niet wilt vertragen of als u de uitvoer naar een bestand wilt vastleggen (zie de optie -logfile).
+* **b (binaire modus)** Als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat vervolgens de hexadecimale uitvoer en de tekenuitvoer.
+* **t (logbestandvermeldingen voor tijdstempel)** Hiermee voegt u een tijdstempel toe aan elk logbestand. Het tijdstempel is in seconden, zodat het mogelijk niet geschikt is voor het controleren van afzonderlijke aanvragen. Gebruik het om van gebeurtenissen de plaats te bepalen die in een specifiek ogenblik voorkwamen als u de volmachtsserver over een langere tijdspanne gebruikt.
+* **logbestand &lt;filename> (schrijven naar logbestand)** Schrijft het cliënt-server gesprek aan een logboekdossier. Deze parameter werkt ook in de stille modus.
+* **i &lt;numindentions> (inspringing toevoegen)** Elke actieve verbinding springt in voor betere leesbaarheid. De standaardwaarde is 16 niveaus. (Nieuw in proxy.jar versie 1.16).
 
-## Gebruikt het Hulpmiddel van de Server van de Volmacht {#uses-of-the-proxy-server-tool}
+## Gebruikt het gereedschap Proxyserver {#uses-of-the-proxy-server-tool}
 
 De volgende scenario&#39;s illustreren een paar van de doeleinden waarvoor het Hulpmiddel van de Server van de Volmacht kan worden gebruikt:
 
@@ -64,7 +67,7 @@ In het volgende voorbeeld van een logbestandvermelding worden alle cookies en hu
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Controleren op headers en de bijbehorende** waardenIn het volgende voorbeeld van een logbestandvermelding wordt getoond dat de server in staat is om een verbinding te maken waarbij de inhoud in leven blijft en dat de header van de lengte van de inhoud juist is ingesteld:
+**Controleren op kopteksten en hun waarden** In het volgende voorbeeld van een logbestandvermelding wordt getoond dat de server in staat is een verbinding te maken waarbij de inhoud in leven blijft en dat de header van de lengte van de inhoud juist is ingesteld:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -74,7 +77,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Controleren of Keep-Alive werkt**
 
-**Keep-** Alivemeans dat een cliënt de verbinding aan de server opnieuw gebruikt om veelvoudige dossiers (de paginacode, beelden, stijlbladen, etc.) te vervoeren. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
+**Keep-Alive** betekent dat een client de verbinding met de server opnieuw gebruikt om meerdere bestanden (paginacode, afbeeldingen, stijlpagina&#39;s enzovoort) te vervoeren. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
 
 Controleren of in leven houden werkt:
 
@@ -116,8 +119,8 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 
 * C betekent dat deze ingang uit de cliënt (het is een verzoek om een Web-pagina) komt
 * 0 is het verbindingsnummer (de verbindenteller begint bij 0)
-* # 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
-* [GET  &lt;?>] is de inhoud van de aanvraag, in het voorbeeld een van de HTTP headers (url).
+* #00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
+* [GET &lt;?>] Dit is de inhoud van de aanvraag, in het voorbeeld een van de HTTP-headers (url).
 
 Wanneer een verbinding sluit, wordt de volgende informatie geregistreerd:
 
@@ -163,7 +166,7 @@ starting proxy for localhost:4303 on port 4444
 using logfile: C:\CQUnify355default\opt\helpers\test.log
 ```
 
-De volgende koptekstvelden worden weergegeven aan het begin van de eerste verbinding (0), die om de hoofd-HTML-pagina vraagt:
+De volgende kopbalgebieden zijn vermeld bij het begin van de eerste verbinding (0), die de belangrijkste pagina van de HTML verzoekt:
 
 ```xml
 C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102936796533 HTTP/1.1 ]
@@ -204,7 +207,7 @@ S-0-#000158 -> [Set-Cookie: JSESSIONID=4161a56b-f193-d8-88a5-e09c5ff7ef2a;Path=/
 S-0-#000232 -> [ ]
 ```
 
-Hier begint de server met het verzenden van de HTML-code bij verbinding 0:
+Hier, begint de server het verzenden van de code van de HTML op verbinding 0:
 
 ```xml
 S-0-#000234 -> [<html> ]
@@ -218,7 +221,7 @@ S-0-#000357 -> [.</body> ]
 S-0-#000367 -> [</html>]
 ```
 
-Verbinding 0 wordt onmiddellijk gesloten nadat het HTML-bestand is aangeboden:
+Verbinding 0 wordt onmiddellijk gesloten nadat het HTML-bestand is verzonden:
 
 ```xml
 C-0-Finished: 516 bytes (0.0 kb/s)
@@ -278,7 +281,7 @@ C-1-Finished: 403 bytes (0.0 kb/s)
 
 Het bovenstaande voorbeeld is relatief eenvoudig, omdat de twee verbindingen opeenvolgend plaatsvinden:
 
-* de server retourneert eerst de HTML-code
+* eerst retourneert de server de HTML-code
 * vervolgens vraagt de browser de afbeelding op en wordt een nieuwe verbinding geopend
 
 In de praktijk kan een pagina veel parallelle aanvragen genereren voor afbeeldingen, stijlpagina&#39;s, JavaScript-bestanden enzovoort. Dit betekent dat de logboeken overlappende vermeldingen van parallelle open verbindingen hebben. In dat geval raden we aan om optie -i te gebruiken om de leesbaarheid te verbeteren.

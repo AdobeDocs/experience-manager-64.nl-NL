@@ -1,23 +1,26 @@
 ---
 title: Werken met een formulier
-seo-title: Werken met een formulier
+seo-title: Working with a Form
 description: Het formulier weergeven en bijwerken dat is gekoppeld aan een taak of beginpunt in de AEM Forms-app
-seo-description: Het formulier weergeven en bijwerken dat is gekoppeld aan een taak of beginpunt in de AEM Forms-app
+seo-description: View and update the form associated with a task or Startpoint in the AEM Forms app
 uuid: 7481ca5c-a2c0-4697-9008-1e51bce2012e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: ae565dbd-2631-4364-89f7-675700b43320
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # Werken met een formulier {#working-with-a-form}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Als een formulier is ingeschakeld voor synchronisatie in de formulierapp, wordt het formulier gedownload en kunt u er direct mee werken.
 
@@ -25,10 +28,10 @@ De formulieren worden gedownload op uw app en zijn offline beschikbaar. U voert 
 
 Uw formulier synchroniseren in AEM Forms-app:
 
-1. Selecteer een formulier in de auteur en klik op **Eigenschappen weergeven**.
+1. Selecteer een formulier in de ontwerpversie en klik op **Eigenschappen weergeven**.
 
-1. Klik in de eigenschappenpagina op **Geavanceerd.**
-1. Schakel onder Geavanceerd de optie in: **Synchroniseren met AEM Forms App** en tikken op **Opslaan**.
+1. Klik op de pagina met eigenschappen **Geavanceerd.**
+1. Schakel onder Geavanceerd de optie in: **Synchroniseren met AEM Forms App** en tikken **Opslaan**.
 
 Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en tikt u op **Synchroniseren met AEM Forms App**. Wanneer het formulier wordt gepubliceerd, kan de AEM Forms-toepassing verbinding maken met de publicatieserver en de formulieren ophalen.
 
@@ -38,10 +41,8 @@ Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerde
 >
 >* Adaptieve formulieren (zonder wazig laden)
 >* Mobiele formulieren
-
 >
->
-Bijlagen op formulierniveau worden niet ondersteund in de adaptieve formulieren die worden opgehaald in de AEM Forms-app die is gesynchroniseerd met de AEM Forms OSGi-server. Gebruikers kunnen bestanden in een veld bijvoegen als de auteur op het moment van het ontwerpen van het formulier bijlagen op veldniveau heeft ingeschakeld.
+>Bijlagen op formulierniveau worden niet ondersteund in de adaptieve formulieren die worden opgehaald in de AEM Forms-app die is gesynchroniseerd met de AEM Forms OSGi-server. Gebruikers kunnen bestanden in een veld bijvoegen als de auteur op het moment van het ontwerpen van het formulier bijlagen op veldniveau heeft ingeschakeld.
 
 **Een formulier openen en bijwerken**
 

@@ -8,22 +8,26 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 1%
+source-wordcount: '679'
+ht-degree: 0%
 
 ---
 
 # Opmerkingen bij de release van Livefyre Feature Pack 2.0.6 {#livefyre-feature-pack-release-notes}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Geen informatie {#release-information}
 
 | Producten | Livefyre Feature Pack 2.0.6 |
 |--- |--- |
-| Versie | 2.0.6. |
+| Versie | 2.0.6 |
 | Type | Functierelease |
-| Date | 31 augustus 2018 |
+| Datum | 31 augustus 2018 |
 | URL downloaden | Neem contact op met uw beheerder |
 | Compatibiliteit (*) | AEM 6.4 SP1, 6.4, 6.3 GA en 6.2 SP1 |
 | Beschrijving | Met dit pakket kunt u de toonaangevende curatiemogelijkheden van Livefy integreren met uw AEM-instantie, zodat u in enkele minuten waardevolle door gebruikers gegenereerde inhoud (UGC) kunt publiceren van sociale netwerken naar uw site. |

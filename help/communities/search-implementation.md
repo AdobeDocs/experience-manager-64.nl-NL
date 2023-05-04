@@ -1,8 +1,8 @@
 ---
 title: Essentiële zoekopdrachten
-seo-title: Essentiële zoekopdrachten
+seo-title: Search Essentials
 description: Zoeken in gemeenschappen
-seo-description: Zoeken in gemeenschappen
+seo-description: Search in Communities
 uuid: 5f35a033-2069-499e-9cdb-db25781312f0
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 exl-id: 9092df98-f600-4ed8-93d8-f2e83cd8bb6a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 3%
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
-# Essentiële elementen zoeken {#search-essentials}
+# Essentiële zoekopdrachten {#search-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
-De zoekfunctie is een essentieel onderdeel van AEM Communities. Naast de mogelijkheden van [AEM platform search](../../help/sites-deploying/queries-and-indexing.md) biedt AEM Communities de [UGC search API](#ugc-search-api) voor het zoeken naar door de gebruiker gegenereerde inhoud (UGC). UGC heeft unieke eigenschappen omdat deze afzonderlijk van andere AEM inhoud en gebruikersgegevens wordt ingevoerd en opgeslagen.
+De zoekfunctie is een essentieel onderdeel van AEM Communities. Naast de [AEM zoeken](../../help/sites-deploying/queries-and-indexing.md) mogelijkheden biedt AEM Communities [UGC-zoekAPI](#ugc-search-api) voor het zoeken van door gebruikers gegenereerde inhoud (UGC). UGC heeft unieke eigenschappen omdat deze afzonderlijk van andere AEM inhoud en gebruikersgegevens wordt ingevoerd en opgeslagen.
 
 Voor Gemeenschappen zijn de twee dingen die over het algemeen worden doorzocht:
 
@@ -38,63 +41,63 @@ Deze sectie van de documentatie is van belang voor ontwikkelaars die douanecompo
 
 ## Beveiligings- en schaduwknooppunten {#security-and-shadow-nodes}
 
-Voor een douanecomponent, is het noodzakelijk om [SocialResourceUtilities](socialutils.md#socialresourceutilities-package) methodes te gebruiken. De hulpprogrammamethoden die tot UGC leiden en naar UGC zoeken zullen de vereiste [schaduwknopen](srp.md#about-shadow-nodes-in-jcr) vestigen en verzekeren het lid de correcte toestemmingen voor het verzoek heeft.
+Voor een aangepaste component moet u de opdracht [SocialResourceUtilities](socialutils.md#socialresourceutilities-package) methoden. De nutsmethodes die tot en onderzoek naar UGC leiden zullen de vereiste vestigen [schaduwknooppunten](srp.md#about-shadow-nodes-in-jcr) en ervoor zorgen dat het lid de juiste machtigingen voor het verzoek heeft.
 
 Wat niet door de nut SRP wordt beheerd zijn eigenschappen met betrekking tot matiging.
 
-Zie [SRP en de Hoofdzaak UGC](srp-and-ugc.md) voor informatie betreffende nutsmethodes die worden gebruikt om tot UGC en ACL schaduwknopen toegang te hebben.
+Zie [SRP en UGC Essentials](srp-and-ugc.md) voor informatie betreffende nutsmethodes die worden gebruikt om tot UGC en ACL schaduwknopen toegang te hebben.
 
 ## UGC-zoekAPI {#ugc-search-api}
 
-[UGC gemeenschappelijk store](working-with-srp.md) wordt verstrekt door één van een verscheidenheid van leveranciers van opslagmiddelen (SRPs), elk misschien verschillend van een verschillende inheemse vraagtaal. Daarom zou de douanecode, ongeacht SRP gekozen, methodes van [UGC API pakket](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) moeten gebruiken die de vraagtaal aangewezen voor gekozen SRP zal aanhalen.
+De [UGC Common Store](working-with-srp.md) wordt verstrekt door één van een verscheidenheid van opslagmiddelleveranciers (SRPs), elk misschien verschillend inheemse vraagtaal. Daarom, ongeacht het gekozen SRP, zou de douanecode methodes van moeten gebruiken [UGC API-pakket](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) die de vraagtaal aangewezen voor gekozen SRP zal aanhalen.
 
 ### ASRP-zoekopdrachten {#asrp-searches}
 
-Voor [ASRP](asrp.md), wordt UGC opgeslagen in de wolk van Adobe. Hoewel UGC niet zichtbaar is in CRX, is [moderation](moderate-ugc.md) beschikbaar bij zowel de auteur als de publicatiemilieu&#39;s. Het gebruik van [UGC onderzoek API](#ugc-search-api) werkt voor ASRP het zelfde als voor andere SRPs.
+Voor [ASRP](asrp.md), wordt UGC opgeslagen in de Adobe-cloud. Hoewel UGC niet zichtbaar is in CRX, [matiging](moderate-ugc.md) is beschikbaar in zowel de auteur- als de publicatieomgeving. Het gebruik van de [UGC-zoekAPI](#ugc-search-api) werkt voor ASRP het zelfde als voor andere SRPs.
 
 De hulpmiddelen bestaan momenteel niet voor het beheren van de onderzoeken van ASRP.
 
-Wanneer u aangepaste eigenschappen maakt die doorzoekbaar zijn, moet u de [naamgevingsvereisten](#naming-of-custom-properties) in acht nemen.
+Wanneer u aangepaste eigenschappen maakt die doorzoekbaar zijn, moet u zich aan de [naamgevingsvereisten](#naming-of-custom-properties).
 
-### MSRP Zoekopdrachten {#msrp-searches}
+### MSRP-zoekopdrachten {#msrp-searches}
 
-Voor [MSRP](msrp.md), wordt UGC opgeslagen in MongoDB die wordt gevormd om Solr voor het zoeken te gebruiken. UGC is niet zichtbaar in CRX, maar [moderatie](moderate-ugc.md) is beschikbaar in zowel auteur als publicatiemilieu&#39;s.
+Voor [MSRP](msrp.md), wordt UGC opgeslagen in MongoDB wordt gevormd om Solr voor het zoeken te gebruiken. UGC is niet zichtbaar in CRX, maar [matiging](moderate-ugc.md) is beschikbaar in zowel de auteur- als de publicatieomgeving.
 
 Wat MSRP en Solr betreft:
 
 * Ingesloten Solr voor het AEM platform wordt niet gebruikt voor MSRP
 * Als het gebruiken van verre Solr voor het AEM platform, kan het met MSRP worden gedeeld, maar zij zouden verschillende inzamelingen moeten gebruiken
 * Solr kan worden gevormd voor standaardonderzoek of voor meertalig onderzoek (MLS)
-* Voor configuratiedetails, zie [Solr Configuratie](msrp.md#solr-configuration) voor MSRP
+* Voor configuratiedetails, zie [Solr-configuratie](msrp.md#solr-configuration) voor MSRP
 
-Voor aangepaste zoekfuncties moet u de [UGC-zoekAPI](#ugc-search-api) gebruiken.
+Voor aangepaste zoekfuncties moet u de opdracht [UGC-zoekAPI](#ugc-search-api).
 
-Wanneer u aangepaste eigenschappen maakt die doorzoekbaar zijn, moet u de [naamgevingsvereisten](#naming-of-custom-properties) in acht nemen.
+Wanneer u aangepaste eigenschappen maakt die doorzoekbaar zijn, moet u zich aan de [naamgevingsvereisten](#naming-of-custom-properties).
 
 ### JSRP-zoekopdrachten {#jsrp-searches}
 
-Voor [JSRP](jsrp.md), wordt UGC opgeslagen in [Oak](../../help/sites-deploying/platform.md) en is zichtbaar slechts in de bewaarplaats van de AEM auteur of publicatieinstantie waarop het werd ingegaan.
+Voor [JSRP](jsrp.md), UGC wordt opgeslagen in [Eik](../../help/sites-deploying/platform.md) en is alleen zichtbaar in de gegevensopslagruimte van de AEM auteur of het publicatieexemplaar waarop het is ingevoerd.
 
-Aangezien UGC typisch in het publicatiemilieu, voor multi-uitgeversproductiesystemen is ingegaan, is het noodzakelijk om [te vormen publicatiecluster](topologies.md), niet publicatielandbouwbedrijf, zodat de ingegane inhoud van alle uitgevers zichtbaar is.
+Aangezien UGC typisch in het publicatiemilieu, voor multi-uitgeversproductiesystemen is ingegaan, is het noodzakelijk om een [publicatiecluster](topologies.md), niet een publicatiecentrum, zodat de ingevoerde inhoud zichtbaar is voor alle uitgevers.
 
-Voor JSRP, zal UGC ingegaan in het publicatiemilieu nooit in het auteursmilieu zichtbaar zijn. Alle [moderatie](moderate-ugc.md)-taken worden dus uitgevoerd in de publicatieomgeving.
+Voor JSRP, zal UGC ingegaan in het publicatiemilieu nooit in het auteursmilieu zichtbaar zijn. Aldus [matiging](moderate-ugc.md) taken vinden plaats in de publicatieomgeving.
 
-Voor aangepaste zoekfuncties moet u de [UGC-zoekAPI](#ugc-search-api) gebruiken.
+Voor aangepaste zoekfuncties moet u de opdracht [UGC-zoekAPI](#ugc-search-api).
 
 #### Oak-indexering {#oak-indexing}
 
 Hoewel er niet automatisch eiken-indices worden gemaakt voor het zoeken naar AEM platform, zijn deze vanaf AEM 6.2 toegevoegd voor AEM Communities om de prestaties te verbeteren en paginering te ondersteunen bij de presentatie van UGC-zoekresultaten.
 
-Als aangepaste eigenschappen in gebruik zijn en zoekacties traag zijn, moeten aanvullende indexen voor de aangepaste eigenschappen worden gemaakt om deze beter te laten presteren. Om draagbaarheid te handhaven, houd aan [noemende vereisten ](#naming-of-custom-properties) wanneer het creëren van douaneeigenschappen die doorzoekbaar zijn.
+Als aangepaste eigenschappen in gebruik zijn en zoekacties traag zijn, moeten aanvullende indexen voor de aangepaste eigenschappen worden gemaakt om deze beter te laten presteren. Om draagbaarheid te behouden, dient u zich aan de [naamgevingsvereisten](#naming-of-custom-properties) wanneer u aangepaste eigenschappen maakt die doorzoekbaar zijn.
 
-Als u bestaande indexen wilt wijzigen of aangepaste indexen wilt maken, raadpleegt u [Vragen en indexeren](../../help/sites-deploying/queries-and-indexing.md).
+Als u bestaande indexen wilt wijzigen of aangepaste indexen wilt maken, raadpleegt u [Oak-query&#39;s en indexering](../../help/sites-deploying/queries-and-indexing.md).
 
-De [Indexbeheer van de eik](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) is beschikbaar bij ACS AEM Commons. Het voorziet in:
+De [Indexbeheer voor onak](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) is beschikbaar bij ACS AEM Commons. Het voorziet in:
 
 * Een weergave van bestaande indexen
 * De mogelijkheid om een nieuwe indexering te starten
 
-Als u de bestaande eiken-indexen in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) wilt weergeven, is de locatie:
+Bestaande eiken-indexen weergeven in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), is de locatie:
 
 * `/oak:index/socialLucene`
 
@@ -110,35 +113,35 @@ Hieronder vindt u een aantal van de doorzoekbare eigenschappen die worden gebrui
 |---|---|
 | isFlagged | *Boolean* |
 | isSpam | *Boolean* |
-| read | *Boolean* |
+| lezen | *Boolean* |
 | invloed | *Boolean* |
 | bijlagen | *Boolean* |
 | sentiment | *Lang* |
 | gemarkeerd | *Boolean* |
-| added | *Date* |
+| added | *Datum* |
 | modifiedDate | *Datum* |
-| state | *Tekenreeks* |
-| userIdentifier | *Tekenreeks* |
+| state | *String* |
+| userIdentifier | *String* |
 | antwoorden | *Lang* |
-| jcr:titel | *Tekenreeks* |
-| jcr:beschrijving | *Tekenreeks* |
-| sling:resourceType | *Tekenreeks* |
+| jcr:titel | *String* |
+| jcr:beschrijving | *String* |
+| sling:resourceType | *String* |
 | allowThreadedReply | *Boolean* |
 | isDraft | *Boolean* |
 | publishDate | *Datum* |
-| publishJobId | *Tekenreeks* |
+| publishJobId | *String* |
 | beantwoord | *Boolean* |
 | chosenanswer | *Boolean* |
-| tag | *Tekenreeks* |
-| cq:Tag | *Tekenreeks* |
-| maker_display_name | *Tekenreeks* |
-| location_t | *Tekenreeks* |
-| parentPath | *Tekenreeks* |
-| parentTitle | *Tekenreeks* |
+| tag | *String* |
+| cq:Tag | *String* |
+| maker_display_name | *String* |
+| location_t | *String* |
+| parentPath | *String* |
+| parentTitle | *String* |
 
-### Naam van aangepaste eigenschappen {#naming-of-custom-properties}
+### Naamgeving van aangepaste eigenschappen {#naming-of-custom-properties}
 
-Wanneer het toevoegen van douaneeigenschappen, opdat die eigenschappen zichtbaar zijn om te sorteren en onderzoeken die met [UGC onderzoek API](#ugc-search-api) worden gecreeerd, is het *required *to een achtervoegsel aan de bezitsnaam toe te voegen.
+Wanneer u aangepaste eigenschappen toevoegt, zodat deze eigenschappen zichtbaar zijn voor sorteren en zoeken die zijn gemaakt met de opdracht [UGC-zoekAPI](#ugc-search-api), is het *required *om een achtervoegsel aan de bezitsnaam toe te voegen.
 
 Het achtervoegsel is voor vraagtalen die een schema gebruiken:
 
@@ -153,12 +156,12 @@ Solr is een voorbeeld van een vraagtaal die een schema gebruikt.
 | _dt | *Kalender* |
 | _d | *Dubbel* |
 | _tl | *Lang* |
-| _s | *Tekenreeks* |
+| _s | *String* |
 | _t | *Tekst* |
 
 **Opmerkingen:**
 
-* ** Textis a tokenized string,  ** String is not. Gebruik *Tekst* voor vage (meer als dit) onderzoeken.
+* *Tekst* een getokeniseerde tekenreeks is, *String* is niet. Gebruiken *Tekst* voor vage (meer als dit) zoekopdrachten.
 
 * Voeg voor typen met meerdere waarden &quot;s&quot; toe aan het achtervoegsel, bijvoorbeeld:
 
@@ -167,7 +170,7 @@ Solr is een voorbeeld van een vraagtaal die een schema gebruikt.
 
 ## Filters {#filters}
 
-Componenten die het [opmerkingssysteem](essentials-comments.md) bevatten ondersteunen de toevoeging van de filterparameter aan hun eindpunten.
+Onderdelen die de [opmerkingssysteem](essentials-comments.md) ondersteunen de filterparameter als aanvulling op de eindpunten.
 
 De filtersyntaxis voor AND en OR logica wordt als volgt uitgedrukt (getoond alvorens URL wordt gecodeerd):
 
@@ -179,7 +182,7 @@ De filtersyntaxis voor AND en OR logica wordt als volgt uitgedrukt (getoond alvo
 
    * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
-De standaardimplementatie van [de component van het Onderzoek](search.md) gebruikt deze syntaxis zoals die in URL kan worden gezien die de pagina van de Resultaten van het Onderzoek in [Communautaire gids](components-guide.md) opent. Blader naar [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html) om te experimenteren.
+De standaardimplementatie van de [component Zoeken](search.md) gebruikt deze syntaxis zoals u kunt zien in de URL waarmee de pagina Zoekresultaten wordt geopend in het dialoogvenster [Community Components Guide](components-guide.md). Als u wilt experimenteren, bladert u naar [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
 Filteroperatoren zijn:
 
@@ -199,7 +202,7 @@ Het is belangrijk dat de URL verwijst naar de communautaire component (bron) en 
 * Onjuist: forumpagina
    * `/content/community-components/en/forum.social.json`
 
-## SRP-gereedschappen {#srp-tools}
+## SRP {#srp-tools}
 
 Er is een project Adobe Marketing Cloud GitHub dat bevat:
 
@@ -217,7 +220,7 @@ curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/use
 
 ## Problemen oplossen {#troubleshooting}
 
-### Solr Query {#solr-query}
+### Solr-query {#solr-query}
 
 Om problemen met een Solr vraag problemen op te lossen, laat het registreren DEBUG voor toe
 
@@ -227,12 +230,12 @@ De daadwerkelijke Solr vraag zal URL worden getoond die in zuivert logboek wordt
 
 Zoekopdracht voor solderen is: `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
 
-De waarde van de parameter `q` is de vraag. Zodra het coderen URL wordt gedecodeerd, kan de vraag tot het Solr hulpmiddel van de Vraag Admin voor verdere het zuiveren worden overgegaan.
+De waarde van de `q` parameter is de query. Zodra het coderen URL wordt gedecodeerd, kan de vraag tot het Solr hulpmiddel van de Vraag Admin voor verdere het zuiveren worden overgegaan.
 
 ## Gerelateerde bronnen {#related-resources}
 
-* [Community Content Storage](working-with-srp.md)  - Bespreekt de beschikbare SRP-keuzes voor een UGC-algemeen archief
-* [Overzicht](srp.md)  van Storage Resource Provider - Inleiding en overzicht van opslaggebruik
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md)  - de methodes van het Nut voor SRP die SocialUtils vervangen
-* [Componenten](search.md)  met zoekresultaten - UGC-zoekfunctie toevoegen aan een sjabloon
+* [Opslag van communautaire inhoud](working-with-srp.md) - Bespreekt de beschikbare SRP keuzen voor een gemeenschappelijk opslag UGC
+* [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van opslagruimten
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Codeerrichtsnoeren
+* [SocialUtils Refactoring](socialutils.md) - Hulpprogrammamethoden voor SRP die SocialUtils vervangen
+* [Componenten met zoekresultaten](search.md) - UGC-zoekfunctie toevoegen aan een sjabloon

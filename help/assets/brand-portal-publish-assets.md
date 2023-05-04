@@ -5,28 +5,32 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 34%
+source-wordcount: '397'
+ht-degree: 30%
 
 ---
 
 # Assets publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
-Als Adobe Experience Manager Assets-beheerder kunt u elementen publiceren naar de [!DNL Experience Manager Assets Brand Portal]-instantie (of de publicatieworkflow plannen op een latere datum/tijd) voor uw organisatie. Nochtans, moet u eerst [!DNL Assets] met [!DNL Brand Portal] vormen. Zie [Configureren [!DNL Assets] met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) voor meer informatie.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Als Adobe Experience Manager Assets-beheerder kunt u elementen publiceren naar de [!DNL Experience Manager Assets Brand Portal] -instantie (of de publicatieworkflow plannen naar een latere datum/tijd) voor uw organisatie. Nochtans, moet u eerst gevormd [!DNL Assets] with [!DNL Brand Portal]. Zie voor meer informatie [Configureren [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md).
 
 Nadat u een middel publiceert, is het beschikbaar aan gebruikers in Brand Portal.
 
-Als u in [!DNL Assets] verdere wijzigingen in het oorspronkelijke element aanbrengt, worden de wijzigingen pas in Brand Portal doorgevoerd als u het element opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
+Als u volgende wijzigingen aanbrengt in het oorspronkelijke element in [!DNL Assets]worden de wijzigingen pas in Brand Portal doorgevoerd als u het element opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
-Nadat de replicatie slaagt, kunt u activa, omslagen, en inzamelingen aan [!DNL Brand Portal] publiceren. Voer de volgende stappen uit om elementen te publiceren naar Brand Portal:
+Nadat de replicatie succesvol was, kunt u activa, omslagen, en inzamelingen publiceren aan [!DNL Brand Portal]. Voer de volgende stappen uit om elementen te publiceren naar Brand Portal:
 
 >[!NOTE]
 >
->Adobe raadt gefaseerde publicatie aan, bij voorkeur tijdens niet-piekuren, zodat de [!DNL Experience Manager]-auteur niet teveel bronnen in beslag neemt.
+>Adobe raadt gefaseerde publicatie aan, bij voorkeur tijdens niet-piekuren, zodat de [!DNL Experience Manager] de auteur neemt niet teveel middelen in beslag.
 
-1. Houd de muisaanwijzer boven de gewenste elementen in de middelenconsole en selecteer de optie **[!UICONTROL Publish]** in de snelhandelingen.
+1. Houd de muisaanwijzer boven de gewenste elementen in de middelenconsole en selecteer **[!UICONTROL Publish]** van de snelle acties.
 
    U kunt ook de elementen selecteren die u naar Brand Portal wilt publiceren.
 
@@ -40,13 +44,13 @@ Nadat de replicatie slaagt, kunt u activa, omslagen, en inzamelingen aan [!DNL B
 
 Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand Portal te publiceren:
 
-* Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Selecteer vervolgens **[!UICONTROL Publish to Brand Portal]** in het menu.
+* Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Selecteer vervolgens in het menu **[!UICONTROL Publish to Brand Portal]**.
 
 * Selecteer **[!UICONTROL Manage Publication]** in de werkbalk.
 
-   1. Selecteer vervolgens **[!UICONTROL Action]** in **[!UICONTROL Publish to Brand Portal]** en selecteer **[!UICONTROL Scheduling]** **[!UICONTROL Now]**. Tik of klik op **[!UICONTROL Next].**
+   1. Vervolgens vanaf de **[!UICONTROL Action]** selecteren **[!UICONTROL Publish to Brand Portal]** en van **[!UICONTROL Scheduling]** selecteren **[!UICONTROL Now]**. Tik of klik op **[!UICONTROL Next].**
 
-   2. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik/klik **[!UICONTROL Publish to Brand Portal]**.
+   2. Within **[!UICONTROL Scope]**, bevestig uw selectie en tik/klik op **[!UICONTROL Publish to Brand Portal]**.
 
 Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij zijn geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde middelen te bekijken.
 
@@ -54,8 +58,8 @@ Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij z
 
 Voer de volgende handelingen uit om het publiceren van de assets naar Brand Portal op een latere datum of tijd te plannen:
 
-1. Als u elementen/mappen hebt geselecteerd om te publiceren, selecteert u **[!UICONTROL Manage Publication]** in de werkbalk boven in het scherm.
-2. Selecteer **[!UICONTROL Manage Publication]** op  pagina **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
+1. Als u elementen/mappen hebt geselecteerd om te publiceren, selecteert u **[!UICONTROL Manage Publication]** in de werkbalk bovenaan.
+2. Aan **[!UICONTROL Manage Publication]** pagina, selecteert u **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteert u **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 

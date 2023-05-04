@@ -1,8 +1,8 @@
 ---
 title: Het configuratiebestand importeren en exporteren
-seo-title: Het configuratiebestand importeren en exporteren
+seo-title: Importing and exporting the configuration file
 description: Leer hoe u het configuratiebestand importeert en exporteert om servervoorkeuren te bewerken of een ander exemplaar van een AEM formulierproduct te configureren.
-seo-description: Leer hoe u het configuratiebestand importeert en exporteert om servervoorkeuren te bewerken of een ander exemplaar van een AEM formulierproduct te configureren.
+seo-description: Learn how to import and export the configuration file in order to edit server preferences or configure another AEM forms product instance.
 uuid: 32e8a709-2d7c-4740-9533-d53aa751bc58
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
 exl-id: dbad776a-60fd-4fcc-ba2a-a2f379f5462c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
-# Het configuratiebestand {#importing-and-exporting-the-configuration-file} importeren en exporteren
+# Het configuratiebestand importeren en exporteren {#importing-and-exporting-the-configuration-file}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Gebruik de pagina Handmatige configuratie om een kopie van de configuratie-instellingen in XML-indeling te downloaden. De instellingen in dit bestand bepalen alle servervoorkeuren. U kunt het bestand vervolgens bewerken en opnieuw naar de server uploaden. U kunt het bestand ook gebruiken om een ander exemplaar van een AEM formulierproduct te configureren.
 

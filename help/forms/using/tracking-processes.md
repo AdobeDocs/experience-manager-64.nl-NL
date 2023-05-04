@@ -1,8 +1,8 @@
 ---
 title: Traceringsprocessen
-seo-title: Traceringsprocessen
+seo-title: Tracking processes
 description: Hoe te om uw processen te volgen door naar hen te zoeken en hun details te bekijken.
-seo-description: Hoe te om uw processen te volgen door naar hen te zoeken en hun details te bekijken.
+seo-description: How to track your processes by searching for them and viewing their details.
 uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
 contentOwner: robhagat
 content-type: reference
@@ -10,15 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 exl-id: e7eae36b-39e0-4550-b18b-a1ac1a5c3015
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
 
 # Traceringsprocessen {#tracking-processes}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Op de pagina Volgen kunt u zoeken naar actieve of voltooide processen die u hebt gestart of waaraan u hebt deelgenomen, en de procesdetails weergeven. De procesdetails tonen de taken, de taken, en de vormen die deel van het proces uitmaakten. U kunt ook nieuwe processen starten met formuliergegevens uit een proces dat u eerder hebt gestart.
 
@@ -39,14 +42,14 @@ U kunt instellen welke kolommen worden weergegeven in de zoekresultaten.
 
 ### Een taak zoeken met een zoeksjabloon {#search-for-a-task-using-a-search-template}
 
-1. Selecteer **Sjablonen zoeken** in de lijst Volgende op de pagina en selecteer een zoeksjabloon.
-1. Als de sjabloon zoekparameters ondersteunt, vult u de sjabloonvelden en klikt u op **Zoeken** om de zoekparameters te beperken. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
+1. Selecteer in de lijst aan de linkerkant op de pagina Tekstspatiëring de optie **Sjablonen zoeken** en selecteer een zoeksjabloon.
+1. Als de sjabloon zoekparameters ondersteunt, vult u de sjabloonvelden in en klikt u op **Zoeken**. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
 
-## Procesdetails {#view-process-details} weergeven
+## Procesdetails weergeven {#view-process-details}
 
 Op de pagina Volgen kunt u een proces selecteren en de details ervan bekijken. U kunt de processen zoeken die op diverse parameters worden gebaseerd om de taakdetails te bekijken. U kunt het tabblad Status ook weergeven voor processen waarbij meerdere gebruikers taken gelijktijdig ontvangen, waarbij de gereedschappen voor het reviseren van documenten zijn ingeschakeld.
 
-**Status:** De status van taken in een proces wordt weergegeven in de kolom &#39;Geselecteerde actie&#39; wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
+**Status:** De status van taken in een proces wordt weergegeven in de kolom Geselecteerde actie wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
 
 1. Selecteer de procesinstantie in de lijst met zoekresultaten om details weer te geven van de taken die deel uitmaken van de procesinstantie.
 1. Voer een of meer van de volgende handelingen uit om meer informatie over een taak weer te geven:

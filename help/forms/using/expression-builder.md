@@ -1,8 +1,8 @@
 ---
 title: Externe functies in Expression Builder
-seo-title: Expressiebouwer
+seo-title: Expression Builder
 description: Met Expression Builder in Correspondence Management kunt u expressies en externe functies maken.
-seo-description: Met Expression Builder in Correspondence Management kunt u expressies en externe functies maken.
+seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 uuid: 998f7ec9-2645-431e-b483-c68d24ef49cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,21 +10,24 @@ topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 feature: Correspondence Management
 exl-id: cd565ec5-f453-4692-83f8-e1fb06dc28c7
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 1%
+source-wordcount: '819'
+ht-degree: 0%
 
 ---
 
-# Externe functies in Expressiebouwer {#remote-functions-in-expression-builder}
+# Externe functies in Expression Builder {#remote-functions-in-expression-builder}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Met de expressiebouwer kunt u expressies of voorwaarden maken waarmee berekeningen worden uitgevoerd op gegevenswaarden die worden geleverd door het gegevenswoordenboek of door eindgebruikers. Het Beheer van de correspondentie gebruikt het resultaat van de uitdrukkingsevaluatie om activa zoals tekst, beelden, lijsten, en voorwaarden te selecteren en hen op te nemen in de correspondentie zoals vereist.
 
-## Expressies en externe functies maken met de expressiebouwer {#creating-expressions-and-remote-functions-with-expression-builder}
+## Expressies en externe functies maken met expressiebuilder {#creating-expressions-and-remote-functions-with-expression-builder}
 
-De expressiebouwer gebruikt intern JSP EL-bibliotheken, zodat de expressie voldoet aan de JSPEL-syntaxis. Zie [Voorbeeldexpressies](#exampleexpressions) voor meer informatie.
+De expressiebouwer gebruikt intern JSP EL-bibliotheken, zodat de expressie voldoet aan de JSPEL-syntaxis. Zie voor meer informatie [Voorbeeldexpressies](#exampleexpressions).
 
 ![Expressiebouwer](assets/expressionbuilder.png)
 
@@ -40,9 +43,9 @@ Hier zijn een paar algemeen gebruikte JSP EL voorbeelden die u in uw oplossing v
 * Twee tekenreeksen aaneenschakelen: ${str1} ${str2}
 * Twee getallen vergelijken: ${age &lt; 18}
 
-U kunt meer informatie in [JSP EL specificatie](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf) vinden. De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
+Meer informatie vindt u in het gedeelte [JSP EL-specificatie](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
 
-* Indexen en kaartsleutels voor verzamelingen (met de notatie []) worden niet ondersteund in variabelenamen voor expressies die op de client worden geëvalueerd.
+* Indexen en kaarttoetsen voor verzamelingen (met de [] notatie) worden niet ondersteund in variabelenamen voor expressies die op de client worden geëvalueerd.
 * Hieronder volgen de parametertypen of retourneringstypen van functies die in expressies worden gebruikt:
 
    * java.lang.String
@@ -62,7 +65,7 @@ U kunt meer informatie in [JSP EL specificatie](https://download.oracle.com/otn-
    * java.lang.Long
    * Lang
    * java.lang.Float
-   * Zwevend
+   * Float
    * java.util.Calendar
    * java.util.Date
    * java.util.List
@@ -83,7 +86,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
    1. **Ingeschakeld**: Hiermee wordt bepaald of deze methode is ingeschakeld. Expressiebeheer negeert uitgeschakelde methoden.
    1. **familyId**: Geeft de familie (groep) van de methode aan. Als dit leeg is, gaat Expression Manager ervan uit dat de methode tot de standaardfamilie behoort. Er is geen register van families (behalve het standaardregister) waaruit functies worden gekozen. De Manager van de uitdrukking leidt dynamisch tot de registratie door een vereniging van alle familie IDs te nemen die door alle functies wordt gespecificeerd die door de diverse bundels worden uitgevoerd. Zorg ervoor dat de id die ze hier opgeven redelijk leesbaar is, aangezien deze ook wordt weergegeven in de gebruikersinterface voor het schrijven van expressies.
    1. **displayName**: Een door de mens leesbare naam voor de functie. Deze naam wordt gebruikt voor weergavedoeleinden in de ontwerpgebruikersinterface. Als dit leeg is, wordt in Expression Manager een standaardnaam samengesteld met het voorvoegsel en de lokale naam van de functie.
-   1. **Omschrijving**: Een uitgebreide beschrijving van de functie. Deze beschrijving wordt gebruikt voor weergavedoeleinden in de ontwerpgebruikersinterface. Als dit leeg is, wordt in Expression Manager een standaardbeschrijving gemaakt met het voorvoegsel en de lokale naam van de functie.
+   1. **Beschrijving**: Een uitgebreide beschrijving van de functie. Deze beschrijving wordt gebruikt voor weergavedoeleinden in de ontwerpgebruikersinterface. Als dit leeg is, wordt in Expression Manager een standaardbeschrijving gemaakt met het voorvoegsel en de lokale naam van de functie.
 
    ```java
    package mergeandfuse.com;
@@ -114,7 +117,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
    * java.lang.Long
    * Lang
    * java.lang.Float
-   * Zwevend
+   * Float
    * java.util.Calendar
    * java.util.Date
    * java.util.List
@@ -129,7 +132,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-Het item exm.service=true instrueert Expression Manager dat de service externe functies bevat die geschikt zijn voor gebruik in expressies. De waarde &lt;service_id> moet een geldige Java-id zijn (alfanumeriek,$, _ zonder andere speciale tekens). Deze waarde, voorafgegaan door het trefwoord REMOTE_, vormt het voorvoegsel dat in expressies wordt gebruikt. Bijvoorbeeld, kan een interface met een geannoteerde methodebar () en de dienst identiteitskaart foo in de de diensteigenschappen, binnen uitdrukkingen worden van verwijzingen voorzien gebruikend REMOTE_foo:bar ().
+Het item exm.service=true instrueert Expression Manager dat de service externe functies bevat die geschikt zijn voor gebruik in expressies. De &lt;service_id> waarde moet een geldige Java-id zijn (alfanumeriek,$, _ zonder andere speciale tekens). Deze waarde, voorafgegaan door het trefwoord REMOTE_, vormt het voorvoegsel dat in expressies wordt gebruikt. Bijvoorbeeld, kan een interface met een geannoteerde methodebar () en de dienst identiteitskaart foo in de de diensteigenschappen, binnen uitdrukkingen worden van verwijzingen voorzien gebruikend REMOTE_foo:bar ().
 
 ```
 package mergeandfuse.com;
@@ -157,8 +160,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Hieronder vindt u voorbeeldarchieven die moeten worden gebruikt:
 
-* **GoodFunctions.jar.** zipis het jar-bestand met bundel dat een voorbeeld van een externe functiedefinitie bevat. Download het bestand GoodFunctions.jar.zip en decomprimeer het bestand om het jar-bestand op te halen.
-* **GoodFunctions.** zipis het pakket met broncode voor het definiëren van een aangepaste externe functie en het maken van een bundel daarvoor.
+* **GoodFunctions.jar.zip** Dit is het jar-bestand met een bundel dat een externe functiedefinitie bevat. Download het bestand GoodFunctions.jar.zip en decomprimeer het bestand om het jar-bestand op te halen.
+* **GoodFunctions.zip** is het pakket met broncode voor het definiëren van een aangepaste externe functie en het maken van een bundel daarvoor.
 
 GoodFunctions.jar.zip
 

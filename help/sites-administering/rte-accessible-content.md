@@ -1,8 +1,8 @@
 ---
 title: Het vormen RTE voor het Produceren van Toegankelijke Plaatsen
-seo-title: Het vormen RTE voor het Produceren van Toegankelijke Plaatsen
+seo-title: Configuring RTE for Producing Accessible Sites
 description: Leer hoe te om de AEM Rich Text Editor te vormen om toegankelijke plaatsen te produceren.
-seo-description: Leer hoe te om de AEM Rich Text Editor te vormen om toegankelijke plaatsen te produceren.
+seo-description: Learn how to configure the AEM Rich Text Editor to produce accessible sites.
 uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 exl-id: 245e1c28-f702-4300-81cf-5139db9d95ec
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
 # Het vormen RTE voor het Produceren van Toegankelijke Plaatsen {#configuring-rte-for-producing-accessible-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 AEM ondersteunt beide:
 
@@ -33,17 +36,17 @@ AEM ondersteunt beide:
 
 Inhoudsauteurs kunnen functies van de RTE gebruiken om toegankelijkheidsinformatie te verstrekken terwijl ze inhoud aan een pagina toevoegen. Dit kan het toevoegen van structurele informatie door rubrieken en paragraafelementen omvatten.
 
-U kunt [deze eigenschappen vormen en aanpassen door de steekmodules van RTE](#configuring-the-plugin-features) voor de component te vormen. Met de `paraformat`-plug-in kunt u bijvoorbeeld extra semantische elementen op blokniveau toevoegen, zoals het uitbreiden van het aantal kopniveaus dat wordt ondersteund, tot voorbij de standaard `H1`, `H2` en `H3`.
+U kunt [vorm en pas deze eigenschappen aan door de stoppen van RTE te vormen](#configuring-the-plugin-features) voor de component. De `paraformat` met de plug-in kunt u extra semantische elementen op blokniveau toevoegen, waaronder het uitbreiden van het aantal kopniveaus dat boven de basisniveaus wordt ondersteund `H1`, `H2` en `H3` standaard opgegeven.
 
-De RTE is beschikbaar in een verscheidenheid van componenten van zowel aanraking-toegelaten als klassieke UI. Nochtans, is de primaire component voor het gebruiken van RTE de **component Text**.
+De RTE is beschikbaar in een verscheidenheid van componenten van zowel aanraking-toegelaten als klassieke UI. Nochtans, is de primaire component voor het gebruiken van RTE **Tekst** component.
 
-De **component Text** in AEM is beschikbaar voor zowel aanraking-toegelaten als klassieke UIs. In de volgende afbeeldingen ziet u de teksteditor met veel insteekmodules, waaronder `paraformat`:
+De **Tekst** in AEM is beschikbaar voor zowel de aanraakinterface als de klassieke UI. In de volgende afbeeldingen ziet u de teksteditor met veel insteekmodules, waaronder `paraformat`:
 
-* De **component Text** in de interface met aanraakbediening:
+* De **Tekst** in de interface met aanraakbediening:
 
    ![Tekstcomponent (RTE) in de modus Volledig scherm in de gebruikersinterface met aanraakbediening.](assets/chlimage_1-206.png)
 
-* De **component Text** in klassieke UI:
+* De **Tekst** in de klassieke UI:
 
    ![Dialoogvenster voor bewerken (RTE) van de tekstcomponent in de klassieke UI.](assets/chlimage_1-207.png)
 
@@ -53,67 +56,65 @@ De **component Text** in AEM is beschikbaar voor zowel aanraking-toegelaten als 
 >
 >* [Insteekmodules en hun functies](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >* [Insteekmodules en hun functies - Interface met aanraakbediening](/help/sites-administering/rich-text-editor.md#aboutplugins)
-
 >
 
 
+## De insteekmodules configureren {#configuring-the-plugin-features}
 
-## De insteekmodules {#configuring-the-plugin-features} configureren
-
-De volledige instructies bij het vormen van RTE zijn beschikbaar op [het Vormen van de Rich Text Editor](/help/sites-administering/rich-text-editor.md) pagina. Hieronder vallen alle kwesties, inclusief de belangrijkste stappen:
+Volledige instructies voor het vormen van RTE zijn beschikbaar op [De Rich Text Editor configureren](/help/sites-administering/rich-text-editor.md) pagina. Hieronder vallen alle kwesties, inclusief de belangrijkste stappen:
 
 * [Insteekmodules en hun functies](/help/sites-administering/rich-text-editor.md#aboutplugins)
 * [Configuratielocaties](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [Activeer een Insteekmodule en vorm het eigenschappenBezit](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Het vormen van Andere Functionaliteit van RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Door een plug-in te configureren in de desbetreffende `rtePlugins`-subvertakking in CRXDE Lite (zie de volgende afbeelding), kunt u alle of specifieke functies voor die plug-in activeren.
+Door een insteekmodule te configureren binnen de juiste `rtePlugins` subvertakking in CRXDE Lite (zie de volgende afbeelding) kunt u alle of specifieke functies voor die plug-in activeren.
 
 ![CRXDE Lite die een voorbeeld rtePlugin toont.](assets/chlimage_1-208.png)
 
-### Voorbeeld - Het specificeren van de Formaten van de Paragraaf Beschikbaar in het Gebied van de Selectie van RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Voorbeeld - Alinea-indelingen opgeven die beschikbaar zijn in het veld RTE-selectie {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 Nieuwe semantische blokformaten kunnen voor selectie beschikbaar worden gesteld door:
 
 1. Afhankelijk van uw RTE, bepaal en navigeer aan [configuratielocatie](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
-1. [Het selectieveld](/help/sites-administering/rich-text-editor.md) Alinea inschakelen. door de  [insteekmodule](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins) te activeren.
-1. [Geef de indelingen op die u beschikbaar wilt hebben in het selectieveld](/help/sites-administering/rich-text-editor.md) Alinea.
+1. [Het selectieveld Alinea inschakelen](/help/sites-administering/rich-text-editor.md); door [de insteekmodule activeren](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Geef de indelingen op die beschikbaar moeten zijn in het selectieveld Alinea](/help/sites-administering/rich-text-editor.md).
 1. De paragraafformaten zijn dan beschikbaar aan de inhoudauteur van de selectiegebieden in RTE. Zij kunnen worden betreden:
 
-   * Het pictogram Alinea ([pilcrow](https://en.wikipedia.org/wiki/Pilcrow)) gebruiken in de interface met aanraakbediening:
+   * De alinea ([kussen](https://en.wikipedia.org/wiki/Pilcrow)) in de interface met aanraakbediening:
 
    ![Alineapictogram (kussen).](do-not-localize/chlimage_1-7.png)
 
-   * Het **Formaat** gebied (drop-down selecteur) in klassieke UI gebruiken.
+   * Met de **Indeling** veld (vervolgkeuzelijst) in de klassieke gebruikersinterface.
 
 
 Met de structuurelementen beschikbaar in RTE via de opties van het paragraafformaat, AEM verstrekt een goede basis voor de ontwikkeling van toegankelijke inhoud. Inhoudsauteurs kunnen de RTE niet gebruiken om de tekengrootte of kleuren of andere verwante kenmerken op te maken, waardoor inlineopmaak niet mogelijk is. In plaats daarvan moeten ze de juiste structuurelementen selecteren, zoals koppen, en algemene stijlen gebruiken die u hebt gekozen bij de optie Stijlen. Zo zorgt u voor meer opmaak, betere opties voor gebruikers die met hun eigen stijlpagina&#39;s en correct gestructureerde inhoud bladeren.
 
-## Het gebruik van de Bron geeft Eigenschap {#use-of-the-source-edit-feature} uit
+## De functie Bron bewerken gebruiken {#use-of-the-source-edit-feature}
 
-In sommige gevallen zullen inhoudsauteurs het nodig vinden om de HTML-broncode die met de RTE is gemaakt, te onderzoeken en aan te passen. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd extra prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan met [bron worden gedaan uitgeven](/help/sites-administering/rich-text-editor.md#aboutplugins) optie van RTE. U kunt de [ `sourceedit` eigenschap op `misctools` stop in ](/help/sites-administering/rich-text-editor.md#aboutplugins) specificeren.
+In sommige gevallen, zullen de inhoudsauteurs het noodzakelijk vinden om de HTML broncode te onderzoeken en aan te passen die gebruikend RTE wordt gecreeerd. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd extra prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan worden gedaan met de [bronbewerking](/help/sites-administering/rich-text-editor.md#aboutplugins) optie van de RTE. U kunt de [ `sourceedit` op de `misctools` insteekmodule](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Gebruik de functie `sourceedit` zorgvuldig. Door fouten en/of niet-ondersteunde functies te typen kunnen er meer problemen ontstaan.
+>Gebruik de `sourceedit` zorgvuldig worden uitgevoerd. Door fouten en/of niet-ondersteunde functies te typen kunnen er meer problemen ontstaan.
 
 ## Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken {#adding-support-for-additional-html-elements-and-attributes}
 
-Om de toegankelijkheidskenmerken van AEM verder uit te breiden, is het mogelijk om de bestaande componenten die op RTE (zoals **Text** en **Table** componenten) worden gebaseerd met extra elementen en attributen uit te breiden.
+Om de toegankelijkheidskenmerken van AEM verder uit te breiden, is het mogelijk de bestaande componenten op basis van de RTE (zoals de **Tekst** en **Tabel** componenten) met extra elementen en kenmerken.
 
-De volgende procedure laat zien hoe u de component **Tabel** kunt uitbreiden met een element **Bijschrift** dat informatie over een gegevenstabel bevat voor gebruikers van ondersteunende technologie:
+De volgende procedure laat zien hoe u de **Tabel** component met een **Bijschrift** element dat informatie over een gegevenslijst aan hulptechnologiegebruikers verstrekt:
 
-### Voorbeeld - Bijschrift toevoegen aan het dialoogvenster Tabeleigenschappen {#example-adding-the-caption-to-the-table-properties-dialog}
+### Voorbeeld: het bijschrift toevoegen aan het dialoogvenster Tabeleigenschappen {#example-adding-the-caption-to-the-table-properties-dialog}
 
-Voeg in de constructor van de `TablePropertiesDialog` een extra tekstinvoerveld toe dat wordt gebruikt voor het bewerken van het bijschrift. `itemId` moet worden ingesteld op `caption` (d.w.z. de naam van het DOM-kenmerk) om de inhoud ervan automatisch te kunnen verwerken.
+In de constructor van de `TablePropertiesDialog`voegt u een extra tekstinvoerveld toe dat wordt gebruikt voor het bewerken van het bijschrift. Let op: `itemId` moet worden ingesteld op `caption` (d.w.z. de naam van het DOM-kenmerk) om de inhoud ervan automatisch af te handelen.
 
-In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaatsen of verwijderen. De waarde wordt doorgegeven door het dialoogvenster in het object `config`. DOM-kenmerken moeten worden ingesteld/verwijderd met de corresponderende `CQ.form.rte.Common`-methoden ( `com` is een sneltoets voor `CQ.form.rte.Common`) om gemeenschappelijke valkuilen bij browserimplementaties te voorkomen.
+In **Tabel** u moet de attributen aan/uit het element van DOM uitdrukkelijk plaatsen of verwijderen. De waarde wordt doorgegeven door het dialoogvenster in het dialoogvenster `config` object. DOM-kenmerken moeten worden ingesteld/verwijderd met de corresponderende `CQ.form.rte.Common` methoden ( `com` is een sneltoets voor `CQ.form.rte.Common`) om gemeenschappelijke valkuilen bij browserimplementaties te voorkomen.
 
 >[!NOTE]
 >
 >Deze procedure is alleen geschikt voor de klassieke gebruikersinterface.
 
-### Instructies {#step-by-step-instructions} stap voor stap
+### Instructies Stap voor stap {#step-by-step-instructions}
 
 1. Start CRXDE Lite. Bijvoorbeeld: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopiëren:
@@ -140,7 +141,7 @@ In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaa
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
-1. Bij de methode `constructor`, vóór het lezen van de regel:
+1. In de `constructor` methode, vóór het lezen van de regel:
 
    ```
    var dialogRef = this;
@@ -162,7 +163,7 @@ In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaa
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
 
-1. Voeg de volgende code aan het einde van de methode `transferConfigToTable` toe:
+1. Voeg de volgende code toe aan het einde van de `transferConfigToTable` methode:
 
    ```
    /**
@@ -201,10 +202,10 @@ In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaa
 
 >[!NOTE]
 >
->Een veld zonder opmaak is niet het enige invoertype dat is toegestaan voor de waarde van het bijschriftelement. Elke ExtJS-widget die de waarde van de ondertitel via de `getValue()`-methode biedt, kan worden gebruikt.
+>Een veld zonder opmaak is niet het enige invoertype dat is toegestaan voor de waarde van het bijschriftelement. Elke ExtJS-widget die de waarde van de ondertitel via de bijbehorende `getValue()` kan worden gebruikt.
 >
 >Als u bewerkingsmogelijkheden voor meer aanvullende elementen en kenmerken wilt toevoegen, moet u ervoor zorgen dat:
 >
->* De eigenschap `itemId` voor elk overeenkomend veld wordt ingesteld op de naam van het desbetreffende DOM-kenmerk (`TablePropertiesDialog`).
+>* De `itemId` eigenschap voor elk overeenkomend veld wordt ingesteld op de naam van het desbetreffende DOM-kenmerk (`TablePropertiesDialog`).
 >* Het kenmerk wordt expliciet ingesteld en/of verwijderd op het DOM-element (`Table`).
 

@@ -2,7 +2,7 @@
 title: Emulators
 seo-title: Emulators
 description: AEM stelt auteurs in staat een pagina te bekijken in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken
-seo-description: AEM stelt auteurs in staat een pagina te bekijken in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken
+seo-description: AEM enables authors to view a page in an emulator that simulates the environment in which an end-user will view the page
 uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 2abbceaa-928e-47d8-81c9-ba5bc24f27e2
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
-# Emulatoren{#emulators}
+# Emulators{#emulators}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Met Adobe Experience Manager (AEM) kunnen auteurs een pagina weergeven in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken, bijvoorbeeld op een mobiel apparaat of in een e-mailclient.
 
@@ -37,7 +40,7 @@ Het AEM emulatorframework:
 >
 >Deze functie wordt alleen ondersteund in de klassieke gebruikersinterface.
 
-## Kenmerken emulators {#emulators-characteristics}
+## Kenmerken van emulators {#emulators-characteristics}
 
 Een emulator:
 
@@ -48,9 +51,9 @@ Een emulator:
 * Is alleen actief op auteur.
 * De basiscomponent bevindt zich op `/libs/wcm/emulator/components/base`.
 
-### Hoe de emulator de inhoud {#how-the-emulator-transforms-the-content} transformeert
+### Hoe de emulator de inhoud transformeert {#how-the-emulator-transforms-the-content}
 
-De emulator werkt door de inhoud van de HTML-hoofdtekst om te zetten in emulator DIV&#39;s. De volgende HTML-code:
+De emulator werkt door de inhoud van het lichaam van de HTML in emulator DIVs te verpakken. De volgende HTML-code:
 
 ```xml
 <body>
@@ -90,9 +93,9 @@ wordt na het starten van de emulator omgezet in de volgende HTML-code:
 
 Er zijn twee div-tags toegevoegd:
 
-* de div met id `cq-emulator` die de emulator als geheel vasthouden en
+* div met id `cq-emulator` de emulator als geheel vasthouden en
 
-* het div met id `cq-emulator-content` die de viewport/screen/content area van het apparaat vertegenwoordigt waar de pagina-inhoud zich bevindt.
+* div met id `cq-emulator-content` die de viewport/het scherm/het inhoudsgebied van het apparaat vertegenwoordigt waar de pagina-inhoud zich bevindt.
 
 Nieuwe CSS-klassen worden ook toegewezen aan de nieuwe emulator-div: ze vertegenwoordigen de naam van de huidige emulator.
 
@@ -102,7 +105,7 @@ Op deze manier kan de volledige weergave van de emulator worden bepaald door CSS
 
 >[!NOTE]
 >
->Het is raadzaam de inhoud van het lichaam in een enkel div-element te plaatsen in de HTML van het project, net als in het bovenstaande voorbeeld. Als de inhoud van het lichaam veelvoudige markeringen bevat, kunnen er onvoorspelbare resultaten zijn.
+>Aanbevolen wordt om de inhoud van het lichaam door de HTML van het project in één enkele div te verpakken, enkel zoals in het bovenstaande voorbeeld. Als de inhoud van het lichaam veelvoudige markeringen bevat, kunnen er onvoorspelbare resultaten zijn.
 
 ### Mobiele emulators {#mobile-emulators}
 
@@ -113,13 +116,13 @@ De bestaande mobiele emulators:
 
    http://localhost:4502/bin/wcm/mobile/emulators.json
 
-Wanneer de paginacomponent op de mobiele paginacomponent ( `/libs/wcm/mobile/components/page`) steunt, wordt de emulatorfunctionaliteit automatisch geïntegreerd in de pagina door het volgende mechanisme:
+Wanneer de paginacomponent op de mobiele paginacomponent ( `/libs/wcm/mobile/components/page`), wordt de emulatorfunctionaliteit automatisch in de pagina geïntegreerd via het volgende mechanisme:
 
-* De component voor mobiele pagina `head.jsp` bevat de daaraan gekoppelde emulator van de apparaatgroep in de it-component (alleen in de auteurmodus) en de CSS-weergave van de apparaatgroep via:
+* De component mobiele pagina `head.jsp` bevat de daaraan gekoppelde emulator van de apparaatgroep in de it-component (alleen in de auteursmodus) en de CSS-weergave van de apparaatgroep via:
 
    `deviceGroup.drawHead(pageContext);`
 
-* De methode `DeviceGroup.drawHead(pageContext)` bevat de init-component van de emulator, d.w.z. roept `init.html.jsp` van de emulatorcomponent aan. Als de emulatorcomponent geen eigen `init.html.jsp` heeft en afhankelijk is van de mobiele basisemulator ( `wcm/mobile/components/emulators/base)`), wordt het initescript van de mobiele basisemulator aangeroepen ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* De methode `DeviceGroup.drawHead(pageContext)` bevat de init-component van de emulator, dat wil zeggen roept de `init.html.jsp` van de emulatorcomponent. Als de emulatorcomponent geen eigen component heeft `init.html.jsp` en baseert zich op de mobiele basis emulator ( `wcm/mobile/components/emulators/base)`, wordt het initescript van de mobiele basisemulator aangeroepen ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * Het initescript van de mobiele basismededinger bepaalt door Javascript:
 
@@ -136,19 +139,19 @@ Wanneer de paginacomponent op de mobiele paginacomponent ( `/libs/wcm/mobile/com
 
 Een aangepaste mobiele emulator maken:
 
-1. Onder `/apps/myapp/components/emulators` maak de component `myemulator` (knooppunttype: `cq:Component`).
+1. Onder `/apps/myapp/components/emulators` de component maken `myemulator` (knooppunttype: `cq:Component`).
 
-1. Stel de eigenschap `sling:resourceSuperType` in op `/libs/wcm/mobile/components/emulators/base`
+1. Stel de `sling:resourceSuperType` eigenschap aan `/libs/wcm/mobile/components/emulators/base`
 
-1. Definieer een CSS-clientbibliotheek met categorie `cq.wcm.mobile.emulator` voor de vormgeving van de emulator: name = `css`, knooppunttype = `cq:ClientLibrary`
+1. Een CSS-clientbibliotheek met een categorie definiëren `cq.wcm.mobile.emulator` voor de vormgeving van de emulator: name = `css`, knooppunttype = `cq:ClientLibrary`
 
-   Als voorbeeld kunt u naar het knooppunt `/libs/wcm/mobile/components/emulators/iPhone/css` verwijzen
+   Als voorbeeld kunt u naar het knooppunt verwijzen `/libs/wcm/mobile/components/emulators/iPhone/css`
 
 1. Definieer zo nodig een JS-clientbibliotheek, bijvoorbeeld om een specifieke insteekmodule te definiëren: name = js, knooptype = cq:ClientLibrary
 
-   Als voorbeeld kunt u naar het knooppunt `/libs/wcm/mobile/components/emulators/base/js` verwijzen
+   Als voorbeeld kunt u naar het knooppunt verwijzen `/libs/wcm/mobile/components/emulators/base/js`
 
-1. Als de emulator specifieke functies ondersteunt die worden gedefinieerd door plug-ins (zoals aanraakschuiven), maakt u een configuratieknooppunt onder de emulator: name = `cq:emulatorConfig`, knooptype = `nt:unstructured` en voeg het bezit toe dat de stop bepaalt:
+1. Als de emulator specifieke functies ondersteunt die worden gedefinieerd door plug-ins (zoals aanraakschuiven), maakt u een configuratieknooppunt onder de emulator: name = `cq:emulatorConfig`, knooppunttype = `nt:unstructured` en voeg de eigenschap toe die de insteekmodule definieert:
 
    * Naam = `canRotate`, Type = `Boolean`, Waarde = `true`: om de rotatiefunctie op te nemen.
 

@@ -1,28 +1,32 @@
 ---
 title: Referentie metagegevensschema
-description: 'Leer meer over standaardconventies voor het beschrijven van metagegevens van elementen, zoals Dublin Core, IPTC en ander metagegevensschema. '
+description: Leer meer over standaardconventies voor het beschrijven van metagegevens van elementen, zoals Dublin Core, IPTC en ander metagegevensschema.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
 # Referentie metagegevensschema {#metadata-schemata-reference}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 De volgende naslaggids bevat informatie over een bepaald metagegevensschema (in alfabetische volgorde) en een lijst met eigenschappen en de bijbehorende definities.
 
 ## Dublin Core {#dublin-core}
 
-De meta-gegevens van de Kern van Dublin verstrekt een gestandaardiseerde reeks overeenkomsten voor het beschrijven van activa om hen gemakkelijker te maken te vinden. In [!DNL Experience Manager] Middelen, beschrijft de Kern van Dublin digitale activa met inbegrip van video, geluid, beelden, en documenten.
+De meta-gegevens van de Kern van Dublin verstrekt een gestandaardiseerde reeks overeenkomsten voor het beschrijven van activa om hen gemakkelijker te maken te vinden. In [!DNL Experience Manager] Middelen, de Dublin Core beschrijft digitale activa met inbegrip van video, geluid, beelden, en documenten.
 
 De eenvoudige Dublin Core Metadata Element Set (DCMES) bevat 15 metagegevenselementen die in de volgende tabel worden vermeld. Elk Dublin Core-element is optioneel en kan worden herhaald. U kunt Dublin Core-metagegevens toevoegen of verwijderen op dezelfde manier als voor mediatype-specifieke metagegevens.
 
-Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-initiatief zijn gecreëerd. Zie [Dublin Core Initiative](https://dublincore.org/) voor meer informatie.
+Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-initiatief zijn gecreëerd. Zie de [Dublin Core-initiatief](https://dublincore.org/) voor meer informatie .
 
 | Eigenschap | Beschrijving |
 |---|---|
@@ -33,13 +37,13 @@ Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-in
 | beschrijving | Meer informatie over het element. |
 | format | De bestandsindeling, het fysieke medium of de afmetingen van het element. [!DNL Experience Manager] gebruikt dc:format om het mime-type van het element aan te geven. |
 | id | Een unieke verwijzing naar het element. |
-| language | De taal van het element (bijvoorbeeld en voor Engels). |
+| taal | De taal van het element (bijvoorbeeld en voor Engels). |
 | uitgever | De persoon of het bedrijf die verantwoordelijk is voor het ter beschikking stellen van het actief. |
-| relation | Een gerelateerd actief. |
+| relatie | Een gerelateerd actief. |
 | rechten | Informatie over wie de rechten op dit actief heeft. |
-| source | Een gerelateerd actief waarvan het actief is afgeleid. |
+| bron | Een gerelateerd actief waarvan het actief is afgeleid. |
 | onderwerp | Het onderwerp van de activa. |
-| title | Een naam voor het element. |
+| titel | Een naam voor het element. |
 | type | De aard of het genre van het actief. |
 
 ## IPTC {#iptc}

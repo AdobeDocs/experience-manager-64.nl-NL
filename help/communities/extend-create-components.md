@@ -1,8 +1,8 @@
 ---
 title: De componenten maken
-seo-title: De componenten maken
+seo-title: Create the Components
 description: De component Opmerkingen maken
-seo-description: De component Opmerkingen maken
+seo-description: Create the Comments component
 uuid: ea6e00d4-1db7-40ef-ae49-9ec55df58adf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,15 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 exl-id: 48809969-5d14-41bb-bc6d-5857e679ceba
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 4%
+source-wordcount: '619'
+ht-degree: 3%
 
 ---
 
-# De componenten {#create-the-components} maken
+# De componenten maken {#create-the-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In het voorbeeld van het uitbreiden van componenten wordt het opmerkingssysteem gebruikt, dat eigenlijk uit twee componenten bestaat
 
@@ -35,7 +38,7 @@ Beide componenten moeten worden geplaatst, vooral als het aanpassen van de versc
 
 ## De component Opmerkingen maken {#create-the-comments-component}
 
-Deze richtingen specificeren een **Groep** waarde buiten `.hidden` zodat kan de component van componentenbrowser (sidekick) ter beschikking worden gesteld.
+In deze aanwijzingen wordt een **Groep** andere waarde dan `.hidden` de component kan dus beschikbaar worden gesteld via de browser van de component (sidekick).
 
 De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats daarvan het standaard-HBS-bestand wordt gebruikt.
 
@@ -43,23 +46,23 @@ De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 
 1. Een locatie maken voor aangepaste toepassingen:
 
-   * Selecteer de `/apps` knoop
+   * Selecteer `/apps` node
 
-      * **Naam** van map maken  **[!UICONTROL custom]**
-   * Selecteer de `/apps/custom` knoop
+      * **Map maken** benoemd **[!UICONTROL custom]**
+   * Selecteer `/apps/custom` node
 
-      * **Naam** van map maken  **[!UICONTROL components]**
+      * **Map maken** benoemd **[!UICONTROL components]**
 
 
-1. Selecteer de `/apps/custom/components` knoop
+1. Selecteer `/apps/custom/components` node
 
    * **[!UICONTROL Create > Component...]**
 
-      * **Label**:  *opmerkingen*
-      * **Titel**:  *Alt-opmerkingen*
-      * **Omschrijving**:  *Stijl van alternatieve opmerkingen*
-      * **Supertype**:  *social/commons/components/hbs/comments*
-      * **Groep**:  *Aangepast*
+      * **Label**: *opmerkingen*
+      * **Titel**: *Alt-opmerkingen*
+      * **Beschrijving**: *Stijl van alternatieve opmerkingen*
+      * **Supertype**: *social/commons/components/hbs/comments*
+      * **Groep**: *Aangepast*
    * Selecteer **[!UICONTROL Next]**
    * Selecteer **[!UICONTROL Next]**
    * Selecteer **[!UICONTROL Next]**
@@ -68,28 +71,28 @@ De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 
 1. Vouw het zojuist gemaakte knooppunt uit: `/apps/custom/components/comments`
 1. Selecteer **[!UICONTROL Save All]**
-1. Klik met de rechtermuisknop `comments.jsp`
+1. Klikken met rechtermuisknop `comments.jsp`
 1. Selecteer **[!UICONTROL Delete]**
 1. Selecteer **[!UICONTROL Save All]**
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
-### De component Onderliggende opmerking maken {#create-the-child-comment-component}
+### De component Onderliggende opmerkingen maken {#create-the-child-comment-component}
 
-Deze richtingen plaatsen **Groep** aan `.hidden` aangezien slechts de oudercomponent binnen een pagina zou moeten worden omvat.
+Deze richtingenset **Groep** tot `.hidden` aangezien alleen de bovenliggende component in een pagina moet worden opgenomen.
 
 De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats daarvan het standaard-HBS-bestand wordt gebruikt.
 
-1. Naar het knooppunt `/apps/custom/components/comments` navigeren
+1. Ga naar de `/apps/custom/components/comments` node
 1. Klik met de rechtermuisknop op het knooppunt
 
    * Selecteer **[!UICONTROL Create > Component...]**
 
-      * **Label**:  *opmerking*
-      * **Titel**:  *Alt-opmerking*
-      * **Omschrijving**:  *Alternatieve commentaarstijl*
-      * **Supertype**:  *social/commons/components/hbs/comments/comment*
-      * **Groep**:  `*.hidden*`
+      * **Label**: *opmerking*
+      * **Titel**: *Alt-opmerking*
+      * **Beschrijving**: *Alternatieve commentaarstijl*
+      * **Supertype**: *social/commons/components/hbs/comments/comment*
+      * **Groep**: `*.hidden*`
    * Selecteer **[!UICONTROL Next]**
    * Selecteer **[!UICONTROL Next]**
    * Selecteer **[!UICONTROL Next]**
@@ -98,30 +101,30 @@ De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 
 1. Vouw het zojuist gemaakte knooppunt uit: `/apps/custom/components/comments/comment`
 1. Selecteer **[!UICONTROL Save All]**
-1. Klik met de rechtermuisknop `comment.jsp`
+1. Klikken met rechtermuisknop `comment.jsp`
 1. Selecteer **[!UICONTROL Delete]**
 1. Selecteer **[!UICONTROL Save All]**
 
 ![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Kopieer en wijzig de StandaardManuscripten HBS {#copy-and-modify-the-default-hbs-scripts}
+### De standaard-HBS-scripts kopiëren en wijzigen {#copy-and-modify-the-default-hbs-scripts}
 
-Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Kopiëren `comments.hbs`
 
    * Van [/libs/social/commons/components/hbs/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
    * Naar [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
-* `comments.hbs` bewerken in:
+* Bewerken `comments.hbs` tot:
 
-   * Wijzig de waarde van het `data-scf-component`-kenmerk (~line 20):
+   * De waarde van de optie `data-scf-component` attribuut (~line 20):
 
       * Van `social/commons/components/hbs/comments`
       * Naar `/apps/custom/components/comments`
    * Wijzigen om de aangepaste commentaarcomponent op te nemen (~line 75):
 
-      * Replace `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
+      * Vervangen `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
       * Met `{{include this resourceType='/apps/custom/components/comments/comment'}}`
 
 
@@ -130,37 +133,37 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
    * Van [/libs/social/commons/components/hbs/comments/comment](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
    * Naar [/apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
 
-* `comment.hbs` bewerken in:
+* Bewerken `comment.hbs` tot:
 
    * De waarde van het kenmerk data-scf-component wijzigen (~ regel 19)
 
       * Van `social/commons/components/hbs/comments/comment`
       * Naar `/apps/custom/components/comments/comment`
 
-* Knooppunt `/apps/custom` selecteren
+* Selecteren `/apps/custom` node
 * Selecteer **[!UICONTROL Save All]**
 
 ## Een clientbibliotheekmap maken {#create-a-client-library-folder}
 
-Als u wilt voorkomen dat deze clientbibliotheek expliciet moet worden opgenomen, kunt u de categoriewaarde voor de clientlib van het standaardopmerkingssysteem gebruiken ( `cq.social.author.hbs.comments`), maar dan wordt deze clientClib ook opgenomen voor alle instanties van de standaardcomponent.
+Als u wilt voorkomen dat deze clientbibliotheek expliciet moet worden opgenomen, kunt u de categoriewaarde voor de clientlib van het standaardopmerkingssysteem gebruiken ( `cq.social.author.hbs.comments`), maar dan wordt deze clientlib ook opgenomen voor alle instanties van de standaardcomponent.
 
-Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Knooppunt `/apps/custom/components/comments` selecteren
+* Selecteren `/apps/custom/components/comments` node
 * Selecteer **[!UICONTROL Create Node]**
 
-   * **Naam**:  `clientlibs`
-   * **Type**:  `cq:ClientLibraryFolder`
-   * Toevoegen aan tabblad **[!UICONTROL Properties]**:
+   * **Naam**: `clientlibs`
+   * **Type**: `cq:ClientLibraryFolder`
+   * Toevoegen aan **[!UICONTROL Properties]** tab:
 
-      * **** `categories` **** `String` **NameTypeValue** `cq.social.author.hbs.comments` `Multi`
-      * **** `dependencies` **** `String` **NameTypeValue** `cq.social.scf` `Multi`
+      * **Naam** `categories` **Type** `String` **Waarde** `cq.social.author.hbs.comments` `Multi`
+      * **Naam** `dependencies` **Type** `String` **Waarde** `cq.social.scf` `Multi`
 
 * Selecteer **[!UICONTROL Save All]**
-* Selecteer `/apps/custom/components/comments/clientlib`s-knooppunt en maak 3 bestanden:
+* Met `/apps/custom/components/comments/clientlib`Als knooppunt geselecteerd, maakt u 3 bestanden:
 
-   * **Naam**:  `css.txt`
-   * **Naam**:  `js.txt`
+   * **Naam**: `css.txt`
+   * **Naam**: `js.txt`
    * **Naam**: customcommentsystem.js
 
 * Voer &#39;customcommentsystem.js&#39; in als de inhoud van `js.txt`
@@ -168,9 +171,9 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-## SCF-model registreren en bekijken {#register-the-scf-model-view}
+## Het SCF-model en de weergave registreren {#register-the-scf-model-view}
 
-Wanneer het uitbreiden (met voeten treden) van een component SCF, is resourceType verschillend (het bedekken maakt gebruik van het relatieve onderzoeksmechanisme dat door `/apps` vóór `/libs` zoekt zodat resourceType het zelfde blijft). Daarom is het noodzakelijk om JavaScript (in de cliëntbibliotheek) te schrijven om het model SCF JS en mening voor custom resourceType te registreren.
+Wanneer het uitbreiden (met voeten treden) van een component SCF, is resourceType verschillend (het bedekken maakt gebruik van het relatieve onderzoeksmechanisme dat doorzoekt `/apps` voor `/libs` zodat resourceType het zelfde blijft). Daarom is het noodzakelijk om JavaScript (in de cliëntbibliotheek) te schrijven om het model SCF JS en mening voor custom resourceType te registreren.
 
 Voer de volgende tekst in als de inhoud van `customcommentsystem.js`:
 
@@ -194,7 +197,7 @@ Voer de volgende tekst in als de inhoud van `customcommentsystem.js`:
 
 * Selecteer **[!UICONTROL Save All]**
 
-## De app {#publish-the-app} publiceren
+## De app publiceren {#publish-the-app}
 
 Als u de uitgebreide component wilt ervaren in de publicatieomgeving, moet u de aangepaste component repliceren.
 
@@ -204,6 +207,6 @@ Een manier om dit te doen is
 
    * Selecteer **[!UICONTROL Tools > Deployment > Replication]**
    * Selecteer `Activate Tree`
-   * `Start Path` instellen: tot `/apps/custom`
-   * `Only Modified` uitschakelen
-   * Selecteer `Activate`knop
+   * Set `Start Path`: tot `/apps/custom`
+   * Uitschakelen `Only Modified`
+   * Selecteren `Activate`knop

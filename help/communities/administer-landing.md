@@ -1,8 +1,8 @@
 ---
 title: Communitysites
-seo-title: Communitysites
+seo-title: Communities Sites
 description: Overzicht van de documentatie van AEM Communities
-seo-description: Overzicht van de documentatie van AEM Communities
+seo-description: Overview of the AEM Communities documentation
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
 
 # Communitysites {#communities-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Deze sectie is bedoeld voor degenen die AEM Communities beheren en vertrouwd zijn met de functies van AEM Communities.
 
@@ -45,7 +49,7 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
    * [Rapporten](reports.md)
 
 
-* Gemeenschappen [*tools*](tools.md):
+* Gemeenschappen [*gereedschappen*](tools.md):
 
    * [Sitesjablonen](sites.md)
    * [Groepssjablonen](tools-groups.md)
@@ -59,18 +63,18 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers gegenereerde inhoud (UGC) door inloggers (leden). Ga voor meer informatie over het werken met UGC naar:
 
-* [Algemene UGC-winkel](working-with-srp.md): keuze van SRP voor gedeelde opslag van UGC
-* [Modererende UGC](moderate-ugc.md): Vertrouwde leden kunnen UGC in bulk of in context matigen
-* [UGC](tag-ugc.md) labelen: functies kunnen zo worden geconfigureerd dat leden inhoud kunnen labelen
-* [UGC](translate-ugc.md) vertalen: kunnen worden geconfigureerd om alle UGC te vertalen of kunnen leden geselecteerde posts vertalen
-* [Configuratie](analytics.md) analyse: Adobe Analytics in staat stellen verslag uit te brengen over verschillende maatstaven met betrekking tot lidactiviteit
+* [Algemene UGC-opslag](working-with-srp.md): keuze van SRP voor gedeelde opslag van UGC
+* [Modernisering van UGC](moderate-ugc.md): Vertrouwde leden kunnen UGC in bulk of in context matigen
+* [UGC-tags](tag-ugc.md): functies kunnen zo worden geconfigureerd dat leden inhoud kunnen labelen
+* [UGC vertalen](translate-ugc.md): kunnen worden geconfigureerd om alle UGC te vertalen of kunnen leden geselecteerde posts vertalen
+* [Analyseconfiguratie](analytics.md): Adobe Analytics in staat stellen verslag uit te brengen over verschillende maatstaven met betrekking tot lidactiviteit
 
 ### Communautaire leden {#community-members}
 
-* [Gebruikers en gebruikersgroepen](users.md) beheren: nadere gegevens over de leden van de gemeenschap en de leden , met inbegrip van de geprivilegieerde leden
+* [Gebruikers en gebruikersgroepen beheren](users.md): nadere gegevens over de leden van de gemeenschap en de leden , met inbegrip van de geprivilegieerde leden
 * [Bijdragelimieten](limits.md): mogelijkheid om detachering door nieuwe leden te beperken
-* [Tunneldienst](deploy-communities.md#tunnel-service-on-author): Hiermee kunnen leden van de publicatievorm en lidgroepen worden benaderd vanuit de ontwerpomgeving
-* [Samenstellingen](members.md) van leden en groepen: Hiermee kunnen leden en lidgroepen van de publicatievorm worden gemaakt en beheerd vanuit de auteursomgeving
+* [Tunnelservice](deploy-communities.md#tunnel-service-on-author): Hiermee kunnen leden van de publicatievorm en lidgroepen worden benaderd vanuit de ontwerpomgeving
+* [Samenstellingen van leden en groepen](members.md): Hiermee kunnen leden en lidgroepen van de publicatievorm worden gemaakt en beheerd vanuit de auteursomgeving
 * [Gebruikerssynchronisatie](sync.md): voor het synchroniseren van leden en lidgroepen in meerdere publicatie-instanties
 * [Sociale aanmelding met Facebook en Twitter](social-login.md): de mogelijkheid voor sitebezoekers om lid te worden van de gemeenschap op basis van hun Facebook- of Twitter-gebruikersgegevens
 * [Scores en badges](implementing-scoring.md): de mogelijkheid om toegangspasjes toe te wijzen om de rol(en) van een lid te identificeren en om de leden via hun deelname aan de gemeenschap een toegangspasje te bezorgen
@@ -80,8 +84,8 @@ Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers 
 
 ### Functies Enablement {#enablement-features}
 
-* [Inschakelen](enablement.md) configureren: noodzakelijke informatie om de enablement-functies correct in te stellen
-* [Configuratie](analytics.md) analyse: noodzakelijke informatie om functies van Adobe Analytics for Communities mogelijk te maken
+* [Inschakelen configureren](enablement.md): noodzakelijke informatie om de enablement-functies correct in te stellen
+* [Analyseconfiguratie](analytics.md): noodzakelijke informatie om functies van Adobe Analytics for Communities mogelijk te maken
 * [Tags toewijzen](tag-resources.md): noodzakelijk voor het maken van enablement catalogi
 
 ### Implementatie {#deployment}
@@ -96,12 +100,12 @@ Het is belangrijk om de meest recente versie van Gemeenschappen op het AEM platf
 
 * [Feitenpakket van de nieuwste gemeenschappen](deploy-communities.md#latestfeaturepack)
 
-Zie de distributiepagina voor andere communautaire specifieke informatie, zoals voor [Upgraden](upgrade.md), [Dispatcher](dispatcher.md) en [Replication](deploy-communities.md#replication-agents-on-author).
+Zie de inzetpagina voor andere specifieke informatie van de Gemeenschappen, zoals voor [Bijwerken](upgrade.md), [Dispatcher](dispatcher.md) en [Replicatie](deploy-communities.md#replication-agents-on-author).
 
 ## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
-* Bezoek [Gemeenschappen implementeren](deploy-communities.md) voor meer informatie over aanbevolen implementaties.
+* Bezoek [Gemeenschappen inzetten](deploy-communities.md) voor meer informatie over aanbevolen implementaties.
 
-* Bezoek [Developing Communities](communities.md) voor meer informatie over het SCF (Social Component Framework) en het aanpassen van onderdelen en functies van Gemeenschappen.
+* Bezoek [Ontwikkelingsgemeenschappen](communities.md) voor meer informatie over het raamwerk voor sociale componenten (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
 
-* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het schrijven en configureren van Community-componenten.
+* Bezoek [Componenten van Gemeenschappen ontwerpen](author-communities.md) om te leren om met te schrijven en de componenten van de Gemeenschappen te vormen.

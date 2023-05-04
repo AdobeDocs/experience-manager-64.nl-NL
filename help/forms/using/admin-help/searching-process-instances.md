@@ -1,8 +1,8 @@
 ---
 title: Zoeken naar procesinstanties
-seo-title: Zoeken naar procesinstanties
+seo-title: Searching for process instances
 description: Gebruik de pagina van het Onderzoek van het Proces om onderzoekscriteria in te gaan om een procesgeval te vinden.
-seo-description: Gebruik de pagina van het Onderzoek van het Proces om onderzoekscriteria in te gaan om een procesgeval te vinden.
+seo-description: Use the Process Search page to enter search criteria for finding a process instance.
 uuid: 4a9c5b05-add5-4278-9c6f-d1928b6860d2
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # Zoeken naar procesinstanties{#searching-for-process-instances}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Gebruik de pagina van het Onderzoek van het Proces om onderzoekscriteria in te gaan om een procesgeval te vinden. U kunt de pagina van het Onderzoek van het Proces van de pagina van het vormwerkschema toegang hebben of door Onderzoek op de pagina van de Instantie van het Proces te klikken.
 
@@ -33,14 +36,14 @@ Voer de basiscriteria in om een algemene zoekopdracht uit te voeren. Als u meerd
 1. Klik in de beheerconsole op Services > Forms-workflow > Zoeken in processen.
 1. Geef op de pagina Zoeken in proces onder Algemeen zoeken de volgende criteria op:
 
-   * **Proces-id:** het positieve gehele getal dat elke unieke procesinstantie identificeert.
-   * **Processtatus:** selecteer een status in de lijst.
-   * **Toepassing:** selecteer een toepassing in de lijst. Slechts worden de opgestelde toepassingen getoond.
-   * **Procesnaam - Versie:** selecteer een procesnaam in het menu. Slechts worden de opgestelde processen getoond.
+   * **Proces-id:** Het positieve geheel dat elke unieke procesinstantie identificeert.
+   * **Processtatus:** Selecteer een status in de lijst.
+   * **Toepassing:** Selecteer een toepassing in de lijst. Slechts worden de opgestelde toepassingen getoond.
+   * **Procesnaam - Versie:** Selecteer een procesnaam in het menu. Slechts worden de opgestelde processen getoond.
 
 1. Klik op Zoeken. De pagina Procesinstantie wordt weergegeven met een overzicht van de gevonden varianten.
 
-## Een gedetailleerde zoekopdracht uitvoeren naar een proces {#perform-a-detailed-search-for-a-process}
+## Gedetailleerde zoekopdrachten uitvoeren naar een proces {#perform-a-detailed-search-for-a-process}
 
 U kunt specifieke kenmerken invoeren om een gedetailleerde zoekopdracht uit te voeren. Een gedetailleerde zoekopdracht is het meest geschikt als u veel procesinstanties uitvoert en u de mogelijke zoekopdrachten aan de hand van bepaalde criteria moet beperken.
 
@@ -58,7 +61,7 @@ U kunt specifieke kenmerken invoeren om een gedetailleerde zoekopdracht uit te v
 
 [Over procesinstantiestatussen](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## Een gecombineerde zoekopdracht uitvoeren naar een proces {#perform-a-combined-search-for-a-process}
+## Een gecombineerde zoekopdracht naar een proces uitvoeren {#perform-a-combined-search-for-a-process}
 
 Als u een zoekopdracht wilt maken op basis van zowel een algemene zoekopdracht als een gedetailleerde zoekopdracht, met een impliciete AND tussen de gebieden, voert u uw zoekcriteria in in de gebieden Algemeen zoeken en Gedetailleerd zoeken op de pagina Zoeken in proces.
 

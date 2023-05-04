@@ -1,8 +1,8 @@
 ---
 title: Referenties configureren voor gebruik met Acrobat Reader DC-extensies
-seo-title: Referenties configureren voor gebruik met Acrobat Reader DC-extensies
+seo-title: Configuring credentials for use with Acrobat Reader DC extensions
 description: Leer hoe u referenties configureert voor gebruik met Acrobat Reader DC-extensies.
-seo-description: Leer hoe u referenties configureert voor gebruik met Acrobat Reader DC-extensies.
+seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
 uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
 contentOwner: admin
 content-type: reference
@@ -10,21 +10,24 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: 40c2e205-0115-4ebe-ab24-66c8ee0663fa
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
 # Referenties configureren voor gebruik met Acrobat Reader DC-extensies{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Als u gebruiksrechten wilt toepassen op PDF-documenten, configureert u AEM formulieren met een geldige referentie voor Acrobat Reader DC-extensies. Tijdens de installatie van AEM formulieren kan een referentie zijn geconfigureerd. Als u uw Acrobat Reader DC-extensieverantwoording niet hebt geconfigureerd tijdens het uitvoeren van Configuration Manager of als u een nieuwe of vervangende referentie moet importeren, kunt u dit doen met de pagina&#39;s van het Betrouwbaarheidsbeleid voor winkelbeheer.
 
 Als u een evaluatiereferentie gebruikt, vervang het met een productieleferentie wanneer het bewegen aan uw productiemilieu. Als u een verlopen referentie of evaluatiereferentie wilt bijwerken, verwijdert u eerst de oude Acrobat Reader DC-extensieverwijzing.
 
-Voor informatie over het verkrijgen van een referentie, zie [Voorbereiden om AEM formulieren (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63) te installeren.
+Voor informatie over het verkrijgen van een referentie raadpleegt u [Installatie van AEM formulieren voorbereiden (één server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 De Trust Store kan meer dan één referentie voor Acrobat Reader DC-extensies bevatten. U moet één van die geloofsbrieven als referentie van de Uitbreidingen van de standaardReader aanwijzen. De standaardreferentie wordt gebruikt wanneer een Workbench-gebruiker niet kan bepalen welke referentie moet worden gebruikt tijdens het maken van processen. Deze regels zijn van toepassing op standaardreferenties:
 
@@ -37,7 +40,7 @@ De Trust Store kan meer dan één referentie voor Acrobat Reader DC-extensies be
 >
 >U kunt geloofsbrieven ook invoeren en schrappen programmatically. (Zie [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_63).)
 
-## Een Acrobat Reader DC-extensiereferentie {#import-a-acrobat-reader-dc-extensions-credential} importeren
+## Een Acrobat Reader DC-extensiereferentie importeren {#import-a-acrobat-reader-dc-extensions-credential}
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
 1. Klik op Importeren en selecteer Acrobat Reader DC Extension Credential onder Type vertrouwde winkel.

@@ -1,20 +1,24 @@
 ---
 title: Verbeterde sortering van elementen in AEM
-description: Leer hoe [!DNL Experience Manager] Middelen server-zijsortering aan de activa van de soortomslag of een onderzoeksvraag bij één keer in plaats van het sorteren van hen in partijen op de cliëntkant opstelt.
+description: Meer informatie [!DNL Experience Manager] Middelen gebruiken sortering op de server om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches aan de clientzijde te sorteren.
 contentOwner: AG
 feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 1%
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
 # Verbeterde sortering van elementen in [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Leer hoe [!DNL Experience Manager] Middelen server-zijsortering aan de activa van de soortomslag of een onderzoeksvraag bij één keer in plaats van het sorteren van hen in partijen op de cliëntkant opstelt.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Meer informatie [!DNL Experience Manager] Middelen gebruiken sortering op de server om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches aan de clientzijde te sorteren.
 
 De zoekfunctie van Adobe Experience Manager Assets is verbeterd en biedt nu een efficiënte manier om een groot aantal elementen te sorteren in de weergave met de mappenlijst en pagina&#39;s met zoekresultaten. U kunt ook tijdlijnitems sorteren.
 
@@ -51,7 +55,7 @@ De zoekfunctie van Adobe Experience Manager Assets is verbeterd en biedt nu een 
 
 >[!NOTE]
 >
->Als u de waarden in de `Name` of `Title`kolommen wilt sorteren, bedekt `/libs/dam/gui/content/commons/availablecolumns` en wijzigt u de waarde van `sortable` in `True`.
+>De waarden sorteren in het dialoogvenster `Name` of de `Title`kolommen, bedekking `/libs/dam/gui/content/commons/availablecolumns` en wijzigt u de waarde van `sortable` tot `True`.
 
 ## Elementen sorteren in zoekresultaten {#sorting-assets-in-search-results}
 
@@ -78,7 +82,7 @@ U kunt zoekresultaten sorteren op basis van de volgende velden:
 [!DNL Assets] Hiermee kunt u tijdlijnitems chronologisch sorteren, zoals annotaties, versies, workflows en activiteiten.
 
 1. Selecteer in de interface Elementen een element waarvoor u de tijdlijn wilt weergeven.
-1. Klik/tik het pictogram GolbalNav en selecteer **[!UICONTROL Timeline]**.
+1. Klik op het pictogram GolbalNav of tik erop en selecteer **[!UICONTROL Timeline]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
@@ -86,6 +90,6 @@ U kunt zoekresultaten sorteren op basis van de volgende velden:
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Klik/tik het **[!UICONTROL Sort]** pictogram naast het **[!UICONTROL Date]** etiket. Op basis van uw selectie worden de annotaties weergegeven in de chronologische volgorde/omgekeerde chronologische volgorde waarin ze aan het element zijn toegevoegd.
+1. Klik/tik op de knop **[!UICONTROL Sort]** pictogram naast **[!UICONTROL Date]** label. Op basis van uw selectie worden de annotaties weergegeven in de chronologische volgorde/omgekeerde chronologische volgorde waarin ze aan het element zijn toegevoegd.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)

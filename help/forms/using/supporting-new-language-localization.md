@@ -1,32 +1,36 @@
 ---
 title: Ondersteuning voor nieuwe landinstellingen voor lokalisatie van adaptieve formulieren
-seo-title: Ondersteuning voor nieuwe landinstellingen voor lokalisatie van adaptieve formulieren
+seo-title: Supporting new locales for adaptive forms localization
 description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren. De landinstellingen die standaard worden ondersteund, zijn Engels, Frans, Duits en Japans.
-seo-description: Met AEM Forms kunt u nieuwe landinstellingen toevoegen voor het lokaliseren van adaptieve formulieren. De landinstellingen die standaard worden ondersteund, zijn Engels, Frans, Duits en Japans.
+seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
 uuid: d4cee51b-c555-4544-9ae9-4aa8d38b2b17
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
-feature: Adaptieve Forms
+feature: Adaptive Forms
 role: Admin
 exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
 
 # Ondersteuning voor nieuwe landinstellingen voor lokalisatie van adaptieve formulieren {#supporting-new-locales-for-adaptive-forms-localization}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Over woordenboeken voor landinstellingen {#about-locale-dictionaries}
 
 De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoordenboeken:
 
-**Formulierspecifiek** woordenboekBevat tekenreeksen die worden gebruikt in adaptieve formulieren. Bijvoorbeeld labels, veldnamen, foutberichten, Help-beschrijvingen enzovoort. Het wordt beheerd als een reeks dossiers XLIFF voor elke scène en u kunt tot het toegang hebben in https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
+**Formulierspecifiek woordenboek** Bevat tekenreeksen die in adaptieve formulieren worden gebruikt. Bijvoorbeeld labels, veldnamen, foutberichten, Help-beschrijvingen enzovoort. Het wordt beheerd als een set XLIFF-bestanden voor elke landinstelling en u hebt toegang tot dit bestand via https://`<host>`:`<port>`/libs/cq/i18n/translator.html.
 
-**Algemene** woordenboekenEr zijn twee algemene woordenboeken, beheerd als JSON-objecten, in AEM clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken in CRXDe Lite op /libs/fd/xfaforms/clientlibs/I18N. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken meestal niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling te bewaren deze in cache plaatsen en het gebruik van de netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
+**Algemene woordenboeken** Er zijn twee algemene woordenboeken, beheerd als JSON-objecten, in AEM clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken in CRXDe Lite op /libs/fd/xfaforms/clientlibs/I18N. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken meestal niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling te bewaren deze in cache plaatsen en het gebruik van de netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
 
 ### Hoe lokalisatie van adaptief formulier werkt {#how-localization-of-adaptive-form-works}
 
@@ -34,17 +38,17 @@ Wanneer een adaptief formulier wordt weergegeven, identificeert het de aangevraa
 
 * Request-parameter `afAcceptLang`
 
-   Als u de landinstelling van de browser van gebruikers wilt overschrijven, kunt u de aanvraagparameter `afAcceptLang` doorgeven om de landinstelling te forceren. Met de volgende URL wordt het formulier bijvoorbeeld geforceerd weergegeven in de Japanse landinstelling:
+   Als u de browserlandinstelling van gebruikers wilt overschrijven, kunt u het `afAcceptLang` request parameter to force the locale. Met de volgende URL wordt het formulier bijvoorbeeld geforceerd weergegeven in de Japanse landinstelling:
 
    `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* De landinstelling van de browser die voor de gebruiker is ingesteld en die in de aanvraag wordt opgegeven met de koptekst `Accept-Language`.
+* De landinstelling van de browser die voor de gebruiker is ingesteld. Deze landinstelling wordt in de aanvraag opgegeven met de functie `Accept-Language` header.
 
 * Taalinstelling van de gebruiker opgegeven in AEM.
 
 Nadat de landinstelling is vastgesteld, wordt in het adaptieve formulier het formulierspecifieke woordenboek gekozen. Als het formulierspecifieke woordenboek voor de aangevraagde landinstelling niet wordt gevonden, wordt het Engelse (en) woordenboek gebruikt.
 
-Als er geen clientbibliotheek voor de aangevraagde landinstelling bestaat, wordt in de bibliotheek gecontroleerd of er taalcode aanwezig is in de landinstelling. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) is en de clientbibliotheek voor `en_ZA` niet bestaat, gebruikt het adaptieve formulier de clientbibliotheek voor `en` (Engels) taal, als deze bestaat. Als er echter geen van deze functies bestaat, wordt in het adaptieve formulier het woordenboek gebruikt voor de landinstelling `en`.
+Als er geen clientbibliotheek voor de aangevraagde landinstelling bestaat, wordt in de bibliotheek gecontroleerd of er taalcode aanwezig is in de landinstelling. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) en de clientbibliotheek voor `en_ZA` bestaat niet. Het adaptieve formulier gebruikt de clientbibliotheek voor `en` (Engels) taal, als deze bestaat. Als er echter geen van deze mogelijkheden bestaat, wordt in het adaptieve formulier het woordenboek `en` landinstelling.
 
 ## Ondersteuning voor lokalisatie toevoegen voor niet-ondersteunde landinstellingen {#add-localization-support-for-non-supported-locales}
 
@@ -63,18 +67,18 @@ Ondersteuning voor een nieuwe landinstelling toevoegen bij runtime voor adaptiev
 ### Een landinstelling toevoegen aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Ga naar `https://[server]:[port]/system/console/configMgr`.
-1. Klik om de **Guide Localization Service** component te bewerken.
+1. Klik om de **Guide Localization Service** component.
 1. Voeg de landinstelling toe die u wilt toevoegen aan de lijst met ondersteunde landinstellingen.
 
 ![GuideLocalizationService](assets/configservice.png)
 
 ### XFA-clientbibliotheek toevoegen voor een landinstelling {#add-xfa-client-library-for-a-locale-br}
 
-Maak een knooppunt van het type `cq:ClientLibraryFolder` onder `etc/<folderHierarchy>`, met categorie `xfaforms.I18N.<locale>`, en voeg de volgende bestanden toe aan de clientbibliotheek:
+Een knooppunt van het type maken `cq:ClientLibraryFolder` krachtens `etc/<folderHierarchy>`, met categorie `xfaforms.I18N.<locale>`en voeg de volgende bestanden toe aan de clientbibliotheek:
 
-* **I18N.** jsdefine  `xfalib.locale.Strings` voor  `<locale>` zoals bepaald in  `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+* **I18N.js** definiëren `xfalib.locale.Strings` voor de `<locale>` zoals gedefinieerd in `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 
-* **js.** txtcontaining the following:
+* **js.txt** die het volgende bevatten:
 
 ```
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
@@ -84,15 +88,15 @@ I18N.js
 
 ### Aangepaste clientbibliotheek voor een landinstelling toevoegen {#add-adaptive-form-client-library-for-a-locale-br}
 
-Maak een knooppunt van het type `cq:ClientLibraryFolder` onder `etc/<folderHierarchy>`, met categorie als `guides.I18N.<locale>` en afhankelijkheden als `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` en `guide.common`. &quot;
+Een knooppunt van het type maken `cq:ClientLibraryFolder` krachtens `etc/<folderHierarchy>`, met categorie als `guides.I18N.<locale>` en afhankelijkheden als `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` en `guide.common`. &quot;
 
 Voeg de volgende bestanden toe aan de clientbibliotheek:
 
-* **i18n.** jsdefine  `guidelib.i18n`, met patronen van &quot;agendaSymbols&quot;,  `datePatterns`,  `timePatterns`,  `dateTimeSymbols`,  `numberPatterns`,  `numberSymbols`,  `currencySymbols`voor de  `typefaces`   `<locale>`   [ ](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)volgens de XFA specificaties die in de specificatieLocale Set worden beschreven. U kunt ook zien hoe deze wordt gedefinieerd voor andere ondersteunde landinstellingen in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
+* **i18n.js** definiëren `guidelib.i18n`met patronen van &quot;agendaSymbolen&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` voor de `<locale>` volgens de XFA-specificaties die worden beschreven in [Locale Set Specification](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). U kunt ook zien hoe de definitie voor andere ondersteunde landinstellingen is vastgelegd in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
 
-* **LogMessages.** jsdefine  `guidelib.i18n.strings` en  `guidelib.i18n.LogMessages` voor  `<locale>` zoals bepaald in  `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
+* **LogMessages.js** definiëren `guidelib.i18n.strings` en `guidelib.i18n.LogMessages` voor de `<locale>` zoals gedefinieerd in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 
-* **js.** txtcontaining the following:
+* **js.txt** die het volgende bevatten:
 
 ```
 i18n.js
@@ -101,16 +105,16 @@ LogMessages.js
 
 ### Ondersteuning voor landinstellingen toevoegen voor het woordenboek {#add-locale-support-for-the-dictionary-br}
 
-Voer deze stap slechts uit als `<locale>` u toevoegt niet onder `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr` is.
+Voer deze stap alleen uit als de `<locale>` u toevoegt behoort niet tot `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
-1. Maak een `nt:unstructured`-knooppunt `languages` onder `etc`, als dit nog niet bestaat.
+1. Een `nt:unstructured` node `languages` krachtens `etc`, indien niet aanwezig.
 
-1. Voeg een multi-getaxeerde koordbezit `languages` aan de knoop toe, als niet reeds aanwezig.
-1. Voeg de `<locale>` standaardwaarden `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr` toe als deze waarden nog niet aanwezig zijn.
+1. Een multi-getaxeerde tekenreekseigenschap toevoegen `languages` aan de knoop, als niet reeds aanwezig.
+1. Voeg de `<locale>` standaardwaarden voor landinstellingen `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, indien niet aanwezig.
 
-1. Voeg `<locale>` aan de waarden van `languages` bezit van `/etc/languages` toe.
+1. Voeg de `<locale>` op de waarden van de `languages` eigenschap van `/etc/languages`.
 
-De `<locale>` verschijnt om `https://[server]:[port]/libs/cq/i18n/translator.html`.
+De `<locale>` wordt weergegeven op `https://[server]:[port]/libs/cq/i18n/translator.html`.
 
 ### De server opnieuw starten {#restart-the-server}
 

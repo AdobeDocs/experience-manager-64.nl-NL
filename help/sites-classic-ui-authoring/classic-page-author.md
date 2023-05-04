@@ -1,8 +1,8 @@
 ---
 title: Pagina's ontwerpen
-seo-title: Pagina's ontwerpen
+seo-title: Authoring Pages
 description: Er zijn twee overzichten aan creatie met AEM. (1) Eerste stappen voor auteurs - een inleiding voor nieuwe auteurs, en (2) snelle gids voor het ontwerpen van pagina's - een snelle gids (op hoog niveau) aan de belangrijkste acties.
-seo-description: Er zijn twee overzichten aan creatie met AEM. (1) Eerste stappen voor auteurs - een inleiding voor nieuwe auteurs, en (2) snelle gids voor het ontwerpen van pagina's - een snelle gids (op hoog niveau) aan de belangrijkste acties.
+seo-description: There are two overviews to authoring with AEM. (1) First Steps for Authors - an introduction for new authors, and (2) Quick Guide to Authoring Pages - a quick guide (high-level) to the main actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,19 +10,22 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: be2465a5-8875-4c9c-bd0d-32631b0fe294
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
 
 # Pagina&#39;s ontwerpen{#authoring-pages}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Hieronder vindt u een overzicht van het ontwerpen met AEM:
 
-* [Eerste stappen voor auteurs](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)  - een inleiding voor nieuwe auteurs
+* [Eerste stappen voor auteurs](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - een inleiding voor nieuwe auteurs
 
 >[!NOTE]
 >
@@ -32,23 +35,23 @@ Hieronder vindt u een overzicht van het ontwerpen met AEM:
 
 Om u te helpen bij het ontwerpen van pagina&#39;s, biedt de auteursomgeving functies zoals:
 
-* **Sleep en**
-zet componenten (zoals Tekst, Afbeelding) en digitale elementen (zoals afbeeldingen) op de pagina neer door ze gewoon naar de gewenste locatie te slepen.
+* **Slepen en neerzetten**
+Componenten (zoals Tekst, Afbeelding) en digitale elementen (zoals afbeeldingen) kunnen eenvoudig op de pagina worden geplaatst door ze naar de gewenste locatie te slepen.
 
-* ****
-EditingOnce die op uw pagina wordt geplaatst, kan een component-specifieke dialoog worden geopend om inhoud in te gaan en/of eigenschappen van die component (bijvoorbeeld, beeldgrootte) te vormen.
+* **Bewerken**
+Zodra gepositioneerd op de pagina, kan een componentspecifieke dialoog worden geopend om inhoud in te gaan en/of eigenschappen van die component (bijvoorbeeld, beeldgrootte) te vormen.
 
-* **Componenten**
-EditingText en Image op locatie kunnen rechtstreeks op de webpagina worden bewerkt zonder een dialoogvenster of een expliciete opslagactie te openen.
+* **Lokaal bewerken**
+Componenten Tekst en Afbeelding kunnen rechtstreeks op de webpagina worden bewerkt zonder een dialoogvenster of een expliciete opslaghandeling te openen.
 
-* **[Zwevend](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
-SidetrapA zwevend venster &quot;inspecteur&quot; dat op de editable pagina verschijnt. Vanaf hier kunnen nieuwe componenten naar de pagina worden gesleept en kunnen paginaspecifieke handelingen worden uitgevoerd.
+* **[Sidetrap](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+Een zwevend venster &quot;inspecteur&quot; dat wordt weergegeven op de bewerkbare pagina. Vanaf hier kunnen nieuwe componenten naar de pagina worden gesleept en kunnen paginaspecifieke handelingen worden uitgevoerd.
 
-* **[Content](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-FinderAan de linkerkant van elke pagina die kan worden geschreven, biedt de zoeker van inhoud snel toegang tot een reeks elementen, waaronder digitale elementen (zoals andere afbeeldingen, Flash-elementen en documenten), andere pagina&#39;s en alinea&#39;s. Deze items kunnen naar de pagina worden gesleept. bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
+* **[Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
+Aan de linkerkant van elke pagina die kan worden geschreven, biedt de zoeker van inhoud snel toegang tot een reeks elementen, waaronder digitale elementen (zoals andere afbeeldingen, Flash-elementen en documenten), andere pagina&#39;s en alinea&#39;s. Deze items kunnen naar de pagina worden gesleept. bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
 
-* **ContextmenuAls u**
-met de rechtermuisknop op de meeste elementen op het scherm klikt (bijvoorbeeld alinea&#39;s op de pagina), wordt een contextmenu met de juiste actieopties weergegeven.
+* **Contextmenu**
+Als u met de rechtermuisknop op de meeste elementen op het scherm klikt (bijvoorbeeld alinea&#39;s op de pagina), wordt een contextmenu met de juiste actieopties weergegeven.
 
-* **Zoeken zoals u**
-typtIn bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die naar inhoud zoeken via de AEM interface, worden dynamische overeenkomsten getoond terwijl u de query typt.
+* **Zoeken terwijl u typt**
+In bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die inhoud zoeken via de AEM interface, worden dynamische overeenkomsten weergegeven wanneer u de query typt.

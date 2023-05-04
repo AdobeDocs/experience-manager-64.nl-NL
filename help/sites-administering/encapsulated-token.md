@@ -1,8 +1,8 @@
 ---
 title: Ondersteuning voor ingekapselde token
-seo-title: Ondersteuning voor ingekapselde token
+seo-title: Encapsulated Token Support
 description: Leer over de Encapsulated Token steun in AEM.
-seo-description: Leer over de Encapsulated Token steun in AEM.
+seo-description: Learn about the Encapsulated Token support in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: 2339657a-20ac-42af-96fb-aebafd5044c7
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Encapsulated Token Support{#encapsulated-token-support}
+# Ondersteuning voor ingekapselde token{#encapsulated-token-support}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -30,13 +33,13 @@ Dit is van bijzonder belang voor horizontale schaalbaarheid. In een opstelling v
 
 Neem het volgende scenario als voorbeeld:
 
-Een gebruiker kan bij publicatie-instantie één worden geverifieerd, maar als een volgende aanvraag naar publicatie-instantie twee gaat, heeft die instantie niet de status persisted authentication, omdat die status in de opslagplaats van publicatie één werd aangehouden en twee een eigen opslagplaats heeft.
+Een gebruiker kan bij publicatieinstantie één voor authentiek worden verklaard, maar als een verder verzoek instantie twee gaat publiceren, heeft die instantie niet die persisted authentificatiestatus, omdat die staat in de bewaarplaats van publiceert werd voortgeduurd en twee zijn eigen bewaarplaats publiceert.
 
 De oplossing voor dit is kleverige verbindingen op het niveau van het taakverdelingsmechanisme te vormen. Met kleverige verbindingen zou een gebruiker altijd naar hetzelfde publicatie-exemplaar worden geleid. Als gevolg hiervan is een werkelijk optimale taakverdeling niet mogelijk.
 
 Als een publicatie-instantie niet beschikbaar wordt, verliezen alle gebruikers die voor die instantie zijn geverifieerd hun sessie. Dit komt omdat toegang tot de opslagplaats nodig is om het verificatiecookie te valideren.
 
-## Stateless Authentificatie met het Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
+## Stateless Authentificatie met Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
 
 De oplossing voor horizontale scalability is stateless authentificatie met het gebruik van de nieuwe Encapsulated Token steun in AEM.
 
@@ -52,16 +55,14 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 >
 >Als er bijvoorbeeld een nieuwe gebruiker wordt gemaakt op het nummer één van de publicatie-instantie, wordt deze vanwege de manier waarop de ingekapselde token werkt, geverifieerd bij het publiceren van nummer twee. Als de gebruiker niet bestaat op de tweede publicatie-instantie, is de aanvraag nog steeds niet geslaagd.
 
-
 ## Het vormen van Encapsulated Token {#configuring-the-encapsulated-token}
 
 >[!NOTE]
 >Alle authentificatiemanagers die gebruikers synchroniseren en zich op symbolische authentificatie (zoals SAML &amp; OAuth) baseren zullen slechts met ingekapselde tokens werken als:
 >
 >* Vaste sessies zijn ingeschakeld, of
-   >
-   >
-* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet zullen worden gesteund in situaties waar de managers **create** gebruikers tijdens het synchronisatieproces.
+>
+>* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet in situaties zullen worden gesteund waar de managers **maken** gebruikers tijdens het synchronisatieproces.
 
 
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
@@ -69,20 +70,20 @@ Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encaps
 1. Wegens de cryptografie in kwestie, moeten alle instanties de zelfde sleutel HMAC hebben. Sinds AEM 6.3 wordt het sleutelmateriaal niet langer opgeslagen in de gegevensopslagruimte, maar in het eigenlijke bestandssysteem. In dit verband is het de beste manier om de toetsen te repliceren om deze van het bestandssysteem van de broninstantie naar die van de doelinstantie(s) te kopiëren waarnaar u de toetsen wilt repliceren. Zie hieronder meer informatie onder &quot;Replicating the HMAC key&quot;.
 1. Het ingekapselde token moet worden ingeschakeld. Dit kan door de Console van het Web worden gedaan.
 
-### Replicatie van de sleutel HMAC {#replicating-the-hmac-key}
+### Replicatie van de HMAC-sleutel {#replicating-the-hmac-key}
 
-De sleutel HMAC is aanwezig als binair bezit van `/etc/key` in de bewaarplaats. U kunt het afzonderlijk downloaden door de **mening** verbinding naast het te drukken:
+De sleutel HMAC is aanwezig als binair bezit van `/etc/key` in de repository. U kunt het afzonderlijk downloaden door op de knop **weergave** koppeling ernaast:
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
 Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 
 1. Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
-1. Zoek de `com.adobe.granite.crypto.file`-bundel in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
+1. Zoek de `com.adobe.granite.crypto.file` in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
 
    * &lt;author-aem-install-dir>/crx-quickstart/launch/felix/bundle21
 
-   In het `bundle.info`-bestand in elke map wordt de bundelnaam weergegeven.
+   De `bundle.info` in elke map wordt de bundelnaam weergegeven.
 
 1. Navigeer naar de gegevensmap. Bijvoorbeeld:
 
@@ -94,14 +95,14 @@ Als u de sleutel in meerdere instanties wilt repliceren, moet u:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Plak de twee bestanden die u eerder hebt gekopieerd.
-1. [Vernieuw de Crypto-](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) bundel als de doelinstantie al wordt uitgevoerd.
+1. [De Cryptobundel vernieuwen](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie al actief is.
 
 1. Herhaal de bovenstaande stappen voor alle gevallen waarin u de toets wilt repliceren.
 
-#### Encapsulated Token {#enabling-the-encapsulated-token} toelaten
+#### Encapsulated Token toelaten {#enabling-the-encapsulated-token}
 
 Zodra de sleutel HMAC is herhaald, kunt u Encapsulated Token via de Console van het Web toelaten:
 
 1. Wijs uw browser aan `https://serveraddress:port/system/console/configMgr`
-1. Zoek een ingang genoemd **Dag CRX Symbolische de Handler van de Authentificatie** en klik het.
-1. Schakel in het volgende venster het vakje **Ingekapselde tokenondersteuning inschakelen** in en druk op **Save**.
+1. Zoek een vermelding die **Day CRX Token Authentication Handler** en klik erop.
+1. Tik in het volgende venster op de knop **Ondersteuning voor ingekapselde token inschakelen** doos en druk op **Opslaan**.

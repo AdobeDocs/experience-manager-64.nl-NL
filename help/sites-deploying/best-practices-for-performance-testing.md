@@ -4,14 +4,18 @@ seo-title: Best Practices for Performance Testing
 description: In dit artikel worden de algemene strategieën en methoden beschreven die voor het testen van de prestaties worden gebruikt, alsmede enkele instrumenten die beschikbaar zijn om het proces te helpen.
 seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 exl-id: 8d0863be-108d-49d8-8243-ea5e404ed64c
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1928'
 ht-degree: 0%
 
 ---
 
 # Best practices voor het testen van prestaties{#best-practices-for-performance-testing}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -43,7 +47,7 @@ Veel prestatieproblemen worden pas zichtbaar wanneer het systeem zwaar belast is
 
 Voordat wordt begonnen met het testen van de prestaties, moeten niet-functionele eisen worden vastgesteld om de belasting- en responstijden te bepalen. Als u van een bestaand systeem migreert, zorg ervoor dat de reactietijd aan uw huidige productiewaarden gelijkaardig is. Voor lading, is het best om de huidige pieklading te nemen en te verdubbelen. Hierdoor kan de website goed blijven functioneren terwijl deze groeit.
 
-### Opties {#tools}
+### Gereedschappen {#tools}
 
 Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestaties op de markt. Wanneer het runnen van een lading die hulpmiddel produceert, is het belangrijk om ervoor te zorgen dat de computers die de tests uitvoeren voldoende netwerkbandbreedte hebben. Als de testmachine de grenzen van de verbinding bereikt, wordt geen extra belasting in de testomgeving gegenereerd.
 

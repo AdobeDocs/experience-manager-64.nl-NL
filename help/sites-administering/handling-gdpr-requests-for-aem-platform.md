@@ -1,35 +1,38 @@
 ---
 title: Behandeling van GDPR-verzoeken aan de AEM Stichting
-seo-title: Behandeling van GDPR-verzoeken aan de AEM Stichting
+seo-title: Handling GDPR Requests for the AEM Foundation
 description: Behandeling van GDPR-verzoeken aan de AEM Stichting
-seo-description: 'null'
+seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: dcd67a1e-b20f-4ed4-b154-dd250cbd8320
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 6%
+source-wordcount: '466'
+ht-degree: 5%
 
 ---
 
-# Behandeling van GDPR-verzoeken om de AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+# Behandeling van GDPR-verzoeken aan de AEM Stichting{#handling-gdpr-requests-for-the-aem-foundation}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!IMPORTANT]
 >
 >GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy; zoals GDPR, CCPA enz.
 
-## Ondersteuning voor GDPR-basis AEM {#aem-foundation-gdpr-support}
+## Ondersteuning van AEM Foundation GDPR {#aem-foundation-gdpr-support}
 
 Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opgeslagen het Profiel van de Gebruiker. Daarom richt de informatie in dit artikel hoofdzakelijk hoe te om tot gebruikersprofielen toegang te hebben en te schrappen, om de verzoeken van de Toegang te richten GDPR en van de Schrapping respectievelijk.
 
-## Een gebruikersprofiel {#accessing-a-user-profile} openen
+## Een gebruikersprofiel openen {#accessing-a-user-profile}
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Settings - Security - Users]** te bladeren of rechtstreeks naar `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html` te bladeren
+1. Open de console van het Beleid van de Gebruiker, door te doorbladeren aan **[!UICONTROL Settings - Security - Users]** of door rechtstreeks te bladeren naar `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -37,7 +40,7 @@ Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opge
 
    ![gebruikerszoekopdracht](assets/usersearch.png)
 
-1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder **[!UICONTROL Details]** tabel.
+1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder **[!UICONTROL Details]** tab.
 
    ![userprofile_small](assets/userprofile_small.png)
 
@@ -72,9 +75,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Een gebruiker uitschakelen en de bijbehorende profielen {#disabling-a-user-and-deleting-the-associated-profiles} verwijderen
+## Een gebruiker uitschakelen en de bijbehorende profielen verwijderen {#disabling-a-user-and-deleting-the-associated-profiles}
 
-### Gebruiker {#disable-user} uitschakelen
+### Gebruiker uitschakelen {#disable-user}
 
 1. Open de console van het Beleid van de Gebruiker en onderzoek naar de gebruiker in kwestie, zoals hierboven beschreven.
 1. Houd de muisaanwijzer boven de gebruiker en klik op het pictogram Selecteren. Het profiel wordt grijs om aan te geven dat het is geselecteerd.
@@ -91,13 +94,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![gehandicapte gebruiker](assets/disableduser.png)
 
-### Gebruikersprofielgegevens {#delete-user-profile-information} verwijderen
+### Gebruikersprofielgegevens verwijderen {#delete-user-profile-information}
 
-1. Meld u aan bij CRXDE Lite en zoek vervolgens naar `[!UICONTROL userId]`:
+1. Meld u aan bij CRXDE Lite en zoek vervolgens naar de `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Open het gebruikersknooppunt dat standaard onder `[!UICONTROL /home/users]` staat:
+1. Open het gebruikersknooppunt onder `[!UICONTROL /home/users]` standaard:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 

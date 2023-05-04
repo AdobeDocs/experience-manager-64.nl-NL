@@ -1,8 +1,8 @@
 ---
 title: Testen van adaptieve formulieren automatiseren
-seo-title: Testen van adaptieve formulieren automatiseren
+seo-title: Automate testing of adaptive forms
 description: Met Calvin kunt u testcase maken in CRXDE en UI-tests rechtstreeks uitvoeren in de webbrowser om uw adaptieve formulieren grondig te testen.
-seo-description: Met Calvin kunt u testcase maken in CRXDE en UI-tests rechtstreeks uitvoeren in de webbrowser om uw adaptieve formulieren grondig te testen.
+seo-description: Using Calvin you can create test cases in CRXDE and run UI tests directly in the web browser to thoroughly test your adaptive forms.
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
@@ -10,21 +10,24 @@ topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 feature: Adaptive Forms
 exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 1%
+source-wordcount: '1264'
+ht-degree: 0%
 
 ---
 
-# Automatisch testen van adaptieve formulieren {#automate-testing-of-adaptive-forms}
+# Testen van adaptieve formulieren automatiseren {#automate-testing-of-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
 Adaptieve formulieren zijn een integraal onderdeel van de interactie van uw klant. Het is belangrijk dat u uw aangepaste formulieren test met elke wijziging die u erin aanbrengt, bijvoorbeeld tijdens het uitrollen van een nieuw fixeerpakket of het wijzigen van een regel in het formulier. Het kan echter vervelend zijn om adaptieve formulieren en alle velden erin te testen.
 
-Met Calvin kunt u het testen van uw adaptieve formulieren automatiseren in de webbrowser. Calvin gebruikt [Hobbes](/help/sites-developing/hobbes.md) gebruikersinterface voor het uitvoeren van de tests en verstrekt de volgende hulpmiddelen:
+Met Calvin kunt u het testen van uw adaptieve formulieren automatiseren in de webbrowser. Calvin gebruikt [Hobbes](/help/sites-developing/hobbes.md)De gebruikersinterface van de gebruiker voor het uitvoeren van de tests en verstrekt de volgende hulpmiddelen:
 
 * Een JavaScript API voor het maken van tests.
 * Een gebruikersinterface voor het uitvoeren van tests.
@@ -58,7 +61,7 @@ Met Calvin kunt u testgevallen maken in CRXDE en UI-tests rechtstreeks uitvoeren
    <td><p>Expressieregels</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>Zijn de expressies die aan formulierobjecten zijn gekoppeld, zoals berekenen, zichtbaar, voeren scripts uit nadat een veld is afgesloten en worden deze uitgevoerd nadat de relevante UI-bewerkingen zijn uitgevoerd?<br /> </li> 
+     <li>Worden de expressies die aan formulierobjecten zijn gekoppeld, zoals berekenen, zichtbaar, scripts uitgevoerd nadat een veld is afgesloten en worden deze uitgevoerd nadat de relevante UI-bewerkingen zijn uitgevoerd?<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -89,7 +92,7 @@ Met Calvin kunt u testgevallen maken in CRXDE en UI-tests rechtstreeks uitvoeren
 
 Voordat u dit artikel kunt gebruiken voor het maken van testcase, moet u het volgende weten:
 
-* Testsuites maken en testcase uitvoeren met [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
+* Testsuites maken en testcase uitvoeren met behulp van [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
 * [JavaScript-API&#39;s blokkeren](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [JavaScript-API&#39;s Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
@@ -102,7 +105,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 
    De clientlibs-map bevat het registratieaspect van uw toepassing (JS en Init). U wordt aangeraden alle Hobbes-testreekobjecten te registreren die specifiek zijn voor een formulier in de clientlibs-map.
 
-1. Geef de volgende eigenschapswaarden op in het nieuwe knooppunt (hier afTestRegistration) en klik op **[!UICONTROL Save All]**. Met deze eigenschappen herkent Hobbes de map als een test. Om deze cliëntbibliotheek als gebiedsdeel in andere cliëntbibliotheken opnieuw te gebruiken, noem het als granite.testing.calvin.tests.
+1. Geef de volgende eigenschapswaarden op in het nieuwe knooppunt (hier afTestRegistration) en klik vervolgens op **[!UICONTROL Save All]**. Met deze eigenschappen herkent Hobbes de map als een test. Om deze cliëntbibliotheek als gebiedsdeel in andere cliëntbibliotheken opnieuw te gebruiken, noem het als granite.testing.calvin.tests.
 
 <table> 
  <tbody> 
@@ -113,12 +116,12 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
   </tr> 
   <tr> 
    <td><p>categorieën</p> </td> 
-   <td><p>Tekenreeks[]</p> </td> 
+   <td><p>String[]</p> </td> 
    <td><p>granite.testing.hobbes.tests, granite.testing.calvin.tests</p> </td> 
   </tr> 
   <tr> 
    <td><p>afhankelijkheden</p> </td> 
-   <td><p>Tekenreeks[]</p> </td> 
+   <td><p>String[]</p> </td> 
    <td><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td> 
   </tr> 
  </tbody> 
@@ -130,7 +133,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 
 ![1_aftestregistratie](assets/1_aftestregistration.png)
 
-1. Klik met de rechtermuisknop op het testknooppunt (hier **afTestRegistration)** en klik vervolgens op **[!UICONTROL Create > Create File]**. Geef het bestand de naam js.txt en klik op **[!UICONTROL OK]**.
+1. Klik met de rechtermuisknop op het testknooppunt (hier) **afTestRegistration)** en klik vervolgens op **[!UICONTROL Create > Create File]**. Geef het bestand de naam js.txt en klik op **[!UICONTROL OK]**.
 1. Voeg de volgende tekst toe aan het bestand js.txt:
 
    ```
@@ -138,8 +141,8 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
    js.txt
    ```
 
-1. Klik op **[!UICONTROL Save All]** en sluit vervolgens het bestand js.txt.
-1. Klik met de rechtermuisknop op het testknooppunt (hier **afTestRegistration)** en klik op **[!UICONTROL Create > Create File]**. Geef het bestand een naam in it.js en klik op **[!UICONTROL OK]**.
+1. Klikken **[!UICONTROL Save All]** en sluit vervolgens het bestand js.txt.
+1. Klik met de rechtermuisknop op het testknooppunt (hier) **afTestRegistration)** en klik op **[!UICONTROL Create > Create File]**. Geef het bestand een naam in it.js en klik op **[!UICONTROL OK]**.
 1. Kopieer de volgende code naar het bestand init.js en klik op **[!UICONTROL Save All]**:
 
    ```
@@ -156,9 +159,9 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
    }(window, window.hobs));
    ```
 
-   De bovenstaande code maakt een testsuite met de naam **Aangepaste vorm - Demo Test**. Als u een testsuite met een andere naam wilt maken, wijzigt u de naam.
+   De bovenstaande code maakt een testsuite met de naam **Adaptieve vorm - Demo testen**. Als u een testsuite met een andere naam wilt maken, wijzigt u de naam.
 
-1. Klik **[!UICONTROL Create]** > **Node maken** om een knooppunt onder de clientlib-map te maken voor elk formulier dat u wilt testen. In dit voorbeeld wordt een knooppunt met de naam **testForm** gebruikt om een adaptief formulier met de naam **testForm** `.`Geef de volgende eigenschappen op en klik op **[!UICONTROL OK]**:
+1. Klikken **[!UICONTROL Create]** > **Knooppunt maken** om een knooppunt onder de clientlib-map te maken voor elk formulier dat u wilt testen. In dit voorbeeld wordt een knooppunt met de naam **testForm** om een adaptief formulier met de naam **testForm** `.`Geef de volgende eigenschappen op en klik op **[!UICONTROL OK]**:
 
    * Naam: testForm (uw formuliernaam)
    * Type: cq:ClientLibraryFolder
@@ -167,8 +170,8 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 
    | **Eigenschap** | **Type** | **Waarde** |
    |---|---|---|
-   | categorieën | Tekenreeks[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
-   | afhankelijkheden | Tekenreeks[] | granite.testing.calvin.tests |
+   | categorieën | String[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
+   | afhankelijkheden | String[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -178,7 +181,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 
 1. Klik met de rechtermuisknop op de map die u voor het testformulier hebt gemaakt (hier testForm) en selecteer **[!UICONTROL Create > Create File]**. Geef het bestand scriptingTest.js een naam en voeg de volgende code toe aan het bestand en klik op **[!UICONTROL Save All.]**
 
-   Als u de volgende code wilt gebruiken om een ander adaptief formulier te testen, wijzigt u het pad en de naam van het formulier in **navigateTo** (lijnen 11, 36 en 62) en de respectieve testgevallen. Zie [Calvin API&#39;s](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html) voor meer informatie over API&#39;s voor het testen van verschillende aspecten van formulieren en formulierobjecten.
+   Als u de volgende code wilt gebruiken om een ander adaptief formulier te testen, wijzigt u het pad en de naam van het formulier in **navigateTo** (lijnen 11, 36 en 62) en de respectieve testgevallen. Zie voor meer informatie over API&#39;s voor het testen van verschillende aspecten van formulieren en formulierobjecten [Calvin-API&#39;s](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```
    (function(window, hobs) {
@@ -272,21 +275,21 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
     }(window, window.hobs));
    ```
 
-   De testcase wordt gemaakt. Voer de testcase uit om adaptieve formulieren via Hobbes te testen. Voor stappen voor het runnen van de testgevallen, zie [Het uitvoeren van Tests in het Testen van Uw UI die Geautomatiseerde Tests](/help/sites-developing/hobbes.md) gebruikt.
+   De testcase wordt gemaakt. Voer de testcase uit om adaptieve formulieren via Hobbes te testen. Voor stappen voor het uitvoeren van de testgevallen raadpleegt u [Tests uitvoeren in uw gebruikersinterface testen met behulp van automatische tests](/help/sites-developing/hobbes.md).
 
 U kunt het pakket ook installeren in het bijgevoegde bestand SampleTestPackage.zip om dezelfde resultaten te bereiken als met de stappen die in het voorbeeld worden beschreven: Maak een testsuite voor een adaptief formulier met Hobbes als testframework.
 
 [Bestand ophalen](assets/sampletestpackage.zip)
 
-## Uw gebruikersinterface testen met automatische tests {#testing-your-ui-using-automated-tests}
+## Uw gebruikersinterface testen met behulp van automatische tests {#testing-your-ui-using-automated-tests}
 
-### Eén testsuite {#running-a-single-test-suite} uitvoeren
+### Eén testsuite uitvoeren {#running-a-single-test-suite}
 
 Testsets kunnen afzonderlijk worden uitgevoerd. Wanneer u een testsuite uitvoert, verandert de pagina terwijl de testcase wordt uitgevoerd en de bijbehorende handelingen worden uitgevoerd. De resultaten verschijnen na afloop van de test. Pictogrammen geven de resultaten aan.
 
 Een vinkje geeft aan dat een test is geslaagd: ![vinkje](assets/checkmark.png)
 
-Een X-pictogram geeft aan dat een test is mislukt: ![cross](assets/cross.png)
+Een X-pictogram geeft aan dat een test is mislukt: ![kruisen](assets/cross.png)
 
 Een testsuite uitvoeren:
 
@@ -306,7 +309,7 @@ Een testsuite uitvoeren:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-De stappen voor het testen van uw AEM adaptieve formulieren zijn vergelijkbaar met die voor het testen van de gebruikersinterface van uw AEM. Raadpleeg de volgende onderwerpen in [Uw interface testen](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html) voor meer informatie over het testen van uw aangepaste formulieren:
+De stappen voor het testen van uw AEM adaptieve formulieren zijn vergelijkbaar met die voor het testen van de gebruikersinterface van uw AEM. Raadpleeg voor meer informatie over het testen van uw aangepaste formulieren de volgende onderwerpen in [Uw gebruikersinterface testen](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
 
 * Testuiteinden weergeven
 * Meerdere tests uitvoeren
@@ -328,7 +331,7 @@ De stappen voor het testen van uw AEM adaptieve formulieren zijn vergelijkbaar m
    <td><p>Een testcase vertegenwoordigt een taak die een gebruiker uitvoert gebruikend uw UI. Voeg testcase toe aan uw testsuite om de activiteiten te testen die gebruikers uitvoeren.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Acties</p> </td> 
+   <td><p>Handelingen</p> </td> 
    <td><p>Handelingen zijn methoden die een beweging in de gebruikersinterface uitvoeren, zoals op een knop klikken of een invoervak met een waarde invullen.</p> <p>De methoden van de klassen hobs.actions.Asserts, hobs.actions.Core en hobs.utils.af zijn acties die u in uw tests kunt gebruiken. Alle handelingen worden synchroon uitgevoerd.</p> </td> 
   </tr> 
   <tr> 

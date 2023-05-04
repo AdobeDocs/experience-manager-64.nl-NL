@@ -1,8 +1,8 @@
 ---
 title: Essentiële toewijzingen
-seo-title: Essentiële toewijzingen
+seo-title: Assignments Essentials
 description: Overzicht van de toewijzingsfuncties voor gemeenschappen die in staat zijn om te werken
-seo-description: Overzicht van de toewijzingsfuncties voor gemeenschappen die in staat zijn om te werken
+seo-description: Assignments feature overview for enablement communities
 uuid: 8310decf-174d-4e93-8c92-4a9583077b7a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,21 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
 exl-id: 310d9086-36b6-42ea-835f-c77d75e880cb
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
 
-# Hoofdzaak van toewijzingen {#assignments-essentials}
+# Essentiële toewijzingen {#assignments-essentials}
 
-Deze pagina verstrekt de essentiële informatie voor het werken met de toewijzingseigenschap van [enablement community](overview.md#enablement-community) plaatsen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Deze pagina bevat de essentiële informatie voor het werken met de toewijzingsfunctie van [enablement community](overview.md#enablement-community) sites.
 
 De toewijzingsfunctie is de mogelijkheid om bronnen voor activering en leerpaden toe te wijzen aan leden van gemeenschappen die activering mogelijk maken.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -41,7 +44,7 @@ De toewijzingsfunctie is de mogelijkheid om bronnen voor activering en leerpaden
    <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td> /libs/social/enablement/components/hbs/myassigned/myassigned.hbs</td> 
   </tr>
   <tr>
@@ -85,7 +88,7 @@ De enige mogelijke combinaties van Voltooiing en Successtatus zijn:
 
 ### Toewijzingsfunctie {#assignments-function}
 
-Een community-sitestructuur die de [toewijzingsfunctie](functions.md#assignments-function) bevat, bevat een geconfigureerde ` [assignments](assignments.md)`-component.
+Een community-sitestructuur die de [Toewijzingsfunctie](functions.md#assignments-function)bevat een configuratie ` [assignments](assignments.md)` component.
 
 ### Referentie-API&#39;s {#reference-apis}
 

@@ -1,8 +1,8 @@
 ---
 title: Grondbeginselen van berichten
-seo-title: Grondbeginselen van berichten
+seo-title: Messaging Essentials
 description: Overzicht van de component Messaging
-seo-description: Overzicht van de component Messaging
+seo-description: Messaging component overview
 uuid: 53711f4d-6bbc-4be9-aefe-4e75a81cd67f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 exl-id: c6ad3c2b-8776-4ec4-99da-ab73ecc61153
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '416'
 ht-degree: 1%
 
 ---
 
-# Essentiële elementen voor berichten {#messaging-essentials}
+# Grondbeginselen van berichten {#messaging-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Deze pagina documenteert de details van het werken met het gebruiken van de component van het Overseinen om een overseineneigenschap op een website te omvatten.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 **Bericht samenstellen**
 
@@ -37,7 +40,7 @@ Deze pagina documenteert de details van het werken met het gebruiken van de comp
    <td><p>cq.social.hbs.messaging</p> </td> 
   </tr> 
   <tr> 
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td>/libs/social/messaging/components/hbs/composemessage/composemessage.hbs</td> 
   </tr> 
   <tr> 
@@ -46,7 +49,7 @@ Deze pagina documenteert de details van het werken met het gebruiken van de comp
   </tr> 
   <tr> 
    <td><strong>eigenschappen</strong></td> 
-   <td>zie <a href="configure-messaging.md">Berichten configureren</a></td> 
+   <td>zie <a href="configure-messaging.md">Berichten bevestigen</a></td> 
   </tr> 
   <tr> 
    <td><strong>beheerdersconfiguratie</strong></td> 
@@ -55,7 +58,7 @@ Deze pagina documenteert de details van het werken met het gebruiken van de comp
  </tbody> 
 </table>
 
-**Berichtlijst**  (voor Postvak IN, Verzonden en Prullenbak)
+**Berichtlijst** (voor Postvak IN, Verzonden en Prullenbak)
 
 <table> 
  <tbody> 
@@ -77,7 +80,7 @@ Deze pagina documenteert de details van het werken met het gebruiken van de comp
   </tr> 
   <tr> 
    <td><strong>eigenschappen</strong></td> 
-   <td>Zie <a href="configure-messaging.md">Berichten configureren</a></td> 
+   <td>Zie <a href="configure-messaging.md">Berichten bevestigen</a></td> 
   </tr> 
   <tr> 
    <td><strong>beheerdersconfiguratie</strong></td> 
@@ -92,9 +95,9 @@ Zie ook [Aanpassingen aan de clientzijde](client-customize.md)
 
 * [Berichten configureren](configure-messaging.md)
 
-* [Messaging client-](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) APIs voor SCF-componenten
+* [Berichtenclient-API&#39;s](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) voor SCF-componenten
 
-* [Berichten ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) APIs voor de dienst
+* [Berichten-API&#39;s](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) voor de dienst
 
 * [Eindpunten van berichten](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 
@@ -106,10 +109,8 @@ Zie ook [Aanpassingen aan de clientzijde](client-customize.md)
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
-
 >
->
-Bijvoorbeeld:
+>Bijvoorbeeld:
 >
 >
 ```
@@ -119,18 +120,18 @@ Bijvoorbeeld:
 
 ### Community-site {#community-site}
 
-Een structuur van de communautaire plaats, die gebruikend de tovenaar wordt gecreeerd, zal de overseineneigenschap omvatten wanneer geselecteerd. Zie `User Management`-instellingen van [Community Sites Console](sites-console.md#user-management).
+Een structuur van de communautaire plaats, die gebruikend de tovenaar wordt gecreeerd, zal de overseineneigenschap omvatten wanneer geselecteerd. Zie `User Management` instellingen van [Community Sites Console](sites-console.md#user-management).
 
-### Voorbeeldcode: Melding ontvangen {#sample-code-message-received-notification}
+### Voorbeeldcode: Bericht ontvangen {#sample-code-message-received-notification}
 
-Met de functie Sociaal bericht worden gebeurtenissen gegenereerd voor bewerkingen, bijvoorbeeld `send`, `marking read`, `marking delete`. Deze gebeurtenissen kunnen worden afgevangen en er kunnen acties worden ondernomen op basis van de gegevens in de gebeurtenis.
+Met de functie Sociaal bericht worden bijvoorbeeld gebeurtenissen gegenereerd voor bewerkingen `send`, `marking read`, `marking delete`. Deze gebeurtenissen kunnen worden afgevangen en er kunnen acties worden ondernomen op basis van de gegevens in de gebeurtenis.
 
-In het volgende voorbeeld ziet u een gebeurtenishandler die luistert naar de gebeurtenis `message sent` en die via `Day CQ Mail Service` een e-mail verzendt naar alle ontvangers van het bericht.
+Het volgende voorbeeld is een gebeurtenishandler die luistert naar de gebeurtenis `message sent` en verzendt via de `Day CQ Mail Service`.
 
 Om het server-zijsteekproefmanuscript te proberen, zult u een ontwikkelomgeving en de capaciteit nodig hebben om een bundel te bouwen OSGi.
 
-1. Aanmelden als beheerder bij ` [CRXDE|Lite](http://localhost:4502/crx/de)`
-1. Een `bundle node`in `/apps/engage/install` maken met willekeurige namen, zoals
+1. Aanmelden als beheerder ` [CRXDE|Lite](http://localhost:4502/crx/de)`
+1. Een `bundle node`in `/apps/engage/install` met willekeurige namen, zoals
 
    * **[!UICONTROL Symbolic Name]**: com.connect.media.social.messaging.MessagingNotification
    * **[!UICONTROL Name]**: Melding van zelfstudie aan de slag
@@ -139,14 +140,14 @@ Om het server-zijsteekproefmanuscript te proberen, zult u een ontwikkelomgeving 
 
 1. Ga naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
 
-   1. De automatisch gemaakte klasse `Activator.java` verwijderen
-   1. Klasse `MessageEventHandler.java` maken
+   1. Verwijder de `Activator.java` automatisch gemaakte klasse
+   1. Klasse maken `MessageEventHandler.java`
    1. Kopieer/plak de onderstaande code in `MessageEventHandler.java`
 
 1. Klik op **[!UICONTROL Save All]**
-1. Navigeer naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` en voeg alle importinstructies toe zoals geschreven in de `MessageEventHandler.java` code.
+1. Navigeren naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` en voeg alle instructies voor het importeren toe, zoals geschreven in het dialoogvenster `MessageEventHandler.java` code.
 1. De bundel maken
-1. Zorg ervoor dat `Day CQ Mail Service`OSGi-service is geconfigureerd
+1. Zorgen `Day CQ Mail Service`De dienst OSGi wordt gevormd
 1. Aanmelden als een demogebruiker en e-mail naar een andere demogebruiker sturen
 1. De ontvanger ontvangt een e-mail over een nieuw bericht
 

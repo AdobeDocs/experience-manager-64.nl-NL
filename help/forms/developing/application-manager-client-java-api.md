@@ -1,8 +1,8 @@
 ---
 title: Application Manager Client JavaAPI Quick Start (SOAP)
-seo-title: Application Manager Client JavaAPI Quick Start (SOAP)
+seo-title: Application Manager Client JavaAPI Quick Start(SOAP)
 description: Met de Application Manager-client kunt u een toepassingsversie maken, toepassingen exporteren, toepassingen importeren, een AEM Forms-toepassing ophalen, de status van toepassingen ophalen, een voorvertoning van het AEM Forms-toepassingsarchief weergeven en het AEM Forms-toepassingsarchief verwijderen.
-seo-description: Met de Application Manager-client kunt u een toepassingsversie maken, toepassingen exporteren, toepassingen importeren, een AEM Forms-toepassing ophalen, de status van toepassingen ophalen, een voorvertoning van het AEM Forms-toepassingsarchief weergeven en het AEM Forms-toepassingsarchief verwijderen.
+seo-description: Use the Application Manager Client to create an application version, export applications, import applications, get an AEM Forms application, get applications, get status of applications, preview AEM Forms and later application archive, and delete AEM Forms application archive.
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
 exl-id: 8369beeb-4628-40ea-9167-717f112768da
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
 # Application Manager Client JavaAPI Quick Start (SOAP) {#application-manager-client-javaapi-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De volgende Java API Quick Start (SOAP) is beschikbaar voor de Application Manager-client.
 
@@ -445,7 +448,7 @@ public class GetApplication_SOAP {
 
 In het volgende Java-codevoorbeeld worden de toepassingen opgehaald met de Java API.
 
-***opmerking**: Als u de AEM Forms-toepassings-API ophaalt, getApplications(), wordt alleen geïmplementeerde toepassingen geretourneerd. *
+***notitie**: Als u de AEM Forms-toepassings-API ophaalt, getApplications(), wordt alleen geïmplementeerde toepassingen geretourneerd. *
 
 ```as3
 /* 

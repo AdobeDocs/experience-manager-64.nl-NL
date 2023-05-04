@@ -1,8 +1,8 @@
 ---
 title: HTML5-formulieren optimaliseren
-seo-title: HTML5-formulieren optimaliseren
+seo-title: Optimizing HTML5 forms
 description: U kunt de uitvoergrootte van de HTML5-formulieren optimaliseren.
-seo-description: U kunt de uitvoergrootte van de HTML5-formulieren optimaliseren.
+seo-description: You can optimize the output size of the HTML5 forms.
 uuid: 959f0b6a-9e4d-478a-afa8-4c39011fdf7a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 8d2b5294-9763-4348-b927-706ebac90b95
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # HTML5-formulieren optimaliseren {#optimizing-html-forms}
 
-HTML5-formulieren genereren formulieren in de HTML5-indeling. De resulterende uitvoer kan groot zijn, afhankelijk van factoren zoals de formuliergrootte en afbeeldingen in het formulier. Om de gegevensoverdracht te optimaliseren, is de geadviseerde benadering de reactie van HTML te comprimeren gebruikend de Server van het Web waarvan het verzoek wordt gediend. Deze benadering vermindert de reactiegrootte, het netwerkverkeer, en de tijd die wordt vereist om gegevens tussen de server en cliëntmachines te stromen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Met HTML5-formulieren worden formulieren weergegeven in de HTML5-indeling. De resulterende uitvoer kan groot zijn, afhankelijk van factoren zoals de formuliergrootte en afbeeldingen in het formulier. Om de gegevensoverdracht te optimaliseren, is de geadviseerde benadering de reactie van de HTML te comprimeren gebruikend de Server van het Web waarvan het verzoek wordt gediend. Deze benadering vermindert de reactiegrootte, het netwerkverkeer, en de tijd die wordt vereist om gegevens tussen de server en cliëntmachines te stromen.
 
 Dit artikel beschrijft de stappen die worden vereist om compressie voor de Server 2.0 met 32 bits van het Web van Apache, met JBoss toe te laten.
 
@@ -34,7 +37,7 @@ Vraag de Apache-webserversoftware aan die op uw besturingssysteem van toepassing
 
 Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
 
-1. Verwijder de commentaarmarkering van de volgende moduleconfiguraties in het *APACHE_HOME/conf/httpd.conf* dossier.
+1. Verwijder de commentaarmarkering van de volgende moduleconfiguraties in *APACHE_HOME/conf/httpd.conf* bestand.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -48,7 +51,7 @@ Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
 
 1. Configureer de proxy op poort 8080 van JBoss.
 
-   Voeg de volgende configuratie aan *APACHE_HOME/conf/httpd.conf* configuratiedossier toe.
+   Voeg de volgende configuratie aan toe *APACHE_HOME/conf/httpd.conf* configuratiebestand.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -66,7 +69,7 @@ Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
 
 1. Compressie inschakelen.
 
-   Voeg de volgende configuratie aan *APACHE_HOME/conf/httpd.conf* configuratiedossier toe.
+   Voeg de volgende configuratie aan toe *APACHE_HOME/conf/httpd.conf* configuratiebestand.
 
    ```java
    <Location /content/xfaforms>
@@ -84,4 +87,4 @@ Apache kan communiceren met JBoss via HTTP of het AJP-protocol.
    </Location>
    ```
 
-1. Als u toegang wilt tot de AEM server, gebruikt u https://[Apache_server]:80.
+1. Gebruik https:// voor toegang tot de AEM server[Apache_server]:80.

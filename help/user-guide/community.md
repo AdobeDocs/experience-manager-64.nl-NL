@@ -1,20 +1,23 @@
 ---
 title: De AEM Gemeenschap
-seo-title: De AEM Gemeenschap
+seo-title: The AEM Community
 description: De AEM Gemeenschap
-seo-description: De AEM Gemeenschap
+seo-description: The AEM Community
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: 537f6fe5-011b-4d4a-ac71-71708fd72b85
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '360'
 ht-degree: 1%
 
 ---
 
 # De AEM Gemeenschap {#the-aem-community}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Wat is de AEM Gemeenschap? {#what-is}
 
@@ -24,9 +27,9 @@ De AEM Gemeenschap heeft duizenden leden over de hele wereld. Ze variëren van n
 
 ## Welke gebeurtenissen zijn er voor AEM EU-lidstaten? {#events}
 
-Leden hebben een hele reeks gebeurtenissen! Elke maand houden wij zittingen waar u de deskundige over specifieke AEM onderwerpen kunt vragen. We zullen u ook op de hoogte stellen van belangrijke gebeurtenissen, zoals [Instorse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) of [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other), of zelfs gebruikersgroepgebeurtenissen in uw gebied.
+Leden hebben een hele reeks gebeurtenissen! Elke maand houden wij zittingen waar u de deskundige over specifieke AEM onderwerpen kunt vragen. We zullen u ook op de hoogte stellen van belangrijke gebeurtenissen zoals [Onderdompelen](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) of de [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other)of zelfs gebruikersgroepgebeurtenissen in uw gebied.
 
-Het beste wat u kunt doen, is om [de AEM Community vandaag te bezoeken en te zien wat er aan de hand is.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+Het beste wat je kunt doen is [bezoek vandaag de AEM Gemeenschap en kijk wat er aan de hand is.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
 ## Kan ik codevoorbeelden krijgen om me te helpen? {#code-samples}
 

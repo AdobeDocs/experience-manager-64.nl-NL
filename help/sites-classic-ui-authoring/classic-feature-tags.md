@@ -1,8 +1,8 @@
 ---
 title: Tags gebruiken
-seo-title: Tags gebruiken
+seo-title: Using Tags
 description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
-seo-description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
+seo-description: Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
 uuid: 9799131f-4043-4022-a401-af8be93a1bf6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,25 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 exl-id: bcc0bdde-3983-48a3-811b-3804777d8421
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
 
 # Tags gebruiken{#using-tags}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
 * Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
-* Zie [Tags toevoegen voor ontwikkelaars](/help/sites-developing/tags.md) voor informatie over het coderingsframework en voor het opnemen en uitbreiden van tags in aangepaste toepassingen.
+* Zie [Tags voor ontwikkelaars](/help/sites-developing/tags.md) voor informatie over het etiketteringskader evenals het opnemen van en het uitbreiden van markeringen in douanetoepassingen.
 
-## Tien redenen voor het gebruik van codering {#ten-reasons-to-use-tagging}
+## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
 1. Inhoud ordenen: het labelen maakt het leven voor auteurs gemakkelijker aangezien zij inhoud snel en zonder moeite kunnen organiseren .
 1. Tags organiseren: terwijl tags inhoud ordenen, ordenen hiërarchische taxonomieën/naamruimten tags.
@@ -40,15 +43,15 @@ Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te class
 
 Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor elementen ontwerpt, moet u rekening houden met de lichte en toegankelijke manier waarop u tags kunt toewijzen.
 
-## Labels {#applying-tags} toepassen
+## Tags toepassen {#applying-tags}
 
-In de auteursomgeving, kunnen de auteurs markeringen toepassen door tot de paginaeigenschappen toegang te hebben en één of meerdere markeringen in het **Codes/Sleutelwoorden** gebied in te gaan.
+In de auteursomgeving kunnen de auteurs markeringen toepassen door tot de pagina eigenschappen toegang te hebben en één of meerdere markeringen in te gaan in **Tags/trefwoorden** veld.
 
-Als u [vooraf gedefinieerde codes](/help/sites-administering/tags.md) wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** de `Tags/Keywords`-veldkeuzelijst om een optie te selecteren in de lijst met toegestane codes voor de pagina. De tab **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` aan de taxonomie is gekoppeld.
+Toepassen [vooraf gedefinieerde tags](/help/sites-administering/tags.md)in de **Pagina-eigenschappen** het venster gebruiken `Tags/Keywords` het gebied trekkracht-onderaan om van de lijst van markeringen te selecteren die voor de pagina worden toegelaten. Tthe **Standaardlabels** tab is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` voorafgegaan aan de taxonomie.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-### Codes {#publishing-tags} publiceren
+### Codes publiceren {#publishing-tags}
 
 Net als bij pagina&#39;s kunt u het volgende uitvoeren op tags en naamruimten:
 
@@ -70,7 +73,7 @@ Net als bij pagina&#39;s kunt u het volgende uitvoeren op tags en naamruimten:
 
 Tagwolken tonen een wolk van markeringen, of voor de huidige pagina, de volledige website, of die het vaakst betreden. Labelwolken zijn een manier om de problemen te markeren die de gebruiker interesseert (geweest). De grootte van de tekst die wordt gebruikt om de tag weer te geven, is afhankelijk van het gebruik ervan.
 
-De component [Tag Cloud](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (groep Algemeen) wordt gebruikt om een tagcloud aan een pagina toe te voegen.
+De [Cloud labelen](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) wordt gebruikt om een tagwolk aan een pagina toe te voegen (groep Algemeen).
 
 ## Zoeken op tags {#searching-on-tags}
 
@@ -78,6 +81,6 @@ U kunt tags zoeken in zowel de auteur- als de publicatieomgeving.
 
 ### Zoekcomponent gebruiken {#using-search-component}
 
-Als u een [zoekcomponent](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) aan een pagina toevoegt, beschikt u over een zoekfunctie die tags bevat en kan worden gebruikt in zowel de auteur- als de publicatieomgeving.
+Een [component Zoeken](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) op een pagina biedt een zoekfunctie die tags bevat en kan worden gebruikt in zowel de auteur- als de publicatieomgeving.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)

@@ -1,8 +1,8 @@
 ---
 title: Communityconsoles
-seo-title: Communityconsoles
+seo-title: Communities Consoles
 description: Uitgelegde communautaire consoles
-seo-description: Uitgelegde communautaire consoles
+seo-description: Community Consoles explained
 uuid: 1c5b2600-9059-4b44-9741-f1b627423d3c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,45 +11,49 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: f31072dc-ad2d-4f2d-b222-05d7fb19e471
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
 # Communityconsoles {#communities-consoles}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 De AEM Communities-consoles, die beschikbaar zijn in de ontwerpomgeving van het wereldwijde navigatievenster, bieden toegang tot beheertaken zoals
 
 * [Een community-site maken](sites-console.md)
-* [groepen](groups.md) die in de site zijn genest toevoegen
-* [Sjablonen voor communitysites beheren](sites.md)
-* [communityleden](members.md) beheren
-* [Door gebruiker gegenereerde inhoud ](moderate-ugc.md) moderniseren (UGC)
-* [aangepaste badges](badges.md) maken
+* Toevoegen [groepen](groups.md) genest binnen de site
+* Beheer [communitysjablonen](sites.md)
+* Beheer [leden van de gemeenschap](members.md)
+* [Moderniseren](moderate-ugc.md) door gebruiker gegenereerde inhoud (UGC)
+* Maken [aangepaste badges](badges.md)
 * Het vormen van [standaardopslag voor UGC](srp-config.md)
 
-Wanneer [UGC-opslag](working-with-srp.md) is geconfigureerd als een algemene opslag die wordt gedeeld door auteur- en publicatieomgevingen, werkt de [moderatieconsole](moderation.md), die beschikbaar is in zowel auteur- als publicatieomgevingen, op één enkele instantie van UGC.
+Wanneer [UGC-opslag](working-with-srp.md) is geconfigureerd als een algemene opslag die wordt gedeeld door auteur- en publicatieomgevingen, [moderatieconsole](moderation.md), die beschikbaar is in zowel auteur- als publicatieomgevingen, wordt uitgevoerd op één exemplaar van UGC.
 
-In de auteursomgeving, na het aanmelden met beheerdervoorrechten, zijn de `Communities` consoles beschikbaar bij de navigatie en hulpmiddelconsoles.
+In de auteursomgeving, na het aanmelden met beheerdersrechten, `Communities` consoles zijn beschikbaar in de consoles voor navigatie en gereedschappen.
 
 >[!NOTE]
 >
->In de publicatieomgeving wordt op een [communitysite](sites-console.md) een `Administration`menu-item weergegeven wanneer het lid dat is aangemeld de juiste rechten heeft.
+>In de publicatieomgeving wordt een [community-site](sites-console.md) zal een `Administration`menu-item wanneer het lid dat is aangemeld de juiste rechten heeft.
 
 ## Globaal navigatievenster {#global-navigation-panel}
 
 ![chlimage_1-91](assets/chlimage_1-91.png)
 
-Selecteer het pictogram `Adobe Experience Manager` in de linkerbovenhoek om het algemene navigatievenster te openen en toegang te krijgen tot twee pictogrammen:
+Selecteer `Adobe Experience Manager` in de linkerbovenhoek om het algemene navigatievenster te openen en toegang te krijgen tot twee pictogrammen:
 
 * [Navigatieconsole](#navigation-console)
 * [Tools Console](tools.md)
 
 ## Navigatieconsole {#navigation-console}
 
-Als u toegang wilt krijgen tot de verschillende communautaire consoles, selecteert u **navigatie, Communities**.
+Om tot de diverse consoles van Gemeenschappen toegang te hebben, van globale navigatie selecteer **navigatie, Gemeenschappen**.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -59,7 +63,7 @@ Als u toegang wilt krijgen tot de verschillende communautaire consoles, selectee
 
 * [Moderatie](moderation.md)
 
-   De console van de Moderatie is voor bulkmoderatie van UGC en in het auteursmilieu. Een gelijkaardige bulkmoderatieconsole is toegankelijk in het publicatiemilieu aan communautaire leden die de rol van [communautaire moderator](users.md#publishenvironmentusersandgroups) voor één of meerdere communautaire plaatsen toegewezen.
+   De console van de Moderatie is voor bulkmoderatie van UGC en in het auteursmilieu. Een gelijkaardige bulkmoderatieconsole is toegankelijk in het publicatiemilieu aan communautaire leden toegewezen de rol van [gemeenschapsmoderator](users.md#publishenvironmentusersandgroups) voor een of meer gemeenschapssites.
 
 * [Leden, groepen](members.md)
 
@@ -67,12 +71,12 @@ Als u toegang wilt krijgen tot de verschillende communautaire consoles, selectee
 
 * [Rapporten](reports.md)
 
-   De console van Rapporten is waar de rapporten over taken, paginameningen, en geposte inhoud (UGC) kunnen worden geproduceerd wanneer een communautaire plaats [toegelaten Adobe Analytics](sites-console.md#analytics) heeft. De console is alleen beschikbaar in de auteursomgeving.
+   De console van Rapporten is waar de rapporten over taken, paginameningen, en geposte inhoud (UGC) kunnen worden geproduceerd wanneer een communautaire plaats heeft [Adobe Analytics ingeschakeld](sites-console.md#analytics). De console is alleen beschikbaar in de auteursomgeving.
 
 * [Bronnen](resources.md)
 
-   De console van Middelen is waar [enablement managers](enablement.md#communitymanagers) creeer, beheer en wijs middelen aan leden van een [enablement communautaire plaats](overview.md#enablement-community) toe. De console is alleen beschikbaar in de auteursomgeving.
+   De console van Middelen is waar [vermogensbeheerders](enablement.md#communitymanagers) middelen maken, beheren en toewijzen aan leden van een [gemeenschapssite inschakelen](overview.md#enablement-community). De console is alleen beschikbaar in de auteursomgeving.
 
 ## Tools Console {#tools-console}
 
-Om tot [Communities Tools](tools.md) (vroeger de beheersconsole), van globale navigatie toegang te hebben: **[!UICONTROL Tools > Communities]**
+Toegang tot [Community-gereedschappen](tools.md) (voorheen de beheerconsole), van globale navigatie: **[!UICONTROL Tools > Communities]**

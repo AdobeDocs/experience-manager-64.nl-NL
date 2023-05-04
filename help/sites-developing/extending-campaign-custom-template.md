@@ -1,8 +1,8 @@
 ---
 title: Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten
-seo-title: Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten
+seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
 description: Een aangepaste paginasjabloon maken waarin Adobe Campaign-formuliercomponenten worden gebruikt
-seo-description: Een aangepaste paginasjabloon maken waarin Adobe Campaign-formuliercomponenten worden gebruikt
+seo-description: Build a custom page template that uses Adobe Campaign Form components
 uuid: 8162ace2-b661-4c39-b0fb-288e1c035b9c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,17 +10,20 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 exl-id: e70c9d23-5a4d-4137-82ad-3f3237f468c0
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
 
 # Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Deze pagina verklaart hoe te om een malplaatje van de douanepagina te bouwen dat [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) componenten gebruikt door te onderzoeken hoe het Geometrixx-outdoor malplaatje ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) wordt uitgevoerd, en wijst u op belangrijke informatie u kan vereisen wanneer het creëren van uw eigen douanemalplaatje.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Deze pagina legt uit hoe u een aangepaste paginasjabloon kunt maken dat [Adobe Campaign-formulier](/help/sites-authoring/adobe-campaign-components.md) componenten door te onderzoeken hoe de Geometrixx-outdoortemplate ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) is geïmplementeerd en verwijst naar belangrijke informatie die u nodig hebt bij het maken van uw eigen aangepaste sjabloon.
 
 >[!NOTE]
 >
@@ -41,16 +44,16 @@ Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formulierc
 
 1. **ClientContext-instellingen**
 
-   Wanneer u de montages van de cliëntcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) bekijkt, ziet u de volgende montages:
+   Wanneer u de montages van de clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) u ziet de volgende instellingen:
 
-   * ClientContext verwijst naar `/etc/clientcontext/campaign`
-   * Er is ook een extra *config* knoop.
+   * ClientContext wijst naar `/etc/clientcontext/campaign`
+   * Er is ook een extra *config* knooppunt.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   In **head.jsp**, ziet u de volgende lijnen die **clientcontext-config** en **cloudservice-haak** gebruiken:
+   In **head.jsp** worden de volgende regels weergegeven die de **clientcontext-config** en de **cloudservice-haak**:
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -60,7 +63,7 @@ Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formulierc
 
 1. **body.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   In **body.jsp** worden de cloudservices onder aan de pagina geladen:
+   In **body.jsp** De cloudservices worden onder aan de pagina geladen:
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
@@ -68,7 +71,7 @@ Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formulierc
 
 1. **Campagnepagina-eigenschappen**
 
-   Als u een Adobe Campaign-sjabloon wilt selecteren, worden de pagina-eigenschappen uitgebreid met het tabblad **Campagne**:
+   Als u een Adobe Campaign-sjabloon wilt selecteren, worden de pagina-eigenschappen uitgebreid met de **Campagne** tab:
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 
@@ -76,7 +79,7 @@ Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formulierc
 
 1. **Sjablooninstellingen**.
 
-   In het malplaatje ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) ziet u de volgende standaardwaarden:
+   In de template ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) u ziet de volgende standaardwaarden:
 
    | **acMapping** | mapRecipient (voor Adobe Campaign 6.1), profiel (voor Adobe Campaign Standard) |
    |---|---|

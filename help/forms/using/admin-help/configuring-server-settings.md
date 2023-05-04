@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
 
 # Serverinstellingen configureren {#configuring-server-settings}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 De pagina Serverinstellingen biedt toegang tot verschillende instellingen voor de formulierworkflow:
 
-* **E-** mailinstellingen die uitgaande e-mailberichten inschakelen, samen met de instellingen van de e-mailserver die voor deze berichten worden gebruikt. (Zie [E-mailinstellingen configureren](configuring-server-settings.md#configuring-email-settings).)
-* **Instellingen voor taakmeldingen** waarmee de berichten die in e-mailberichten naar eindgebruikers en groepen worden verzonden met betrekking tot hun taken, kunnen worden ingeschakeld, uitgeschakeld of gewijzigd. (Zie [Meldingen voor gebruikers en groepen configureren](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
-* **Instellingen voor** beheerdersmeldingen waarmee berichten die in e-mailmeldingen worden verzonden voor beheertaken worden ingeschakeld, uitgeschakeld of gewijzigd. (Zie [Meldingen configureren voor beheerders](configuring-server-settings.md#configuring-notifications-for-administrators).)
+* **E-mailinstellingen** die uitgaande e-mailberichten inschakelen, samen met de instellingen voor de e-mailserver die voor die berichten worden gebruikt. (Zie [E-mailinstellingen configureren](configuring-server-settings.md#configuring-email-settings).)
+* **Instellingen voor taakmeldingen** die de berichten die in e-mailberichten naar eindgebruikers en groepen worden verzonden met betrekking tot hun taken inschakelen, uitschakelen of wijzigen. (Zie [Meldingen voor gebruikers en groepen configureren](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
+* **Instellingen voor beheerdersmeldingen** die de berichten die in e-mailmeldingen worden verzonden voor beheertaken inschakelen, uitschakelen of wijzigen. (Zie [Meldingen voor beheerders configureren](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
 ## E-mailinstellingen configureren {#configuring-email-settings}
 
@@ -31,7 +35,7 @@ U kunt een e-mailaccount opgeven voor de formulierserver, waarmee e-mailberichte
 
 Als u het verzenden van e-mailberichten tussen AEM formulieren en gebruikers wilt inschakelen, configureert u de instellingen voor uitgaande e-mail op de pagina E-mailinstellingen. Uitgaande e-mail moet een server SMTP gebruiken.
 
-Als u wilt dat AEM formulieren binnenkomende e-mailberichten van gebruikers kunnen ontvangen en verwerken, maakt u een e-maileindpunt voor de service Volledige taak. (Zie [Een e-maileindpunt maken voor de Volledige taakservice](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
+Als u wilt dat AEM formulieren binnenkomende e-mailberichten van gebruikers kunnen ontvangen en verwerken, maakt u een e-maileindpunt voor de service Volledige taak. (Zie [Creeer een E-maileindpunt voor de Volledige dienst van de Taak](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
 Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is, hoeft u geen van de opties te configureren op de pagina E-mailinstellingen.
 
@@ -45,7 +49,7 @@ Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is
 
    >[!NOTE]
    >
-   >Als u de Server van de Uitwisseling van Microsoft gebruikt en het E-mailadres een ongeldig e-mailadres is, verzendt de server van de Uitwisseling van Microsoft geen e-mail naar de Lijsten van de Distributie. Om de kwestie op te lossen, selecteer **laat Externe Communicatie** optie voor elke Lijst van de Distributie op de server van de Uitwisseling van Microsoft afzonderlijk toe.
+   >Als u Microsoft Exchange Server gebruikt en het e-mailadres een ongeldig e-mailadres is, verzendt de Microsoft Exchange-server geen e-mail naar de Distribution List. Selecteer de optie **Externe communicatie inschakelen** optie voor elke Lijst van de Distributie op de server van de Uitwisseling van Microsoft afzonderlijk.
 
 1. Klik op Opslaan.
 
@@ -59,7 +63,7 @@ Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is
 >
 >De Flex Workspace is verouderd voor AEM formulierrelease.
 
-Standaard bevatten de e-mailberichten die door AEM formulieren worden verzonden koppelingen naar (Vervangen voor AEM formulieren op de JEE) Flex Workspace. U kunt AEM formulieren zodanig configureren dat e-mailberichten met koppelingen naar de AEM Forms Workspace worden verzonden. Zie [dit](/help/forms/using/features-html-workspace-available-flex.md) artikel voor meer informatie over de voordelen van AEM Forms Workspace over (Verouderd voor AEM formulieren in JEE) Flex Workspace.
+Standaard bevatten de e-mailberichten die door AEM formulieren worden verzonden koppelingen naar (Vervangen voor AEM formulieren op de JEE) Flex Workspace. U kunt AEM formulieren zodanig configureren dat e-mailberichten met koppelingen naar de AEM Forms Workspace worden verzonden. Voor meer informatie over de voordelen van AEM Forms Workspace in de Flex Workspace (Verouderd voor AEM formulieren in JEE), raadpleegt u [dit](/help/forms/using/features-html-workspace-available-flex.md) artikel.
 
 1. Klik in de beheerconsole op Home > Services > Formulierwerkstroom > Serverinstellingen > Taakmeldingen.
 1. Taaktoewijzingssjabloon openen.
@@ -93,8 +97,8 @@ U kunt herinneringsberichten naar de toegewezen gebruiker of groep verzenden wan
 1. Klik onder Type bericht op Herinnering (voor gebruikers) of Groep - Herinnering (voor groepen).
 1. Selecteer Herinnering inschakelen of Groep - Herinnering inschakelen.
 1. (Alleen gebruikersmeldingen) Als u een bijlage van het formulier en de bijbehorende gegevens wilt opnemen in het e-mailbericht voor de herinnering, selecteert u Formuliergegevens opnemen.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan zullen gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
@@ -107,8 +111,8 @@ U kunt taaktoewijzingsmeldingen verzenden naar een gebruiker of groep wanneer aa
 1. Onder het Type van Bericht, klik de Toewijzing van de Taak voor gebruikers of Groep - Taak Toewijzing voor groepen.
 1. Selecteer Taaktoewijzing voor gebruikers inschakelen of Groep inschakelen - Taaktoewijzing voor groepen.
 1. (Alleen gebruikersmeldingen) Als u een bijlage van het formulier en de bijbehorende gegevens wilt opnemen in het e-mailbericht voor de toewijzing van taken, selecteert u Formuliergegevens opnemen.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan zullen gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
@@ -120,8 +124,8 @@ U kunt deadline-meldingen verzenden naar gebruikers en groepen wanneer de deadli
 1. Klik in de beheerconsole op Services > Forms-workflow > Serverinstellingen > Taakmeldingen.
 1. Onder het Type van Bericht, klik Deadline (voor gebruikers) of Groep - Deadline (voor groepen).
 1. Selecteer Deadline inschakelen of Groep - Deadline inschakelen.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan zullen gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
@@ -147,8 +151,8 @@ Als een vertakking (of opzettelijk of wegens een fout) ophoudt te werk te gaan, 
 1. Klik onder Meldingstype op Vertakking stilzetten.
 1. Selecteer Geroepen vertakking inschakelen.
 1. Typ in het vak E-mailadres de adressen van de gebruikers die moeten worden gewaarschuwd wanneer een vertakking wordt geplaatst. Gebruik de notatie user@domain.com en scheidt elk adres met een komma. Dit e-mailadres is meestal bestemd voor een beheerder.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
 1. Selecteer in de lijst E-mailcodering de coderingsindeling die u voor het e-mailbericht wilt gebruiken. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan gebruiken. Gebruikers in Japan kunnen ISO2022-JP selecteren.
 1. Klik op Opslaan.
@@ -161,8 +165,8 @@ Als een bewerking niet meer actief of vanwege een fout kan worden uitgevoerd, ku
 1. Klik onder Meldingstype op Gestuurde bewerking.
 1. Selecteer Geroepen bewerking inschakelen.
 1. Typ in het vak E-mailadressen de adressen van de gebruikers die moeten worden gewaarschuwd wanneer een bewerking stagneert. Gebruik de notatie user@domain.com en scheidt elk adres met een komma. Dit e-mailadres is meestal bestemd voor een beheerder.
-1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
-1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie [De inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications) voor meer informatie over het aanpassen van dit veld.
+1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications)
+1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Klik op Opslaan.
 
 ## Inhoud van meldingen aanpassen {#customizing-the-content-of-notifications}
@@ -193,17 +197,17 @@ Alleen voor Taakmeldingen bevat de Forms-workflow twee vooraf gedefinieerde URL-
 >
 >De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
-Als uw oplossing in een gegroepeerde milieu wordt opgesteld, vervang `@@notification-host@@` met het clusteradres.
+Als uw oplossing in een gegroepeerd milieu wordt opgesteld, vervang `@@notification-host@@` met het clusteradres.
 
-`<`** `>` PORTis het poortnummer van de HTTP-listener voor de toepassingsserver. De standaard HTTP-listenerpoort voor de ondersteunde toepassingsservers is als volgt:
+`<`*POORT* `>` is het poortnummer van de HTTP-listener voor de toepassingsserver. De standaard HTTP-listenerpoort voor de ondersteunde toepassingsservers is als volgt:
 
 **JBoss:** 8080
 
-**Oracle WebLogic Server:** 7001
+**WebLogic-server van oracle:** 7001
 
 **IBM WebSphere:** 9080
 
-Om deze URLs correct te maken, vervang `<`*PORT* `>` met het havenaantal dat voor uw milieu aangewezen is.
+Als u deze URL&#39;s correct wilt laten werken, vervangt u `<`*POORT* `>` met het poortnummer dat geschikt is voor uw omgeving.
 
 >[!NOTE]
 >
@@ -211,27 +215,27 @@ Om deze URLs correct te maken, vervang `<`*PORT* `>` met het havenaantal dat voo
 
 ### Variabelekiezer {#variable-picker}
 
-De lijst Variabele kiezer biedt nuttige variabelen die u kunt slepen en neerzetten in de vakken Onderwerp- of Meldingsjabloon. Wanneer u een variabele in de vakjes van het Malplaatje van het Onderwerp of van het Bericht laat vallen, verandert het in de daadwerkelijke veranderlijke naam van het vormwerkschema met twee @ symbolen op één van beide kant van het, bijvoorbeeld, `@@taskid@@`.
+De lijst Variabele kiezer biedt nuttige variabelen die u kunt slepen en neerzetten in de vakken Onderwerp- of Meldingsjabloon. Wanneer u een variabele in de vakjes van het Malplaatje van het Onderwerp of van het Bericht laat vallen, verandert het in de daadwerkelijke veranderlijke naam van het vormwerkschema met twee @ symbolen aan beide kanten van het, bijvoorbeeld `@@taskid@@`.
 
 Voor herinneringen, taaktaken, en termijnen voor gebruikers en groepen, kunt u de volgende variabelen in de dozen van het Malplaatje van het Onderwerp en van het Bericht gebruiken:
 
-**** descriptionThe content of the Description property, as defined in the user step (start point, assign Task operation, or Assign Multiple Tasks operation) of the process in Workbench.
+**beschrijving** De inhoud van het bezit van de Beschrijving, zoals die in de gebruikersstap (beginpunt, de verrichting van de Taak toewijzen, of de Veelvoudige verrichting van Taken toewijzen) van het proces in Workbench wordt bepaald.
 
-**** instructionsThe inhoud van het bezit van de Instructies van de Taak, zoals die in de gebruikersstap van het proces in Workbench wordt bepaald.
+**instructies** De inhoud van het bezit van de Instructies van de Taak, zoals die in de gebruikersstap van het proces in Workbench wordt bepaald.
 
-**notification-** hostDe hostnaam van de AEM formuliertoepassingsserver.
+**notification-host** De hostnaam van de toepassingsserver voor AEM formulieren.
 
-**process-** nameThe name of the process.
+**process-name** De naam van het proces.
 
-**operation-** nameThe name of the step.
+**operation-name** De naam van de stap.
 
-**** taschildThe unique identifier for the current task.
+**taskind** De unieke id voor de huidige taak.
 
-**** actionsHiermee maakt u een genummerde lijst met geldige routes (bijvoorbeeld Goedkeuren, Afwijzen) waarop de ontvanger kan klikken.
+**handelingen** Hiermee maakt u een genummerde lijst met geldige routes (bijvoorbeeld Goedkeuren, Afwijzen) waarop de ontvanger kan klikken.
 
 Daarnaast kunt u voor groepherinneringen, groepstaken en groepstermijnen ook het volgende gebruiken:
 
-**group-** nameThe naam van de groep die het het werkpunt wordt toegewezen.
+**group-name** De naam van de groep waaraan het werkitem is toegewezen.
 
 >[!NOTE]
 >
@@ -239,21 +243,21 @@ Daarnaast kunt u voor groepherinneringen, groepstaken en groepstermijnen ook het
 
 Voor gestalte takken, kunt u de volgende variabelen in de dozen van het Malplaatje van het Onderwerp en van het Bericht gebruiken:
 
-**vertakking-** idDe vertakkings-id.
+**tak-id** De vertakkings-id.
 
-**process-** idThe process instance identifier.
+**process-id** De id van de procesinstantie.
 
-**notification-** hostDe hostnaam van de AEM formuliertoepassingsserver.
+**notification-host** De hostnaam van de toepassingsserver voor AEM formulieren.
 
 Voor gestalte verrichtingen, kunt u de volgende variabelen in de vakjes van het Malplaatje van het Onderwerp en van het Bericht gebruiken:
 
-**action-** idThe operation identifier.
+**action-id** De bewerking-id.
 
-**vertakking-** idDe vertakkings-id.
+**tak-id** De vertakkings-id.
 
-**process-** idThe process instance identifier.
+**process-id** De id van de procesinstantie.
 
-**notification-** hostDe hostnaam van de AEM formuliertoepassingsserver.
+**notification-host** De hostnaam van de toepassingsserver voor AEM formulieren.
 
 ### Een variabele gebruiken in het vak Onderwerp {#using-a-variable-in-the-subject-box}
 
@@ -271,7 +275,7 @@ Als u de volgende tekst in het vakje van het Malplaatje van het Bericht voor de 
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
-De beheerder ontvangt een e-mailbericht met de volgende inhoud als het vertakkingsnummer 4868 is en de servernaam `ServerXYZ`:
+De beheerder ontvangt een e-mailbericht dat de volgende inhoud bevat als het vertakkingsaantal 4868 is en de servernaam is `ServerXYZ`:
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2700'
-ht-degree: 2%
+source-wordcount: '2736'
+ht-degree: 1%
 
 ---
 
 # Analytische configuratie voor functies van Gemeenschappen {#analytics-configuration-for-communities-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
@@ -102,7 +106,7 @@ Door u aan te melden bij [Adobe Marketing Cloud](https://experienceleague.adobe.
    * **`event1`** doorheen **`event7`** enabled
    * Type **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * niet **`Counter (no subrelations)`**
    * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
 
 
@@ -296,7 +300,7 @@ De Sidetrap is niet nodig en kan worden geminimaliseerd zodat het de toegang tot
 1. Kies een `Report suite` de aan de bedrijfsrekening gekoppelde rapportensuites moeten beschikbaar zijn voor selectie
 1. Selecteren **[!UICONTROL Yes]** in het dialoogvenster dat wordt geopend: ```Load default server settings? Do you want to load the default server settings and overwrite current values in the Server section?```
 1. Kies een `Run Mode`\
-   Choose **[!UICONTROL publish]**
+   Kies **[!UICONTROL publish]**
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
@@ -339,8 +343,20 @@ Als u wilt dat Analytics tracking en import correct werken voor een communitysit
 
 ```xml
 # present in default sitepage.hbs
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # only one scf-js-site-title class should be included
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # this example sets it to be hidden as it serves no visual purpose
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 <div
     class="navbar-brand scf-js-site-title"
     href="{{siteUrl}}.html"
@@ -391,8 +407,8 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
 |  | Resourcetype Enablement | Titel site | Type functie | Groepsnaam | Pad groeperen | Type UGC | UGC-titel | Gebruiker (lid) | UGC-pad | Sitepad |
 |------------------------|------------------------|-----------|--------------|------------|-----------|---------|----------|--------------|---------|----------|
 |  | **eVar1** | **eVar2** | **eVar3** | **eVar4** | **eVar5** | **eVar6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
-| event1Resource Play | (a) | - | - | - | - | - | - | - | i) | - |
-| event2SCFView | a) | b) | c) | (d) | e) | (f) | (g) | (h) | i) | j) |
+| event1Resource Play | a) | - | - | - | - | - | - | - | i) | - |
+| event2SCFView | a) | b) | c) | d) | e) | f) | g) | h) | i) | j) |
 | event3SCFCreate (Post) | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
 | event4SCFFollow | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
 | event5SCFVoteUp | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |

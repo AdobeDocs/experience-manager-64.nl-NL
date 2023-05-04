@@ -1,8 +1,8 @@
 ---
-title: Java APIQuick Start (SOAP) van PDF-hulpprogramma's
-seo-title: Java APIQuick Start (SOAP) van PDF-hulpprogramma's
-description: Met de service PDF-hulpprogramma's kunt u een PDF-document converteren naar een XDP-document, een XDP-document converteren naar een PDF-document, PDF-documenteigenschappen ophalen, de opmaakstijl voor een PDF-document instellen en PDF-documenten ontsmetten.
-seo-description: Met de service PDF-hulpprogramma's kunt u een PDF-document converteren naar een XDP-document, een XDP-document converteren naar een PDF-document, PDF-documenteigenschappen ophalen, de opmaakstijl voor een PDF-document instellen en PDF-documenten ontsmetten.
+title: Java APIQuick Start (SOAP) van de PDF Utilities Service
+seo-title: PDF Utilities Service Java APIQuick Start(SOAP)
+description: Met de service Hulpprogramma's voor PDF kunt u een PDF-document converteren naar een XDP-document, een XDP-document converteren naar een PDF-document, de documenteigenschappen van het PDF-document ophalen, de opmaakstijl voor een PDF-document instellen en PDF-documenten ontsmetten.
+seo-description: Use the PDF Utilities service to convert a PDF document to an XDP document, convert an XDP document to a PDF document, retrieve PDF document properties, setting the save style for a PDF document, and sanitize PDF documents.
 uuid: 96bb2bd5-b274-43d4-a664-49cc1c526b3f
 contentOwner: admin
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 role: Developer
 exl-id: 0ada2e06-9a88-4262-8970-7b2aa52a8434
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
+# PDF Utilities Service Java API Quick Start (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
-De volgende snelstarthandleidingen zijn beschikbaar voor de service PDF-hulpprogramma&#39;s.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+De volgende Snelle Beginnen zijn beschikbaar voor de dienst van Hulpprogramma&#39;s van de PDF.
 
 [Snel starten (SOAP-modus): Een PDF-document converteren naar een XDP-document met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api)
 
@@ -242,7 +245,7 @@ In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-
 
 ## Snel starten (SOAP-modus): Eigenschappen van PDF-documenten ophalen met de Java API {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is en, zo ja, de oudste Acrobat-versie die het kan lezen. (Zie [Eigenschappen PDF-document ophalen](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
+In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is en, zo ja, de oudste Acrobat-versie die het kan lezen. (Zie [Eigenschappen van PDF-document ophalen](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
 ```as3
  /* 
@@ -359,7 +362,7 @@ In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is 
 
 ## Snel starten (SOAP-modus): Opslagstijl voor een PDF-document instellen met de Java API {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
-In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave ingesteld en wordt het PDF-document vervolgens doorgegeven aan de coderingsservice waar het is versleuteld. Het gecodeerde PDF-document dat wordt opgeslagen voor snelle webweergave, wordt opgeslagen als een PDF-bestand met de naam* FastWebViewLoan.pdf*. (Zie [Opslagmodi voor PDF-documenten instellen](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
+In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave ingesteld en wordt het PDF-document vervolgens doorgegeven aan de coderingsservice waar het is versleuteld. Het gecodeerde PDF-document dat wordt opgeslagen voor snelle webweergave, wordt opgeslagen als een PDF-bestand met de naam* FastWebViewLoan.pdf*. (Zie [Modi voor het opslaan van PDF-documenten instellen](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
 
 ```as3
  /* 
@@ -499,7 +502,7 @@ In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave inges
 
 ## Snel starten (SOAP-modus): Een document converteren naar een PDF/A-2b-document met de Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een PDF/A-2b-document dat wordt opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie [Documenten converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een PDF/A-2b-document dat is opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie [Documenten converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```as3
 /* 
@@ -585,9 +588,9 @@ public class CreatePDFADocument {
 }
 ```
 
-## Snel starten (SOAP-modus): PDF-documenten {#quick-start-soap-mode-sanitizing-pdf-documents} ontsmetten
+## Snel starten (SOAP-modus): PDF-documenten ontsmetten {#quick-start-soap-mode-sanitizing-pdf-documents}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* ontsmet.
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf*.
 
 ```as3
 /* 

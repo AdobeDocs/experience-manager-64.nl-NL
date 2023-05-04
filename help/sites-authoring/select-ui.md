@@ -1,8 +1,8 @@
 ---
 title: Gebruikersinterface selecteren
-seo-title: Gebruikersinterface selecteren
+seo-title: Selecting your UI
 description: Vorm welke interface u zult gebruiken om in AEM te werken
-seo-description: Vorm welke interface u zult gebruiken om in AEM te werken
+seo-description: Configure which interface you will use to work in AEM
 uuid: af956219-178e-477b-a0cd-dd2341ed2ff0
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,23 +10,26 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 exl-id: 415efbe0-95f5-4c9e-ac33-c4a384a8271e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
 
-# Uw interface selecteren{#selecting-your-ui}
+# Gebruikersinterface selecteren{#selecting-your-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## De gebruikersinterface
 
 In de ontwerpomgeving is het volgende mogelijk:
 
-* [Authoring](/help/sites-authoring/author.md)  (inclusief  [paginaontwerp](/help/sites-authoring/author-environment-tools.md),  [beheer van middelen](/help/assets/home.md),  [gemeenschappen](/help/communities/author-communities.md))
+* [Authoring](/help/sites-authoring/author.md) (inclusief [pagina&#39;s ontwerpen](/help/sites-authoring/author-environment-tools.md), [elementen beheren](/help/assets/home.md), [gemeenschappen](/help/communities/author-communities.md))
 
-* [Taken ](/help/sites-administering/home.md) beheren die u nodig hebt voor het genereren en onderhouden van de inhoud van uw website
+* [Beheer](/help/sites-administering/home.md) taken die u nodig hebt bij het genereren en onderhouden van de inhoud van uw website
 
 Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar. Deze zijn toegankelijk via elke moderne browser.
 
@@ -34,7 +37,7 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar. Deze zijn toegank
 
    * Dit is de moderne, standaard AEM UI.
    * Het is overwegend grijs, met een schone, vlakke interface.
-   * De vormgeving is op alle apparaten hetzelfde en is ontworpen voor gebruik op zowel touch- als desktopapparaten, maar [het weergeven en selecteren van uw bronnen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) verschilt enigszins (tikken versus klikken).
+   * De vormgeving is op alle apparaten hetzelfde en is ontworpen voor zowel touch- als desktopapparaten. [uw bronnen weergeven en selecteren](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) verschilt enigszins (tikken versus klikken).
 
       * Desktop:
 
@@ -49,53 +52,53 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar. Deze zijn toegank
    * Dit is de oudere gebruikersinterface en is al vele jaren in AEM beschikbaar.
    * Het is voornamelijk groen.
    * Het is ontworpen voor gebruik op desktopapparaten.
-   * De volgende documentatie concentreert zich op moderne UI. Voor informatie over creatie in klassieke UI, zie [Authoring documentatie voor Klassieke UI](/help/sites-classic-ui-authoring/classicui.md).
+   * De volgende documentatie concentreert zich op moderne UI. Voor informatie over creatie in klassieke UI, zie [Ontwerpdocumentatie voor de klassieke gebruikersinterface](/help/sites-classic-ui-authoring/classicui.md).
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## Wisselende UIs
 
-Hoewel de interface met aanraakbediening nu de standaardinterface is en [pariteit van functies](../release-notes/touch-ui-features-status.md) bijna is bereikt met het beheer en bewerken van sites, kan het gebeuren dat de gebruiker wil overschakelen op [klassieke UI](/help/sites-classic-ui-authoring/classicui.md). Hiervoor zijn verschillende opties beschikbaar.
+Hoewel de interface met aanraakbediening nu de standaardinterface is en [functiepariteit](../release-notes/touch-ui-features-status.md) is bijna bereikt met het beheer en het bewerken van sites, er kunnen momenten zijn waarop de gebruiker wil overschakelen op de [klassieke gebruikersinterface](/help/sites-classic-ui-authoring/classicui.md). Hiervoor zijn verschillende opties beschikbaar.
 
 >[!NOTE]
 >
->Voor details over de status van eigenschappariteit met klassieke UI, zie [Aanraakeigenschappen pariteit UI](../release-notes/touch-ui-features-status.md) document.
+>Voor details over de status van eigenschappariteit met klassieke UI, zie [Pariteit aanraakinterface](../release-notes/touch-ui-features-status.md) document.
 
 Er zijn verschillende locaties waar u kunt definiëren welke interface moet worden gebruikt:
 
-* [Het vormen van het gebrek UI voor uw instantie](#configuring-the-default-ui-for-your-instance)  - dit zal het gebrek UI plaatsen om bij gebruikerslogin te worden getoond, hoewel de gebruiker dit kan kunnen kunnen met voeten treden en een verschillende UI voor hun rekening of huidige zitting selecteren.
+* [De standaardinterface voor uw instantie configureren](#configuring-the-default-ui-for-your-instance) - Hiermee wordt de standaardinterface ingesteld die bij de gebruikersaanmelding moet worden weergegeven, hoewel de gebruiker deze kan overschrijven en een andere interface kan selecteren voor zijn of haar account of huidige sessie.
 
-* [Instellen van Klassieke UI-authoring voor uw account](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account)  - Hiermee wordt ingesteld dat de gebruikersinterface standaard wordt gebruikt bij het bewerken van pagina&#39;s, hoewel de gebruiker dit kan overschrijven en een andere gebruikersinterface kan selecteren voor hun account of huidige sessie.
+* [Klassieke UI-authoring instellen voor uw account](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) - Hiermee wordt ingesteld dat de gebruikersinterface standaard wordt gebruikt bij het bewerken van pagina&#39;s, maar de gebruiker kan dit overschrijven en een andere gebruikersinterface selecteren voor zijn of haar account of huidige sessie.
 
-* [Het schakelen naar klassieke UI voor de huidige zitting](#switching-to-classic-ui-for-the-current-session)  - Dit schakelt naar klassieke UI voor de huidige zitting.
+* [Overschakelen naar klassieke gebruikersinterface voor de huidige sessie](#switching-to-classic-ui-for-the-current-session) - Deze schakelt over naar de klassieke UI voor de huidige sessie.
 
-* Bij het ontwerpen van [pagina&#39;s maakt het systeem bepaalde overschrijvingen met betrekking tot de interface](#ui-overrides-for-the-editor).
+* Voor het geval van [pagina het ontwerpen van het systeem maakt bepaalde met betrekking tot UI met voeten treedt](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
 >Diverse opties voor het schakelen naar klassieke UI zijn niet onmiddellijk beschikbaar uit-van-de-doos, zij moeten specifiek voor uw instantie worden gevormd.
 >
->Zie [Toegang tot klassieke UI inschakelen](/help/sites-administering/enable-classic-ui.md) voor meer informatie.
+>Zie [Toegang tot klassieke gebruikersinterface inschakelen](/help/sites-administering/enable-classic-ui.md) voor meer informatie .
 
 >[!NOTE]
 >
 >Instanties die zijn bijgewerkt vanaf een vorige versie behouden de klassieke interface voor het ontwerpen van pagina&#39;s.
 >
->Na upgrade wordt het ontwerpen van pagina&#39;s niet automatisch overgeschakeld op de interface met aanraakbediening, maar u kunt dit configureren met de [OSGi-configuratie](/help/sites-deploying/configuring-osgi.md) van de **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). Zie [UI-overschrijvingen voor de Editor](#ui-overrides-for-the-editor).
+>Na de upgrade wordt het ontwerpen van pagina&#39;s niet automatisch overgeschakeld op de interface met aanraakbediening, maar u kunt dit configureren met de [OSGi-configuratie](/help/sites-deploying/configuring-osgi.md) van de **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). Zie [UI-overschrijvingen voor de Editor](#ui-overrides-for-the-editor).
 
-## Standaardinterface configureren voor uw instantie {#configuring-the-default-ui-for-your-instance}
+## De standaardinterface voor uw instantie configureren {#configuring-the-default-ui-for-your-instance}
 
-Een systeembeheerder kan UI vormen die bij opstarten en login door [Toewijzing van de Wortel](/help/sites-deploying/osgi-configuration-settings.md) te gebruiken wordt gezien.
+Een systeembeheerder kan UI vormen die bij opstarten en login door te gebruiken wordt gezien [Hoofdtoewijzing](/help/sites-deploying/osgi-configuration-settings.md).
 
 Dit kan door gebruikersgebreken of zittingsmontages worden met voeten getreden.
 
 ## Klassieke UI-authoring instellen voor uw account {#setting-classic-ui-authoring-for-your-account}
 
-Elke gebruiker kan tot zijn/haar [gebruikersvoorkeur](/help/sites-authoring/user-properties.md) toegang hebben om te bepalen als hij/zij klassieke UI voor paginaontwerp (in plaats van het gebrek UI) wenst te gebruiken.
+Elke gebruiker heeft toegang tot zijn/haar [gebruikersvoorkeuren](/help/sites-authoring/user-properties.md) om te bepalen of hij/zij klassieke UI voor paginaontwerp (in plaats van het gebrek UI) wenst te gebruiken.
 
 Dit kan door zittingsmontages worden met voeten getreden.
 
-## Overschakelen naar klassieke UI voor de Huidige Zitting {#switching-to-classic-ui-for-the-current-session}
+## Schakelen naar klassieke gebruikersinterface voor de huidige sessie {#switching-to-classic-ui-for-the-current-session}
 
 Als gebruikers de interface met aanraakbediening gebruiken, kunnen ze terugkeren naar de klassieke interface (alleen bureaublad). Er zijn verscheidene methodes om op klassieke UI voor de huidige zitting over te schakelen:
 
@@ -106,17 +109,17 @@ Als gebruikers de interface met aanraakbediening gebruiken, kunnen ze terugkeren
    >Deze optie voor het schakelen naar klassieke UI is niet onmiddellijk beschikbaar uit-van-de-doos, moet het specifiek voor uw instantie worden gevormd.
    >
    >
-   >Zie [Toegang tot klassieke UI inschakelen](/help/sites-administering/enable-classic-ui.md) voor meer informatie.
+   >Zie [Toegang tot klassieke gebruikersinterface inschakelen](/help/sites-administering/enable-classic-ui.md) voor meer informatie .
 
    Als dit wordt toegelaten, wanneer u muis over een toepasselijke console, een pictogram (symbool van een monitor) verschijnt, zal het tikken van/het klikken dit de aangewezen plaats in klassieke UI openen.
 
-   Bijvoorbeeld, de verbindingen van **Sites** aan **plaatadmin**:
+   De koppelingen van **Sites** tot **sitebeheerder**:
 
    ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 
 * **URL**
 
-   De klassieke UI kan worden betreden gebruikend URL voor het welkomstscherm bij `welcome.html`. Bijvoorbeeld:
+   De klassieke interface is toegankelijk via de URL voor het welkomstscherm op `welcome.html`. Bijvoorbeeld:
 
    `http://localhost:4502/welcome.html`
 
@@ -127,15 +130,15 @@ Als gebruikers de interface met aanraakbediening gebruiken, kunnen ze terugkeren
    >
    >`http://localhost:4502/sites.html`
 
-### Overschakelen naar klassieke interface bij het bewerken van een pagina {#switching-to-classic-ui-when-editing-a-page}
+### Schakelen naar klassieke gebruikersinterface bij het bewerken van een pagina {#switching-to-classic-ui-when-editing-a-page}
 
 >[!CAUTION]
 >
 >Deze optie voor het schakelen naar klassieke UI is niet onmiddellijk beschikbaar uit-van-de-doos, moet het specifiek voor uw instantie worden gevormd.
 >
->Zie [Toegang tot klassieke UI inschakelen](/help/sites-administering/enable-classic-ui.md) voor meer informatie.
+>Zie [Toegang tot klassieke gebruikersinterface inschakelen](/help/sites-administering/enable-classic-ui.md) voor meer informatie .
 
-Indien ingeschakeld is **Open de klassieke UI** beschikbaar in het dialoogvenster **Paginagegevens**:
+Indien ingeschakeld, **De klassieke gebruikersinterface openen** is beschikbaar via **Pagina-informatie** dialoogvenster:
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -145,27 +148,27 @@ De instellingen die door een gebruiker of systeembeheerder zijn gedefinieerd, ku
 
 * Bij het ontwerpen van pagina&#39;s:
 
-   * Het gebruik van de klassieke editor wordt geforceerd wanneer de pagina wordt geopend met `cf#` in de URL. Bijvoorbeeld:
+   * Het gebruik van de klassieke editor is geforceerd wanneer u de pagina opent met `cf#` in de URL. Bijvoorbeeld:
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Het gebruik van de aanraakeditor wordt geforceerd wanneer u `/editor.html` in de URL gebruikt of wanneer u een aanraakapparaat gebruikt. Bijvoorbeeld:
+   * Het gebruik van de aanraakeditor is verplicht bij gebruik `/editor.html` in de URL of wanneer u een aanraakapparaat gebruikt. Bijvoorbeeld:
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Elke forcering is tijdelijk en is alleen geldig voor de browsersessie
 
-   * Een cookieset wordt ingesteld afhankelijk van het feit of touch-enabled ( `editor.html`) of classic ( `cf#`) wordt gebruikt.
+   * Een cookie-set wordt ingesteld afhankelijk van of touch-bediening ( `editor.html`) of klassiek ( `cf#`) wordt gebruikt.
 
-* Bij het openen van pagina&#39;s via `siteadmin` wordt gecontroleerd of:
+* Wanneer u pagina&#39;s opent via `siteadmin`worden controles uitgevoerd op het bestaan van:
 
    * Het cookie
    * Een gebruikersvoorkeur
-   * Als geen van beide bestaan, zal het aan de definities in [OSGi configuratie](/help/sites-deploying/configuring-osgi.md) van **WCM Authoring UI Mode Service** ( `AuthoringUIMode` dienst) in gebreke blijven.
+   * Als geen van beide bestaan, zal het aan de definities in gebrek blijven die in [OSGi-configuratie](/help/sites-deploying/configuring-osgi.md) van de **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service).
 
 >[!NOTE]
 >
->Als [een gebruiker reeds een voorkeur voor pagina creatie](#setting-classic-ui-authoring-for-your-account) heeft bepaald, zal dat niet worden met voeten getreden door het bezit te veranderen OSGi.
+>Indien [een gebruiker heeft al een voorkeur voor het ontwerpen van pagina&#39;s gedefinieerd](#setting-classic-ui-authoring-for-your-account), dat niet zal worden met voeten getreden door het bezit te veranderen OSGi.
 
 >[!CAUTION]
 >
@@ -173,7 +176,5 @@ De instellingen die door een gebruiker of systeembeheerder zijn gedefinieerd, ku
 >
 >* Handmatig de URL bewerken - Een niet-standaard URL kan leiden tot een onbekende situatie en een gebrek aan functionaliteit.
 >* Beide editors tegelijk openen, bijvoorbeeld in afzonderlijke vensters.
-
 >
-
 

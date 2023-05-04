@@ -1,8 +1,8 @@
 ---
 title: AEM Forms-gegevensintegratie
-seo-title: AEM Forms-gegevensintegratie
+seo-title: AEM Forms Data Integration
 description: Met gegevensintegratie kunt u AEM Forms integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
-seo-description: Met gegevensintegratie kunt u AEM Forms integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
+seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 58f65ae0-cf54-4249-92c7-64b557e30491
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,15 +10,18 @@ topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
 feature: Form Data Model
 exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot AEM Forms Data Integration {#aem-forms-data-integration}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Met gegevensintegratie kunt u AEM Forms integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
 

@@ -9,22 +9,26 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '21516'
+source-wordcount: '21552'
 ht-degree: 0%
 
 ---
 
 # AEM 6.4 Opmerkingen bij de release Service Pack {#aem-service-pack-release-notes}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Geen informatie {#release-information}
 
 | Producten | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
-| Versie | 6.4.8.0. |
+| Versie | 6.4.8.0 |
 | Type | Service Pack-release |
-| Date | 5 maart 2020 |
+| Datum | 5 maart 2020 |
 | URL downloaden | AEM 6.4.8.0 op [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Wat is inbegrepen in AEM 6.4.8.0 {#what-s-included-in-aem}
@@ -181,7 +185,7 @@ Enkele belangrijke hooglichten van AEM 6.4.7.0 zijn:
 * Time-out voor batchgrootte en workflowstap voor opnieuw verwerken en batchuploaden zijn nu configureerbaar vanuit de gebruikersinterface in Dynamic Media.
 * De `pdfBrochure` is geplaatst aan vals in Scene 7 wolkenconfiguratie, om geheugen bij IPS te bewaren.
 
-##### Activa {#assets-6470}
+##### Assets {#assets-6470}
 
 **Verbeteringen voor producten**
 
@@ -272,7 +276,7 @@ Als u het pakket gebruikt `com.day.cq.dam.handler.standard.msoffice` in uw aange
 
 * Wanneer u het model van het inhoudsfragment opslaat, wordt de tijd in het datum- en tijdveld ingesteld op 00:00 (NPR-30540).
 
-##### Integraties {#integrations-6470}
+##### Integrations {#integrations-6470}
 
 * Bij het configureren van Adobe Launch wordt een slash (/) toegevoegd aan de URL van de bibliotheek (NPR-30700).
 
@@ -524,7 +528,7 @@ Enkele belangrijke hooglichten van AEM 6.4.5.0 zijn:
 * Uitgeschakeld `AssetDownloadServlet` De component OSGi door gebrek op AEM publiceert instanties. Zie voor meer informatie [Elementen downloaden van AEM](/help/assets/download-assets-from-aem.md).
 * Ondersteuning voor beheer van meerdere sites ingeschakeld voor middelen. Zie voor meer informatie [Elementen hergebruiken met MSM voor middelen](/help/assets/reuse-assets-using-msm.md).
 
-**Activa**
+**Assets**
 
 * Elementen met een apostrof in de bestandsnaam worden niet gesynchroniseerd met Dynamic Media. NPR-29538: Hotfix voor CQ-4270592
 * Bijgewerkte interface DAM DMGateway voor S3 multipart steun. NPR-29740: Hotfix voor CQ-4226303
@@ -731,7 +735,7 @@ De belangrijkste markeringen voor AEM 6.4.5.0 vormen zijn:
 
 **Inclusief functiepakketten**
 
-**Activa**
+**Assets**
 
 * Ondersteuning voor beheer van meerdere sites ingeschakeld voor middelen. Zie voor meer informatie [Elementen hergebruiken met MSM voor middelen](/help/assets/reuse-assets-using-msm.md). NPR-26450: Hotfix voor CQ-4259922
 
@@ -767,7 +771,7 @@ Enkele belangrijke hooglichten van AEM 6.4.4.0 zijn:
 * Er is een controle toegevoegd om lege waarden voor numerieke invoervelden in de clientlibs van Content Fragment te negeren.
 * Ondersteuning ingeschakeld voor Microsoft Translator Text API v3.
 
-**Activa**
+**Assets**
 
 * Migratie van ACS- en voorraadintegratie naar AEM 6.4.4.0 NPR-27632
 * Publiceer later lege middelomslag met subfolders maakt de subomslagen verdwijnen. NPR-27558: Hotfix voor CQ-4254701
@@ -1043,7 +1047,7 @@ Enkele belangrijke hooglichten van AEM 6.4.3.0 zijn:
 * Verbeterde verwerking van plaatsaanduidingsitems (Kaartweergave en Lijstweergave) tijdens de selectie.
 * Adobe IMS-verificatie en ondersteuning voor Admin Consoles voor Managed Services toegevoegd.
 
-**Activa**
+**Assets**
 
 * De workflow voor DAM-updatebronnen haalt geen verwijzingen uit INDD-bestanden als de optie IDS-decouple is ingeschakeld. NPR-26243; Hotfix voor CQ-4250933
 * Het succesbericht wordt niet weergegeven wanneer elementen worden gepubliceerd met de Redacteur van het Bulk van de Activa. NPR-26252; Hotfix voor CQ-4251688.
@@ -1307,7 +1311,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * Bijgewerkte GCC naar de nieuwste versie.
 * SAML naar nieuwe externe IDP-synchronisatie verplaatsen.
 
-**Activa**
+**Assets**
 
 * Het genereren van subelementen voor het pptx-bestand bevat geen afbeeldingen en miniaturen. NPR-24286: Hotfix voor CQ-4217986
 * migrateAllAssets - Voeg ondersteuning toe voor batchverwerking en verbeter AEM methode die UUID toevoegt aan oude elementen. NPR-24861: Hotfix voor CQ-4242863 en CQ-4247874
@@ -1447,7 +1451,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * De velden &quot;Samenstellen namens&quot; zijn zichtbaar voor gebruikers buiten de gebruikersgemeenschap. NPR-25331: Hotfix voor CQ-4247858
 * Post is nog zichtbaar op UI zelfs na schrapping en geeft fout op console. NPR-26290: Hotfix voor CQ-4252803
 * (Site-instellingen) Kan de wijzigingen in Rollen niet opslaan. NPR-26274: Hotfix voor CQ-4252187
-* (Vulnerability van de Veiligheid) Accountovername toe te schrijven aan het Symbolische Misconfiguration van JSON Web. NPR-26458: Hotfix voor CQ-4253314
+* (Vulnerability van de Veiligheid) Accountovername toe te schrijven aan het Symbolische Misconfiguration van het Web JSON. NPR-26458: Hotfix voor CQ-4253314
 * Paginering wordt niet opnieuw ingesteld wanneer reacties worden verwijderd. NPR-26326: Hotfix voor CQ-4252997
 * Bijlageafbeelding wordt tijdens het bewerken niet weergegeven in Concepten. Hotfix voor CQ-4253360
 * De pagina wordt niet vernieuwd terwijl het vastmaken van gehechtheid in Relationele Gegevensbestand (DSRP). Hotfix voor CQ-4253084
@@ -1654,7 +1658,7 @@ De belangrijkste markeringen voor AEM 6.4.2.0 vormen zijn:
 
 **Inclusief functiepakketten**
 
-**Activa**
+**Assets**
 
 * Toegevoegd [integratie met Adobe Stock](/help/assets/aem-assets-adobe-stock.md) zodat gebruikers rechtstreeks vanuit AEM gebruikersinterface kunnen zoeken, voorvertonen, opslaan en licenties voor Adobe Stock-elementen kunnen maken. Zie voor meer informatie [Adobe Stock-elementen gebruiken met AEM elementen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779: Hotfix voor CQ-30857
 * Toegevoegde ondersteuning voor dynamische voorwaardelijke metaschema. Zie voor meer informatie [Trapsgewijze metagegevens](/help/assets/cascading-metadata.md). NPR-25189: Hotfix voor CQ-4237413
@@ -1702,7 +1706,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Proactieve back-up voor platform.clientlibs-oplossingen.
 * Preventie van automatische uitvoering van scripts wanneer er geen invoer is naar het expliciete dataType (verhelpt CVE-2015-9251).
 
-**Activa**
+**Assets**
 
 * Bij het opnieuw openen van de eigenschappenpagina voor elementen wordt de trapsgewijze vervolgkeuzelijst leeg weergegeven. NPR-23042: Hotfix voor CQ-4238761
 * Gedeelde koppelingen op mylinkshare-pagina en koppelingen naar de pagina zijn niet beschikbaar voor niet-admin-gebruiker NPR-23044: Hotfix voor CQ-4239004
@@ -2064,7 +2068,7 @@ De belangrijkste markeringen voor AEM Forms zijn:
 
 **Inclusief functiepakketten**
 
-**Activa**
+**Assets**
 
 * De functie voor verbeterde slimme tags is toegevoegd. Zie voor meer informatie [Verbeterde slimme tags](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951: Hotfix voor CQ-4234883
 * Introductie AEM Assets References in InDesign. Zie voor meer informatie [AEM Assets-verwijzingen in InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
@@ -2226,7 +2230,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 
 | Gebied | Functie | Vervanging | Versie |
 |---|---|---|---|
-| Activa | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
+| Assets | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
 | Integratie van middelen en Adobe Creative Cloud | [AEM naar map Creative Cloud delen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) werd ingevoerd in AEM 6.2 als een manier om creatieve gebruikers toegang te geven tot activa van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie voor meer informatie [AEM integratie van Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) artikel. | AEM 6.4.4.0 |
 
 ### Bekende problemen {#known-issues}

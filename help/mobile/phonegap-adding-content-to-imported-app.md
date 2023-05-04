@@ -1,8 +1,8 @@
 ---
 title: Is uw hybride app gereed voor AEM Mobile?
-seo-title: Is uw hybride app gereed voor AEM Mobile?
+seo-title: Is your hybrid app ready for AEM Mobile?
 description: Volg deze pagina om meer te weten te komen over hrybrid-apps. Een toepassing in AEM bestaat meestal uit twee delen. De 'shell' en 'content' en deze pagina bieden meer inzicht in deze onderwerpen.
-seo-description: Volg deze pagina om meer te weten te komen over hrybrid-apps. Een toepassing in AEM bestaat meestal uit twee delen. De 'shell' en 'content' en deze pagina bieden meer inzicht in deze onderwerpen.
+seo-description: Follow this page to learn about hrybrid apps. An app in AEM is commonly divided into two parts. The 'shell' and 'content' and this page provides more insight on these topics.
 uuid: cbcce3fa-9100-46ea-9f24-931b42666709
 contentOwner: User
 content-type: reference
@@ -11,19 +11,22 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b7fd7954-f2a5-402d-b259-e18b5a618be9
 pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 79eafdb5-8b83-466a-8d06-da1a655a0619
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
 
 # Is uw hybride app gereed voor AEM Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Dus u hebt uw Hybride PhoneGap- of Cordova-app geïmporteerd in AEM, wat nu? Waarschijnlijk zult u authorable inhoud aan uw app willen toevoegen. Hiervoor hebt u een algemeen inzicht in de structuur van een AEM-app nodig. Een toepassing in AEM bestaat meestal uit twee delen. De &#39;shell&#39; en &#39;content&#39;. De &#39;shell&#39; bestaat uit de statische delen van uw app. zoals de PhoneGap-configuratiebestanden, het app-framework en de navigatiebesturingselementen. De inhoud van het archief dat u hebt geïmporteerd, wordt opgeslagen als onderdeel van de shell. In de context van dit document is de shell alle niet-AEM authored inhoud van uw Hybride toepassing PhoneGap die door de toepassingsontwikkelaar wordt gebouwd.
 
@@ -35,7 +38,7 @@ Om de verklaring makkelijker te kunnen volgen, gebruiken we de AEM Marketing Clo
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-In dit voorbeeld gaan we de welkomstpagina van de toepassing schrijven. Bekijk de bron [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). We zien dat de ontwikkelaar van de app een welkomstpagina heeft gedefinieerd en een sjabloon heeft verschaft voor de pagina die door de app wordt weergegeven. Dit is waar de toepassingsontwikkelaar en AEM ontwikkelaar moeten coördineren. Het pad naar de welkomstpaginasjabloon in de Hybride Reference App is gedefinieerd als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Deze weg is uiterst belangrijk omdat de AEM ontwikkelaar hun welkomstpagina in de AEM bewaarplaats gebruikend de zelfde weg zal ontwerpen.
+In dit voorbeeld gaan we de welkomstpagina van de toepassing schrijven. Een blik werpen op de bron [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). We zien dat de ontwikkelaar van de app een welkomstpagina heeft gedefinieerd en een sjabloon heeft verschaft voor de pagina die door de app wordt weergegeven. Dit is waar de toepassingsontwikkelaar en AEM ontwikkelaar moeten coördineren. Het pad naar de welkomstpaginasjabloon in de Hybride Reference App is gedefinieerd als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Deze weg is uiterst belangrijk omdat de AEM ontwikkelaar hun welkomstpagina in de AEM bewaarplaats gebruikend de zelfde weg zal ontwerpen.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 

@@ -10,20 +10,24 @@ topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 feature: Correspondence Management
 exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1777'
 ht-degree: 1%
 
 ---
 
 # Aangepaste actie/knop toevoegen in interface voor correspondentie maken {#add-custom-action-button-in-create-correspondence-ui}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Overzicht {#overview}
 
 Met de oplossing Correspondence Management kunt u aangepaste handelingen toevoegen aan de gebruikersinterface Correspondentie maken.
 
-In het scenario in dit document wordt uitgelegd hoe u een knop in de gebruikersinterface voor correspondentie maken kunt maken om een brief te delen als een revisie-PDF die is gekoppeld aan een e-mail.
+Het scenario in dit document legt uit hoe u een knop in de gebruikersinterface voor correspondentie maken kunt maken om een brief te delen als een revisiebericht dat aan een e-mail is gekoppeld.
 
 ### Vereisten {#prerequisites}
 
@@ -42,10 +46,10 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
 ### De knop toevoegen aan de gebruikersinterface Correspondentie maken {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Ga naar `https://[server]:[port]/[ContextPath]/crx/de` en login als Beheerder.
-1. Maak in de map apps een map met de naam `defaultApp` met een pad/structuur die lijkt op de map defaultApp (in de map config). Gebruik de volgende stappen om de map te maken:
+1. Ga naar `https://[server]:[port]/[ContextPath]/crx/de` en aanmelden als beheerder.
+1. Maak in de map Apps een map met de naam `defaultApp` met pad/structuur vergelijkbaar met de map defaultApp (in configuratiemap). Gebruik de volgende stappen om de map te maken:
 
-   * Klik met de rechtermuisknop op de map **[!UICONTROL defaultApp]** op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
+   * Klik met de rechtermuisknop op de knop **[!UICONTROL defaultApp]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
 
       /libs/fd/cm/config/defaultApp/
 
@@ -72,7 +76,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
       ![acmExtensionsConfig.xml kopiëren](assets/3_acmextensionsconfig_xml_copy.png)
 
-   * Klik met de rechtermuisknop op de map **[!UICONTROL defaultApp]** op &quot;/apps/fd/cm/config/defaultApp/&quot; en selecteer **[!UICONTROL Paste]**.
+   * Klik met de rechtermuisknop op de knop **[!UICONTROL defaultApp]** map op &quot;/apps/fd/cm/config/defaultApp/&quot; en selecteer **[!UICONTROL Paste]**.
    * Klik op **[!UICONTROL Save All]**.
 
 1. Dubbelklik op de kopie van acmExtencesConfig.xml die u net in de map apps hebt gemaakt. Het bestand wordt geopend voor bewerking.
@@ -108,9 +112,9 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
    |---|---|
    | name | De alfanumerieke naam voor de handeling die moet worden uitgevoerd. Waarde van deze tag is vereist, moet uniek zijn (binnen de tag modelExtension) en moet beginnen met een alfabet. |
    | label | Het label dat op de actieknop moet worden weergegeven |
-   | tooltip | Knopinfo-tekst van de knop, die wordt weergegeven wanneer de gebruiker de muisaanwijzer op de knop plaatst. |
+   | knopinfo | Knopinfo-tekst van de knop, die wordt weergegeven wanneer de gebruiker de muisaanwijzer op de knop plaatst. |
    | styleName | Naam van de aangepaste stijl die op de actieknop wordt toegepast. |
-   | permissionName | De overeenkomstige actie wordt getoond slechts als de gebruiker de toestemming heeft die door permissionName wordt gespecificeerd. Wanneer u permissionName als `forms-users` specificeert, krijgen alle gebruikers toegang tot deze optie. |
+   | permissionName | De overeenkomstige actie wordt getoond slechts als de gebruiker de toestemming heeft die door permissionName wordt gespecificeerd. Wanneer u permissionName opgeeft als `forms-users`, krijgen alle gebruikers toegang tot deze optie. |
    | actionHandler | Volledig gekwalificeerde naam van de klasse ActionHandler die wordt aangeroepen wanneer de gebruiker op de knop klikt. |
 
    Naast de bovenstaande parameters, kunnen er extra configuraties verbonden aan een customAction zijn. Deze extra configuraties worden ter beschikking gesteld aan de manager door het voorwerp CustomAction.
@@ -127,7 +131,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
 Het bestand ACMExtensionsMessages.properties bevat labels en knopinfo-berichten van verschillende velden in de gebruikersinterface Correspondentie maken. Maak een kopie van dit bestand in de tak /apps om de aangepaste handelingen/knoppen te laten werken.
 
-1. Klik met de rechtermuisknop op de map **[!UICONTROL locale]** op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
+1. Klik met de rechtermuisknop op de knop **[!UICONTROL locale]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
 
    /libs/fd/cm/config/defaultApp/locale
 
@@ -145,7 +149,7 @@ Het bestand ACMExtensionsMessages.properties bevat labels en knopinfo-berichten 
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
-1. Klik met de rechtermuisknop op de map **[!UICONTROL locale]** op het volgende pad en selecteer **[!UICONTROL Paste]**:
+1. Klik met de rechtermuisknop op de knop **[!UICONTROL locale]** map op het volgende pad en selecteer **[!UICONTROL Paste]**:
 
    `/apps/fd/cm/config/defaultApp/locale/`
 
@@ -193,13 +197,13 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
 
 1. Ga naar `https://[server]:[port]/[ContextPath]/crx/de`. Meld u indien nodig aan als beheerder.
 
-1. Maak in de map apps een map met de naam `js` in de tak /apps van CRX met een structuur die lijkt op de volgende map:
+1. Maak in de map Apps een map met de naam `js` in de /apps tak van CRX met structuur gelijkend op de volgende omslag:
 
    `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
    Gebruik de volgende stappen om de map te maken:
 
-   1. Klik met de rechtermuisknop op de map **[!UICONTROL js]** op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
+   1. Klik met de rechtermuisknop op de knop **[!UICONTROL js]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
 
       `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -216,7 +220,7 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
 
 1. Maak in de map js een bestand met de naam ccrcustomization.js met de code voor het uitvoeren van handelingen met de knop door de volgende stappen uit te voeren:
 
-   1. Klik met de rechtermuisknop op de map **[!UICONTROL js]** op het volgende pad en selecteer **[!UICONTROL Create > Create File]**:
+   1. Klik met de rechtermuisknop op de knop **[!UICONTROL js]** map op het volgende pad en selecteer **[!UICONTROL Create > Create File]**:
 
       `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -322,14 +326,14 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
       '</div>';
       ```
 
-### Voeg het proces van de LiveCycle toe om actie <span class="acrolinxCursorMarker"></span>behandeling toe te laten {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Voeg het proces van de LiveCycle toe om actie toe te laten <span class="acrolinxCursorMarker"></span>afhandeling {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 In dit scenario schakelt u de volgende componenten in, die deel uitmaken van het bestand components.zip in de bijlage:
 
 * DSC-componentjar (`DSCSample.jar`)
-* Letter verzenden voor revisieproces LCA (`SendLetterForReview.lca`)
+* Letter verzenden voor controleproces LCA (`SendLetterForReview.lca`)
 
-Download en decomprimeer het `components.zip`-bestand om `DSCSample.jar`- en `SendLetterForReview.lca`-bestanden op te halen. Gebruik deze bestanden volgens de onderstaande procedures.
+Download en decomprimeer de `components.zip` op te halen bestand `DSCSample.jar` en `SendLetterForReview.lca` bestanden. Gebruik deze bestanden volgens de onderstaande procedures.
 
 [Bestand ophalen](assets/components.zip)
 
@@ -341,8 +345,8 @@ Download en decomprimeer het `components.zip`-bestand om `DSCSample.jar`- en `Se
 
 Het LCA-proces wordt uitgevoerd op de LiveCycle-server en vereist het serveradres en de aanmeldingsgegevens.
 
-1. Ga naar `https://[server]:[port]/system/console/configMgr` en login als Beheerder.
-1. Zoek Adobe LiveCycle Client SDK Configuration en klik op **[!UICONTROL Edit]** (bewerkingspictogram). Het deelvenster Configuraties wordt geopend.
+1. Ga naar `https://[server]:[port]/system/console/configMgr` en aanmelden als beheerder.
+1. Zoek de Configuratie van de SDK van Adobe LiveCycle Client en klik op **[!UICONTROL Edit]** (pictogram Bewerken). Het deelvenster Configuraties wordt geopend.
 
 1. Voer de volgende gegevens in en klik op **[!UICONTROL Save]**:
 
@@ -360,7 +364,7 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 >
 >Als u wilt zien wat dit proces doet of een vergelijkbaar proces wilt maken, hebt u Workbench nodig.
 
-1. Meld u aan als beheerder bij Livecycle Server adminui op `https:/[lc server]/:[lc port]/adminui`.
+1. Meld u aan als beheerder bij Livecycle Server-adminui op `https:/[lc server]/:[lc port]/adminui`.
 
 1. Ga naar **[!UICONTROL Home > Services > Applications and Services > Application Management]**.
 
@@ -384,10 +388,10 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 Vermelding in de AEM server de diensten van de LiveCycle u tot de AEM server wilt toegang hebben.
 
-1. Meld u aan als beheerder bij `https:/[host]/:[port]/system/console/configMgr`.
+1. Aanmelden als beheerder `https:/[host]/:[port]/system/console/configMgr`.
 
-1. Zoek en klik op **[!UICONTROL Adobe LiveCycle Client SDK Configuration]**. Het deelvenster Configuratie SDK van Adobe LiveCycle Client wordt weergegeven.
-1. Klik op + pictogram in de lijst Servicenaam en voeg een servicenaam **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]** toe.
+1. Zoeken en klikken **[!UICONTROL Adobe LiveCycle Client SDK Configuration]**. Het deelvenster Configuratie SDK van Adobe LiveCycle Client wordt weergegeven.
+1. In de lijst van de Naam van de Dienst, klik + pictogram en voeg een serviceName toe **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -399,17 +403,17 @@ In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen 
 
 1. Ga naar **[!UICONTROL Home > Services > Applications and Services > Service Management]**.
 
-1. Zoek en klik op **[!UICONTROL EmailService]**.
+1. Zoeken en klikken **[!UICONTROL EmailService]**.
 
-1. Configureer de e-mailservice in **[!UICONTROL SMTP Host]**.
+1. In **[!UICONTROL SMTP Host]**, configureert u de e-mailservice.
 
 1. Klik op **[!UICONTROL Save]**.
 
 #### De DSC-service configureren {#configure-the-dsc-service}
 
-Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u `DSCSample.jar` (in dit document bijgevoegd als onderdeel van `components.zip`) en uploadt u deze naar de LiveCycle-server. Nadat het `DSCSample.jar` dossier aan de server van de LiveCycle wordt geupload, gebruikt de AEM server `DSCSample.jar` dossier om tot renderLetter API toegang te hebben.
+Als u de API voor Correspondentenbeheer wilt gebruiken, downloadt u de `DSCSample.jar` (als onderdeel van `components.zip`) en uploadt u deze naar de LiveCycle-server. Na de `DSCSample.jar` het bestand is geüpload naar de LiveCycle-server, gebruikt de AEM server de `DSCSample.jar` bestand voor toegang tot de renderLetter-API.
 
-Zie [AEM Forms verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md) voor meer informatie.
+Zie voor meer informatie [AEM Forms verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Werk de URL van de AEM server in cmsa.properties bij in `DSCSample.jar`, die zich op de volgende locatie bevindt:
 
@@ -417,28 +421,28 @@ Zie [AEM Forms verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-co
 
 1. Geef de volgende parameters op in het configuratiebestand:
 
-   * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
+   * **crx.serverUrl**=https:/[host]/:[poort]/[contextpad]/[URL AEM]
    * **crx.username**= AEM gebruikersnaam
-   * **crx.password**= AEM wachtwoord
+   * **crx.password**= AEM
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
    >Telkens als u om het even welke veranderingen bij de serverzijde aanbrengt, begin de Server opnieuw.
 
-   Het `DSCSample.jar` dossier gebruikt `renderLetter` API. Voor meer informatie over renderLetter API, zie [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   De `DSCSample.jar` bestand gebruikt het `renderLetter` API. Zie voor meer informatie over de renderLetter-API [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### DSC importeren naar AEM Forms op JEE {#import-dsc-to-livecyle}
 
-`DSCSample.jar` gebruikt de  `renderLetter` API om de letter te renderen als PDF-bytes van XML-gegevens die C als invoer geeft. Zie [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html) voor meer informatie over renderLetter en andere API&#39;s.
+`DSCSample.jar` bestand gebruikt het `renderLetter` API om de letter te renderen als PDF bytes van XML-gegevens die C als invoer geeft. Voor meer informatie over renderLetter en andere APIs, zie [Letter Render-service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Start Workbench en meld u aan.
 1. Selecteer **[!UICONTROL Window > Show Views > Components]**. De weergave Componenten wordt toegevoegd aan Workbench ES2.
 
-1. Klik met de rechtermuisknop **[!UICONTROL Components]** en selecteer **[!UICONTROL Install Component]**.
+1. Klikken met rechtermuisknop **[!UICONTROL Components]** en selecteert u **[!UICONTROL Install Component]**.
 
-1. Selecteer het `DSCSample.jar` dossier door dossierbrowser en klik **[!UICONTROL Open]**.
-1. Klik met de rechtermuisknop **[!UICONTROL RenderWrapper]** en selecteer **[!UICONTROL Start Component]**. Als de component start, verschijnt er een groene pijl naast de naam van de component.
+1. Selecteer `DSCSample.jar` file door dossierbrowser en klik **[!UICONTROL Open]**.
+1. Klikken met rechtermuisknop **[!UICONTROL RenderWrapper]** en selecteert u **[!UICONTROL Start Component]**. Als de component start, verschijnt er een groene pijl naast de naam van de component.
 
 ## Ter controle verzenden {#send-letter-for-review}
 
@@ -446,10 +450,10 @@ Nadat u de actie en de knoop voor het verzenden van de brief voor overzicht hebt
 
 1. Wis de browsercache.
 
-1. Klik in de interface Correspondentie maken op **[!UICONTROL Letter Review]** en geef de e-mailid van de revisor op.
+1. Klik in de interface Correspondentie maken op **[!UICONTROL Letter Review]** en geef de e-mailid van de controleur op.
 
 1. Klik op **[!UICONTROL Submit]**.
 
 ![sendreview](assets/sendreview.png)
 
-De controleur ontvangt een e-mail van het systeem met de brief als PDF-bijlage.
+De controleur ontvangt een e-mail van het systeem met de brief als PDF bijlage.

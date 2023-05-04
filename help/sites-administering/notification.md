@@ -10,45 +10,49 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
-source-git-commit: 3a206c2fa8c18876b6e1481e2feb86857b5219c4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1170'
 ht-degree: 1%
 
 ---
 
 # E-mailmelding configureren{#configuring-email-notification}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 AEM stuurt e-mailmeldingen naar gebruikers die:
 
-* Hebt u zich op paginagebeurtenissen geabonneerd, bijvoorbeeld aanpassing of replicatie. In de sectie [Notification Inbox](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) wordt beschreven hoe u zich op dergelijke gebeurtenissen kunt abonneren.
+* Hebt u zich op paginagebeurtenissen geabonneerd, bijvoorbeeld aanpassing of replicatie. De [Melding in vak](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) in deze sectie wordt beschreven hoe u zich op dergelijke gebeurtenissen kunt abonneren.
 
 * Hebt u zich geabonneerd op forumgebeurtenissen.
-* Een stap in een werkstroom uitvoeren. In de sectie [Deelnemerstap](/help/sites-developing/workflows-step-ref.md#participant-step) wordt beschreven hoe u e-mailmeldingen in een workflow kunt activeren.
+* Een stap in een werkstroom uitvoeren. De [Stap deelnemer](/help/sites-developing/workflows-step-ref.md#participant-step) in deze sectie wordt beschreven hoe u e-mailmeldingen in een workflow kunt activeren.
 
 Voorwaarden:
 
 * Voor de gebruiker(s) moet(en) een geldig e-mailadres zijn gedefinieerd in dit profiel.
-* De **Day CQ Mail Service** moet correct zijn geconfigureerd.
+* De **CQ-mailservice op dag** moet correct worden geconfigureerd.
 
 Wanneer een gebruiker op de hoogte wordt gesteld, ontvangt hij een e-mail in de taal die in zijn profiel wordt bepaald. Elke taal heeft zijn eigen malplaatje dat kan worden aangepast. U kunt nieuwe e-mailsjablonen toevoegen voor nieuwe talen.
 
 >[!NOTE]
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+>Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 ## De Mail Service configureren {#configuring-the-mail-service}
 
-AEM kan alleen e-mailberichten verzenden als de **Day CQ Mail Service** correct is geconfigureerd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Als AEM e-mailberichten wilt kunnen verzenden, **CQ-mailservice op dag** moet correct worden geconfigureerd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 De volgende beperkingen zijn van toepassing:
 
-* De **SMTP serverhaven** moet 25 of hoger zijn.
+* De **SMTP-serverpoort** moet 25 of hoger zijn.
 
-* De **SMTP naam van de servergastheer** moet niet leeg zijn.
-* Het **&quot;Van&quot;adres** moet niet leeg zijn.
+* De **hostnaam SMTP-server** mag niet leeg zijn.
+* De **Adres &quot;Van&quot;** mag niet leeg zijn.
 
-Om u te helpen een probleem met de **Day CQ Mail Service** oplossen, kunt u de logboeken van de service bekijken:
+Om u te helpen een probleem met **CQ-mailservice op dag** kunt u de logbestanden van de service bekijken:
 
 `com.day.cq.mailer.DefaultMailService`
 
@@ -58,33 +62,33 @@ De configuratie kijkt als volgt in de console van het Web:
 
 ## Het kanaal voor e-mailmeldingen configureren {#configuring-the-email-notification-channel}
 
-Wanneer u zich abonneert op berichten voor pagina- of forumgebeurtenissen, wordt het e-mailadres standaard ingesteld op `no-reply@acme.com`. U kunt deze waarde wijzigen door de service **E-mailkanaal** voor meldingen in de webconsole te configureren.
+Wanneer u zich abonneert op berichten voor pagina- of forumgebeurtenissen, wordt het e-mailadres ingesteld op `no-reply@acme.com` standaard. U kunt deze waarde wijzigen door het dialoogvenster **E-mailkanaal voor meldingen** in de webconsole.
 
-Als u het e-mailadres wilt configureren, voegt u een `sling:OsgiConfig`-knooppunt toe aan de gegevensopslagruimte. Gebruik de volgende procedure om de knoop direct toe te voegen gebruikend CRXDE Lite:
+Als u het e-mailadres wilt configureren, voegt u een `sling:OsgiConfig` aan de gegevensopslagruimte. Gebruik de volgende procedure om de knoop direct toe te voegen gebruikend CRXDE Lite:
 
-1. Voeg in CRXDE Lite een map met de naam `config` onder de toepassingsmap toe.
+1. Voeg in CRXDE Lite een map met de naam `config` onder de toepassingsmap.
 1. Voeg in de configuratiemap een knooppunt met de naam:
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` van het type  `sling:OsgiConfig`
+   `com.day.cq.wcm.notification.email.impl.EmailChannel` van het type `sling:OsgiConfig`
 
-1. Voeg een `String` bezit aan de knoop toe genoemd `email.from`. Geef voor de waarde het e-mailadres op dat u wilt gebruiken.
+1. Voeg een `String` eigenschap voor de benoemde node `email.from`. Geef voor de waarde het e-mailadres op dat u wilt gebruiken.
 
-1. Klik **Alles opslaan**.
+1. Klikken **Alles opslaan**.
 
 Gebruik de volgende procedure om het knooppunt in de bronmappen van het inhoudspakket te definiëren:
 
-1. Maak in uw `jcr_root/apps/*app_name*/config folder` een bestand met de naam `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. In uw `jcr_root/apps/*app_name*/config folder`, maakt u een bestand met de naam `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Voeg de volgende XML toe om het knooppunt te vertegenwoordigen:
 
    `<?xml version="1.0" encoding="UTF-8"?> <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig" email.from="name@server.com"/>`
-1. Vervang de waarde van het kenmerk `email.from` ( `name@server.com`) door uw e-mailadres.
+1. Vervang de waarde van de optie `email.from` attribute ( `name@server.com`) met uw e-mailadres.
 
 1. Sla het bestand op.
 
 ## De Workflow Email Notification Service configureren {#configuring-the-workflow-email-notification-service}
 
-Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van de e-mail als het URL-voorvoegsel van de host ingesteld op standaardwaarden. U kunt deze waarden wijzigen door de **Day CQ Workflow Email Notification Service** in de webconsole te configureren. Als u dat doet, wordt aanbevolen de wijziging in de opslagplaats voort te zetten.
+Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van de e-mail als het URL-voorvoegsel van de host ingesteld op standaardwaarden. U kunt deze waarden wijzigen door het dialoogvenster **Day CQ Workflow Email Notification Service** in de webconsole. Als u dat doet, wordt aanbevolen de wijziging in de opslagplaats voort te zetten.
 
 De standaardconfiguratie kijkt als volgt in de Console van het Web:
 
@@ -135,7 +139,7 @@ De sjabloon moet de volgende indeling hebben:
  footer=<text_4>
 ```
 
-Hierbij kan &lt;text_x> bestaan uit een combinatie van statische tekst en dynamische tekenreeksvariabelen. De volgende variabelen kunnen in de e-mailsjabloon voor paginaberichten worden gebruikt:
+Wanneer &lt;text_x> Dit kan een combinatie zijn van statische tekst en dynamische tekenreeksvariabelen. De volgende variabelen kunnen in de e-mailsjabloon voor paginaberichten worden gebruikt:
 
 * `${time}`, de datum en het tijdstip van de gebeurtenis.
 
@@ -144,7 +148,7 @@ Hierbij kan &lt;text_x> bestaan uit een combinatie van statische tekst en dynami
 * `${userId}`, de id van de gebruiker die de gebeurtenis heeft geactiveerd.
 * `${modifications}`beschrijft het type paginagebeurtenis en het paginapad in de notatie:
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
+   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
    Bijvoorbeeld:
 
@@ -193,7 +197,7 @@ De sjabloon moet de volgende indeling hebben:
  footer=<text_4>
 ```
 
-Waarbij `<text_x>` een combinatie van statische tekst en dynamische tekenreeksvariabelen kan zijn.
+Wanneer `<text_x>` Dit kan een combinatie zijn van statische tekst en dynamische tekenreeksvariabelen.
 
 De volgende variabelen kunnen binnen het e-mailmalplaatje voor forumberichten worden gebruikt:
 
@@ -250,11 +254,11 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Waarbij `<text_x>` een combinatie van statische tekst en dynamische tekenreeksvariabelen kan zijn. Elke regel van een `<text_x>` punt moet met backslash ( `\`) worden gebeëindigd, behalve voor de laatste instantie, wanneer de afwezigheid van backslash op het eind van `<text_x>` koordvariabele wijst.
+>Wanneer `<text_x>` Dit kan een combinatie zijn van statische tekst en dynamische tekenreeksvariabelen. Elke regel van een `<text_x>` item moet worden beëindigd met een backslash ( `\`), behalve in de laatste instantie, wanneer de afwezigheid van de backslash het einde van de `<text_x>` tekenreeksvariabele.
 >
->Meer informatie over het sjabloonformaat vindt u in de [javadocs van de methode Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
+>Meer informatie over de sjabloonindeling vindt u in de [javadocs van the Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) methode.
 
-De methode `${payload.path.open}` openbaart de weg aan de lading van het werkpunt. Voor een pagina in Sites zou `payload.path.open` bijvoorbeeld ongeveer gelijk zijn aan `/bin/wcmcommand?cmd=open&path=…`.; dit is zonder de servernaam, daarom vult het malplaatje dit met `${host.prefix}` voor.
+De methode `${payload.path.open}` onthult de weg aan de lading van het werkpunt. Voor bijvoorbeeld een pagina in Sites, dan `payload.path.open` zou vergelijkbaar zijn met `/bin/wcmcommand?cmd=open&path=…`.; dit is zonder de servernaam, die is waarom het malplaatje dit met presteert `${host.prefix}`.
 
 De volgende variabelen kunnen binnen het e-mailmalplaatje worden gebruikt:
 
@@ -290,7 +294,7 @@ De volgende variabelen kunnen binnen het e-mailmalplaatje worden gebruikt:
 
 Een sjabloon toevoegen voor een nieuwe taal:
 
-1. Voeg hieronder een bestand `<language-code>.txt` toe in CRXDE:
+1. Voeg in CRXDE een bestand toe `<language-code>.txt` hieronder:
 
    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : voor paginameldingen
    * `/etc/notification/email/default/com.day.cq.collab.forum` : voor forummeldingen
@@ -301,12 +305,12 @@ Een sjabloon toevoegen voor een nieuwe taal:
 
 >[!NOTE]
 >
->De `<language-code>` die als filename voor het e-mailmalplaatje wordt gebruikt moet een twee-hoofdtaalcode zijn die door AEM wordt erkend. Voor taalcodes is AEM gebaseerd op ISO-639-1.
+>De `<language-code>` gebruikt als de bestandsnaam van de e-mailsjabloon moet een taalcode van twee letters in kleine letters zijn die door AEM wordt herkend. Voor taalcodes is AEM gebaseerd op ISO-639-1.
 
 ## E-mailberichten voor AEM Assets configureren {#assetsconfig}
 
 Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebruikers e-mailmeldingen ontvangen van AEM. Voer de volgende stappen uit om e-mailmeldingen te configureren.
 
-1. Configuring the email service, as described above in [Configuring the Mail Service](/help/sites-administering/notification.md#configuring-the-mail-service).
-1. Meld u aan bij AEM als beheerder. Klik **Gereedschappen** > **Bewerkingen** > **Webconsole** om de Configuratie van de Console van het Web te openen.
-1. Bewerk **Day CQ DAM Resource Collection Servlet**. Selecteer **E-mail verzenden**. Klik **Opslaan**.
+1. De e-mailservice configureren, zoals hierboven beschreven in [De Mail Service configureren](/help/sites-administering/notification.md#configuring-the-mail-service).
+1. Meld u aan bij AEM als beheerder. Klikken **Gereedschappen** >  **Bewerkingen** >  **Webconsole** om Webconsoleconfiguratie te openen.
+1. Bewerken **Day CQ DAM Resource Collection Servlet**. Selecteren **e-mail verzenden**. Klikken **Opslaan**.

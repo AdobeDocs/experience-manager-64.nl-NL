@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Meer informatie over het gecentraliseerde beheer van video-elementen, waarmee u video's voor Experience Manager Assets kunt uploaden voor automatische codering naar Dynamic Media Classic. U kunt Dynamic Media Classic-video's ook rechtstreeks openen vanuit Experience Manager Assets. Dynamic Media Classic-video-integratie breidt het bereik van geoptimaliseerde video uit naar alle schermen met automatische apparaatdetectie en automatische bandbreedtedetectie.
+description: Leer meer over het gecentraliseerde beheer van video-elementen, waar u video's voor Experience Manager Assets kunt uploaden voor automatische codering naar Dynamic Media Classic. U kunt Dynamic Media Classic-video's ook rechtstreeks vanuit Experience Manager Assets openen. Dynamic Media Classic-video-integratie breidt het bereik van geoptimaliseerde video uit naar alle schermen met automatische detectie van het apparaat en de automatische bandbreedtedetectie.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
@@ -8,24 +8,28 @@ content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
 feature: Video
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1587'
 ht-degree: 0%
 
 ---
 
 # Video {#video}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic. U kunt Dynamic Media Classic-video&#39;s ook rechtstreeks openen vanuit Middelen voor het ontwerpen van pagina&#39;s.
 
-Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit tot alle schermen (automatische apparaat- en bandbreedtedetectie).
+Dynamic Media Classic-videointegratie breidt het bereik van geoptimaliseerde video uit tot alle schermen (automatische apparaat- en bandbreedtedetectie).
 
-De component **[!UICONTROL Scene7 Video]** voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
+De **[!UICONTROL Scene7 Video]** voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op het bureaublad, tablets en mobiele apparaten.
 
-U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoset groepeert versies van dezelfde video die met verschillende bitsnelheden en indelingen zijn gecodeerd. Bijvoorbeeld 400 kbps, 800 kbps, en 1000 kbps. U gebruikt een adaptieve videoset, samen met een S7-videocomponent, voor adaptieve videostreaming op meerdere schermtypen. Bijvoorbeeld desktop-, iOS-, Android-, BlackBerry- en Windows-mobiele apparaten.
+U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoset groepeert versies van dezelfde video die met verschillende bitsnelheden en indelingen zijn gecodeerd. Bijvoorbeeld 400 kbps, 800 kbps, en 1000 kbps. U gebruikt een adaptieve videoset, samen met een S7-videocomponent, voor adaptieve videostreaming op meerdere schermtypen. Bijvoorbeeld mobiele apparaten voor desktops, iOS, Android, BlackBerry en Windows.
 
-Zie [Klassieke documentatie van Dynamic Media over adaptieve videoreeksen voor meer informatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/video-profiles.html#dynamicmedia).
+Zie [Dynamic Media Classic-documentatie over adaptieve videosets voor meer informatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/video-profiles.html#dynamicmedia).
 
 ## Info over FFMPEG en Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -34,7 +38,7 @@ Het standaardvideocoderingsproces is gebaseerd op het gebruik van de op FFMPEG g
 * FMPEG-miniaturen
 * FFMPEG-codering
 
-Als u de Dynamic Media Classic-integratie inschakelt en configureert, worden deze twee workflowstappen niet automatisch verwijderd of gedeactiveerd uit de workflow voor het innemen van DAM buiten de box. Als u al op FFMPEG-Gebaseerde videocodering in Experience Manager gebruikt, is het waarschijnlijk dat u FFMPEG op uw auteursmilieu&#39;s hebt geïnstalleerd. In dit geval wordt een nieuwe video die met DAM wordt ingevoerd, twee keer gecodeerd: eenmaal van de FFMPEG-encoder en eenmaal van de Dynamic Media Classic-integratie.
+Als u de integratie met Dynamic Media Classic inschakelt en configureert, worden deze twee workflowstappen niet automatisch verwijderd of gedeactiveerd uit de workflow voor het innemen van DAM-bestanden die buiten de box valt. Als u al op FFMPEG-Gebaseerde videocodering in Experience Manager gebruikt, is het waarschijnlijk dat u FFMPEG op uw auteursmilieu&#39;s hebt geïnstalleerd. In dit geval wordt een nieuwe video die met DAM wordt ingevoerd, twee keer gecodeerd: eenmaal van de FFMPEG-encoder en eenmaal van de Dynamic Media Classic-integratie.
 
 Als u op FFMPEG-Gebaseerde videocodering hebt die in AEM en FFMPEG wordt gevormd, kunt u de twee werkschema&#39;s van FFMPEG uit uw DAM inname werkschema&#39;s verwijderen.
 
@@ -59,37 +63,37 @@ Als het antwoord op een van deze vragen &quot;ja&quot; is, uploadt u uw video re
 Als u een workflow of versie voor uw middelen nodig hebt, uploadt u deze eerst naar Adobe DAM. Hieronder vindt u de aanbevolen workflow:
 
 1. Upload het video-element naar Adobe DAM en codeer en publiceer het automatisch naar Dynamic Media Classic.
-1. In Experience Manager, heb toegang tot videoactiva in WCM op **[!UICONTROL Movies]** lusje van de Vinder van de Inhoud.
+1. In Experience Manager hebt u toegang tot video-elementen in WCM in het dialoogvenster **[!UICONTROL Movies]** van de Inhoudszoeker.
 1. Auteur met **[!UICONTROL Scene7 Video]** of **[!UICONTROL Foundation Video]** component.
 
 ### Als u uw video uploadt naar Scene7 {#if-you-are-uploading-your-video-to-scene}
 
 Als u geen workflow of versie voor uw middelen nodig hebt, uploadt u uw middelen naar Scene7. Hieronder vindt u de aanbevolen workflow:
 
-1. In Dynamic Media Classic stelt [een geplande FTP-upload en -codering in naar Scene7 (systeem geautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#preparing-your-assets-and-folders-for-uploading).
-1. In Experience Manager, heb toegang tot videoactiva in WCM op **[!UICONTROL Scene7]** lusje van de Vinder van de Inhoud.
+1. In Dynamic Media Classic: [Een geplande FTP-upload en -codering naar Scene7 instellen (systeem geautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#preparing-your-assets-and-folders-for-uploading).
+1. In Experience Manager hebt u toegang tot video-elementen in WCM in het dialoogvenster **[!UICONTROL Scene7]** van de Inhoudszoeker.
 1. Auteur met de **[!UICONTROL Scene7 Video]** component.
 
 ## Integratie met Scene7 Video configureren {#configuring-integration-with-scene-video}
 
 Universele voorinstellingen configureren:
 
-1. Navigeer in **[!UICONTROL Cloud Services]** naar de **[!UICONTROL Scene7]**-configuratie en klik op **[!UICONTROL Edit]**.
-1. Selecteer het tabblad **[!UICONTROL Video]**.
+1. In **[!UICONTROL Cloud Services]**, navigeert u naar uw **[!UICONTROL Scene7]** configuratie en klik **[!UICONTROL Edit]**.
+1. Selecteer **[!UICONTROL Video]** tab.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
 
    >[!NOTE]
    >
-   >Het tabblad **[!UICONTROL Video]** wordt niet weergegeven als de pagina geen cloudconfiguratie heeft.
+   >De **[!UICONTROL Video]** wordt niet weergegeven als de pagina geen cloudconfiguratie heeft.
 
 1. Selecteer het adaptieve videocoderingsprofiel, een uit-van-de-doos enig videocoderingsprofiel, of een profiel van de douanevideocodering.
 
    >[!NOTE]
    >
-   >Raadpleeg de [Klassieke documentatie van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files) voor meer informatie over wat de videovoorinstellingen betekenen.
+   >Zie voor meer informatie over wat de videovoorinstellingen betekenen de [Dynamic Media Classic-documentatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
-   >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
+   >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** optie.
 
 1. De geselecteerde coderingsprofielen worden automatisch toegepast op alle video&#39;s die zijn geüpload naar de CQ DAM-doelmap die u hebt ingesteld voor deze Scene7-cloudconfiguratie. U kunt meerdere Scene7-cloudconfiguraties met verschillende doelmappen instellen om zo nodig verschillende coderingsprofielen toe te passen.
 
@@ -102,13 +106,13 @@ De voorinstellingen voor de viewer en codering van video in Experience Manager m
 ## Uw master video vanaf Adobe DAM uploaden naar Scene7 {#uploading-your-master-video}
 
 1. Navigeer naar de doelmap CQ DAM waar u de cloudconfiguratie hebt ingesteld met Scene7-coderingsprofielen.
-1. Klik **[!UICONTROL Upload]** om master video te uploaden. Het uploaden en coderen van video is voltooid nadat de DAM Update Asset-workflow is voltooid en **[!UICONTROL Publish to Scene7]** een vinkje heeft.
+1. Klikken **[!UICONTROL Upload]** om master video te uploaden. Het uploaden en coderen van video is voltooid nadat de DAM Update Asset-workflow is voltooid en **[!UICONTROL Publish to Scene7]** heeft een vinkje.
 
    >[!NOTE]
    >
    >Het duurt enige tijd voordat de videominiaturen zijn gegenereerd.
 
-   Als u de DAM-master video naar het video-onderdeel sleept, krijgt u *all* toegang tot de door Scene7 gecodeerde proxy-uitvoeringen voor levering.
+   De DAM-master video naar de video-component slepen *alles* de door Scene7 gecodeerde proxy-uitvoeringen voor levering.
 
 ## Foundation Video Component versus Scene7 Video Component {#foundation-video-component-versus-scene-video-component}
 
@@ -122,7 +126,7 @@ De volgende matrix legt uit wanneer de component moet worden gebruikt:
 
 >[!NOTE]
 >
->De videocomponent S7 gebruikt het universele videoprofiel. U kunt de op HTML5 gebaseerde videospeler echter in Experience Manager verkrijgen. Kopieer eenvoudig de insluitcode van de HTML5-videospeler uit de doos en plaats deze in de pagina Experience Manager.
+>De videocomponent S7 gebruikt het universele videoprofiel. U kunt de op HTML5 gebaseerde videospeler echter in Experience Manager verkrijgen. Kopieer eenvoudig de insluitcode van de uit-van-doos HTML5 videospeler en zet het in uw Experience Manager pagina.
 
 ## Experience Manager Video-component {#aem-video-component}
 
@@ -134,7 +138,7 @@ De volgende lijst verstrekt een high-level vergelijking van gesteunde mogelijkhe
 
 |  | Video over Experience Manager Foundation | Scene7 Video |
 |---|---|---|
-| Benadering | De eerste HTML5-aanpak. Flash wordt alleen gebruikt voor niet-HTML5-fallback. | Flash op de meeste desktops. HTML5 wordt gebruikt voor mobiele apparaten en tablets. |
+| Benadering | HTML5 eerste aanpak. Flash wordt alleen gebruikt voor niet-HTML-fallback. | Flash op de meeste desktops. HTML5 wordt gebruikt voor mobiele apparaten en tabletten. |
 | Aflevering | Progressief | Adaptieve streaming |
 | Tekstspatiëring | Ja | Ja |
 | Uitbreidbaarheid | Ja | Ja (met [HTML5 Viewer SDK API-documentatie](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
@@ -151,8 +155,8 @@ De verschillende videocoderingen worden gemaakt op basis van de Scene7-coderings
 >Nieuwe videoprofielen en wijzigingen ervan moeten worden geactiveerd om te publiceren.
 
 1. Tik in Experience Manager op **[!UICONTROL Tools]>[!UICONTROL Configuration Console]**.
-1. Navigeer van **[!UICONTROL Configuration Console]** aan **[!UICONTROL Tools > DAM > Video Profiles]** in de navigatieboom.
-1. Maak een Scene7-videoprofiel. Selecteer **[!UICONTROL Create Page]** in de vervolgkeuzelijst **[!UICONTROL New...]** en selecteer vervolgens de sjabloon Scene7-videoprofiel. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
+1. Van de **[!UICONTROL Configuration Console]** navigeren naar **[!UICONTROL Tools > DAM > Video Profiles]** in de navigatiestructuur.
+1. Maak een Scene7-videoprofiel. In de **[!UICONTROL New...]** vervolgkeuzelijst, selecteert u **[!UICONTROL Create Page]** en selecteer vervolgens de Scene7 Video Profile-sjabloon. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -164,29 +168,29 @@ De verschillende videocoderingen worden gemaakt op basis van de Scene7-coderings
    |---|---|
    | Scene7 Cloud Config | De cloud config die voor de coderingsvoorinstellingen moet worden gebruikt. |
    | Scene7-coderingsvoorinstelling | De coderingsvoorinstelling waarmee dit videoprofiel wordt toegewezen. |
-   | HTML5-videotype | Met deze eigenschap kunt u de waarde instellen van de eigenschap type van het bronelement van de HTML5-video. Deze informatie wordt niet verschaft door de S7-coderingsvoorinstellingen, maar is vereist voor het correct renderen van video&#39;s met HTML5-video-element. Er is een lijst met algemene indelingen beschikbaar, maar deze lijst kan worden overschreven voor andere indelingen. |
+   | HTML5-videotype | Met deze eigenschap kunt u de waarde instellen van de eigenschap type van het HTML5-videobronelement. Deze informatie wordt niet verschaft door de S7-coderingsvoorinstellingen, maar is vereist voor het correct renderen van video&#39;s met behulp van HTML5-video-element. Er is een lijst met algemene indelingen beschikbaar, maar deze lijst kan worden overschreven voor andere indelingen. |
 
    Herhaal deze stap voor alle coderingsvoorinstellingen die zijn geselecteerd in de cloudconfiguratie die u wilt gebruiken in de videocomponent.
 
 #### Ontwerp configureren {#configuring-design}
 
-De component **[!UICONTROL Foundation Video]** moet weten welke videoprofielen moeten worden gebruikt om de lijst met videobronnen te maken. Open het dialoogvenster Ontwerp van videocomponenten en configureer het componentontwerp voor het gebruik van de nieuwe videoprofielen.
+De **[!UICONTROL Foundation Video]** moet weten welke videoprofielen moeten worden gebruikt om de lijst met videobronnen te maken. Open het dialoogvenster Ontwerp van videocomponenten en configureer het componentontwerp voor het gebruik van de nieuwe videoprofielen.
 
 >[!NOTE]
 >
->Als u de **[!UICONTROL Foundation Video]** component op een mobiele pagina gebruikt, herhaalt u deze stappen bij het ontwerp van de mobiele pagina.
+>Als u het **[!UICONTROL Foundation Video]** herhaalt u deze stappen bij het ontwerp van de mobiele pagina.
 
 >[!NOTE]
 >
 >Wijzigingen in het ontwerp vereisen activering van het ontwerp, zodat deze van kracht kunnen worden na publicatie.
 
-1. Open het ontwerpdialoogvenster van de **[!UICONTROL Foundation Video]** component en wijzig deze in het tabblad **[!UICONTROL Profiles]**. Verwijder vervolgens de out-of-the-box profielen en voeg de nieuwe S7-videoprofielen toe. De volgorde van de profiellijst in het dialoogvenster Ontwerp bepaalt de volgorde van het element Videobronnen bij het renderen.
-1. Voor browsers die geen HTML5 ondersteunen, kunt u met de videocomponent een Flash-fallback configureren. Open het dialoogvenster Ontwerp van videocomponenten en wijzig deze in het tabblad **[!UICONTROL Flash]**. Configureer de Flash Player-instellingen en wijs een fallback-profiel toe voor de Flash Player.
+1. Open de **[!UICONTROL Foundation Video]** dialoogvenster Ontwerp van de component en wijzigen in het dialoogvenster **[!UICONTROL Profiles]** tab. Verwijder vervolgens de out-of-the-box profielen en voeg de nieuwe S7-videoprofielen toe. De volgorde van de profiellijst in het dialoogvenster Ontwerp bepaalt de volgorde van het element Videobronnen bij het renderen.
+1. Voor browsers die geen HTML5 ondersteunen, kunt u met de videocomponent een Flash-fallback configureren. Open het dialoogvenster Ontwerp van videocomponenten en wijzig de instelling in **[!UICONTROL Flash]** tab. Configureer de Flash Player-instellingen en wijs een fallback-profiel toe voor de Flash Player.
 
 #### Checklist {#checklist}
 
 1. Maak een S7 Cloud-configuratie. Zorg ervoor dat de voorinstellingen voor videocodering zijn ingesteld en dat de importmodule wordt uitgevoerd.
 1. Maak een S7-videoprofiel voor elke videocoderingsvoorinstelling die is geselecteerd in de cloudconfiguratie.
 1. De videoprofielen moeten worden geactiveerd.
-1. Configureer het ontwerp van de component **[!UICONTROL Foundation Video]** op de pagina.
+1. Configureer het ontwerp van de **[!UICONTROL Foundation Video]** op de pagina.
 1. Activeer het ontwerp nadat u klaar bent met uw ontwerpwijzigingen.

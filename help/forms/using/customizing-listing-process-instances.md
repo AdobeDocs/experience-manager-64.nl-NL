@@ -1,23 +1,26 @@
 ---
 title: De lijst met procesinstanties aanpassen
-seo-title: De lijst met procesinstanties aanpassen
+seo-title: Customizing the listing of process instances
 description: Hoe kan ik-eigenschappen aanpassen die in procesinstantie in de AEM Forms-werkruimte worden weergegeven.
-seo-description: Hoe kan ik-eigenschappen aanpassen die in procesinstantie in de AEM Forms-werkruimte worden weergegeven.
+seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: e7b8206c-bac2-48a6-b353-d06bc73b29f9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # De lijst met procesinstanties aanpassen {#customizing-the-listing-of-process-instances}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De lijst met procesinstanties wordt weergegeven op het tabblad Tekstspatiëring van de AEM Forms-werkruimte.
 
@@ -51,7 +54,7 @@ In de lijst van procesinstanties, voor elke procesinstantie, toont de werkruimte
   </tr> 
   <tr> 
    <td>processInstanceStatus</td> 
-   <td>0 = geïnitieerd<br /> 1 = bezig<br /> 2 = voltooid<br /> 3 = voltooid<br /> 4 = geëindigd<br /> 5 = eindigend<br /> 6 = opgeschort<br /> 7 = opgeschort<br /> 8 = niet-opgeschort</td> 
+   <td>0 = geïnitieerd<br /> 1 = Uitvoeren<br /> 2 = voltooid<br /> 3 = Voltooien<br /> 4 = beëindigd<br /> 5 = Beëindiging<br /> 6 = Opgeschort<br /> 7 = opschorting<br /> 8 = Ononderbroken</td> 
   </tr> 
   <tr> 
    <td>processName</td> 
@@ -63,19 +66,19 @@ In de lijst van procesinstanties, voor elke procesinstantie, toont de werkruimte
   </tr> 
   <tr> 
    <td>processVariables</td> 
-   <td>Array van objecten met procesvariabelen. Elk procesveranderlijk voorwerp bevat <strong>naam</strong> (de naam van procesvariabele), <strong>waarde</strong> (waarde van de procesvariabele), en<strong> type</strong> (het type van procesvariabele).</td> 
+   <td>Array van objecten met procesvariabelen. Elk procesvariabeleobject bevat <strong>name</strong> (naam van procesvariabele), <strong>value</strong> (waarde van de procesvariabele), en<strong> type</strong> (het type procesvariabele).</td> 
   </tr> 
  </tbody> 
 </table>
 
 **Voorbeeld:**
 
-Voer de volgende stappen uit om de eigenschap `description` van de procesinstantie in de procesinstantiekaart weer te geven.
+Als u het dialoogvenster `description` eigenschap van de procesinstantie in de procesinstantiekaart, voert de volgende stappen uit.
 
-1. Volg de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Ga als volgt te werk:
 
-   1. Kopieer /libs/ws/js/runtime/templates/processinstance.html naar/apps/ws/js/runtime/templates/, als deze niet bestaat. Klik **Alles opslaan**.
+   1. Kopieer /libs/ws/js/runtime/templates/processinstance.html naar/apps/ws/js/runtime/templates/, als deze niet bestaat. Klikken **Alles opslaan**.
    1. Voeg procesbeschrijvingsdiv toe met klasse = &#39;processDescription&#39; inprocessinstance.html.
 
    ```
@@ -85,7 +88,7 @@ Voer de volgende stappen uit om de eigenschap `description` van de procesinstant
 1. Ga als volgt te werk:
 
    1. Open /apps/ws/js/registry.js voor bewerking.
-   1. `text!/lc/libs/ws/js/runtime/templates/processinstance.html`doorzoeken en vervangen door `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
+   1. Zoeken en vervangen `text!/lc/libs/ws/js/runtime/templates/processinstance.html`with `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
 
 1. Voor de bovenstaande wijzigingen is mogelijk een update van het CSS-bestand nodig door op de volgende manier een vermelding toe te voegen in de stijlpagina /apps/ws/css/newStyle.css:
 

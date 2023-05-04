@@ -1,20 +1,23 @@
 ---
 title: Best practices voor
-description: Leer over de beste praktijken van Adobe Experience Manager zoals gecompileerd door de ingenieur van Adobe en raadplegende teams om beheerders te helpen op en te lopen.
+description: Leer over de beste praktijken van Adobe Experience Manager zoals gecompileerd door de ingenieur van Adobe en raadplegende teams om beheerders te helpen op de been worden gebracht en lopen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 8c41dba4-bedc-4747-b67d-fd89d71c8b2c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
 
 # Best practices voor{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De beste praktijken beschrijven hoe te om, AEM op de meest efficiënte en meest efficiënte manier te ontwikkelen te beheren of te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
@@ -33,7 +36,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 ## Assets {#assets}
 
-De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Media en de Klassieke integratie van Dynamic Media worden beschreven in de volgende onderwerpen:
+De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Media en de integratie van Dynamic Media Classic, worden beschreven in de volgende onderwerpen:
 
 <table> 
  <tbody>
@@ -54,8 +57,8 @@ De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Med
   </tr>
   <tr>
    <td>Opties voor voorinstellingen afbeelding</td> 
-   <td>Voorinstellingen voor <a href="/help/assets/managing-image-presets.md#understanding-image-presets">afbeeldingen</a> en <a href="/help/assets/managing-image-presets.md#image-preset-options">voorinstellingen voor afbeeldingen: aanbevolen werkwijzen</a></td> 
-   <td>In het kader van de documentatie over <a href="/help/assets/managing-image-presets.md">Voorinstellingen voor afbeeldingen beheren</a> wordt in deze onderwerpen beschreven welke voorinstellingen voor afbeeldingen worden gebruikt en worden de beste werkwijzen getoond voor het selecteren van opties voor voorinstellingen voor afbeeldingen.</td> 
+   <td>Begrijpen <a href="/help/assets/managing-image-presets.md#understanding-image-presets">voorinstellingen voor afbeeldingen</a> en <a href="/help/assets/managing-image-presets.md#image-preset-options">tips en trucs voor voorinstellingen van afbeeldingen</a></td> 
+   <td>Als onderdeel van de documentatie over <a href="/help/assets/managing-image-presets.md">Voorinstellingen voor afbeeldingen beheren</a>In deze onderwerpen wordt beschreven welke voorinstellingen voor afbeeldingen worden gebruikt en worden de beste werkwijzen beschreven voor het selecteren van opties voor voorinstellingen voor afbeeldingen.</td> 
   </tr>
   <tr>
    <td>Dynamic Media versus directe integratie met Dynamic Media Classic</td> 

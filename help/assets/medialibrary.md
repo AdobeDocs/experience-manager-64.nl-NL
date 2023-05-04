@@ -1,13 +1,13 @@
 ---
 title: Media Library gebruiken voor elementair beheer van digitale middelen
-description: '"[!DNL Experience Manager Assets] en Media Library voor middelenbeheer."'
+description: "[!DNL Experience Manager Assets] en Media Library voor middelenbeheer."
 contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Define what is not included
 -->
 
 # Media Library gebruiken voor elementair beheer van bedrijfsmiddelen {#manage-assets-using-media-library}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 [!DNL Adobe Experience Manager] platform biedt verschillende mogelijkheden om elementen te beheren. Met Media Library kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken voor middelenbeheer uitvoeren op de middelen.
 

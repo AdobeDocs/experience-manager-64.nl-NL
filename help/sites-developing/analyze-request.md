@@ -1,8 +1,8 @@
 ---
 title: Analyse aanvragen
-seo-title: Analyse aanvragen
+seo-title: Request Analysis Script
 description: Het manuscript van de verzoekanalyse wordt gemaakt om de analyse van de access.log dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren
-seo-description: Het manuscript van de verzoekanalyse wordt gemaakt om de analyse van de access.log dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren
+seo-description: The request analysis script is made to ease the analysis of the access.log files producing a readable report for later processing
 uuid: 24eff3c6-5748-46f3-a30c-4a3a6427ce1d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,35 +10,38 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 1b5e0ccf-4157-45e3-8caf-1d6739d7d9d2
 exl-id: 8582bbca-c11a-4880-88ba-da22e0301dba
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
-# Analyse-script aanvragen{#request-analysis-script}
+# Analyse aanvragen{#request-analysis-script}
 
-## {#download} downloaden
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Dit manuscript wordt gemaakt om de analyse van de `access.log` dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren.
+## Downloaden {#download}
+
+Dit script is gemaakt om de analyse van de `access.log` bestanden die een leesbaar rapport produceren voor latere verwerking.
 
 [Bestand ophalen](assets/analyse-access.sh)
 
 ## Beschrijving {#description}
 
-Dit manuscript wordt gemaakt om de analyse van de `access.log` dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren.
+Dit script is gemaakt om de analyse van de `access.log` bestanden die een leesbaar rapport produceren voor latere verwerking.
 
 Het produceert het algemene verzoekaantal, GET versus POST, Verzoek verdeling over tijd en meer.
 
-De uitvoer wordt uitgevoerd in de syntaxis Markdown. Het is daarom gemakkelijker om de uitvoer te converteren naar PDF met gereedschappen zoals een pandoc-bestand of de uitvoer weer te geven in een browser met plug-ins zoals een Markeringen-viewer.
+De uitvoer wordt uitgedrukt in de syntaxis Markdown. Het is daarom gemakkelijker om de uitvoer om te zetten in PDF met gereedschappen zoals een pandoc of om de uitvoer weer te geven in een browser met plug-ins zoals een Markdown-viewer.
 
 Een aangepast pad op de opdrachtregel kan worden geanalyseerd.
 
 Maak kennis met de opmerking in het bestand die u vertelt hoe u de opmerking moet uitvoeren:
 
-Analyseer CQ `access.log` het extrapoleren van diverse informatie en het veroorzaken van een output van de Prijsverlaging op `stdout`.
+CQ analyseren `access.log` het extrapoleren van diverse informatie en het produceren van een output van de Prijsverlaging op `stdout`.
 
 ## Gebruik {#usage}
 

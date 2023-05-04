@@ -1,8 +1,8 @@
 ---
-title: 'Adobe IMS-verificatie en ondersteuning voor Admin Consoles voor AEM Managed Services '
-seo-title: 'Adobe IMS-verificatie en ondersteuning voor Admin Consoles voor AEM Managed Services '
+title: Ondersteuning voor verificatie en Admin Console van Adobe IMS voor AEM Managed Services
+seo-title: Adobe IMS Authentication and Admin Console Support for AEM Managed Services
 description: Leer hoe u de Admin Console in AEM gebruikt.
-seo-description: Leer hoe u de Admin Console in AEM gebruikt.
+seo-description: Learn how to use the Admin Console in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 38bbad03-aead-43d3-a28c-cc716955ddfb
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1785'
 ht-degree: 17%
 
 ---
 
-# Adobe IMS-verificatie en ondersteuning voor Admin Consoles voor AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# Ondersteuning voor verificatie en Admin Console van Adobe IMS voor AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -26,7 +29,7 @@ ht-degree: 17%
 
 ## Inleiding {#introduction}
 
-AEM 6.4.3.0 introduceert Admin Console steun voor AEM instanties en Adobe IMS (het Systeem van Identity Management) gebaseerde authentificatie voor **AEM klanten Managed Services**.
+AEM 6.4.3.0 introduceert ondersteuning voor Admin Consoles voor AEM instanties en verificatie op basis van Adobe IMS (Identity Management System) voor **AEM Managed Services** klanten.
 
 AEM aan boord gaan aan de Admin Console zal AEM klanten van Managed Services toestaan om alle gebruikers van de Experience Cloud in één console te beheren. Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat zij zich kunnen aanmelden bij een specifieke instantie.
 
@@ -42,19 +45,19 @@ AEM aan boord gaan aan de Admin Console zal AEM klanten van Managed Services toe
 
 ## Architectuur {#architecture}
 
-IMS de Authentificatie werkt door het protocol OAuth tussen AEM en het eindpunt van Adobe IMS te gebruiken. Zodra een gebruiker aan IMS is toegevoegd en een Adobe ID heeft, kan deze zich aanmelden bij AEM Managed Services-instanties met IMS-referenties.
+IMS-verificatie werkt met behulp van het OAuth-protocol tussen AEM en het Adobe IMS-eindpunt. Zodra een gebruiker aan IMS is toegevoegd en een Adobe ID heeft, kan deze zich aanmelden bij AEM Managed Services-instanties met IMS-referenties.
 
 De gebruikerslogin stroom wordt hieronder getoond, zal de gebruiker aan IMS en naar keuze aan klant IDP voor bevestiging van SSO worden opnieuw gericht en dan terug naar AEM.
 
 ![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
-## {#how-to-set-up} instellen
+## Instellen {#how-to-set-up}
 
 ### Organisaties on-boarden in Admin Console {#onboarding-organizations-to-admin-console}
 
-De klant die zich aan boord van de Admin Console houdt, is een eerste vereiste voor het gebruik van Adobe IMS voor AEM verificatie.
+De klant die zich aan boord van een Admin Console bevindt, is een absolute voorwaarde voor het gebruik van Adobe IMS voor AEM verificatie.
 
-Als eerste stap, zouden de klanten een Organisatie moeten hebben die in Adobe IMS wordt voorzien. Adobe Enterprise-klanten worden vertegenwoordigd als IMS-organisaties in de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
+Als eerste stap moeten klanten beschikken over een organisatie die is ingericht in Adobe IMS. Adobe Enterprise-klanten worden vertegenwoordigd als IMS-organisaties in de [Adobe Admin Console](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
 
 AEM Managed Services-klanten moeten al over een organisatie beschikken en als onderdeel van de IMS-provisioning zullen de exemplaren van de klant in de Admin Console beschikbaar worden gesteld voor het beheer van gebruikersrechten en toegang.
 
@@ -72,9 +75,9 @@ Zodra een klant als IMS Organisatie bestaat en AMS met levering van de klant voo
 
 >[!NOTE]
 >
->Zie het artikel [deze pagina](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) voor meer informatie over de Adobe Identity Management Basics, inclusief de IDP-configuratie.
+>Raadpleeg het artikel voor meer informatie over de Adobe Identity Management Basics, inclusief de IDP-configuratie [deze pagina.](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html)
 >
->Zie het artikel [deze pagina](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html) voor meer informatie over Enterprise Administration en Admin Console.
+>Raadpleeg het artikel voor meer informatie over de Enterprise Administration en de Admin Console [deze pagina](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html).
 
 ### Gebruikers aan boord nemen van de Admin Console {#onboarding-users-to-the-admin-console}
 
@@ -124,15 +127,15 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 
 >[!NOTE]
 >
->Raadpleeg de [documentatiepagina](https://adobe-apiplatform.github.io/user-sync.py/en/) voor meer informatie over het gereedschap Gebruikerssynchronisatie.
+>Raadpleeg voor meer informatie over het gereedschap Gebruikerssynchronisatie het [documentatiepagina](https://adobe-apiplatform.github.io/user-sync.py/en/).
 >
 >
->Het hulpmiddel van de Synchronisatie van de Gebruiker moet als Adobe I/O cliënt UMAPI registreren gebruikend de beschreven procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe I/O registreren gebruikend de beschreven procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->De documentatie van de Adobe I/O-console vindt u [hier](https://www.adobe.io/apis/cloudplatform/console.html).
+>De documentatie van de Adobe I/O-console is te vinden [hier](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->De gebruikersbeheer-API die wordt gebruikt door het gereedschap Gebruikerssynchronisatie, wordt behandeld op deze [locatie](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>De API voor gebruikersbeheer die wordt gebruikt door het gereedschap Gebruikerssynchronisatie wordt op deze website behandeld [locatie](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -146,7 +149,7 @@ Wanneer de beheerder van het Product van de klant zich bij Admin Console aanmeld
 
 ![screen_shot_2018-09-17at105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-In dit voorbeeld heeft de org *AEM-MS-Onboard* 32 instanties die verschillende topologieën en omgevingen omspannen, zoals het werkgebied, Prod, enz.
+In dit voorbeeld wordt de org *AEM-MS-on-board* heeft 32 instanties die verschillende topologieën en milieu&#39;s zoals Stadium, Prod, enz. overspannen.
 
 ![screen_shot_2018-09-17at105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 
@@ -172,7 +175,7 @@ AEM kunnen lokale aanmeldingen voor Admin-gebruikers blijven ondersteunen, aange
 
 #### Op IMS gebaseerde aanmelding {#ims-based-login}
 
-Voor andere gebruikers kan de op IMS gebaseerde aanmelding worden gebruikt zodra IMS in de instantie is geconfigureerd. De gebruiker zal eerst op **Teken binnen met Adobe** knoop zoals hieronder getoond klikken:
+Voor andere gebruikers kan de op IMS gebaseerde aanmelding worden gebruikt zodra IMS in de instantie is geconfigureerd. De gebruiker klikt eerst op de knop **Aanmelden met Adobe** knop zoals hieronder weergegeven:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -190,7 +193,7 @@ Nadat de verificatie is voltooid, wordt de gebruiker teruggeleid naar AEM en aan
 
 ![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
-### Bestaande gebruikers {#migrating-existing-users} migreren
+### Bestaande gebruikers migreren {#migrating-existing-users}
 
 Voor bestaande AEM instanties die een andere verificatiemethode gebruiken en nu naar IMS worden gemigreerd, moet er een migratiestap zijn.
 
@@ -198,13 +201,13 @@ Bestaande gebruikers in de AEM opslagplaats (lokaal, via LDAP of SAML) kunnen wo
 
 Dit hulpprogramma wordt door uw AMS-team uitgevoerd als onderdeel van IMS-provisioning.
 
-### Bevoegdheden en ACL&#39;s beheren in AEM {#managing-permissions-and-acls-in-aem}
+### Het beheren van Toestemmingen en ACLs in AEM {#managing-permissions-and-acls-in-aem}
 
 Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt door scheiding van Gebruikersgroepen die afkomstig zijn van IMS (bijvoorbeeld AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waar de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
 
 In het onderstaande voorbeeld voegen we gesynchroniseerde groepen toe aan de lokale *Dam_Users*-groep.
 
-Hier, is een gebruiker ook toegewezen aan een paar groepen in de Admin Console. (Houd er rekening mee dat de gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met het gereedschap voor gebruikerssynchronisatie of lokaal kunnen worden gemaakt. Zie de sectie **Gebruikers aan boord nemen van de Admin Console** hierboven.)
+Hier, is een gebruiker ook toegewezen aan een paar groepen in de Admin Console. (Let op: gebruikers en groepen kunnen via LDAP worden gesynchroniseerd met het programma voor gebruikerssynchronisatie of ze kunnen lokaal worden gemaakt. Zie de sectie **Gebruikers aan boord nemen van de Admin Console** hierboven).
 
 >[!NOTE]
 >
@@ -224,6 +227,6 @@ AEM kunnen de gebruikersgroepen die via IMS zijn gesynchroniseerd, als leden wor
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 
-Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een effectieve manier om machtigingen voor gesynchroniseerde groepen te beheren en wordt ook veel gebruikt in LDAP-gebaseerde verificatiemethoden.
+Zoals hieronder getoond, de groep *AEM-GRP_008* erft de toestemmingen en de Bevoegdheden van Gebruikers DAM. Dit is een effectieve manier om machtigingen voor gesynchroniseerde groepen te beheren en wordt ook veel gebruikt in LDAP-gebaseerde verificatiemethoden.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)

@@ -1,8 +1,8 @@
 ---
 title: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
-seo-title: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
-description: Gebruik de Java API van de Dienst van het Beheer van het Document om de ruimten van de Diensten van de Inhoud te creëren, de ruimten van de Diensten van de Inhoud te schrappen, inhoud aan de Diensten van de Inhoud toe te voegen, inhoud van de Diensten van de Inhoud terug te winnen van de Diensten van de Inhoud, inhoud van de Inhoudsdiensten van de Lijst, inhoud van de Diensten van de Onderzoek, en de toestemmingen van de Inhoudsdiensten te plaatsen.
-seo-description: Gebruik de Java API van de Dienst van het Beheer van het Document om de ruimten van de Diensten van de Inhoud te creëren, de ruimten van de Diensten van de Inhoud te schrappen, inhoud aan de Diensten van de Inhoud toe te voegen, inhoud van de Diensten van de Inhoud terug te winnen van de Diensten van de Inhoud, inhoud van de Inhoudsdiensten van de Lijst, inhoud van de Diensten van de Onderzoek, en de toestemmingen van de Inhoudsdiensten te plaatsen.
+seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
+description: Gebruik de Java API van de Dienst van het Beheer van het Document om de ruimten van de Diensten van de Inhoud te creëren, de ruimten van de Diensten van de Inhoud te schrappen, inhoud aan de Diensten van de Inhoud toe te voegen, inhoud van de Diensten van de Inhoud terug te winnen van de Diensten van de Inhoud, inhoud van de Diensten van de Lijst, inhoud van de Inhoud, de inhoud van de Diensten van de Inhoud te bewegen, en de toestemmingen van de Diensten van de Inhoud te plaatsen.
+seo-description: Use the Document Management Service Java API to create Content Services spaces, delete Content Services spaces, Add content to Content Services, retrieve content from Content Services, move Content Services content, list Content Services content, search Content Services content, and set Content Services permissions.
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
 exl-id: 5ffd9600-03ec-4fd5-abb1-a8d9adefe6f3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
 
 # Documentbeheerservice (verouderd) Java API Quick Start (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbeheer (afgekeurd).
 
@@ -247,7 +250,7 @@ Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/
 
 ## Snel starten (SOAP-modus): Inhoud toevoegen aan inhoudsservices met behulp van de Java API (afgekeurd) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* toegevoegd aan de map /Company Home/Test Directory. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
+In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* aan een omslag genoemd /Company Huis/de Folder van de Test. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
 
 ```as3
  /* 
@@ -370,7 +373,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 ## Snel starten (SOAP-modus): Inhoud ophalen van Content Services met behulp van de Java API (afgekeurd) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* opgehaald uit /Company Home. Het PDF-bestand wordt opgeslagen in het lokale bestandssysteem en krijgt de naam *UpdatedMortgaugeForm.pdf*.
+In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Home. Het PDF-bestand wordt opgeslagen in het lokale bestandssysteem en krijgt de naam *BijgewerkteMortgaugeForm.pdf*.
 
 ```as3
  /* 
@@ -476,7 +479,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 ## Snel starten (SOAP-modus): Inhoud van Content Services verplaatsen met de Java API (afgekeurd) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* verplaatst van /Company Home/Test Directory naar /Company Home. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
+In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Huis/de Folder van de Test aan /Company Huis. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
 
 ```as3
  /* 
@@ -910,7 +913,7 @@ In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebru
 
 ## Snel starten (SOAP-modus): Koppelingen maken met de Java API (afgekeurd) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en een PDF-formulier. Dit type koppeling heeft de naam LinkedBy. Op het PDF-document moet de koppelbare afbeelding zijn toegepast.
+Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en een PDF-formulier. Dit type koppeling heeft de naam LinkedBy.In het PDF-document moet de koppelbare eigenschap zijn toegepast.
 
 ```as3
  /* 

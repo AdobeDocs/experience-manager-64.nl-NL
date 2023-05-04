@@ -1,8 +1,8 @@
 ---
 title: De volgorde van de evaluatie voor verificatie wijzigen
-seo-title: De volgorde van de evaluatie voor verificatie wijzigen
-description: 'U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren. '
-seo-description: 'U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren. '
+seo-title: Change the order of evaluation for authentication
+description: U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren.
+seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
@@ -10,15 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 exl-id: cac16c50-a85d-4e40-a590-8a0a52be893c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
 # De volgorde van de evaluatie voor verificatie wijzigen {#change-the-order-of-evaluation-for-authentication}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijzigen waarin AEM formulieren deze evalueren voor verificatie. De orde van de authentificatieleveranciers die in het config.xml- dossier worden vermeld bepaalt de orde van evaluatie voor authentificatie.
 
@@ -44,7 +47,7 @@ Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijz
     </node>
    ```
 
-   Bewerk in `<entry key="order" value="3" />` de waarde voor elk knooppunt om de volgorde van de verificatiebeoordeling in te stellen.
+   In `<entry key="order" value="3" />`, geef de waarde voor elke knoop uit om de orde van de authentificatieevaluatie te plaatsen.
 
 1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Bladeren om het bestand te zoeken, klik op Importeren en klik vervolgens op OK.

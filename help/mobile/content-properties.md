@@ -1,8 +1,8 @@
 ---
 title: Eigenschappen en knooppunten van inhoud
-seo-title: Eigenschappen en knooppunten van inhoud
-description: 'Volg deze pagina voor meer informatie over eigenschappen en knooppunten van inhoud.  '
-seo-description: 'Volg deze pagina voor meer informatie over eigenschappen en knooppunten van inhoud.  '
+seo-title: Content Properties and Nodes
+description: Volg deze pagina voor meer informatie over eigenschappen en knooppunten van inhoud.
+seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
 content-type: reference
@@ -10,19 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 85a367fe-a124-42af-ae3e-fe4d10425ea1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 11%
+source-wordcount: '391'
+ht-degree: 1%
 
 ---
 
-# Eigenschappen en knooppunten voor inhoud {#content-properties-and-nodes}
+# Eigenschappen en knooppunten van inhoud {#content-properties-and-nodes}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Artikelen, banners en verzamelingen worden weergegeven als cq:Pagina&#39;s in AEM.
 
@@ -34,10 +37,10 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | **Eigenschapnaam** | **Type** | **Standaardwaarden of Verwachte waarden** | **Beschrijving** |
 |---|---|---|---|
-| dps-id | Tekenreeks |  | toegewezen door AEM Mobile en opgeslagen door AEM zodra geüpload naar AEM Mobile of geïmporteerd uit AEM Mobile |
-| dps-resourceType | Tekenreeks | dps:Artikel | dps:banner | dps:Verzameling | eigenschap type entiteit |
-| dps-versie | Tekenreeks |  | versie van AEM Mobile-entiteit (ook opgenomen in de volledige AMM-id) |
-| dps-lastSynced | Date |  | datum van laatste synchronisatie/import uit AEM Mobile naar AEM |
+| dps-id | String |  | toegewezen door AEM Mobile en opgeslagen door AEM zodra geüpload naar AEM Mobile of geïmporteerd uit AEM Mobile |
+| dps-resourceType | String | dps:Artikel | dps:banner | dps:Verzameling | eigenschap type entiteit |
+| dps-versie | String |  | versie van AEM Mobile-entiteit (ook opgenomen in de volledige AMM-id) |
+| dps-lastSynced | Datum |  | datum van laatste synchronisatie/import uit AEM Mobile naar AEM |
 | dps-lastUploaded | Datum |  | datum van laatste upload van AEM naar AEM Mobile |
 | dps-lastUploadedBy | String:userid |  | De gebruiker van identiteitskaart die het laatste uploadverzoek van AEM aan AEM Mobile uitvoerde |
 
@@ -45,28 +48,28 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Eigenschapnaam | Type | Standaardwaarden of Verwachte waarden |
 |--- |--- |--- |
-| dps-title | Tekenreeks |  |
-| dps-shortTitle | Tekenreeks |  |
-| dps-abstract | Tekenreeks |  |
-| dps-shortAbstract | Tekenreeks |  |
-| dps-afdeling | Tekenreeks |  |
-| dps-categorie | Tekenreeks |  |
-| dps-trefwoorden | Tekenreeks[] |  |
-| dps-internalKeywords | Tekenreeks[] |  |
-| dps-belang | Tekenreeks[] | Important from {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-title | String |  |
+| dps-shortTitle | String |  |
+| dps-abstract | String |  |
+| dps-shortAbstract | String |  |
+| dps-afdeling | String |  |
+| dps-categorie | String |  |
+| dps-trefwoorden | String[] |  |
+| dps-internalKeywords | String[] |  |
+| dps-belang | String[] | Important from {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artikelen {#articles}
 
 | **Eigenschapnaam** | **Type** | **Standaardwaarden of Verwachte waarden** |
 |---|---|---|
-| dps-auteur | Tekenreeks |  |
-| dps-auteurURL | Tekenreeks |  |
+| dps-auteur | String |  |
+| dps-auteurURL | String |  |
 | dps-hideFromBrowsePage | Boolean |  |
-| dps-toegang | Tekenreeks | ProtectedAccess from {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
+| dps-toegang | String | ProtectedAccess from {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
 | **Sociaal** |  |  |
-| dps-socialShareURL | Tekenreeks |  |
-| dps-articleText | Tekenreeks |  |
-| dps-url | Tekenreeks |  |
+| dps-socialShareURL | String |  |
+| dps-articleText | String |  |
+| dps-url | String |  |
 
 ### Banners {#banners}
 
@@ -79,12 +82,12 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Eigenschapnaam | Type | Standaardwaarden of Verwachte waarden |
 |--- |--- |--- |
-| dps-productId | Tekenreeks |  |
-| dps-readingPosition | Tekenreeks | from {&quot;reset&quot;,&quot;keep&quot;} |
+| dps-productId | String |  |
+| dps-readingPosition | String | from {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Boolean |  |
 | dps-allowDownload | Boolean |  |
-| dps-openDefault | Tekenreeks | from {&quot;browsePage&quot;,&quot;contentView&quot;} |
-| dps-lay-out | Tekenreeks |  |
+| dps-openDefault | String | from {&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-lay-out | String |  |
 
 ## Inhoudsknooppunten {#content-nodes}
 
@@ -92,7 +95,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Node Name | Type | Standaardwaarden of Verwachte waarden | Beschrijving |
 |--- |--- |--- |--- |
-| afbeelding | jcr:primaryType=nt:ongestructureerde <br> sling:resourceType=foundation/components/image |  |  |
+| afbeelding | jcr:primaryType=nt:unStructured <br> sling:resourceType=foundation/components/image |  |  |
 
 ### Entiteiten {#entities}
 
@@ -100,7 +103,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Node Name | Type | Standaardwaarden van verwachte waarden | Beschrijving |
 |--- |--- |--- |--- |
-| social-share-image |  | jcr:primaryType=nt:ongestructureerde <br> sling:resourceType=foundation/components/image |  |
+| social-share-image |  | jcr:primaryType=nt:unStructured <br> sling:resourceType=foundation/components/image |  |
 
 #### Banners {#banners-1}
 
@@ -112,4 +115,4 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Node Name | Type | Standaardwaarden van verwachte waarden | Beschrijving |
 |--- |--- |--- |--- |
-| achtergrondafbeelding | jcr:primaryType=nt:ongestructureerde <br> sling:resourceType=foundation/components/image |  |  |
+| achtergrondafbeelding | jcr:primaryType=nt:unStructured <br> sling:resourceType=foundation/components/image |  |  |

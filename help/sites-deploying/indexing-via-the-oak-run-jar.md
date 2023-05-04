@@ -9,14 +9,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
 exl-id: b85fc608-9653-4491-8557-f66a0a7da5ea
-source-git-commit: 809a62eeca8b8e30e010beea7d594ced165e8faa
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
 
 # Indexering via de eiken-run-jar{#indexing-via-the-oak-run-jar}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De eiken-looppas steunt alle indexerende gebruiksgevallen op de bevellijn zonder het moeten van JMX niveau werken. De voordelen van de &quot;eak-run&quot;-aanpak zijn:
 
@@ -25,13 +29,13 @@ De eiken-looppas steunt alle indexerende gebruiksgevallen op de bevellijn zonder
 1. Het vermindert hulpmiddelverbruik tijdens het re-indexeren in AEM die in betere systeemprestaties voor andere AEM activiteiten resulteert
 1. Oak-run biedt out-of-band ondersteuning: Als de productieomstandigheden het niet toestaan om op productieinstanties opnieuw te indexeren, kan een gekloonde milieu voor re-indexering worden gebruikt om kritieke prestatieseffect te vermijden.
 
-Hieronder vindt u een lijst met gebruiksgevallen die kunnen worden gebruikt bij het uitvoeren van indexeringsbewerkingen via het gereedschap `oak-run`.
+Hieronder vindt u een lijst met gebruiksgevallen die kunnen worden gebruikt voor het uitvoeren van indexeringsbewerkingen via het dialoogvenster `oak-run` gebruiken.
 
 ## Consistentiecontroles index {#indexconsistencychecks}
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Geval 1 van het Gebruik - de Controle van de Consistentie van de Index](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Hoofdlettergebruik 1 - Consistentiecontrole index](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
 
 * `oak-run.jar`bepaalt snel of de indexen van de luik beschadigd zijn.
 * Het is veilig om op een in gebruik AEM instantie voor consistentie te lopen controleniveaus 1 en 2.
@@ -42,7 +46,7 @@ Hieronder vindt u een lijst met gebruiksgevallen die kunnen worden gebruikt bij 
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Geval 2 van het Gebruik - de Statistieken van de Index](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics)
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Hoofdlettergebruik 2 - Indexstatistieken](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics)
 
 * `oak-run.jar` Hiermee plaatst u alle indexdefinities, belangrijke indexstatussen en indexinhoud voor offline analyse.
 
@@ -60,13 +64,13 @@ Dit diagram is een beslissingsboom voor wanneer om de diverse re-indexerende ben
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Geval 3 van het Gebruik - het opnieuw indexeren](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Hoofdlettergebruik 3 - opnieuw indexeren](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
 
 ### Voorvertoning van tekst voor SegmentNodeStore en DocumentNodeStore {#textpre-extraction}
 
-[De preextractie](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction)  van de tekst (een eigenschap die met AEM 6.3) heeft bestaan kan worden gebruikt om de tijd aan re-index te verminderen. De preextractie van de tekst kan samen met alle re-indexerende benaderingen worden gebruikt.
+[Tekstomloop vooraf](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (een eigenschap die met AEM 6.3) heeft bestaan kan worden gebruikt om de tijd te verminderen om opnieuw te indexeren. De preextractie van de tekst kan samen met alle re-indexerende benaderingen worden gebruikt.
 
-Afhankelijk van de `oak-run.jar` indexerende benadering zullen er diverse stappen aan beide kanten van de Voer re-indexeringsstap in het hieronder diagram zijn.
+Afhankelijk van de `oak-run.jar` De indexerende benadering zal er diverse stappen aan beide kanten van de Voer re-indexeringsstap in het hieronder diagram zijn.
 
 ![4](assets/4.png)
 
@@ -78,7 +82,7 @@ Afhankelijk van de `oak-run.jar` indexerende benadering zullen er diverse stappe
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Reindex - DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Opnieuw indexeren - DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
 
 Dit is de aanbevolen methode voor het opnieuw indexeren van MongoMK (en RDBMK) AEM installaties. Er mag geen andere methode worden gebruikt.
 
@@ -90,7 +94,7 @@ Dit proces moet slechts tegen één enkele AEM instantie in de cluster worden ui
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Reindex - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexsegmentnodestore).
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Opnieuw indexeren - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexsegmentnodestore).
 
 * **Koude stand-byoverwegingen (TarMK)**
 
@@ -104,9 +108,9 @@ Dit proces moet slechts tegen één enkele AEM instantie in de cluster worden ui
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Reindex - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Online opnieuw indexeren - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
 
-Dit is de methode die vóór de introductie van de nieuwe indexeringsmogelijkheden van eak-run.jar wordt gebruikt. Dit kan worden gedaan door de eigenschap `reindex=true` op de index van de eik in te stellen.
+Dit is de methode die vóór de introductie van de nieuwe indexeringsmogelijkheden van eak-run.jar wordt gebruikt. Dit kan door het instellen van de `reindex=true` eigenschap op de index van de eik.
 
 Deze benadering kan worden gebruikt als de tijd en prestatiesgevolgen aan index voor de klant aanvaardbaar zijn. Dit is vaak het geval bij kleine tot middelgrote AEM.
 
@@ -116,9 +120,9 @@ Deze benadering kan worden gebruikt als de tijd en prestatiesgevolgen aan index 
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Reindex - SegmentNodeStore - de AEM Instantie loopt](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Online opnieuw indexeren - SegmentNodeStore - De AEM-instantie wordt uitgevoerd](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-Het online opnieuw indexeren van TarMK gebruikend oak-run.jar is sneller dan [Online het Opnieuw indexeren voor TarMK](#onlinere-indexingfortarmk) hierboven beschreven. Het vereist echter ook uitvoering tijdens een onderhoudsvenster; met de vermelding dat het venster korter zal zijn, en meer stappen worden vereist om het re-indexeren uit te voeren.
+Het online opnieuw indexeren van TarMK gebruikend eak-run.jar is sneller dan [Online opnieuw indexeren voor TarMK](#onlinere-indexingfortarmk) hierboven beschreven. Het vereist echter ook uitvoering tijdens een onderhoudsvenster; met de vermelding dat het venster korter zal zijn, en meer stappen worden vereist om het re-indexeren uit te voeren.
 
 >[!NOTE]
 >
@@ -130,9 +134,9 @@ Het online opnieuw indexeren van TarMK gebruikend oak-run.jar is sneller dan [On
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Reindex - SegmentNodeStore - de AEM Instantie is Zwijg](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Online opnieuw indexeren - SegmentNodeStore - de AEM instantie is gesloten](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-Offline opnieuw indexeren van TarMK is de eenvoudigste `oak-run.jar` gebaseerde re-indexerende benadering voor TarMK aangezien het één enkele `oak-run.jar` commentaar vereist. De AEM instantie moet echter worden afgesloten.
+Offline opnieuw indexeren van TarMK is het eenvoudigst `oak-run.jar` gebaseerde re-indexing benadering voor TarMK aangezien het één enkele vereist `oak-run.jar` opmerking. De AEM instantie moet echter worden afgesloten.
 
 >[!NOTE]
 >
@@ -144,7 +148,7 @@ Offline opnieuw indexeren van TarMK is de eenvoudigste `oak-run.jar` gebaseerde 
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Uit Band opnieuw indexeren - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
+>Voor meer gedetailleerde informatie over dit scenario raadpleegt u [Opnieuw indexeren buiten bandbreedte - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
 
 Het opnieuw indexeren van out-of-band minimaliseert het effect van het opnieuw indexeren op de instanties van de in-gebruiks AEM.
 
@@ -158,7 +162,7 @@ Het opnieuw indexeren van out-of-band minimaliseert het effect van het opnieuw i
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie over dit scenario, zie [Geval 4 gebruiken - het Bijwerken van de Definities van de Index](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
+>Voor meer gedetailleerde informatie over dit scenario, zie [Hoofdlettergebruik 4 - Indexdefinities bijwerken](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
 
 ### Indexdefinities maken en bijwerken op TarMK met ACS Zorg voor index {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
 
@@ -166,18 +170,18 @@ Het opnieuw indexeren van out-of-band minimaliseert het effect van het opnieuw i
 >
 >ACS verzekert Index een communautair gesteund project is, en niet door de Steun van Adobe wordt gesteund.
 
-Zo kan de definitie van de verzendindex worden gedefinieerd via een inhoudspakket, wat later resulteert in een nieuwe indexering door de herindexmarkering in te stellen op `true`. Dit werkt voor kleinere instellingen waarbij het opnieuw indexeren niet lang duurt.
+Zo kan de definitie van de verzendindex worden gedefinieerd via een inhoudspakket, wat later leidt tot een nieuwe indexering door de herindexmarkering in te stellen op `true`. Dit werkt voor kleinere instellingen waarbij het opnieuw indexeren niet lang duurt.
 
-Voor meer informatie, zie [ACS verzeker de documentatie van de Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) voor details.
+Zie voor meer informatie de [ACS garandeert indexdocumentatie](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) voor meer informatie.
 
 ### Indexdefinities maken en bijwerken op TarMK met behulp van eak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
-Als het tijd- of prestatieeffect van het opnieuw indexeren met niet `oak-run.jar` methodes te hoog is, kan de volgende `oak-run.jar` gebaseerde benadering worden gebruikt om de definities van de Index van Lucene in een TarMK gebaseerde AEM installatie in te voeren en opnieuw te indexeren.
+Als de tijd of het effect van de prestaties van het opnieuw indexeren met behulp van niet `oak-run.jar` de volgende methoden zijn te hoog: `oak-run.jar` De gebaseerde benadering kan worden gebruikt om de definities van de Index van Lucene in een op TarMK gebaseerde AEM in te voeren en opnieuw te indexeren.
 
 ![10](assets/10.png)
 
 ### Indexdefinities maken en bijwerken op MonogMK met behulp van eak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
-Als het tijd- of prestatieeffect van het opnieuw indexeren met niet `oak-run.jar` methodes te hoog is, kan de volgende `oak-run.jar` gebaseerde benadering worden gebruikt om de definities van de Index van Lucene in MongoMK gebaseerde AEM installaties in te voeren en opnieuw te indexeren.
+Als de tijd of het effect van de prestaties van het opnieuw indexeren met behulp van niet `oak-run.jar` de volgende methoden zijn te hoog: `oak-run.jar` De gebaseerde benadering kan worden gebruikt om de definities van de Index van Lucene in op MongoMK gebaseerde AEM installaties in te voeren en opnieuw te indexeren.
 
 ![11](assets/11.png)

@@ -1,8 +1,8 @@
 ---
 title: Opslagconfiguratie
-seo-title: Opslagconfiguratie
+seo-title: Storage Configuration
 description: Toegang tot de configuratieconsole voor opslag
-seo-description: Toegang tot de configuratieconsole voor opslag
+seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Admin
 exl-id: 905b6dc5-cf17-4f58-a687-27e2910a0729
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 # Opslagconfiguratie {#storage-configuration}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Opslagconfiguratie is het middel om de opslag te identificeren die voor communautaire inhoud wordt gekozen, die ook als gebruiker geproduceerde inhoud (UGC) wordt bekend.
 
@@ -42,9 +46,9 @@ U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 * een optie selecteren
 * Passend configureren
 
-   * Zie details voor [het selecteren van MSRP](msrp.md#select-msrp)
-   * Zie details voor [het selecteren van DSRP](dsrp.md#select-dsrp)
-   * Zie details voor [het selecteren van ASRP](asrp.md#select-asrp)
+   * Zie details voor [selecteren van MSRP](msrp.md#select-msrp)
+   * Zie details voor [selecteren, DSRP](dsrp.md#select-dsrp)
+   * Zie details voor [selecteren van ASRP](asrp.md#select-asrp)
 
 * Selecteer **[!UICONTROL Submit]**
 
@@ -52,10 +56,10 @@ U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 
 Houd er rekening mee dat als er geen selectie wordt gemaakt, de standaardinstelling de AEM opslagplaats JCR is.
 
-JCR is *geen* een gemeenschappelijke opslag die door de auteur wordt gedeeld en publiceert milieu&#39;s. Community-inhoud is alleen zichtbaar van de auteur- of publicatieomgeving waarin deze is gemaakt.
+JCR is *niet* een gemeenschappelijke opslag die door de auteur en het publiceren milieu&#39;s wordt gedeeld. Community-inhoud is alleen zichtbaar van de auteur- of publicatieomgeving waarin deze is gemaakt.
 
-Bezoek [JCR Store](jsrp.md) voor meer informatie.
+Bezoek [JCR-winkel](jsrp.md) voor aanvullende informatie.
 
 >[!NOTE]
 >
->De afwezigheid van de knoop `srpc`onder `/etc/socialconfig` wijst op het gebrek [JCR store](jsrp.md).
+>De afwezigheid van het knooppunt `srpc`krachtens `/etc/socialconfig` Hiermee wordt de standaardinstelling aangegeven [JCR-archief](jsrp.md).

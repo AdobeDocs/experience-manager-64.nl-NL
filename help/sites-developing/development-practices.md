@@ -1,8 +1,8 @@
 ---
 title: Ontwikkelingspraktijken
-seo-title: Ontwikkelingspraktijken
+seo-title: Development Practices
 description: Aanbevolen werkwijzen voor het ontwikkelen op AEM
-seo-description: Aanbevolen werkwijzen voor het ontwikkelen op AEM
+seo-description: Best practices for developing on AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 32fb6479-ae53-4bb3-8827-db15d7f5705e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
 
 # Ontwikkelingspraktijken{#development-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Werken volgens een definitie van Gereed {#work-according-to-a-definition-of-done}
 
@@ -35,11 +38,11 @@ Sommige criteria die algemeen door teams worden gespecificeerd omvatten:
 
 Zonder een welomschreven DoD is het gemakkelijk om in een situatie te belanden waarin veel dingen halverwege worden gedaan en niets echt compleet is.
 
-### Coderings- en opmaakconventies {#define-and-adhere-to-coding-and-formatting-conventions} definiëren en naleven
+### Coderings- en opmaakconventies definiëren en naleven {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Dingen als inspringingsniveaus en witruimte lijken misschien niet belangrijk, maar als de code juist is opgemaakt, gaat het veel verder in de richting van leesbaarheid en onderhoudsgemak. Conventies moeten als team worden besproken en overeengekomen en vervolgens in de code worden gevolgd.
 
-### Doel van hoge testdekking {#aim-for-high-test-coverage}
+### Doel van hoge testdekking  {#aim-for-high-test-coverage}
 
 Naarmate een projectimplementatie groter wordt, zal ook de tijd die nodig is om deze te testen, toenemen. Zonder goede testdekking, zal het testteam niet kunnen schrapen en de ontwikkelaars zullen uiteindelijk begraven in insecten worden.
 
@@ -47,7 +50,7 @@ Ontwikkelaars zouden TDD moeten gebruiken en ontbrekende eenheidstests vóór de
 
 Er zijn aangepaste frameworks beschikbaar, zoals Jackalope en Prosper, om het kopiëren van JCR API&#39;s eenvoudiger te maken om de productiviteit van ontwikkelaars te garanderen terwijl ze eenheidstests schrijven.
 
-### Geschikt voor demo {#stay-demo-ready} blijven
+### Demo gereed houden {#stay-demo-ready}
 
 Het systeem zou aan het eind van elke herhaling voor demo aan de zaken moeten beschikbaar zijn. Door het systeem in een demo-klaar staat te houden, zal het team altijd binnen een herhaling van klaar zijn voor productie en kan de technische schuld op een houdbaar niveau worden gehouden.
 
@@ -63,10 +66,10 @@ Als de eenheidstests lang duren, zullen de ontwikkelaars vermijden lopend hen en
 
 De instrumenten van de codeanalyse kunnen waardevol zijn, maar slechts als hun rapporten tot actie van de kant van het ontwikkelingsteam leiden. Zonder de analyse die deze instrumenten opleveren te verfijnen, zullen de aanbevelingen die ze genereren niet relevant zijn en zullen ze hun waarde verliezen.
 
-### Volg de Scout {#follow-the-boy-scout-rule}
+### Volg de Scout voor de jongen {#follow-the-boy-scout-rule}
 
 De Scouten van de Jongen hebben een regel: &quot;Laat het beter staan dan u het hebt gevonden.&quot; Zolang alle leden van het ontwikkelingsteam zich aan deze regel houden en iets opschonen wanneer ze een puinhoop tegenkomen, zal de code voortdurend verbeteren.
 
-### Implementeer geen YAGNI-functies {#avoid-implementing-yagni-features}
+### Gebruik geen YAGNI-functies {#avoid-implementing-yagni-features}
 
 YAGNI-functies (of u hebt het niet nodig) worden geïmplementeerd wanneer we verwachten dat we in de toekomst iets nodig hebben, ook al hebben we het nu niet nodig. In het ideale geval moeten we het eenvoudigste ding implementeren dat vandaag werkt en ononderbroken refactoring gebruiken om ervoor te zorgen dat de architectuur van het systeem in de loop der tijd evolueert met de vereisten. Hierdoor kunnen we ons concentreren op wat belangrijk is en codeblok en eigenschapscrupules voorkomen.

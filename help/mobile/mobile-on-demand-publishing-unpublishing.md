@@ -1,8 +1,8 @@
 ---
 title: Inhoud publiceren ongedaan maken
-seo-title: Inhoud publiceren ongedaan maken
+seo-title: Publish UnPublish Content
 description: Wanneer u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, volgt u deze pagina voor meer informatie over het publiceren van uw inhoud. Ook kunt u de publicatie van uw inhoud ongedaan maken.
-seo-description: Wanneer u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, volgt u deze pagina voor meer informatie over het publiceren van uw inhoud. Ook kunt u de publicatie van uw inhoud ongedaan maken.
+seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
@@ -10,27 +10,30 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: e9da73d6-7140-4fd6-b69c-2e76024d65e5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# Publiceer Inhoud publiceren ongedaan maken{#publish-unpublish-content}
+# Inhoud publiceren ongedaan maken{#publish-unpublish-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, kunt u de inhoud publiceren. Ook kunt u de publicatie van uw inhoud ongedaan maken.
 
 >[!NOTE]
 >
->Raadpleeg [Ontwerpoverwegingen voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in de online Help voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps.
+>Ga voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps naar [Ontwerpaspecten voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in online Help.
 
-## De inhoud {#publishing-unpublishing-the-content} publiceren of de publicatie ervan opheffen
+## De inhoud publiceren/verwijderen {#publishing-unpublishing-the-content}
 
 Dit verschilt van een &#39;AEM-publicatie&#39;. Wij duwen geen inhoud aan een AEM publiceren serverinstantie om het openbaar te maken viewable. Hier informeren we Mobile On-Demand dat de geselecteerde inhoud openbaar moet worden gemaakt in de live Mobile On-Demand-app.
 

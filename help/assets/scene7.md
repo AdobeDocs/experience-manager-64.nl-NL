@@ -8,20 +8,24 @@ topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
 role: User
-source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2689'
+source-wordcount: '2725'
 ht-degree: 0%
 
 ---
 
 # Dynamic Media Classic-componenten aan pagina&#39;s toevoegen {#adding-scene-features-to-your-page}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan Web, mobiel, e-mail en displays en drukwerk via internet.
 
 U kunt AEM middelen bekijken die in Dynamic Media Classic zijn gepubliceerd in verschillende viewers:
 
-* In-/uitzoomen
+* Zoomen
 * Flyout
 * Video
 * Afbeeldingssjabloon
@@ -55,7 +59,7 @@ U kunt digitale elementen als volgt naar Dynamic Media Classic publiceren:
 
 De volgende Dynamic Media Classic-componenten zijn beschikbaar in AEM:
 
-* In-/uitzoomen
+* Zoomen
 * Flyout (zoomen)
 * Afbeeldingssjabloon
 * Afbeelding
@@ -137,7 +141,7 @@ U stelt deze configuratieopties in door bijvoorbeeld een Dynamic Media Classic-c
 
 ![chlimage_1-226](assets/chlimage_1-226.png)
 
-### In-/uitzoomen {#zoom}
+### Zoomen {#zoom}
 
 De HTML5-component Zoom geeft een grotere afbeelding weer wanneer u op de knop **[!UICONTROL +]** knop.
 
@@ -272,7 +276,7 @@ Wanneer u een adaptieve videoset gebruikt met de Dynamic Media Classic-videocomp
 
 Met de Dynamic Media Classic-inhoudbrowser kunt u inhoud van Dynamic Media Classic rechtstreeks in AEM bekijken. Als u toegang wilt tot de inhoudbrowser, gaat u naar **[!UICONTROL Content Finder]**, selecteert u **[!UICONTROL Dynamic Media Classic]** in de aanraakgeoptimaliseerde gebruikersinterface of de **[!UICONTROL S7]** in de klassieke gebruikersinterface. De functionaliteit is identiek tussen beide gebruikersinterfaces.
 
-Als u meerdere configuraties hebt, worden AEM standaard de [standaardconfiguratie](/help/sites-administering/scene7.md#configuring-a-default-configuration). U kunt verschillende configuraties rechtstreeks selecteren in de Dynamic Media Classic-inhoudbrowser in de vervolgkeuzelijst.
+Als u meerdere configuraties hebt, AEM standaard de [standaardconfiguratie](/help/sites-administering/scene7.md#configuring-a-default-configuration). U kunt verschillende configuraties rechtstreeks selecteren in de Dynamic Media Classic-inhoudbrowser in de vervolgkeuzelijst.
 
 >[!NOTE]
 >
@@ -297,7 +301,6 @@ Bladeren door Dynamic Media Classic-elementen door **[!UICONTROL Dynamic Media C
 >
 >* In de Dynamic Media Classic-inhoudbrowser worden ongeveer 100 elementen geladen en op naam gesorteerd.
 >* Als u een beveiligde voorvertoningsserver hebt ingesteld, gebruikt de browser die voorvertoningsserver om miniaturen en elementen te renderen.
-
 >
 
 
@@ -353,7 +356,6 @@ In de Dynamic Media Classic-browser kunt u de resultaten filteren en de volgende
 >
 >* Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke vertoning (alleen ast; .mp4) en de gecodeerde uitvoering.
 >* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, zoekt AEM niet in de submappen.
-
 >
 
 

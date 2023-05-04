@@ -2,7 +2,7 @@
 title: Developing and Page Diff
 seo-title: Developing and Page Diff
 description: Developing and Page Diff
-seo-description: 'null'
+seo-description: null
 uuid: 48bbeca3-fe16-48ef-bb4d-ac605fe0ca76
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,25 +10,28 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Developing and Page Diff{#developing-and-page-diff}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 ## Overzicht van functies {#feature-overview}
 
 Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Paginadiff](/help/sites-authoring/page-diff.md) voor meer informatie over deze gebruikersfunctie.
+Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Voor meer informatie over deze gebruikersfunctie raadpleegt u [Pagina grijs](/help/sites-authoring/page-diff.md).
 
 ## Bewerkingsdetails {#operation-details}
 
-Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken opnieuw gemaakt door op de achtergrond AEM te plaatsen om het afschuiven te vergemakkelijken. Dit is nodig om de inhoud [te kunnen weergeven voor vergelijking naast elkaar](/help/sites-authoring/page-diff.md#presentation-of-differences).
+Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken opnieuw gemaakt door op de achtergrond AEM te plaatsen om het afschuiven te vergemakkelijken. Dit is nodig om de inhoud te kunnen renderen [voor vergelijking naast elkaar](/help/sites-authoring/page-diff.md#presentation-of-differences).
 
 Deze recreatiebewerking wordt intern AEM uitgevoerd en is transparant voor de gebruiker en vereist geen interventie. Nochtans zou een beheerder die de bewaarplaats bijvoorbeeld in CRX DE Lite bekijkt deze ontspannen versies binnen de inhoudsstructuur zien.
 
@@ -44,7 +47,7 @@ Omdat bij het gebruik van het mechanisme voor pagina-afbreking AEM de vorige ver
 
 >[!CAUTION]
 >
->Als u de functie voor pagina-diff wilt gebruiken, moet de gebruiker de **machtiging Wijzigen/Maken/Verwijderen** op het knooppunt `/content/versionhistory` hebben.
+>Als u de functie voor pagina-diff wilt gebruiken, moet de gebruiker beschikken over de **Wijzigen/Maken/Verwijderen** toestemming voor het knooppunt `/content/versionhistory`.
 
 ### Vanaf AEM 6.4.3 {#as-of-aem}
 
@@ -56,9 +59,9 @@ Deze inhoud wordt gecreeerd door een de dienstgebruiker met toestemmingen die zi
 
 Er wordt automatisch een opschoningstaak uitgevoerd om deze tijdelijke inhoud op te schonen.
 
-## Ontwikkelaarsbeperkingen {#developer-limitations}
+## Beperkingen voor ontwikkelaars {#developer-limitations}
 
-Eerder, in Klassieke UI, moest de speciale ontwikkelingsoverweging worden gemaakt om AEM het verschillen (zoals het gebruiken van `cq:text` markeringslib, of douane te vergemakkelijken die de `DiffService` OSGi dienst in componenten integreert). Dit is niet meer nodig voor de nieuwe functie voor Diff, aangezien het diff cliënt-kant via DOM vergelijking voorkomt.
+Eerder moest in de klassieke gebruikersinterface speciale aandacht worden besteed aan de ontwikkeling om AEM verschillen te vergemakkelijken (zoals het gebruik van `cq:text` tag lib, of aangepaste integratie van de `DiffService` OSGi-service in componenten). Dit is niet meer nodig voor de nieuwe functie voor Diff, aangezien het diff cliënt-kant via DOM vergelijking voorkomt.
 
 Er zijn echter een aantal beperkingen die door de ontwikkelaar in overweging moeten worden genomen.
 

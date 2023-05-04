@@ -12,14 +12,18 @@ discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 10%
+source-wordcount: '1744'
+ht-degree: 9%
 
 ---
 
 # Variaties - Authoring van content voor fragmenten {#variations-authoring-fragment-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -84,7 +88,7 @@ De volledige-schermredacteur verstrekt:
 * Toegang tot verschillende [handelingen](#actions)
 * Afhankelijk van de [format](#formats), aanvullende opmaakopties ([RTF](#rich-text))
 
-### Acties {#actions}
+### Handelingen {#actions}
 
 De volgende acties zijn ook beschikbaar (voor alle [formaten](#formats)) als de volledige-schermeditor (d.w.z. tekst met meerdere regels) is geopend:
 

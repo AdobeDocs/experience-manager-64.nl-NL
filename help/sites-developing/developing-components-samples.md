@@ -4,14 +4,18 @@ seo-title: Developing AEM Components - Code Samples
 description: In deze sectie vindt u enkele voorbeelden van het maken van uw eigen componenten voor AEM.
 seo-description: This section provides some examples on how to create your own components for AEM.
 exl-id: c205046f-9e60-4010-9ae3-be7d02d45248
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 2%
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
 # Ontwikkelen AEM componenten - Codevoorbeelden{#developing-aem-components-code-samples}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In deze sectie vindt u enkele voorbeelden van het maken van uw eigen componenten voor AEM.
 

@@ -4,15 +4,19 @@ description: Configureer Experience Manager Assets voor gebruik met de extensie 
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: 227b929c7eecb4fa65f5c50fffc5d9ed802411e1
+exl-id: 6d9a954f-433d-41ec-9bb9-45e857890aba
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2927'
+source-wordcount: '2963'
 ht-degree: 0%
 
 ---
 
-
 # Experience Manager Assets for Adobe Asset Link configureren {#adobe-asset-link}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html) stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van inhoud. Adobe Experience Manager Assets wordt verbonden met Creative Cloud-bureaubladapps Adobe InDesign, Adobe Photoshop en Adobe Illustrator. Met het deelvenster Adobe Asset Link hebben creatieve toepassingen toegang tot inhoud die in AEM Assets is opgeslagen en kunnen ze deze inhoud wijzigen zonder dat ze de meest bekende creatieve apps hoeven te verlaten.
 
@@ -292,11 +296,6 @@ Als u problemen ondervindt bij het configureren of gebruiken van Adobe Asset Lin
 >[!MORELIKETHIS]
 >
 >* [Over Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Asset Link gebruiken in Creative Cloud-bureaubladtoepassing en middelen beheren](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Asset Link gebruiken in Creative Cloud-bureaubladtoepassing en middelen beheren](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [as a Cloud Service Adobe Experience Manager-middelen configureren](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
 

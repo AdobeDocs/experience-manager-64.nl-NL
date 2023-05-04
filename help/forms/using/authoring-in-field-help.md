@@ -1,23 +1,26 @@
 ---
 title: Contextassistentie voor het ontwerpen van formuliervelden
-seo-title: Contextassistentie voor het ontwerpen van formuliervelden
-description: 'Met AEM Forms kunt u in de context Help toevoegen om formuliervelden en deelvensters als tekst of rich media, waaronder video''s, aan te passen. '
-seo-description: 'Met AEM Forms kunt u in de context Help toevoegen om formuliervelden en deelvensters als tekst of rich media, waaronder video''s, aan te passen. '
+seo-title: Authoring in-context help for form fields
+description: Met AEM Forms kunt u in de context Help toevoegen om formuliervelden en deelvensters als tekst of rich media, waaronder video's, aan te passen.
+seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
 uuid: 07427ddd-9d35-41f6-a807-0e418aade199
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
 feature: Adaptive Forms
 exl-id: 0c761c0c-fbe4-4129-8a90-c4ef1127a762
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
 
-# In-context-Help ontwerpen voor formuliervelden {#authoring-in-context-help-for-form-fields}
+# Contextassistentie voor het ontwerpen van formuliervelden {#authoring-in-context-help-for-form-fields}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -25,7 +28,7 @@ In bepaalde situaties weten eindgebruikers die een formulier invullen niet zeker
 
 In dit artikel wordt besproken hoe formulierauteurs in-context Help kunnen toevoegen tijdens het ontwerpen van Adaptive Forms.
 
-## In-context Help {#add-in-context-help} toevoegen
+## In-context-Help toevoegen {#add-in-context-help}
 
 U kunt in-context hulp specificeren gebruikend de volgende opties in de sectie van de Inhoud van de Hulp van het eigenschappen lusje in sidebar.
 
@@ -46,7 +49,7 @@ Het veld Korte beschrijving bevat snelle en korte aanwijzingen over het invullen
 
 >[!NOTE]
 >
->Selecteer **Altijd korte beschrijving tonen** om de Help-tekst onder het veld permanent weer te geven.
+>Selecteren **Altijd korte beschrijving tonen** om de Help-tekst permanent onder het veld weer te geven.
 
 ![Permanente korte hulp in de context onder het veld](assets/short1.png)
 
@@ -56,7 +59,7 @@ U kunt het lange beschrijvingsgebied gebruiken om lange teksten te specificeren 
 
 ![Veelzijdige media toevoegen als in-context Help voor formuliervelden](assets/long-descriptions.png)
 
-Als u een lange beschrijving toevoegt, wordt een **weergegeven?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
+Als u een lange beschrijving toevoegt, wordt een **?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
 
 ![Voorbeeld van uitgebreide media in-context-Help](assets/photoshop.png)
 
@@ -66,6 +69,6 @@ Naast de contextHelp voor formuliervelden kunt u op deelvensterniveau Help opgev
 
 ![In-context-Help toevoegen voor een formuliervenster](assets/panel-level-help.png)
 
-Wanneer u Help voor een deelvenster toevoegt, wordt een **weergegeven?** naast de beschrijving van het deelvenster. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de sectie Help-inhoud van het dialoogvenster voor het bewerken van deelvensters.
+Wanneer u Help voor een deelvenster toevoegt, wordt een **?** naast de beschrijving van het deelvenster. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de sectie Help-inhoud van het dialoogvenster voor het bewerken van deelvensters.
 
 ![Voorbeeld van in-context Help op het niveau van het formulierdeelvenster](assets/photoshop-1.png)

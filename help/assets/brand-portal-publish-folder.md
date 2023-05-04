@@ -5,24 +5,28 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 31%
+source-wordcount: '511'
+ht-degree: 28%
 
 ---
 
 # Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
-Als beheerder van Adobe Experience Manager-middelen kunt u elementen en mappen publiceren naar het [!DNL Experience Manager Assets Brand Portal]-exemplaar (of de publicatieworkflow plannen op een latere datum/tijd) voor uw organisatie. U moet [!DNL Experience Manager Assets] echter eerst integreren met [!DNL Brand Portal]. Zie [Configureren [!DNL Experience Manager Assets] met Brand Portal](configure-aem-assets-with-brand-portal.md) voor meer informatie.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Als Adobe Experience Manager Assets-beheerder kunt u elementen en mappen publiceren naar de [!DNL Experience Manager Assets Brand Portal] -instantie (of de publicatieworkflow plannen naar een latere datum/tijd) voor uw organisatie. U moet echter eerst integreren [!DNL Experience Manager Assets] with [!DNL Brand Portal]. Zie voor meer informatie [Configureren [!DNL Experience Manager Assets] met Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Nadat u een middel of een omslag publiceert, is het beschikbaar aan gebruikers in Brand Portal.
 
-Als u in [!DNL Assets] de oorspronkelijke bron- of mapwijzigingen doorvoert, worden de wijzigingen pas in Brand Portal doorgevoerd als u het element of de map opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
+Als u volgende wijzigingen aanbrengt in het oorspronkelijke middel of de oorspronkelijke map in [!DNL Assets], worden de wijzigingen pas in Brand Portal doorgevoerd als u het element of de map opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
 ## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Houd de muisaanwijzer boven de gewenste map in de interface [!DNL Assets] en selecteer de optie **[!UICONTROL Publish]** in de snelle handelingen.
+1. Van de [!DNL Assets] interface, houd de muisaanwijzer boven de gewenste map en selecteer **[!UICONTROL Publish]** van de snelle acties.
 
    U kunt ook de gewenste map selecteren en de volgende stappen volgen.
 
@@ -32,11 +36,11 @@ Als u in [!DNL Assets] de oorspronkelijke bron- of mapwijzigingen doorvoert, wor
 
    Voer een van de volgende handelingen uit om de geselecteerde mappen naar Brand Portal te publiceren:
 
-   * Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Selecteer vervolgens **[!UICONTROL Publish to Brand Portal]** in het menu.
+   * Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Selecteer vervolgens in het menu **[!UICONTROL Publish to Brand Portal]**.
    * Selecteer **[!UICONTROL Manage Publication]** in de werkbalk.
 
-3. Selecteer vervolgens **[!UICONTROL Action]** in **[!UICONTROL Publish to Brand Portal]** en selecteer **[!UICONTROL Scheduling]** **[!UICONTROL Now]**. Tik op **[!UICONTROL Next].**
-4. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik **[!UICONTROL Publish to Brand Portal]**.
+3. Vervolgens vanaf de **[!UICONTROL Action]** selecteren **[!UICONTROL Publish to Brand Portal]** en van **[!UICONTROL Scheduling]** selecteren **[!UICONTROL Now]**. Tik op **[!UICONTROL Next].**
+4. Within **[!UICONTROL Scope]**, bevestig uw selectie en tik op **[!UICONTROL Publish to Brand Portal]**.
 
    Er verschijnt een bericht waarin wordt aangegeven dat de map in de wachtrij is geplaatst voor publicatie naar Brand Portal. Meld u aan bij de Brand Portal-interface om de gepubliceerde map weer te geven.
 
@@ -44,8 +48,8 @@ Als u in [!DNL Assets] de oorspronkelijke bron- of mapwijzigingen doorvoert, wor
 
    U kunt als volgt de publicatieworkflow van mappen met elementen naar Brand Portal plannen op een latere datum of tijd:
 
-   1. Als u middelen/mappen hebt geselecteerd om te publiceren, selecteert u **[!UICONTROL Manage Publication]** in de werkbalk boven in het scherm.
-   2. Selecteer **[!UICONTROL Manage Publication]** op  pagina **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
+   1. Als u middelen/mappen hebt geselecteerd om te publiceren, selecteert u **[!UICONTROL Manage Publication]** in de werkbalk bovenaan.
+   2. Aan **[!UICONTROL Manage Publication]** pagina, selecteert u **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteert u **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -57,23 +61,23 @@ Als u in [!DNL Assets] de oorspronkelijke bron- of mapwijzigingen doorvoert, wor
 
 ## De publicatie van mappen op Brand Portal ongedaan maken {#unpublish-folders-from-brand-portal}
 
-U kunt elke elementmap die naar Brand Portal is gepubliceerd, verwijderen door de publicatie ongedaan te maken van de instantie [!DNL Experience Manager] Auteur. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
+U kunt elke elementmap die naar Brand Portal is gepubliceerd, verwijderen door de publicatie ervan ongedaan te maken [!DNL Experience Manager] Instantie van auteur. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor Brand Portal-gebruikers.
 
 U kunt de publicatie van mappen in Brand Portal snel ongedaan maken of deze later plannen. De publicatie van mappen met assets op Brand Portal ongedaan maken:
 
-1. Selecteer in de [!DNL Assets]-interface in [!DNL Experience Manager]-instantie Auteur de map die u wilt verwijderen.
+1. Van de [!DNL Assets] interface in [!DNL Experience Manager]  Auteur-instantie, selecteer de map waarvan u de publicatie ongedaan wilt maken.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 
-2. Tik/klik op **[!UICONTROL Manage Publication]** op de werkbalk.
+2. Tik/klik op de werkbalk **[!UICONTROL Manage Publication]**.
 
 3. **Publiceren vanuit Brand Portal nu ongedaan maken**
 
    U kunt de publicatie van de gewenste map snel ongedaan maken vanuit Brand Portal:
 
-   1. Selecteer **[!UICONTROL Unpublish from Brand Portal]** op **[!UICONTROL Manage Publication]** pagina en selecteer **[!UICONTROL Scheduling]** **[!UICONTROL Now]** op **[!UICONTROL Action]** pagina.
+   1. Aan **[!UICONTROL Manage Publication]** pagina, van **[!UICONTROL Action]** selecteren **[!UICONTROL Unpublish from Brand Portal]** en van **[!UICONTROL Scheduling]** selecteren **[!UICONTROL Now]**.
    2. Tik of klik op **[!UICONTROL Next].**
-   3. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik **[!UICONTROL Unpublish from Brand Portal]**.
+   3. Within **[!UICONTROL Scope]**, bevestig uw selectie en tik op **[!UICONTROL Unpublish from Brand Portal]**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
@@ -81,10 +85,10 @@ U kunt de publicatie van mappen in Brand Portal snel ongedaan maken of deze late
 
    U kunt als volgt de publicatie van een map van Brand Portal naar een latere datum en tijd plannen:
 
-   1. Selecteer op **[!UICONTROL Manage Publication]** pagina **[!UICONTROL Action]** **[!UICONTROL Unpublish from Brand Portal]** en selecteer **[!UICONTROL Scheduling]** **[!UICONTROL Later].**
+   1. Aan **[!UICONTROL Manage Publication]** pagina, van **[!UICONTROL Action]** selecteren **[!UICONTROL Unpublish from Brand Portal]** en van **[!UICONTROL Scheduling]** selecteren **[!UICONTROL Later].**
    2. Selecteer een **[!UICONTROL Activation date]** en geef de tijd op. Tik op **[!UICONTROL Next]**.
-   3. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik **[!UICONTROL Next]**.
-   4. Geef een **[!UICONTROL Workflow title]** op onder **[!UICONTROL Workflows]**. Tik op **[!UICONTROL Unpublish Later].**
+   3. Within **[!UICONTROL Scope]**, bevestig uw selectie en tik op **[!UICONTROL Next]**.
+   4. Geef een **[!UICONTROL Workflow title]** krachtens **[!UICONTROL Workflows]**. Tik op **[!UICONTROL Unpublish Later].**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 

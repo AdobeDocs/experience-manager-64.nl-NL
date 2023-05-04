@@ -1,8 +1,8 @@
 ---
 title: Inleiding tot Interactive Communication authoring UI
-seo-title: Een inleiding aan de diverse elementen van de gebruikersinterface u aan auteur Interactieve Communicatie kunt gebruiken
+seo-title: An introduction to the various user interface elements you can use to author Interactive Communication
 description: Een inleiding aan de diverse elementen van de gebruikersinterface u aan auteur Interactieve Communicatie kunt gebruiken
-seo-description: Een inleiding aan de diverse elementen van de gebruikersinterface u aan auteur Interactieve Communicatie kunt gebruiken
+seo-description: An introduction to the various user interface elements you can use to author Interactive Communication
 uuid: 4e301b9a-76a1-4beb-9d67-dbd0a3bdd2e4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,24 +10,27 @@ topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 feature: Interactive Communication
 exl-id: 1537490b-71b3-4ab3-b8d1-d85eac88d857
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
 
-# Inleiding tot Interactieve Communicatie auteursUI {#introduction-to-interactive-communication-authoring-ui}
+# Inleiding tot Interactive Communication authoring UI {#introduction-to-interactive-communication-authoring-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Een inleiding aan de diverse elementen van de gebruikersinterface u aan auteur Interactieve Communicatie kunt gebruiken
 
-De gebruikersinterface voor creatie [Interactieve Communicatie](/help/forms/using/interactive-communications-overview.md) is intuïtief en verstrekt het volgende voor auteursdruk en Webkanaal van de Interactieve Mededeling:
+De gebruikersinterface voor ontwerpen [Interactieve communicatie](/help/forms/using/interactive-communications-overview.md) is intuïtief en biedt de volgende mogelijkheden voor het ontwerpen van afdrukken en het webkanaal van de interactieve communicatie:
 
 * WYSIWYG-documenteditor voor slepen en neerzetten
 * Geïntegreerde opslagplaats voor middelen - de activa die aan worden geupload en op de server worden gecreeerd zijn beschikbaar in de browser van Activa van Interactive Communication auteursinterface
 
-Wanneer u [nieuw creeert of een bestaande Interactieve Communicatie](/help/forms/using/create-interactive-communication.md) uitgeeft, gebruikt u de volgende elementen van de gebruikersinterface:
+Wanneer u [een nieuwe interactieve communicatie maken of een bestaande interactieve communicatie bewerken](/help/forms/using/create-interactive-communication.md)gebruikt u de volgende gebruikersinterface-elementen:
 
 * [Zijbalk](#sidebar)
 * [Pagina, werkbalk](#page-toolbar)
@@ -37,7 +40,7 @@ Wanneer u [nieuw creeert of een bestaande Interactieve Communicatie](/help/forms
 
 ![gebruikersinterface voor interactieve communicatie ontwerpen](assets/form-editor.png)
 
-**A.** Zijbalk  **B.** Paginawerkbalk  **C.** Inhoudsgebied
+**A.** Zijbalk **B.** Pagina, werkbalk **C.** Inhoudsgebied
 
 ## Zijbalk {#sidebar}
 
@@ -45,7 +48,7 @@ Wanneer u [nieuw creeert of een bestaande Interactieve Communicatie](/help/forms
 
 [Klik om te vergroten](assets/sidebar-comps-1.png)
 
-**A.** Channel browser  **B.** Content browser  **C.** Properties browser  **D.** Asset browser  **E.** Components browser  ****   **** F.Data Sources browser - Data ModelG.Data Browser - Master inhoud
+**A.** Kanaalbrowser **B.** Inhoudsbrowser **C.** Eigenschappenbrowser **D.** Middelenbrowser **E.** Browser voor componenten **F.** Browser van Gegevensbronnen - het Model van Gegevens **G.** Browser voor gegevensbronnen - Master inhoud
 
 De zijbalk bevat het volgende:
 
@@ -61,7 +64,7 @@ De zijbalk bevat het volgende:
 
    Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van de component. Als u bijvoorbeeld de eigenschappen van de documentcontainer wilt zien:
 
-   Selecteer een component en tik ![veldniveau](assets/field-level.png) > **Documentcontainer** en tik vervolgens op ![cmp](assets/cmppr.png).
+   Selecteer een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **Documentcontainer** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
 
 * **Bandenbrowser**
 
@@ -77,11 +80,11 @@ De zijbalk bevat het volgende:
 | Documentfragment | ✓ | ✓ | Staat u toe om een herbruikbare component, een tekst, een lijst, of een voorwaarde, aan een Interactieve Communicatie toe te voegen. De herbruikbare component die u toevoegt aan een interactieve communicatie kan gebaseerd zijn op een formuliergegevensmodel of geen formuliergegevensmodel. |
 | Afbeelding | ✓ | ✓ | Hiermee kunt u een afbeelding invoegen. |
 | Deelvenster | - | ✓ | De component van het Comité is placeholder voor het groeperen van andere componenten samen en controleert hoe een groep componenten in een Interactieve Mededeling worden uiteengezet. Met een deelvenstercomponent kunt u ook een groep componenten herhaalbaar maken voor de eindgebruiker, bijvoorbeeld in meerdere items die nodig zijn om de gegevens van het onderwijs in te vullen. Het is ook een goede praktijk om een paneel elk voor een lusje van een Interactieve Communicatie met veelvoudige lusjes te gebruiken. |
-| Tabel | &amp;ast; | ✓ | Hiermee voegt u een tabel toe waarin u gegevens in rijen en kolommen kunt ordenen. |
+| Tabel | &amp;asteren; | ✓ | Hiermee voegt u een tabel toe waarin u gegevens in rijen en kolommen kunt ordenen. |
 | Doelgebied | &amp;ast;&amp;ast; | ✓ | Hiermee voegt u een doelgebied in een webkanaal in om de webkanaalspecifieke componenten te ordenen. |
 | Tekst | - | ✓ | Hiermee voegt u tekst toe aan het webkanaal van een interactieve communicatie. Tekst kan formuliergegevensmodelobjecten gebruiken om de inhoud dynamisch te maken. |
 
-&amp;ast; Gebruik Layoutfragmenten in het kanaal Afdrukken om tabellen toe te voegen.
+&amp;asteren; Gebruik Layoutfragmenten in het kanaal Afdrukken om tabellen toe te voegen.
 
 &amp;ast;&amp;ast; In het kanaal van de Druk, zijn de doelgebieden vooraf bepaald in het XDP/drukmalplaatje. U kunt geen nieuwe doelgebieden toevoegen gebruikend Interactieve Communicatie auteursUI.
 
@@ -93,12 +96,12 @@ De zijbalk bevat het volgende:
 
 De belangrijkste punten wanneer het werken met interactieve communicatie componenten zijn als volgt:
 
-* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Als u de eigenschappen van een component wilt configureren, tikt u op de component en vervolgens op ![cmp](assets/cmppr.png) om de eigenschappen van de component te openen in de eigenschappenbrowser.
-* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u ![cmppr](assets/cmppr.png) tikt, kunt u de naam van de component veranderen door de het gebiedswaarde van de Naam van het Element in eigenschappen browser te veranderen. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
+* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Tik op de component en tik om de eigenschappen van een component te configureren ![cmppr](assets/cmppr.png) om de componenteigenschappen in de browser van Eigenschappen te openen.
+* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u tikt ![cmppr](assets/cmppr.png)kunt u de naam van de component wijzigen door de waarde van het veld Elementnaam te wijzigen in de eigenschappenbrowser. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
 * U kunt het bezit van de Titel van een Interactieve Component van de Communicatie inline in de redacteur wijzigen zonder browser van Eigenschappen te openen zolang de titel op Interactieve Mededeling zichtbaar is. Daartoe:
 
    1. Tik om een component te selecteren die een eigenschap Titel heeft en waarvan de eigenschap Titel verbergen is uitgeschakeld.
-   1. Tik ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
+   1. Tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
    1. Wijzig de titel en tik op de Return-toets of tik ergens buiten de component om de wijzigingen op te slaan. Tik op Esc om de wijzigingen te verwijderen.
 
 ## Component, werkbalk {#component-toolbar}
@@ -107,7 +110,7 @@ De belangrijkste punten wanneer het werken met interactieve communicatie compone
 
 Wanneer u een component selecteert, ziet u een werkbalk waarmee u ermee kunt werken. U krijgt opties om, eigenschappen van de componenten te snijden te kleven, te bewegen en te specificeren. U kunt kiezen uit de volgende opties:
 
-A. **Configureren**: Wanneer u **Configure** tikt, zijn de componenteneigenschappen zichtbaar in sidebar.
+A. **Configureren**: Wanneer u tikt **Configureren**, zijn componenteigenschappen zichtbaar in de zijbalk.
 
 B. **Regels bewerken**: Wanneer u op Regels bewerken tikt, wordt de Regeleditor weergegeven waarin u regels voor de geselecteerde component kunt bewerken en maken. In de Regeleditor kunt u ook andere formulierobjecten (componenten) selecteren en regels voor die formulierobjecten bewerken/maken.
 
@@ -139,7 +142,7 @@ J. **Meer**: Biedt meer opties voor het werken met de geselecteerde component.
 
 De werkbalk Pagina bovenaan biedt opties waarmee u een voorvertoning van de interactieve communicatie kunt weergeven en de eigenschappen van de communicatie kunt wijzigen. U kunt een voorvertoning van de interactieve communicatie weergeven wanneer u deze ontwerpt en wijzigingen daarop aanbrengen. In de paginabooltoolbar, ziet u:
 
-* Zijpaneel in-/uitschakelen ![in-/uitschakelen](assets/toggle-side-panel.png): Hiermee kunt u Zijbalk tonen of verbergen.
+* Zijpaneel in-/uitschakelen ![schakelen tussen zijpaneel](assets/toggle-side-panel.png): Hiermee kunt u Zijbalk tonen of verbergen.
 * Pagina-informatie ![pageinformationad](assets/pageinformationad.png): Hiermee kunt u pagina-eigenschappen weergeven.
 * Emulator ![liniaal](assets/ruler.png): Hiermee kunt u het uiterlijk van uw interactieve communicatie emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
 * Bewerken: Hiermee kunt u andere modi selecteren, zoals: Bewerken, Stijl, Ontwikkelaar en Ontwerp.

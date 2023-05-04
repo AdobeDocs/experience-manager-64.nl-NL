@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3496'
 ht-degree: 0%
 
 ---
 
 # OSGi-configuratie-instellingen{#osgi-configuration-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 [OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van AEM. Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
 
@@ -368,7 +372,7 @@ Voor geselecteerde gebruikers kan de gebruikersnaam die uit de HTTP-aanvraag is 
 `admin` aan beide zijden van de kaart wordt de toewijzing genegeerd. Houd er rekening mee dat het teken &quot;=&quot; moet worden voorafgegaan door &quot;\&quot;.
 
 * **Indeling**
-Hiermee geeft u de indeling aan waarin de gebruikers-id wordt opgegeven. Gebruiken:
+Hiermee geeft u de indeling aan waarin de gebruikers-id wordt opgegeven. Gebruik:
 
    * `Basic` als de gebruikers-id is gecodeerd in de indeling HTTP Basic Authentication
    * `AsIs` als de gebruiker-id wordt opgegeven in onbewerkte tekst of als een toegepaste reguliere expressie moet worden gebruikt zoals deze is of een reguliere expressie

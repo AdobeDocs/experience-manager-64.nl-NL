@@ -1,8 +1,8 @@
 ---
 title: Lanceringen maken
-seo-title: Lanceringen maken
+seo-title: Creating Launches
 description: Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina.
-seo-description: Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,48 +11,51 @@ topic-tags: site-features
 discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2f5c022e-bd98-4912-9409-d08137a1caf1
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '406'
 ht-degree: 13%
 
 ---
 
 # Lanceringen maken{#creating-launches}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina&#39;s voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina:
 
-* De titel wordt weergegeven in de **Sidetrap**, vanwaar auteurs ze kunnen openen om aan hen te werken.
+* De titel wordt weergegeven in het dialoogvenster **Sidetrap**, van waaruit auteurs toegang hebben om aan hen te werken.
 * De onderliggende pagina&#39;s van de bronpagina worden standaard in de opstart opgenomen. U kunt desgewenst alleen de bronpagina gebruiken.
-* Standaard worden de startpagina&#39;s automatisch bijgewerkt met [Live kopie](/help/sites-administering/msm.md) als de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
+* Standaard, [Live kopie](/help/sites-administering/msm.md) werkt automatisch de startpagina&#39;s bij terwijl de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
 
 U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de startpagina&#39;s moeten worden gepromoveerd en geactiveerd. De **startdatum** werkt echter alleen in combinatie met de markering **Geschikt voor productie** (zie [Een startconfiguratie bewerken](/help/sites-classic-ui-authoring/classic-launches-editing.md#editing-a-launch-configuration)). Opdat de acties automatisch zouden optreden, moeten beide worden ingesteld.
 
-## Starten {#creating-a-launch} maken
+## Starten maken {#creating-a-launch}
 
 De volgende procedure leidt tot een lancering.
 
-1. Open de pagina van het Beleid van de Website ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
-1. Klik **Nieuw..** dan **Nieuwe start..**.
-1. Geef in het dialoogvenster **Starten maken** waarden op voor de volgende eigenschappen:
+1. De pagina Website Administration ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
+1. Klikken **Nieuw...** dan **Nieuwe start...**.
+1. In de **Starten maken** geeft u waarden op voor de volgende eigenschappen:
 
-   * **Titel** starten: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
+   * **Titel starten**: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
    * **Bronpagina**: Het pad naar de pagina waarvoor de introductie moet worden gemaakt. Standaard worden alle onderliggende pagina&#39;s opgenomen.
-   * **Subpagina&#39;s** uitsluiten: Selecteer deze optie als u alleen de startpagina wilt starten en niet de onderliggende pagina&#39;s. Deze optie is standaard niet geselecteerd.
-   * **Sync** houden: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Dit wordt bereikt door van de lancering een [levende exemplaar](/help/sites-administering/msm.md) te maken.
-   * **Startdatum**: de datum en het tijdstip waarop de lanceerkopie moet worden geactiveerd (afhankelijk van de  **productievlag** Readyflag; zie  [Launches - de Orde van Gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Subpagina&#39;s uitsluiten**: Selecteer deze optie als u alleen de startpagina wilt starten en niet de onderliggende pagina&#39;s. Deze optie is standaard niet geselecteerd.
+   * **Synchronisatie behouden**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Dit wordt bereikt door de lancering van [live kopie](/help/sites-administering/msm.md).
+   * **Opstartdatum**: De datum en het tijdstip waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** vlag; zie [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. Klik **Maken**.
+1. Klikken **Maken**.
 
-## Starten {#deleting-a-launch} verwijderen
+## Een Starten verwijderen {#deleting-a-launch}
 
 U kunt ook een opstart verwijderen.
 
-1. Selecteer de vereiste opstart in het [startpaneel](/help/sites-classic-ui-authoring/classic-launches.md).
-1. Klik **Verwijderen** - bevestiging is vereist:
+1. In de [opstartconsole](/help/sites-classic-ui-authoring/classic-launches.md)selecteert u de gewenste opstart.
+1. Klikken **Verwijderen** - bevestiging is vereist:
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 

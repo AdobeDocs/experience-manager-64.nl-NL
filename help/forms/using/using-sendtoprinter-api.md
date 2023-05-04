@@ -1,23 +1,26 @@
 ---
 title: De sendToPrinter-API gebruiken
-seo-title: De sendToPrinter-API gebruiken
+seo-title: Using the sendToPrinter API
 description: Een document naar de printer verzenden met de service sendToPrinter.
-seo-description: Een document naar de printer verzenden met de service sendToPrinter.
+seo-description: Using the sendToPrinter service to send a document to printer.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '394'
+ht-degree: 0%
 
 ---
 
-# De sendToPrinter-API {#using-the-sendtoprinter-api} gebruiken
+# De sendToPrinter-API gebruiken {#using-the-sendtoprinter-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
@@ -35,7 +38,7 @@ In AEM Forms kunt u een document naar de printer verzenden met de SendToPrinter-
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**: De uitvoerservice ondersteunt het CIFS-afdrukprotocol (Common Internet File System).
 
-## SendToPrinter Service {#using-sendtoprinter-service} gebruiken
+## De SendToPrinter-service gebruiken {#using-sendtoprinter-service}
 
 De onderstaande tabel bevat:
 

@@ -1,20 +1,23 @@
 ---
 title: Kennisgeving over de gebruiksduur van Flash-viewers
-description: Met ingang van 31 januari 2017 is de officiële ondersteuning voor het Flash-viewerplatform door Adobe Dynamic Media Classic beëindigd.
+description: Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic officieel de ondersteuning voor het Flash-viewerplatform beëindigd.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 14c95a98-e4fa-493f-96fb-6522054c186c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 21%
+source-wordcount: '73'
+ht-degree: 10%
 
 ---
 
 # Kennisgeving over de gebruiksduur van Flash-viewers{#flash-viewers-end-of-life-notice}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 *Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic (Scene7) officieel de ondersteuning voor het Flash-viewerplatform beëindigd.*
 

@@ -1,8 +1,8 @@
 ---
 title: Encryption Service Java API QuickStart (SOAP)
-seo-title: Encryption Service Java API QuickStart (SOAP)
+seo-title: Encryption Service Java API QuickStart(SOAP)
 description: Met de Java API voor coderingsservice kunt u een PDF-document versleutelen, op wachtwoorden gebaseerde versleuteling verwijderen, een PDF-document versleutelen met een certificaat, codering op basis van een certificaat verwijderen, een versleuteld PDF-document ontgrendelen en het coderingstype bepalen.
-seo-description: Met de Java API voor coderingsservice kunt u een PDF-document versleutelen, op wachtwoorden gebaseerde versleuteling verwijderen, een PDF-document versleutelen met een certificaat, codering op basis van een certificaat verwijderen, een versleuteld PDF-document ontgrendelen en het coderingstype bepalen.
+seo-description: Use the Encryption Service Java API to encrypt a PDF document, remove password-based encryption, encrypt a PDF document with a certificate, remove certificate-based encryption, unlock an encrypted PDF document, and determine encryption type.
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
 exl-id: 3f287fb1-b1bb-4494-ad66-5addcc6ef2a8
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
 
-# Coderingsservice Java API Quick Start (SOAP) {#encryption-service-java-api-quickstart-soap}
+# Java API Quick Start (SOAP) voor coderingsservice {#encryption-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 [Snel starten (SOAP-modus): Een PDF-document versleutelen met de Java API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
@@ -41,7 +44,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Een PDF-document versleutelen met de Java API {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* versleuteld met de wachtwoordwaarde `OpenPassword`. Het master wachtwoord is `PermissionPassword`. Het beveiligde PDF-document wordt opgeslagen als een PDF-bestand met de naam *EncryptLoan.pdf*. (Zie [PDF-documenten versleutelen met een wachtwoord](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* met een wachtwoordwaarde van `OpenPassword`. Het master wachtwoord is `PermissionPassword`. Het beveiligde PDF-document wordt opgeslagen als een PDF-bestand met de naam *EncryptLoan.pdf*. (Zie [PDF-documenten versleutelen met een wachtwoord](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 ```as3
  /* 
@@ -159,9 +162,9 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf*
  }
 ```
 
-## Snel starten (SOAP-modus): Op wachtwoord gebaseerde codering verwijderen met de Java API {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
+## Snel starten (SOAP-modus): Op wachtwoorden gebaseerde codering verwijderen met de Java API {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt op een wachtwoord gebaseerde codering verwijderd uit een PDF-document met de naam *EncryptLoan.pdf*. De master wachtwoordwaarde die wordt gebruikt om op wachtwoord-gebaseerde encryptie te verwijderen is *PermissionPassword*. Het onbeveiligde PDF-document wordt opgeslagen als een PDF-bestand met de naam *noEncryptionLoan.pdf*. (Zie [Wachtwoordversleuteling verwijderen](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
+In het volgende Java-codevoorbeeld wordt op een wachtwoord gebaseerde codering verwijderd uit een PDF-document met de naam *EncryptLoan.pdf*. De master wachtwoordwaarde die wordt gebruikt om op wachtwoord gebaseerde codering te verwijderen, is *PermissionPassword*. Het onbeveiligde PDF-document wordt opgeslagen als een PDF-bestand met de naam *noEncryptionLoan.pdf*. (Zie [Wachtwoordversleuteling verwijderen](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 
 ```as3
  /* 
@@ -258,7 +261,7 @@ In het volgende Java-codevoorbeeld wordt op een wachtwoord gebaseerde codering v
 
 ## Snel starten (SOAP-modus): Een PDF-document versleutelen met een certificaat met de Java API {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* versleuteld met een certificaat met de naam *Encryption.cer*. Het versleutelde PDF-document wordt opgeslagen als een PDF-bestand met de naam *EncryptLoanCert.pdf*. (Zie [PDF-documenten versleutelen met certificaten](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* met een certificaat genaamd *Codering.cer*. Het gecodeerde PDF-document wordt opgeslagen als een PDF-bestand met de naam *EncryptLoanCert.pdf*. (Zie [PDF-documenten versleutelen met certificaten](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
 ```as3
  /* 
@@ -387,7 +390,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf*
 
 ## Snel starten (SOAP-modus): Op certificaten gebaseerde codering verwijderen met de Java API {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt op een certificaat gebaseerde codering verwijderd uit een PDF-document met de naam *EncryptLoanCert.pdf*. De alias van de openbare sleutel die wordt gebruikt om encryptie te verwijderen is `Encryption`. Het onbeveiligde PDF-document wordt opgeslagen als een PDF-bestand met de naam *noEncryptionLoan.pdf*. (Zie [Op certificaat gebaseerde codering verwijderen](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
+In het volgende Java-codevoorbeeld wordt op een certificaat gebaseerde codering verwijderd uit een PDF-document met de naam *EncryptLoanCert.pdf*. De alias van de openbare sleutel die wordt gebruikt om encryptie te verwijderen is `Encryption`. Het onbeveiligde PDF-document wordt opgeslagen als een PDF-bestand met de naam *noEncryptionLoan.pdf*. (Zie [Versleuteling op basis van een certificaat verwijderen](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
 
 ```as3
  /* 
@@ -484,7 +487,7 @@ In het volgende Java-codevoorbeeld wordt op een certificaat gebaseerde codering 
 
 ## Snel starten (SOAP-modus): Een versleuteld PDF-document ontgrendelen met de Java API {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een met wachtwoord gecodeerd PDF-document met de naam *EncryptLoan.pdf* ontgrendeld. (Zie [Gecodeerde PDF-documenten ontgrendelen](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
+In het volgende Java-codevoorbeeld wordt een met een wachtwoord gecodeerd PDF-document met de naam *EncryptLoan.pdf*. (Zie [Versleutelde PDF-documenten ontgrendelen](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 
 ```as3
  /* 
@@ -580,7 +583,7 @@ In het volgende Java-codevoorbeeld wordt een met wachtwoord gecodeerd PDF-docume
 
 ## Snel starten (SOAP-modus): Coderingstype bepalen met de Java API {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt het type codering bepaald waarmee een PDF-document met de naam *EncryptLoan.pdf* wordt beveiligd. (Zie [Coderingstype bepalen](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
+Het volgende Java-codevoorbeeld bepaalt het type codering dat een PDF-document met de naam *EncryptLoan.pdf*. (Zie [Type codering bepalen](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
 ```as3
  /* 

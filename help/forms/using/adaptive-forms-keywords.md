@@ -1,23 +1,26 @@
 ---
 title: Trefwoorden voor adaptieve formulieren
-seo-title: Trefwoorden voor adaptieve formulieren
+seo-title: Adaptive forms keywords
 description: U kunt deze gereserveerde woorden niet als id's gebruiken in adaptieve formulieren.
-seo-description: U kunt deze gereserveerde woorden niet als id's gebruiken in adaptieve formulieren.
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 13%
+source-wordcount: '244'
+ht-degree: 0%
 
 ---
 
 # Trefwoorden voor adaptieve formulieren {#adaptive-forms-keywords}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde id&#39;s die speciale betekenis hebben voor adaptieve formulieren. U kunt deze trefwoorden niet als id&#39;s gebruiken in adaptieve formulieren. In de volgende tabel worden alle trefwoorden weergegeven die zijn gereserveerd voor id&#39;s voor adaptieve formulieren.
 
@@ -40,7 +43,7 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
   </tr>
   <tr>
    <td><p>checkIfNull</p> </td> 
-   <td><p>initialize</p> </td> 
+   <td><p>initialiseren</p> </td> 
    <td><p>instanceTemplateId</p> </td> 
   </tr>
   <tr>
@@ -59,7 +62,7 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
    <td><p>instances</p> </td> 
   </tr>
   <tr>
-   <td><p>title</p> </td> 
+   <td><p>titel</p> </td> 
    <td><p>resolveNode</p> </td> 
    <td><p>syncXFAProps</p> </td> 
   </tr>
@@ -104,7 +107,7 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
    <td><p>name</p> </td> 
   </tr>
   <tr>
-   <td><p>mandatory</p> </td> 
+   <td><p>verplicht</p> </td> 
    <td><p>deelvenster</p> </td> 
    <td><p>templateId</p> </td> 
   </tr>
@@ -199,7 +202,7 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
    <td><p>activePart</p> </td> 
   </tr>
   <tr>
-   <td><p>toolbar</p> </td> 
+   <td><p>werkbalk</p> </td> 
    <td><p>completionBeforeMessage</p> </td> 
    <td><p>isLastPart</p> </td> 
   </tr>
@@ -241,4 +244,4 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
  </tbody>
 </table>
 
-Gebruik, naast de bovenstaande trefwoorden, geen namen die lijken op [adaptieve formulieren in JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Gebruik niet alleen de bovenstaande trefwoorden, maar gebruik ook namen die vergelijkbaar zijn met [adaptieve formulieren JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).

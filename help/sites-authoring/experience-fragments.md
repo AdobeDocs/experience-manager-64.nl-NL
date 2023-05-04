@@ -1,8 +1,8 @@
 ---
 title: Ervaringsfragmenten
-seo-title: Ervaringsfragmenten
+seo-title: Experience Fragments
 description: Ervaringsfragmenten
-seo-description: 'null'
+seo-description: null
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 exl-id: 8906b3ab-cb08-4b3e-8796-334e36b1e491
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 4%
+source-wordcount: '1280'
+ht-degree: 3%
 
 ---
 
 # Ervaringsfragmenten{#experience-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. Ze kunnen elke gewenste component bevatten.
 
@@ -69,12 +72,12 @@ Er moeten ervaringsfragmenten worden gebruikt:
    * Commerciële inhoud op schaal delen op sociale media
    * Transactie aanraakpunten maken
 
-## Uw ervaringsfragmenten ordenen {#organizing-your-experience-fragments}
+## Fragmenten voor uw ervaring ordenen {#organizing-your-experience-fragments}
 
 Het wordt aanbevolen:
 * mappen gebruiken om uw fragmenten van de ervaring te ordenen,
 
-* [configureer de toegestane sjablonen voor deze mappen](#configure-allowed-templates-folder).
+* [vormen de toegestane malplaatjes op deze omslagen](#configure-allowed-templates-folder).
 
 Door mappen te maken kunt u:
 
@@ -88,39 +91,39 @@ Door mappen te maken kunt u:
 
    >[!NOTE]
    >
-   >U kunt [malplaatjeredacteur](/help/sites-authoring/templates.md) gebruiken om uw eigen malplaatje te creëren.
+   >U kunt de [sjablooneditor](/help/sites-authoring/templates.md) om uw eigen sjabloon te maken.
 
-In het volgende voorbeeld ziet u de ervaringsfragmenten die zijn gestructureerd volgens `Contributors`. De gebruikte structuur illustreert ook hoe andere functies, zoals beheer voor meerdere sites (inclusief taalkopieën), kunnen worden gebruikt.
+In het volgende voorbeeld ziet u de gestructureerde fragmenten van Experience volgens `Contributors`. De gebruikte structuur illustreert ook hoe andere functies, zoals beheer voor meerdere sites (inclusief taalkopieën), kunnen worden gebruikt.
 
 >[!CAUTION]
 >
->De volgende schermafbeelding is als Cloud Service van de WKND-site genomen met Adobe Experience Manager.
+>Het volgende screenshot is met Adobe Experience Manager as a Cloud Service van de WKND-site genomen.
 
 ![Mappen voor ervaringsfragmenten](assets/xf-folders.png)
 
-## Het creëren van en het Vormen van een Omslag voor uw Fragmenten {#creating-and-configuring-a-folder-for-your-experience-fragments} van de Ervaring
+## Het creëren van en het Vormen van een Omslag voor uw Fragmenten van de Ervaring {#creating-and-configuring-a-folder-for-your-experience-fragments}
 
 Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vormen wordt het geadviseerd:
 
-1. [Maak een map](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
+1. [Een map maken](/help/sites-authoring/managing-pages.md#creating-a-new-folder).
 
 1. [Configureer de toegestane sjablonen voor ervaringsfragmenten voor die map](#configure-allowed-templates-folder).
 
 >[!NOTE]
 >
->Het is ook mogelijk om [Toegestane Malplaatjes voor uw instantie ](#configure-allowed-templates-instance) te vormen, maar deze methode is **niet** geadviseerd aangezien de waarden bij verbetering kunnen worden beschreven.
+>Het is ook mogelijk om [Toegestane sjablonen voor uw instantie](#configure-allowed-templates-instance), maar deze methode is **niet** aanbevolen omdat de waarden tijdens de upgrade kunnen worden overschreven.
 
-### Vorm de Toegestane Malplaatjes voor uw Omslag {#configure-allowed-templates-folder}
+### Configureer de toegestane sjablonen voor uw map {#configure-allowed-templates-folder}
 
 >[!NOTE]
 >
->Dit is de geadviseerde methode om **[!UICONTROL Allowed Templates]** te specificeren, aangezien de waarden niet bij verbetering zullen worden beschreven.
+>Dit is de aanbevolen methode voor het opgeven van de **[!UICONTROL Allowed Templates]**, omdat de waarden niet worden overschreven bij een upgrade.
 
-1. Navigeer naar de vereiste **[!UICONTROL Experience Fragments]**-map.
+1. Navigeer naar de vereiste **[!UICONTROL Experience Fragments]** map.
 
 1. Selecteer de map en **[!UICONTROL Properties]**.
 
-1. Geef de reguliere expressie op voor het ophalen van de vereiste sjablonen in het veld **[!UICONTROL Allowed Templates]**.
+1. Geef de reguliere expressie op voor het ophalen van de vereiste sjablonen in het dialoogvenster **[!UICONTROL Allowed Templates]** veld.
 
    Bijvoorbeeld:
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
@@ -133,7 +136,7 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
 >[!CAUTION]
 >
->Het wordt afgeraden de **[!UICONTROL Allowed Templates]** met deze methode te wijzigen, omdat de opgegeven sjablonen tijdens de upgrade kunnen worden overschreven.
+>Het wordt afgeraden de **[!UICONTROL Allowed Templates]** door deze methode, aangezien de gespecificeerde malplaatjes bij verbetering kunnen worden beschreven.
 >
 >Gebruik dit dialoogvenster alleen ter informatie.
 
@@ -143,7 +146,7 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
    ![Knop Configuratie](assets/xf-folders-18.png)
 
-1. Geef de vereiste sjablonen op in het dialoogvenster **[!UICONTROL Configure Experience Fragments]**:
+1. Geef de vereiste sjablonen op in het dialoogvenster **[!UICONTROL Configure Experience Fragments]** dialoogvenster:
 
    ![Fragmenten voor ervaring configureren](assets/xf-folders-19.png)
 
@@ -153,22 +156,22 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
 Een ervaringsfragment maken:
 
-1. Selecteer **[!UICONTROL Experience Fragments]** van de Globale Navigatie.
+1. Selecteren **[!UICONTROL Experience Fragments]** in de globale navigatie.
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigeer naar de vereiste map en selecteer **[!UICONTROL Create]**.
+1. Navigeer naar de gewenste map en selecteer **[!UICONTROL Create]**.
 
-1. Selecteer **[!UICONTROL Experience Fragment]** om de wizard **[!UICONTROL Create Experience Fragment]** te openen.
+1. Selecteren **[!UICONTROL Experience Fragment]** om de **[!UICONTROL Create Experience Fragment]** wizard.
 
-   Selecteer de gewenste **[!UICONTROL Template]** en **[!UICONTROL Next]**:
+   Selecteer de vereiste **[!UICONTROL Template]** vervolgens **[!UICONTROL Next]**:
 
    ![xf-authoring-02](assets/xf-authoring-02.png)
 
 
-1. Voer **[!UICONTROL Properties]** in voor het fragment van uw ervaring.
+1. Voer de **[!UICONTROL Properties]** voor uw Experience Fragment.
 
-   Een **[!UICONTROL Title]** is verplicht. Als **[!UICONTROL Name]** leeg wordt gelaten, wordt deze afgeleid van **[!UICONTROL Title]**.
+   A **[!UICONTROL Title]** is verplicht. Als de **[!UICONTROL Name]** wordt leeg gelaten, wordt het afgeleid van de **[!UICONTROL Title]**.
 
    ![xf-authoring-03](assets/xf-authoring-03.png)
 
@@ -179,31 +182,31 @@ Een ervaringsfragment maken:
    * **[!UICONTROL Done]** om naar de console terug te keren
    * **[!UICONTROL Open]** om de fragmenteditor te openen
 
-## Uw ervaringsfragment {#editing-your-experience-fragment} bewerken
+## Uw ervaringsfragment bewerken {#editing-your-experience-fragment}
 
 De Experience Fragment Editor biedt u vergelijkbare mogelijkheden als de normale pagina-editor. Zie [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md) voor meer informatie over het gebruik ervan.
 
 De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kunt maken:
 
-1. Sleep een **[!UICONTROL Category Teaser]** vanuit de [Componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Sleep een **[!UICONTROL Category Teaser]** van de [Browser voor componenten](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. Selecteer **[[!UICONTROL Configure]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** van de componententoolbar.
-1. Voeg **[!UICONTROL Asset]** toe en definieer **[!UICONTROL Properties]** zoals vereist.
-1. Bevestig de definities met **[!UICONTROL Done]** (tik pictogram).
+1. Selecteren **[[!UICONTROL Configure]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** op de werkbalk van de component.
+1. Voeg de **[!UICONTROL Asset]** en de **[!UICONTROL Properties]** zoals vereist.
+1. De definities bevestigen met **[!UICONTROL Done]** (tik pictogram).
 1. Voeg desgewenst meer componenten toe.
 
-## Een ervaringsfragmentvariatie {#creating-an-experience-fragment-variation} maken
+## Een ervaringsfragmentvariatie maken {#creating-an-experience-fragment-variation}
 
 U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk van uw behoeften:
 
 1. Open het fragment voor [bewerken](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
-1. Open het tabblad **[!UICONTROL Variations]**.
+1. Open de **[!UICONTROL Variations]** tab.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Met** Create kunt u het volgende maken:
+1. **Maken** kunt u maken:
 
    * **[!UICONTROL Variation]**
    * **[!UICONTROL Variation as live-copy]**.
@@ -218,11 +221,11 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 
    ![xf-authoring-07](assets/xf-authoring-07.png)
 
-1. Bevestig met **[!UICONTROL Done]** (tik pictogram), de nieuwe variatie zal in het paneel worden getoond:
+1. Bevestigen met **[!UICONTROL Done]** (tik pictogram), wordt de nieuwe variatie weergegeven in het paneel:
 
    ![xf-authoring-08](assets/xf-authoring-08.png)
 
-## Het gebruiken van uw Fragment van de Ervaring {#using-your-experience-fragment}
+## Uw ervaringsfragment gebruiken {#using-your-experience-fragment}
 
 U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pagina&#39;s:
 
@@ -237,7 +240,7 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
 1. Voeg het daadwerkelijke fragment van de Ervaring aan de componenteninstantie toe; ofwel:
 
    * Sleep het vereiste fragment vanuit de middelenbrowser en zet het neer op de component
-   * Selecteer **[!UICONTROL Configure]** in de componentwerkbalk en geef het te gebruiken fragment op. Bevestig dit met **Done** (tik)
+   * Selecteren **[!UICONTROL Configure]** op de componentwerkbalk en geef het te gebruiken fragment op, bevestigen met **Gereed** (tik)
 
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
@@ -249,7 +252,7 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
 
 U kunt een of meer componenten selecteren om een bouwsteen voor recycling binnen uw fragment te maken:
 
-### Een bouwsteen maken {#creating-a-building-block}
+### Een bouwblok maken {#creating-a-building-block}
 
 Een nieuw bouwblok maken:
 
@@ -257,7 +260,7 @@ Een nieuw bouwblok maken:
 
    ![xf-authoring-12](assets/xf-authoring-12.png)
 
-1. Selecteer **[!UICONTROL Convert to building block]** op de werkbalk Componenten:
+1. Selecteer op de werkbalk Componenten de optie **[!UICONTROL Convert to building block]**:
 
    ![xf-authoring-13-icon](assets/xf-authoring-13-icon.png)
 
@@ -265,7 +268,7 @@ Een nieuw bouwblok maken:
 
    ![xf-authoring-13](assets/xf-authoring-13.png)
 
-1. Voer de naam van de **[!UICONTROL Building Block]** in en bevestig deze met **[!UICONTROL Convert]**:
+1. Voer de naam in van de **[!UICONTROL Building Block]** en bevestigen met **[!UICONTROL Convert]**:
 
    ![xf-authoring-14](assets/xf-authoring-14.png)
 
@@ -275,7 +278,7 @@ Een nieuw bouwblok maken:
 
 ### Een bouwblok beheren {#managing-a-building-block}
 
-Uw bouwsteen is zichtbaar in **[!UICONTROL Building Blocks]** tabel. Voor elk blok zijn de volgende acties beschikbaar:
+Uw bouwsteen is zichtbaar in **[!UICONTROL Building Blocks]** tab. Voor elk blok zijn de volgende acties beschikbaar:
 
 * Ga naar master: open de mastervariatie op een nieuw tabblad
 * Naam wijzigen
@@ -287,15 +290,15 @@ Uw bouwsteen is zichtbaar in **[!UICONTROL Building Blocks]** tabel. Voor elk bl
 
 U kunt de bouwsteen naar het alineasysteem van om het even welk fragment slepen, zoals met om het even welke component.
 
-## De normale HTML-uitvoering {#the-plain-html-rendition}
+## De normale HTML-vertoning {#the-plain-html-rendition}
 
-Met de kiezer `.plain.` in de URL hebt u toegang tot de normale HTML-uitvoering.
+Met de `.plain.` in de URL, kunt u tot de normale vertoning van de HTML toegang hebben.
 
 Dit is beschikbaar in de browser, maar het primaire doel is om andere toepassingen (bijvoorbeeld webapps van derden, aangepaste mobiele implementaties) rechtstreeks toegang te geven tot de inhoud van het Experience Fragment door alleen de URL te gebruiken.
 
-De normale HTML-uitvoering voegt het protocol-, host- en contextpad toe aan paden die:
+Met de uitvoering voor normale HTML worden het protocol, de host en het contextpad toegevoegd aan paden die:
 
-* van het type: `src`, `href` of `action`
+* van het type: `src`, `href`, of `action`
 
 * of eindigen met: `-src`, of `-href`
 
@@ -309,8 +312,8 @@ Bijvoorbeeld:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Fragmenten {#exporting-experience-fragments} exporteren
+## Exporteren van ervaringsfragmenten {#exporting-experience-fragments}
 
-Experience Fragments worden standaard geleverd in de HTML-indeling. Dit kan zowel door AEM als derdekanalen worden gebruikt.
+Standaard worden Experience Fragments geleverd in de HTML-indeling. Dit kan zowel door AEM als derdekanalen worden gebruikt.
 
-Voor exporteren naar Adobe Target wordt HTML gebruikt. Zie [Doelintegratie met ervaringsfragmenten](/help/sites-administering/experience-fragments-target.md) voor volledige informatie.
+Voor export naar Adobe Target wordt HTML gebruikt. Zie [Doelintegratie met ervaringsfragmenten](/help/sites-administering/experience-fragments-target.md) voor volledige informatie.

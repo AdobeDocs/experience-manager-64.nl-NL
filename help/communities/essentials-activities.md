@@ -1,8 +1,8 @@
 ---
 title: Essentiële elementen activiteitsstroom
-seo-title: Essentiële elementen activiteitsstroom
+seo-title: Activity Stream Essentials
 description: Lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud worden uitgevoerd
-seo-description: Lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud worden uitgevoerd
+seo-description: List of recent activites performed by a member or a list of recent activities on a single thread of content
 uuid: 6e4734bb-52a8-4670-b665-e640108b036e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,33 +10,36 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8cc04993-4021-4cb7-b973-5afc4da1ed11
 exl-id: 74dcbefa-e670-419b-af9b-b3d3c593ebaa
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
 # Essentiële elementen activiteitsstroom {#activity-stream-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 De activiteiten van een ondertekend lid van de gemeenschap, zoals het posten aan een forum of blog, worden verzameld in een stroom die op verschillende manieren door configuratie van de component van activiteitenstromen kan worden gefiltreerd en getoond.
 
 De mogelijkheid om te volgen voegt nog een reeks activiteiten toe wanneer leden van de gemeenschap belangenverklaringen of andere leden van de gemeenschap volgen.
 
-Alle [communitysites](overview.md#communitiessites) bevatten een gebruikersprofielpagina voor het ondertekende lid dat lidactiviteiten op dezelfde manier zal tonen.
+Alles [communitysites](overview.md#communitiessites) Neem een gebruikersprofielpagina op voor het aangemelde lid dat de activiteiten van leden op dezelfde manier weergeeft.
 
 ## Concepten {#concepts}
 
-Een *activiteitsstroom* is de lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud, zoals een forumonderwerp of blog worden uitgevoerd.
+An *activiteitsstroom* is de lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud, zoals een forumonderwerp of blog worden uitgevoerd.
 
 Een lid kan een activiteitenstroom volgen, door of een ander individu of inhoud te volgen.
 
-Een *nieuwsfeed* is een samenvoeging van de activiteitenstromen die door een lid in één enkele stroom worden gevolgd.
+A *nieuwsfeed* is een samenvoeging van de activiteitsstromen die door een lid in één enkele stroom worden gevolgd.
 
-A [social graph](essentials-socialgraph.md) vangt de volgende verhoudingen van één lid aan een andere.
+A [sociale grafiek](essentials-socialgraph.md) vangt de volgende verhoudingen van één lid aan een andere.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -53,7 +56,7 @@ A [social graph](essentials-socialgraph.md) vangt de volgende verhoudingen van �
    <td>cq.social.hbs.activitystreams</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td> /libs/social/activitystreams/components/hbs/activitystreams/activitystreams.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity-title.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity.hbs</td> 
   </tr>
   <tr>
@@ -79,4 +82,4 @@ A [social graph](essentials-socialgraph.md) vangt de volgende verhoudingen van �
 
 ### Functie activiteitsstroom {#activity-stream-function}
 
-Een community-sitestructuur die de [Activiteitenstroomfunctie](functions.md#activity-stream-function) bevat, bevat een geconfigureerde `activity streams`-component.
+Een community-sitestructuur die de [Activiteitenstroomfunctie](functions.md#activity-stream-function)bevat een configuratie `activity streams` component.

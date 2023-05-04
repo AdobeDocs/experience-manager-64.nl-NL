@@ -1,8 +1,8 @@
 ---
 title: Indelingsontwerp
-seo-title: Indelingsontwerp
+seo-title: Layout Design
 description: Layout Design Details legt uit hoe u lay-outs kunt maken die voor uw brieven of Interactieve Mededelingen moeten worden gebruikt.
-seo-description: Layout Design Details legt uit hoe u lay-outs kunt maken die voor uw brieven of Interactieve Mededelingen moeten worden gebruikt.
+seo-description: Layout Design Details explains how you can create layouts to be used for your letters or Interactive Communications.
 uuid: b21af474-07f5-4bfe-af7d-0c322e2452ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,26 +10,29 @@ topic-tags: correspondence-management, interactive-communications
 discoiquuid: 046b1bf9-1ac7-4e2e-ab37-6fe5422dfa20
 feature: Correspondence Management
 exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1317'
 ht-degree: 0%
 
 ---
 
 # Indelingsontwerp {#layout-design}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 XFA-formuliersjablonen of XDP&#39;s zijn de sjablonen voor:
 
 * [Letters](/help/forms/using/create-letter.md)
-* [Kanaal ](/help/forms/using/web-channel-print-channel.md#printchannel) voor  [interactieve communicatie afdrukken](/help/forms/using/interactive-communications-overview.md)
+* [Kanaal afdrukken](/help/forms/using/web-channel-print-channel.md#printchannel) van [Interactieve communicatie](/help/forms/using/interactive-communications-overview.md)
 
 * Lay-outfragmenten
 
 Een XDP is ontworpen in Adobe Forms Designer. Dit artikel bevat informatie over hoe u XDP&#39;s kunt ontwerpen voor het maken van effectieve overeenkomsten/interactieve communicatie, zoals waar u formuliervelden of doelgebieden wilt gebruiken en wanneer u lay-outfragmenten wilt gebruiken.
 
-## Een lay-out maken voor letters of voor het afdrukkanaal {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel} van Interactieve communicatie
+## Een lay-out maken voor letters of voor het afdrukkanaal van Interactieve communicatie {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
 Een lay-out bepaalt de grafische lay-out van een brief/drukkanaal van een Interactieve Mededeling. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. Maak de indeling in de formulierontwerper en wanneer deze is voltooid, uploadt de Application Specialist de indeling naar AEM server. Van daar, kunt u de lay-out selecteren wanneer het creëren van een correspondentiesjabloon of een drukkanaal van een Interactieve Mededeling.
 
@@ -50,22 +53,22 @@ Ga als volgt te werk om lay-outs voor letters/drukkanaal van Interactieve Medede
    1. Voor de sectie Primaire woonplaats voegt u een plaatsaanduiding als doelgebied toe. Deze tijdelijke aanduiding is gebonden aan een fragment voor de primaire verblijfplaats op het moment dat er een letter/interactieve communicatie wordt ontworpen.
    1. Upload de lay-out (en het eventuele fragment dat de lay-out gebruikt) naar de AEM Forms-server.
 
-## Schema {#using-schema} gebruiken
+## Schema gebruiken {#using-schema}
 
 U kunt een schema in een lay-out- of lay-outfragment gebruiken, maar het is niet verplicht. Als u een schema gebruikt, zorg het volgende ervoor:
 
 1. Layout en alle fragmentlay-outs die in een brief/Interactieve Communicatie worden gebruikt gebruiken het zelfde schema zoals de brief/Interactieve Communicatie.
 1. Alle velden die moeten worden gevuld met gegevens, zijn gebonden aan het schema.
 
-## Relateerbare velden {#creating-relatable-fields} maken
+## Betrouwbare velden maken {#creating-relatable-fields}
 
 Standaard worden alle velden beschouwd als relatief ten opzichte van verschillende andere gegevensbronnen. Als uw layout velden bevat die niet kunnen worden vergeleken met een gegevensbron, geeft u het veld een naam met het achtervoegsel &quot;_int&quot; (internal); bijvoorbeeld pageCount_int.
 
 Een relatable veld moet:
 
-* een XFA &lt;field> of &lt;exclGroup> zijn
+* zijn een XFA &lt;field> of &lt;exclgroup>
 * hebben een XFA-bindingsverwijzing
-* als het een &lt;exclGroup> is, moet het ten minste één onderliggend keuzerondje hebben; anders kan het waardetype niet worden bepaald
+* als het een &lt;exclgroup>, moet het ten minste één onderliggend keuzerondje hebben; anders kan het waardetype niet worden bepaald
 
 Een relatable veld moet:
 
@@ -75,7 +78,7 @@ Een relatable veld mag niet:
 
 * Een achtervoegsel &quot;_int&quot; in de naam opnemen
 * hebben binding ingesteld als &quot;none&quot;
-* een onderliggend element zijn van een &lt;exclGroup>-element
+* een kind zijn van een &lt;exclgroup> element
 
 Zolang een relatable gebied aan de hierboven beschreven criteria voldoet, kan het op om het even welke plaats en bij om het even welke het nesten diepte in de lay-out zijn. U kunt relatable gebieden binnen master pagina&#39;s gebruiken.
 
@@ -124,8 +127,8 @@ Gebruik een veld als u gegevens uit de module of gegevenswoordenboekelementen wi
 
 Wanneer elementen zoals het logo en het adres van uw organisatie op alle pagina&#39;s van een brief/Interactieve Mededeling verschijnen, creeer vormgebieden voor die elementen en plaats hen op de master pagina. Gebruik de binding Naam (veldnaam) voor deze velden.
 
-## De renderindeling van de server opgeven {#specify-the-server-nbsp-render-format}
+## De serverrenderindeling opgeven {#specify-the-server-nbsp-render-format}
 
 Gebruik de serverrenderindeling van de indeling naar dynamisch XML-formulier; anders, kunnen om het even welke brieven/Interactieve Mededelingen die op deze lay-out worden gebaseerd niet correct teruggeven. Standaard wordt de indeling voor het renderen van de server in Forms Designer ingesteld op Dynamisch XML-formulier. U zorgt ervoor dat de juiste indeling wordt gebruikt:
 
-* Klik in Designer op **[!UICONTROL File > Form Properties > Default]** en controleer of de instelling voor PDF renderen/indeling is ingesteld op Dynamisch XML-formulier.
+* Klik in Designer op **[!UICONTROL File > Form Properties > Default]** en zorg ervoor dat de instelling PDF Render/Format is ingesteld op Dynamisch XML-formulier.

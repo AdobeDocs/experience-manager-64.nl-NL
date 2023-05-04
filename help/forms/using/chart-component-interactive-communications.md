@@ -1,8 +1,8 @@
 ---
 title: Het gebruiken van grafieken in Interactieve Mededelingen
-seo-title: De component van de grafiek in Interactieve Mededelingen
-description: 'Met diagrammen in een interactieve communicatie kunt u grote hoeveelheden informatie comprimeren tot een eenvoudig te analyseren en te begrijpen visuele indeling  '
-seo-description: AEM Forms verstrekt een grafiekcomponent die u kunt gebruiken om grafieken in uw Interactieve Communicatie tot stand te brengen. Dit document verklaart basis en agentenconfiguraties van de grafiekcomponent.
+seo-title: Chart component in Interactive Communications
+description: Met diagrammen in een interactieve communicatie kunt u grote hoeveelheden informatie comprimeren tot een eenvoudig te analyseren en te begrijpen visuele indeling
+seo-description: AEM Forms provides a chart component that you can use to create charts in your Interactive Communication. This document explains basic and agent configurations of the chart component.
 uuid: dedd670c-030b-4497-bbcb-3ad935cebcda
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,15 +10,18 @@ topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 feature: Interactive Communication
 exl-id: 99077042-cba9-4429-b1e0-830739de5939
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2393'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
 
 # Het gebruiken van grafieken in Interactieve Mededelingen {#using-charts-in-interactive-communications}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Met diagrammen in een interactieve communicatie kunt u grote hoeveelheden informatie comprimeren tot een eenvoudig te analyseren en te begrijpen visuele indeling
 
@@ -35,7 +38,7 @@ Terwijl het creëren van een Interactieve Communicatie, kunt u grafieken toevoeg
 * Punt
 * Gebied
 
-## Grafiek toevoegen en configureren in een interactieve communicatie {#add-and-configure-chart-in-an-interactive-communication}
+## Voeg en vorm grafiek in een Interactieve Communicatie toe {#add-and-configure-chart-in-an-interactive-communication}
 
 Voltooi de volgende stappen om een grafiek aan een Interactieve Mededeling toe te voegen:
 
@@ -46,34 +49,34 @@ Voltooi de volgende stappen om een grafiek aan een Interactieve Mededeling toe t
 
    De gelaten vallen component van de Grafiek, leidt tot placeholder voor een grafiek.
 
-1. Tik op de diagramcomponent in de Interactieve Communication-editor en selecteer **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png) op de werkbalk Component).
+1. Tik op de diagramcomponent in de Interactieve Communicatie-editor en selecteer op de werkbalk Component **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png)).
 
    De zijbalk Eigenschappen wordt weergegeven met de eigenschappen Standaard van het diagram in de focus.
 
    ![Basiseigenschappen van een lijntekstdiagram in een afdrukkanaal](assets/chart_basicproperties.png)
-   **Figuur:** *Basiseigenschappen van een lijntypegrafiek in drukkanaal*
+   **Afbeelding:** *Basiseigenschappen van een lijntekstdiagram in een afdrukkanaal*
 
    ![Basiseigenschappen van een lijntekstdiagram in een webkanaal](assets/basicpropertieswebchannel.png)
-   **Figuur:** *Basiseigenschappen van een lijntypegrafiek in Webkanaal*
+   **Afbeelding:** *Basiseigenschappen van een lijntekstdiagram in een webkanaal*
 
 1. Configureer de basiseigenschappen van het diagram voor afdrukkanaal en webkanaal. Naast de algemene eigenschappen zijn er eigenschappen die specifiek zijn voor afdrukken, webkanalen en het diagramtype.
 
    * **[!UICONTROL Name]**: Naam van het grafiekobject. De naam van de grafiek die u hier specificeert verschijnt niet in de grafiekoutput maar in regels wordt gebruikt om naar de grafiek te verwijzen.
    * **[!UICONTROL Chart Type]**: Geef het diagramtype op: Schijf, Kolom, Donut, Lijn, Lijn en Punt, Punt, of Gebied.
    * **[!UICONTROL Hide Object]**: Selecteer deze optie om het diagram in de uiteindelijke uitvoer te verbergen.
-   * Geef het volgende op voor **[!UICONTROL x-axis]** en **[!UICONTROL y-axis]**:
+   * Geef de volgende instellingen op voor **[!UICONTROL x-axis]** en **[!UICONTROL y-axis]**:
 
       * **[!UICONTROL Title]**: Geef de titels voor de X- en Y-as op die moeten worden weergegeven in de interactieve communicatie.
-      * **[!UICONTROL Data Model Object *]**: Blader door gegevensmodelobjecten voor de X- en Y-as van het diagram en selecteer deze in het formuliergegevensmodel dat u tijdens het maken van de interactieve communicatie hebt opgegeven. Kies twee eigenschappen voor verzamel-/arraytype van hetzelfde bovenliggende gegevensmodelobject die van betekenis zijn ten opzichte van elkaar om te plotten op de X- en Y-as van een grafiek.
-      * **[!UICONTROL Function]**: Als u statistische functies wilt gebruiken om de waarden op de as te berekenen, selecteert u functie voor de X-/Y-as. Zie [Functies in diagram](#usefunction) en [Voorbeeld 2 gebruiken voor meer informatie over functies: Toepassing van de som en de gemiddelde functies in een lijngrafiek](#applicationsumfrequency).
+      * **[!UICONTROL Data Model Object *]**: Blader door gegevensmodelobjecten voor de X- en Y-as van het diagram en selecteer deze in het formuliergegevensmodel dat u tijdens het maken van de interactieve communicatie hebt opgegeven. Kies twee eigenschappen voor verzamel-/arraytype van hetzelfde bovenliggende gegevensmodelobject die relevant zijn ten opzichte van elkaar om te plotten op de X- en Y-as van een grafiek.
+      * **[!UICONTROL Function]**: Als u statistische functies wilt gebruiken om de waarden op de as te berekenen, selecteert u functie voor de X-/Y-as. Zie voor meer informatie over functies [Functies in diagram gebruiken](#usefunction) en [Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijndiagram](#applicationsumfrequency).
 
    >[!NOTE]
    >
    >Voor een afdrukkanaal moet het gegevensmodelobject dat u koppelt op de X-as van het type Number, String of Date zijn. Op de Y-as moet het gegevensmodelobject dat u koppelt van het type Number zijn. U wordt aangeraden de rechterlegenda in het afdrukkanaal te gebruiken.
 
-   Voor meer informatie over grafiekeigenschappen, zie [Basiseigenschappen in grafieken](#basicpropertiescharts).
+   Voor meer informatie over grafiekeigenschappen raadpleegt u [Basiseigenschappen in grafieken](#basicpropertiescharts).
 
-1. (Alleen kanaal afdrukken) Geef in de Instellingen van de agent op of de agent dit diagram moet gebruiken. Als de optie **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** niet wordt geselecteerd, kan de agent het oogpictogram voor de grafiek op het lusje van de Inhoud van de UI van de Agent tikken om de grafiek te tonen/te verbergen.
+1. (Alleen kanaal afdrukken) Geef in de Instellingen van de agent op of de agent dit diagram moet gebruiken. Indien i **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** wordt niet geselecteerd, kan de agent het oogpictogram voor de grafiek in het lusje van de Inhoud van de UI van de Agent tikken om de grafiek te tonen/te verbergen.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
@@ -94,28 +97,28 @@ Hiervoor moet u het volgende opgeven:
 * **[!UICONTROL Chart Type]** - in dit voorbeeld, Kolom voor het gedrukte kanaal en Donut voor het Webkanaal
 * **[!UICONTROL Data Model Objects]** als bron voor de X- en Y-as van het diagram - in dit voorbeeld, de hoeveelheid transacties voor de X-as en de naam van de kosten voor de Y-as
 * **[!UICONTROL Title]** voor de X- en Y-as (alleen in dit voorbeeld voor Kolomtypeschema in het afdrukkanaal) - in dit voorbeeld Hoeveelheid ($) voor de X-as en Uitgaven voor de Y-as.
-* **[!UICONTROL Label Direction]** (alleen in dit voorbeeld voor Kolomtypeschema in het afdrukkanaal) - in dit voorbeeld  `Tilt Left`
+* **[!UICONTROL Label Direction]** (alleen in dit voorbeeld voor Kolomtypeschema in het afdrukkanaal) - in dit voorbeeld `Tilt Left`
 
-* **[!UICONTROL Tooltip]** om met de muis boven een uitgave weer te geven (alleen webkanaal) - in dit voorbeeld  `${x}: $ ${y}`, dat als  `[Expense Label: $ Amount]` (Voorbeeld: Bezoek themapark: $ 315)
+* **[!UICONTROL Tooltip]** om met de muis boven een uitgave weer te geven (alleen webkanaal) - in dit voorbeeld `${x}: $ ${y}`, die wordt weergegeven als `[Expense Label: $ Amount]` (Voorbeeld: Bezoek themapark: $ 315)
 
-![Kolomdiagram in de afdrukuitvoer van een interactieve ](assets/chartprintchannel.png)
-**CommunicationFigure:** *Kolomgrafiek in de afdrukuitvoer van een interactieve communicatie*
+![Kolomdiagram in de afdrukuitvoer van een interactieve communicatie](assets/chartprintchannel.png)
+**Afbeelding:** *Kolomdiagram in de afdrukuitvoer van een interactieve communicatie*
 
-**A.** Y-as - Hoeveelheid opgehaald uit de eigenschap van het formuliergegevensmodel en de eigenschap Titel ingesteld op Bedrag ($)  **B.** Labelrichting van X-as ingesteld op Linkeras  **C.** X - Beschrijving van kosten opgehaald uit de eigenschap van het formuliergegevensmodel en de eigenschap Titel ingesteld op Kosten
+**A.** Y-as - Hoeveelheid opgehaald uit de eigenschap van het formuliergegevensmodel en de eigenschap Titel ingesteld op Bedrag ($) **B.** Labelrichting van X-as ingesteld op Linksom kantelen **C.** X-as - beschrijving van kosten die is opgehaald van de eigenschap van het formuliergegevensmodel en de eigenschap Titel ingesteld op Kosten
 
-![Donut grafiek in de Weboutput van een Interactieve ](assets/chartwebchannel.png)
-**CommunicationFigure:** *Donut grafiek in de Weboutput van een Interactieve Mededeling*
+![Donut grafiek in de Weboutput van een Interactieve Mededeling](assets/chartwebchannel.png)
+**Afbeelding:** *Donut grafiek in de Weboutput van een Interactieve Mededeling*
 
-**A.** De eigenschap Binnenste straal van de donut wordt ingesteld  **B.** De eigenschap Legenda tonen is geselecteerd en de eigenschap Positie van de Legenda wordt ingesteld op Rechts  **C.** Knopinfo geeft de details van het item weer bij muisklik - Knopinfo wordt ingesteld op ${x}: ${y}
+**A.** De eigenschap Binnenste straal van de donut is ingesteld **B.** Legenda-eigenschap tonen is geselecteerd en positie-eigenschap legenda is ingesteld op Rechts **C.** Knopinfo geeft de details van het item weer bij muisklik - Knopinfo is ingesteld op ${x}: ${y}
 
 ## Voorbeeld 2: Toepassing van de functies van de Som en van de Frequentie in een lijngrafiek {#applicationsumfrequency}
 
 Door functies in een grafiek toe te passen, kunt u gegevens plotten die niet direct door het model van vormgegevens worden verstrekt. In dit voorbeeld, gebruiken wij een voorbeeld van de creditcardverklaring om te begrijpen hoe de functies van de Som en van de Frequentie op de grafiek kunnen worden toegepast.
 
-![Regeldiagram zonder functie met drie ](assets/creditcarddatalinechartcopy.png)
-**transacties &quot;Bed en Ontbijt&quot;Afbeelding:** *Lijndiagram zonder functie met drie transacties &quot;Bed en Ontbijt&quot;*
+![Regeldiagram zonder functie met drie &quot;Bed and Breakfast&quot;-transacties](assets/creditcarddatalinechartcopy.png)
+**Afbeelding:** *Regeldiagram zonder functie met drie &quot;Bed and Breakfast&quot;-transacties*
 
-### Som, functie {#sum-function}
+### Sum, functie {#sum-function}
 
 U kunt de functie sum toepassen om waarden van meerdere instanties van dezelfde gegevenseigenschap op te tellen en deze slechts eenmaal weer te geven. In de volgende grafiek wordt bijvoorbeeld de functie Som toegepast op de Y-as om de hoeveelheid van de drie Bed- en Ontbijttransacties ($99,45, $78 en $12) op te tellen en slechts één transactie ($189,45) weer te geven.
 
@@ -133,29 +136,29 @@ De functie Frequentie retourneert het aantal waarden op de X- of Y-as voor een b
 
 Op het tabblad Standaard kunt u de volgende eigenschappen configureren:
 
-**** NameAn-id voor het grafiekelement. De naam is niet zichtbaar op de grafiek maar helpt wanneer het verwijzen naar het element van andere componenten, manuscripten, en uitdrukkingen SOM.
+**Naam** Een id voor het grafiekelement. De naam is niet zichtbaar op de grafiek maar helpt wanneer het verwijzen naar het element van andere componenten, manuscripten, en uitdrukkingen SOM.
 
-**Titel (alleen kanaal afdrukken)** Hiermee geeft u de titel van het diagram op.
+**Titel (alleen kanaal afdrukken)** Geeft de titel van het diagram aan.
 
-**Diagram** typeHiermee geeft u het type diagram op dat u wilt genereren. De beschikbare opties zijn Schijf, Kolom, Donut, Bar (alleen webkanaal), Lijn, Lijn en Punt, Punt en Gebied. Zie voorbeeld 1 voor meer informatie: Uitvoer van diagram in afdruk en web.
+**Type diagram** Hiermee geeft u het type diagram op dat u wilt genereren. De beschikbare opties zijn Schijf, Kolom, Donut, Bar (alleen webkanaal), Lijn, Lijn en Punt, Punt en Gebied. Zie voorbeeld 1 voor meer informatie: Uitvoer van diagram in afdruk en web.
 
-**X-as >** TitleHiermee geeft u de titel voor de x-as op.
+**X-as > Titel** Hiermee geeft u de titel voor de x-as op.
 
-**X-as > Gegevensmodelobject&amp;ast;** Geef de naam op van het gegevensmodelverzamelingsitem dat moet worden getekend op de x-as.
+**X-as > Gegevensmodelobject&amp;ast;** Geef de naam op van het gegevensmodelverzamelingsitem dat op de x-as moet worden getekend.
 
-**X-as >** FunctionGeeft de statistische/aangepaste functie op die moet worden gebruikt voor het berekenen van de waarden op de x-as. Voor meer informatie over functies, zie de functies van het Gebruik in grafiek en Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek.
+**X-as > Functie** Geeft de statistische/aangepaste functie op die moet worden gebruikt voor het berekenen van de waarden op de x-as. Voor meer informatie over functies, zie de functies van het Gebruik in grafiek en Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek.
 
-**X-as >** Labelrichting van het label op het diagram in het afdrukkanaal. Als u de richting van het label kiest als Aangepaste rotatie, wordt het veld Aangepaste rotatiehoek (graden) weergegeven. In het veld Aangepaste rotatiehoek (graden) kunt u een rotatiehoek kiezen in stappen van 15 graden.
+**X-as > Labelrichting** Richting van het label op het diagram in afdrukkanaal. Als u de richting van het label kiest als Aangepaste rotatie, wordt het veld Aangepaste rotatiehoek (graden) weergegeven. In het veld Aangepaste rotatiehoek (graden) kunt u een rotatiehoek kiezen in stappen van 15 graden.
 
-**Y-as >** TitelHiermee geeft u de titel voor de y-as op.
+**Y-as > Titel** Hiermee geeft u de titel voor de y-as op.
 
-**Y-as > Gegevensmodelobject&amp;ast;** geeft het verzamelitem van het formuliergegevensmodel op dat moet worden getekend op de y-as. In het kanaal van de Druk, zou het gegevensmodelvoorwerp voor de y-as van type Number moeten zijn.
+**Y-as > Gegevensmodelobject&amp;ast;** Hiermee geeft u het verzamelitem van het formuliergegevensmodel op dat op de y-as moet worden getekend. In het kanaal van de Druk, zou het gegevensmodelvoorwerp voor de y-as van type Number moeten zijn.
 
-**Y-as >** FunctionGeeft de statistische/aangepaste functie op die moet worden gebruikt voor het berekenen van de waarden op y-as. Voor meer informatie over functies, zie de functies van het Gebruik in grafiek en Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek.
+**Y-as > Functie** Geeft de statistische/aangepaste functie op die moet worden gebruikt voor het berekenen van de waarden op de y-as. Voor meer informatie over functies, zie de functies van het Gebruik in grafiek en Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek.
 
-**Legenda tonenHiermee geeft u een legenda voor de taart of het donutdiagram weer als deze optie is ingeschakeld.** 
+**Legenda tonen** Hiermee geeft u een legenda weer voor de taart of het donutdiagram als dit is ingeschakeld.
 
-**Positie legendaGeeft de positie van de legenda** ten opzichte van het diagram aan. De beschikbare opties zijn Rechts, Links, Boven en Onder.
+**Legenda** Geeft de positie van de legenda ten opzichte van het diagram aan. De beschikbare opties zijn Rechts, Links, Boven en Onder.
 
 **Hoogte (alleen kanaal afdrukken)** Hoogte van het diagram in pixels.
 
@@ -165,19 +168,19 @@ Op het tabblad Standaard kunt u de volgende eigenschappen configureren:
 >
 >U kunt de breedte van het diagram in het webkanaal bepalen met behulp van de stijllaag of door een thema toe te passen.
 
-**Knopinfo (alleen webkanaal)** Hiermee geeft u de indeling op waarin de knopinfo wordt weergegeven op de muis over een gegevenspunt in het diagram in het webkanaal. De standaardwaarde is \${x} (\${y}). Afhankelijk van het grafiektype, wanneer u de muis op een punt, bar, of plak in de grafiek richt, worden de variabelen \$ {x} en \$ {y} dynamisch vervangen met de overeenkomstige waarden op x-as en y-as en getoond in tooltip.
+**Knopinfo (alleen webkanaal)** Hiermee geeft u de indeling op waarin de knopinfo wordt weergegeven bij de muisaanwijzer op een gegevenspunt in het diagram in het webkanaal. De standaardwaarde is \${x} (\${y}). Afhankelijk van het grafiektype, wanneer u de muis op een punt, bar, of plak in de grafiek richt, worden de variabelen \$ {x} en \$ {y} dynamisch vervangen met de overeenkomstige waarden op x-as en y-as en getoond in tooltip.
 
 Laat het veld Knopinfo leeg als u knopinfo wilt uitschakelen. Deze optie is niet van toepassing op lijngrafieken en vlakgrafieken. Zie bijvoorbeeld [Voorbeeld 1: Uitvoer van diagram in afdruk en web](#chartoutputprintweb).
 
-**CSS-klasse (alleen webkanaal)** Geef de naam van een CSS-klasse op in het CSS-klassenveld om aangepaste opmaak toe te passen op het diagram.
+**CSS-klasse (alleen webkanaal)** Geef de naam van een CSS-klasse op in het veld CSS-klasse om aangepaste opmaak toe te passen op het diagram.
 
 **Verplicht pagina-einde voor (alleen kanaal afdrukken)** Selecteer deze optie om een verplicht pagina-einde toe te voegen vóór het diagram en het diagram boven op een nieuwe pagina te plaatsen.
 
-**Verplicht pagina-einde na (alleen kanaal afdrukken)** Selecteer deze optie om een verplicht pagina-einde toe te voegen na het diagram en de inhoud van het diagram boven op een nieuwe pagina te plaatsen.
+**Verplicht pagina-einde na (alleen kanaal afdrukken)** Selecteer deze optie om een verplicht pagina-einde toe te voegen na het diagram en de inhoud te volgen op het diagram boven aan een nieuwe pagina.
 
-**Inspringing (alleen kanaal afdrukken)** Geef de inspringing van het diagram links op de pagina op.
+**Inspringing (alleen kanaal afdrukken)** Geef de inspringing van het diagram op vanaf de linkerzijde van de pagina.
 
-**Grafiekspecifieke** configuratiesNaast gemeenschappelijke configuraties, zijn de volgende grafiek-specifieke configuratie beschikbaar:
+**Diagramspecifieke configuraties** Naast gemeenschappelijke configuraties, zijn de volgende grafiek-specifieke configuratie beschikbaar:
 
 * **Binnenstraal**: beschikbaar voor Donut-grafieken om de straal (in pixel) van de binnencirkel in de grafiek te specificeren.
 * **Lijnkleur**: beschikbaar voor de grafieken van de Lijn, van de Lijn en van het Punt, en van het Gebied om de hexadecimale waarde van de kleur voor de lijn in de grafiek te specificeren.
@@ -185,7 +188,7 @@ Laat het veld Knopinfo leeg als u knopinfo wilt uitschakelen. Deze optie is niet
 
 * **Gebiedskleur**: beschikbaar voor vlakgrafieken om de hexadecimale waarde van de kleur voor het gebied onder de regel in het diagram op te geven.
 
-## Functies in diagram {#usefunction} gebruiken
+## Functies in diagram gebruiken {#usefunction}
 
 U kunt een grafiek vormen om statistische functies te gebruiken om waarden van de brongegevens voor het tekenen op de grafiek te berekenen. Door functies in een grafiek toe te passen, kunt u gegevens plotten die niet direct door het model van vormgegevens worden verstrekt.
 
@@ -201,21 +204,21 @@ Terwijl de component van de Grafiek met sommige ingebouwde functies komt, kunt u
 
 De volgende functies zijn standaard beschikbaar met de component Chart:
 
-**Gemiddeld (gemiddeld)** Geeft het gemiddelde van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Gemiddeld (gemiddeld)** Retourneert het gemiddelde van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
 
-**** SumRetourneert de som van alle waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Som** Retourneert de som van alle waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
 
-**** MaximumRetourneert het maximum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Maximum** Retourneert het maximum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
 
-**** FrequencyHiermee wordt het aantal waarden op de X- of Y-as van een bepaalde waarde op de andere as geretourneerd.
+**Frequentie** Retourneert het aantal waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
 
-**** RangeGeeft het verschil tussen het maximum en het minimum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Bereik** Geeft als resultaat het verschil tussen het maximum en het minimum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
 
-**** MedianRetourneert de waarde die hogere en lagere waarden in de helft op de X- of Y-as scheidt voor een bepaalde waarde op de andere as.
+**Mediaan** Retourneert de waarde die hogere en lagere waarden in de helft op de X- of Y-as scheidt voor een bepaalde waarde op de andere as.
 
-**** MinimumGeeft als resultaat het minimum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
+**Minimaal** Geeft als resultaat het minimum van de waarden op de X- of Y-as voor een bepaalde waarde op de andere as.
 
-**** ModeHiermee wordt de waarde geretourneerd waarvan de meeste instanties zich op de X- of Y-as bevinden voor een bepaalde waarde op de andere as
+**Modus** Hiermee wordt de waarde geretourneerd waarvan de meeste instanties op de X- of Y-as staan voor een bepaalde waarde op de andere as
 
 ### Aangepaste functies in webkanaal {#custom-functions-in-web-channel}
 
@@ -235,15 +238,15 @@ Multiply(valueArray, category) {
 
 Zodra u een douanefunctie hebt geschreven, doe het volgende om het voor gebruik in de grafiekconfiguratie beschikbaar te maken:
 
-1. Voeg de douanefunctie in de cliëntbibliotheek toe verbonden aan de relevante Interactieve Communicatie. Zie [De handeling Verzenden configureren](/help/forms/using/configuring-submit-actions.md) en [Client-Side Libraries](/help/sites-developing/clientlibs.md) gebruiken voor meer informatie.
+1. Voeg de douanefunctie in de cliëntbibliotheek toe verbonden aan de relevante Interactieve Communicatie. Zie voor meer informatie [De handeling Verzenden configureren](/help/forms/using/configuring-submit-actions.md) en [Client-Side bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
 
-1. Als u de aangepaste functie wilt weergeven in de vervolgkeuzelijst Functie, maakt u in CRXDe Lite een `nt:unstructured`-knooppunt in de map apps met de volgende eigenschappen:
+1. Als u de aangepaste functie wilt weergeven in de keuzelijst Functie, maakt u in CRXDe Lite een `nt:unstructured` in de map apps met de volgende eigenschappen:
 
-   * Voeg eigenschap `guideComponentType` toe met waarde als `fd/af/reducer`. (mandatory)
-   * Voeg eigenschap `value` toe aan een volledig gekwalificeerde naam van de aangepaste JavaScript™-functie. (verplicht) en de waarde ervan instellen op de naam van de aangepaste functie, zoals Vermenigvuldigen.
-   * Voeg eigenschap `jcr:description` toe met de waarde die u wilt weergeven als de naam van de aangepaste functie die wordt weergegeven in de vervolgkeuzelijst Functie. Bijvoorbeeld **Vermenigvuldigen**.
-   * Voeg eigenschap `qtip` toe met waarde die een korte beschrijving van de aangepaste functie zal zijn. Het verschijnt als tooltip wanneer het hangen van wijzer over de functienaam in **Functie** drop-down lijst.
+   * Eigenschap toevoegen `guideComponentType` met waarde als `fd/af/reducer`. (verplicht)
+   * Eigenschap toevoegen `value` naar een volledig gekwalificeerde naam van de aangepaste JavaScript™-functie. (verplicht) en de waarde ervan instellen op de naam van de aangepaste functie, zoals Vermenigvuldigen.
+   * Eigenschap toevoegen `jcr:description` met de waarde die u wilt weergeven als de naam van de aangepaste functie die wordt weergegeven in de vervolgkeuzelijst Functie. Bijvoorbeeld: **Vermenigvuldigen**.
+   * Eigenschap toevoegen `qtip` met een waarde die een korte beschrijving van de aangepaste functie is. Het wordt weergegeven als knopinfo wanneer u de aanwijzer boven de functienaam in het dialoogvenster **Functie** vervolgkeuzelijst.
 
-1. Klik **sparen allen** om de configuratie te bewaren.
+1. Klikken **Alles opslaan** om de configuratie op te slaan.
 
 De functie is nu beschikbaar voor gebruik in de Grafiek.

@@ -1,8 +1,8 @@
 ---
 title: Klassieke UI-tagconsole
-seo-title: Klassieke UI-tagconsole
+seo-title: Classic UI Tagging Console
 description: Meer informatie over de Classic UI Tagging Console.
-seo-description: Meer informatie over de Classic UI Tagging Console.
+seo-description: Learn about the Classic UI Tagging Console.
 uuid: c3080c82-0b34-4922-a263-1674a9522649
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,19 +10,22 @@ topic-tags: content
 content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 exl-id: 0c989965-c6cc-4ec7-a90f-6c52e8362485
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '915'
 ht-degree: 0%
 
 ---
 
-# Classic UI Tagging Console{#classic-ui-tagging-console}
+# Klassieke UI-tagconsole{#classic-ui-tagging-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Deze sectie is voor de Classic UI Tagging Console.
 
-De Touch-geoptimaliseerde UI Tagging Console is [hier](/help/sites-administering/tags.md#tagging-console).
+De voor aanraking geoptimaliseerde UI-tagging-console is [hier](/help/sites-administering/tags.md#tagging-console).
 
 U kunt als volgt de klassieke UI-tagingconsole openen:
 
@@ -30,19 +33,19 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 * aanmelden met beheerdersrechten
 * naar de console bladeren
 
-   bijvoorbeeld [http://localhost:4502/tagging](http://localhost:4502/tagging)
+   bijvoorbeeld: [http://localhost:4502/tagging](http://localhost:4502/tagging)
 
 ![managing_tags_using_thetagasministrationconsole-1](assets/managing_tags_usingthetagasministrationconsole-1.png)
 
 ## Tags en naamruimten maken {#creating-tags-and-namespaces}
 
-1. Afhankelijk van het niveau u van u begint kunt of een markering of een namespace tot stand brengen gebruikend **Nieuw**:
+1. Afhankelijk van het niveau dat u begint, kunt u een tag of een naamruimte maken met **Nieuw**:
 
-   Als u **Codes** selecteert, kunt u een naamruimte maken:
+   Als u **Tags** u kunt een naamruimte maken:
 
    ![creating_tags_andnamespaces-1](assets/creating_tags_andnamespaces-1.png)
 
-   Als u een naamruimte selecteert (bijvoorbeeld **Demo**), kunt u een tag maken binnen die naamruimte:
+   Als u een naamruimte selecteert (bijvoorbeeld **Demo**) U kunt een tag maken binnen die naamruimte:
 
    ![creating_tags_andnamespacesinnewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
 
@@ -50,7 +53,7 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 
    * **Titel**
 (
-*Vereist*) De weergavetoetiek voor de tag. Tijdens het invoeren van elk teken
+*Vereist*) De titel van de weergave voor de tag. Tijdens het invoeren van elk teken
 
       Het wordt aanbevolen deze speciale tekens niet te gebruiken:
 
@@ -61,97 +64,97 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 
    * **Naam**
 
-      (*Required*) De knooppuntnaam voor de markering.
+      (*Vereist*) De knooppuntnaam voor de tag.
 
    * **Beschrijving**
 
       (*Optioneel*) Een beschrijving voor de tag.
 
-   * Selecteer **Maken**
+   * selecteren **Maken**
 
 
-## Labels {#editing-tags} bewerken
+## Tags bewerken {#editing-tags}
 
 1. Selecteer in het rechterdeelvenster de tag die u wilt bewerken.
-1. Klik **Bewerken**.
-1. U kunt de **Titel** en **Beschrijving** wijzigen.
-1. Klik **Opslaan** om het dialoogvenster te sluiten.
+1. Klikken **Bewerken**.
+1. U kunt de **Titel** en de **Beschrijving**.
+1. Klikken **Opslaan** om het dialoogvenster te sluiten.
 
-## Labels {#deleting-tags} verwijderen
+## Tags verwijderen {#deleting-tags}
 
 1. Selecteer in het rechterdeelvenster het label dat u wilt verwijderen.
-1. Klik **Delete**.
-1. Klik **Ja** om het dialoogvenster te sluiten.
+1. Klikken **Verwijderen**.
+1. Klikken **Ja** om het dialoogvenster te sluiten.
 
    De tag mag niet meer worden vermeld.
 
-## Labels {#activating-and-deactivating-tags} activeren en deactiveren
+## Labels activeren en deactiveren {#activating-and-deactivating-tags}
 
 1. Selecteer in het rechterdeelvenster de naamruimte of tag die u wilt activeren (publiceren) of deactiveren (publiceren ongedaan maken).
-1. Klik **Activeer** of **Deactivate** zoals vereist.
+1. Klikken **Activeren** of **Deactiveren** zoals vereist.
 
-## Lijst - tonen waar de markeringen {#list-showing-where-tags-are-referenced} van verwijzingen voorzien
+## Lijst - tonen waar naar tags wordt verwezen {#list-showing-where-tags-are-referenced}
 
-**Met** Listener wordt een nieuw venster geopend waarin de paden van alle pagina&#39;s met de gemarkeerde tag worden weergegeven:
+**Lijst** Hiermee opent u een nieuw venster waarin de paden van alle pagina&#39;s met de gemarkeerde code worden weergegeven:
 
 ![list_show_whetagsarereferenced](assets/list_showing_wheretagsarereferenced.png)
 
-## Labels {#moving-tags} verplaatsen
+## Labels verplaatsen {#moving-tags}
 
 Als u wilt helpen dat tagbeheerders en ontwikkelaars de taxonomie opschonen of de naam van een tag-id wijzigen, kunt u een tag naar een nieuwe locatie verplaatsen:
 
-1. Open de **Tags toevoegen**-console.
+1. Open de **Tags** console.
 1. Selecteer de tag en klik op **Verplaatsen...** in de bovenste werkbalk (of in het contextmenu).
-1. Definieer in het dialoogvenster **Tag verplaatsen**:
+1. In de **Tag verplaatsen** instellen:
 
-   * **naar**, de bestemmingsknoop.
+   * **tot**, het doelknooppunt.
    * **Naam wijzigen in**, de naam van het nieuwe knooppunt.
 
-1. Klik **Verplaatsen**.
+1. Klikken **Verplaatsen**.
 
-Het dialoogvenster **Tag verplaatsen** ziet er als volgt uit:
+De **Tag verplaatsen** ziet er als volgt uit:
 
 ![move_tag](assets/move_tag.png)
 
 >[!NOTE]
 >
->Auteurs mogen geen tags verplaatsen of de naam van een tag-id wijzigen. Indien nodig mogen auteurs alleen [de labeltitels](#editing-tags) wijzigen.
+>Auteurs mogen geen tags verplaatsen of de naam van een tag-id wijzigen. Indien nodig mogen auteurs [de titels van tags wijzigen](#editing-tags).
 
-## Codes {#merging-tags} samenvoegen
+## Tags samenvoegen {#merging-tags}
 
 U kunt tags samenvoegen wanneer een taxonomie duplicaten bevat. Wanneer label A wordt samengevoegd met label B, worden alle pagina&#39;s met label A getagd met label B en is label A niet meer beschikbaar voor auteurs.
 
 Een tag samenvoegen in een andere tag:
 
-1. Open de **Tags toevoegen**-console.
-1. Selecteer de tag en klik op **Samenvoegen..** in de bovenste werkbalk (of in het contextmenu).
-1. Definieer in het dialoogvenster **Tag samenvoegen**:
+1. Open de **Tags** console.
+1. Selecteer de tag en klik op **Samenvoegen...** in de bovenste werkbalk (of in het contextmenu).
+1. In de **Tag samenvoegen** instellen:
 
-   * **in**, de bestemmingsknoop.
+   * **in**, het doelknooppunt.
 
-1. Klik **Samenvoegen**.
+1. Klikken **Samenvoegen**.
 
-Het dialoogvenster **Tag samenvoegen** ziet er als volgt uit:
+De **Tag samenvoegen** ziet er als volgt uit:
 
 ![mergetag](assets/mergetag.png)
 
-## Tellen van gebruik van tags {#counting-usage-of-tags}
+## Gebruik van tags tellen {#counting-usage-of-tags}
 
 Zo ziet u hoe vaak een tag wordt gebruikt:
 
-1. Open de **Tags toevoegen**-console.
-1. Klik **Telgebruik** in de bovenste werkbalk: In de kolom Aantal wordt het resultaat weergegeven.
+1. Open de **Tags** console.
+1. Klikken **Telgebruik** in de bovenste werkbalk: In de kolom Aantal wordt het resultaat weergegeven.
 
 ## Tags beheren in verschillende talen {#managing-tags-in-different-languages}
 
-De optionele `title`eigenschap van een tag kan in meerdere talen worden vertaald. De tag `titles` kan vervolgens worden weergegeven volgens de gebruikerstaal of de paginataal.
+De optionele `title`De eigenschap van een tag kan in meerdere talen worden vertaald. Tag `titles` kan vervolgens worden weergegeven volgens de taal van de gebruiker of de paginataal.
 
 ### Tagtitels definiëren in meerdere talen {#defining-tag-titles-in-multiple-languages}
 
-De volgende procedure laat zien hoe u de `title`tag **Dieren** vertaalt in het Engels, Duits en Frans:
+De volgende procedure laat zien hoe u de `title`van de tag **Dieren** in het Engels, Duits en Frans:
 
-1. Ga naar de **Tagging** console.
-1. Bewerk de tag **Dieren** onder **Codes** > **Stock Photography**.
+1. Ga naar de **Tags** console.
+1. De tag bewerken **Dieren** onder **Tags** > **Stock Photography**.
 1. Voeg de vertalingen in de volgende talen toe:
 
    * **Engels**: Dieren
@@ -166,24 +169,24 @@ Het dialoogvenster ziet er als volgt uit:
 
 In de tagconsole wordt de taalinstelling van de gebruiker gebruikt. Voor de tag Animal wordt &#39;Animaux&#39; weergegeven voor een gebruiker die de taal in gebruikerseigenschappen instelt op Frans.
 
-Als u een nieuwe taal wilt toevoegen aan het dialoogvenster, raadpleegt u de sectie [Een nieuwe taal toevoegen aan het dialoogvenster Tag bewerken](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in de sectie **Tags toevoegen voor ontwikkelaars**.
+Als u een nieuwe taal wilt toevoegen aan het dialoogvenster, raadpleegt u de sectie [Een nieuwe taal toevoegen aan het dialoogvenster Tag bewerken](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in de **Tags voor ontwikkelaars** sectie.
 
-### Tagtitels weergeven in pagina-eigenschappen in een opgegeven taal {#displaying-tag-titles-in-page-properties-in-a-specified-language}
+### Tagtitels weergeven in Pagina-eigenschappen in een opgegeven taal {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-Standaard wordt de tag `titles`in de pagina-eigenschappen weergegeven in de paginalabel. Het tagdialoogvenster in de pagina-eigenschappen heeft een taalveld waarmee tag `titles`in een andere taal kan worden weergegeven. De volgende procedure beschrijft hoe u de tag `titles`in het Frans kunt weergeven:
+Standaard wordt de tag `titles`in de pagina-eigenschappen worden weergegeven in de paginataal. Het tagdialoogvenster in de pagina-eigenschappen heeft een taalveld waarmee de tag kan worden weergegeven `titles`in een andere taal. De volgende procedure beschrijft hoe u de tag kunt weergeven `titles`in het Frans:
 
-1. Raadpleeg de vorige sectie om de Franse vertaling toe te voegen aan **Dieren** onder **Codes** > **Stock Photography**.
-1. Open de pagina-eigenschappen van de pagina **Products** in de Engelse vertakking van de site **Geometrixx**.
-1. Open het dialoogvenster **Tags/Trefwoorden** (door het keuzemenu rechts van het weergavegebied Tags/Trefwoorden te selecteren) en selecteer de taal **Frans** in het keuzemenu rechtsonder.
-1. Schuif met de pijlen naar links en rechts totdat u het tabblad **Stock Photography** kunt selecteren
+1. Raadpleeg het vorige gedeelte om de Franse vertaling toe te voegen aan de **Dieren** onder **Tags** > **Stock Photography**.
+1. Open de pagina-eigenschappen van het dialoogvenster **Producten** pagina in het Engelse gedeelte van de **Geometrixx** site.
+1. Open de **Tags/trefwoorden** (door het keuzemenu rechts van het weergavegebied Tags/Trefwoorden te selecteren) en het dialoogvenster **Frans** in het keuzemenu rechtsonder.
+1. Schuif met de pijlen naar links en rechts totdat u de optie **Stock Photography** tab
 
-   Selecteer de tag **Dieren** (**Animaux**) en selecteer buiten het dialoogvenster om deze te sluiten en de tag toe te voegen aan de pagina-eigenschappen.
+   Selecteer **Dieren** (**Animaux**) en selecteert u buiten het dialoogvenster om het te sluiten en de tag toe te voegen aan de pagina-eigenschappen.
 
    ![fFrench_tag](assets/french_tag.png)
 
-Standaard wordt in het dialoogvenster Pagina-eigenschappen het label `titles`weergegeven volgens de paginataal.
+Standaard wordt in het dialoogvenster Pagina-eigenschappen het label weergegeven `titles`volgens de paginataal.
 
-In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de paginataal beschikbaar is. Wanneer de [tag-widget](/help/sites-developing/building.md#tagging-on-the-client-side) in andere gevallen wordt gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
+In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de paginataal beschikbaar is. Wanneer de [tagwidget](/help/sites-developing/building.md#tagging-on-the-client-side) wordt in andere gevallen gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
 
 >[!NOTE]
 >

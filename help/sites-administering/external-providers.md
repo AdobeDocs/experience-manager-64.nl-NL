@@ -1,8 +1,8 @@
 ---
 title: Analyse met externe providers
-seo-title: Analyse met externe providers
+seo-title: Analytics with External Providers
 description: Meer informatie over Analytics met externe providers.
-seo-description: Meer informatie over Analytics met externe providers.
+seo-description: Learn about Analytics with External Providers.
 uuid: bea8ec38-a190-46f9-a5fa-8d65321fdf20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
 exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
 # Analyse met externe providers{#analytics-with-external-providers}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Analyses kunnen u belangrijke en interessante informatie geven over het gebruik van uw website.
 
@@ -27,13 +30,13 @@ Verschillende configuraties buiten de box zijn beschikbaar voor integratie met d
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-U kunt ook uw eigen exemplaar van de **Algemene analysesnippets** configureren om nieuwe serviceconfiguraties te definiëren.
+U kunt ook uw eigen instantie van de **Algemene analyseclusters** om nieuwe de dienstconfiguraties te bepalen.
 
 De informatie wordt vervolgens verzameld door middel van kleine codefragmenten die aan de webpagina&#39;s worden toegevoegd. Bijvoorbeeld:
 
 >[!CAUTION]
 >
->Scripts mogen niet in `script`-tags worden ingesloten.
+>Scripts mogen niet zijn ingesloten in `script` -tags.
 
 ```
 var _gaq = _gaq || [];
@@ -56,23 +59,23 @@ Met dergelijke fragmenten kunnen gegevens worden verzameld en rapporten worden g
 
 >[!CAUTION]
 >
->De Geometrixx-Buiten demosite is zo geconfigureerd dat de kenmerken die in de Pagina-eigenschappen worden opgegeven, worden toegevoegd aan de HTML-broncode (net boven de eindtag `</html>`) in het corresponderende `js`-script.
+>De demosite Geometrixx-buiten is zo geconfigureerd dat de kenmerken die worden opgegeven in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` endtag) in de bijbehorende `js` script.
 >
 >
->Als uw eigen `/apps` niet van de standaardpaginacomponent ( `/libs/foundation/components/page`) erft moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` manuscripten inbegrepen zijn, bijvoorbeeld door of `cq/cloudserviceconfigs/components/servicescomponents`, of het gebruiken van een gelijkaardig mechanisme.
+>Als u uw eigen `/apps` niet overerven van de standaardpagina-component ( `/libs/foundation/components/page`) moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` scripts worden opgenomen, bijvoorbeeld door `cq/cloudserviceconfigs/components/servicescomponents`of met een soortgelijk mechanisme.
 >
 >
 >Zonder dit, zal geen van de diensten (Generic, Analytics, Target, etc.) werken.
 
-## Nieuwe service maken met een algemeen fragment {#creating-a-new-service-with-a-generic-snippet}
+## Een nieuwe service maken met een algemeen fragment {#creating-a-new-service-with-a-generic-snippet}
 
 Voor de basisconfiguratie:
 
-1. Open de console **Tools**.
+1. Open de **Gereedschappen** console.
 
-1. Vouw **Cloud Services Configuraties** uit in het linkerdeelvenster.
+1. Vanuit het linkervenster uitvouwen **Configuraties van Cloud Services**.
 
-1. Dubbelklik op **Generic Analytics Snippet** om de pagina te openen:
+1. Dubbelklikken op **Generic Analytics-fragment** om de pagina te openen:
 
    ![analytics_general overview](assets/analytics_genericoverview.png)
 
@@ -80,31 +83,31 @@ Voor de basisconfiguratie:
 
    ![analytics_addconfig](assets/analytics_addconfig.png)
 
-1. Klik op **Maken**. Het dialoogvenster Fragmenten wordt direct geopend. U kunt het desbetreffende JavaScript-fragment in het veld plakken:
+1. Klikken **Maken**, wordt het dialoogvenster met fragmenten direct geopend. U kunt het juiste JavaScript-fragment in het veld plakken:
 
    ![analytics_snippet](assets/analytics_snippet.png)
 
-1. Klik **OK** om op te slaan.
+1. Klikken **OK** om op te slaan.
 
-## Uw nieuwe service gebruiken op pagina&#39;s {#using-your-new-service-on-pages}
+## Uw nieuwe service op pagina&#39;s gebruiken {#using-your-new-service-on-pages}
 
 Nadat u de de dienstconfiguratie hebt gecreeerd moet u nu de vereiste pagina&#39;s vormen om het te gebruiken:
 
 1. Navigeer naar de pagina.
 
-1. Open **Pagina-eigenschappen** vanuit sidekick en open vervolgens het tabblad **Cloud Services**.
+1. Open de **Pagina-eigenschappen** van sidekick, dan **Cloud Services** tab.
 
-1. Klik **Service toevoegen**, dan selecteer de vereiste dienst; Bijvoorbeeld het **Generic Analytics Snippet**:
+1. Klikken **Service toevoegen** selecteert u vervolgens de gewenste service; bijvoorbeeld **Generic Analytics-fragment**:
 
    ![analytics_selectservice](assets/analytics_selectservice.png)
 
-1. Klik **OK** om op te slaan.
+1. Klikken **OK** om op te slaan.
 
-1. U zult aan **Cloud Services** tabel zijn teruggekeerd. Het **Generic Analytics Snippet** wordt nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren; bijvoorbeeld google-analytics:
+1. U wordt teruggestuurd naar de **Cloud Services** tab. De **Generic Analytics-fragment** wordt nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren; bijvoorbeeld google-analytics:
 
    ![analytics_selectspecificservice](assets/analytics_selectspecificservice.png)
 
-1. Klik **OK** om op te slaan.
+1. Klikken **OK** om op te slaan.
 
    Het fragment kan nu worden weergegeven als u de paginabron voor de pagina bekijkt.
 

@@ -1,8 +1,8 @@
 ---
 title: Best practices implementeren
-seo-title: Best practices implementeren
+seo-title: Deploying Best Practices
 description: Het opstellen en handhaven van beste praktijken.
-seo-description: Het opstellen en handhaven van beste praktijken.
+seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 0c8fefb5-6fa0-4fab-a890-9f5ae7508459
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
-# Het opstellen van Beste praktijken{#deploying-best-practices}
+# Best practices implementeren{#deploying-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Het opstellen van beste praktijken beschrijft hoe te om AEM op de meest efficiënte en meest efficiënte manier op te stellen of te handhaven. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
@@ -39,7 +42,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 ## OAK {#oak}
 
-[](/help/sites-deploying/platform.md) Oakis is een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die de basis vormt van AEM.
+[Eik](/help/sites-deploying/platform.md) is een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die de basis vormt van AEM.
 
 <table> 
  <tbody>
@@ -75,9 +78,9 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 AEM Communities vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen. De beste praktijken voor AEM Communities worden hier beschreven:
 
-[Community Content Store](/help/communities/working-with-srp.md) : bespreekt de nieuwe functie voor gedeelde opslag voor door gebruikers gegenereerde inhoud (UGC) en de overwegingen voor het kiezen van de onderliggende  [topologie](/help/communities/topologies.md).
+[Community Content Store](/help/communities/working-with-srp.md) - Bespreekt de nieuwe gedeelde opslageigenschap voor gebruiker geproduceerde inhoud (UGC) en de overwegingen om het onderliggende te kiezen [topologie](/help/communities/topologies.md).
 
-[Aanbevolen plaatsingen voor gemeenschappen](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
+[Aanbevolen implementaties voor gemeenschappen](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
 
 ## UI {#ui}
 

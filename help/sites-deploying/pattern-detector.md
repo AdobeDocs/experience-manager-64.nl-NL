@@ -1,8 +1,8 @@
 ---
 title: De complexiteit van upgrades beoordelen met de patroondetector
-seo-title: De complexiteit van upgrades beoordelen met de patroondetector
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Leer hoe u de patroondetector gebruikt om de complexiteit van de upgrade te beoordelen.
-seo-description: Leer hoe u de patroondetector gebruikt om de complexiteit van de upgrade te beoordelen.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 feature: Upgrading
 exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '536'
 ht-degree: 1%
 
 ---
 
 # De complexiteit van upgrades beoordelen met de patroondetector{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
@@ -32,7 +35,7 @@ Dit zou kunnen dienen als een beoordeling van de ontwikkelingsinspanningen die g
 
 ## Instellen {#how-to-set-up}
 
-De patroondetector wordt afzonderlijk vrijgegeven als een [één pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) die werkt aan een bron AEM versies van 6.1 tot 6.5 die AEM 6.5 bevorderen. Het kan worden geïnstalleerd gebruikend [de Manager van het Pakket](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+De patroondetector wordt afzonderlijk vrijgegeven als een [één pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)  werken aan om het even welke bron AEM versies van 6.1 tot 6.5 richtend AEM 6.5 verbetering. U kunt het programma installeren met de [Pakketbeheer](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Het gebruik {#how-to-use}
 
@@ -42,7 +45,7 @@ De patroondetector wordt afzonderlijk vrijgegeven als een [één pakket](https:/
 >
 >* de detectiesnelheid verhogen
 >* vertraging van bedrijfskritieke instanties vermijden\
-   >tegelijkertijd wordt aangeraden het **op testomgevingen** uit te voeren die zo dicht mogelijk bij productieomgevingen liggen op het gebied van gebruikerstoepassingen, inhoud en configuraties.
+   >tegelijkertijd wordt aangeraden het programma uit te voeren **over testomgevingen** die zo dicht mogelijk bij productiegerelateerde toepassingen op het gebied van gebruikerstoepassingen, inhoud en configuraties zijn.
 
 
 U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te controleren:
@@ -50,17 +53,17 @@ U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te 
 * **Via de Felix Inventory Console:**
 
 1. Ga naar de AEM webconsole door naar: https://<i></i>serveradres:serverpoort/systeem/console/configMgr
-1. Selecteer **Status - Patroondetector** zoals in de onderstaande afbeelding wordt getoond:
+1. Selecteren **Status - Patroondetector** zoals weergegeven in de onderstaande afbeelding:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via een reactieve, op tekst gebaseerde of reguliere JSON-interface**
 
-* **Via een reactieve JSON-lijninterface**, wordt in elke regel een afzonderlijk JSON-document gegenereerd.
+* **Via een reactieve JSON-lijninterface** Hiermee wordt op elke regel een apart JSON-document gegenereerd.
 
 Beide methoden worden hieronder beschreven:
 
-## Reactive Interface {#reactive-interface}
+## Reactieve interface {#reactive-interface}
 
 De reactieve interface maakt het mogelijk het rapport van de schending te verwerken zodra een vermoeden wordt vastgesteld.
 
@@ -85,7 +88,7 @@ De uitvoer ziet er als volgt uit:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-De voortgang kan worden gefilterd met de opdracht `grep`:
+De voortgang kan worden gefilterd met de `grep` opdracht:
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -99,9 +102,9 @@ Dit resulteert in de volgende uitvoer:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## De JSON-interface {#handling-the-json-interface} verwerken
+## De JSON-interface afhandelen {#handling-the-json-interface}
 
-Op dezelfde manier kan JSON worden verwerkt met het [jq-gereedschap](https://stedolan.github.io/jq/) zodra het is gepubliceerd.
+Op dezelfde manier kan JSON worden verwerkt met de [jq, gereedschap](https://stedolan.github.io/jq/) zodra het wordt gepubliceerd.
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -211,7 +214,7 @@ Met de uitvoer:
 
 >[!NOTE]
 >
->De geadviseerde benadering is de volledige output van krulling in het dossier te bewaren en dan het via `jq` of `grep` te verwerken om informatietype te filtreren.
+>U wordt aangeraden de gehele uitvoer van krullen in het bestand op te slaan en deze vervolgens via `jq` of `grep` naar het type filterinformatie.
 
 ## Detectiebereik {#scope}
 

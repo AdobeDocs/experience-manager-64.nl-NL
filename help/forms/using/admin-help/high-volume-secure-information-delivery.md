@@ -1,8 +1,8 @@
 ---
 title: Beveiligde informatieverstrekking voor grote volumes
-seo-title: Beveiligde informatieverstrekking voor grote volumes
+seo-title: High-volume secure information delivery
 description: Documentbeveiliging ondersteunt het koppelen van licenties aan gebruikers, in plaats van aan documenten in omgevingen waar veel materiaal wordt geproduceerd.
-seo-description: Documentbeveiliging ondersteunt het koppelen van licenties aan gebruikers, in plaats van aan documenten in omgevingen waar veel materiaal wordt geproduceerd.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 78fc7c4a-a634-4628-927a-c9622bdc13fc
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
 # Beveiligde informatieverstrekking voor grote volumes {#high-volume-secure-information-delivery}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In een massaproductieomgeving, zoals een omgeving die beveiligde maandelijkse facturen voor een telecombedrijf genereert, kan het maken van licenties die specifiek zijn voor elk document een hulpbronnenintensief proces worden. In dergelijke gevallen ondersteunt documentbeveiliging het koppelen van licenties aan gebruikers in plaats van aan de documenten. De licentie die voor een gebruiker wordt gegenereerd, wordt gebruikt voor alle documenten die voor die gebruiker zijn beveiligd.
 
@@ -31,4 +34,4 @@ In het geval van maandelijkse factuurgeneratie voor een telecombedrijf, creeert 
 
 Het maken van een abstract beleid wordt alleen ondersteund door Java SDK voor documentbeveiliging. U kunt echter wel het beleid beheren dat u maakt op basis van het abstracte beleid van de webpagina&#39;s voor documentbeveiliging. Beleid dat met deze methode wordt gemaakt, werkt hetzelfde als het beleid dat op basis van webpagina&#39;s voor documentbeveiliging wordt gemaakt.
 
-Zie [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_63) voor meer informatie.
+Zie [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_63) voor meer informatie .

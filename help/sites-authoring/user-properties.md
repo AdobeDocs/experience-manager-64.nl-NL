@@ -1,8 +1,8 @@
 ---
 title: Uw accountomgeving configureren
-seo-title: Uw accountomgeving configureren
+seo-title: Configuring your account environment
 description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
-seo-description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: 01e76771-9ac8-4919-9e50-0a63826177d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,27 +10,30 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 2%
+source-wordcount: '517'
+ht-degree: 1%
 
 ---
 
 # Uw accountomgeving configureren{#configuring-your-account-environment}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
-Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in het [header](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende [Mijn Voorkeuren](#my-preferences) dialoogvenster kunt u uw gebruikersopties wijzigen.
+Met de [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de [header](/help/sites-authoring/basic-handling.md#the-header) en de bijbehorende [Mijn voorkeuren](#my-preferences) kunt u de gebruikersopties wijzigen.
 
 ## Gebruikersinstellingen {#user-settings}
 
-In het instellingendialoogvenster **Gebruiker** hebt u toegang tot:
+De **Gebruiker** In het dialoogvenster Instellingen hebt u toegang tot:
 
 * Imiteren als
 
-   * Met [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
+   * Met de [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) een gebruiker namens een andere gebruiker kan werken.
 
 * Profiel
 
@@ -44,7 +47,7 @@ In het instellingendialoogvenster **Gebruiker** hebt u toegang tot:
 
 ## Mijn voorkeuren {#my-preferences}
 
-Het dialoogvenster **Mijn voorkeuren** is toegankelijk via de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de koptekst.
+De **Mijn voorkeuren** dialoogvenster is toegankelijk via de [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de koptekst.
 
 Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
@@ -60,7 +63,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    Hiermee definieert u het gedrag voor het openen van vensters. Selecteer een van de volgende opties:
 
-   * **Meerdere vensters**  (standaard)
+   * **Meerdere vensters** (Standaard)
 
       * Pagina&#39;s worden in een nieuw venster geopend.
    * **Eén venster**
@@ -85,12 +88,12 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
-   * **Altijd exacte datum** weergeven: De exacte datum wordt altijd weergegeven (nooit een relatieve datum).
+   * **Altijd exacte datum weergeven**: De exacte datum wordt altijd weergegeven (nooit een relatieve datum).
    * **1 dag**: De relatieve datum wordt weergegeven voor datums binnen één dag, anders wordt een exacte datum weergegeven.
    * **7 dagen (standaard)**: De relatieve datum wordt weergegeven voor datums binnen zeven dagen, anders wordt een exacte datum weergegeven.
    * **1 maand**: De relatieve datum wordt weergegeven voor datums binnen een maand, anders wordt een exacte datum weergegeven.
    * **1 jaar**: De relatieve datum wordt weergegeven voor data binnen een jaar, anders wordt een exacte datum vermeld.
-   * **Relatieve datum** altijd weergeven: Exacte datums worden nooit weergegeven en alleen relatieve datums worden weergegeven.
+   * **Relatieve datum altijd weergeven**: Exacte datums worden nooit weergegeven en alleen relatieve datums worden weergegeven.
 
 * **Sneltoetsen inschakelen**
 
@@ -103,7 +106,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Klassieke ontwerpervaring gebruiken**
 
-   Met deze optie schakelt u op [klassieke UI](/help/sites-classic-ui-authoring/home.md) gebaseerde pagina-authoring in. Standaard wordt de standaardinterface gebruikt.
+   Deze optie schakelt [klassieke gebruikersinterface](/help/sites-classic-ui-authoring/home.md)-based page authoring. Standaard wordt de standaardinterface gebruikt.
 
 * **Introductiepagina van middelen inschakelen**
 

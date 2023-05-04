@@ -1,8 +1,8 @@
 ---
 title: Het gereedschap Proxyserver gebruiken
-seo-title: Het gereedschap Proxyserver gebruiken
+seo-title: How to use the Proxy Server Tool
 description: De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt
-seo-description: De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt
+seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
 uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 63f3a172-b551-433a-aad5-58c6bfda82bb
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
 
 # Het gereedschap Proxyserver gebruiken{#how-to-use-the-proxy-server-tool}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt. De volmachtsserver houdt spoor van alle cliënt-server interactie en output een logboek van de volledige mededeling van TCP. Dit staat u toe om precies te controleren wat aan de hand is, zonder het moeten tot de belangrijkste server toegang hebben.
 
@@ -35,7 +38,7 @@ U kunt de volmachtsserver gebruiken om alle cliënt-server interactie, ongeacht 
 
 U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een CQ-pagina aanvraagt.
 
-## Het gereedschap Proxyserver {#starting-the-proxy-server-tool} starten
+## Het gereedschap Proxyserver starten {#starting-the-proxy-server-tool}
 
 Start de server op de opdrachtregel:
 
@@ -49,7 +52,7 @@ Dit is het hostadres van de CRX-instantie waarmee u verbinding wilt maken. Als d
 
 `<remoteport>`
 
-Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling voor een nieuw geïnstalleerde AEM is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerde AEM auteur-instantie is `4502`.
+Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling van een nieuw geïnstalleerde AEM is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerd AEM auteur-exemplaar is `4502`.
 
 `<localport>`
 
@@ -89,7 +92,7 @@ Een verzoek om een webpagina kan er bijvoorbeeld als volgt uitzien:
 
 * C betekent dat deze ingang uit de cliënt (het is een verzoek om een Web-pagina) komt
 * 0 is het verbindingsnummer (de verbindenteller begint bij 0)
-* # 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
+* #00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
 * `[GET <?>]` Dit is de inhoud van de aanvraag, in het voorbeeld een van de HTTP-headers (url).
 
 Wanneer een verbinding sluit, wordt de volgende informatie geregistreerd:
@@ -99,7 +102,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Dit toont het aantal bytes dat tussen client ( `C`) en server ( `S`) op de 6e verbinding en bij de gemiddelde snelheid is overgegaan.
+Dit toont het aantal bytes dat tussen cliënt ( `C`) en de server ( `S`) op de zesde aansluiting en op de gemiddelde snelheid.
 
 **Een voorbeeld van een logbestandsuitvoer**
 
@@ -129,11 +132,11 @@ De inhoud van `test.html` is:
 </html>
 ```
 
-Ervan uitgaande dat de AEM-instantie op `localhost:4502` wordt uitgevoerd, starten we de proxy als volgt:
+Ervan uitgaande dat de AEM-instantie ingeschakeld is `localhost:4502` wij beginnen de volmacht als dit:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-De CQ/CRX-instantie kan nu worden benaderd via de proxy op `localhost:4444` en alle communicatie via deze poort wordt geregistreerd naar `test.log`.
+De CQ/CRX-instantie is nu toegankelijk via de proxy op `localhost:4444` en alle communicatie via deze poort is aangemeld bij `test.log`.
 
 Als we nu de uitvoer van de proxy bekijken, zien we de interactie tussen de browser en de AEM.
 
@@ -148,7 +151,7 @@ Vervolgens opent u een browser en opent u de testpagina:
 
 `http://localhost:4444/content/test.html`
 
-en we zien dat de browser een `GET` verzoek voor de pagina indient:
+en we zien dat de browser een `GET` verzoek om de pagina:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]

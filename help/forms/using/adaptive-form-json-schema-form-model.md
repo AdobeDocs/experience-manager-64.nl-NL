@@ -1,23 +1,26 @@
 ---
 title: Aangepaste formulieren maken met JSON-schema
-seo-title: Aangepaste formulieren maken met JSON-schema
-description: 'Adaptieve formulieren kunnen het JSON-schema als formuliermodel gebruiken, zodat u bestaande JSON-schema''s kunt gebruiken om adaptieve formulieren te maken. '
-seo-description: 'Adaptieve formulieren kunnen het JSON-schema als formuliermodel gebruiken, zodat u bestaande JSON-schema''s kunt gebruiken om adaptieve formulieren te maken. '
+seo-title: Creating adaptive forms using JSON Schema
+description: Adaptieve formulieren kunnen het JSON-schema als formuliermodel gebruiken, zodat u bestaande JSON-schema's kunt gebruiken om adaptieve formulieren te maken.
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 feature: Adaptive Forms
 exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 1%
+source-wordcount: '1243'
+ht-degree: 0%
 
 ---
 
 # Aangepaste formulieren maken met JSON-schema {#creating-adaptive-forms-using-json-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Vereisten {#prerequisites}
 
@@ -26,9 +29,9 @@ Voor het ontwerpen van een adaptief formulier met behulp van een JSON-schema als
 * [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md)
 * [JSON Schema](https://json-schema.org/)
 
-## Een JSON-schema gebruiken als formuliermodel {#using-a-json-schema-as-form-model}
+## Een JSON-schema gebruiken als formuliermodel  {#using-a-json-schema-as-form-model}
 
-AEM Forms ondersteunt het maken van een adaptief formulier met behulp van een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan [v4-specificaties](https://json-schema.org/draft-04/schema).
+AEM Forms ondersteunt het maken van een adaptief formulier met behulp van een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet compatibel zijn met [v4-specificaties](https://json-schema.org/draft-04/schema).
 
 De belangrijkste kenmerken van het gebruik van een JSON-schema zijn:
 
@@ -68,15 +71,15 @@ Deze toewijzing van JSON-elementen met adaptieve formuliercomponenten is als vol
   </tr> 
   <tr> 
    <td>number, eigenschap<br /> </td> 
-   <td>Numeriek veld met subtype ingesteld op float<br /> </td> 
+   <td>Numeriek veld met subtype ingesteld op zwevend<br /> </td> 
   </tr> 
   <tr> 
-   <td>integer eigenschap<br /> </td> 
+   <td>integer, eigenschap<br /> </td> 
    <td>Numeriek veld met subtype ingesteld op geheel getal<br /> </td> 
   </tr> 
   <tr> 
-   <td>booleaanse eigenschap<br /> </td> 
-   <td>Switch<br /> </td> 
+   <td>boolean, eigenschap<br /> </td> 
+   <td>Overschakelen<br /> </td> 
   </tr> 
   <tr> 
    <td>objecteigenschap<br /> </td> 
@@ -103,7 +106,7 @@ Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schem
 * Met de eigenschap readOnly wordt het kenmerk Alleen-lezen van een adaptieve formuliercomponent ingesteld.
 * De vereiste eigenschap markeert het adaptieve formulierveld als verplicht, terwijl in het geval van een paneel (waarbij type object is) de uiteindelijke JSON-gegevens velden hebben met een lege waarde die overeenkomt met dat object.
 * De eigenschap pattern wordt ingesteld als het validatiepatroon (reguliere expressie) in adaptieve vorm.
-* De extensie van het JSON-schemabestand moet .schema.json blijven. Bijvoorbeeld &lt;filename>.schema.json.
+* De extensie van het JSON-schemabestand moet .schema.json blijven. Bijvoorbeeld: &lt;filename>.schema.json.
 
 ## Voorbeeld JSON-schema {#sample-json-schema}
 
@@ -320,7 +323,7 @@ In het bovenstaande voorbeeld wordt een klantrecord gedefinieerd, waarbij elke k
 
 ## Velden vooraf configureren in JSON-schemadefinitie {#pre-configuring-fields-in-json-schema-definition}
 
-Met de eigenschap **aem:afProperties** kunt u het JSON-schemaveld vooraf configureren en toewijzen aan een aangepaste formuliercomponent. Hieronder ziet u een voorbeeld:
+U kunt de **aem:afProperties** eigenschap om het veld JSON-schema vooraf te configureren voor toewijzing aan een aangepaste formuliercomponent. Hieronder ziet u een voorbeeld:
 
 ```
 {
@@ -340,7 +343,7 @@ Met de eigenschap **aem:afProperties** kunt u het JSON-schemaveld vooraf configu
 }
 ```
 
-## Acceptabele waarden beperken voor een adaptieve formuliercomponent {#limit-acceptable-values-for-an-adaptive-form-component}
+## Acceptabele waarden voor een adaptieve formuliercomponent beperken {#limit-acceptable-values-for-an-adaptive-form-component}
 
 U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden te beperken die acceptabel zijn voor een adaptieve formuliercomponent:
 
@@ -354,18 +357,18 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr> 
   <tr> 
    <td><p><code>maximum</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee geeft u de bovengrens voor numerieke waarden en datums op. Standaard wordt de maximumwaarde opgenomen.</p> </td> 
    <td> 
     <ul> 
      <li>Numeriek vak</li> 
-     <li>Numerieke Stepper<br /> </li> 
+     <li>Numerieke stap<br /> </li> 
      <li>Datumkiezer</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p><code>minimum</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee geeft u de ondergrens voor numerieke waarden en datums op. Standaard wordt de minimumwaarde opgenomen.</p> </td> 
    <td> 
     <ul> 
@@ -398,7 +401,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr> 
   <tr> 
    <td><p><code>minLength</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee wordt het minimale aantal tekens opgegeven dat in een component is toegestaan. De minimumlengte moet gelijk zijn aan of groter zijn dan nul.</p> </td> 
    <td> 
     <ul> 
@@ -407,7 +410,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr> 
   <tr> 
    <td><code>maxLength</code></td> 
-   <td>Tekenreeks</td> 
+   <td>String</td> 
    <td>Hiermee wordt het maximale aantal tekens opgegeven dat in een component is toegestaan. De maximumlengte moet gelijk zijn aan of groter zijn dan nul.</td> 
    <td> 
     <ul> 
@@ -416,7 +419,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr> 
   <tr> 
    <td><p><code>pattern</code></p> </td> 
-   <td><p>Tekenreeks</p> </td> 
+   <td><p>String</p> </td> 
    <td><p>Hiermee geeft u de volgorde van de tekens op. Een component accepteert de tekens als de tekens overeenkomen met het opgegeven patroon.</p> <p>De eigenschap pattern verwijst naar het validatiepatroon van de overeenkomstige adaptieve formuliercomponent.</p> </td> 
    <td> 
     <ul> 
@@ -425,20 +428,20 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr> 
   <tr> 
    <td>maxItems</td> 
-   <td>Tekenreeks</td> 
+   <td>String</td> 
    <td>Geeft het maximale aantal items in een array op. De maximale items moeten gelijk zijn aan of groter zijn dan nul.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>minItems</td> 
-   <td>Tekenreeks</td> 
+   <td>String</td> 
    <td>Geeft het minimale aantal items in een array op. De minimale items moeten gelijk zijn aan of groter zijn dan nul.</td> 
    <td> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Niet-ondersteunde constructies {#non-supported-constructs}
+## Niet-ondersteunde constructies  {#non-supported-constructs}
 
 De volgende JSON-schemaconstructies worden niet ondersteund door adaptieve formulieren:
 

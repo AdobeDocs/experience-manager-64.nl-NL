@@ -1,8 +1,8 @@
 ---
 title: Aanbevolen werkwijzen voor SEO- en URL-beheer
-seo-title: Aanbevolen werkwijzen voor SEO- en URL-beheer
+seo-title: SEO and URL Management Best Practices
 description: Leer over SEO beste praktijken en aanbevelingen om deze op een AEM implementatie te bereiken.
-seo-description: Leer over SEO beste praktijken en aanbevelingen om deze op een AEM implementatie te bereiken.
+seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,19 +10,22 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 exl-id: d45fe856-4709-437b-b193-e8243a695d2c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3115'
-ht-degree: 97%
+source-wordcount: '3131'
+ht-degree: 96%
 
 ---
 
 # Aanbevolen werkwijzen voor SEO- en URL-beheer{#seo-and-url-management-best-practices}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moet bij veel AEM projecten rekening worden gehouden met de bezorgdheid van de ZOO.
 
-In dit document worden eerst enkele [SEO best practices](#seo-best-practices) beschreven en aanbevelingen voor het bereiken van deze procedures voor een AEM-implementatie. Vervolgens wordt in dit document dieper ingegaan op enkele van de meer [complexe implementatiestappen](#aem-configurations) die in de eerste sectie aan bod komen.
+In dit document worden eerst enkele [Best practices voor SEO](#seo-best-practices) en aanbevelingen om deze te verwezenlijken met betrekking tot een AEM uitvoering. Vervolgens wordt in dit document dieper ingegaan op enkele van de meer [complexe implementatiestappen](#aem-configurations) die in de eerste sectie aan bod komen.
 
 ## Best practices voor SEO {#seo-best-practices}
 

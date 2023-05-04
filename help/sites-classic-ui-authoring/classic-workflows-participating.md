@@ -1,8 +1,8 @@
 ---
 title: Deelnemen aan workflows
-seo-title: Deelnemen aan workflows
+seo-title: Participating in Workflows
 description: Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert. De werkstroom selecteert een gebruiker of groep om de activiteit uit te voeren en wijst een het werkpunt aan die persoon of groep toe.
-seo-description: Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert. De werkstroom selecteert een gebruiker of groep om de activiteit uit te voeren en wijst een het werkpunt aan die persoon of groep toe.
+seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: a4f0f0c4-3050-4348-8d51-2ca91839208c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 4%
+source-wordcount: '579'
+ht-degree: 3%
 
 ---
 
 # Deelnemen aan workflows{#participating-in-workflows}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert. De werkstroom selecteert een gebruiker of groep om de activiteit uit te voeren en wijst een het werkpunt aan die persoon of groep toe.
 
@@ -37,7 +40,7 @@ U kunt de volgende handelingen uitvoeren om een werkitem te verwerken:
    De gebruikers die voor delegatie beschikbaar zijn hangen af van wie het het werkpunt werd toegewezen:
 
    * Als het het werkpunt aan een groep werd toegewezen, zijn de groepsleden beschikbaar.
-   * Als het het werkpunt aan een groep werd toegewezen en dan aan een gebruiker werd gedelegeerd, zijn de groepsleden en de groep beschikbaar.
+   * Als het het werkpunt aan een groep werd toegewezen en dan aan een gebruiker werd afgevaardigd, zijn de groepsleden en de groep beschikbaar.
    * Als het het werkpunt aan één enkele gebruiker werd toegewezen, kan het het werkpunt niet worden afgevaardigd.
 
 * **Stap terug**
@@ -50,7 +53,7 @@ U kunt de volgende handelingen uitvoeren om een werkitem te verwerken:
 
 Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), worden verschillende waarschuwingen en/of meldingen weergegeven:
 
-* De **Status** kolom van de console van Websites wijst erop wanneer een pagina in een werkschema is:
+* De **Status** De kolom van de console Websites wijst erop wanneer een pagina in een werkschema is:
 
    ![workflowstatus-1](assets/workflowstatus-1.png)
 
@@ -58,31 +61,31 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
 
    ![workflowinbox](assets/workflowinbox.png)
 
-### Een deelnemersstap {#completing-a-participant-step} voltooien
+### Een deelnemersstap voltooien {#completing-a-participant-step}
 
 Nadat u de aangegeven actie hebt uitgevoerd, kunt u het werkitem voltooien, zodat de workflow kan worden voortgezet. Voer de volgende procedure uit om het werkitem te voltooien.
 
-1. Selecteer de workflowstap en klik op de knop **Voltooien** in de bovenste navigatiebalk.
-1. Selecteer **Volgende stap** in het dialoogvenster dat wordt weergegeven; dat wil zeggen, de volgende stap die moet worden uitgevoerd. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven. U kunt ook een **opmerking** invoeren.
+1. Selecteer de workflowstap en klik op de knop **Voltooid** in de bovenste navigatiebalk.
+1. Selecteer in het dialoogvenster dat wordt weergegeven de optie **Volgende stap**; dat wil zeggen, de volgende stap die moet worden uitgevoerd. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven. A **Opmerking** kan ook worden ingevoerd.
 
    ![workflowvoltooid](assets/workflowcomplete.png)
 
    Het aantal vermelde stappen is afhankelijk van het ontwerp van het workflowmodel.
 
-1. Klik **OK** om de handeling te bevestigen.
+1. Klikken **OK** om de actie te bevestigen.
 
-### Een deelnemersstap {#delegating-a-participant-step} delegeren
+### Een deelnemersstap delegeren {#delegating-a-participant-step}
 
 Gebruik de volgende procedure om een het werkpunt te delegeren.
 
 1. Klik op de knop **Delegeren** in de bovenste navigatiebalk.
-1. In de dialoog, gebruik de drop-down lijst om **Gebruiker** te selecteren om het het werkpunt aan te delegeren. U kunt ook een **Opmerking** toevoegen.
+1. Selecteer in het dialoogvenster de vervolgkeuzelijst **Gebruiker** om het het werkpunt aan te delegeren. U kunt ook een **Opmerking**.
 
    ![workflowgedelegeerde](assets/workflowdelegate.png)
 
-1. Klik **OK** om de handeling te bevestigen.
+1. Klikken **OK** om de actie te bevestigen.
 
-### Stap terug op een Stap van de Deelnemer {#performing-step-back-on-a-participant-step} uitvoeren
+### Stap terug op een Stap van de Deelnemer uitvoeren {#performing-step-back-on-a-participant-step}
 
 Gebruik de volgende procedure om terug te gaan.
 

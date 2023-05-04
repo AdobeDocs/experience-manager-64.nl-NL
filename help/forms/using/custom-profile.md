@@ -1,8 +1,8 @@
 ---
 title: Een aangepast profiel maken voor HTML5-formulieren
-seo-title: Een aangepast profiel maken voor HTML5-formulieren
+seo-title: Creating a custom profile for HTML5 forms
 description: Een HTML5-formulierprofiel is een resourceknooppunt in Apache Sling. Deze vertegenwoordigt een aangepaste versie van de renderservice voor HTML5-formulieren.
-seo-description: Een HTML5-formulierprofiel is een resourceknooppunt in Apache Sling. Deze vertegenwoordigt een aangepaste versie van de renderservice voor HTML5-formulieren.
+seo-description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
 uuid: b9938280-a92c-4dde-b465-04372db3ca8d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,21 +10,24 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: 4630c43f-5b47-435c-8ce5-b4e0d986ec02
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
 
 # Een aangepast profiel maken voor HTML5-formulieren {#creating-a-custom-profile-for-html-forms}
 
-Een profiel is een resourceknooppunt in [Apache Sling](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de map `/content` in de JCR-opslagruimte. U kunt het knooppunt rechtstreeks in de map `/content` of in een submap van de map `/content` plaatsen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-Het profielknooppunt heeft de eigenschap **sling:resourceSuperType** en de standaardwaarde is **xfaforms/profile**. Het renderscript voor het knooppunt staat op /libs/xfaforms/profile.
+Een profiel is een resourceknooppunt in [Apache Sling](https://sling.apache.org/). Deze staat voor een aangepaste versie van de renderingsservice voor HTML5-formulieren. U kunt de service Renditie van HTML5-formulieren gebruiken om de weergave, het gedrag en de interacties van de HTML-5-formulieren aan te passen. Er bestaat een profielknooppunt in het dialoogvenster `/content` in de gegevensopslagruimte van de JCR. U kunt het knooppunt rechtstreeks onder het dialoogvenster `/content` of een submap van de `/content` map.
 
-De Sling-scripts zijn JSP-scripts. Deze JSP-scripts dienen als containers voor het samenstellen van de HTML voor het aangevraagde formulier en de vereiste JS/CSS-artefacten. Deze het Verdelen manuscripten worden ook bedoeld als manuscripten van de Renderer van het Profiel.**** De profielrenderer roept de Forms OSGi-service aan om het gevraagde formulier te genereren.
+Het profielknooppunt bevat de **sling:resourceSuperType** eigenschap en de standaardwaarde is **xfaforms/profile**. Het renderscript voor het knooppunt staat op /libs/xfaforms/profile.
+
+De Sling-scripts zijn JSP-scripts. Deze JSP-scripts dienen als containers voor het samenstellen van de HTML voor het aangevraagde formulier en de vereiste JS/CSS-artefacten. Deze verkoopscripts worden ook wel **Scripts voor renderer van profiel.** De profielrenderer roept de Forms OSGi-service aan om het gevraagde formulier te genereren.
 
 Het profielscript bevindt zich in html.jsp en html.POST.jsp voor verzoeken om GET en POST. U kunt een of meer bestanden kopiëren en wijzigen om uw aanpassingen te overschrijven en toe te voegen. Breng geen wijzigingen op de plaats aan. Dergelijke wijzigingen worden door de patchupdate overschreven.
 
@@ -40,7 +43,7 @@ De module config.jsp bevat diverse configuraties zoals registreren, de volmachts
 
 ## toolbar.jsp {#toolbar-jsp}
 
-Het bestand toolbar.jsp bevat code waarmee een gekleurde werkbalk wordt gemaakt. Als u de werkbalk wilt verwijderen, verwijdert u toolbar.jsp uit HTML.jsp
+Het bestand toolbar.jsp bevat code waarmee een gekleurde werkbalk wordt gemaakt. Om de toolbar te verwijderen, verwijder toolbar.jsp uit HTML.jsp
 
 ## formBody.jsp {#formbody-jsp}
 
@@ -64,9 +67,9 @@ Voer de volgende stappen uit om een aangepast profiel te maken:
 
 1. Navigeer in het linkerdeelvenster naar de locatie */content/xfaforms/profiles*.
 
-1. Kopieer het standaardknooppunt en plak het knooppunt in een andere map (*/content/profiles*) met de naam *Transform*.
+1. Kopieer het standaardknooppunt en plak het knooppunt in een andere map (*/content/profiles*) met naam *geforceerd*.
 
-1. Selecteer het nieuwe knooppunt *Transform* en voeg een tekenreekseigenschap toe: *sling:resourceType* met waarde: *Transformatie/demo*.
+1. Selecteer het nieuwe knooppunt. *geforceerd* en voeg een tekenreekseigenschap toe: *sling:resourceType* met waarde: *Transformatie/demo*.
 
 1. Klik op Alles opslaan in het werkbalkmenu om de wijzigingen op te slaan.
 
@@ -74,14 +77,14 @@ Voer de volgende stappen uit om een aangepast profiel te maken:
 
 Nadat u een aangepast profiel hebt gemaakt, voegt u renderinformatie toe aan dit profiel. Wanneer het ontvangen van een verzoek om het nieuwe profiel, controleert CRX het bestaan van de /apps omslag voor de JSP pagina die moet worden teruggegeven. Maak de JSP-pagina in de map /apps.
 
-1. Navigeer in het linkerdeelvenster naar de map `/apps`.
-1. Klik met de rechtermuisknop op de map `/apps` en kies een map met de naam **Transform** maken.
-1. Met de map **Transform** maakt u een map met de naam **demo**.
-1. Klik op de knop **Alles opslaan**.
-1. Navigeer naar `/libs/xfaforms/profile/html.jsp` en kopieer het knooppunt **html.jsp**.
-1. Plak **html.jsp**-knooppunt in de `/apps/hrform/demo`-map die hierboven met dezelfde naam **html.jsp** is gemaakt en klik op **Save**.
+1. Navigeer in het linkervenster naar het `/apps` map.
+1. Klik met de rechtermuisknop op de knop `/apps` en maak een map met de naam **geforceerd**.
+1. Met de **geforceerd** map maken een map met de naam **demo**.
+1. Klik op de knop **Alles opslaan** knop.
+1. Navigeren naar `/libs/xfaforms/profile/html.jsp` en kopieer het knooppunt **html.jsp**.
+1. Plakken **html.jsp** in de `/apps/hrform/demo` hierboven gemaakte map met dezelfde naam **html.jsp** en klik op **Opslaan**.
 1. Als u andere componenten van profielmanuscript hebt, volg stap 1-6 om de componenten in /apps/hrform/demo omslag te kopiëren.
 
-1. Als u wilt controleren of het profiel is gemaakt, opent u URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
+1. Open de URL om te controleren of het profiel is gemaakt `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
-Als u uw formulieren wilt controleren, [Importeert u uw formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [bekijkt u een voorbeeld van het formulier](/help/forms/using/previewing-forms.md) op AEM exemplaar van de serverauteur.
+Om uw formulieren te verifiëren, [Uw formulieren importeren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [Een voorbeeld van het formulier bekijken](/help/forms/using/previewing-forms.md) op AEM instantie van de serverauteur.

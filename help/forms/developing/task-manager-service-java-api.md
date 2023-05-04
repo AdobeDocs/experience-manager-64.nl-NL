@@ -1,8 +1,8 @@
 ---
 title: Java API QuickStart (SOAP) van Taakbeheerservice
-seo-title: Java API QuickStart (SOAP) van Taakbeheerservice
+seo-title: Task Manager Service Java API QuickStart(SOAP)
 description: Met de Taakbeheerservice kunt u taken toewijzen, taken vergrendelen, aan gebruikers toegewezen taken ophalen, formuliergegevens ophalen van taken, formuliergegevens wijzigen, bestandsbijlagen ophalen en taakgegevens ophalen.
-seo-description: Met de Taakbeheerservice kunt u taken toewijzen, taken vergrendelen, aan gebruikers toegewezen taken ophalen, formuliergegevens ophalen van taken, formuliergegevens wijzigen, bestandsbijlagen ophalen en taakgegevens ophalen.
+seo-description: Use the Task Manager service to assign tasks, lock tasks, retrieve tasks assigned to users, retrieve form data from tasks, modify form data, retrieve file attachments, and retrieve task information.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
 exl-id: 302b38e9-71fc-4e83-af01-856d7bd9af40
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# Java API Quick Start (SOAP) {#task-manager-service-java-api-quickstart-soap}
+# Java API Quick Start (SOAP) voor Taakbeheerservice {#task-manager-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Manager van de Taak.
 
@@ -41,7 +44,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->U kunt niet zoeken naar taken die aan gebruikers zijn toegewezen met de webservice-API. De reden is omdat u niet de `taskList` methode kunt aanhalen, die een noodzakelijke methodevraag is om deze taak uit te voeren.
+>U kunt niet zoeken naar taken die aan gebruikers zijn toegewezen met de webservice-API. De reden is dat u de `taskList` methode, die een noodzakelijke methodevraag is om deze taak uit te voeren.
 
 >[!NOTE]
 >
@@ -180,7 +183,7 @@ In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker To
  
 ```
 
-## Snel starten (SOAP-modus): Taken vergrendelen met de Java-API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Snel starten (SOAP-modus): Taken vergrendelen met de Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt met de waarde 2 voor de taak-id.
 
@@ -269,9 +272,9 @@ In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt me
  
 ```
 
-## Snel starten (SOAP-modus): Taken ophalen die zijn toegewezen aan gebruikers met de Java-API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Snel starten (SOAP-modus): Taken ophalen die zijn toegewezen aan gebruikers met de Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewezen aan een gebruiker met de naam *tony blue*. Deze gebruiker is opgegeven in de eigenschappen van de verbinding. Informatie over geretourneerde taken, zoals de waarde en beschrijving van de id, wordt weergegeven.
+In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewezen aan een gebruiker met de naam *tonblauw*. Deze gebruiker is opgegeven in de eigenschappen van de verbinding. Informatie over geretourneerde taken, zoals de waarde en beschrijving van de id, wordt weergegeven.
 
 ```as3
  /* 
@@ -397,7 +400,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewez
 
 ## Snel starten (SOAP-modus): Formuliergegevens ophalen van taken met de Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een taak met de id-waarde 304. Formuliergegevens worden geschreven naar een XML-bestand met de naam *FormData.xml* op C:\Adobe.
+In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een taak met de id-waarde 304. Formuliergegevens worden naar een XML-bestand met de naam *FormData.xml* te vinden op C:\Adobe.
 
 ```as3
  /* 
@@ -503,7 +506,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
 
 ## Snel starten (SOAP-modus): Formuliergegevens wijzigen met de Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens in het bestand *FormData.xml*.
+In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens die zich in het *FormData.xml* bestand.
 
 ```as3
  /* 
@@ -717,7 +720,7 @@ In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke besta
 
 ## Snel starten (SOAP-modus): Taakgegevens ophalen met de Java API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn gebaseerd op een proces met de naam *MortgaugeLoan - Prebuilt*. Het statuut van elke teruggekeerde taak wordt gecontroleerd om ervoor te zorgen dat het een voltooide taak is. Informatie zoals de naam van de gebruiker die de taak heeft voltooid en de datum waarop de taak is voltooid, wordt opgehaald en weergegeven.
+In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn gebaseerd op een proces met de naam *Hypothecaire lening - Prebuilt*. Het statuut van elke teruggekeerde taak wordt gecontroleerd om ervoor te zorgen dat het een voltooide taak is. Informatie zoals de naam van de gebruiker die de taak heeft voltooid en de datum waarop de taak is voltooid, wordt opgehaald en weergegeven.
 
 ```as3
  /* 

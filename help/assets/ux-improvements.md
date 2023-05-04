@@ -1,18 +1,22 @@
 ---
 title: Verbeterde gebruikerservaring in middelen
-description: In dit artikel worden de verbeteringen beschreven die de gebruiker ondervindt in  [!DNL Experience Manager] 6.4 Assets.
+description: In dit artikel worden verbeteringen in de gebruikerservaring in [!DNL Experience Manager] 6.4 Activa.
 contentOwner: AG
 feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
 
 # Verbeterde gebruikerservaring in middelen {#user-experience-enhancements-in-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager] 6.4 De middelen omvatten verscheidene gebruiksverbeteringen die een naadloze gebruikerservaring verstrekken en productiviteit verbeteren. De toename in de snelheid waarmee u uw go-to-market inhoud kunt creëren/beheren verbetert de inhoudssnelheid van de zaken.
 
@@ -22,7 +26,7 @@ U kunt de verschillende weergaven aanpassen: Kaart-, Lijst- en Kolomweergaven. U
 
 ## Lazy loading {#lazy-loading}
 
-Wanneer u in [!DNL Experience Manager] 6.4 Elementen bladert of naar activa zoekt, worden tot 200 activa tegelijkertijd getoond. U kunt sneller door de resultaten scrollen, die vooral wanneer het doorbladeren door een lange lijst van resultaten nuttig is. Omdat een aanzienlijk aantal elementen tegelijk wordt geladen, verloopt het bladeren soepel.
+Wanneer u naar elementen bladert of deze zoekt in [!DNL Experience Manager] 6.4 Elementen, maximaal 200 elementen tegelijk worden weergegeven. U kunt sneller door de resultaten scrollen, die vooral wanneer het doorbladeren door een lange lijst van resultaten nuttig is. Omdat een aanzienlijk aantal elementen tegelijk wordt geladen, verloopt het bladeren soepel.
 
 Als u op een element tikt of erop klikt om de detailpagina weer te geven, kunt u gewoon terugkeren naar de resultatenpagina door op de knop Terug op de werkbalk te tikken of erop te klikken.
 
@@ -32,11 +36,11 @@ Afhankelijk van het apparaat dat u gebruikt en de hoeveelheid details die u nodi
 
 Voer de volgende stappen uit om het formaat van miniaturen in de kaartweergave te wijzigen:
 
-1. Tik/klik op het pictogram Lay-out op de werkbalk en kies de optie **[!UICONTROL View Settings]**.
+1. Tik/klik op het pictogram Lay-out op de werkbalk en kies vervolgens het pictogram **[!UICONTROL View Settings]** optie.
 
    ![view_settings](assets/view_settings.png)
 
-1. Selecteer in het dialoogvenster **[!UICONTROL View Settings]** de gewenste miniatuurgrootte en tik op **[!UICONTROL Update]**.
+1. Van de **[!UICONTROL View Settings]** selecteert u de gewenste miniatuurgrootte en tikt u op **[!UICONTROL Update]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -54,13 +58,13 @@ In de lijstweergave worden in de eerste kolom nu standaard de bestandsnamen van 
 
 ![list_view](assets/list_view.png)
 
-U kunt kiezen om de hoeveelheid details te vormen u wilt tonen. Tik/klik op het pictogram Lay-out, kies de optie **[!UICONTROL View Settings]** en geef de kolommen op die u wilt weergeven in het dialoogvenster **[!UICONTROL View Settings]**.
+U kunt kiezen om de hoeveelheid details te vormen u wilt tonen. Tik op het pictogram Lay-out of klik op het pictogram Lay-out **[!UICONTROL View Settings]** en geeft u de kolommen op die u wilt weergeven in het dialoogvenster **[!UICONTROL View Settings]** .
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Verbeteringen in de kolomweergave {#column-view-improvements}
 
-Naast de Kaart- en lijstweergaven kunt u nu vanuit de kolomweergave naar de detailpagina van een element navigeren. Selecteer een element in de kolomweergave en tik op **[!UICONTROL More Details]** onder de elementmomentopname.
+Naast de Kaart- en lijstweergaven kunt u nu vanuit de kolomweergave naar de detailpagina van een element navigeren. Selecteer een element in de kolomweergave en tik/klik op **[!UICONTROL More Details]** onder de activamomentopname.
 
 ![meer_details](assets/more_details.png)
 
@@ -68,7 +72,7 @@ Naast de Kaart- en lijstweergaven kunt u nu vanuit de kolomweergave naar de deta
 
 [!DNL Experience Manager] 6.4 Middelen zijn voorzien van een structuurweergave waarmee u gemakkelijk door de hiërarchie van elementen kunt bladeren en naar het gewenste middel of de gewenste map kunt navigeren.
 
-Tik op het GlobalNav-pictogram in het `Assets UI` en kies **[!UICONTROL Content tree]** in het menu om de structuurweergave te openen.
+Tik op het pictogram GlobalNav in het dialoogvenster `Assets UI`en kiest u **[!UICONTROL Content tree]** in het menu.
 
 ![content_tree](assets/content_tree.png)
 
@@ -88,7 +92,7 @@ Afhankelijk van de gekozen indeling kunt u de detailpagina voor een element op d
 |---|---|
 | [!UICONTROL Card View] | Tik op het element of klik op het element. |
 | [!UICONTROL List View] | Tik/klik op het rijitem voor het element in de lijst. |
-| [!UICONTROL Column View] | Tik/klik op de knop **[!UICONTROL More Details]** in de elementmomentopname. |
+| [!UICONTROL Column View] | Tik/klik op de knop **[!UICONTROL More Details]** van de elementmomentopname. |
 
 Gebruik de knoppen Vorige/Volgende om heen en weer te gaan tussen de elementen.
 

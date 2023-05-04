@@ -1,21 +1,24 @@
 ---
 title: Aangepaste e-mailsjablonen gebruiken in de stap Taak toewijzen
-seo-title: Aangepaste e-mailsjablonen gebruiken in de stap Taak toewijzen
-description: 'Aangepaste e-mailsjablonen voor e-mailmeldingen in de formulierwerkstroom '
-seo-description: 'Aangepaste e-mailsjablonen voor e-mailmeldingen in de formulierwerkstroom '
+seo-title: Use custom email templates in an Assign Task step
+description: Aangepaste e-mailsjablonen voor e-mailmeldingen in de formulierwerkstroom
+seo-description: Custom email templates for forms workflow email notifications
 uuid: bc2af94d-d4ad-417e-b3d2-bcfffc1b306d
 topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 exl-id: 5af73823-2c32-41b3-9ab8-a7ad9fd9532f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# Aangepaste e-mailsjablonen gebruiken in een taakstap toewijzen {#use-custom-email-templates-in-an-assign-task-step}
+# Aangepaste e-mailsjablonen gebruiken in de stap Taak toewijzen {#use-custom-email-templates-in-an-assign-task-step}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Aangepaste e-mailsjablonen voor e-mailmeldingen in de formulierwerkstroom
 
@@ -31,7 +34,7 @@ In de volgende afbeelding wordt een aangepast e-mailbericht weergegeven:
 
 ![E-mailmelding met aangepaste sjabloon](do-not-localize/customized-email.png)
 
-## De bestaande sjabloon {#customize-the-existing-template} aanpassen
+## De bestaande sjabloon aanpassen {#customize-the-existing-template}
 
 AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een beschrijving van de titel, de vervaldatum, de prioriteit, de naam van de workflow en de koppeling naar de toegewezen taak. U kunt de sjabloon aanpassen om de weergave te wijzigen. Voer de volgende stappen uit om de sjabloon aan te passen:
 
@@ -63,16 +66,16 @@ AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een
 
 1. Sla het bestand op. Het malplaatje is klaar voor gebruik in de stap van de Taak toewijzen.
 
-## Een e-mailsjabloon gebruiken in een taakstap toewijzen {#use-an-email-template-in-an-assign-task-step}
+## Een e-mailsjabloon gebruiken in een stap Taak toewijzen {#use-an-email-template-in-an-assign-task-step}
 
 Uit de doos, wordt de taakstap van de Toewijzing gevormd om het standaardmalplaatje, htmlEmailTemplate.txt te gebruiken. U kunt een aangepaste sjabloon gebruiken. De sjabloon wijzigen:
 
-1. Open de stap **[!UICONTROL Assign Task]**.
+1. Open de **[!UICONTROL Assign Task]** stap.
 
 1. Ga naar **[!UICONTROL Assignee > HTML Email Template]**.
 
-1. Selecteer de nieuwe HTML-e-mailsjabloon.
+1. Selecteer de nieuwe HTML E-mailsjabloon.
 
 1. Klik op **[!UICONTROL OK]**. De sjabloon is gewijzigd.
 
-Een e-mailmelding gebruikt ook [metadata](/help/forms/using/use-metadata-in-email-notifications.md). Bijvoorbeeld datum, prioriteit, naam van workflow en meer. U kunt het malplaatje ook vormen om [douanemetagegevens](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification) te gebruiken.
+Een e-mailmelding gebruikt ook [metagegevens](/help/forms/using/use-metadata-in-email-notifications.md). Bijvoorbeeld datum, prioriteit, naam van workflow en meer. U kunt de sjabloon ook configureren voor gebruik [aangepaste metagegevens](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

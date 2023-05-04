@@ -12,14 +12,18 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: c85e442a-eb24-4eda-a49b-089e5988150d
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '6642'
-ht-degree: 1%
+source-wordcount: '6678'
+ht-degree: 0%
 
 ---
 
 # Elementaire componenten{#foundation-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -952,7 +956,7 @@ Met de component Kolombeheer kunnen gebruikers selecteren hoe ze de inhoud in he
 
       Selecteer het aantal kolommen dat u wilt renderen. Nadat elke kolom is gemaakt, bevat deze een eigen koppeling voor het slepen van componenten of elementen tijdens het toevoegen van inhoud.
 
-## formulier {#form}
+## Formulier {#form}
 
 Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers invoer kunnen verzenden. Forms en formuliercomponenten kunnen worden gebruikt om informatie te verzamelen, waaronder gebruikersfeedback (bijvoorbeeld een vragenlijst voor klanttevredenheid) en gebruikersgegevens (bijvoorbeeld gebruikersregistratie).
 
@@ -962,7 +966,7 @@ Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers i
 
 Forms is opgebouwd uit verschillende onderdelen:
 
-* **formulier**
+* **Formulier**
 
    De formuliercomponent definieert het begin en einde van een nieuw formulier op een pagina. Andere componenten kunnen vervolgens tussen deze elementen worden geplaatst, zoals tabellen, downloads enzovoort.
 
@@ -1085,7 +1089,7 @@ Tussen het begin en het einde van een formulier kunt u formuliercomponenten toev
 
 Deze component is nodig om het begin van een nieuw formulier op een pagina te definiëren. U kunt configureren:
 
-* **formulier**
+* **Formulier**
 
    * **Dankbriefje**
 
@@ -1173,7 +1177,7 @@ Een formulier heeft een handeling nodig. De handeling definieert de bewerking di
 
             Selecteer het gewenste type.
 
-         * **formulier**
+         * **Formulier**
 
             Geef het formulier op.
 
@@ -1226,7 +1230,7 @@ Een formulier heeft een handeling nodig. De handeling definieert de bewerking di
 
             Voer het BCC-e-mailadres of -adressen in.
 
-         * **Subject**
+         * **Onderwerp**
 
             Voer een onderwerp voor de e-mail in.
       * **Wachtwoord opnieuw instellen**

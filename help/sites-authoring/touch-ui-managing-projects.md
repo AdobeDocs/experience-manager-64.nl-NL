@@ -1,8 +1,8 @@
 ---
 title: Projecten beheren
-seo-title: Projecten beheren
+seo-title: Managing Projects
 description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
-seo-description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
+seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed in the Projects console
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,19 +10,22 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 5066e2a2-9904-4203-914f-b0d4da2c88e4
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1073'
 ht-degree: 10%
 
 ---
 
 # Projecten beheren{#managing-projects}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Met projecten kunt u uw project ordenen door bronnen in één entiteit te groeperen.
 
-In de **Projecten** console, hebt u toegang tot en voert actie op uw projecten:
+In de **Projecten** console, hebt toegang tot en voert actie op uw projecten:
 
 ![chlimage_1-255](assets/chlimage_1-255.png)
 
@@ -38,9 +41,9 @@ In Projecten, kunt u een project tot stand brengen, middelen met uw project asso
 
 >[!CAUTION]
 >
->Voor gebruikers in projecten om andere gebruikers/groepen te zien terwijl het gebruiken van de functionaliteit van Projecten zoals het creëren van projecten, het creëren van taken/werkschema&#39;s, het zien van en het leiden van het team, die gebruikers moeten lees toegang op **/home/users** en **/home/groups** hebben. De eenvoudigste manier om dit te implementeren is om de groep **projects-users** lees toegang te geven tot **/home/users** en **/home/groups**.
+>Voor gebruikers in projecten om andere gebruikers/groepen te zien terwijl het gebruiken van de functionaliteit van Projecten zoals het creëren van projecten, het creëren van taken/werkschema&#39;s, het zien en het leiden van het team, moeten die gebruikers gelezen toegang hebben op **/home/users** en **/home/groups**. De eenvoudigste manier om dit te implementeren is om de **projecten-gebruikers** groep lees toegang tot **/home/users** en **/home/groups**.
 
-## Een project {#creating-a-project} maken
+## Een project maken {#creating-a-project}
 
 Uit de doos, verstrekt AEM deze malplaatjes om van te kiezen wanneer u een project creeert:
 
@@ -52,46 +55,46 @@ Uit de doos, verstrekt AEM deze malplaatjes om van te kiezen wanneer u een proje
 De procedure om een project tot stand te brengen is voor alle projecten hetzelfde. Het verschil tussen de soorten projecten omvat beschikbare [gebruikersrollen](/help/sites-authoring/projects.md) en [workflows](/help/sites-authoring/projects-with-workflows.md).  Een nieuw project maken:
 
 1. Tik of klik in **Projecten** op **Maken** om de wizard **Project maken** te openen:
-1. Selecteer een sjabloon. Eenvoudig project, mediaproject, [Omzettingsproject](/help/sites-administering/tc-manage.md) en [Product Fotoopname product](/help/sites-authoring/managing-product-information.md) zijn beschikbaar en klik op **Volgende**.
+1. Selecteer een sjabloon. Eenvoudig project, Media-project, uit de verpakking [Omzettingsproject](/help/sites-administering/tc-manage.md), en [Product Photo Shoot Product](/help/sites-authoring/managing-product-information.md) zijn beschikbaar en klik op **Volgende**.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding toe, indien nodig. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die wordt gebruikt in de URL.
+1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding, indien vereist. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die in URL wordt gebruikt.
 
    ![chlimage_1-257](assets/chlimage_1-257.png)
 
-1. Tik/klik **Maken**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
+1. Tikken/klikken **Maken**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
 
 ### Middelen koppelen aan uw project {#associating-resources-with-your-project}
 
-Aangezien de projecten u toelaten om middelen in één entiteit te groeperen, wilt u middelen aan uw project associëren. Deze bronnen worden **Tegels** genoemd. De typen bronnen die u kunt toevoegen, worden beschreven in [Projecttegels](/help/sites-authoring/projects.md#project-tiles).
+Aangezien de projecten u toelaten om middelen in één entiteit te groeperen, wilt u middelen aan uw project associëren. Deze bronnen worden **Tegels**. De typen bronnen die u kunt toevoegen, worden beschreven in [Projectblokken](/help/sites-authoring/projects.md#project-tiles).
 
 Bronnen aan uw project koppelen:
 
-1. Open uw project van de **console Projecten**.
-1. Tik/klik **Tegel toevoegen** en selecteer de tegel die u aan uw project wilt verbinden. U kunt meerdere typen tegels selecteren.
+1. Open uw project vanuit de **Projecten** console.
+1. Tikken/klikken **Tegel toevoegen** en selecteer de tegel die u aan uw project wilt koppelen. U kunt meerdere typen tegels selecteren.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
    >[!NOTE]
    >
-   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in [de tegels van het Project.](/help/sites-authoring/projects.md#project-tiles)
+   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in detail [Projectelementen.](/help/sites-authoring/projects.md#project-tiles)
 
-1. Tik/klik **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
+1. Tikken/klikken **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
 
-### Een project- of bronnenkoppeling {#deleting-a-project-or-resource-link} verwijderen
+### Een project- of bronnenkoppeling verwijderen {#deleting-a-project-or-resource-link}
 
 De zelfde methode wordt gebruikt om een project van de console of een verbonden middel van uw project te schrappen:
 
 1. Navigeer naar de juiste locatie:
 
-   * Om een project te schrappen ga naar het hoogste niveau van **Projecten** console.
+   * Als u een project wilt verwijderen, gaat u naar het hoofdniveau van het dialoogvenster **Projecten** console.
    * Om een middelverbinding binnen een project te schrappen, open uw project in **Projecten** console.
 
-1. Ga selectiemodus door **Select** te klikken en uw project of middelverbinding te selecteren.
-1. Tik/klik **Verwijderen**.
+1. Selectiemodus openen door te klikken **Selecteren** en het selecteren van uw project of middelverbinding.
+1. Tikken/klikken **Verwijderen**.
 
-1. U moet de verwijdering bevestigen in een dialoogvenster. Indien bevestigd, wordt het project of de middelverbinding geschrapt. Tik/klik **Deselecteer** om de selectiemodus af te sluiten.
+1. U moet de verwijdering bevestigen in een dialoogvenster. Indien bevestigd, wordt het project of de middelverbinding geschrapt. Tikken/klikken **Deselecteren** om de selectiemodus af te sluiten.
 
 >[!NOTE]
 >
@@ -103,11 +106,11 @@ In sommige tegels wilt u mogelijk meerdere items toevoegen. U kunt bijvoorbeeld 
 
 Items toevoegen aan een tegel:
 
-1. In **Projecten**, navigeer aan het project en klik Add + pictogram op de tegel u een punt aan wilt toevoegen.
+1. In **Projecten** Navigeer naar het project en klik op het pictogram Toevoegen + op de tegel waaraan u een item wilt toevoegen.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
-1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een nieuwe tegel. Projectelementen worden [hier](/help/sites-authoring/projects.md#project-tiles) beschreven. In dit voorbeeld is een andere workflow toegevoegd.
+1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een nieuwe tegel. Projectelementen worden beschreven [hier](/help/sites-authoring/projects.md#project-tiles). In dit voorbeeld is een andere workflow toegevoegd.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -125,21 +128,21 @@ Een tegel openen zodat u items kunt weergeven of wijzigen:
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
-## Projectstatistieken {#viewing-project-statistics} weergeven
+## Projectstatistieken weergeven {#viewing-project-statistics}
 
-Om projectstatistieken, in **Projecten** console te bekijken, klik **toon de Mening van Statistieken**. Het voltooiingsniveau voor elk project wordt weergegeven. Klik **Statistische weergave tonen** opnieuw om naar de **Projecten** console te gaan.
+Om projectstatistieken te bekijken, in **Projecten** console, klik **Statistische weergave tonen**. Het voltooiingsniveau voor elk project wordt weergegeven. Klikken **Statistische weergave tonen** om naar de **Projecten** console.
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
-### Een projecttijdlijn bekijken {#viewing-a-project-timeline}
+### Een projecttijdlijn weergeven {#viewing-a-project-timeline}
 
-De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Als u de projecttijdlijn wilt weergeven, klikt of tikt u op **Tijdlijn**, gaat u naar de selectiemodus en selecteert u het project. Elementen worden weergegeven in het linkervenster. Klik/tik **Chronologie** om aan **Projecten** console terug te keren.
+De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Klik of tik op de projecttijdlijn om deze weer te geven **Tijdlijn**, dan ga selectiewijze in en selecteer het project. Elementen worden weergegeven in het linkervenster. Klikken/tikken **Tijdlijn** om terug te keren naar de **Projecten** console.
 
 ![chlimage_1-264](assets/chlimage_1-264.png)
 
 ### Actieve/Inactieve projecten weergeven {#viewing-active-inactive-projects}
 
-Om tussen uw actieve en inactieve projecten, in **Projecten** console van een knevel te voorzien, klik **Actieve Projecten** in-/uitschakelen. Als naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
+Om tussen uw actieve en inactieve projecten, in te schakelen **Projecten** console, klik **Actieve projecten schakelen**. Als naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
@@ -147,20 +150,20 @@ Als het pictogram een x naast heeft, toont het de inactieve projecten.
 
 ![chlimage_1-266](assets/chlimage_1-266.png)
 
-## Projecten inactief of actief {#making-projects-inactive-or-active} maken
+## Projecten inactief of actief maken {#making-projects-inactive-or-active}
 
 U kunt een project willen inactief maken als u het hebt voltooid maar u wilt nog de informatie over het project houden.
 
 Een project inactief (of actief) maken:
 
-1. In **Projecten** console, open uw project en vind dan de **Tile van de Informatie van het Project**.
+1. In de **Projecten** console, open uw project en dan vind **Projectinformatie** tegel.
 
    >[!NOTE]
    Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [Tegels toevoegen](#adding-items-to-a-tile).
 
-1. Tik/klik **Bewerken**.
-1. Wijzig de kiezer van **Active** in **Inactief** (of vice versa).
+1. Tikken/klikken **Bewerken**.
+1. De kiezer wijzigen vanuit **Actief** tot **Inactief** (of omgekeerd).
 
    ![chlimage_1-267](assets/chlimage_1-267.png)
 
-1. Tik/klik **Done** om uw wijzigingen op te slaan.
+1. Tikken/klikken **Gereed** om uw wijzigingen op te slaan.

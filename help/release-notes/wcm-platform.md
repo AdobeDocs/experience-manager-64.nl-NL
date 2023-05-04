@@ -2,7 +2,7 @@
 title: AEM Foundation & Repository
 seo-title: AEM Foundation & Repository
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.3 AEM Platform en opslagplaats.
-seo-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.3 AEM Platform en opslagplaats.
+seo-description: Release notes specific to Adobe Experience Manager 6.3 AEM Platform and Repository.
 uuid: 147b38d0-cf87-467c-a52d-3399d4af7e6e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,15 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
 exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
 # AEM Foundation &amp; Repository {#aem-foundation-repository}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Lijst met wijzigingen {#list-of-changes}
 
@@ -36,17 +39,15 @@ ht-degree: 0%
    * Continuous Revision Cleanup for MongoMK vervangt gepland onderhoud voor opschonen
 
 * Verbeterde efficiëntie voor het opschonen van revisies in documentknooppunten
-* Zie [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) en [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) voor een volledig overzicht van vaste problemen.
+* Zie [Apache Jackrabbit Oak Jira v 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) en [Apache Jackrabbit Oak Jira v 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) voor een volledig overzicht van de opgeloste problemen.
 
 >[!CAUTION]
 >
->* De nieuwe versie van de Oak Segment Tar aanwezig sinds AEM 6.3 vereist een repository migratie. Deze stap is verplicht als u een upgrade uitvoert van een oudere versie van TarMK of als u de nieuwe segmentmarkering wilt overschakelen van een ander type persistentie. Voor meer informatie over wat de voordelen van de nieuwe Tar van het Segment zijn, zie [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
-
+>* De nieuwe versie van de Oak Segment Tar aanwezig sinds AEM 6.3 vereist een repository migratie. Deze stap is verplicht als u een upgrade uitvoert van een oudere versie van TarMK of als u de nieuwe segmentmarkering wilt overschakelen van een ander type persistentie. Voor meer informatie over wat de voordelen van het nieuwe Segment Tar zijn, zie [Veelgestelde vragen over migreren naar eikensegment](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 >
 
 
-
-### {#search-amp-indexing} zoeken en indexeren
+### Zoeken en indexeren {#search-amp-indexing}
 
 * Verbeterde ondersteuning voor indexeringsbewerkingen via &#39;ak-run&#39; (CLI):
 
@@ -72,10 +73,8 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->* Adobe is niet van plan om verdere verhogingen aan Klassieke UI te maken. AEM 6.4 heeft de klassieke gebruikersinterface inbegrepen, en klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Merk op dat Klassieke UI volledig wordt gesteund terwijl wordt afgekeurd [lees meer](/help/sites-deploying/ui-recommendations.md).
-
+>* Adobe is niet van plan om verdere verhogingen aan Klassieke UI te maken. AEM 6.4 heeft de klassieke gebruikersinterface inbegrepen, en klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Merk op dat Klassieke UI volledig wordt gesteund terwijl wordt afgekeurd [Meer informatie](/help/sites-deploying/ui-recommendations.md).
 >
-
 
 
 ### Contentdistributie {#content-distribution}
@@ -101,7 +100,7 @@ ht-degree: 0%
 
 * De gebruiker kan nu het bereik van de download status.zip definiëren
 
-###  Onderhoud{#maintenance}
+###  Onderhoud {#maintenance}
 
 * Actieve schrapping van binaire getallen van Lucene die een onderhoudstaak gebruiken
 * RevisionGC-onderhoudstaak voor MongoDB is nu uitgeschakeld en werkt nu beter dan Continuous Revision Cleanup. Zie de sectie Repository hierboven.
@@ -114,7 +113,7 @@ ht-degree: 0%
 * Complexiteit-evaluatie van upgrade: Het nieuwe gereedschap Patroondetector om de complexiteit van upgrades te beoordelen.
 * Duurzame verbeteringen: De classificatie van het oppervlak en van de Inhoud van API wordt geïntroduceerd om u te helpen beste praktijken voor een efficiënte en naadloze verbetering aan de volgende versie door uw ontwikkelingscyclus gemakkelijk volgen.
 * Herstructurering opslagplaats: Aanzienlijke herstructurering (vooral /e.d.) om upgrades te vergemakkelijken en optimale werkwijzen voor implementatie te bevorderen. [Lees meer.](/help/sites-deploying/repository-restructuring.md)
-* Raadpleeg de [Upgradedocumentatie](/help/sites-deploying/upgrade.md) voor meer informatie over deze functies.
+* Zie de [Upgradedocumentatie](/help/sites-deploying/upgrade.md) voor meer informatie over deze functies.
 
 ### Cloud Services {#cloud-services}
 

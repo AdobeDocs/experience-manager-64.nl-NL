@@ -1,8 +1,8 @@
 ---
 title: De interface Correspondentie maken integreren met uw aangepaste portal
-seo-title: De interface Correspondentie maken integreren met uw aangepaste portal
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Leer hoe u het maken van correspondentie-UI kunt integreren met uw aangepaste portal
-seo-description: Leer hoe u het maken van correspondentie-UI kunt integreren met uw aangepaste portal
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 4ae9c5fb-bb9d-46d8-be84-455f386ab443
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,15 +10,18 @@ topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 feature: Correspondence Management
 exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 3%
+source-wordcount: '514'
+ht-degree: 0%
 
 ---
 
 # De interface Correspondentie maken integreren met uw aangepaste portal {#integrating-create-correspondence-ui-with-your-custom-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Overzicht {#overview}
 
@@ -45,9 +48,9 @@ Als het portaal de sjabloonnaam Letter heeft, kan de URL\
 >
 >Voordat u de toepassing Correspondentie maken aanroept, slaat u de gegevens op en uploadt u deze om de interface Correspondentie maken op de opgegeven dataURL aan te roepen. Dit zou of van het douaneportaal zelf of door een ander achtereindeproces kunnen worden gedaan.
 
-## Inline op gegevens gebaseerde aanroep {#inline-data-based-invocation}
+## Inline op gegevens gebaseerde aanroeping {#inline-data-based-invocation}
 
-Een andere (en veiligere) manier om de Create toepassing van de Correspondentie te roepen zou kunnen zijn eenvoudig URL bij `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html` te raken, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST te roepen verzoek (die hen voor de eindgebruiker verbergen). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
+Een andere (en veiligere) manier om de toepassing Create Correspondentie aan te roepen zou kunnen zijn door de URL eenvoudig te raken bij `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, terwijl het verzenden van de parameters en de gegevens om de toepassing Create Correspondence als een POST-verzoek aan te roepen (hen voor de eindgebruiker verbergen). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
 
 ### Parameters voor het opgeven van de letter {#parameters-for-specifying-letter}
 
@@ -60,17 +63,17 @@ Een andere (en veiligere) manier om de Create toepassing van de Correspondentie 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
-   <td>Tekenreeks</td> 
+   <td>String</td> 
    <td>De id voor de letter-instantie.</td> 
   </tr>
   <tr>
    <td>cmLetterName</td> 
-   <td>Tekenreeks</td> 
+   <td>String</td> 
    <td><p>De id voor de lettertypesjabloon. </p> <p>Als er meerdere CM-letters met dezelfde naam op een server staan, genereert het gebruik van de parameter cmLetterName in de URL een fout "Er bestaan meerdere letters met naam". Gebruik in dat geval de parameter cmLetterId in de URL in plaats van cmLetterName.</p> </td> 
   </tr>
   <tr>
    <td>cmLetterId</td> 
-   <td>Tekenreeks</td> 
+   <td>String</td> 
    <td>De naam van de Letter-sjabloon.</td> 
   </tr>
  </tbody>
@@ -78,7 +81,7 @@ Een andere (en veiligere) manier om de Create toepassing van de Correspondentie 
 
 De volgorde van parameters in de tabel geeft de voorkeur aan parameters die worden gebruikt voor het laden van de letter.
 
-### Parameters om de XML-gegevensbron {#parameters-for-specifying-the-xml-data-source} op te geven
+### Parameters voor het opgeven van de XML-gegevensbron {#parameters-for-specifying-the-xml-data-source}
 
 <table> 
  <tbody>
@@ -94,7 +97,7 @@ De volgorde van parameters in de tabel geeft de voorkeur aan parameters die word
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
-   <td>Tekenreeks</td> 
+   <td>String</td> 
    <td>XML-gegevens gebruiken die beschikbaar zijn in Letter Instance.</td> 
   </tr>
   <tr>

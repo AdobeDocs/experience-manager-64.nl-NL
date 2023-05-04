@@ -1,8 +1,8 @@
 ---
 title: Annotaties bij het bewerken van een pagina
-seo-title: Annotaties bij het bewerken van een pagina
+seo-title: Annotations when Editing a Page
 description: Met veel rechtstreeks aan inhoud gerelateerde componenten kunt u een annotatie toevoegen
-seo-description: Met veel rechtstreeks aan inhoud gerelateerde componenten kunt u een annotatie toevoegen
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
 
 # Annotaties bij het bewerken van een pagina{#annotations-when-editing-a-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Het toevoegen van inhoud aan de pagina&#39;s van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant (in tegenstelling, bijvoorbeeld, aan lay-out) u toe om een aantekening toe te voegen.
 
@@ -42,11 +45,11 @@ Een annotatie plaatst een gekleurde markering/notitie op de pagina. Met de annot
 
 ## Annotaties {#annotations}
 
-Een speciale [modus](/help/sites-authoring/author-environment-tools.md#page-modes) wordt gebruikt voor het maken en weergeven van annotaties.
+Een speciale [mode](/help/sites-authoring/author-environment-tools.md#page-modes) wordt gebruikt voor het maken en weergeven van annotaties.
 
 >[!NOTE]
 >
->Vergeet niet dat [commentaren](/help/sites-authoring/basic-handling.md#timeline) ook beschikbaar zijn voor het verstrekken van terugkoppelen op een pagina.
+>Vergeet niet dat [opmerkingen](/help/sites-authoring/basic-handling.md#timeline) zijn ook beschikbaar voor het opgeven van feedback op een pagina.
 
 >[!NOTE]
 >
@@ -54,12 +57,10 @@ Een speciale [modus](/help/sites-authoring/author-environment-tools.md#page-mode
 >
 >* [Annoteren van elementen](/help/assets/managing-assets-touch-ui.md#annotating)
 >* [Video-elementen annoteren](/help/assets/managing-video-assets.md#annotating-video-assets)
-
 >
 
 
-
-### Een component {#annotating-a-component} annoteren
+### Een component annoteren {#annotating-a-component}
 
 In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaatsen of verwijderen:
 

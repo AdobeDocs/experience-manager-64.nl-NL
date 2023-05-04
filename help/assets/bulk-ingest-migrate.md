@@ -12,34 +12,38 @@ discoiquuid: 6198e613-a867-49a8-b9a5-a05e7889821c
 exl-id: f9bb59f6-39a5-4804-8abe-12783d4162c9
 feature: Configuration
 role: Admin,User
-source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 1%
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
 # Functiepakket 18912 voor migratie van grote hoeveelheden bedrijfsmiddelen installeren {#installing-feature-pack}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 De installatie van functiepak 18912 is _optioneel_.
 
-Met Feature Pack 18912 kunt u opgenomen elementen rechtstreeks in Dynamic Media - Scene 7-modus AEM via FTP, of elementen migreren van Dynamic Media Classic naar Dynamic Media - Scene7-modus op AEM. Het functiepakket is beschikbaar bij [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+Met Feature Pack 18912 kunt u opgenomen elementen rechtstreeks in Dynamic Media - Scene 7-modus AEM via FTP, of elementen migreren van Dynamic Media Classic naar Dynamic Media - Scene7-modus op AEM. Het functiepakket is beschikbaar via [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
 
 >[!NOTE]
 >
->Hoewel het voor u mogelijk is om het eigenschapspak te gebruiken om activa op zich te bulken van Dynamic Media Classic aan Dynamic Media - Scene 7 wijze in AEM of bulkmiddel migrate activa gebruikend de eigenschap van FTP in Dynamic Media Classic, *niet* adviseert deze methode wegens de ingewikkeldheid in kwestie.
+>Hoewel het voor u mogelijk is om het functiepak te gebruiken om activa op uw te bulken migreren van Dynamic Media Classic aan Dynamic Media - Scene 7 wijze in AEM of bulkmiddel migrate activa gebruikend de eigenschap van FTP in Dynamic Media Classic, Adobe doet *niet* adviseer deze methode wegens de ingewikkeldheid in kwestie.
 >
->Als dusdanig, worden de pakketten van de migratieeigenschap, zoals dit, *slechts* gesteund als deel van een migratieproject door [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+>Daarom zijn de pakketten van de migratieeigenschap, zoals dit *alleen* ondersteund als onderdeel van een migratieproject via [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
 
 Voordat u dit functiepakket kunt installeren, moet u eerst een servicegebruiker maken en die informatie aan Adobe verstrekken.
 
 Zie ook [Dynamic Media configureren - Scene7-modus](https://helpx.adobe.com/experience-manager/6-4/assets/using/config-dms7.html).
 
-**Om functiepak 18912 voor de migratie** van bulkmiddelen te installeren,
+**Om functiepak 18912 voor de migratie van bulkmiddelen te installeren**,
 
-1. Navigeer in uw AEM naar **[!UICONTROL Tools > Security > Users > Create User]**. Deze servicegebruiker moet lees- en schrijfmachtigingen hebben voor `/content/dam`.
-1. Voer in de velden **[!UICONTROL ID]** en **[!UICONTROL Password]** een gebruikersnaam en wachtwoord in. bijvoorbeeld `FTP User`. Deze naam wordt in de tijdlijn weergegeven als de gebruiker die het element heeft gemaakt. Wanneer een element wordt geüpload vanaf FTP, wordt een element beschouwd als gemaakt wanneer het naar de FTP-server wordt geüpload en naar AEM wordt geduwd.
-1. Neem contact op met de [Klantenondersteuning Adobe voor Experience Manager](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) om toegang te vragen tot functiepakket 18912 voor downloaden. U hebt mogelijk de volgende informatie nodig wanneer u contact opneemt met de ondersteuningsafdeling:
+1. Navigeer in uw AEM naar **[!UICONTROL Tools > Security > Users > Create User]**. Deze servicegebruiker moet lees-/schrijfmachtigingen hebben voor `/content/dam`.
+1. In de **[!UICONTROL ID]** en **[!UICONTROL Password]** in velden, een gebruikersnaam en wachtwoord invoeren; bijvoorbeeld: `FTP User`. Deze naam wordt in de tijdlijn weergegeven als de gebruiker die het element heeft gemaakt. Wanneer een element wordt geüpload vanaf FTP, wordt een element beschouwd als gemaakt wanneer het naar de FTP-server wordt geüpload en naar AEM wordt geduwd.
+1. Contact [Adobe Klantenondersteuning voor Experience Manager](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) om toegang te vragen tot functiepak 18912 voor downloaden. U hebt mogelijk de volgende informatie nodig wanneer u contact opneemt met de ondersteuningsafdeling:
 
    * IP van de server adres voor uw instantie van de Auteur, met inbegrip van het havenaantal (door gebrek, is het havenaantal 4502).
    * AEM de gebruikersbenaming en het wachtwoord van de dienstgebruiker van de vorige stap.
@@ -48,4 +52,4 @@ Zie ook [Dynamic Media configureren - Scene7-modus](https://helpx.adobe.com/expe
 
 1. Wanneer u functiepakket 18912 ontvangt, installeert u dit.
 
-   Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie bij het gebruiken van de Distributie van de Software en pakketten in AEM.
+   Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het gebruik van Software Distribution and packages in AEM.

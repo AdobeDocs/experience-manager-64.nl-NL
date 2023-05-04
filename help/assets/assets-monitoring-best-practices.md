@@ -1,18 +1,22 @@
 ---
 title: Aanbevolen werkwijzen voor middelenbewaking
-description: Beste werkwijzen voor het controleren van het milieu en de prestaties van uw  [!DNL Experience Manager] instantie nadat het wordt opgesteld.
+description: Aanbevolen procedures voor het bewaken van de omgeving en de prestaties van uw [!DNL Experience Manager] instantie nadat deze is geïmplementeerd.
 contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1781'
 ht-degree: 0%
 
 ---
 
 # Best practices voor middelenbewaking {#assets-monitoring-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Vanuit het oogpunt van Adobe Experience Manager Assets dient de monitoring het observeren en rapporteren van de volgende processen en technologieën te omvatten:
 
@@ -27,7 +31,7 @@ Vanuit het oogpunt van Adobe Experience Manager Assets dient de monitoring het o
 
 * Gezondheidscontroles op de OSGi-console
 
-[!DNL Assets] kan doorgaans op twee manieren worden bewaakt: live bewaking en langdurige bewaking.
+Doorgaans [!DNL Assets] kan op twee manieren worden gemonitord: live monitoring en langetermijnmonitoring.
 
 ## Live bewaking {#live-monitoring}
 
@@ -39,13 +43,13 @@ U zou levende controle tijdens de prestaties testende fase van uw ontwikkeling o
 
 * [Iotop](https://guichaz.free.fr/iotop/): Iotop is een gedetailleerd dashboard voor schijf-IO-gebruik. Het toont bars en meters die de processen beschrijven die schijf IO en de hoeveelheid gebruiken zij. Iotop kan op de meeste systemen van Linux worden geïnstalleerd gebruikend `yum install iotop` of `apt-get install iotop`.
 
-* [IFP](https://www.ex-parrot.com/pdw/iftop/): Internet toont gedetailleerde informatie over Ethernet/netwerkgebruik. De vertoningen van IFP per communicatiekanaalstatistieken over de entiteiten die ethernet gebruiken en de hoeveelheid bandbreedte zij gebruiken. Als u op de meeste Linux-systemen `yum install iftop` of `apt-get install iftop` wilt installeren.
+* [IFtop](https://www.ex-parrot.com/pdw/iftop/): Internet toont gedetailleerde informatie over Ethernet/netwerkgebruik. De vertoningen van IFP per communicatiekanaalstatistieken over de entiteiten die ethernet gebruiken en de hoeveelheid bandbreedte zij gebruiken. Installeer de laptop op de meeste Linux-systemen met `yum install iftop` of `apt-get install iftop`.
 
-* Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij in non-production milieu&#39;s kunt gebruiken. Zie [Java-vluchtrecorder gebruiken om CQ-runtimeproblemen te diagnostiseren](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq) voor meer informatie.
-* [!DNL Experience Manager] error.log, bestand: U kunt het  [!DNL Experience Manager] error.log dossier voor details van fouten onderzoeken die in het systeem worden geregistreerd. Gebruik het bevel `tail -F quickstart/logs/error.log` om fouten te identificeren die u zou moeten onderzoeken.
+* Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij in non-production milieu&#39;s kunt gebruiken. Zie voor meer informatie [Java-vluchtrecorder gebruiken om CQ-runtimeproblemen te onderzoeken](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* [!DNL Experience Manager] error.log, bestand: U kunt de [!DNL Experience Manager] error.log, bestand voor meer informatie over fouten die in het systeem zijn aangemeld. De opdracht gebruiken `tail -F quickstart/logs/error.log` om fouten te identificeren die u zou moeten onderzoeken.
 * [Workflowconsole](../sites-administering/workflows.md): Gebruik de workflowconsole om workflows te controleren die achterblijven of vastlopen.
 
-Gewoonlijk gebruikt u deze gereedschappen samen om een uitgebreid idee te krijgen van de prestaties van uw [!DNL Experience Manager]-exemplaar.
+Doorgaans gebruikt u deze gereedschappen samen om een uitgebreid idee te krijgen van de prestaties van uw [!DNL Experience Manager] -instantie.
 
 >[!NOTE]
 >
@@ -55,11 +59,11 @@ Gewoonlijk gebruikt u deze gereedschappen samen om een uitgebreid idee te krijge
 
 ## Controle op lange termijn {#long-term-monitoring}
 
-Bij langdurige bewaking van een [!DNL Experience Manager]-instantie moeten dezelfde delen die live worden bewaakt, langer worden bewaakt. Het omvat ook het definiëren van waarschuwingen die specifiek zijn voor uw omgeving.
+Langdurige monitoring van een [!DNL Experience Manager] instantie omvat het gedurende langere tijd controleren van dezelfde delen die live worden bewaakt. Het omvat ook het definiëren van waarschuwingen die specifiek zijn voor uw omgeving.
 
 ### Aggregatie en rapportage van stamhout {#log-aggregation-and-reporting}
 
-Er zijn verscheidene hulpmiddelen beschikbaar om logboeken samen te voegen, bijvoorbeeld Splunk(TM) en Elastic Search/Logstash/Kabana (ELK). Om de uptime van uw [!DNL Experience Manager] instantie te evalueren, is het belangrijk voor u om logboekgebeurtenissen te begrijpen specifiek voor uw systeem en alarm tot stand te brengen die op hen wordt gebaseerd. Een goede kennis van uw ontwikkeling en verrichtingspraktijken kan u helpen beter begrijpen hoe te om uw proces van de logboeksamenvoeging te stemmen om kritieke alarm te produceren.
+Er zijn verscheidene hulpmiddelen beschikbaar om logboeken samen te voegen, bijvoorbeeld Splunk(TM) en Elastic Search/Logstash/Kabana (ELK). De uptime van uw [!DNL Experience Manager] bijvoorbeeld, is het belangrijk voor u om logboekgebeurtenissen te begrijpen specifiek voor uw systeem en alarm tot stand te brengen die op hen wordt gebaseerd. Een goede kennis van uw ontwikkeling en verrichtingspraktijken kan u helpen beter begrijpen hoe te om uw proces van de logboeksamenvoeging te stemmen om kritieke alarm te produceren.
 
 ### Milieu-monitoring {#environment-monitoring}
 
@@ -76,15 +80,15 @@ U hebt externe hulpmiddelen nodig, zoals NewRelic(TM) en AppDynamics(TM) om elk 
 
 #### Interne toepassingsbewaking {#internal-application-monitoring}
 
-De interne toepassingscontrole omvat het controleren van de toepassingscomponenten die de [!DNL Experience Manager] stapel, met inbegrip van JVM, de inhoudsbewaarplaats vormen, en controle door douanetoepassingscode die op het platform wordt gebouwd. In het algemeen wordt het uitgevoerd via JMX-boonen die rechtstreeks kunnen worden gecontroleerd door veel populaire monitoroplossingen, zoals SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) en andere. Voor systemen die geen directe verbinding met JMX ondersteunen, kunt u shellscripts schrijven om de JMX-gegevens te extraheren en aan deze systemen beschikbaar te maken in een indeling die ze zelf begrijpen.
+De interne toepassingscontrole omvat de controle van de toepassingscomponenten die omhoog maken [!DNL Experience Manager] stapel, inclusief JVM, de opslagplaats voor inhoud en bewaking via aangepaste toepassingscode die op het platform is gebaseerd. In het algemeen wordt het uitgevoerd via JMX-boonen die rechtstreeks kunnen worden gecontroleerd door veel populaire monitoroplossingen, zoals SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) en andere. Voor systemen die geen directe verbinding met JMX ondersteunen, kunt u shellscripts schrijven om de JMX-gegevens te extraheren en aan deze systemen beschikbaar te maken in een indeling die ze zelf begrijpen.
 
-Externe toegang tot de JMX-mabeans is niet standaard ingeschakeld. Voor meer informatie over controle door JMX, zie [Controle en Beheer Gebruikend Technologie JMX](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
+Externe toegang tot de JMX-mabeans is niet standaard ingeschakeld. Voor meer informatie over controle via JMX raadpleegt u [Controle en beheer met behulp van JMX-technologie](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
 In veel gevallen is een basislijn nodig om een statistiek effectief te kunnen controleren. Als u een basislijn wilt maken, observeert u het systeem onder normale bedrijfsomstandigheden gedurende een vooraf bepaalde periode en identificeert u vervolgens de normale maatstaf.
 
 **JVM-bewaking**
 
-Zoals bij elke op Java gebaseerde toepassingsstapel, [!DNL Experience Manager] hangt van de middelen af die aan het door de onderliggende Virtuele Machine van Java worden verstrekt. U kunt de status van veel van deze bronnen controleren via Platform MXBeans die door JVM beschikbaar worden gemaakt. Voor meer informatie over MXBeans, zie [Gebruikend de Server van Platform MBean en Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Net als bij elke op Java gebaseerde toepassingsstapel, [!DNL Experience Manager] is afhankelijk van de bronnen die hem via de onderliggende Java Virtual Machine worden verschaft. U kunt de status van veel van deze bronnen controleren via Platform MXBeans die door JVM beschikbaar worden gemaakt. Voor meer informatie over MXBeans, zie [Het gebruiken van Platform MBean Server en Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 Hier volgen enkele basislijnparameters die u kunt controleren voor JVM:
 
@@ -108,20 +112,20 @@ Threads
 
 **[!DNL Experience Manager]toezicht**
 
-[!DNL Experience Manager] stelt ook een reeks statistieken en verrichtingen via JMX bloot. Deze kunnen helpen systeemgezondheid beoordelen en potentiële problemen identificeren alvorens zij gebruikers beïnvloeden. Zie [documentatie](/help/sites-administering/jmx-console.md) op [!DNL Experience Manager] JMX MBans voor meer informatie.
+[!DNL Experience Manager] stelt ook een reeks statistieken en verrichtingen door JMX bloot. Deze kunnen helpen systeemgezondheid beoordelen en potentiële problemen identificeren alvorens zij gebruikers beïnvloeden. Zie voor meer informatie [documentatie](/help/sites-administering/jmx-console.md) op [!DNL Experience Manager] JMX MBeans.
 
-Hier volgen enkele basislijnparameters die u kunt controleren voor [!DNL Experience Manager]:
+Hier zijn enkele basislijnparameters die u kunt controleren [!DNL Experience Manager]:
 
 Replication-agents
 
 * MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL: */system/console/jmx/com.adobe.granite.replication:type=agent,id=&quot;&lt;AGENT_NAME>&quot;*
+* URL: */system/console/jmx/com.adobe.granite.replication:type=agent,id=&quot;&lt;agent_name>&quot;*
 * Instanties: Eén auteur en alle publicatie-instanties (voor uitlijningsmiddelen)
-* Alarmdrempel: Wanneer de waarde van `QueueBlocked` waar is of de waarde van `QueueNumEntries` groter is dan 150% van de basislijn.
+* Alarmdrempel: Wanneer de waarde van `QueueBlocked` is waar of de waarde van `QueueNumEntries` is groter dan 150% van de basislijn.
 
 * Alarmdefinitie: Aanwezigheid van een geblokkeerde rij in het systeem erop wijst die dat het replicatiedoel neer of onbereikbaar is. Vaak leiden netwerk- of infrastructuurproblemen ertoe dat overdreven items in de wachtrij worden geplaatst, wat de systeemprestaties nadelig kan beïnvloeden.
 
-**Opmerking**: Voor de parameters MBean en URL, vervang  `<AGENT_NAME>` met de naam van de replicatieagent u wilt controleren.
+**Opmerking**: Vervang voor de parameters MBean en URL `<AGENT_NAME>` met de naam van de replicatieagent wilt u controleren.
 
 Sessieteller
 
@@ -133,7 +137,7 @@ Sessieteller
 
 Gezondheidscontroles
 
-Health checks die beschikbaar zijn in het [bewerkingsdashboard](/help/sites-administering/operations-dashboard.md#health-reports) hebben overeenkomstige JMX MBans voor controle. Nochtans, kunt u de controles van de douanegezondheid schrijven om extra systeemstatistieken bloot te stellen.
+Gezondheidscontroles die beschikbaar zijn in de [bewerkingsdashboard](/help/sites-administering/operations-dashboard.md#health-reports) beschikken over overeenkomstige JMX MBans voor controle. Nochtans, kunt u de controles van de douanegezondheid schrijven om extra systeemstatistieken bloot te stellen.
 
 Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te controleren:
 
@@ -187,13 +191,13 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 ## Gemeenschappelijke kwesties en resoluties  {#common-issues-and-resolutions}
 
-Tijdens de controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met [!DNL Experience Manager] instanties op te lossen:
+In het proces van controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met op te lossen [!DNL Experience Manager] exemplaren:
 
-* Als u TarMK gebruikt, voert u de Tar-compressie vaak uit. Zie [Behoud van de opslagplaats](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository) voor meer informatie.
-* Controleer `OutOfMemoryError` logbestanden. Zie [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html) voor meer informatie.
+* Als u TarMK gebruikt, voert u de Tar-compressie vaak uit. Zie voor meer informatie [Behoud van de opslagplaats](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+* Controleren `OutOfMemoryError` logboeken. Zie voor meer informatie [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 * Controleer de logboeken om het even welke verwijzingen naar unindexed vragen, boomstamtraversals, of indextraversals. Deze wijzen op unindexed vragen of op ontoereikend geïndexeerde vragen. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [Beste praktijken voor Vragen en het Indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Gebruik de workflowconsole om te controleren of uw workflows naar behoren werken. Indien mogelijk kunt u meerdere workflows samenvoegen tot één workflow.
 * Herzie live monitoring en zoek naar extra knelpunten of hoge consumenten van specifieke hulpbronnen.
-* Onderzoek de uitgang punten van het cliëntnetwerk en de ingang richt aan het [!DNL Experience Manager] instantienetwerk, met inbegrip van de verzender. Dit zijn vaak knelpunten. Zie [Elementennetwerkoverwegingen](assets-network-considerations.md) voor meer informatie.
-* Upsize uw [!DNL Experience Manager] server. U kunt een exemplaar van onvoldoende grootte hebben [!DNL Experience Manager]. Adobe Klantenondersteuning kan u helpen te bepalen of uw server te klein is.
-* Onderzoek `access.log` en `error.log` dossiers voor ingangen rond de tijd van iets verkeerd ging. Zoek naar patronen die op anomalieën van de douanecode kunnen wijzen. Voeg deze toe aan de lijst met gebeurtenissen die u controleert.
+* Onderzoek de uitgang punten van het cliëntnetwerk en de ingangen richten aan [!DNL Experience Manager] instantienetwerk, inclusief de verzender. Dit zijn vaak knelpunten. Zie voor meer informatie [Elementennetwerkoverwegingen](assets-network-considerations.md).
+* Uw [!DNL Experience Manager] server. U kunt een te grote hoeveelheid [!DNL Experience Manager] -instantie. Adobe Klantenondersteuning kan u helpen te bepalen of uw server te klein is.
+* Onderzoek `access.log` en `error.log` bestanden voor ingangen rond de tijd van iets gingen fout . Zoek naar patronen die op anomalieën van de douanecode kunnen wijzen. Voeg deze toe aan de lijst met gebeurtenissen die u controleert.

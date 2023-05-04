@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
 # Basisbeginselen van het beheer van certificaten en referenties {#basics-of-managing-certificates-and-credentials}
 
-Een *referentie* bevat uw persoonlijke sleutelgegevens die nodig zijn voor het ondertekenen of identificeren van documenten. Een *certificaat* is openbare zeer belangrijke informatie die u voor vertrouwen vormt. AEM formulieren gebruiken certificaten en referenties voor verschillende doeleinden:
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+A *geloofsbrieven* bevat uw persoonlijke sleutelgegevens die nodig zijn voor het ondertekenen of identificeren van documenten. A *certificaat* is openbare zeer belangrijke informatie die u voor vertrouwen vormt. AEM formulieren gebruiken certificaten en referenties voor verschillende doeleinden:
 
 * Acrobat Reader DC-extensies gebruiken een referentie om Adobe Reader-gebruiksrechten in PDF-documenten in te schakelen. (Zie [Referenties configureren voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* U kunt Rights Management zodanig configureren dat referenties alleen door vertrouwde uitgevers worden weergegeven voor gebruik in Acrobat. (Zie [Weergave-instellingen voor Rights Management configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) De gemeenschappelijke benaming (CN) moet in het certificaat aanwezig zijn.
-* De handtekeningservice heeft toegang tot certificaten en referenties. Zie [Referentiehandleiding](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening.
+* U kunt Rights Management zodanig configureren dat referenties alleen door vertrouwde uitgevers worden weergegeven voor gebruik in Acrobat. (Zie [Weergave-instellingen Rights Management configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) De gemeenschappelijke benaming (CN) moet in het certificaat aanwezig zijn.
+* De handtekeningservice heeft toegang tot certificaten en referenties. Voor meer informatie over de service Handtekening raadpleegt u [Servicereferentie](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **Een paarsleutel genereren**
 

@@ -1,42 +1,45 @@
 ---
 title: Concepten en verzendingen
-seo-title: Concepten en verzendingen
+seo-title: Drafts and submissions component
 description: De concepten en de verzendingscomponent maken een lijst van vormen die in de ontwerpstaat zijn en reeds voorgelegd. U kunt de vormgeving en stijl van de component aanpassen.
-seo-description: De concepten en de verzendingscomponent maken een lijst van vormen die in de ontwerpstaat zijn en reeds voorgelegd. U kunt de vormgeving en stijl van de component aanpassen.
+seo-description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
 uuid: 351d6df5-0dc3-4f7a-8bdf-0f1c8dd80f34
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 219dd379-5bc9-40b0-bdc2-2fb347da29d8
-translation-type: tm+mt
-source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+exl-id: d95d3586-ea4b-4068-a8f2-a198c27a0096
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
 
+# Concepten en verzendingen {#drafts-and-submissions-component}
 
-# Concepten en verzendingscomponent {#drafts-and-submissions-component}
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 In de component Concepten en verzendingen worden alle formulieren weergegeven die zich in de conceptstatus bevinden en de formulieren die al zijn verzonden. De component heeft afzonderlijke secties (tabbladen) voor concepten en verzonden formulieren. De gebruikers kunnen alleen hun concepten en verzonden formulieren bekijken.
 
-## De component {#configuring-the-component} configureren
+## De component configureren {#configuring-the-component}
 
 De component Concepten en verzendingen heeft twee tabbladen: Concepten en verzendingen.
 
-Als u het verzenden van een adaptief formulier wilt weergeven op het verzendtabblad, stelt u de handeling **Verzenden** in op **[Forms Portal Handeling verzenden](/help/forms/using/configuring-submit-actions.md).** U kunt ook de optie Forms Portal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
+Als u het verzenden van een adaptief formulier wilt weergeven op het tabblad Verzending, stelt u de optie **Handeling verzenden** tot **[Forms Portal-verzendactie](/help/forms/using/configuring-submit-actions.md).** U kunt ook de optie Forms Portal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
 
-De conceptfunctionaliteit is uit het vak ingeschakeld. Wanneer een gebruiker op een adaptief formulier **Opslaan** klikt, wordt het formulier toegevoegd aan het tabblad Concepten.
+De conceptfunctionaliteit is uit het vak ingeschakeld. Wanneer een gebruiker klikt **Opslaan** op een adaptief formulier wordt het formulier toegevoegd aan het tabblad Concepten.
 
 Voer de volgende stappen uit om een component Concepten en verzendingen toe te voegen en te configureren:
 
-1. Sleep de component **Concepten en verzenden** onder de categorie Document Services in de componentenbrowser op de pagina.
+1. Sleep de **Concepten en verzendingen** onder de categorie Document Services in de componentenbrowser op de pagina.
 1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png) om het dialoogvenster Bewerken voor de component te openen.
 
    ![Concepten en verzendingscomponent](assets/drafts-submissions-edit.png)
 
-1. Geef in het dialoogvenster Bewerken de volgende gegevens op en tik op **Done** om de instellingen op te slaan.
+1. Geef in het dialoogvenster Bewerken de volgende gegevens op en tik op **Gereed** om de instellingen op te slaan.
 
 <table>
  <tbody>
@@ -48,47 +51,47 @@ Voer de volgende stappen uit om een component Concepten en verzendingen toe te v
   <tr>
    <td>Algemeen</td>
    <td>Totaal resultaat</td>
-   <td>Hiermee geeft u het maximale aantal resultaten op dat moet worden weergegeven. Als het aantal resultaten de Totale resultaatgrens verhoogt, verschijnt een <strong>Meer </strong>verbinding bij de bodem van de component. Als u op <strong>Meer </strong>klikt, worden alle formulieren weergegeven. </td>
+   <td>Hiermee geeft u het maximale aantal resultaten op dat moet worden weergegeven. Als de totale resultaatlimiet wordt verhoogd door het aantal resultaten, kan een <strong>Meer </strong>wordt onder aan de component weergegeven. Klikken <strong>Meer </strong>geeft alle formulieren weer. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Stijltype</td>
-   <td>Hiermee wordt de stijl van de component opgegeven. U kunt <strong>Geen stijl</strong>, <strong>Standaardstijl</strong> of <strong>Aangepaste stijl</strong> opgeven om de formulieren weer te geven. Voor de Optie van de Stijl van de Douane, kunt u de weg van douaneCSS dossier in <strong>de Weg van de Stijl van de Douane </strong>field<strong> specificeren.</strong></td>
+   <td>Hiermee wordt de stijl van de component opgegeven. U kunt <strong>Geen stijl</strong>, <strong>Standaardstijl</strong>, of <strong>Aangepaste stijl</strong> voor het weergeven van de formulieren. Voor de optie Aangepaste stijl kunt u het pad van een aangepast CSS-bestand opgeven in het dialoogvenster <strong>Pad aangepaste stijl </strong>field<strong>.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Pad aangepaste stijl</td>
-   <td>Als u de optie <strong>Aangepaste stijl</strong> kiest in het veld <strong>Stijltype</strong>, gebruikt u het veld <strong>Aangepast stijlpad</strong> om het pad van een aangepast CSS-bestand op te geven. </td>
+   <td>Als u <strong>Aangepaste stijl</strong> in de <strong>Stijltype</strong> veld gebruiken <strong>Pad aangepaste stijl</strong> veld om het pad van een aangepast CSS-bestand op te geven. </td>
   </tr>
   <tr>
    <td> </td>
    <td>Weergaveopties</td>
-   <td><p>Hiermee geeft u de tabbladen op die u wilt weergeven. U kunt ervoor kiezen om conceptformulieren, verzonden formulieren of beide weer te geven. </p> <p><strong>Opmerking</strong>:<em> Voor  <strong>weergaveopties</strong> wordt de optie  <strong>Standaardveld </strong>niet gebruikt als u een andere optie dan  <strong>Beide</strong>  selecteert.</em></p> </td>
+   <td><p>Hiermee geeft u de tabbladen op die u wilt weergeven. U kunt ervoor kiezen om conceptformulieren, verzonden formulieren of beide weer te geven. </p> <p><strong>Opmerking</strong>:<em> Voor <strong>Weergaveopties</strong>als u een andere optie dan <strong>Beide</strong>de <strong>Standaardtabblad</strong> veldoptie wordt niet gebruikt.</em></p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Standaardtabblad</td>
-   <td>Hiermee geeft u het tabblad op dat moet worden weergegeven wanneer de pagina voor het portal Formulieren wordt geladen. U kunt kiezen tussen <strong>Concept Forms Tab</strong> en <strong>Ingediend Forms Tab</strong>.</td>
+   <td>Hiermee geeft u het tabblad op dat moet worden weergegeven wanneer de pagina voor het portal Formulieren wordt geladen. U kunt kiezen tussen <strong>Concept Forms Tab</strong> en <strong>Verzonden Forms-tab</strong>.</td>
   </tr>
   <tr>
    <td>Concept configuratie Forms-tabblad</td>
    <td>Aangepaste titel</td>
-   <td>Geeft de titel op van het tabblad <strong>Concept Forms</strong>. De standaardwaarde is <strong>Concept Forms.</strong></td>
+   <td>Hiermee wordt de titel van de <strong>Concept Forms</strong> tab. De standaardwaarde is <strong>Concept Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Lay-outsjabloon</td>
-   <td><p>Hiermee geeft u de lay-out op die moet worden gebruikt voor de lijst Concept Forms.</p> <p><strong>Opmerking:</strong> gebruik de optie Standaard (Vervangen) niet.<br /> </p> </td>
+   <td><p>Hiermee geeft u de lay-out op die moet worden gebruikt voor de lijst Concept Forms.</p> <p><strong>Opmerking:</strong> Gebruik niet de optie Standaard (Vervangen).<br /> </p> </td>
   </tr>
   <tr>
    <td>Ingediende Forms Tab-configuratie</td>
    <td>Aangepaste titel </td>
-   <td>Geeft de titel aan van het <strong>Ingediende Forms </strong>tabblad. De standaardwaarde is <strong>Ingediende Forms.</strong></td>
+   <td>Hiermee wordt de titel van de <strong>Verzonden Forms </strong>tab. De standaardwaarde is <strong>Verzonden Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Lay-outsjabloon</td>
-   <td>Geeft de lay-out op die moet worden gebruikt voor de lijst Verzenden Forms<strong> </strong>. </td>
+   <td>Hiermee wordt de lay-out opgegeven die moet worden gebruikt voor Verzonden Forms<strong> </strong>lijst. </td>
   </tr>
  </tbody>
 </table>
@@ -99,9 +102,9 @@ Wanneer u de verzendactie Forms Portal gebruikt of de optie voor het opslaan van
 
 Met Forms Portal kunt u gegevens opslaan in een lokale AEM, externe AEM opslagplaats of in een database. Met AEM Forms kunt u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen aanpassen. U kunt standaardmethoden negeren om op te geven hoe concepten en verzendgegevens worden opgeslagen bij een door u gekozen opslaglocatie. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
 
-Forms Portal biedt vanuit de boxservices (API&#39;s) voor het opslaan van gegevens in de crx-opslagruimte van lokale en externe AEM Forms-publicatie-instanties. U kunt de standaardimplementaties, die in [het Vormen van de opslagdiensten voor concepten en bijdragen](/help/forms/using/configuring-draft-submission-storage.md) artikel worden beschreven, met douaneimplementaties vervangen om standaardfunctionaliteit te vervangen. Zie [Services voor conceptgegevens en verzendgegevens aanpassen](/help/forms/using/custom-draft-submission-data-services.md) en [Aangepaste opslag voor concepten en verzendingscomponenten voor gedetailleerde informatie over de methoden die in een aangepaste implementatie worden vereist om inhoud op een beveiligde locatie op te slaan.](/help/forms/using/adding-custom-storage-provider-forms.md)
+Forms Portal biedt vanuit de boxservices (API&#39;s) voor het opslaan van gegevens in de crx-opslagruimte van lokale en externe AEM Forms-publicatie-instanties. U kunt de standaardimplementaties vervangen, die worden beschreven in [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md) artikel, met aangepaste implementaties ter vervanging van de standaardfunctionaliteit. Voor gedetailleerde informatie over de methodes die in een douaneimplementatie worden vereist om inhoud op een beveiligde plaats op te slaan, zie [Services voor ontwerp- en verzendgegevens aanpassen](/help/forms/using/custom-draft-submission-data-services.md) en [Aangepaste opslag voor concepten en verzendingscomponenten.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-De documentatie van AEM Forms verstrekt een [Steekproef voor het integreren van concepten &amp; verzendingscomponent met gegevensbestand](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Met de voorbeeldimplementatie kunt u uw eigen aangepaste implementatie ontwikkelen.
+AEM Forms-documentatie biedt een [Voorbeeld voor het integreren van concepten en verzendingen in de database](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Met de voorbeeldimplementatie kunt u uw eigen aangepaste implementatie ontwikkelen.
 
 ## Verwante artikelen
 

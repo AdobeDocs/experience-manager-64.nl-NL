@@ -1,8 +1,8 @@
 ---
 title: System Information Service API's
-seo-title: System Information Service API's
+seo-title: System information Service APIs
 description: Dit document bevat gedetailleerde informatie over de API's die worden geleverd door de systeeminformatiedienst.
-seo-description: Dit document bevat gedetailleerde informatie over de API's die worden geleverd door de systeeminformatiedienst.
+seo-description: This document provides detailed information about the APIs provided by the system information service.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
 
-# Service-API&#39;s voor systeeminformatie {#system-information-service-apis}
+# System Information Service API&#39;s {#system-information-service-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te winnen. De volgende tabel bevat gedetailleerde informatie over de API&#39;s:
 
@@ -33,7 +37,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[server]:[poort]/rest/services/SystemInfo.properties</p></td> 
-   <td><p>Deze API is een omslag voor <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td> 
+   <td><p>Deze API omvat <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 
@@ -106,7 +110,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.info</p></td> 
    <td><p>https://[server]:[poort]/rest/services/ SystemInfo.info</p></td> 
-   <td><p>Deze API is een omslag voor alle dienst APIs van de systeeminformatiedienst. Intern worden alle API's voor systeeminformatie uitgevoerd en wordt informatie gedownload in de ZIP-indeling. </p><p><i><strong>opmerking</strong>: SystemInfo.info verstrekt geen telling en stapelspoor van actieve draden. </i></p></td> 
+   <td><p>Deze API is een omslag voor alle dienst APIs van de systeeminformatiedienst. Intern worden alle API's voor systeeminformatie uitgevoerd en wordt informatie gedownload in de ZIP-indeling. </p><p><i><strong>notitie</strong>: SystemInfo.info verstrekt geen telling en stapelspoor van actieve draden. </i></p></td> 
   </tr> 
  </tbody> 
 </table>

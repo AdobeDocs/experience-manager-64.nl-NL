@@ -1,8 +1,8 @@
 ---
 title: Badges-console
-seo-title: Badges-console
+seo-title: Badges Console
 description: Met de console Gemeenschapsbadges kunt u aangepaste badges toevoegen die kunnen worden weergegeven voor leden die hun geld hebben verdiend (toegekend) of die een specifieke rol in de gemeenschap hebben (toegewezen)
-seo-description: Met de console Gemeenschapsbadges kunt u aangepaste badges toevoegen die kunnen worden weergegeven voor leden die hun geld hebben verdiend (toegekend) of die een specifieke rol in de gemeenschap hebben (toegewezen)
+seo-description: The Communities Badges console lets you add custom badges that can be displayed for members when earned (awarded) or when they take on a specific role in the community (assigned)
 uuid: 9eeba240-f0d4-4937-baba-8bac0e0b2a36
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
 role: Admin
 exl-id: b6aa9d73-4e20-446a-a1fc-78f8968d6844
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
 # Badges-console {#badges-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Info Badges {#about-badges}
 
@@ -44,23 +48,23 @@ Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en w
 
 ## Badge maken {#create-badge}
 
-Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de opslagplaats op `/etc/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
+Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de gegevensopslagruimte op `/etc/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
 
-Als de publicatieomgeving een bedrijf van uitgevers is, is het nodig om [user sync](sync.md) te configureren.
+Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om te vormen [gebruikerssync](sync.md).
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
 * **[!UICONTROL Upload Image]**
 
-   (*Required*) Een afbeelding met een badge met een aanbevolen grootte van 32 x 32 pixels bij 72 dpi in JPEG- of PNG-indeling.
+   (*Vereist*) Een badge-afbeelding met een aanbevolen formaat van 32 x 32 pixels bij 72 dpi in de indeling JPEG of PNG.
 
 * **[!UICONTROL Name]**
 
-   (*Required*) De merknaam. Het is de standaard `Display Name` evenals de naam van de repository node. Als `Name` geen geldige naam voor een opslagplaats is, wordt deze gewijzigd.
+   (*Vereist*) De naam van de badge. Dit is de standaardinstelling `Display Name` en de naam van het knooppunt in de repository. Als de `Name` is geen geldige naam voor een opslagplaats. De naam wordt gewijzigd.
 
 * **[!UICONTROL Display Name]**
 
-   (*Optioneel*) De naam die moet worden weergegeven voor de badge in de gebruikersinterface. Standaard is de ongewijzigde tekst die voor `Name` wordt ingevoerd.
+   (*Optioneel*) De naam die moet worden weergegeven voor de badge in de gebruikersinterface. Standaard is de ongewijzigde tekst die is ingevoerd voor de `Name`.
 
 * **[!UICONTROL Description]**
 
@@ -68,6 +72,6 @@ Als de publicatieomgeving een bedrijf van uitgevers is, is het nodig om [user sy
 
 ## Aanvullende informatie {#additional-information}
 
-Zie [Scores en Badges](implementing-scoring.md) voor meer informatie over het instellen van regels voor scoring en badging.
+Voor meer informatie over het instellen van regels voor scoring en badging raadpleegt u [Scores en badges](implementing-scoring.md).
 
-Zie [Ledenconsole](members.md) voor het beheren van badges voor leden.
+Voor het beheren van badges voor leden raadpleegt u [Ledenconsole](members.md).

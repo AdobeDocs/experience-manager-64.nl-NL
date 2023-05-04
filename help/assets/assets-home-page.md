@@ -1,18 +1,22 @@
 ---
-title: '"[!DNL Experience Manager Assets] Introductiepagina"'
+title: "[!DNL Experience Manager Assets] Introductiepagina"
 description: De pagina Middelen aanpassen voor een uitgebreide ervaring met welkomstschermen, waaronder een momentopname van recente activiteiten rond elementen.
 contentOwner: AG
 feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] Introductiepagina {#aem-assets-home-page-experience}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Personaliseer [!DNL Experience Manager Assets] De homepage voor een rijke het ontvangen het schermervaring, met inbegrip van een momentopname van recente activiteiten rond activa.
 

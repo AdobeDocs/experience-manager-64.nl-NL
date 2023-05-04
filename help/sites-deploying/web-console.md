@@ -1,8 +1,8 @@
 ---
 title: Webconsole
-seo-title: Webconsole
+seo-title: Web Console
 description: Leer hoe u de AEM webconsole kunt gebruiken.
-seo-description: Leer hoe u de AEM webconsole kunt gebruiken.
+seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: a8a3267d-2af5-4cca-b76d-66de62d93f69
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 1%
+source-wordcount: '754'
+ht-degree: 0%
 
 ---
 
 # Webconsole{#web-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De webconsole in AEM is gebaseerd op de [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het Platform van de Dienst van OSGi R4 uit te voeren, dat het kader OSGi en de standaarddiensten omvat.
 
@@ -43,13 +46,13 @@ De console is toegankelijk vanaf `../system/console`; bijvoorbeeld:
 
 ## Configuratie {#configuration}
 
-Het **tabblad Configuration** wordt gebruikt voor het configureren van de OSGi-bundels en is daarom het onderliggende mechanisme voor het configureren van AEM systeemparameters.
+De **Configuratie** tab wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters.
 
 >[!NOTE]
 >
->Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md) voor verdere details.
+>Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md) voor nadere bijzonderheden.
 
-De **tab Configuration** kan worden benaderd door:
+De **Configuratie** tab kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -65,20 +68,20 @@ Er wordt een lijst met configuraties weergegeven:
 
 Er zijn twee soorten configuraties beschikbaar bij de drop-down lijsten op dit scherm:
 
-* ****
-ConfigurationsHiermee kunt u de bestaande configuraties bijwerken. Deze hebben een Persistent Identity (PID) en kunnen:
+* **Configuraties**
+Hiermee kunt u de bestaande configuraties bijwerken. Deze hebben een Persistent Identity (PID) en kunnen:
 
    * standaard en integraal van AEM; deze zijn vereist als de waarden worden verwijderd en de standaardinstellingen worden hersteld.
    * instanties die zijn gemaakt op basis van fabrieksconfiguraties; Deze instanties worden gemaakt door de gebruiker. Verwijderen verwijdert de instantie.
 
 * **Fabrieksconfiguraties**
-Hiermee kunt u een instantie van het vereiste functieobject maken.
+Hiermee kunt u een instantie maken van het vereiste functionaliteit-object.
 
    Dit krijgt een blijvende identiteit toegewezen en wordt vervolgens vermeld in de vervolgkeuzelijst Configuraties.
 
 Als u een item in de lijst selecteert, worden de parameters met betrekking tot die configuratie weergegeven:
 
-![chlimage_1-29](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 
 Vervolgens kunt u de parameters naar wens bijwerken en:
 
@@ -106,7 +109,7 @@ Vervolgens kunt u de parameters naar wens bijwerken en:
 
 ## Bundels {#bundles}
 
-Het tabblad **Bundels** is het mechanisme voor de installatie van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
+De **Bundels** tab is het mechanisme voor het installeren van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
 
 * Het vervolgkeuzemenu:
 
@@ -124,7 +127,7 @@ Met dit tabblad kunt u:
 
 * **Installeren of bijwerken**
 
-   U kunt **Bladeren** om het dossier te vinden die uw bundel bevatten en te specificeren of het **Begin** onmiddellijk en zou moeten **Begin Niveau**.
+   U kunt **Bladeren** om het bestand te zoeken dat uw bundel bevat en op te geven of dit nodig is **Start** onmiddellijk **Beginniveau**.
 
 * **Opnieuw laden**
 
@@ -136,7 +139,7 @@ Met dit tabblad kunt u:
 
    Na een update kan de oude en de nieuwe versie bijvoorbeeld nog steeds actief zijn vanwege eerdere verwijzingen. Met deze optie worden alle verwijzingen naar de nieuwe versie gecontroleerd en verplaatst, zodat de oude versie stopt.
 
-* **Begin**
+* **Start**
 
    Hiermee wordt een bundel gestart op basis van het opgegeven beginniveau.
 
@@ -154,11 +157,11 @@ Met dit tabblad kunt u:
 
 >[!NOTE]
 >
->Na **Update** wordt het geadviseerd om **Pakketten vernieuwen** uit te voeren.
+>Na **Bijwerken** het wordt aanbevolen een **Pakketten vernieuwen**.
 
 ## Onderdelen {#components}
 
-Met het tabblad **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
+De **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 

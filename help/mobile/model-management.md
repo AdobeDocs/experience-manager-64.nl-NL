@@ -1,31 +1,34 @@
 ---
 title: Modellen - overzicht
-seo-title: Modellen - overzicht
+seo-title: Models Overview
 description: Modellen - overzicht
-seo-description: 'null'
+seo-description: null
 uuid: e09dac52-9515-43f7-9d3b-6637e2283d59
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 exl-id: 03f06c10-9fe1-497e-89b0-70acb7ca7800
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
 
 # Modellen - overzicht{#models-overview}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Modelbeheer omvat het maken en beheren van modellen om deze aan eventuele gegevensobjecten te koppelen. Elk model bevat alle eigenschappen en velddefinities die nodig zijn om het maken en renderen van objecten te vergemakkelijken.
 
-Modelbeheer omvat het maken van **modellen**, **entiteiten** en **spaties**. Het volgende diagram illustreert de relatie tussen de AEM Inhoud en de modellen.
+Modelbeheer houdt in dat **modellen**, **entiteiten**, en **spaties**. Het volgende diagram illustreert de relatie tussen de AEM Inhoud en de modellen.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -35,7 +38,7 @@ Een model beschrijft het type inhoud en geeft aan welke informatie beschikbaar i
 
 Modellen dienen ook als een manier om bestaande AEM-inhoud te transformeren in objecten die gemakkelijk kunnen worden gebruikt door systeemeigen mobiele apps.
 
-Content Services biedt een aantal out-of-the-box modellen voor veelvoorkomende objecten, zoals elementen, verzamelingen van middelen, HTML-pagina&#39;s, configuraties van apps en pagina&#39;s die onafhankelijk zijn van kanalen. Deze zullen configureerbaar zijn zodat zullen zij aan specifieke klantenbehoeften zonder een AEM ontwikkelingsinspanning vereisen.
+Content Services biedt een aantal out-of-the-box-modellen voor veelvoorkomende objecten, zoals elementen, verzamelingen van middelen, pagina&#39;s met HTML, toepassingsconfiguraties en pagina&#39;s die onafhankelijk zijn van kanalen. Deze zullen configureerbaar zijn zodat zullen zij aan specifieke klantenbehoeften zonder een AEM ontwikkelingsinspanning vereisen.
 
 De gebruiker kan zijn of haar eigen modellen tot stand brengen. Hierdoor kunnen nieuwe inhoudstypen worden gemaakt die nog niet door AEM worden beheerd. Het maken van modellen gebeurt via een gebruikersinterface met behulp van bestaande primitieve typen.
 
@@ -51,8 +54,7 @@ Modellen worden gebruikt om te bepalen hoe entiteiten worden gemaakt. Zij bepale
 >
 >Een model bestaat buiten een app omdat meerdere apps het kunnen gebruiken.
 
-
-Zie **[Modellen](/help/mobile/administer-mobile-apps.md)** om modellen in het dashboard en de opslagplaats tot stand te brengen en te beheren.
+Zie **[Modellen](/help/mobile/administer-mobile-apps.md)** om modellen in het dashboard en de gegevensopslagplaats tot stand te brengen en te beheren.
 
 ### Entiteiten in inhoudsmodel {#entities-in-content-model}
 
@@ -60,14 +62,13 @@ Een entiteit is een instantie van een inhoudsmodel. Een entiteit wordt via de Co
 
 In het geval van bestaande AEM wordt een entiteit gegenereerd met behulp van een model en de AEM inhoudsbron. Een pagina-entiteit is bijvoorbeeld een kanaal- en indelingsonafhankelijk object dat wordt gegenereerd op basis van een AEM pagina en het paginamodel.
 
-Wijzigingen in de inhoud van een entiteit waarnaar wordt verwezen, resulteren in een wijziging van de entiteit. Als bijvoorbeeld een *cq:page* wordt bijgewerkt, worden alle entiteiten die op die pagina zijn gebaseerd ook bijgewerkt.
+Wijzigingen in de inhoud van een entiteit waarnaar wordt verwezen, resulteren in een wijziging van de entiteit. Als een *cq:pagina* wordt bijgewerkt, worden de entiteiten die op die pagina zijn gebaseerd, ook bijgewerkt.
 
 Zie **[Werken met entiteiten](/help/mobile/spaces-and-entities.md)** om aangepaste entiteiten te maken van modellen.
 
 >[!NOTE]
 >
 >Als het model niet aan bestaande AEM inhoud beantwoordt, zoals de klant creeerde een nieuw model, dan zal er een UI zijn zodat kan een klant een nieuwe entiteit tot stand brengen.
-
 
 ### Spaties in inhoudsmodel {#spaces-in-content-model}
 
@@ -77,7 +78,7 @@ Aan de AEM kant is een spatie een handige manier om verwante entiteiten te beher
 
 *Bijvoorbeeld*,
 
-Een gebruiker heeft drie algemene classificaties van entiteiten. Het ene is alleen voor intern gebruik, het andere is goedgekeurd voor openbaar gebruik en het derde is nog steeds voor algemene entiteiten die door veel apps worden gebruikt. Om het gemakkelijk te maken te beheren, creeert de gebruiker drie ruimten: *internal*, *public* (met zowel Engelse als Franse inhoud), en *common* voor het beheren van de aangewezen entiteiten zoals hieronder vermeld:
+Een gebruiker heeft drie algemene classificaties van entiteiten. Het ene is alleen voor intern gebruik, het andere is goedgekeurd voor openbaar gebruik en het derde is nog steeds voor algemene entiteiten die door veel apps worden gebruikt. Om het gemakkelijk te maken te leiden, creeert de gebruiker drie ruimten, namelijk *internal*, *publiek* ( zowel in het engels als in het frans ) , en *gemeenschappelijk* voor het beheer van de betrokken entiteiten als hieronder vermeld:
 
 * /content/entities/internal
 * /content/entities/public/nl
@@ -96,4 +97,4 @@ Zie **[Spaties en entiteiten](/help/mobile/spaces-and-entities.md)** voor het ma
 
 De omslagen staan gebruikers toe om entiteiten te organiseren zoals vereist en vergemakkelijkt fijnere ACL controle. Spaties kunnen mappen bevatten voor een betere organisatie van de inhoud en elementen van de ruimte. Een gebruiker kan een eigen hiërarchie onder een spatie maken.
 
-Zie **[Werken met mappen in een spatie](/help/mobile/spaces-and-entities.md)** om mappen in een spatie te maken en te beheren.
+Zie **[Werken met mappen in een spatie](/help/mobile/spaces-and-entities.md)** om mappen binnen een ruimte te maken en te beheren.

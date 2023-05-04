@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Translation
 role: Admin
 exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 53%
+source-wordcount: '399'
+ht-degree: 49%
 
 ---
 
 # Vertaalwolkenservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Met Adobe Experience Manager kunt u vertaalservices in de cloud gebruiken van het vertaalbureau van uw keuze om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
 
@@ -43,12 +47,12 @@ Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoef
 Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt gebruiken in vertaalworkflows. Om een aangepaste connector toe te passen installeert u eerst de connector vanaf Package Manager. Vervolgens configureert u de connector vanaf de Cloud Services-console. Nadat u de connector hebt geconfigureerd, is deze beschikbaar in de lijst met connectors op het tabblad Cloud Services die wordt beschreven in [De vertaalservices toepassen](transition-cloud-services.md#applying-the-translation-services). Nadat u de aangepaste connector hebt toegepast en vertaalworkflows hebt uitgevoerd, geeft de tegel **[!UICONTROL Translation Summary]** van het vertaalproject de connectordetails weer onder de koppen **[!UICONTROL Provider]** en **[!UICONTROL Method]**.
 
 1. Installeer de connector via Package Manager.
-1. Klik/tik het [!DNL Experience Manager] embleem, en navigeer aan **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Klik/tik op de knop [!DNL Experience Manager] logo en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Zoek de connector die u onder de pagina **[!UICONTROL Third Party Services]** in de **[!UICONTROL Cloud Services]** hebt geïnstalleerd.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Klik op de koppeling **[!UICONTROL Configure now]** of tik op deze koppeling om het dialoogvenster **[!UICONTROL Create Configuration]** te openen.
+1. Klik/tik op de knop **[!UICONTROL Configure now]** de koppeling openen **[!UICONTROL Create Configuration]** .
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 

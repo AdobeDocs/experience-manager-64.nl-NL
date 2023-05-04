@@ -1,8 +1,8 @@
 ---
 title: Aangepaste pop-ups maken met Quickviews
-seo-title: Quickviews gebruiken om aangepaste pop-ups te maken
+seo-title: Using Quickviews to create custom pop-ups
 description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
-seo-description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
+seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,16 +10,20 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
-feature: Configuratie
+feature: Configuration
 role: Admin,User,Developer
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 1%
+source-wordcount: '1046'
+ht-degree: 0%
 
 ---
 
 # Aangepaste pop-ups maken met Snelle weergaven {#using-quickviews-to-create-custom-pop-ups}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de kijker u gebruikt, laat deze functionaliteit gebruikers op hotspot, of een duimnagelbeeld, of op een beeldkaart klikken om informatie of verwante inhoud te zien.
 
@@ -68,7 +72,7 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
     </tr> 
     <tr> 
     <td>Interactieve afbeelding</td> 
-    <td><a href="/help/assets/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Een interactieve afbeelding met uw website</a> integreren.<br /> </td> 
+    <td><a href="/help/assets/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Een interactieve afbeelding met uw website integreren</a>.<br /> </td> 
     </tr> 
     <tr> 
     <td>Interactieve video<br /> </td> 
@@ -85,8 +89,8 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
    Hiervoor gebruikt de viewer een handler met de naam `QuickViewActive`.
 
-   ****
-Voorbeeld: u gebruikte de volgende voorbeeldcode voor insluiten op uw webpagina voor een interactieve afbeelding:
+   **Voorbeeld**
+Stel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikte voor een interactieve afbeelding:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -107,17 +111,17 @@ Voorbeeld: u gebruikte de volgende voorbeeldcode voor insluiten op uw webpagina 
    })
    ```
 
-   Meer informatie over de methode `setHandlers()` vindt u in het volgende voorbeeld:
+   Meer informatie over `setHandlers()` methode op de volgende wijze:
 
    * Interactieve afbeeldingsviewer: [setHandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Interactieve videoviewer: [setHandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. U moet nu de `quickViewActivate` manager vormen.
+1. U moet nu de `quickViewActivate` handler.
 
    De handler quickViewActivate bestuurt de Quickviews in de viewer. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening evenals een de functievraag van voorbeeld loadQuickView wordt geplaatst.
 
-   **Variabele**
-mappingMap variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening:
+   **Variabele toewijzen**
+Wijs variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening toe:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -132,16 +136,16 @@ mappingMap variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generis
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **De functie**
-callThe manager vereist ook een functievraag voor QuickView om te werken. De functie wordt verondersteld om door uw gastheerpagina toegankelijk te zijn. De insluitcode bevat een voorbeeld van een functieaanroep:
+   **Functieaanroep**
+De manager vereist ook een functievraag voor de Snelle mening om te werken. De functie wordt verondersteld om door uw gastheerpagina toegankelijk te zijn. De insluitcode bevat een voorbeeld van een functieaanroep:
 
    `loadQuickView(sku)`
 
-   De aanroep van de voorbeeldfunctie gaat ervan uit dat de functie `loadQuickView()` bestaat en toegankelijk is.
+   De aanroep van de voorbeeldfunctie gaat uit van de functie `loadQuickView()` bestaat en toegankelijk is.
 
    Meer informatie over de methode quickViewActivate vindt u op de volgende website:
 
-   * Interactieve beeldviewer - [Gebeurteniscallbacks](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Interactieve afbeeldingsviewer - [Gebeurteniscallbacks](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
    * Interactieve videoviewer - [Gebeurteniscallbacks](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
    * Interactieve gegevensondersteuning in de interactieve videoviewer - [Interactieve gegevensondersteuning](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
@@ -150,7 +154,7 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
    * Verwijder de commentaarmarkering van de sectie setHandlers van de insluitcode.
    * Wijs om het even welke extra variabelen in de Snelle mening toe.
 
-      * Werk `loadQuickView(sku,*var1*,*var2*)` vraag bij als u extra variabelen toevoegt.
+      * Werk de `loadQuickView(sku,*var1*,*var2*)` Vraag als u extra variabelen toevoegt.
    * Maak een eenvoudige loadQuickView-functie () op de pagina, buiten de viewer.
 
       In het volgende voorbeeld wordt de waarde van sku naar de browserconsole geschreven:
@@ -161,14 +165,14 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
    }
    ```
 
-   * Upload een HTML-testpagina naar een webserver en open deze.
+   * Upload een HTML-pagina voor de test naar een webserver en open deze.
 
       Met de variabelen van in kaart gebrachte Snelle mening en de functievraag op zijn plaats, schrijft de browser console de veranderlijke waarde aan de browser console gebruikend de verstrekte steekproeffunctie.
 
 
 
-1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een pop-up gebruikt.
-1. Maak het pop-upvenster op de volgende manier `DIV` op. Voeg desgewenst uw eigen aanvullende opmaak toe.
+1. U kunt nu een functie gebruiken om een eenvoudige pop-up in de Snelle mening aan te halen. In het volgende voorbeeld wordt een `DIV` voor een popup.
+1. De pop-up opmaken `DIV` op de volgende wijze. Voeg desgewenst uw eigen aanvullende opmaak toe.
 
    ```xml
    <style type="text/css">
@@ -180,7 +184,7 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
    </style>
    ```
 
-1. Plaats de pop-up `DIV` in het lichaam van uw HTML- pagina.
+1. Het pop-upvenster plaatsen `DIV` in de hoofdtekst van de pagina HTML.
 
    Één van de elementen wordt geplaatst met een identiteitskaart die met sku waarde wordt bijgewerkt wanneer de gebruiker een Snelle mening aanhaalt. Het voorbeeld bevat ook een eenvoudige knop waarmee u de pop-up weer kunt verbergen nadat deze zichtbaar is geworden.
 
@@ -204,20 +208,20 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
    </script>
    ```
 
-1. Upload een HTML-testpagina naar uw webserver en open deze. De viewer geeft de pop-up `DIV` weer wanneer een gebruiker een Snelle weergave aanroept.
+1. Upload een HTML-pagina voor de test naar uw webserver en open deze. De pop-up wordt weergegeven door de viewer `DIV` wanneer een gebruiker een Snelle mening aanhaalt.
 1. **Het weergeven van de aangepaste pop-up in de modus Volledig scherm**
 
    Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave op volledig scherm. Als u de pop-up echter gebruikt zoals in de vorige stappen wordt beschreven, wordt deze achter de viewer weergegeven in de modus Volledig scherm.
 
-   Als u de pop-upweergave zowel in de standaardmodus als in de modus Volledig scherm wilt weergeven, koppelt u de pop-up aan de viewercontainer. Hiervoor kunt u een tweede handlermethode gebruiken, `initComplete`.
+   Als u de pop-upweergave zowel in de standaardmodus als in de modus Volledig scherm wilt weergeven, koppelt u de pop-up aan de viewercontainer. Hiervoor kunt u een tweede handlermethode gebruiken. `initComplete`.
 
-   De handler `initComplete` wordt aangeroepen nadat de viewer is geïnitialiseerd.
+   De `initComplete` handler wordt aangeroepen nadat de viewer is geïnitialiseerd.
 
    ```xml
    "initComplete":function() { code block }
    ```
 
-   Meer informatie over de methode `init()` vindt u in het volgende voorbeeld:
+   Meer informatie over `init()` methode op de volgende wijze:
 
    * Interactieve afbeeldingsviewer - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * Interactieve videoviewer - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
@@ -264,9 +268,9 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
 
    `*viewerInstance.*init()`
 
-   ****
-VoorbeeldIn dit voorbeeld wordt de interactieve afbeeldingsviewer gebruikt.
+   **Voorbeeld**
+In dit voorbeeld wordt de interactieve afbeeldingsviewer gebruikt.
 
    `s7interactiveimageviewer.init()`
 
-   Nadat u de viewer hebt ingesloten in uw hostpagina, moet u ervoor zorgen dat de viewerinstantie wordt gemaakt en dat de handlers worden geladen voordat de viewer wordt aangeroepen met `init()`.
+   Nadat u de viewer hebt ingesloten in uw hostpagina, moet u ervoor zorgen dat de viewerinstantie is gemaakt en dat de handlers worden geladen voordat de viewer wordt aangeroepen met `init()`.

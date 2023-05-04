@@ -1,8 +1,8 @@
 ---
 title: Toegankelijke complexe tabellen maken in HTML5-formulieren
-seo-title: Toegankelijke complexe tabellen maken in HTML5-formulieren
-description: 'Leer hoe u toegankelijke tabellen maakt in HTML5-formulieren. '
-seo-description: 'Leer hoe u toegankelijke tabellen maakt in HTML5-formulieren. '
+seo-title: Create accessible complex tables in HTML5 forms
+description: Leer hoe u toegankelijke tabellen maakt in HTML5-formulieren.
+seo-description: Learn how to create accessible tables in HTML5 forms.
 uuid: e52562d2-4dc3-4359-9dbb-c18614921808
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,24 +10,27 @@ topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: Mobile Forms
 exl-id: a3337bb1-635c-4dc9-b438-3a829d4a9e03
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
 # Toegankelijke complexe tabellen maken in HTML5-formulieren {#create-accessible-complex-tables-in-html-forms}
 
-De standaardimplementatie van tabellen in HTML5 Forms gebruikt HTML DIV-elementen om een tabel te renderen. Bij het renderen worden ARIA-rollen gebruikt om aan de toegankelijkheidsvereisten te voldoen.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
-HTML5 Forms biedt een alternatieve uitvoering voor de tabellen om toegankelijkheidsproblemen met schermlezers te voorkomen die de ARIA-rollen die worden gebruikt met gegevenstabellen niet volledig ondersteunen. Deze tabellen zijn gebaseerd op de nieuwe tabelindeling die in Designer is geïntroduceerd en die ook ondersteuning biedt voor:
+De standaardimplementatie van lijsten in HTML5 Forms gebruikt HTML div elementen om een lijst terug te geven. Bij het renderen worden ARIA-rollen gebruikt om aan de toegankelijkheidsvereisten te voldoen.
+
+Om toegankelijkheidsproblemen met schermlezers te voorkomen die de ARIA-rollen die worden gebruikt met gegevenstabellen niet volledig ondersteunen, biedt HTML5 Forms een alternatieve uitvoering voor de tabellen. Deze tabellen zijn gebaseerd op de nieuwe tabelindeling die in Designer is geïntroduceerd en die ook ondersteuning biedt voor:
 
 * Rijkoppen
 * Rijbereik
 
-Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als complex. Als u de tabel als complex wilt markeren, voegt u `extras`-tag als volgt toe aan de XML-bron van het tabelsubformulier:
+Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als complex. Als u de tabel als complex wilt markeren, voegt u `extras` label in het XML-bron van het tabelsubformulier als volgt:
 
 ```
 </extras>
@@ -35,15 +38,15 @@ Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als 
  </extras>
 ```
 
-De tabellen die zijn gemarkeerd als *complexTable* volgen de native HTML-uitvoering en bieden betere toegankelijkheidsondersteuning voor bepaalde schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Merge Cells]**.
+De tabellen die zijn gemarkeerd als *complexTable* volgt de native HTML-uitvoering en biedt betere toegankelijkheidsondersteuning voor bepaalde schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Merge Cells]**.
 
-***Opmerking:**Een rijbereik maken werkt alleen voor uiterst linkse cellen.*
+***Opmerking:**Het maken van een rijbereik werkt alleen voor uiterst linkse cellen.*
 
-Als u een rij als rijkop wilt markeren, selecteert u alle cellen in de rij, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Mark Header]**.
+Als u een rij als rijkop wilt markeren, selecteert u alle cellen in de rij, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Mark Header]**.
 
-Als u een cel als kolomkop wilt markeren, selecteert u een willekeurige cel in de kolom, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Mark Header]**.
+Als u een cel als kolomkop wilt markeren, selecteert u een willekeurige cel in de kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Mark Header]**.
 
-Beperkingen in nieuwe *AccessibleTable*-indeling:
+Beperkingen in nieuw *AccessibleTable* indeling:
 
 * Gebrek aan steun voor kweekbare gebieden als het rowspan in de lijst wordt gebruikt
 * Geen ondersteuning voor geneste tabellen (tabellen in tabelcellen)

@@ -6,22 +6,25 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 7%
+source-wordcount: '911'
+ht-degree: 6%
 
 ---
 
 # Gereedschapsconsoles{#tools-consoles}
 
-Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flavors van de **console Tools** afhankelijk van UI u gebruikt:
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flauwvallen van de **Gereedschappen** console afhankelijk van UI u gebruikt:
 
 * [Gereedschappen - Klassieke gebruikersinterface](#tools-classic-ui)
 * [Gereedschappen - Touch-Optimized UI](#tools-touch-optimized-ui)
 
-## Gereedschappen - Klassieke UI {#tools-classic-ui}
+## Gereedschappen - Klassieke gebruikersinterface {#tools-classic-ui}
 
 <table> 
  <tbody> 
@@ -36,14 +39,14 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
    <td>Gecentraliseerd punt voor het beheer van uw meerdere sites.</td> 
   </tr> 
   <tr> 
-   <td>Clientcontextconfiguraties<br /> </td> 
+   <td>Contextconfiguraties voor clients<br /> </td> 
    <td> </td> 
-   <td>De <a href="/help/sites-developing/client-context.md">Clientcontext</a> vertegenwoordigt een dynamisch geassembleerde verzameling van gebruikersgegevens. De standaard en marketing wolkenconfiguraties worden hier gehouden.<br /> </td> 
+   <td>De <a href="/help/sites-developing/client-context.md">Clientcontext</a> vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. De standaard en marketing wolkenconfiguraties worden gehouden hier.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Cloud Services Configurations<br /> </td> 
+   <td>Configuraties van Cloud Services<br /> </td> 
    <td> </td> 
-   <td>Bevat configuraties gerelateerd aan <a href="/help/sites-administering/marketing-cloud.md">Integratie met de Adobe Marketing Cloud</a>.</td> 
+   <td>Houdt configuraties met betrekking tot <a href="/help/sites-administering/marketing-cloud.md">Integratie met de Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Handel</a></td> 
@@ -58,7 +61,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   <tr> 
    <td>DAM - Health Checker<br /> </td> 
    <td> </td> 
-   <td>Vergelijkt <code>/var/dam</code> en <code>/content/dam</code> en controleert op <br /> om het even welke inconsistenties. Alle vermelde bestanden/mappen kunnen vervolgens worden gesynchroniseerd of verwijderd. De types van knopen voor omslagvergelijking zijn configureerbaar in de Webconsole.</td> 
+   <td>Vergelijken <code>/var/dam</code> en <code>/content/dam</code> en controles op<br /> eventuele inconsistenties. Alle vermelde bestanden/mappen kunnen vervolgens worden gesynchroniseerd of verwijderd. De types van knopen voor omslagvergelijking zijn configureerbaar in de Webconsole.</td> 
   </tr> 
   <tr> 
    <td>DAM - Adobe InDesign<br /> </td> 
@@ -146,7 +149,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
    <td>Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig pagina's maken op basis van deze structuur.</td> 
   </tr> 
   <tr> 
-   <td>Beveiliging - <a href="/help/sites-administering/notification.md">Self-Service Configuration </a> </td> 
+   <td>Beveiliging - <a href="/help/sites-administering/notification.md">Self-Service configuratie </a> </td> 
    <td> </td> 
    <td>Hiermee kunt u de e-mails configureren die gebruikers automatisch ontvangen wanneer ze een account maken of een wachtwoord opnieuw instellen, en een opnieuw ingesteld wachtwoord bevestigen.</td> 
   </tr> 
@@ -171,7 +174,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
    <td>Geen actieve functionaliteit met betrekking tot dit item.</td> 
   </tr> 
   <tr> 
-   <td>Versioning - <a href="/help/sites-deploying/version-purging.md">Versies wissen</a></td> 
+   <td>Versioning - <a href="/help/sites-deploying/version-purging.md">Purperen</a></td> 
    <td> </td> 
    <td>Hiermee kunt u de paginaversies naar wens wissen.</td> 
   </tr> 
@@ -183,7 +186,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   <tr> 
    <td>wachtwoorden</td> 
    <td> </td> 
-   <td>Afgekeurd. Zie <a href="/help/communities/moderate-ugc.md#watchwords">Communautaire inhoud moderniseren</a></td> 
+   <td>Vervangen. Zie <a href="/help/communities/moderate-ugc.md#watchwords">Communautaire inhoud moderniseren</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Workflow</a></td> 
@@ -193,7 +196,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
  </tbody> 
 </table>
 
-## Gereedschappen - Voor aanraking geoptimaliseerde gebruikersinterface {#tools-touch-optimized-ui}
+## Gereedschappen - Touch-Optimized UI {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
@@ -239,7 +242,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-authoring/tags.md">Tagbeheer</a></td> 
+   <td><a href="/help/sites-authoring/tags.md">Tag Management</a></td> 
    <td>Organiseer uw tags en hun naamruimten.</td> 
   </tr> 
   <tr> 
@@ -260,7 +263,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-administering/reporting.md">Rapporten</a></td> 
-   <td>Creeer en controleer douanerapporten.<br /> </td> 
+   <td>Aangepaste rapporten maken en controleren.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -309,7 +312,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr> 
   <tr> 
    <td> </td> 
-   <td>Webconsole-configuratiedump<br /> </td> 
+   <td>Webconsoleconfiguratie-dummpje<br /> </td> 
    <td>Download de configuratiestatus van de webconsole.<br /> </td> 
   </tr> 
   <tr> 

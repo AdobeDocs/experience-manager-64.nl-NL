@@ -1,8 +1,8 @@
 ---
 title: Paginaprestaties analyseren
-seo-title: Paginaprestaties analyseren
+seo-title: Analyzing Page Performance
 description: Gebruik de pagina Inzicht van inhoud om de prestaties van de pagina te analyseren die u ontwerpt
-seo-description: Gebruik de pagina Inzicht van inhoud om de prestaties van de pagina te analyseren die u ontwerpt
+seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
 uuid: 6b8a489d-f262-495d-adff-125c9a2c49b9
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,32 +10,35 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
 exl-id: dc24edaf-ca1d-4a6b-a2dc-86677267e18d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
 # Paginaprestaties analyseren{#analyzing-page-performance}
 
-Open de pagina [Inzicht van inhoud](/help/sites-authoring/content-insights.md) om de prestaties van de pagina te analyseren die u ontwerpt. Configureer de rapportageperiode om uw analyse te concentreren.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Open de [Inhoudsinzicht](/help/sites-authoring/content-insights.md) pagina om de prestaties te analyseren van de pagina die u ontwerpt. Configureer de rapportageperiode om uw analyse te concentreren.
 
 ## Analyses en Recommendations openen voor een pagina {#opening-analytics-and-recommendations-for-a-page}
 
 Gebruik de volgende procedure om de Analytics en Recommendations voor een pagina te zien:
 
 1. Navigeer naar de pagina die u wilt analyseren.
-1. Klik of tik op **Analytics en Recommendations** op de werkbalk.
+1. Klik of tik in de werkbalk op **Analytics en Recommendations**.
 
    >[!NOTE]
    >
-   >Analyses en Recommendations voor een pagina worden alleen weergegeven als u AEM hebt geconfigureerd voor [integratie met Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
+   >Analyses en Recommendations voor een pagina worden alleen weergegeven als u AEM hebt geconfigureerd voor [integreren met Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
 
    ![screen_shot_2017-11-29at135651](assets/screen_shot_2017-11-29at135651.png)
 
-## Wijziging van de rapportageperiode {#changing-the-reporting-period}
+## Wijziging van de verslagperiode {#changing-the-reporting-period}
 
 Wijzig de volgende tijdgerelateerde aspecten van de analyserapporten:
 
@@ -44,7 +47,7 @@ Wijzig de volgende tijdgerelateerde aspecten van de analyserapporten:
 
 De gereedschappen voor het wijzigen van de aan de tijd gerelateerde aspecten van de rapporten staan boven aan de pagina Inzicht in inhoud. ![chlimage_1-249](assets/chlimage_1-249.png)
 
-### Wijziging van de rapportageperiode {#changing-the-reporting-period-1}
+### Wijziging van de verslagperiode {#changing-the-reporting-period-1}
 
 Wijzig de rapportageperiode van de pagina Inhoudscontrole om uw analyse van de pagina-activiteit toe te spitsen op een specifieke periode. Wanneer u de rapportageperiode wijzigt, worden de rapporten automatisch vernieuwd. Het schaduwgebied op het tijdframe vertegenwoordigt de rapportageperiode. De datums in de tijdlijn nemen toe van links naar rechts.
 
@@ -62,7 +65,7 @@ Om de rapportageperiode van een pagina Inhoudscontrole te wijzigen:
 
 1. Als u de einddatum van de rapportageperiode wilt wijzigen, sleept u de cirkel die rechts van het schaduwgebied wordt weergegeven naar de gewenste einddatum.
 
-### De rangorde van de rapportageperiode wijzigen {#changing-the-granularity-of-the-reporting-period}
+### Wijziging van de rangorde van de verslagperiode {#changing-the-granularity-of-the-reporting-period}
 
 Verander de hoeveelheid tijd dat elk gegevenspunt in een rapport overspant. Wanneer u bijvoorbeeld de granulariteit voor week selecteert, geeft elk gegevenspunt in het weergavenrapport het aantal weergaven voor een week aan.
 
@@ -86,7 +89,7 @@ De status van de SEO-aanbeveling geeft aan wanneer de taak is gemaakt maar nog n
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
-Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de gebruiker. Voor informatie over taken, zie [Werken met Taken](/help/sites-authoring/task-content.md).
+Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de gebruiker. Voor informatie over taken raadpleegt u [Werken met taken](/help/sites-authoring/task-content.md).
 
 Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 

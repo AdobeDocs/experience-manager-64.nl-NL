@@ -1,8 +1,8 @@
 ---
 title: Problemen oplossen
-seo-title: Problemen oplossen
+seo-title: Troubleshooting
 description: De Gemeenschap van het oplossen van problemen met inbegrip van Bekende Kwesties
-seo-description: De Gemeenschap van het oplossen van problemen met inbegrip van Bekende Kwesties
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
 # Problemen oplossen {#troubleshooting}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Deze paragraaf bevat gemeenschappelijke punten van zorg en bekende punten.
 
@@ -50,11 +54,11 @@ Het probleem is dat de indelingstekenreeks voor com.day.cq.commons.date.Relative
 Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
 
 * Van: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* Naar: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* Aan: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 De fout is anders bij auteur en publiceren. Op auteur ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij publicatie wordt de fout op de pagina gegenereerd.
 
-Zie [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
+Zie de [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
 
 ## Algemene problemen {#common-concerns}
 
@@ -62,9 +66,9 @@ Zie [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experie
 
 Tijdens het opstarten (niet 1st - maar om het even welke daarna) kan de volgende waarschuwing in de logboeken worden gezien:
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; is vervangen door &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* Op 11.4.2014 08:38:07,223 **WAARSCHUWING** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; is vervangen door &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Deze waarschuwing kan veilig worden genegeerd aangezien jknack.handlebars.Handlebars, die door [SCF](scf.md#handlebarsjavascripttemplatinglanguage) wordt gebruikt, met zijn eigen i18n helpernut komt. Bij het opstarten wordt deze vervangen door een AEM specifieke [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
+Deze waarschuwing kan veilig als jknack.handlebars.Handlebars worden genegeerd, die door [SCF](scf.md#handlebarsjavascripttemplatinglanguage), wordt geleverd met een eigen i18n helper-hulpprogramma. Bij het opstarten wordt deze vervangen door een AEM specifieke [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
 ### Waarschuwing bij logbestanden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

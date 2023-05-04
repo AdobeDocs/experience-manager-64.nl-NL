@@ -2,7 +2,7 @@
 title: SCF Handlebars Helpers
 seo-title: SCF Handlebars Helpers
 description: De methodes van de Helper van de bars om het werk met SCF te vergemakkelijken
-seo-description: De methodes van de Helper van de bars om het werk met SCF te vergemakkelijken
+seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: 66045e67-4d33-4c0c-81d7-d4287ed68ccc
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 2%
+source-wordcount: '1550'
+ht-degree: 1%
 
 ---
 
 # SCF Handlebars Helpers {#scf-handlebars-helpers}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
@@ -27,13 +31,13 @@ Handlebars Helpers (helpers) zijn methodes callable van de manuscripten van Hand
 
 De implementatie omvat een client-side en een server-side definitie. Ontwikkelaars kunnen ook aangepaste hulplijnen maken.
 
-De aangepaste SCF-helpers die bij AEM Communities worden geleverd, worden gedefinieerd in de [clientbibliotheek](../../help/sites-developing/clientlibs.md):
+De aangepaste SCF-hulplijnen die bij AEM Communities worden geleverd, zijn gedefinieerd in het dialoogvenster [clientbibliotheek](../../help/sites-developing/clientlibs.md):
 
 * /etc/clientlibs/social/commons/scf/helpers.js
 
 >[!NOTE]
 >
->Installeer het [nieuwste bronnenpakket van Gemeenschappen](deploy-communities.md#latestfeaturepack).
+>Zorg ervoor dat u de [nieuwste edities pakket met functies](deploy-communities.md#latestfeaturepack).
 
 ## Afkorting {#abbreviate}
 
@@ -139,9 +143,9 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 
    (optioneel) Een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk). De standaardwaarde is de huidige datum.
 
-* **indeling**: String
+* **format**: String
 
-   (optioneel) De datumnotatie die moet worden toegepast. Standaard is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18:17:13-07:00&quot;
+   (optioneel) De datumnotatie die moet worden toegepast. Standaard is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18&quot;:17:13-07:00&quot;
 
 ### Voorbeelden {#examples-1}
 
@@ -167,7 +171,7 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
    De linkerwaarde die moet worden vergeleken
 
-* **waarde**: String
+* **tegenwaarde**: String
 
    De rechterwaarde die moet worden vergeleken
 
@@ -183,7 +187,7 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Een blokhelper die de huidige waarde van [WCM wijze](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) tegen een koord gescheiden lijst van wijzen test.
+Een blokhelper die de huidige waarde van test [WCM-modus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) op een door een tekenreeks gescheiden lijst met modi.
 
 ### Parameters {#parameters-4}
 
@@ -191,9 +195,9 @@ Een blokhelper die de huidige waarde van [WCM wijze](https://helpx.adobe.com/exp
 
    (optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
-* **modus**: String
+* **mode**: String
 
-   (optioneel) Een door komma&#39;s gescheiden lijst met [WCM-modi](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) om te testen of deze zijn ingesteld.
+   (optioneel) Een door komma&#39;s gescheiden lijst met [WCM-modi](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) om te testen of deze is ingesteld.
 
 ### Voorbeeld {#example-2}
 
@@ -209,7 +213,7 @@ Een blokhelper die de huidige waarde van [WCM wijze](https://helpx.adobe.com/exp
 
 Deze hulp treedt helper &quot;i18n&quot;van Handlebars met voeten.
 
-Zie ook [Tekenreeksen internationaliseren in JavaScript Code](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Zie ook [Tekenreeksen internationaliseren in JavaScript-code](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parameters {#parameters-5}
 
@@ -217,7 +221,7 @@ Zie ook [Tekenreeksen internationaliseren in JavaScript Code](../../help/sites-d
 
    (optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
-* **standaard**: String
+* **default**: String
 
    (optioneel) De standaardtekenreeks die moet worden omgezet. Vereist als er geen context is opgegeven.
 
@@ -232,15 +236,15 @@ Zie ook [Tekenreeksen internationaliseren in JavaScript Code](../../help/sites-d
 {{i18n "hello" comment="greeting" default="bonjour"}}
 ```
 
-## Opnemen {#include}
+## Inclusief {#include}
 
 Een hulpmiddel om een component als niet bestaand middel in een malplaatje te omvatten.
 
-Hierdoor kan de bron beter programmatisch worden aangepast dan mogelijk is voor een bron die als JCR-knooppunt wordt toegevoegd. Zie [Een Community-component toevoegen of opnemen](scf.md#add-or-include-a-communities-component).
+Hierdoor kan de bron beter programmatisch worden aangepast dan mogelijk is voor een bron die als JCR-knooppunt wordt toegevoegd. Zie [Een onderdeel van een Gemeenschappen toevoegen of opnemen](scf.md#add-or-include-a-communities-component).
 
-Slechts een paar communautaire componenten zijn inbegrepen. Voor AEM 6.1 zijn de meegeleverde opmerkingen [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md) en [stemden](essentials-voting.md).
+Slechts een paar communautaire componenten zijn inbegrepen. Voor AEM 6.1 zijn de opgenomen [opmerkingen](essentials-comments.md), [beoordeling](rating-basics.md), [beoordelingen](reviews-basics.md), en [stemmen](essentials-voting.md).
 
-Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionaliteit gelijkend op [cq:include](../../help/sites-developing/taglib.md) voor manuscripten JSP.
+Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit die lijkt op [cq:include](../../help/sites-developing/taglib.md) voor JSP-scripts.
 
 ### Parameters {#parameters-6}
 
@@ -248,15 +252,15 @@ Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionalitei
 
    (optioneel, tenzij een relatief pad wordt opgegeven)
 
-   gebruik `this`om de huidige context door te geven
+   gebruiken `this`om de huidige context door te geven
 
-   gebruik `this.id` om de bron op `id` te verkrijgen voor het renderen van het gevraagde resourceType
+   gebruiken `this.id` om de bron te verkrijgen op `id` voor het renderen van het aangevraagde resourceType
 
 * **resourceType**: String
 
    (facultatief) middeltype zal aan middeltype van context in gebreke blijven
 
-* **sjabloon**: String
+* **template**: String
 
    pad naar componentscript
 
@@ -274,13 +278,13 @@ Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionalitei
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Dit omvat een nieuwe commentaarcomponent op `this.id` + /comments
+Dit omvat een nieuwe component comments op `this.id` + /comments
 
 ## IncludeClientLib {#includeclientlib}
 
 Een helper die een AEM HTML- cliëntbibliotheek omvat, die een js, een css of een themabibliotheek kan zijn. Voor meerdere inclusies van verschillende typen, bijvoorbeeld js en css, moet deze tag meerdere keren worden gebruikt in het Handlebars-script.
 
-Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionaliteit gelijkend op [ui:includeClientLib](../../help/sites-developing/taglib.md) voor manuscripten JSP.
+Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit die lijkt op [ui:includeClientLib](../../help/sites-developing/taglib.md) voor JSP-scripts.
 
 ### Parameters {#parameters-7}
 
@@ -377,7 +381,7 @@ Depending on how long in the past, may return
 
 ## Xss-html {#xss-html}
 
-Een hulpmiddel dat een bronkoord voor de elementeninhoud van HTML codeert helpen tegen XSS.
+Een hulpmiddel dat een bronkoord voor HTML elementinhoud codeert helpen tegen XSS beschermen.
 
 OPMERKING: Dit is geen validator en moet niet worden gebruikt voor het schrijven van kenmerkwaarden.
 
@@ -395,7 +399,7 @@ OPMERKING: Dit is geen validator en moet niet worden gebruikt voor het schrijven
 
 ## Xss-htmlAttr {#xss-htmlattr}
 
-Een hulpmiddel dat een bronkoord codeert voor het schrijven aan een de attributenwaarde van HTML helpen tegen XSS beschermen.
+Een helper die een bronkoord codeert voor het schrijven aan een waarde van het attribuut van HTML om tegen XSS te helpen beschermen.
 
 OPMERKING: dit is geen validator en moet niet worden gebruikt voor het schrijven van actionable attributen (href, src, gebeurtenismanagers).
 
@@ -431,7 +435,7 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-Een helper die een URL ontsmetten voor het schrijven als href van HTML of srce attributenwaarde helpen tegen XSS.
+Een helper die een URL ontsmetten voor het schrijven als HTML href of srce attributenwaarde helpen tegen XSS.
 
 OPMERKING: dit kan een lege tekenreeks retourneren
 
@@ -453,11 +457,11 @@ OPMERKING: dit kan een lege tekenreeks retourneren
 * Parameters kunnen een eenvoudig String-, Number-, Boolean- of JSON-object zijn, plus een optionele reeks sleutelwaardeparen (hash-argumenten) als de laatste parameter(s).
 * De sleutels in knoeiboelargumenten moeten eenvoudige herkenningstekens zijn.
 * De waarden in hash-argumenten zijn Handlebars-expressies: eenvoudige id&#39;s, paden of tekenreeksen.
-* De huidige context, `this`, is altijd beschikbaar aan helpers Handlebars.
+* De huidige context, `this`, is altijd beschikbaar voor de helpers van Handlebars.
 * De context kan een String, Number, boolean of een JSON-gegevensobject zijn.
-* Het is mogelijk om een binnen de huidige context genest voorwerp als context, zoals `this.url` of `this.id` over te gaan (zie volgende voorbeelden van eenvoudige en blokhelpers).
+* Het is mogelijk een object door te geven dat in de huidige context als de context is genest, zoals `this.url` of `this.id` (zie de volgende voorbeelden van eenvoudige en blokhulplijnen).
 
-* De helpers van het blok zijn functies die van overal in het malplaatje kunnen worden geroepen. Ze kunnen een blok van de sjabloon telkens nul of meer keer aanroepen met een andere context. Ze bevatten een context tussen {{#*name*}} en {{/*name*}}.
+* De helpers van het blok zijn functies die van overal in het malplaatje kunnen worden geroepen. Ze kunnen een blok van de sjabloon telkens nul of meer keer aanroepen met een andere context. Ze bevatten een context tussen {{#*name*}} and {{/*name*}}.
 
 * Handlebars verstrekt een definitieve parameter aan helpers genoemd &quot;opties&quot;. Het speciale object &#39;options&#39; bevat
 
@@ -522,11 +526,11 @@ Zou renderen:\
 
 ## Aangepaste SCF-hulplijnen {#custom-scf-helpers}
 
-Aangepaste helpers moeten zowel aan de serverzijde als aan de clientzijde worden geïmplementeerd, vooral wanneer gegevens worden doorgegeven. Voor SCF, worden de meeste malplaatjes gecompileerd en op server-kant teruggegeven aangezien de server HTML voor een bepaalde component produceert wanneer de pagina wordt gevraagd.
+Aangepaste helpers moeten zowel aan de serverzijde als aan de clientzijde worden geïmplementeerd, vooral wanneer gegevens worden doorgegeven. Voor SCF, worden de meeste malplaatjes gecompileerd en op server-kant teruggegeven aangezien de server de HTML voor een bepaalde component produceert wanneer de pagina wordt gevraagd.
 
 ### Aangepaste hulp op de server {#server-side-custom-helpers}
 
-Om een douaneSCF helper op server-kant uit te voeren en te registreren, eenvoudig om de interface [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html) uit te voeren, maak het een [OSGi Service](../../help/sites-developing/the-basics.md#osgi) en installeer het als deel van een bundel OSGi.
+Om een douaneSCF helper op de server uit te voeren en te registreren, voer eenvoudig de interface van Java uit [TemplateHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), maak er een [OSGi-service](../../help/sites-developing/the-basics.md#osgi) en installeer het als deel van een bundel OSGi.
 
 Bijvoorbeeld:
 
@@ -574,7 +578,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 
 ### Aangepaste hulp aan clientzijde {#client-side-custom-helpers}
 
-De helpers aan de clientzijde zijn Handlebars-scripts die zijn geregistreerd door `Handlebars.registerHelper()` aan te roepen.\
+De helpers aan de clientzijde zijn Handlebars-scripts die zijn geregistreerd door het aanroepen van `Handlebars.registerHelper()`.\
 Bijvoorbeeld:
 
 ### custom-helpers.js {#custom-helpers-js}
@@ -597,7 +601,7 @@ Clilib moet:
 
 * Een afhankelijkheid opnemen van `cq.social.scf`
 * Laden nadat handgrepen zijn geladen
-* [inbegrepen](clientlibs.md)
+* zijn [inbegrepen](clientlibs.md)
 
 Opmerking: de SCF-helpers worden gedefinieerd in `/etc/clientlibs/social/commons/scf/helpers.js`.
 

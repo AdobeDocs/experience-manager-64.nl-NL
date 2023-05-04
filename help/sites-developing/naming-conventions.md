@@ -1,8 +1,8 @@
 ---
 title: Naamgevingsconventies
-seo-title: Naamgevingsconventies
+seo-title: Naming Conventions
 description: Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content Repository
-seo-description: Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content Repository
+seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,32 +10,35 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 741043c7-2ebb-455d-8163-a246b874a7b3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
-# Naamgeving van conventies{#naming-conventions}
+# Naamgevingsconventies{#naming-conventions}
 
-Nodes in de opslagplaats zijn onderworpen aan naamconventies van de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Er worden echter AEM andere conventies voor de naam van paginaknooppunten opgelegd.
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Knooppunten in de gegevensopslagruimte zijn onderworpen aan de naamconventies van de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Er worden echter AEM andere conventies voor de naam van paginaknooppunten opgelegd.
 
 ## Naamgevingsconventies voor pagina&#39;s {#naming-conventions-for-pages}
 
 Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
-* JcrUtil: de AEM implementatie van de [JCR-hulpprogramma&#39;s](#jcr-utilities).
+* JcrUtil: de AEM uitvoering van de [JCR-hulpprogramma&#39;s](#jcr-utilities).
 * PageManager: de [Paginabeheer](#page-manager) biedt methoden voor bewerkingen op paginaniveau.
 * Volgens de interface die wordt gebruikt:
 
    * [Standaardinterface met aanraakbediening](#standard-ui)
    * [Klassieke interface](#classic-ui)
 
-### JCR-hulpprogramma {#jcr-utilities}
+### JCR-hulpprogramma&#39;s {#jcr-utilities}
 
-[](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) JcrUtilis de AEM implementatie van de hulpprogramma&#39;s van het JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) is de AEM uitvoering van de hulpprogramma&#39;s van het GCO. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
 
 * `isValidName`
 
@@ -49,7 +52,7 @@ Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
 ### Paginabeheer {#page-manager}
 
-[](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager biedt methoden voor bewerkingen op paginaniveau op basis van  [JCRUtil](#jcr-utilities).
+[PageManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) biedt methoden voor bewerkingen op paginaniveau op basis van [JCRUtil](#jcr-utilities).
 
 ### Standaardinterface {#standard-ui}
 
@@ -60,7 +63,7 @@ De standaardinterface met aanraakbediening:
    * er is een paginatitel opgegeven voor conversie naar de knooppuntnaam
    * een expliciete nodenaam wordt verstrekt
 
-### Klassieke UI {#classic-ui}
+### Klassieke interface {#classic-ui}
 
 De klassieke gebruikersinterface legt strengere beperkingen op:
 
@@ -69,7 +72,7 @@ De klassieke gebruikersinterface legt strengere beperkingen op:
    * er is een paginatitel opgegeven voor conversie naar de knooppuntnaam
    * een expliciete nodenaam wordt verstrekt
 
-* Geldige tekens (alleen deze tekens zijn geldig wanneer een pagina wordt gemaakt vanuit de klassieke interface, ook al staan `PageManagerImpl` extra tekens toe):
+* Geldige tekens (alleen deze tekens zijn geldig wanneer een pagina wordt gemaakt vanuit de klassieke interface, ook al `PageManagerImpl` extra tekens toestaan):
 
    * &#39;a&#39; naar &#39;z&#39;
    * &#39;A&#39; naar &#39;Z&#39;

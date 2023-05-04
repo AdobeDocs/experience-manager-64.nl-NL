@@ -1,8 +1,8 @@
 ---
 title: AEM Forms-sneltoetsen
-seo-title: AEM Forms-sneltoetsen
+seo-title: AEM Forms Keyboard Shortcuts
 description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
-seo-description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met de Aangepaste formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer.
+seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
@@ -10,21 +10,24 @@ topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 08cf95bc-3417-48d4-9df2-5bd56797bc5d
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 10%
+source-wordcount: '1183'
+ht-degree: 0%
 
 ---
 
 # AEM Forms-sneltoetsen {#aem-forms-keyboard-shortcuts}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
 
 ## Adaptieve formuliereditor {#adaptiveformeditor}
 
-| **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
 | Eigenschappen-browser openen voor de geselecteerde adaptieve formuliercomponent | Alt+Enter | Alt+Return |
 | De browser Eigenschappen sluiten voor de geselecteerde adaptieve formuliercomponent | Ctrl+Alt+W | Command+Alt+W |
@@ -52,15 +55,13 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 >Multi-select op een desktopapparaat:
 >
 >* Windows: Houd Ctrl ingedrukt en klik op de gewenste componenten.
->* MAC OS: Command en klikken op de vereiste componenten.
-
+>* Mac OS: Command en klikken op de vereiste componenten.
 >
 
 
+## Thema-editor  {#themeeditor}
 
-## Thema-editor {#themeeditor}
-
-| **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
 | Eigenschappen voor de geselecteerde component in een thema openen | Alt+Enter | Alt+Return |
 | Eigenschappen van browser sluiten voor de geselecteerde component in een thema | Ctrl+Alt+W | Command+Alt+W |
@@ -72,9 +73,9 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 >
 >Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets in Mac OS.
 
-## Inhoudsbrowser {#contentbrowser}
+## Inhoudsbrowser  {#contentbrowser}
 
-| **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
 | Alle accordeons in de structuur Formulierobjecten van de Inhoudsbrowser uitvouwen wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-rechts, om uit te vouwen | Command+A om alle accordeons te selecteren gevolgd door Pijl-rechts om uit te vouwen |
 | Alle accordeons samenvouwen in de structuur Formulierobjecten van de inhoudbrowser wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen | Command+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen |
@@ -90,10 +91,10 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheidssneltoetsen die u kunt gebruiken in de teksteditor van Correspondence Management. U kunt deze sneltoetsen gebruiken als u:
 
-* Een [Text](document-fragments.md)-element maken of bewerken
-* Een tekstmodule bewerken nadat op het betreffende bewerkingspictogram ( ![edittextmodule](assets/edittextmodule.png)) is getikt wanneer [een correspondentie maakt](/help/forms/using/create-correspondence.md).
+* Een [Tekst](document-fragments.md) element
+* Een tekstmodule bewerken nadat u op het desbetreffende pictogram Bewerken hebt getikt ( ![edittextmodule](assets/edittextmodule.png)) wanneer [correspondentie maken](/help/forms/using/create-correspondence.md).
 
-### Tekst selecteren en de cursor verplaatsen rond {#text-selection-and-moving-the-cursor-around}
+### Tekst selecteren en de cursor verplaatsen {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -179,12 +180,12 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   </tr>
   <tr>
    <td><p>Cursor naar einde van pagina verplaatsen</p> </td> 
-   <td><p>PgDn</p> </td> 
+   <td><p>Page Down</p> </td> 
    <td>Fn+Pijl-omlaag</td> 
   </tr>
   <tr>
    <td><p>Cursor naar begin van pagina verplaatsen</p> </td> 
-   <td><p>PgUp</p> </td> 
+   <td><p>Page Up</p> </td> 
    <td>Fn+Pijl-omhoog</td> 
   </tr>
   <tr>
@@ -287,7 +288,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
  </tbody>
 </table>
 
-### Een woord {#deleting-a-word} verwijderen
+### Een woord verwijderen {#deleting-a-word}
 
 <table> 
  <tbody>
@@ -309,7 +310,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
  </tbody>
 </table>
 
-### {#copy-and-paste} kopiëren en plakken
+### Kopiëren en plakken {#copy-and-paste}
 
 <table> 
  <tbody>

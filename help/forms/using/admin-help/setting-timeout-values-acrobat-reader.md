@@ -1,8 +1,8 @@
 ---
-title: 'Afdrukwaarden instellen voor gebruik met Acrobat Reader DC-extensies '
-seo-title: 'Afdrukwaarden instellen voor gebruik met Acrobat Reader DC-extensies '
+title: Afdrukwaarden instellen voor gebruik met Acrobat Reader DC-extensies
+seo-title: Setting timeout values for use with Acrobat Reader DC extensions
 description: Leer hoe u time-outwaarden instelt voor gebruik met Acrobat Reader DC-extensies.
-seo-description: Leer hoe u time-outwaarden instelt voor gebruik met Acrobat Reader DC-extensies.
+seo-description: Learn how to set timeout values for use with Acrobat Reader DC extensions.
 uuid: d6d072a0-0a30-417a-98b1-df8b4ff8f911
 contentOwner: admin
 content-type: reference
@@ -10,28 +10,31 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a9aeeb89-45e9-4d5d-aa25-8145c89b64f2
 exl-id: e7de9971-3eac-4248-8709-0da7dd709d1b
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '208'
 ht-degree: 0%
 
 ---
 
-# Afdrukwaarden instellen voor gebruik met Acrobat Reader DC-extensies {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+# Afdrukwaarden instellen voor gebruik met Acrobat Reader DC-extensies  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
-Wanneer u met veel PDF-bestanden werkt in Acrobat Reader DC-extensies, moet u ervoor zorgen dat de volgende time-outwaarden op de juiste wijze zijn ingesteld om te voorkomen dat taken worden time-out- en falend:
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
+Wanneer u werkt aan veel PDF-bestanden in Acrobat Reader DC-extensies, moet u ervoor zorgen dat de volgende time-outwaarden op de juiste wijze zijn ingesteld om te voorkomen dat taken op het juiste moment worden uitgevoerd en mislukken:
 
 **Tijdslimiet voor verwijdering van document**
 
 Deze waarde kan in beleidsconsole worden geplaatst. Klik op Instellingen > Core System Settings > Configurations en geef een waarde op voor Default Document Disposal Timeout.
 
-**User Manager AEM forms Timeout:** Deze waarde kan worden geplaatst door het config.xml- dossier uit te geven. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren en klik vervolgens op Exporteren. Open het geëxporteerde bestand config.xml en bewerk de volgende regels:
+**Tijdslimiet voor AEM van gebruikersbeheer:** Deze waarde kan worden ingesteld door het bestand config.xml te bewerken. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren en klik vervolgens op Exporteren. Open het geëxporteerde bestand config.xml en bewerk de volgende regels:
 
-&lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot; />
+&lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot;/>
 
-&lt;entry key=&quot;SessionTimeout&quot; value=&quot;600&quot; />
+&lt;entry key=&quot;SessionTimeout&quot; value=&quot;600&quot;/>
 
 Sla het bestand config.xml op en importeer het vervolgens weer in de beheerconsole.
 
-**Time-out sessie toepassingsserver:** deze waarde kan worden ingesteld op de toepassingsserver. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.
+**Time-out sessie toepassingsserver:** Deze waarde kan op de toepassingsserver worden ingesteld. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.

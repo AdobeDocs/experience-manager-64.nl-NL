@@ -1,8 +1,8 @@
 ---
 title: Essentiële opmerkingen
-seo-title: Essentiële opmerkingen
+seo-title: Comments Essentials
 description: Overzicht van de component Opmerkingen
-seo-description: Overzicht van de component Opmerkingen
+seo-description: Comments component overview
 uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,21 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 3d5396b5-10e5-49bc-aa11-5a3df93d70c3
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 1%
+source-wordcount: '388'
+ht-degree: 0%
 
 ---
 
 # Essentiële opmerkingen {#comments-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Deze pagina bevat de belangrijkste elementen van het werken met het opmerkingensysteem (de component comments) en opties voor het beheer van de door de gebruiker gegenereerde inhoud (UGC) die worden gemaakt wanneer leden opmerkingen of antwoorden plaatsen.
 
 De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke post door een commentaarcomponent (enkelvoudig) wordt vertegenwoordigd. Het is het opmerkingsysteem dat op de pagina is opgenomen. De afzonderlijke opmerkingen worden gemaakt wanneer deze worden aangeroepen.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -34,14 +37,14 @@ De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke po
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td> 
-   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerpmodus </i>modus</td> 
+   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerp </i>mode</td> 
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td> 
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.stemden</td> 
   </tr>
   <tr>
-   <td> <strong>templates</strong></td> 
+   <td> <strong>sjablonen</strong></td> 
    <td> /libs/social/commons/components/hbs/comments/comments.hbs<br /> </td> 
   </tr>
   <tr>
@@ -91,13 +94,13 @@ Dit geldt voor alle componenten die een opmerkingsysteem uitbreiden.
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.\
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - Inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md)  - het Afgekeurde nutsmethodes van de Toewijzing aan huidige SRP nutsmethodes
+* [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van opslagruimten
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Codeerrichtsnoeren
+* [SocialUtils Refactoring](socialutils.md) - Afgekeurde hulpprogrammamethoden toewijzen aan de huidige SRP-hulpprogrammamethoden

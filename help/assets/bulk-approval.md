@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 21%
+source-wordcount: '799'
+ht-degree: 20%
 
 ---
 
 # Map-assets en verzamelingen reviewen {#review-folder-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 
@@ -31,13 +35,13 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Optioneel) Selecteer in de lijst **[!UICONTROL Project]** het project waaraan u de revisietaak wilt koppelen. Standaard is de optie **[!UICONTROL None]** geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
+1. (Optioneel) Van de **[!UICONTROL Project]** selecteert u het project waaraan u de revisietaak wilt koppelen. Standaard worden de **[!UICONTROL None]** is geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
    >[!NOTE]
    >
    >Slechts zijn de projecten waarvoor u de (of hogere) toestemmingen op het niveau van de Redacteur hebt zichtbaar in **[!UICONTROL Projects]** lijst.
 
-1. Voer een naam in voor de overzichtstaak en selecteer een fiatteur in de lijst **[!UICONTROL Assign To]**.
+1. Voer een naam in voor de revisietaak en selecteer een fiatteur in het menu **[!UICONTROL Assign To]** lijst.
 
    >[!NOTE]
    >
@@ -52,7 +56,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![review_name](assets/review_name.png)
 
 1. Tik of klik op **[!UICONTROL Submit]** en tik of klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij [!DNL Experience Manager] Middelen als fiatteur en navigeer naar de interface Middelen. Als u elementen wilt goedkeuren, klikt of tikt u op het pictogram **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
+1. Aanmelden bij [!DNL Experience Manager] Middelen als fiatteur en navigeer naar de interface Middelen. Als u elementen wilt goedkeuren, klikt u op **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
 
    ![melding](assets/notification.png)
 
@@ -61,7 +65,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![review_task](assets/review_task.png)
 
-1. Tik of klik op het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik op **[!UICONTROL Complete]** om te bevestigen.
+1. Tik of klik op het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik/klik op  **[!UICONTROL Complete]** ter bevestiging.
 1. Navigeer naar de interface Middelen en open de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    **Kaartweergave**
@@ -79,13 +83,13 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. (Optioneel) Selecteer in de lijst **[!UICONTROL Project]** het project waaraan u de revisietaak wilt koppelen. Standaard is de optie **[!UICONTROL None]** geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
+1. (Optioneel) Van de **[!UICONTROL Project]** selecteert u het project waaraan u de revisietaak wilt koppelen. Standaard worden de **[!UICONTROL None]** is geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
    >[!NOTE]
    >
    >Slechts zijn de projecten waarvoor u de (of hogere) toestemmingen op het niveau van de Redacteur hebt zichtbaar in **[!UICONTROL Projects]** lijst.
 
-1. Voer een naam in voor de overzichtstaak en selecteer een fiatteur in de lijst **[!UICONTROL Assign To]**.
+1. Voer een naam in voor de revisietaak en selecteer een fiatteur in het menu **[!UICONTROL Assign To]** lijst.
 
    >[!NOTE]
    >
@@ -96,13 +100,13 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Tik of klik op **[!UICONTROL Submit]** en tik of klik vervolgens op **[!UICONTROL Done]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij [!DNL Experience Manager] Middelen als fiatteur en navigeer naar de middelenconsole. Tik op het pictogram **[!UICONTROL Notifications]** of klik op het pictogram om elementen goed te keuren en selecteer vervolgens de revisietaak in de lijst.
+1. Aanmelden bij [!DNL Experience Manager] Middelen als fiatteur en navigeer naar de middelenconsole. Tik op de knop **[!UICONTROL Notifications]** en selecteert u vervolgens de revisietaak in de lijst.
 1. Controleer op de pagina **[!UICONTROL Review Task]** de details van de revisietaak en tik of klik vervolgens op **[!UICONTROL Review]**.
-1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op **[!UICONTROL Approve/Reject]** of klik op het pictogram  om elementen goed te keuren of af te wijzen.
+1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op de knop **[!UICONTROL Approve/Reject]** pictogram om elementen goed te keuren of af te wijzen, al naar het geval.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Tik of klik op het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik op **[!UICONTROL Complete]** om te bevestigen.
+1. Tik of klik op het pictogram **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik/klik op **[!UICONTROL Complete]** ter bevestiging.
 1. Navigeer naar de verzamelingsconsole en open de verzameling. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    **Kaartweergave**

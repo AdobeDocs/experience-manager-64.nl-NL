@@ -1,8 +1,8 @@
 ---
 title: Banen voor offloaden maken en consumeren
-seo-title: Banen voor offloaden maken en consumeren
+seo-title: Creating and Consuming Jobs for Offloading
 description: De Apache Sling Discovery-functie biedt een Java API waarmee u JobManager-taken en JobConsumer-services kunt maken die deze gebruiken
-seo-description: De Apache Sling Discovery-functie biedt een Java API waarmee u JobManager-taken en JobConsumer-services kunt maken die deze gebruiken
+seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
 uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,28 +10,31 @@ topic-tags: platform
 content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: ec5253cd-7f1e-4408-9765-8aaa9a81095c
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
-# Taken maken en consumeren voor offloaden{#creating-and-consuming-jobs-for-offloading}
+# Banen voor offloaden maken en consumeren{#creating-and-consuming-jobs-for-offloading}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 De Apache Sling Discovery-functie biedt een Java API waarmee u JobManager-taken en JobConsumer-services kunt maken die deze gebruiken.
 
-Voor informatie over het creëren van het ontladen van topologieën en het vormen onderwerpconsumptie, zie [Het Offloaden van Banen](/help/sites-deploying/offloading.md).
+Voor informatie over het creëren van het ontladen van topologieën en het vormen onderwerpconsumptie, zie [Taken verschuiven](/help/sites-deploying/offloading.md).
 
-## Lasten van taken verwerken {#handling-job-payloads}
+## Lasten van taken afhandelen {#handling-job-payloads}
 
 Het offloading-framework definieert twee taakeigenschappen die u gebruikt om de taaklading te identificeren. De het ontladen replicatieagenten gebruiken deze eigenschappen om de middelen te identificeren aan de instanties in de topologie te herhalen:
 
 * `offloading.job.input.payload`: Een door komma&#39;s gescheiden lijst met inhoudspaden. De inhoud wordt gerepliceerd naar de instantie die de taak uitvoert.
 * `offloading.job.output.payload`: Een door komma&#39;s gescheiden lijst met inhoudspaden. Wanneer de uitvoering van de taak is voltooid, wordt de taaklading gerepliceerd naar deze paden in de instantie die de taak heeft gemaakt.
 
-Gebruik de opsomming `OffloadingJobProperties` om naar de eigenschapsnamen te verwijzen:
+Gebruik de `OffloadingJobProperties` enum to reference to the property names:
 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
@@ -44,7 +47,7 @@ Maak een client die de methode JobManager.addJob aanroept om een taak te maken d
 
 * Onderwerp: Het taakonderwerp.
 * Naam: (Optioneel)
-* Eigenschappen toewijzen: Een object `Map<String, Object>` dat een willekeurig aantal eigenschappen bevat, zoals de invoerlaadpaden en uitvoerpaden voor Payload. Dit object Map is beschikbaar voor het object JobConsumer dat de taak uitvoert.
+* Eigenschappen toewijzen: A `Map<String, Object>` object dat een aantal eigenschappen bevat, zoals de invoerlaadpaden en uitvoerpaden voor Payload. Dit object Map is beschikbaar voor het object JobConsumer dat de taak uitvoert.
 
 De volgende voorbeelddienst leidt tot een baan voor een bepaald onderwerp en een weg van de inputlading.
 
@@ -94,17 +97,17 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-Het logbestand bevat het volgende bericht wanneer JobGeneratorImpl.createJob wordt aangeroepen voor het `com/adobe/example/offloading`-onderwerp en de `/content/geometrixx/de/services`-lading:
+Het logbestand bevat het volgende bericht wanneer JobGeneratorImpl.createJob wordt aangeroepen voor het `com/adobe/example/offloading` en de `/content/geometrixx/de/services` lading:
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
 ```
 
-## Een taakconsument ontwikkelen {#developing-a-job-consumer}
+## Ontwikkeling van een banenconsument {#developing-a-job-consumer}
 
-Om banen te verbruiken, ontwikkelt de dienst OSGi die `org.apache.sling.event.jobs.consumer.JobConsumer` interface uitvoert. Identificeer met het onderwerp om te gebruiken `JobConsumer.PROPERTY_TOPICS` bezit.
+Om banen te verbruiken, ontwikkelt de dienst OSGi die uitvoert `org.apache.sling.event.jobs.consumer.JobConsumer` interface. Identificeer met het te verbruiken onderwerp gebruikend `JobConsumer.PROPERTY_TOPICS` eigenschap.
 
-Het volgende voorbeeld de implementatieregisters van JobConsumer met het `com/adobe/example/offloading` onderwerp. De consument plaatst eenvoudig het Consumed bezit van de knoop van de ladingsinhoud aan waar.
+Het volgende voorbeeld van de implementatie van JobConsumer registreert bij `com/adobe/example/offloading` onderwerp. De consument plaatst eenvoudig het Consumed bezit van de knoop van de ladingsinhoud aan waar.
 
 ```java
 package com.adobe.example.offloading;

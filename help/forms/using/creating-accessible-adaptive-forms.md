@@ -1,23 +1,26 @@
 ---
 title: Toegankelijke adaptieve formulieren maken
-seo-title: Toegankelijke adaptieve formulieren maken
+seo-title: Creating accessible adaptive forms
 description: AEM Forms biedt u gereedschappen en maakt toegankelijke, adaptieve formulieren die voldoen aan toegankelijkheidsnormen.
-seo-description: AEM Forms biedt u gereedschappen en maakt toegankelijke, adaptieve formulieren die voldoen aan toegankelijkheidsnormen.
+seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
 feature: Adaptive Forms
 exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 1%
+source-wordcount: '939'
+ht-degree: 0%
 
 ---
 
-# Toegankelijke aangepaste formulieren {#creating-accessible-adaptive-forms} maken
+# Toegankelijke adaptieve formulieren maken {#creating-accessible-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 ## Inleiding {#introduction}
 
@@ -40,22 +43,22 @@ Het label dat door schermlezers wordt waargenomen, hoeft niet noodzakelijkerwijs
 
 Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
-1. Selecteer een component en tik ![cmppr](assets/cmppr.png).
-1. Klik **Toegankelijkheid** in de zijbalk om de gewenste toegankelijkheidsoptie te kiezen.
+1. Selecteer een component en tik op ![cmppr](assets/cmppr.png).
+1. Klikken **Toegankelijkheid** in het zijpaneel om de gewenste toegankelijkheidsoptie te kiezen.
 
 ### Toegankelijkheidsopties in formuliercomponenten {#accessibility-options-in-form-components}
 
 ![Toegankelijkheidsopties in formuliercomponenten](assets/accessibility-options.png)
 
-**Aangepaste** TextForm-auteurs geven de inhoud op in het tekstveld Aangepaste toegankelijkheidsoptie. De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
+**Aangepaste tekst** Formulierauteurs geven de inhoud op in het tekstveld Aangepast voor toegankelijkheidsoptie. De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
 
-**Korte** beschrijvingVoor de meeste componenten wordt de korte beschrijving weergegeven wanneer de gebruiker de aanwijzer op de component plaatst. U kunt deze optie instellen in het veld Korte beschrijving onder de optie Help-inhoud.
+**Korte beschrijving** Voor het merendeel van de componenten wordt de korte beschrijving bij uitvoering weergegeven wanneer de gebruiker de aanwijzer op de component plaatst. U kunt deze optie instellen in het veld Korte beschrijving onder de optie Help-inhoud.
 
-**** TitleGebruik deze optie als u wilt dat AEM Forms het visuele label dat aan het formulierveld is gekoppeld, als schermlezertekst gebruikt.
+**Titel** Gebruik deze optie als u wilt dat AEM Forms het visuele label dat aan het formulierveld is gekoppeld, als schermlezertekst gebruikt.
 
-**** NameU kunt een waarde opgeven in het veld Naam van het tabblad Binding. De naam mag geen spaties bevatten.
+**Naam** U kunt een waarde opgeven in het veld Naam van het tabblad Binding. De naam mag geen spaties bevatten.
 
-**Als u** Geen selecteert, heeft het formulierobject geen naam in het gepubliceerde formulier. Geen is een aanbevolen instelling voor formulierbesturingselementen.
+**Geen** Als u Geen selecteert, heeft het formulierobject geen naam in het gepubliceerde formulier. Geen is een aanbevolen instelling voor formulierbesturingselementen.
 
 >[!NOTE]
 >
@@ -65,7 +68,7 @@ Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 >
 >Voor op XFA gebaseerde adaptieve formulieren wordt de toegankelijkheidsoptie overgenomen van de toegankelijkheidsopties die zijn ingesteld in de XDP. Knopinfo van XDP wordt toegewezen aan Korte beschrijving en Bijschrift wordt toegewezen aan Titel. De andere opties werken zoals is.
 
-## Tekstequivalenten opgeven voor afbeeldingen {#provide-text-equivalents-for-images}
+## Verstrek tekstequivalenten voor beelden {#provide-text-equivalents-for-images}
 
 Afbeeldingen kunnen sommige gebruikers helpen het begrip te verbeteren. Voor gebruikers die schermlezers gebruiken, verminderen afbeeldingen echter de toegankelijkheid van het formulier. Als u ervoor kiest om afbeeldingen te gebruiken, geef dan tekstbeschrijvingen op voor alle afbeeldingen.
 
@@ -75,7 +78,7 @@ Selecteer een afbeeldingscomponent en tik op ![cmppr](assets/cmppr.png). Geef in
 
 ![Alternatieve tekst voor een afbeelding](assets/image-properties.png)
 
-## Geef voldoende kleurcontrast {#provide-sufficient-color-contrast}
+## Geef voldoende kleurcontrast op {#provide-sufficient-color-contrast}
 
 Bij het ontwerpen van toegankelijkheid moet u rekening houden met aanvullende richtlijnen voor kleurgebruik. Auteurs van formulieren kunnen kleuren gebruiken om de weergave van formulieren te verbeteren door verschillende formuliercomponenten te markeren. Onjuist gebruik van kleur kan een formulier echter moeilijk of onmogelijk leesbaar maken voor mensen met verschillende mogelijkheden.
 
@@ -83,7 +86,7 @@ Gebruikers met een visuele handicap vertrouwen op een hoog contrast tussen tekst
 
 U wordt aangeraden het standaardfont en de standaardachtergrondkleuren te gebruiken, namelijk de zwarte inhoud op een witte achtergrond. Als u de standaardkleuren wijzigt, kiest u een donkere voorgrondkleur op een lichte achtergrondkleur of andersom.
 
-Zie [Aangepaste thema&#39;s maken voor adaptieve formulieren](/help/forms/using/creating-custom-adaptive-form-themes.md) voor meer informatie over het wijzigen van het kleurcontrast en het thema voor adaptieve formulieren.
+Zie [Aangepaste thema&#39;s maken voor adaptieve formulieren](/help/forms/using/creating-custom-adaptive-form-themes.md)voor meer informatie over het wijzigen van het kleurcontrast en het thema voor de adaptieve formulieren.
 
 ## Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn {#ensure-that-form-controls-are-keyboard-accessible}
 
@@ -91,11 +94,11 @@ Een toegankelijk formulier kan volledig worden ingevuld met alleen het toetsenbo
 
 De volgende sneltoetsen zijn beschikbaar in AEM Forms.
 
-| Actie | Sneltoets |
+| Handeling | Sneltoets |
 |---|---|
 | De cursor door een formulier verplaatsen | Tab |
 | De cursor achterwaarts door een formulier verplaatsen | Shift+Tab |
 | Naar volgend deelvenster gaan | Alt+Pijl-rechts |
 | Naar het vorige deelvenster gaan | Alt+Pijl-links |
 | De gevulde gegevens in een formulier opnieuw instellen | Alt+R |
-| Een formulier verzenden | Alt+Z | configuring-watched-folder-endpoints.md |
+| Een formulier verzenden | Alt+S | configuring-watched-folder-endpoints.md |

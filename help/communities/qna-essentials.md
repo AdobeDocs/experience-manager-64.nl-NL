@@ -2,7 +2,7 @@
 title: QnA Essentials
 seo-title: QnA Essentials
 description: Functie van forum met vragen en antwoorden
-seo-description: Functie van forum met vragen en antwoorden
+seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,19 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: 99f8afda-1771-471b-bd0c-99960a453bc9
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 1%
+source-wordcount: '284'
+ht-degree: 0%
 
 ---
 
 # QnA Essentials {#qna-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
+
 Deze pagina bevat de essentiële informatie voor het werken met de functie voor vragen en antwoorden (QnA)-forums.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -36,10 +39,10 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
   </tr>
   <tr>
    <td> <a href="clientlibs.md">clientllibs</a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.stem<br /> cq.social.hbs.qna</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.qna</td> 
   </tr>
   <tr>
-   <td> templates</td> 
+   <td> sjablonen</td> 
    <td> /libs/social/qna/components/hbs/qnaforum/qnaforum.hbs<br /> /libs/social/qna/components/hbs/qnaforum/activity-title.hbs</td> 
   </tr>
   <tr>
@@ -65,20 +68,20 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
 
 ### QnA-functie {#qna-function}
 
-Een community-sitestructuur die de [QnA-functie](functions.md#qna-function) bevat, heeft een geconfigureerde `QnA`-component en instellingen die invloed hebben op de moderatie en codering. De functie QnA steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group).
+Een community-sitestructuur die de [QnA-functie](functions.md#qna-function) zal gevormd hebben `QnA` en instellingen die invloed hebben op de matiging en het labelen. De functie QnA ondersteunt het identificeren van een [geprivilegieerde gebruikersgroep](users.md#privileged-members-group).
 
-### Toegang tot QnA Forum Post (UGC) {#accessing-qna-forum-posts-ugc}
+### Toegang tot berichten van het Forum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.\
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
+* [Overzicht opslagbronprovider](srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes

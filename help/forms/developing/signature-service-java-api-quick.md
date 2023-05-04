@@ -1,8 +1,8 @@
 ---
 title: Java API QuickStart (SOAP) voor handtekeningservice
-seo-title: Java API QuickStart (SOAP) voor handtekeningservice
-description: Met de service Handtekening kunt u een handtekeningveld toevoegen aan een PDF-document, namen van handtekeningvelden ophalen, een handtekeningveld wijzigen, een PDF-document digitaal ondertekenen, een XFA-formulier digitaal ondertekenen, een PDF-document certificeren, een digitale handtekening verifiëren, meerdere digitale handtekeningen verifiëren en een digitale handtekening verwijderen.
-seo-description: Met de service Handtekening kunt u een handtekeningveld toevoegen aan een PDF-document, namen van handtekeningvelden ophalen, een handtekeningveld wijzigen, een PDF-document digitaal ondertekenen, een XFA-formulier digitaal ondertekenen, een PDF-document certificeren, een digitale handtekening verifiëren, meerdere digitale handtekeningen verifiëren en een digitale handtekening verwijderen.
+seo-title: Signature Service Java API QuickStart(SOAP)
+description: Gebruik de handtekeningservice om een handtekeningveld toe te voegen aan een PDF-document, namen van handtekeningvelden op te halen, een handtekeningveld te wijzigen, een PDF-document digitaal te ondertekenen, een XFA-formulier digitaal te ondertekenen, een PDF-document te certificeren, een digitale handtekening te verifiëren, meerdere digitale handtekeningen te verifiëren en een digitale handtekening te verwijderen.
+seo-description: Use the Signature service to add a signature field to a PDF document, retrieve signature field names, modify a signature field, digitally sign a PDF document, digitally sign an XFA-based form, certify a PDF document, verify a digital signature, verify multiple digital signatures, and remove a digital signature.
 uuid: ae6adf23-b119-45f6-bd57-73d8d9ca8ecb
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 role: Developer
 exl-id: 72726c83-e0e4-40ae-ad1d-8ac9589d9e8f
-translation-type: tm+mt
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # Handtekeningenservice Java API Quick Start (SOAP) {#signature-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 heeft het einde van de uitgebreide ondersteuning bereikt en deze documentatie wordt niet meer bijgewerkt. Raadpleeg voor meer informatie onze [technische ondersteuningsperioden](https://helpx.adobe.com/support/programs/eol-matrix.html). Ondersteunde versies zoeken [hier](https://experienceleague.adobe.com/docs/).
 
 Java API Quick Start (SOAP) is beschikbaar voor de service Handtekening:
 
@@ -49,7 +52,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Een handtekeningveld toevoegen aan een PDF-document met de Java API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *SignatureField1* toegevoegd aan een PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf*. Het PDF-document dat het nieuwe handtekeningveld bevat, wordt opgeslagen als een PDF-bestand met de naam *LoanSig.pdf*. (Zie [Handtekeningvelden toevoegen](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
+In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *SignatureField1* naar een PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf*. Het PDF-document dat het nieuwe handtekeningveld bevat, wordt opgeslagen als een PDF-bestand met de naam *LoanSig.pdf*. (Zie [Handtekeningvelden toevoegen](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
 ```as3
  /* 
@@ -399,7 +402,7 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam Signat
 
 ## Snel starten (SOAP-modus): Een PDF-document digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op een PDF-bestand met de naam *LoanSig.pdf* digitaal ondertekend. De alias die voor de veiligheidsreferentie wordt gespecificeerd is veilig, en de herroepingscontrole wordt uitgevoerd. Omdat er geen CRL- of OCSP-serverinformatie is opgegeven, worden de servergegevens opgehaald uit het certificaat dat wordt gebruikt om het PDF-document digitaal te ondertekenen. Het ondertekende document wordt opgeslagen als een PDF-bestand met de naam *LoanSigned.pdf*. (Zie [PDF-documenten digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op een PDF-bestand met de naam *LoanSig.pdf*. De alias die voor de veiligheidsreferentie wordt gespecificeerd is veilig, en de herroepingscontrole wordt uitgevoerd. Omdat er geen CRL- of OCSP-serverinformatie is opgegeven, wordt de serverinformatie opgehaald uit het certificaat dat wordt gebruikt om het PDF-document digitaal te ondertekenen. Het ondertekende document wordt opgeslagen als een PDF-bestand met de naam *LoanSigned.pdf*. (Zie [PDF-documenten digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ```as3
  /* 
@@ -548,7 +551,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op ee
 
 ## Snel starten (SOAP-modus): Een XFA-gebaseerd formulier digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend dat door de Forms-service wordt gegenereerd. De instantie `com.adobe.idp.Document` die wordt geretourneerd door de Forms-service, wordt doorgegeven aan de service Handtekening. Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf*.
+In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend dat door de Forms-service wordt gegenereerd. De `com.adobe.idp.Document` -instantie die door de Forms-service wordt geretourneerd, wordt doorgegeven aan de ondertekeningsservice. Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf*.
 
 ```as3
  /* 
@@ -909,7 +912,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gecertificeerd dat is 
 
 ## Snel starten (SOAP-modus): Een digitale handtekening verifiëren met de Java API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een digitale handtekening gecontroleerd die zich bevindt in een ondertekend PDF-document dat is gebaseerd op een PDF-bestand met de naam LoanSigned.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Digitale handtekeningen controleren](#unresolvedlink-lc-si).)
+In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd die zich bevindt in een ondertekend PDF-document dat is gebaseerd op een PDF-bestand met de naam LoanSigned.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Digitale handtekeningen verifiëren](#unresolvedlink-lc-si).)
 
 ```as3
  /* 
@@ -1071,7 +1074,7 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening gecontroleerd
  
 ```
 
-## Snel starten (SOAP-modus): Meerdere digitale handtekeningen controleren met de Java API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
+## Snel starten (SOAP-modus): Meerdere digitale handtekeningen verifiëren met de Java API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecontroleerd die zich bevinden in een ondertekend PDF-document dat is gebaseerd op een PDF-bestand met de naam LoanAllSigs.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Meerdere digitale handtekeningen controleren](#unresolvedlink-lc-si).)
 
@@ -1235,7 +1238,7 @@ In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecon
 
 ## Snel starten (SOAP-modus): Een digitale handtekening verwijderen met de Java API {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een digitale handtekening verwijderd uit een handtekeningveld met de naam *SignatureField1*. De naam van het PDF-bestand dat het handtekeningveld bevat, is *LoanSigned.pdf*. (Zie [Digitale handtekeningen verwijderen](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
+In het volgende Java-codevoorbeeld wordt een digitale handtekening verwijderd uit een handtekeningveld met de naam *SignatureField1*. De naam van het PDF-bestand met het handtekeningveld is *LoanSigned.pdf*. (Zie [Digitale handtekeningen verwijderen](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 ```as3
  /* 
